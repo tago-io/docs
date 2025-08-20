@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -13,7 +14,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.brandRow}>
           <span className={styles.brandDoc}>Documentation</span>
-          <img src="/img/tagoio-official-logo.svg" alt="TagoIO" width={160} height={40} className={styles.brandLogo} />
+          <img src={useBaseUrl('/img/tagoio-official-logo.svg')} alt="TagoIO" width={160} height={40} className={styles.brandLogo} />
         </div>
         <Heading as="h1" className="hero__title">
           Easy IoT. Powerful Outcomes.
