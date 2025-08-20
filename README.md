@@ -1,41 +1,83 @@
-# Website
+# TagoIO Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A Docusaurus v3 site (TypeScript) for the TagoIO ecosystem: TagoIO Platform, TagoRUN, TagoCore, and TagoDeploy.
 
-## Installation
+## Tech Stack
+- Docusaurus 3 (TypeScript)
+- React 19
+- Markdown/MDX content
 
+## Requirements
+- Node.js >= 18
+- npm (recommended)
+
+## Quick Start
 ```bash
-yarn
+# Install dependencies
+npm install
+
+# Start dev server
+npm start
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run serve
+
+# Clear cache/artifacts
+npm run clear
+
+# Type-check the project
+npm run typecheck
 ```
 
-## Local Development
-
-```bash
-yarn start
+## Project Structure
+```
+.
+├── docs/                    # Documentation content (Markdown/MDX)
+│   ├── intro.md
+│   ├── tagoio/
+│   ├── tagorun/
+│   ├── tagocore/
+│   └── tagodeploy/
+├── src/                     # Site source (pages, components, styles)
+│   ├── components/
+│   ├── css/
+│   └── pages/
+├── static/                  # Static assets (images, files)
+├── docusaurus.config.ts     # Site configuration
+├── sidebars.ts              # Sidebar configuration
+└── package.json             # Scripts and dependencies
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Editing Content
+- Add or edit documentation under `docs/`
+- Use `.md` or `.mdx` for rich content
+- Place images in `static/img/` and reference them with `/img/...`
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Development Notes
+- Follow existing styling and component patterns under `src/`
+- Keep navigation in sync via `sidebars.ts`
+- Use `npm run typecheck` before committing
 
 ## Deployment
+- Production builds are generated in `build/`
+- A GitHub Actions workflow exists at `.github/workflows/deploy.yml` for automated deployments (if configured)
 
-Using SSH:
-
+## Useful Docusaurus Commands
 ```bash
-USE_SSH=true yarn deploy
+# Component/theme customization
+npm run swizzle
+
+# Generate i18n translation files
+npm run write-translations
+
+# Generate stable heading IDs
+npm run write-heading-ids
 ```
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Contributing
+- Create a feature branch, make changes, and open a PR
+- Ensure `npm run typecheck` and `npm run build` complete without errors
+- Keep docs accurate and consistent with product behavior
