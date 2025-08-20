@@ -1,0 +1,89 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-heading-color);
+}
+
+.brandRow { display: flex; flex-direction: column; align-items: center; gap: .25rem; margin-bottom: 1rem; }
+.brandLogo { margin-bottom: 0; }
+html[data-theme='dark'] .brandLogo { filter: invert(1) brightness(1.2) contrast(1.1); }
+.brandDoc { font-weight: 700; font-size: .875rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ifm-color-content-secondary); }
+
+.heroBanner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heroBanner p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+  
+  .heroBanner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroBanner p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner h1 {
+    font-size: 2rem;
+  }
+  
+  .heroBanner p {
+    font-size: 1rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+.buttons .button {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.demoButton {
+  background: var(--ifm-color-emphasis-1000);
+  color: var(--ifm-color-emphasis-0);
+  border: 2px solid var(--ifm-color-emphasis-1000);
+}
+.demoButton:hover { opacity: .9; }
+.demoButton:active { opacity: .85; }

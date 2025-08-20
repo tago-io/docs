@@ -1,0 +1,54 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: var(--ifm-background-color);
+}
+
+.featureImg {
+  height: 72px;
+  width: 72px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+
+.featureCol { display: flex; }
+.featureLink { display: block; width: 100%; text-decoration: none; }
+
+.featureCard {
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+html[data-theme='dark'] .featureCard { border-color: rgba(255, 255, 255, 0.08); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.featureCard h3 {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureCard p {
+  color: var(--ifm-font-color-base);
+  opacity: 0.9;
+  line-height: 1.6;
+  font-size: 1rem;
+}
