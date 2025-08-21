@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Getting Started",
+    "url": "https://help.tago.io/portal/en/kb/articles/1-getting-started"
+  },
+  {
+    "title": "Devices",
+    "url": "https://help.tago.io/portal/en/kb/articles/3-devices"
+  },
+  {
+    "title": "Dashboards",
+    "url": "https://help.tago.io/portal/en/kb/articles/15-dashboard-overview"
+  },
+  {
+    "title": "Widgets",
+    "url": "https://help.tago.io/portal/en/kb/tagoio/9-widgets"
+  },
+  {
+    "title": "Actions",
+    "url": "https://help.tago.io/portal/en/kb/articles/30-actions"
+  },
+  {
+    "title": "Analysis",
+    "url": "https://help.tago.io/portal/en/kb/articles/29-analysis-overview"
+  },
+  {
+    "title": "Entities",
+    "url": "https://help.tago.io/portal/en/kb/articles/entities"
+  },
+  {
+    "title": "Integration",
+    "url": "https://help.tago.io/portal/en/kb/tagoio/integration"
+  },
+  {
+    "title": "Profiles",
+    "url": "https://help.tago.io/portal/en/kb/articles/198-profiles"
+  },
+  {
+    "title": "Services",
+    "url": "https://help.tago.io/portal/en/kb/articles/115-services-overview"
+  },
+  {
+    "title": "Add-Ons",
+    "url": "https://help.tago.io/portal/en/kb/articles/control-tower"
+  },
+  {
+    "title": "Files",
+    "url": "https://help.tago.io/portal/en/kb/articles/127-files"
+  },
+  {
+    "title": "Notifications",
+    "url": "https://help.tago.io/portal/en/kb/articles/11-notification"
+  },
+  {
+    "title": "Billing",
+    "url": "https://help.tago.io/portal/en/kb/articles/114-account-plans"
+  },
+  {
+    "title": "API",
+    "url": "https://help.tago.io/portal/en/kb/articles/31-api-overview"
+  },
+  {
+    "title": "Payload Parser",
+    "url": "https://help.tago.io/portal/en/kb/articles/147-payload-parser"
+  },
+  {
+    "title": "My Account",
+    "url": "https://help.tago.io/portal/en/kb/articles/211-editing-accounts-details"
+  },
+  {
+    "title": "Tutorials",
+    "url": "https://help.tago.io/portal/en/kb/articles/236-abs-telemetry"
+  },
+  {
+    "title": "SDK",
+    "url": "https://help.tago.io/portal/en/kb/articles/python-sdk"
+  },
+  {
+    "title": "Support",
+    "url": "https://help.tago.io/portal/en/kb/articles/ticket-severity-options"
+  },
+  {
+    "title": "Compliance",
+    "url": "https://help.tago.io/portal/en/kb/articles/security-and-compliance"
+  }
+]

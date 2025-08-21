@@ -1,0 +1,51 @@
+---
+title: "Creating Dashboard Tabs"
+description: "Learn how to create and manage dashboard tabs in TagoIO to divide dashboards into multiple sections and add links to organize your applications effectively."
+tags: ["tagoio", "dashboards"]
+---
+
+# Creating Dashboard Tabs
+
+By using **Tabs**, you can divide [dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
+
+<!-- Dashboard tabs example image -->
+
+Notice that in the example above we have three tabs: the dashboard itself, the configuration, and a link.
+
+**YouTube Video:** [Tago.Io - How to Create Dashboard Tabs](https://www.youtube.com/watch?v=l4kih6hUwBQ)
+
+---
+
+## Creating & Editing a Tab
+
+To create a **tab** on your application, go to the dashboard you want to create it, click the edit button to enter in **edit mode**, and then click on the settings button.
+
+<!-- Dashboard edit mode image -->
+
+Then, go to the **Tabs** section and click the **plus button**.
+
+<!-- Tabs section image -->
+
+To create a tab, you must set the name of the tab and select its type. The type can be one of the following:
+
+- **Dashboard**: The tab will be able to contain widgets.
+- **Link**: The tab will be a link to another dashboard or another web page. You **cannot** put widgets inside of this tab.
+- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](https://help.tago.io/portal/en/kb/articles/242-widget-header).
+
+<!-- Tab creation interface image -->
+
+> You can add up to **10 (ten)** tabs in your dashboard.
+
+---
+
+## Visibility Conditions
+
+You can configure the tabs on your dashboard to restrict access for your end users on [TagoRun](https://help.tago.io/portal/en/kb/articles/191-tagorun) according to the **tags** you defined in the [User Management](https://help.tago.io/portal/en/kb/articles/190-user-management) module. This functionality is very useful since you can have fine-grained control over which tabs are displayed for different types of users without having to duplicate the dashboards for different user roles.
+
+In order to configure the visibility conditions, you will need to access your dashboard settings, then Tabs and click on the eye icon.
+
+<!-- Visibility conditions interface image -->
+
+For instance, you can have a dashboard where one of the tabs is only displayed for users that match the tag with key **user_type** and value **admin**.
+
+<!-- Visibility conditions example image -->

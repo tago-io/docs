@@ -268,3 +268,8 @@ html[data-theme='dark'] .markdown a {
 html[data-theme='dark'] .markdown a:hover {
   color: #639cff;
 }
+
+/* Hide sidebar collapse/expand buttons */
+.clean-btn.menu__caret {
+  display: none !important;
+}
