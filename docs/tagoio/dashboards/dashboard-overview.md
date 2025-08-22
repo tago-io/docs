@@ -27,7 +27,7 @@ In this window, you can also switch the **Blueprint slider** to generate a Bluep
 
 <!-- Dashboard creation interface image -->
 
-**YouTube Video:** [Building Dashboards and Widgets](https://www.youtube.com/watch?v=D2lmCHF4Eg4)
+<YouTube videoId="D2lmCHF4Eg4" title="Building Dashboards and Widgets" />
 
 > There is a limit of **100 widgets** per dashboard
 

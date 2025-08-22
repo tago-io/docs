@@ -12,7 +12,7 @@ By using **Tabs**, you can divide [dashboards](/tagoio/dashboards/dashboard-over
 
 Notice that in the example above we have three tabs: the dashboard itself, the configuration, and a link.
 
-**YouTube Video:** [Tago.Io - How to Create Dashboard Tabs](https://www.youtube.com/watch?v=l4kih6hUwBQ)
+<YouTube videoId="l4kih6hUwBQ" title="Tago.Io - How to Create Dashboard Tabs" />
 
 ---
 

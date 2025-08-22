@@ -124,7 +124,7 @@ Draw colored geographic boundaries to make it easy to see your devices' trajecto
 
 You can draw polygon or circle figures and associate them with events, and build an [analysis](https://community.tago.io/t/implementing-an-analysis-to-notify-when-a-device-is-inside-of-a-geofence/617) to receive notifications when the device enters or leaves the zone.
 
-**YouTube Video:** [Mapping and Geofencing IoT Devices on TagoIO](https://www.youtube.com/watch?v=EmwtOqq_KLQ)
+<YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
 Learn more about [Geofence in map widgets](/tagoio/widgets/geofences-in-map-widgets).
 
