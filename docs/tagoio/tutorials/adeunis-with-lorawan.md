@@ -3,7 +3,6 @@ title: "Adeunis with LoRaWAN™"
 description: "This article explains how to integrate Adeunis LoRaWAN™ devices with TagoIO, how TagoIO parses device payloads, and the steps to add and configure devices for different LoRaWAN™ network providers."
 tags: ["tagoio"]
 ---
-
 ![Adeunis logo](/docs_imagem/tagoio/adeunis-with-lorawan-2.png)
 
 ## Overview
@@ -14,13 +13,13 @@ See [Analysis](../analysis/analysis-overview) for working with and visualizing y
 
 ## Note
 
-> You can check whether a parser script was added to your device under the tab "Payload Parser".
+> You can check whether a [parser](https://help.tago.io/portal/en/kb/articles/147-payload-parser) script was added to your device under the tab **Payload Parser**.
 
 ## Adding a device
 
 To add an Adeunis device to TagoIO:
 1. Go to [Devices](../devices/devices).
-2. Click "Add Devices".
+2. Click **Add Devices**.
 3. Filter the network by the LoRaWAN™ provider you will connect with.
 4. Pick your Adeunis device from the list.
 
@@ -34,10 +33,21 @@ Select one of the following provider-specific integration guides to continue you
 - [Loriot](../tutorials/loriot-lorawan)
 - [Everynet](../tutorials/everynet-lorawan)
 - [Senet](../tutorials/senet-network)
+- [Orbiwise](https://help.tago.io/portal/en/kb/articles/160-orbiwise-lorawan)
+- [machineQ](https://help.tago.io/portal/en/kb/articles/159-machineq-lorawan)
 
 Each provider link points to the corresponding TagoIO tutorial for configuring Adeunis devices with that network.
 
+After you have completed the setup above, you will be ready to move forward.  
+Now, just turn your Adeunis device on and wait for the data to hit your **data bucket**. Every time the device sends data, the parser will be executed, the extracted data sent to the bucket, and it will be ready to be shown in the dashboards.
+
+You can start building your [dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview) immediately.  
+Also, you can create [notifications](https://help.tago.io/portal/en/kb/articles/11-notification) and more advanced [scripts](https://help.tago.io/portal/en/kb/articles/120-creating-analysis) as needed.
+
 ## Additional references
 
-- Check the device's "Payload Parser" tab to confirm or edit any parser scripts.
+- Check the device's **Payload Parser** tab to confirm or edit any parser scripts.
 - For device management and other configuration options, see the Devices documentation: [Devices](../devices/devices)
+- Build dashboards: [Dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview)
+- Create notifications: [Notifications](https://help.tago.io/portal/en/kb/articles/11-notification)
+- Write advanced scripts: [Scripts](https://help.tago.io/portal/en/kb/articles/120-creating-analysis)

@@ -3,7 +3,6 @@ title: "How it works"
 description: "This article gives a brief introduction to how TagoIO works, with a short video overview that explains core concepts such as devices and tokens."
 tags: ["tagoio"]
 ---
-
 There are a few things you need to know about how TagoIO works in order to optimize your applications.
 
 Watch this short video to learn about the concepts around devices and tokens.
@@ -39,3 +38,6 @@ Related articles:
 - [Image Marker Widget](../widgets/image-marker-widget)
 - [Analysis Overview](../analysis/analysis-overview)
 - [Defining Actions](../actions/actions)
+- [TagoIO Public Roadmap](https://tago.io/roadmap)
+- [Vote for New Features](https://help.tago.io/portal/en/community/tagoio/feature-requests)
+- [Future and past Webinars](https://tago.io/events)

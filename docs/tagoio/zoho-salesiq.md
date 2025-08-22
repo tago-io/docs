@@ -3,7 +3,6 @@ title: "Zoho SalesIQ"
 description: "This article explains how to integrate a TagoIO RUN application with Zoho SalesIQ by obtaining the SalesIQ widget key and placing it into the RUN setup. It includes the steps to create a SalesIQ account, retrieve the widget key, enable visitor tracking, and where to paste the key in TagoIO."
 tags: ["tagoio"]
 ---
-
 You can easily integrate your RUN application with Zoho SalesIQ to track and engage users. All you need to do is use your SalesIQ key in the RUN setup.
 
 ## Steps to integrate
@@ -42,11 +41,15 @@ d.write('<div id="zsiqwidget"></div>');
 
 4. Then, back in TagoIO, open your RUN setup page. Under Integration > User Engagement, paste the key (the value you copied after `widgetcode:`) in the SalesIQ Key field.
 
+![RUN integration screenshot](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/LuIV4HGtaODFpKFA2o2H9HwlzgPB1aDdiGF2pQmVlNM/Screen%20Shot%202020-02-07%20at%205.44.26%20AM-NTA.png)
+
 ## Notes and reminders
 
 - Only paste the key value (not the entire script) into the SalesIQ Key field in the RUN setup.
 - Make sure Visitor Tracking is enabled for your RUN URL so SalesIQ can track visitors.
 - If you need the SalesIQ script itself on your website, insert it just before the closing `</body>` tag on each page you want tracked or where you want the live chat widget to appear.
+- In the RUN integration UI, the field may be labeled “Zoho ID” but it accepts the same key value used in the SalesIQ Key field.
+- With SalesIQ integrated, you can see who visits your RUN, when they visit, how long they stay, and what browser/device they use. You also have the option to enable live chat, bots, remote screen access, analytics, and GDPR‑compliant cookie notices directly from the SalesIQ dashboard.
 
 Related internal docs:
 - See [User Engagement](https://help.tago.io/) (refer to the User Engagement documentation)

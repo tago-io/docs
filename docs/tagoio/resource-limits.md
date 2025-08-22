@@ -3,8 +3,7 @@ title: "Resource Limits"
 description: "This article explains TagoIO's resource limits across account plans and lists the per-plan limits for common resource types, noting that most limits apply per Profile."
 tags: ["tagoio"]
 ---
-
-TagoIO implements multi-tenancy as a cost-effective, performance-enhancing approach. This architectural choice brings many benefits but requires mechanisms to avoid service disruptions when other users sharing resources have spikes in consumption. To prevent such scenarios, TagoIO limits the number of resources individuals can create in their accounts. When these limits are reached, creating additional resources will be blocked to maintain platform stability and prevent resource exhaustion.
+TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing approach. This architectural choice brings many benefits but requires mechanisms to avoid service disruptions when other users sharing resources have spikes in consumption. To prevent such scenarios, TagoIO limits the number of resources individuals can create in their accounts. When these limits are reached, creating additional resources will be blocked to maintain platform stability and prevent resource exhaustion.
 
 ## Limits for each resource
 
@@ -20,5 +19,19 @@ The limits for each resource are determined by your specific plan. The table bel
 | [Entity](entities/entities) | 5 | 50 | 80 |
 | [Device](../devices/devices) | 5 | 100 | 10,000 |
 | [Profile](../account/profiles) | 1 / account | 2 / account | 5 / account |
+| [Team Member](https://help.tago.io/portal/en/kb/articles/106-sharing-your-profile) | 0 | 1 | 5 |
+| [TagoCore](https://help.tago.io/portal/en/kb/articles/tagocore) | 10 | 10 | 10 |
+| [TagoCore Cluster](https://help.tago.io/portal/en/kb/articles/tagocore-cluster) | 3 | 3 | 3 |
+| [Custom Connector](https://help.tago.io/portal/en/kb/articles/466-connector-overview) | 3 | 20 | 50 |
+| [Custom Network](https://help.tago.io/portal/en/kb/articles/468-creating-a-network-integration) | 1 | 5 | 10 |
+| [Device service authorization](https://help.tago.io/portal/en/kb/articles/218-authorization) | 10 | 50 | 200 |
+| [Access Management Policies](https://help.tago.io/portal/en/kb/articles/183-access-management) | 5 | 30 | 100 |
+| [Dictionary & Multi-language](https://help.tago.io/portal/en/kb/articles/487-dictionaries) | 2 | 10 | 50 |
 
-If you need more details about a specific resource type, follow the corresponding link in the table (links point to each resource's documentation).
+If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.
+
+If your requirements exceed these limits, consider upgrading to the **Scale** plan or contacting us through the [Help Center](https://help.tago.io/portal/en/newticket). For more information about our plans and services, check our [Pricing Page](https://tago.io/pricing).
+
+## Monitoring resources across your entire account
+
+You can monitor the amount of resources you have used by accessing the account menu in the top right corner of your Admin page and selecting the **Hard Limits** option.

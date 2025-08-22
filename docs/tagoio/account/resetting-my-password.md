@@ -3,7 +3,6 @@ title: "Resetting My Password"
 description: "This article explains how to reset a forgotten password and how to change an existing password for TagoIO accounts, and clarifies where to manage passwords for the TagoRun application."
 tags: ["tagoio"]
 ---
-
 On the signup page, click the "Forgot your password?" link and enter your email address. We'll send instructions to that email to reset your password.  
 (See [signup page](https://admin.tago.io/signup) and the "Forgot your password?" link.)
 

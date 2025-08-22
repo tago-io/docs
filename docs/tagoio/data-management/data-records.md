@@ -3,7 +3,6 @@ title: "Data Records"
 description: "This article explains how Data Records are structured in TagoIO, what counts toward a profile's data record limit, and provides a JSON example showing how a single register can include variable fields, location, and metadata."
 tags: ["tagoio"]
 ---
-
 ## Overview
 
 A Data Record represents the variables stored and sent by devices. Each register consists of a variable and all metadata associated with it. The profile's data record limit defines the maximum storage capacity for the selected Profile at all times.
@@ -43,7 +42,15 @@ All fields and metadata stored with a given variable are counted together as a s
 - Location stored inside the variable (lat/lng) is considered part of the same register.
 - The data record limit is enforced per Profile and defines the maximum number of registers stored for that Profile.
 
+## Additional considerations
+
+- If the Data Record limit is exceeded, no data will be saved until the limit is increased or the number of registers is reduced. The API response will indicate that the limit was exceeded for that Profile.
+- When you reduce the number of registers, the Usage Statistics in your [Admin](https://admin.tago.io/) page may take some minutes to update to the new amount of data records.
+- TagoIO will send warning Emails to you each time the storage exceeds 80%, 90%, and 100% of the limit.
+- Another simple example: Your device sends speed, temperature, and humidity with location every hour. As a result, three new registers will be added each hour.
+
 ## Related documentation
 
 - See [Allocating Services to profiles](../services/allocating-services-to-profiles)
 - Refer to the Targets documentation or other relevant TagoIO service articles for additional context.
+- For more information about examples and FAQ, see our [Pricing Page](https://tago.io/pricing/).

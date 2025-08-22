@@ -3,7 +3,6 @@ title: "Services Overview"
 description: "A concise overview of the services available in TagoIO, how usage is measured, and where to view limits and history for each service."
 tags: ["tagoio"]
 ---
-
 ## Overview
 
 TagoIO offers a broad range of services that can be provisioned according to your application's needs. By selecting which services each profile will use during the month, you can track usage and know exactly how much you will be charged.
@@ -24,6 +23,10 @@ Currently, the following services are available for selection on your account. S
 | Push Notifications | Message | Monthly | Messages sent out. |
 | E-mail | Message | Monthly | Messages sent out. |
 | SMS | Message | Monthly | Messages sent out. |
+| End user (RUN user) | User | Maximum at any time | End users registered in your RUN applications. |
+
+**Service Alerts**  
+TagoIO will send warning emails and push notifications when a service usage exceeds 80%, 90%, or 100% of the limit set for a specific profile. This helps you stay informed before reaching your quota.
 
 ## Where to view usage
 

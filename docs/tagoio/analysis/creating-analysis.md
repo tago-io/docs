@@ -3,8 +3,7 @@ title: "Creating Analysis"
 description: "This article explains how to create a new Analysis in TagoIO, including the fields in the Add Analysis dialog and the options for runtime and execution environment."
 tags: ["tagoio", "analysis"]
 ---
-
-Creating your own analysis is easy. First, click on Analysis in the sidebar, then click the + Add Analysis button in the upper-right of the Analysis main screen. Enter a name and configure the options described below to create your analysis.
+Creating your own analysis is easy. First, click on **Analysis** in the sidebar, then click the **+ Add Analysis** button in the upper‑right of the Analysis main screen. Enter a name and configure the options described below to create your analysis.
 
 <!-- Image placeholder removed for build -->
 
@@ -13,26 +12,42 @@ This is the identifier for your analysis. You can use whitespace, numbers, and a
 
 ## Runtime Version
 Select the runtime environment for your analysis. An example shown in the dialog is:
-- Deno (deno-2025-08-01)
+- **Deno** (deno‑2025‑08‑01)
 
-Choose the runtime version appropriate for the code you plan to run.
+Currently supported runtimes include **Deno**, **Python**, and **Node.js** if you run your script on TagoIO.  
+> ⚠️ Once an analysis has been created, its runtime cannot be changed.
 
 ## Run this script from
 Choose where the analysis will run:
-- TagOIO — Edit and run the script directly on TagoIO.
-- External — Run the script on your own computer or server.
+- **TagOIO** — Edit and run the script directly on TagoIO.
+- **External** — Run the script on your own computer or server.
 
-Select the option that matches your deployment preference.
+If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
+
+- [Python SDK](https://help.tago.io/portal/en/kb/articles/python-sdk)
+- [Javascript SDK](https://help.tago.io/portal/en/kb/articles/464-node-js) for Deno and NodeJS
+
+> ⚠️ When changing between External mode and TagoIO mode, the Analysis Token will be reset and a new token will be generated.
 
 ## Code example
-You can optionally start your analysis from a code example template. The Add Analysis dialog includes a dropdown to choose a code example. If you don't want a template, select "No, thanks."
+You can optionally start your analysis from a code example template. The Add Analysis dialog includes a dropdown to choose a code example. If you don't want a template, select **No, thanks**.
+
+> 📌 It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.  
+> ⚠️ You can only select one of these code examples if you are running your script on TagoIO.
 
 ## Other fields
 The Add Analysis dialog also shows:
-- A "Learn more" link (for additional guidance).
-- Buttons to "Cancel" or "Create my Analysis" once you have configured the fields.
+- A **“Learn more”** link (for additional guidance).
+- Buttons to **“Cancel”** or **“Create my Analysis”** once you have configured the fields.
 
 After creating the analysis you can open the Script Editor to add and manage the analysis code, adjust environment variables, and configure distribution or external execution as needed.
+
+### Time interval
+You can trigger your analysis script manually, but you can also define a time interval to automatically trigger it. In this field you will find a couple of predefined time options, and you can set your own custom time interval by selecting the **Custom** option.
+
+### Analysis Token
+This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
+[Running Analysis as External using Node.JS](https://help.tago.io/portal/en/kb/articles/174-running-analysis-as-external-using-node-js).
 
 Related documentation:
 - See [Analysis Overview](../analysis/analysis-overview)

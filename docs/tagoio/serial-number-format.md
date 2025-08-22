@@ -3,7 +3,6 @@ title: "Serial Number Format"
 description: "This article explains how to define custom serial number masks for a Network in TagoIO, describing the allowed characters for each mask symbol and providing usage examples."
 tags: ["tagoio"]
 ---
-
 You can specify a custom mask/format for your Network's Serial Number.
 
 To create your format, use the characters defined below.

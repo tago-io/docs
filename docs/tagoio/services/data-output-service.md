@@ -3,7 +3,6 @@ title: "Data Output Service"
 description: "This article explains how Data Output transactions are counted in TagoIO, how to set monthly Data Output limits per Profile, and how different actions (including dashboard downloads and device exports) affect those limits."
 tags: ["tagoio"]
 ---
-
 One transaction of Data Output is counted for each register read from a [device's](../devices/devices) data storage. Learn more in [Getting Data](../data-management/data-export).
 
 You need to define the **Data Output limit per month** for each Profile where your applications are running.

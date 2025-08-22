@@ -3,7 +3,6 @@ title: "Sending Data to Device"
 description: "This article explains the options available in TagoIO for sending data from your application to a device, covering MQTT, HTTP, Analysis scripts, and working with Support for custom middleware."
 tags: ["tagoio", "devices"]
 ---
-
 TagoIO supports two-way communication with devices so they can both send and receive data. Below are the primary options for sending data from your application to a device.
 
 ## Methods to send data
@@ -23,3 +22,10 @@ TagoIO supports two-way communication with devices so they can both send and rec
 - [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
 - [Create a script in Analysis](../analysis/creating-analysis)
 - [Support Team / Custom integrations](https://help.tago.io/portal/en/newticket)
+
+## Related articles
+- [Device data management](https://help.tago.io/portal/en/kb/articles/device-data)
+- [Sending Data](https://help.tago.io/portal/en/kb/articles/34-sending-data)
+- [MQTT - Process data, Publish it and Subscribe to a topic](https://help.tago.io/portal/en/kb/articles/12-mqtt-process-data-publish-it-and-subscribe-to-a-topic)
+- [Defining Actions](https://help.tago.io/portal/en/kb/articles/122-defining-actions)
+- [Devices](https://help.tago.io/portal/en/kb/articles/3-devices)

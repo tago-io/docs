@@ -3,7 +3,6 @@ title: "Map filters"
 description: "This article explains how to apply filters to pins shown on the Map widget in order to reduce clutter and locate specific devices or variable values quickly."
 tags: ["tagoio"]
 ---
-
 You can filter the results displayed on a map to minimize the amount of information shown and help you find exactly what you're looking for.
 
 ## 1. Filter using pins' data
@@ -21,3 +20,8 @@ To add a filter, select the Add filter button. There are three ways to filter re
 Filtering by values will show all values for the selected variables, but only for the variables you selected.
 
 ![Filter options panel showing Add filter and Table config](/docs_imagem/tagoio/map-filters-2.png)
+
+Once the filter is enabled, a filter button will be displayed on the top left of the map widget.  
+![Filter button on map widget](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/NaiN2xdsVfHZNQF_8Xo4ZgD9iNLjUZEBWXsS1sYI_V8/filters3-Eq4-G9k.gif)
+
+> Keep in mind that list by value in the Filter table only shows the values from the variables, and not the latitude and longitude of positions, for example.

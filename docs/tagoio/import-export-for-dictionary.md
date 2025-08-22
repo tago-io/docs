@@ -3,7 +3,6 @@ title: "Import & Export for Dictionary"
 description: "A brief guide explaining how to import and export key/value pairs in a Dictionary on TagoIO, including supported file formats, typical use cases, import behavior, and where to get sample files."
 tags: ["tagoio"]
 ---
-
 The Dictionary provides a quick and easy way to import and export a Dictionary's key/value pairs via the two buttons at the top of a Dictionary page.
 
 ## Overview
@@ -32,6 +31,19 @@ TagoIO provides sample CSV and JSON files accessible from the Import and Export 
 - Import JSON
 - Get CSV sample
 - Get JSON sample
+
+### CSV and JSON file requirements
+**CSV**
+- Can optionally contain a header if the first row has *Key* on the first column and *Value* on the second column.
+- Only the first two columns will be used; values in other columns are ignored.
+- The key should follow the same format as on the TagoIO Admin: all caps, no spaces (use underscores), only alphanumeric characters.
+- When using a text editor to edit the file, it’s preferable to enclose each field in quotation marks (e.g. `"SOME_KEY","Value for the key"`). Quotation marks are required if the value contains a comma (e.g. `"SOME_KEY","Value for the key, extra content"`).
+
+**JSON**
+- Should be an array of objects containing a `key` and a `value` only; anything else is ignored.
+- The key should follow the same format as on the TagoIO Admin: all caps, no spaces (use underscores), only alphanumeric characters.
+
+> **Note:** The import and export functionality is available for users in the Scale plan.
 
 ## See also
 - See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language) for additional details about language handling and dictionary usage.

@@ -3,7 +3,6 @@ title: "Deleting Your Account"
 description: "This article explains how to permanently delete your TagoIO account and what happens during the deletion process. It also explains how to cancel a single profile or organization instead of the entire account."
 tags: ["tagoio"]
 ---
-
 ## How to delete your account
 
 If you need to cancel your account, go to Account Settings by accessing [My Account](https://admin.tago.io/account).

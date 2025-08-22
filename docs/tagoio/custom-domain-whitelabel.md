@@ -3,18 +3,23 @@ title: "Custom Domain & Whitelabel"
 description: "This article explains what the Custom Domain & Whitelabel add-on enables in the Run module, including setting a custom application URL and a custom email domain, plus links to related add-ons and documentation."
 tags: ["tagoio"]
 ---
-
 ## Overview
 Adding the Custom Domain & Whitelabel add-on unlocks additional branding and URL customization options for the Run module (see Run module documentation).
 
 ![TagoIO custom domain illustration](/docs_imagem/tagoio/custom-domain-whitelabel-2.gif)
 
-## What this add-on unlocks
-1. Ability to choose a custom URL for the application
-   - Example: If your company domain is mycompany.com, you can use a Run URL such as portal.mycompany.com.
+The Custom Domain & Whitelabel add‑on allows a higher level of brand engagement with your end‑users.
 
-2. Custom e-mail domain
-   - Allow outgoing emails from the platform to use your organization’s email domain.
+## What this add-on unlocks
+1. Ability to choose a custom URL for the application  
+   - Example: If your company domain is mycompany.com, you can use a Run URL such as portal.mycompany.com.
+2. Custom e‑mail domain  
+   - Allow outgoing emails from the platform to use your organization’s email domain. Emails sent to users will originate from your domain, not @tago.io.
+3. Removal of references to the TagoIO brand
+
+> **Note:** Custom Domain is not applied to API routes; traces of TagoIO can still be found when inspecting the page using Dev Tools.
+
+You can select this add‑on in your [Profile](https://help.tago.io/portal/en/kb/articles/198-profiles).
 
 ## Add-Ons (related)
 - Control Tower (see Control Tower documentation)

@@ -3,24 +3,25 @@ title: "Running Analysis as External using Deno"
 description: "This article explains how to run a TagoIO Analysis externally using the Deno runtime, covering installing Deno, creating an analysis TypeScript file, required permissions, and how to run the analysis with Deno."
 tags: ["tagoio", "analysis"]
 ---
-
 Analysis enables you to create powerful applications on TagoIO. When creating an Analysis, you can choose to run it on TagoIO or externally on your own infrastructure.
 
 Running an Analysis externally with Deno provides several advantages:
 
-1. Development Experience: Full IDE support with TypeScript, debugging capabilities, and Deno's built-in development tools.
-2. Security: Keep sensitive code on your infrastructure when compliance or security policies require it.
-3. Performance: Direct control over the execution environment and resource allocation.
+1. **Development Experience**: Full IDE support with TypeScript, debugging capabilities, and Deno's built-in development tools.
+2. **Security**: Keep sensitive code on your infrastructure when compliance or security policies require it.
+3. **Performance**: Direct control over the execution environment and resource allocation.
 
 ## 1. Install Deno
 
-Deno is a secure runtime for JavaScript and TypeScript built on V8, Rust, and Tokio. It includes TypeScript support out of the box, a built-in formatter and linter, and secure defaults. Learn more about Deno at https://deno.land.
+Deno is a secure runtime for JavaScript and TypeScript built on V8, Rust, and Tokio. It includes TypeScript support out of the box, a built‑in formatter and linter, and secure defaults. Learn more about [Deno](https://deno.land).
 
-Visit the Deno Installation Guide for platform-specific instructions: https://deno.land/manual/getting_started/installation
+Visit the Deno Installation Guide for platform‑specific instructions: <https://deno.land/manual/getting_started/installation>
 
 ## 2. Create your Analysis
 
-2-1. Create a new file for your Analysis. For this example, call it `analysis.ts`:
+### 2-1. Create a new file for your Analysis
+
+For this example, call it `analysis.ts`:
 
 ```ts
 import { Analysis, Device, Utils } from "jsr:@tago-io/sdk";
@@ -56,20 +57,47 @@ async function myAnalysis(context: any) {
       },
     ],
   });
+
+  // Optional debugging output
+  console.log("Analysis executed for device:", value.id);
 }
 ```
 
-2-2. Save the file and run the Analysis with Deno using the following command:
+> **Tip** – If you prefer to use the SDK’s `Analysis.use` helper, you can wrap your function like this:
+>
+> ```ts
+> Analysis.use(myAnalysis, { token: "MY-ANALYSIS-TOKEN-HERE" });
+> ```
+
+### 2-2. Save the file and run the Analysis with Deno
 
 ```bash
 deno run --allow-net --allow-env --allow-read --allow-write --allow-ffi --unstable analysis.ts
 ```
 
+If you want a more convenient way to start your script, create a `deno.json` configuration file:
+
+```jsonc
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-env analysis.ts"
+  }
+}
+```
+
+Then you can launch it with:
+
+```bash
+deno task start
+```
+
 ## 3. Configure Permissions
 
-From the Analysis editor in the TagoIO Console, open the Permissions tab and create the necessary token(s) for your external Analysis. Create token(s) that grant the scopes required by your script (for example, the ability to read device data and send data). Store these tokens securely; they will be used by your external runtime to authenticate with TagoIO.
+From the Analysis editor in the TagoIO Console, open the **Permissions** tab and create the necessary token(s) for your external Analysis. Create token(s) that grant the scopes required by your script (for example, the ability to read device data and send data). Store these tokens securely; they will be used by your external runtime to authenticate with TagoIO.
 
-(If you need to manage tokens, use the Analysis → Permissions section in the TagoIO Console.)
+(If you need to manage tokens, use the **Analysis → Permissions** section in the TagoIO Console.)
+
+> The `--allow-net` flag permits network requests to TagoIO APIs, and `--allow-env` allows reading environment variables. Add any additional permissions your script requires (e.g., `--allow-read`, `--allow-write`) as shown above.
 
 ## 4. Running your Analysis
 
@@ -87,16 +115,23 @@ $env:TAGOIO_TOKEN="YOUR_TOKEN_HERE"
 deno run --allow-net --allow-env --allow-read --allow-write --allow-ffi --unstable analysis.ts
 ```
 
-Ensure your script reads the token from the environment (for example, via `Deno.env.get("TAGOIO_TOKEN")` or let the SDK automatically use the environment token if supported).
+If you created a `deno.json` task, you can also start it with:
+
+```bash
+deno task start
+```
+
+> Ensure your script reads the token from the environment (for example, via `Deno.env.get("TAGOIO_TOKEN")`) or let the SDK automatically use the environment token if supported.  
+> After starting, you should see output indicating that the Analysis is connected and waiting for triggers.
 
 ## More Examples
 
 Refer to other Analysis examples and the Script Examples documentation in the TagoIO Knowledge Base for additional use cases and patterns.
 
 Related internal documentation:
-- Analysis Overview (refer to the Analysis section in the TagoIO docs)
-- Creating Analysis (refer to Creating Analysis)
-- Script Editor and Script Examples (see Script Editor and Script Examples)
-- Running Analysis as External using Node.JS (see the corresponding Node.js external analysis guide)
+- [Analysis Overview](https://help.tago.io/portal/en/kb/articles/29-analysis-overview) (refer to the Analysis section in the TagoIO docs)
+- [Creating Analysis](https://help.tago.io/portal/en/kb/articles/creating-analysis) (refer to Creating Analysis)
+- [Script Editor and Script Examples](https://help.tago.io/portal/en/kb/articles/script-editor-and-script-examples) (see Script Editor and Script Examples)
+- [Running Analysis as External using Node.JS](https://help.tago.io/portal/en/kb/articles/running-analysis-as-external-using-nodejs) (see the corresponding Node.js external analysis guide)
 
-Note: Keep internal links that begin with https://help.tago.io/ or https://admin.tago.io/ as they appear in the TagoIO documentation for cross-references.
+> Note: Keep internal links that begin with `https://help.tago.io/` or `https://admin.tago.io/` as they appear in the TagoIO documentation for cross‑references.

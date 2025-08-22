@@ -3,7 +3,6 @@ title: "SMS Service"
 description: "This article explains how SMS units are counted and billed in TagoIO, outlines limits and country coverage, and provides important notices about service discontinuation and short-number behavior."
 tags: ["tagoio"]
 ---
-
 ## Overview
 Each time an SMS message is successfully sent by an [Action](../actions/actions) or [Analysis](../analysis/analysis-overview) function, it is counted as one SMS unit. The service limit defined inside each [Profile](../account/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
 
@@ -17,9 +16,12 @@ Each SMS unit is limited to 140 characters.
 
 - SMS pricing is only valid for: United States, Australia, Germany, United Kingdom, Canada, Mexico, Brasil, Colombia, Japan, and Chile. For other countries, contact us.
 - SMS messages not used during the period will not be carried over to the next month.
+- For more information on pricing and FAQs, see the [Pricing Page](https://tago.io/pricing/).
 
 ## Short-number behavior
 > **Info:** The short number used to send messages is randomly selected by our SMS provider, Amazon SNS. Companies that use the same provider might share the same short number of origin, so users may receive SMS from other services that use the same sender number.
+
+Analysis is able to integrate with any SMS service; you can register a unique number for your own origin if desired.
 
 ## Related documentation
 - [Defining Actions](../actions/actions)
@@ -30,5 +32,3 @@ Each SMS unit is limited to 140 characters.
 - [E-mail Service](../services/e-mail-service)
 - [Data Records](../services/data-records-service)
 - [Data Output Service](../services/data-output-service)
-
-(Links above are internal documentation references; replace placeholders like link-to-... with the appropriate internal URLs if available.)

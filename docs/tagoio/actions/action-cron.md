@@ -3,7 +3,6 @@ title: "Action cron"
 description: "This article explains how to use and modify an Action cron in TagoIO, showing where to enter a cron expression and what each part of the interface means."
 tags: ["tagoio", "actions"]
 ---
-
 A cron is a command for scheduling a task to be executed periodically at a specified time in the future.
 
 Inside TagoIO, cron is used to define when a Schedule Action will be triggered. See [Schedule Action](../trigger-by-schedule).
@@ -26,13 +25,13 @@ The preview below the cron input shows:
 
 ## Cron fields in the Recurrence options panel
 
-1. Timezone selector  
+1. **Timezone selector**  
    - This field allows you to change the timezone where your cron will run.
 
-2. Cron input field  
-   - This field contains the cron data. You must insert a correctly formatted cron expression here; otherwise you won't be able to save your Action. Learn more about cron and its format.
+2. **Cron input field**  
+   - This field contains the cron data. You must insert a correctly formatted cron expression here; otherwise you won't be able to save your Action. Learn more about [cron](https://en.wikipedia.org/wiki/Cron) and its format.
 
-3. Visual representation / preview  
+3. **Visual representation / preview**  
    - This field displays a visual representation explaining when your action will run based on the cron. If your cron is not properly formatted, this field will disappear.
 
 ## Notes about formatting

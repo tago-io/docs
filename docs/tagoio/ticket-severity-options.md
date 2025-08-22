@@ -3,7 +3,6 @@ title: "Ticket Severity Options"
 description: "This article defines the TagoIO Support ticket severity levels and explains how to select the appropriate priority when opening a support ticket."
 tags: ["tagoio"]
 ---
-
 ## TagoIO Support Severity Level Definition
 
 In order for your ticket to receive the correct priority, select the appropriate severity level when opening the ticket. The TagoIO Support team recommends following these definitions to avoid delays.
@@ -19,7 +18,9 @@ A problem that severely impacts your use of the application in a production envi
 A problem where the service is functioning but its use in the production environment is severely reduced. A major feature or function is restricted, and because a procedural workaround is not available, your business is highly impacted.
 
 ### Severity 3 — Minor Impact
-A problem that causes partial degradation of system performance or a non-critical loss of application functionality. A workaround is available, and the system remains usable for normal business operations.
+A problem that causes partial degradation of system performance or a non‑critical loss of application functionality. A workaround is available, and the system remains usable for normal business operations.
 
 ### Severity 4 — No Business Impact / General Question
 Questions about configuration, feature requests, or general usage assistance. These issues do not affect production operations and have no significant business impact.
+
+Notice that response times are based on your current TagoIO plan and the Support plan associated with it. Learn more about [Support Plan](https://tago.io/support-plans/).

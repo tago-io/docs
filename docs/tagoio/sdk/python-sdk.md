@@ -3,7 +3,6 @@ title: "Python SDK"
 description: "This article provides quick installation and usage instructions for the TagoIO Python SDK, plus guidance on using remote imports within Python Analyses."
 tags: ["tagoio"]
 ---
-
 You can access the full SDK documentation at: https://py.sdk.tago.io/
 
 ## Installation
@@ -33,6 +32,9 @@ Python Analyses support remote imports. Import packages directly in your analysi
 ```python
 from tagoio_sdk import Analysis
 from pandas import DataFrame
+import requests
 ```
+
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](https://help.tago.io/portal/en/kb/articles/rate-limits).
 
 <!-- Image placeholder removed for build -->

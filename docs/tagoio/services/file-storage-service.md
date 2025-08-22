@@ -3,11 +3,12 @@ title: "File storage service"
 description: "This article explains how the TagoIO File storage service is measured and how storage limits affect profiles, plus where to increase limits and find pricing/FAQ information."
 tags: ["tagoio"]
 ---
-
 ## Overview
 Use the Files module to store any type of file (reports, videos, logos, background images, and more). File service usage is measured by the total size of all files stored across your profiles.
 
 > **Warning**
+>
+> ![Image 3: Alert](https://img.zohostatic.com/zde/static/images/exclamation.png)
 >
 > If any profile reaches its allocated storage limit, the system will block adding new files to that profile.
 

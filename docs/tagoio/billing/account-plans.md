@@ -3,12 +3,19 @@ title: "Account Plans"
 description: "This article explains TagoIO's account plans, how to select a plan, and where to find detailed feature and pricing information."
 tags: ["tagoio", "billing"]
 ---
-
 ## Overview
 
 TagoIO offers three account plans that allow you to use the platform's tools and capabilities for your application. Select your plan on the [My Billing](https://admin.tago.io/account/billing) page (accessible from your account).
 
 <!-- Image placeholder removed for build -->
+
+![Account Plans](https://help.tago.io/galleryDocuments/edbsn1b6752bdf6b46ccec1517323713a1d8765d7c3974162d47b4bf55ea59c89974ea022bf39d99aefd6ce5607d78c63d907?inline=true)
+
+### Plan Types
+
+- **Starter** – Basic plan for small projects.
+- **Scale** – Intermediate plan with higher limits and additional services.
+- **Enterprise** – Advanced plan for large organizations.
 
 ## Service limits
 

@@ -3,7 +3,6 @@ title: "Displaying Locations on a Map with TTN LoRaWAN"
 description: "This article explains how to send location data from The Things Network (TTN) to TagoIO so that device locations are displayed on a Map widget, including the required JSON payload format and the steps to add the 'location' variable to a dashboard map."
 tags: ["tagoio"]
 ---
-
 If you have a custom payload format decoder at TTN (The Things Network), you can send your payload variables directly to TagoIO.
 
 To display locations on a Map, your data needs to be sent inside a "location" field with the format shown below:

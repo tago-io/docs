@@ -3,14 +3,15 @@ title: "TagoRUN Mobile App"
 description: "This article describes the TagoRUN mobile app, its purpose, and where to download it. It also notes the option to deploy a custom-branded mobile app and links to related documentation."
 tags: ["tagorun"]
 ---
-
-<!-- Image placeholder removed for build -->
-
 Our TagoRUN mobile app is designed for end users to access applications created by companies and developers. It is easy to operate and supports a high level of customization.
+
+![TagoRUN Mobile App Screenshot](https://help.tago.io/galleryDocuments/edbsna8a745327600ce23063b0bda8f22b0386287d4ffcec6f8fad35817d4c330adb5fbea7a80cd924bf77064a3562d420404?inline=true)
 
 Download the TagoRUN app from the [AppStore](https://apps.apple.com/us/app/tagorun/id1506822629) or [GooglePlay](https://play.google.com/store/apps/details?id=com.tago.app).
 
 > Note: A custom mobile app can also be deployed with your brand.
+
+For more information on deploying a custom mobile app with your brand, see the [Custom Mobile App](https://help.tago.io/portal/en/kb/articles/203-custom-mobile-app) article.
 
 ## Getting Started (related guides)
 - [Run Theme](../tagoio/run-theme)
@@ -30,3 +31,4 @@ Download the TagoRUN app from the [AppStore](https://apps.apple.com/us/app/tagor
 - [Custom Settings](../tagoio/custom-settings)
 - [Using Dictionaries & Multi-language](link-to-using-dictionaries-and-multi-language)
 - [Run Theme](../tagoio/run-theme)
+- [TagoIO Public Roadmap](https://tago.io/roadmap)

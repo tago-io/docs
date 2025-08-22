@@ -3,7 +3,6 @@ title: "Notification Service"
 description: "This article explains how the Notification Service counts push notifications, the per-profile monthly limits, message length limits, and important billing/usage notes."
 tags: ["tagoio"]
 ---
-
 Each time a push notification message is sent by an Action or Analysis function, it is counted as one Notification unit.
 
 ## Overview

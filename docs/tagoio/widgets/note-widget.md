@@ -3,7 +3,6 @@ title: "Note Widget"
 description: "A brief guide to the Note Widget for creating formatted text in dashboards. Explains supported formatting, an image recommendation, and compatibility with dashboard types."
 tags: ["tagoio", "widgets"]
 ---
-
 ## Overview
 Note allows you to create text to be displayed in your dashboard. It accepts [markdown](../markdown-guide) formatted text, enabling you to use bold, italic, and list formatting.
 

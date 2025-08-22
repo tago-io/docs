@@ -3,7 +3,6 @@ title: "Sens'it with Sigfox"
 description: "This article explains how to integrate Sens'it v2 and v3 devices with TagoIO using the Sigfox backend, how to activate a Sens'it devkit, and how to add the device to TagoIO so its data can be displayed or processed."
 tags: ["tagoio"]
 ---
-
 TagoIO is fully integrated with Sens'it v2 and v3 devices. This integration uses the Sigfox backend and parses incoming messages to extract measured variables in real time. All data sent by your device will be available to display in widgets or to process in your Analysis.
 
 ![Sens'it + Sigfox + TagoIO Connectivity Diagram](/docs_imagem/tagoio/sensit-with-sigfox-2.png)
@@ -33,11 +32,29 @@ Sens'it + Sigfox + TagoIO Connectivity Diagram
 
 TagoIO — Select the device type (use the network filter to find Sigfox devices)
 
+## Dashboard Setup
+
+After adding the device, click on the newly created dashboard in the left menu and associate it with your Sens'it device. Turn the device on; data will arrive automatically into the bucket and be displayed in widgets.
+
+## Data Buckets
+
+Every time the device sends data, the parser is executed, the extracted data is sent to a bucket, and it becomes ready for display in dashboards or further analysis.
+
+## Custom Parsing (v2)
+
+If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](https://help.tago.io/portal/en/kb/articles/147-payload-parser) and the Sigfox developer guide for detailed information.
+
+## Advanced Features
+
+You can create **notifications** and advanced **scripts** as needed:
+- Notifications: [Notifications](https://help.tago.io/portal/en/kb/articles/11-notification)
+- Scripts / Analysis: [Analysis Overview](https://help.tago.io/portal/en/kb/articles/29-analysis-overview)
+
 ## Notes
 
 - The integration supports both Sens'it v2 and v3 devices.
 - Ensure your Sigfox devkit is properly activated before registering the device in TagoIO.
-- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console.
+- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](https://help.tago.io/portal/en/kb/articles/33-sigfox).
 
 References:
 - Sigfox Buy website: https://buy.sigfox.com/

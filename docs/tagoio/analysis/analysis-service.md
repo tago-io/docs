@@ -3,7 +3,6 @@ title: "Analysis Service"
 description: "This article explains how Analysis runtime is counted against a Profile limit in TagoIO, how to estimate monthly runtime, and which scripts are included in the accounting."
 tags: ["tagoio", "analysis"]
 ---
-
 ## Overview
 
 Every time an Analysis runs one script, its runtime duration (measured in 1-second increments) is counted against the limit in that specific Profile. This limit defines the total available runtime your Analyses can use inside TagoIO.
@@ -12,7 +11,9 @@ Every time an Analysis runs one script, its runtime duration (measured in 1-seco
 
 For example, if you have one Analysis that runs every day for 2 minutes and another that runs on only one day of the month for 5 minutes, you would need:
 
+```
 2 * 30 + 5 = 65 minutes/month
+```
 
 to run your Analyses. It is safer to add some extra time to account for time variation or for cases where your script becomes slower as it parses more data.
 

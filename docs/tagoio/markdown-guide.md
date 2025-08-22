@@ -3,7 +3,6 @@ title: "Markdown Guide"
 description: "This article summarizes the basic Markdown syntax supported in TagoIO, including emphasis, headers, lists, links, quotes, images, tables, and how to display code examples."
 tags: ["tagoio", "guide"]
 ---
-
 ## Emphasis
 
 Use Markdown to emphasize text:
@@ -13,6 +12,10 @@ Use Markdown to emphasize text:
 *italics*
 ~~strikethrough~~
 ```
+
+Additional emphasis examples:
+- Italic using underscores: `_italic_`
+- Strikethrough with four tildes: `~~~~strikethrough~~~~`
 
 ## Headers
 
@@ -85,6 +88,24 @@ Basic Markdown table example:
 | Paragraph | Text        |
 ```
 
+Additional tables from the legacy guide:
+
+```markdown
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John     | Doe      | Male     |
+| Mary     | Smith    | Female   |
+```
+
+_Or without aligning the columns..._
+
+```markdown
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John | Doe | Male |
+| Mary | Smith | Female |
+```
+
 ## Displaying code
 
 Inline code example:
@@ -97,6 +118,21 @@ Fenced code block example (JavaScript):
 function greet() {
   console.log("Hello, world!");
 }
+```
+
+Additional code examples from the legacy guide:
+
+Inline code:
+
+```markdown
+`var example = "hello!";`
+```
+
+Spanning multiple lines:
+
+```markdown
+var example = "hello!";
+alert(example);
 ```
 
 References:

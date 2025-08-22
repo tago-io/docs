@@ -3,7 +3,6 @@ title: "User Engagement"
 description: "This article explains how to use third-party analytics and engagement tools with TagoRUN, where to find the Integration module, and important cookie-consent considerations. It also links to tutorials for common integrations like Google Analytics and Zoho SalesIQ."
 tags: ["tagoio"]
 ---
-
 You can use third-party analytics and engagement tools to track and interact with your RUN users. The Integration module in the RUN session enables easy setup with popular solutions such as [Google Analytics](../google-analytics) and [Zoho SalesIQ](../zoho-salesiq).
 
 ![TagoRUN integrations screenshot](/docs_imagem/tagoio/user-engagement-2.png)
@@ -12,7 +11,7 @@ Some tools provide more than analytics and insights — they can add chat, bots,
 
 ## Cookie compliance
 
-Make sure you comply with cookie and privacy laws that apply to your users' region. Some tools provide built-in options to present disclaimers and collect user consent.
+Make sure you comply with cookie and privacy laws that apply to your users' region. Some tools provide built-in options to present DISCLAIMERS and collect user consent.
 
 ## Integrations / Tutorials
 

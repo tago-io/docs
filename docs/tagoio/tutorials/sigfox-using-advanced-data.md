@@ -3,7 +3,6 @@ title: "Sigfox using 'Advanced Data'"
 description: "This article explains how to configure a Sigfox callback using the Advanced Data option so TagoIO receives additional uplink information (e.g., SNR, RSSI, STATION). It provides the exact callback settings, headers, and request format required."
 tags: ["tagoio"]
 ---
-
 **Sigfox using 'Advanced Data'**
 
 The Advanced Data option allows you to receive additional information such as SNR, RSSI, STATION, and other metadata.  
@@ -33,4 +32,31 @@ Configure the `uplink` callback with the following settings:
 - Content-type: `application/json`
 - Body: Copy and paste the JSON text below
 
+```json
+[
+  {
+    "variable": "device",
+    "value": "{device}",
+    "serie": "{time}"
+  },
+  {
+    "variable": "data",
+    "value": "{data}",
+    "serie": "{time}"
+  },
+  {
+    "variable": "seqNumber",
+    "value": "{seqNumber}",
+    "serie": "{time}"
+  },
+  {
+    "variable": "location",
+    "location": {computedLocation},
+    "serie": "{time}"
+  }
+]
+```
+
 <!-- Image placeholder removed for build -->
+
+Learn more about [how to integrate with Sigfox](https://help.tago.io/portal/en/kb/articles/33-sigfox).
