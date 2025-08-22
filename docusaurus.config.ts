@@ -66,8 +66,14 @@ const config: Config = {
 	],
 
 	themeConfig: {
-		// Replace with your project's social card
 		image: "img/docusaurus-social-card.jpg",
+		algolia: {
+			appId: "8HPN5WF45N",
+			apiKey: "12cc282e7dcb99632185962ad2624a49",
+			indexName: "TagoIO Docs",
+			contextualSearch: true,
+			searchPagePath: "search",
+		},
 		navbar: {
 			title: "Docs",
 			logo: {
