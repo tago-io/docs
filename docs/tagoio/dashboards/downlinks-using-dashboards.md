@@ -4,7 +4,7 @@ description: "This article explains how to perform downlinks for LoRaWAN Class C
 tags: ["tagoio", "dashboards"]
 ---
 
-Learn how to perform downlinks for Class C or Class A devices using Analysis (link-to-analysis). This article also shows how to send downlink data from dashboards (link-to-dashboards). This approach can be used in the following cases:
+Learn how to perform downlinks for Class C or Class A devices using Analysis (../analysis/analysis-overview). This article also shows how to send downlink data from dashboards (../dashboards/creating-dashboard-tabs). This approach can be used in the following cases:
 
 ## Use cases
 - For devices with class C: immediately send a downlink message to the device.
@@ -20,14 +20,14 @@ http://admin.tago.io/template/5f513aabd4555600277f858c
 Caption: Sending downlink using dashboard. Click "Get Analysis Template" on the template page to install it in your account.
 
 ## After installing the template
-After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your device (link-to-device):
+After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your device (../devices/devices):
 
 ![Environment variables tab of the device](/docs_imagem/tagoio/downlinks-using-dashboards-2.png)
 
 Configure the environment variables according to the template instructions so the Analysis can correctly address and send downlink payloads to your device.
 
 ## Notes and references
-- "Analysis" and "dashboards" in this article refer to the corresponding TagoIO features (link-to-analysis, link-to-dashboards).
+- "Analysis" and "dashboards" in this article refer to the corresponding TagoIO features ([Analysis](../analysis/analysis-overview), [Dashboards](creating-dashboard-tabs)).
 - Template link: http://admin.tago.io/template/5f513aabd4555600277f858c
 
-For more detailed steps on setting up the Analysis or dashboard widgets to trigger downlinks, refer to the Analysis and Dashboards documentation (link-to-analysis, link-to-dashboards).
+For more detailed steps on setting up the Analysis or dashboard widgets to trigger downlinks, refer to the Analysis and Dashboards documentation ([Analysis](../analysis/analysis-overview), [Dashboards](creating-dashboard-tabs)).

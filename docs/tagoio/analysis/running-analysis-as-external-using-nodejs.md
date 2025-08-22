@@ -16,14 +16,14 @@ So, let's start with the instructions you need to get your analysis working in a
 
 ## 1. Install Node.js and NPM
 
-Node.js is a powerful, widely used runtime for running JavaScript outside the browser. It is non-blocking and event-driven, making it suitable for data-intensive real-time applications. Learn more about [node.js](link-to-nodejs).
+Node.js is a powerful, widely used runtime for running JavaScript outside the browser. It is non-blocking and event-driven, making it suitable for data-intensive real-time applications. Learn more about [node.js](https://nodejs.org/).
 
-Open the [Node.js Installation Guide](link-to-nodejs-installation-guide) for instructions on how to install NPM and Node.js.
+Open the [Node.js Installation Guide](https://nodejs.org/en/download/) for instructions on how to install NPM and Node.js.
 
 ## References and related documentation
 
-- See [Analysis](link-to-analysis) for an overview of creating and managing analyses in TagoIO.
-- See [Analysis-Builder](link-to-analysis-builder) for details on bundling and uploading scripts that use third-party packages.
+- See [Analysis](../analysis/analysis-overview) for an overview of creating and managing analyses in TagoIO.
+- See [Analysis-Builder](../analysis/console-for-debug) for details on bundling and uploading scripts that use third-party packages.
 
 On this page (for reference)
 - 1. Install Node.js and NPM

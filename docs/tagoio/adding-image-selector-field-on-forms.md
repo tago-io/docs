@@ -9,7 +9,7 @@ The Image Selector field type allows you to present an input where the user can 
 ## Example: Select the Device
 ![Image Selector example showing two selectable images: Temperature and Geolocation](/docs_imagem/tagoio/adding-image-selector-field-on-forms-2.jpg)
 
-Users need to click an image. The value you entered in the widget options will be stored in your data [device](link-to-device).
+Users need to click an image. The value you entered in the widget options will be stored in your data [device](../devices/devices).
 
 ## Widget options
 ![Image Selector widget options panel (Type, Label for variable, Default values, etc.)](/docs_imagem/tagoio/adding-image-selector-field-on-forms-2.jpg)

@@ -10,7 +10,7 @@ The Formula feature enables users to modify the visualization of data in specifi
 
 How it works
 ## How it works
-The system receives input data from a variable in your [Device](link-to-device), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
+The system receives input data from a variable in your [Device](../devices/devices), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
 
 Example flow:
 - Input value: 10
@@ -48,6 +48,6 @@ Notes
 
 Related sections
 ## Related sections
-- See [Simple Formulas](link-to-simple-formulas)
-- See [Dynamic Formulas](link-to-dynamic-formulas)
+- See [Simple Formulas](../widgets/widgets-overview)
+- See [Dynamic Formulas](../custom-settings)
 - For more details about device data, configuration, and related topics, refer to the Device and Widgets documentation within the TagoIO knowledge base.

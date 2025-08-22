@@ -17,15 +17,15 @@ To edit a specific section or element in the widget, hover over the desired elem
 ## On this page
 
 - Editing the form
-  1. Sections (link-to-sections)
-  2. Fields (link-to-fields)
-     - 2.1. "Data From" Field (link-to-data-from-field)
-  3. Fields type (link-to-fields-type)
+  1. Sections — See [Form Sections](../widgets/widget-configuration#form-sections)
+  2. Fields — See [Form Fields](../widgets/widget-configuration#form-fields)
+     - 2.1. "Data From" Field (../data-management/data-records)
+  3. Fields type — See [Field Types](../field-types-for-input-form)
 
 ## Related articles
 
-- [Input Form Widget](link-to-input-form-widget)
-- [Compose Widget](link-to-compose-widget)
-- [Map Widget](link-to-map-widget)
-- [Device List Widget](link-to-device-list-widget)
-- [Image Marker Widget](link-to-image-marker-widget)
+- [Input Form Widget](../widgets/input-form-widget)
+- [Compose Widget](../widgets/compose-widget)
+- [Map Widget](../widgets/map-widget)
+- [Device List Widget](../widgets/device-list-widget)
+- [Image Marker Widget](../widgets/image-marker-widget)

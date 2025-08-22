@@ -17,7 +17,7 @@ The following table widgets are available:
 
 ## Static Table
 
-A Static Table is a special kind of widget that does not use the traditional variable selector. Instead, you specify a fixed number of rows and columns. This option is useful when you do not want to display historical values for variables and only need a fixed layout of data. Learn more about [Static Table](link-to-static-table).
+A Static Table is a special kind of widget that does not use the traditional variable selector. Instead, you specify a fixed number of rows and columns. This option is useful when you do not want to display historical values for variables and only need a fixed layout of data. Learn more about [Static Table](widgets/static-table-widget).
 
 ## Dynamic Table
 

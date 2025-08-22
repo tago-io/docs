@@ -10,15 +10,15 @@ TagoIO implements multi-tenancy as a cost-effective, performance-enhancing appro
 
 The limits for each resource are determined by your specific plan. The table below shows the limits for each plan.
 
-> **Note:** Most of the limits below are applied per [Profile](link-to-profile).
+> **Note:** Most of the limits below are applied per [Profile](../account/profiles).
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
-| [Actions](link-to-actions) | 5 | 100 | 200 |
-| [Analysis](link-to-analysis) | 5 | 100 | 200 |
-| [Dashboard](link-to-dashboard) | 5 | 100 | 1,000 |
-| [Entity](link-to-entity) | 5 | 50 | 80 |
-| [Device](link-to-device) | 5 | 100 | 10,000 |
-| [Profile](link-to-profile) | 1 / account | 2 / account | 5 / account |
+| [Actions](../actions/actions) | 5 | 100 | 200 |
+| [Analysis](../analysis/analysis-overview) | 5 | 100 | 200 |
+| [Dashboard](../dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
+| [Entity](entities/entities) | 5 | 50 | 80 |
+| [Device](../devices/devices) | 5 | 100 | 10,000 |
+| [Profile](../account/profiles) | 1 / account | 2 / account | 5 / account |
 
 If you need more details about a specific resource type, follow the corresponding link in the table (links point to each resource's documentation).

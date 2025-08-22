@@ -4,10 +4,10 @@ description: "This article explains how to run an Analysis from an Action in Tag
 tags: ["tagoio", "actions", "analysis"]
 ---
 
-Actions can initiate scripts that run in the [Analysis](link-to-analysis). This lets you define exactly when your code will execute.
+Actions can initiate scripts that run in the [Analysis](../analysis/analysis-overview). This lets you define exactly when your code will execute.
 
-- For example, you can run an Analysis every time data is sent from a device or when data meets a certain condition. Learn more in [Trigger by Variable](link-to-trigger-by-variable).
-- You can trigger the Action when a resource change happens — for example, when a new Device is created or when a new RunUser is registered. Learn more in [Trigger by Resource](link-to-trigger-by-resource).
+- For example, you can run an Analysis every time data is sent from a device or when data meets a certain condition. Learn more in [Trigger by Variable](../trigger-by-variable).
+- You can trigger the Action when a resource change happens — for example, when a new Device is created or when a new RunUser is registered. Learn more in [Trigger by Resource](../trigger-by-resource).
 - You can also create a Schedule Action to trigger the Analysis at fixed time intervals.
 
 ## Setting up the Action

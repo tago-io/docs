@@ -6,7 +6,7 @@ tags: ["tagoio"]
 
 If you are going to create your own parser, you need to understand how context works.
 
-When you start writing your own [Payload Parser](link-to-payload-parser), you can use certain global variables in your code. Think of these global variables as variables you can access anywhere without explicitly creating them, similar to built-in keywords like module or process in Node.js.
+When you start writing your own [Payload Parser](../payload-parser/payload-parser), you can use certain global variables in your code. Think of these global variables as variables you can access anywhere without explicitly creating them, similar to built-in keywords like module or process in Node.js.
 
 > These global variables can vary from simple objects to complex functions or arrays. To see a list of the global variables available, check the Payload Parser tab in the device details.
 
@@ -22,4 +22,4 @@ Note: The list above shows the most commonly used globals visible in this articl
 
 ## See also
 
-- [Payload Parser](link-to-payload-parser)
+- [Payload Parser](../payload-parser/payload-parser)

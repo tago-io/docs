@@ -10,7 +10,7 @@ tags: ["tagoio"]
 
 TagoIO supports most Adeunis devices by providing integration with several LoRaWAN™ networks. TagoIO parses incoming payloads and extracts the measured variable values in real time, making all device data readily available for display or processing in your Analysis.
 
-See [Analysis](link-to-analysis) for working with and visualizing your incoming device data.
+See [Analysis](../analysis/analysis-overview) for working with and visualizing your incoming device data.
 
 ## Note
 
@@ -19,7 +19,7 @@ See [Analysis](link-to-analysis) for working with and visualizing your incoming 
 ## Adding a device
 
 To add an Adeunis device to TagoIO:
-1. Go to [Devices](link-to-devices).
+1. Go to [Devices](../devices/devices).
 2. Click "Add Devices".
 3. Filter the network by the LoRaWAN™ provider you will connect with.
 4. Pick your Adeunis device from the list.
@@ -30,14 +30,14 @@ The exact configuration steps will vary depending on the LoRaWAN™ provider you
 
 Select one of the following provider-specific integration guides to continue your setup:
 
-- [TTN (The Things Network)](link-to-ttn)
-- [Loriot](link-to-loriot)
-- [Everynet](link-to-everynet)
-- [Senet](link-to-senet)
+- [TTN (The Things Network)](../tutorials/the-things-network-lorawan)
+- [Loriot](../tutorials/loriot-lorawan)
+- [Everynet](../tutorials/everynet-lorawan)
+- [Senet](../tutorials/senet-network)
 
 Each provider link points to the corresponding TagoIO tutorial for configuring Adeunis devices with that network.
 
 ## Additional references
 
 - Check the device's "Payload Parser" tab to confirm or edit any parser scripts.
-- For device management and other configuration options, see the Devices documentation: [Devices](link-to-devices)
+- For device management and other configuration options, see the Devices documentation: [Devices](../devices/devices)

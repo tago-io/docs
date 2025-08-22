@@ -24,18 +24,18 @@ Video title: "Introducing TagoIO | The Cloud Platform for IoT"
 ## Related documentation
 
 Getting Started section:
-- [Getting Started](link-to-getting-started)
-- [How it works](link-to-how-it-works)
-- [Building Solutions](link-to-building-solutions)
-- [Deploying Applications](link-to-deploying-applications)
-- [Language Preferences](link-to-language-preferences)
-- [Tags System](link-to-tags-system)
-- [Secrets](link-to-secrets)
-- [Audit Log](link-to-audit-log)
+- [Getting Started](../getting-started)
+- [How it works](#) (this article)
+- [Building Solutions](../building-solutions)
+- [Deploying Applications](../deploying-applications)
+- [Language Preferences](../language-preferences)
+- [Tags System](../data-management/tags-system)
+- [Secrets](../secrets)
+- [Audit Log](../security/audit-log)
 
 Related articles:
-- [Map Widget](link-to-map-widget)
-- [Compose Widget](link-to-compose-widget)
-- [Image Marker Widget](link-to-image-marker-widget)
-- [Analysis Overview](link-to-analysis-overview)
-- [Defining Actions](link-to-defining-actions)
+- [Map Widget](../widgets/map-widget)
+- [Compose Widget](../widgets/compose-widget)
+- [Image Marker Widget](../widgets/image-marker-widget)
+- [Analysis Overview](../analysis/analysis-overview)
+- [Defining Actions](../actions/actions)

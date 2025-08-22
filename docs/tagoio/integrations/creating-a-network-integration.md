@@ -6,7 +6,7 @@ tags: ["tagoio", "integration"]
 
 ## Create a new integration
 
-To create a new integration, go to the [Network management page](link-to-network-management-page) and press the Add network button on the right side of the page:
+To create a new integration, go to the [Network management page](connector-overview) and press the Add network button on the right side of the page:
 
 ![Add network button](/docs_imagem/tagoio/creating-a-network-integration-2.png)
 

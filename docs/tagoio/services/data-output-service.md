@@ -4,7 +4,7 @@ description: "This article explains how Data Output transactions are counted in 
 tags: ["tagoio"]
 ---
 
-One transaction of Data Output is counted for each register read from a [device's](link-to-device) data storage. Learn more in [Getting Data](link-to-getting-data).
+One transaction of Data Output is counted for each register read from a [device's](../devices/devices) data storage. Learn more in [Getting Data](../data-management/data-export).
 
 You need to define the **Data Output limit per month** for each Profile where your applications are running.
 
@@ -19,8 +19,8 @@ If a device reads one variable and the response contains 100 registers every 10 
 
 > **Warning:** If the limit is exceeded, any attempt to read data (GET) will be denied for the rest of the month.
 
-Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](link-to-data-output-for-dashboards).
+Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](../services/data-output-dashboard).
 
-The system will also count Data Output when using the function "Export Data" from the [Device](link-to-device).
+The system will also count Data Output when using the function "Export Data" from the [Device](../devices/devices).
 
-> **Note:** Request limits are applied to a wide range of interactions within the platform, including activities such as reading and exporting data. Read more about our [Rate Limits](link-to-rate-limits).
+> **Note:** Request limits are applied to a wide range of interactions within the platform, including activities such as reading and exporting data. Read more about our [Rate Limits](../rate-limits-hard-limits).

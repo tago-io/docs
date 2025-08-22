@@ -4,11 +4,11 @@ description: "A brief guide to the Vertical Column Widget in TagoIO, explaining 
 tags: ["tagoio", "widgets"]
 ---
 
-Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](link-to-formula), choose whether series are stacked, and more.
+Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](../formula), choose whether series are stacked, and more.
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
-This widget also supports features such as [metadata](link-to-metadata) and [series](link-to-series), which can be set in your variable data.
+This widget also supports features such as [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
 
 ---
 

@@ -11,6 +11,6 @@ When people click the link you provide, they will be taken to a screen similar t
 ![Blueprint Dashboard Template — Sample Dashboard Template screenshot showing TagoIO logo and sample widgets](/docs_imagem/tagoio/distributing-dashboards-2.png)
 
 ## Contents
-- Creating & Editing a Template (See [Creating & Editing a Template](link-to-creating-editing-template))
-- Installing a Template (See [Installing a Template](link-to-installing-a-template))
-- Sharing a template with mockup data (See [Sharing a template with mockup data](link-to-sharing-template-with-mockup-data))
+- Creating & Editing a Template (See [Creating & Editing a Template](../dashboards/blueprint-dashboard))
+- Installing a Template (See [Installing a Template](../dashboards/creating-dashboards))
+- Sharing a template with mockup data (See [Sharing a template with mockup data](../simulator-data-stream))

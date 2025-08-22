@@ -19,14 +19,14 @@ You can integrate TagoCore with TagoIO to make the most of your Cloud account an
 - **Interact with your instances**  
   Activate actions, rename instances, run analyses that can merge TagoCore and TagoIO data, and perform many other management tasks.
 
-To connect your TagoCore with your TagoIO account, follow [our tutorial](link-to-TagoCore-tutorial) located in the TagoCore documentation center.
+To connect your TagoCore with your TagoIO account, follow [our tutorial](https://docs.tagocore.com/tagocore/getting-started/connect-tagoio) located in the TagoCore documentation center.
 
 ## Related documentation and resources
 
-- See [TagoCore](link-to-TagoCore) (main TagoCore article)
-- See [TagoCore Cluster](link-to-TagoCore-Cluster)
-- See [TagoCore Open Source documentation](link-to-TagoCore-Open-Source-documentation)
-- Tutorial: [our tutorial](link-to-TagoCore-tutorial) (connect TagoCore to TagoIO)
+- See [TagoCore](../tagocore/index) (main TagoCore article)
+- See [TagoCore Cluster](../tagocore/tagocore-cluster)
+- See [TagoCore Open Source documentation](../tagocore/tagocore-open-source-documentation)
+- Tutorial: [our tutorial](https://docs.tagocore.com/tagocore/getting-started/connect-tagoio) (connect TagoCore to TagoIO)
 
 Related articles (also in documentation):
 - TagoCore Open Source documentation
@@ -34,4 +34,4 @@ Related articles (also in documentation):
 
 <!-- Image placeholder: Learning Center banner -->
 
-Take a look at our updated roadmap here: (link-to-roadmap)
+Take a look at our updated roadmap here: (https://tago.io/roadmap)

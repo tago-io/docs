@@ -4,11 +4,11 @@ description: "This article explains how to use the Area Chart widget in TagoIO, 
 tags: ["tagoio", "widgets"]
 ---
 
-Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](link-to-formula), and customizing the line shape (step or smooth), among other options.
+Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](../formula), and customizing the line shape (step or smooth), among other options.
 
 ![Example area charts illustrating different styles and color schemes](/docs_imagem/tagoio/area-chart-widget-2.png)
 
-This widget also accepts features like [metadata](link-to-metadata) and [series](link-to-series), which can be set in your variable data.
+This widget also accepts features like [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

@@ -8,13 +8,13 @@ tags: ["tagoio"]
 
 TagoIO provides many pre-integrated devices and networks so you can quickly connect devices. When a new device or network is not yet integrated, you can create a custom Connector or network integration. Those custom solutions can be shared with members of your team or with any external Profile for their use.
 
-(Links in the original article: [Connector](link-to-connector), [network integration](link-to-network-integration), [Profile](link-to-profile).)
+(Links in the original article: [Connector](../integrations/connector-overview), [network integration](../integrations/connector-overview), [Profile](../account/profiles).)
 
 ## Sharing a custom Connector or Network
 
 To share a custom Connector or Network with another Profile:
 
-1. Go to the Integrations page. (See [Integrations page](link-to-integrations).)
+1. Go to the Integrations page. (See [Integrations page](../integrations/connector-overview).)
 2. Select the connector or network you want to share.
 3. Open the Share tab.
 4. Enter the Profile ID of the person you want to share it with.
@@ -36,5 +36,5 @@ If you want your connector or network to be accessible to all TagoIO users, you 
 
 ## Related references
 
-- Refer to the Integrations page for managing connectors and networks: [Integrations page](link-to-integrations)
-- For information on creating Connectors or network integrations, see the Connector and network integration documentation: [Connector](link-to-connector), [network integration](link-to-network-integration)
+- Refer to the Integrations page for managing connectors and networks: [Integrations page](../integrations/connector-overview)
+- For information on creating Connectors or network integrations, see the Connector and network integration documentation: [Connector](../integrations/connector-overview), [network integration](../integrations/connector-overview)

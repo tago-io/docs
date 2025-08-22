@@ -8,7 +8,7 @@ tags: ["tagoio"]
 
 TagoIO's MQTT broker does not natively support the standard MQTT "retain" feature. However, you can implement an equivalent workaround by using TagoIO Analysis and Actions to store the last message published to a topic and resend it when a new client subscribes.
 
-This approach involves using the [Analysis](link-to-analysis) and [Actions](link-to-actions) features to store the last message published to a topic and then resend it when a new client subscribes.
+This approach involves using the [Analysis](../analysis/analysis-overview) and [Actions](../actions/actions) features to store the last message published to a topic and then resend it when a new client subscribes.
 
 ## Setting Up Message on Subscribing
 
@@ -33,8 +33,8 @@ For more advanced or customized retain-like behavior (for example, complex paylo
 - Stores the last message for a topic (for example, in a TagoIO bucket or variable), and
 - Publishes the stored message to the topic when a subscription event is detected.
 
-Refer to the Analysis documentation for details on creating scripts and integrating them with Actions and MQTT: see [Analysis](link-to-analysis).
+Refer to the Analysis documentation for details on creating scripts and integrating them with Actions and MQTT: see [Analysis](../analysis/analysis-overview).
 
 Additional references:
-- Actions documentation: [Actions](link-to-actions)
-- MQTT Relay feature documentation: [MQTT Relay](link-to-mqtt-relay)
+- Actions documentation: [Actions](../actions/actions)
+- MQTT Relay feature documentation: [MQTT Relay](mqtt)

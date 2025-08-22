@@ -88,7 +88,6 @@ const sidebars: SidebarsConfig = {
           label: 'Devices',
           collapsed: true,
           items: [
-            'tagoio/devices/index',
             'tagoio/devices/devices',
             'tagoio/devices/adding-devices-with-connectors',
             'tagoio/devices/blueprint-devices-entities',

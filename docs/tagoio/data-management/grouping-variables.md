@@ -4,7 +4,7 @@ description: "This article explains how to synchronize multiple variables sent b
 tags: ["tagoio"]
 ---
 
-It is expected that most [devices](link-to-devices) will send more than one variable at a given time. When visualizing the data, users often want those variables synchronized for each sample period.
+It is expected that most [devices](../devices/devices) will send more than one variable at a given time. When visualizing the data, users often want those variables synchronized for each sample period.
 
 For example, a device may send GPS location, speed, and voltage variables at a certain frequency. If those variables are acquired and sent with exactly the same timestamp, the user can visualize all three together at each time sample. However, if there is any delay between them (timestamps of the variables do not match exactly), the system cannot group them correctly "by time".
 
@@ -14,4 +14,4 @@ To solve this, include a `group` field in the JSON for each sample. A batch of a
 
 When visualizing these batches of data combined in a Table or Map, select the option "Group by group" to view variables grouped by their `group` value rather than by timestamp.
 
-To learn how to add the `group` field in the JSON, see the [API documentation](link-to-api-documentation).
+To learn how to add the `group` field in the JSON, see the [API documentation](https://docs.tago.io/api/).

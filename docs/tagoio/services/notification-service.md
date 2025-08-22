@@ -18,4 +18,4 @@ Each time a push notification message is sent by an Action or Analysis function,
 
 > **Warning:** Push notifications not used during the period will not be carried over to the next month.
 
-More information about pricing and FAQs can be found on the [Pricing Page](link-to-pricing-page).
+More information about pricing and FAQs can be found on the [Pricing Page](https://tago.io/pricing).

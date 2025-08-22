@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 
 ## Accessing your account settings
-To manage your account details, click the top-right menu in the TagoIO interface and select the option [My Account](link-to-my-account).
+To manage your account details, click the top-right menu in the TagoIO interface and select the option [My Account](editing-accounts-details).
 
 <!-- Image placeholder removed for build -->
 

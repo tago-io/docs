@@ -29,15 +29,15 @@ On this page:
 - 5. Blueprint User List for TagoRUN
 
 Related Table Widgets:
-- [Tables](link-to-tables)
-- [Device List Widget](link-to-device-list-widget)
-- [Dynamic Table Widget](link-to-dynamic-table-widget)
-- [Entity Table Widget](link-to-entity-table-widget)
-- [Static Table Widget](link-to-static-table-widget)
-- [User List Widget](link-to-user-list-widget)
+- [Tables](../tables)
+- [Device List Widget](../widgets/device-list-widget)
+- [Dynamic Table Widget](../widgets/dynamic-table-widget)
+- [Entity Table Widget](../widgets/entity-table-widget)
+- [Static Table Widget](../widgets/static-table-widget)
+- [User List Widget](user-list-widget-)
 
 Related Articles:
-- [Device List Widget](link-to-device-list-widget-article)
-- [Tables](link-to-tables-article)
-- [Dynamic Table Widget](link-to-dynamic-table-widget-article)
-- [Map Widget](link-to-map-widget-article)
+- [Device List Widget](device-list-widget)
+- [Tables](../tables)
+- [Dynamic Table Widget](dynamic-table-widget)
+- [Map Widget](map-widget)

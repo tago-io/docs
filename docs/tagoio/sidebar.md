@@ -11,4 +11,4 @@ You can customize your sidebar settings by accessing the Run module and selectin
 
 <!-- Image placeholder removed for build -->
 
-> **Note:** It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](link-to-run-themes).
+> **Note:** It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](run-theme).

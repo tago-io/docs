@@ -10,7 +10,7 @@ All chart-type widgets in TagoIO can be configured to display reference lines wi
 
 ## Supported widgets
 
-The widgets that support this feature include the [Area Chart](link-to-area-chart), [Line Chart](link-to-line-chart), [Horizontal Bar](link-to-horizontal-bar), [Vertical Column](link-to-vertical-column), and [Multiple Charts](link-to-multiple-charts).
+The widgets that support this feature include the [Area Chart](../widgets/area-chart-widget), [Line Chart](../widgets/line-chart-widget), [Horizontal Bar](../widgets/horizontal-bar-widget), [Vertical Column](../widgets/vertical-column-widget), and [Multiple Charts](../widgets/multiple-charts-widget).
 
 ## Adding reference lines to your chart
 

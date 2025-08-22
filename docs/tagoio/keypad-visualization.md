@@ -46,9 +46,9 @@ You can create and configure extra buttons to appear alongside the keypad digits
 
 ## See also
 
-- See [Keypad Widget](link-to-keypad-widget)
-- See [Creating Keypad Widgets](link-to-creating-keypad-widgets)
-- See [Keypad Visualization](link-to-keypad-visualization)
-- See [Keypad Data Manipulation](link-to-keypad-data-manipulation)
+- See [Keypad Widget](../widgets/keypad-widget)
+- See [Creating Keypad Widgets](../widgets/keypad-widget#creating-your-own)
+- See [Keypad Visualization](#) (this article)
+- See [Keypad Data Manipulation](../keypad-data-manipulation)
 
 Breadcrumb (documentation path): Knowledge Base / TagoIO / Widgets / Keypad Widget

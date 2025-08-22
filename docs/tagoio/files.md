@@ -16,9 +16,9 @@ File storage is commonly used to send and receive files from devices, store data
 
 ## See also
 
-- See [Uploading Files](link-to-uploading-files) for instructions on uploading files to TagoIO.
+- See [Uploading Files](uploading-files) for instructions on uploading files to TagoIO.
 - Related documentation:
-  - [Services Overview](link-to-services-overview)
-  - [Device data management](link-to-device-data-management)
-  - [Dashboard Overview](link-to-dashboard-overview)
-  - [Analysis Overview](link-to-analysis-overview)
+  - [Services Overview](services/services-overview)
+  - [Device data management](data-management/data-management)
+  - [Dashboard Overview](dashboards/creating-dashboards)
+  - [Analysis Overview](analysis/analysis-overview)

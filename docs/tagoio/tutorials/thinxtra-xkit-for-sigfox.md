@@ -10,7 +10,7 @@ This tutorial explains how to connect the Xkit from Thinxtra with TagoIO. The Si
 
 ![Thinxtra Xkit board](/docs_imagem/tagoio/thinxtra-xkit-for-sigfox-2.png)
 
-Here is a diagram of the Xkit board's pinout. For more details, click [here](link-to-xkit-pinout).
+Here is a diagram of the Xkit board's pinout. For more details, click [here](https://www.thinxtra.com/xkit/).
 
 ## Pinout Diagram
 

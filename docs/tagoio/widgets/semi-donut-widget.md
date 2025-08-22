@@ -8,7 +8,7 @@ Using data from multiple variables, the Semi Donut widget automatically produces
 
 ![Three examples of semi-donut charts with different styles](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-This widget also accepts features like [metadata](link-to-metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](../data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 
@@ -22,8 +22,8 @@ To add the widget to your dashboard, select the Semi Donut widget from the widge
 
 ## Related articles
 
-- [Semi Pie Widget](link-to-semi-pie-widget)  
-- [Pie Widget](link-to-pie-widget)  
-- [Grain Bin Widget](link-to-grain-bin-widget)  
-- [Cylinder Widget](link-to-cylinder-widget)  
-- [Solid Widget](link-to-solid-widget)
+- [Semi Pie Widget](../widgets/semi-pie-widget)  
+- [Pie Widget](../widgets/pie-widget)  
+- [Grain Bin Widget](../widgets/grain-bin-widget)  
+- [Cylinder Widget](../widgets/cylinder-widget)  
+- [Solid Widget](../widgets/solid-widget)

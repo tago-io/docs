@@ -4,7 +4,7 @@ description: "This article summarizes TagoIO's RESTful API capabilities, the com
 tags: ["tagoio", "api"]
 ---
 
-We provide a powerful set of RESTful API endpoints and documentation that's used by Analysis behind the scenes to perform requests to TagoIO. See [Restful API documentation](link-to-restful-api-documentation) and [Analysis](link-to-analysis) for more details.
+We provide a powerful set of RESTful API endpoints and documentation that's used by Analysis behind the scenes to perform requests to TagoIO. See [Restful API documentation](https://docs.tago.io/api/) and [Analysis](../analysis/analysis-overview) for more details.
 
 ## What you can do with the API
 The RESTful API supports a wide range of operations, including (but not limited to):
@@ -22,4 +22,4 @@ To use the RESTful API you must provide a token. There are three different types
 - `Network-token` — Performs data requests through a network connection; only useful if you are using your own network.
 
 ## Rate limits
-When executing requests to TagoIO, there is a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](link-to-rate-limits).
+When executing requests to TagoIO, there is a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).

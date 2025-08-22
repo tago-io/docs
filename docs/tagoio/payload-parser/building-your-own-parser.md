@@ -10,7 +10,7 @@ In this tutorial, you will learn how to convert (parse) a raw payload sent by a 
 
 You can create parsers for devices that are not listed in the Devices registry (for example, when using a Custom device connector). You can also perform additional calculations on the data after the system runs the parser provided by the selected connector.
 
-If you want to learn more about how data packages are sent to TagoIO, see [Integration](link-to-integration).
+If you want to learn more about how data packages are sent to TagoIO, see [Integration](../integrations/connector-overview).
 
 ---
 
@@ -18,9 +18,9 @@ If you want to learn more about how data packages are sent to TagoIO, see [Integ
 
 We provide three tutorials to help you understand how the Payload Parser works:
 
-- [In-Depth Guide for Payload Parser](link-to-in-depth-guide-for-payload-parser)
-- [LoRaWAN/Sigfox Payload Parser Tutorial](link-to-lorawan-sigfox-payload-parser-tutorial)
-- [MQTT Payload Parser Tutorial](link-to-mqtt-payload-parser-tutorial)
+- [In-Depth Guide for Payload Parser](../payload-parser/payload-parser-overview#in-depth-guide)
+- [LoRaWAN/Sigfox Payload Parser Tutorial](../payload-parser/lorawan-sigfox-payload-parser-tutorial)
+- [MQTT Payload Parser Tutorial](../payload-parser/mqtt-payload-parser-tutorial)
 
 For a step-by-step visual guide to payload parsing, watch this video:
 

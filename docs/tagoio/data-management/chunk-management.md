@@ -8,13 +8,13 @@ The Chunk Management feature lets you view and manage the data of Immutable devi
 
 ## Accessing Chunk Management
 
-Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](link-to-immutable-devices) and [Device](link-to-device-module) for details on device types and the Device module.
+Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](../devices/devices#immutable-devices) and [Device](../devices/devices) for details on device types and the Device module.
 
 <!-- Image placeholder removed for build -->
 
 ## Export chunks to TagoIO Files
 
-By selecting one or multiple chunks, you can export them to your TagoIO Files in CSV format to create a backup of your data. During this process, the chunks are added to a queue and will become available at the file address once processed. This operation can take several minutes depending on the amount of data being exported. See [TagoIO Files](link-to-tagoio-files) for more on file storage and access.
+By selecting one or multiple chunks, you can export them to your TagoIO Files in CSV format to create a backup of your data. During this process, the chunks are added to a queue and will become available at the file address once processed. This operation can take several minutes depending on the amount of data being exported. See [TagoIO Files](../files) for more on file storage and access.
 
 ### File address template
 

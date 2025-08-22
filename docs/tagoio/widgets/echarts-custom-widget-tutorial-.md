@@ -6,7 +6,7 @@ tags: ["tagoio", "widgets", "tutorial"]
 
 In this tutorial, we will guide you through creating a Ring Gauge custom widget that displays multiple variables simultaneously in an interesting format.
 
-To achieve this, we leverage the [ECharts library](link-to-echarts-library), a robust and highly customizable charting library that simplifies the development of interactive and visually appealing data visualizations. Using ECharts can significantly speed up development and help ensure the custom widget is both efficient and aesthetically pleasing.
+To achieve this, we leverage the [ECharts library](https://echarts.apache.org/), a robust and highly customizable charting library that simplifies the development of interactive and visually appealing data visualizations. Using ECharts can significantly speed up development and help ensure the custom widget is both efficient and aesthetically pleasing.
 
 <!-- Image placeholder removed for build -->
 
@@ -32,5 +32,5 @@ Refer to the in-article examples and code snippets (when available) to implement
 Once your widget is ready and tested locally, this section explains how to upload and deploy the widget files to the TagoIO Files area so your custom widget becomes available in the platform.
 
 Additional references
-- See [Ring Gauge](link-to-ring-gauge) for more on this widget type.
-- See [ECharts library](link-to-echarts-library) for ECharts documentation and examples.
+- See [Ring Gauge](ring-gauge-widget) for more on this widget type.
+- See [ECharts library](https://echarts.apache.org/) for ECharts documentation and examples.

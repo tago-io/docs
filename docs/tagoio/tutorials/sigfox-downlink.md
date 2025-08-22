@@ -7,13 +7,13 @@ tags: ["tagoio"]
 TagoIO is ready to receive data from and send data to Sigfox devices. The downlink is used to send data back to the device every time it checks in — the data to be sent should be prepared prior to that check-in. This article explains how to set up a downlink.
 
 > ⚠️ It's essential to carefully follow all the steps outlined in the Sigfox network documentation in order to send downlinks. The completion of Step D is crucial so that TagoIO can accurately authenticate your downlink.  
-> See [Sigfox network documentation](link-to-sigfox-network-documentation)
+> See [Sigfox network documentation](../integrations/connector-overview)
 
 ![Downlink diagram](/docs_imagem/tagoio/sigfox-downlink-2.png)
 
 Downlink Diagram
 
-Information about uplink can be found in this [tutorial](link-to-uplink-tutorial).
+Information about uplink can be found in this [tutorial](../tutorials/sigfox-uplink).
 
 ## Downlink Setup
 

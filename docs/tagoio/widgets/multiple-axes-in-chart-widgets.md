@@ -5,11 +5,11 @@ tags: ["tagoio", "widgets"]
 ---
 
 All chart-type widgets in TagoIO can be configured to display more than one Y-axis. The widgets that support this feature include:
-- [Area Chart](link-to-area-chart)
-- [Line Chart](link-to-line-chart)
-- [Horizontal Bar](link-to-horizontal-bar)
-- [Vertical Column](link-to-vertical-column)
-- [Multiple Charts](link-to-multiple-charts)
+- [Area Chart](../widgets/area-chart-widget)
+- [Line Chart](../widgets/line-chart-widget)
+- [Horizontal Bar](../widgets/horizontal-bar-widget)
+- [Vertical Column](../widgets/vertical-column-widget)
+- [Multiple Charts](../widgets/multiple-charts-widget)
 
 <!-- Image placeholder removed for build -->
 
@@ -28,4 +28,4 @@ Notes:
 - Use the Y-axis settings to configure labels, units, and axis position (left/right) for each axis.
 
 References:
-- See the individual widget documentation for specific examples and additional settings: [Area Chart](link-to-area-chart), [Line Chart](link-to-line-chart), [Horizontal Bar](link-to-horizontal-bar), [Vertical Column](link-to-vertical-column), [Multiple Charts](link-to-multiple-charts).
+- See the individual widget documentation for specific examples and additional settings: [Area Chart](../widgets/area-chart-widget), [Line Chart](../widgets/line-chart-widget), [Horizontal Bar](../widgets/horizontal-bar-widget), [Vertical Column](../widgets/vertical-column-widget), [Multiple Charts](../widgets/multiple-charts-widget).

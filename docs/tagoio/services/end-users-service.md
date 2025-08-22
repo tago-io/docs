@@ -14,12 +14,12 @@ When a profile hits its allocated end-user limit, no additional users can be add
 
 ## Increasing end-user capacity
 
-Increase the number of end-users allowed in your application by [Allocating Resources to profiles](link-to-allocating-resources-to-profiles).
+Increase the number of end-users allowed in your application by [Allocating Resources to profiles](../services/allocating-services-to-profiles).
 
-For more information about pricing and FAQs, see the [Pricing Page](link-to-pricing-page).
+For more information about pricing and FAQs, see the [Pricing Page](https://tago.io/pricing).
 
 ## Related links
 
-- [User Management](link-to-user-management)
-- [Allocating Resources to profiles](link-to-allocating-resources-to-profiles)
-- [Pricing Page](link-to-pricing-page)
+- [User Management](../notifications/notifications-for-users)
+- [Allocating Resources to profiles](../services/allocating-services-to-profiles)
+- [Pricing Page](https://tago.io/pricing)

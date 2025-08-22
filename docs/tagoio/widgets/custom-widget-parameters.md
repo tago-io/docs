@@ -16,7 +16,7 @@ Note: You can specify up to 20 parameters.
 
 ## Usage in code
 
-Before reading this section, you should read the [Custom Widget tutorial](link-to-custom-widget-tutorial) to understand how the widget code works.
+Before reading this section, you should read the [Custom Widget tutorial](custom-widget-development) to understand how the widget code works.
 
 In your code, the parameters are received in the onStart function, for example:
 

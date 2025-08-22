@@ -14,4 +14,4 @@ To access the Frame Settings, open the widget's configuration page and find the 
 <!-- Image placeholder removed for build -->
 
 ## Related documentation
-- Widget header: See [widget's header](link-to-widget-header) for details on what the header contains and how header visibility affects your widget.
+- Widget header: See [widget's header](widgets/widgets-overview#widget-headers) for details on what the header contains and how header visibility affects your widget.

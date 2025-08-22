@@ -12,7 +12,7 @@ The Control Tower is an add-on designed to enhance your profile by providing acc
 
 These features let you obtain comprehensive information about your device's activities and the consumption of your Hard Limits. That understanding of your application's performance helps you prevent reaching limits that could interrupt your application's operation due to account limitations. Control Tower was developed to improve the reliability, scalability, and efficiency of your application.
 
-Activate the Control Tower add-on on your [Billing page](link-to-billing-page), or check out our [Pricing Page](link-to-pricing-page).
+Activate the Control Tower add-on on your [Billing page](../billing/account-plans), or check out our [Pricing Page](https://tago.io/pricing).
 
 ## View your device statistics
 
@@ -23,10 +23,10 @@ You can monitor the statistics by going to your Devices module on your Admin and
 <!-- Image placeholder removed for build -->
 
 Links and references in this article:
-- "add-on" — see [add-on documentation](link-to-add-on)
-- "Hard Limits (Rate Limits)" — see [Rate Limits (Hard limits)](link-to-rate-limits)
-- "Device" — see [Devices](link-to-devices)
-- "account limitations" — see [account limitations](link-to-account-limitations)
-- "Billing page" — [Billing page](link-to-billing-page)
-- "Pricing Page" — [Pricing Page](link-to-pricing-page)
-- "Devices module" and "Admin" — see [Devices module in Admin](link-to-devices) and [Admin documentation](link-to-admin)
+- "add-on" — see [add-on documentation](../add-ons-overview)
+- "Hard Limits (Rate Limits)" — see [Rate Limits (Hard limits)](../rate-limits-hard-limits)
+- "Device" — see [Devices](../devices/devices)
+- "account limitations" — see [account limitations](../billing/account-plans#limitations)
+- "Billing page" — [Billing page](../billing/account-plans)
+- "Pricing Page" — [Pricing Page](https://tago.io/pricing)
+- "Devices module" and "Admin" — see [Devices module in Admin](../devices/devices) and [Admin documentation](getting-started)

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 
 ## Overview
-You can get an overview of your account's costs for the current month by clicking on the [Summary](link-to-summary) tab. This view helps you track the costs of sub-accounts (profiles) that you may use to bill your own customers.
+You can get an overview of your account's costs for the current month by clicking on the [Summary](billing-summary) tab. This view helps you track the costs of sub-accounts (profiles) that you may use to bill your own customers.
 
 ## Views
 This page consists of three views:

@@ -4,11 +4,11 @@ description: "This article explains how to define Targets within a policy in the
 tags: ["tagoio"]
 ---
 
-You should define Targets in each policy that are used inside the [Access Management](link-to-access-management) module (AM). Targets can be users or things (for example, [scripts](link-to-scripts)).
+You should define Targets in each policy that are used inside the [Access Management](../security/access-management) module (AM). Targets can be users or things (for example, [scripts](../analysis/analysis-overview)).
 
 > Targets are to whom or to what you are giving the permissions.
 
-Currently, you can select [Run Users](link-to-run-users) and [Analysis](link-to-analysis) as Targets.
+Currently, you can select [Run Users](../services/end-users-service) and [Analysis](../analysis/analysis-overview) as Targets.
 
 ![Targets configuration example](/docs_imagem/tagoio/defining-targets-2.png)
 
@@ -17,7 +17,7 @@ You can add more Targets of the same type as needed. Multiple Targets are combin
 - "Apply the permissions below for the users using this tag OR this tag OR ..."
 
 ## See also
-- Access Management: [Access Management](link-to-access-management)
-- Creating a Policy: [Creating a Policy](link-to-creating-a-policy)
-- Defining Permissions: [Defining Permissions](link-to-defining-permissions)
-- User Management: [User Management](link-to-user-management)
+- Access Management: [Access Management](../security/access-management)
+- Creating a Policy: [Creating a Policy](../security/access-management#creating-policies)
+- Defining Permissions: [Defining Permissions](../security/defining-permissions)
+- User Management: [User Management](../account/user-management)

@@ -34,5 +34,5 @@ TagoIO provides sample CSV and JSON files accessible from the Import and Export 
 - Get JSON sample
 
 ## See also
-- See [Using Dictionaries & Multi-language](link-to-using-dictionaries-&-multi-language) for additional details about language handling and dictionary usage.
-- See [Learn more](link-to-learn-more) for further information about the Dictionary Pairs configuration and substitution behavior.
+- See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language) for additional details about language handling and dictionary usage.
+- See [Learn more](../dictionaries) for further information about the Dictionary Pairs configuration and substitution behavior.

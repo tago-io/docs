@@ -4,7 +4,7 @@ description: "This article explains how to configure environment variables for T
 tags: ["tagoio"]
 ---
 
-Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the context.environment global object. See [Analysis](link-to-analysis) for more about Analyses.
+Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the context.environment global object. See [Analysis](../analysis/analysis-overview) for more about Analyses.
 
 <!-- Image placeholder removed for build -->
 

@@ -32,16 +32,16 @@ Your own platform is deployed in seconds, no need to build and pay for an additi
 
 - [Branding and Deploying Applications](link-to-branding-and-deploying-applications)
 - [TagoRun](link-to-tagorun)
-- [Run Theme](link-to-run-theme)
-- [Sidebar](link-to-sidebar)
-- [Navigation bar](link-to-navigation-bar)
-- [Custom Settings](link-to-custom-settings)
+- [Run Theme](../tagoio/run-theme)
+- [Sidebar](../tagoio/sidebar)
+- [Navigation bar](../tagoio/navigation-bar)
+- [Custom Settings](../tagoio/custom-settings)
 - [TagoRUN Mobile App](link-to-tagorun-mobile-app)
 - [User Management](link-to-user-management)
 - [Notifications for Users](link-to-notifications-for-users)
-- [Security and Protection for RUN users](link-to-security-and-protection-for-run-users)
+- [Security and Protection for RUN users](../tagoio/account/security-and-protection-for-run-users)
 - Show More
 
 ## Related Articles
 
-- [Navigation bar](link-to-navigation-bar)
+- [Navigation bar](../tagoio/navigation-bar)

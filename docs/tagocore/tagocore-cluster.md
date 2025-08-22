@@ -16,4 +16,4 @@ Every instance in a cluster is kept in continuous synchronization with the other
 - Reduced manual effort when updating or maintaining TagoCore deployments
 
 ## Further reading
-To learn more about Clusters and Instances, see the [TagoCore documentation center](link-to-tagocore-documentation-center).
+To learn more about Clusters and Instances, see the [TagoCore documentation center](https://docs.tagocore.com/).

@@ -14,7 +14,7 @@ Dials are one of the simplest and most useful widgets. They make it easy to visu
 
 ![Dial gauge example showing a circular dial with numeric temperature value](/docs_imagem/tagoio/gauge-overview-2.png)
 
-Learn more about the [Dial Gauge](link-to-dial-gauge).
+Learn more about the [Dial Gauge](widgets/dial-widget).
 
 ---
 

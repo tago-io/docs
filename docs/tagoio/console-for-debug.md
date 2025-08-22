@@ -27,4 +27,4 @@ Use console.log in your Analysis script to write to the console:
 console.log('Debug message:', myVariable);
 ```
 
-Learn more about [Analysis](link-to-analysis).
+Learn more about [Analysis](../analysis/analysis-overview).

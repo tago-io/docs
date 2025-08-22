@@ -6,11 +6,11 @@ tags: ["tagoio"]
 
 ## Overview
 
-Each time an Email is successfully sent by the [Action](link-to-Action) or [Analysis](link-to-Analysis) function, it is counted as one unit. This limit defines the maximum number of Emails that can be sent from that [Profile](link-to-Profile) during a one-month period. Unused Emails in a billing cycle will not be carried over to the next cycle.
+Each time an Email is successfully sent by the [Action](../actions/actions) or [Analysis](../analysis/analysis-overview) function, it is counted as one unit. This limit defines the maximum number of Emails that can be sent from that [Profile](../account/profiles) during a one-month period. Unused Emails in a billing cycle will not be carried over to the next cycle.
 
 ## Important notice
 
-Attention: As anticipated last year, starting on January 1st, 2025, TagoIO will no longer offer native E-mail services. You can still send E-mails by integrating with external providers such as AWS SES directly. Read more: [Read more](link-to-read-more).
+Attention: As anticipated last year, starting on January 1st, 2025, TagoIO will no longer offer native E-mail services. You can still send E-mails by integrating with external providers such as AWS SES directly. Read more: [External Email Integration Guide](https://docs.tago.io/api/external-integrations/email).
 
 ## Limits and warnings
 
@@ -19,24 +19,24 @@ Attention: As anticipated last year, starting on January 1st, 2025, TagoIO will 
 
 ## More information
 
-More information, examples, and FAQs can be found on the [Pricing Page](link-to-Pricing-Page).
+More information, examples, and FAQs can be found on the [Pricing Page](https://tago.io/pricing).
 
 ## Related documentation
 
-- [Services Overview](link-to-Services-Overview)
-- [Analysis Service](link-to-Analysis-Service)
-- [Data Input Service](link-to-Data-Input-Service)
-- [Data Records](link-to-Data-Records)
-- [Data Output Service](link-to-Data-Output-Service)
-- [E-mail Service](link-to-E-mail-Service)
-- [End-Users Service](link-to-End-Users-Service)
-- [File Storage Service](link-to-File-Storage-Service)
-- [Notification Service](link-to-Notification-Service)
-- [SMS Service](link-to-SMS-Service)
+- [Services Overview](../services/services-overview)
+- [Analysis Service](../services/analysis-service)
+- [Data Input Service](../services/data-input-service)
+- [Data Records](../services/data-records-service)
+- [Data Output Service](../services/data-output-service)
+- [E-mail Service](#) (this article)
+- [End-Users Service](../services/end-users-service)
+- [File Storage Service](../services/file-storage-service)
+- [Notification Service](../services/notification-service)
+- [SMS Service](../services/sms-service)
 
 Related articles:
-- [SMS Service](link-to-SMS-Service)
-- [Notification Service](link-to-Notification-Service)
-- [Services Overview](link-to-Services-Overview)
-- [Running Analysis via Action](link-to-Running-Analysis-via-Action)
-- [Defining Actions](link-to-Defining-Actions)
+- [SMS Service](../services/sms-service)
+- [Notification Service](../services/notification-service)
+- [Services Overview](../services/services-overview)
+- [Running Analysis via Action](../actions/running-analysis-via-action)
+- [Defining Actions](../actions/actions)

@@ -11,19 +11,19 @@ Your mobile app will be completely white-label, so when your clients find and do
 <!-- Image placeholder removed for build -->
 
 ## Pricing
-Check the pricing for the Custom mobile add-on on your [Profile & Teams](link-to-profile-teams) page.
+Check the pricing for the Custom mobile add-on on your [Profile & Teams](../account/profiles) page.
 
-> Note: There is a one-time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](link-to-contact-us) for details.
+> Note: There is a one-time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact) for details.
 
 ## Learn more
-Learn about the other add-ons on the [Add-ons](link-to-add-ons) page.
+Learn about the other add-ons on the [Add-ons](./add-ons-overview) page.
 
 ## Related documentation
-- [Control Tower](link-to-control-tower)
-- [Add-ons Overview](link-to-add-ons-overview)
-- [Custom Domain & Whitelabel](link-to-custom-domain-whitelabel)
-- [Custom Domain Configuration](link-to-custom-domain-configuration)
-- [Managing your account with the TagoIO Mobile App](link-to-managing-account-mobile)
-- [Account Plans](link-to-account-plans)
-- [ECharts Custom Widget Tutorial](link-to-echarts-custom-widget-tutorial)
-- [Custom Widget](link-to-custom-widget)
+- [Control Tower](./control-tower)
+- [Add-ons Overview](./add-ons-overview)
+- [Custom Domain & Whitelabel](./custom-domain-whitelabel)
+- [Custom Domain Configuration](./custom-domain-configuration)
+- [Managing your account with the TagoIO Mobile App](../account/mobile-app-account-management)
+- [Account Plans](../billing/account-plans)
+- [ECharts Custom Widget Tutorial](../widgets/echarts-custom-widget-tutorial)
+- [Custom Widget](../widgets/custom-widget)

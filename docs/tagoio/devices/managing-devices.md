@@ -6,7 +6,7 @@ tags: ["tagoio", "devices"]
 
 Using the account token, you can manage your devices through API requests. You can create, edit, delete, and retrieve information about devices.
 
-> **Note:** When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](link-to-api-documentation)
+> **Note:** When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
 
 ## Create
 

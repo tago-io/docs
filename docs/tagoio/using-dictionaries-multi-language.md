@@ -10,7 +10,7 @@ Use the Dictionary to deploy applications to end-users (RUN users) in any langua
 
 > End-users are able to switch languages within their accounts. By default, the system will use the language identified by their browsers. If the language is not available in the application, the system will default to the Fallback language.
 >
-> You can create multiple dictionaries and use them in your applications with the Free/Starter plans. However, to use multiple languages in your Run environment other than the Fallback language, you need to upgrade to the Scale plan. Check out our Pricing page (link-to-pricing).
+> You can create multiple dictionaries and use them in your applications with the Free/Starter plans. However, to use multiple languages in your Run environment other than the Fallback language, you need to upgrade to the Scale plan. Check out our Pricing page [Pricing](https://tago.io/pricing).
 
 ## Screenshot
 ![End-users language selector](/docs_imagem/tagoio/using-dictionaries-multi-language-2.png)
@@ -19,7 +19,7 @@ End-users can select the language in their applications.
 
 ## Importing and exporting dictionaries
 
-To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](link-to-import-export-for-dictionary).
+To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](../import-export-for-dictionary).
 
 ## How to use dictionary keys
 
@@ -45,13 +45,13 @@ To make the process easier and faster, you can import and export dictionary file
 
 ## Dictionaries (related docs)
 
-- [Using Dictionaries & Multi-language](link-to-using-dictionaries-multi-language)  
-- [Import & Export for Dictionary](link-to-import-export-for-dictionary)
+- [Using Dictionaries & Multi-language](#) (this article)  
+- [Import & Export for Dictionary](../import-export-for-dictionary)
 
 ## Related articles
 
-- [Dictionaries](link-to-dictionaries)  
-- [Security and Protection for RUN users](link-to-security-and-protection-for-run-users)  
-- [Sidebar](link-to-sidebar)  
-- [Custom Settings](link-to-custom-settings)  
-- [Navigation bar](link-to-navigation-bar)
+- [Dictionaries](../dictionaries)  
+- [Security and Protection for RUN users](../security/security-and-protection-for-run-users)  
+- [Sidebar](../sidebar)  
+- [Custom Settings](../tagoio/custom-settings)  
+- [Navigation bar](../tagoio/navigation-bar)

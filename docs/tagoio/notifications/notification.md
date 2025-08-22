@@ -19,7 +19,7 @@ There are four types of notifications:
   Used by the TagoIO backend to notify users about the system or your account. Example: "There is a new application in the Healthcare industry that you may be interested in."
 
 - TagoRUN User  
-  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](link-to-run-users-notifications).
+  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](../notifications/notifications-for-users).
 
 ## Viewing notifications
 When you log in to your account, you can see all your notifications in the top-right corner of the admin page.
@@ -35,12 +35,12 @@ On the Notifications window, you can:
 - Use the search field to refine results.
 
 ## Related sections
-- See [Notifications from Other Users](link-to-notifications-from-other-users)  
-- See [Notifications from Applications](link-to-notifications-from-applications)
+- See [Notifications from Other Users](../notifications/notifications-for-users)  
+- See [Notifications from Applications](../notifications/notifications-for-users)
 
 ## Related articles
-- See [Defining Actions](link-to-defining-actions)  
-- See [Notification Service](link-to-notification-service)  
-- See [Running Analysis via Action](link-to-running-analysis-via-action)  
-- See [Compose Widget](link-to-compose-widget)  
-- See [Tags System](link-to-tags-system)
+- See [Defining Actions](../actions/actions)  
+- See [Notification Service](../services/notification-service)  
+- See [Running Analysis via Action](../actions/actions)  
+- See [Compose Widget](../widgets/compose-widget)  
+- See [Tags System](../data-management/tags-system)

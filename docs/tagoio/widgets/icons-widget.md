@@ -26,8 +26,8 @@ Use conditions to change the icon appearance (for example, colors or visibility)
 
 ## Related Articles
 
-- See [Map Widget](link-to-map-widget)  
-- See [Image Marker Widget](link-to-image-marker-widget)  
-- See [Compose Widget](link-to-compose-widget)  
-- See [Custom Widget](link-to-custom-widget)  
-- See [Formula](link-to-formula)
+- See [Map Widget](../widgets/map-widget)  
+- See [Image Marker Widget](../widgets/image-marker-widget)  
+- See [Compose Widget](../widgets/compose-widget)  
+- See [Custom Widget](../widgets/custom-widget)  
+- See [Formula](../formula)

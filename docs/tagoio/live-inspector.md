@@ -4,9 +4,9 @@ description: "The Live Inspector is a developer tool in TagoIO used to debug par
 tags: ["tagoio"]
 ---
 
-The live inspector is a tool for developers to debug [parser scripts](link-to-parser-scripts) and monitor traffic to and from [devices](link-to-devices).
+The live inspector is a tool for developers to debug [parser scripts](payload-parser/payload-parser) and monitor traffic to and from [devices](../devices/devices).
 
-To access the live inspector, go to the Device section (see [Device](link-to-device) documentation), select the device, and click the Live Inspector tab.
+To access the live inspector, go to the Device section (see [Device](../devices/devices) documentation), select the device, and click the Live Inspector tab.
 
 ![Device page showing the Live Inspector tab highlighted](/docs_imagem/tagoio/live-inspector-2.png)
 

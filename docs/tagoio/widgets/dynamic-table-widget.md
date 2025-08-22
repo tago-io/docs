@@ -9,7 +9,7 @@ Dynamic tables are tables that populate dynamically as your data arrives while k
 ## Editing the dynamic table
 You can customize the widget color, apply formulas to columns, show a time column, enable a control column, and more.
 
-> Note: This widget also accepts features like [metadata](link-to-metadata) and [series](link-to-series), which can be set in your variable data.
+> Note: This widget also accepts features like [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
 
 ![Dynamic Table Widget editor screenshot](/docs_imagem/tagoio/dynamic-table-widget-2.gif)
 
@@ -22,16 +22,16 @@ You can customize the widget color, apply formulas to columns, show a time colum
   - 5. Editing data
 
 ## Table Widgets
-- [Tables](link-to-tables)
-- [Device List Widget](link-to-device-list-widget)
-- [Dynamic Table Widget](link-to-dynamic-table-widget)
-- [Entity Table Widget](link-to-entity-table-widget)
-- [Static Table Widget](link-to-static-table-widget)
-- [User List Widget](link-to-user-list-widget)
+- [Tables](../tables)
+- [Device List Widget](../widgets/device-list-widget)
+- [Dynamic Table Widget](#) (this article)
+- [Entity Table Widget](../widgets/entity-table-widget)
+- [Static Table Widget](../widgets/static-table-widget)
+- [User List Widget](../widgets/user-list-widget-.md)
 
 ## Related Articles
-- [Tables](link-to-tables)
-- [Entity Table Widget](link-to-entity-table-widget)
-- [Static Table Widget](link-to-static-table-widget)
+- [Tables](../tables)
+- [Entity Table Widget](../widgets/entity-table-widget)
+- [Static Table Widget](../widgets/static-table-widget)
 
 Breadcrumb context: Knowledge Base / TagoIO / Widgets / Table Widgets

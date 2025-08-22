@@ -8,14 +8,24 @@ Device is the link between your external things and the data in your account. To
 
 Devices are managed through your [Admin](https://admin.tago.io/) interface, where users can access detailed information about each device, including its ID and other settings.
 
-> ℹ️ Our [TagoIO API documentation](link-to-tagoio-api-documentation) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
+> ℹ️ Our [TagoIO API documentation](../api/api-overview) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
 
 ## Adding devices
 
-Devices are connected to TagoIO using [Connectors](link-to-connectors), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step-by-step tutorial on how to add a device, see the [Getting Started](link-to-getting-started) article.
+Devices are connected to TagoIO using [Connectors](../integrations/connector-overview), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step-by-step tutorial on how to add a device, see the [Getting Started](../getting-started) article.
 
-> ℹ️ Learn more about [Connectors](link-to-connectors) here.
+> ℹ️ Learn more about [Connectors](../integrations/connector-overview) here.
 
 ## Device type and data storage
 
 Once you create a device, it will store all the data sent by your sensors. During the creation process, you will be prompted to select the type of data storage to be used. There are two types of data storage you can choose from.
+
+## See also
+
+- [Adding devices with connectors](./adding-devices-with-connectors)
+- [Device Token](./device-token)
+- [Device Data Management](./device-data-management)
+- [Device Emulator](./device-emulator)
+- [Getting Started](../getting-started)
+- [API Overview](../api/api-overview)
+- [Connector Overview](../integrations/connector-overview)

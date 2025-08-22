@@ -5,11 +5,11 @@ tags: ["tagoio"]
 ---
 
 ## Overview
-The trigger type "Trigger by Variable" allows you to execute an [Action](link-to-action) when data is sent to an MQTT topic.
+The trigger type "Trigger by Variable" allows you to execute an [Action](actions/actions) when data is sent to an MQTT topic.
 
-TagoIO provides its own MQTT broker that pushes data to clients when new messages are published to the topics they are subscribed to. To learn more about the MQTT infrastructure used by TagoIO, see [MQTT](link-to-mqtt).
+TagoIO provides its own MQTT broker that pushes data to clients when new messages are published to the topics they are subscribed to. To learn more about the MQTT infrastructure used by TagoIO, see [MQTT](mqtt).
 
-> Note: The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](link-to-mqtt-relay) feature.
+> Note: The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](integrations/mqtt-relay) feature.
 
 ## Trigger categories
 There are 2 (two) categories for this trigger type:

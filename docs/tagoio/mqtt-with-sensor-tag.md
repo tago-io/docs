@@ -13,11 +13,11 @@ The SensorTag communicates with a mobile device over Bluetooth. Texas Instrument
 ![SensorTag to TagoIO flow diagram](/docs_imagem/tagoio/mqtt-with-sensor-tag-2.png)
 
 ## Learn more
-Learn more about the SensorTag CC2650 and how to get started: [SensorTag CC2650 and how to get started](link-to-sensortag-cc2650)
+Learn more about the SensorTag CC2650 and how to get started: [SensorTag CC2650 and how to get started](https://www.ti.com/tool/CC2650STK)
 
 ## What this example does
 - All sensor data from the SensorTag will be posted to TagoIO.
-- Sensor data can be visualized on a TagoIO dashboard in real time: [dashboard](link-to-dashboard).
+- Sensor data can be visualized on a TagoIO dashboard in real time: [dashboard](../dashboards/creating-dashboard-tabs).
 - This example uses the hardware version tested by the authors.
 
 ## Sensors included

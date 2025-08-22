@@ -8,9 +8,9 @@ tags: ["tagoio"]
 
 A Data Record represents the variables stored and sent by devices. Each register consists of a variable and all metadata associated with it. The profile's data record limit defines the maximum storage capacity for the selected Profile at all times.
 
-Learn more about [Allocating Services to profiles](link-to-allocating-services-to-profiles).
+Learn more about [Allocating Services to profiles](../services/allocating-services-to-profiles).
 
-Fields such as [location](link-to-location) that contain latitude/longitude as part of a variable should be considered part of the same register. The same rule applies to metadata fields.
+Fields such as [location](data-manipulation#location) that contain latitude/longitude as part of a variable should be considered part of the same register. The same rule applies to metadata fields.
 
 ## Key rule
 
@@ -39,11 +39,11 @@ All fields and metadata stored with a given variable are counted together as a s
 
 ## Notes
 
-- The "variable" and its associated metadata (for example, [metadata](link-to-metadata)) are counted together as one register regardless of how many fields are present.
+- The "variable" and its associated metadata (for example, [metadata](../data-management/metadata)) are counted together as one register regardless of how many fields are present.
 - Location stored inside the variable (lat/lng) is considered part of the same register.
 - The data record limit is enforced per Profile and defines the maximum number of registers stored for that Profile.
 
 ## Related documentation
 
-- See [Allocating Services to profiles](link-to-allocating-services-to-profiles)
+- See [Allocating Services to profiles](../services/allocating-services-to-profiles)
 - Refer to the Targets documentation or other relevant TagoIO service articles for additional context.

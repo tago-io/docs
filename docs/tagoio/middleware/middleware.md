@@ -8,22 +8,22 @@ tags: ["tagoio"]
 
 Through a TagoIO middleware, companies can connect devices that use their own protocols. The middleware acts as a protocol converter from any transport type (for example, TCP/IP, UDP, etc.) to the standard TagoIO APIs.
 
-For more detailed steps on implementing middleware, see [Creating a Networks Integration](link-to-creating-a-networks-integration).
+For more detailed steps on implementing middleware, see [Creating a Networks Integration](../integrations/creating-networks-integration).
 
-Also review the tutorial available in the TagoIO [community](link-to-community) to get your network up and running.
+Also review the tutorial available in the TagoIO [community](https://community.tago.io) to get your network up and running.
 
 ## Related documentation
 
 General:
-- [Network Integration](link-to-network-integration)
-- [Creating a Network integration](link-to-creating-a-network-integration)
-- [Authorization](link-to-authorization)
-- [Serial Number Format](link-to-serial-number-format)
-- [Middleware](link-to-middleware)
+- [Network Integration](../integrations/connector-overview)
+- [Creating a Network integration](../integrations/creating-networks-integration)
+- [Authorization](../security/authorization)
+- [Serial Number Format](../serial-number-format)
+- [Middleware](../middleware/middleware)
 
 Related Articles:
-- [Network Integration](link-to-network-integration-article)
-- [Everynet LoRaWAN](link-to-everynet-lorawan)
-- [Running Analysis as External using Deno](link-to-running-analysis-deno)
-- [Profiles](link-to-profiles)
-- [Device data management](link-to-device-data-management)
+- [Network Integration](../integrations/connector-overview)
+- [Everynet LoRaWAN](../tutorials/everynet-lorawan)
+- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
+- [Profiles](../account/profiles)
+- [Device data management](../devices/device-data-management)

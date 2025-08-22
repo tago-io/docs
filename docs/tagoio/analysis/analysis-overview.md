@@ -18,21 +18,21 @@ Analyses can be triggered by Actions (schedule or condition), by Dashboard UI el
 <!-- Image placeholder removed for build -->
 
 ## On this page
-- Environments (see [Environments](link-to-environments))
+- Environments (see [Environments](../analysis/analysis-environments))
 - Runtimes
-  - Getting Started (see [Getting Started with Runtimes](link-to-runtimes-getting-started))
+  - Getting Started (see [Getting Started with Runtimes](../analysis/analysis-service#runtimes))
 
 ## Analysis (related documentation)
-- [Analysis Overview](link-to-analysis-overview)
-- [Creating Analysis](link-to-creating-analysis)
-- [Script Editor](link-to-script-editor)
-- [Script Examples](link-to-script-examples)
-- [Console for Debug](link-to-console-for-debug)
-- [Environment Variables](link-to-environment-variables)
-- [Distributing analysis](link-to-distributing-analysis)
-- [Running Analysis as External using Node.JS](link-to-running-external-nodejs)
-- [Running Analysis as External using Deno](link-to-running-external-deno)
+- [Analysis Overview](../analysis/analysis-overview)
+- [Creating Analysis](../analysis/creating-analysis)
+- [Script Editor](../script-editor)
+- [Script Examples](../analysis/script-examples)
+- [Console for Debug](../console-for-debug)
+- [Environment Variables](../environment-variables)
+- [Distributing analysis](../analysis/distributing-analysis)
+- [Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-nodejs)
+- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
 
 ## Related Articles
-- [Running Analysis as External using Deno](link-to-running-external-deno)
-- [Creating Analysis](link-to-creating-analysis)
+- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
+- [Creating Analysis](../analysis/creating-analysis)

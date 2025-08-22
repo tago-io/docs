@@ -8,10 +8,10 @@ tags: ["tagoio"]
 TagoIO accepts most major credit cards for payment.
 
 ## Invoice payments and bank transfers
-Making payments by invoice through [ACH](link-to-ACH) (internal link) or [wire transfer](link-to-wire-transfer) (internal link) is available on request for Starter and Scale yearly plans.
+Making payments by invoice through ACH or wire transfer is available on request for Starter and Scale yearly plans.
 
 ## Yearly plans and purchasing credits
-TagoIO also offers a yearly plan with [flexible terms](link-to-flexible-terms) (internal link). These terms allow companies to purchase credits that can be used for any service during the plan period.
+TagoIO also offers a yearly plan with [flexible terms](../billing/account-plans#yearly-plans). These terms allow companies to purchase credits that can be used for any service during the plan period.
 
 ## Contact to arrange payment
-Please [contact us](link-to-contact-us) (internal link) to arrange payment by invoice or to purchase credits.
+Please [contact us](https://tago.io/contact) to arrange payment by invoice or to purchase credits.

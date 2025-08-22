@@ -5,16 +5,16 @@ tags: ["tagoio"]
 ---
 
 On the signup page, click the "Forgot your password?" link and enter your email address. We'll send instructions to that email to reset your password.  
-(See [signup page](link-to-signup-page) and the "Forgot your password?" link.)
+(See [signup page](https://admin.tago.io/signup) and the "Forgot your password?" link.)
 
 ## Want to change your password?
 
 To change your existing password:
-- Go to [My Account](link-to-my-account).
+- Go to [My Account](https://admin.tago.io/account).
 - Select the "Account Settings" tab.
 - Click the "Change your password" button and follow the prompts.
 
 ## Notes
 
 - The instructions above apply to resetting credentials in the TagoIO admin interface.
-- If you need to reset or change a password for yourself or your users in the TagoRun application, manage those accounts via [User Management](link-to-user-management).
+- If you need to reset or change a password for yourself or your users in the TagoRun application, manage those accounts via [User Management](../security/access-management).

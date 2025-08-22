@@ -35,20 +35,20 @@ Fix:
 - Always declare your variables before use with const, let, or var. This prevents the "not defined" error and avoids creating accidental global variables.
 
 ## See also (Payload Parser-related documentation)
-- [Connector Overview](link-to-connector-overview)
-- [Parser vs. Analysis Comparison](link-to-parser-vs-analysis-comparison)
-- [Building your own parser](link-to-building-your-own-parser)
-- [Payload Parser - Context & global variables](link-to-context-and-global-variables)
-- [Filtering Out Variables with Parser Code](link-to-filtering-out-variables)
-- [Publishing, updating and accessing decoders](link-to-publishing-updating-accessing-decoders)
-- [Sharing Connectors & Networks](link-to-sharing-connectors-and-networks)
-- [Metadata](link-to-metadata)
-- [Payload Parser Troubleshooting](link-to-payload-parser-troubleshooting)
-- [Payload Parser timeUtils Library](link-to-payload-parser-timeutils-library)
+- [Connector Overview](../integrations/connector-overview)
+- [Parser vs. Analysis Comparison](../payload-parser/payload-parser-overview#parser-vs-analysis)
+- [Building your own parser](../payload-parser/building-your-own-parser)
+- [Payload Parser - Context & global variables](../payload-parser/context-and-global-variables)
+- [Filtering Out Variables with Parser Code](../payload-parser/filtering-out-variables-with-parser-code)
+- [Publishing, updating and accessing decoders](../payload-parser/publishing-updating-accessing-decoders)
+- [Sharing Connectors & Networks](../integrations/sharing-connectors-and-networks)
+- [Metadata](../data-management/metadata)
+- [Payload Parser Troubleshooting](payload-parser-troubleshooting)
+- [Payload Parser timeUtils Library](payload-parser-timeutils)
 
 ## Related Articles
-- [Publishing, updating and accessing decoders](link-to-publishing-updating-accessing-decoders)
-- [Payload Parser](link-to-payload-parser)
-- [Payload Parser timeUtils Library](link-to-payload-parser-timeutils-library)
+- [Publishing, updating and accessing decoders](publishing-updating-accessing-decoders)
+- [Payload Parser](payload-parser)
+- [Payload Parser timeUtils Library](payload-parser-timeutils)
 
 <!-- Image placeholder removed for build -->

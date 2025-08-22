@@ -4,9 +4,9 @@ description: "This article explains how to publish, update, and share custom dec
 tags: ["tagoio"]
 ---
 
-TagoIO provides a list of [pre-integrated IoT devices](link-to-pre-integrated-iot-devices) for easy connection. However, due to the wide variety of manufacturers and ongoing sensor development, you might not find a connector for your specific device.
+TagoIO provides a list of [pre-integrated IoT devices](../integrations/connector-overview) for easy connection. However, due to the wide variety of manufacturers and ongoing sensor development, you might not find a connector for your specific device.
 
-In such cases, you can [create your own connector](link-to-create-your-own-connector) and optionally make it available to all TagoIO users. This allows users and manufacturers to submit decoders that convert raw payloads to the TagoIO format. This collaborative approach facilitates the creation of new connectors, bug fixes, and updates to existing ones, improving the overall IoT integration ecosystem.
+In such cases, you can [create your own connector](../payload-parser/building-your-own-parser) and optionally make it available to all TagoIO users. This allows users and manufacturers to submit decoders that convert raw payloads to the TagoIO format. This collaborative approach facilitates the creation of new connectors, bug fixes, and updates to existing ones, improving the overall IoT integration ecosystem.
 
 ## Making your connector public
 If you wish to make your connector accessible to all TagoIO users, request to make your connector public by submitting a Pull Request to our GitHub repository:

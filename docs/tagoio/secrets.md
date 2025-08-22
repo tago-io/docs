@@ -6,7 +6,7 @@ tags: ["tagoio"]
 
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 
-Unlike regular Environment Variables (see [Environment Variables](link-to-environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](link-to-analysis-docs)) and use them in some Actions (see [Actions documentation](link-to-actions-docs)).
+Unlike regular Environment Variables (see [Environment Variables](../environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](../analysis/analysis-overview)) and use them in some Actions (see [Actions documentation](../actions/actions)).
 
 To start using secrets, open your Admin panel (https://admin.tago.io/), navigate to the Account menu, and select "Secrets".
 

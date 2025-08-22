@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 
 ## Overview
-The TagoIO admin interface used for developing applications is displayed only in English. However, users who access your RUN application can view it in any language you configure in your [Dictionary](link-to-dictionary). These users are referred to as "RUN users."
+The TagoIO admin interface used for developing applications is displayed only in English. However, users who access your RUN application can view it in any language you configure in your [Dictionary](dictionaries). These users are referred to as "RUN users."
 
 ## Most commonly used languages
 Some of the most commonly used languages for RUN applications include:
@@ -21,4 +21,4 @@ Some of the most commonly used languages for RUN applications include:
 ## How end-users choose a language
 All end-users can select their preferred language from the "Visualization Preferences" tab on the Account Setting page.
 
-> **Warning:** Make sure that your current plan allows the [deployment of multi-language](link-to-deployment-of-multi-language) for your end-users.
+> **Warning:** Make sure that your current plan allows the [deployment of multi-language](using-dictionaries-multi-language) for your end-users.

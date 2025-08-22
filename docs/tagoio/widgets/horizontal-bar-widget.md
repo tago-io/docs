@@ -4,11 +4,11 @@ description: "A brief guide to the Horizontal Bar Widget that explains what it d
 tags: ["tagoio", "widgets"]
 ---
 
-Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](link-to-formula), decide whether bars are stacked, and configure other visual options.
+Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](../formula), decide whether bars are stacked, and configure other visual options.
 
 ![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
 
-This widget also accepts features such as [metadata](link-to-metadata) and [series](link-to-series), which can be set in your variable data.
+This widget also accepts features such as [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

@@ -15,18 +15,18 @@ To add the Keypad to your dashboard, choose the Keypad widget from the widget li
 ![Keypad widget on dashboard with settings panel on the right](/docs_imagem/tagoio/keypad-widget-2.png)
 
 ## On this page
-- 1. 'Data From' Field (link-to-data-from-field)
-- 2. Visualization (link-to-visualization)
+- 1. 'Data From' Field (../data-management/data-records)
+- 2. Visualization — See [Widget Visualization](../widgets/widget-configuration#visualization)
 
 ## Related Keypad documentation
-- [Keypad Widget](link-to-keypad-widget)  
-- [Creating Keypad Widgets](link-to-creating-keypad-widgets)  
-- [Keypad Visualization](link-to-keypad-visualization)  
-- [Keypad Data Manipulation](link-to-keypad-data-manipulation)
+- [Keypad Widget](#) (this article)  
+- [Creating Keypad Widgets](../widgets/widget-configuration#keypad-setup)  
+- [Keypad Visualization](../keypad-visualization)  
+- [Keypad Data Manipulation](../keypad-data-manipulation)
 
 ## Related articles
-- [Compose Widget](link-to-compose-widget)  
-- [Map Widget](link-to-map-widget)  
-- [Image Marker Widget](link-to-image-marker-widget)  
-- [Custom Widget](link-to-custom-widget)  
-- [Keypad Data Manipulation](link-to-keypad-data-manipulation)
+- [Compose Widget](../widgets/compose-widget)  
+- [Map Widget](../widgets/map-widget)  
+- [Image Marker Widget](../widgets/image-marker-widget)  
+- [Custom Widget](../widgets/custom-widget)  
+- [Keypad Data Manipulation](../keypad-data-manipulation)

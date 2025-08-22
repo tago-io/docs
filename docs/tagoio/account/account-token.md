@@ -12,6 +12,6 @@ Account Tokens are the secret keys used between Tago and external applications. 
 
 ## Managing Account Tokens
 
-Account tokens can be managed from your [account details](link-to-account-details) by selecting your profile. You can copy a token by clicking the **Copy** button.
+Account tokens can be managed from your [account details](editing-accounts-details) by selecting your profile. You can copy a token by clicking the **Copy** button.
 
 More than one token can be created for the same profile. Permissions and expiration dates for each token may be configured as needed.

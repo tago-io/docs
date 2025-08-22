@@ -8,8 +8,8 @@ Push button allows users to select options for different states, similar to a me
 
 ![Push Button examples](/docs_imagem/tagoio/push-button-widget-2.png)
 
-You can also define an Analysis (script) to run when users change each state — see [Analysis](link-to-analysis).  
-This widget also accepts features like [metadata](link-to-metadata), which can be set in your variable data.
+You can also define an Analysis (script) to run when users change each state — see [Analysis](../analysis/analysis-overview).  
+This widget also accepts features like [metadata](../data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 

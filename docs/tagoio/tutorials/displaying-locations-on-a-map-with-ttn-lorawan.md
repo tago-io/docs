@@ -23,26 +23,26 @@ TagoIO converts latitude and longitude fields to the specific format required, s
 
 After your device is sending latitude and longitude information to TagoIO:
 
-- Create a dashboard (see [create a dashboard](link-to-create-dashboard)).
-- Add a Map widget (see [Map widget](link-to-map-widget)).
-- Look for the device (see [device](link-to-device)) and add the variable `location` inside the Map widget.
+- Create a dashboard (see [create a dashboard](../dashboards/dashboard-overview)).
+- Add a Map widget (see [Map widget](../widgets/map-widget)).
+- Look for the device (see [device](../devices/devices)) and add the variable `location` inside the Map widget.
 
 References and related documentation:
 
 - Breadcrumb context: Knowledge Base / TagoIO / Widgets / Map Widget
 
 Map Widget section (internal links):
-- [Map Widget](link-to-map-widget)
-- [Map filters](link-to-map-filters)
-- [Geofences in map widgets](link-to-geofences-in-map-widgets)
-- [Map Layer GIS](link-to-map-layer-gis)
-- [Images and Links in the map's pins](link-to-images-and-links-in-map-pins)
-- [Router](link-to-router)
-- [Displaying Locations on a Map with TTN LoR...](link-to-displaying-locations-ttn)
+- [Map Widget](../widgets/map-widget)
+- [Map filters](../map-filters)
+- [Geofences in map widgets](../widgets/geofences-in-map-widgets)
+- [Map Layer GIS](../map-layer-gis)
+- [Images and Links in the map's pins](../images-and-links-in-the-maps-pins)
+- [Router](../router)
+- [Displaying Locations on a Map with TTN LoRaWAN](#) (this article)
 
 Related Articles (internal links):
-- [LoRaWAN Publication of Environmental Mea...](link-to-lorawan-publication)
-- [Map Widget](link-to-map-widget)
-- [The Things Network LoRaWAN™](link-to-the-things-network-lorawan)
-- [Network Integration](link-to-network-integration)
-- [Adeunis with LoRaWAN™](link-to-adeunis-with-lorawan)
+- [LoRaWAN Publication of Environmental Measurements](../tutorials/lorawan-publication-environmental-measurements)
+- [Map Widget](../widgets/map-widget)
+- [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
+- [Network Integration](../integrations/connector-overview)
+- [Adeunis with LoRaWAN™](../tutorials/adeunis-with-lorawan)

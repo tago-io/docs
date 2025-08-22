@@ -4,7 +4,7 @@ description: "This article explains how to upload files using the TagoIO admin p
 tags: ["tagoio"]
 ---
 
-To upload a file using the admin platform, go to [Files](link-to-files) and click the `Upload File` button in the top-right corner of the page.
+To upload a file using the admin platform, go to [Files](../files) and click the `Upload File` button in the top-right corner of the page.
 
 ![Files page showing file list and Upload File button](/docs_imagem/tagoio/uploading-files-2.png)
 

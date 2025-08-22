@@ -6,7 +6,7 @@ tags: ["tagoio", "widgets"]
 
 ## Overview
 
-This article demonstrates how to create a Keypad Widget using the TagoIO Node.js SDK. See [Keypad Widget](link-to-keypad-widget) and [TagoIO Node.js SDK](link-to-node-js-sdk) for more information.
+This article demonstrates how to create a Keypad Widget using the TagoIO Node.js SDK. See [Keypad Widget](../widgets/keypad-widget) and [TagoIO Node.js SDK](../sdk/nodejs-sdk) for more information.
 
 In order to create keypad widgets, send the following structure to the account.dashboards.widgets.create method.
 

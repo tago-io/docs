@@ -10,15 +10,15 @@ The "Trigger by Usage Alert" feature lets you execute an Action when a specific 
 
 | Resources | Services |
 |---|---|
-| [Access Management](link-to-access-management) | [Input](link-to-input) |
-| [Actions](link-to-actions) | [Output](link-to-output) |
-| [TCore](link-to-tcore) | [Analysis](link-to-analysis) |
-| [Device](link-to-device) | [Data Records](link-to-data-records) |
-| [Team Members](link-to-team-members) | [SMS](link-to-sms) |
-| [Dashboards](link-to-dashboards) | [Emails](link-to-emails) |
-| [Analysis](link-to-analysis-resource) | [Run Users](link-to-run-users) |
-|  | [Push Notifications](link-to-push-notifications) |
-|  | [File Storage](link-to-file-storage) |
+| [Access Management](../security/access-management) | [Input](../services/data-input-service) |
+| [Actions](../actions/actions) | [Output](../services/data-output-service) |
+| [TCore](../services/tagocore-service) | [Analysis](../analysis/analysis-overview) |
+| [Device](../devices/devices) | [Data Records](../services/data-records-service) |
+| [Team Members](../account/profiles#team-members) | [SMS](../services/sms-service) |
+| [Dashboards](../dashboards/creating-dashboard-tabs) | [Emails](../services/e-mail-service) |
+| [Analysis](../analysis/analysis-overview) | [Run Users](../services/end-users-service) |
+|  | [Push Notifications](../services/notification-service) |
+|  | [File Storage](../services/file-storage-service) |
 
 For example, you can configure an Action to trigger when Analysis usage reaches a specified threshold. Once that threshold is met, a notification can be sent to the profile administrator.
 

@@ -12,10 +12,10 @@ The innovative dictionary feature from TagoIO enables you to improve your applic
 
 Any text present in dashboard frames, inside widgets, variables, and your RUN application (including the mobile app) can be replaced using the dictionary. Create your own dictionary by editing fields (key & value) for each language you want to make available to end users.
 
-Learn how to [set up the dictionary](link-to-setup-the-dictionary).
+Learn how to [set up the dictionary](../using-dictionaries-multi-language).
 
 ## Customize texts for the same language
 
 You can also customize text values for the same language to adapt wording for different dashboards, contexts, or user groups.
 
-Refer to [Customize texts for the same language](link-to-customize-texts) for details.
+Refer to [Customize texts for the same language](../using-dictionaries-multi-language) for details.

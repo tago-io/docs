@@ -21,11 +21,11 @@ For example, if your device sends data from TTN (The Things Network), most varia
 ![Application Data Console screenshot](/docs_imagem/tagoio/filtering-out-variables-with-parser-code-2.png)
 
 ## Editing the parser
-- Open the device settings and go to the "Payload Parser" tab ([Payload Parser](link-to-payload-parser)).
+- Open the device settings and go to the "Payload Parser" tab ([Payload Parser](../payload-parser/payload-parser)).
 - Update the parser code to filter out unwanted variables before sending the parsed output to the device's storage.
-- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](link-to-device-data-storage)).
+- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](../devices/devices)).
 
 ## See also
-- Payload Parser (refer to the Payload Parser documentation: [Payload Parser](link-to-payload-parser))
-- Device data storage details: [Device's data storage](link-to-device-data-storage)
-- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](link-to-parser-vs-analysis)
+- Payload Parser (refer to the Payload Parser documentation: [Payload Parser](../payload-parser/payload-parser))
+- Device data storage details: [Device's data storage](../devices/devices)
+- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](../payload-parser/payload-parser-overview)

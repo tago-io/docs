@@ -12,7 +12,7 @@ You will need to set up your device using the ABS portal and your TagoIO account
 
 ## ABS Setup
 
-You need to download the ABS software configurator (available here: [ABS software configurator download](link-to-ABS-software-configurator)).
+You need to download the ABS software configurator (available here: [ABS software configurator download](https://abs-telemetry.com/downloads/)).
 
 Open the file Configurator_cel.exe and follow these steps.
 

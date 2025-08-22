@@ -10,15 +10,15 @@ On top of the fundamental IoT services provided to run your applications, additi
 
 ## Enabling add-ons
 
-In your account, go to [Profiles & Teams](link-to-profiles-and-teams), select a Profile, and add one or more of the add-ons available for your account.
+In your account, go to [Profiles & Teams](../account/profiles), select a Profile, and add one or more of the add-ons available for your account.
 
 ## Available add-ons
 
 Currently, these add-ons are available:
 
-1. [Custom Domain & Whitelabel](link-to-custom-domain-whitelabel)
-2. [Custom Mobile App](link-to-custom-mobile-app)
-3. [Control Tower](link-to-control-tower)
+1. [Custom Domain & Whitelabel](../custom-domain-whitelabel)
+2. [Custom Mobile App](../custom-mobile-app)
+3. [Control Tower](../control-tower)
 
 ## Notes
 

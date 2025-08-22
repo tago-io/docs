@@ -23,7 +23,7 @@ Image transcribed text:
 
 To edit a specific section or element of this widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
 
-> Note: This widget works for both dashboard modes: Normal and [Blueprint](link-to-blueprint).
+> Note: This widget works for both dashboard modes: Normal and [Blueprint](../dashboards/blueprint-dashboard).
 
 ## Sections
 (Section content not visible in the screenshot.)

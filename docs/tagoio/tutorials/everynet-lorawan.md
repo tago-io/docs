@@ -14,7 +14,7 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 
 1. Access Authorizations
    - Go to Devices.
-   - Click on [Authorizations](link-to-authorizations) at the top of the page.
+   - Click on [Authorizations](../devices/adding-authorization) at the top of the page.
 
 2. Create a New Authorization
    - Click the Create Authorization button.

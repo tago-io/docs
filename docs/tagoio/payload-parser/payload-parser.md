@@ -7,16 +7,16 @@ tags: ["tagoio"]
 ## Overview
 The Payload Parser handles the raw payload sent by devices to extract measured variables. For example, it can transform a HEX payload sent by a device into temperature and battery levels.
 
-You can also use the parser to process payloads in real time and convert values to the desired unit. For example, if your data contains a temperature in °F, you can use the parser to convert it to °C before inserting the data into the [Device](link-to-device).
+You can also use the parser to process payloads in real time and convert values to the desired unit. For example, if your data contains a temperature in °F, you can use the parser to convert it to °C before inserting the data into the [Device](../devices/devices).
 
-You can learn about the [differences between Payload Parser and Analysis](link-to-differences-between-payload-parser-and-analysis).
+You can learn about the [differences between Payload Parser and Analysis](../payload-parser/payload-parser-overview).
 
 ## Parser execution
 TagoIO can run up to two parsers for a device:
 - The Connector parser (added automatically during device creation)
 - Your own custom parser (optional)
 
-> Note: The parsers are executed in sequence. First the one from the [Connector](link-to-connector), then your custom parser.
+> Note: The parsers are executed in sequence. First the one from the [Connector](../integrations/connector-overview), then your custom parser.
 
 ## Connector type
 The connector type is defined based on your selection from the list of devices during the Add Device step. The connector contains the script necessary to work with that device.

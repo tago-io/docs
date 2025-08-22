@@ -33,6 +33,6 @@ A typical text input will appear. The value saved for this field will be whateve
 ![Text input example](/docs_imagem/tagoio/field-types-for-input-form-2.gif)
 
 ## 2. Address
-This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](link-to-location-coordinates) for details.
+This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](data-management/data-manipulation#location) for details.
 
 ![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-2.gif)

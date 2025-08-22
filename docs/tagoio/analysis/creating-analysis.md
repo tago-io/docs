@@ -35,11 +35,11 @@ The Add Analysis dialog also shows:
 After creating the analysis you can open the Script Editor to add and manage the analysis code, adjust environment variables, and configure distribution or external execution as needed.
 
 Related documentation:
-- See [Analysis Overview](link-to-analysis-overview)
-- See [Script Editor](link-to-script-editor)
-- See [Script Examples](link-to-script-examples)
-- See [Console for Debug](link-to-console-for-debug)
-- See [Environment Variables](link-to-environment-variables)
-- See [Distributing analysis](link-to-distributing-analysis)
-- See [Running Analysis as External using Node.JS](link-to-running-analysis-external-nodejs)
-- See [Running Analysis as External using Deno](link-to-running-analysis-external-deno)
+- See [Analysis Overview](../analysis/analysis-overview)
+- See [Script Editor](../script-editor)
+- See [Script Examples](../analysis/script-examples)
+- See [Console for Debug](../console-for-debug)
+- See [Environment Variables](../environment-variables)
+- See [Distributing analysis](../analysis/distributing-analysis)
+- See [Running Analysis as External using Node.JS](running-analysis-external-server)
+- See [Running Analysis as External using Deno](running-analysis-external-server)

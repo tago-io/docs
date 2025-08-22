@@ -4,7 +4,7 @@ description: "This article explains how to delete data via the TagoIO API, inclu
 tags: ["tagoio"]
 ---
 
-> Important: When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](link-to-api-documentation)
+> Important: When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://docs.tago.io/api/)
 
 ## Endpoint
 ```
@@ -30,4 +30,4 @@ Use the same query strings you use to get data to select which data will be dele
 | end_date   | string | End date                            |
 | variable   | string | Filter by variable                  |
 
-To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](link-to-query-strings).
+To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](../api/restful-api).

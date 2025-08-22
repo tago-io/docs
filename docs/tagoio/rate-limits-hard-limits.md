@@ -8,9 +8,9 @@ When executing requests to TagoIO, there is a limit on the number of requests th
 
 Rate limits apply to a wide range of interactions within the platform, including—but not limited to—API endpoints, data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP), data exports, dashboard visualizations, user interactions, and more. These limits are also known as hard limits.
 
-> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](link-to-tagoio-services) that are reset monthly. You still need to make sure you have enough resources to run your application.
+> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](../services/services-overview) that are reset monthly. You still need to make sure you have enough resources to run your application.
 
-> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](link-to-resource-limits) and [Data Output for Dashboards](link-to-data-output-for-dashboards).
+> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](../resource-limits) and [Data Output for Dashboards](services/data-output-service).
 
 ## How it works
 

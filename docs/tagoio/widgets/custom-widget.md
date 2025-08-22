@@ -8,7 +8,7 @@ tags: ["tagoio", "widgets"]
 
 Custom Widgets are flexible components that let you build any interface or visualization needed for your application. They can be created with plain web technologies (HTML, CSS, and JavaScript) or with client-side frameworks, provided the final build outputs HTML, CSS, and JavaScript.
 
-The widget must include at least some JavaScript functionality provided via our library ([our library](link-to-our-library)).
+The widget must include at least some JavaScript functionality provided via our library ([our library](https://docs.tago.io/sdk/custom-widgets)).
 
 ## Supported technologies
 
@@ -40,8 +40,8 @@ Below are example outputs from Custom Widgets (charts and a map) to illustrate w
 
 ## Related articles
 
-- ECharts Custom Widget Tutorial (link-to-echarts-custom-widget-tutorial)
-- Map Widget (link-to-map-widget)
-- Image Marker Widget (link-to-image-marker-widget)
-- Compose Widget (link-to-compose-widget)
-- Analysis Overview (link-to-analysis-overview)
+- ECharts Custom Widget Tutorial [ECharts Custom Widget Tutorial](../widgets/echarts-custom-widget-tutorial)
+- Map Widget (../widgets/map-widget)
+- Image Marker Widget [Image Marker Widget](../widgets/image-marker-widget)
+- Compose Widget (../widgets/compose-widget)
+- Analysis Overview (../analysis/analysis-overview)

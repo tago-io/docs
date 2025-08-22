@@ -4,13 +4,13 @@ description: "This article explains the available options for exporting device d
 tags: ["tagoio"]
 ---
 
-At TagoIO, you can export device data in several ways: directly from the Admin panel on a device's page, via the [API](link-to-api), or from [Widgets](link-to-widgets) in either the Admin panel or the [TagoRun portal](link-to-tagorun-portal). Exporting data consumes your [Data Output](link-to-data-output) service quota.
+At TagoIO, you can export device data in several ways: directly from the Admin panel on a device's page, via the [API](../api/api-overview), or from [Widgets](../widgets/widgets-overview) in either the Admin panel or the [TagoRun portal](../../tagorun/tagorun-mobile-app). Exporting data consumes your [Data Output](../services/data-output) service quota.
 
 Here's how to use each export source:
 
 ## From the device page
 
-Access this feature in the Admin panel under the [Device module](link-to-device-module). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](link-to-filtering-variables).
+Access this feature in the Admin panel under the [Device module](../devices/devices). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](../data-management/data-filtering).
 
 To export, click the "Export" button in the top-right corner. The export dialog provides the following options:
 
@@ -31,4 +31,4 @@ To export, click the "Export" button in the top-right corner. The export dialog 
 
 Notes:
 - Use filtering options on the device "Data" tab to limit the exported data and reduce Data Output quota usage.
-- For instructions on exporting from Widgets or via the API, refer to the corresponding sections: From Widgets ([link-to-widgets]) and Using our API ([link-to-api]).
+- For instructions on exporting from Widgets or via the API, refer to the corresponding sections: From Widgets ([../widgets/widgets-overview]) and Using our API ([../api/api-overview]).

@@ -4,7 +4,7 @@ description: "This article explains what Configuration Parameters are in TagoIO 
 tags: ["tagoio", "devices"]
 ---
 
-Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](link-to-devices) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](link-to-widgets), or interact with [API & Analysis](link-to-api-analysis) scripts.
+Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](../devices/devices) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](../widgets/widgets-overview), or interact with [API & Analysis](../api/api-overview) scripts.
 
 Configuration Parameters are stored on the configuration page of your device. You can access them by clicking on the Devices module in the left menu and selecting a device. You will see a tab called "Configuration Parameters", where you can add, edit, or delete parameters. You can set parameters and retrieve them later by making a request from the device.
 

@@ -4,7 +4,7 @@ description: "This article explains how devices send data to TagoIO using the PO
 tags: ["tagoio"]
 ---
 
-> When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](link-to-api-documentation)
+> When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
 
 A device can send data to TagoIO by using the POST method.
 
@@ -24,7 +24,7 @@ POST https://api.<region>.tago.io/data
 | location  | object \| geoJSON              | no          |
 | metadata  | object (max 10kB)              | no          |
 
-You must include a Device-Token to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](link-to-fields-necessary).
+You must include a Device-Token to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](../api/restful-api).
 
 ## Notes and restrictions
 

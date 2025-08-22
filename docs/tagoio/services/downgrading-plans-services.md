@@ -14,10 +14,10 @@ You can schedule downgrades in your account for your plan, service limits, and a
 - You can cancel or modify scheduled downgrades at any time until the end of your billing cycle.
 
 ## Multiple profiles (important)
-> Warning: If you have more than one profile, make sure you manually [reduce the resources for each profile](link-to-reduce-resources-for-each-profile) before your next billing cycle to avoid any disruption to your application.
+> Warning: If you have more than one profile, make sure you manually [reduce the resources for each profile](allocating-services-to-profiles) before your next billing cycle to avoid any disruption to your application.
 
 ## How to downgrade
-To downgrade your billing, go to [Billing](link-to-billing) on the top-right dropdown menu in your account.
+To downgrade your billing, go to [Billing](../billing/billing-summary) on the top-right dropdown menu in your account.
 
 ## Refunds
-See our [Refund Policy](link-to-refund-policy).
+See our [Refund Policy](../billing/refund-policy).

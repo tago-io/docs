@@ -15,19 +15,19 @@ When enabled, a date picker is available to choose specific date ranges. You can
 <!-- Image placeholder removed for build -->
 
 ## On this page
-- How to apply global time-filters to your dashboards (link-to-apply-global-time-filters)  
-- Applying a maximum period range to your date picker (link-to-apply-maximum-period-range)  
-- Setting period presets (link-to-setting-period-presets)  
-- Disabling the filter for specific widgets (link-to-disabling-filter-for-widgets)
+- How to apply global time-filters to your dashboards — See [Time Filter Configuration](../dashboards/dashboard-overview#time-filters)
+- Applying a maximum period range to your date picker — See [Date Range Limits](../dashboards/dashboard-overview#date-range-limits)  
+- Setting period presets — See [Period Presets Setup](../dashboards/dashboard-overview#period-presets)
+- Disabling the filter for specific widgets — See [Widget Filter Settings](../widgets/widget-cache-system#filter-settings)
 
 ## Related Dashboards documentation
-- [Dashboard Overview](link-to-dashboard-overview)  
-- [Blueprint Dashboard](link-to-blueprint-dashboard)  
-- [Data Output for dashboards](link-to-data-output-for-dashboards)  
-- [Creating Dashboard Tabs](link-to-creating-dashboard-tabs)  
-- [Dashboard icons](link-to-dashboard-icons)  
-- [Dashboard global time filter and period presets](link-to-this-article)  
-- [Grouping Dashboards](link-to-grouping-dashboards)  
-- [Sharing Dashboards](link-to-sharing-dashboards)  
-- [Distributing Dashboards](link-to-distributing-dashboards)  
-- [Restoring your Dashboard to a previous version](link-to-restoring-dashboard)
+- [Dashboard Overview](../dashboards/dashboard-overview)  
+- [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
+- [Data Output for dashboards](../data-management/data-output-for-dashboard)  
+- [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  
+- [Dashboard icons](../dashboards/dashboard-icons)  
+- [Dashboard global time filter and period presets](#) (this article)
+- [Grouping Dashboards](../dashboards/grouping-dashboards)  
+- [Sharing Dashboards](../dashboards/sharing-dashboards)  
+- [Distributing Dashboards](../dashboards/distributing-dashboards)  
+- [Restoring your Dashboard to a previous version](../dashboards/restoring-dashboard-previous-version)

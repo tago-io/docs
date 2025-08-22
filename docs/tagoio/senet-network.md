@@ -14,6 +14,6 @@ The integration is accomplished in two parts:
 
 ## 1) TagoIO Setup
 
-First, go to the [Devices](link-to-devices) module in our admin, look for Senet, and select it.
+First, go to the [Devices](../devices/devices) module in our admin, look for Senet, and select it.
 
 ![Connector selection showing the Senet connector in the Devices module](/docs_imagem/tagoio/senet-network-4.png)

@@ -6,7 +6,7 @@ tags: ["tagoio", "widgets"]
 
 Dashboards are composed of widgets that can display and collect data from users. TagoIO provides a variety of widgets to handle your data in real time, from simple dials to tables, maps, videos, and forms that allow user input.
 
-See [create dashboards](link-to-create-dashboards).
+See [create dashboards](../dashboards/creating-dashboards).
 
 ## Available widgets
 
@@ -53,7 +53,7 @@ The following widgets are provided out of the box (icons and labels shown):
 
 ## Custom widgets
 
-You can create your own widget by using the [Custom Widget](link-to-custom-widget).
+You can create your own widget by using the [Custom Widget](../widgets/custom-widget).
 
 ## Limits and notes
 

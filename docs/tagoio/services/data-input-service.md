@@ -11,6 +11,6 @@ These data input transactions are accounted against the Profile where your devic
 > Note: You should estimate the maximum number of transactions per month to ensure your Profile has sufficient capacity.
 
 ## Viewing limits and usage history
-You can visualize the limits and usage history of each service in the Profile tab, located under the [Profiles & Teams](link-to-profiles-and-teams) section of your account.
+You can visualize the limits and usage history of each service in the Profile tab, located under the [Profiles & Teams](../account/profiles) section of your account.
 
 <!-- Image placeholder removed for build -->

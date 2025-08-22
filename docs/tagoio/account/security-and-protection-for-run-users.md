@@ -13,7 +13,7 @@ By accessing the Run module and selecting the "Security and Protection" tab, you
 - User session duration and management
 - Protection against automated (robot) activities using captcha
 
-See the [Run module](link-to-run) for where to find these settings.
+See the [Run module](../../tagorun/run-module) for where to find these settings.
 
 <!-- Image placeholder removed for build -->
 
@@ -85,5 +85,5 @@ Enable captcha to reduce automated or bot activity on signup and other user acti
 
 ## Related documentation
 
-- See the [Run module](link-to-run) for where to access the Security and Protection tab.
+- See the [Run module](../../tagorun/run-module) for where to access the Security and Protection tab.
 - Refer to the TagoIO documentation sections referenced in the Run UI for related configuration and billing notes (e.g., email and SMS billing when using 2FA).

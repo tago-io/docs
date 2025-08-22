@@ -6,7 +6,7 @@ tags: ["tagoio", "analysis"]
 
 ## Overview
 
-The [Payload Parser](link-to-payload-parser) was created to handle raw payloads sent by devices in order to extract measured variables or execute simple operations. The [Analysis](link-to-analysis) feature is more powerful — it includes access to [Devices](link-to-devices) and external services, but there is a cost to run analyses.
+The [Payload Parser](../payload-parser/payload-parser) was created to handle raw payloads sent by devices in order to extract measured variables or execute simple operations. The [Analysis](../analysis/analysis-overview) feature is more powerful — it includes access to [Devices](../devices/devices) and external services, but there is a cost to run analyses.
 
 Payload Parser uses a simple JavaScript engine developed by TagoIO to be easy, lightweight, and free. Below are the main differences between the two.
 
@@ -30,10 +30,10 @@ Payload Parser uses a simple JavaScript engine developed by TagoIO to be easy, l
 
 - Payload Parser is intended for lightweight parsing and basic operations directly on incoming device payloads.
 - Analysis offers broader capabilities (access to devices, external services, larger code size, and more advanced error handling), suitable for more complex workflows.
-- Use the [Payload Parser](link-to-payload-parser) for simple, free parsing needs and [Analysis](link-to-analysis) when you need external integration, advanced JavaScript features, or persistence across executions.
+- Use the [Payload Parser](../payload-parser/payload-parser) for simple, free parsing needs and [Analysis](../analysis/analysis-overview) when you need external integration, advanced JavaScript features, or persistence across executions.
 
 ## See also
 
-- [Payload Parser](link-to-payload-parser)  
-- [Analysis](link-to-analysis)  
-- [Devices](link-to-devices)
+- [Payload Parser](../payload-parser/payload-parser)  
+- [Analysis](../analysis/analysis-overview)  
+- [Devices](../devices/devices)

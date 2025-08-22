@@ -4,7 +4,7 @@ description: "This article explains the Filtered Variables field for the Input F
 tags: ["tagoio"]
 ---
 
-Filtered Variables is a field type in the [Input Form](link-to-input-form) widget. It lets the user select a single value from a list whose options change dynamically based on the values of other fields.
+Filtered Variables is a field type in the [Input Form](../widgets/input-form-widget) widget. It lets the user select a single value from a list whose options change dynamically based on the values of other fields.
 
 ![Form example showing Food types and Food fields](/docs_imagem/tagoio/filtered-variables-2.gif)
 
@@ -12,4 +12,4 @@ For this field to work, it must be linked to another field. In the example above
 
 ## Configuration
 
-In the Fields Configuration tab of your [Input Form](link-to-input-form) widget, select the field type "Filtered Variables" to configure this field.
+In the Fields Configuration tab of your [Input Form](../widgets/input-form-widget) widget, select the field type "Filtered Variables" to configure this field.

@@ -4,7 +4,7 @@ description: "A brief guide to the timeUtils library available in the Payload Pa
 tags: ["tagoio"]
 ---
 
-The timeUtils library is available as a global variable in the Payload Parser and is designed to simplify timezone conversion and manipulation. It provides functions to convert, format, and manage time information easily. For more on timezone handling, see [timezone conversion and manipulation](link-to-timezone-conversion-and-manipulation).
+The timeUtils library is available as a global variable in the Payload Parser and is designed to simplify timezone conversion and manipulation. It provides functions to convert, format, and manage time information easily. For more on timezone handling, see [timezone conversion and manipulation](payload-parser-timeutils-library).
 
 ## Available Functions
 

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 
 ## Overview
-Display geometries, boundaries, areas, roads, pipelines, and other spatial features using the [Map widget](link-to-map-widget) GIS layer. Each layer is defined by GeoJSON files (`.geojson`, `.json`, `.zip`), which you can upload and manage either statically or dynamically.
+Display geometries, boundaries, areas, roads, pipelines, and other spatial features using the [Map widget](../widgets/map-widget) GIS layer. Each layer is defined by GeoJSON files (`.geojson`, `.json`, `.zip`), which you can upload and manage either statically or dynamically.
 
 ## Supported file types and shapefile conversion
 - Accepted GeoJSON formats: `.geojson`, `.json`, and `.zip` (containing GeoJSON).
@@ -19,4 +19,4 @@ Display geometries, boundaries, areas, roads, pipelines, and other spatial featu
 - 2. Layer color
 
 ## Related documentation
-- See [Map widget](link-to-map-widget) for general map widget setup and configuration.
+- See [Map widget](../widgets/map-widget) for general map widget setup and configuration.

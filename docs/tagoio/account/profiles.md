@@ -15,7 +15,7 @@ Profiles are similar to having different sub-accounts under your main account. Y
    Allow external users limited access to specific applications and organizations.
 
 3. Track cost of individual applications and customers  
-   Visualize cost breakdown per Profile and Services on the [Statistics](link-to-statistics) page.
+   Visualize cost breakdown per Profile and Services on the [Statistics](../billing/billing-summary) page.
 
 ## Switching Profiles
 

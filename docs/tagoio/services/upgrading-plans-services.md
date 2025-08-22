@@ -12,10 +12,10 @@ For example, if you upgrade from the Starter to the Scale plan when there are 10
 
 > Note: Some services are not prorated if they are consumable. For example, if you increase the SMS limit in the middle of your billing cycle, you will be charged the full price (minus the amount already paid for the previous setting) because you then have the right to use all available SMS messages.
 
-To upgrade your billing, go to the [Billing](link-to-billing) option in the top-right dropdown menu.
+To upgrade your billing, go to the [Billing](../billing/billing-summary) option in the top-right dropdown menu.
 
 ## How to auto-scale
 
 If you want to automate upgrades of your account using an auto-scaling feature, see the following tutorial:
 
-- [How to auto-scale your profile limit](link-to-how-to-auto-scale-your-profile-limit)
+- [How to auto-scale your profile limit](services-overview#auto-scaling)

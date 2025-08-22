@@ -6,7 +6,7 @@ tags: ["tagoio"]
 
 Custom Settings is a feature that lets you create unique visualization preferences for your end-users that extend beyond TagoRUN's default settings. After you configure custom settings, they will appear in your end-users' Account Settings.
 
-With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](link-to-dynamic-formulas) to ensure displayed data matches user expectations.
+With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](formula) to ensure displayed data matches user expectations.
 
 ## Where these settings appear
 Custom Settings are visible to end-users in their Account Settings under the Visualization Preferences tab. The example below highlights the Preferences area where unit choices (Temperature Unit, Distance Unit) are exposed to the user.
@@ -34,4 +34,4 @@ Custom Settings are visible to end-users in their Account Settings under the Vis
 
 ## Notes
 - After you set up Custom Settings, they are available to end-users in their Account Settings and affect how data is displayed across TagoRUN interfaces.
-- Consider pairing Custom Settings with [Dynamic Formulas](link-to-dynamic-formulas) when you need data units or formats to be recalculated or reformatted dynamically.
+- Consider pairing Custom Settings with [Dynamic Formulas](formula) when you need data units or formats to be recalculated or reformatted dynamically.

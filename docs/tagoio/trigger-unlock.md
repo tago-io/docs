@@ -4,9 +4,9 @@ description: "This article explains the Trigger Unlock feature in TagoIO, how it
 tags: ["tagoio"]
 ---
 
-Trigger Unlock is a feature that allows users to define specific conditions under which an action, once locked, can be unlocked and allowed to execute again. This locking mechanism safeguards against repetitive or unwanted triggers, ensuring that actions occur only when truly necessary. Before using Trigger Unlock, familiarize yourself with [Trigger Conditions](link-to-trigger-conditions).
+Trigger Unlock is a feature that allows users to define specific conditions under which an action, once locked, can be unlocked and allowed to execute again. This locking mechanism safeguards against repetitive or unwanted triggers, ensuring that actions occur only when truly necessary. Before using Trigger Unlock, familiarize yourself with [Trigger Conditions](actions/actions#trigger-conditions).
 
-This feature is available exclusively for the trigger type: [Trigger by Variable](link-to-trigger-by-variable).
+This feature is available exclusively for the trigger type: [Trigger by Variable](trigger-by-variable).
 
 ## How It Works
 

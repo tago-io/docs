@@ -8,7 +8,7 @@ VU Meter gauges display the variable in a velocimeter-style gauge.
 
 ![Three VU meters example](/docs_imagem/tagoio/vu-meter-widget-2.gif)
 
-This widget also accepts features like [metadata](link-to-metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](../data-management/metadata) that can be set in your variable data.
 
 ## Creating your own
 
@@ -19,12 +19,12 @@ To add the VU Meter widget to your dashboard, choose the VU Meter widget from th
 ## On this page
 
 - [Creating your own](#creating-your-own)
-- 1. ['Data From' Field](link-to-data-from-field)
+- 1. ['Data From' Field](../data-management/data-records)
 
 ## Related Articles
 
-- [Solid Widget](link-to-solid-widget)
-- [Angular Widget](link-to-angular-widget)
-- [Cylinder Widget](link-to-cylinder-widget)
-- [Pie Widget](link-to-pie-widget)
-- [Grain Bin Widget](link-to-grain-bin-widget)
+- [Solid Widget](../widgets/solid-widget)
+- [Angular Widget](../widgets/angular-widget)
+- [Cylinder Widget](../widgets/cylinder-widget)
+- [Pie Widget](../widgets/pie-widget)
+- [Grain Bin Widget](../widgets/grain-bin-widget)

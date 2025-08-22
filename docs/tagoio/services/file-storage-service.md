@@ -12,10 +12,10 @@ Use the Files module to store any type of file (reports, videos, logos, backgrou
 > If any profile reaches its allocated storage limit, the system will block adding new files to that profile.
 
 ## Increasing the limit
-You can increase the File service limit by [Allocating Resources to profiles](link-to-allocating-resources-to-profiles).
+You can increase the File service limit by [Allocating Resources to profiles](../services/allocating-services-to-profiles).
 
 ## Pricing and FAQ
-More information about pricing and frequently asked questions is available on the [Pricing Page](link-to-pricing-page).
+More information about pricing and frequently asked questions is available on the [Pricing Page](https://tago.io/pricing).
 
 ## References
-- Files module: [Files](link-to-files)
+- Files module: [Files](../files)

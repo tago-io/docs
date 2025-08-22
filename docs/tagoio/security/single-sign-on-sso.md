@@ -45,10 +45,10 @@ You can use your Identity Provider to:
 - Allow users to access multiple services (including RUN) with the same credentials
 
 ## Related articles
-- See [Run Theme](link-to-run-theme)
-- See [Security and Protection for RUN users](link-to-security-and-protection-for-run-users)
-- See [Using Dictionaries & Multi-language](link-to-using-dictionaries-and-multi-language)
-- See [Dictionaries](link-to-dictionaries)
-- See [TagoRun](link-to-tagorun)
+- See [Run Theme](../run-theme)
+- See [Security and Protection for RUN users](../security/security-and-protection-for-run-users)
+- See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language)
+- See [Dictionaries](../dictionaries)
+- See [TagoRun](../../tagorun/tagorun-mobile-app)
 
 If you need configuration specifics for a particular Identity Provider (for example, "How to set up Okta with TagoIO" or "Configuring Auth0 for SSO"), refer to that provider's setup guide and then import the configured IdP into RUN.

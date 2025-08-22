@@ -8,21 +8,21 @@ The Video widget provides the ability to present custom videos in your dashboard
 
 ![Video widget example](/docs_imagem/tagoio/video-widget-2.gif)
 
-> Note: This widget works for both dashboard types: Normal and [Blueprint](link-to-blueprint).
+> Note: This widget works for both dashboard types: Normal and [Blueprint](../dashboards/blueprint-dashboard).
 
 ## On this page
-- [1. Video Behavior](link-to-1-video-behavior)  
-- [2. 'Data From' Field](link-to-data-from-field)
+- [1. Video Behavior](#1-video-behavior)  
+- [2. 'Data From' Field](../data-management/data-records)
 
 ## 1. Video Behavior
 Video behavior defines how the widget obtains the video URL. It can be one of three types: static, conditional, or dynamic.
 
 ## 2. 'Data From' Field
-See ['Data From' Field](link-to-data-from-field) for details on selecting the source of the video URL within the widget configuration.
+See ['Data From' Field](../data-management/data-records) for details on selecting the source of the video URL within the widget configuration.
 
 ## Related Articles
-- [Image Widget](link-to-image-widget)  
-- [Compose Widget](link-to-compose-widget)  
-- [Map Widget](link-to-map-widget)  
-- [Custom Widget](link-to-custom-widget)  
-- [Image Marker Widget](link-to-image-marker-widget)
+- [Image Widget](../widgets/image-widget)  
+- [Compose Widget](../widgets/compose-widget)  
+- [Map Widget](../widgets/map-widget)  
+- [Custom Widget](../widgets/custom-widget)  
+- [Image Marker Widget](../widgets/image-marker-widget)

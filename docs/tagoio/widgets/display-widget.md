@@ -10,7 +10,7 @@ Display is a widget that shows the last value of a variable, regardless of the f
 
 You can select one or more variables; each variable will have its own box and will display its most recent value simultaneously.
 
-This widget also accepts features like [metadata](link-to-metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](../data-management/metadata) that can be set in your variable data.
 
 ## Creating your own
 
@@ -20,4 +20,4 @@ To add the widget to your dashboard, choose the Display widget from the widget l
 
 ## See also
 
-- See ['Data From' Field](link-to-data-from-field) for information about setting the data source for Display widgets.
+- See ['Data From' Field](../data-management/data-records) for information about setting the data source for Display widgets.

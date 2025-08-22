@@ -25,15 +25,15 @@ Each user has a Tags tab. Tags can be provided in three ways:
 - By the user during the Signup process
 
 > Note: All customized fields defined in your Signup Page under the Run module are added in the Tags here.  
-> See [Signup Page](link-to-signup-page) for details.
+> See [Signup Page](../signup-fields) for details.
 
 The fields `tag_key` and `tag_value` from the users can be used in the Targets when granting access to your application. Refer to the Targets documentation (e.g., "Defining Targets") for instructions on using these fields.
 
 ## Data output for dashboards
-Warning: Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](link-to-data-output-for-dashboards) for quota and billing details.
+Warning: Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](../data-management/data-output-for-dashboard) for quota and billing details.
 
 ## Related references
 - User Management (internal documentation)
-- Signup Page (Run module) — [Signup Page](link-to-signup-page)
-- Targets documentation — [Targets](link-to-targets)
-- Data Output for Dashboards — [Data Output for Dashboards](link-to-data-output-for-dashboards)
+- Signup Page (Run module) — [Signup Page](../signup-fields)
+- Targets documentation — [Targets](../defining-targets)
+- Data Output for Dashboards — [Data Output for Dashboards](../data-management/data-output-for-dashboard)

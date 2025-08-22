@@ -8,7 +8,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](link-to-metadata) and [series](link-to-series), which can be set in your variable data.
+This widget also accepts features like [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  
@@ -21,8 +21,8 @@ This field allows you to set the device and variable that will be used by the wi
 ![Device and Variable selector](/docs_imagem/tagoio/line-chart-widget-2.png)
 
 ## Related articles
-- [Area Chart Widget](link-to-area-chart-widget)  
-- [Multiple Charts Widget](link-to-multiple-charts-widget)  
-- [Horizontal Bar Widget](link-to-horizontal-bar-widget)  
-- [Vertical Column Widget](link-to-vertical-column-widget)  
-- [Map Widget](link-to-map-widget)
+- [Area Chart Widget](../widgets/area-chart-widget)  
+- [Multiple Charts Widget](../widgets/multiple-charts-widget)  
+- [Horizontal Bar Widget](../widgets/horizontal-bar-widget)  
+- [Vertical Column Widget](../widgets/vertical-column-widget)  
+- [Map Widget](../widgets/map-widget)

@@ -4,7 +4,7 @@ description: "This article explains how to use the Trigger by Geofence feature t
 tags: ["tagoio"]
 ---
 
-The "Trigger by Geofence" feature allows you to execute an Action whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. For example, you can configure an action to trigger when a device enters or exits a designated zone. See [Action](link-to-action) for details on defining actions.
+The "Trigger by Geofence" feature allows you to execute an Action whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. For example, you can configure an action to trigger when a device enters or exits a designated zone. See [Action](actions/actions) for details on defining actions.
 
 <!-- Image placeholder removed for build -->
 
@@ -31,5 +31,5 @@ The "Trigger by Geofence" feature allows you to execute an Action whenever a var
 (Section heading visible in source — detailed step-by-step content not present in the screenshot.)
 
 ## Related references
-- See [Editing Geofence](link-to-editing-geofence) for instructions on editing geofence shapes and parameters.
-- See [Defining Actions](link-to-defining-actions) or [Actions](link-to-actions) for how to configure the action executed when the geofence condition is met.
+- See [Editing Geofence](../widgets/map-widget) for instructions on editing geofence shapes and parameters.
+- See [Defining Actions](../actions/actions) or [Actions](../actions/actions) for how to configure the action executed when the geofence condition is met.

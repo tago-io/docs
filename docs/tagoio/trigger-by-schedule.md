@@ -4,7 +4,7 @@ description: "This article explains the \"Trigger by Schedule\" trigger type in 
 tags: ["tagoio"]
 ---
 
-The trigger type Trigger by Schedule lets you define a time interval to execute your Actions automatically. See [Actions](link-to-actions) for details about configuring Actions.
+The trigger type Trigger by Schedule lets you define a time interval to execute your Actions automatically. See [Actions](../actions/actions) for details about configuring Actions.
 
 There are two categories within this trigger type:
 
@@ -25,4 +25,4 @@ If you pick the By Date type, you can customize it in either a basic or an advan
 - Basic customization: Use the interface fields to define the date or recurring date rules.
 - Advanced customization: Write a cron expression to define the date/time more precisely.
 
-To learn more about advanced (cron) customization, see [this article](link-to-advanced-customization).
+To learn more about advanced (cron) customization, see [this article](actions/action-cron).

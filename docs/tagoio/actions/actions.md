@@ -9,12 +9,12 @@ Actions is a powerful feature that gives you total control over your devices by 
 With Actions you can:
 - Send an SMS based on certain conditions.
 - Send an email based on certain conditions.
-- Run scripts using [Analysis](link-to-analysis).
+- Run scripts using [Analysis](../analysis/analysis-overview).
 - Make HTTP POST requests.
-- Send notifications to your account or to the account of your [RunUsers](link-to-runusers).
+- Send notifications to your account or to the account of your [RunUsers](../../tagorun/tagorun-mobile-app).
 - Publish to an MQTT topic based on certain conditions.
 
-Learn about [Defining Actions](link-to-defining-actions).
+Learn about [Defining Actions](../actions/actions).
 
 ## Creating Actions
 
@@ -24,7 +24,7 @@ To create a new Action, click the "Action" button in the sidebar, then click the
 
 ## See also
 
-- [Defining Actions](link-to-defining-actions)
-- [Type of trigger](link-to-type-of-trigger)
-- [Type of action](link-to-type-of-action)
-- [Running Analysis via Action](link-to-running-analysis-via-action)
+- [Defining Actions](../actions/actions)
+- [Type of trigger](../trigger-by-variable)
+- [Type of action](../actions/action-types)
+- [Running Analysis via Action](../actions/actions)

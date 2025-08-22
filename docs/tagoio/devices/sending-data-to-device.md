@@ -7,10 +7,10 @@ tags: ["tagoio", "devices"]
 TagoIO supports two-way communication with devices so they can both send and receive data. Below are the primary options for sending data from your application to a device.
 
 ## Methods to send data
-- [Publish to MQTT](link-to-publish-to-mqtt)
-- [Post data to an endpoint using HTTP](link-to-post-data-http)
-- [Create a script](link-to-create-a-script) that runs in the Analysis to access an external API
-- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol ([Support Team](link-to-support-team))
+- [Publish to MQTT](../mqtt-publishing-and-subscribing)
+- [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
+- [Create a script](../analysis/creating-analysis) that runs in the Analysis to access an external API
+- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol ([Support Team](https://help.tago.io/portal/en/newticket))
 
 ## Notes
 - Use MQTT when you need lightweight, topic-based messaging and real-time updates.
@@ -19,7 +19,7 @@ TagoIO supports two-way communication with devices so they can both send and rec
 - Contact Support if your device requires a custom protocol or middleware integration that TagoIO does not natively provide.
 
 ## See also
-- [Publish to MQTT](link-to-publish-to-mqtt)
-- [Post data to an endpoint using HTTP](link-to-post-data-http)
-- [Create a script in Analysis](link-to-create-a-script)
-- [Support Team / Custom integrations](link-to-support-team)
+- [Publish to MQTT](../mqtt-publishing-and-subscribing)
+- [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
+- [Create a script in Analysis](../analysis/creating-analysis)
+- [Support Team / Custom integrations](https://help.tago.io/portal/en/newticket)
