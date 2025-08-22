@@ -66,7 +66,7 @@ const config: Config = {
 	],
 
 	themeConfig: {
-		image: "img/docusaurus-social-card.jpg",
+		image: "img/tago-social-card.png",
 		algolia: {
 			appId: "8HPN5WF45N",
 			apiKey: "12cc282e7dcb99632185962ad2624a49",
