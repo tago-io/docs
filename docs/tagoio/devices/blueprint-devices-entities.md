@@ -14,16 +14,16 @@ Blueprint devices or entities are crucial for leveraging Blueprint Dashboards. T
 
 This feature is particularly beneficial when you want a single dashboard to be used by different end-users without exposing each other's data. It allows you to focus on one centralized dashboard, eliminating the need to maintain multiple dashboards for each type of end-user.
 
-![Image 1](https://help.tago.io/galleryDocuments/edbsn58340f57417fb7530c1de7d6cc62da23cfbb2e43429345533f4373e15ed94b5fd7164ec590b4cd87433aeaaa69014557?inline=true)
+![Image 1](/docs_imagem/tagoio/external-82f6c83e.png)
 
-![Image 2: Notes](https://static.zohocdn.com/zoho-desk-editor/static/images/file.png/)
+![Image 2: Notes](/docs_imagem/tagoio/file.png)
 
-To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/tagoio/tags-system).
+To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/tagoio/data-management/tags-system).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.
 
-![Image 4](https://help.tago.io/galleryDocuments/edbsna84ffdc23901a81d75b1a8f47627381006374939bb29b6c4459912f570fbdf10f98784a582368441913bc114fd22b034?inline=true)
+![Image 4](/docs_imagem/tagoio/external-e4b19db0.png)
 
 **Key concepts for each field:**
 
@@ -37,6 +37,6 @@ You can add up to 20 blueprints in a single dashboard.
 ### Visualization Settings
 You can easily modify the appearance of your Blueprint and the behavior of the blueprint selector.
 
-![Image 5](https://help.tago.io/galleryDocuments/edbsn58340f57417fb7530c1de7d6cc62da238e60de3a766718de8c8e9da1ea8b0e84b64b558a94320bb484a2fc5cc013f010?inline=true)
+![Image 5](/docs_imagem/tagoio/external-c405fa26.png)
 
 For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](../dashboards/blueprint-dashboard) and [Visualization Settings](../widgets/widgets-overview).

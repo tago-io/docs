@@ -23,9 +23,9 @@ More information, examples, and FAQs can be found on the [Pricing Page](https://
 ## Related documentation
 
 - [Services Overview](../services/services-overview)
-- [Analysis Service](../services/analysis-service)
+- [Analysis Service](/tagoio/analysis/analysis-service)
 - [Data Input Service](../services/data-input-service)
-- [Data Records](../services/data-records-service)
+- [Data Records](/tagoio/data-management/data-records)
 - [Data Output Service](../services/data-output-service)
 - [E-mail Service](#) (this article)
 - [End-Users Service](../services/end-users-service)

@@ -18,16 +18,16 @@ This field allows you to set the device and variable that will be used by this w
 ### 1.1 'Data From' for Normal Dashboards
 From the option **'Data From'** on the right menu, select one device from your list of devices and the variable that contains the data.
 
-![Image 2](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/e8-MfiCj5RwAfHTvlBRuj35BF4akrnZU7huPEjZZf_c/1623008017802-7Qs.png)
+![Image 2](/docs_imagem/tagoio/1623008017802-7Qs.png)
 
 Click on the **cog icon** to edit specific options for this variable, such as formulas, color, and more. Click on the **close icon** to remove this variable from the widget's data.
 
-![Image 3](https://img.zohostatic.com/zde/static/images/exclamation.png)
+![Image 3](/docs_imagem/tagoio/exclamation-4.png)
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-![Image 4](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 4](/docs_imagem/tagoio/info-8.png)
 
 When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
@@ -35,17 +35,17 @@ When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **
 
 In the area chart widget, it is possible to customize how the data will be displayed in the horizontal and vertical axis.
 
-![Image 5](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/IeIvtC1y62cckiPnhf1IsLUo3IMLr-0fYi45-q9GxzY/areaChartaxis-W_0.gif)
+![Image 5](/docs_imagem/tagoio/areaChartaxis-W_0.gif)
 
 ### 2.1 X-axis
 By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.  
 If you need to group your data through the X‑axis even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **series**.
 
-![Image 6](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 6](/docs_imagem/tagoio/info-8.png)
 
 Data is ordered by time ascending, but it is possible to change it to series:
 
-![Image 7](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/k7sEzMFGThil7aKGhLXi67SBawfcBxW0QNbu1X2sJH4/Captura%20de%20tela%20de%202021-06-17%2018-25-18-hFU.png)
+![Image 7](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-17-2018-25-18-hFU.png)
 
 It is also possible to define the X‑axis time range dynamically, using another variable data. The variable payload should look like this:
 
@@ -60,32 +60,32 @@ It is also possible to define the X‑axis time range dynamically, using another
 }
 ```
 
-![Image 8](https://img.zohostatic.com/zde/static/images/exclamation.png)
+![Image 8](/docs_imagem/tagoio/exclamation-4.png)
 
 The `start_date` specifies the start of the range, and the `end_date` specifies the end of the range. In this case, the date and format should be in ISO 8601.
 
 ### 2.2 Y-axis
 In the vertical axis, you can customize the scaling behavior: apply metric prefixes and abbreviations, change the step value (the difference between each tick), and more.
 
-![Image 9](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 9](/docs_imagem/tagoio/info-8.png)
 
 The Y‑axis will automatically find the best scale for your data; it is not necessary to customize it unless you want to do so.
 
-![Image 10](https://img.zohostatic.com/zde/static/images/file.png)
+![Image 10](/docs_imagem/tagoio/file.png)
 
 ## 3. Filtering data
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
-![Image 11](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/57wFwWKrF4a_Bd6RX_kC6M_nAkzhQtMye52jM2LEsyI/filteringDataArea.gif-AUM.gif)
+![Image 11](/docs_imagem/tagoio/filteringDataArea.gif-AUM.gif)
 
 ## 4. Increasing performance
 When a chart has a large number of data points, you can increase the widget performance by enabling the **Downsampling** feature. Downsampling also makes the data easier to visualize.
 
-![Image 12](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/y2hcdtlEWjBM82VKesVPXUIJWxWI-3P9ipvd-6TuOtU/areaDownsampling-cyw.gif)
+![Image 12](/docs_imagem/tagoio/areaDownsampling-cyw.gif)
 
 Downsampling has two concepts: **Threshold** and **Factor**.  
 The Threshold limits the amount of data to start the downsampling, and the factor determines how many samples will be cut.
 
-![Image 13](https://img.zohostatic.com/zde/static/images/exclamation.png)
+![Image 13](/docs_imagem/tagoio/exclamation-4.png)
 
 The greater the factor, the greater the performance improvement, but as the factor increases, the data also becomes less recognizable.

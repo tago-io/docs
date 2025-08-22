@@ -17,7 +17,7 @@ Analyses can be triggered by Actions (schedule or condition), by Dashboard UI el
 ## Environments
 Analyses run in TagoIO as an asynchronous, serverless service. There’s no strict queue order, and multiple executions can run at the same time. Usage counts against your profile’s Analysis Run limits.
 
-If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](/tagoio/nodejs-sdk) for Deno/Node.js, as well as a [Python SDK](/tagoio/python-sdk) to help with local development, packaging, and deployment.
+If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](/tagoio/sdk/nodejs-sdk) for Deno/Node.js, as well as a [Python SDK](/tagoio/sdk/python-sdk) to help with local development, packaging, and deployment.
 
 ## Runtimes
 TagoIO supports three runtimes for Analysis. Each runtime has different approaches to dependency management and development workflows.
@@ -35,7 +35,7 @@ import { z } from "https://deno.land/x/zod/mod.ts";
 
 This means you can write your entire Analysis in the TagoIO editor, add imports as you need them, and run immediately. The editor includes linting and formatting to help catch issues early.
 
-![Image 1: Info](https://static.zohocdn.com/zoho-desk-editor/static/images/info.png/)
+![Image 1: Info](/docs_imagem/tagoio/info-8.png)
 
 Dependencies are fetched and cached on first run, so initial executions may take a bit longer.
 
@@ -86,23 +86,23 @@ Here’s the short path to get an Analysis running:
    Use the [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk) for your runtime to read/write data, call external APIs, and log output. Keep functions idempotent when possible.
 
 4. **Add triggers (optional)**  
-   1. [Actions](/tagoio/actions): schedule (cron) or condition (e.g., variable thresholds)  
+   1. [Actions](/tagoio/actions/actions): schedule (cron) or condition (e.g., variable thresholds)  
    2. [Dashboards](/tagoio/dashboards/dashboard-overview): buttons, inputs, or other UI hooks  
-   3. [External](/tagoio/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
+   3. [External](/tagoio/analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
 
 5. **Run and monitor**  
    Execute on demand to test, then let triggers handle it. Check logs, run history, and usage.
 
 ## On this page
-- Environments (see [Environments](../analysis/analysis-environments))
-- Runtimes
-  - Getting Started (see [Getting Started with Runtimes](../analysis/analysis-service#runtimes))
+- Environments (see [Environments](#environments))
+- Runtimes (see [Runtimes](#runtimes))
+  - Getting Started (see [Getting Started](#getting-started))
 
 ## Analysis (related documentation)
 - [Analysis Overview](../analysis/analysis-overview)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
-- [Script Examples](../analysis/script-examples)
+- [Script Examples](/tagoio/tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
 - [Distributing analysis](../analysis/distributing-analysis)

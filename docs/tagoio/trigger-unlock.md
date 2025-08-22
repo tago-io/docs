@@ -21,7 +21,7 @@ You can check if your action is locked by looking at the **Locked** switch, as s
 
 The lock button will only appear once you add at least one condition.
 
-![Image 1](https://help.tago.io/galleryDocuments/edbsndc2406bf2cd3cd61aa1f461cc2d1f203548db3124e424cd8bb3a7bdfd1393f8a64142422313dab0897a94f428a9ffc80?inline=true)
+![Image 1](/docs_imagem/tagoio/external-4f45b6c0.png)
 
 ### Manual Locking
 
@@ -29,9 +29,9 @@ You can also set this Locked parameter manually; all you have to do is click it 
 
 ### Unlock Condition Example
 
-Additionally, you can run the action again when an unlock condition is met. For example, if you are triggering an [Analysis](/tagoio/creating-analysis)​ to set a device in alert mode due to high-temperature readings, you can also switch to safe mode upon meeting an unlock condition.
+Additionally, you can run the action again when an unlock condition is met. For example, if you are triggering an [Analysis](/tagoio/analysis/creating-analysis)​ to set a device in alert mode due to high-temperature readings, you can also switch to safe mode upon meeting an unlock condition.
 
-![Image 2](https://help.tago.io/galleryDocuments/edbsn83f7f9c4d0ea858d2e944796341d591da55a470efb13228166766d02b73b76188e26b933d9404aba747ea3e7f323ef66?inline=true)
+![Image 2](/docs_imagem/tagoio/external-205c14dd.png)
 
 ### Duplicate Trigger Warning
 

@@ -38,7 +38,7 @@ This will start the installation of the TagoIO SDK and the TagoIO‑Builder if y
 
 **2‑4.** Create a file called `analysis.js`. Open it with your favorite editor, like Visual Studio Code or even Notepad. You can write the code exactly as you would do on the TagoIO editor.
 
-![Image 1](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 1](/docs_imagem/tagoio/info-8.png)
 
 You can get the Hello World analysis example by clicking [here](https://raw.githubusercontent.com/tago-io/analysis-example-console/master/analysis.js).
 
@@ -54,7 +54,7 @@ module.exports = new Analysis(myAnalysis, { token: '**MY-ANALYSIS-TOKEN-HERE**' 
 
 You can get the analysis token by accessing your analysis page at TagoIO and selecting **External** for “Run the scripts from”. Create a new analysis if you don’t have any.
 
-![Image 2](https://cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/fVy09F-xhsQXjDaMLlfpHk2GQs-AueW4CYuIQXvz0sY/1600873613832-4Vc.png)
+![Image 2](/docs_imagem/tagoio/1600873613832-4Vc.png)
 
 Now run the script from your command line:
 
@@ -64,11 +64,11 @@ node ./analysis.js
 
 You should see a prompt similar to this:
 
-![Image 3](https://cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/kllKT91shmxOX75M87YoKF21b4h95EZDw4IOpw2SNus/Screen%20Shot%202019-03-06%20at%2016.32.35-37A.png)
+![Image 3](/docs_imagem/tagoio/Screen-20Shot-202019-03-06-20at-2016.32.35-37A.png)
 
 Go back to Tago and click **Save and Run** or just **Run** to run your script. You can also configure an action to run your script automatically.
 
-![Image 4](https://cdn.elev.io/file/uploads/Vz4v2Fi-0uG-N7jOjBzSIFz4EER9y2t5YZIRrkJk9Xs/6I7OzscfGfva-iO2q516PBd6V6NFxVUKvdHJF_Ds7vU/1611084833441-Ers.png)
+![Image 4](/docs_imagem/tagoio/1611084833441-Ers.png)
 
 ## 4. Use Analysis‑Builder to Upload the Script
 
@@ -97,7 +97,7 @@ You can check our analysis examples with the full environment already set up for
 ## References and related documentation
 
 - See [Analysis](../analysis/analysis-overview) for an overview of creating and managing analyses in TagoIO.
-- See [Analysis‑Builder](../analysis/console-for-debug) for details on bundling and uploading scripts that use third‑party packages.
+- See [Analysis‑Builder](/tagoio/console-for-debug) for details on bundling and uploading scripts that use third‑party packages.
 
 On this page (for reference)
 - 1. Install Node.js and NPM

@@ -31,7 +31,7 @@ There are 5 types of triggers you can use:
 
 * **Schedule** – This action will be triggered automatically from time to time. You can specify a custom range (every second Wednesday of September), or you can specify a fixed time range (every 2 hours). Learn more about [Trigger by Schedule](../trigger-by-schedule).
 
-* **Usage Alert** – This action will be triggered upon a Services and/or Resources usage percentage set by the user. This type keeps watching Services and Resources and triggers the Action when the conditions are met. Learn more about [Trigger by Usage Alert](../trigger-by-usage-alert).
+* **Usage Alert** – This action will be triggered upon a Services and/or Resources usage percentage set by the user. This type keeps watching Services and Resources and triggers the Action when the conditions are met. Learn more about [Trigger by Usage Alert](/tagoio/notifications/trigger-by-usage-alert).
 
 * **Geofence** – This action will be triggered whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. Learn more about [Trigger by Geofence](../trigger-by-geofence).
 

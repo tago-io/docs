@@ -22,6 +22,6 @@ Filtering by values will show all values for the selected variables, but only fo
 ![Filter options panel showing Add filter and Table config](/docs_imagem/tagoio/map-filters-2.png)
 
 Once the filter is enabled, a filter button will be displayed on the top left of the map widget.  
-![Filter button on map widget](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/NaiN2xdsVfHZNQF_8Xo4ZgD9iNLjUZEBWXsS1sYI_V8/filters3-Eq4-G9k.gif)
+![Filter button on map widget](/docs_imagem/tagoio/filters3-Eq4-G9k.gif)
 
 > Keep in mind that list by value in the Filter table only shows the values from the variables, and not the latitude and longitude of positions, for example.

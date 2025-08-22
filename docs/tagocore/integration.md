@@ -23,7 +23,7 @@ To connect your TagoCore with your TagoIO account, follow [our tutorial](https:/
 
 ## Related documentation and resources
 
-- See [TagoCore](../tagocore/index) (main TagoCore article)
+- See [TagoCore](../tagocore) (main TagoCore article)
 - See [TagoCore Cluster](../tagocore/tagocore-cluster)
 - See [TagoCore Open Source documentation](../tagocore/tagocore-open-source-documentation)
 - Tutorial: [our tutorial](https://docs.tagocore.com/tagocore/getting-started/connect-tagoio) (connect TagoCore to TagoIO)

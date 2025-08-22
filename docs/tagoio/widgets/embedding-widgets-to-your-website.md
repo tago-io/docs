@@ -18,12 +18,12 @@ Below is a simple example of using embedded widgets in your own website.
 ### How to Generate the Embedding Code
 
 1. **Open the dashboard** that contains the widget you want to embed, and click the gear icon on that widget.  
-   ![Image 3:](https://cdn.elev.io/file/uploads/PEfBOej3wR4slKcXFF0VfOndFuEYx_C9vFdA35csXyc/GuW_scwhWzgoJAugX9gDSONYWETvhI7ZglAVy8Yw8x0/Screen%20Shot%202018-06-12%20at%2009.45.31-sYg.png)
+   ![Image 3:](/docs_imagem/tagoio/Screen-20Shot-202018-06-12-20at-2009.45.31-sYg.png)
 
 2. In the widget settings, navigate to the **Embed Widget** tab and click **Generate Code**.  
-   ![Image 4](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/VlRlV283obY2XrRdwjFdCRjf7E2Cqmwm-Y9XnQ59XB4/Captura%20de%20tela%20de%202021-07-02%2009-35-46-UIU.png)
+   ![Image 4](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-02-2009-35-46-UIU.png)
 
 3. Tago will generate an iframe snippet for you. Click **Copy** to copy the code.  
-   ![Image 5](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/X7j9twuZmBkAukrvAQJQVR0aB_GuL5dtc2QBvmIINEw/Captura%20de%20tela%20de%202021-07-02%2009-43-28-gEI.png)
+   ![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-02-2009-43-28-gEI.png)
 
 4. Paste the copied code into your website’s HTML where you want the widget to appear. The data from Tago will update in real‑time for anyone who views the page.

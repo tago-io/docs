@@ -9,7 +9,7 @@ All chart-type widgets in TagoIO can be configured to display reference lines wi
 
 ## Supported widgets
 
-The widgets that support this feature include the [Area Chart](../widgets/area-chart-widget), [Line Chart](../widgets/line-chart-widget), [Horizontal Bar](../widgets/horizontal-bar-widget), [Vertical Column](../widgets/vertical-column-widget), and [Multiple Charts](../widgets/multiple-charts-widget).
+The widgets that support this feature include the [Area Chart](/tagoio/widgets/area-chart-widget), [Line Chart](/tagoio/widgets/line-chart-widget), [Horizontal Bar](/tagoio/widgets/horizontal-bar-widget), [Vertical Column](/tagoio/widgets/vertical-column-widget), and [Multiple Charts](/tagoio/widgets/multiple-charts-widget).
 
 ## Adding reference lines to your chart
 
@@ -26,7 +26,7 @@ Up to **5** reference lines per widget are allowed.
 ### Fixed vs Variable source
 
 - When using a **fixed** source, you can manually set a *Label* and *Color* for the line.  
-- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/tagoio/metadata) article.
+- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/tagoio/data-management/metadata) article.
 
 ### Multiple axes
 

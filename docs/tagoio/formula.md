@@ -8,7 +8,7 @@ The Formula feature enables users to modify the visualization of data in specifi
 <!-- Image placeholder removed for build -->
 
 ## How it works
-The system receives input data from a variable in your [Device](../devices/devices), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
+The system receives input data from a variable in your [Device](/tagoio/devices/devices), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
 
 Example flow:
 - Input value: 10
@@ -65,7 +65,7 @@ The following operators are available in Formula expressions:
 | /, *     | divide, multiply | `$value$ / 2.14` |
 | to       | unit conversion | `$value$ inch to cm` |
 | ? :      | conditional expression | `$value$==1 ? $VALUE$ ON : OFF` |
-| >>, <<   | arithmetic shifts | `$VALUE$ >> 1` |
+| >>, &lt;&lt;   | arithmetic shifts | `$VALUE$ >> 1` |
 | sqrt, sin, log | math operations | `sqrt ($value$)` |
 
 More operators can be found on [Math.js](https://mathjs.org/docs/expressions/syntax.html).
@@ -86,10 +86,10 @@ Special variables are replaced at runtime based on the current TagoRUN user’s 
 
 | Formula Example | Description | Example Output |
 |-----------------|-------------|----------------|
-| Date($METADATA.shipped_at$, "$DATE_FORMAT\$ $TIME_FORMAT$") | Formats a metadata date using user preferences | 07/23/2024 14:30 |
-| Date($VALUE$, "$DATE_FORMAT\$ HH:mm:ss") | Custom time with user date format | 23/07/2024 18:45:10 |
-| Date($VALUE$, "YYYY-MM-DDTHH:mm:ss[Z]") | ISO 8601 format for timestamps | 2024-07-23T18:45:10Z |
-| Date($TIME$, "HH:mm") | Time only, 24‑hour format | 14:30 |
+| `Date($METADATA.shipped_at$, "$DATE_FORMAT$ $TIME_FORMAT$")` | Formats a metadata date using user preferences | 07/23/2024 14:30 |
+| `Date($VALUE$, "$DATE_FORMAT$ HH:mm:ss")` | Custom time with user date format | 23/07/2024 18:45:10 |
+| `Date($VALUE$, "YYYY-MM-DDTHH:mm:ss[Z]")` | ISO 8601 format for timestamps | 2024-07-23T18:45:10Z |
+| `Date($TIME$, "HH:mm")` | Time only, 24‑hour format | 14:30 |
 
 ### Formula application examples
 To visualize a temperature in Fahrenheit when the device stores Celsius:
@@ -107,7 +107,7 @@ or
 More options are available in the dropdown list of the Formula field.
 
 ### Units for output variables
-After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](../widgets/display-units).
+After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/tagoio/displaying-units).
 
 ### Minimum and Maximum limits
 The formula does not adjust the widget’s data range. The Min and Max values are still controlled by the settings in the **Data Range** tab.
@@ -126,6 +126,6 @@ Dynamic Formulas allow formulas to adapt based on user preferences or browser se
 Dynamic Formulas are especially useful for letting users choose units (Celsius, Fahrenheit, Kelvin) or other display options that automatically adjust across dashboards.
 
 ## Related sections
-- See [Simple Formulas](../widgets/widgets-overview)
-- See [Dynamic Formulas](../custom-settings)
+- See [Simple Formulas](/tagoio/widgets/widgets-overview)
+- See [Dynamic Formulas](/tagoio/custom-settings)
 - For more details about device data, configuration, and related topics, refer to the Device and Widgets documentation within the TagoIO knowledge base.

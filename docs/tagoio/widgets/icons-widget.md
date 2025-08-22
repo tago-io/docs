@@ -27,7 +27,7 @@ Use the "Data From" field to select which device and variable(s) will feed the I
 
 Click on the cog icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
 
-![Data From example](/cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/e8-MfiCj5RwAfHTvlBRuj35BF4akrnZU7huPEjZZf_c/1623008017802-7Qs.png)
+<!-- Image temporarily disabled: Data From example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/e8-MfiCj5RwAfHTvlBRuj35BF4akrnZU7huPEjZZf_c/1623008017802-7Qs.png -->
 
 ### 2. Conditions
 
@@ -36,7 +36,7 @@ The widget changes its content based on two types of conditions, **Icon conditio
 - The priority order between conditions is top to bottom; a condition in the top row always has priority over one below.
 - It is possible to show your own images in the widget by adding their icon URL.
 
-![Conditions example](/cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/6urQaiVLijluk8JJulhV5B4xTQgm9ZjdlYuJpFGanMg/editingConditions-vVQ.gif)
+<!-- Image temporarily disabled: Conditions example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/6urQaiVLijluk8JJulhV5B4xTQgm9ZjdlYuJpFGanMg/editingConditions-vVQ.gif -->
 
 ## Related Articles
 

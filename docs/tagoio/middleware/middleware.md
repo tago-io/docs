@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 Through a TagoIO middleware, companies can connect devices that use their own protocols. The middleware acts as a protocol converter from any transport type (for example, TCP/IP, UDP, etc.) to the standard TagoIO APIs.
 
-For more detailed steps on implementing middleware, see [Creating a Networks Integration](../integrations/creating-networks-integration).
+For more detailed steps on implementing middleware, see [Creating a Networks Integration](/tagoio/integrations/creating-a-network-integration).
 
 Also review the tutorial available in the TagoIO [community](https://community.tago.io) to get your network up and running.  
 **Additionally, follow this step‑by‑step guide:** [How to create your own network to integrate with TagoIO](https://community.tago.io/t/how-to-create-your-own-network-to-integrate-with-tagoio/429).
@@ -16,7 +16,7 @@ Also review the tutorial available in the TagoIO [community](https://community.t
 
 General:
 - [Network Integration](../integrations/connector-overview)
-- [Creating a Network integration](../integrations/creating-networks-integration)
+- [Creating a Network integration](/tagoio/integrations/creating-a-network-integration)
 - [Authorization](../security/authorization)
 - [Serial Number Format](../serial-number-format)
 - [Middleware](../middleware/middleware)

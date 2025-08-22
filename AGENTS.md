@@ -1,175 +1,135 @@
 # AGENTS.md - Documentation Scraping Knowledge Base
 
+For local automation and maintenance scripts, see ./infra/AGENTS.md (the infra folder is ignored by GitHub and used only for local tooling and reports).
+
 ## Project Overview
-Scraping TagoIO documentation from https://help.tago.io/portal/en/kb and converting it to Docusaurus format with local images.
+Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb to Docusaurus, storing all assets locally and maintaining working internal links and sidebars.
 
-## Site Structure Analysis
+## Current Repository Status (8/22/2025)
+- Docusaurus site configured and running
+  - Node >= 18 required
+  - Root scripts: npm run start | build | serve | typecheck
+- Documentation coverage in repo
+  - tagoio: 246 markdown files
+  - tagorun: 4 markdown files
+  - tagodeploy: 3 markdown files
+  - tagocore: 4 markdown files
+  - Total: 257 markdown files
+- Local images: 439 under static/docs_imagem/* (plus a few under static/img/docs)
+- Sidebars fully wired in sidebars.ts
+- URL mapping utilities present for converting help.tago.io links to local docs paths
 
-### Main Categories Discovered
-1. **TagoIO** - https://help.tago.io/portal/en/kb/tagoio
-   - 219 articles, 21 sections
-   - Most comprehensive section
-   
-2. **TagoRUN** - https://help.tago.io/portal/en/kb/tagorun  
-   - 24 articles, 5 sections
-   
-3. **TagoDeploy** - https://help.tago.io/portal/en/kb/tago-deploy
-   - 1 article
-   
-4. **TagoCore** - https://help.tago.io/portal/en/kb/tagocore
-   - 3 articles
+## Site Structure Analysis (Source Site)
+Main categories at help.tago.io:
+1. TagoIO – https://help.tago.io/portal/en/kb/tagoio (219 articles, 21 sections)
+2. TagoRUN – https://help.tago.io/portal/en/kb/tagorun (24 articles, 5 sections)
+3. TagoDeploy – https://help.tago.io/portal/en/kb/tago-deploy (1 article)
+4. TagoCore – https://help.tago.io/portal/en/kb/tagocore (3 articles)
 
-### TagoIO Section Breakdown
-Main sections identified with their URLs:
-- **Getting Started** - /tagoio/getting-started ✅ COMPLETED
-- **Devices** - /tagoio/devices
-- **Dashboards** - https://help.tago.io/portal/en/kb/articles/15-dashboard-overview  
-- **Widgets** - https://help.tago.io/portal/en/kb/tagoio/9-widgets (65 articles, 35 sections)
-- **Actions** - /tagoio/actions
-- **Analysis** - /tagoio/analysis-overview
-- **Entities** - /tagoio/entities
-- **Integration** - https://help.tago.io/portal/en/kb/tagoio/integration (21 articles, 2 sections)
-- **Profiles** - /tagoio/profiles
-- **Services** - /tagoio/services-overview
-- **Add-Ons** - /tagoio/control-tower
-- **Files** - /tagoio/files
-- **Notifications** - /tagoio/notification
-- **Billing** - /tagoio/account-plans
-- **API** - /tagoio/api-overview
-- **Payload Parser** - /tagoio/payload-parser
-- **My Account** - /tagoio/account/editing-accounts-details
-- **Tutorials** - /tagoio/abs-telemetry
-- **SDK** - /tagoio/python-sdk
-- **Support** - /tagoio/ticket-severity-options
-- **Compliance** - /tagoio/security/security-and-compliance
+TagoIO key sections and their mappings exist locally (Devices, Dashboards, Widgets, Actions, Analysis, Entities, Integration, Profiles, Services, Files, Notifications, Billing, API, Payload Parser, My Account, Tutorials, SDK, Support, Compliance). See sidebars.ts for the full tree.
 
 ## Technical Implementation Details
 
-### Playwright Browser Automation
-- Successfully navigated help.tago.io using playwright_browser_navigate
-- Used playwright_browser_snapshot for page analysis
-- Extracted content using playwright_browser_evaluate with JavaScript
-- Site uses complex nested structure with dynamic content loading
+### Automation & Scripts (all under ./infra)
+- Content fetching
+  - fetch_original_markdown.js – Fetch original articles via Jina Reader; saves to infra/original_markdown/
+  - scripts/fetch-articles.ts – Article discovery/fetch (TypeScript variant)
+- Link and content maintenance
+  - replace-help-links.js – Rewrites external help.tago.io links to local routes using mapping
+  - audit-internal-links.js – Finds broken internal links
+  - audit-and-fix-links.js – Attempts automated fixes for broken links
+  - fix-internal-links.js – Deterministic normalization of internal links
+  - comprehensive-mdx-fix.js – Batch MD/MDX cleanup
+  - fix-remaining-mdx-errors.js – Final pass for build-breaking issues
+  - fix-build-errors.js – Focused remediation for build failures
+- Images and assets
+  - images_download_list.json, external_images.json – Inventory of remote images
+  - download_missing_images_*.sh – Bulk downloader for missing images
+  - scripts/optimize-images.js – Image optimization
+  - deduplicate-images.js, detect-duplicates.js – Image dedup; results in deduplication-results-*.json
+  - duplicate-analysis-*.json – Reports for potential duplicates
+- Mappings and data
+  - url-mapping-solution.js – Functions to convert help.tago.io URLs to local paths
+  - redirect-mappings.json, url-mappings.json – Mapping sources (root)
+  - map_old2new.json, tagoio-sections.json – Additional mapping/structure helpers
+  - articles-data.json, processed-articles.json, failed-articles.json – Processing logs
+- Other utilities
+  - scripts/process-articles.ts – End-to-end content processing
+  - scripts/sync_missing_content.py – Sync missing content
+  - merge_with_lmstudio.mjs – Assisted merge flow
+  - README.md – Usage for fetching originals
+
+Usage pattern
+- cd infra; node <script>.js (or ts-node/ts compiler where applicable)
+
+### Browser Automation
+- Playwright used for exploration and extraction when needed (see infra/scripts and dependencies)
 
 ### Image Handling Strategy
-Images found use CDN URLs from:
-- `https://cdn.elev.io/file/uploads/...` (primary image source)
-- `https://contacts.zoho.com/file/...` (secondary source)
-- `https://desk.zoho.com/portal/api/publicImages/...` (third source)
-
-**Image Processing Workflow:**
-1. Extract all `img` elements from main content area
-2. Filter for relevant images (exclude icons, avatars, etc.)
-3. Download images using `curl` to `static/img/docs/`
-4. Rename with descriptive names: `{section-name}-{index}.{ext}`
-5. Update markdown to reference local paths: `/img/docs/{filename}`
-
-### Content Extraction Challenges
-- **Complex DOM Structure**: Site uses nested divs with generic class names
-- **Dynamic Loading**: Some content loads after initial page render
-- **Mixed Content**: Articles contain text, images, videos, code blocks, and links
-- **Navigation Elements**: Need to filter out sidebars, footers, and related articles
-
-### Successful Content Processing (Getting Started Example)
-```javascript
-// JavaScript evaluation strategy that worked:
-const allImages = document.querySelectorAll('img');
-// Extract image sources and metadata
-// Filter for content images vs UI elements
-// Process and clean content structure
-```
-
-**Content Structure Identified:**
-- Main title (h1)
-- Step-by-step sections with blockquotes
-- Code blocks for API examples  
-- Images with GIFs and PNGs
-- Internal and external links
-- YouTube video embeds
-
-### File Organization
-**Directory Structure Created:**
-```
-docs/
-├── tagoio/
-│   ├── index.md (overview)
-│   └── getting-started.md ✅
-├── tagorun/
-├── tagodeploy/
-└── tagocore/
-
-static/img/docs/
-├── getting-started-1.gif
-├── getting-started-2.gif
-├── getting-started-3.gif
-├── getting-started-4.png
-├── getting-started-5.png
-├── getting-started-6.png
-├── getting-started-7.png
-├── getting-started-8.gif
-└── getting-started-9.png
-```
+- Sources: cdn.elev.io, contacts.zoho.com, desk.zoho.com/portal/api/publicImages
+- Storage: static/docs_imagem/{tagoio|tagorun|tagodeploy|tagocore}/...
+- Referencing in Markdown: /docs_imagem/<section>/<filename>
 
 ### Docusaurus Integration
-- **Sidebar Configuration**: `sidebars.ts` already has comprehensive structure prepared
-- **Image References**: Updated to use `/img/docs/` path for local images
-- **Markdown Format**: Clean conversion with proper headers, code blocks, and links
-- **Internal Links**: Preserved references to other documentation sections
+- Config: docusaurus.config.ts
+- Sidebars: sidebars.ts
+- Root scripts
+  - npm run start – local dev
+  - npm run build – static build
+  - npm run serve – serve built site
+  - npm run typecheck – TS typecheck
 
-## Lessons Learned
+## Content Extraction Challenges
+- Complex DOM structure with dynamic loading
+- Mixed content (text, images, code, videos)
+- Need for selective image filtering vs UI icons
+- Consistent internal linking across hundreds of pages
 
-### What Works
-1. **Playwright Browser Navigation**: Reliable for exploring site structure
-2. **JavaScript Evaluation**: Effective for extracting content and image URLs
-3. **Curl Downloads**: Fast and reliable for image downloading
-4. **Manual Content Conversion**: Ensures quality and proper formatting
+## What Works Well
+- Programmatic mapping of URLs to local routes
+- Local image storage and link rewriting
+- Sidebars structure mirroring original taxonomy
+- Batch link audits and automated fix passes
 
-### Challenges Encountered  
-1. **Scale**: 247+ articles total is massive undertaking
-2. **Content Complexity**: Each article has unique structure and multiple images
-3. **Dynamic Content**: Some elements load asynchronously
-4. **Image Filtering**: Need to distinguish content images from UI elements
+## Success Metrics (current)
+- 257 docs present across all sections
+- 439 local images
+- Sidebars fully wired and navigable
+- Build-ready structure with local images and internal links
 
-### Best Practices Established
-1. **One Article at a Time**: Manual processing ensures quality control
-2. **Image Organization**: Consistent naming scheme with section prefixes
-3. **Local Image Storage**: All images downloaded and referenced locally
-4. **Clean Markdown**: Remove navigation elements, focus on content
-5. **Preserve Links**: Maintain both internal and external link references
+## Standard Workflows
+- Fetch original articles (for parity checks)
+  - cd infra; node fetch_original_markdown.js [--test]
+- Rewrite external links to local
+  - cd infra; node replace-help-links.js
+- Audit links
+  - cd infra; node audit-internal-links.js
+  - cd infra; node audit-and-fix-links.js
+- Fix build and MDX issues
+  - cd infra; node comprehensive-mdx-fix.js
+  - cd infra; node fix-remaining-mdx-errors.js
+  - cd infra; node fix-build-errors.js
+- Optimize and deduplicate images
+  - cd infra; node scripts/optimize-images.js
+  - cd infra; node deduplicate-images.js
+  - Review reports: deduplication-results-*.json, duplicate-analysis-*.json
+- Run the site
+  - npm run start | npm run build | npm run serve
 
-## Tools and Commands Used
+## Backlog / Next Steps
+- Normalize residual external image references and ensure all are local
+- Consolidate image naming and consider moving long-term to static/img/docs with consistent naming
+- Continue running link audits after bulk edits
+- Add/standardize front matter (title/description/tags) across all pages
+- Create redirect metadata for legacy help.tago.io links if needed (Docusaurus redirects)
+- Periodic content parity checks against infra/original_markdown
 
-### Playwright Browser Automation
-```bash
-playwright_browser_navigate("https://help.tago.io/portal/en/kb")
-playwright_browser_snapshot()
-playwright_browser_evaluate("() => { /* JavaScript */ }")
-```
+## Comparison & QA Notes
+- original_markdown contains fetched source content for reference
+- Use processed-articles.json and failed-articles.json to identify outliers
+- Use articles-summary.md (infra) and audit reports to guide manual review
 
-### Image Download Commands
-```bash
-curl -o "static/img/docs/filename.ext" "https://cdn.elev.io/file/uploads/..."
-```
-
-### File Operations
-```bash
-mkdir -p docs/tagoio static/img/docs
-find docs -type f | head -20
-```
-
-## Success Metrics
-- ✅ 1 complete article processed (Getting Started)
-- ✅ 9 images downloaded and integrated  
-- ✅ Proper Docusaurus structure established
-- ✅ Local image references working
-- ✅ Clean markdown format achieved
-
-## Next Article Processing Template
-For each new article:
-1. Navigate to article URL using playwright
-2. Extract content structure and images using JavaScript evaluation
-3. Download all content images to `static/img/docs/`
-4. Convert content to clean markdown
-5. Update image references to local paths
-6. Create/update corresponding documentation file
-7. Test in Docusaurus environment
+## Earlier Plan (Kept for Reference)
+- One-article-at-a-time high-quality conversion strategy proved reliable
+- Local image storage and link rewriting are essential for stable builds
+- Preserve internal linking structure and taxonomy for familiarity

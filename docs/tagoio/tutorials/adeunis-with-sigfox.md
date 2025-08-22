@@ -29,7 +29,7 @@ To add an Adeunis device in TagoIO:
 You can start building **dashboards** immediately: [Dashboard Overview](/tagoio/dashboards/dashboard-overview).
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
-- Notifications: [Notifications](/tagoio/notification)  
-- Scripts: [Creating Analysis Scripts](/tagoio/creating-analysis)
+- Notifications: [Notifications](/tagoio/notifications/notification)  
+- Scripts: [Creating Analysis Scripts](/tagoio/analysis/creating-analysis)
 
-If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/tagoio/sigfox).
+If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/tagoio/tutorials/sigfox).

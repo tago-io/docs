@@ -22,7 +22,7 @@ To use the files via **Admin**, go to *Files* in the left menu. From there you c
 - Drag‑and‑drop files onto the page to upload them to the current folder.  
 - Select multiple files by holding **Shift** or **Ctrl** while clicking on the desired files.  
 - Right‑click a file to open a context menu with actions such as rename, delete, move, and download.  
-  ![Context menu example](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/wtTg78NIG4FQ2Jq9BYjtGzWVpNC1d_4rd_7cdJFJBcc/1627914062208-mNE.png)  
+  ![Context menu example](/docs_imagem/tagoio/1627914062208-mNE.png)  
 - Selecting a row shows detailed information about the file or folder in the right‑side panel.
 
 ## See also
@@ -30,6 +30,6 @@ To use the files via **Admin**, go to *Files* in the left menu. From there you c
 - See [Uploading Files](uploading-files) for instructions on uploading files to TagoIO.
 - Related documentation:
   - [Services Overview](services/services-overview)
-  - [Device data management](data-management/data-management)
-  - [Dashboard Overview](dashboards/creating-dashboards)
+  - [Device data management](/tagoio/data-management)
+  - [Dashboard Overview](/tagoio/dashboards/dashboard-overview)
   - [Analysis Overview](analysis/analysis-overview)

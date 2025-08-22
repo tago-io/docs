@@ -20,6 +20,6 @@ Some of the most commonly used languages for RUN applications include:
 ## How end-users choose a language
 All end-users can select their preferred language from the "Visualization Preferences" tab on the Account Setting page.
 
-> ![Caution](https://img.zohostatic.com/zde/static/images/caution.png)
+> ![Caution](/docs_imagem/tagoio/caution.png)
 >
 > **Warning:** Make sure that your current plan allows the [deployment of multi-language](using-dictionaries-multi-language) for your end-users.

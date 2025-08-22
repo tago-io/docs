@@ -9,7 +9,7 @@ TagoIO offers three account plans that allow you to use the platform's tools and
 
 <!-- Image placeholder removed for build -->
 
-![Account Plans](https://help.tago.io/galleryDocuments/edbsn1b6752bdf6b46ccec1517323713a1d8765d7c3974162d47b4bf55ea59c89974ea022bf39d99aefd6ce5607d78c63d907?inline=true)
+![Account Plans](/docs_imagem/tagoio/external-7c017b2d.png)
 
 ### Plan Types
 

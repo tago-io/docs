@@ -15,7 +15,7 @@ https://tago-sdk-js-documentation.rtfd.io/
 
 > Note: The old SDK will be discontinued in 2030.
 
-![Image 3](https://static.zohocdn.com/zoho-desk-editor/static/images/info.png)
+![Image 3](/docs_imagem/tagoio/info-8.png)
 
 ## Rate limits
 When executing requests to TagoIO, there is a limit on the number of requests that can be made within a given time period. Read more about our [Rate Limits](../rate-limits-hard-limits).

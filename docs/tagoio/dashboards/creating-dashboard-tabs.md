@@ -30,7 +30,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 
 - **Dashboard**: The tab will be able to contain widgets.
 - **Link**: The tab will be a link to another dashboard or another web page. You **cannot** put widgets inside of this tab.
-- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](/tagoio/widget-header).
+- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](/tagoio/widgets/widget-header).
 
 <!-- Tab creation interface image -->
 
@@ -40,7 +40,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 
 ## Visibility Conditions
 
-You can configure the tabs on your dashboard to restrict access for your end users on [TagoRun](/tagorun/tagorun) according to the **tags** you defined in the [User Management](/tagoio/user-management) module. This functionality is very useful since you can have fine-grained control over which tabs are displayed for different types of users without having to duplicate the dashboards for different user roles.
+You can configure the tabs on your dashboard to restrict access for your end users on [TagoRun](/tagorun) according to the **tags** you defined in the [User Management](/tagoio/account/user-management) module. This functionality is very useful since you can have fine-grained control over which tabs are displayed for different types of users without having to duplicate the dashboards for different user roles.
 
 In order to configure the visibility conditions, you will need to access your dashboard settings, then Tabs and click on the eye icon.
 

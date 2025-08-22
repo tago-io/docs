@@ -26,7 +26,7 @@ Geofences allow developers to color parts of the map and detect or trigger event
 ## Related articles
 - See [Map Widget](../widgets/map-widget)
 - See [Image Marker Widget](../widgets/image-marker-widget)
-- See [Trigger by Geofence](../actions/trigger-by-geofence)
+- See [Trigger by Geofence](/tagoio/trigger-by-geofence)
 - See [Compose Widget](../widgets/compose-widget)
 - See [Custom Widget](../widgets/custom-widget)
 
@@ -34,17 +34,17 @@ Geofences allow developers to color parts of the map and detect or trigger event
 
 To create a geofence, go to **Geofence options** in your widget's configuration. Then set the option **Allow users to edit geofence** to *yes*. You can choose to allow users to create polygons, circles or both, and even select the number of geofences allowed in the map.
 
-![Image 2](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/5sqmMrDLK1vYmpGoamq50ijbV5CvZxoiJOtr8lJ2KGA/Captura%20de%20tela%20de%202021-07-12%2009-13-40-324.png)
+![Image 2](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-13-40-324.png)
 
 > The maximum number of geofences allowed is **99**.
 
 You can also set the title of the geofences in the field **Geofence tooltip title**. The title will be shown in all of the geofences' pop‑ups, like so:
 
-![Image 3](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/nbLOFx6mIsDgLCH7toCtxM7mOlFNu3mg-A6KNz9kkTQ/Captura%20de%20tela%20de%202021-07-12%2009-16-22-Tg8.png)
+![Image 3](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-16-22-Tg8.png)
 
 After setting up the options, you are all set to create the geofences. Go to the map widget and click on the pencil icon; use the tools located on the top right of the screen.
 
-![Image 6](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/XQDnKPh1w7AdphkNTIRSTMuC_NoYrH7xwKHtSg58y0A/desenhando2-SO8.gif)
+![Image 6](/docs_imagem/tagoio/desenhando2-SO8.gif)
 
 The geofence toolbox is composed by:
 
@@ -59,7 +59,7 @@ Below the toolbox, you can find a list of all the geofences that are in the sele
 
 You can add events to geofences. To do so, head over to the **Geofence Options** tab in the map's edit configuration. For each event, set an *event code* (so it can be identified in analysis) and a *description* (what users will see). You can also set a layer color; this color will change the color of the geofence itself.
 
-![Image 4](https://cdn.elev.io/file/uploads/PEfBOej3wR4slKcXFF0VfOndFuEYx_C9vFdA35csXyc/PH6D55-ZykCRoRbvgx2tpuzuSnnH2sGdklPcgYzxM54/Screen%20Shot%202018-08-16%20at%2015.41.33-DN4.png)
+![Image 4](/docs_imagem/tagoio/Screen-20Shot-202018-08-16-20at-2015.41.33-DN4.png)
 
 ## Geofence variable data
 
@@ -67,7 +67,7 @@ The geofences will be saved in a variable, so developers can manage them easily,
 
 > This is similar to the *Data From* field from the Map Widget.
 
-![Image 5](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/A_4OXeMVLz7uoN8zATQGLFzZLZdiyaopYbS9OSAbcSg/Captura%20de%20tela%20de%202021-07-12%2009-18-20-u98.png)
+![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-18-20-u98.png)
 
 When users create new geofence areas, they will be saved in the previously selected variable with the following format; notice that you will have the coordinates of the polygons in the variable's metadata.
 

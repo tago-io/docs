@@ -30,14 +30,14 @@ TagoIO will send warning emails and push notifications when a service usage exce
 
 ## Where to view usage
 
-- Usage limits and history: see the Usage Statistics tab under the Profiles section in your TagoIO account (refer to [Usage Statistics](../account/profiles#usage-statistics)).
+- Usage limits and history: see the Usage Statistics tab under the Profiles section in your TagoIO account (refer to [Profiles](../account/profiles)).
 - To assign services per profile: see [Allocating Services to profiles](../services/allocating-services-to-profiles).
 
 ## Related documentation
 
 - See [Profile](../account/profiles) for profile configuration and management.
 - Services reference:
-  - [Analysis Service](../services/analysis-service)
+  - [Analysis Service](/tagoio/analysis/analysis-service)
   - [Data Input Service](../services/data-input-service)
   - [Data Output Service](../services/data-output-service)
   - [E-mail Service](../services/e-mail-service)

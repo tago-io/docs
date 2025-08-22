@@ -19,7 +19,7 @@ The Custom Domain & Whitelabel add‑on allows a higher level of brand engagemen
 
 > **Note:** Custom Domain is not applied to API routes; traces of TagoIO can still be found when inspecting the page using Dev Tools.
 
-You can select this add‑on in your [Profile](/tagoio/profiles).
+You can select this add‑on in your [Profile](/tagoio/account/profiles).
 
 ## Add-Ons (related)
 - Control Tower (see Control Tower documentation)

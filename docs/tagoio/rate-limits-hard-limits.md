@@ -7,9 +7,9 @@ When executing requests to TagoIO, there is a limit on the number of requests th
 
 Rate limits apply to a wide range of interactions within the platform, including—but not limited to—API endpoints, data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP), data exports, dashboard visualizations, user interactions, and more. These limits are also known as hard limits.
 
-> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](../services/services-overview) that are reset monthly. You still need to make sure you have enough resources to run your application.
+> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](/tagoio/services/services-overview) that are reset monthly. You still need to make sure you have enough resources to run your application.
 
-> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](../resource-limits) and [Data Output for Dashboards](services/data-output-service).
+> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](/tagoio/resource-limits) and [Data Output for Dashboards](services/data-output-service).
 
 ## How it works
 
@@ -112,7 +112,7 @@ When a hard limit has been exceeded, TagoIO will return an **HTTP 429 “Too Man
 
 When using the Admin, the following error will be displayed:
 
-![Image](https://help.tago.io/galleryDocuments/edbsnd90f656d8211600bae2f06c15d0b75d80dd67d4d42d1a67a101d8790535ea4ed34b7ad34bd33780aabc744a3d32f434e?inline=true)
+![Image](/docs_imagem/tagoio/external-bf3190c0.png)
 
 If you need help adapting your project to these hard limits, try our [Community](https://community.tago.io/).
 

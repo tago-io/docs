@@ -17,9 +17,9 @@ https://github.com/tago-io/decoders
 ## Important note
 > When you publish your connector, anyone on the internet will be able to see the decoder code because our GitHub is open‑source.
 
-![Image 1](https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png)
+![Image 1](/docs_imagem/tagoio/exclamation-4.png)
 
-If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/tagoio/sharing-connectors-networks).
+If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/tagoio/integrations/sharing-connectors-networks).
 
 ## Repository Overview
 The repository offers comprehensive resources for:

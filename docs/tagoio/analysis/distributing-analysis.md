@@ -26,7 +26,7 @@ It is always a good idea to access the link yourself before sharing to ensure th
 - [Analysis Overview](../analysis/analysis-overview)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
-- [Script Examples](../analysis/script-examples)
+- [Script Examples](/tagoio/tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
 - [Distributing analysis](../analysis/distributing-analysis) (this article)

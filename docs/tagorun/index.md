@@ -16,25 +16,11 @@ TagoRUN is Tago's edge computing platform that brings data processing capabiliti
 - **Local Storage** - Store data locally with sync capabilities
 - **Custom Scripts** - Run custom analysis scripts on edge devices
 
-## Documentation Sections
+## Documentation
 
-### Getting Started
-- [Installation](/tagorun/installation) - Install and setup TagoRUN
-- [Configuration](/tagorun/configuration) - Configure your edge environment
-- [First Analysis](/tagorun/first-analysis) - Create your first edge analysis
-
-### Core Features
-- [Edge Analytics](/tagorun/analytics) - Local data processing capabilities
-- [Device Integration](/tagorun/devices) - Connect local devices and sensors
-- [Data Management](/tagorun/data) - Local data storage and management
-- [Synchronization](/tagorun/sync) - Sync with TagoIO cloud platform
-
-### Advanced Features
-- [Custom Scripts](/tagorun/scripts) - Deploy custom analysis scripts
-- [API Integration](/tagorun/api) - Local API endpoints and integration
-- [Monitoring](/tagorun/monitoring) - Monitor edge performance and health
-- [Security](/tagorun/security) - Edge security and access control
+- [TagoRUN Mobile App](/tagorun/tagorun-mobile-app)
+- [Branding and Deploying Applications](/tagorun/branding-and-deploying-applications)
 
 ---
 
-Ready to start with edge computing? Begin with our [Installation Guide](/tagorun/installation).
+For additional TagoRUN usage, see the TagoIO documentation.

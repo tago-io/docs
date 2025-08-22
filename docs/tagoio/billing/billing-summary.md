@@ -15,6 +15,6 @@ This page consists of three views:
 
 <!-- Image placeholder removed for build -->
 
-> Notice: The estimated cost of a profile does NOT include the cost of the current plan.<br>
-> Also, the sum of all profiles plus the plan may not match the overall amount of your account if some resources are not allocated to any profile.<br>
+> Notice: The estimated cost of a profile does NOT include the cost of the current plan.<br />
+> Also, the sum of all profiles plus the plan may not match the overall amount of your account if some resources are not allocated to any profile.&lt;br /&gt;
 > Discounts and credits are not included in the summary view.

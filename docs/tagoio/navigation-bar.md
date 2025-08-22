@@ -17,10 +17,10 @@ The color scheme for the bar, text, and icons can be configured in the **Theme**
 
 ### Implementing dynamic logos
 
-Create a personalized experience for different user groups or roles by displaying unique logos in the navigation bar with the help of the [Tags System](/tagoio/tags-system).
+Create a personalized experience for different user groups or roles by displaying unique logos in the navigation bar with the help of the [Tags System](/tagoio/data-management/tags-system).
 
 1.  Navigate to the **Run module** → *Navigation Bar* → *Navigation Bar Logo* and enable the **Use dynamic logo** option.
-2.  A new **Tag Match** field will appear, allowing you to specify a [tag key](/tagoio/tags-system) that corresponds to the custom logo URL.
+2.  A new **Tag Match** field will appear, allowing you to specify a [tag key](/tagoio/data-management/tags-system) that corresponds to the custom logo URL.
 3.  Existing end‑user tags will be displayed here. If you haven’t created a tag containing your logo image URL, you can do so by accessing the **User** module and adding the appropriate tag to your end‑users.
 4.  For users without a matching tag key, the logo specified in the **Default Logo URL** field will be displayed, ensuring consistent branding across all user experiences.
 
@@ -36,6 +36,6 @@ To add new items to your user menu:
     - **Icon:** choose the icon along with its color, which will be displayed next to the option.
     - **Type:** determines the type of field the user will interact with.
     - **Alignment:** choose the text alignment direction for the item.
-    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](/tagoio/tags-system) associated with the [Access Management](/tagoio/security/access-management) feature.
+    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](/tagoio/data-management/tags-system) associated with the [Access Management](/tagoio/security/access-management) feature.
 
 Once you have configured your user menu and deployed your updated Run, your users can see the menu items that they have permission to view when signed in.

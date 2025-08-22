@@ -33,11 +33,11 @@ To add your TouchTAG device to TagoIO:
 - Turn your TouchTAG device on and wait for data to arrive. Each time the device sends data, the parser is executed, extracted data is sent to the bucket, and it becomes available in dashboards.
 - You can create **notifications** and more advanced **scripts** as needed.
 
-![TouchTag Dashboard](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/DR1qSsb-AXvhc2-4QiqiMoB9WQcltIb5DUDQx8oJB8I/TouchTag_Dashboard_Tago-0VU.png)
+![TouchTag Dashboard](/docs_imagem/tagoio/TouchTag_Dashboard_Tago-0VU.png)
 
 ## References
 
 - See the [LoRaWAN Everynet](everynet-lorawan) connector documentation for connector-specific settings.
 - Refer to the [Devices](../devices/devices) documentation for general instructions on creating and managing devices in TagoIO.
 - Learn how to configure your account for Everynet:  
-  [Everynet configuration guide](/tagoio/everynet-lorawan)
+  [Everynet configuration guide](/tagoio/tutorials/everynet-lorawan)

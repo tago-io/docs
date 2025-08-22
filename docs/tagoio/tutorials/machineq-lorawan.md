@@ -90,7 +90,7 @@ For detailed instructions on adding devices, visit the [Adding Devices](../devic
 
 With data successfully flowing into TagoIO, you can start creating dashboards, adding notifications, and creating scripts to process your data.
 
-Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/downlink-for-lorawan).
+Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/tutorials/downlink-for-lorawan).
 
 ## Notes and quick links
 - If you already have an authorization created and added to machineQ, you can skip Steps 2–3 and proceed to Step 4.
@@ -103,4 +103,4 @@ Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/downli
 - [Loriot LoRaWAN](../tutorials/loriot-lorawan)
 - [Orbiwise LoRaWAN™](../tutorials/orbiwise-lorawan)
 - [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
-- [LoRaWAN Publication of Environmental Measurements](../tutorials/lorawan-publication-environmental-measurements)
+- [LoRaWAN Publication of Environmental Measurements](/tagoio/tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)

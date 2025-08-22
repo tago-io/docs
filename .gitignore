@@ -5,6 +5,10 @@
 # Production
 /build
 
+# AI
+/.claude
+/.crush
+
 # Generated files
 .docusaurus
 .cache-loader

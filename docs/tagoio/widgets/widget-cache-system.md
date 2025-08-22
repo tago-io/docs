@@ -19,9 +19,9 @@ This feature is particularly beneficial when widgets display complex or resource
 
 All widgets support the caching system; you can enable it by entering your widget in Edit mode and navigating to the **Cache** tab. Once enabled, you can define the expiration time, which specifies how long the cached data will be retained on our servers. You can set periods in seconds, minutes, or hours.
 
-To enable or configure caching for a specific widget, use the widget settings in the Dashboard editor. For step‑by‑step instructions, see [Enabling the cache system for your widget](../dashboards/dashboard-overview#widget-cache).
+To enable or configure caching for a specific widget, use the widget settings in the Dashboard editor. For step‑by‑step instructions, see the Dashboard editor in your Admin. This feature is part of each widget's settings.
 
-![Image 1](https://help.tago.io/galleryDocuments/edbsn438c5fda4d47a6c342b8bd57e4bf867a5d72754a6e40f116930de7fdd798b434697da31eed1916a746c09a3312dd21be?inline=true)
+![Image 1](/docs_imagem/tagoio/external-5850e3a4.png)
 
 ## Related documentation
 

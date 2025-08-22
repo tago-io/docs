@@ -22,13 +22,13 @@ The downlink payload should be placed into the parameter's value field. Below is
 
 > **Note:**  
 > - Downlink messages can only be sent when the device sends an uplink message.  
-> - For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/portal/en/kb/articles/221-downlinks-using-dashboards) article to send payloads manually.  
+> - For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/tagoio/dashboards/downlinks-using-dashboards) article to send payloads manually.  
 > - The downlink payload may be expressed in **base64** or **HEX** format; TagoIO will automatically convert it before sending.  
 > - After a successful transmission, the `downlink` parameter is marked as **Read**.
 
 ## Related information
 
-- Configuration Parameters (tab or documentation): [Configuration Parameters](../devices/device-configuration-parameters)
+- Configuration Parameters (tab or documentation): [Configuration Parameters](/tagoio/devices/configuration-parameters-for-devices)
 - Authorization codes (how to generate): [authorization codes](../security/access-management)
 - Devices list: [devices](../devices/devices)
-- Downlinks using Dashboards: [Downlinks using Dashboards](/portal/en/kb/articles/221-downlinks-using-dashboards)
+- Downlinks using Dashboards: [Downlinks using Dashboards](/tagoio/dashboards/downlinks-using-dashboards)

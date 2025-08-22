@@ -44,7 +44,7 @@ Additional UI controls:
 If you use the **Open widget** action, consider hiding that widget in a Hidden tab. This keeps it out of view while still allowing users to open it via the header button.
 
 ![Header configuration panel showing the Header tab](
-https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/ce4gRwuValO7bY2GD1X3tFVGZS-ZLtUMNFzQ1zWOxOU/Captura%20de%20tela%20de%202021-07-12%2010-43-54-OOc.png)
+<!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/ce4gRwuValO7bY2GD1X3tFVGZS-ZLtUMNFzQ1zWOxOU/Captura%20de%20tela%20de%202021-07-12%2010-43-54-OOc.png -->)
 
 ## Example widget preview
 

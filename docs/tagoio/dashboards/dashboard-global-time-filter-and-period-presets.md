@@ -26,19 +26,19 @@ If you want to disable the Dashboard Period Preset for a specific widget, enable
 <!-- Image placeholder removed for build -->
 
 ## On this page
-- How to apply global time-filters to your dashboards — See [Time Filter Configuration](../dashboards/dashboard-overview#time-filters)
-- Applying a maximum period range to your date picker — See [Date Range Limits](../dashboards/dashboard-overview#date-range-limits)  
-- Setting period presets — See [Period Presets Setup](../dashboards/dashboard-overview#period-presets)
-- Disabling the filter for specific widgets — See [Widget Filter Settings](../widgets/widget-cache-system#filter-settings)
+- How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/dashboard-overview)
+- Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/dashboard-overview)
+- Setting period presets — See [Dashboard Overview](../dashboards/dashboard-overview)
+- Disabling the filter for specific widgets — See [Widget Cache system](../widgets/widget-cache-system)
 
 ## Related Dashboards documentation
 - [Dashboard Overview](../dashboards/dashboard-overview)  
 - [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
-- [Data Output for dashboards](../data-management/data-output-for-dashboard)  
+- [Data Output for dashboards](/tagoio/services/data-output-for-dashboards)  
 - [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  
 - [Dashboard icons](../dashboards/dashboard-icons)  
 - [Dashboard global time filter and period presets](#) (this article)
 - [Grouping Dashboards](../dashboards/grouping-dashboards)  
 - [Sharing Dashboards](../dashboards/sharing-dashboards)  
 - [Distributing Dashboards](../dashboards/distributing-dashboards)  
-- [Restoring your Dashboard to a previous version](../dashboards/restoring-dashboard-previous-version)
+- [Restoring your Dashboard to a previous version](/tagoio/dashboards/restoring-your-dashboard-to-a-previous-version)

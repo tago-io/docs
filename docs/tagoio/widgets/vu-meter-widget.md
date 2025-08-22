@@ -15,13 +15,13 @@ To add the VU Meter widget to your dashboard, choose the VU Meter widget from th
 
 ![Adding a VU Meter to the dashboard](/docs_imagem/tagoio/vu-meter-widget-2.gif)
 
-> This widget works for both dashboards, Normal and [Blueprint](/tagoio/blueprint-dashboard).
+> This widget works for both dashboards, Normal and [Blueprint](/tagoio/dashboards/blueprint-dashboard).
 
 ### 'Data From' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
-![Image 3](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/3tjY_qmUPc4gomzMxTpCqYN-PfZgE8v0QEyI4bQMGNM/Captura%20de%20tela%20de%202021-06-08%2017-32-40-kPk.png)
+![Image 3](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-08-2017-32-40-kPk.png)
 
 > This field is dependent on the type of dashboard you are using; the difference is explained below.
 
@@ -31,9 +31,9 @@ From the option **Data From** on the right menu, select one device from your lis
 
 #### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](/tagoio/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## On this page
 

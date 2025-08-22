@@ -16,25 +16,11 @@ TagoDeploy is Tago's cloud infrastructure management platform that simplifies th
 - **Container Management** - Deploy and manage containerized applications
 - **CI/CD Integration** - Seamless integration with continuous deployment pipelines
 
-## Documentation Sections
+## Documentation
 
-### Getting Started
-- [Platform Overview](/tagodeploy/overview) - Introduction to TagoDeploy
-- [Account Setup](/tagodeploy/setup) - Set up your deployment environment
-- [First Deployment](/tagodeploy/first-deployment) - Deploy your first application
-
-### Core Features
-- [Infrastructure Management](/tagodeploy/infrastructure) - Manage cloud resources
-- [Application Deployment](/tagodeploy/deployment) - Deploy and manage applications
-- [Monitoring](/tagodeploy/monitoring) - Monitor deployments and performance
-- [Scaling](/tagodeploy/scaling) - Auto-scaling and resource management
-
-### Advanced Features
-- [Multi-Cloud Strategy](/tagodeploy/multi-cloud) - Deploy across multiple cloud providers
-- [CI/CD Pipelines](/tagodeploy/cicd) - Continuous integration and deployment
-- [Security](/tagodeploy/security) - Deployment security and compliance
-- [Cost Optimization](/tagodeploy/cost) - Optimize cloud costs and resources
+- [Enterprise IoT Platform Infrastructure](/tagodeploy/tago-deploy-enterprise-iot-platform-infrastructure) — Architecture, capabilities, and deployment model
+- [MQTT Broker Service (Work in Progress)](/tagodeploy/work-in-progress-tagodeploy-mqtt-broker-service) — Sign-in flow reference for dedicated MQTT broker service
 
 ---
 
-Ready to deploy your applications? Start with our [Platform Overview](/tagodeploy/overview).
+Ready to deploy your applications? Start with our [Enterprise IoT Platform Infrastructure](/tagodeploy/tago-deploy-enterprise-iot-platform-infrastructure).

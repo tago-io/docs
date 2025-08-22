@@ -15,7 +15,7 @@ You can customize your sidebar settings by accessing the Run module and selectin
 ### Dashboard Search Bar and Sorting Options
 The Dashboard Search feature enhances the end‑user experience by providing a search functionality and sorting options for dashboards within the Run portal panel.
 
-![Image 2](https://help.tago.io/galleryDocuments/edbsn2ae0e75abd2400efb60282b67a6606415d8b29ecc595af530a96705ebb7cc8d02e1a3c7b2f4b673867551082694dc1de?inline=true)
+![Image 2](/docs_imagem/tagoio/external-8ae4366e.png)
 
 To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.  
 You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/tagoio/using-dictionaries-multi-language).
@@ -26,9 +26,9 @@ You can define what happens when an end user clicks on your logo or what message
 #### 1. Tooltip
 To display a tooltip over your logo, write text in the **Button tooltip** field.
 
-![Image 3](https://help.tago.io/galleryDocuments/edbsn42d5ac12bbd5138f53c31f3ef1aaf6d1cba45d953ed38e43c83f26bd4b8e30e6704b262f6b4b51606e6ce9ac1127993c?inline=true)
+![Image 3](/docs_imagem/tagoio/external-2aac36db.png)
 
-![Image 4](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 4](/docs_imagem/tagoio/info-8.png)
 
 Notice that you can use a KEY defined in your [Dictionary](/tagoio/using-dictionaries-multi-language) to display text that will be substituted according to the languages available for your end users.
 
@@ -45,7 +45,7 @@ You can also add the action **“Open Setup Wi‑Fi Device.”** To enable this 
 ### Sidebar Buttons
 Buttons allow end users to quickly navigate between dashboards, pages, or scan a new Wi‑Fi device. Dashboards used as buttons are automatically hidden from the dashboard list on the sidebar, keeping the interface cleaner.
 
-![Image 5](https://img.zohostatic.com/zde/static/images/file.png)
+![Image 5](/docs_imagem/tagoio/file.png)
 
 #### Label
 Define the text displayed under the icon.
@@ -69,7 +69,7 @@ Choose where to display the button: Desktop, Mobile, or both.
 #### Break Line
 Customize how many buttons appear per line. The slider lets you move a button to a new line or place multiple buttons on the same line. You can have up to three buttons arranged side by side.
 
-![Image 6](https://img.zohostatic.com/zde/static/images/file.png)
+![Image 6](/docs_imagem/tagoio/file.png)
 
 #### Visibility Conditions
 By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](/tagoio/security/access-management).

@@ -8,7 +8,7 @@ Use the Files module to store any type of file (reports, videos, logos, backgrou
 
 > **Warning**
 >
-> ![Image 3: Alert](https://img.zohostatic.com/zde/static/images/exclamation.png)
+> ![Image 3: Alert](/docs_imagem/tagoio/exclamation-4.png)
 >
 > If any profile reaches its allocated storage limit, the system will block adding new files to that profile.
 

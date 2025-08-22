@@ -13,23 +13,23 @@ Watch this short video to learn the key concepts.
 
 Take a look at this short interactive [introduction](https://tago.io/demo) about the main features. Alternatively, explore the interactive introduction at https://intro.tago.io/.
 
-Use [Get started](../getting-started) to add a device.
+Use [Get started](/tagoio/getting-started) to add a device.
 
 ## Related documentation
 
 Other Getting Started topics:
-- [Getting Started](../getting-started)
+- [Getting Started](/tagoio/getting-started)
 - [How it works](./how-it-works)
 - [Building Solutions](#) (this article)
 - [Deploying Applications](./deploying-applications)
 - [Language Preferences](./language-preferences)
-- [Tags System](../data-management/tags-system)
+- [Tags System](/tagoio/data-management/tags-system)
 - [Secrets](./secrets)
-- [Audit Log](../security/audit-log)
+- [Audit Log](/tagoio/security/audit-log)
 
 Related articles:
-- [Building your own parser](../payload-parser/building-your-own-parser)
-- [Dashboard Overview](../dashboards/dashboard-overview)
-- [Analysis Overview](../analysis/analysis-overview)
-- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
-- [Custom Widget](../widgets/custom-widget)
+- [Building your own parser](/tagoio/payload-parser/building-your-own-parser)
+- [Dashboard Overview](/tagoio/dashboards/dashboard-overview)
+- [Analysis Overview](/tagoio/analysis/analysis-overview)
+- [Running Analysis as External using Deno](/tagoio/analysis/running-analysis-as-external-using-deno)
+- [Custom Widget](/tagoio/widgets/custom-widget)

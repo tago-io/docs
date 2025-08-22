@@ -14,6 +14,6 @@ The resources available to grant permission depend on the Target you select, and
 You can add as many resources as needed. An OR operation is applied between permissions: as you add more permissions, more resources will be included in the verification process.
 
 ## Important: Deny overrides Allow
-![Caution](https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png)
+![Caution](/docs_imagem/tagoio/caution.png)
 
 > If you use one permission with Deny, it will override any options using an Allow that contain the same condition.

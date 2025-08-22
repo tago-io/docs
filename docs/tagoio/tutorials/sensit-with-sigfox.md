@@ -42,19 +42,19 @@ Every time the device sends data, the parser is executed, the extracted data is 
 
 ## Custom Parsing (v2)
 
-If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](/tagoio/payload-parser) and the Sigfox developer guide for detailed information.
+If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](/tagoio/payload-parser/payload-parser) and the Sigfox developer guide for detailed information.
 
 ## Advanced Features
 
 You can create **notifications** and advanced **scripts** as needed:
-- Notifications: [Notifications](/tagoio/notification)
-- Scripts / Analysis: [Analysis Overview](/tagoio/analysis-overview)
+- Notifications: [Notifications](/tagoio/notifications/notification)
+- Scripts / Analysis: [Analysis Overview](/tagoio/analysis/analysis-overview)
 
 ## Notes
 
 - The integration supports both Sens'it v2 and v3 devices.
 - Ensure your Sigfox devkit is properly activated before registering the device in TagoIO.
-- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](/tagoio/sigfox).
+- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](/tagoio/tutorials/sigfox).
 
 References:
 - Sigfox Buy website: https://buy.sigfox.com/

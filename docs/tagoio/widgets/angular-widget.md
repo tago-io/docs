@@ -20,7 +20,7 @@ To add the Angular widget to your dashboard, choose the Angular widget from the 
 The **Data From** field lets you specify which device and variable will feed data into the gauge.
 
 - **Normal Dashboards** – Select a device from your list, then choose the variable that contains the data.
-- **Blueprint Dashboards** – Add the [Blueprint device](/tagoio/blueprint-devices-entities) and type the name of the variable. Because the dashboard does not know which devices are linked to the Blueprint Device, the Variable selector will not list available variables.
+- **Blueprint Dashboards** – Add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and type the name of the variable. Because the dashboard does not know which devices are linked to the Blueprint Device, the Variable selector will not list available variables.
 
 > This widget works for both **Normal** and **Blueprint** dashboards.
 

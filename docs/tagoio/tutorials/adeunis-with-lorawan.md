@@ -13,7 +13,7 @@ See [Analysis](../analysis/analysis-overview) for working with and visualizing y
 
 ## Note
 
-> You can check whether a [parser](/tagoio/payload-parser) script was added to your device under the tab **Payload Parser**.
+> You can check whether a [parser](/tagoio/payload-parser/payload-parser) script was added to your device under the tab **Payload Parser**.
 
 ## Adding a device
 
@@ -32,9 +32,9 @@ Select one of the following provider-specific integration guides to continue you
 - [TTN (The Things Network)](../tutorials/the-things-network-lorawan)
 - [Loriot](../tutorials/loriot-lorawan)
 - [Everynet](../tutorials/everynet-lorawan)
-- [Senet](../tutorials/senet-network)
-- [Orbiwise](/tagoio/orbiwise-lorawan)
-- [machineQ](/tagoio/machineq-lorawan)
+- [Senet](/tagoio/senet-network)
+- [Orbiwise](/tagoio/tutorials/orbiwise-lorawan)
+- [machineQ](/tagoio/tutorials/machineq-lorawan)
 
 Each provider link points to the corresponding TagoIO tutorial for configuring Adeunis devices with that network.
 
@@ -42,12 +42,12 @@ After you have completed the setup above, you will be ready to move forward.
 Now, just turn your Adeunis device on and wait for the data to hit your **data bucket**. Every time the device sends data, the parser will be executed, the extracted data sent to the bucket, and it will be ready to be shown in the dashboards.
 
 You can start building your [dashboards](/tagoio/dashboards/dashboard-overview) immediately.  
-Also, you can create [notifications](/tagoio/notification) and more advanced [scripts](/tagoio/creating-analysis) as needed.
+Also, you can create [notifications](/tagoio/notifications/notification) and more advanced [scripts](/tagoio/analysis/creating-analysis) as needed.
 
 ## Additional references
 
 - Check the device's **Payload Parser** tab to confirm or edit any parser scripts.
 - For device management and other configuration options, see the Devices documentation: [Devices](../devices/devices)
 - Build dashboards: [Dashboards](/tagoio/dashboards/dashboard-overview)
-- Create notifications: [Notifications](/tagoio/notification)
-- Write advanced scripts: [Scripts](/tagoio/creating-analysis)
+- Create notifications: [Notifications](/tagoio/notifications/notification)
+- Write advanced scripts: [Scripts](/tagoio/analysis/creating-analysis)

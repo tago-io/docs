@@ -11,7 +11,7 @@ Each end-user added to the User Management list is counted as an end‑user. End
 
 When a profile hits its allocated end‑user limit, no additional users can be added under that profile until the limit is increased.
 
-![Image 3: Alert](https://img.zohostatic.com/zde/static/images/exclamation.png)
+![Image 3: Alert](/docs_imagem/tagoio/exclamation-4.png)
 
 ## Increasing end-user capacity
 

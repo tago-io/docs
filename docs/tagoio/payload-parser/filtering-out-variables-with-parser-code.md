@@ -38,4 +38,4 @@ We offer this flexibility to allow you to optimize your storage by avoiding the 
 ## See also
 - Payload Parser (refer to the Payload Parser documentation: [Payload Parser](../payload-parser/payload-parser))
 - Device data storage details: [Device's data storage](../devices/devices)
-- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](../payload-parser/payload-parser-overview)
+- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](/tagoio/payload-parser/payload-parser)

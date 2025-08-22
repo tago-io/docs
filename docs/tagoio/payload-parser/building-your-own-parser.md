@@ -17,11 +17,11 @@ If you want to learn more about how data packages are sent to TagoIO, see [Integ
 
 We provide three tutorials to help you understand how the Payload Parser works:
 
-- [In-Depth Guide for Payload Parser](../payload-parser/payload-parser-overview#in-depth-guide)
-- [LoRaWAN/Sigfox Payload Parser Tutorial](../payload-parser/lorawan-sigfox-payload-parser-tutorial)
-- [MQTT Payload Parser Tutorial](../payload-parser/mqtt-payload-parser-tutorial)
+- [In-Depth Guide for Payload Parser](/tagoio/payload-parser/payload-parser)
+- [LoRaWAN/Sigfox Payload Parser Tutorial](/tagoio/payload-parser/payload-parser)
+- [MQTT Payload Parser Tutorial](/tagoio/payload-parser/payload-parser)
 
-Learn more about the overall concept in the [Payload Parser Overview](../payload-parser/payload-parser-overview).
+Learn more about the overall concept in the [Payload Parser Overview](/tagoio/payload-parser/payload-parser).
 
 For a step-by-step visual guide to payload parsing, watch this video:
 

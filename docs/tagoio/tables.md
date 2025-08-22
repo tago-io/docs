@@ -28,7 +28,7 @@ Device List widget is a table that dynamically populates with information about 
 
 ## User List
 
-The User List widget is a table that dynamically populates with information about your users, such as names, tags, email, and IDs. Learn more about [User List](widgets/user-list-widget).
+The User List widget is a table that dynamically populates with information about your users, such as names, tags, email, and IDs. Learn more about [User List](/tagoio/widgets/user-list-widget-).
 
 ## Entity Table
 

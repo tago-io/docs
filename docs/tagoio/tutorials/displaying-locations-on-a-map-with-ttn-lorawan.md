@@ -40,7 +40,7 @@ Map Widget section (internal links):
 - [Displaying Locations on a Map with TTN LoRaWAN](#) (this article)
 
 Related Articles (internal links):
-- [LoRaWAN Publication of Environmental Measurements](../tutorials/lorawan-publication-environmental-measurements)
+- [LoRaWAN Publication of Environmental Measurements](/tagoio/tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)
 - [Map Widget](../widgets/map-widget)
 - [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
 - [Network Integration](../integrations/connector-overview)

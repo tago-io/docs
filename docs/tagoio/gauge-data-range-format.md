@@ -18,7 +18,7 @@ In the Range Limits section you set the minimum and maximum values displayed on 
 
 If you want to set a static range on your gauge, choose the Fixed type. Simply specify the minimum and maximum values to define the range shown in the widget.
 
-![Gauge example showing static range](/cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/CQ92PZnTkmHs3kr2Mkhkd0VI1qzLAaJu5ufr_FeQFFY/1584998259067-NcM.png)
+<!-- Image temporarily disabled: Gauge example showing static range - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/CQ92PZnTkmHs3kr2Mkhkd0VI1qzLAaJu5ufr_FeQFFY/1584998259067-NcM.png -->
 
 ## From Metadata
 
@@ -43,4 +43,4 @@ You can choose one of 3 options in the **Get metadata from** field:
 2. **From variable used in formula**: The metadata property will be acquired from the variable that is being used in the formula. This option will only be enabled if your gauge is using [Formula](/tagoio/formula), and the Formula is being used with a variable.
 3. **From another variable**: The metadata will be acquired from a variable of your choice. If you select this option, a variable selector will appear.
 
-![Gauge example showing dynamic range](/cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/JcEqhWiKdOri4fx-LbJq5WSzwHf0sqGYAoLLv6FxMsA/1584998743226-9_Q.png)
+<!-- Image temporarily disabled: Gauge example showing dynamic range - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/JcEqhWiKdOri4fx-LbJq5WSzwHf0sqGYAoLLv6FxMsA/1584998743226-9_Q.png -->

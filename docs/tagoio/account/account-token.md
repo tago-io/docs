@@ -23,13 +23,13 @@ More than one token can be created for the same profile. Permissions and expirat
 
 #### Entities Authenticated by Account Tokens
 
-1. [Devices](/tagoio/devices)
-2. [Dashboards](/tagoio/dashboards/dashboard-overview) and [Widgets](/tagoio/widgets-overview)
-3. [Analysis](/tagoio/analysis-overview)
-4. [Actions](/tagoio/actions)
+1. [Devices](/tagoio/devices/devices)
+2. [Dashboards](/tagoio/dashboards/dashboard-overview) and [Widgets](/tagoio/widgets/widgets-overview)
+3. [Analysis](/tagoio/analysis/analysis-overview)
+4. [Actions](/tagoio/actions/actions)
 5. [Files](/tagoio/files)
 6. [Access Management](/tagoio/security/access-management)
-7. [TagoRun](/tagorun/tagorun) and [Run users](/tagoio/user-management)
+7. [TagoRun](/tagorun) and [Run users](/tagoio/account/user-management)
 8. [Dictionary](/tagoio/dictionaries)
 
 #### Expiration and Auto-Generated Tokens

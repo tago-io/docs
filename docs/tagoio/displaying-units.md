@@ -27,4 +27,4 @@ For example, users can select the scale they want to see a temperature at among 
 
 ## 3. Fixed Unit
 
-If you select this option, you just need to enter the unit that will be displayed. The entered unit will be shown even if the variable contains another unit stored in the [Device](/tagoio/devices).
+If you select this option, you just need to enter the unit that will be displayed. The entered unit will be shown even if the variable contains another unit stored in the [Device](/tagoio/devices/devices).

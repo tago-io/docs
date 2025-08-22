@@ -5,7 +5,7 @@ tags: ["tagorun"]
 ---
 Our TagoRUN mobile app is designed for end users to access applications created by companies and developers. It is easy to operate and supports a high level of customization.
 
-![TagoRUN Mobile App Screenshot](https://help.tago.io/galleryDocuments/edbsna8a745327600ce23063b0bda8f22b0386287d4ffcec6f8fad35817d4c330adb5fbea7a80cd924bf77064a3562d420404?inline=true)
+![TagoRUN Mobile App Screenshot](/docs_imagem/tagoio/external-7f89c0ba.png)
 
 Download the TagoRUN app from the [AppStore](https://apps.apple.com/us/app/tagorun/id1506822629) or [GooglePlay](https://play.google.com/store/apps/details?id=com.tago.app).
 

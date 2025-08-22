@@ -26,7 +26,7 @@ Before you begin, ensure you have the following:
 3. Provide a meaningful name for the authorization (e.g., `TTN-Integration`).  
 4. Click **Save**.  
 
-![Image 2](https://desk.zoho.com/support/ImageDisplay?downloadType=uploadedFile&fileName=1738262517736.png&blockId=edbsn8d9972ac801485733a54ba20d39542298ebcff40d27d72339b0702fcefb4948e&zgId=edbsn631a5119ab7b66930d9988a5e8622b55&mode=view)
+![Image 2](/docs_imagem/tagoio/external-122ff21d.png)
 
 ### Copy the Authorization Token
 After creation, copy the authorization token. You will need this in later steps.
@@ -39,18 +39,18 @@ After creation, copy the authorization token. You will need this in later steps.
 2. Go to **Integrations > Webhook > + Add Webhook**.  
 3. Select **Custom Webhook** from the list.
 
-![Image 3](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/y3Kw0JJdTsjE1iKOD4-0YX3RtdmUcuaiepiWIAq42SI/tagoIO_ttn-WUw.png)
+![Image 3](/docs_imagem/tagoio/tagoIO_ttn-WUw.png)
 
 ### Webhook Configuration
 | Field | Description |
 |-------|-------------|
 | **Webhook ID** | Enter a unique identifier (e.g., `tagoio-integration`). |
 | **Webhook Format** | JSON |
-| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/network-integration). |
+| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/integrations/network-integration). |
 | **Additional Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`. |
 
-![Image 4](https://help.tago.io/galleryDocuments/edbsnb42ab2bad466cb0ceaa204cfd7fcfadb3af9619dd081a7a0ae252a54637661fdc9f38642f6b8cb458c076d982e14d46f?inline=true)
+![Image 4](/docs_imagem/tagoio/external-eae39401.png)
 
 ---
 
@@ -68,7 +68,7 @@ After creation, copy the authorization token. You will need this in later steps.
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
 - For more information on available connectors and how to use them, refer to the **Connector Overview**.
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
 
 ---
 

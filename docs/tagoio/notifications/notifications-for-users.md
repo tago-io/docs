@@ -37,4 +37,4 @@ The notifications UI can display items similar to the following example:
 - See [Actions](../actions/actions)  
 - See [Analysis](../analysis/analysis-overview)  
 - Refer to the Targets documentation (if applicable) for targeting multiple users or groups  
-- See [Notifications for Users using Analysis](/tagoio/notifications-for-users-using-analysis)
+- See [Notifications for Users using Analysis](/tagoio/analysis/notifications-for-users-using-analysis)

@@ -13,7 +13,7 @@ To add the Keypad to your dashboard, choose the Keypad widget from the widget li
 
 ![Keypad widget on dashboard with settings panel on the right](/docs_imagem/tagoio/keypad-widget-2.png)
 
-> This widget works for both dashboards, Normal and [Blueprint](../widgets/blueprint-dashboard).
+> This widget works for both dashboards, Normal and [Blueprint](/tagoio/dashboards/blueprint-dashboard).
 
 ## 1. 'Data From' Field
 

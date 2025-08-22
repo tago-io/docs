@@ -9,6 +9,4 @@ Visit this [tutorial (Community)](https://community.tago.io/t/connecting-a-raspb
 
 More tutorials like this are available in the [Forum inside our Community](https://community.tago.io/).
 
-![Raspberry Pi](https://cdn.elev.io/file/uploads/PEfBOej3wR4slKcXFF0VfOndFuEYx_C9vFdA35csXyc/yhmBmbU8errq1vU9HjPgBJBkKw3syGX5FOJdMj88cxM/raspberry_pi%20(Small)-xj8.png)
-
 For more detailed steps, you can also check out our earlier community tutorial: [Raspberry Pi – Using SDK or MQTT Getting Started](https://community.tago.io/t/raspberry-pi-tagoio-using-sdk-or-mqtt-getting-started/277).

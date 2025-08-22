@@ -18,7 +18,7 @@ If a device reads one variable and the response contains 100 registers every 10 
 
 > **Warning:** If the limit is exceeded, any attempt to read data (GET) will be denied for the rest of the month.
 
-Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](../services/data-output-dashboard).
+Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](/tagoio/services/data-output-for-dashboards).
 
 The system will also count Data Output when using the function "Export Data" from the [Device](../devices/devices).
 

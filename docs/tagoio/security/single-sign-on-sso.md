@@ -48,7 +48,7 @@ Only users who are registered in the IdP **and** have permission to access the a
 
 ## Related articles
 - See [Run Theme](../run-theme)  
-- See [Security and Protection for RUN users](../security/security-and-protection-for-run-users)  
+- See [Security and Protection for RUN users](/tagoio/account/security-and-protection-for-run-users)  
 - See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language)  
 - See [Dictionaries](../dictionaries)  
 - See [TagoRun](../../tagorun/tagorun-mobile-app)

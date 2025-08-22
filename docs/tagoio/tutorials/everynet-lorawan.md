@@ -13,7 +13,7 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 
 1. **Access Authorizations**
    - Go to Devices.
-   - Click on [Authorizations](../devices/adding-authorization) at the top of the page.
+   - Click on [Authorizations](/tagoio/security/authorization) at the top of the page.
 
 2. **Create a New Authorization**
    - Click the *Create Authorization* button.
@@ -34,7 +34,7 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 > TagoIO only recognizes the following message types: **Uplink, Downlink, Downlink_request, Error, and Location**.  
 > Make sure you have selected at least **Uplink**.
 
-![Everynet filter configuration](/cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/sCYQz-A28iCEm90A0CT7f-KBBuZ5J1X1n6tt1fJJKlU/1562815095740-SUE.png)
+<!-- Image temporarily disabled: Everynet filter configuration - /cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/sCYQz-A28iCEm90A0CT7f-KBBuZ5J1X1n6tt1fJJKlU/1562815095740-SUE.png -->
 
 ## Step 3: Create a Connection in Everynet Console
 
@@ -44,12 +44,12 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
    - **Filter** – Enter the Filter ID you copied in Step 2.
    - **Application URL** – Use the endpoint format:  
      `https://everynet.middleware.REGION.tago.io/{type}`  
-     Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/network-integration).
+     Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/integrations/network-integration).
    - **Description** – Enter a unique identifier (e.g., `tagoio-integration`).
    - **Authorization Header** – Paste the Authorization token you copied in Step 1.
 4. Click *Save* and copy the generated **Connector ID** for use in the next step.
 
-![Everynet connection setup](/cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/PFFK3wBYPL38nLBIV1jV8_aO9YxLz0CM7pkZw5ww80g/1562815987328-vf0.png)
+<!-- Image temporarily disabled: Everynet connection setup - /cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/PFFK3wBYPL38nLBIV1jV8_aO9YxLz0CM7pkZw5ww80g/1562815987328-vf0.png -->
 
 > The endpoint `everynet-oauth.middleware.tago.io` points to the USA region. If you are in the USA, update your webhook to `everynet.middleware.us-e1.tago.io/{type}`.
 

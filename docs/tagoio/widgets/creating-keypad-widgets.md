@@ -55,7 +55,7 @@ Notes:
 - **analysis_run**: This field should contain an ID indicating which analysis to run when a user submits the widget.
 - **data**: This field should contain an array of variables used in the keypad widget. By default, the widget only uses the first variable, so this array should typically contain a single object.
 - **display.buttons**: This field is required and defines all custom buttons inside the keypad widget. Each button’s position corresponds to its index in the array (0‑based). For example, the image below shows how each index maps to a physical key on the keypad:
-  ![Image 1](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/tENZ3zjyLUYl0Q8c7Ov-QaJG9YSBT9S6J1Pq1K7o4Gc/1571244512451-CBw.png)
+  ![Image 1](/docs_imagem/tagoio/1571244512451-CBw.png)
 - **display.bypass_bucket**: If set to `true`, the data sent by this widget will never reach the bucket. It will still be available inside the analysis scope.
 - **display.click_color**: The color shown for each digit when a user clicks on it. Accepts any browser‑recognizable color format (name, hex, rgb, hsl, etc.).
 - **display.help**: Usual help text for the widget.

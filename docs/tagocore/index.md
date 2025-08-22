@@ -16,31 +16,12 @@ TagoCore is Tago's open-source IoT platform that provides the core functionality
 - **Data Sovereignty** - Keep all data within your organization
 - **Enterprise Security** - Bank-level security for sensitive data
 
-## Documentation Sections
+## Documentation
 
-### Getting Started
-- [Installation](/tagocore/installation) - Install TagoCore on your infrastructure
-- [Configuration](/tagocore/configuration) - Configure your TagoCore instance
-- [Initial Setup](/tagocore/setup) - Complete initial platform setup
-
-### Core Features
-- [Device Management](/tagocore/devices) - Connect and manage IoT devices
-- [Data Processing](/tagocore/data) - Process and store device data
-- [User Management](/tagocore/users) - Manage users and permissions
-- [API Access](/tagocore/api) - REST API for integrations
-
-### Advanced Features
-- [Clustering](/tagocore/clustering) - Set up high-availability clusters
-- [Custom Modules](/tagocore/modules) - Develop custom functionality
-- [Database Management](/tagocore/database) - Manage data storage
-- [Security](/tagocore/security) - Security configuration and best practices
-
-### Deployment
-- [Docker Deployment](/tagocore/docker) - Deploy using Docker containers
-- [Kubernetes](/tagocore/kubernetes) - Deploy on Kubernetes clusters
-- [Cloud Deployment](/tagocore/cloud) - Deploy on cloud platforms
-- [Monitoring](/tagocore/monitoring) - Monitor platform health and performance
+- [TagoCore Open Source documentation](/tagocore/tagocore-open-source-documentation)
+- [TagoCore Cluster](/tagocore/tagocore-cluster)
+- [Integration with TagoIO Cloud](/tagocore/integration)
 
 ---
 
-Ready to deploy TagoCore? Start with our [Installation Guide](/tagocore/installation).
+For installation and usage guides, visit the external TagoCore docs at https://tagocore.com/docs.

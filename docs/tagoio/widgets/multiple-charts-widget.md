@@ -25,7 +25,7 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 ### Blueprint Dashboards
 
-From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## On this page
@@ -56,11 +56,11 @@ In the multiple charts widget, it is possible to customize how the data will be 
 By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.  
 If you need to group your data through the X‑axis, even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **series**.
 
-![X-axis grouping example](/img.zohostatic.com/zde/static/images/info.png)
+<!-- Info icon placeholder: X-axis grouping example -->
 
 Data is ordered by time ascending, but it can also be sorted by series:
 
-![Series sorting example](/cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/c1IxSaBHG9OmIf4MOI9_tXqBo1IhruO5gcPnGdBbg5c/Captura%20de%20tela%20de%202021-06-22%2022-02-03-D7c.png)
+<!-- Image temporarily disabled: Series sorting example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/c1IxSaBHG9OmIf4MOI9_tXqBo1IhruO5gcPnGdBbg5c/Captura%20de%20tela%20de%202021-06-22%2022-02-03-D7c.png -->
 
 It is also possible to define the X‑axis time range dynamically, using another variable’s data. The variable payload should look like:
 
@@ -82,19 +82,19 @@ The `start_date` specifies the start of the range, and the `end_date` specifies 
 In the vertical axis you can customize the scaling behavior: apply metric prefixes and abbreviations, change the step value (the difference between each tick), and more.  
 The Y‑axis will automatically find the best scale for your data; it is not necessary to customize it unless you want a specific presentation.
 
-![Y-axis configuration](/img.zohostatic.com/zde/static/images/info.png)
+<!-- Info icon placeholder: Y-axis configuration -->
 
 ## 3. Filtering data
 
 It is possible to pre‑set date filters that will be displayed in the widget. These filters can be set in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
-![Data filtering example](/cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/oYbfUz7PUkwgxMRjS1ipZ3kdvTDoia_GebSxU26rBZs/chartFilterMultipleAxis-Dds.gif)
+<!-- Image temporarily disabled: Data filtering example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/oYbfUz7PUkwgxMRjS1ipZ3kdvTDoia_GebSxU26rBZs/chartFilterMultipleAxis-Dds.gif -->
 
 ## 4. Increasing performance
 
 When a chart has a large number of data points, you can increase the widget’s performance by enabling **Downsampling**. Downsampling makes the data easier to visualize and reduces rendering time.
 
-![Downsampling example](/cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/VHfKpB1Yo4XLOL1nWhQ5Ts6GjSLkrr9pM1weL4n7njk/chartDownsampling-Ukg.gif)
+<!-- Image temporarily disabled: Downsampling example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/VHfKpB1Yo4XLOL1nWhQ5Ts6GjSLkrr9pM1weL4n7njk/chartDownsampling-Ukg.gif -->
 
 Downsampling has two concepts: **Threshold** and **Factor**.  
 The Threshold limits the amount of data at which downsampling starts, and the Factor determines how many samples will be removed.

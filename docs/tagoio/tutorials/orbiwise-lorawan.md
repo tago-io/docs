@@ -37,7 +37,7 @@ Before you begin, ensure you have the following:
 3. **Copy the Authorization Token**  
    - After creation, copy the authorization token. You will need this in later steps.
 
-![Authorization token screenshot](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/agySdhC4P3ljwUSRuz2dahfMaHh4aatT2S3AMkxpRjk/1563385125217-eok.png)
+![Authorization token screenshot](/docs_imagem/tagoio/1563385125217-eok.png)
 
 > You must enter the **username;password;host DASS url** separated by a semicolon.  
 > Only one **Authorization** per application is necessary. Don't do it for each device.
@@ -58,9 +58,9 @@ Before you begin, ensure you have the following:
    | Host Pass      | Set its value to the authorization token you copied in Step 1.         |
 
 3. **Start Push**  
-   - Make sure that you set the status of your Application to **<Start Push>**.
+   - Make sure that you set the status of your Application to **&lt;Start Push&gt;**.
 
-![Orbiwise backend configuration](https://cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/9yNopVd55UZc4s0mCAssnlajGPS_sdixJ1yzBeqskgo/oribiwse_backend_config-a9U.png)
+![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
 
 ---
 
@@ -76,9 +76,9 @@ Before you begin, ensure you have the following:
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices#Adding_devices).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices/devices#Adding_devices).
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
 
 ---
 
@@ -93,4 +93,4 @@ For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.
 
-Learn how to perform [downlink for LoRaWAN](/tagoio/downlink-for-lorawan).
+Learn how to perform [downlink for LoRaWAN](/tagoio/tutorials/downlink-for-lorawan).

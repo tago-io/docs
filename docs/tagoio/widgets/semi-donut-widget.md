@@ -15,7 +15,7 @@ To add the widget to your dashboard, select the Semi Donut widget from the widge
 
 ![Semi Donut widget shown in the dashboard editor with options on the right side](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-> This widget works for both dashboards, Normal and [Blueprint](/tagoio/blueprint-dashboard).
+> This widget works for both dashboards, Normal and [Blueprint](/tagoio/dashboards/blueprint-dashboard).
 
 ### 1. 'Data From' Field
 
@@ -29,9 +29,9 @@ From the option **Data From** on the right menu, select one device from your lis
 
 ##### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## Related articles
 

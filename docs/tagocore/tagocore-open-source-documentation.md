@@ -3,20 +3,20 @@ title: "TagoCore Open Source documentation"
 description: "A short pointer to the TagoCore open source documentation with quick links to related TagoCore articles, subscription info, and links to the Learning Center and public roadmap."
 tags: ["tagocore"]
 ---
-Access the TagoCore documentation here: [TagoCore documentation](../tagocore/index)
+Access the TagoCore documentation here: [TagoCore documentation](../tagocore)
 
 ## Subscribe
 Follow this article to receive notifications about updates and changes.
 
 ## TagoCore documentation and quick links
-- [TagoCore](../tagocore/index)
+- [TagoCore](../tagocore)
 - [TagoCore Cluster](../tagocore/tagocore-cluster)
 - [TagoCore Open Source documentation](../tagocore/tagocore-open-source-documentation)
 
 You can also access the Help Center for additional support.
 
 ## Related Articles
-- [TagoCore](../tagocore/index)
+- [TagoCore](../tagocore)
 - [TagoCore Cluster](../tagocore/tagocore-cluster)
 
 ## Learning Center

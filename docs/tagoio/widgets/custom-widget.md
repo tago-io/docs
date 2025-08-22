@@ -40,9 +40,9 @@ Due to their versatility, Custom Widgets allow you to use data from different so
 
 You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
 
-You can also use data from **resources** such as devices and users – just like on the [Device List](/tagoio/device-list-widget) and [User List](/tagoio/user-list-widget-) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
+You can also use data from **resources** such as devices and users – just like on the [Device List](/tagoio/widgets/device-list-widget) and [User List](/tagoio/widgets/user-list-widget-) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
 
-![Data source example](https://help.tago.io/galleryDocuments/edbsn99fa6052994c1dd954f66185e4542a68e8302ff3d10035d63a0f314e95709846866f70e8736df778854a3634f3f1b879?inline=true)
+![Data source example](/docs_imagem/tagoio/external-6c842fb5.png)
 
 ## Main Configuration
 
@@ -50,7 +50,7 @@ After you've coded your Custom Widget, you need to host it and provide a link to
 
 Tip: You can use our Files to host your custom Widget.
 
-![Hosting example](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/zjITxZFTJZzHrqEwXggbqp7nYoVmd0VbgUvQV1o_820/1588017173880-8JY.png)
+![Hosting example](/docs_imagem/tagoio/1588017173880-8JY.png)
 
 ## Parameters
 
@@ -58,15 +58,15 @@ Parameters allow you to send a list of keys and values to your Custom widget.
 
 One use of these parameters is to change the way your code behaves. You can have two widgets pointing to the same link, but exhibiting different behaviors.
 
-![Parameter example](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/QP_FcaGOr9ZlQ7ABwGw1yO6iVgC_nGlcdmiZ9Wl3XIw/1587658883225-xaM.png)
+![Parameter example](/docs_imagem/tagoio/custom-widget-parameters-2.png)
 
-Read more about [Custom Widget Parameters](/tagoio/custom-widget-parameters).
+Read more about [Custom Widget Parameters](/tagoio/widgets/custom-widget-parameters).
 
 ## User Control
 
 You may choose to run an Analysis once you send data from your widget. To do so, inform the desired Analysis in the Run analysis when sending data field.
 
-![User control example](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/dE6Cbd_y-emRHP921bYPJtEAKLyVFhCHgH-QxmNYvZs/1587659332760-NCM.png)
+![User control example](/docs_imagem/tagoio/1587659332760-NCM.png)
 
 ## On this page
 
@@ -78,7 +78,7 @@ You may choose to run an Analysis once you send data from your widget. To do so,
 
 ## Related articles
 
-- ECharts Custom Widget Tutorial [ECharts Custom Widget Tutorial](../widgets/echarts-custom-widget-tutorial)
+- ECharts Custom Widget Tutorial [ECharts Custom Widget Tutorial](/tagoio/widgets/echarts-custom-widget-tutorial-)
 - Map Widget (../widgets/map-widget)
 - Image Marker Widget [Image Marker Widget](../widgets/image-marker-widget)
 - Compose Widget (../widgets/compose-widget)

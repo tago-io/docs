@@ -15,10 +15,10 @@ const config: Config = {
 	},
 
 	// Set the production url of your site here
-	url: "https://tago-io.github.io",
+	url: "https://new-docs.tago-io.com",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/docs/", // Changed from '/docs/' for local development
+	baseUrl: "/", // Changed from '/docs/' for local development
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.

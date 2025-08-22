@@ -15,11 +15,11 @@ Please note that the notification is only sent to the account where it was creat
 
 ## Push Notifications to Run Users
 
-Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](/tagoio/notifications-for-users).
+Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](/tagoio/notifications/notifications-for-users).
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
-![Image 2](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/q3Sp6K8oFpPfPPmwr9dNaHPryJgbaPyqVfPSCwiyCB4/1576606566858-r_Q.png)
+![Image 2](/docs_imagem/tagoio/1576606566858-r_Q.png)
 
 ## Send Email
 
@@ -27,9 +27,9 @@ Sends an email to a specified address when certain conditions are met. You can s
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
-![Image 3](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/PWMRYJnhyiD8Y3DUaA7_kfE9fvk116pg5IfeRev3twI/1576606418570-3DI.png)
+![Image 3](/docs_imagem/tagoio/1576606418570-3DI.png)
 
-![Image 4: Warning](https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png)
+![Image 4: Warning](/docs_imagem/tagoio/caution.png)
 
 **Attention:** starting **January 1st, 2025**, TagoIO will discontinue its email services. We recommend integrating with external providers to send emails using the "Send Email using SMTP/SendGrid" action.
 
@@ -47,9 +47,9 @@ An email will be sent via SendGrid when a specific condition is met. To configur
 
 Learn here how to create this secret: [Secrets](/tagoio/secrets).
 
-![Image 5](https://help.tago.io/galleryDocuments/edbsna2b45009a79a59eaed26c551172741900fc1ea9b76958368042d7641af14f78431db2ce80336460d3bf71a1808fbf3be?inline=true)
+![Image 5](/docs_imagem/tagoio/external-da256072.png)
 
-![Image 6: Idea](https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png)
+![Image 6: Idea](/docs_imagem/tagoio/lights.png)
 
 ## Send Message to AWS SQS
 
@@ -63,11 +63,11 @@ Sends SMS messages when certain conditions are met. You can specify one or multi
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
-![Image 7](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/TU8BKWtvfqq00Bw8rNuOXxYXg1Rc0XGoFLIaxS3nYT8/1576605304356-hps.png)
+![Image 7](/docs_imagem/tagoio/1576605304356-hps.png)
 
 Some costs may occur when using the SMS service, which varies based on the country of operation. Check the [pricing](https://tago.io/pricing/), [terms of use](https://tago.io/terms-of-support/), and your plan before using the SMS service.
 
-![Image 8: Warning](https://static.zohocdn.com/zoho-desk-editor/static/images/caution.png)
+![Image 8: Warning](/docs_imagem/tagoio/caution.png)
 
 **Attention:** starting on **November 1st, 2024**, TagoIO will no longer offer SMS services. We recommend integrating with external providers to send SMS using the "Send SMS with Twilio" action.
 
@@ -77,15 +77,15 @@ Use this action to send an SMS message via Twilio when a specified condition is 
 
 Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/tagoio/secrets).
 
-![Image 9](https://help.tago.io/galleryDocuments/edbsn67943d7c5246a573a44a4bd8650f4ff78c7f44f13bf7463768396849a96358b24aca7572d2b8f742abd64cdd2d34122f?inline=true)
+![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
 
-![Image 10: Notes](https://static.zohocdn.com/zoho-desk-editor/static/images/file.png)
+![Image 10: Notes](/docs_imagem/tagoio/file.png)
 
 If you're using Twilio Long Code for messaging, be aware that it requires a Toll‑Free verification process. Please consult Twilio's documentation for instructions on how to verify your phone number before proceeding. Depending on Twilio's rules for your account, the Toll‑Free verification may be skipped.
 
-You can send SMS directly from scripts within the [Analysis](/tagoio/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
+You can send SMS directly from scripts within the [Analysis](/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
-![Image 11: Idea](https://static.zohocdn.com/zoho-desk-editor/static/images/lights.png)
+![Image 11: Idea](/docs_imagem/tagoio/lights.png)
 
 ## Send WhatsApp message with Twilio
 
@@ -93,17 +93,17 @@ Use this action to send a WhatsApp message via Twilio when a specified condition
 
 Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/tagoio/secrets).
 
-![Image 12](https://help.tago.io/galleryDocuments/edbsn5a8928b872341ac4e22d379c75543ad950ce1cc4bdf023b8a257203c6e8997461985e7209b8e3f0009097134f92e2a08?inline=true)
+![Image 12](/docs_imagem/tagoio/external-01a6551b.png)
 
-You can send WhatsApp messages directly from scripts within the [Analysis](/tagoio/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
+You can send WhatsApp messages directly from scripts within the [Analysis](/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
 Additionally, you can also send WhatsApp messages using Twilio Templates. To do this, you need to set a Twilio Template SID in TagoIO Secrets and configure the Template variables. Template variables also support dynamic content, allowing you to include information dynamically within them.
 
 ## Run Analysis Script
 
-Actions have the power to initiate scripts that run in the [Analysis](/tagoio/analysis-overview). This is a very powerful feature, as you can define exactly when your code will run.
+Actions have the power to initiate scripts that run in the [Analysis](/tagoio/analysis/analysis-overview). This is a very powerful feature, as you can define exactly when your code will run.
 
-Learn more about [Running Analysis via Action](/tagoio/running-analysis-via-action).
+Learn more about [Running Analysis via Action](/tagoio/actions/running-analysis-via-action).
 
 ## Publish to TagoIO MQTT Broker
 
@@ -111,20 +111,20 @@ This action can publish to an MQTT topic defined by the developer. This means th
 
 To set the MQTT action up, select the option **Publish to MQTT**, select the device which will receive that topic and type in the topic. The content of the MQTT payload that subscribed devices will receive can be defined as well.
 
-![Image 13](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/NAok4hy3VLcgaIWFrbUSeynRFggVeG2QPOYuR4z3yBE/1576605830665-DPI.png)
+![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
 
-![Image 14: Notes](https://static.zohocdn.com/zoho-desk-editor/static/images/file.png)  
-TagoIO [MQTT Broker](/tagoio/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/connecting-your-mqtt-broker-to-tagoio) feature.
+![Image 14: Notes](/docs_imagem/tagoio/file.png)  
+TagoIO [MQTT Broker](/tagoio/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/connecting-your-mqtt-broker-to-tagoio) feature.
 
 ## Post data to HTTP End-Point
 
-This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](/tagoio/sending-data-to-device).
+This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](/tagoio/devices/sending-data-to-device).
 
-![Image 15](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/pOMnzuwaHnL8rf52QuuUg_kgy0wa7lUYxiXl2MZdsu0/1628001560181--oQ.png)
+![Image 15](/docs_imagem/tagoio/1628001560181-oQ.png)
 
 > You can use payload fields in the HTTP endpoint, like the example above but with a variable (`https://myapi.io/endpoint/$VALUE$`), or even in the HTTP Headers like in the example below:
 
-![Image 16](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/CO0xjn1IgW4HQMQNSdcqVNXi9NDWz49WOx4WcF7bxGc/1628001652255-dcw.png)
+![Image 16](/docs_imagem/tagoio/1628001652255-dcw.png)
 
 The `TagoIO-Retries` header is managed by the TagoIO API and sent in every Post request for this Action type, and indicates the number of attempts to post the data to your endpoint.
 
@@ -132,7 +132,7 @@ It will try to post the data 10 times, and if it’s unsuccessful (any response 
 
 To set up a fallback device, enable it in the bottom part of the HTTP Post action settings and put the token for the device you intend to hold the data.
 
-![Image 17](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/dFfuspn8e7OAd6Xo6Qk_hbPnq8N996oXhVGrtORbhPU/1628001764337-3t4.png)
+![Image 17](/docs_imagem/tagoio/1628001764337-3t4.png)
 
 After 10 unsuccessful attempts, the data will be sent to the fallback device with some information added to the `metadata` in the `_http_*` properties (original values in `metadata` will be kept), like shown below:
 

@@ -12,7 +12,7 @@ These data input transactions are accounted against the Profile where your devic
 ## Viewing limits and usage history
 You can visualize the limits and usage history of each service in the Profile tab, located under the [Profiles & Teams](../account/profiles) section of your account.
 
-![Image 1](https://help.tago.io/galleryDocuments/edbsndab4798ca176c007187334dfe916a5f1f2ad8b3513e461b736204cca392b8a381af5bf0d0f1d0155cf0e22b328e8072d?inline=true)
+![Image 1](/docs_imagem/tagoio/external-f4bf5eb6.png)
 
 ### Data Input (limit per month)
 You should select a limit that you are sure your application will not exceed during a period of one month. When a profile hits its limit, inputs will be blocked up until the next counting cycle.
@@ -26,6 +26,6 @@ You should select a limit that you are sure your application will not exceed dur
     ```
     Multiply the previous number by the number of devices and you will have the total number of data input transactions per month.
 
-![Image 2](https://static.zohocdn.com/zoho-desk-editor/static/images/info.png)
+![Image 2](/docs_imagem/tagoio/info-8.png)
 
 Rate limits are applied to a wide range of interactions within the platform, including data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP). Read more about our [Rate Limits](/tagoio/rate-limits-hard-limits).

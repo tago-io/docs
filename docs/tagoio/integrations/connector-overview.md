@@ -30,9 +30,9 @@ After creating a connector you can define several optional parameters that will 
 | **Description** | A quick description of what the connector does. |
 | **Logo URL** | An image URL for the sensor or company logo (used when a device is created). |
 
-By default, a newly created connector is visible only to you. You can share it with other [Profiles](/tagoio/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/tagoio/sharing-connectors-networks).
+By default, a newly created connector is visible only to you. You can share it with other [Profiles](/tagoio/account/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/tagoio/integrations/sharing-connectors-networks).
 
-If you want to make your connector public, submit a Pull Request on our GitHub repository: <https://github.com/tago-io/decoders>. For details, see the article on [Publishing, updating and accessing decoders](/tagoio/publishing-updating-and-accessing-decoders).
+If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](/tagoio/payload-parser/publishing-updating-and-accessing-decoders).
 
 ### Documentation
 
@@ -53,7 +53,7 @@ When a user creates a device with your connector, you can expose custom paramete
 - **Dropdown** – Users choose from predefined options.
 - **Switch** – Boolean on/off value.
 
-These values are available as global variables in the payload parser context (see the [Payload parser context overview](/tagoio/payload-parser-context-global-variables)).
+These values are available as global variables in the payload parser context (see the [Payload parser context overview](/tagoio/payload-parser/payload-parser-context-global-variables)).
 
 ### Payload parser
 

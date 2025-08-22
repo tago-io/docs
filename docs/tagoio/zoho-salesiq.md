@@ -41,7 +41,7 @@ d.write('<div id="zsiqwidget"></div>');
 
 4. Then, back in TagoIO, open your RUN setup page. Under Integration > User Engagement, paste the key (the value you copied after `widgetcode:`) in the SalesIQ Key field.
 
-![RUN integration screenshot](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/LuIV4HGtaODFpKFA2o2H9HwlzgPB1aDdiGF2pQmVlNM/Screen%20Shot%202020-02-07%20at%205.44.26%20AM-NTA.png)
+![RUN integration screenshot](/docs_imagem/tagoio/Screen-20Shot-202020-02-07-20at-205.44.26-20AM-NTA.png)
 
 ## Notes and reminders
 

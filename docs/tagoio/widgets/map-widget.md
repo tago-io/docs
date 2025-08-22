@@ -25,7 +25,7 @@ The variable data should look like the following payload. Note that the 'lat' an
 }
 ```
 
-This widget also accepts features like [metadata](/tagoio/metadata) and [series](/tagoio/grouping-variables), that can be set in your variable data.
+This widget also accepts features like [metadata](/tagoio/data-management/metadata) and [series](/tagoio/data-management/grouping-variables), that can be set in your variable data.
 
 ---
 
@@ -35,7 +35,7 @@ To add it to your dashboard, choose the Map widget from the list and customize i
 
 <!-- Map widget creation image -->
 
-> This widget works for both dashboards, **Normal** and [**Blueprint**](/tagoio/blueprint-dashboard).
+> This widget works for both dashboards, **Normal** and [**Blueprint**](/tagoio/dashboards/blueprint-dashboard).
 
 ---
 
@@ -55,9 +55,9 @@ From the option 'Data From' on the right menu, select one device from your list 
 
 ### 1.2 'Data From' for Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the **location** information.
+From the option 'Data From' on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the **location** information.
 
-> When using a [Blueprint dashboard](/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ---
 
@@ -98,7 +98,7 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](/tagoio/grouping-variables), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [series](/tagoio/data-management/grouping-variables), so you can group your variables' data in the same infobox.
 
 > If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 
@@ -126,7 +126,7 @@ You can draw polygon or circle figures and associate them with events, and build
 
 **YouTube Video:** [Mapping and Geofencing IoT Devices on TagoIO](https://www.youtube.com/watch?v=EmwtOqq_KLQ)
 
-Learn more about [Geofence in map widgets](/tagoio/geofences-in-map-widgets).
+Learn more about [Geofence in map widgets](/tagoio/widgets/geofences-in-map-widgets).
 
 ---
 

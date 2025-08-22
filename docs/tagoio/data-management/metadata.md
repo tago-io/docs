@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 Metadata is one of the most important concepts when creating [dashboards](../dashboards/creating-dashboard-tabs) and [widgets](../widgets/widgets-overview). Metadata is a piece of information that you can store in the variable payload.
 
-> With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](../widgets/map-widget) pin color or place a [heat map](../widgets/heatmap-widget) bubble in another position, and more.
+> With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](../widgets/map-widget) pin color or place a [heat map](/tagoio/widgets/heat-map-widget) bubble in another position, and more.
 
 ## JSON example
 
@@ -44,7 +44,7 @@ For example, this article uses the `color` and `icon` metadata fields in the fol
 
 You can use your own icon by placing the SVG file URL in the `icon` metadata field. For your SVG to be displayed correctly, make sure that it has the property **viewBox** before using it.
 
-![Image 1](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/z51G-lXQxKcaJyG5EK1MMoqJcdAO0YGBcXQvj5--6NI/iconMetadata-y6I.gif)
+![Image 1](/docs_imagem/tagoio/iconMetadata-y6I.gif)
 
 ## Available Metadata Fields
 

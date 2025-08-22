@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 TagoIO's MQTT broker does not natively support the standard MQTT **retain** feature. However, you can implement an equivalent workaround by using TagoIO Analysis and Actions to store the last message published to a topic and resend it when a new client subscribes.
 
-This approach involves using the [Analysis](../analysis/analysis-overview) and [Actions](../actions/actions) features to store the last message published to a topic and then resend it when a new client subscribes.
+This approach involves using the [Analysis](/tagoio/analysis/analysis-overview) and [Actions](/tagoio/actions/actions) features to store the last message published to a topic and then resend it when a new client subscribes.
 
 ## Setting Up Message on Subscribing
 
@@ -23,7 +23,7 @@ To build an MQTT **retain** workaround with TagoIO, you can either publish direc
    - In the action configuration, select **"MQTT Publish"** as the action type.  
    - Specify the topic you wish to publish to and the message payload.
 
-![Image 2](https://help.tago.io/galleryDocuments/edbsn5f4331abbc9ad6ce941c4184f1d47987d65227d816907b942ee1ab85d347d18f4fba77e51cbbba52e7e524ee892211d0?inline=true)
+![Image 2](/docs_imagem/tagoio/external-41c105e7.png)
 
 ## Using Analysis for Advanced Scenarios
 
@@ -65,8 +65,8 @@ module.exports = new Analysis(mqttPushExample);
 ### 3. Trigger Analysis
 - Configure an Action or another event to trigger the execution of your Analysis (e.g., a device update, a scheduled time, or any other event in your TagoIO application).
 
-Refer to the [Analysis documentation](../analysis/analysis-overview) for details on creating scripts and integrating them with Actions and MQTT.
+Refer to the [Analysis documentation](/tagoio/analysis/analysis-overview) for details on creating scripts and integrating them with Actions and MQTT.
 
 Additional references:
-- Actions documentation: [Actions](../actions/actions)
+- Actions documentation: [Actions](/tagoio/actions/actions)
 - MQTT Relay feature documentation: [MQTT Relay](mqtt)

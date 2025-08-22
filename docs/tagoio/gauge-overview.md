@@ -21,9 +21,9 @@ Learn more about the [Dial Gauge](widgets/dial-widget).
 
 Angular allows you to show your variable in an angular gauge meter.
 
-![Image 2](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/aIbG9u-V8i2HR5KvaqNOenHfTAI3odeqmzcAsCygr2M/1587131850692-QkI.png)
+![Image 2](/docs_imagem/tagoio/1587131850692-QkI.png)
 
-To learn more about the [Angular Gauge](/tagoio/angular-widget).
+To learn more about the [Angular Gauge](/tagoio/widgets/angular-widget).
 
 ---
 
@@ -31,9 +31,9 @@ To learn more about the [Angular Gauge](/tagoio/angular-widget).
 
 Solid gauges display your variable in a solid gauge meter.
 
-![Image 3](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/uOYfn0kOm96rWuuAfSrh44zLqLddXkvIs9_48wNNcmA/1587131943985-EQI.png)
+![Image 3](/docs_imagem/tagoio/1587131943985-EQI.png)
 
-To learn more about the [Solid Gauge](/tagoio/solid-widget).
+To learn more about the [Solid Gauge](/tagoio/widgets/solid-widget).
 
 ---
 
@@ -41,7 +41,7 @@ To learn more about the [Solid Gauge](/tagoio/solid-widget).
 
 Clock gauges allow you to visualize the time in a certain timezone. You can see the selected timezone, weekday, hour, minutes and seconds.
 
-![Image 4](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/m2uNJZIC2DbxtNZiKSKV8s4BniaJe4bhqn1RrqayJvE/1587130683446-m1M.png)
+![Image 4](/docs_imagem/tagoio/1587130683446-m1M.png)
 
 To learn more about the [Clock Gauge](/tagoio/gauge-overview).
 
@@ -51,6 +51,6 @@ To learn more about the [Clock Gauge](/tagoio/gauge-overview).
 
 VU Meter gauges show the variable in a velocimeter gauge.
 
-![Image 5](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/qRKhK2UhzYlw4Z-gSqNIt1FY5FQzOgcg7E7dK110lBY/1587131850409-rSM.png)
+![Image 5](/docs_imagem/tagoio/1587131850409-rSM.png)
 
 To learn more about the VU Meter Gauge.

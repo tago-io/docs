@@ -66,7 +66,7 @@ For example, if the user selects **2:15 pm** for the variable `timer_off`, the
 - You can customize colors for the button and text based on conditions defined in the *Visualization* tab.  
   Example of a condition that changes the text color around **10:30 am**:
 
-![Example of conditions set to change the color of the text around 10:30am](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/ek8VjhtrB-i7_LC9yi7CG1UJzJOYICd5gs8uN_amSa4/condition_clock-Iqk.png)
+![Example of conditions set to change the color of the text around 10:30am](/docs_imagem/tagoio/condition_clock-Iqk.png)
 
 - In the *User Control* tab you can define how many times the value will blink before posting the data to the device’s data storage. The blinking starts after the user releases the button.
 

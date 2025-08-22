@@ -27,7 +27,7 @@ The “Trigger by Geofence” feature allows you to execute an [Action](action
 - Add new condition  
 - Mapbox | OpenStreetMap  
 
-![Image 1](https://help.tago.io/galleryDocuments/edbsna9c8ba07f465cdba9eb113e35c9e0c05cdaba19e78ddc99a96f9bdfb6401c31ba4d80faf9a07107866ace9196265a568?inline=true)
+![Image 1](/docs_imagem/tagoio/external-5fc8df08.png)
 
 ## Setting the Trigger Conditions
 
@@ -36,7 +36,7 @@ For each condition you can only set one geofence, so if you need multiple geofen
 
 You must define whether the trigger should activate when the chosen variable is **inside** or **outside** the geofence. When the selected variable receives new location data, the system checks if this location meets the specified geofence condition.
 
-![Image 2](https://help.tago.io/galleryDocuments/edbsn120a2c64468ac67e5dd18cf4974ea10a4afe40a0b7cb3d5155e716e7295b3d88ef4348570f6fc0b3ba6bd461eb0f6ad8?inline=true)
+![Image 2](/docs_imagem/tagoio/external-bef9d9d6.png)
 
 ### Editing Geofence
 
@@ -45,5 +45,5 @@ To delete a geofence in your condition, you can either draw another one, which w
 
 ## Related references
 
-- See [Editing Geofence](../widgets/map-widget) for instructions on editing geofence shapes and parameters.
-- See [Defining Actions](../actions/actions) or [Actions](../actions/actions) for how to configure the action executed when the geofence condition is met.
+- See [Editing Geofence](/tagoio/widgets/map-widget) for instructions on editing geofence shapes and parameters.
+- See [Defining Actions](/tagoio/actions/actions) or [Actions](/tagoio/actions/actions) for how to configure the action executed when the geofence condition is met.

@@ -32,7 +32,7 @@ The widget supports three types of background images:
 
 1. **Static** – an image from a fixed URL.  
 2. **Conditional** – multiple conditions each with its own image URL; the image that matches the condition is displayed.  
-   ![Conditional image example](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/CbxonhNWS2QR0FHvwjVX3wfF_WXEgigfpHYu2kLdDl0/Captura%20de%20tela%20de%202021-06-23%2019-51-03-Op0.png)  
+   ![Conditional image example](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-23-2019-51-03-Op0.png)  
 3. **Dynamic** – the image URL comes from variable data.
 
 > You can store images in TagoIO’s [file system](/tagoio/files) and use a public URL.
@@ -58,7 +58,7 @@ The widget will display a heat bubble at that location.
 #### Using the widget editor
 
 You can also set coordinates directly in the widget editor. If metadata is not present, the editor values are used.  
-![Bubble position example](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/VFUdzqOyVz5sqmyK82dk3YRe0l_6hVLrbxCAYy0mL_c/byHeatmap-RtA.gif)
+![Bubble position example](/docs_imagem/tagoio/byHeatmap-RtA.gif)
 
 ### Range of scale
 

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 ## Important notice
 
-> TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](integrations/mqtt-integration) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
+> TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/connecting-your-mqtt-broker-to-tagoio) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
 >
 > For EU accounts, a public MQTT broker without SLA guarantees is planned for the future. The main purpose of that broker will be proof‑of‑concept testing.
 
@@ -23,7 +23,7 @@ TagoIO’s MQTT broker is responsible for pushing data to clients whenever new i
 
 For example, a temperature sensor might publish a new value to the topic `temperature` each time it receives an update. Devices that need to react to these updates subscribe to that topic; when the sensor publishes, the broker forwards the payload to all subscribed clients.
 
-![Image 2: MQTT flow diagram](https://help.tago.io/galleryDocuments/edbsn6c1522f9148bce1f6b3d30a9ddc3e97b01e4e7a8e6a53fda738010b72ab9e42adac771ff93e2c7dabfe97cb7adf5d3c4?inline=true)
+![Image 2: MQTT flow diagram](/docs_imagem/tagoio/external-0d4c4dd6.png)
 
 ## Connection
 
@@ -35,19 +35,19 @@ To connect to our broker, use the following details. Note that there is a limit 
 > **Username:** Token  
 > **Password:** _Your Device‑Token_
 
-If the [Device‑token](/tagoio/device-token) is removed from a device, or if it is deleted, that device will be disconnected from the MQTT broker.
+If the [Device‑token](/tagoio/devices/device-token) is removed from a device, or if it is deleted, that device will be disconnected from the MQTT broker.
 
 ## Security
 
-Encryption across the network can be handled with SSL independently of the MQTT protocol itself. Additional security can also be added through application‑encrypted data that is sent and received. At TagoIO you can send your data encrypted directly to [Analysis](/tagoio/analysis-overview), decrypt it there, and then insert the data into your [Bucket](/tagoio/devices). This procedure can increase security if your data is sensitive or if you simply want an extra layer of protection.
+Encryption across the network can be handled with SSL independently of the MQTT protocol itself. Additional security can also be added through application‑encrypted data that is sent and received. At TagoIO you can send your data encrypted directly to [Analysis](/tagoio/analysis/analysis-overview), decrypt it there, and then insert the data into your [Bucket](/tagoio/devices/devices). This procedure can increase security if your data is sensitive or if you simply want an extra layer of protection.
 
 ## Data flow at TagoIO
 
 When you first send data through MQTT to your device, you’ll be able to visualize the connection and message through the [Live Inspector](/tagoio/live-inspector) on your device. Those messages indicate that the connection is working, but nothing is being stored in your bucket yet.
 
-From this point, you need to create an [Action](/tagoio/actions) with trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you should see the data being stored in the Live Inspector.
+From this point, you need to create an [Action](/tagoio/actions/actions) with trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you should see the data being stored in the Live Inspector.
 
-If you don’t send the data using the [TagoIO data format](/tagoio/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](/tagoio/payload-parser).
+If you don’t send the data using the [TagoIO data format](/tagoio/data-management/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](/tagoio/payload-parser/payload-parser).
 
 ## More Resources
 

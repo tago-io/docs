@@ -20,24 +20,24 @@ TagoIO is a comprehensive IoT platform that enables you to connect, manage, and 
 
 ### Getting Started
 - [Platform Overview](/tagoio/getting-started)
-- [Account Setup](/tagoio/account-setup)
-- [First Device Connection](/tagoio/first-device)
+- [Account Setup](/tagoio/account/editing-accounts-details)
+- [First Device Connection](/tagoio/devices/devices)
 
 ### Core Features
-- [Devices](/tagoio/devices) - Device management and configuration
+- [Devices](/tagoio/devices/devices) - Device management and configuration
 - [Dashboards](/tagoio/dashboards) - Data visualization and reporting
-- [Actions](/tagoio/actions) - Automation and triggers
-- [Analysis](/tagoio/analysis) - Custom scripts and processing
+- [Actions](/tagoio/actions/actions) - Automation and triggers
+- [Analysis](/tagoio/analysis/analysis-overview) - Custom scripts and processing
 
 ### Advanced Features
-- [API Integration](/tagoio/api) - REST API documentation
+- [API Integration](/tagoio/api/api-overview) - REST API documentation
 - [Widgets](/tagoio/widgets) - Custom dashboard components
-- [Services](/tagoio/services) - External service integrations
+- [Services](/tagoio/services/services-overview) - External service integrations
 - [Files](/tagoio/files) - File management system
 
 ### Account Management
-- [Profiles](/tagoio/profiles) - User and permission management
-- [Billing](/tagoio/billing) - Plans and payment management
+- [Profiles](/tagoio/account/profiles) - User and permission management
+- [Billing](/tagoio/billing/billing-summary) - Plans and payment management
 - [Security](/tagoio/security) - Security and compliance
 
 ---

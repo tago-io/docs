@@ -48,7 +48,7 @@ When exporting a chunk, you can activate the **Include Header** option to add co
 
 ### How exporting is billed
 
-Exporting data consumes the [Data Output service](../services/data-output). The number of transactions billed is rounded to the next multiple of 10 000. For example:
+Exporting data consumes the [Data Output service](/tagoio/services/data-output-service). The number of transactions billed is rounded to the next multiple of 10 000. For example:
 
 1. Exporting 700 registers will consume 10 000 data output transactions.  
 2. Exporting 12 000 registers will consume 20 000 data output transactions.  
@@ -59,7 +59,7 @@ The billing scheme above does not apply when fetching data using the API; for ex
 
 ## Delete chunks
 
-You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](../audit-log).
+You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](/tagoio/security/audit-log).
 
 ## Automation
 

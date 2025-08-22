@@ -26,9 +26,9 @@ Analysis is able to integrate with any SMS service; you can register a unique nu
 ## Related documentation
 - [Defining Actions](../actions/actions)
 - [Services Overview](../services/services-overview)
-- [Analysis Service](../services/analysis-service)
+- [Analysis Service](/tagoio/analysis/analysis-service)
 - [Data Input Service](../services/data-input-service)
 - [Notification Service](../services/notification-service)
 - [E-mail Service](../services/e-mail-service)
-- [Data Records](../services/data-records-service)
+- [Data Records](/tagoio/data-management/data-records)
 - [Data Output Service](../services/data-output-service)

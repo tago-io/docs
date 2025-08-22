@@ -11,7 +11,7 @@ Your devices can always connect directly to the TagoIO API using HTTPS or MQTT. 
 
 ## Device data flow
 
-![Device data flow diagram](/docs_imagem/tagoio/network-integration-2.png)
+![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
 
 Caption: Device data flow showing Devices → Network → Connector → Buckets (payload parsing and storage).
 
@@ -26,26 +26,26 @@ TagoIO provides network integrations fully hosted in different regions. Based on
 
 **For example, use everynet.middleware.us-e1.tago.io for Everynet network in the USA.**
 
-**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](/tagoio/data-input-service) operations. Network operations themselves do not generate any charges.
+**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](/tagoio/services/data-input-service) operations. Network operations themselves do not generate any charges.
 
 ## Available Network Integrations
 
 For the second method above, here is a list of some Network Integrations ready to be used:
 
-- [Sigfox](/tagoio/sigfox)
+- [Sigfox](/tagoio/tutorials/sigfox)
 - [MQTT](/tagoio/mqtt)
 - [Actility LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-actility-ns)
-- [Everynet LoRaWAN](/tagoio/everynet-lorawan)
-- Kore Brazil LoRaWaN (select[Everynet](/tagoio/everynet-lorawan))
+- [Everynet LoRaWAN](/tagoio/tutorials/everynet-lorawan)
+- Kore Brazil LoRaWaN (select[Everynet](/tagoio/tutorials/everynet-lorawan))
 - [Kerlink LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-kerlink-lorawan)
-- [Loriot LoRaWAN](/tagoio/loriot-lorawan)
+- [Loriot LoRaWAN](/tagoio/tutorials/loriot-lorawan)
 - [machineQ LoRAWAN](/tagoio/tutorials/machineq-lorawan)
-- [Orbiwise LoRaWAN](/tagoio/orbiwise-lorawan)
+- [Orbiwise LoRaWAN](/tagoio/tutorials/orbiwise-lorawan)
 - [Senet LoRaWAN](/tagoio/senet-network)
 - [Swisscom LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-swisscom-lorawan-ns)
 - [Tektelic LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tektelic-network-server-with-tagoio)
 - [TTI/TTN V3 LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-ttn-v3)
-- [TTN LoRaWAN](/tagoio/the-things-network-lorawan)
+- [TTN LoRaWAN](/tagoio/tutorials/the-things-network-lorawan)
 - [Chirpstack LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-chirpstack-lorawan)
 - [Helium LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-helium)
 - [CityKinect LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-citykinect-lorawan-21-1-2022)

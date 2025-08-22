@@ -19,7 +19,7 @@ Each action executed by an agent on a resource is considered an event. Agents ca
 
 TagoIO keeps a 6‑month log for each profile; events older than that will not be displayed.
 
-![Event overview](https://help.tago.io/galleryDocuments/edbsnecb78456980d26e82ad23f18c10cf9d1431c512d3b920ef93cf01cce8a153a57e8b3e563e3a94bd373fdc80b3edd5f53?inline=true)
+![Event overview](/docs_imagem/tagoio/external-d3b441c9.png)
 
 ## Filtering events
 
@@ -31,12 +31,12 @@ The log uses your account’s timezone preference to display the timeline of eve
 ### Time interval
 Use the **Time Interval** filter to inspect events that occurred within a specific range. Shorter ranges speed up the search; the maximum selectable period is 7 days.
 
-![Time interval info](https://img.zohostatic.com/zde/static/images/info.png)
+![Time interval info](/docs_imagem/tagoio/info-8.png)
 
 ### Event initiator
 Filter by the agent that performed the action (you, a team member, TagoIO system, or TagoRUN system). Removed team members appear as “Unknown user”.
 
-![Event initiator file icon](https://img.zohostatic.com/zde/static/images/file.png)
+![Event initiator file icon](/docs_imagem/tagoio/file.png)
 
 ### Resource type
 Select a resource type to view only events related to that category (Devices, Actions, Analysis, etc.).
@@ -44,12 +44,12 @@ Select a resource type to view only events related to that category (Devices, Ac
 ### Resource ID
 Search for an event tied to a specific resource by its ID. If you choose a Resource Type first, the filter changes to a dropdown with all relevant IDs.
 
-![Resource ID info](https://img.zohostatic.com/zde/static/images/info.png)
+![Resource ID info](/docs_imagem/tagoio/info-8.png)
 
 ### Event messages
 Each event includes a message describing the action performed on the resource. You can filter events based on these messages.
 
-![Event message example](https://help.tago.io/galleryDocuments/edbsn66eca4daeafbd89e1d2ba86a5edaa5091e5de166dba3687afae36dc01e4a705d9bed37d9696755f8a11b9acb380fff29?inline=true)
+![Event message example](/docs_imagem/tagoio/external-f91f78f4.png)
 
 ## Automation
 

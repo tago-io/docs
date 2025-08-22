@@ -35,11 +35,11 @@ With all variables set, press **Save** to save the analysis.
 ## Setting up the Dashboard
 After completing the previous steps, you may want to send these downlinks using a dashboard. This method can be useful to easily select the device to send the payload or to share the dashboard with others and allow them to send the downlink messages.
 
-![Dashboard overview](/help.tago.io/galleryDocuments/edbsn24e33a3a2919950ee11a198e3332a1a07ebf01b746f9b3796745958a4d4df1ddb1ec074de43a9f0483299b12f393c1ca?inline=true)
+<!-- Image temporarily disabled: Dashboard overview - /help.tago.io/galleryDocuments/edbsn24e33a3a2919950ee11a198e3332a1a07ebf01b746f9b3796745958a4d4df1ddb1ec074de43a9f0483299b12f393c1ca?inline=true -->
 
 1. Select the Analysis you've recently imported, **"Sending Downlink using dashboard"**:
 
-   ![Select analysis](/help.tago.io/galleryDocuments/edbsn70448adc995289bada74c11b51d5b9e65be0ccfc4e9c0bfedc9a20fdd493a1891948b179b5d87037a38c0d84ed7f5e00?inline=true)
+   <!-- Image temporarily disabled: Select analysis - /help.tago.io/galleryDocuments/edbsn70448adc995289bada74c11b51d5b9e65be0ccfc4e9c0bfedc9a20fdd493a1891948b179b5d87037a38c0d84ed7f5e00?inline=true -->
 
 2. Press **"Confirm associations"** to apply the changes and you're all set to start using the form and send your downlinks.
 

@@ -23,10 +23,10 @@ This field allows you to set the device and variable that will be used by the wi
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-![Image 3: Info](https://img.zohostatic.com/zde/static/images/info.png)
+![Image 3: Info](/docs_imagem/tagoio/info-8.png)
 
 ## 2. Composing X-axis and Y-axis
 In the line chart widget, it is possible to customize how the data will be displayed in the horizontal and vertical axis.
@@ -37,7 +37,7 @@ If you need to group your data through the X‑axis even if they don't have the 
 
 Data is ordered by time ascending, but it is possible to change it to series.
 
-![Image 5](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/VrFUSjX0hljRiqj1VqXlLPhcjkrJlH2tbKswLKEGAq4/Captura%20de%20tela%20de%202021-06-17%2016-32-49-2mY.png)
+![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-17-2016-32-49-2mY.png)
 
 It is also possible to define the X‑axis time range dynamically, using another variable data. The variable data should look like the following payload:
 
@@ -52,7 +52,7 @@ It is also possible to define the X‑axis time range dynamically, using another
 }
 ```
 
-![Image 6: Alert](https://img.zohostatic.com/zde/static/images/exclamation.png)  
+![Image 6: Alert](/docs_imagem/tagoio/exclamation-4.png)  
 The `start_date` specifies the start of the range, and the `end_date` specifies the end of the range. In this case, the date and format should be in the ISO 8601 format.
 
 ### 2.2 Y-axis
@@ -62,7 +62,7 @@ The Y‑axis will automatically find the best scale for your data; it is not nec
 ## 3. Filtering data
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
-![Image 7](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/rQSiau6lv8hUktcLV--czbby174BcSz7vwHKBAXf6QI/filteringData-e2c.gif)
+![Image 7](/docs_imagem/tagoio/filteringData-e2c.gif)
 
 ## Related articles
 - [Area Chart Widget](../widgets/area-chart-widget)  

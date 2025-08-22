@@ -32,9 +32,9 @@ Once the network is created, you can configure several optional parameters. If y
 
 ## Sharing Networks
 
-You can share a private network with other **[Profiles](/tagoio/profiles)** from different accounts. Read more about [Sharing Connectors & Networks](/tagoio/sharing-connectors-networks).
+You can share a private network with other **[Profiles](/tagoio/account/profiles)** from different accounts. Read more about [Sharing Connectors & Networks](/tagoio/integrations/sharing-connectors-networks).
 
-If you wish to make your connector or network accessible to all TagoIO users, you can request to make it public by submitting a Pull Request to our GitHub repository: <https://github.com/tago-io/decoders>.
+If you wish to make your connector or network accessible to all TagoIO users, you can request to make it public by submitting a Pull Request to our GitHub repository: https://github.com/tago-io/decoders.
 
 ## Serial Number
 
@@ -59,7 +59,7 @@ Device parameters let you set values that can later be accessed in the payload p
 
 Example: A dropdown parameter appears in the user view as shown below (image omitted for brevity).
 
-For details on accessing these parameters in the payload parser, see the [Payload parser context overview](/tagoio/payload-parser-context-global-variables).
+For details on accessing these parameters in the payload parser, see the [Payload parser context overview](/tagoio/payload-parser/payload-parser-context-global-variables).
 
 ## Tokens and Getting Devices
 
@@ -89,7 +89,7 @@ Check available regions at the [TagoIO API](https://api.docs.tago.io/#intro).
 }
 ```
 
-The result is the device token, which you can use to send data with the [HTTP data post](/tagoio/sending-data-to-device).
+The result is the device token, which you can use to send data with the [HTTP data post](/tagoio/devices/sending-data-to-device).
 
 > **If you will be sending raw payload data**, follow these instructions to keep it compatible with all TagoIO connectors:
 >
