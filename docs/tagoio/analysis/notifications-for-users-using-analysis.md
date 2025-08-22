@@ -33,12 +33,12 @@ Follow these instructions to set up your analysis and send the notifications. Yo
 5. Go to the Environment Variables of your analysis.
 6. Replace the field value `"Your Account Token Here"` with the token you copied in step 3.
 7. Fill the field values for **tag key** and **tag value** to match at least one of the tags of your users in the User Management.
-8. If you didn't set up a tag for any of your users, go to [User Management](https://help.tago.io/portal/en/kb/articles/190), enter one of your users, and create a tag key and value in the Tags section.
+8. If you didn't set up a tag for any of your users, go to [User Management](/tagoio/account/user-management), enter one of your users, and create a tag key and value in the Tags section.
 9. Press **Save** and **Run** to start your analysis and send a notification to your users.
 
 With this all up and running, you can open the script of your analysis and start to change it as needed. The code is fully commented on and detailed to guide you.
 
-You can also create an [Action](https://help.tago.io/portal/en/kb/articles/30-actions) to trigger the Analysis or set it to run every X minutes.
+You can also create an [Action](/tagoio/actions) to trigger the Analysis or set it to run every X minutes.
 
 ## The Notification Object
 

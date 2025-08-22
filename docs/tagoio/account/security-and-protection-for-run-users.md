@@ -60,9 +60,9 @@ This section configures how your application handles end‑user requests to dele
 
 You can choose to enable the following options:
 
-1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](https://help.tago.io/portal/en/kb/articles/190-user-management) module.
+1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](/tagoio/user-management) module.
 2. **Immediately delete user account** – you can consent to TagoIO to process the request and immediately delete the user account.
-3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](https://help.tago.io/portal/en/kb/articles/29-analysis-overview) and our [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk).
+3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](/tagoio/analysis-overview) and our [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk).
 
 > ⚠️ **TagoIO will never remove any Run User data without your consent.** To allow the immediate deletion of an end‑user, you must activate the option “Immediately delete user account”.
 
@@ -73,10 +73,10 @@ Enable 2FA to add an extra layer of security for user logins. Available methods 
 - SMS (note that SMS messages may incur billing)
 - Email (note that emails may incur billing)
 
-Once 2FA is activated, users can navigate to their **Account Settings** to configure their preferred authentication method, similar to the [Two‑Factor Authentication](https://help.tago.io/portal/en/kb/articles/526-two-factor-authentication) setup available on Admin.  
+Once 2FA is activated, users can navigate to their **Account Settings** to configure their preferred authentication method, similar to the [Two‑Factor Authentication](/tagoio/security/two-factor-authentication-2fa) setup available on Admin.  
 You can also enforce 2FA if any method is enabled.
 
-> 📧 *Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](https://help.tago.io/portal/en/kb/articles/allocating-resources-to-profiles).
+> 📧 *Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/tagoio/allocating-services-to-profiles).
 
 ## Password strength
 
@@ -86,7 +86,7 @@ Configure password rules to meet your security policy:
 - Require special characters (examples: !, &, …)
 - Set a minimum password length (e.g., 8 characters)
 
-You can customize the appearance and sentences used for these features on mobile and on the web through the [Run Theme](https://help.tago.io/portal/en/kb/articles/run-themes) and [Dictionaries & Multi‑language](https://help.tago.io/portal/en/kb/articles/489-using-dictionaries-multi-language).
+You can customize the appearance and sentences used for these features on mobile and on the web through the [Run Theme](/tagoio/run-theme) and [Dictionaries & Multi‑language](/tagoio/using-dictionaries-multi-language).
 
 ## User session management
 

@@ -39,4 +39,4 @@ THEN  suggestion_feedback   (this field will be visible)
 
 This textual representation helps clarify what each part of the rule does.
 
-For more details on configuring each form field, see the [Input Form Widget](https://help.tago.io/portal/en/kb/articles/456-input-form-widget) documentation.
+For more details on configuring each form field, see the [Input Form Widget](/tagoio/input-form-widget) documentation.

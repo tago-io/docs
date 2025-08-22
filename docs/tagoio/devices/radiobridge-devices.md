@@ -14,7 +14,7 @@ All data sent by your device will be readily available to display in widgets or 
 You can perform both uplink and downlink operations.
 
 ## Step 1:
-First go to your TagoIO account, and if this is your first device connected between Radio Bridge and TagoIO, you will need to create an [Authorization](https://help.tago.io/portal/en/kb/articles/218-authorization).  
+First go to your TagoIO account, and if this is your first device connected between Radio Bridge and TagoIO, you will need to create an [Authorization](/tagoio/security/authorization).  
 Copy the Authorization by clicking in the COPY button to use in the next step.
 
 ### Step 2:
@@ -36,9 +36,9 @@ Add the device at TagoIO. Go to [Devices](https://admin.tago.io/devices), click 
 Then follow the directions to integrate your device with TagoIO and start building your own application.  
 When completed, click on **Create Device**.
 
-Turn your Radio Bridge device on, and wait for the data to arrive in your bucket. Every time the device sends data it will be available in the bucket and shown in the dashboard: [bucket](https://help.tago.io/portal/en/kb/articles/2-buckets).  
+Turn your Radio Bridge device on, and wait for the data to arrive in your bucket. Every time the device sends data it will be available in the bucket and shown in the dashboard: [bucket](/tagoio/devices).  
 You can start editing the installed dashboard.
 
-Also, you can create [notifications](https://help.tago.io/portal/en/kb/articles/11-notification) and more advanced [scripts](https://help.tago.io/portal/en/kb/articles/120-creating-analysis) as needed.
+Also, you can create [notifications](/tagoio/notification) and more advanced [scripts](/tagoio/creating-analysis) as needed.
 
-> Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](https://help.tago.io/portal/en/kb/articles/147-payload-parser) in your device if necessary.
+> Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](/tagoio/payload-parser) in your device if necessary.

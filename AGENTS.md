@@ -21,27 +21,27 @@ Scraping TagoIO documentation from https://help.tago.io/portal/en/kb and convert
 
 ### TagoIO Section Breakdown
 Main sections identified with their URLs:
-- **Getting Started** - https://help.tago.io/portal/en/kb/articles/1-getting-started ✅ COMPLETED
-- **Devices** - https://help.tago.io/portal/en/kb/articles/3-devices
+- **Getting Started** - /tagoio/getting-started ✅ COMPLETED
+- **Devices** - /tagoio/devices
 - **Dashboards** - https://help.tago.io/portal/en/kb/articles/15-dashboard-overview  
 - **Widgets** - https://help.tago.io/portal/en/kb/tagoio/9-widgets (65 articles, 35 sections)
-- **Actions** - https://help.tago.io/portal/en/kb/articles/30-actions
-- **Analysis** - https://help.tago.io/portal/en/kb/articles/29-analysis-overview
-- **Entities** - https://help.tago.io/portal/en/kb/articles/entities
+- **Actions** - /tagoio/actions
+- **Analysis** - /tagoio/analysis-overview
+- **Entities** - /tagoio/entities
 - **Integration** - https://help.tago.io/portal/en/kb/tagoio/integration (21 articles, 2 sections)
-- **Profiles** - https://help.tago.io/portal/en/kb/articles/198-profiles
-- **Services** - https://help.tago.io/portal/en/kb/articles/115-services-overview
-- **Add-Ons** - https://help.tago.io/portal/en/kb/articles/control-tower
-- **Files** - https://help.tago.io/portal/en/kb/articles/127-files
-- **Notifications** - https://help.tago.io/portal/en/kb/articles/11-notification
-- **Billing** - https://help.tago.io/portal/en/kb/articles/114-account-plans
-- **API** - https://help.tago.io/portal/en/kb/articles/31-api-overview
-- **Payload Parser** - https://help.tago.io/portal/en/kb/articles/147-payload-parser
-- **My Account** - https://help.tago.io/portal/en/kb/articles/211-editing-accounts-details
-- **Tutorials** - https://help.tago.io/portal/en/kb/articles/236-abs-telemetry
-- **SDK** - https://help.tago.io/portal/en/kb/articles/python-sdk
-- **Support** - https://help.tago.io/portal/en/kb/articles/ticket-severity-options
-- **Compliance** - https://help.tago.io/portal/en/kb/articles/security-and-compliance
+- **Profiles** - /tagoio/profiles
+- **Services** - /tagoio/services-overview
+- **Add-Ons** - /tagoio/control-tower
+- **Files** - /tagoio/files
+- **Notifications** - /tagoio/notification
+- **Billing** - /tagoio/account-plans
+- **API** - /tagoio/api-overview
+- **Payload Parser** - /tagoio/payload-parser
+- **My Account** - /tagoio/account/editing-accounts-details
+- **Tutorials** - /tagoio/abs-telemetry
+- **SDK** - /tagoio/python-sdk
+- **Support** - /tagoio/ticket-severity-options
+- **Compliance** - /tagoio/security/security-and-compliance
 
 ## Technical Implementation Details
 

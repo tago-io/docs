@@ -26,10 +26,10 @@ To add an Adeunis device in TagoIO:
 2. Each time the device sends data, the parser will be executed automatically, extracting the measured variables and sending them to the bucket.  
 3. The extracted data is then available in widgets, dashboards, and can be processed further.
 
-You can start building **dashboards** immediately: [Dashboard Overview](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview).
+You can start building **dashboards** immediately: [Dashboard Overview](/tagoio/dashboards/dashboard-overview).
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
-- Notifications: [Notifications](https://help.tago.io/portal/en/kb/articles/11-notification)  
-- Scripts: [Creating Analysis Scripts](https://help.tago.io/portal/en/kb/articles/120-creating-analysis)
+- Notifications: [Notifications](/tagoio/notification)  
+- Scripts: [Creating Analysis Scripts](/tagoio/creating-analysis)
 
-If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](https://help.tago.io/portal/en/kb/articles/33-sigfox).
+If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/tagoio/sigfox).

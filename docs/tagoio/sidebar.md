@@ -18,7 +18,7 @@ The Dashboard Search feature enhances the end‑user experience by providing a s
 ![Image 2](https://help.tago.io/galleryDocuments/edbsn2ae0e75abd2400efb60282b67a6606415d8b29ecc595af530a96705ebb7cc8d02e1a3c7b2f4b673867551082694dc1de?inline=true)
 
 To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.  
-You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](https://help.tago.io/portal/en/kb/articles/489-using-dictionaries-multi-language).
+You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/tagoio/using-dictionaries-multi-language).
 
 ### Logo Button Configuration
 You can define what happens when an end user clicks on your logo or what message is displayed when the mouse hovers over it.
@@ -30,14 +30,14 @@ To display a tooltip over your logo, write text in the **Button tooltip** field.
 
 ![Image 4](https://img.zohostatic.com/zde/static/images/info.png)
 
-Notice that you can use a KEY defined in your [Dictionary](https://help.tago.io/portal/en/kb/articles/489-using-dictionaries-multi-language) to display text that will be substituted according to the languages available for your end users.
+Notice that you can use a KEY defined in your [Dictionary](/tagoio/using-dictionaries-multi-language) to display text that will be substituted according to the languages available for your end users.
 
 #### 2. Button Action
 By default, when an end user clicks on your logo, they are redirected to your Run URL domain. You can customize what happens after clicking on it. The actions can be:
 
-1. **Open Dashboard** – opens the selected dashboard (the user must have access). Read more about [Access Management](https://help.tago.io/portal/en/kb/articles/183-access-management).
+1. **Open Dashboard** – opens the selected dashboard (the user must have access). Read more about [Access Management](/tagoio/security/access-management).
 2. **Show iFrame** – opens an external link inside the Run application; the page must be embeddable.
-3. **Show HTML file content** – displays a custom HTML file that can be hosted in [Files](https://help.tago.io/portal/en/kb/articles/127-files).
+3. **Show HTML file content** – displays a custom HTML file that can be hosted in [Files](/tagoio/files).
 4. **Open external link** – opens a URL outside of Run.
 
 You can also add the action **“Open Setup Wi‑Fi Device.”** To enable this option, navigate to the **Mobile Features** tab in the Run module and activate **Setup Wi‑Fi device**.
@@ -57,9 +57,9 @@ Select an icon from our list or add your own using a URL to an SVG file. You can
 When you create a new button, it is disabled by default and will not be shown in Run. Choose one of the following actions:
 
 1. **Disabled** – removes the button from the application.
-2. **Open dashboard** – opens the selected dashboard (requires user access). See [Access Management](https://help.tago.io/portal/en/kb/articles/183-access-management).
+2. **Open dashboard** – opens the selected dashboard (requires user access). See [Access Management](/tagoio/security/access-management).
 3. **Show iFrame** – opens an external link inside Run; must be embeddable.
-4. **Show HTML file content** – displays a custom HTML file hosted in [Files](https://help.tago.io/portal/en/kb/articles/127-files).
+4. **Show HTML file content** – displays a custom HTML file hosted in [Files](/tagoio/files).
 5. **Open external link** – opens a URL outside of Run.
 6. **Open Setup Wi‑Fi Device** – initiates the process of connecting a Wi‑Fi device (enable via Mobile Features tab).
 
@@ -72,4 +72,4 @@ Customize how many buttons appear per line. The slider lets you move a button to
 ![Image 6](https://img.zohostatic.com/zde/static/images/file.png)
 
 #### Visibility Conditions
-By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](https://help.tago.io/portal/en/kb/articles/183-access-management).
+By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](/tagoio/security/access-management).

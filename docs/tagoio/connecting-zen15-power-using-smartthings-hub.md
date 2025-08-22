@@ -53,4 +53,4 @@ Select the Zen15 device type and fill in the required fields.
 > ```
 > * Paste it into the **Device ID** field.
 
-Your Zen15 is now ready to send data to TagoIO. To visualize the incoming data, create a [dashboard](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview).
+Your Zen15 is now ready to send data to TagoIO. To visualize the incoming data, create a [dashboard](/tagoio/dashboards/dashboard-overview).

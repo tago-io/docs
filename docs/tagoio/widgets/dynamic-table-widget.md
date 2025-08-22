@@ -80,4 +80,4 @@ You can allow users to modify a variable's value inside of a table by enabling t
 
 Dynamic Table offers a bunch of field types to indicate what kind of value can be submitted in the input once the user modifies it. These types are **Text, Password, Number, Dropdown, Dropdown Multiple, Address, Entities** and **Device** (configured by tags).
 
-These field types have the same behavior as the [Form's fields](https://help.tago.io/portal/en/kb/articles/505-field-types-for-input-form).
+These field types have the same behavior as the [Form's fields](/tagoio/field-types-for-input-form).

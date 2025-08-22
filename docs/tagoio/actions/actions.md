@@ -36,7 +36,7 @@ There are 5 types of triggers you can use:
 * **Geofence** – This action will be triggered whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. Learn more about [Trigger by Geofence](../trigger-by-geofence).
 
 To prevent your action from continuously activating when a trigger condition is met, it is advisable to define a reset trigger condition. Ensure you check the “[Trigger Unlock]” option to avoid potential issues with your logic and account:  
-[Trigger Unlock](https://help.tago.io/portal/en/kb/articles/239-trigger-unlock).
+[Trigger Unlock](/tagoio/trigger-unlock).
 
 ## See also
 

@@ -23,14 +23,14 @@ More than one token can be created for the same profile. Permissions and expirat
 
 #### Entities Authenticated by Account Tokens
 
-1. [Devices](https://help.tago.io/portal/en/kb/articles/3-devices)
-2. [Dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview) and [Widgets](https://help.tago.io/portal/en/kb/articles/18-widgets-overview)
-3. [Analysis](https://help.tago.io/portal/en/kb/articles/29-analysis-overview)
-4. [Actions](https://help.tago.io/portal/en/kb/articles/30-actions)
-5. [Files](https://help.tago.io/portal/en/kb/articles/127-files)
-6. [Access Management](https://help.tago.io/portal/en/kb/articles/183-access-management)
-7. [TagoRun](https://help.tago.io/portal/en/kb/articles/191-tagorun) and [Run users](https://help.tago.io/portal/en/kb/articles/190-user-management)
-8. [Dictionary](https://help.tago.io/portal/en/kb/articles/487-dictionaries)
+1. [Devices](/tagoio/devices)
+2. [Dashboards](/tagoio/dashboards/dashboard-overview) and [Widgets](/tagoio/widgets-overview)
+3. [Analysis](/tagoio/analysis-overview)
+4. [Actions](/tagoio/actions)
+5. [Files](/tagoio/files)
+6. [Access Management](/tagoio/security/access-management)
+7. [TagoRun](/tagorun/tagorun) and [Run users](/tagoio/user-management)
+8. [Dictionary](/tagoio/dictionaries)
 
 #### Expiration and Auto-Generated Tokens
 

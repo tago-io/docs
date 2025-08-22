@@ -15,7 +15,7 @@ TagoIO's server provides a continuous stream of data—whether that data is simu
 
 To use this feature, go to **[Devices](https://admin.tago.io/devices)**, then click on “+Add Device”, select the Network: **Simulator**, and from the list of connectors pick the one that simulates a type of device you want. For example, choose the “Bus Simulator” which will send location, fuel level, speed and other variables to your device data storage every 3 minutes.
 
-After adding the device, a pop‑up will ask if you want to add a [dashboard](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview). Use this option to get a dashboard to start and edit from there.
+After adding the device, a pop‑up will ask if you want to add a [dashboard](/tagoio/dashboards/dashboard-overview). Use this option to get a dashboard to start and edit from there.
 
 ![Device simulator freezer example](/cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/HsQE88Il2ABCJiJWyt6ezrp2RiGdMs_GThssoIZJaII/device-simulator-freezer-GgY.png)
 
@@ -23,10 +23,10 @@ After adding the device, a pop‑up will ask if you want to add a [dashboard](ht
 
 From there you can create and edit:
 
-- [Dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview)
-- [Actions](https://help.tago.io/portal/en/kb/articles/30-actions)
-- [Scripts](https://help.tago.io/portal/en/kb/articles/29-analysis-overview)
-- [RUN](https://help.tago.io/portal/en/kb/articles/191-tagorun)
+- [Dashboards](/tagoio/dashboards/dashboard-overview)
+- [Actions](/tagoio/actions)
+- [Scripts](/tagoio/analysis-overview)
+- [RUN](/tagorun/tagorun)
 
 This is an easy and quick way to start with TagoIO!
 
@@ -34,4 +34,4 @@ This is an easy and quick way to start with TagoIO!
 
 Data can take a few minutes to appear in the device. For example, weather data may take up to 15 minutes to present for the first time.
 
-Use our [Live Inspector](https://help.tago.io/portal/en/kb/articles/453-live-inspector) to monitor raw data arriving on your account in real‑time.
+Use our [Live Inspector](/tagoio/live-inspector) to monitor raw data arriving on your account in real‑time.

@@ -86,11 +86,11 @@ For detailed instructions on adding devices, visit the [Adding Devices](../devic
 
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](https://help.tago.io/portal/en/kb/articles/453-live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating dashboards, adding notifications, and creating scripts to process your data.
 
-Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](https://help.tago.io/portal/en/kb/articles/220-downlink-for-lorawan).
+Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/downlink-for-lorawan).
 
 ## Notes and quick links
 - If you already have an authorization created and added to machineQ, you can skip Steps 2–3 and proceed to Step 4.

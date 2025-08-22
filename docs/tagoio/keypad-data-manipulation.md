@@ -74,7 +74,7 @@ scope[0].value.split(',');
 If you select this option, the data sent by the widget will never reach the device's data storage. Keep in mind that the data sent will still be accessible inside of the analysis' scope.
 
 ### Capture User Information
-> This option only works if you are using this widget inside of the [Run](https://help.tago.io/portal/en/kb/articles/191-tagorun) platform.
+> This option only works if you are using this widget inside of the [Run](/tagorun/tagorun) platform.
 
 If you select this option, the data sent by the widget will have an additional object called `run_user`. The structure of that item is:
 

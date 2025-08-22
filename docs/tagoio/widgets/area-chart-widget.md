@@ -25,11 +25,11 @@ Click on the **cog icon** to edit specific options for this variable, such as fo
 ![Image 3](https://img.zohostatic.com/zde/static/images/exclamation.png)
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](https://help.tago.io/portal/en/kb/articles/455-blueprint-devices) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 ![Image 4](https://img.zohostatic.com/zde/static/images/info.png)
 
-When using a **Blueprint dashboard** (https://help.tago.io/portal/en/kb/articles/454-blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## 2. Composing X-axis and Y-axis
 

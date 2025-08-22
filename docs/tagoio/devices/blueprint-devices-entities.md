@@ -18,7 +18,7 @@ This feature is particularly beneficial when you want a single dashboard to be u
 
 ![Image 2: Notes](https://static.zohocdn.com/zoho-desk-editor/static/images/file.png/)
 
-To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](https://help.tago.io/portal/en/kb/articles/tags).
+To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/tagoio/tags-system).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.

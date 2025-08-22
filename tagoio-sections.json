@@ -1,11 +1,11 @@
 [
   {
     "title": "Getting Started",
-    "url": "https://help.tago.io/portal/en/kb/articles/1-getting-started"
+    "url": "/tagoio/getting-started"
   },
   {
     "title": "Devices",
-    "url": "https://help.tago.io/portal/en/kb/articles/3-devices"
+    "url": "/tagoio/devices"
   },
   {
     "title": "Dashboards",
@@ -17,15 +17,15 @@
   },
   {
     "title": "Actions",
-    "url": "https://help.tago.io/portal/en/kb/articles/30-actions"
+    "url": "/tagoio/actions"
   },
   {
     "title": "Analysis",
-    "url": "https://help.tago.io/portal/en/kb/articles/29-analysis-overview"
+    "url": "/tagoio/analysis-overview"
   },
   {
     "title": "Entities",
-    "url": "https://help.tago.io/portal/en/kb/articles/entities"
+    "url": "/tagoio/entities"
   },
   {
     "title": "Integration",
@@ -33,54 +33,54 @@
   },
   {
     "title": "Profiles",
-    "url": "https://help.tago.io/portal/en/kb/articles/198-profiles"
+    "url": "/tagoio/profiles"
   },
   {
     "title": "Services",
-    "url": "https://help.tago.io/portal/en/kb/articles/115-services-overview"
+    "url": "/tagoio/services-overview"
   },
   {
     "title": "Add-Ons",
-    "url": "https://help.tago.io/portal/en/kb/articles/control-tower"
+    "url": "/tagoio/control-tower"
   },
   {
     "title": "Files",
-    "url": "https://help.tago.io/portal/en/kb/articles/127-files"
+    "url": "/tagoio/files"
   },
   {
     "title": "Notifications",
-    "url": "https://help.tago.io/portal/en/kb/articles/11-notification"
+    "url": "/tagoio/notification"
   },
   {
     "title": "Billing",
-    "url": "https://help.tago.io/portal/en/kb/articles/114-account-plans"
+    "url": "/tagoio/account-plans"
   },
   {
     "title": "API",
-    "url": "https://help.tago.io/portal/en/kb/articles/31-api-overview"
+    "url": "/tagoio/api-overview"
   },
   {
     "title": "Payload Parser",
-    "url": "https://help.tago.io/portal/en/kb/articles/147-payload-parser"
+    "url": "/tagoio/payload-parser"
   },
   {
     "title": "My Account",
-    "url": "https://help.tago.io/portal/en/kb/articles/211-editing-accounts-details"
+    "url": "/tagoio/account/editing-accounts-details"
   },
   {
     "title": "Tutorials",
-    "url": "https://help.tago.io/portal/en/kb/articles/236-abs-telemetry"
+    "url": "/tagoio/abs-telemetry"
   },
   {
     "title": "SDK",
-    "url": "https://help.tago.io/portal/en/kb/articles/python-sdk"
+    "url": "/tagoio/python-sdk"
   },
   {
     "title": "Support",
-    "url": "https://help.tago.io/portal/en/kb/articles/ticket-severity-options"
+    "url": "/tagoio/ticket-severity-options"
   },
   {
     "title": "Compliance",
-    "url": "https://help.tago.io/portal/en/kb/articles/security-and-compliance"
+    "url": "/tagoio/security/security-and-compliance"
   }
 ]

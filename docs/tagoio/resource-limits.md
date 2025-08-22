@@ -19,14 +19,14 @@ The limits for each resource are determined by your specific plan. The table bel
 | [Entity](entities/entities) | 5 | 50 | 80 |
 | [Device](../devices/devices) | 5 | 100 | 10,000 |
 | [Profile](../account/profiles) | 1 / account | 2 / account | 5 / account |
-| [Team Member](https://help.tago.io/portal/en/kb/articles/106-sharing-your-profile) | 0 | 1 | 5 |
-| [TagoCore](https://help.tago.io/portal/en/kb/articles/tagocore) | 10 | 10 | 10 |
-| [TagoCore Cluster](https://help.tago.io/portal/en/kb/articles/tagocore-cluster) | 3 | 3 | 3 |
-| [Custom Connector](https://help.tago.io/portal/en/kb/articles/466-connector-overview) | 3 | 20 | 50 |
-| [Custom Network](https://help.tago.io/portal/en/kb/articles/468-creating-a-network-integration) | 1 | 5 | 10 |
-| [Device service authorization](https://help.tago.io/portal/en/kb/articles/218-authorization) | 10 | 50 | 200 |
-| [Access Management Policies](https://help.tago.io/portal/en/kb/articles/183-access-management) | 5 | 30 | 100 |
-| [Dictionary & Multi-language](https://help.tago.io/portal/en/kb/articles/487-dictionaries) | 2 | 10 | 50 |
+| [Team Member](/tagoio/team-management-sharing-your-profile) | 0 | 1 | 5 |
+| [TagoCore](/tagocore/tagocore) | 10 | 10 | 10 |
+| [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
+| [Custom Connector](/tagoio/connector-overview) | 3 | 20 | 50 |
+| [Custom Network](/tagoio/creating-a-network-integration) | 1 | 5 | 10 |
+| [Device service authorization](/tagoio/security/authorization) | 10 | 50 | 200 |
+| [Access Management Policies](/tagoio/security/access-management) | 5 | 30 | 100 |
+| [Dictionary & Multi-language](/tagoio/dictionaries) | 2 | 10 | 50 |
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.
 

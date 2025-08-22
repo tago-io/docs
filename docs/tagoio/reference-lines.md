@@ -26,7 +26,7 @@ Up to **5** reference lines per widget are allowed.
 ### Fixed vs Variable source
 
 - When using a **fixed** source, you can manually set a *Label* and *Color* for the line.  
-- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](https://help.tago.io/portal/en/kb/articles/503-metadata) article.
+- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/tagoio/metadata) article.
 
 ### Multiple axes
 
@@ -35,7 +35,7 @@ If your chart uses multiple Y‑axes, you can associate a reference line with a 
 ### Applying formulas
 
 You can apply a formula to the reference line’s value. This is especially useful when:
-- The dataset variables already have a [Formula](https://help.tago.io/portal/en/kb/articles/225-formula) applied, or
+- The dataset variables already have a [Formula](/tagoio/formula) applied, or
 - You want to use a **Dynamic Formula** for custom unit conversions.
 
 The formula will be evaluated each time the chart refreshes, keeping the reference line in sync with your data.

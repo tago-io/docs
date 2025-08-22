@@ -24,8 +24,8 @@ Choose where the analysis will run:
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
 
-- [Python SDK](https://help.tago.io/portal/en/kb/articles/python-sdk)
-- [Javascript SDK](https://help.tago.io/portal/en/kb/articles/464-node-js) for Deno and NodeJS
+- [Python SDK](/tagoio/python-sdk)
+- [Javascript SDK](/tagoio/nodejs-sdk) for Deno and NodeJS
 
 > ⚠️ When changing between External mode and TagoIO mode, the Analysis Token will be reset and a new token will be generated.
 
@@ -47,7 +47,7 @@ You can trigger your analysis script manually, but you can also define a time in
 
 ### Analysis Token
 This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
-[Running Analysis as External using Node.JS](https://help.tago.io/portal/en/kb/articles/174-running-analysis-as-external-using-node-js).
+[Running Analysis as External using Node.JS](/tagoio/running-analysis-as-external-using-nodejs).
 
 Related documentation:
 - See [Analysis Overview](../analysis/analysis-overview)

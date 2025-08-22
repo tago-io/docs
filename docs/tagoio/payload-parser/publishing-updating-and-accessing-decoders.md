@@ -19,7 +19,7 @@ https://github.com/tago-io/decoders
 
 ![Image 1](https://static.zohocdn.com/zoho-desk-editor/static/images/exclamation.png)
 
-If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](https://help.tago.io/portal/en/kb/articles/sharing-connectors-networks).
+If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/tagoio/sharing-connectors-networks).
 
 ## Repository Overview
 The repository offers comprehensive resources for:

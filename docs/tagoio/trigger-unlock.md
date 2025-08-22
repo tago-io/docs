@@ -29,7 +29,7 @@ You can also set this Locked parameter manually; all you have to do is click it 
 
 ### Unlock Condition Example
 
-Additionally, you can run the action again when an unlock condition is met. For example, if you are triggering an [Analysis](https://help.tago.io/portal/en/kb/articles/120-creating-analysis)​ to set a device in alert mode due to high-temperature readings, you can also switch to safe mode upon meeting an unlock condition.
+Additionally, you can run the action again when an unlock condition is met. For example, if you are triggering an [Analysis](/tagoio/creating-analysis)​ to set a device in alert mode due to high-temperature readings, you can also switch to safe mode upon meeting an unlock condition.
 
 ![Image 2](https://help.tago.io/galleryDocuments/edbsn83f7f9c4d0ea858d2e944796341d591da55a470efb13228166766d02b73b76188e26b933d9404aba747ea3e7f323ef66?inline=true)
 

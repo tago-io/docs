@@ -6,7 +6,7 @@ tags: ["tagoio", "dashboards"]
 
 # Creating Dashboard Tabs
 
-By using **Tabs**, you can divide [dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
+By using **Tabs**, you can divide [dashboards](/tagoio/dashboards/dashboard-overview) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
 
 <!-- Dashboard tabs example image -->
 
@@ -30,7 +30,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 
 - **Dashboard**: The tab will be able to contain widgets.
 - **Link**: The tab will be a link to another dashboard or another web page. You **cannot** put widgets inside of this tab.
-- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](https://help.tago.io/portal/en/kb/articles/242-widget-header).
+- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](/tagoio/widget-header).
 
 <!-- Tab creation interface image -->
 
@@ -40,7 +40,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 
 ## Visibility Conditions
 
-You can configure the tabs on your dashboard to restrict access for your end users on [TagoRun](https://help.tago.io/portal/en/kb/articles/191-tagorun) according to the **tags** you defined in the [User Management](https://help.tago.io/portal/en/kb/articles/190-user-management) module. This functionality is very useful since you can have fine-grained control over which tabs are displayed for different types of users without having to duplicate the dashboards for different user roles.
+You can configure the tabs on your dashboard to restrict access for your end users on [TagoRun](/tagorun/tagorun) according to the **tags** you defined in the [User Management](/tagoio/user-management) module. This functionality is very useful since you can have fine-grained control over which tabs are displayed for different types of users without having to duplicate the dashboards for different user roles.
 
 In order to configure the visibility conditions, you will need to access your dashboard settings, then Tabs and click on the eye icon.
 

@@ -19,7 +19,7 @@ First, go to the [Devices](../devices/devices) module in our admin, look for Sen
 
 ### Create Device
 
-Type a name for your device, select a **[data storage type](https://help.tago.io/portal/en/kb/articles/2-buckets)** and define a **[Data Retention](https://help.tago.io/portal/en/kb/articles/52-data-retention-feature)**, then click on *Create device*.
+Type a name for your device, select a **[data storage type](/tagoio/devices)** and define a **[Data Retention](/tagoio/data-retention-feature)**, then click on *Create device*.
 
 ![Device creation screen](https://help.tago.io/galleryDocuments/edbsnbca145763736eb20fc7b89daaa369a806c9929070f3aec16d0f401be66ab7a214146f92bb96646a4e6d44a41619d1edd?inline=true)
 
@@ -42,7 +42,7 @@ Go to **"Notification Target"**. Make sure the status is *Enabled*, select **HTT
 | Field | Description |
 |-------|-------------|
 | **Name** | Enter a unique identifier (e.g., `tagoio-integration`). |
-| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](https://help.tago.io/portal/en/kb/articles/125-network-integration)**. |
+| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/tagoio/network-integration)**. |
 | **Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Optional Data Fields** | Enable *RF Data* and any other optional field you would like to receive in your device. |
 

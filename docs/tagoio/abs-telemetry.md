@@ -30,13 +30,13 @@ Change the method to **POST** and go to **Send Commands** – you will have to c
 | `_extcmd=postcfg erase` | Delete POST settings |
 | `_extcmd=postcfg Content-type,text/plain;Device-Token,_device_token_;;;` | Set the two parameters required to configure POST for Tago |
 
-> Replace the text `device_token` with the value of your [device‑token](https://help.tago.io/portal/en/kb/articles/4-device-token).
+> Replace the text `device_token` with the value of your [device‑token](/tagoio/device-token).
 
 Learn more information about the [ABS devices configuration](http://www.abstelemetria.com/abs-cel-io/#tab-id-2).
 
 ## TagoIO Setup
 
-Add a **[device](https://help.tago.io/portal/en/kb/articles/3-devices)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
+Add a **[device](/tagoio/devices)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
 
 ![Image 2](https://cdn.elev.io/file/uploads/qh72WgBv-E2Q3qO94VO2POz6QghyF6TOwT3t_PMEKX4/UN4B1y0JKpzk_CCSTJOp_GYt0ZCFlE84QpHcnWNtRvo/Screen%20Shot%202019-10-28%20at%2016.41.44-bjQ.png)
 
@@ -44,6 +44,6 @@ Add a **[device](https://help.tago.io/portal/en/kb/articles/3-devices)** in your
 
 Click on **'Create Device'**, and you will have confirmation that the device was created.
 
-Turn your device on, and wait for the data to arrive and hit your data **[bucket](https://help.tago.io/portal/en/kb/articles/2-buckets)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview)** by adding gauges, tables and more.
+Turn your device on, and wait for the data to arrive and hit your data **[bucket](/tagoio/devices)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](/tagoio/dashboards/dashboard-overview)** by adding gauges, tables and more.
 
 Enjoy your ABS devices with TagoIO!

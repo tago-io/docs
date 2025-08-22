@@ -23,7 +23,7 @@ Angular allows you to show your variable in an angular gauge meter.
 
 ![Image 2](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/aIbG9u-V8i2HR5KvaqNOenHfTAI3odeqmzcAsCygr2M/1587131850692-QkI.png)
 
-To learn more about the [Angular Gauge](https://help.tago.io/portal/en/kb/articles/459-angular-widget).
+To learn more about the [Angular Gauge](/tagoio/angular-widget).
 
 ---
 
@@ -33,7 +33,7 @@ Solid gauges display your variable in a solid gauge meter.
 
 ![Image 3](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/uOYfn0kOm96rWuuAfSrh44zLqLddXkvIs9_48wNNcmA/1587131943985-EQI.png)
 
-To learn more about the [Solid Gauge](https://help.tago.io/portal/en/kb/articles/460-solid-widget).
+To learn more about the [Solid Gauge](/tagoio/solid-widget).
 
 ---
 
@@ -43,7 +43,7 @@ Clock gauges allow you to visualize the time in a certain timezone. You can see 
 
 ![Image 4](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/m2uNJZIC2DbxtNZiKSKV8s4BniaJe4bhqn1RrqayJvE/1587130683446-m1M.png)
 
-To learn more about the [Clock Gauge](https://help.tago.io/portal/en/kb/articles/19-gauge-overview).
+To learn more about the [Clock Gauge](/tagoio/gauge-overview).
 
 ---
 

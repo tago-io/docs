@@ -34,7 +34,7 @@ Add a device in your account at TagoIO. Go to [Devices](https://admin.tago.io/de
 - GV55*  
   *contact us for updates*
 
-Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your bucket: [Buckets](https://help.tago.io/portal/en/kb/articles/2-buckets). The data will be ready to display in dashboards.
+Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your bucket: [Buckets](/tagoio/devices). The data will be ready to display in dashboards.
 
 ### Building Dashboards
 
@@ -42,7 +42,7 @@ Create a dashboard by adding gauges, maps (add the variable **'location'**), tab
 
 ![Map example](/cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/6LPZjX_2YWmgn4JzYDzS5zptzsjgMzKMYqaPmHmobi4/map%20truck%20queclink%20tagoio-M6o.png)
 
-You can also set up notifications to send push notifications, SMS, or emails: [Notifications](https://help.tago.io/portal/en/kb/articles/11-notification). Advanced analysis scripts are available here: [Scripts](https://help.tago.io/portal/en/kb/articles/120-creating-analysis).
+You can also set up notifications to send push notifications, SMS, or emails: [Notifications](/tagoio/notification). Advanced analysis scripts are available here: [Scripts](/tagoio/creating-analysis).
 
 ### GPS Configuration
 

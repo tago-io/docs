@@ -53,4 +53,4 @@ To delete data, TagoIO uses the same query string parameters used to get data; f
 
 > **Tip:** Make sure your request is `DELETE` and not `POST` when trying to delete items. Posting data is relatively instantaneous, while deleting data can take between 10 and 30 seconds to complete.
 
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](https://help.tago.io/portal/en/kb/articles/rate-limits).
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/tagoio/rate-limits-hard-limits).

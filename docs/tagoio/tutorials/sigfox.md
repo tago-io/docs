@@ -49,7 +49,7 @@ Follow these steps to set up the Sigfox backend and TagoIO.
 ## Step 2: Set Up Integration in Sigfox
 
 On the Sigfox Backend Portal, create a **callback** of type `_uplink_`. We will use the **Data Uplink** option to obtain the basic information in the messages.  
-If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](https://help.tago.io/portal/en/kb/articles/222-sigfox-using-advanced-data).
+If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](/tagoio/sigfox-using-advanced-data).
 
 1. **Create a new callback**  
    Go to your Sigfox console and create a new callback under the menu:  
@@ -102,7 +102,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
    - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/connector-overview).
 
-For detailed instructions on adding devices, visit the [Adding Devices](https://help.tago.io/portal/en/kb/articles/3-devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices#Adding_devices) page.
 
 ## Finalizing Setup
 
@@ -111,8 +111,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](https://
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the *Device* and into the *Data* tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](https://help.tago.io/portal/en/kb/articles/453-live-inspector) within your device settings to monitor incoming data in real‑time.
+   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real‑time.
 
 Information about Downlink can be found at the [Sigfox - Downlink](../tutorials/sigfox-downlink) documentation.
 
-You also can [create your own parse scripts](https://help.tago.io/portal/en/kb/articles/118-building-your-own-parser) to process variables from the payload.
+You also can [create your own parse scripts](/tagoio/building-your-own-parser) to process variables from the payload.

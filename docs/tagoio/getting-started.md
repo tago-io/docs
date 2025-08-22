@@ -20,7 +20,7 @@ _Tag title displayed in the video player: "TagoIO | Getting Started"_
 ## Next step
 
 ### Step 1. Add a device
-Start by adding a [device](https://help.tago.io/portal/en/kb/articles/3-devices) to your account. This will provide a link between the data in your account and the external world.
+Start by adding a [device](/tagoio/devices) to your account. This will provide a link between the data in your account and the external world.
 
 In this example, let’s send a variable called _temperature_ from your device to your account.
 
@@ -32,12 +32,12 @@ In this example, let’s send a variable called _temperature_ from your device t
 
 ![Image 1](https://cdn.elev.io/file/uploads/Vz4v2Fi-0uG-N7jOjBzSIFz4EER9y2t5YZIRrkJk9Xs/T8E5YSNbkIL-ItYBi3hzpzjYDhajWvxQCw1Bj_2PPmg/throw-miA.gif)
 
-All devices should use a valid [device-token](https://help.tago.io/portal/en/kb/articles/4-device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
+All devices should use a valid [device-token](/tagoio/device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
 
 ![Image 2](https://cdn.elev.io/file/uploads/Vz4v2Fi-0uG-N7jOjBzSIFz4EER9y2t5YZIRrkJk9Xs/gFtCcfwH8gh3bU8QLycC3xBO7V3rNiCOBBizFETtRBE/token-cj4.gif)
 
 ### Step 2. Build a dashboard
-You can build great [dashboards](https://help.tago.io/portal/en/kb/articles/15-dashboard-overview) to visualize data, interact with your devices and share with others. You can build it with the [widgets](https://help.tago.io/portal/en/kb/articles/18-widgets-overview) that best fit your needs.
+You can build great [dashboards](/tagoio/dashboards/dashboard-overview) to visualize data, interact with your devices and share with others. You can build it with the [widgets](/tagoio/widgets-overview) that best fit your needs.
 
 1. Click **Dashboards** on the left side bar.
 2. Click **+**, then select the type of dashboard, give a name for your dashboard, and click **Save**.
@@ -47,7 +47,7 @@ You can build great [dashboards](https://help.tago.io/portal/en/kb/articles/15-d
 ![Image 3](https://cdn.elev.io/file/uploads/Vz4v2Fi-0uG-N7jOjBzSIFz4EER9y2t5YZIRrkJk9Xs/kluf-ZgzvNFpyHwGdltlCxdbE5aVcqfsBUyFUiROTok/temp-3UQ.gif)
 
 ### Step 3. Send data
-Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](https://help.tago.io/portal/en/kb/articles/31-api-overview). You can use one of our [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) designed for your platform.
+Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](/tagoio/api-overview). You can use one of our [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a server with HTTP. Below, you will learn how to quickly send data depending on the OS that you are using.
 
@@ -84,6 +84,6 @@ The response should look like this:
 ### Step 4. Create complete solutions
 This is just the beginning! Check out how powerful TagoIO is to deploy solutions in production.
 
-Create powerful [analysis](https://help.tago.io/portal/en/kb/articles/29-analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](https://help.tago.io/portal/en/kb/articles/30-actions) to be taken based on your rules.
+Create powerful [analysis](/tagoio/analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](/tagoio/actions) to be taken based on your rules.
 
-Learn more about our powerful [API’s](https://help.tago.io/portal/en/kb/articles/31-api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) prepared for different boards and applications.
+Learn more about our powerful [API’s](/tagoio/api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) prepared for different boards and applications.

@@ -21,7 +21,7 @@ Target matching can be performed in several ways:
 
 1. **ID** – select a target from the list.
 
-2. **Tag** – match using tags from your target. Learn more about the [Tags System](https://help.tago.io/portal/en/kb/articles/tags).
+2. **Tag** – match using tags from your target. Learn more about the [Tags System](/tagoio/tags-system).
 
    - Tags are composed of two fields: **Tag key** and **Tag value**.
    - You can manually edit the tags for each user, or run [scripts](../analysis/analysis-overview) to set them. Learn more about [User Management](/account/user-management).

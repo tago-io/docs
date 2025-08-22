@@ -42,8 +42,8 @@ You must include a Device-Token to authorize the operation. Learn more about the
   ```
   
   When displayed in a table, the row will be red; when displayed on a map widget, the pin will be red with a car icon.
-- Rate limits apply to API requests. Read more about them here: [Rate Limits](https://help.tago.io/portal/en/kb/articles/rate-limits).
-- For testing, try our Device Emulator to post data and learn the JSON structure: [Device Emulator](https://help.tago.io/portal/en/kb/articles/95-device-emulator).
+- Rate limits apply to API requests. Read more about them here: [Rate Limits](/tagoio/rate-limits-hard-limits).
+- For testing, try our Device Emulator to post data and learn the JSON structure: [Device Emulator](/tagoio/device-emulator).
 
 Example payload:
 

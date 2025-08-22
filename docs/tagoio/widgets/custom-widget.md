@@ -40,7 +40,7 @@ Due to their versatility, Custom Widgets allow you to use data from different so
 
 You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
 
-You can also use data from **resources** such as devices and users – just like on the [Device List](https://help.tago.io/portal/en/kb/articles/527-device-list-widget) and [User List](https://help.tago.io/portal/en/kb/articles/user-list-widget) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
+You can also use data from **resources** such as devices and users – just like on the [Device List](/tagoio/device-list-widget) and [User List](/tagoio/user-list-widget-) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
 
 ![Data source example](https://help.tago.io/galleryDocuments/edbsn99fa6052994c1dd954f66185e4542a68e8302ff3d10035d63a0f314e95709846866f70e8736df778854a3634f3f1b879?inline=true)
 
@@ -60,7 +60,7 @@ One use of these parameters is to change the way your code behaves. You can have
 
 ![Parameter example](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/QP_FcaGOr9ZlQ7ABwGw1yO6iVgC_nGlcdmiZ9Wl3XIw/1587658883225-xaM.png)
 
-Read more about [Custom Widget Parameters](https://help.tago.io/portal/en/kb/articles/451-custom-widget-parameters).
+Read more about [Custom Widget Parameters](/tagoio/custom-widget-parameters).
 
 ## User Control
 

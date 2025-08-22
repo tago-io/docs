@@ -22,9 +22,9 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 ### Device Optimized Data (Immutable database)
 
 - Stores up to **36 million** data points per device.
-- Highly optimized for short and long retention periods; query responses are faster, which means less latency for the devices and a cost reduction when running an [Analysis](https://help.tago.io/portal/en/kb/articles/120-creating-analysis).
+- Highly optimized for short and long retention periods; query responses are faster, which means less latency for the devices and a cost reduction when running an [Analysis](/tagoio/creating-analysis).
 - Because the data is immutable, no one can change or delete individual sets of data – ideal for compliance.
-- Data stored in the optimized device can only be removed by the [data retention policy](https://help.tago.io/portal/en/kb/articles/52-data-retention-feature).
+- Data stored in the optimized device can only be removed by the [data retention policy](/tagoio/data-retention-feature).
 
 ### Managed Data Optimized (Mutable database)
 
@@ -37,23 +37,23 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 
 - **General Information tab**: shows the device’s name, network it uses to send data, and the connector used to decode the data.
 - Manage the **Device Token** and **Serial number** by generating or deleting them.
-- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](https://help.tago.io/portal/en/kb/articles/192-data-input-service) and [Output](https://help.tago.io/portal/en/kb/articles/193-data-output-service).  
+- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](/tagoio/data-input-service) and [Output](/tagoio/data-output-service).  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deactivating devices
 
 - In the right upper corner of your device page, a switch allows you to activate or deactivate the device. If deactivated, the system denies access to any command coming from the device.
-- You can hide a specific device from showing in the device selection option for your [Widgets](https://help.tago.io/portal/en/kb/articles/18-widgets-overview).  
+- You can hide a specific device from showing in the device selection option for your [Widgets](/tagoio/widgets-overview).  
   Access the **More** tab on your device’s page to make your device visible or hidden.
 
 ## Inspecting your connection
 
-- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](https://help.tago.io/portal/en/kb/articles/147-payload-parser) and monitoring traffic to and from your device.
+- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/tagoio/payload-parser) and monitoring traffic to and from your device.
 
 ## Customizing payload parser
 
 - Run your own parser by activating the script console in the **Payload Parser** tab inside your device’s page.
-- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](https://help.tago.io/portal/en/kb/articles/466-connector-overview).
+- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/tagoio/connector-overview).
 
 ## Emulating data sending
 
@@ -61,13 +61,13 @@ Inside your device’s page, find the **Emulator** tab where you can send data t
 
 ## Customizing behavior of your device
 
-Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](https://help.tago.io/portal/en/kb/articles/18-widgets-overview), or interact with [API](https://help.tago.io/portal/en/kb/articles/31-api-overview) and [Analysis](https://help.tago.io/portal/en/kb/articles/29-analysis-overview) scripts.
+Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](/tagoio/widgets-overview), or interact with [API](/tagoio/api-overview) and [Analysis](/tagoio/analysis-overview) scripts.
 
 ## Setting rate limits for your devices
 
 - When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **Rate Limits (Hard Limits)**.  
-  <https://help.tago.io/portal/en/kb/articles/rate-limits>
-- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](https://help.tago.io/portal/en/kb/articles/192-data-input-service) or [Output](https://help.tago.io/portal/en/kb/articles/193-data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
+  </tagoio/rate-limits-hard-limits>
+- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](/tagoio/data-input-service) or [Output](/tagoio/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deleting devices

@@ -46,7 +46,7 @@ After creation, copy the authorization token. You will need this in later steps.
 |-------|-------------|
 | **Webhook ID** | Enter a unique identifier (e.g., `tagoio-integration`). |
 | **Webhook Format** | JSON |
-| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](https://help.tago.io/portal/en/kb/articles/125-network-integration). |
+| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/network-integration). |
 | **Additional Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`. |
 
@@ -68,7 +68,7 @@ After creation, copy the authorization token. You will need this in later steps.
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
 - For more information on available connectors and how to use them, refer to the **Connector Overview**.
 
-For detailed instructions on adding devices, visit the [Adding Devices](https://help.tago.io/portal/en/kb/articles/3-devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices#Adding_devices) page.
 
 ---
 
@@ -79,6 +79,6 @@ For detailed instructions on adding devices, visit the [Adding Devices](https://
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the Device and open the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](https://help.tago.io/portal/en/kb/articles/453-live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.

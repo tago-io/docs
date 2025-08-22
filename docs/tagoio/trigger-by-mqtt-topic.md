@@ -28,7 +28,7 @@ After setting up the device, you should set a condition for your action to be ex
 
 ![Image 4](https://cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/JuEYsjOQvx52UaN1JedjJgnWI4MbL0utUznW5gltJpg/1588075755429-J4Y.png)
 
-For each row, you need to set the topic that will be listened to. You may use MQTT [wildcards](https://help.tago.io/portal/en/kb/articles/32-mqtt) for the topic if you prefer.
+For each row, you need to set the topic that will be listened to. You may use MQTT [wildcards](/tagoio/mqtt) for the topic if you prefer.
 
 ![Image 5: Info](https://static.zohocdn.com/zoho-desk-editor/static/images/info.png)
 

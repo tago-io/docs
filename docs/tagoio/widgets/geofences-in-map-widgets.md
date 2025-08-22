@@ -65,7 +65,7 @@ You can add events to geofences. To do so, head over to the **Geofence Options**
 
 The geofences will be saved in a variable, so developers can manage them easily, display the geofences on the map, select the device and variable.
 
-> This is similar to the *Data From* field, from the [Map Widget](https://help.tago.io/portal/en/kb/articles/483-map-widget).
+> This is similar to the *Data From* field from the Map Widget.
 
 ![Image 5](https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/A_4OXeMVLz7uoN8zATQGLFzZLZdiyaopYbS9OSAbcSg/Captura%20de%20tela%20de%202021-07-12%2009-18-20-u98.png)
 

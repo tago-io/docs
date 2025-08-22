@@ -28,9 +28,9 @@ The connector type is defined based on your selection from the list of devices d
 ### How is the Payload Parser triggered?
 ![Image 2](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/rLSRChtkEt9fnM3pmE7dAq7M-e_bhGM35x0_4rFCzko/parser-DnE-zSM.gif)
 
-The payload parser is automatically triggered every time the device sends data to TagoIO (no need to set up anything). Your payload parser is the first step that gets triggered before saving data in the [Device's](https://help.tago.io/portal/en/kb/articles/3-devices) data storage, so if your code has an error it will be returned directly to the device HTTP post response.
+The payload parser is automatically triggered every time the device sends data to TagoIO (no need to set up anything). Your payload parser is the first step that gets triggered before saving data in the [Device's](/tagoio/devices) data storage, so if your code has an error it will be returned directly to the device HTTP post response.
 
-There are some concepts about [global variables and context](https://help.tago.io/portal/en/kb/articles/213-payload-parser-context-global-variables) that you may want to learn.
+There are some concepts about [global variables and context](/tagoio/payload-parser-context-global-variables) that you may want to learn.
 
 ### A parse example
 

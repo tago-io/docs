@@ -26,7 +26,7 @@ To export, click the "Export" button in the top-right corner. The export dialog 
 - A reminder that "Export data will consume your Data Output service."
 - **Export button** — located at the bottom-right of the dialog to start the export.
 
-> **Note:** For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](https://help.tago.io/portal/en/kb/articles/chunk-management).
+> **Note:** For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](/tagoio/chunk-management).
 
 <!-- Image placeholder removed for build -->
 

@@ -16,12 +16,12 @@ Display geometries, boundaries, areas, roads, pipelines, and other spatial featu
 ## Layer Type
 
 ### 1. Static layer
-In the static layer, you can use the widget configuration to input and choose a file. The file can come from our [files module](https://help.tago.io/portal/en/kb/articles/127-files) or an external URL. In addition, the label input defines how the layer will be listed in the map.
+In the static layer, you can use the widget configuration to input and choose a file. The file can come from our [files module](/tagoio/files) or an external URL. In addition, the label input defines how the layer will be listed in the map.
 
 ### 2. Dynamic layer
-In the dynamic layer, the files are saved in a variable so developers can manage them easily and display the layers dynamically. This is similar to the **Data From** field of the [Map widget](https://help.tago.io/portal/en/kb/articles/483-map-widget).
+In the dynamic layer, the files are saved in a variable so developers can manage them easily and display the layers dynamically. This is similar to the **Data From** field of the Map widget.
 
-Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](https://help.tago.io/portal/en/kb/articles/506-dynamic-table-widget) or the [Input Form widget](https://help.tago.io/portal/en/kb/articles/456-input-form-widget).  
+Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](/tagoio/dynamic-table-widget) or the [Input Form widget](/tagoio/input-form-widget).  
 A variable should have a payload like this so that the Map widget can successfully display a layer:
 
 ```json

@@ -44,7 +44,7 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
    - **Filter** – Enter the Filter ID you copied in Step 2.
    - **Application URL** – Use the endpoint format:  
      `https://everynet.middleware.REGION.tago.io/{type}`  
-     Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](https://help.tago.io/portal/en/kb/articles/125-network-integration).
+     Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/network-integration).
    - **Description** – Enter a unique identifier (e.g., `tagoio-integration`).
    - **Authorization Header** – Paste the Authorization token you copied in Step 1.
 4. Click *Save* and copy the generated **Connector ID** for use in the next step.
@@ -68,6 +68,6 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 1. **Power On Your Devices** – Turn on your LoRaWAN device and gateway to initiate data transmission.
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device page and open the *Data* tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](https://help.tago.io/portal/en/kb/articles/453-live-inspector) within your device settings to monitor incoming data in real time.
+   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real time.
 
 Once data successfully flows into TagoIO, you can start creating dashboards, analyses, and actions to visualize and manage your device data effectively.

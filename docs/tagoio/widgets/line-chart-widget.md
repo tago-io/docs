@@ -23,7 +23,7 @@ This field allows you to set the device and variable that will be used by the wi
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](https://help.tago.io/portal/en/kb/articles/455-blueprint-devices) and input the name of the variable that contains the information.  
+From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ![Image 3: Info](https://img.zohostatic.com/zde/static/images/info.png)
