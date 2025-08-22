@@ -35,7 +35,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: 'TagoIO Platform',
       imgSrc: '/img/tagoio-icon-original.png',
-      href: '/docs/tagoio/getting-started/overview',
+      href: '/docs/tagoio',
       description: (
         <>
           The core IoT cloud platform for connecting devices, visualizing data, and building automated solutions.
@@ -46,7 +46,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: 'TagoRUN',
       imgSrc: '/img/tagorun-icon-original.png',
-      href: '/docs/tagorun/getting-started/overview',
+      href: '/docs/tagorun',
       description: (
         <>
           Deploy custom IoT applications to end-users with full control over branding and user management.
@@ -57,7 +57,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: 'TagoCore',
       imgSrc: '/img/tagocore-icon-original.png',
-      href: '/docs/tagocore/overview',
+      href: '/docs/tagocore',
       description: (
         <>
           Free, fast, and open-source IoT platform for edge computing.
@@ -68,7 +68,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: 'TagoDeploy',
       imgSrc: '/img/tagodeploy-icon-original.png',
-      href: '/docs/tagodeploy/overview',
+      href: '/docs/tagodeploy',
       description: (
         <>
           Enterprise-grade infrastructure and dedicated resources for mission-critical IoT deployments.
