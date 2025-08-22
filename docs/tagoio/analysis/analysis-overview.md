@@ -14,6 +14,8 @@ Common things people do with Analyses:
 
 Analyses can be triggered by Actions (schedule or condition), by Dashboard UI elements, or by external services through API endpoints. They provide a straightforward way to plug your application logic into the rest of your solution.
 
+![Running Analysis on IoT Devices](https://youtu.be/ZlcvyjCQNn8)
+
 ## Environments
 Analyses run in TagoIO as an asynchronous, serverless service. There’s no strict queue order, and multiple executions can run at the same time. Usage counts against your profile’s Analysis Run limits.
 
