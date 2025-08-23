@@ -13,11 +13,21 @@
   opacity: 0.95;
 }
 
-.featureCard > :first-child { min-height: 96px; display: flex; align-items: center; justify-content: center; }
+.featureCard > :first-child {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-.featureCol { display: flex; }
-.featureLink { display: block; width: 100%; text-decoration: none; }
+.featureCol {
+  display: flex;
+}
+.featureLink {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
 
 .featureCard {
   background: var(--ifm-background-surface-color);
@@ -32,7 +42,10 @@
   height: 100%;
 }
 
-html[data-theme='dark'] .featureCard { border-color: rgba(255, 255, 255, 0.08); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); }
+html[data-theme="dark"] .featureCard {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
 
 .featureCard:hover {
   transform: translateY(-4px);

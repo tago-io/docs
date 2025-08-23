@@ -1,0 +1,7 @@
+# Ignore infra scripts and fetched artifacts
+infra/
+
+# Node modules and build artifacts
+node_modules/
+build/
+.docusaurus/
