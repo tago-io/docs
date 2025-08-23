@@ -97,6 +97,12 @@ html[data-theme='dark'] .navbar__brand img { filter: invert(1) brightness(1.2) c
 
 html[data-theme='dark'] .navbar { box-shadow: 0 1px 0 0 var(--c-gray-90); }
 
+/* Better Stack status badge: toggle light/dark iframes */
+.navbar-status-badge { padding: 0; } /* let default navbar items control spacing */
+.navbar-status-badge .status-badge--dark { display: none; }
+html[data-theme='dark'] .navbar-status-badge .status-badge--light { display: none; }
+html[data-theme='dark'] .navbar-status-badge .status-badge--dark { display: inline-block; }
+
 /* Footer styling */
 .footer { background: var(--ifm-background-surface-color); border-top: 1px solid var(--footer-border-c); }
 .footer__links { padding-top: 2rem; padding-bottom: 1rem; }
@@ -378,3 +384,6 @@ html[data-theme='light'] .changelog-page .card__header .text--secondary { color:
   padding: 3rem 2rem;
   color: var(--ifm-color-emphasis-600);
 }
+
+/* Hide Docusaurus unlisted banner on blog posts */
+.theme-unlisted-banner { display: none !important; }

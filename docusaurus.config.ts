@@ -45,24 +45,36 @@ const config: Config = {
 					editUrl: "https://github.com/tago-io/docs/tree/main/",
 				},
 				blog: {
-					path: 'changelog',
-					routeBasePath: 'changelog',
+					path: "changelog",
+					routeBasePath: "changelog",
 					showReadingTime: false,
-					blogTitle: 'Changelog',
-					blogDescription: 'Changelog for TagoIO, TagoCore, and TagoDeploy',
-					blogSidebarCount: 'ALL',
-					blogSidebarTitle: 'Recent Changes',
-					blogListComponent: '@site/src/pages/changelog/index.tsx',
+					blogTitle: "Changelog",
+					blogDescription: "Changelog for TagoIO, TagoCore, and TagoDeploy",
+					blogSidebarCount: "ALL",
+					blogSidebarTitle: "Recent Changes",
+					blogListComponent: "@site/src/pages/changelog/index.tsx",
+					postsPerPage: "ALL",
 					feedOptions: {
 						type: ["rss", "atom"],
 						xslt: true,
-						title: 'TagoIO Changelog',
-						description: 'Latest changelog and updates',
+						title: "TagoIO Changelog",
+						description: "Latest changelog and updates",
 					},
+					processBlogPosts: async ({ blogPosts }) =>
+						blogPosts.map((post) => ({
+							...post,
+							metadata: {
+								...post.metadata,
+								frontMatter: {
+									...post.metadata.frontMatter,
+									unlisted: true,
+								},
+							},
+						})),
 					editUrl: "https://github.com/tago-io/docs/tree/main/",
 					onInlineTags: "warn",
 					onInlineAuthors: "warn",
-					onUntruncatedBlogPosts: "warn",
+					onUntruncatedBlogPosts: "ignore",
 				},
 				theme: {
 					customCss: "./src/css/custom.css",
@@ -99,6 +111,12 @@ const config: Config = {
 					label: "Documentation",
 				},
 				{ to: "/changelog", label: "Changelog", position: "left" },
+				{
+					type: "html",
+					position: "right",
+					value:
+						'<div class="navbar-status-badge" style="display:inline-flex;align-items:center;height:var(--ifm-navbar-height)"><iframe class="status-badge--light" src="https://status.tago.io/badge?theme=light" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;"></iframe><iframe class="status-badge--dark" src="https://status.tago.io/badge?theme=dark" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;"></iframe></div>',
+				},
 				{
 					href: "https://admin.tago.io",
 					label: "Login",
