@@ -32,6 +32,8 @@
   --ifm-color-content: #1c1e21;
   --ifm-font-color-base: var(--ifm-color-content);
 
+  --home-features-bg: #f8f9fa;
+
   --ifm-code-background: var(--c-indigo-10);
   --ifm-code-border-radius: .4rem;
   --ifm-pre-background: var(--ifm-code-background);
@@ -79,6 +81,7 @@ html[data-theme='dark'] {
   --ifm-navbar-search-input-color: #fff;
   --ifm-navbar-search-input-placeholder-color: #ffffff80;
   --footer-border-c: var(--c-gray-90);
+  --home-features-bg: var(--ifm-background-color);
 }
 
 /* Navbar */
