@@ -8,29 +8,36 @@ Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb t
 ## Current Repository Status (8/22/2025)
 - Docusaurus site configured and running
   - Node >= 18 required
-  - Root scripts: npm run start | build | serve | typecheck
+  - Root scripts: npm run start | build | serve | typecheck | biome
 - Documentation coverage in repo
   - tagoio: 246 markdown files
   - tagorun: 4 markdown files
   - tagodeploy: 3 markdown files
   - tagocore: 4 markdown files
   - Total: 257 markdown files
-- Local images: 439 under static/docs_imagem/* (plus a few under static/img/docs)
+  - Changelog: extensive historical posts under changelog/
+- Local images: 440 under static/docs_imagem/* (plus site images under static/img)
 - Sidebars fully wired in sidebars.ts
 - URL mapping utilities present for converting help.tago.io links to local docs paths
 
 ## Site Structure Analysis (Source Site)
 Main categories at help.tago.io:
-1. TagoIO – https://help.tago.io/portal/en/kb/tagoio (219 articles, 21 sections)
-2. TagoRUN – https://help.tago.io/portal/en/kb/tagorun (24 articles, 5 sections)
-3. TagoDeploy – https://help.tago.io/portal/en/kb/tago-deploy (1 article)
-4. TagoCore – https://help.tago.io/portal/en/kb/tagocore (3 articles)
+1. TagoIO – https://help.tago.io/portal/en/kb/tagoio
+2. TagoRUN – https://help.tago.io/portal/en/kb/tagorun
+3. TagoDeploy – https://help.tago.io/portal/en/kb/tago-deploy
+4. TagoCore – https://help.tago.io/portal/en/kb/tagocore
 
-TagoIO key sections and their mappings exist locally (Devices, Dashboards, Widgets, Actions, Analysis, Entities, Integration, Profiles, Services, Files, Notifications, Billing, API, Payload Parser, My Account, Tutorials, SDK, Support, Compliance). See sidebars.ts for the full tree.
+Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actions, Analysis, Entities, Integration, Profiles, Services, Files, Notifications, Billing, API, Payload Parser, My Account, Tutorials, SDK, Support, Compliance). See sidebars.ts for the full tree.
 
 ## Technical Implementation Details
 
-### Automation & Scripts (all under ./infra)
+### Docusaurus Integration
+- Config: docusaurus.config.ts (url, baseUrl, navbar, Algolia, blog as changelog)
+- Sidebars: sidebars.ts
+- MDX Components: src/theme/MDXComponents.tsx registers custom components
+  - YouTube component available as `<YouTube videoId="..." />`
+
+### Automation & Scripts (local-only under ./infra)
 - Content fetching
   - fetch_original_markdown.js – Fetch original articles via Jina Reader; saves to infra/original_markdown/
   - scripts/fetch-articles.ts – Article discovery/fetch (TypeScript variant)
@@ -70,15 +77,6 @@ Usage pattern
 - Storage: static/docs_imagem/{tagoio|tagorun|tagodeploy|tagocore}/...
 - Referencing in Markdown: /docs_imagem/<section>/<filename>
 
-### Docusaurus Integration
-- Config: docusaurus.config.ts
-- Sidebars: sidebars.ts
-- Root scripts
-  - npm run start – local dev
-  - npm run build – static build
-  - npm run serve – serve built site
-  - npm run typecheck – TS typecheck
-
 ## Content Extraction Challenges
 - Complex DOM structure with dynamic loading
 - Mixed content (text, images, code, videos)
@@ -91,9 +89,9 @@ Usage pattern
 - Sidebars structure mirroring original taxonomy
 - Batch link audits and automated fix passes
 
-## Success Metrics (current)
-- 257 docs present across all sections
-- 439 local images
+## Success Metrics (snapshot)
+- 250+ docs present across all sections
+- 400+ local images
 - Sidebars fully wired and navigable
 - Build-ready structure with local images and internal links
 
@@ -116,6 +114,103 @@ Usage pattern
 - Run the site
   - npm run start | npm run build | npm run serve
 
+## Code style & Biome rules (for agents)
+- Always run Biome before committing
+  - `npm run biome` to check; `npm run biome:fix` to auto-fix (format + lint)
+- Formatting
+  - Indentation: 2 spaces (indentStyle: space, indentWidth: 2)
+  - Line endings: LF
+  - Strings: double quotes
+  - Semicolons: keep required semicolons
+  - Ensure a final newline at EOF
+- Scope
+  - Biome processes all files except: node_modules, build, .docusaurus, infra
+  - Do not edit infra/ in PRs (local-only automation not tracked by GitHub)
+- TypeScript/React
+  - Prefer explicit types; avoid implicit any
+  - Prefer const over let when possible
+  - Use arrow functions for React components
+  - Use the @site alias for local imports (e.g., `@site/src/components/youtube`)
+- MDX/Docs
+  - Images must be local under static/docs_imagem/<section>/ and referenced with absolute paths `/docs_imagem/...`
+  - YouTube embeds must use `<YouTube videoId="..." />`
+  - Keep headings in Markdown; avoid inline HTML unless necessary
+- Validation order
+  1) npm run biome:fix
+  2) npm run typecheck
+  3) npm run build
+
+## Runtime & commands etiquette (for agents)
+- Never run `npm run start` – the dev host usually runs it; assume the dev server is already running
+- Avoid starting additional dev servers or background processes
+- Prefer `npm run typecheck` and `npm run build` for validation
+- If a preview is needed, coordinate to use an existing dev server; do not start new ones yourself
+
+Biome configuration snapshot
+```json
+{
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!node_modules", "!build", "!.docusaurus", "!infra"]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noImportantStyles": "off"
+      }
+    }
+  }
+}
+```
+
+## How to write a new documentation article (for agents)
+- Pick the right location
+  - Choose the product area and folder under docs/: tagoio/, tagorun/, tagodeploy/, or tagocore/
+  - Use existing subfolders (e.g., widgets/, dashboards/, devices/, etc.) to match taxonomy
+- Name the file
+  - Use kebab-case for filenames, e.g., `my-new-topic.md`
+  - Keep names concise and descriptive; avoid special characters
+- Add front matter and title
+  - Required front matter keys: title, description, tags
+  - H1 at the top should match the title; keep one H1 per page
+  - Example:
+    ```markdown
+    ---
+    title: "My New Topic"
+    description: "Short summary of what this page covers."
+    tags: ["tagoio"]
+    ---
+    # My New Topic
+    ```
+- Images
+  - Save images under static/docs_imagem/<section>/ (e.g., static/docs_imagem/tagoio/)
+  - Reference with absolute paths in Markdown: `![Alt text](/docs_imagem/tagoio/my-image.png)`
+  - Use meaningful alt text
+- Links
+  - Prefer relative links within the same area: `../services/services-overview`
+  - Cross-area links should use absolute docs paths: `/tagoio/widgets/widgets-overview`
+  - If replacing a legacy help.tago.io article, add a mapping entry in url-mappings.json (and redirects if needed)
+- Embeds and code
+  - YouTube: `<YouTube videoId="XXXXXXXXXXX" />`
+  - Use fenced code blocks with language hints for syntax highlighting
+- Sidebars
+  - Add the new page path (without .md) to sidebars.ts in the correct category
+  - Keep ordering consistent with existing items
+- Quality and formatting
+  - Follow Biome rules: 2-space indentation, LF line endings, double quotes, final newline
+  - Keep headings simple; avoid HTML when Markdown suffices
+- Validation steps
+  1) npm run biome:fix
+  2) npm run typecheck
+  3) npm run build
+  - Never run `npm run start` (the dev host usually runs it)
+
 ## Backlog / Next Steps
 - Normalize residual external image references and ensure all are local
 - Consolidate image naming and consider moving long-term to static/img/docs with consistent naming
@@ -128,8 +223,3 @@ Usage pattern
 - original_markdown contains fetched source content for reference
 - Use processed-articles.json and failed-articles.json to identify outliers
 - Use articles-summary.md (infra) and audit reports to guide manual review
-
-## Earlier Plan (Kept for Reference)
-- One-article-at-a-time high-quality conversion strategy proved reliable
-- Local image storage and link rewriting are essential for stable builds
-- Preserve internal linking structure and taxonomy for familiarity
