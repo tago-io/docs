@@ -106,9 +106,27 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "tagoioSidebar",
           position: "left",
-          label: "Documentation",
+          label: "TagoIO Platform",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tagorunSidebar",
+          position: "left",
+          label: "TagoRUN",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tagodeploySidebar",
+          position: "left",
+          label: "TagoDeploy",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tagocoreSidebar",
+          position: "left",
+          label: "TagoCore",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {
