@@ -131,8 +131,8 @@ const config: Config = {
     },
 
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.nightOwlLight,
+      darkTheme: prismThemes.nightOwl,
     },
   } satisfies Preset.ThemeConfig,
 };

@@ -213,22 +213,9 @@ export default function ChangelogIndex({
             </p>
 
             <div className="changelog-layout">
-              <aside className="changelog-timeline">
-                <ul className="changelog-timeline__list">
-                  {years.map((y) => (
-                    <li
-                      key={y}
-                      className={`changelog-timeline__item ${y === currentYear ? "is-active" : ""}`}
-                    >
-                      <Link to={`#year-${y}`}>{y}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </aside>
-              <div>
-                {/* Filter Chips */}
+              <div className="changelog-chips-wrapper">
                 <div
-                  className="changelog-chips margin-bottom--lg"
+                  className="changelog-chips"
                   role="tablist"
                   aria-label="Filter changelog by product"
                 >
@@ -280,7 +267,20 @@ export default function ChangelogIndex({
                     </button>
                   )}
                 </div>
-
+              </div>
+              <aside className="changelog-timeline">
+                <ul className="changelog-timeline__list">
+                  {years.map((y) => (
+                    <li
+                      key={y}
+                      className={`changelog-timeline__item ${y === currentYear ? "is-active" : ""}`}
+                    >
+                      <Link to={`#year-${y}`}>{y}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+              <div>
                 {/* Timeline by year */}
                 {grouped.map(([year, items]) => (
                   <section
@@ -303,7 +303,6 @@ export default function ChangelogIndex({
                               to={changelog.slug}
                               className="timeline-item"
                             >
-                              <span className="timeline-dot" />
                               <article className="timeline-card card changelog-card">
                                 <div className="timeline-card__header">
                                   <div className="timeline-card__title">

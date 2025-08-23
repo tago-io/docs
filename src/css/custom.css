@@ -413,17 +413,6 @@ code {
   border-radius: 8px;
 }
 
-/* Dark mode: make documentation links more distinguishable */
-html[data-theme="dark"] .markdown a {
-  color: var(--c-blue-70);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1.5px;
-}
-html[data-theme="dark"] .markdown a:hover {
-  color: #639cff;
-}
-
 /* Hide sidebar collapse/expand buttons */
 .clean-btn.menu__caret {
   display: none;
@@ -526,8 +515,34 @@ html[data-theme="dark"] .markdown a:hover {
 .changelog-layout {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 2rem;
+  gap: 1rem;
   align-items: start;
+}
+.changelog-chips-wrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+/* Reduce top spacing for first year after chips */
+.changelog-layout .timeline-year:first-of-type {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 996px) {
+  /* Hide search and right-side items so only hamburger + brand show */
+  .navbarSearchContainer_Bca1 {
+    display: none !important;
+  }
+  .navbar__items--right {
+    display: none !important;
+  }
+  .navbar-status-badge {
+    display: none !important;
+  }
+  .navbar__items .navbar__link {
+    display: none !important;
+  }
 }
 .changelog-timeline {
   position: sticky;
@@ -543,13 +558,13 @@ html[data-theme="dark"] .markdown a:hover {
   flex-direction: column;
   gap: 0.5rem;
 }
-.changelog-timeline__item a {
+.markdown .changelog-timeline__item a {
   color: var(--ifm-font-color-base);
   text-decoration: none;
   opacity: 0.8;
   font-weight: 600;
 }
-.changelog-timeline__item a:hover {
+.markdown .changelog-timeline__item a:hover {
   color: var(--ifm-link-color);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -627,37 +642,7 @@ html[data-theme="dark"] .timeline--current-year:before {
   }
 }
 
-/* Dots: white glow pulse on dark */
-html[data-theme="dark"] .timeline-dot {
-  background: var(--timeline-dot);
-  box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.1),
-    0 0 10px 2px var(--timeline-dot-glow);
-  animation: dotPulse 2.2s ease-in-out infinite;
-}
-html[data-theme="dark"] .timeline--current-year .timeline-dot {
-  animation: dotPulse 2.2s ease-in-out infinite;
-}
-@keyframes dotPulse {
-  0% {
-    box-shadow:
-      0 0 0 3px rgba(255, 255, 255, 0.1),
-      0 0 6px 0 rgba(255, 255, 255, 0.25);
-    transform: scale(1);
-  }
-  60% {
-    box-shadow:
-      0 0 0 8px rgba(255, 255, 255, 0.04),
-      0 0 14px 2px rgba(255, 255, 255, 0.5);
-    transform: scale(1.02);
-  }
-  100% {
-    box-shadow:
-      0 0 0 3px rgba(255, 255, 255, 0.1),
-      0 0 6px 0 rgba(255, 255, 255, 0.25);
-    transform: scale(1);
-  }
-}
+/* timeline-dot removed */
 .timeline-item {
   position: relative;
   display: block;
@@ -665,20 +650,6 @@ html[data-theme="dark"] .timeline--current-year .timeline-dot {
   color: inherit;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
-}
-.timeline-dot {
-  position: absolute;
-  left: -4px;
-  top: 0.9rem;
-  width: 10px;
-  height: 10px;
-  background: var(--ifm-link-color);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px
-    color-mix(in oklab, var(--ifm-link-color), transparent 80%);
-}
-.timeline--current-year .timeline-dot {
-  animation: pulse 2s infinite;
 }
 @keyframes pulse {
   0% {
@@ -696,7 +667,7 @@ html[data-theme="dark"] .timeline--current-year .timeline-dot {
 }
 
 /* Current year in sidebar */
-.changelog-timeline__item.is-active a {
+.markdown .changelog-timeline__item.is-active a {
   color: var(--ifm-link-color);
 }
 
@@ -738,6 +709,16 @@ html[data-theme="dark"] .timeline--current-year .timeline-dot {
   color: var(--ifm-color-emphasis-700);
 }
 
+/* Dark mode: make documentation links more distinguishable */
+html[data-theme="dark"] .markdown a {
+  color: var(--c-blue-70);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1.5px;
+}
+html[data-theme="dark"] .markdown a:hover {
+  color: #639cff;
+}
 /* Make whole card clickable affordance */
 .changelog-card {
   text-decoration: none;
@@ -764,6 +745,7 @@ html[data-theme="light"] .changelog-page .card__header .text--secondary {
     position: static;
     border-right: 0;
     padding-right: 0;
+    display: none;
   }
   .timeline {
     margin-left: 0;
