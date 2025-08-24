@@ -7,16 +7,16 @@
   background: var(--home-features-bg);
 }
 
-/* Feature card icons with enhanced styling */
+/* Feature card icons with stronger shadows for light mode */
 .featureImg {
   height: 80px;
   width: 80px;
   object-fit: contain;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
+  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.15));
 }
 
-/* Icon container with gradient background and shine effect */
+/* Icon container with stronger gradient for light mode visibility */
 .featureCard > :first-child {
   min-height: 120px;
   display: flex;
@@ -24,16 +24,17 @@
   justify-content: center;
   background: linear-gradient(
     135deg,
-    rgba(0, 123, 255, 0.05) 0%,
-    rgba(0, 123, 255, 0.02) 100%
+    rgba(0, 123, 255, 0.08) 0%,
+    rgba(0, 123, 255, 0.04) 100%
   );
   border-radius: 16px;
   margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(0, 123, 255, 0.1);
 }
 
-/* Subtle shine effect that appears on hover */
+/* Light mode specific stronger shine effect */
 .featureCard > :first-child::before {
   content: "";
   position: absolute;
@@ -44,11 +45,23 @@
   background: linear-gradient(
     135deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
+    rgba(0, 123, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(0, 123, 255, 0.15) 70%,
     transparent 100%
   );
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* Dark mode keeps the original subtle white shine */
+html[data-theme="dark"] .featureCard > :first-child::before {
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
 }
 
 /* Column layout for feature cards */
@@ -63,36 +76,18 @@
   text-decoration: none;
 }
 
-/* Main card styling with enhanced shadows and rounded corners */
+/* Card styling with stronger light mode effects */
 .featureCard {
   background: var(--ifm-background-surface-color);
   border-radius: 16px;
   padding: 2.5rem 2rem;
   margin: 1rem;
-  box-shadow:
-    0 2px 20px rgba(0, 0, 0, 0.06),
-    0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Top border accent that expands on hover */
-.featureCard::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
 }
 
 /* Mobile responsive adjustments */
@@ -114,7 +109,23 @@ html[data-theme="dark"] .featureCard {
     0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Stronger gradient for dark theme icon containers */
+/* Stronger lighting effects on hover for light mode visibility */
+.featureCard:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16), 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 123, 255, 0.25);
+}
+
+/* More visible icon shadows on hover */
+.featureCard:hover .featureImg {
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
+}
+
+/* Show shine effect on icon container */
+.featureCard:hover > :first-child::before {
+  opacity: 1;
+}
+
+/* Dark theme - stronger gradient for icon containers */
 html[data-theme="dark"] .featureCard > :first-child {
   background: linear-gradient(
     135deg,
@@ -123,47 +134,20 @@ html[data-theme="dark"] .featureCard > :first-child {
   );
 }
 
-/* Enhanced icon shadows for dark theme */
+/* Enhanced dark theme icon shadows */
 html[data-theme="dark"] .featureImg {
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
-/* Enhanced hover effects with lift, scale, and glow */
-.featureCard:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.12),
-    0 4px 16px rgba(0, 0, 0, 0.08);
-  border-color: rgba(0, 123, 255, 0.2);
-}
-
-/* Expand top border accent on hover */
-.featureCard:hover::before {
-  transform: scaleX(1);
-}
-
-/* Show shine effect on icon container */
-.featureCard:hover > :first-child::before {
-  opacity: 1;
-}
-
-/* Scale and enhance icon shadow on hover */
-.featureCard:hover .featureImg {
-  transform: scale(1.1);
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
-}
-
-/* Enhanced dark theme hover effects */
+/* Dark theme hover effects - enhanced lighting only */
 html[data-theme="dark"] .featureCard:hover {
-  border-color: rgba(0, 123, 255, 0.4);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.4),
-    0 4px 16px rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Even stronger shadows on dark theme hover */
+/* Enhanced dark theme icon shadows on hover */
 html[data-theme="dark"] .featureCard:hover .featureImg {
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.5));
 }
 
 /* Card title styling with improved typography */
