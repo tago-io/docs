@@ -1,4 +1,3 @@
-import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import { useHistory, useLocation } from "@docusaurus/router";
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -96,10 +95,6 @@ export default function ChangelogIndex({
     activeFilter === "all"
       ? changelogs
       : changelogs.filter((item) => item.product === activeFilter);
-
-  const years = Array.from(
-    new Set(filteredChangelogs.map((c) => getYear(c.date))),
-  ).sort((a, b) => Number(b) - Number(a));
 
   const groupByYear = (items: typeof filteredChangelogs) => {
     const map = new Map<string, typeof filteredChangelogs>();
@@ -200,9 +195,6 @@ export default function ChangelogIndex({
       title="Changelog"
       description="Changelog for TagoIO, TagoCore, and TagoDeploy"
     >
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
       <div className="container margin-vert--lg">
         <div className="row">
           <div className="col col--10 col--offset-1 changelog-page">
@@ -271,63 +263,66 @@ export default function ChangelogIndex({
               <aside className="changelog-timeline">
                 <h3 className="changelog-timeline__title">Years</h3>
                 <ul className="changelog-timeline__list">
-                  {years.map((y, index) => (
-                    <li
-                      key={y}
-                      className={`changelog-timeline__item ${y === currentYear ? "is-active" : ""}`}
-                      data-year-index={index}
-                    >
-                      <Link to={`#year-${y}`}>{y}</Link>
-                    </li>
-                  ))}
+                  {grouped.length > 0 &&
+                    grouped.map(([year], index) => (
+                      <li
+                        key={year}
+                        className={`changelog-timeline__item ${year === currentYear ? "is-active" : ""}`}
+                        data-year-index={index}
+                      >
+                        <a href={`#year-${year}`}>{year}</a>
+                      </li>
+                    ))}
                 </ul>
               </aside>
               <div>
                 {/* Timeline by year */}
-                {grouped.map(([year, items]) => (
-                  <section
-                    key={year}
-                    id={`year-${year}`}
-                    className="timeline-year"
-                  >
-                    <h2 className="timeline-year__title">{year}</h2>
-                    <div
-                      className={`timeline ${year === currentYear ? "timeline--current-year" : ""}`}
+                {grouped.length > 0 &&
+                  grouped.map(([year, items]) => (
+                    <section
+                      key={year}
+                      id={`year-${year}`}
+                      className="timeline-year"
                     >
-                      {groupByMonth(items).map(([monthIndex, monthItems]) => (
-                        <div key={monthIndex} className="timeline-month">
-                          <h3 className="timeline-month__title">
-                            {monthNames[monthIndex]}
-                          </h3>
-                          {monthItems.map((changelog) => (
-                            <Link
-                              key={`${changelog.product}-${changelog.version}`}
-                              to={changelog.slug}
-                              className="timeline-item"
-                            >
-                              <article className="timeline-card card changelog-card">
-                                <div className="timeline-card__header">
-                                  <div className="timeline-card__title">
-                                    {getProductIcon(changelog.product)}
-                                    <h3>{changelog.title}</h3>
+                      <h2 className="timeline-year__title">{year}</h2>
+                      <div
+                        className={`timeline ${year === currentYear ? "timeline--current-year" : ""}`}
+                      >
+                        {groupByMonth(items).map(([monthIndex, monthItems]) => (
+                          <div key={monthIndex} className="timeline-month">
+                            <h3 className="timeline-month__title">
+                              {monthNames[monthIndex]}
+                            </h3>
+                            {monthItems.map((changelog) => (
+                              <Link
+                                key={`${changelog.product}-${changelog.version}`}
+                                to={changelog.slug}
+                                className="timeline-item"
+                              >
+                                <article className="timeline-card card changelog-card">
+                                  <div className="timeline-card__header">
+                                    <div className="timeline-card__title">
+                                      {getProductIcon(changelog.product)}
+                                      <h3>{changelog.title}</h3>
+                                    </div>
+                                    <div className="timeline-card__meta">
+                                      <small className="text--secondary">
+                                        {changelog.displayDate ||
+                                          changelog.date}
+                                      </small>
+                                    </div>
                                   </div>
-                                  <div className="timeline-card__meta">
-                                    <small className="text--secondary">
-                                      {changelog.displayDate || changelog.date}
-                                    </small>
-                                  </div>
-                                </div>
-                                <p className="timeline-card__desc">
-                                  {changelog.description}
-                                </p>
-                              </article>
-                            </Link>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-                ))}
+                                  <p className="timeline-card__desc">
+                                    {changelog.description}
+                                  </p>
+                                </article>
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  ))}
 
                 {filteredChangelogs.length === 0 && (
                   <div className="changelog-empty-state">

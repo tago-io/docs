@@ -60,17 +60,6 @@ const config: Config = {
             title: "TagoIO Changelog",
             description: "Latest changelog and updates",
           },
-          processBlogPosts: async ({ blogPosts }) =>
-            blogPosts.map((post) => ({
-              ...post,
-              metadata: {
-                ...post.metadata,
-                frontMatter: {
-                  ...post.metadata.frontMatter,
-                  unlisted: true,
-                },
-              },
-            })),
           editUrl: "https://github.com/tago-io/docs/tree/main/",
           onInlineTags: "warn",
           onInlineAuthors: "warn",

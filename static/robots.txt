@@ -1,1 +1,5 @@
 # Algolia-Crawler-Verif: 2C6CB8CF3C409EDF
+
+User-agent: *
+Disallow: /changelog/
+Disallow: /changelog
