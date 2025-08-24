@@ -6,8 +6,8 @@
 /build
 
 # AI
-/.claude
-/.crush
+.claude/**/*
+.crush
 
 # Generated files
 .docusaurus

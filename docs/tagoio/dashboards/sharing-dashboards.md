@@ -7,7 +7,7 @@ A great feature of TagoIO is its native sharing capability for dashboards — us
 
 > If you want to share only the template of your dashboards, use the [Distribute](blueprint-dashboard) feature.
 
-> To share applications with your end-users using your brand and a custom URL, use [TagoRUN](../../tagorun/).
+> To share applications with your end-users using your brand and a custom URL, use [TagoRUN](../tagorun/).
 
 ## Share Public
 

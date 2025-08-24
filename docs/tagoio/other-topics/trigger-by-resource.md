@@ -9,7 +9,7 @@ The trigger type "Trigger by Resource" allows you to execute an Action when a re
 - [Actions](/tagoio/actions/actions)
 - [Analysis](/tagoio/analysis/analysis-overview)
 - [Device](/tagoio/devices/devices)
-- [RunUser](../../tagorun/)
+- [RunUser](../tagorun/)
 
 For example, you can trigger an Action when a new user signs up in your RUN or when a new Device is added. That Action could, for example, push a notification to yourself.
 

@@ -1,6 +1,16 @@
 {
   "permissions": {
-    "allow": ["Bash(npm run build:*)", "Bash(node:*)"],
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(node:*)",
+      "WebFetch(domain:docusaurus.io)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "Bash(find:*)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_take_screenshot"
+    ],
     "deny": [],
     "ask": []
   }

@@ -3,7 +3,7 @@ title: "Data Export"
 description: "This article explains the available options for exporting device data in TagoIO, and provides step-by-step instructions for exporting data from a device page, including available export options and important quota considerations."
 tags: ["tagoio"]
 ---
-At TagoIO, you can export device data in several ways: directly from the Admin panel on a device's page, via the [API](../api/api-overview), or from [Widgets](../widgets/widgets-overview) in either the Admin panel or the [TagoRun portal](../../tagorun/tagorun-mobile-app). Exporting data consumes your [Data Output](/tagoio/services/data-output-service) service quota.
+At TagoIO, you can export device data in several ways: directly from the Admin panel on a device's page, via the [API](../api/api-overview), or from [Widgets](../widgets/widgets-overview) in either the Admin panel or the [TagoRun portal](../tagorun/tagorun-mobile-app). Exporting data consumes your [Data Output](/tagoio/services/data-output-service) service quota.
 
 Here's how to use each export source:
 

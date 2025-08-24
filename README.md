@@ -48,7 +48,7 @@ npm run biome:fix   # lint + format (write)
   - components/
     - youtube.tsx – YouTube MDX component wrapper
   - theme/
-    - MDXComponents.tsx – Registers custom MDX components (e.g., YouTube)
+    - MDXComponents.tsx – Registers custom MDX components (YouTube, Mermaid)
   - pages/ – Home and custom pages
 - sidebars.ts – Sidebars and navigation tree
 - docusaurus.config.ts – Docusaurus configuration
@@ -75,9 +75,11 @@ Links
 - Prefer relative links within the same area (e.g., `../services/services-overview`)
 - Cross-area links should use docs paths (e.g., `/tagoio/widgets/widgets-overview`)
 
-Embedding YouTube
-- Use the YouTube component registered in MDX:
+Embeds
+- YouTube: use the YouTube component registered in MDX:
   - `<YouTube videoId="XXXXXXXXXXX" />`
+- Mermaid diagrams: use the Mermaid component registered in MDX:
+  - `<Mermaid chart={`graph LR\n  A[Start] --> B{Choice} \n  B -->|Yes| C[Do thing] \n  B -->|No| D[Stop]`} />`
 
 ## URL Mappings (maintainers)
 - redirect-mappings.json and url-mappings.json provide mapping sources for converting legacy help.tago.io URLs to new docs paths

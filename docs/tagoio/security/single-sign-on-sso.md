@@ -51,6 +51,6 @@ Only users who are registered in the IdP **and** have permission to access the a
 - See [Security and Protection for RUN users](/tagoio/account/security-and-protection-for-run-users)  
 - See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language)  
 - See [Dictionaries](../dictionaries)  
-- See [TagoRun](../../tagorun/tagorun-mobile-app)
+- See [TagoRun](../tagorun/tagorun-mobile-app)
 
 If you need configuration specifics for a particular Identity Provider (for example, "How to set up Okta with TagoIO" or "Configuring Auth0 for SSO"), refer to that provider's setup guide and then import the configured IdP into RUN.

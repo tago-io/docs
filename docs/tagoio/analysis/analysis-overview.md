@@ -2,6 +2,7 @@
 title: "Analysis Overview"
 description: "This article explains what Analyses are in TagoIO, what you can do with them, how they are triggered, and links to related documentation and examples."
 tags: ["tagoio", "analysis"]
+sidebar_position: 1
 ---
 Analysis lets you run custom code inside TagoIO to process data in real time, call third‑party APIs, and work with your TagoIO resources.
 

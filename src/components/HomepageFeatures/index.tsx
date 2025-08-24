@@ -67,20 +67,6 @@ export default function HomepageFeatures(): ReactNode {
       ),
     },
     {
-      title: "TagoCore",
-      imgSrc: "/img/tagocore-icon-original.png",
-      href: "/docs/tagocore",
-      description: (
-        <>
-          Free, fast, and open-source IoT platform for edge computing.
-          <strong>
-            {" "}
-            Deploy on-premises or at the edge with full source code access.
-          </strong>
-        </>
-      ),
-    },
-    {
       title: "TagoDeploy",
       imgSrc: "/img/tagodeploy-icon-original.png",
       href: "/docs/tagodeploy",
@@ -91,6 +77,20 @@ export default function HomepageFeatures(): ReactNode {
           <strong>
             {" "}
             Premium support and guaranteed performance for your business.
+          </strong>
+        </>
+      ),
+    },
+    {
+      title: "TagoCore",
+      imgSrc: "/img/tagocore-icon-original.png",
+      href: "/docs/tagocore",
+      description: (
+        <>
+          Free, fast, and open-source IoT platform for edge computing.
+          <strong>
+            {" "}
+            Deploy on-premises or at the edge with full source code access.
           </strong>
         </>
       ),

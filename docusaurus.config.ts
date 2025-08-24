@@ -108,13 +108,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tagoioSidebar",
           position: "left",
-          label: "TagoIO Platform",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "tagorunSidebar",
-          position: "left",
-          label: "TagoRUN",
+          label: "TagoIO",
         },
         {
           type: "docSidebar",
@@ -134,11 +128,6 @@ const config: Config = {
           position: "right",
           value:
             '<div class="navbar-status-badge" style="display:inline-flex;align-items:center;height:var(--ifm-navbar-height)"><iframe class="status-badge--light" src="https://status.tago.io/badge?theme=light" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;"></iframe><iframe class="status-badge--dark" src="https://status.tago.io/badge?theme=dark" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;"></iframe></div>',
-        },
-        {
-          href: "https://admin.tago.io",
-          label: "Login",
-          position: "right",
         },
         {
           href: "https://tago.io",

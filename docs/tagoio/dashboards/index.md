@@ -2,6 +2,7 @@
 title: "Dashboards"
 description: "TagoIO dashboards - organize widgets, visualize data, and create user interfaces for your IoT applications"
 tags: ["tagoio", "dashboards"]
+sidebar_position: 1
 ---
 
 # Dashboards

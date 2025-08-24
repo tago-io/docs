@@ -2,6 +2,7 @@
 title: "Widgets"
 description: "TagoIO widgets for dashboards - display and collect real-time data from devices with various visualization options"
 tags: ["tagoio", "widgets"]
+sidebar_position: 1
 ---
 
 # Widgets

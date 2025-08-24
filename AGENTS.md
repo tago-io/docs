@@ -36,6 +36,7 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
 - Sidebars: sidebars.ts
 - MDX Components: src/theme/MDXComponents.tsx registers custom components
   - YouTube component available as `<YouTube videoId="..." />`
+  - Mermaid diagrams available via `<Mermaid chart={`...`} />` (renders client-side using mermaid)
 
 ### Automation & Scripts (local-only under ./infra)
 - Content fetching
@@ -134,6 +135,9 @@ Usage pattern
 - MDX/Docs
   - Images must be local under static/docs_imagem/<section>/ and referenced with absolute paths `/docs_imagem/...`
   - YouTube embeds must use `<YouTube videoId="..." />`
+  - Mermaid diagrams must use the `<Mermaid />` component: `<Mermaid chart={`graph LR; A-->B`} />`
+    - Pass the diagram definition as a template literal wrapped in `{``}` to preserve newlines
+    - Supported examples: `graph LR`, `sequenceDiagram`, etc.
   - Keep headings in Markdown; avoid inline HTML unless necessary
 - Validation order
   1) npm run biome:fix
@@ -198,6 +202,7 @@ Biome configuration snapshot
   - If replacing a legacy help.tago.io article, add a mapping entry in url-mappings.json (and redirects if needed)
 - Embeds and code
   - YouTube: `<YouTube videoId="XXXXXXXXXXX" />`
+  - Mermaid: `<Mermaid chart={`graph LR\n  A[Start] --> B{Choice} \n  B -->|Yes| C[Do thing] \n  B -->|No| D[Stop]`} />`
   - Use fenced code blocks with language hints for syntax highlighting
 - Sidebars
   - Add the new page path (without .md) to sidebars.ts in the correct category

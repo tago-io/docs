@@ -9,7 +9,7 @@ The caching system optimizes the performance of your dashboards by storing widge
 
 ## How It Works
 
-When a widget is first loaded by any user, its data is fetched and stored in cache storage on TagoIO servers. Subsequent accesses to the same widget will retrieve the pre-fetched data from the cache, whether accessed through the [Admin](https://admin.tago.io/) or [Run portal](../../tagorun/tagorun-mobile-app). Each widget’s cache is enabled individually and is automatically refreshed after a specified expiration time (for example, 30 seconds or 1 hour).
+When a widget is first loaded by any user, its data is fetched and stored in cache storage on TagoIO servers. Subsequent accesses to the same widget will retrieve the pre-fetched data from the cache, whether accessed through the [Admin](https://admin.tago.io/) or [Run portal](../tagorun/tagorun-mobile-app). Each widget’s cache is enabled individually and is automatically refreshed after a specified expiration time (for example, 30 seconds or 1 hour).
 
 For example, if you configure a widget to cache data for 10 minutes, the first time anyone accesses the Dashboard (via the Admin or Run portal) with the same visualization settings, the cache system will store the data on our servers for 10 minutes. Anyone accessing the dashboard within that 10‑minute window will immediately receive the cached data without waiting for the API to query it again, resulting in faster response times. After the 10‑minute period, if the dashboard is being viewed, the widget will reset its cache and update with fresh data.
 

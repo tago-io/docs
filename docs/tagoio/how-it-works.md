@@ -2,6 +2,7 @@
 title: "How it works"
 description: "This article gives a brief introduction to how TagoIO works, with a short video overview that explains core concepts such as devices and tokens."
 tags: ["tagoio"]
+sidebar_position: 3
 ---
 There are a few things you need to know about how TagoIO works in order to optimize your applications.
 
