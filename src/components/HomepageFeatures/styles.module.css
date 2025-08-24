@@ -42,6 +42,16 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .featureCard {
+    margin: 0.5rem;
+    padding: 1.5rem;
+  }
+  .featureCol {
+    margin-bottom: 1rem;
+  }
+}
+
 html[data-theme="dark"] .featureCard {
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);

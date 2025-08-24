@@ -44,8 +44,8 @@ export default function HomepageFeatures(): ReactNode {
         <>
           The core IoT cloud platform for connecting devices, visualizing data,
           and building automated solutions.
+          <br />
           <strong>
-            {" "}
             Get started with our comprehensive guides and tutorials.
           </strong>
         </>
@@ -59,8 +59,8 @@ export default function HomepageFeatures(): ReactNode {
         <>
           Deploy custom IoT applications to end-users with full control over
           branding and user management.
+          <br />
           <strong>
-            {" "}
             Perfect for white-label solutions and customer-facing portals.
           </strong>
         </>
@@ -74,8 +74,8 @@ export default function HomepageFeatures(): ReactNode {
         <>
           Enterprise-grade infrastructure and dedicated resources for
           mission-critical IoT deployments.
+          <br />
           <strong>
-            {" "}
             Premium support and guaranteed performance for your business.
           </strong>
         </>
@@ -88,8 +88,8 @@ export default function HomepageFeatures(): ReactNode {
       description: (
         <>
           Free, fast, and open-source IoT platform for edge computing.
+          <br />
           <strong>
-            {" "}
             Deploy on-premises or at the edge with full source code access.
           </strong>
         </>
