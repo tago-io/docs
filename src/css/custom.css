@@ -249,6 +249,15 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   display: none;
 }
 
+/* Remove hover effect on navbar title/logo */
+.navbar__title {
+  color: var(--ifm-navbar-link-color) !important;
+}
+.navbar__title:hover {
+  color: var(--ifm-navbar-link-color) !important;
+  text-decoration: none !important;
+}
+
 /* Sidebar */
 .theme-doc-sidebar-container {
   background: var(--ifm-background-surface-color);
