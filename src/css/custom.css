@@ -220,6 +220,17 @@ html[data-theme="light"] .footer__bottom {
   position: relative;
 }
 
+/* Active navbar link styling */
+.navbar__items:not(.navbar__items--right) .navbar__link--active {
+  color: var(--ifm-link-color);
+}
+
+/* Better contrast in dark mode */
+html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
+  .navbar__link--active {
+  color: #4d8dff;
+}
+
 /* Remove active underline bar to avoid floating blue bar */
 .navbar__items:not(.navbar__items--right) .navbar__link:after {
   content: none;
