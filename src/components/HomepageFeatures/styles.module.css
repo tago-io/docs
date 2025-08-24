@@ -1,3 +1,4 @@
+/* Main features section container */
 .features {
   display: flex;
   align-items: center;
@@ -6,42 +7,95 @@
   background: var(--home-features-bg);
 }
 
+/* Feature card icons with enhanced styling */
 .featureImg {
-  height: 72px;
-  width: 72px;
+  height: 80px;
+  width: 80px;
   object-fit: contain;
-  opacity: 0.95;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
+/* Icon container with gradient background and shine effect */
 .featureCard > :first-child {
-  min-height: 96px;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.05) 0%,
+    rgba(0, 123, 255, 0.02) 100%
+  );
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Subtle shine effect that appears on hover */
+.featureCard > :first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Column layout for feature cards */
 .featureCol {
   display: flex;
 }
+
+/* Remove link styling while maintaining block behavior */
 .featureLink {
   display: block;
   width: 100%;
   text-decoration: none;
 }
 
+/* Main card styling with enhanced shadows and rounded corners */
 .featureCard {
   background: var(--ifm-background-surface-color);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
   margin: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 2px 20px rgba(0, 0, 0, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Top border accent that expands on hover */
+.featureCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .featureCard {
     margin: 0.5rem;
@@ -52,27 +106,96 @@
   }
 }
 
+/* Dark theme specific adjustments */
 html[data-theme="dark"] .featureCard {
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 2px 20px rgba(0, 0, 0, 0.3),
+    0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+/* Stronger gradient for dark theme icon containers */
+html[data-theme="dark"] .featureCard > :first-child {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.08) 0%,
+    rgba(0, 123, 255, 0.03) 100%
+  );
+}
+
+/* Enhanced icon shadows for dark theme */
+html[data-theme="dark"] .featureImg {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Enhanced hover effects with lift, scale, and glow */
 .featureCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 123, 255, 0.2);
 }
 
+/* Expand top border accent on hover */
+.featureCard:hover::before {
+  transform: scaleX(1);
+}
+
+/* Show shine effect on icon container */
+.featureCard:hover > :first-child::before {
+  opacity: 1;
+}
+
+/* Scale and enhance icon shadow on hover */
+.featureCard:hover .featureImg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+/* Enhanced dark theme hover effects */
+html[data-theme="dark"] .featureCard:hover {
+  border-color: rgba(0, 123, 255, 0.4);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Even stronger shadows on dark theme hover */
+html[data-theme="dark"] .featureCard:hover .featureImg {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+/* Card title styling with improved typography */
 .featureCard h3 {
   color: var(--ifm-heading-color);
-  font-weight: 600;
-  margin: 0.75rem 0 0.75rem;
-  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
 }
 
+/* Title color change on hover */
+.featureCard:hover h3 {
+  color: #007bff;
+}
+
+/* Card description text styling */
 .featureCard p {
   color: var(--ifm-font-color-base);
-  opacity: 0.9;
-  line-height: 1.6;
+  opacity: 0.85;
+  line-height: 1.65;
   font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Emphasized text within descriptions */
+.featureCard p strong {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  opacity: 1;
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
 }
