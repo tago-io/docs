@@ -594,16 +594,39 @@ code {
   flex-direction: column;
   gap: 0.5rem;
 }
-.markdown .changelog-timeline__item a {
-  color: var(--ifm-font-color-base);
-  text-decoration: none;
-  opacity: 0.8;
-  font-weight: 600;
+.changelog-timeline__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ifm-color-emphasis-800);
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  text-align: center;
 }
-.markdown .changelog-timeline__item a:hover {
-  color: var(--ifm-link-color);
+.changelog-timeline__item a {
+  color: var(--c-indigo-80) !important;
+  text-decoration: none;
+  opacity: 1;
+  font-weight: 500;
+  transition: all var(--animation-fast) ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+.changelog-timeline__item a:hover {
+  color: var(--c-indigo-90) !important;
+  background-color: var(--ifm-hover-overlay);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+/* Dark mode colors for better contrast */
+html[data-theme="dark"] .changelog-timeline__item a {
+  color: var(--c-gray-0) !important;
+}
+html[data-theme="dark"] .changelog-timeline__item a:hover {
+  color: #ffffff !important;
 }
 
 /* Year title */
@@ -646,7 +669,7 @@ code {
 .timeline--current-year:before {
   background: linear-gradient(
     to bottom,
-    var(--ifm-link-color),
+    var(--c-indigo-80),
     var(--sidebar-border-c)
   );
 }
@@ -701,7 +724,8 @@ html[data-theme="dark"] .timeline--current-year:before {
 
 /* Current year in sidebar */
 .markdown .changelog-timeline__item.is-active a {
-  color: var(--ifm-link-color);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
 }
 
 /* Cards in timeline */

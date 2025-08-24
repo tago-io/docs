@@ -269,11 +269,13 @@ export default function ChangelogIndex({
                 </div>
               </div>
               <aside className="changelog-timeline">
+                <h3 className="changelog-timeline__title">Years</h3>
                 <ul className="changelog-timeline__list">
-                  {years.map((y) => (
+                  {years.map((y, index) => (
                     <li
                       key={y}
                       className={`changelog-timeline__item ${y === currentYear ? "is-active" : ""}`}
+                      data-year-index={index}
                     >
                       <Link to={`#year-${y}`}>{y}</Link>
                     </li>
