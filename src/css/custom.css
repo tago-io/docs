@@ -1,5 +1,6 @@
 :root {
   --c-blue-0: #f0f6ff;
+  --c-blue-70: #4d8dff;
   --c-blue-90: #1b6dff;
   --c-indigo-10: #f6f8fc;
   --c-indigo-20: #e9edf3;
@@ -12,6 +13,8 @@
   --c-carbon-30: #98a2ad;
   --c-carbon-90: #222d3a;
   --c-carbon-100: #03060b;
+  --c-gray-0: #f8f9fa;
+  --c-gray-90: #2f2f2f;
 
   --ifm-color-primary: #3880ff;
   --ifm-link-color: var(--c-blue-90);
@@ -60,6 +63,11 @@
   --doc-item-container-width: 42rem;
   --sidebar-category-c: var(--c-carbon-100);
   --footer-border-c: var(--c-indigo-30);
+
+  /* Animation durations */
+  --animation-fast: 200ms;
+  --animation-medium: 300ms;
+  --animation-slow: 500ms;
 }
 
 html[data-theme="dark"] {
@@ -158,8 +166,8 @@ html[data-theme="dark"] .navbar-status-badge .status-badge--dark {
   opacity: 0.95;
   text-decoration: none;
   transition:
-    color 0.2s ease,
-    opacity 0.2s ease;
+    color var(--animation-fast) ease,
+    opacity var(--animation-fast) ease;
 }
 .footer__link-item:hover {
   color: var(--ifm-link-color);
@@ -286,7 +294,7 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   line-height: 16px;
   color: var(--ifm-menu-color);
   padding: var(--ifm-menu-link-padding-vertical) 0.75rem;
-  transition: opacity 0.2s ease-out;
+  transition: opacity var(--animation-fast) ease-out;
 }
 
 .menu__link:hover {
@@ -429,6 +437,23 @@ code {
   display: none;
 }
 
+/* Use sidebar arrow style for mobile TOC "On this page" button */
+[class*="tocCollapsibleButton"]::after {
+  background:
+    var(--ifm-menu-link-sublist-icon) center / var(--dropdown-icon-width)
+    var(--dropdown-icon-height) no-repeat;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+  height: var(--dropdown-icon-height);
+  width: var(--dropdown-icon-width);
+  transform: rotate(90deg);
+  transition: transform var(--ifm-transition-fast) linear;
+}
+
+/* Rotate arrow when TOC is expanded */
+[class*="tocCollapsibleButtonExpanded"]::after {
+  transform: rotate(180deg);
+}
+
 /* Changelog Page - Clean and Simple */
 
 /* Tabs as segmented control */
@@ -542,7 +567,7 @@ code {
 
 @media (max-width: 996px) {
   /* Hide search and right-side items so only hamburger + brand show */
-  .navbarSearchContainer_Bca1 {
+  [class*="navbarSearchContainer"] {
     display: none !important;
   }
   .navbar__items--right {
@@ -664,16 +689,13 @@ html[data-theme="dark"] .timeline--current-year:before {
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0
-      color-mix(in oklab, var(--ifm-link-color), transparent 50%);
+    box-shadow: 0 0 0 0 rgba(56, 128, 255, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 8px
-      color-mix(in oklab, var(--ifm-link-color), transparent 95%);
+    box-shadow: 0 0 0 8px rgba(56, 128, 255, 0.05);
   }
   100% {
-    box-shadow: 0 0 0 0
-      color-mix(in oklab, var(--ifm-link-color), transparent 95%);
+    box-shadow: 0 0 0 0 rgba(56, 128, 255, 0.05);
   }
 }
 
