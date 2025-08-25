@@ -10,7 +10,7 @@ Action types define what you want to perform when an Action is triggered.
 
 ## Run Analysis Script
 
-Actions have the power to run [Analysis](/tagocore/analysis) scripts. This is a very powerful feature, as it gives you more flexibility on the type of operation you can perform.
+Actions have the power to run [Analysis](/docs/tagocore/analysis) scripts. This is a very powerful feature, as it gives you more flexibility on the type of operation you can perform.
 
 ## Post data to HTTP End-Point
 

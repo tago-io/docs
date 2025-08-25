@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: Data Retention
-slug: /tagocore/bucket/data-retention
+slug: /tagocore/device/data-retention
 ---
 
 # Data Retention
 
-The Data Retention feature gives the option for developers to automatically remove data from a [Bucket](/tagocore/bucket) after a defined period of time. The goal is to avoid storing unnecessary data that doesn't need to be kept for a long period of time.
+The Data Retention feature gives the option for developers to automatically remove data from a Bucket after a defined period of time. The goal is to avoid storing unnecessary data that doesn't need to be kept for a long period of time.
 
 You can set the retain data to **Forever**, which means that the data in that Bucket will never be deleted automatically, or you can set retention period to **days** or even **months**.
 

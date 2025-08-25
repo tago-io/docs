@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
 title: Data
-slug: /tagocore/bucket/data
+slug: /tagocore/device/data
 ---
 
-# Bucket Data
+# Device Data
 
-[Buckets](/tagocore/bucket) are resources that store data points, and these data points have a specific JSON structure.
+Device data are resources that store data points, and these data points have a specific JSON structure.
 
 Every time new data points are sent to the Bucket, TagoCore validates the data point to make sure it has the correct JSON structure.
 
@@ -30,7 +30,7 @@ For more information on other common specifications, check out our [API Overview
 
 TagoCore uses the same standard as [TagoIO Cloud](https://admin.tago.io) when it comes to endpoints and HTTP requests.
 
-To send data to a Bucket, you must send an HTTP `POST` request to the `/data` endpoint of TagoCore and use a [Device Token](/tagocore/device#token--serial-number) as the `token` header. 
+To send data to a Bucket, you must send an HTTP `POST` request to the `/data` endpoint of TagoCore and use a [Device Token](/docs/tagocore/device#token--serial-number) as the `token` header. 
 
 To understand all the parameters and required fields, check out our [API](https://api.docs.tago.io/#41e953a9-8b0c-4166-aa0f-1db3596b02f7).
 
@@ -38,6 +38,6 @@ To understand all the parameters and required fields, check out our [API](https:
 
 There are two ways to visualize the data in your Bucket.
 
-If you want to view all the details of the data points in your Bucket, you should send a `GET` request to the `/data` endpoint by using a [Device Token](/tagocore/device#token--serial-number) in the header.
+If you want to view all the details of the data points in your Bucket, you should send a `GET` request to the `/data` endpoint by using a [Device Token](/docs/tagocore/device#token--serial-number) in the header.
 
 However, if you only want to get an overview of all the variables in your bucket, you can go to the `Variables` tab of your Bucket page.
