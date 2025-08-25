@@ -7,7 +7,7 @@ slug: /tagocore/installation
 # Installing TagoCore
 
 :::info
-To install TagoCore, you need to [Download it](/tagocore/download) first.
+To install TagoCore, you need to [Download it](/docs/tagocore/download) first.
 :::
 
 ## Decompressing
