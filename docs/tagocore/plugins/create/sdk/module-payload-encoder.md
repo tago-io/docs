@@ -15,8 +15,6 @@ graph LR
     A[Device sends data] --> B[Payload Encoder]
     B[Payload Encoder] --> C[Payload Parser]
     C[Payload Parser] --> D[Data added to Bucket]
-    
-    classDef default fill:#333,stroke:#333,stroke-width:2px,color:#fff,font-weight:bold
 `}/>
 
 Once a Device sends data, the data is immediately forwarded to the first `PayloadEncoderModule` found. The Payload

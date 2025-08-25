@@ -15,7 +15,7 @@ The default communication between external devices and TagoCore is done through 
 To add a new device, press the&nbsp; <img className="inline-image" src="/docs_imagem/tagocore/device/add-device-button.png" height="25px" /> &nbsp;button on the **Devices** page. Once you press the button, a new Device will automatically be created with the name **New Device**.
 
 :::info
-When a Device is created, TagoCore automatically creates a [Bucket](/docs/tagocore/device/data) for it with the same name.
+When a Device is created, TagoCore automatically creates a [Bucket](/tagocore/bucket) for it with the same name.
 :::
 
 ## Token & Serial Number
@@ -28,4 +28,4 @@ Device tokens should be kept secret and only be shared with those you trust.
 
 ## Payload Parser
 
-Payload Parsers allows you to manipulate the raw payload sent by devices. For example, it can be used to transform a HEX payload sent by a device into `temperature` and `battery` variables. [Learn more about Payload parsers](/docs/tagocore/device/payload-parser).
+Payload Parsers allows you to manipulate the raw payload sent by devices. For example, it can be used to transform a HEX payload sent by a device into `temperature` and `battery` variables. [Learn more about Payload parsers](/tagocore/device/payload-parser).

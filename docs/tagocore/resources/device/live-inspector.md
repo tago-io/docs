@@ -1,12 +1,12 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 title: Live Inspector
 slug: /tagocore/device/live-inspector
 ---
 
 # Live Inspector
 
-Live Inspector is a useful tool for developers to debug [Payload Parser scripts](/docs/tagocore/device/payload-parser) and monitor traffic **to** and **from** [Devices](/docs/tagocore/device).
+Live Inspector is a useful tool for developers to debug [Payload Parser scripts](/tagocore/device/payload-parser) and monitor traffic **to** and **from** [Devices](/tagocore/device).
 
 ## How to activate it
 

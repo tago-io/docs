@@ -14,7 +14,7 @@ In order for the Plugin system to be secure and stable all Plugins run in a sand
 a Plugin environment and TagoCore is done through messages. This means that if a Plugin crashes, this crash
 will not affect TagoCore.
 
-All incoming TagoCore messages are handled by [Modules](/docs/tagocore/plugins/create/module) Inside of each Plugin environment,
+All incoming TagoCore messages are handled by [Modules](/tagocore/plugins/create/module) Inside of each Plugin environment,
 which means your **Plugin should have at least one module**.
 
 ## How Plugins are Started

@@ -56,7 +56,7 @@ Under the hood, TagoCore would use the following terminal command to run your an
 
 There are 3 ways to execute your Analysis:
 
-1. You can set up an [Action](/docs/tagocore/action) that triggers your Analysis when certain events happen;
+1. You can set up an [Action](/tagocore/action) that triggers your Analysis when certain events happen;
 2. You can manually execute your Analysis by clicking the **Run** button at the bottom of the page;
 3. You can manually execute your Analysis by making a POST request to `/analysis/:id/run`.
 
@@ -65,4 +65,4 @@ There are 3 ways to execute your Analysis:
 You may write your Analysis's code in whatever way you prefer. However, we do have some coding guidelines and best practices
 that may help you in your quest to create powerful Analyses.
 
-To learn more about best practices, coding guidelines, and how to retrieve [Device](/docs/tagocore/device/data) data inside of your Analysis, check out the [Analysis Code](/docs/tagocore/analysis/code) article.
+To learn more about best practices, coding guidelines, and how to retrieve [Bucket](/tagocore/bucket) data inside of your Analysis, check out the [Analysis Code](/tagocore/analysis/code) article.

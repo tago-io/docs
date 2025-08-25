@@ -63,8 +63,8 @@ Set the path of an image file to act as your Plugin's main icon. We recommend yo
 
 ### types
 
-This is an array that should contain all [module](/docs/tagocore/plugins/create/module) types used by your Plugin. For instance,
-if you are using a [Service Module](/docs/tagocore/plugins/create/service) and a [Payload Encoder Module](/docs/tagocore/plugins/create/encoder)
+This is an array that should contain all [module](/tagocore/plugins/create/module) types used by your Plugin. For instance,
+if you are using a [Service Module](/tagocore/plugins/create/service) and a [Payload Encoder Module](/tagocore/plugins/create/encoder)
 in your code, you should have an array like this:
 
 ```json
@@ -73,15 +73,15 @@ in your code, you should have an array like this:
 
 Here are all the types of modules:
 
-- [Payload Encoder Module](/docs/tagocore/plugins/create/encoder) - `encoder`;
-- [Service Module](/docs/tagocore/plugins/create/service) - `service`;
-- [Action Trigger Module](/docs/tagocore/plugins/create/action-trigger) - `action-trigger`;
+- [Payload Encoder Module](/tagocore/plugins/create/encoder) - `encoder`;
+- [Service Module](/tagocore/plugins/create/service) - `service`;
+- [Action Trigger Module](/tagocore/plugins/create/action-trigger) - `action-trigger`;
 - Action Type Module - `action-type`;
 - Database Module - `database`.
 
 ### permissions
 
-This array specifies which API calls you will be able to make to TagoCore's API via the [core](/docs/tagocore/plugins/create/core) object. For instance, if you wish to create a new [Device](/docs/tagocore/device) via the `core.createDevice` function, you have need to add the `device` property to this permissions array.
+This array specifies which API calls you will be able to make to TagoCore's API via the [core](/tagocore/plugins/create/core) object. For instance, if you wish to create a new [Device](/tagocore/device) via the `core.createDevice` function, you have need to add the `device` property to this permissions array.
 
 These are all the possibilities for this array:
 
