@@ -8,7 +8,7 @@ Welcome to TagoIO! Here are some options to get started.
 
 ## Options to get started
 1. Follow the manual steps described below to start quickly.
-2. Use our [SIMULATOR](simulator-data-stream) to start right away even if you don't have a physical IoT device.
+2. Use our [SIMULATOR](/tagoio/other-topics/simulator-data-stream) to start right away even if you don't have a physical IoT device.
 3. Go deeper by following the video below.
 
 ## Introductory video
