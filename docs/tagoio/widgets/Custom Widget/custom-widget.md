@@ -1,8 +1,8 @@
 ---
-title: "Custom Widget"
+title: "Custom Widget Overview"
 description: "This article explains what Custom Widgets are in TagoIO, the web technologies you can use to build them, and shows example outputs. It also lists related documentation for further configuration and parameters."
 tags: ["tagoio", "widgets"]
-"position": 1
+"sidebar_position": 1
 ---
 ## Overview
 

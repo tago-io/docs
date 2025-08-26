@@ -2,7 +2,7 @@
 title: "Creating Keypad Widgets"
 description: "This article demonstrates how to create a Keypad Widget in TagoIO and shows the JSON structure you must send to the account.dashboards.widgets.create method. It includes an example payload and references to related documentation."
 tags: ["tagoio", "widgets"]
-"position": 2
+"sidebar_position": 2
 ---
 ## Overview
 

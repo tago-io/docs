@@ -2,7 +2,7 @@
 title: "Gauge Overview"
 description: "This article describes the Gauge widget types available in TagoIO and explains the Dial and Angular gauge types, including how they present a variable's last value and a link to more detail for the Dial gauge."
 tags: ["tagoio"]
-"position": 1
+"sidebar_position": 1
 ---
 Gauge contains a collection of metric widgets. You can choose among several types of gauges that present the last value of a variable in different formats.
 

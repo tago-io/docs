@@ -2,7 +2,7 @@
 title: "Input Control Widget"
 description: "This article explains how to use the Input Control widget in TagoIO to submit values to variables via a form and how to edit the form structure, sections, and fields."
 tags: ["tagoio", "widgets"]
-"position": 2
+"sidebar_position": 2
 ---
 The Input control allows users to submit values to variables through a form.
 

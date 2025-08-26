@@ -2,6 +2,7 @@
 title: "Custom Widget Parameters"
 description: "This article explains how to add and use custom widget parameters in TagoIO, including how parameters are structured (key/value pairs), limits, and how they are received in your widget code."
 tags: ["tagoio", "widgets"]
+"sidebar_position": 2
 ---
 Parameters allow you to send a list of keys and values to your custom widget.
 
