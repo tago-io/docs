@@ -33,7 +33,7 @@ In this example, let’s send a variable called _temperature_ from your device t
 
 ![Image 1](/docs_imagem/tagoio/throw-miA.gif)
 
-All devices should use a valid [device-token](devices/device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
+All devices should use a valid [device-token](../devices/device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
 
 ![Image 2](/docs_imagem/tagoio/token-cj4.gif)
 
@@ -48,7 +48,7 @@ You can build great [dashboards](../dashboards/dashboard-overview) to visualize 
 ![Image 3](/docs_imagem/tagoio/temp-3UQ.gif)
 
 ### Step 3. Send data
-Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](../api/api-overview). You can use one of our [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) designed for your platform.
+Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](../api/api-overview). You can use one of our [SDKs](../sdk) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a server with HTTP. Below, you will learn how to quickly send data depending on the OS that you are using.
 
@@ -85,6 +85,6 @@ The response should look like this:
 ### Step 4. Create complete solutions
 This is just the beginning! Check out how powerful TagoIO is to deploy solutions in production.
 
-Create powerful [analysis](../analysis/analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](../actions/actions) to be taken based on your rules.
+Create powerful [analysis](../analysis/analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](../actions) to be taken based on your rules.
 
 Learn more about our powerful [API’s](../api/api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) prepared for different boards and applications.
