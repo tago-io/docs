@@ -13,7 +13,6 @@ TagoCore's home page allows you to get an overview and summary of your Operating
 This home page card shows the amount of resources in your application, as well as your TagoCore version. These are all resources listed in the summary:
 
 - Devices;
-- Buckets;
 - Analyses;
 - Actions;
 - Connectors.

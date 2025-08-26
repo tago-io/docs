@@ -34,12 +34,6 @@ Now that you have access to the system, it's time to understand some of the reso
 Devices are the link between the data in your TagoCore and your devices in the real world. For a physical device to
 send data to TagoCore, you must create a new Device in the application. [Learn more about Devices](/docs/tagocore/device).
 
-### Buckets
-
-Buckets are where the data from your Devices are stored. When a Device is created, TagoCore automatically creates a
-bucket for it with the same name. When you delete a Device, its Bucket is deleted automatically.
-[Learn more about Buckets](/docs/tagocore/bucket).
-
 ### Analyses
 
 Analyses allow you to implement scripts to analyze and manipulate data from any device in real-time. You can combine
