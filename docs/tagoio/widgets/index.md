@@ -83,8 +83,6 @@ Dashboards are composed of widgets that can display and collect data from users.
 
 For a complete overview of all available widgets, see [Widgets Overview](./widgets-overview.md).
 
-## Limits and Notes
-
 :::info
 
 You can add up to 100 widgets in a single dashboard. This total includes widgets across all tabs. Each widget can display a maximum of 10,000 data points (variables).
