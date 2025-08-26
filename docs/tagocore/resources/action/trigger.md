@@ -31,7 +31,7 @@ After setting up the [Device](/docs/tagocore/device), you should set a condition
   - **Greater than**: matches when the value of the variable is greater than the value defined;
   - **Equal to**: matches when the value of the variable is equal to the value defined;
   - **Different from**: matches when the value of the variable is different from the value defined;
-  - **Any**: matches whenever a new value of the variable is sent to the bucket;
+  - **Any**: matches whenever a new value of the variable is sent to the device;
   - **Between**: matches when the new value is between a fixed value range.
 3. **Set a value** to complement the condition. In the example above, the value for the condition is 15.
 
