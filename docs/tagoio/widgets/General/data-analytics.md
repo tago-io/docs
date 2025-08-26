@@ -7,13 +7,13 @@ Transform your raw sensor data into actionable insights using visual calculation
 
 Data Analytics is currently available for the widgets listed below, with support for additional widgets to be added in the future:
 
-- [Display](../widgets/display-widget)
-- [Line Chart](../widgets/line-chart-widget)
-- [Area Chart](../widgets/area-chart-widget)
-- [Horizontal Bar](../widgets/horizontal-bar-widget)
-- [Vertical Column](../widgets/vertical-column-widget)
-- [Multiple Charts](../widgets/multiple-charts-widget)
-- [Icon](../widgets/icons-widget)
+- [Display](../Displays/display-widget)
+- [Line Chart](../Charts/line-chart-widget)
+- [Area Chart](../Charts/area-chart-widget)
+- [Horizontal Bar](../Charts/horizontal-bar-widget)
+- [Vertical Column](../Charts/vertical-column-widget)
+- [Multiple Charts](../Charts/multiple-charts-widget)
+- [Icon](../Displays/icons-widget)
 
 ## Available Functions
 

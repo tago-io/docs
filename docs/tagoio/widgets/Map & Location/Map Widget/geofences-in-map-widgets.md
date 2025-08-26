@@ -11,11 +11,11 @@ Geofences allow developers to color parts of the map and detect or trigger event
 
 ## On this page
 - Events — See [Events](../actions/actions)
-- Creating geofences — See [Creating geofences](../data-management/geofence-management) 
-- Geofence variable data — See [Geofence variable data](../data-management/geofence-management)
+- Creating geofences — See [Creating geofences](../../data-management/geofence-management) 
+- Geofence variable data — See [Geofence variable data](../../data-management/geofence-management)
 
 ## Related Map Widget documentation
-- See [Map Widget](../widgets/map-widget)
+- See [Map Widget](../Map & Location/Map Widget/map-widget)
 - See [Map filters](../map-filters)
 - See [Geofences in map widgets](#) (this article)
 - See [Map Layer GIS](../map-layer-gis)
@@ -24,11 +24,11 @@ Geofences allow developers to color parts of the map and detect or trigger event
 - See [Displaying Locations on a Map with TTN LoRaWAN](../tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
 
 ## Related articles
-- See [Map Widget](../widgets/map-widget)
-- See [Image Marker Widget](../widgets/image-marker-widget)
+- See [Map Widget](../Map & Location/Map Widget/map-widget)
+- See [Image Marker Widget](../Map & Location/image-marker-widget)
 - See [Trigger by Geofence](/tagoio/trigger-by-geofence)
-- See [Compose Widget](../widgets/compose-widget)
-- See [Custom Widget](../widgets/custom-widget)
+- See [Compose Widget](../Media Widgets/compose-widget)
+- See [Custom Widget](../Custom Widget/custom-widget)
 
 ## Creating geofences
 

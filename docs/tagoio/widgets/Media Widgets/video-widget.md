@@ -7,11 +7,11 @@ The Video widget provides the ability to present custom videos in your dashboard
 
 ![Video widget example](/docs_imagem/tagoio/video-widget-2.gif)
 
-> Note: This widget works for both dashboard types: Normal and [Blueprint](../dashboards/blueprint-dashboard).
+> Note: This widget works for both dashboard types: Normal and [Blueprint](../../dashboards/blueprint-dashboard).
 
 ## On this page
 - [1. Video Behavior](#1-video-behavior)  
-- [2. 'Data From' Field](../data-management/data-records)
+- [2. 'Data From' Field](../../data-management/data-records)
 
 ## 1. Video Behavior
 Video behavior defines how the widget obtains the video URL. It can be one of three types: static, conditional, or dynamic.
@@ -27,15 +27,15 @@ Create conditions where each condition has an associated video URL. If the varia
 The video URL comes from a variable’s value. The widget reads the current value of the selected variable and uses it as the source for the video.
 
 ## 2. 'Data From' Field
-See ['Data From' Field](../data-management/data-records) for details on selecting the source of the video URL within the widget configuration.
+See ['Data From' Field](../../data-management/data-records) for details on selecting the source of the video URL within the widget configuration.
 
 - **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
 - **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information.  
   When using a Blueprint dashboard, the field may not list variables to pick because it doesn’t know the devices linked to your Blueprint Device.
 
 ## Related Articles
-- [Image Widget](../widgets/image-widget)  
-- [Compose Widget](../widgets/compose-widget)  
-- [Map Widget](../widgets/map-widget)  
-- [Custom Widget](../widgets/custom-widget)  
-- [Image Marker Widget](../widgets/image-marker-widget)
+- [Image Widget](../Media Widgets/image-widget)  
+- [Compose Widget](../Media Widgets/compose-widget)  
+- [Map Widget](../Map & Location/Map Widget/map-widget)  
+- [Custom Widget](../Custom Widget/custom-widget)  
+- [Image Marker Widget](../Map & Location/image-marker-widget)

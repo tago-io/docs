@@ -79,7 +79,7 @@ You may choose to run an Analysis once you send data from your widget. To do so,
 ## Related articles
 
 - ECharts Custom Widget Tutorial [ECharts Custom Widget Tutorial](/tagoio/widgets/echarts-custom-widget-tutorial-)
-- Map Widget (../widgets/map-widget)
-- Image Marker Widget [Image Marker Widget](../widgets/image-marker-widget)
-- Compose Widget (../widgets/compose-widget)
-- Analysis Overview (../analysis/analysis-overview)
+- Map Widget (../Map & Location/Map Widget/map-widget)
+- Image Marker Widget [Image Marker Widget](../Map & Location/image-marker-widget)
+- Compose Widget (../Media Widgets/compose-widget)
+- Analysis Overview (../../analysis/analysis-overview)

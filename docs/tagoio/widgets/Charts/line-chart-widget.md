@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  
@@ -65,8 +65,8 @@ It is possible to pre‑set some date filters to be displayed, and these filters
 ![Image 7](/docs_imagem/tagoio/filteringData-e2c.gif)
 
 ## Related articles
-- [Area Chart Widget](../widgets/area-chart-widget)  
-- [Multiple Charts Widget](../widgets/multiple-charts-widget)  
-- [Horizontal Bar Widget](../widgets/horizontal-bar-widget)  
-- [Vertical Column Widget](../widgets/vertical-column-widget)  
-- [Map Widget](../widgets/map-widget)
+- [Area Chart Widget](../Charts/area-chart-widget)  
+- [Multiple Charts Widget](../Charts/multiple-charts-widget)  
+- [Horizontal Bar Widget](../Charts/horizontal-bar-widget)  
+- [Vertical Column Widget](../Charts/vertical-column-widget)  
+- [Map Widget](../Map & Location/Map Widget/map-widget)

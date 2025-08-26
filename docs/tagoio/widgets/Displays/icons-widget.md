@@ -40,8 +40,8 @@ The widget changes its content based on two types of conditions, **Icon conditio
 
 ## Related Articles
 
-- See [Map Widget](../widgets/map-widget)  
-- See [Image Marker Widget](../widgets/image-marker-widget)  
-- See [Compose Widget](../widgets/compose-widget)  
-- See [Custom Widget](../widgets/custom-widget)  
-- See [Formula](../formula)
+- See [Map Widget](../Map & Location/Map Widget/map-widget)  
+- See [Image Marker Widget](../Map & Location/image-marker-widget)  
+- See [Compose Widget](../Media Widgets/compose-widget)  
+- See [Custom Widget](../Custom Widget/custom-widget)  
+- See [Formula](../General/formula)

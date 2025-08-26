@@ -8,7 +8,7 @@ Dynamic tables are tables that populate dynamically as your data arrives while k
 ## Editing the dynamic table
 You can customize the widget color, apply formulas to columns, show a time column, enable a control column, and more.
 
-> Note: This widget also accepts features like [metadata](../data-management/metadata) and [series](../data-management/data-records), which can be set in your variable data.
+> Note: This widget also accepts features like [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
 
 ![Dynamic Table Widget editor screenshot](/docs_imagem/tagoio/dynamic-table-widget-2.gif)
 
@@ -26,16 +26,16 @@ To edit a specific section of this widget, you must hover over the desired eleme
 
 ## Table Widgets
 - [Tables](../tables)
-- [Device List Widget](../widgets/device-list-widget)
+- [Device List Widget](../Tables/device-list-widget)
 - [Dynamic Table Widget](#) (this article)
-- [Entity Table Widget](../widgets/entity-table-widget)
-- [Static Table Widget](../widgets/static-table-widget)
+- [Entity Table Widget](../Tables/entity-table-widget)
+- [Static Table Widget](../Tables/static-table-widget)
 - [User List Widget](../widgets/user-list-widget-.md)
 
 ## Related Articles
 - [Tables](../tables)
-- [Entity Table Widget](../widgets/entity-table-widget)
-- [Static Table Widget](../widgets/static-table-widget)
+- [Entity Table Widget](../Tables/entity-table-widget)
+- [Static Table Widget](../Tables/static-table-widget)
 
 ### 1. 'Data From' Field
 Each column has the field **Data From**; this field allows you to set the device and variable that will be used in this widget.
@@ -48,7 +48,7 @@ Each column has the field **Data From**; this field allows you to set the device
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 #### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](../data-management/blueprint-devices) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](../../data-management/blueprint-devices) and input the name of the variable that contains the information.
 
 > When using a [Blueprint dashboard](/tagoio/dashboards/blueprint-dashboard), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 

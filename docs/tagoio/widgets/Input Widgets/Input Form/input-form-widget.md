@@ -22,7 +22,7 @@ Image transcribed text:
 
 To edit a specific section or element of this widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
 
-> Note: This widget works for both dashboard modes: Normal and [Blueprint](../dashboards/blueprint-dashboard).
+> Note: This widget works for both dashboard modes: Normal and [Blueprint](../../dashboards/blueprint-dashboard).
 
 ## Sections
 Sections are the main structure of the form, and each section has its own fields.  
@@ -54,7 +54,7 @@ From the option **Data From** on the right menu, select the source of the data, 
 From the option **Data From** on the right menu, select the source of the data, which can be either a Device or an Entity. Add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable or field that contains the information.
 
 ![Info icon](/docs_imagem/tagoio/info-8.png)  
-When using a [Blueprint dashboard](../dashboards/blueprint-dashboard), the inputs Variable or Field will not list the contents to be picked because it doesn't know the entities or devices linked to your Blueprint Associations.
+When using a [Blueprint dashboard](../../dashboards/blueprint-dashboard), the inputs Variable or Field will not list the contents to be picked because it doesn't know the entities or devices linked to your Blueprint Associations.
 
 ![Notes icon](/docs_imagem/tagoio/file.png)  
 When using Entities, certain fields might be marked as required. If these essential fields are not included in your form, an error will occur. To resolve this issue, you can either add the missing fields to your input form or modify the field settings in your Entity so that it is no longer mandatory. See the article on [Entities](/tagoio/entities/entities).

@@ -57,7 +57,7 @@ For instance, if the user has clicked the sequence **1234** and then **DISARM**,
 Learn more about how to [manipulate the keypad's data](../keypad-data-manipulation).
 
 ## On this page
-- 1. 'Data From' Field (../data-management/data-records)
+- 1. 'Data From' Field (../../data-management/data-records)
 - 2. Visualization — See [Widget Visualization](../widgets/widget-configuration#visualization)
 
 ## Related Keypad documentation
@@ -67,8 +67,8 @@ Learn more about how to [manipulate the keypad's data](../keypad-data-manipulati
 - [Keypad Data Manipulation](../keypad-data-manipulation)
 
 ## Related articles
-- [Compose Widget](../widgets/compose-widget)  
-- [Map Widget](../widgets/map-widget)  
-- [Image Marker Widget](../widgets/image-marker-widget)  
-- [Custom Widget](../widgets/custom-widget)  
+- [Compose Widget](../Media Widgets/compose-widget)  
+- [Map Widget](../Map & Location/Map Widget/map-widget)  
+- [Image Marker Widget](../Map & Location/image-marker-widget)  
+- [Custom Widget](../Custom Widget/custom-widget)  
 - [Keypad Data Manipulation](../keypad-data-manipulation)

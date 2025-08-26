@@ -7,7 +7,7 @@ Using data from multiple variables, the Semi Donut widget automatically produces
 
 ![Three examples of semi-donut charts with different styles](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-This widget also accepts features like [metadata](../data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 
@@ -36,7 +36,7 @@ From the option **Data From** on the right menu, add the [Blueprint device](/tag
 ## Related articles
 
 - [Semi Pie Widget](../widgets/semi-pie-widget)  
-- [Pie Widget](../widgets/pie-widget)  
-- [Grain Bin Widget](../widgets/grain-bin-widget)  
-- [Cylinder Widget](../widgets/cylinder-widget)  
-- [Solid Widget](../widgets/solid-widget)
+- [Pie Widget](../Charts/pie-widget)  
+- [Grain Bin Widget](../Gauge & Meter/grain-bin-widget)  
+- [Cylinder Widget](../Gauge & Meter/cylinder-widget)  
+- [Solid Widget](../Gauge & Meter/solid-widget)

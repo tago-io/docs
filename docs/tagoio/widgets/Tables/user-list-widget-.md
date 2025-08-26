@@ -66,10 +66,10 @@ On this page:
 
 Related Table Widgets:
 - [Tables](../tables)
-- [Device List Widget](../widgets/device-list-widget)
-- [Dynamic Table Widget](../widgets/dynamic-table-widget)
-- [Entity Table Widget](../widgets/entity-table-widget)
-- [Static Table Widget](../widgets/static-table-widget)
+- [Device List Widget](../Tables/device-list-widget)
+- [Dynamic Table Widget](../Tables/dynamic-table-widget)
+- [Entity Table Widget](../Tables/entity-table-widget)
+- [Static Table Widget](../Tables/static-table-widget)
 - [User List Widget](user-list-widget-)
 
 Related Articles:
