@@ -1,36 +1,64 @@
 ---
-title: "Dashboards"
-description: "TagoIO dashboards - organize widgets, visualize data, and create user interfaces for your IoT applications"
+title: "Dashboard Overview"
+description: "Learn about TagoIO dashboards - where you place widgets to visualize and interact with data in real-time, and share with end-users through TagoRUN."
 tags: ["tagoio", "dashboards"]
-sidebar_position: 1
 ---
 
-# Dashboards
+# Dashboard Overview
 
-Dashboards in TagoIO are where you place widgets to visualize and interact with data in real-time. They can be shared with end-users through TagoRUN and customized for different use cases.
+A dashboard is where you place your widgets to visualize and interact with data, all in real-time. Dashboards can also be shared with end-users that will access your application using [TagoRUN](/tagorun).
 
-## Dashboard Types
+<!-- Dashboard overview image -->
 
-### Normal Dashboards
-- [Dashboard Overview](./dashboard-overview.md) - Basic dashboard concepts and creation
-- [Creating Dashboard Tabs](./creating-dashboard-tabs.md) - Organize dashboards with tabs
-- [Dashboard Icons](./dashboard-icons.md) - Customize dashboard appearance
+All your dashboards are listed on the sidebar of the screen. On the top right you will find the **Edit Dashboard** menu. From there you will have access to other dashboard functionalities such as **rename**, **share, distribute, duplicate,** and **delete**.
 
-### Blueprint Dashboards
-- [Blueprint Dashboard](./blueprint-dashboard.md) - Dynamic dashboards for multiple devices
-- [Distributing Dashboards](./distributing-dashboards.md) - Share dashboard templates
+<!-- Dashboard menu image -->
 
-## Dashboard Management
+There are two types of dashboards:
 
-### Organization & Sharing
-- [Grouping Dashboards](./grouping-dashboards.md) - Organize dashboards in folders
-- [Sharing Dashboards](./sharing-dashboards.md) - Share with users and teams
-- [Restoring Dashboard Versions](./restoring-your-dashboard-to-a-previous-version.md) - Version control
+- **Normal**: simply create a dashboard for pre-selected devices and variables.
+- [**Blueprint**](/tagoio/dashboards/blueprint-dashboard): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
 
-### Advanced Features
-- [Dashboard Global Time Filter](./dashboard-global-time-filter-and-period-presets.md) - Time controls
-- [Downlinks using Dashboards](./downlinks-using-dashboards.md) - Send commands to devices
+## Building dashboards
 
-## Getting Started
+To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](/tagoio/dashboards/distributing-dashboards).
 
-Start with the [Dashboard Overview](./dashboard-overview.md) to learn the basics of creating and managing dashboards in TagoIO.
+In this window, you can also switch the **Blueprint slider** to generate a Blueprint dashboard instead of a Normal one. Simply enter a name for your new dashboard and click **Save** to begin adding [Widgets](https://help.tago.io/portal/en/kb/tagoio/9-widgets).
+
+<!-- Dashboard creation interface image -->
+
+<YouTube videoId="D2lmCHF4Eg4" title="Building Dashboards and Widgets" />
+
+> There is a limit of **100 widgets** per dashboard
+
+---
+
+## Dashboard Icons
+
+You can add [icons](/tagoio/dashboards/dashboard-icons) to your dashboard, making it look just the way that you want it.
+
+<!-- Dashboard icons image -->
+
+---
+
+## Dashboard Background
+
+You can also edit the background color of the dashboards, or add images and animations. Click on the **clog** icon to edit the configurations inside the 'General information' tab.
+
+<!-- Dashboard background settings image -->
+
+Although video formats are not accepted, you can upload animations using the **.gif** format as shown below. Images can be uploaded into our [Files](/tagoio/files).
+
+<!-- Dashboard background example image -->
+
+> **Tip:** You have full control of the opacity level for the background and the widgets.
+
+---
+
+## Reordering widgets for mobile app on TagoRUN
+
+When accessing dashboards through the [TagoRUN app](/tagorun/tagorun-mobile-app), widgets appear in the sequence of their creation by default. To modify this arrangement, simply switch your dashboard to **Edit mode** and click on the small smartphone icon located at right top corner.
+
+To reorder the widgets for the mobile app, just drag them to your preferred position. The adjustments will take effect immediately, although you might need to refresh the dashboard on the mobile app to see the changes.
+
+<!-- Mobile widget reordering image -->
