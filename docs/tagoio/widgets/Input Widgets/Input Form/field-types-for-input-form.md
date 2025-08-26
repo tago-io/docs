@@ -2,6 +2,7 @@
 title: "Field Types for Input Form"
 description: "This article explains the different field types available for the Input Form widget in TagoIO, describing how each field behaves and what value it produces. It covers examples for Text and Address field types shown in the screenshot."
 tags: ["tagoio"]
+"position": 3
 ---
 The field defines the relationship between the user-inputted data and the Device data for certain widgets.
 

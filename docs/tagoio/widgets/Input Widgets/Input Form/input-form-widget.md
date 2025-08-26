@@ -2,6 +2,7 @@
 title: "Input Form Widget"
 description: "A brief guide to the Input Form widget explaining what it does and how to edit it, including steps to modify sections and fields and a note about dashboard compatibility."
 tags: ["tagoio", "widgets"]
+"position": 1
 ---
 The Input form allows users to submit values to variables through a form.
 
