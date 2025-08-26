@@ -1,15 +1,25 @@
 ---
-title: "Widgets"
-description: "TagoIO widgets for dashboards - display and collect real-time data from devices with various visualization options"
+title: "Widgets Overview"
+description: "This article describes the widgets available in TagoIO dashboards, how they display and collect real-time data, and limits for dashboard widgets. It also points to creating dashboards and building custom widgets."
 tags: ["tagoio", "widgets"]
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Widgets
 
 Dashboards are composed of widgets that can display and collect data from users. TagoIO provides a variety of widgets to handle your data in real time, from simple dials to tables, maps, videos, and forms that allow user input.
 
+![Image 4](/docs_imagem/tagoio/external-a72cdd75.png)
+
+:::info
+
+You can add up to 100 widgets in a single dashboard. This total includes widgets across all tabs. Each widget can display a maximum of 10,000 data points (variables).
+
+:::
+
 ## Widget Categories
+
+The following widgets are provided out of the box (icons and labels shown):
 
 ### Chart Widgets
 - [Line Chart](./line-chart-widget.md) - Display data trends over time
@@ -79,12 +89,5 @@ Dashboards are composed of widgets that can display and collect data from users.
 - [Embedding Widgets](./embedding-widgets-to-your-website.md) - Embed widgets in external sites
 - [Geofences in Map Widgets](./geofences-in-map-widgets.md) - Map widget geofencing
 
-## Getting Started
 
-For a complete overview of all available widgets, see [Widgets Overview](./widgets-overview.md).
 
-:::info
-
-You can add up to 100 widgets in a single dashboard. This total includes widgets across all tabs. Each widget can display a maximum of 10,000 data points (variables).
-
-:::
