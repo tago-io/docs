@@ -87,4 +87,4 @@ This is just the beginning! Check out how powerful TagoIO is to deploy solutions
 
 Create powerful [analysis](../analysis/analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](../actions) to be taken based on your rules.
 
-Learn more about our powerful [API’s](../api/api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](https://help.tago.io/portal/en/kb/tagoio/14-sdk) prepared for different boards and applications.
+Learn more about our powerful [API’s](../api/api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](../sdk) prepared for different boards and applications.
