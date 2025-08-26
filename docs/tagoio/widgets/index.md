@@ -85,4 +85,6 @@ For a complete overview of all available widgets, see [Widgets Overview](./widge
 
 ## Limits and Notes
 
-> **Limit:** You can add up to 100 widgets in a single dashboard. This total includes widgets across all tabs. Each widget can display a maximum of 10,000 data points (variables).
+:::info
+You can add up to 100 widgets in a single dashboard. This total includes widgets across all tabs. Each widget can display a maximum of 10,000 data points (variables).
+:::
