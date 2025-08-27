@@ -1,26 +1,65 @@
 ---
-title: "TagoRUN"
-description: "Edge computing platform for local data processing and real-time analytics"
-slug: /tagorun
+title: "TagoRun - Branding and Deploying Applications"
+description: "This article explains how to use the Run module to deploy a customizable IoT platform (RUN) for end users, and outlines deployment and branding options, including mobile app considerations."
+tags: ["tagorun"]
 ---
+Use the Run module to deploy your own IoT platform for your end-users (see [Run module](link-to-run-module)).
 
-# TagoRUN
+![TagoRUN dashboard illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
 
-TagoRUN is Tago's edge computing platform that brings data processing capabilities directly to your local environment, enabling real-time analytics and reduced latency for IoT applications.
+The options available in your RUN will depend on your current plan and the add-ons selected. Even the Free plan offers a high level of customization.
 
-## Key Features
+## Deploying
 
-- **Edge Computing** - Process data locally at the edge
-- **Real-time Processing** - Instant data analysis and response
-- **Offline Operation** - Continue operations without internet connectivity
-- **Local Storage** - Store data locally with sync capabilities
-- **Custom Scripts** - Run custom analysis scripts on edge devices
+Your own platform is deployed in seconds, no need to build and pay for an additional server. Your customers will access the domain assigned for you. Learn how to deploy and brand your IoT solution by watching the video below.
 
-## Documentation
+## Branding
 
-- [TagoRUN Mobile App](/tagorun/tagorun-mobile-app)
-- [Branding and Deploying Applications](/tagorun/branding-and-deploying-applications)
+Your customers will engage with your brand as they sign up and access the application that contains your logo, colors, and personalized e‑mails.
 
----
+![Branding illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
 
-For additional TagoRUN usage, see the TagoIO documentation.
+1. **Company logo**  
+2. **Customized sub-domain**  
+   1. Your application will be part of the domain `run.tago.io`. For example: `myiot.run.tago.io`  
+   2. Complete custom domain. For example: [iot.mycompany.com](https://iot.mycompany.com/)  
+3. **Browser favicon**  
+4. **Navigation bar colors**  
+5. **Signup page edition**  
+   1. A small reference to TagoIO is added on the button of the Signup page.  
+6. **Side bar button inclusion**  
+7. **E‑mail template configuration**  
+8. **Geolocation and Wi‑Fi setup**  
+9. **Google Analytics and CRM integrations**
+
+> * Buy the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+
+## How it works with mobile App
+
+Your users can download the free [TagoRUN Mobile App](link-to-tagorun-mobile-app). They will simply need to enter your Run domain the first time they log in. For example, if your Run is `mycompany.run.tago.io`, they will enter “mycompany”, and from there the mobile App will present the colors, logo, and buttons that you saved in the Run configuration.
+
+Learn also about other add‑ons.
+
+## On this page
+
+- Deploying
+- Branding
+- How it works with mobile App
+
+## Getting Started (related documentation)
+
+- [Branding and Deploying Applications](link-to-branding-and-deploying-applications)
+- [TagoRun](link-to-tagorun)
+- [Run Theme](../tagoio/run-theme)
+- [Sidebar](../tagoio/sidebar)
+- [Navigation bar](../tagoio/navigation-bar)
+- [Custom Settings](../tagoio/custom-settings)
+- [TagoRUN Mobile App](link-to-tagorun-mobile-app)
+- [User Management](link-to-user-management)
+- [Notifications for Users](link-to-notifications-for-users)
+- [Security and Protection for RUN users](../tagoio/account/security-and-protection-for-run-users)
+- Show More
+
+## Related Articles
+
+- [Navigation bar](../tagoio/navigation-bar)

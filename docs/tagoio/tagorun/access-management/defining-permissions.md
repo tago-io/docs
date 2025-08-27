@@ -2,6 +2,7 @@
 title: "Defining Permissions"
 description: "This article explains how to configure Permissions for Targets in TagoIO, what resources are available depending on the selected Target, and how permission rules are evaluated (including how Deny interacts with Allow)."
 tags: ["tagoio"]
+sidebar_position: 4
 ---
 ## Overview
 You need to set up Permissions to define which types of resources your Targets will be allowed or denied access to.

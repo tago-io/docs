@@ -1,7 +1,8 @@
 ---
-title: "TagoRun Module"
+title: "TagoRun Overview"
 description: "This article explains how to use the TagoRun Run module to create and deploy a branded application portal, configure URLs and signup pages, and manage email templates."
 tags: ["tagorun"]
+sidebar_position: 1
 ---
 
 The Run module allows you to create and deploy your solution using a customized logo, colors, URL, signup page, email messages, and more.
@@ -17,5 +18,5 @@ With Run you can set up three main things:
 2. Your Sign up page
 3. E-mail templates
 
-## 1. Your Run (Application portal)
+## Your Run (Application portal)
 Go to the [Main Configuration](link-to-main-configuration) and [Domain](link-to-domain) tabs to configure the title and subtitle of your application, add a favicon (browser icon) and logo, and edit the colors used in the navigation bar.

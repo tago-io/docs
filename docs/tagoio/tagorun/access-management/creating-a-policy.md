@@ -2,6 +2,7 @@
 title: "Creating a Policy"
 description: "This article explains how to create policies in TagoIO to grant secure, pre-defined access to account resources by assigning targets and permissions. It also notes where to configure policies in the Access module."
 tags: ["tagoio"]
+sidebar_position: 2
 ---
 ## Overview
 You can create individual policies to securely grant access to specific resources in your account for pre-defined targets.

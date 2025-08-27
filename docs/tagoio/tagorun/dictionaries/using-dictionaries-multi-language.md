@@ -2,6 +2,7 @@
 title: "Using Dictionaries & Multi-language"
 description: "This article explains how to use the Dictionary feature to deploy applications in multiple languages, how to reference dictionary keys in your application text, and notes on language selection and plan limitations."
 tags: ["tagoio"]
+sidebar_position: 1
 ---
 Use the Dictionary to deploy applications to end-users (RUN users) in any language. All you have to do is to create a [dictionary](/tagoio/dictionaries), use the `#SLUG.KEY#` format in the texts that will be substituted, and then select the languages that should be available for your end-users.
 

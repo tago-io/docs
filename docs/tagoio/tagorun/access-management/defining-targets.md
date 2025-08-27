@@ -2,6 +2,7 @@
 title: "Defining Targets"
 description: "This article explains how to define Targets within a policy in the Access Management (AM) module, what kinds of Targets are available, and how multiple Targets are evaluated when granting permissions."
 tags: ["tagoio"]
+sidebar_position: 3
 ---
 You should define **Targets** in each policy that are used inside the [Access Management](/tagoio/security/access-management) module (AM). Targets can be users or things (for example, [scripts](/tagoio/analysis/analysis-overview)).
 
