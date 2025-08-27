@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Configuration Parameters
 slug: /tagocore/device/configuration-parameter
 ---

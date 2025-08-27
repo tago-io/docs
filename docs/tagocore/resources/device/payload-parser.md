@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: Payload Parser
 slug: /tagocore/device/payload-parser
 ---
@@ -10,7 +10,7 @@ Payload Parser allows you to manipulate the raw payload sent by devices. For exa
 
 ## Associating it
 
-Payload Parsers must be associated to a [Device](/tagocore/device), and you can define one by selecting a file in the **Payload parser** field of a Device. Each device can only have **one** Payload Parser.
+Payload Parsers must be associated to a [Device](/docs/tagocore/device), and you can define one by selecting a file in the **Payload parser** field of a Device. Each device can only have **one** Payload Parser.
 
 ## Writing code
 
@@ -18,7 +18,7 @@ Payload Parsers must be associated to a [Device](/tagocore/device), and you can 
 Payload Parsers can only be written in JavaScript.
 :::
 
-Inside of your JavaScript code, you can use the `payload` global variable to have access to the data sent by your device. You may also modify this global variable if you wish to change the data before it is saved in the Device's [Bucket](/tagocore/bucket).
+Inside of your JavaScript code, you can use the `payload` global variable to have access to the data sent by your device. You may also modify this global variable if you wish to change the data before it is saved in the Device's [Data](/docs/tagocore/device/data).
 
 The global `payload` will contain whatever your Device has sent in the body of the HTTP request, which means it doesn't have a specific type and can be an `array`, `object`, or even a `string` or `number`.
 

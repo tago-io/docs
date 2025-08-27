@@ -8,13 +8,15 @@ import Mermaid from '@theme/Mermaid';
 
 # Payload Encoder Module
 
-This Module allows you to encode data before it reaches a bucket.
+This Module allows you to encode data before it reaches a device.
 
 <Mermaid chart={`
 graph LR
     A[Device sends data] --> B[Payload Encoder]
     B[Payload Encoder] --> C[Payload Parser]
-    C[Payload Parser] --> D[Data added to Bucket]
+    C[Payload Parser] --> D[Data added to Device]
+    
+    classDef default fill:#333,stroke:#333,stroke-width:2px,color:#fff,font-weight:bold
 `}/>
 
 Once a Device sends data, the data is immediately forwarded to the first `PayloadEncoderModule` found. The Payload

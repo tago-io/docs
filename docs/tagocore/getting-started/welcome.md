@@ -25,25 +25,21 @@ docker run -p 8888:8888 -p 8999:8999 tagoio/tagocore
 
 That's it! TagoCore is up and running. ⚡
 
+<img className="big-image" src="/docs_imagem/tagocore/welcome/initial-screen.png" height="300px" />
+
 Now that you have access to the system, it's time to understand some of the resources in TagoCore.
 
 ### Devices
 
 Devices are the link between the data in your TagoCore and your devices in the real world. For a physical device to
-send data to TagoCore, you must create a new Device in the application. [Learn more about Devices](/tagocore/device).
-
-### Buckets
-
-Buckets are where the data from your Devices are stored. When a Device is created, TagoCore automatically creates a
-bucket for it with the same name. When you delete a Device, its Bucket is deleted automatically.
-[Learn more about Buckets](/tagocore/bucket).
+send data to TagoCore, you must create a new Device in the application. [Learn more about Devices](/docs/tagocore/device).
 
 ### Analyses
 
 Analyses allow you to implement scripts to analyze and manipulate data from any device in real-time. You can combine
 Analyses with Actions to execute an Analysis as soon as an event defined by you happens.
 
-Check out our [Analysis Overview](/tagocore/analysis) to learn more about Analyses.
+Check out our [Analysis Overview](/docs/tagocore/analysis) to learn more about Analyses.
 
 ### Actions
 
@@ -54,11 +50,11 @@ you to use:
 - Sending Data to TagoIO;
 - ...And many more via Plugins.
 
-Check out our [Action Overview](/tagocore/action) to learn more.
+Check out our [Action Overview](/docs/tagocore/action) to learn more.
 
 ### Plugins
 
 Plugins are extensions that allow developers to add or modify TagoCore functionalities. You can develop your own
 plugin or install plugins from other developers by using the Plugin Store.
 
-If you are interested in Plugins, you should take a look in our [Plugin Overview](/tagocore/plugins) article.
+If you are interested in Plugins, you should take a look in our [Plugin Overview](/docs/tagocore/plugins) article.

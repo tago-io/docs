@@ -13,9 +13,9 @@ Your **Plugin should have at least one module**.
 
 We currently offer these types of Modules for you to use in your Plugin:
 
-- [Payload Encoder Module](/tagocore/plugins/create/encoder) - To encode data before reaching a Bucket;
-- [Service Module](/tagocore/plugins/create/service) - To create a service that runs code;
-- [Action Trigger Module](/tagocore/plugins/create/action-trigger) - To create a new trigger for Actions;
+- [Payload Encoder Module](/docs/tagocore/plugins/create/encoder) - To encode data before reaching a Device;
+- [Service Module](/docs/tagocore/plugins/create/service) - To create a service that runs code;
+- [Action Trigger Module](/docs/tagocore/plugins/create/action-trigger) - To create a new trigger for Actions;
 - Action Type Module - To create a new type for Actions;
 - Database Module - To create a database that will save TagoCore data.
 
@@ -39,11 +39,13 @@ new ServiceModule(setup);
 
 ## Payload Encoder Module
 
-This Module allows you to encode data before it reaches a bucket. Learn more about it [here](/tagocore/plugins/create/encoder).
+This Module allows you to encode data before it reaches a device. Learn more about it [here](/docs/tagocore/plugins/create/encoder).
 
 <Mermaid chart={`
 graph LR
     A[Device sends data] --> B[Payload Encoder]
     B[Payload Encoder] --> C[Payload Parser]
-    C[Payload Parser] --> D[Data added to Bucket]
+    C[Payload Parser] --> D[Data added to Device]
+
+    classDef default fill:#333,stroke:#333,stroke-width:2px,color:#fff,font-weight:bold
 `}/>
