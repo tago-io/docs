@@ -3,7 +3,7 @@ title: "Entities"
 description: "A concise overview of the TagoIO Entities feature, explaining its purpose, typical use cases, and instructions for creating a new Entity in the Admin interface."
 tags: ["tagoio"]
 ---
-The Entity feature is an excellent tool for storing data in a tabular format. Unlike the [Devices](../devices/devices) feature, which is optimized for storing sensor data with high-frequency write operations, the Entity feature provides a versatile solution for managing a wider variety of data types with less frequent writes.
+The Entity feature is an excellent tool for storing data in a tabular format. Unlike the [Devices](../devices/index) feature, which is optimized for storing sensor data with high-frequency write operations, the Entity feature provides a versatile solution for managing a wider variety of data types with less frequent writes.
 
 Within an Entity, you can create custom fields similar to columns in a traditional database and define specific data types. You can also improve search and retrieval performance by implementing single or multiple indexes. Entities are well suited to store diverse data such as site information, organizational metadata, contact lists, equipment details, and product information.
 
