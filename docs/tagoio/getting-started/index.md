@@ -12,9 +12,7 @@ Welcome to TagoIO! Here are some options to get started.
 3. Go deeper by following the video below.
 
 ## Introductory video
-![TagoIO Getting Started video](/docs_imagem/tagoio/throw-miA.gif)
-
-_Tag title displayed in the video player: "TagoIO | Getting Started"_
+<YouTube videoId="HJClC9dbZcM" title="TagoIO | Getting Started" />
 
 ---
 
