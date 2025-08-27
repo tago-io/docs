@@ -2,6 +2,7 @@
 title: "Custom Domain Configuration"
 description: "This article explains how to configure a custom domain for your TagoIO Run portal using the Custom Domain & Whitelabel add-on, including prerequisites and how to add the domain in the Run module."
 tags: ["tagoio"]
+sidebar_position: 2
 ---
 The Custom Domain & Whitelabel add‑on lets you promote your organization’s brand using a custom URL for your Run portal. Configuring your Custom Domain is straightforward, but there are a few requirements to make it work.
 
