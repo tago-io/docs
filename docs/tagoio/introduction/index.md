@@ -8,10 +8,12 @@ slug: /tagoio
 
 TagoIO is a comprehensive IoT platform that enables you to connect, manage, and analyze data from IoT devices worldwide.
 
+<DocCardList />
+
 ## Key Features
 
 - **Device Management** - Connect and manage thousands of devices
-- **Data Visualization** - Create stunning dashboards and reports  
+- **Data Visualization** - Create stunning dashboards and reports
 - **Real-time Analytics** - Process and analyze data in real-time
 - **Automation** - Build powerful automation workflows
 - **APIs & Integrations** - Extensive API and third-party integrations
