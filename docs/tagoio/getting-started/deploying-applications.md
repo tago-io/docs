@@ -2,6 +2,7 @@
 title: "Deploying Applications"
 description: "This article provides a short video overview and guidance for deploying applications with TagoIO, including automating device registration and dashboard creation and creating multiple devices via CSV upload."
 tags: ["tagoio"]
+sidebar_position: 3
 ---
 Watch this video to learn how to work with TagoIO to deploy your solution easily.
 

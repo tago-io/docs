@@ -2,6 +2,7 @@
 title: "Building Solutions"
 description: "This article explains how to begin building applications on TagoIO using your own or third-party devices, simulators, or external databases, and how to integrate with external services; it also includes an introductory video and links to getting-started resources."
 tags: ["tagoio"]
+sidebar_position: 2
 ---
 You can start building your application using your own devices, third-party devices, simulators, or an external database.
 
