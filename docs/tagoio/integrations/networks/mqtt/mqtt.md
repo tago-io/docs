@@ -1,7 +1,8 @@
 ---
-title: "MQTT"
+title: "MQTT Overview"
 description: "A brief introduction to TagoIO's MQTT support, including availability restrictions, an overview of the MQTT protocol, and a diagram showing data flow between devices and the TagoIO MQTT broker."
 tags: ["tagoio"]
+sidebar_position: 1
 ---
 ## Important notice
 

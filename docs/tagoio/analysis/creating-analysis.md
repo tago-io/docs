@@ -2,6 +2,7 @@
 title: "Creating Analysis"
 description: "This article explains how to create a new Analysis in TagoIO, including the fields in the Add Analysis dialog and the options for runtime and execution environment."
 tags: ["tagoio", "analysis"]
+sidebar_position: 1
 ---
 Creating your own analysis is easy. First, click on **Analysis** in the sidebar, then click the **+ Add Analysis** button in the upper‑right of the Analysis main screen. Enter a name and configure the options described below to create your analysis.
 

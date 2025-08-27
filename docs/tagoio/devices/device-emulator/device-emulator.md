@@ -2,6 +2,7 @@
 title: "Device Emulator"
 description: "A short guide describing TagoIO's Device Emulator, how to open it, and the types of payloads it accepts for emulating device data."
 tags: ["tagoio", "devices"]
+sidebar_position: 1
 ---
 The device emulator is a tool for developers to send data as if it were coming from a real device. The emulator is intuitive and requires just a few clicks to validate and send your data package.
 

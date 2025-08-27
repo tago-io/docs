@@ -1,3 +1,4 @@
+
 ---
 title: "PDF Service Generator"
 description: "This article explains how to generate PDF documents using the TagoIO PDF service generator by making an HTTP POST request and receiving a base64-encoded PDF. It documents the endpoint, required headers, request body fields, and size limitations."

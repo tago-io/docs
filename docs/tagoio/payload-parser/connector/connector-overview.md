@@ -2,6 +2,7 @@
 title: "Connector Overview"
 description: "This article explains what Connectors are in TagoIO, how they manage device communication and payload parsing, and how to create a new connector via the Connector management page."
 tags: ["tagoio"]
+sidebar_position: 1
 ---
 Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/payload-parser) for details about parsers and decoding.
 

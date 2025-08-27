@@ -2,6 +2,7 @@
 title: "Defining Actions"
 description: "This article explains how to define Actions in TagoIO, including how to configure push notifications to yourself and references for using message variables."
 tags: ["tagoio", "actions"]
+sidebar_position: 1
 ---
 Actions are initiated based on specific conditions and can execute a variety of tasks. The first step in configuring an Action is to specify the desired action. Below are the different types of actions available:
 
