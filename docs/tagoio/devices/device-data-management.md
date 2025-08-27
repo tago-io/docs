@@ -2,6 +2,7 @@
 title: "Device data management"
 description: "This article explains how to use the Device page in TagoIO to visualize, filter, edit, import, and export device variables, and describes how the platform displays the amount of stored data for a device."
 tags: ["tagoio", "devices"]
+sidebar_position: 4
 ---
 The device page provides tools for visualizing, filtering, editing, importing, and exporting variables to facilitate management of the data received from your device. You can access these tools by navigating to the Device module, selecting a device, and clicking on the "Data" tab. Refer to the Device module documentation for navigation details.
 
