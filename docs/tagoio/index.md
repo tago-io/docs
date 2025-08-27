@@ -1,5 +1,5 @@
 ---
-title: "TagoIO Platform"
+title: "Introduction"
 description: "Complete IoT platform for device management, data visualization, and automation"
 slug: /tagoio
 sidebar_position: 1

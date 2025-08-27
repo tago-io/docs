@@ -3,8 +3,6 @@ title: "Middleware"
 description: "This article explains how TagoIO middleware connects devices using custom protocols by acting as a protocol converter to the TagoIO APIs, and points to related documentation and community resources for setup and examples."
 tags: ["tagoio"]
 ---
-## Overview
-
 Through a TagoIO middleware, companies can connect devices that use their own protocols. The middleware acts as a protocol converter from any transport type (for example, TCP/IP, UDP, etc.) to the standard TagoIO APIs.
 
 For more detailed steps on implementing middleware, see [Creating a Networks Integration](/tagoio/integrations/creating-a-network-integration).

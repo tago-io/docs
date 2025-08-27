@@ -3,8 +3,6 @@ title: "Add-ons Overview"
 description: "A brief overview of TagoIO add-ons, how they apply to profiles, and the currently available add-ons with links to their documentation."
 tags: ["tagoio"]
 ---
-## Overview
-
 On top of the fundamental IoT services provided to run your applications, additional add-on modules are available to customize your application using TagoRUN. Add-ons are applied separately to each of your Profiles.
 
 ## Enabling add-ons

@@ -1,8 +1,7 @@
 ---
-title: "Map Widget Overview"
+title: "Map Widget"
 description: "Learn how to use the Map Widget to visualize location variables of your device on a map, customize visualization with icons, pins, images, links, geofences, filters and more."
 tags: ["tagoio", "widgets"]
-"sidebar_position": 1
 ---
 
 # Map Widget

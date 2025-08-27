@@ -1,10 +1,9 @@
 ---
-title: "Custom Domain Overview"
+title: "Custom Domain (Whitelabel)"
 description: "This article explains what the Custom Domain & Whitelabel add-on enables in the Run module, including setting a custom application URL and a custom email domain, plus links to related add-ons and documentation."
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-## Overview
 Adding the Custom Domain & Whitelabel add-on unlocks additional branding and URL customization options for the Run module (see Run module documentation).
 
 ![TagoIO custom domain illustration](/docs_imagem/tagoio/custom-domain-whitelabel-2.gif)

@@ -4,7 +4,6 @@ description: "This article explains how to configure Permissions for Targets in 
 tags: ["tagoio"]
 sidebar_position: 4
 ---
-## Overview
 You need to set up Permissions to define which types of resources your Targets will be allowed or denied access to.
 
 The resources available to grant permission depend on the Target you select, and the rules available depend on the resource selected. See [Defining Targets](../defining-targets).

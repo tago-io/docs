@@ -2,6 +2,7 @@
 title: "Using the Device Emulator"
 description: "This article explains how to use the TagoIO Device Emulator to send test payloads to your applications, the supported payload formats, and how to convert non-JSON data using a Payload parser."
 tags: ["tagoio", "devices"]
+sidebar_position: 1
 ---
 If you want a quick way to send data to your applications but don't have your hardware device available, or you simply need to send data to debug your applications, you can use the Device Emulator.
 
