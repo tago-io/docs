@@ -25,7 +25,7 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 ### Blueprint Dashboards
 
-From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **'Data From'** on the right menu, add the [Blueprint device](../../devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## On this page

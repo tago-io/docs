@@ -8,7 +8,7 @@ The Formula feature enables users to modify the visualization of data in specifi
 <!-- Image placeholder removed for build -->
 
 ## How it works
-The system receives input data from a variable in your [Device](/tagoio/devices/devices), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
+The system receives input data from a variable in your [Device](../../devices/index), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
 
 Example flow:
 - Input value: 10
@@ -107,7 +107,7 @@ or
 More options are available in the dropdown list of the Formula field.
 
 ### Units for output variables
-After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/tagoio/displaying-units).
+After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](../../displaying-units).
 
 ### Minimum and Maximum limits
 The formula does not adjust the widget’s data range. The Min and Max values are still controlled by the settings in the **Data Range** tab.
@@ -126,6 +126,6 @@ Dynamic Formulas allow formulas to adapt based on user preferences or browser se
 Dynamic Formulas are especially useful for letting users choose units (Celsius, Fahrenheit, Kelvin) or other display options that automatically adjust across dashboards.
 
 ## Related sections
-- See [Simple Formulas](/tagoio/widgets/widgets-overview)
-- See [Dynamic Formulas](/tagoio/custom-settings)
+- See [Simple Formulas](../../widgets/index)
+- See [Dynamic Formulas](../../custom-settings)
 - For more details about device data, configuration, and related topics, refer to the Device and Widgets documentation within the TagoIO knowledge base.

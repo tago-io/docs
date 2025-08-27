@@ -19,7 +19,7 @@ Analyses can be triggered by Actions (schedule or condition), by Dashboard UI el
 ## Environments
 Analyses run in TagoIO as an asynchronous, serverless service. There’s no strict queue order, and multiple executions can run at the same time. Usage counts against your profile’s Analysis Run limits.
 
-If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](/tagoio/sdk/nodejs-sdk) for Deno/Node.js, as well as a [Python SDK](/tagoio/sdk/python-sdk) to help with local development, packaging, and deployment.
+If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](../sdk/nodejs-sdk) for Deno/Node.js, as well as a [Python SDK](../sdk/python-sdk) to help with local development, packaging, and deployment.
 
 ## Runtimes
 TagoIO supports three runtimes for Analysis. Each runtime has different approaches to dependency management and development workflows.
@@ -82,15 +82,15 @@ Here’s the short path to get an Analysis running:
    In your Admin, go to the [Analysis module](https://admin.tago.io/analysis), create an analysis and choose a runtime: Deno, Node.js, or Python based on your stack and dependency needs.
 
 2. **Grant the needed permissions to your analysis.**  
-   When you create an analysis, it doesn’t have the needed permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](/tagoio/security/creating-a-policy).
+   When you create an analysis, it doesn’t have the needed permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](../security/creating-a-policy).
 
 3. **Code your script**  
    Use the [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk) for your runtime to read/write data, call external APIs, and log output. Keep functions idempotent when possible.
 
 4. **Add triggers (optional)**  
-   1. [Actions](/tagoio/actions/actions): schedule (cron) or condition (e.g., variable thresholds)  
-   2. [Dashboards](/tagoio/dashboards/dashboard-overview): buttons, inputs, or other UI hooks  
-   3. [External](/tagoio/analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
+   1. [Actions](../actions/actions): schedule (cron) or condition (e.g., variable thresholds)  
+   2. [Dashboards](../dashboards/dashboard-overview): buttons, inputs, or other UI hooks  
+   3. [External](../analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
 
 5. **Run and monitor**  
    Execute on demand to test, then let triggers handle it. Check logs, run history, and usage.
@@ -101,10 +101,10 @@ Here’s the short path to get an Analysis running:
   - Getting Started (see [Getting Started](#getting-started))
 
 ## Analysis (related documentation)
-- [Analysis Overview](../analysis/analysis-overview)
+- [Analysis Overview](../analysis/index)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
-- [Script Examples](/tagoio/tutorials/script-examples)
+- [Script Examples](../tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
 - [Distributing analysis](../analysis/distributing-analysis)

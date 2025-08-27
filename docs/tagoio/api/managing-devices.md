@@ -129,4 +129,4 @@ DELETE - `https://api.<region>.tago.io/device/token/:token`
 }
 ```
 
-> **Note:** When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/tagoio/rate-limits-hard-limits).
+> **Note:** When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).

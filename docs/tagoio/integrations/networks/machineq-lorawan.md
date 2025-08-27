@@ -77,7 +77,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
    - For more information on available connectors and how to use them, refer to the Connector Overview.
 
-For detailed instructions on adding devices, visit the [Adding Devices](../devices/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../devices/index#Adding_devices) page.
 
 ## Finalizing Setup
 
@@ -86,16 +86,16 @@ For detailed instructions on adding devices, visit the [Adding Devices](../devic
 
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](../../live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating dashboards, adding notifications, and creating scripts to process your data.
 
-Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/tutorials/downlink-for-lorawan).
+Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](../../tutorials/downlink-for-lorawan).
 
 ## Notes and quick links
 - If you already have an authorization created and added to machineQ, you can skip Steps 2–3 and proceed to Step 4.
 - Where the article refers to “devices” or “authorization”, those are links to the corresponding TagoIO documentation sections:
-  - [devices](../devices/devices)
+  - [devices](../devices/index)
   - [authorization](../security/authorization)
 
 ## Related articles
@@ -103,4 +103,4 @@ Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/tagoio/tutori
 - [Loriot LoRaWAN](../tutorials/loriot-lorawan)
 - [Orbiwise LoRaWAN™](../tutorials/orbiwise-lorawan)
 - [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
-- [LoRaWAN Publication of Environmental Measurements](/tagoio/tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)
+- [LoRaWAN Publication of Environmental Measurements](../../tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)

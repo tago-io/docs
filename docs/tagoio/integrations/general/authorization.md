@@ -23,7 +23,7 @@ To generate an authorization and give an external service access to your devices
 2. In the next screen, enter a name you can identify later, fill any additional parameters requested by the integration, and press the Generate button.
    ![Generate Authorization screen showing name and parameters fields](/docs_imagem/tagoio/authorization-3.png)
 
-Only certain integrations require an **Additional Parameter**. Check out the [list of integrations](../integrations/connector-overview) to learn the parameter needed for each provider.
+Only certain integrations require an **Additional Parameter**. Check out the [list of integrations](../integrations/index) to learn the parameter needed for each provider.
 
 Once the authorization is created, you can copy and paste it into the external service portal.
 
@@ -34,4 +34,4 @@ How to use the authorization depends on the service that you are integrating. He
 - [Device Token](../devices/device-token)
 - [Managing Devices](../devices/managing-devices)
 - [Access Management](./access-management)
-- [Connector Overview](../integrations/connector-overview)
+- [Connector Overview](../integrations/index)

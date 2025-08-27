@@ -4,7 +4,7 @@ description: "This article explains how Blueprint Devices and Entities function 
 tags: ["tagoio", "devices"]
 sidebar_position: 3
 ---
-Blueprint Devices and [Entities](../entities/entities) serve as dynamic data sources for [Blueprint Dashboards](../dashboards/blueprint-dashboard). These dashboards let you change data sources dynamically while keeping the same widgets and configurations. By creating blueprint devices or entities, you define which data sources can be dynamically altered. The selected data sources appear in a dropdown menu at the top of a Blueprint Dashboard.
+Blueprint Devices and [Entities](../entities/index) serve as dynamic data sources for [Blueprint Dashboards](../dashboards/blueprint-dashboard). These dashboards let you change data sources dynamically while keeping the same widgets and configurations. By creating blueprint devices or entities, you define which data sources can be dynamically altered. The selected data sources appear in a dropdown menu at the top of a Blueprint Dashboard.
 
 <!-- Image placeholder removed for build -->
 
@@ -19,7 +19,7 @@ This feature is particularly beneficial when you want a single dashboard to be u
 
 ![Image 2: Notes](/docs_imagem/tagoio/file.png)
 
-To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/tagoio/data-management/tags-system).
+To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](../data-management/tags-system).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.
@@ -40,4 +40,4 @@ You can easily modify the appearance of your Blueprint and the behavior of the b
 
 ![Image 5](/docs_imagem/tagoio/external-c405fa26.png)
 
-For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](../dashboards/blueprint-dashboard) and [Visualization Settings](../widgets/widgets-overview).
+For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](../dashboards/blueprint-dashboard) and [Visualization Settings](../widgets/index).

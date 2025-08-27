@@ -36,7 +36,7 @@ All devices should use a valid [device-token](../devices/device-token) when acce
 ![Image 2](/docs_imagem/tagoio/token-cj4.gif)
 
 ### Step 2. Build a dashboard
-You can build great [dashboards](../dashboards/dashboard-overview) to visualize data, interact with your devices and share with others. You can build it with the [widgets](../widgets/widgets-overview) that best fit your needs.
+You can build great [dashboards](../dashboards/dashboard-overview) to visualize data, interact with your devices and share with others. You can build it with the [widgets](../widgets/index) that best fit your needs.
 
 1. Click **Dashboards** on the left side bar.
 2. Click **+**, then select the type of dashboard, give a name for your dashboard, and click **Save**.
@@ -46,7 +46,7 @@ You can build great [dashboards](../dashboards/dashboard-overview) to visualize 
 ![Image 3](/docs_imagem/tagoio/temp-3UQ.gif)
 
 ### Step 3. Send data
-Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](../api/api-overview). You can use one of our [SDKs](../sdk) designed for your platform.
+Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](../api/index). You can use one of our [SDKs](../sdk) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a server with HTTP. Below, you will learn how to quickly send data depending on the OS that you are using.
 
@@ -83,6 +83,6 @@ The response should look like this:
 ### Step 4. Create complete solutions
 This is just the beginning! Check out how powerful TagoIO is to deploy solutions in production.
 
-Create powerful [analysis](../analysis/analysis-overview) in real‑time using our script capabilities in JavaScript. Program [actions](../actions) to be taken based on your rules.
+Create powerful [analysis](../analysis/index) in real‑time using our script capabilities in JavaScript. Program [actions](../actions) to be taken based on your rules.
 
-Learn more about our powerful [API’s](../api/api-overview). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](../sdk) prepared for different boards and applications.
+Learn more about our powerful [API’s](../api/index). And check out the [tutorials](https://help.tago.io/portal/en/kb/tagoio/tutorials) and [SDKs](../sdk) prepared for different boards and applications.

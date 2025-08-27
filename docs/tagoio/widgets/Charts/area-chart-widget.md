@@ -25,7 +25,7 @@ Click on the **cog icon** to edit specific options for this variable, such as fo
 ![Image 3](/docs_imagem/tagoio/exclamation-4.png)
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](../../devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 ![Image 4](/docs_imagem/tagoio/info-8.png)
 

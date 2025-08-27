@@ -23,10 +23,10 @@ After making your adjustments click the **Build template** button to save the in
 It is always a good idea to access the link yourself before sharing to ensure the customized install page meets your standards.
 
 ## See also
-- [Analysis Overview](../analysis/analysis-overview)
+- [Analysis Overview](../analysis/index)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
-- [Script Examples](/tagoio/tutorials/script-examples)
+- [Script Examples](../tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
 - [Distributing analysis](../analysis/distributing-analysis) (this article)
@@ -38,4 +38,4 @@ It is always a good idea to access the link yourself before sharing to ensure th
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
 - [Distributing Dashboards](../dashboards/distributing-dashboards)
 - [Running Analysis via Action](../actions/actions)
-- [Analysis Overview](../analysis/analysis-overview)
+- [Analysis Overview](../analysis/index)

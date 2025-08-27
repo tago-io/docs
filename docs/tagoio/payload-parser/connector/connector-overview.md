@@ -4,7 +4,7 @@ description: "This article explains what Connectors are in TagoIO, how they mana
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/payload-parser) for details about parsers and decoding.
+Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/index) for details about parsers and decoding.
 
 ![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
 
@@ -31,9 +31,9 @@ After creating a connector you can define several optional parameters that will 
 | **Description** | A quick description of what the connector does. |
 | **Logo URL** | An image URL for the sensor or company logo (used when a device is created). |
 
-By default, a newly created connector is visible only to you. You can share it with other [Profiles](/tagoio/account/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/tagoio/integrations/sharing-connectors-networks).
+By default, a newly created connector is visible only to you. You can share it with other [Profiles](../../account/profiles) from different accounts. Read more about [Sharing Connectors & Networks](../../integrations/sharing-connectors-networks).
 
-If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](/tagoio/payload-parser/publishing-updating-and-accessing-decoders).
+If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](../../payload-parser/publishing-updating-and-accessing-decoders).
 
 ### Documentation
 
@@ -54,8 +54,8 @@ When a user creates a device with your connector, you can expose custom paramete
 - **Dropdown** – Users choose from predefined options.
 - **Switch** – Boolean on/off value.
 
-These values are available as global variables in the payload parser context (see the [Payload parser context overview](/tagoio/payload-parser/payload-parser-context-global-variables)).
+These values are available as global variables in the payload parser context (see the [Payload parser context overview](../../payload-parser/index-context-global-variables)).
 
 ### Payload parser
 
-The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](../payload-parser/payload-parser).
+The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](../payload-parser/index).

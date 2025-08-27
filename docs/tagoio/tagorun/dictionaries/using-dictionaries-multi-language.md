@@ -4,7 +4,7 @@ description: "This article explains how to use the Dictionary feature to deploy 
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Use the Dictionary to deploy applications to end-users (RUN users) in any language. All you have to do is to create a [dictionary](/tagoio/dictionaries), use the `#SLUG.KEY#` format in the texts that will be substituted, and then select the languages that should be available for your end-users.
+Use the Dictionary to deploy applications to end-users (RUN users) in any language. All you have to do is to create a [dictionary](../../dictionaries), use the `#SLUG.KEY#` format in the texts that will be substituted, and then select the languages that should be available for your end-users.
 
 ## Notes about language selection and plans
 
@@ -19,7 +19,7 @@ End-users can select the language in their applications.
 
 ## Importing and exporting dictionaries
 
-To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](/tagoio/import-export-for-dictionary).  
+To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](../../import-export-for-dictionary).  
 An auto‑complete feature is available to find Slugs and Keys as shown below.
 
 ## How to use dictionary keys
@@ -82,12 +82,12 @@ You can enable languages here: **[Dictionaries]** (link: https://admin.tago.io/d
 ## Dictionaries (related docs)
 
 - [Using Dictionaries & Multi-language](#) (this article)  
-- [Import & Export for Dictionary](/tagoio/import-export-for-dictionary)
+- [Import & Export for Dictionary](../../import-export-for-dictionary)
 
 ## Related articles
 
-- [Dictionaries](/tagoio/dictionaries)  
-- [Security and Protection for RUN users](/tagoio/account/security-and-protection-for-run-users)  
-- [Sidebar](/tagoio/sidebar)  
+- [Dictionaries](../../dictionaries)  
+- [Security and Protection for RUN users](../../account/security-and-protection-for-run-users)  
+- [Sidebar](../../sidebar)  
 - [Custom Settings](../tagoio/custom-settings)  
 - [Navigation bar](../tagoio/navigation-bar)

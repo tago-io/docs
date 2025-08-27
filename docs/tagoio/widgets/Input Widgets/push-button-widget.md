@@ -8,7 +8,7 @@ This widget works on both Normal and Blueprint dashboards.
 
 ![Push Button examples](/docs_imagem/tagoio/push-button-widget-2.png)
 
-You can also define an Analysis (script) to run when users change each state — see [Analysis](../../analysis/analysis-overview).  
+You can also define an Analysis (script) to run when users change each state — see [Analysis](../../analysis/index).  
 This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.
 
 ## Creating your own

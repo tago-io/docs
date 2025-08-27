@@ -24,8 +24,8 @@ TagoIO supports two-way communication with devices so they can both send and rec
 - [Support Team / Custom integrations](https://help.tago.io/portal/en/newticket)
 
 ## Related articles
-- [Device data management](/tagoio/devices/device-data-management)
-- [Sending Data](/tagoio/data-management/sending-data)
-- [MQTT - Process data, Publish it and Subscribe to a topic](/tagoio/mqtt-process-data-publish-it-and-subscribe-to-a-topic)
-- [Defining Actions](/tagoio/actions/defining-actions)
-- [Devices](/tagoio/devices/devices)
+- [Device data management](../devices/device-data-management)
+- [Sending Data](../data-management/sending-data)
+- [MQTT - Process data, Publish it and Subscribe to a topic](../mqtt-process-data-publish-it-and-subscribe-to-a-topic)
+- [Defining Actions](../actions/defining-actions)
+- [Devices](../devices/index)

@@ -17,11 +17,11 @@ All your dashboards are listed on the sidebar of the screen. On the top right yo
 There are two types of dashboards:
 
 - **Normal**: simply create a dashboard for pre-selected devices and variables.
-- [**Blueprint**](/tagoio/dashboards/blueprint-dashboard): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
+- [**Blueprint**](../dashboards/blueprint-dashboard): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
 
 ## Building dashboards
 
-To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](/tagoio/dashboards/distributing-dashboards).
+To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](../dashboards/distributing-dashboards).
 
 In this window, you can also switch the **Blueprint slider** to generate a Blueprint dashboard instead of a Normal one. Simply enter a name for your new dashboard and click **Save** to begin adding [Widgets](https://help.tago.io/portal/en/kb/tagoio/9-widgets).
 
@@ -35,7 +35,7 @@ In this window, you can also switch the **Blueprint slider** to generate a Bluep
 
 ## Dashboard Icons
 
-You can add [icons](/tagoio/dashboards/dashboard-icons) to your dashboard, making it look just the way that you want it.
+You can add [icons](../dashboards/dashboard-icons) to your dashboard, making it look just the way that you want it.
 
 <!-- Dashboard icons image -->
 
@@ -47,7 +47,7 @@ You can also edit the background color of the dashboards, or add images and anim
 
 <!-- Dashboard background settings image -->
 
-Although video formats are not accepted, you can upload animations using the **.gif** format as shown below. Images can be uploaded into our [Files](/tagoio/files).
+Although video formats are not accepted, you can upload animations using the **.gif** format as shown below. Images can be uploaded into our [Files](../files).
 
 <!-- Dashboard background example image -->
 

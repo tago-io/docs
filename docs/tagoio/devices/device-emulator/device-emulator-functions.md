@@ -3,7 +3,7 @@ title: "Device Emulator Functions"
 description: "This article explains how to use built-in functions in the Device Emulator payloads, shows JSON and CSV examples, and lists the available emulator functions and their behavior."
 tags: ["tagoio", "devices"]
 ---
-Functions are helper variables you can add to your payload when using the [Device Emulator](/tagoio/simulator-data-stream). Each function serves a specific purpose. To insert a function into your payload, click the `Functions` button and select the desired function.
+Functions are helper variables you can add to your payload when using the [Device Emulator](../../simulator-data-stream). Each function serves a specific purpose. To insert a function into your payload, click the `Functions` button and select the desired function.
 
 You can use functions in both JSON and Raw (CSV) payload types.
 
@@ -26,7 +26,7 @@ variable,value,time,serie
 temperature,$random$,2019-09-19,1568913302243
 ```
 
-(See also: [View Formatted Payload](/tagoio/simulator-data-stream#viewing-formatted-payload).)
+(See also: [View Formatted Payload](../../simulator-data-stream#viewing-formatted-payload).)
 
 ## List of functions
 

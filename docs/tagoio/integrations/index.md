@@ -5,9 +5,9 @@ tags: ["tagoio", "integration"]
 ---
 Your devices can always connect directly to the TagoIO API using HTTPS or MQTT. You can also connect devices to databases and web services, or translate data from other protocols, by using one of the following methods:
 
-1. Create a script that initiates access to external services using [Analysis](../analysis/analysis-overview). For example: get a weather forecast or read/write data in a Google Sheet.
-2. Use our [Network Integration](../integrations/connector-overview) prepared to connect and translate data from devices connected to providers such as LoRaWAN, Sigfox, or satellite, or that use different protocols such as TCP/IP or UDP.
-3. Create your own [Network Integration](../integrations/connector-overview) that can push data to TagoIO into the correct device based on its serial number, using your own protocol.
+1. Create a script that initiates access to external services using [Analysis](../analysis/index). For example: get a weather forecast or read/write data in a Google Sheet.
+2. Use our [Network Integration](../integrations/index) prepared to connect and translate data from devices connected to providers such as LoRaWAN, Sigfox, or satellite, or that use different protocols such as TCP/IP or UDP.
+3. Create your own [Network Integration](../integrations/index) that can push data to TagoIO into the correct device based on its serial number, using your own protocol.
 
 ## Device data flow
 
@@ -26,26 +26,26 @@ TagoIO provides network integrations fully hosted in different regions. Based on
 
 **For example, use everynet.middleware.us-e1.tago.io for Everynet network in the USA.**
 
-**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](/tagoio/services/data-input-service) operations. Network operations themselves do not generate any charges.
+**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](../services/data-input-service) operations. Network operations themselves do not generate any charges.
 
 ## Available Network Integrations
 
 For the second method above, here is a list of some Network Integrations ready to be used:
 
-- [Sigfox](/tagoio/tutorials/sigfox)
-- [MQTT](/tagoio/mqtt)
+- [Sigfox](../tutorials/sigfox)
+- [MQTT](../mqtt)
 - [Actility LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-actility-ns)
-- [Everynet LoRaWAN](/tagoio/tutorials/everynet-lorawan)
-- Kore Brazil LoRaWaN (select[Everynet](/tagoio/tutorials/everynet-lorawan))
+- [Everynet LoRaWAN](../tutorials/everynet-lorawan)
+- Kore Brazil LoRaWaN (select[Everynet](../tutorials/everynet-lorawan))
 - [Kerlink LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-kerlink-lorawan)
-- [Loriot LoRaWAN](/tagoio/tutorials/loriot-lorawan)
-- [machineQ LoRAWAN](/tagoio/tutorials/machineq-lorawan)
-- [Orbiwise LoRaWAN](/tagoio/tutorials/orbiwise-lorawan)
-- [Senet LoRaWAN](/tagoio/senet-network)
+- [Loriot LoRaWAN](../tutorials/loriot-lorawan)
+- [machineQ LoRAWAN](../tutorials/machineq-lorawan)
+- [Orbiwise LoRaWAN](../tutorials/orbiwise-lorawan)
+- [Senet LoRaWAN](../senet-network)
 - [Swisscom LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-swisscom-lorawan-ns)
 - [Tektelic LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tektelic-network-server-with-tagoio)
 - [TTI/TTN V3 LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-ttn-v3)
-- [TTN LoRaWAN](/tagoio/tutorials/the-things-network-lorawan)
+- [TTN LoRaWAN](../tutorials/the-things-network-lorawan)
 - [Chirpstack LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-chirpstack-lorawan)
 - [Helium LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-helium)
 - [CityKinect LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-citykinect-lorawan-21-1-2022)

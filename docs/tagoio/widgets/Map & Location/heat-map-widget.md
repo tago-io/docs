@@ -35,7 +35,7 @@ The widget supports three types of background images:
    ![Conditional image example](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-23-2019-51-03-Op0.png)  
 3. **Dynamic** – the image URL comes from variable data.
 
-> You can store images in TagoIO’s [file system](/tagoio/files) and use a public URL.
+> You can store images in TagoIO’s [file system](../../files) and use a public URL.
 
 ### Bubble position
 
@@ -65,4 +65,4 @@ You can also set coordinates directly in the widget editor. If metadata is not p
 You can define a custom range for the heat bar that appears at the bottom of the image. By default, the scale is generated automatically from your variable values.  
 The scale determines which color corresponds to each value; even if you hide the heat bar, bubbles will still respect this mapping.
 
-> The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/tagoio/gauge-data-range-format).
+> The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](../../gauge-data-range-format).

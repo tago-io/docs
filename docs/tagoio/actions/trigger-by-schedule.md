@@ -3,7 +3,7 @@ title: "Trigger by Schedule"
 description: "This article explains the \"Trigger by Schedule\" trigger type in TagoIO, describing its two categories (By Interval and By Date) and how to customize date-based schedules using basic or advanced (cron) methods."
 tags: ["tagoio"]
 ---
-The trigger type Trigger by Schedule lets you define a time interval to execute your Actions automatically. See [Actions](/tagoio/actions/actions) for details about configuring Actions.
+The trigger type Trigger by Schedule lets you define a time interval to execute your Actions automatically. See [Actions](../actions/index) for details about configuring Actions.
 
 There are two categories within this trigger type:
 

@@ -28,4 +28,4 @@ You should select a limit that you are sure your application will not exceed dur
 
 ![Image 2](/docs_imagem/tagoio/info-8.png)
 
-Rate limits are applied to a wide range of interactions within the platform, including data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP). Read more about our [Rate Limits](/tagoio/rate-limits-hard-limits).
+Rate limits are applied to a wide range of interactions within the platform, including data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP). Read more about our [Rate Limits](../rate-limits-hard-limits).

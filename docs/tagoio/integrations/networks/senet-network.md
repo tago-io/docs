@@ -13,13 +13,13 @@ The integration is accomplished in two parts:
 
 ## 1) TagoIO Setup
 
-First, go to the [Devices](/tagoio/devices/devices) module in our admin, look for Senet, and select it.
+First, go to the [Devices](../../devices/index) module in our admin, look for Senet, and select it.
 
 ![Connector selection showing the Senet connector in the Devices module](/docs_imagem/tagoio/senet-network-4.png)
 
 ### Create Device
 
-Type a name for your device, select a **[data storage type](/tagoio/devices/devices)** and define a **[Data Retention](/tagoio/data-management/data-retention-feature)**, then click on *Create device*.
+Type a name for your device, select a **[data storage type](../../devices/index)** and define a **[Data Retention](../../data-management/data-retention-feature)**, then click on *Create device*.
 
 ![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
 
@@ -42,7 +42,7 @@ Go to **"Notification Target"**. Make sure the status is *Enabled*, select **HTT
 | Field | Description |
 |-------|-------------|
 | **Name** | Enter a unique identifier (e.g., `tagoio-integration`). |
-| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/tagoio/integrations/network-integration)**. |
+| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](../../integrations/network-integration)**. |
 | **Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Optional Data Fields** | Enable *RF Data* and any other optional field you would like to receive in your device. |
 

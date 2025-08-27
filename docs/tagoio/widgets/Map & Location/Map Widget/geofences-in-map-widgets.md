@@ -26,7 +26,7 @@ Geofences allow developers to color parts of the map and detect or trigger event
 ## Related articles
 - See [Map Widget](../Map & Location/Map Widget/map-widget)
 - See [Image Marker Widget](../Map & Location/image-marker-widget)
-- See [Trigger by Geofence](/tagoio/trigger-by-geofence)
+- See [Trigger by Geofence](../../../trigger-by-geofence)
 - See [Compose Widget](../Media Widgets/compose-widget)
 - See [Custom Widget](../Custom Widget/custom-widget)
 

@@ -11,7 +11,7 @@ The Control Tower is an add‑on designed to enhance your profile by providing a
 
 These features let you obtain comprehensive information about your device's activities and the consumption of your Hard Limits. That understanding of your application's performance helps you prevent reaching limits that could interrupt your application's operation due to account limitations. Control Tower was developed to improve the reliability, scalability, and efficiency of your application.
 
-Activate the Control Tower add‑on on your [Billing page](/tagoio/billing/account-plans), or check out our [Pricing Page](https://tago.io/pricing).
+Activate the Control Tower add‑on on your [Billing page](../billing/account-plans), or check out our [Pricing Page](https://tago.io/pricing).
 
 ## View your device statistics
 
@@ -30,7 +30,7 @@ Control Tower allows you to set custom request rate limits for your profile or i
 There are two types of limits:
 
 - **Hard limits** – fixed limits that apply to all accounts, determined by your plan.  
-  You can read more about them in the [Rate Limits (Hard limits)](/tagoio/rate-limits-hard-limits) documentation.
+  You can read more about them in the [Rate Limits (Hard limits)](../rate-limits-hard-limits) documentation.
 - **Soft limits** – flexible limits that you can customize. They let you control the input and output of your profile or devices and prevent excessive consumption.
 
 > **Important:** Soft limits cannot exceed the hard limits defined by your plan.  
@@ -41,7 +41,7 @@ You can apply a soft rate limit to:
 - **Your whole profile** – all devices in the profile follow this limit.  
   To set it, navigate to your Admin page → [Profiles & Teams](https://admin.tago.io/profile) → “More” tab.
 - **A specific device** – overrides the profile limit for that device.  
-  To set it, go to the [Devices](/tagoio/devices/devices) module, select the desired device, and click the “More” tab.
+  To set it, go to the [Devices](../devices/index) module, select the desired device, and click the “More” tab.
 
 ### Monitor your request per minute statistics
 
@@ -51,13 +51,13 @@ In the advanced statistics view, you can filter by date and time and focus on sp
 
 > **Graph behavior:** The graph always displays a minimum value of 25 % for usage, even if the actual usage falls below this threshold. If usage is 0 %, it will still be represented as 25 %.
 
-Activate now the Control Tower add‑on on your [Billing page](/tagoio/billing/account-plans), or check out our [Pricing Page](https://tago.io/pricing) for more information.
+Activate now the Control Tower add‑on on your [Billing page](../billing/account-plans), or check out our [Pricing Page](https://tago.io/pricing) for more information.
 
 Links and references in this article:
-- "add‑on" — see [add‑on documentation](/tagoio/add-ons-overview)
-- "Hard Limits (Rate Limits)" — see [Rate Limits (Hard limits)](/tagoio/rate-limits-hard-limits)
-- "Device" — see [Devices](/tagoio/devices/devices)
-- "account limitations" — see [account limitations](/tagoio/billing/account-plans#limitations)
-- "Billing page" — [Billing page](/tagoio/billing/account-plans)
+- "add‑on" — see [add‑on documentation](../add-ons-overview)
+- "Hard Limits (Rate Limits)" — see [Rate Limits (Hard limits)](../rate-limits-hard-limits)
+- "Device" — see [Devices](../devices/index)
+- "account limitations" — see [account limitations](../billing/account-plans#limitations)
+- "Billing page" — [Billing page](../billing/account-plans)
 - "Pricing Page" — [Pricing Page](https://tago.io/pricing)
-- "Devices module" and "Admin" — see [Devices module in Admin](/tagoio/devices/devices) and [Admin documentation](getting-started)
+- "Devices module" and "Admin" — see [Devices module in Admin](../devices/index) and [Admin documentation](getting-started)

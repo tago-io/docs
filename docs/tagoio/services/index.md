@@ -37,7 +37,7 @@ TagoIO will send warning emails and push notifications when a service usage exce
 
 - See [Profile](../account/profiles) for profile configuration and management.
 - Services reference:
-  - [Analysis Service](/tagoio/analysis/analysis-service)
+  - [Analysis Service](../analysis/analysis-service)
   - [Data Input Service](../services/data-input-service)
   - [Data Output Service](../services/data-output-service)
   - [E-mail Service](../services/e-mail-service)
@@ -46,7 +46,7 @@ TagoIO will send warning emails and push notifications when a service usage exce
   - [Notification Service](../services/notification-service)
   - [SMS Service](../services/sms-service)
 - Other helpful articles:
-  - [Analysis Overview](../analysis/analysis-overview)
+  - [Analysis Overview](../analysis/index)
   - [Profiles](../account/profiles)
   - [Defining Actions](../actions/actions)
   - [Dashboard Overview](../dashboards/dashboard-overview)

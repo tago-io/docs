@@ -6,7 +6,7 @@ tags: ["tagoio"]
 TagoIO is ready to receive data from and send data to Sigfox devices. The downlink is used to send data back to the device every time it checks in — the data to be sent should be prepared prior to that check‑in. This article explains how to set up a downlink.
 
 > ⚠️ It's essential to carefully follow all the steps outlined in the Sigfox network documentation in order to send downlinks. The completion of Step D is crucial so that TagoIO can accurately authenticate your downlink.  
-> See [Sigfox network documentation](../integrations/connector-overview) or the original guide at [TagoIO Sigfox](/tagoio/tutorials/sigfox)
+> See [Sigfox network documentation](../integrations/index) or the original guide at [TagoIO Sigfox](../tutorials/sigfox)
 
 ![Downlink diagram](/docs_imagem/tagoio/sigfox-downlink-2.png)
 
@@ -98,4 +98,4 @@ Go to the Sigfox portal and perform the following steps:
 
 Your downlink integration is completed.
 
-You can also send data from your **Dashboard** using the [Input Form widget](/tagoio/widgets/input-form-widget). A script to perform a write in the parameter tab must be created using the [Analysis](/tagoio/analysis/analysis-overview).
+You can also send data from your **Dashboard** using the [Input Form widget](../widgets/input-form-widget). A script to perform a write in the parameter tab must be created using the [Analysis](../analysis/index).

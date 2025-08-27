@@ -29,7 +29,7 @@ Follow these steps to set up the Sigfox backend and TagoIO.
 - [Adeunis with Sigfox](../tutorials/adeunis-with-sigfox)
 - [Thinxtra Xkit for Sigfox](../tutorials/thinxtra-xkit-for-sigfox)
 - [Sigfox - Downlink](../tutorials/sigfox-downlink)
-- [Network Integration](../integrations/connector-overview)
+- [Network Integration](../integrations/index)
 
 ## Step 1: Create Authorization in TagoIO
 
@@ -49,7 +49,7 @@ Follow these steps to set up the Sigfox backend and TagoIO.
 ## Step 2: Set Up Integration in Sigfox
 
 On the Sigfox Backend Portal, create a **callback** of type `_uplink_`. We will use the **Data Uplink** option to obtain the basic information in the messages.  
-If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](/tagoio/tutorials/sigfox-using-advanced-data).
+If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](../tutorials/sigfox-using-advanced-data).
 
 1. **Create a new callback**  
    Go to your Sigfox console and create a new callback under the menu:  
@@ -100,9 +100,9 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
 
 3. **Add Device Support via Connectors (If Necessary)**  
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
-   - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/connector-overview).
+   - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/index).
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../devices/index#Adding_devices) page.
 
 ## Finalizing Setup
 
@@ -111,8 +111,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the *Device* and into the *Data* tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real‑time.
+   - Alternatively, use the [Live Inspector](../live-inspector) within your device settings to monitor incoming data in real‑time.
 
 Information about Downlink can be found at the [Sigfox - Downlink](../tutorials/sigfox-downlink) documentation.
 
-You also can [create your own parse scripts](/tagoio/payload-parser/building-your-own-parser) to process variables from the payload.
+You also can [create your own parse scripts](../payload-parser/building-your-own-parser) to process variables from the payload.

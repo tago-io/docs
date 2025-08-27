@@ -7,7 +7,7 @@ The Chunk Management feature lets you view and manage the data of Immutable devi
 
 ## Accessing Chunk Management
 
-Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](../devices/devices#immutable-devices) and [Device](../devices/devices) for details on device types and the Device module.
+Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](../devices/index#immutable-devices) and [Device](../devices/index) for details on device types and the Device module.
 
 <!-- Image placeholder removed for build -->
 
@@ -48,7 +48,7 @@ When exporting a chunk, you can activate the **Include Header** option to add co
 
 ### How exporting is billed
 
-Exporting data consumes the [Data Output service](/tagoio/services/data-output-service). The number of transactions billed is rounded to the next multiple of 10 000. For example:
+Exporting data consumes the [Data Output service](../../services/data-output-service). The number of transactions billed is rounded to the next multiple of 10 000. For example:
 
 1. Exporting 700 registers will consume 10 000 data output transactions.  
 2. Exporting 12 000 registers will consume 20 000 data output transactions.  
@@ -59,7 +59,7 @@ The billing scheme above does not apply when fetching data using the API; for ex
 
 ## Delete chunks
 
-You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](/tagoio/security/audit-log).
+You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](../../security/audit-log).
 
 ## Automation
 

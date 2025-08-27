@@ -5,10 +5,10 @@ tags: ["tagoio"]
 ---
 > **Note**
 >
-> - TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European database region accounts cannot access this service due to new security requirements, but may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/connecting-your-mqtt-broker-to-tagoio) feature. Free accounts can access MQTT functionality through the MQTT Relay.
+> - TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European database region accounts cannot access this service due to new security requirements, but may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](../../../integrations/connecting-your-mqtt-broker-to-tagoio) feature. Free accounts can access MQTT functionality through the MQTT Relay.
 > - For EU accounts, a public MQTT broker without SLA guarantees is planned for the future. The main purpose of this broker will be for proof‑of‑concept testing.
 
-You can publish to your MQTT topics by coding a script that runs from an [Analysis](/tagoio/analysis/analysis-overview). When the Analysis runs, your script can publish a topic that will be received by any device subscribed to that specific topic. An Analysis can be started in different ways: by timer, by an [Action](actions/actions), or by another Analysis. The diagram below illustrates the data flow from an Analysis to the MQTT network.
+You can publish to your MQTT topics by coding a script that runs from an [Analysis](../../../analysis/index). When the Analysis runs, your script can publish a topic that will be received by any device subscribed to that specific topic. An Analysis can be started in different ways: by timer, by an [Action](actions/actions), or by another Analysis. The diagram below illustrates the data flow from an Analysis to the MQTT network.
 
 ![MQTT publish/subscribe diagram](/docs_imagem/tagoio/mqtt-publishing-and-subscribing-2.png)
 
@@ -29,7 +29,7 @@ You can create an [Action](actions/actions) and attach it to any specific topic 
 
 <!-- Image temporarily disabled: Action example - /cdn.elev.io/file/uploads/pmfKQdI17QsonYtKqFR0lo14i0mduRrZCtXE2bzClic/V6qqrtoqow2xmYBCAXSAPiLPUuftZotTvMGTz_dq0W8/1588011165303-pog.png -->
 
-The payload can be sent directly to your [bucket](/tagoio/devices/device-data-management), trigger an Analysis, or be delivered via SMS or E‑mail.
+The payload can be sent directly to your [bucket](../../../devices/device-data-management), trigger an Analysis, or be delivered via SMS or E‑mail.
 
 If you send the payload in JSON format, the TagoIO backend automatically adds a `metadata` field with a child field called **topic**.  
 For raw payloads, transform your data into the TagoIO JSON format by wrapping it in a variable named **payload** and placing the raw data under **value**; this will also add the same `metadata.topic` field.

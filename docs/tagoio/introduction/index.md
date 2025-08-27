@@ -21,27 +21,27 @@ TagoIO is a comprehensive IoT platform that enables you to connect, manage, and 
 ## Documentation Sections
 
 ### Getting Started
-- [Platform Overview](/tagoio/getting-started)
-- [Account Setup](/tagoio/account/editing-accounts-details)
-- [First Device Connection](/tagoio/devices/devices)
+- [Platform Overview](../getting-started)
+- [Account Setup](../account/editing-accounts-details)
+- [First Device Connection](../devices/index)
 
 ### Core Features
-- [Devices](/tagoio/devices/devices) - Device management and configuration
-- [Dashboards](/tagoio/dashboards) - Data visualization and reporting
-- [Actions](/tagoio/actions/actions) - Automation and triggers
-- [Analysis](/tagoio/analysis/analysis-overview) - Custom scripts and processing
+- [Devices](../devices/index) - Device management and configuration
+- [Dashboards](../dashboards) - Data visualization and reporting
+- [Actions](../actions/actions) - Automation and triggers
+- [Analysis](../analysis/index) - Custom scripts and processing
 
 ### Advanced Features
-- [API Integration](/tagoio/api/api-overview) - REST API documentation
-- [Widgets](/tagoio/widgets) - Custom dashboard components
-- [Services](/tagoio/services/services-overview) - External service integrations
-- [Files](/tagoio/files) - File management system
+- [API Integration](../api/index) - REST API documentation
+- [Widgets](../widgets) - Custom dashboard components
+- [Services](../services/services-overview) - External service integrations
+- [Files](../files) - File management system
 
 ### Account Management
-- [Profiles](/tagoio/account/profiles) - User and permission management
-- [Billing](/tagoio/billing/billing-summary) - Plans and payment management
-- [Security](/tagoio/security) - Security and compliance
+- [Profiles](../account/profiles) - User and permission management
+- [Billing](../billing/billing-summary) - Plans and payment management
+- [Security](../security) - Security and compliance
 
 ---
 
-Ready to get started? Begin with our [Getting Started Guide](/tagoio/getting-started).
+Ready to get started? Begin with our [Getting Started Guide](../getting-started).

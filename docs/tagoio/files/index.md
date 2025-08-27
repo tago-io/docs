@@ -30,6 +30,6 @@ To use the files via **Admin**, go to *Files* in the left menu. From there you c
 - See [Uploading Files](uploading-files) for instructions on uploading files to TagoIO.
 - Related documentation:
   - [Services Overview](services/services-overview)
-  - [Device data management](/tagoio/data-management)
-  - [Dashboard Overview](/tagoio/dashboards/dashboard-overview)
-  - [Analysis Overview](analysis/analysis-overview)
+  - [Device data management](../data-management)
+  - [Dashboard Overview](../dashboards/dashboard-overview)
+  - [Analysis Overview](analysis/index)

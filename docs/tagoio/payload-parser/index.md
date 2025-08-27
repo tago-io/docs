@@ -6,16 +6,16 @@ tags: ["tagoio"]
 ## Overview
 The Payload Parser handles the raw payload sent by devices to extract measured variables. For example, it can transform a HEX payload sent by a device into temperature and battery levels.
 
-You can also use the parser to process payloads in real time and convert values to the desired unit. For example, if your data contains a temperature in °F, you can use the parser to convert it to °C before inserting the data into the [Device](../devices/devices).
+You can also use the parser to process payloads in real time and convert values to the desired unit. For example, if your data contains a temperature in °F, you can use the parser to convert it to °C before inserting the data into the [Device](../devices/index).
 
-You can learn about the [differences between Payload Parser and Analysis](/tagoio/payload-parser/payload-parser).
+You can learn about the [differences between Payload Parser and Analysis](../payload-parser/index).
 
 ## Parser execution
 TagoIO can run up to two parsers for a device:
 - The Connector parser (added automatically during device creation)
 - Your own custom parser (optional)
 
-> Note: The parsers are executed in sequence. First the one from the [Connector](../integrations/connector-overview), then your custom parser.
+> Note: The parsers are executed in sequence. First the one from the [Connector](../integrations/index), then your custom parser.
 
 ## Connector type
 The connector type is defined based on your selection from the list of devices during the Add Device step. The connector contains the script necessary to work with that device.
@@ -28,9 +28,9 @@ The connector type is defined based on your selection from the list of devices d
 ### How is the Payload Parser triggered?
 ![Image 2](/docs_imagem/tagoio/parser-DnE-zSM.gif)
 
-The payload parser is automatically triggered every time the device sends data to TagoIO (no need to set up anything). Your payload parser is the first step that gets triggered before saving data in the [Device's](/tagoio/devices/devices) data storage, so if your code has an error it will be returned directly to the device HTTP post response.
+The payload parser is automatically triggered every time the device sends data to TagoIO (no need to set up anything). Your payload parser is the first step that gets triggered before saving data in the [Device's](../devices/index) data storage, so if your code has an error it will be returned directly to the device HTTP post response.
 
-There are some concepts about [global variables and context](/tagoio/payload-parser/payload-parser-context-global-variables) that you may want to learn.
+There are some concepts about [global variables and context](../payload-parser/index-context-global-variables) that you may want to learn.
 
 ### A parse example
 

@@ -16,7 +16,7 @@ Learn more about the SensorTag CC2650 and how to get started: [SensorTag CC2650 
 
 ## What this example does
 - All sensor data from the SensorTag will be posted to TagoIO.
-- Sensor data can be visualized on a TagoIO dashboard in real time: [dashboard](/tagoio/dashboards/creating-dashboard-tabs).
+- Sensor data can be visualized on a TagoIO dashboard in real time: [dashboard](../dashboards/creating-dashboard-tabs).
 - This example uses the hardware version tested by the authors.
 
 ## Sensors included

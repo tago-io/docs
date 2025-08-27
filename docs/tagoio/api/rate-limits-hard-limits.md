@@ -7,9 +7,9 @@ When executing requests to TagoIO, there is a limit on the number of requests th
 
 Rate limits apply to a wide range of interactions within the platform, including—but not limited to—API endpoints, data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP), data exports, dashboard visualizations, user interactions, and more. These limits are also known as hard limits.
 
-> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](/tagoio/services/services-overview) that are reset monthly. You still need to make sure you have enough resources to run your application.
+> **Note:** Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](../services/services-overview) that are reset monthly. You still need to make sure you have enough resources to run your application.
 
-> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](/tagoio/resource-limits) and [Data Output for Dashboards](services/data-output-service).
+> **Note:** TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](../resource-limits) and [Data Output for Dashboards](services/data-output-service).
 
 ## How it works
 
@@ -19,7 +19,7 @@ Rate limits, or hard limits, are enforced based on your account's plan. Each acc
 
 The system aggregates all requests performed inside a Profile for each route. Therefore, if you reach the limit for a route, all future requests to that Profile and route will be denied during the period. For some specific routes, such as the Post and Get data from devices, you can configure the rate limit for each device separately.
 
-Check our [Control Tower add‑on](/tagoio/control-tower).
+Check our [Control Tower add‑on](../control-tower).
 
 ### Request Rate Limits
 
@@ -98,7 +98,7 @@ The following table lists the API resources for which the hard limit applies, th
 | | Subscribe-Receive | MQTT payload from TagoIO broker | 250 | 5 000 | 15 000 |
 | | Connection-Connect to TagoIO broker | 20 | 100 | 200 |
 
-[*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/tagoio/control-tower).
+[*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](../control-tower).
 
 > If, for some special reason, your requirements exceed the limits in the table, consider upgrading your plan to **[Scale](https://admin.tago.io/account/billing)**. If you are already on the Scale plan, please contact us through the [Help Center](https://help.tago.io/portal/en/newticket).
 
@@ -120,4 +120,4 @@ If you need help adapting your project to these hard limits, try our [Community]
 
 You can monitor the hard limits for each function by accessing the account menu located in the top right corner of your [Admin](https://admin.tago.io/limits/hard) page and selecting the **Hard Limits** option. If the Control Tower add‑on is active in your account, you will have the ability to view historical and detailed statistics of your usage for Hard Limits, providing insights into your requests per minute.
 
-Learn more about the [Control Tower](/tagoio/control-tower) add‑on.
+Learn more about the [Control Tower](../control-tower) add‑on.

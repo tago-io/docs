@@ -24,21 +24,21 @@ Video title: "Introducing TagoIO | The Cloud Platform for IoT"
 ## Related documentation
 
 Getting Started section:
-- [Getting Started](/tagoio/getting-started)
+- [Getting Started](../getting-started)
 - [How it works](#) (this article)
-- [Building Solutions](/tagoio/building-solutions)
-- [Deploying Applications](/tagoio/deploying-applications)
-- [Language Preferences](/tagoio/language-preferences)
-- [Tags System](/tagoio/data-management/tags-system)
-- [Secrets](/tagoio/secrets)
-- [Audit Log](/tagoio/security/audit-log)
+- [Building Solutions](../building-solutions)
+- [Deploying Applications](../deploying-applications)
+- [Language Preferences](../language-preferences)
+- [Tags System](../data-management/tags-system)
+- [Secrets](../secrets)
+- [Audit Log](../security/audit-log)
 
 Related articles:
-- [Map Widget](/tagoio/widgets/map-widget)
-- [Compose Widget](/tagoio/widgets/compose-widget)
-- [Image Marker Widget](/tagoio/widgets/image-marker-widget)
-- [Analysis Overview](/tagoio/analysis/analysis-overview)
-- [Defining Actions](/tagoio/actions/actions)
+- [Map Widget](../widgets/map-widget)
+- [Compose Widget](../widgets/compose-widget)
+- [Image Marker Widget](../widgets/image-marker-widget)
+- [Analysis Overview](../analysis/index)
+- [Defining Actions](../actions/actions)
 - [TagoIO Public Roadmap](https://tago.io/roadmap)
 - [Vote for New Features](https://help.tago.io/portal/en/community/tagoio/feature-requests)
 - [Future and past Webinars](https://tago.io/events)

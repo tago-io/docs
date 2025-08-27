@@ -45,7 +45,7 @@ If the dashboard has no Analysis in its widgets, this is the only step and click
 
 If the dashboard has Analyses, instead of **Confirm associations** the button will be **Next step** and it will guide the user to another page to select their own Analyses to be used in place of the Analyses in the original dashboard.
 
-**Note that Analyses also have the Distribute feature**, and they can be installed previously to installing a dashboard requiring Analyses. Read more about [Distributing analysis](/tagoio/analysis/distributing-analysis).
+**Note that Analyses also have the Distribute feature**, and they can be installed previously to installing a dashboard requiring Analyses. Read more about [Distributing analysis](../analysis/distributing-analysis).
 
 ![Image 7](/docs_imagem/tagoio/1624902252947-BGo.png)
 

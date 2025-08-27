@@ -3,7 +3,7 @@ title: "Trigger by Variable"
 description: "This article explains the \"Trigger by Variable\" action type in TagoIO, describing its two categories (Single device and Multiple devices), how each works, and a note about Trigger Unlock availability."
 tags: ["tagoio"]
 ---
-The trigger type, [Actions](/tagoio/actions/actions), Trigger by Variable, allows you to execute an action when a variable meets specified conditions. If a device sends data and the variables meet those conditions, the action will be triggered.
+The trigger type, [Actions](../actions/actions), Trigger by Variable, allows you to execute an action when a variable meets specified conditions. If a device sends data and the variables meet those conditions, the action will be triggered.
 
 There are 2 (two) categories inside this trigger type:
 
@@ -17,7 +17,7 @@ Allows you to watch multiple devices. Any data sent by those devices will be tes
 
 ![Selecting tags for multiple devices (tag_key / tag_value)](/docs_imagem/tagoio/trigger-by-variable-2.png)
 
-It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/tagoio/trigger-unlock).
+It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](../trigger-unlock).
 
 ## Trigger Conditions
 
@@ -40,7 +40,7 @@ After setting up the device, you should set a condition for your action to be ex
 
 The example above means that the action will be triggered when **my_variable is less than 15**.
 
-> Looking to create more complex logic statements? You can use the [Action](/tagoio/actions/actions) to trigger an [Analysis](../analysis/analysis), and then manually create custom logic inside of the code.
+> Looking to create more complex logic statements? You can use the [Action](../actions/actions) to trigger an [Analysis](../analysis/analysis), and then manually create custom logic inside of the code.
 
 ### Preventing the action from running every time the conditions are met
 

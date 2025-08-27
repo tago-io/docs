@@ -34,11 +34,11 @@ If you want to disable the Dashboard Period Preset for a specific widget, enable
 ## Related Dashboards documentation
 - [Dashboard Overview](../dashboards/dashboard-overview)  
 - [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
-- [Data Output for dashboards](/tagoio/services/data-output-for-dashboards)  
+- [Data Output for dashboards](../services/data-output-for-dashboards)  
 - [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  
 - [Dashboard icons](../dashboards/dashboard-icons)  
 - [Dashboard global time filter and period presets](#) (this article)
 - [Grouping Dashboards](../dashboards/grouping-dashboards)  
 - [Sharing Dashboards](../dashboards/sharing-dashboards)  
 - [Distributing Dashboards](../dashboards/distributing-dashboards)  
-- [Restoring your Dashboard to a previous version](/tagoio/dashboards/restoring-your-dashboard-to-a-previous-version)
+- [Restoring your Dashboard to a previous version](../dashboards/restoring-your-dashboard-to-a-previous-version)

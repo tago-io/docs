@@ -22,7 +22,7 @@ A variable called **location** is automatically created by combining the fields 
 ![Application Data Console screenshot](/docs_imagem/tagoio/filtering-out-variables-with-parser-code-2.png)
 
 ## Editing the parser
-- Open the device settings and go to the "Payload Parser" tab ([Payload Parser](../payload-parser/payload-parser)).
+- Open the device settings and go to the "Payload Parser" tab ([Payload Parser](../payload-parser/index)).
 - Update the parser code to filter out unwanted variables before sending the parsed output to the device's storage.
 - To ignore specific variables, add their names to the `_ignore_vars_` list in your parser configuration. For example:
   ```json
@@ -31,11 +31,11 @@ A variable called **location** is automatically created by combining the fields 
   }
   ```
   This will prevent those variables from being created in the device’s data storage.
-- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](../devices/devices)).
+- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](../devices/index)).
 
 We offer this flexibility to allow you to optimize your storage by avoiding the creation of unnecessary variables.
 
 ## See also
-- Payload Parser (refer to the Payload Parser documentation: [Payload Parser](../payload-parser/payload-parser))
-- Device data storage details: [Device's data storage](../devices/devices)
-- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](/tagoio/payload-parser/payload-parser)
+- Payload Parser (refer to the Payload Parser documentation: [Payload Parser](../payload-parser/index))
+- Device data storage details: [Device's data storage](../devices/index)
+- Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](../payload-parser/index)

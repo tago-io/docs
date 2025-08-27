@@ -76,9 +76,9 @@ Before you begin, ensure you have the following:
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices/devices#Adding_devices).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](../../devices/index#Adding_devices).
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../../devices/index#Adding_devices) page.
 
 ---
 
@@ -89,8 +89,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](../../live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.
 
-Learn how to perform [downlink for LoRaWAN](/tagoio/tutorials/downlink-for-lorawan).
+Learn how to perform [downlink for LoRaWAN](../../tutorials/downlink-for-lorawan).

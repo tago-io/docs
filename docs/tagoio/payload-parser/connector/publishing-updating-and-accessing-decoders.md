@@ -3,7 +3,7 @@ title: "Publishing, updating and accessing decoders"
 description: "This article explains how to publish, update, and share custom decoders (connectors) in TagoIO, including how to make a connector public via the GitHub repository and a video walkthrough."
 tags: ["tagoio"]
 ---
-TagoIO provides a list of [pre-integrated IoT devices](../integrations/connector-overview) for easy connection. However, due to the wide variety of manufacturers and ongoing sensor development, you might not find a connector for your specific device.
+TagoIO provides a list of [pre-integrated IoT devices](../integrations/index) for easy connection. However, due to the wide variety of manufacturers and ongoing sensor development, you might not find a connector for your specific device.
 
 In such cases, you can [create your own connector](../payload-parser/building-your-own-parser) and optionally make it available to all TagoIO users. This allows users and manufacturers to submit decoders that convert raw payloads to the TagoIO format. This collaborative approach facilitates the creation of new connectors, bug fixes, and updates to existing ones, improving the overall IoT integration ecosystem.
 
@@ -19,7 +19,7 @@ https://github.com/tago-io/decoders
 
 ![Image 1](/docs_imagem/tagoio/exclamation-4.png)
 
-If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/tagoio/integrations/sharing-connectors-networks).
+If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](../../integrations/sharing-connectors-networks).
 
 ## Repository Overview
 The repository offers comprehensive resources for:

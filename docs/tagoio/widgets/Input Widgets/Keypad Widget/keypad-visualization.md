@@ -49,16 +49,16 @@ The Colors area lets you set primary colors used by the keypad, such as the main
 
 You can create and configure extra buttons to appear alongside the keypad digits. Button configuration options appear in the widget settings (accessible via the widget editor). In each button configuration, you have some options to customize the visuals and functionality of your button.
 - Content type – The type of content that will be inside of the button. You can put text here or simply an icon.
-- Value – This is the value that will be sent to the [device](/tagoio/devices/devices) or [analysis](/tagoio/analysis/creating-analysis) when a user submits the keypad. Learn more about [Keypad's Data Manipulation](/tagoio/keypad-data-manipulation).
+- Value – This is the value that will be sent to the [device](../../../devices/index) or [analysis](../../../analysis/creating-analysis) when a user submits the keypad. Learn more about [Keypad's Data Manipulation](../../../keypad-data-manipulation).
 - Background color – The color of the button's background. The font color will be automatically adjusted to either black or white for a better contrast with your color.
 - Enabled – Indicates if the button is enabled or not. Disabled buttons cannot be clicked.
 - Remove Button – If you click this option, this button will be removed from the keypad. You can still create another button in the same slot as this one.
 
 ## See also
 
-- See [Keypad Widget](/tagoio/widgets/keypad-widget)
-- See [Creating Keypad Widgets](/tagoio/widgets/keypad-widget#creating-your-own)
+- See [Keypad Widget](../../../widgets/keypad-widget)
+- See [Creating Keypad Widgets](../../../widgets/keypad-widget#creating-your-own)
 - See [Keypad Visualization](#) (this article)
-- See [Keypad Data Manipulation](/tagoio/keypad-data-manipulation)
+- See [Keypad Data Manipulation](../../../keypad-data-manipulation)
 
 Breadcrumb (documentation path): Knowledge Base / TagoIO / Widgets / Keypad Widget

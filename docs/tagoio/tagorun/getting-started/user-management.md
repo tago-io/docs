@@ -29,10 +29,10 @@ Each user has a Tags tab. Tags can be provided in three ways:
 The fields `tag_key` and `tag_value` from the users can be used in the Targets when granting access to your application. Refer to the Targets documentation (e.g., "Defining Targets") for instructions on using these fields.
 
 ## Data output for dashboards
-Warning: Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](/tagoio/services/data-output-for-dashboards) for quota and billing details.
+Warning: Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](../../services/data-output-for-dashboards) for quota and billing details.
 
 ## Anonymous User
-You can create an Anonymous User to allow access to dashboards in your TagoRun without having to sign in with credentials. This user is required if you want to share your dashboard with anyone using a URL. Read more about [Sharing Dashboards](/tagoio/dashboards/sharing-dashboards).
+You can create an Anonymous User to allow access to dashboards in your TagoRun without having to sign in with credentials. This user is required if you want to share your dashboard with anyone using a URL. Read more about [Sharing Dashboards](../../dashboards/sharing-dashboards).
 
 The anonymous user behaves as a normal user, except for not having a password. You can still use Tags to grant access to resources through Access Management policies.
 
@@ -45,4 +45,4 @@ Click the **'Export Users'** button on the top right side of the module to downl
 - User Management (internal documentation)
 - Signup Page (Run module) — [Signup Page](../signup-fields)
 - Targets documentation — [Targets](../defining-targets)
-- Data Output for Dashboards — [Data Output for Dashboards](/tagoio/services/data-output-for-dashboards)
+- Data Output for Dashboards — [Data Output for Dashboards](../../services/data-output-for-dashboards)
