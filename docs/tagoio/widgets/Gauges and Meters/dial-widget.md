@@ -7,7 +7,7 @@ Dials are one of the simplest and most useful widgets. They make it easy to visu
 
 ![Dial widget examples](/docs_imagem/tagoio/dial-widget-2.gif)
 
-This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 

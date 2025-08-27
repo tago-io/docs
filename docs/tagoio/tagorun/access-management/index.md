@@ -31,4 +31,4 @@ Some examples of how AM can be used:
 - [Creating a Policy](security-policy)  
 - [Defining Targets](../defining-targets)  
 - [Defining Permissions](../security/defining-permissions)  
-- [Access Management](../security/access-management)
+- [Access Management](../tagorun/access-management/index)

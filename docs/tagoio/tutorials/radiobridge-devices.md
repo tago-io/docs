@@ -14,7 +14,7 @@ All data sent by your device will be readily available to display in widgets or 
 You can perform both uplink and downlink operations.
 
 ## Step 1:
-First go to your TagoIO account, and if this is your first device connected between Radio Bridge and TagoIO, you will need to create an [Authorization](../security/authorization).  
+First go to your TagoIO account, and if this is your first device connected between Radio Bridge and TagoIO, you will need to create an [Authorization](../integrations/general/authorization).  
 Copy the Authorization by clicking in the COPY button to use in the next step.
 
 ### Step 2:

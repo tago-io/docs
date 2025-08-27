@@ -3,7 +3,7 @@ title: "Tags System"
 description: "This article explains the Tags system in TagoIO, describing what tags are, how they function as key-value metadata, and how to assign them to assets within the platform."
 tags: ["tagoio"]
 ---
-Tags are a flexible and powerful way to organize and label your assets within TagoIO. Tags let you manage access and identify key components such as [Devices](../devices/index), [Actions](../actions/actions), [Analysis](../analysis/index), [Dashboards](../dashboards/creating-dashboard-tabs), and [Users & Access rules](../security/access-management).
+Tags are a flexible and powerful way to organize and label your assets within TagoIO. Tags let you manage access and identify key components such as [Devices](../devices/index), [Actions](../actions/index), [Analysis](../analysis/index), [Dashboards](../dashboards/creating-dashboard-tabs), and [Users & Access rules](../tagorun/access-management/index).
 
 Operating like key–value pairs, tags enable you to assign relevant metadata to your assets, such as:
 - names
@@ -56,7 +56,7 @@ Tags can be managed from several sources:
 ## References
 
 - See [Devices](../devices/index)
-- See [Actions](../actions/actions)
+- See [Actions](../actions/index)
 - See [Analysis](../analysis/index)
 - See [Dashboards](../dashboards/creating-dashboard-tabs)
-- See [Users & Access rules](../security/access-management)
+- See [Users & Access rules](../tagorun/access-management/index)

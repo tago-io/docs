@@ -15,9 +15,9 @@ Also review the tutorial available in the TagoIO [community](https://community.t
 General:
 - [Network Integration](../integrations/index)
 - [Creating a Network integration](../../integrations/creating-a-network-integration)
-- [Authorization](../security/authorization)
+- [Authorization](../integrations/general/authorization)
 - [Serial Number Format](../serial-number-format)
-- [Middleware](../middleware/middleware)
+- [Middleware](../integrations/general/middleware)
 
 Related Articles:
 - [Network Integration](../integrations/index)

@@ -77,4 +77,4 @@ Check out the available regions in the [API documentation](https://api.docs.tago
 - [Node.js SDK](../sdk/nodejs-sdk)
 - [Python SDK](../sdk/python-sdk)
 - [Device Token](../devices/device-token)
-- [Authorization](../security/authorization)
+- [Authorization](../integrations/general/authorization)

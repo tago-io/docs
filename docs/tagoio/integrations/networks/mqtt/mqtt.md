@@ -44,11 +44,11 @@ Encryption across the network can be handled with SSL independently of the MQTT 
 
 ## Data flow at TagoIO
 
-When you first send data through MQTT to your device, you’ll be able to visualize the connection and message through the [Live Inspector](../../../live-inspector) on your device. Those messages indicate that the connection is working, but nothing is being stored in your bucket yet.
+When you first send data through MQTT to your device, you’ll be able to visualize the connection and message through the [Live Inspector](../../../devices/live-inspector) on your device. Those messages indicate that the connection is working, but nothing is being stored in your bucket yet.
 
-From this point, you need to create an [Action](../../../actions/actions) with trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you should see the data being stored in the Live Inspector.
+From this point, you need to create an [Action](../../../actions/index) with trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you should see the data being stored in the Live Inspector.
 
-If you don’t send the data using the [TagoIO data format](../../../data-management/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](../../../payload-parser/index).
+If you don’t send the data using the [TagoIO data format](../../../devices/data-management/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](../../../payload-parser/index).
 
 ## More Resources
 

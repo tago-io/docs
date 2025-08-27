@@ -9,7 +9,7 @@ Here's how to use each export source:
 
 ## From the device page
 
-Access this feature in the Admin panel under the [Device module](../devices/index). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](../../data-management/filtered-variables).
+Access this feature in the Admin panel under the [Device module](../devices/index). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](../../devices/data-management/filtered-variables).
 
 To export, click the "Export" button in the top-right corner. The export dialog provides the following options:
 
@@ -26,7 +26,7 @@ To export, click the "Export" button in the top-right corner. The export dialog 
 - A reminder that "Export data will consume your Data Output service."
 - **Export button** — located at the bottom-right of the dialog to start the export.
 
-> **Note:** For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](../../data-management/chunk-management).
+> **Note:** For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](../../devices/data-management/chunk-management).
 
 <!-- Image placeholder removed for build -->
 

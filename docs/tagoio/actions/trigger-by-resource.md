@@ -5,8 +5,8 @@ tags: ["tagoio"]
 ---
 The trigger type "Trigger by Resource" allows you to execute an Action when a resource meets certain conditions. A resource can be one of the following:
 
-- [Access Management](../security/access-management)
-- [Actions](../actions/actions)
+- [Access Management](../tagorun/access-management/index)
+- [Actions](../actions/index)
 - [Analysis](../analysis/index)
 - [Device](../devices/index)
 - [RunUser](../tagorun/)
@@ -15,7 +15,7 @@ For example, you can trigger an Action when a new user signs up in your RUN or w
 
 ## Trigger Conditions
 
-After setting up the device, you should set a condition that causes your Action to be executed. To do this, open the Trigger section of the Action (see [Defining Actions](../actions/actions) / Trigger).
+After setting up the device, you should set a condition that causes your Action to be executed. To do this, open the Trigger section of the Action (see [Defining Actions](../actions/index) / Trigger).
 
 > Note: You can set multiple conditions in an Action. If at least one condition matches, the Action will be executed.
 

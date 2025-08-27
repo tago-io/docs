@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 
-Unlike regular Environment Variables (see [Environment Variables](../environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](../analysis/index)) and use them in some Actions (see [Actions documentation](../actions/actions)).
+Unlike regular Environment Variables (see [Environment Variables](../environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](../analysis/index)) and use them in some Actions (see [Actions documentation](../actions/index)).
 
 To start using secrets, open your Admin panel (https://admin.tago.io/), navigate to the Account menu, and select "Secrets".
 
@@ -28,7 +28,7 @@ A secure storage option for text-based data that allows both letters and numbers
 #### SMTP Secret
 Used exclusively for securely storing information required to configure an action that sends emails through external email providers.  
 - Supports TLS connections on port **587**.
-- Refer to the [Defining Actions](../actions/actions) documentation for more details about this action.
+- Refer to the [Defining Actions](../actions/index) documentation for more details about this action.
 
 #### AWS SQS Secret
 Used exclusively for securely storing information required to communicate with Amazon SQS.  
@@ -58,6 +58,6 @@ Before utilizing secrets as environment variables in your script, ensure that yo
 1. Assigning tags to your secret.
 2. Creating an Access Management policy that grants your analysis permission to read those tags.
 
-Refer to the [Access Management](../security/access-management) module for detailed instructions on creating policies and managing permissions.
+Refer to the [Access Management](../tagorun/access-management/index) module for detailed instructions on creating policies and managing permissions.
 
 ---

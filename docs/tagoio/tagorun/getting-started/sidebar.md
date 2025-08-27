@@ -35,7 +35,7 @@ Notice that you can use a KEY defined in your [Dictionary](../../using-dictionar
 #### 2. Button Action
 By default, when an end user clicks on your logo, they are redirected to your Run URL domain. You can customize what happens after clicking on it. The actions can be:
 
-1. **Open Dashboard** – opens the selected dashboard (the user must have access). Read more about [Access Management](../../security/access-management).
+1. **Open Dashboard** – opens the selected dashboard (the user must have access). Read more about [Access Management](../../tagorun/access-management/index).
 2. **Show iFrame** – opens an external link inside the Run application; the page must be embeddable.
 3. **Show HTML file content** – displays a custom HTML file that can be hosted in [Files](../../files).
 4. **Open external link** – opens a URL outside of Run.
@@ -57,7 +57,7 @@ Select an icon from our list or add your own using a URL to an SVG file. You can
 When you create a new button, it is disabled by default and will not be shown in Run. Choose one of the following actions:
 
 1. **Disabled** – removes the button from the application.
-2. **Open dashboard** – opens the selected dashboard (requires user access). See [Access Management](../../security/access-management).
+2. **Open dashboard** – opens the selected dashboard (requires user access). See [Access Management](../../tagorun/access-management/index).
 3. **Show iFrame** – opens an external link inside Run; must be embeddable.
 4. **Show HTML file content** – displays a custom HTML file hosted in [Files](../../files).
 5. **Open external link** – opens a URL outside of Run.
@@ -72,4 +72,4 @@ Customize how many buttons appear per line. The slider lets you move a button to
 ![Image 6](/docs_imagem/tagoio/file.png)
 
 #### Visibility Conditions
-By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](../../security/access-management).
+By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](../../tagorun/access-management/index).

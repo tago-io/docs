@@ -17,7 +17,7 @@ That is why you need to select the right connector when creating your device at 
 
 Connectors may provide one or more of the following functions:
 
-- Interface with the [middleware](../middleware/middleware) that connects with the provider when necessary.
+- Interface with the [middleware](../integrations/general/middleware) that connects with the provider when necessary.
 - Present logo, name, description, and tags for the device.
 - Add [payload parsers](../payload-parser/index) in the device (optional).
 
@@ -27,4 +27,4 @@ Connectors may provide one or more of the following functions:
 - [Device Token](./device-token)
 - [Connector Overview](../integrations/index)
 - [Payload Parser](../payload-parser/index)
-- [Middleware](../middleware/middleware)
+- [Middleware](../integrations/general/middleware)

@@ -7,7 +7,7 @@ The Grain Bin widget produces a grain-bin illustration so you can easily track v
 
 ![Grain bin illustration](/docs_imagem/tagoio/grain-bin-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata) that can be set in your variable data.
 
 ## Creating your own
 

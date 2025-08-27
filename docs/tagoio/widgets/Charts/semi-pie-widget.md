@@ -9,7 +9,7 @@ Using data from multiple variables, the Semi Pie widget automatically produces a
 
 ![Example Semi Pie charts showing three styling variants](/docs_imagem/tagoio/semi-pie-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.  
+This widget also accepts features like [metadata](../../devices/data-management/metadata), which can be set in your variable data.  
 It works for both Normal and Blueprint dashboards.
 
 ## Creating your own

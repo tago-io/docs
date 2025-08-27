@@ -4,7 +4,7 @@ description: "This article explains how to define Targets within a policy in the
 tags: ["tagoio"]
 sidebar_position: 3
 ---
-You should define **Targets** in each policy that are used inside the [Access Management](../../security/access-management) module (AM). Targets can be users or things (for example, [scripts](../../analysis/index)).
+You should define **Targets** in each policy that are used inside the [Access Management](../../tagorun/access-management/index) module (AM). Targets can be users or things (for example, [scripts](../../analysis/index)).
 
 > Targets are to whom or to what you are giving the permissions.
 
@@ -22,7 +22,7 @@ Target matching can be performed in several ways:
 
 1. **ID** – select a target from the list.
 
-2. **Tag** – match using tags from your target. Learn more about the [Tags System](../../data-management/tags-system).
+2. **Tag** – match using tags from your target. Learn more about the [Tags System](../../getting-started/tags-system).
 
    - Tags are composed of two fields: **Tag key** and **Tag value**.
    - You can manually edit the tags for each user, or run [scripts](../../analysis/index) to set them. Learn more about [User Management](../../account/user-management).
@@ -37,7 +37,7 @@ Target matching can be performed in several ways:
 4. **ANY** – all will be automatically included.
 
 ## See also
-- Access Management: [Access Management](../../security/access-management)
-- Creating a Policy: [Creating a Policy](../../security/access-management#creating-policies)
+- Access Management: [Access Management](../../tagorun/access-management/index)
+- Creating a Policy: [Creating a Policy](../../tagorun/access-management/index#creating-policies)
 - Defining Permissions: [Defining Permissions](../../security/defining-permissions)
 - User Management: [User Management](../../account/user-management)

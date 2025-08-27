@@ -42,7 +42,7 @@ When users access the map from a mobile device, they will have the option to sel
 
 ## Additional related articles
 - [Map Widget](../../../widgets/map-widget)
-- [Tags System](../../../data-management/tags-system)
-- [Compose Widget](../../../widgets/compose-widget)
+- [Tags System](../../../getting-started/tags-system)
+- [Compose Widget](../../../widgets/Media Widgets/compose-widget)
 - [Formula](../../../formula)
 - [Image Marker Widget](../../../widgets/image-marker-widget)

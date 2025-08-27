@@ -19,7 +19,7 @@ This feature is particularly beneficial when you want a single dashboard to be u
 
 ![Image 2: Notes](/docs_imagem/tagoio/file.png)
 
-To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](../data-management/tags-system).
+To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](../getting-started/tags-system).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.

@@ -19,7 +19,7 @@ First, go to the [Devices](../../devices/index) module in our admin, look for Se
 
 ### Create Device
 
-Type a name for your device, select a **[data storage type](../../devices/index)** and define a **[Data Retention](../../data-management/data-retention-feature)**, then click on *Create device*.
+Type a name for your device, select a **[data storage type](../../devices/index)** and define a **[Data Retention](../../devices/data-management/data-retention-feature)**, then click on *Create device*.
 
 ![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
 

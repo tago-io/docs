@@ -9,7 +9,7 @@ Charts are a powerful way to visualize your data and find insights. The Multiple
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
-This widget also accepts features like metadata (../../data-management/metadata) and series (../../data-management/data-records), which can be set in your variable data.
+This widget also accepts features like metadata (../../devices/data-management/metadata) and series (../../devices/data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata) and [series](../../devices/data-management/data-records), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  

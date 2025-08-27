@@ -25,7 +25,7 @@ The variable data should look like the following payload. Note that the 'lat' an
 }
 ```
 
-This widget also accepts features like [metadata](../../../data-management/metadata) and [series](../../../data-management/grouping-variables), that can be set in your variable data.
+This widget also accepts features like [metadata](../../../devices/data-management/metadata) and [series](../../../devices/data-management/grouping-variables), that can be set in your variable data.
 
 ---
 
@@ -98,7 +98,7 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](../../../data-management/grouping-variables), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [series](../../../devices/data-management/grouping-variables), so you can group your variables' data in the same infobox.
 
 > If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 

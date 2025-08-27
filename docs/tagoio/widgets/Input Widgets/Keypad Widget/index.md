@@ -57,7 +57,7 @@ For instance, if the user has clicked the sequence **1234** and then **DISARM**,
 Learn more about how to [manipulate the keypad's data](../keypad-data-manipulation).
 
 ## On this page
-- 1. 'Data From' Field (../../data-management/data-records)
+- 1. 'Data From' Field (../../devices/data-management/data-records)
 - 2. Visualization — See [Widget Visualization](../widgets/widget-configuration#visualization)
 
 ## Related Keypad documentation

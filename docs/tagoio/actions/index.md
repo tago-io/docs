@@ -13,7 +13,7 @@ With Actions you can:
 - Send notifications to your account or to the account of your [RunUsers](../tagorun/tagorun-mobile-app).
 - Publish to an MQTT topic based on certain conditions.
 
-Learn about [Defining Actions](../actions/actions).
+Learn about [Defining Actions](../actions/index).
 
 ## Creating Actions
 
@@ -40,7 +40,7 @@ To prevent your action from continuously activating when a trigger condition is 
 
 ## See also
 
-- [Defining Actions](../actions/actions)
+- [Defining Actions](../actions/index)
 - [Type of trigger](../trigger-by-variable)
 - [Type of action](../actions/action-types)
-- [Running Analysis via Action](../actions/actions)
+- [Running Analysis via Action](../actions/index)

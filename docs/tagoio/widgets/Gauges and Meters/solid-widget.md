@@ -7,7 +7,7 @@ Solid gauges allow you to display a variable in a solid gauge meter.
 
 ![Examples of Solid Widget styles (three gauges shown)](/docs_imagem/tagoio/solid-widget-2.gif)
 
-This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 

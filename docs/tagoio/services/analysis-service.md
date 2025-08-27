@@ -29,7 +29,7 @@ Only scripts that are configured to run on TagoIO are counted. Scripts that run 
 
 - [Analysis Overview](../analysis/index)
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
-- [Running Analysis via Action](../actions/actions)
+- [Running Analysis via Action](../actions/index)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Services Overview](../services/services-overview)
 

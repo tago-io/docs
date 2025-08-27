@@ -13,7 +13,7 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 
 1. **Access Authorizations**
    - Go to Devices.
-   - Click on [Authorizations](../../security/authorization) at the top of the page.
+   - Click on [Authorizations](../../integrations/general/authorization) at the top of the page.
 
 2. **Create a New Authorization**
    - Click the *Create Authorization* button.
@@ -68,6 +68,6 @@ This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with t
 1. **Power On Your Devices** – Turn on your LoRaWAN device and gateway to initiate data transmission.
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device page and open the *Data* tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](../../live-inspector) within your device settings to monitor incoming data in real time.
+   - Alternatively, use the [Live Inspector](../../devices/live-inspector) within your device settings to monitor incoming data in real time.
 
 Once data successfully flows into TagoIO, you can start creating dashboards, analyses, and actions to visualize and manage your device data effectively.

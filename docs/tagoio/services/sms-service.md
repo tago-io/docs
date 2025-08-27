@@ -4,7 +4,7 @@ description: "This article explains how SMS units are counted and billed in Tago
 tags: ["tagoio"]
 ---
 ## Overview
-Each time an SMS message is successfully sent by an [Action](../actions/actions) or [Analysis](../analysis/index) function, it is counted as one SMS unit. The service limit defined inside each [Profile](../account/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
+Each time an SMS message is successfully sent by an [Action](../actions/index) or [Analysis](../analysis/index) function, it is counted as one SMS unit. The service limit defined inside each [Profile](../account/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
 
 > **Attention — Service discontinuation (effective November 1st, 2024):**  
 > As anticipated last year, starting on **November 1st, 2024**, TagoIO will no longer offer built-in SMS services. You can still send SMS by integrating directly with external providers such as Twilio or AWS. See [External SMS Integration Guide](https://docs.tago.io/api/external-integrations/sms).
@@ -24,11 +24,11 @@ Each SMS unit is limited to 140 characters.
 Analysis is able to integrate with any SMS service; you can register a unique number for your own origin if desired.
 
 ## Related documentation
-- [Defining Actions](../actions/actions)
+- [Defining Actions](../actions/index)
 - [Services Overview](../services/services-overview)
 - [Analysis Service](../analysis/analysis-service)
 - [Data Input Service](../services/data-input-service)
 - [Notification Service](../services/notification-service)
 - [E-mail Service](../services/e-mail-service)
-- [Data Records](../data-management/data-records)
+- [Data Records](../devices/data-management/data-records)
 - [Data Output Service](../services/data-output-service)

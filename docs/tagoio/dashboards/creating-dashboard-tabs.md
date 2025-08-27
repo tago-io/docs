@@ -6,7 +6,7 @@ tags: ["tagoio", "dashboards"]
 
 # Creating Dashboard Tabs
 
-By using **Tabs**, you can divide [dashboards](../dashboards/dashboard-overview) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
+By using **Tabs**, you can divide [dashboards](../dashboards/index) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
 
 <!-- Dashboard tabs example image -->
 

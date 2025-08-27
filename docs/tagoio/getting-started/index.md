@@ -36,7 +36,7 @@ All devices should use a valid [device-token](../devices/device-token) when acce
 ![Image 2](/docs_imagem/tagoio/token-cj4.gif)
 
 ### Step 2. Build a dashboard
-You can build great [dashboards](../dashboards/dashboard-overview) to visualize data, interact with your devices and share with others. You can build it with the [widgets](../widgets/index) that best fit your needs.
+You can build great [dashboards](../dashboards/index) to visualize data, interact with your devices and share with others. You can build it with the [widgets](../widgets/index) that best fit your needs.
 
 1. Click **Dashboards** on the left side bar.
 2. Click **+**, then select the type of dashboard, give a name for your dashboard, and click **Save**.

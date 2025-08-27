@@ -89,7 +89,7 @@ For detailed instructions on adding devices, visit the [Adding Devices](../../de
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](../../live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](../../devices/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.
 

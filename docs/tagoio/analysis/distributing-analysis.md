@@ -37,5 +37,5 @@ It is always a good idea to access the link yourself before sharing to ensure th
 - [Creating Analysis](../analysis/creating-analysis)
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
 - [Distributing Dashboards](../dashboards/distributing-dashboards)
-- [Running Analysis via Action](../actions/actions)
+- [Running Analysis via Action](../actions/index)
 - [Analysis Overview](../analysis/index)

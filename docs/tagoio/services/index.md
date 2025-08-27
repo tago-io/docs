@@ -48,7 +48,7 @@ TagoIO will send warning emails and push notifications when a service usage exce
 - Other helpful articles:
   - [Analysis Overview](../analysis/index)
   - [Profiles](../account/profiles)
-  - [Defining Actions](../actions/actions)
-  - [Dashboard Overview](../dashboards/dashboard-overview)
+  - [Defining Actions](../actions/index)
+  - [Dashboard Overview](../dashboards/index)
 
 <!-- Image placeholder removed for build -->

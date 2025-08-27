@@ -28,7 +28,7 @@ The circuit is straightforward: a single digital input is connected to a normall
 3. To avoid duplicate notifications, set up hysteresis by defining **Set Trigger** (closed) and **Reset Trigger** (open). This ensures only one email per state change.
 
 ## Example: sending a digital input status
-In this example, the BBB will send the status of a digital input to TagoIO. The input status will be visualized on a dashboard. Using the [Actions](../actions/actions) capability, you can configure the system to send an email whenever the switch changes to the closed state.
+In this example, the BBB will send the status of a digital input to TagoIO. The input status will be visualized on a dashboard. Using the [Actions](../actions/index) capability, you can configure the system to send an email whenever the switch changes to the closed state.
 
 ### Sending data from BBB
 Tago uses JSON over HTTP for device communication. For example, to report that the switch is closed:

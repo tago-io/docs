@@ -25,4 +25,4 @@ Learn about the other add‑ons on the [Add‑ons](./add-ons-overview) page.
 - [Managing your account with the TagoIO Mobile App](../account/managing-your-account-with-the-tagoio-mobile-app)
 - [Account Plans](../billing/account-plans)
 - [ECharts Custom Widget Tutorial](../widgets/echarts-custom-widget-tutorial-)
-- [Custom Widget](../widgets/custom-widget)
+- [Custom Widget](../widgets/Custom Widget/custom-widget)

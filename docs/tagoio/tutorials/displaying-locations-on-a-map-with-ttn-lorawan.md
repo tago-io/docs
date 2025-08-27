@@ -22,7 +22,7 @@ TagoIO converts latitude and longitude fields to the specific format required, s
 
 After your device is sending latitude and longitude information to TagoIO:
 
-- Create a dashboard (see [create a dashboard](../dashboards/dashboard-overview)).
+- Create a dashboard (see [create a dashboard](../dashboards/index)).
 - Add a Map widget (see [Map widget](../widgets/map-widget)).
 - Look for the device (see [device](../devices/index)) and add the variable `location` inside the Map widget.
 

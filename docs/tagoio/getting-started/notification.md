@@ -50,8 +50,8 @@ To learn how to create an Application notification from an Analysis, check our [
 - See [Notifications from Applications](../notifications/notifications-for-users)
 
 ## Related articles
-- See [Defining Actions](../actions/actions)  
+- See [Defining Actions](../actions/index)  
 - See [Notification Service](../services/notification-service)  
-- See [Running Analysis via Action](../actions/actions)  
-- See [Compose Widget](../widgets/compose-widget)  
-- See [Tags System](../data-management/tags-system)
+- See [Running Analysis via Action](../actions/index)  
+- See [Compose Widget](../widgets/Media Widgets/compose-widget)  
+- See [Tags System](../getting-started/tags-system)

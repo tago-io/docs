@@ -38,7 +38,7 @@ Follow these instructions to set up your analysis and send the notifications. Yo
 
 With this all up and running, you can open the script of your analysis and start to change it as needed. The code is fully commented on and detailed to guide you.
 
-You can also create an [Action](../../actions/actions) to trigger the Analysis or set it to run every X minutes.
+You can also create an [Action](../../actions/index) to trigger the Analysis or set it to run every X minutes.
 
 ## The Notification Object
 

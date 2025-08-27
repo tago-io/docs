@@ -24,7 +24,7 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 - Stores up to **36 million** data points per device.
 - Highly optimized for short and long retention periods; query responses are faster, which means less latency for the devices and a cost reduction when running an [Analysis](../analysis/creating-analysis).
 - Because the data is immutable, no one can change or delete individual sets of data – ideal for compliance.
-- Data stored in the optimized device can only be removed by the [data retention policy](../data-management/data-retention-feature).
+- Data stored in the optimized device can only be removed by the [data retention policy](../devices/data-management/data-retention-feature).
 
 ### Managed Data Optimized (Mutable database)
 

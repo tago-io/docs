@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and gain insights. The Vertical
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
-This widget also supports features such as [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
+This widget also supports features such as [metadata](../../devices/data-management/metadata) and [series](../../devices/data-management/data-records), which can be set in your variable data.
 
 ---
 

@@ -59,7 +59,7 @@ The billing scheme above does not apply when fetching data using the API; for ex
 
 ## Delete chunks
 
-You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](../../security/audit-log).
+You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](../../profiles/audit-log).
 
 ## Automation
 

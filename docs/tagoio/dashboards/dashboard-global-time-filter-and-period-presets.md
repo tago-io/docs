@@ -26,13 +26,13 @@ If you want to disable the Dashboard Period Preset for a specific widget, enable
 <!-- Image placeholder removed for build -->
 
 ## On this page
-- How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/dashboard-overview)
-- Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/dashboard-overview)
-- Setting period presets — See [Dashboard Overview](../dashboards/dashboard-overview)
+- How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/index)
+- Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/index)
+- Setting period presets — See [Dashboard Overview](../dashboards/index)
 - Disabling the filter for specific widgets — See [Widget Cache system](../widgets/widget-cache-system)
 
 ## Related Dashboards documentation
-- [Dashboard Overview](../dashboards/dashboard-overview)  
+- [Dashboard Overview](../dashboards/index)  
 - [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
 - [Data Output for dashboards](../services/data-output-for-dashboards)  
 - [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  

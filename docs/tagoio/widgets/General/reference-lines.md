@@ -26,7 +26,7 @@ Up to **5** reference lines per widget are allowed.
 ### Fixed vs Variable source
 
 - When using a **fixed** source, you can manually set a *Label* and *Color* for the line.  
-- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](../../data-management/metadata) article.
+- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](../../devices/data-management/metadata) article.
 
 ### Multiple axes
 

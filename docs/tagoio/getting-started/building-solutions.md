@@ -24,13 +24,13 @@ Other Getting Started topics:
 - [Building Solutions](#) (this article)
 - [Deploying Applications](./deploying-applications)
 - [Language Preferences](./language-preferences)
-- [Tags System](../data-management/tags-system)
+- [Tags System](../getting-started/tags-system)
 - [Secrets](./secrets)
-- [Audit Log](../security/audit-log)
+- [Audit Log](../profiles/audit-log)
 
 Related articles:
 - [Building your own parser](../payload-parser/building-your-own-parser)
-- [Dashboard Overview](../dashboards/dashboard-overview)
+- [Dashboard Overview](../dashboards/index)
 - [Analysis Overview](../analysis/index)
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
-- [Custom Widget](../widgets/custom-widget)
+- [Custom Widget](../widgets/Custom Widget/custom-widget)

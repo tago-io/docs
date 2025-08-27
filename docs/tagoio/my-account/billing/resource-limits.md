@@ -13,7 +13,7 @@ The limits for each resource are determined by your specific plan. The table bel
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
-| [Actions](../../actions/actions) | 5 | 100 | 200 |
+| [Actions](../../actions/index) | 5 | 100 | 200 |
 | [Analysis](../../analysis/index) | 5 | 100 | 200 |
 | [Dashboard](../../dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
 | [Entity](entities/index) | 5 | 50 | 80 |
@@ -24,8 +24,8 @@ The limits for each resource are determined by your specific plan. The table bel
 | [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
 | [Custom Connector](../../integrations/index) | 3 | 20 | 50 |
 | [Custom Network](../../integrations/creating-a-network-integration) | 1 | 5 | 10 |
-| [Device service authorization](../../security/authorization) | 10 | 50 | 200 |
-| [Access Management Policies](../../security/access-management) | 5 | 30 | 100 |
+| [Device service authorization](../../integrations/general/authorization) | 10 | 50 | 200 |
+| [Access Management Policies](../../tagorun/access-management/index) | 5 | 30 | 100 |
 | [Dictionary & Multi-language](../../dictionaries) | 2 | 10 | 50 |
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.

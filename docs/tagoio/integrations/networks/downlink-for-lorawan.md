@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 TagoIO will send downlink messages to your devices through Configuration Parameters. To enable this, create a key parameter named `downlink` and uncheck the switch labeled "Unread". Your LoRaWAN™ provider may allow additional downlink parameters.
 
-> Important: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](../security/access-management).
+> Important: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](../tagorun/access-management/index).
 
 ## How it works
 
@@ -29,6 +29,6 @@ The downlink payload should be placed into the parameter's value field. Below is
 ## Related information
 
 - Configuration Parameters (tab or documentation): [Configuration Parameters](../../devices/configuration-parameters-for-devices)
-- Authorization codes (how to generate): [authorization codes](../security/access-management)
+- Authorization codes (how to generate): [authorization codes](../tagorun/access-management/index)
 - Devices list: [devices](../devices/index)
 - Downlinks using Dashboards: [Downlinks using Dashboards](../../dashboards/downlinks-using-dashboards)

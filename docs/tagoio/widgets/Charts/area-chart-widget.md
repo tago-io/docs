@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Area
 
 ![Example area charts illustrating different styles and color schemes](/docs_imagem/tagoio/area-chart-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata) and [series](../../devices/data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

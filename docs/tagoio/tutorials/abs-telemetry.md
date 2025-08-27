@@ -44,6 +44,6 @@ Add a **[device](../devices/index)** in your account at TagoIO. Go to *Devices* 
 
 Click on **'Create Device'**, and you will have confirmation that the device was created.
 
-Turn your device on, and wait for the data to arrive and hit your data **[bucket](../devices/index)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](../dashboards/dashboard-overview)** by adding gauges, tables and more.
+Turn your device on, and wait for the data to arrive and hit your data **[bucket](../devices/index)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](../dashboards/index)** by adding gauges, tables and more.
 
 Enjoy your ABS devices with TagoIO!

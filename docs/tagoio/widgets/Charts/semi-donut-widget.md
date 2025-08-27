@@ -7,7 +7,7 @@ Using data from multiple variables, the Semi Donut widget automatically produces
 
 ![Three examples of semi-donut charts with different styles](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](../../devices/data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 
