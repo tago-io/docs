@@ -1,5 +1,9 @@
 {
   "label": "Entities",
   "position": 14,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "entities/index"
+  }
 }

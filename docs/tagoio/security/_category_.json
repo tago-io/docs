@@ -1,5 +1,9 @@
 {
   "label": "Security and Compliance",
   "position": 21,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "security-and-compliance/index"
+  }
 }
