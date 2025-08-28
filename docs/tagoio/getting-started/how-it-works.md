@@ -8,37 +8,5 @@ There are a few things you need to know about how TagoIO works in order to optim
 
 Watch this short video to learn about the concepts around devices and tokens.
 
-## Video overview
+<YouTube videoId="hJ_x6KVaYMc" title="Introducing TagoIO | The Cloud Platform for IoT Applications" />
 
-<!-- Image placeholder removed for build -->
-
-Video title: "Introducing TagoIO | The Cloud Platform for IoT"
-
-## Concepts covered
-
-- Devices  
-  Devices represent the physical or virtual things that send and receive data to and from TagoIO. They are the primary data sources for your applications.
-- Tokens  
-  Tokens are credentials used to authenticate devices and services with the TagoIO platform. They control access and permissions for data ingestion and operations.
-
-## Related documentation
-
-Getting Started section:
-- [Getting Started](../getting-started)
-- [How it works](#) (this article)
-- [Building Solutions](../building-solutions)
-- [Deploying Applications](../deploying-applications)
-- [Language Preferences](../language-preferences)
-- [Tags System](../getting-started/tags-system)
-- [Secrets](../secrets)
-- [Audit Log](../profiles/audit-log)
-
-Related articles:
-- [Map Widget](../widgets/map-widget)
-- [Compose Widget](../widgets/Media Widgets/compose-widget)
-- [Image Marker Widget](../widgets/image-marker-widget)
-- [Analysis Overview](../analysis/index)
-- [Defining Actions](../actions/index)
-- [TagoIO Public Roadmap](https://tago.io/roadmap)
-- [Vote for New Features](https://help.tago.io/portal/en/community/tagoio/feature-requests)
-- [Future and past Webinars](https://tago.io/events)
