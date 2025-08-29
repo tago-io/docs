@@ -7,13 +7,17 @@ Device is the link between your external things and the data in your account. To
 
 Devices are managed through your [Admin](https://admin.tago.io/) interface, where users can access detailed information about each device, including its ID and other settings.
 
-> ℹ️ Our [TagoIO API documentation](../api/index) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
+:::note
+
+Our [TagoIO API documentation](/docs/tagoio/api/index) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
+
+:::
 
 ## Adding devices
 
-Devices are connected to TagoIO using [Connectors](../integrations/index), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](../getting-started) article.
+Devices are connected to TagoIO using [Connectors](/docs/tagoio/integrations/index), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started) article.
 
-> ℹ️ Learn more about [Connectors](../integrations/index) here.
+> ℹ️ Learn more about [Connectors](/docs/tagoio/integrations/index) here.
 
 ## Device type and data storage
 
@@ -22,9 +26,9 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 ### Device Optimized Data (Immutable database)
 
 - Stores up to **36 million** data points per device.
-- Highly optimized for short and long retention periods; query responses are faster, which means less latency for the devices and a cost reduction when running an [Analysis](../analysis/creating-analysis).
+- Highly optimized for short and long retention periods; query responses are faster, which means less latency for the devices and a cost reduction when running an [Analysis](/docs/tagoio/analysis/creating-analysis).
 - Because the data is immutable, no one can change or delete individual sets of data – ideal for compliance.
-- Data stored in the optimized device can only be removed by the [data retention policy](../devices/data-management/data-retention-feature).
+- Data stored in the optimized device can only be removed by the [data retention policy](/docs/tagoio/devices/data-management/data-retention-feature).
 
 ### Managed Data Optimized (Mutable database)
 
@@ -37,23 +41,23 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 
 - **General Information tab**: shows the device’s name, network it uses to send data, and the connector used to decode the data.
 - Manage the **Device Token** and **Serial number** by generating or deleting them.
-- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](../services/data-input-service) and [Output](../services/data-output-service).  
+- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](/docs/tagoio/services/data-input-service) and [Output](/docs/tagoio/services/data-output-service).  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deactivating devices
 
 - In the right upper corner of your device page, a switch allows you to activate or deactivate the device. If deactivated, the system denies access to any command coming from the device.
-- You can hide a specific device from showing in the device selection option for your [Widgets](../widgets/index).  
+- You can hide a specific device from showing in the device selection option for your [Widgets](/docs/tagoio/widgets/index).  
   Access the **More** tab on your device’s page to make your device visible or hidden.
 
 ## Inspecting your connection
 
-- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](../payload-parser/index) and monitoring traffic to and from your device.
+- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/docs/tagoio/payload-parser/index) and monitoring traffic to and from your device.
 
 ## Customizing payload parser
 
 - Run your own parser by activating the script console in the **Payload Parser** tab inside your device’s page.
-- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](../integrations/index).
+- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/docs/tagoio/integrations/index).
 
 ## Emulating data sending
 
@@ -61,11 +65,11 @@ Inside your device’s page, find the **Emulator** tab where you can send data t
 
 ## Customizing behavior of your device
 
-Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](../widgets/index), or interact with [API](../api/index) and [Analysis](../analysis/index) scripts.
+Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/index), or interact with [API](/docs/tagoio/api/index) and [Analysis](/docs/tagoio/analysis/index) scripts.
 
 ## Setting rate limits for your devices
 
-- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](../rate-limits-hard-limits)**.
+- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/rate-limits-hard-limits)**.
 - You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](../services/data-input-service) or [Output](../services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 

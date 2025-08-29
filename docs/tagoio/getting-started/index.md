@@ -8,7 +8,7 @@ Welcome to TagoIO! Here are some options to get started.
 
 ## Options to get started
 1. Follow the manual steps described below to start quickly.
-2. Use our [SIMULATOR](../devices/simulator-data-stream) to start right away even if you don't have a physical IoT device.
+2. Use our [SIMULATOR](/docs/tagoio/devices/simulator-data-stream) to start right away even if you don't have a physical IoT device.
 3. Go deeper by following the video below.
 
 ## Introductory video
@@ -31,12 +31,12 @@ In this example, let’s send a variable called _temperature_ from your device t
 
 ![Image 1](/docs_imagem/tagoio/throw-miA.gif)
 
-All devices should use a valid [device-token](../devices/device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
+All devices should use a valid [device-token](/docs/tagoio/devices/device-token) when accessing TagoIO. One device‑token is generated when a device is created and it is available for you to copy if you want to insert it in a real device.
 
 ![Image 2](/docs_imagem/tagoio/token-cj4.gif)
 
 ### Step 2. Build a dashboard
-You can build great [dashboards](../dashboards/index) to visualize data, interact with your devices and share with others. You can build it with the [widgets](../widgets/index) that best fit your needs.
+You can build great [dashboards](/docs/tagoio/dashboards/index) to visualize data, interact with your devices and share with others. You can build it with the [widgets](/docs/tagoio/widgets/index) that best fit your needs.
 
 1. Click **Dashboards** on the left side bar.
 2. Click **+**, then select the type of dashboard, give a name for your dashboard, and click **Save**.
@@ -46,7 +46,7 @@ You can build great [dashboards](../dashboards/index) to visualize data, interac
 ![Image 3](/docs_imagem/tagoio/temp-3UQ.gif)
 
 ### Step 3. Send data
-Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](../api/index). You can use one of our [SDKs](../sdk/index) designed for your platform.
+Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](/docs/tagoio/api/index). You can use one of our [SDKs](/docs/tagoio/sdk/index) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a server with HTTP. Below, you will learn how to quickly send data depending on the OS that you are using.
 
@@ -83,6 +83,6 @@ The response should look like this:
 ### Step 4. Create complete solutions
 This is just the beginning! Check out how powerful TagoIO is to deploy solutions in production.
 
-Create powerful [analysis](../analysis/index) in real‑time using our script capabilities in JavaScript. Program [actions](../actions/index) to be taken based on your rules.
+Create powerful [analysis](/docs/tagoio/analysis/index) in real‑time using our script capabilities in JavaScript. Program [actions](/docs/tagoio/actions/index) to be taken based on your rules.
 
-Learn more about our powerful [API’s](../api/index). And check out the tutorials and [SDKs](../sdk/index) prepared for different boards and applications.
+Learn more about our powerful [API’s](/docs/tagoio/api/index). And check out the tutorials and [SDKs](/docs/tagoio/sdk/index) prepared for different boards and applications.

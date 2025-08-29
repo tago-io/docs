@@ -18,7 +18,7 @@ There are four types of notifications:
   Used by the TagoIO backend to notify users about the system or your account. Example: "There is a new application in the Healthcare industry that you may be interested in."
 
 - TagoRUN User  
-  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](../tagorun/getting-started/notifications-for-users).
+  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](/docs/tagoio/tagorun/getting-started/notifications-for-users).
 
 ## Viewing notifications
 When you log in to your account, you can see all your notifications in the top‑right corner of the admin page.

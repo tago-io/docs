@@ -1,9 +1,5 @@
 {
   "label": "Introduction",
   "position": 1,
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "tagoio/introduction/index"
-  }
+  "collapsed": true
 }
