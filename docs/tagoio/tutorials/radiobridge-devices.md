@@ -39,6 +39,6 @@ When completed, click on **Create Device**.
 Turn your Radio Bridge device on, and wait for the data to arrive in your bucket. Every time the device sends data it will be available in the bucket and shown in the dashboard: [bucket](/docs/tagoio/devices/).  
 You can start editing the installed dashboard.
 
-Also, you can create [notifications](../notifications/notification) and more advanced [scripts](/docs/tagoio/analys/creating-analysis) as needed.
+Also, you can create [notifications](../notifications/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
 
-> Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](../payload-parser/) in your device if necessary.
+> Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](/docs/tagoio/payload-parser/) in your device if necessary.

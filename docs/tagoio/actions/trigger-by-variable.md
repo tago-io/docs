@@ -40,7 +40,7 @@ After setting up the device, you should set a condition for your action to be ex
 
 The example above means that the action will be triggered when **my_variable is less than 15**.
 
-> Looking to create more complex logic statements? You can use the [Action](../actions/) to trigger an [Analysis](/docs/tagoio/analys/analysis), and then manually create custom logic inside of the code.
+> Looking to create more complex logic statements? You can use the [Action](../actions/) to trigger an [Analysis](/docs/tagoio/analysis/analysis), and then manually create custom logic inside of the code.
 
 ### Preventing the action from running every time the conditions are met
 

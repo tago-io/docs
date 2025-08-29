@@ -9,7 +9,7 @@ TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing a
 
 The limits for each resource are determined by your specific plan. The table below shows the limits for each plan.
 
-> **Note:** Most of the limits below are applied per [Profile](/docs/tagoio/account/profiles).
+> **Note:** Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
@@ -18,7 +18,7 @@ The limits for each resource are determined by your specific plan. The table bel
 | [Dashboard](/docs/tagoio/dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
 | [Entity](entities/) | 5 | 50 | 80 |
 | [Device](/docs/tagoio/devices/) | 5 | 100 | 10,000 |
-| [Profile](/docs/tagoio/account/profiles) | 1 / account | 2 / account | 5 / account |
+| [Profile](/docs/tagoio/profiles) | 1 / account | 2 / account | 5 / account |
 | [Team Member](/docs/tagoio/account/team-management-sharing-your-profile) | 0 | 1 | 5 |
 | [TagoCore](/tagocore) | 10 | 10 | 10 |
 | [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |

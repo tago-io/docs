@@ -31,8 +31,8 @@ When using a blueprint dashboard, the field **Variable** will not list variables
 ## On this page
 
 - 1. 'Data From' Field
-- 2. Composing X-axis and Y-axis — See [Chart Configuration](../widgets/chart-configuration#axes)
-- 3. Filtering data — See [Data Filtering](../widgets/widget-data-filtering)
+- 2. Composing X-axis and Y-axis — See [Chart Configuration](/docs/tagoio/widgets/chart-configuration#axes)
+- 3. Filtering data — See [Data Filtering](/docs/tagoio/widgets/widget-data-filtering)
 - 4. Increasing performance — See [Widget Cache System](../General/widget-cache-system)
 
 ## Multiple Axis Chart Widget

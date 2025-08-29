@@ -52,20 +52,20 @@ var temp = payload.value;
 
 ## See also (Payload Parser‑related documentation)
 - [Connector Overview](../integrations/)
-- [Parser vs. Analysis Comparison](/docs/tagoio/analys/parser-vs-analysis-comparison)
-- [Building your own parser](../payload-parser/building-your-own-parser)
-- [Payload Parser - Context & global variables](../payload-parser/-context-global-variables)
-- [Filtering Out Variables with Parser Code](../payload-parser/filtering-out-variables-with-parser-code)
-- [Publishing, updating and accessing decoders](../payload-parser/publishing-updating-and-accessing-decoders)
+- [Parser vs. Analysis Comparison](/docs/tagoio/analysis/parser-vs-analysis-comparison)
+- [Building your own parser](/docs/tagoio/payload-parser/building-your-own-parser)
+- [Payload Parser - Context & global variables](/docs/tagoio/payload-parser/-context-global-variables)
+- [Filtering Out Variables with Parser Code](/docs/tagoio/payload-parser/filtering-out-variables-with-parser-code)
+- [Publishing, updating and accessing decoders](/docs/tagoio/payload-parser/publishing-updating-and-accessing-decoders)
 - [Sharing Connectors & Networks](../integrations/sharing-connectors-networks)
 - [Metadata](/docs/tagoio/devices/data-management/metadata)
 - [Payload Parser Troubleshooting](payload-parser-troubleshooting)
-- [Payload Parser timeUtils Library](../payload-parser/-timeutils-library)
+- [Payload Parser timeUtils Library](/docs/tagoio/payload-parser/-timeutils-library)
 
 ## Related Articles
 - [Publishing, updating and accessing decoders](publishing-updating-accessing-decoders)
 - [Payload Parser](payload-parser)
-- [Payload Parser timeUtils Library](../payload-parser/-timeutils-library)
+- [Payload Parser timeUtils Library](/docs/tagoio/payload-parser/-timeutils-library)
 
 Still need help? Contact our support team through the [Help Center](https://help.tago.io/portal/en/newticket?) page.
 

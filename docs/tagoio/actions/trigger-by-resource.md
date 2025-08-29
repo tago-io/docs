@@ -7,7 +7,7 @@ The trigger type "Trigger by Resource" allows you to execute an Action when a re
 
 - [Access Management](../tagorun/access-management/)
 - [Actions](../actions/)
-- [Analysis](/docs/tagoio/analys/)
+- [Analysis](/docs/tagoio/analysis/)
 - [Device](/docs/tagoio/devices/)
 - [RunUser](../tagorun/)
 

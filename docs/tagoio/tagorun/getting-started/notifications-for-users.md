@@ -21,7 +21,7 @@ There are two primary ways to send notifications to users in TagoRun:
    See [Actions](../actions/) for details on configuring Actions to send user notifications.
 
 2. Notification using Analysis  
-   See [Analysis](/docs/tagoio/analys/) for details on sending notifications from an Analysis script.
+   See [Analysis](/docs/tagoio/analysis/) for details on sending notifications from an Analysis script.
 
 > By pushing notifications using Analysis, you can add custom buttons allowing for more interaction.
 
@@ -35,6 +35,6 @@ The notifications UI can display items similar to the following example:
 
 ## Related documentation
 - See [Actions](../actions/)  
-- See [Analysis](/docs/tagoio/analys/)  
+- See [Analysis](/docs/tagoio/analysis/)  
 - Refer to the Targets documentation (if applicable) for targeting multiple users or groups  
 - See [Notifications for Users using Analysis](/docs/tagoio/analysis/notifications-for-users-using-analysis)

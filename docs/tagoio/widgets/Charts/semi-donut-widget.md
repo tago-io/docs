@@ -35,7 +35,7 @@ From the option **Data From** on the right menu, add the [Blueprint device](/doc
 
 ## Related articles
 
-- [Semi Pie Widget](../widgets/semi-pie-widget)  
+- [Semi Pie Widget](/docs/tagoio/widgets/semi-pie-widget)  
 - [Pie Widget](../Charts/pie-widget)  
 - [Grain Bin Widget](../Gauge & Meter/grain-bin-widget)  
 - [Cylinder Widget](../Gauge & Meter/cylinder-widget)  

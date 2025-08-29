@@ -129,9 +129,9 @@ deno task start
 Refer to other Analysis examples and the Script Examples documentation in the TagoIO Knowledge Base for additional use cases and patterns.
 
 Related internal documentation:
-- [Analysis Overview](/docs/tagoio/analys/) (refer to the Analysis section in the TagoIO docs)
-- [Creating Analysis](/docs/tagoio/analys/creating-analysis) (refer to Creating Analysis)
+- [Analysis Overview](/docs/tagoio/analysis/) (refer to the Analysis section in the TagoIO docs)
+- [Creating Analysis](/docs/tagoio/analysis/creating-analysis) (refer to Creating Analysis)
 - [Script Editor and Script Examples](../script-editor) (see Script Editor and Script Examples)
-- [Running Analysis as External using Node.JS](/docs/tagoio/analys/running-analysis-as-external-using-nodejs) (see the corresponding Node.js external analysis guide)
+- [Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs) (see the corresponding Node.js external analysis guide)
 
 > Note: Keep internal links that begin with `https://help.tago.io/` or `https://admin.tago.io/` as they appear in the TagoIO documentation for cross‑references.

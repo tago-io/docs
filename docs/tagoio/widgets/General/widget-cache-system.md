@@ -32,7 +32,7 @@ To enable or configure caching for a specific widget, use the widget settings in
 - Widget Cache system (this article)  
 - [Formula](./formula)  
 - [Reference Lines](../reference-lines)  
-- [Multiple Axes in Chart Widgets](../widgets/multiple-axes-chart-widgets)  
+- [Multiple Axes in Chart Widgets](/docs/tagoio/widgets/multiple-axes-chart-widgets)  
 - [Widget Header](../General/widget-header)  
 - [Embedding Widgets to your website](../General/embedding-widgets-to-your-website)
 

@@ -29,7 +29,7 @@ If you want to disable the Dashboard Period Preset for a specific widget, enable
 - How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/)
 - Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/)
 - Setting period presets — See [Dashboard Overview](../dashboards/)
-- Disabling the filter for specific widgets — See [Widget Cache system](../widgets/widget-cache-system)
+- Disabling the filter for specific widgets — See [Widget Cache system](/docs/tagoio/widgets/widget-cache-system)
 
 ## Related Dashboards documentation
 - [Dashboard Overview](../dashboards/)  

@@ -4,7 +4,7 @@ description: "This article explains what Connectors are in TagoIO, how they mana
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/) for details about parsers and decoding.
+Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data.
 
 ![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
 
@@ -14,7 +14,7 @@ They also help you automate and scale your devices: after creating a device with
 
 ## Creating a connector
 
-To create a new connector, go to the [Connector management page](connector-overview) and press the following button on the right side of the page:
+To create a new connector, go to the [Connector management page](https://admin.tago.io/integrations/connector) and press the following button on the right side of the page:
 
 ![Add connector button](/docs_imagem/tagoio/connector-overview-2.png)
 
@@ -31,9 +31,9 @@ After creating a connector you can define several optional parameters that will 
 | **Description** | A quick description of what the connector does. |
 | **Logo URL** | An image URL for the sensor or company logo (used when a device is created). |
 
-By default, a newly created connector is visible only to you. You can share it with other [Profiles](/docs/tagoio/account/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/docs/tagoio/integrations/sharing-connectors-networks).
+By default, a newly created connector is visible only to you. You can share it with other [Profiles](/docs/tagoio/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/docs/tagoio/payload-parser/connector/sharing-connectors-networks).
 
-If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](/docs/tagoio/payload-parser/publishing-updating-and-accessing-decoders).
+If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](/docs/tagoio/payload-parser/connector/publishing-updating-and-accessing-decoders).
 
 ### Documentation
 
@@ -54,8 +54,8 @@ When a user creates a device with your connector, you can expose custom paramete
 - **Dropdown** – Users choose from predefined options.
 - **Switch** – Boolean on/off value.
 
-These values are available as global variables in the payload parser context (see the [Payload parser context overview](/docs/tagoio/payload-parser/-context-global-variables)).
+These values are available as global variables in the payload parser context (see the [Payload parser context overview](/docs/tagoio/payload-parser/context-global-variables)).
 
 ### Payload parser
 
-The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](../payload-parser/).
+The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](/docs/tagoio/payload-parser/).

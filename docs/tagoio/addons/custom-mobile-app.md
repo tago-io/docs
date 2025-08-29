@@ -24,5 +24,5 @@ Learn about the other add‑ons on the [Add‑ons](./add-ons-overview) page.
 - [Custom Domain Configuration](./custom-domain-configuration)
 - [Managing your account with the TagoIO Mobile App](../account/managing-your-account-with-the-tagoio-mobile-app)
 - [Account Plans](../billing/account-plans)
-- [ECharts Custom Widget Tutorial](../widgets/echarts-custom-widget-tutorial-)
-- [Custom Widget](../widgets/Custom Widget/custom-widget)
+- [ECharts Custom Widget Tutorial](/docs/tagoio/widgets/echarts-custom-widget-tutorial-)
+- [Custom Widget](/docs/tagoio/widgets/Custom Widget/custom-widget)

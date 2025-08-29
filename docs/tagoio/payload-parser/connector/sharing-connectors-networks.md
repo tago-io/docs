@@ -7,13 +7,12 @@ tags: ["tagoio"]
 
 TagoIO provides many pre-integrated devices and networks so you can quickly connect devices. When a new device or network is not yet integrated, you can create a custom Connector or network integration. Those custom solutions can be shared with members of your team or with any external Profile for their use.
 
-(Links in the original article: [Connector](../integrations/), [network integration](../integrations/), [Profile](../account/profiles).)
 
 ## Sharing a custom Connector or Network
 
 To share a custom Connector or Network with another Profile:
 
-1. Go to the Integrations page. (See [Integrations page](../integrations/).)
+1. Go to the [Integrations page](https://admin.tago.io/integrations/connector).
 2. Select the connector or network you want to share.
 3. Open the Share tab.
 4. Enter the Profile ID of the person you want to share it with.
@@ -31,11 +30,11 @@ The Share modal contains:
 
 ### Utilizing the shared Connector
 
-Once shared, the recipient profiles can select your connector when adding new devices through the [Connector Selection](../integrations/) page. They can view all connectors that have been shared with them by navigating to the **Shared Connectors** list.
+Once shared, the recipient profiles can select your connector when adding new devices through the [Connector Selection](https://admin.tago.io/integrations/connector) page. They can view all connectors that have been shared with them by navigating to the **Shared Connectors** list.
 
 ### Utilizing the shared Network
 
-Custom networks are only applicable for Connectors created by you. To make your custom network available for your connector, head to the configuration page of your network within the [Integrations](../integrations/) page. Then:
+Custom networks are only applicable for Connectors created by you. To make your custom network available for your connector, head to the configuration page of your network within the [Integrations](https://admin.tago.io/integrations/connector) page. Then:
 - Navigate to the **General Information** tab.
 - Select your custom network from the "**Select the networks for this connector**" option.
 
@@ -45,9 +44,4 @@ Once you enable your custom network for a specific connector, the user will be a
 
 ## Making a connector or network public
 
-If you want your connector or network to be accessible to all TagoIO users, you can request to make it public. Public connectors are subject to a review process. To request publication, go to the Integrations page and click "Submit connector".
-
-## Related references
-
-- Refer to the Integrations page for managing connectors and networks: [Integrations page](../integrations/)
-- For information on creating Connectors or network integrations, see the Connector and network integration documentation: [Connector](../integrations/), [network integration](../integrations/)
+If you want your connector or network to be accessible to all TagoIO users, you can request to make it public. Read more about [Publishing connectors](/docs/tagoio/payload-parser/connector/publishing-updating-and-accessing-decoders).

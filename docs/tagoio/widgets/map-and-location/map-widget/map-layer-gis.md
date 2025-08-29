@@ -4,7 +4,7 @@ description: "This article explains how to use the Map widget's GIS layer to dis
 tags: ["tagoio"]
 ---
 ## Overview
-Display geometries, boundaries, areas, roads, pipelines, and other spatial features using the [Map widget](/docs/tagoio/widgets/map-widget) GIS layer. Each layer is defined by GeoJSON files (`.geojson`, `.json`, `.zip`), which you can upload and manage either statically or dynamically.
+Display geometries, boundaries, areas, roads, pipelines, and other spatial features using the [Map widget](/docs/tagoio/widgets/map-and-location/map-widget/) GIS layer. Each layer is defined by GeoJSON files (`.geojson`, `.json`, `.zip`), which you can upload and manage either statically or dynamically.
 
 ## Supported file types and shapefile conversion
 - Accepted GeoJSON formats: `.geojson`, `.json`, and `.zip` (containing GeoJSON).
@@ -45,4 +45,4 @@ You can use colors from your GeoJSON file by indicating which property represent
 - 2. Layer color
 
 ## Related documentation
-- See [Map widget](/docs/tagoio/widgets/map-widget) for general map widget setup and configuration.
+- See [Map widget](/docs/tagoio/widgets/map-and-location/map-widget/) for general map widget setup and configuration.

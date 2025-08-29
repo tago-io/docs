@@ -8,7 +8,7 @@ Actions is a powerful feature that gives you total control over your devices by 
 With Actions you can:
 - Send an SMS based on certain conditions.
 - Send an email based on certain conditions.
-- Run scripts using [Analysis](/docs/tagoio/analys/).
+- Run scripts using [Analysis](/docs/tagoio/analysis/).
 - Make HTTP POST requests.
 - Send notifications to your account or to the account of your [RunUsers](../tagorun/tagorun-mobile-app).
 - Publish to an MQTT topic based on certain conditions.

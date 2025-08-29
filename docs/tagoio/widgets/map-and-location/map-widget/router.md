@@ -32,7 +32,7 @@ When users access the map from a mobile device, they will have the option to sel
 > **Note:** Only Google Maps is available when using a browser from a computer.
 
 ## Related documentation
-- [Map Widget](/docs/tagoio/widgets/map-widget)
+- [Map Widget](/docs/tagoio/widgets/map-and-location/map-widget/)
 - [Map filters](/docs/tagoio/map-filters)
 - [Geofences in map widgets](/docs/tagoio/widgets/geofences-in-map-widgets)
 - [Map Layer GIS](/docs/tagoio/map-layer-gis)
@@ -41,7 +41,7 @@ When users access the map from a mobile device, they will have the option to sel
 - [Displaying Locations on a Map with TTN LoRaWAN](/docs/tagoio/tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
 
 ## Additional related articles
-- [Map Widget](/docs/tagoio/widgets/map-widget)
+- [Map Widget](/docs/tagoio/widgets/map-and-location/map-widget/)
 - [Tags System](/docs/tagoio/getting-started/tags-system)
 - [Compose Widget](/docs/tagoio/widgets/Media Widgets/compose-widget)
 - [Formula](/docs/tagoio/formula)

@@ -42,13 +42,13 @@ Every time the device sends data, the parser is executed, the extracted data is 
 
 ## Custom Parsing (v2)
 
-If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](../payload-parser/) and the Sigfox developer guide for detailed information.
+If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](/docs/tagoio/payload-parser/) and the Sigfox developer guide for detailed information.
 
 ## Advanced Features
 
 You can create **notifications** and advanced **scripts** as needed:
 - Notifications: [Notifications](../notifications/notification)
-- Scripts / Analysis: [Analysis Overview](/docs/tagoio/analys/)
+- Scripts / Analysis: [Analysis Overview](/docs/tagoio/analysis/)
 
 ## Notes
 

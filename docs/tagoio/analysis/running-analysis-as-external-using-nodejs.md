@@ -96,7 +96,7 @@ You can check our analysis examples with the full environment already set up for
 
 ## References and related documentation
 
-- See [Analysis](/docs/tagoio/analys/) for an overview of creating and managing analyses in TagoIO.
+- See [Analysis](/docs/tagoio/analysis/) for an overview of creating and managing analyses in TagoIO.
 - See [Analysis‑Builder](../console-for-debug) for details on bundling and uploading scripts that use third‑party packages.
 
 On this page (for reference)

@@ -23,19 +23,19 @@ After making your adjustments click the **Build template** button to save the in
 It is always a good idea to access the link yourself before sharing to ensure the customized install page meets your standards.
 
 ## See also
-- [Analysis Overview](/docs/tagoio/analys/)
-- [Creating Analysis](/docs/tagoio/analys/creating-analysis)
+- [Analysis Overview](/docs/tagoio/analysis/)
+- [Creating Analysis](/docs/tagoio/analysis/creating-analysis)
 - [Script Editor](../script-editor)
 - [Script Examples](../tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
-- [Distributing analysis](/docs/tagoio/analys/distributing-analysis) (this article)
-- [Running Analysis as External using Node.JS](/docs/tagoio/analys/running-analysis-as-external-using-nodejs)
-- [Running Analysis as External using Deno](/docs/tagoio/analys/running-analysis-as-external-using-deno)
+- [Distributing analysis](/docs/tagoio/analysis/distributing-analysis) (this article)
+- [Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs)
+- [Running Analysis as External using Deno](/docs/tagoio/analysis/running-analysis-as-external-using-deno)
 
 ## Related articles
-- [Creating Analysis](/docs/tagoio/analys/creating-analysis)
-- [Running Analysis as External using Deno](/docs/tagoio/analys/running-analysis-as-external-using-deno)
+- [Creating Analysis](/docs/tagoio/analysis/creating-analysis)
+- [Running Analysis as External using Deno](/docs/tagoio/analysis/running-analysis-as-external-using-deno)
 - [Distributing Dashboards](../dashboards/distributing-dashboards)
 - [Running Analysis via Action](../actions/)
-- [Analysis Overview](/docs/tagoio/analys/)
+- [Analysis Overview](/docs/tagoio/analysis/)

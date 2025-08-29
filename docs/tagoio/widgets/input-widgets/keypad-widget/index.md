@@ -25,7 +25,7 @@ From the option **‘Data From’** on the right menu, select one device from yo
 
 ### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **‘Data From’** on the right menu, add the [Blueprint device](../widgets/blueprint-devices) and input the name of the variable that contains the information.
+From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/widgets/blueprint-devices) and input the name of the variable that contains the information.
 
 > When using a Blueprint dashboard, the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
@@ -58,11 +58,11 @@ Learn more about how to [manipulate the keypad's data](../keypad-data-manipulati
 
 ## On this page
 - 1. 'Data From' Field (/docs/tagoio/devices/data-management/data-records)
-- 2. Visualization — See [Widget Visualization](../widgets/widget-configuration#visualization)
+- 2. Visualization — See [Widget Visualization](/docs/tagoio/widgets/widget-configuration#visualization)
 
 ## Related Keypad documentation
 - [Keypad Widget](#) (this article)  
-- [Creating Keypad Widgets](../widgets/widget-configuration#keypad-setup)  
+- [Creating Keypad Widgets](/docs/tagoio/widgets/widget-configuration#keypad-setup)  
 - [Keypad Visualization](../keypad-visualization)  
 - [Keypad Data Manipulation](../keypad-data-manipulation)
 

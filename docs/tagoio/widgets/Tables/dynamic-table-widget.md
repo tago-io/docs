@@ -30,7 +30,7 @@ To edit a specific section of this widget, you must hover over the desired eleme
 - [Dynamic Table Widget](#) (this article)
 - [Entity Table Widget](../Tables/entity-table-widget)
 - [Static Table Widget](../Tables/static-table-widget)
-- [User List Widget](../widgets/user-list-widget-.md)
+- [User List Widget](/docs/tagoio/widgets/user-list-widget-.md)
 
 ## Related Articles
 - [Tables](../tables)

@@ -101,12 +101,12 @@ Geofences let you draw colored geographic boundaries on the image to visualize d
 
 - Creating your own
 - 1. 'Data From' Field (/docs/tagoio/devices/data-management/data-records)
-- 2. Image Marker Behavior Modes — See [Widget Behavior](../widgets/widget-configuration#behavior-modes)
-- 3. Positioning Pins — See [Pin Configuration](../widgets/widget-configuration#positioning)
-  - 3. Layer — See [Layer Management](../widgets/widget-configuration#layers)
-- 4. Editor — See [Widget Editor](../widgets/widget-configuration#editor)
-- 5. Infobox — See [Infobox Configuration](../widgets/widget-configuration#infobox)
-- 6. Filters — See [Data Filtering](../widgets/widget-data-filtering)
+- 2. Image Marker Behavior Modes — See [Widget Behavior](/docs/tagoio/widgets/widget-configuration#behavior-modes)
+- 3. Positioning Pins — See [Pin Configuration](/docs/tagoio/widgets/widget-configuration#positioning)
+  - 3. Layer — See [Layer Management](/docs/tagoio/widgets/widget-configuration#layers)
+- 4. Editor — See [Widget Editor](/docs/tagoio/widgets/widget-configuration#editor)
+- 5. Infobox — See [Infobox Configuration](/docs/tagoio/widgets/widget-configuration#infobox)
+- 6. Filters — See [Data Filtering](/docs/tagoio/widgets/widget-data-filtering)
 - 7. Geofence — See [Geofence Integration](/docs/tagoio/devices/data-management/geofence-management)
 
 ## Related articles

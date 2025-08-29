@@ -5,9 +5,9 @@ tags: ["tagoio"]
 ---
 ## Overview
 
-Metadata is one of the most important concepts when creating [dashboards](../dashboards/creating-dashboard-tabs) and [widgets](../widgets/). Metadata is a piece of information that you can store in the variable payload.
+Metadata is one of the most important concepts when creating [dashboards](/docs/tagoio/dashboards/) and [widgets](/docs/tagoio/widgets/). Metadata is a piece of information that you can store in the variable payload.
 
-> With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](../widgets/map-widget) pin color or place a [heat map](../widgets/heat-map-widget) bubble in another position, and more.
+With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](/docs/tagoio/widgets/map-and-location/map-widget/) pin color or place a [heat map](/docs/tagoio/widgets/map-and-location/heat-map-widget) bubble in another position, and more.
 
 ## JSON example
 
@@ -25,9 +25,13 @@ Metadata is one of the most important concepts when creating [dashboards](../das
 
 ## Using custom metadata fields
 
-You can define your own metadata fields and use them in your [Analysis](/docs/tagoio/analys/) or [Application](../tagorun/tagorun-mobile-app). Some metadata fields trigger specific widget behaviors or change how the widget displays the data.
+You can define your own metadata fields and use them in your [Analysis](/docs/tagoio/analysis/) or Application. Some metadata fields trigger specific widget behaviors or change how the widget displays the data.
 
-> Note: Metadata has priority over customizations set in the widget edit screen. Some widgets provide an option to change this behavior.
+:::note
+
+Metadata has priority over customizations set in the widget edit screen. Some widgets provide an option to change this behavior.
+
+:::
 
 For example, this article uses the `color` and `icon` metadata fields in the following JSON payload:
 
