@@ -15,9 +15,13 @@ Our [TagoIO API documentation](/docs/tagoio/api/index) offers comprehensive inst
 
 ## Adding devices
 
-Devices are connected to TagoIO using [Connectors](/docs/tagoio/integrations/index), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started) article.
+Devices are connected to TagoIO using [Connectors](/docs/tagoio/integrations/index), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started/index) article.
 
-> ℹ️ Learn more about [Connectors](/docs/tagoio/integrations/index) here.
+:::note
+
+Learn more about [Connectors](/docs/tagoio/integrations/index) here.
+
+:::
 
 ## Device type and data storage
 
@@ -70,19 +74,9 @@ Set device parameters in the **Configuration Parameters** tab. These can be used
 ## Setting rate limits for your devices
 
 - When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/rate-limits-hard-limits)**.
-- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](../services/data-input-service) or [Output](../services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
+- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](/docs/tagoio/services/data-input-service) or [Output](/docs/tagoio/services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deleting devices
 
 To delete a device, simply go to **More** on the device page and click on **Delete Device**. Once deleted, all data will also be excluded. There is no way to recover it once deleted. Be certain before proceeding.
-
-## See also
-
-- [Adding devices with connectors](./adding-devices-with-connectors)
-- [Device Token](./device-token)
-- [Device Data Management](./device-data-management)
-- [Device Emulator](./device-emulator)
-- [Getting Started](../getting-started)
-- [API Overview](../api/index)
-- [Connector Overview](../integrations/index)

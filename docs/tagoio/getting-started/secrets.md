@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 
-Unlike regular Environment Variables (see [Environment Variables](/docs/tagoio/analysis/environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](/docs/tagoio/analysis/index)) and use them in some Actions (see [Actions documentation](/docs/tagoio/actions/index)).
+Unlike regular Environment Variables (see [Environment Variables](/docs/tagoio/analysis/environment-variables)), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your Analysis code (see [Analysis documentation](/docs/tagoio/analysis/)) and use them in some Actions (see [Actions documentation](/docs/tagoio/actions/)).
 
 To start using secrets, open your [Admin](https://admin.tago.io/) panel , navigate to the Account menu, and select "Secrets".
 
@@ -58,6 +58,6 @@ Before utilizing secrets as environment variables in your script, ensure that yo
 1. Assigning tags to your secret.
 2. Creating an Access Management policy that grants your analysis permission to read those tags.
 
-Refer to the [Access Management](/docs/tagoio/tagorun/access-management/index) module for detailed instructions on creating policies and managing permissions.
+Refer to the [Access Management](/docs/tagoio/tagorun/access-management/) module for detailed instructions on creating policies and managing permissions.
 
 ---
