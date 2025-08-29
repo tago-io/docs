@@ -76,9 +76,9 @@ Before you begin, ensure you have the following:
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](../../devices/index#Adding_devices).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](../../devices/#Adding_devices).
 
-For detailed instructions on adding devices, visit the [Adding Devices](../../devices/index#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../../devices/#Adding_devices) page.
 
 ---
 

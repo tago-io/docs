@@ -18,10 +18,10 @@ Before sending notifications, ensure you have users registered in your accountâ€
 There are two primary ways to send notifications to users in TagoRun:
 
 1. Notifications using Actions  
-   See [Actions](../actions/index) for details on configuring Actions to send user notifications.
+   See [Actions](../actions/) for details on configuring Actions to send user notifications.
 
 2. Notification using Analysis  
-   See [Analysis](../analysis/index) for details on sending notifications from an Analysis script.
+   See [Analysis](../analysis/) for details on sending notifications from an Analysis script.
 
 > By pushing notifications using Analysis, you can add custom buttons allowing for more interaction.
 
@@ -34,7 +34,7 @@ The notifications UI can display items similar to the following example:
 - Link/button: Refrigerator Dashboard
 
 ## Related documentation
-- See [Actions](../actions/index)  
-- See [Analysis](../analysis/index)  
+- See [Actions](../actions/)  
+- See [Analysis](../analysis/)  
 - Refer to the Targets documentation (if applicable) for targeting multiple users or groups  
 - See [Notifications for Users using Analysis](../../analysis/notifications-for-users-using-analysis)

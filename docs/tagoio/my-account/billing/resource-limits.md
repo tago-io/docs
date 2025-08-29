@@ -13,19 +13,19 @@ The limits for each resource are determined by your specific plan. The table bel
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
-| [Actions](../../actions/index) | 5 | 100 | 200 |
-| [Analysis](../../analysis/index) | 5 | 100 | 200 |
+| [Actions](../../actions/) | 5 | 100 | 200 |
+| [Analysis](../../analysis/) | 5 | 100 | 200 |
 | [Dashboard](../../dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
-| [Entity](entities/index) | 5 | 50 | 80 |
-| [Device](../../devices/index) | 5 | 100 | 10,000 |
+| [Entity](entities/) | 5 | 50 | 80 |
+| [Device](../../devices/) | 5 | 100 | 10,000 |
 | [Profile](../../account/profiles) | 1 / account | 2 / account | 5 / account |
 | [Team Member](../../account/team-management-sharing-your-profile) | 0 | 1 | 5 |
 | [TagoCore](/tagocore) | 10 | 10 | 10 |
 | [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
-| [Custom Connector](../../integrations/index) | 3 | 20 | 50 |
+| [Custom Connector](../../integrations/) | 3 | 20 | 50 |
 | [Custom Network](../../integrations/creating-a-network-integration) | 1 | 5 | 10 |
 | [Device service authorization](../../integrations/general/authorization) | 10 | 50 | 200 |
-| [Access Management Policies](../../tagorun/access-management/index) | 5 | 30 | 100 |
+| [Access Management Policies](../../tagorun/access-management/) | 5 | 30 | 100 |
 | [Dictionary & Multi-language](../../dictionaries) | 2 | 10 | 50 |
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.

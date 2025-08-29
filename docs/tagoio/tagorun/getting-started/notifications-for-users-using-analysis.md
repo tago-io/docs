@@ -3,7 +3,7 @@ title: "Notifications for Users using Analysis"
 description: "This article explains how to send notifications to TagoRUN users using Analysis, how to configure notification buttons and their behaviors, and the basic customizable options available for notification actions."
 tags: ["tagoio", "analysis"]
 ---
-The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and buttons, see [Analysis](../analysis/index) and [buttons](../../widgets/push-button-widget).
+The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and buttons, see [Analysis](../analysis/) and [buttons](../../widgets/push-button-widget).
 
 ![Notification example showing a Refrigerator Alarm card with a call-to-action link](/docs_imagem/tagoio/notifications-for-users-using-analysis-2.png)
 
@@ -38,7 +38,7 @@ Follow these instructions to set up your analysis and send the notifications. Yo
 
 With this all up and running, you can open the script of your analysis and start to change it as needed. The code is fully commented on and detailed to guide you.
 
-You can also create an [Action](../../actions/index) to trigger the Analysis or set it to run every X minutes.
+You can also create an [Action](../../actions/) to trigger the Analysis or set it to run every X minutes.
 
 ## The Notification Object
 

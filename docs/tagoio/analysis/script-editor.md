@@ -5,14 +5,14 @@ tags: ["tagoio"]
 ---
 With the script editor, developers can create and edit their own scripts at TagoIO. These scripts are executed according to the configuration defined in the Analysis section.
 
-To use the script editor, go to [Analysis](../analysis/index), then create or edit an analysis. Set the name, interval, and choose to run it at TagoIO.
+To use the script editor, go to [Analysis](../analysis/), then create or edit an analysis. Set the name, interval, and choose to run it at TagoIO.
 
 > Important: The editor tab is only shown when you choose to run the script at TagoIO.
 
 By clicking the Analysis tab, you can open the editor. From there you can:
 - Load scripts from your computer
 - Download scripts from the editor
-- Choose from one of our [snippet examples](../analysis/index)
+- Choose from one of our [snippet examples](../analysis/)
 
 ![TagoIO Script Editor screenshot](/docs_imagem/tagoio/script-editor-2.png)
 
@@ -71,7 +71,7 @@ The editor includes a console area that shows analysis runtime logs and timestam
 
 ## Related references
 
-- Analysis (see [Analysis](../analysis/index))  
-- Snippet examples (see [snippet examples](../analysis/index))
+- Analysis (see [Analysis](../analysis/))  
+- Snippet examples (see [snippet examples](../analysis/))
 
 For additional details on creating and configuring analyses, refer to the Analysis documentation and the provided snippet examples.

@@ -62,7 +62,7 @@ You can choose to enable the following options:
 
 1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](../../account/user-management) module.
 2. **Immediately delete user account** – you can consent to TagoIO to process the request and immediately delete the user account.
-3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](../../analysis/index) and our [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk).
+3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](../../analysis/) and our [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk).
 
 > ⚠️ **TagoIO will never remove any Run User data without your consent.** To allow the immediate deletion of an end‑user, you must activate the option “Immediately delete user account”.
 

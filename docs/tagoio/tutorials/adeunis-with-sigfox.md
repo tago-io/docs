@@ -8,13 +8,13 @@ TagoIO supports most Adeunis devices by providing an integration with the Sigfox
 
 ![Adeunis + Sigfox + TagoIO diagram](/docs_imagem/tagoio/adeunis-with-sigfox-2.png)
 
-All data sent by your device will be readily available to be displayed in widgets and processed in your [Analysis](../analysis/index).
+All data sent by your device will be readily available to be displayed in widgets and processed in your [Analysis](../analysis/).
 
 > Note: You can check if a parser script was added to your device under the tab "Payload Parser".
 
 ## Adding a device
 To add an Adeunis device in TagoIO:
-1. Go to [Devices](../devices/index).
+1. Go to [Devices](../devices/).
 2. Click on "Add Devices".
 3. Filter the list by network and select "Sigfox".
 4. Pick your specific Adeunis device from the list.
@@ -26,7 +26,7 @@ To add an Adeunis device in TagoIO:
 2. Each time the device sends data, the parser will be executed automatically, extracting the measured variables and sending them to the bucket.  
 3. The extracted data is then available in widgets, dashboards, and can be processed further.
 
-You can start building **dashboards** immediately: [Dashboard Overview](../dashboards/index).
+You can start building **dashboards** immediately: [Dashboard Overview](../dashboards/).
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
 - Notifications: [Notifications](../notifications/notification)  

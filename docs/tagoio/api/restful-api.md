@@ -3,7 +3,7 @@ title: "RESTful API"
 description: "This article summarizes TagoIO's RESTful API capabilities, the common operations you can perform, the three token types required for API access, and a note about rate limits when executing requests."
 tags: ["tagoio", "api"]
 ---
-We provide a powerful set of RESTful API endpoints and documentation that's used by Analysis behind the scenes to perform requests to TagoIO. See [Restful API documentation](https://docs.tago.io/api/) and [Analysis](../analysis/index) for more details.
+We provide a powerful set of RESTful API endpoints and documentation that's used by Analysis behind the scenes to perform requests to TagoIO. See [Restful API documentation](https://docs.tago.io/api/) and [Analysis](../analysis/) for more details.
 
 ## What you can do with the API
 The RESTful API supports a wide range of operations, including (but not limited to):

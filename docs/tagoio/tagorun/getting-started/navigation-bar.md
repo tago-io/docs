@@ -36,6 +36,6 @@ To add new items to your user menu:
     - **Icon:** choose the icon along with its color, which will be displayed next to the option.
     - **Type:** determines the type of field the user will interact with.
     - **Alignment:** choose the text alignment direction for the item.
-    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](../../getting-started/tags-system) associated with the [Access Management](../../tagorun/access-management/index) feature.
+    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](../../getting-started/tags-system) associated with the [Access Management](../../tagorun/access-management/) feature.
 
 Once you have configured your user menu and deployed your updated Run, your users can see the menu items that they have permission to view when signed in.

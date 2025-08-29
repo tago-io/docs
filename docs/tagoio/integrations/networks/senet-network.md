@@ -13,13 +13,13 @@ The integration is accomplished in two parts:
 
 ## 1) TagoIO Setup
 
-First, go to the [Devices](../../devices/index) module in our admin, look for Senet, and select it.
+First, go to the [Devices](../../devices/) module in our admin, look for Senet, and select it.
 
 ![Connector selection showing the Senet connector in the Devices module](/docs_imagem/tagoio/senet-network-4.png)
 
 ### Create Device
 
-Type a name for your device, select a **[data storage type](../../devices/index)** and define a **[Data Retention](../../devices/data-management/data-retention-feature)**, then click on *Create device*.
+Type a name for your device, select a **[data storage type](../../devices/)** and define a **[Data Retention](../../devices/data-management/data-retention-feature)**, then click on *Create device*.
 
 ![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
 

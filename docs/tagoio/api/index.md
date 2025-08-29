@@ -12,7 +12,7 @@ Access the [API documentation](https://docs.tago.io/api/).
 We follow RESTful principles. Before checking the API documentation, there are a few details you should know.
 
 ## SDK
-Looking for our [SDK](../sdk/index)?
+Looking for our [SDK](../sdk/)?
 
 ## API response pattern
 All responses from the TagoIO API follow a consistent pattern. You will typically receive responses similar to the examples below:

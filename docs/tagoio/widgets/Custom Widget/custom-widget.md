@@ -83,4 +83,4 @@ You may choose to run an Analysis once you send data from your widget. To do so,
 - Map Widget (../Map & Location/Map Widget/map-widget)
 - Image Marker Widget [Image Marker Widget](../Map & Location/image-marker-widget)
 - Compose Widget (../Media Widgets/compose-widget)
-- Analysis Overview (../../analysis/index)
+- Analysis Overview (../../analysis/)

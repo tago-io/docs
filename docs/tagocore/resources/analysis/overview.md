@@ -49,7 +49,7 @@ Let's pretend you want to run code in Node.js. To achieve this, you could instal
 Under the hood, TagoCore would use the following terminal command to run your analysis:
 
 ```shell
-/Users/tagocore/.nvm/versions/node/v14.17.3/bin/node /Users/tagocore/project-code/index.js
+/Users/tagocore/.nvm/versions/node/v14.17.3/bin/node /Users/tagocore/project-code/.js
 ```
 
 ## Executing your Analysis

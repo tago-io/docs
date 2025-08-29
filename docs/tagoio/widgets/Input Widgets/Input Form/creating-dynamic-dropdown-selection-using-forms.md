@@ -9,7 +9,7 @@ Dynamic Dropdown allows users to populate a dropdown list with dynamic items com
 
 The items for a Dynamic Dropdown are sourced from a variable. Because of that, you can change the available values dynamically — for example, developers can create inputs where users insert values that will later appear in the Dynamic Dropdown.
 
-You will typically use this feature when you need the dropdown options to change often. For example, imagine you need to add supervisors to your application and later attach those supervisors (clients) to a device. Using a Dynamic Dropdown you can change the client options simply by adding or removing entries from the [device's data storage](devices/index).
+You will typically use this feature when you need the dropdown options to change often. For example, imagine you need to add supervisors to your application and later attach those supervisors (clients) to a device. Using a Dynamic Dropdown you can change the client options simply by adding or removing entries from the [device's data storage](devices/).
 
 ![Field type: Dropdown configuration](/docs_imagem/tagoio/creating-dynamic-dropdown-selection-using-forms-2.png)
 

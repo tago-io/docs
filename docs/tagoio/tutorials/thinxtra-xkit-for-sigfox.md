@@ -33,7 +33,7 @@ Here is a diagram of the Xkit board's pinout. For more details, click [here](htt
 
 ## Payload Example
 
-Xkit can be programmed with a file that will send data from the sensors with a payload format as shown below. TagoIO is flexible enough to parse this payload in order to extract the variables – it is done through a script coded in the [Payload Parser](../payload-parser/index).
+Xkit can be programmed with a file that will send data from the sensors with a payload format as shown below. TagoIO is flexible enough to parse this payload in order to extract the variables – it is done through a script coded in the [Payload Parser](../payload-parser/).
 
 ![Payload example](/docs_imagem/tagoio/paylot_xkit-i8s.png)
 
@@ -67,7 +67,7 @@ You can start editing your dashboard as needed.
 
 ![Dashboard](/docs_imagem/tagoio/thinxtra_Dash-7pM.png)
 
-> You can edit the [parse script](../payload-parser/index) created for your device that extracts variables from the payload.
+> You can edit the [parse script](../payload-parser/) created for your device that extracts variables from the payload.
 
 Also, you can create [notifications](../notifications/notification) and more advanced [scripts](../analysis/creating-analysis) as needed.
 

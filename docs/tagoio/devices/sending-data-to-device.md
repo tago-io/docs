@@ -28,4 +28,4 @@ TagoIO supports two-way communication with devices so they can both send and rec
 - [Sending Data](../devices/data-management/sending-data)
 - [MQTT - Process data, Publish it and Subscribe to a topic](../mqtt-process-data-publish-it-and-subscribe-to-a-topic)
 - [Defining Actions](../actions/defining-actions)
-- [Devices](../devices/index)
+- [Devices](../devices/)

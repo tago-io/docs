@@ -29,7 +29,7 @@ Follow these steps to set up the Sigfox backend and TagoIO.
 - [Adeunis with Sigfox](../tutorials/adeunis-with-sigfox)
 - [Thinxtra Xkit for Sigfox](../tutorials/thinxtra-xkit-for-sigfox)
 - [Sigfox - Downlink](../tutorials/sigfox-downlink)
-- [Network Integration](../integrations/index)
+- [Network Integration](../integrations/)
 
 ## Step 1: Create Authorization in TagoIO
 
@@ -100,9 +100,9 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
 
 3. **Add Device Support via Connectors (If Necessary)**  
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
-   - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/index).
+   - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/).
 
-For detailed instructions on adding devices, visit the [Adding Devices](../devices/index#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../devices/#Adding_devices) page.
 
 ## Finalizing Setup
 

@@ -30,4 +30,4 @@ These settings currently apply to TagoIO web applications; we’re working to ex
 <!-- Image placeholder removed for build -->
 
 ## Related documentation
-- Widget header: See [Widgets Overview](widgets/index) for details on what the header contains and how header visibility affects your widget.
+- Widget header: See [Widgets Overview](widgets/) for details on what the header contains and how header visibility affects your widget.

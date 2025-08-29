@@ -41,7 +41,7 @@ You can apply a soft rate limit to:
 - **Your whole profile** – all devices in the profile follow this limit.  
   To set it, navigate to your Admin page → [Profiles & Teams](https://admin.tago.io/profile) → “More” tab.
 - **A specific device** – overrides the profile limit for that device.  
-  To set it, go to the [Devices](../devices/index) module, select the desired device, and click the “More” tab.
+  To set it, go to the [Devices](../devices/) module, select the desired device, and click the “More” tab.
 
 ### Monitor your request per minute statistics
 
@@ -56,8 +56,8 @@ Activate now the Control Tower add‑on on your [Billing page](../billing/accoun
 Links and references in this article:
 - "add‑on" — see [add‑on documentation](../add-ons-overview)
 - "Hard Limits (Rate Limits)" — see [Rate Limits (Hard limits)](../rate-limits-hard-limits)
-- "Device" — see [Devices](../devices/index)
+- "Device" — see [Devices](../devices/)
 - "account limitations" — see [account limitations](../billing/account-plans#limitations)
 - "Billing page" — [Billing page](../billing/account-plans)
 - "Pricing Page" — [Pricing Page](https://tago.io/pricing)
-- "Devices module" and "Admin" — see [Devices module in Admin](../devices/index) and [Admin documentation](getting-started)
+- "Devices module" and "Admin" — see [Devices module in Admin](../devices/) and [Admin documentation](getting-started)

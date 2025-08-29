@@ -60,7 +60,7 @@ Device parameters let you set values that can later be accessed in the payload p
 
 Example: A dropdown parameter appears in the user view as shown below (image omitted for brevity).
 
-For details on accessing these parameters in the payload parser, see the [Payload parser context overview](../../payload-parser/index-context-global-variables).
+For details on accessing these parameters in the payload parser, see the [Payload parser context overview](../../payload-parser/-context-global-variables).
 
 ## Tokens and Getting Devices
 

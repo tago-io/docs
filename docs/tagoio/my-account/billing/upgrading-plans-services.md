@@ -19,4 +19,4 @@ To upgrade your billing, go to the [Billing](../billing/billing-summary) option 
 
 If you want to automate upgrades of your account using an auto‑scaling feature, see the following tutorial:
 
-- [How to auto-scale your profile limit](../analysis/index)
+- [How to auto-scale your profile limit](../analysis/)

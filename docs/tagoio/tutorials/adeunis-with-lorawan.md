@@ -9,16 +9,16 @@ tags: ["tagoio"]
 
 TagoIO supports most Adeunis devices by providing integration with several LoRaWAN™ networks. TagoIO parses incoming payloads and extracts the measured variable values in real time, making all device data readily available for display or processing in your Analysis.
 
-See [Analysis](../analysis/index) for working with and visualizing your incoming device data.
+See [Analysis](../analysis/) for working with and visualizing your incoming device data.
 
 ## Note
 
-> You can check whether a [parser](../payload-parser/index) script was added to your device under the tab **Payload Parser**.
+> You can check whether a [parser](../payload-parser/) script was added to your device under the tab **Payload Parser**.
 
 ## Adding a device
 
 To add an Adeunis device to TagoIO:
-1. Go to [Devices](../devices/index).
+1. Go to [Devices](../devices/).
 2. Click **Add Devices**.
 3. Filter the network by the LoRaWAN™ provider you will connect with.
 4. Pick your Adeunis device from the list.
@@ -41,13 +41,13 @@ Each provider link points to the corresponding TagoIO tutorial for configuring A
 After you have completed the setup above, you will be ready to move forward.  
 Now, just turn your Adeunis device on and wait for the data to hit your **data bucket**. Every time the device sends data, the parser will be executed, the extracted data sent to the bucket, and it will be ready to be shown in the dashboards.
 
-You can start building your [dashboards](../dashboards/index) immediately.  
+You can start building your [dashboards](../dashboards/) immediately.  
 Also, you can create [notifications](../notifications/notification) and more advanced [scripts](../analysis/creating-analysis) as needed.
 
 ## Additional references
 
 - Check the device's **Payload Parser** tab to confirm or edit any parser scripts.
-- For device management and other configuration options, see the Devices documentation: [Devices](../devices/index)
-- Build dashboards: [Dashboards](../dashboards/index)
+- For device management and other configuration options, see the Devices documentation: [Devices](../devices/)
+- Build dashboards: [Dashboards](../dashboards/)
 - Create notifications: [Notifications](../notifications/notification)
 - Write advanced scripts: [Scripts](../analysis/creating-analysis)

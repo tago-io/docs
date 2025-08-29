@@ -10,6 +10,6 @@ You create [Targets](../defining-targets) (for example, users) and decide which 
 
 To do this, navigate to the Access module and click **Add Policy**.
 
-You can manually configure a policy by creating a Policy under the [Access module](../tagorun/access-management/index).
+You can manually configure a policy by creating a Policy under the [Access module](../tagorun/access-management/).
 
 ![Access Management — policy list and Add Policy button](/docs_imagem/tagoio/creating-a-policy-2.png)

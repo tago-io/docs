@@ -51,7 +51,7 @@ This field is only used if you are running your analysis as **external**. If you
 [Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-nodejs).
 
 Related documentation:
-- See [Analysis Overview](../analysis/index)
+- See [Analysis Overview](../analysis/)
 - See [Script Editor](../script-editor)
 - See [Script Examples](../tutorials/script-examples)
 - See [Console for Debug](../console-for-debug)

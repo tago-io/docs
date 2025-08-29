@@ -68,7 +68,7 @@ After creation, copy the authorization token. You will need this in later steps.
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
 - For more information on available connectors and how to use them, refer to the **Connector Overview**.
 
-For detailed instructions on adding devices, visit the [Adding Devices](../../devices/index#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../../devices/#Adding_devices) page.
 
 ---
 

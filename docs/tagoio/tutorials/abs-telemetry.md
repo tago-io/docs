@@ -36,7 +36,7 @@ Learn more information about the [ABS devices configuration](http://www.abstelem
 
 ## TagoIO Setup
 
-Add a **[device](../devices/index)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
+Add a **[device](../devices/)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
 
 ![Image 2](/docs_imagem/tagoio/Screen-20Shot-202019-10-28-20at-2016.41.44-bjQ.png)
 
@@ -44,6 +44,6 @@ Add a **[device](../devices/index)** in your account at TagoIO. Go to *Devices* 
 
 Click on **'Create Device'**, and you will have confirmation that the device was created.
 
-Turn your device on, and wait for the data to arrive and hit your data **[bucket](../devices/index)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](../dashboards/index)** by adding gauges, tables and more.
+Turn your device on, and wait for the data to arrive and hit your data **[bucket](../devices/)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](../dashboards/)** by adding gauges, tables and more.
 
 Enjoy your ABS devices with TagoIO!

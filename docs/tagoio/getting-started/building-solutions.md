@@ -15,4 +15,4 @@ Watch this short video to learn the key concepts.
 
 Take a look at this short interactive introduction at https://intro.tago.io/.
 
-Use [Get started](/docs/tagoio/getting-started/index) to add a device.
+Use [Get started](/docs/tagoio/getting-started/) to add a device.

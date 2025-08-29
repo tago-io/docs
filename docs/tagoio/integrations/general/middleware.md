@@ -13,14 +13,14 @@ Also review the tutorial available in the TagoIO [community](https://community.t
 ## Related documentation
 
 General:
-- [Network Integration](../integrations/index)
+- [Network Integration](../integrations/)
 - [Creating a Network integration](../../integrations/creating-a-network-integration)
 - [Authorization](../integrations/general/authorization)
 - [Serial Number Format](../serial-number-format)
 - [Middleware](../integrations/general/middleware)
 
 Related Articles:
-- [Network Integration](../integrations/index)
+- [Network Integration](../integrations/)
 - [Everynet LoRaWAN](../tutorials/everynet-lorawan)
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
 - [Profiles](../account/profiles)

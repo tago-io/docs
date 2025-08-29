@@ -4,7 +4,7 @@ description: "This article explains what Connectors are in TagoIO, how they mana
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/index) for details about parsers and decoding.
+Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data. See [Payload Parser](../payload-parser/) for details about parsers and decoding.
 
 ![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
 
@@ -54,8 +54,8 @@ When a user creates a device with your connector, you can expose custom paramete
 - **Dropdown** – Users choose from predefined options.
 - **Switch** – Boolean on/off value.
 
-These values are available as global variables in the payload parser context (see the [Payload parser context overview](../../payload-parser/index-context-global-variables)).
+These values are available as global variables in the payload parser context (see the [Payload parser context overview](../../payload-parser/-context-global-variables)).
 
 ### Payload parser
 
-The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](../payload-parser/index).
+The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](../payload-parser/).

@@ -8,7 +8,7 @@ The Formula feature enables users to modify the visualization of data in specifi
 <!-- Image placeholder removed for build -->
 
 ## How it works
-The system receives input data from a variable in your [Device](../../devices/index), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
+The system receives input data from a variable in your [Device](../../devices/), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
 
 Example flow:
 - Input value: 10
@@ -126,6 +126,6 @@ Dynamic Formulas allow formulas to adapt based on user preferences or browser se
 Dynamic Formulas are especially useful for letting users choose units (Celsius, Fahrenheit, Kelvin) or other display options that automatically adjust across dashboards.
 
 ## Related sections
-- See [Simple Formulas](../../widgets/index)
+- See [Simple Formulas](../../widgets/)
 - See [Dynamic Formulas](../../custom-settings)
 - For more details about device data, configuration, and related topics, refer to the Device and Widgets documentation within the TagoIO knowledge base.

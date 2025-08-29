@@ -129,7 +129,7 @@ deno task start
 Refer to other Analysis examples and the Script Examples documentation in the TagoIO Knowledge Base for additional use cases and patterns.
 
 Related internal documentation:
-- [Analysis Overview](../analysis/index) (refer to the Analysis section in the TagoIO docs)
+- [Analysis Overview](../analysis/) (refer to the Analysis section in the TagoIO docs)
 - [Creating Analysis](../analysis/creating-analysis) (refer to Creating Analysis)
 - [Script Editor and Script Examples](../script-editor) (see Script Editor and Script Examples)
 - [Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-nodejs) (see the corresponding Node.js external analysis guide)

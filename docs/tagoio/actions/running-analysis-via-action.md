@@ -3,7 +3,7 @@ title: "Running Analysis via Action"
 description: "This article explains how to run an Analysis from an Action in TagoIO, including when to trigger it and how to configure the Action to run one or more Analyses."
 tags: ["tagoio", "actions", "analysis"]
 ---
-Actions can initiate scripts that run in the [Analysis](../analysis/index). This lets you define exactly when your code will execute.
+Actions can initiate scripts that run in the [Analysis](../analysis/). This lets you define exactly when your code will execute.
 
 - For example, you can run an Analysis every time data is sent from a device or when data meets a certain condition. Learn more in [Trigger by Variable](../trigger-by-variable).
 - You can trigger the Action when a resource change happens — for example, when a new Device is created or when a new RunUser is registered. Learn more in [Trigger by Resource](../trigger-by-resource).

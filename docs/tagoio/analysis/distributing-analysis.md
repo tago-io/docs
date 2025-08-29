@@ -23,7 +23,7 @@ After making your adjustments click the **Build template** button to save the in
 It is always a good idea to access the link yourself before sharing to ensure the customized install page meets your standards.
 
 ## See also
-- [Analysis Overview](../analysis/index)
+- [Analysis Overview](../analysis/)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
 - [Script Examples](../tutorials/script-examples)
@@ -37,5 +37,5 @@ It is always a good idea to access the link yourself before sharing to ensure th
 - [Creating Analysis](../analysis/creating-analysis)
 - [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
 - [Distributing Dashboards](../dashboards/distributing-dashboards)
-- [Running Analysis via Action](../actions/index)
-- [Analysis Overview](../analysis/index)
+- [Running Analysis via Action](../actions/)
+- [Analysis Overview](../analysis/)

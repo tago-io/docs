@@ -3,7 +3,7 @@ title: "Payload Parser timeUtils Library"
 description: "A brief guide to the timeUtils library available in the Payload Parser, describing its purpose and showing the available functions for comparing and converting timezones with examples."
 tags: ["tagoio"]
 ---
-The timeUtils library is available as a global variable in the Payload Parser and is designed to simplify timezone conversion and manipulation. It provides functions to convert, format, and manage time information easily. For more on timezone handling, see [timezone conversion and manipulation](../payload-parser/index-timeutils-library).
+The timeUtils library is available as a global variable in the Payload Parser and is designed to simplify timezone conversion and manipulation. It provides functions to convert, format, and manage time information easily. For more on timezone handling, see [timezone conversion and manipulation](../payload-parser/-timeutils-library).
 
 ## Available Functions
 
@@ -33,7 +33,7 @@ const convertedTime = timeUtils.convertTimezone(
 ```
 
 ### formatInTimezone(dateInput, timezone, format)
-Formats a date in a specific timezone according to the specified format string. The formatting options are based on the chrono `strftime` specification. You can find all available format specifiers in the [chrono documentation](https://docs.rs/chrono/latest/chrono/format/strftime/index.html).
+Formats a date in a specific timezone according to the specified format string. The formatting options are based on the chrono `strftime` specification. You can find all available format specifiers in the [chrono documentation](https://docs.rs/chrono/latest/chrono/format/strftime/.html).
 
 Example:
 ```javascript

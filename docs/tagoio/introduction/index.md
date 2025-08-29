@@ -23,16 +23,16 @@ TagoIO is a comprehensive IoT platform that enables you to connect, manage, and 
 ### Getting Started
 - [Platform Overview](../getting-started)
 - [Account Setup](../account/editing-accounts-details)
-- [First Device Connection](../devices/index)
+- [First Device Connection](../devices/)
 
 ### Core Features
-- [Devices](../devices/index) - Device management and configuration
+- [Devices](../devices/) - Device management and configuration
 - [Dashboards](../dashboards) - Data visualization and reporting
-- [Actions](../actions/index) - Automation and triggers
-- [Analysis](../analysis/index) - Custom scripts and processing
+- [Actions](../actions/) - Automation and triggers
+- [Analysis](../analysis/) - Custom scripts and processing
 
 ### Advanced Features
-- [API Integration](../api/index) - REST API documentation
+- [API Integration](../api/) - REST API documentation
 - [Widgets](../widgets) - Custom dashboard components
 - [Services](../services/services-overview) - External service integrations
 - [Files](../files) - File management system

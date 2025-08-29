@@ -88,8 +88,8 @@ Here’s the short path to get an Analysis running:
    Use the [SDK](https://help.tago.io/portal/en/kb/tagoio/14-sdk) for your runtime to read/write data, call external APIs, and log output. Keep functions idempotent when possible.
 
 4. **Add triggers (optional)**  
-   1. [Actions](../actions/index): schedule (cron) or condition (e.g., variable thresholds)  
-   2. [Dashboards](../dashboards/index): buttons, inputs, or other UI hooks  
+   1. [Actions](../actions/): schedule (cron) or condition (e.g., variable thresholds)  
+   2. [Dashboards](../dashboards/): buttons, inputs, or other UI hooks  
    3. [External](../analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
 
 5. **Run and monitor**  
@@ -101,7 +101,7 @@ Here’s the short path to get an Analysis running:
   - Getting Started (see [Getting Started](#getting-started))
 
 ## Analysis (related documentation)
-- [Analysis Overview](../analysis/index)
+- [Analysis Overview](../analysis/)
 - [Creating Analysis](../analysis/creating-analysis)
 - [Script Editor](../script-editor)
 - [Script Examples](../tutorials/script-examples)

@@ -3,7 +3,7 @@ title: "Grouping variables"
 description: "This article explains how to synchronize multiple variables sent by a device using the JSON \"group\" field so they can be visualized together (for example, in tables or maps). It describes the problem with mismatched timestamps and how to use grouped samples to keep related variables in sync."
 tags: ["tagoio"]
 ---
-It is expected that most [devices](../devices/index) will send more than one variable at a given time. When visualizing the data, users often want those variables synchronized for each sample period.
+It is expected that most [devices](../devices/) will send more than one variable at a given time. When visualizing the data, users often want those variables synchronized for each sample period.
 
 For example, a device may send GPS location, speed, and voltage variables at a certain frequency. If those variables are acquired and sent with exactly the same timestamp, the user can visualize all three together at each time sample. However, if there is any delay between them (timestamps of the variables do not match exactly), the system cannot group them correctly "by time".
 

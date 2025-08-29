@@ -50,5 +50,5 @@ After adding your custom domain, a new tab appears with the DNS records you need
 ## Links and references
 
 - See [Custom Domain & Whitelabel](../../custom-domain-whitelabel) for add‑on details.
-- Access your Run module to perform the configuration (see [TagoRUN](../../tagorun/index)).
+- Access your Run module to perform the configuration (see [TagoRUN](../../tagorun/)).
 - See [Pricing](https://tago.io/pricing) for subscription/add‑on pricing and availability.

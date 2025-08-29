@@ -23,12 +23,12 @@ More than one token can be created for the same profile. Permissions and expirat
 
 #### Entities Authenticated by Account Tokens
 
-1. [Devices](../devices/index)
-2. [Dashboards](../dashboards/index) and [Widgets](../widgets/index)
-3. [Analysis](../analysis/index)
-4. [Actions](../actions/index)
+1. [Devices](../devices/)
+2. [Dashboards](../dashboards/) and [Widgets](../widgets/)
+3. [Analysis](../analysis/)
+4. [Actions](../actions/)
 5. [Files](../files)
-6. [Access Management](../tagorun/access-management/index)
+6. [Access Management](../tagorun/access-management/)
 7. [TagoRun](/tagorun) and [Run users](../account/user-management)
 8. [Dictionary](../dictionaries)
 

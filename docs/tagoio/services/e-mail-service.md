@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 ## Overview
 
-Each time an Email is successfully sent by the [Action](../actions/index) or [Analysis](../analysis/index) function, it is counted as one unit. This limit defines the maximum number of Emails that can be sent from that [Profile](../account/profiles) during a one-month period. Unused Emails in a billing cycle will not be carried over to the next cycle.
+Each time an Email is successfully sent by the [Action](../actions/) or [Analysis](../analysis/) function, it is counted as one unit. This limit defines the maximum number of Emails that can be sent from that [Profile](../account/profiles) during a one-month period. Unused Emails in a billing cycle will not be carried over to the next cycle.
 
 ## Important notice
 
@@ -38,4 +38,4 @@ Related articles:
 - [Notification Service](../services/notification-service)
 - [Services Overview](../services/services-overview)
 - [Running Analysis via Action](../actions/running-analysis-via-action)
-- [Defining Actions](../actions/index)
+- [Defining Actions](../actions/)

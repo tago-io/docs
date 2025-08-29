@@ -49,7 +49,7 @@ This field allows you to set the device and variable that will be used in this w
 > This field is dependent on the **type of dashboard** you are using; the difference is explained below.
 
 ##### Normal Dashboards
-From the option **Data From** on the right menu, select the source of the data, which can be either a [Device](../../../devices/index) or an [Entity](../../../entities/index). After that you can select the specific Device or Entity and its field or variable.
+From the option **Data From** on the right menu, select the source of the data, which can be either a [Device](../../../devices/) or an [Entity](../../../entities/). After that you can select the specific Device or Entity and its field or variable.
 
 ##### Blueprint Dashboards
 From the option **Data From** on the right menu, select the source of the data, which can be either a Device or an Entity. Add the [Blueprint device](../../../devices/blueprint-devices-entities) and input the name of the variable or field that contains the information.
@@ -58,7 +58,7 @@ From the option **Data From** on the right menu, select the source of the data, 
 When using a [Blueprint dashboard](../../dashboards/blueprint-dashboard), the inputs Variable or Field will not list the contents to be picked because it doesn't know the entities or devices linked to your Blueprint Associations.
 
 ![Notes icon](/docs_imagem/tagoio/file.png)  
-When using Entities, certain fields might be marked as required. If these essential fields are not included in your form, an error will occur. To resolve this issue, you can either add the missing fields to your input form or modify the field settings in your Entity so that it is no longer mandatory. See the article on [Entities](../../../entities/index).
+When using Entities, certain fields might be marked as required. If these essential fields are not included in your form, an error will occur. To resolve this issue, you can either add the missing fields to your input form or modify the field settings in your Entity so that it is no longer mandatory. See the article on [Entities](../../../entities/).
 
 ## Buttons
 It is also possible to create and customize buttons that can perform actions such as running analysis, clearing fields, and sending data to the device.

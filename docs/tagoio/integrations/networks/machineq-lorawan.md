@@ -77,7 +77,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
    - For more information on available connectors and how to use them, refer to the Connector Overview.
 
-For detailed instructions on adding devices, visit the [Adding Devices](../devices/index#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](../devices/#Adding_devices) page.
 
 ## Finalizing Setup
 
@@ -95,7 +95,7 @@ Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](../../tutorial
 ## Notes and quick links
 - If you already have an authorization created and added to machineQ, you can skip Steps 2–3 and proceed to Step 4.
 - Where the article refers to “devices” or “authorization”, those are links to the corresponding TagoIO documentation sections:
-  - [devices](../devices/index)
+  - [devices](../devices/)
   - [authorization](../integrations/general/authorization)
 
 ## Related articles

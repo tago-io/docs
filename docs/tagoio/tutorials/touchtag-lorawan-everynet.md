@@ -15,7 +15,7 @@ TouchTAG is a disposable, action-driven IoT device — a very low-cost, compact,
 
 To add your TouchTAG device to TagoIO:
 
-1. Go to the [Devices](../devices/index) section in TagoIO.
+1. Go to the [Devices](../devices/) section in TagoIO.
 2. Click on "Add Devices".
 3. Select the connector "LoRaWAN Everynet" (select the LoRaWAN Everynet connector).
 4. Search for "TouchTag" and create the device.  
@@ -38,6 +38,6 @@ To add your TouchTAG device to TagoIO:
 ## References
 
 - See the [LoRaWAN Everynet](everynet-lorawan) connector documentation for connector-specific settings.
-- Refer to the [Devices](../devices/index) documentation for general instructions on creating and managing devices in TagoIO.
+- Refer to the [Devices](../devices/) documentation for general instructions on creating and managing devices in TagoIO.
 - Learn how to configure your account for Everynet:  
   [Everynet configuration guide](../tutorials/everynet-lorawan)

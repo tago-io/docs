@@ -31,5 +31,5 @@ To use the files via **Admin**, go to *Files* in the left menu. From there you c
 - Related documentation:
   - [Services Overview](services/services-overview)
   - [Device data management](../data-management)
-  - [Dashboard Overview](../dashboards/index)
-  - [Analysis Overview](analysis/index)
+  - [Dashboard Overview](../dashboards/)
+  - [Analysis Overview](analysis/)

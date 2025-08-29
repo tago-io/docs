@@ -9,19 +9,14 @@ Devices are managed through your [Admin](https://admin.tago.io/) interface, wher
 
 :::note
 
-Our [TagoIO API documentation](/docs/tagoio/api/index) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
+Our [TagoIO API documentation](/docs/tagoio/api/) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
 
 :::
 
 ## Adding devices
 
-Devices are connected to TagoIO using [Connectors](/docs/tagoio/integrations/index), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started/index) article.
+Devices are connected to TagoIO using [Connectors](/docs/tagoio/payload-parser/connector/connector-overview), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started/) article.
 
-:::note
-
-Learn more about [Connectors](/docs/tagoio/integrations/index) here.
-
-:::
 
 ## Device type and data storage
 
@@ -51,17 +46,17 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 ## Deactivating devices
 
 - In the right upper corner of your device page, a switch allows you to activate or deactivate the device. If deactivated, the system denies access to any command coming from the device.
-- You can hide a specific device from showing in the device selection option for your [Widgets](/docs/tagoio/widgets/index).  
+- You can hide a specific device from showing in the device selection option for your [Widgets](/docs/tagoio/widgets/).  
   Access the **More** tab on your device’s page to make your device visible or hidden.
 
 ## Inspecting your connection
 
-- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/docs/tagoio/payload-parser/index) and monitoring traffic to and from your device.
+- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/docs/tagoio/payload-parser/) and monitoring traffic to and from your device.
 
 ## Customizing payload parser
 
 - Run your own parser by activating the script console in the **Payload Parser** tab inside your device’s page.
-- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/docs/tagoio/integrations/index).
+- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/docs/tagoio/payload-parser/connector/connector-overview).
 
 ## Emulating data sending
 
@@ -69,7 +64,7 @@ Inside your device’s page, find the **Emulator** tab where you can send data t
 
 ## Customizing behavior of your device
 
-Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/index), or interact with [API](/docs/tagoio/api/index) and [Analysis](/docs/tagoio/analysis/index) scripts.
+Set device parameters in the **Configuration Parameters** tab. These can be used to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/), or interact with [API](/docs/tagoio/api/) and [Analysis](/docs/tagoio/analysis/) scripts.
 
 ## Setting rate limits for your devices
 
