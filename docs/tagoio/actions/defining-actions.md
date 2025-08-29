@@ -84,7 +84,7 @@ Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets b
 
 If you're using Twilio Long Code for messaging, be aware that it requires a Toll‑Free verification process. Please consult Twilio's documentation for instructions on how to verify your phone number before proceeding. Depending on Twilio's rules for your account, the Toll‑Free verification may be skipped.
 
-You can send SMS directly from scripts within the [Analysis](../analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
+You can send SMS directly from scripts within the [Analysis](/docs/tagoio/analys/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
 ![Image 11: Idea](/docs_imagem/tagoio/lights.png)
 
@@ -96,13 +96,13 @@ Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets b
 
 ![Image 12](/docs_imagem/tagoio/external-01a6551b.png)
 
-You can send WhatsApp messages directly from scripts within the [Analysis](../analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
+You can send WhatsApp messages directly from scripts within the [Analysis](/docs/tagoio/analys/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
 Additionally, you can also send WhatsApp messages using Twilio Templates. To do this, you need to set a Twilio Template SID in TagoIO Secrets and configure the Template variables. Template variables also support dynamic content, allowing you to include information dynamically within them.
 
 ## Run Analysis Script
 
-Actions have the power to initiate scripts that run in the [Analysis](../analysis/). This is a very powerful feature, as you can define exactly when your code will run.
+Actions have the power to initiate scripts that run in the [Analysis](/docs/tagoio/analys/). This is a very powerful feature, as you can define exactly when your code will run.
 
 Learn more about [Running Analysis via Action](../actions/running-analysis-via-action).
 

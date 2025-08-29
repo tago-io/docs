@@ -7,7 +7,7 @@ The Entity feature is an excellent tool for storing data in a tabular format. Un
 
 Within an Entity, you can create custom fields similar to columns in a traditional database and define specific data types. You can also improve search and retrieval performance by implementing single or multiple indexes. Entities are well suited to store diverse data such as site information, organizational metadata, contact lists, equipment details, and product information.
 
-Once your information is stored, you can access the data through [Analysis](../analysis/), the [TagoIO API](https://docs.tago.io/api/), and—soon—[Widgets](../widgets/).
+Once your information is stored, you can access the data through [Analysis](/docs/tagoio/analys/), the [TagoIO API](https://docs.tago.io/api/), and—soon—[Widgets](../widgets/).
 
 ## Creating an Entity
 

@@ -42,7 +42,7 @@ Create a dashboard by adding gauges, maps (add the variable **'location'**), tab
 
 <!-- Image temporarily disabled: Map example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/6LPZjX_2YWmgn4JzYDzS5zptzsjgMzKMYqaPmHmobi4/map%20truck%20queclink%20tagoio-M6o.png -->
 
-You can also set up notifications to send push notifications, SMS, or emails: [Notifications](../notifications/notification). Advanced analysis scripts are available here: [Scripts](../analysis/creating-analysis).
+You can also set up notifications to send push notifications, SMS, or emails: [Notifications](../notifications/notification). Advanced analysis scripts are available here: [Scripts](/docs/tagoio/analys/creating-analysis).
 
 ### GPS Configuration
 

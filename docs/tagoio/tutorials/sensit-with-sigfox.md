@@ -48,7 +48,7 @@ If you are using Sens'it v2, you may want to edit the **parse function** in your
 
 You can create **notifications** and advanced **scripts** as needed:
 - Notifications: [Notifications](../notifications/notification)
-- Scripts / Analysis: [Analysis Overview](../analysis/)
+- Scripts / Analysis: [Analysis Overview](/docs/tagoio/analys/)
 
 ## Notes
 

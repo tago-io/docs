@@ -8,7 +8,7 @@ TagoIO supports most Adeunis devices by providing an integration with the Sigfox
 
 ![Adeunis + Sigfox + TagoIO diagram](/docs_imagem/tagoio/adeunis-with-sigfox-2.png)
 
-All data sent by your device will be readily available to be displayed in widgets and processed in your [Analysis](../analysis/).
+All data sent by your device will be readily available to be displayed in widgets and processed in your [Analysis](/docs/tagoio/analys/).
 
 > Note: You can check if a parser script was added to your device under the tab "Payload Parser".
 
@@ -30,6 +30,6 @@ You can start building **dashboards** immediately: [Dashboard Overview](../dashb
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
 - Notifications: [Notifications](../notifications/notification)  
-- Scripts: [Creating Analysis Scripts](../analysis/creating-analysis)
+- Scripts: [Creating Analysis Scripts](/docs/tagoio/analys/creating-analysis)
 
 If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](../tutorials/sigfox).

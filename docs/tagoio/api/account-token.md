@@ -25,7 +25,7 @@ More than one token can be created for the same profile. Permissions and expirat
 
 1. [Devices](/docs/tagoio/devices/)
 2. [Dashboards](../dashboards/) and [Widgets](../widgets/)
-3. [Analysis](../analysis/)
+3. [Analysis](/docs/tagoio/analys/)
 4. [Actions](../actions/)
 5. [Files](../files)
 6. [Access Management](../tagorun/access-management/)

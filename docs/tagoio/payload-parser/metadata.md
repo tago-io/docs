@@ -25,7 +25,7 @@ Metadata is one of the most important concepts when creating [dashboards](../das
 
 ## Using custom metadata fields
 
-You can define your own metadata fields and use them in your [Analysis](../analysis/) or [Application](../tagorun/tagorun-mobile-app). Some metadata fields trigger specific widget behaviors or change how the widget displays the data.
+You can define your own metadata fields and use them in your [Analysis](/docs/tagoio/analys/) or [Application](../tagorun/tagorun-mobile-app). Some metadata fields trigger specific widget behaviors or change how the widget displays the data.
 
 > Note: Metadata has priority over customizations set in the widget edit screen. Some widgets provide an option to change this behavior.
 

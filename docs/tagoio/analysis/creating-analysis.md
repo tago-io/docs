@@ -48,14 +48,14 @@ You can trigger your analysis script manually, but you can also define a time in
 
 ### Analysis Token
 This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
-[Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-nodejs).
+[Running Analysis as External using Node.JS](/docs/tagoio/analys/running-analysis-as-external-using-nodejs).
 
 Related documentation:
-- See [Analysis Overview](../analysis/)
+- See [Analysis Overview](/docs/tagoio/analys/)
 - See [Script Editor](../script-editor)
 - See [Script Examples](../tutorials/script-examples)
 - See [Console for Debug](../console-for-debug)
 - See [Environment Variables](../environment-variables)
-- See [Distributing analysis](../analysis/distributing-analysis)
-- See [Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-deno)
-- See [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
+- See [Distributing analysis](/docs/tagoio/analys/distributing-analysis)
+- See [Running Analysis as External using Node.JS](/docs/tagoio/analys/running-analysis-as-external-using-deno)
+- See [Running Analysis as External using Deno](/docs/tagoio/analys/running-analysis-as-external-using-deno)

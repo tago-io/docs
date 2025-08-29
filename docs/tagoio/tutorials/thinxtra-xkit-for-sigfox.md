@@ -69,7 +69,7 @@ You can start editing your dashboard as needed.
 
 > You can edit the [parse script](../payload-parser/) created for your device that extracts variables from the payload.
 
-Also, you can create [notifications](../notifications/notification) and more advanced [scripts](../analysis/creating-analysis) as needed.
+Also, you can create [notifications](../notifications/notification) and more advanced [scripts](/docs/tagoio/analys/creating-analysis) as needed.
 
 Learn more about [Downlink for Sigfox](../tutorials/sigfox-downlink).
 

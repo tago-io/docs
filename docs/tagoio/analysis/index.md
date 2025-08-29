@@ -90,7 +90,7 @@ Here’s the short path to get an Analysis running:
 4. **Add triggers (optional)**  
    1. [Actions](../actions/): schedule (cron) or condition (e.g., variable thresholds)  
    2. [Dashboards](../dashboards/): buttons, inputs, or other UI hooks  
-   3. [External](../analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
+   3. [External](/docs/tagoio/analys/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
 
 5. **Run and monitor**  
    Execute on demand to test, then let triggers handle it. Check logs, run history, and usage.
@@ -101,16 +101,16 @@ Here’s the short path to get an Analysis running:
   - Getting Started (see [Getting Started](#getting-started))
 
 ## Analysis (related documentation)
-- [Analysis Overview](../analysis/)
-- [Creating Analysis](../analysis/creating-analysis)
+- [Analysis Overview](/docs/tagoio/analys/)
+- [Creating Analysis](/docs/tagoio/analys/creating-analysis)
 - [Script Editor](../script-editor)
 - [Script Examples](../tutorials/script-examples)
 - [Console for Debug](../console-for-debug)
 - [Environment Variables](../environment-variables)
-- [Distributing analysis](../analysis/distributing-analysis)
-- [Running Analysis as External using Node.JS](../analysis/running-analysis-as-external-using-nodejs)
-- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
+- [Distributing analysis](/docs/tagoio/analys/distributing-analysis)
+- [Running Analysis as External using Node.JS](/docs/tagoio/analys/running-analysis-as-external-using-nodejs)
+- [Running Analysis as External using Deno](/docs/tagoio/analys/running-analysis-as-external-using-deno)
 
 ## Related Articles
-- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
-- [Creating Analysis](../analysis/creating-analysis)
+- [Running Analysis as External using Deno](/docs/tagoio/analys/running-analysis-as-external-using-deno)
+- [Creating Analysis](/docs/tagoio/analys/creating-analysis)
