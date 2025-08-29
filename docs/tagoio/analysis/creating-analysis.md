@@ -20,7 +20,7 @@ Currently supported runtimes include **Deno**, **Python**, and **Node.js** if yo
 
 ## Run this script from
 Choose where the analysis will run:
-- **TagOIO** — Edit and run the script directly on TagoIO.
+- **TagoIO** — Edit and run the script directly on TagoIO.
 - **External** — Run the script on your own computer or server.
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:

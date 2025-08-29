@@ -8,7 +8,7 @@ Welcome to TagoIO! Here are some options to get started.
 
 ## Options to get started
 1. Follow the manual steps described below to start quickly.
-2. Use our [SIMULATOR](../device/simulator-data-stream) to start right away even if you don't have a physical IoT device.
+2. Use our [SIMULATOR](../devices/simulator-data-stream) to start right away even if you don't have a physical IoT device.
 3. Go deeper by following the video below.
 
 ## Introductory video
@@ -85,4 +85,4 @@ This is just the beginning! Check out how powerful TagoIO is to deploy solutions
 
 Create powerful [analysis](../analysis/index) in real‑time using our script capabilities in JavaScript. Program [actions](../actions/index) to be taken based on your rules.
 
-Learn more about our powerful [API’s](../api/index). And check out the [tutorials](../tutorials/index) and [SDKs](../sdk/index) prepared for different boards and applications.
+Learn more about our powerful [API’s](../api/index). And check out the tutorials and [SDKs](../sdk/index) prepared for different boards and applications.

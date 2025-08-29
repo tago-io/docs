@@ -12,6 +12,7 @@ Watch this short video to learn the key concepts.
 
 <YouTube videoId="UDt-iwoEiRA" title="Integrating IoT and services using Tago.io" />
 
+
 Take a look at this short interactive introduction at https://intro.tago.io/.
 
-Use [Get started](../getting-started) to add a device.
+Use [Get started](../getting-started/index) to add a device.
