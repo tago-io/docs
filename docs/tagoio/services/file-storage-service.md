@@ -19,4 +19,4 @@ You can increase the File service limit by [Allocating Resources to profiles](..
 More information about pricing and frequently asked questions is available on the [Pricing Page](https://tago.io/pricing).
 
 ## References
-- Files module: [Files](../files)
+- Files module: [Files](/docs/tagoio/files)

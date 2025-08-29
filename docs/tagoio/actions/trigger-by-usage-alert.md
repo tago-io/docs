@@ -9,12 +9,12 @@ The “Trigger by Usage Alert” feature lets you execute an Action when a speci
 
 | Resources | Services |
 |---|---|
-| [Access Management](../tagorun/access-management/) | [Input](../services/data-input-service) |
+| [Access Management](/docs/tagoio/tagorun/access-management/) | [Input](../services/data-input-service) |
 | [Actions](../actions/) | [Output](../services/data-output-service) |
 | [TCore](/tagocore/integration) | [Analysis](/docs/tagoio/analysis/) |
 | [Device](/docs/tagoio/devices/) | [Data Records](/docs/tagoio/devices/data-management/data-records) |
 | [Team Members](../account/profiles) | [SMS](../services/sms-service) |
-| [Dashboards](../dashboards/creating-dashboard-tabs) | [Emails](../services/e-mail-service) |
+| [Dashboards](/docs/tagoio/dashboards/creating-dashboard-tabs) | [Emails](../services/e-mail-service) |
 | [Analysis](/docs/tagoio/analysis/) | [Run Users](../services/end-users-service) |
 |  | [Push Notifications](../services/notification-service) |
 |  | [File Storage](../services/file-storage-service) |

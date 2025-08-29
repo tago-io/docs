@@ -5,7 +5,7 @@ tags: ["tagoio", "widgets"]
 ---
 The Entity Table widget enables you to display data in a tabular format using fields from your [Entities](../entities/). Unlike the [Static Table widget](../Tables/static-table-widget) and the [Dynamic Table widget](dynamic-table-widget), it does not use data from Devices. The widget lets you incorporate data from one or more entities, apply formulas, set color conditions, and allow end-users to directly modify table values from their dashboard. You can also sort data based on the indexes you've created in your entity.
 
-> **Ensure that appropriate [Access Management](../tagorun/access-management/) permissions are granted** to allow end-users to view the data displayed in the widget.
+> **Ensure that appropriate [Access Management](/docs/tagoio/tagorun/access-management/) permissions are granted** to allow end-users to view the data displayed in the widget.
 
 ## Editing the Table
 

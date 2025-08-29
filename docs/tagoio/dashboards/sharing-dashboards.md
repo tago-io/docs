@@ -5,9 +5,13 @@ tags: ["tagoio", "dashboards"]
 ---
 A great feature of TagoIO is its native sharing capability for dashboards — useful when a dashboard becomes a feature you want to share with others.
 
-> If you want to share only the template of your dashboards, use the [Distribute](blueprint-dashboard) feature.
+:::note
 
-> To share applications with your end-users using your brand and a custom URL, use [TagoRUN](../tagorun/).
+If you want to share only the template of your dashboards, use the [Distribute](/docs/tagoio/dashboards/distributing-dashboards) feature.
+
+To share applications with your end-users using your brand and a custom URL, use [TagoRUN](/docs/tagoio/tagorun/).
+
+:::
 
 ## Share Public
 
@@ -21,7 +25,7 @@ The Share Public section can also be accessed from the dashboard settings page w
 
 In order to generate a public link, you must have **TagoRUN** enabled and an **Anonymous User** created. The Anonymous User should have sufficient permissions to access the resources that will appear on the public dashboard. You can grant these permissions by creating a policy in **Access Management**.
 
-Once set up, the Share Public page allows you to copy a link for both normal dashboards and [Blueprint Dashboards](blueprint-dashboard). Anyone who receives this URL can view the dashboard without needing a TagoIO account or credentials.
+Once set up, the Share Public page allows you to copy a link for both normal dashboards and [Blueprint Dashboards](/docs/tagoio/dashboards/blueprint-dashboard). Anyone who receives this URL can view the dashboard without needing a TagoIO account or credentials.
 
 ### Data Output Considerations
 
@@ -29,4 +33,4 @@ Data accessed from widgets on public dashboards—including data downloaded in C
 
 ## Dashboard Templates
 
-You can also share only the template of a dashboard using the [Distribute](blueprint-dashboard) feature. In this case, no data is shared; only the layout and widget configuration are exported.
+You can also share only the template of a dashboard using the [Distribute](/docs/tagoio/dashboards/distributing-dashboards) feature. In this case, no data is shared; only the layout and widget configuration are exported.

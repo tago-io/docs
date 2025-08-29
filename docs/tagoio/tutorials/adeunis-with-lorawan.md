@@ -41,13 +41,13 @@ Each provider link points to the corresponding TagoIO tutorial for configuring A
 After you have completed the setup above, you will be ready to move forward.  
 Now, just turn your Adeunis device on and wait for the data to hit your **data bucket**. Every time the device sends data, the parser will be executed, the extracted data sent to the bucket, and it will be ready to be shown in the dashboards.
 
-You can start building your [dashboards](../dashboards/) immediately.  
+You can start building your [dashboards](/docs/tagoio/dashboards/) immediately.  
 Also, you can create [notifications](../notifications/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
 
 ## Additional references
 
 - Check the device's **Payload Parser** tab to confirm or edit any parser scripts.
 - For device management and other configuration options, see the Devices documentation: [Devices](/docs/tagoio/devices/)
-- Build dashboards: [Dashboards](../dashboards/)
+- Build dashboards: [Dashboards](/docs/tagoio/dashboards/)
 - Create notifications: [Notifications](../notifications/notification)
 - Write advanced scripts: [Scripts](/docs/tagoio/analysis/creating-analysis)

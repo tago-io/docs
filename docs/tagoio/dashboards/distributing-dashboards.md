@@ -60,8 +60,3 @@ You can also share your template along with mockup data from your device so that
 The mock data is limited to 200 KB. You can restrict the amount of data displayed per widget either by adjusting the settings in the **Edit > Options** menu or by using a global time filter on the dashboard.
 
 ![Image 9](/docs_imagem/tagoio/external-7aa59270.png)
-
-## Contents
-- Creating & Editing a Template (See [Creating & Editing a Template](../dashboards/blueprint-dashboard))
-- Installing a Template (See [Installing a Template](../dashboards/creating-dashboards))
-- Sharing a template with mockup data (See [Sharing a template with mockup data](../simulator-data-stream))

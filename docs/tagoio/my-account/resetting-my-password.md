@@ -16,4 +16,4 @@ To change your existing password:
 ## Notes
 
 - The instructions above apply to resetting credentials in the TagoIO admin interface.
-- If you need to reset or change a password for yourself or your users in the TagoRun application, manage those accounts via [User Management](../tagorun/access-management/).
+- If you need to reset or change a password for yourself or your users in the TagoRun application, manage those accounts via [User Management](/docs/tagoio/tagorun/access-management/).

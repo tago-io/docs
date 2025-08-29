@@ -4,7 +4,7 @@ title: "PDF Service Generator"
 description: "This article explains how to generate PDF documents using the TagoIO PDF service generator by making an HTTP POST request and receiving a base64-encoded PDF. It documents the endpoint, required headers, request body fields, and size limitations."
 tags: ["tagoio"]
 ---
-Learn how to create PDF documents using the TagoIO PDF service generator. Make an HTTP POST request to the PDF service endpoint and the response will be a base64‑encoded PDF. The base64 response can be sent by an Analysis or saved in Files. See the Analysis and Files documentation for examples on sending or saving the response ([Analysis](/docs/tagoio/analysis/), [Files](../files)).
+Learn how to create PDF documents using the TagoIO PDF service generator. Make an HTTP POST request to the PDF service endpoint and the response will be a base64‑encoded PDF. The base64 response can be sent by an Analysis or saved in Files. See the Analysis and Files documentation for examples on sending or saving the response ([Analysis](/docs/tagoio/analysis/), [Files](/docs/tagoio/files)).
 
 ## Notes
 - You can generate a PDF with HTML size up to 256 KB.
@@ -58,5 +58,5 @@ You can also generate PDFs directly from TagoIO Analysis by following this examp
 
 ## Related documentation
 - Analysis: [Analysis](/docs/tagoio/analysis/)
-- Files: [Files](../files)
+- Files: [Files](/docs/tagoio/files)
 - Analysis token: [Analysis token](/docs/tagoio/analysis/)

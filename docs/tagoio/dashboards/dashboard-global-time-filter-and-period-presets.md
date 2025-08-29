@@ -24,21 +24,3 @@ If you want to disable the Dashboard Period Preset for a specific widget, enable
 
 ## Example UI
 <!-- Image placeholder removed for build -->
-
-## On this page
-- How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/)
-- Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/)
-- Setting period presets — See [Dashboard Overview](../dashboards/)
-- Disabling the filter for specific widgets — See [Widget Cache system](/docs/tagoio/widgets/widget-cache-system)
-
-## Related Dashboards documentation
-- [Dashboard Overview](../dashboards/)  
-- [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
-- [Data Output for dashboards](../services/data-output-for-dashboards)  
-- [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  
-- [Dashboard icons](../dashboards/dashboard-icons)  
-- [Dashboard global time filter and period presets](#) (this article)
-- [Grouping Dashboards](../dashboards/grouping-dashboards)  
-- [Sharing Dashboards](../dashboards/sharing-dashboards)  
-- [Distributing Dashboards](../dashboards/distributing-dashboards)  
-- [Restoring your Dashboard to a previous version](../dashboards/restoring-your-dashboard-to-a-previous-version)

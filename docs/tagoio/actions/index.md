@@ -10,7 +10,7 @@ With Actions you can:
 - Send an email based on certain conditions.
 - Run scripts using [Analysis](/docs/tagoio/analysis/).
 - Make HTTP POST requests.
-- Send notifications to your account or to the account of your [RunUsers](../tagorun/tagorun-mobile-app).
+- Send notifications to your account or to the account of your [RunUsers](/docs/tagoio/tagorun/tagorun-mobile-app).
 - Publish to an MQTT topic based on certain conditions.
 
 Learn about [Defining Actions](../actions/).

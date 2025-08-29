@@ -13,10 +13,10 @@ Access Management (AM) lets you securely grant access to specific resources in y
 Some examples of how AM can be used:
 
 1. Share one specific dashboard only with users that contain certain tags.  
-   Example: Share the dashboard "Regional Sales View" with users who have the tag `level = supervisor`. (See [Dashboards](../dashboards/creating-dashboard-tabs) and [Targets](../defining-targets).)
+   Example: Share the dashboard "Regional Sales View" with users who have the tag `level = supervisor`. (See [Dashboards](/docs/tagoio/dashboards/creating-dashboard-tabs) and [Targets](../defining-targets).)
 
 2. Share all dashboards with certain tags only with users that contain certain tags.  
-   Example: Share dashboards that contain the tag `state = NY` or `state = MA` with users that have the tag `region = northeast`. (See [Dashboards](../dashboards/creating-dashboard-tabs) and [Targets](../defining-targets).)
+   Example: Share dashboards that contain the tag `state = NY` or `state = MA` with users that have the tag `region = northeast`. (See [Dashboards](/docs/tagoio/dashboards/creating-dashboard-tabs) and [Targets](../defining-targets).)
 
 3. Share all my dashboards with all users.  
    For this, you just need to set the field in Targets like `Run User = Any`, and the `Permissions = Any` to share everything with anyone.
@@ -31,4 +31,4 @@ Some examples of how AM can be used:
 - [Creating a Policy](security-policy)  
 - [Defining Targets](../defining-targets)  
 - [Defining Permissions](../security/defining-permissions)  
-- [Access Management](../tagorun/access-management/)
+- [Access Management](/docs/tagoio/tagorun/access-management/)
