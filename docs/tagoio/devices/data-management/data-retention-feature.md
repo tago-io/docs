@@ -5,10 +5,12 @@ tags: ["tagoio"]
 ---
 ## Overview
 
-The Data Retention feature automatically removes old data from Immutable devices after the period you define. Its purpose is to help customers avoid unnecessary costs by deleting data that does not need to be kept long-term. See [Optimized Device Data (Immutable)](/docs//tagoio/devices/data-management/device-data-management) for more details about immutable device storage.
+The Data Retention feature automatically removes old data from Immutable devices after the period you define. Its purpose is to help customers avoid unnecessary costs by deleting data that does not need to be kept long-term.
 
-> Note: The Data Retention feature is available only for Optimized Device Data (Immutable).  
-> See [Optimized Device Data (Immutable)](/docs/tagoio/devices/).
+:::note
+The Data Retention feature is available only for [Optimized Device Data (Immutable)](/docs/tagoio/devices/).
+
+:::
 
 ## Selecting Data Retention
 

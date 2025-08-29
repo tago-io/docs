@@ -15,7 +15,7 @@ TagoIO's server provides a continuous stream of data—whether that data is simu
 
 To use this feature, go to **[Devices](https://admin.tago.io/devices)**, then click on “+Add Device”, select the Network: **Simulator**, and from the list of connectors pick the one that simulates a type of device you want. For example, choose the “Bus Simulator” which will send location, fuel level, speed and other variables to your device data storage every 3 minutes.
 
-After adding the device, a pop‑up will ask if you want to add a [dashboard](../dashboards/). Use this option to get a dashboard to start and edit from there.
+After adding the device, a pop‑up will ask if you want to add a [dashboard](/docs/tagoio/dashboards/). Use this option to get a dashboard to start and edit from there.
 
 <!-- Image temporarily disabled: Device simulator freezer example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/HsQE88Il2ABCJiJWyt6ezrp2RiGdMs_GThssoIZJaII/device-simulator-freezer-GgY.png -->
 
@@ -23,9 +23,9 @@ After adding the device, a pop‑up will ask if you want to add a [dashboard](..
 
 From there you can create and edit:
 
-- [Dashboards](../dashboards/)
-- [Actions](../actions/)
-- [Scripts](../analysis/)
+- [Dashboards](/docs/tagoio/dashboards/)
+- [Actions](/docs/tagoio/actions/)
+- [Scripts](/docs/tagoio/analysis/)
 - [RUN](/tagorun)
 
 This is an easy and quick way to start with TagoIO!
@@ -34,4 +34,4 @@ This is an easy and quick way to start with TagoIO!
 
 Data can take a few minutes to appear in the device. For example, weather data may take up to 15 minutes to present for the first time.
 
-Use our [Live Inspector](../devices/live-inspector) to monitor raw data arriving on your account in real‑time.
+Use our [Live Inspector](/docs/tagoio/devices/live-inspector) to monitor raw data arriving on your account in real‑time.

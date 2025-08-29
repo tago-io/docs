@@ -6,7 +6,7 @@ sidebar_position: 1
 ---
 If you want a quick way to send data to your applications but don't have your hardware device available, or you simply need to send data to debug your applications, you can use the Device Emulator.
 
-To access the emulator, go to [Devices](../devices/), select the device, and then click on the Emulator tab.
+To access the emulator, go to [Devices](/docs/tagoio/devices/), select the device, and then click on the Emulator tab.
 
 ![Device Emulator interface showing the Emulator tab and payload editor](/docs_imagem/tagoio/using-the-device-emulator-2.png)
 
@@ -17,7 +17,7 @@ You can send payloads in different formats, including:
 - Standard JSON (recommended)
 - Raw payloads (for custom data structures, e.g., CSV)
 
-If you send raw data or any format other than JSON, you must create a [Payload parser](../payload-parser/) to convert the output into the JSON format that TagoIO accepts.
+If you send raw data or any format other than JSON, you must create a [Payload parser](/docs/tagoio/payload-parser/building-your-own-parser) to convert the output into the JSON format that TagoIO accepts.
 
 ## Example JSON payload
 
@@ -38,6 +38,6 @@ Below is a simple JSON example you can use in the Emulator payload editor:
 
 ## Notes and references
 
-- Access the emulator from: [Devices](../devices/) → select your device → Emulator tab.
-- If you need to convert non‑JSON payloads, see the [Payload parser](../payload-parser/) documentation for instructions on creating parsers that output JSON for TagoIO.
+- Access the emulator from: [Devices](/docs/tagoio/devices/) → select your device → Emulator tab.
+- If you need to convert non‑JSON payloads, see the [Payload parser](/docs/tagoio/payload-parser/building-your-own-parser) documentation for instructions on creating parsers that output JSON for TagoIO.
 - You can also use Functions and Timer to send data automatically to your devices.
