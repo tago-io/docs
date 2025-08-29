@@ -49,7 +49,7 @@ The user list offers a variety of field types for input when a user modifies it.
 - Device List
 - Address
 
-These field types behave the same way as those in the [Input Form's fields](../../field-types-for-input-form).
+These field types behave the same way as those in the [Input Form's fields](/docs/tagoio/field-types-for-input-form).
 
 ## 5. Blueprint User List for TagoRUN
 

@@ -26,7 +26,7 @@ From there you can create and edit:
 - [Dashboards](/docs/tagoio/dashboards/)
 - [Actions](/docs/tagoio/actions/)
 - [Scripts](/docs/tagoio/analysis/)
-- [RUN](/tagorun)
+- [RUN](/docs/tagoio/tagorun)
 
 This is an easy and quick way to start with TagoIO!
 

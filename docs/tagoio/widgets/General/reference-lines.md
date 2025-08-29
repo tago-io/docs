@@ -9,7 +9,7 @@ All chart-type widgets in TagoIO can be configured to display reference lines wi
 
 ## Supported widgets
 
-The widgets that support this feature include the [Area Chart](../../widgets/area-chart-widget), [Line Chart](../../widgets/line-chart-widget), [Horizontal Bar](../../widgets/horizontal-bar-widget), [Vertical Column](../../widgets/vertical-column-widget), and [Multiple Charts](../../widgets/multiple-charts-widget).
+The widgets that support this feature include the [Area Chart](/docs/tagoio/widgets/area-chart-widget), [Line Chart](/docs/tagoio/widgets/line-chart-widget), [Horizontal Bar](/docs/tagoio/widgets/horizontal-bar-widget), [Vertical Column](/docs/tagoio/widgets/vertical-column-widget), and [Multiple Charts](/docs/tagoio/widgets/multiple-charts-widget).
 
 ## Adding reference lines to your chart
 
@@ -26,7 +26,7 @@ Up to **5** reference lines per widget are allowed.
 ### Fixed vs Variable source
 
 - When using a **fixed** source, you can manually set a *Label* and *Color* for the line.  
-- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](../../devices/data-management/metadata) article.
+- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/docs/tagoio/devices/data-management/metadata) article.
 
 ### Multiple axes
 
@@ -35,7 +35,7 @@ If your chart uses multiple Y‑axes, you can associate a reference line with a 
 ### Applying formulas
 
 You can apply a formula to the reference line’s value. This is especially useful when:
-- The dataset variables already have a [Formula](../../formula) applied, or
+- The dataset variables already have a [Formula](/docs/tagoio/formula) applied, or
 - You want to use a **Dynamic Formula** for custom unit conversions.
 
 The formula will be evaluated each time the chart refreshes, keeping the reference line in sync with your data.

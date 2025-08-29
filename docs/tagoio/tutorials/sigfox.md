@@ -102,7 +102,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
    - For more information on available connectors and how to use them, refer to the [Connector Overview](../integrations/).
 
-For detailed instructions on adding devices, visit the [Adding Devices](../devices/#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
 ## Finalizing Setup
 
@@ -111,7 +111,7 @@ For detailed instructions on adding devices, visit the [Adding Devices](../devic
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the *Device* and into the *Data* tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](../devices/live-inspector) within your device settings to monitor incoming data in real‑time.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real‑time.
 
 Information about Downlink can be found at the [Sigfox - Downlink](../tutorials/sigfox-downlink) documentation.
 

@@ -19,7 +19,7 @@ http://admin.tago.io/template/5f513aabd4555600277f858c
 Caption: Sending downlink using dashboard. Click "Get Analysis Template" on the template page to install it in your account.
 
 ## After installing the template
-After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your device (../devices/):
+After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your device (/docs/tagoio/devices/):
 
 ![Environment variables tab of the device](/docs_imagem/tagoio/downlinks-using-dashboards-2.png)
 

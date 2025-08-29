@@ -38,7 +38,7 @@ All fields and metadata stored with a given variable are counted together as a s
 
 ## Notes
 
-- The "variable" and its associated metadata (for example, [metadata](../devices/data-management/metadata)) are counted together as one register regardless of how many fields are present.
+- The "variable" and its associated metadata (for example, [metadata](/docs/tagoio/devices/data-management/metadata)) are counted together as one register regardless of how many fields are present.
 - Location stored inside the variable (lat/lng) is considered part of the same register.
 - The data record limit is enforced per Profile and defines the maximum number of registers stored for that Profile.
 

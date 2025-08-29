@@ -24,7 +24,7 @@ Angular allows you to show your variable in an angular gauge meter.
 
 ![Image 2](/docs_imagem/tagoio/1587131850692-QkI.png)
 
-To learn more about the [Angular Gauge](../../widgets/angular-widget).
+To learn more about the [Angular Gauge](/docs/tagoio/widgets/angular-widget).
 
 ---
 
@@ -34,7 +34,7 @@ Solid gauges display your variable in a solid gauge meter.
 
 ![Image 3](/docs_imagem/tagoio/1587131943985-EQI.png)
 
-To learn more about the [Solid Gauge](../../widgets/solid-widget).
+To learn more about the [Solid Gauge](/docs/tagoio/widgets/solid-widget).
 
 ---
 
@@ -44,7 +44,7 @@ Clock gauges allow you to visualize the time in a certain timezone. You can see 
 
 ![Image 4](/docs_imagem/tagoio/1587130683446-m1M.png)
 
-To learn more about the [Clock Gauge](../../gauge-overview).
+To learn more about the [Clock Gauge](/docs/tagoio/gauge-overview).
 
 ---
 

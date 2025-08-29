@@ -18,7 +18,7 @@ See [Analysis](../analysis/) for working with and visualizing your incoming devi
 ## Adding a device
 
 To add an Adeunis device to TagoIO:
-1. Go to [Devices](../devices/).
+1. Go to [Devices](/docs/tagoio/devices/).
 2. Click **Add Devices**.
 3. Filter the network by the LoRaWAN™ provider you will connect with.
 4. Pick your Adeunis device from the list.
@@ -47,7 +47,7 @@ Also, you can create [notifications](../notifications/notification) and more adv
 ## Additional references
 
 - Check the device's **Payload Parser** tab to confirm or edit any parser scripts.
-- For device management and other configuration options, see the Devices documentation: [Devices](../devices/)
+- For device management and other configuration options, see the Devices documentation: [Devices](/docs/tagoio/devices/)
 - Build dashboards: [Dashboards](../dashboards/)
 - Create notifications: [Notifications](../notifications/notification)
 - Write advanced scripts: [Scripts](../analysis/creating-analysis)

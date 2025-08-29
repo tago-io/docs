@@ -76,5 +76,5 @@ Check out the available regions in the [API documentation](https://api.docs.tago
 - [RESTful API](./restful-api)
 - [Node.js SDK](../sdk/nodejs-sdk)
 - [Python SDK](../sdk/python-sdk)
-- [Device Token](../devices/device-token)
+- [Device Token](/docs/tagoio/devices/device-token)
 - [Authorization](../integrations/general/authorization)

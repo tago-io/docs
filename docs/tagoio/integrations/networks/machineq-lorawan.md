@@ -25,7 +25,7 @@ Go to your machineQ Central, and follow [this machineQ tutorial](https://www.mac
 ### Access Authorizations
 
 1. Go to **Devices**.
-2. Click on **Authorizations** at the top of the page.
+2. Click on **[Authorizations](https://admin.tago.io/devices/authorization)** at the top of the page.
 
 ### Create a New Authorization
 
@@ -77,7 +77,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
    - For more information on available connectors and how to use them, refer to the Connector Overview.
 
-For detailed instructions on adding devices, visit the [Adding Devices](../devices/#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
 ## Finalizing Setup
 
@@ -86,21 +86,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](../devic
 
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](../../devices/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating dashboards, adding notifications, and creating scripts to process your data.
 
-Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](../../tutorials/downlink-for-lorawan).
-
-## Notes and quick links
-- If you already have an authorization created and added to machineQ, you can skip Steps 2–3 and proceed to Step 4.
-- Where the article refers to “devices” or “authorization”, those are links to the corresponding TagoIO documentation sections:
-  - [devices](../devices/)
-  - [authorization](../integrations/general/authorization)
-
-## Related articles
-- [Everynet LoRaWAN](../tutorials/everynet-lorawan)
-- [Loriot LoRaWAN](../tutorials/loriot-lorawan)
-- [Orbiwise LoRaWAN™](../tutorials/orbiwise-lorawan)
-- [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
-- [LoRaWAN Publication of Environmental Measurements](../../tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)
+Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/docs/tagoio/integrations/networks/downlink-for-lorawan/).

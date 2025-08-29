@@ -21,5 +21,5 @@ Follow one of the tutorials below to integrate your application with:
 
 ## Related documentation
 
-- RUN session / Integration module — Refer to the RUN documentation (See [TagoRUN](../../tagorun))
+- RUN session / Integration module — Refer to the RUN documentation (See [TagoRUN](/docs/tagoio/tagorun))
 - For additional integration examples and platform security, check the TagoIO Knowledge Base and related articles such as Google Analytics and Zoho SalesIQ.

@@ -11,7 +11,7 @@ The integration is accomplished in two parts:
 
 ## 1) TagoIO Setup
 
-1. Go to the [devices](../../devices/) section, search for "SenRa", and select it.
+1. Go to the [devices](/docs/tagoio/devices/) section, search for "SenRa", and select it.
 2. Type a name for your device and click "Create device".
 
 ![TagoIO device creation screen](/docs_imagem/tagoio/senra-network-2.png)
@@ -22,7 +22,7 @@ The integration is accomplished in two parts:
 
 ## 2) SenRa Portal Setup
 
-1. Log in to the SenRa portal and go to your devices.
+1. Log in to the [SenRa portal](http://portal.senetco.io/) and go to your devices.
 2. Choose the device you want to connect to TagoIO and click on its gear icon.
 3. In the device settings, navigate to **Notification Target**.
 4. Ensure that the status is set to *Enabled*.

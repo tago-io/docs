@@ -9,24 +9,24 @@ TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing a
 
 The limits for each resource are determined by your specific plan. The table below shows the limits for each plan.
 
-> **Note:** Most of the limits below are applied per [Profile](../../account/profiles).
+> **Note:** Most of the limits below are applied per [Profile](/docs/tagoio/account/profiles).
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
-| [Actions](../../actions/) | 5 | 100 | 200 |
-| [Analysis](../../analysis/) | 5 | 100 | 200 |
-| [Dashboard](../../dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
+| [Actions](/docs/tagoio/actions/) | 5 | 100 | 200 |
+| [Analysis](/docs/tagoio/analysis/) | 5 | 100 | 200 |
+| [Dashboard](/docs/tagoio/dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
 | [Entity](entities/) | 5 | 50 | 80 |
-| [Device](../../devices/) | 5 | 100 | 10,000 |
-| [Profile](../../account/profiles) | 1 / account | 2 / account | 5 / account |
-| [Team Member](../../account/team-management-sharing-your-profile) | 0 | 1 | 5 |
+| [Device](/docs/tagoio/devices/) | 5 | 100 | 10,000 |
+| [Profile](/docs/tagoio/account/profiles) | 1 / account | 2 / account | 5 / account |
+| [Team Member](/docs/tagoio/account/team-management-sharing-your-profile) | 0 | 1 | 5 |
 | [TagoCore](/tagocore) | 10 | 10 | 10 |
 | [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
-| [Custom Connector](../../integrations/) | 3 | 20 | 50 |
-| [Custom Network](../../integrations/creating-a-network-integration) | 1 | 5 | 10 |
-| [Device service authorization](../../integrations/general/authorization) | 10 | 50 | 200 |
-| [Access Management Policies](../../tagorun/access-management/) | 5 | 30 | 100 |
-| [Dictionary & Multi-language](../../dictionaries) | 2 | 10 | 50 |
+| [Custom Connector](/docs/tagoio/integrations/) | 3 | 20 | 50 |
+| [Custom Network](/docs/tagoio/integrations/creating-a-network-integration) | 1 | 5 | 10 |
+| [Device service authorization](/docs/tagoio/integrations/general/authorization) | 10 | 50 | 200 |
+| [Access Management Policies](/docs/tagoio/tagorun/access-management/) | 5 | 30 | 100 |
+| [Dictionary & Multi-language](/docs/tagoio/dictionaries) | 2 | 10 | 50 |
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.
 

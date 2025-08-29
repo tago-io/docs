@@ -11,7 +11,7 @@ The Custom Domain & Whitelabel add‑on lets you promote your organization’s b
 Before configuring your Custom Domain in your Admin, ensure you have:
 
 - A domain or a sub‑domain for your organization; you can obtain one from any domain provider. Ensure you can edit the DNS (Domain Name System) records for your custom domain in the domain provider’s settings.
-- The Custom Domain & Whitelabel add‑on is activated in your profile. Check the Pricing page for more information (see [Custom Domain & Whitelabel](../../custom-domain-whitelabel) and [Pricing](https://tago.io/pricing)).
+- The Custom Domain & Whitelabel add‑on is activated in your profile. Check the Pricing page for more information (see [Custom Domain & Whitelabel](/docs/tagoio/custom-domain-whitelabel) and [Pricing](https://tago.io/pricing)).
 
 > Note: The Custom Domain & Whitelabel add‑on is available per profile. If you need to use a custom domain in another profile, you will need to acquire another add‑on.
 
@@ -49,6 +49,6 @@ After adding your custom domain, a new tab appears with the DNS records you need
 
 ## Links and references
 
-- See [Custom Domain & Whitelabel](../../custom-domain-whitelabel) for add‑on details.
-- Access your Run module to perform the configuration (see [TagoRUN](../../tagorun/)).
+- See [Custom Domain & Whitelabel](/docs/tagoio/custom-domain-whitelabel) for add‑on details.
+- Access your Run module to perform the configuration (see [TagoRUN](/docs/tagoio/tagorun/)).
 - See [Pricing](https://tago.io/pricing) for subscription/add‑on pricing and availability.

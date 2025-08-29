@@ -30,5 +30,5 @@ Analysis is able to integrate with any SMS service; you can register a unique nu
 - [Data Input Service](../services/data-input-service)
 - [Notification Service](../services/notification-service)
 - [E-mail Service](../services/e-mail-service)
-- [Data Records](../devices/data-management/data-records)
+- [Data Records](/docs/tagoio/devices/data-management/data-records)
 - [Data Output Service](../services/data-output-service)

@@ -7,7 +7,7 @@ Dials are one of the simplest and most useful widgets. They make it easy to visu
 
 ![Dial widget examples](/docs_imagem/tagoio/dial-widget-2.gif)
 
-This widget also accepts features like [metadata](../../devices/data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata), which can be set in your variable data.
 
 ## Creating your own
 
@@ -15,7 +15,7 @@ To add the Dial widget to your dashboard, choose the Dial widget from the list a
 
 ![Dial widget editor](/docs_imagem/tagoio/dial-widget-2.gif)
 
-> This widget works for both dashboards, Normal and [Blueprint](../../dashboards/blueprint-dashboard).
+> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ### 'Data From' Field
 
@@ -29,6 +29,6 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 #### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **'Data From'** on the right menu, add the [Blueprint device](../../devices/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](../../dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.

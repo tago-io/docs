@@ -119,7 +119,7 @@ TagoIO [MQTT Broker](../mqtt) is available exclusively for **Starter** and **Sca
 
 ## Post data to HTTP End-Point
 
-This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](../devices/sending-data-to-device).
+This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](/docs/tagoio/devices/sending-data-to-device).
 
 ![Image 15](/docs_imagem/tagoio/1628001560181-oQ.png)
 

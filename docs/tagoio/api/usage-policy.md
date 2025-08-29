@@ -12,7 +12,7 @@ When executing API requests to TagoIO — either posting (data input) or getting
 > Note: Check our comprehensive documentation on [Rate Limits](../rate-limits-hard-limits).
 
 ## Token access and restrictions
-TagoIO limits access for both [Account-Token](../account/account-token) and [Device-Token](../devices/device-token) according to the transaction-per-hour limits configured in your account. Ensure your token usage patterns comply with these per-hour transaction limits to avoid throttling.
+TagoIO limits access for both [Account-Token](../account/account-token) and [Device-Token](/docs/tagoio/devices/device-token) according to the transaction-per-hour limits configured in your account. Ensure your token usage patterns comply with these per-hour transaction limits to avoid throttling.
 
 ## Other service limits
 Other services (for example: data storage, SMS, email, and Analysis) are also limited according to your plan settings. Learn more in the [TagoIO Services](../services/services-overview) documentation.
@@ -20,5 +20,5 @@ Other services (for example: data storage, SMS, email, and Analysis) are also li
 ## See also
 - My Billing: [My Billing](https://admin.tago.io/account/billing)  
 - Rate Limits: [Rate Limits](../rate-limits-hard-limits)  
-- Account and Device tokens: [Account-Token](../account/account-token), [Device-Token](../devices/device-token)  
+- Account and Device tokens: [Account-Token](../account/account-token), [Device-Token](/docs/tagoio/devices/device-token)  
 - TagoIO Services: [TagoIO Services](../services/services-overview)

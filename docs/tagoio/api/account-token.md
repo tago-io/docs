@@ -23,7 +23,7 @@ More than one token can be created for the same profile. Permissions and expirat
 
 #### Entities Authenticated by Account Tokens
 
-1. [Devices](../devices/)
+1. [Devices](/docs/tagoio/devices/)
 2. [Dashboards](../dashboards/) and [Widgets](../widgets/)
 3. [Analysis](../analysis/)
 4. [Actions](../actions/)

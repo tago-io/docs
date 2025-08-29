@@ -31,11 +31,11 @@ A variable called **location** is automatically created by combining the fields 
   }
   ```
   This will prevent those variables from being created in the device’s data storage.
-- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](../devices/)).
+- Test changes by sending sample payloads and verifying which variables are created in the device's storage ([Device's data storage](/docs/tagoio/devices/)).
 
 We offer this flexibility to allow you to optimize your storage by avoiding the creation of unnecessary variables.
 
 ## See also
 - Payload Parser (refer to the Payload Parser documentation: [Payload Parser](../payload-parser/))
-- Device data storage details: [Device's data storage](../devices/)
+- Device data storage details: [Device's data storage](/docs/tagoio/devices/)
 - Parser vs. Analysis comparison: [Parser vs. Analysis Comparison](../payload-parser/)

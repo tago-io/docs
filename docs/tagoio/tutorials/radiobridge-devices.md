@@ -36,7 +36,7 @@ Add the device at TagoIO. Go to [Devices](https://admin.tago.io/devices), click 
 Then follow the directions to integrate your device with TagoIO and start building your own application.  
 When completed, click on **Create Device**.
 
-Turn your Radio Bridge device on, and wait for the data to arrive in your bucket. Every time the device sends data it will be available in the bucket and shown in the dashboard: [bucket](../devices/).  
+Turn your Radio Bridge device on, and wait for the data to arrive in your bucket. Every time the device sends data it will be available in the bucket and shown in the dashboard: [bucket](/docs/tagoio/devices/).  
 You can start editing the installed dashboard.
 
 Also, you can create [notifications](../notifications/notification) and more advanced [scripts](../analysis/creating-analysis) as needed.

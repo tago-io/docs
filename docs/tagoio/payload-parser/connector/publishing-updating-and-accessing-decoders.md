@@ -19,7 +19,7 @@ https://github.com/tago-io/decoders
 
 ![Image 1](/docs_imagem/tagoio/exclamation-4.png)
 
-If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](../../integrations/sharing-connectors-networks).
+If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/docs/tagoio/integrations/sharing-connectors-networks).
 
 ## Repository Overview
 The repository offers comprehensive resources for:

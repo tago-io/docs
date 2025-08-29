@@ -25,7 +25,7 @@ The variable data should look like the following payload. Note that the 'lat' an
 }
 ```
 
-This widget also accepts features like [metadata](../../../devices/data-management/metadata) and [series](../../../devices/data-management/grouping-variables), that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/grouping-variables), that can be set in your variable data.
 
 ---
 
@@ -35,7 +35,7 @@ To add it to your dashboard, choose the Map widget from the list and customize i
 
 <!-- Map widget creation image -->
 
-> This widget works for both dashboards, **Normal** and [**Blueprint**](../../../dashboards/blueprint-dashboard).
+> This widget works for both dashboards, **Normal** and [**Blueprint**](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ---
 
@@ -55,9 +55,9 @@ From the option 'Data From' on the right menu, select one device from your list 
 
 ### 1.2 'Data From' for Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](../../../devices/blueprint-devices-entities) and input the name of the variable that contains the **location** information.
+From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the **location** information.
 
-> When using a [Blueprint dashboard](../../../dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ---
 
@@ -71,7 +71,7 @@ This option allows you to define which map provider will be used on your widget 
 
 To use one of the alternative map tile providers, you will simply need to have an **API Key** from your provider and a username in some cases. The API key can be found by accessing the console of your map provider. We suggest consulting the documentation of your provider if you have trouble getting the key.
 
-Once the key is at hand, you will have to store the API key value inside a [Secret](../../../secrets) on TagoIO. Go to your Admin, then the [Secrets](https://admin.tago.io/secrets) page, and create a new secret with the name of your map provider. In the **Secret Value**, paste the API Key and save.
+Once the key is at hand, you will have to store the API key value inside a [Secret](/docs/tagoio/secrets) on TagoIO. Go to your Admin, then the [Secrets](https://admin.tago.io/secrets) page, and create a new secret with the name of your map provider. In the **Secret Value**, paste the API Key and save.
 
 <!-- Secrets configuration image -->
 
@@ -98,7 +98,7 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](../../../devices/data-management/grouping-variables), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [series](/docs/tagoio/devices/data-management/grouping-variables), so you can group your variables' data in the same infobox.
 
 > If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 
@@ -112,7 +112,7 @@ The filter makes your data easier to visualize by allowing users to filter for r
 
 You can filter pins by **device, variable, value,** and **time**. Filters also provide a table to list each pin that's being displayed, and you can click on a row to center it.
 
-Learn more about [Map filters](../../../map-filters).
+Learn more about [Map filters](/docs/tagoio/map-filters).
 
 ---
 
@@ -126,12 +126,12 @@ You can draw polygon or circle figures and associate them with events, and build
 
 <YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
-Learn more about [Geofence in map widgets](../../../widgets/geofences-in-map-widgets).
+Learn more about [Geofence in map widgets](/docs/tagoio/widgets/geofences-in-map-widgets).
 
 ---
 
 ## 6. Layer GIS
 
-Customize your Map with GeoJSON or Shapefiles layers. Display boundaries, areas, roads, pipelines, and more. Learn more about [Map Layer GIS](../../../map-layer-gis).
+Customize your Map with GeoJSON or Shapefiles layers. Display boundaries, areas, roads, pipelines, and more. Learn more about [Map Layer GIS](/docs/tagoio/map-layer-gis).
 
 <!-- Layer GIS example image -->

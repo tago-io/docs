@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Area
 
 ![Example area charts illustrating different styles and color schemes](/docs_imagem/tagoio/area-chart-widget-2.png)
 
-This widget also accepts features like [metadata](../../devices/data-management/metadata) and [series](../../devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -25,7 +25,7 @@ Click on the **cog icon** to edit specific options for this variable, such as fo
 ![Image 3](/docs_imagem/tagoio/exclamation-4.png)
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](../../devices/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 ![Image 4](/docs_imagem/tagoio/info-8.png)
 

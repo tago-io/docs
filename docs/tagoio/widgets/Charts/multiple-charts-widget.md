@@ -9,7 +9,7 @@ Charts are a powerful way to visualize your data and find insights. The Multiple
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
-This widget also accepts features like metadata (../../devices/data-management/metadata) and series (../../devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features like metadata (/docs/tagoio/devices/data-management/metadata) and series (/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -25,7 +25,7 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 ### Blueprint Dashboards
 
-From the option **'Data From'** on the right menu, add the [Blueprint device](../../devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## On this page

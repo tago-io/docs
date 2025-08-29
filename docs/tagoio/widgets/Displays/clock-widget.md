@@ -11,7 +11,7 @@ The outer circle contains 60 dots, with each dot representing one second. When a
 
 After a full minute, the dots are reset back to empty.
 
-> Note: This widget works for both dashboards, Normal and [Blueprint](../../dashboards/blueprint-dashboard).
+> Note: This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ---
 

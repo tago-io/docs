@@ -32,17 +32,17 @@ When users access the map from a mobile device, they will have the option to sel
 > **Note:** Only Google Maps is available when using a browser from a computer.
 
 ## Related documentation
-- [Map Widget](../../../widgets/map-widget)
-- [Map filters](../../../map-filters)
-- [Geofences in map widgets](../../../widgets/geofences-in-map-widgets)
-- [Map Layer GIS](../../../map-layer-gis)
-- [Images and Links in the map's pins](../../../images-and-links-in-the-maps-pins)
+- [Map Widget](/docs/tagoio/widgets/map-widget)
+- [Map filters](/docs/tagoio/map-filters)
+- [Geofences in map widgets](/docs/tagoio/widgets/geofences-in-map-widgets)
+- [Map Layer GIS](/docs/tagoio/map-layer-gis)
+- [Images and Links in the map's pins](/docs/tagoio/images-and-links-in-the-maps-pins)
 - [Router](#) (this article)
-- [Displaying Locations on a Map with TTN LoRaWAN](../../../tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
+- [Displaying Locations on a Map with TTN LoRaWAN](/docs/tagoio/tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
 
 ## Additional related articles
-- [Map Widget](../../../widgets/map-widget)
-- [Tags System](../../../getting-started/tags-system)
-- [Compose Widget](../../../widgets/Media Widgets/compose-widget)
-- [Formula](../../../formula)
-- [Image Marker Widget](../../../widgets/image-marker-widget)
+- [Map Widget](/docs/tagoio/widgets/map-widget)
+- [Tags System](/docs/tagoio/getting-started/tags-system)
+- [Compose Widget](/docs/tagoio/widgets/Media Widgets/compose-widget)
+- [Formula](/docs/tagoio/formula)
+- [Image Marker Widget](/docs/tagoio/widgets/image-marker-widget)

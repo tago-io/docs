@@ -23,7 +23,7 @@ Sens'it + Sigfox + TagoIO Connectivity Diagram
 
 ## Add the device to TagoIO
 
-1. In TagoIO, go to Devices (see [Devices](../devices/) for the Devices section).
+1. In TagoIO, go to Devices (see [Devices](/docs/tagoio/devices/) for the Devices section).
 2. Click on "Add Devices".
 3. Filter the network by "Sigfox" and choose your Sens'it device from the list (select v2 or v3 accordingly).
 4. After adding the device, incoming data will be parsed by TagoIO and become available for widgets and Analysis.
@@ -58,4 +58,4 @@ You can create **notifications** and advanced **scripts** as needed:
 
 References:
 - Sigfox Buy website: https://buy.sigfox.com/
-- Devices (TagoIO): [Devices](../devices/)
+- Devices (TagoIO): [Devices](/docs/tagoio/devices/)

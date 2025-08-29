@@ -8,13 +8,13 @@ Dynamic tables are tables that populate dynamically as your data arrives while k
 ## Editing the dynamic table
 You can customize the widget color, apply formulas to columns, show a time column, enable a control column, and more.
 
-> Note: This widget also accepts features like [metadata](../../devices/data-management/metadata) and [series](../../devices/data-management/data-records), which can be set in your variable data.
+> Note: This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
 
 ![Dynamic Table Widget editor screenshot](/docs_imagem/tagoio/dynamic-table-widget-2.gif)
 
 To edit a specific section of this widget, you must hover over the desired element and click it. Promptly, a new page will appear on the right side with all the editable options for the selected element.
 
-> This widget works for both dashboards: Normal and [Blueprint](../../dashboards/blueprint-dashboard).
+> This widget works for both dashboards: Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ## On this page
 - Editing the dynamic table
@@ -48,9 +48,9 @@ Each column has the field **Data From**; this field allows you to set the device
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 #### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](../../devices/data-management/blueprint-devices) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/data-management/blueprint-devices) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](../../dashboards/blueprint-dashboard), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ### 2. Grouping data
 The dynamic table lets you group related data from multiple columns in the same row by either **series** or time.
@@ -80,4 +80,4 @@ You can allow users to modify a variable's value inside of a table by enabling t
 
 Dynamic Table offers a bunch of field types to indicate what kind of value can be submitted in the input once the user modifies it. These types are **Text, Password, Number, Dropdown, Dropdown Multiple, Address, Entities** and **Device** (configured by tags).
 
-These field types have the same behavior as the [Form's fields](../../field-types-for-input-form).
+These field types have the same behavior as the [Form's fields](/docs/tagoio/field-types-for-input-form).

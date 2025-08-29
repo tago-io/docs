@@ -49,7 +49,7 @@ Unlike the Input Form widget, each field has its own button that sends data when
 - Editing the form
   1. Sections — See [Form Sections](../widgets/widget-configuration#form-sections)
   2. Fields — See [Form Fields](../widgets/widget-configuration#form-fields)
-     - 2.1. "Data From" Field (../../devices/data-management/data-records)
+     - 2.1. "Data From" Field (/docs/tagoio/devices/data-management/data-records)
   3. Fields type — See [Field Types](../field-types-for-input-form)
 
 ## Related articles

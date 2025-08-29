@@ -7,7 +7,7 @@ The image marker widget allows you to place pins on images and customize each pi
 
 ![Image marker example showing pins on a floor plan](/docs_imagem/tagoio/image-marker-widget-2.png)
 
-This widget also accepts features like [metadata](../../devices/data-management/metadata) and [groups](../../devices/data-management/data-grouping), which can be set in your variable data to alter how the widget behaves.
+This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [groups](/docs/tagoio/devices/data-management/data-grouping), which can be set in your variable data to alter how the widget behaves.
 
 ## Creating your own
 
@@ -100,14 +100,14 @@ Geofences let you draw colored geographic boundaries on the image to visualize d
 ## On this page
 
 - Creating your own
-- 1. 'Data From' Field (../../devices/data-management/data-records)
+- 1. 'Data From' Field (/docs/tagoio/devices/data-management/data-records)
 - 2. Image Marker Behavior Modes — See [Widget Behavior](../widgets/widget-configuration#behavior-modes)
 - 3. Positioning Pins — See [Pin Configuration](../widgets/widget-configuration#positioning)
   - 3. Layer — See [Layer Management](../widgets/widget-configuration#layers)
 - 4. Editor — See [Widget Editor](../widgets/widget-configuration#editor)
 - 5. Infobox — See [Infobox Configuration](../widgets/widget-configuration#infobox)
 - 6. Filters — See [Data Filtering](../widgets/widget-data-filtering)
-- 7. Geofence — See [Geofence Integration](../../devices/data-management/geofence-management)
+- 7. Geofence — See [Geofence Integration](/docs/tagoio/devices/data-management/geofence-management)
 
 ## Related articles
 

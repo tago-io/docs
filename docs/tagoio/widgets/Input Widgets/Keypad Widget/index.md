@@ -13,7 +13,7 @@ To add the Keypad to your dashboard, choose the Keypad widget from the widget li
 
 ![Keypad widget on dashboard with settings panel on the right](/docs_imagem/tagoio/keypad-widget-2.png)
 
-> This widget works for both dashboards, Normal and [Blueprint](../../../dashboards/blueprint-dashboard).
+> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ## 1. 'Data From' Field
 
@@ -57,7 +57,7 @@ For instance, if the user has clicked the sequence **1234** and then **DISARM**,
 Learn more about how to [manipulate the keypad's data](../keypad-data-manipulation).
 
 ## On this page
-- 1. 'Data From' Field (../../devices/data-management/data-records)
+- 1. 'Data From' Field (/docs/tagoio/devices/data-management/data-records)
 - 2. Visualization — See [Widget Visualization](../widgets/widget-configuration#visualization)
 
 ## Related Keypad documentation
