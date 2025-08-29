@@ -6,7 +6,7 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
-import styles from "./.module.css";
+import styles from "./index.module.css";
 
 function HomepageHeader() {
   return (

@@ -8,7 +8,7 @@ const sidebars: SidebarsConfig = {
     },
   ],
   tagodeploySidebar: [
-    "tagodeploy/",
+    "tagodeploy/index",
     "tagodeploy/tago-deploy-enterprise-iot-platform-infrastructure",
     "tagodeploy/work-in-progress-tagodeploy-mqtt-broker-service",
   ],

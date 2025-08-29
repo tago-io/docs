@@ -52,7 +52,7 @@ const config: Config = {
           blogDescription: "Changelog for TagoIO, TagoCore, and TagoDeploy",
           blogSidebarCount: "ALL",
           blogSidebarTitle: "Recent Changes",
-          blogListComponent: "@site/src/pages/changelog/.tsx",
+          blogListComponent: "@site/src/pages/changelog/index.tsx",
           postsPerPage: "ALL",
           feedOptions: {
             type: ["rss", "atom"],

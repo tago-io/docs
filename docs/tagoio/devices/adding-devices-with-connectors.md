@@ -4,7 +4,7 @@ description: "This article explains how connectors let you create devices with b
 tags: ["tagoio", "devices"]
 sidebar_position: 1
 ---
-[Connectors](/docs/tagoio/payload-parser//connector/connector-overview) enable you to create a [device](/docs/tagoio/devices/) with built‑in behaviors that allow it to communicate with a network easily.  
+[Connectors](/docs/tagoio/payload-parser/connector/connector-overview) enable you to create a [device](/docs/tagoio/devices/) with built‑in behaviors that allow it to communicate with a network easily.  
 
 When creating devices at TagoIO, there are different ways to allow them to send and receive data through connectors:
 

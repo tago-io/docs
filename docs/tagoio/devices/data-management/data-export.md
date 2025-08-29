@@ -9,7 +9,7 @@ Here's how to use each export source:
 
 ## From the device page
 
-Access this feature in the Admin panel under the [Device module](/docs/tagoio/devices/). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](/docs/tagoio//payload-parser/filtering-out-variables-with-parser-code).
+Access this feature in the Admin panel under the [Device module](/docs/tagoio/devices/). Select a device and open the "Data" tab. Before exporting, use the filtering options to refine the data you need and avoid unnecessary consumption of your Data Output quota. Learn more in [Filtering Variables](/docs/tagoio/payload-parser/filtering-out-variables-with-parser-code).
 
 To export, click the "Export" button in the top-right corner. The export dialog provides the following options:
 
