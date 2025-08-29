@@ -3,7 +3,7 @@ title: "Configuration Parameters for Devices"
 description: "This article explains what Configuration Parameters are in TagoIO devices, where to find them, and the three configurable fields for each parameter (Key, Value, Read/Unread). It also shows how to access the Configuration Parameters tab on a device and how parameters can be set and retrieved."
 tags: ["tagoio", "devices"]
 ---
-Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](../devices/) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](../widgets/), or interact with [API & Analysis](../api/) scripts.
+Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](/docs/tagoio/devices/) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/), or interact with [API & Analysis](/docs/tagoio/analysis/) scripts.
 
 Configuration Parameters are stored on the configuration page of your device. You can access them by clicking on the Devices module in the left menu and selecting a device. You will see a tab called "Configuration Parameters", where you can add, edit, or delete parameters. You can set parameters and retrieve them later by making a request from the device.
 
@@ -33,7 +33,7 @@ You can manage your device’s configuration parameters through several methods:
 - **Manually** – Add, edit, or delete parameters directly from the device page on TagoIO using its user interface.
 - **Analysis SDK** – Use JavaScript code in an analysis script to create, update, or remove parameters with functions such as `paramList`, `paramSet`, and `paramRemove`.
 - **API endpoint** – Send HTTP requests (GET, POST, PUT, DELETE) with JSON payloads to TagoIO’s API for programmatic parameter management.
-- **Widgets** – Some widgets allow you to edit device configuration parameters natively, such as the [Device List Widget](../widgets/Tables/device-list-widget).
+- **Widgets** – Some widgets allow you to edit device configuration parameters natively, such as the [Device List Widget](/docs/tagoio/widgets/Tables/device-list-widget).
 
 ## Common Use Cases
 

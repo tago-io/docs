@@ -5,10 +5,10 @@ tags: ["tagoio"]
 ---
 ## Overview
 
-The Data Retention feature automatically removes old data from Immutable devices after the period you define. Its purpose is to help customers avoid unnecessary costs by deleting data that does not need to be kept long-term. See [Optimized Device Data (Immutable)](../devices/device-data-management) for more details about immutable device storage.
+The Data Retention feature automatically removes old data from Immutable devices after the period you define. Its purpose is to help customers avoid unnecessary costs by deleting data that does not need to be kept long-term. See [Optimized Device Data (Immutable)](/docs//tagoio/devices/data-management/device-data-management) for more details about immutable device storage.
 
 > Note: The Data Retention feature is available only for Optimized Device Data (Immutable).  
-> See [Optimized Device Data (Immutable)](../devices/device-data-management).
+> See [Optimized Device Data (Immutable)](/docs/tagoio/devices/).
 
 ## Selecting Data Retention
 
@@ -22,7 +22,7 @@ These two fields are combined to create the device’s data retention policy.
 
 UI helper text shown in the configuration:
 - This selection limits the storage for this device to 1 Million data registers per month (you cannot change this Period). But you can always edit the Retention from 0 to 36 months.
-- The retention starts considering the current period — if you select “0” months it will delete all data when a new month starts. Learn more about retention: [Learn more about retention](data-retention-feature).
+- The retention starts considering the current period — if you select “0” months it will delete all data when a new month starts.
 
 ## Period
 
@@ -59,9 +59,4 @@ Data is removed by a task that runs at these times. Therefore, data in your devi
 
 ## SDK
 
-You can also access the data retention parameters using our [SDK](https://js.sdk.tago.io/classes/_internal_.Devices.html#create).
-
-## Additional references
-
-- See [Optimized Device Data (Immutable)](../devices/device-data-management) for details on immutable storage.
-- See [Retention documentation](data-retention-feature) for deeper explanations and edge cases (exact link text preserved as referenced in this article).
+You can also access the data retention parameters using our [SDK](https:/js.sdk.tago.io/classes/_internal_.Devices.html#create).

@@ -5,7 +5,7 @@ tags: ["tagoio", "devices"]
 ---
 The device emulator is a tool for developers to send data as if it were coming from a real device. The emulator is intuitive and requires just a few clicks to validate and send your data package.
 
-To access the device emulator, go to the [Device](../devices/) section, select the device, and then click on the Emulator tab.
+To access the device emulator, go to the [Device](/docs/tagoio/devices/) section, select the device, and then click on the Emulator tab.
 
 ![Device Emulator interface showing the Emulator tab, JSON payload editor, and a Send payload button](/docs_imagem/tagoio/device-emulator-2.png)
 
@@ -14,7 +14,7 @@ To access the device emulator, go to the [Device](../devices/) section, select t
 TagoIO accepts two types of payloads: JSON and Raw.
 
 - **JSON**: The payload is a JSON object that follows TagoIO's data schema by using the following fields: `variable`, `value`, `unit`, `time`, `serie`, `location`, and `metadata`.
-- **Raw**: Raw binary data. If you need to parse text data such as CSV or XML, add a [Payload Parser](../../payload-parser/).
+- **Raw**: Raw binary data. If you need to parse text data such as CSV or XML, add a [Payload Parser](/docs/tagoio/payload-parser/).
 
 ## Notes
 
@@ -37,7 +37,7 @@ Functions are helper variables that you can add to your payload. Each function h
 
 ![Function selection dialog](/docs_imagem/tagoio/1624564657419-ttY.png)
 
-To learn more about using functions in the device emulator, read the article [Device Emulator Functions](../../devices/device-emulator-functions).
+To learn more about using functions in the device emulator, read the article [Device Emulator Functions](/docs/tagoio//docs/tagoio/devices/device-emulator-functions).
 
 ### Timer
 
@@ -45,7 +45,7 @@ The timer helps to automatically send your payload at a fixed time interval. Thi
 
 ![Timer interface](/docs_imagem/tagoio/1624568411436-YYo.png)
 
-> If you close the **Emulator** tab, the system will stop sending payloads. You may want to use the [Simulator](../../simulator-data-stream) or create a script to keep sending all the time.
+> If you close the **Emulator** tab, the system will stop sending payloads. You may want to use the [Simulator](/docs/tagoio//docs/tagoio/simulator-data-stream) or create a script to keep sending all the time.
 
 > Before sending any kind of payload, always make sure that the device is **Active**.
 

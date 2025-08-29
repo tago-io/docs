@@ -21,8 +21,3 @@ The secret key used between TagoIO and your device is called a Device Token. Any
 
 - Treat the device token like a password — do not expose it in public repositories, logs, or client-side code.
 - Only share the token with systems or people that must interact with the device.
-
-## Related documentation
-
-- Devices (see Devices documentation)
-- Configuration Parameters for Devices (refer to the relevant devices docs)
