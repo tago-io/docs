@@ -3,12 +3,12 @@ title: "Step Button Widget"
 description: "This article explains how the Step Button widget lets users increment or decrement numeric or clock values using (-) and (+) controls, and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
 ---
-Step button allows users to increase and decrease values of a [number](/docs/tagoio/widgets/number-widget) or [clock](../Displays/clock-widget) by using the (-) and (+) buttons.
+Step button allows users to increase and decrease values of a number or clock by using the (-) and (+) buttons.
 
 ![Step Button examples showing time and temperature controls with labels "Button #1", "10:15 AM", "End of cycle", "-5 °C", "Set-point"](/docs_imagem/tagoio/step-button-widget-2.png)
 
 You can also define the incremental step value and the allowed limits.  
-> This widget works for both **Normal** and **Blueprint** dashboards.
+
 
 ## Creating your own
 

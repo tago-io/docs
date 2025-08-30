@@ -8,34 +8,17 @@ Dynamic tables are tables that populate dynamically as your data arrives while k
 ## Editing the dynamic table
 You can customize the widget color, apply formulas to columns, show a time column, enable a control column, and more.
 
-> Note: This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+:::note
+
+ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+
+ :::
 
 ![Dynamic Table Widget editor screenshot](/docs_imagem/tagoio/dynamic-table-widget-2.gif)
 
 To edit a specific section of this widget, you must hover over the desired element and click it. Promptly, a new page will appear on the right side with all the editable options for the selected element.
 
-> This widget works for both dashboards: Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
-## On this page
-- Editing the dynamic table
-  - 1. 'Data From' Field
-  - 2. Grouping data
-  - 3. Data visualization
-  - 4. Filtering Data
-  - 5. Editing data
-
-## Table Widgets
-- [Tables](../tables)
-- [Device List Widget](../Tables/device-list-widget)
-- [Dynamic Table Widget](#) (this article)
-- [Entity Table Widget](../Tables/entity-table-widget)
-- [Static Table Widget](../Tables/static-table-widget)
-- [User List Widget](/docs/tagoio/widgets/user-list-widget-.md)
-
-## Related Articles
-- [Tables](../tables)
-- [Entity Table Widget](../Tables/entity-table-widget)
-- [Static Table Widget](../Tables/static-table-widget)
 
 ### 1. 'Data From' Field
 Each column has the field **Data From**; this field allows you to set the device and variable that will be used in this widget.
@@ -80,4 +63,4 @@ You can allow users to modify a variable's value inside of a table by enabling t
 
 Dynamic Table offers a bunch of field types to indicate what kind of value can be submitted in the input once the user modifies it. These types are **Text, Password, Number, Dropdown, Dropdown Multiple, Address, Entities** and **Device** (configured by tags).
 
-These field types have the same behavior as the [Form's fields](/docs/tagoio/field-types-for-input-form).
+These field types have the same behavior as the [Form's fields](/docs/tagoio/widgets/input-widgets/input-form/field-types-for-input-form).

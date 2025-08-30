@@ -22,72 +22,63 @@ You can add up to 100 widgets in a single dashboard. This total includes widgets
 The following widgets are provided out of the box (icons and labels shown):
 
 ### Chart Widgets
-- [Line Chart](./line-chart-widget.md) - Display data trends over time
-- [Area Chart](./area-chart-widget.md) - Filled area charts for data visualization
-- [Horizontal Bar](./horizontal-bar-widget.md) - Horizontal bar charts
-- [Vertical Column](./vertical-column-widget.md) - Vertical column charts
-- [Multiple Charts](./multiple-charts-widget.md) - Multiple chart types in one widget
-- [Pie Chart](./pie-widget.md) - Pie charts for proportional data
-- [Semi Pie](./semi-pie-widget.md) - Semi-circle pie charts
-- [Semi Donut](./semi-donut-widget.md) - Semi-circle donut charts
+- [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget) - Display data trends over time
+- [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget) - Filled area charts for data visualization
+- [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget) - Horizontal bar charts
+- [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget) - Vertical column charts
+- [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget) - Multiple chart types in one widget
+- [Pie Chart](/docs/tagoio/widgets/charts/pie-widget) - Pie charts for proportional data
+- [Semi Pie](/docs/tagoio/widgets/charts/semi-pie-widget) - Semi-circle pie charts
+- [Semi Donut](/docs/tagoio/widgets/charts/semi-donut-widget) - Semi-circle donut charts
 
 ### Gauge & Meter Widgets
-- [Dial](./dial-widget.md) - Traditional dial gauges
-- [Angular](./angular-widget.md) - Angular gauge meters
-- [Solid](./solid-widget.md) - Solid gauge displays
-- [VU Meter](./vu-meter-widget.md) - VU meter style gauges
-- [Cylinder](./cylinder-widget.md) - Cylindrical level indicators
-- [Grain Bin](./grain-bin-widget.md) - Grain bin level visualization
+- [Dial](/docs/tagoio/widgets/gaude-and-meters/dial-widget) - Traditional dial gauges
+- [Angular](/docs/tagoio/widgets/gaude-and-meters/angular-widget) - Angular gauge meters
+- [Solid](/docs/tagoio/widgets/gaude-and-meters/solid-widget) - Solid gauge displays
+- [VU Meter](/docs/tagoio/widgets/gaude-and-meters/vu-meter-widget) - VU meter style gauges
+- [Cylinder](/docs/tagoio/widgets/gaude-and-meters/cylinder-widget) - Cylindrical level indicators
+- [Grain Bin](/docs/tagoio/widgets/gaude-and-meters/grain-bin-widget) - Grain bin level visualization
 
 ### Display Widgets
-- [Display](./display-widget.md) - Simple value display
-- [Card](./card-widget.md) - Card-style data display
-- [Tile](./tile-widget.md) - Tile-based data visualization
-- [Icons](./icons-widget.md) - Icon-based status display
-- [Clock](./clock-widget.md) - Time and date display
-- [Note](./note-widget.md) - Text notes and annotations
+- [Display](/docs/tagoio/widgets/displays/display-widget) - Simple value display
+- [Card](/docs/tagoio/widgets/displays/card-widget) - Card-style data display
+- [Tile](/docs/tagoio/widgets/displays/tile-widget) - Tile-based data visualization
+- [Icons](/docs/tagoio/widgets/displays/icons-widget) - Icon-based status display
+- [Clock](/docs/tagoio/widgets/displays/clock-widget) - Time and date display
+- [Note](/docs/tagoio/widgets/displays/note-widget) - Text notes and annotations
 
 ### Input Widgets
-- [Input Form](./input-form-widget.md) - Data input forms
-- [Input Control](./input-control-widget.md) - Control elements
-- [Keypad](./keypad-widget.md) - Number input keypad
-- [Push Button](./push-button-widget.md) - Action buttons
-- [Step Button](./step-button-widget.md) - Increment/decrement buttons
+- [Input Form](/docs/tagoio/widgets/input-widgets/input-form-widget) - Data input forms
+- [Input Control](/docs/tagoio/widgets/input-widgets/input-control-widget) - Control elements
+- [Keypad](/docs/tagoio/widgets/input-widgets/keypad-widget) - Number input keypad
+- [Push Button](/docs/tagoio/widgets/input-widgets/push-button-widget) - Action buttons
+- [Step Button](/docs/tagoio/widgets/input-widgets/step-button-widget) - Increment/decrement buttons
 
 ### Table Widgets
-- [Dynamic Table](./dynamic-table-widget.md) - Dynamic data tables
-- [Static Table](./static-table-widget.md) - Static data tables
-- [Entity Table](./entity-table-widget.md) - Entity data tables
-- [Device List](./device-list-widget.md) - Device listing widget
-- [User List](./user-list-widget-.md) - User listing widget
+- [Dynamic Table](/docs/tagoio/widgets/tables/dynamic-table-widget) - Dynamic data tables
+- [Static Table](/docs/tagoio/widgets/tables/static-table-widget) - Static data tables
+- [Entity Table](/docs/tagoio/widgets/tables/entity-table-widget) - Entity data tables
+- [Device List](/docs/tagoio/widgets/tables/device-list-widget) - Device listing widget
+- [User List](/docs/tagoio/widgets/tables/user-list-widget) - User listing widget
 
 ### Map & Location Widgets
-- [Map](./map-widget.md) - Interactive maps with device locations
-- [Heat Map](./heat-map-widget.md) - Heat map overlays
-- [Image Marker](./image-marker-widget.md) - Image-based location markers
+- [Map](/docs/tagoio/widgets/map-and-location/map-widget) - Interactive maps with device locations
+- [Heat Map](/docs/tagoio/widgets/map-and-location/heat-map-widget) - Heat map overlays
+- [Image Marker](/docs/tagoio/widgets/map-and-location/image-marker-widget) - Image-based location markers
 
 ### Media Widgets
-- [Image](./image-widget.md) - Image display
-- [Video](./video-widget.md) - Video player
-- [Compose](./compose-widget.md) - Rich content composition
+- [Image](/docs/tagoio/widgets/media-widgets/image-widget) - Image display
+- [Video](/docs/tagoio/widgets/media-widgets/video-widget) - Video player
+- [Compose](/docs/tagoio/widgets/media-widgets/compose-widget) - Rich content composition
 
-### Custom & Advanced Widgets
-- [Custom Widget](./custom-widget.md) - Create your own widgets
-- [Angular Widget](./angular-widget.md) - Angular-based custom widgets
-- [ECharts Custom Widget](./echarts-custom-widget-tutorial-.md) - ECharts integration
 
 ## Widget Features
 
 ### Common Features
-- [Widget Header](./widget-header.md) - Customize widget headers
-- [Widget Cache System](./widget-cache-system.md) - Optimize widget performance
-- [Custom Widget Parameters](./custom-widget-parameters.md) - Configure widget behavior
-- [Multiple Axes in Chart Widgets](./multiple-axes-in-chart-widgets.md) - Advanced chart configurations
 
-### Advanced Topics
-- [Creating Keypad Widgets](./creating-keypad-widgets.md) - Keypad implementation guide
-- [Embedding Widgets](./embedding-widgets-to-your-website.md) - Embed widgets in external sites
-- [Geofences in Map Widgets](./geofences-in-map-widgets.md) - Map widget geofencing
+Check the Widgets > General documentations for commom features that can be used accross almost all widgets.
+
+
 
 
 

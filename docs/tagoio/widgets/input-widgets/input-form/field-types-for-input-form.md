@@ -8,24 +8,7 @@ The field defines the relationship between the user-inputted data and the Device
 
 > Fields can be of many types, depending on the widget they are used with.
 
-## On this page
-1. Text  
-2. Address  
-3. Calendar  
-4. Checkbox  
-5. Clock set  
-6. Device  
-7. Dropdown  
-8. Dropdown Multiple  
-9. Email  
-10. Entity & Entity Multiple  
-11. File Upload  
-12. Filtered Variables  
-13. Image / Video Select  
-14. Incremental Step  
-15. Radio  
-16. Validation  
-17. Other fields  
+
 
 ## 1. Text
 A typical text input will appear. The value saved for this field will be whatever the user typed into it.

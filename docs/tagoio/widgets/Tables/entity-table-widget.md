@@ -3,9 +3,13 @@ title: "Entity Table Widget"
 description: "This article explains how the Entity Table widget displays and manages entity-based data in a tabular format, and how to edit its general and column-specific settings. It covers data sources, user editing, formulas, color conditions, and sorting by entity indexes."
 tags: ["tagoio", "widgets"]
 ---
-The Entity Table widget enables you to display data in a tabular format using fields from your [Entities](../entities/). Unlike the [Static Table widget](../Tables/static-table-widget) and the [Dynamic Table widget](dynamic-table-widget), it does not use data from Devices. The widget lets you incorporate data from one or more entities, apply formulas, set color conditions, and allow end-users to directly modify table values from their dashboard. You can also sort data based on the indexes you've created in your entity.
+The Entity Table widget enables you to display data in a tabular format using fields from your [Entities](/docs/tagoio/getting-started/entities). Unlike the [Static Table widget](/docs/tagoio/widgets/tables/static-table-widget) and the [Dynamic Table widget](/docs/tagoio/widgets/tables/dynamic-table-widget), it does not use data from Devices. The widget lets you incorporate data from one or more entities, apply formulas, set color conditions, and allow end-users to directly modify table values from their dashboard. You can also sort data based on the indexes you've created in your entity.
 
-> **Ensure that appropriate [Access Management](/docs/tagoio/tagorun/access-management/) permissions are granted** to allow end-users to view the data displayed in the widget.
+:::tip
+
+ **Ensure that appropriate [Access Management](/docs/tagoio/tagorun/access-management/) permissions are granted** to allow end-users to view the data displayed in the widget.
+
+ :::
 
 ## Editing the Table
 

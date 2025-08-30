@@ -7,7 +7,7 @@ Using data from multiple variables, the Semi Donut widget automatically produces
 
 ![Three examples of semi-donut charts with different styles](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata), which can be set in your variable data.
 
 ## Creating your own
 
@@ -15,7 +15,7 @@ To add the widget to your dashboard, select the Semi Donut widget from the widge
 
 ![Semi Donut widget shown in the dashboard editor with options on the right side](/docs_imagem/tagoio/semi-donut-widget-2.png)
 
-> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
+
 
 ### 1. 'Data From' Field
 
@@ -32,11 +32,3 @@ From the option **Data From** on the right menu, select one device from your lis
 From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 > When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
-
-## Related articles
-
-- [Semi Pie Widget](/docs/tagoio/widgets/semi-pie-widget)  
-- [Pie Widget](../Charts/pie-widget)  
-- [Grain Bin Widget](../Gauge & Meter/grain-bin-widget)  
-- [Cylinder Widget](../Gauge & Meter/cylinder-widget)  
-- [Solid Widget](../Gauge & Meter/solid-widget)

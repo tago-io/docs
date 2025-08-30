@@ -3,11 +3,11 @@ title: "Horizontal Bar Widget"
 description: "A brief guide to the Horizontal Bar Widget that explains what it does, notes supported variable features, and documents the \"Data From\" field used to select device and variable inputs for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](../General/formula), decide whether bars are stacked, and configure other visual options.
+Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](/docs/tagoio/widgets/general/formula), decide whether bars are stacked, and configure other visual options.
 
 ![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
 
-This widget also accepts features such as [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features such as [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

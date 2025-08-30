@@ -24,4 +24,8 @@ Filtering by values will show all values for the selected variables, but only fo
 Once the filter is enabled, a filter button will be displayed on the top left of the map widget.  
 ![Filter button on map widget](/docs_imagem/tagoio/filters3-Eq4-G9k.gif)
 
-> Keep in mind that list by value in the Filter table only shows the values from the variables, and not the latitude and longitude of positions, for example.
+:::note
+
+Keep in mind that list by value in the Filter table only shows the values from the variables, and not the latitude and longitude of positions, for example.
+
+:::

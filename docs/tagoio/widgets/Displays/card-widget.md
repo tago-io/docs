@@ -23,7 +23,6 @@ For **Normal dashboards** you select one device from your list of devices and th
 For **Blueprint dashboards** you add a Blueprint device (see [Blueprint devices](/docs/tagoio/devices/blueprint-devices-entities)) and input the name of the variable.  
 When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-> This widget works for both dashboards – Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ### 2. Color options
 

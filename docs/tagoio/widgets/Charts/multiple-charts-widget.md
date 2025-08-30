@@ -3,13 +3,13 @@ title: "Multiple Charts Widget"
 description: "This article explains how to use the Multiple Charts widget in TagoIO, including how each variable can produce a different chart type, configurable options, and the Data From field used to select device and variable sources."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and find insights. The Multiple Charts widget lets you customize colors, apply Formula (../General/formula), change line shapes (step or smooth), choose whether series are stacked, and more.
+Charts are a powerful way to visualize your data and find insights. The Multiple Charts widget lets you customize colors, apply Formula (/docs/tagoio/widgets/general/formula), change line shapes (step or smooth), choose whether series are stacked, and more.
 
-> Note: In multiple charts, each variable produces a different chart. In the same widget it is possible to have each chart as an Area Chart (../Charts/area-chart-widget), Line Chart (../Charts/line-chart-widget), Horizontal Bar (../Charts/horizontal-bar-widget), or Vertical Column (../Charts/vertical-column-widget).
+> Note: In multiple charts, each variable produces a different chart. In the same widget it is possible to have each chart as an [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget), [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget), [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget), or [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget).
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
-This widget also accepts features like metadata (/docs/tagoio/devices/data-management/metadata) and series (/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features like metadata (/docs/tagoio/payload-parser/metadata) and series (/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -28,24 +28,6 @@ From the option **'Data From'** on the right menu, select one device from your l
 From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-## On this page
-
-- 1. 'Data From' Field
-- 2. Composing X-axis and Y-axis — See [Chart Configuration](/docs/tagoio/widgets/chart-configuration#axes)
-- 3. Filtering data — See [Data Filtering](/docs/tagoio/widgets/widget-data-filtering)
-- 4. Increasing performance — See [Widget Cache System](../General/widget-cache-system)
-
-## Multiple Axis Chart Widget
-
-- Multiple Charts Widget (this article)
-
-## Related Articles
-
-- Line Chart Widget [Line Chart Widget](../Charts/line-chart-widget)
-- Area Chart Widget [Area Chart Widget](../Charts/area-chart-widget)
-- Horizontal Bar Widget [Horizontal Bar Widget](../Charts/horizontal-bar-widget)
-- Vertical Column Widget [Vertical Column Widget](../Charts/vertical-column-widget)
-- Map Widget (../Map & Location/Map Widget/map-widget)
 
 ## 2. Composing X-axis and Y-axis
 
@@ -99,6 +81,10 @@ When a chart has a large number of data points, you can increase the widget’s 
 Downsampling has two concepts: **Threshold** and **Factor**.  
 The Threshold limits the amount of data at which downsampling starts, and the Factor determines how many samples will be removed.
 
-> The greater the factor, the higher the performance gain, but as the factor increases, the data becomes less recognizable.
+:::warining
+
+The greater the factor, the higher the performance gain, but as the factor increases, the data becomes less recognizable.
+
+:::
 
 ---

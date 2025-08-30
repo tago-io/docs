@@ -7,7 +7,6 @@ The Image widget provides the ability to present custom images in your dashboard
 
 ![Image widget example showing three image tiles](/docs_imagem/tagoio/image-widget-2.gif)
 
-> Note: This widget works for both dashboard types: Normal and Blueprint (Blueprint links to the Blueprint documentation).
 
 ## 1. Image Behavior
 Image behavior defines where the image URL comes from. There are three types of image behavior: static, conditional, and dynamic.

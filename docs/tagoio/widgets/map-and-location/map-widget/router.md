@@ -30,19 +30,3 @@ When users access the map from a mobile device, they will have the option to sel
 <!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/2xG7aEgHH_FpZnpi5WKP1LKQExVZg5e2GYz6uBhNiNU/router_tagoIO-iuo.png -->)
 
 > **Note:** Only Google Maps is available when using a browser from a computer.
-
-## Related documentation
-- [Map Widget](/docs/tagoio/widgets/map-and-location/map-widget/)
-- [Map filters](/docs/tagoio/map-filters)
-- [Geofences in map widgets](/docs/tagoio/widgets/geofences-in-map-widgets)
-- [Map Layer GIS](/docs/tagoio/map-layer-gis)
-- [Images and Links in the map's pins](/docs/tagoio/images-and-links-in-the-maps-pins)
-- [Router](#) (this article)
-- [Displaying Locations on a Map with TTN LoRaWAN](/docs/tagoio/tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
-
-## Additional related articles
-- [Map Widget](/docs/tagoio/widgets/map-and-location/map-widget/)
-- [Tags System](/docs/tagoio/getting-started/tags-system)
-- [Compose Widget](/docs/tagoio/widgets/Media Widgets/compose-widget)
-- [Formula](/docs/tagoio/formula)
-- [Image Marker Widget](/docs/tagoio/widgets/image-marker-widget)

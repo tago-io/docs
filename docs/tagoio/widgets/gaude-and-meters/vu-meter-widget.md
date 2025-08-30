@@ -7,7 +7,7 @@ VU Meter gauges display the variable in a velocimeter-style gauge.
 
 ![Three VU meters example](/docs_imagem/tagoio/vu-meter-widget-2.gif)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) that can be set in your variable data.
 
 ## Creating your own
 
@@ -15,7 +15,6 @@ To add the VU Meter widget to your dashboard, choose the VU Meter widget from th
 
 ![Adding a VU Meter to the dashboard](/docs_imagem/tagoio/vu-meter-widget-2.gif)
 
-> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ### 'Data From' Field
 
@@ -34,16 +33,3 @@ From the option **Data From** on the right menu, select one device from your lis
 From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 > When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
-
-## On this page
-
-- [Creating your own](#creating-your-own)
-- 1. ['Data From' Field](/docs/tagoio/devices/data-management/data-records)
-
-## Related Articles
-
-- [Solid Widget](../Gauge & Meter/solid-widget)
-- [Angular Widget](../Displays/angular-widget)
-- [Cylinder Widget](../Gauge & Meter/cylinder-widget)
-- [Pie Widget](../Charts/pie-widget)
-- [Grain Bin Widget](../Gauge & Meter/grain-bin-widget)

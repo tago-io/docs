@@ -9,7 +9,7 @@ Display is a widget that shows the last value of a variable, regardless of the f
 
 You can select one or more variables; each variable will have its own box and will display its most recent value simultaneously.
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) that can be set in your variable data.
 
 ## Creating your own
 
@@ -26,7 +26,3 @@ The *Data From* field allows you to specify which device or entity provides the 
 After adding a variable, click the cog icon to edit specific options for that variable—such as formulas, color, and more. Click the close icon to remove the variable from the widget’s data.
 
 **Note:** The *Data From* field is dependent on the type of dashboard you are using; the differences are explained above.
-
-## See also
-
-- See ['Data From' Field](/docs/tagoio/devices/data-management/data-records) for information about setting the data source for Display widgets.

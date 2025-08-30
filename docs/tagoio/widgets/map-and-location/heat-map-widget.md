@@ -7,7 +7,7 @@ With the Heat Map widget you can create a colorful layer of bubbles over an imag
 
 ![Heat map example on a background image (floor plan)](/docs_imagem/tagoio/heat-map-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata), which can be set in your variable data.
 
 ## Creating your own
 

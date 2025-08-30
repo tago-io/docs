@@ -35,8 +35,3 @@ Notes:
   - *Static*: Define a label (header text), value (sent to the variable), URL (must be HTTPS), and description (shown below the image). These settings create each selectable image.  
   - *Dynamic*: Provide a device variable that contains an array of objects. Each object should include `metadata.description`, `metadata.url` (HTTPS), and optionally `metadata.value`. The widget will use the object's `value` field if present; otherwise it uses the variable’s value.
 - In the configuration panel you can add or remove images using the **+** and **–** buttons.
-
-## See also
-- Input Form Widget (refer to the Input Form Widget documentation)
-- Field Types for Input Form (refer to the Field Types for Input Form documentation)
-- For other related widgets and examples, refer to the Widgets section of the TagoIO knowledge base.

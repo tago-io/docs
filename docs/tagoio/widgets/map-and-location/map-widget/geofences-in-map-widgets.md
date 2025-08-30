@@ -9,26 +9,6 @@ Geofences allow developers to color parts of the map and detect or trigger event
 
 ![Video: Mapping and Geofencing IoT Devices on TagoIO (thumbnail)](/docs_imagem/tagoio/geofences-in-map-widgets-2.png)
 
-## On this page
-- Events — See [Events](../actions/)
-- Creating geofences — See [Creating geofences](/docs/tagoio/devices/data-management/geofence-management) 
-- Geofence variable data — See [Geofence variable data](/docs/tagoio/devices/data-management/geofence-management)
-
-## Related Map Widget documentation
-- See [Map Widget](../Map & Location/Map Widget/map-widget)
-- See [Map filters](../map-filters)
-- See [Geofences in map widgets](#) (this article)
-- See [Map Layer GIS](../map-layer-gis)
-- See [Images and Links in the map's pins](../images-and-links-in-the-maps-pins)
-- See [Router](../router)
-- See [Displaying Locations on a Map with TTN LoRaWAN](../tutorials/displaying-locations-on-a-map-with-ttn-lorawan)
-
-## Related articles
-- See [Map Widget](../Map & Location/Map Widget/map-widget)
-- See [Image Marker Widget](../Map & Location/image-marker-widget)
-- See [Trigger by Geofence](/docs/tagoio/trigger-by-geofence)
-- See [Compose Widget](../Media Widgets/compose-widget)
-- See [Custom Widget](../Custom Widget/custom-widget)
 
 ## Creating geofences
 

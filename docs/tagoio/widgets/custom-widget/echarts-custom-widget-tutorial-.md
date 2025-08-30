@@ -157,7 +157,3 @@ Example snippet (replace placeholders accordingly):
 Finally, paste the new URL of your widget (the one pointing to the files you just uploaded) into the custom widget configuration in your dashboard. This replaces the local development server URL and completes the deployment process.
 
 With these steps completed, your Ring Gauge custom widget is fully deployed and ready for use within TagoIO dashboards.
-
-## Additional references
-- See [Ring Gauge](ring-gauge-widget) for more on this widget type.
-- See [ECharts library](https://echarts.apache.org/) for ECharts documentation and examples.

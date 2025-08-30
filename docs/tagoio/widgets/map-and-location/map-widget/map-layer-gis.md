@@ -21,7 +21,7 @@ In the static layer, you can use the widget configuration to input and choose a 
 ### 2. Dynamic layer
 In the dynamic layer, the files are saved in a variable so developers can manage them easily and display the layers dynamically. This is similar to the **Data From** field of the Map widget.
 
-Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](/docs/tagoio/widgets/dynamic-table-widget) or the [Input Form widget](/docs/tagoio/widgets/input-form-widget).  
+Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](/docs/tagoio/widgets/tables/dynamic-table-widget) or the [Input Form widget](/docs/tagoio/widgets/input-widgets/input-form/).  
 A variable should have a payload like this so that the Map widget can successfully display a layer:
 
 ```json
@@ -39,10 +39,3 @@ The **Metadata** field is used to indicate the file’s URL or the label that de
 
 ## Layer color
 You can use colors from your GeoJSON file by indicating which property represents this color. You can also override the file color with a fixed color or set up color conditions. Color conditions help indicate the layer status based on variable data; the variable used for color conditions is defined in the Layer color configuration of the Map widget.
-
-## On this page
-- 1. Layer Type
-- 2. Layer color
-
-## Related documentation
-- See [Map widget](/docs/tagoio/widgets/map-and-location/map-widget/) for general map widget setup and configuration.

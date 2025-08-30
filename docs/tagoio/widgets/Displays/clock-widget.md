@@ -13,7 +13,6 @@ After a full minute, the dots are reset back to empty.
 
 > Note: This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
----
 
 ## Time format
 

@@ -41,7 +41,7 @@ Due to their versatility, Custom Widgets allow you to use data from different so
 
 You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
 
-You can also use data from **resources** such as devices and users – just like on the [Device List](/docs/tagoio/widgets/Tables/device-list-widget) and [User List](/docs/tagoio/widgets/user-list-widget-) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
+You can also use data from **resources** such as devices and users – just like on the [Device List](/docs/tagoio/widgets/tables/device-list-widget) and [User List](/docs/tagoio/widgets/tables/user-list-widget) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
 
 ![Data source example](/docs_imagem/tagoio/external-6c842fb5.png)
 
@@ -61,26 +61,10 @@ One use of these parameters is to change the way your code behaves. You can have
 
 ![Parameter example](/docs_imagem/tagoio/custom-widget-parameters-2.png)
 
-Read more about [Custom Widget Parameters](/docs/tagoio/widgets/Custom Widget/custom-widget-parameters).
+Read more about [Custom Widget Paramenter](/docs/tagoio/widgets/custom-widget/custom-widget-parameters).
 
 ## User Control
 
 You may choose to run an Analysis once you send data from your widget. To do so, inform the desired Analysis in the Run analysis when sending data field.
 
 ![User control example](/docs_imagem/tagoio/1587659332760-NCM.png)
-
-## On this page
-
-- Creating your own
-- Data Sources
-- Main Configuration
-- Parameters
-- User Control
-
-## Related articles
-
-- ECharts Custom Widget Tutorial [ECharts Custom Widget Tutorial](/docs/tagoio/widgets/echarts-custom-widget-tutorial-)
-- Map Widget (../Map & Location/Map Widget/map-widget)
-- Image Marker Widget [Image Marker Widget](../Map & Location/image-marker-widget)
-- Compose Widget (../Media Widgets/compose-widget)
-- Analysis Overview (/docs/tagoio/analysis/)

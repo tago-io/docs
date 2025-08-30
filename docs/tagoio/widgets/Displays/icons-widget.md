@@ -37,11 +37,3 @@ The widget changes its content based on two types of conditions, **Icon conditio
 - It is possible to show your own images in the widget by adding their icon URL.
 
 <!-- Image temporarily disabled: Conditions example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/6urQaiVLijluk8JJulhV5B4xTQgm9ZjdlYuJpFGanMg/editingConditions-vVQ.gif -->
-
-## Related Articles
-
-- See [Map Widget](../Map & Location/Map Widget/map-widget)  
-- See [Image Marker Widget](../Map & Location/image-marker-widget)  
-- See [Compose Widget](../Media Widgets/compose-widget)  
-- See [Custom Widget](../Custom Widget/custom-widget)  
-- See [Formula](../General/formula)

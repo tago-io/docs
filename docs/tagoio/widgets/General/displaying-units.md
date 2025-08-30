@@ -18,7 +18,7 @@ If the variable doesn't have a unit, it will be left empty.
 
 ## 2. Unit from variable used in Formula
 
-When you set a [Formula](/docs/tagoio/formula) in your widget where the source of the formula is based on another variable, this option will use what is stored in the **`unit`** of that variable to present in the widget.
+When you set a [Formula](/docs/tagoio/widgets/general/formula) in your widget where the source of the formula is based on another variable, this option will use what is stored in the **`unit`** of that variable to present in the widget.
 
 This is helpful when you need to build an application that changes the output dynamically.  
 For example, users can select the scale they want to see a temperature at among the options: °C, °F, or K.

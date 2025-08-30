@@ -8,7 +8,7 @@ The User List widget is a table that dynamically populates with information abou
 ## 1. Editing the user list
 The User List works as a dynamic table: you can customize its colors and columns, and filter which users appear in the list.
 
-![Setting up user filtering](/docs_imagem/tagoio/user-list-widget--4.gif)
+![Setting up user filtering](/docs_imagem/tagoio/user-list-widget-4.gif)
 
 To edit a specific section of the widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
 
@@ -49,31 +49,10 @@ The user list offers a variety of field types for input when a user modifies it.
 - Device List
 - Address
 
-These field types behave the same way as those in the [Input Form's fields](/docs/tagoio/field-types-for-input-form).
+These field types behave the same way as those in the [Input Form's fields](/docs/tagoio/widgets/input-widgets/input-form/field-types-for-input-form).
 
 ## 5. Blueprint User List for TagoRUN
 
 When sharing a blueprint dashboard to **Run Users**, you must create an **Access Rule** so that the user can appear in the list. Without this rule, users won’t have access to view other users that the User List expects to show, even if filtering is applied.
 
 Make sure your Access Rule grants Blueprint access to the relevant users and matches the criteria used in the User List filter.
-
-On this page:
-- 1. Editing the user list
-- 2. User List filtering
-- 3. Setting parameters on Columns
-- 4. Editing user parameters
-- 5. Blueprint User List for TagoRUN
-
-Related Table Widgets:
-- [Tables](../tables)
-- [Device List Widget](../Tables/device-list-widget)
-- [Dynamic Table Widget](../Tables/dynamic-table-widget)
-- [Entity Table Widget](../Tables/entity-table-widget)
-- [Static Table Widget](../Tables/static-table-widget)
-- [User List Widget](user-list-widget-)
-
-Related Articles:
-- [Device List Widget](device-list-widget)
-- [Tables](../tables)
-- [Dynamic Table Widget](dynamic-table-widget)
-- [Map Widget](map-widget)

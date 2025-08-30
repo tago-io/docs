@@ -3,11 +3,11 @@ title: "Vertical Column Widget"
 description: "A brief guide to the Vertical Column Widget in TagoIO, explaining what it does, configurable features (like Formula, metadata, and series), and the first configuration field ('Data From') used to select device and variable data for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](../General/formula), choose whether series are stacked, and more.
+Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](/docs/tagoio/widgets/general/formula), choose whether series are stacked, and more.
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
-This widget also supports features such as [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+This widget also supports features such as [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ---
 
@@ -33,7 +33,6 @@ From the option **'Data From'** in the right‑hand menu, select one device from
 From the option **'Data From'** in the right‑hand menu, add the **Blueprint device** and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the **Variable** field will not list variables to pick because it does not know which devices are linked to your Blueprint Device.
 
----
 
 ## 2. Composing X-axis and Y-axis
 
@@ -66,13 +65,11 @@ The `start_date` specifies the start of the range, and the `end_date` specifies 
 You can customize the scaling behavior on the vertical axis, apply metric prefixes or abbreviations, change the step value (the difference between each tick), and more.  
 The Y‑axis will automatically find the best scale for your data; manual adjustments are only needed if you have specific requirements.
 
----
 
 ## 3. Filtering data
 
 You can pre‑set date filters to be displayed on the chart. Filters can be set in minutes, hours, days, weeks, months, or custom by choosing a date from the calendar.
 
----
 
 ## 4. Increasing performance
 

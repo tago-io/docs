@@ -13,7 +13,7 @@ To add the Keypad to your dashboard, choose the Keypad widget from the widget li
 
 ![Keypad widget on dashboard with settings panel on the right](/docs_imagem/tagoio/keypad-widget-2.png)
 
-> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
+
 
 ## 1. 'Data From' Field
 
@@ -36,7 +36,7 @@ You have the option to customize the content of the keypad by creating buttons t
 
 ![Example of custom buttons inside the Keypad](/docs_imagem/tagoio/keypad-widget-2.png)
 
-Learn more about the [customization options of your keypad](../keypad-visualization).
+Learn more about the [customization options of your keypad](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-visualization).
 
 ## 3. Data manipulation
 
@@ -54,21 +54,4 @@ For instance, if the user has clicked the sequence **1234** and then **DISARM**,
 1234,disarm
 ```
 
-Learn more about how to [manipulate the keypad's data](../keypad-data-manipulation).
-
-## On this page
-- 1. 'Data From' Field (/docs/tagoio/devices/data-management/data-records)
-- 2. Visualization — See [Widget Visualization](/docs/tagoio/widgets/widget-configuration#visualization)
-
-## Related Keypad documentation
-- [Keypad Widget](#) (this article)  
-- [Creating Keypad Widgets](/docs/tagoio/widgets/widget-configuration#keypad-setup)  
-- [Keypad Visualization](../keypad-visualization)  
-- [Keypad Data Manipulation](../keypad-data-manipulation)
-
-## Related articles
-- [Compose Widget](../Media Widgets/compose-widget)  
-- [Map Widget](../Map & Location/Map Widget/map-widget)  
-- [Image Marker Widget](../Map & Location/image-marker-widget)  
-- [Custom Widget](../Custom Widget/custom-widget)  
-- [Keypad Data Manipulation](../keypad-data-manipulation)
+Learn more about how to [manipulate the keypad's data](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-data-manipulation).

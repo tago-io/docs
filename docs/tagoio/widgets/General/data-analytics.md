@@ -7,13 +7,13 @@ Transform your raw sensor data into actionable insights using visual calculation
 
 Data Analytics is currently available for the widgets listed below, with support for additional widgets to be added in the future:
 
-- [Display](../Displays/display-widget)
-- [Line Chart](../Charts/line-chart-widget)
-- [Area Chart](../Charts/area-chart-widget)
-- [Horizontal Bar](../Charts/horizontal-bar-widget)
-- [Vertical Column](../Charts/vertical-column-widget)
-- [Multiple Charts](../Charts/multiple-charts-widget)
-- [Icon](../Displays/icons-widget)
+- [Display](/docs/tagoio/widgets/displays/display-widget)
+- [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget)
+- [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget)
+- [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget)
+- [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget)
+- [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget)
+- [Icon](/docs/tagoio/widgets/Displays/icons-widget)
 
 ## Available Functions
 
@@ -60,4 +60,4 @@ When applying an interval, the system uses the first data point as a starting re
    - The period can be set directly in the Data Analytics tab, on the X‑axis, or via global preset periods using the [Dashboard Period Presets](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets).
 6. For aggregation functions, set a default interval or create a preset interval by navigating to the **Preset Interval** option after entering the widget in Edit Mode.
 7. The system will prompt you to define **Cache settings**, which are mandatory for maintaining dashboard responsiveness and performance.  
-   - You can also set an expiration time to prevent rapid consumption of your [Dashboard Data Output](/docs/tagoio/services/data-output-for-dashboards).
+   - You can also set an expiration time to prevent rapid consumption of your [Dashboard Data Output](/docs/tagoio/dashboards/data-output-for-dashboards).

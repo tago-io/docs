@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/data-management/metadata) and [series](/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  
@@ -63,10 +63,3 @@ The Y‑axis will automatically find the best scale for your data; it is not nec
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
 ![Image 7](/docs_imagem/tagoio/filteringData-e2c.gif)
-
-## Related articles
-- [Area Chart Widget](../Charts/area-chart-widget)  
-- [Multiple Charts Widget](../Charts/multiple-charts-widget)  
-- [Horizontal Bar Widget](../Charts/horizontal-bar-widget)  
-- [Vertical Column Widget](../Charts/vertical-column-widget)  
-- [Map Widget](../Map & Location/Map Widget/map-widget)

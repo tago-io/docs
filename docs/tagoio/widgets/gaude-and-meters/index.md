@@ -6,7 +6,6 @@ tags: ["tagoio"]
 ---
 Gauge contains a collection of metric widgets. You can choose among several types of gauges that present the last value of a variable in different formats.
 
----
 
 ## Dial
 
@@ -14,9 +13,8 @@ Dials are one of the simplest and more useful widgets. They make it easy to visu
 
 ![Dial gauge example showing a circular dial with numeric temperature value](/docs_imagem/tagoio/gauge-overview-2.png)
 
-Learn more about the [Dial Gauge](widgets/dial-widget).
+Learn more about the [Dial Gauge](/docs/tagoio/widgets/gaude-and-meters/dial-widget).
 
----
 
 ## Angular
 
@@ -24,9 +22,8 @@ Angular allows you to show your variable in an angular gauge meter.
 
 ![Image 2](/docs_imagem/tagoio/1587131850692-QkI.png)
 
-To learn more about the [Angular Gauge](/docs/tagoio/widgets/angular-widget).
+To learn more about the [Angular Gauge](/docs/tagoio/widgets/gaude-and-meters/angular-widget).
 
----
 
 ## Solid
 
@@ -34,9 +31,8 @@ Solid gauges display your variable in a solid gauge meter.
 
 ![Image 3](/docs_imagem/tagoio/1587131943985-EQI.png)
 
-To learn more about the [Solid Gauge](/docs/tagoio/widgets/solid-widget).
+To learn more about the [Solid Gauge](/docs/tagoio/widgets/gaude-and-meters/solid-widget).
 
----
 
 ## Clock
 
@@ -44,9 +40,8 @@ Clock gauges allow you to visualize the time in a certain timezone. You can see 
 
 ![Image 4](/docs_imagem/tagoio/1587130683446-m1M.png)
 
-To learn more about the [Clock Gauge](/docs/tagoio/gauge-overview).
+To learn more about the [Clock Gauge](/docs/tagoio/widgets/gaude-and-meters/index).
 
----
 
 ## VU Meter
 
@@ -54,4 +49,4 @@ VU Meter gauges show the variable in a velocimeter gauge.
 
 ![Image 5](/docs_imagem/tagoio/1587131850409-rSM.png)
 
-To learn more about the VU Meter Gauge.
+To learn more about the [VU Meter Gauge](/docs/tagoio/widgets/gaude-and-meters/vu-meter-widget).

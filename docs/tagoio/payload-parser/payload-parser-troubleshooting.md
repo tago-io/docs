@@ -58,7 +58,7 @@ var temp = payload.value;
 - [Filtering Out Variables with Parser Code](/docs/tagoio/payload-parser/filtering-out-variables-with-parser-code)
 - [Publishing, updating and accessing decoders](/docs/tagoio/payload-parser/publishing-updating-and-accessing-decoders)
 - [Sharing Connectors & Networks](../integrations/sharing-connectors-networks)
-- [Metadata](/docs/tagoio/devices/data-management/metadata)
+- [Metadata](/docs/tagoio/payload-parser/metadata)
 - [Payload Parser Troubleshooting](payload-parser-troubleshooting)
 - [Payload Parser timeUtils Library](/docs/tagoio/payload-parser/-timeutils-library)
 
