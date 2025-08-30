@@ -3,7 +3,7 @@ title: "Run Theme"
 description: "This article explains how to customize the RUN interface theme in TagoIO, covering customization options for the Signup page, Sidebar, and Navigation bar, and where to upload background and logo files."
 tags: ["tagoio"]
 ---
-You have the freedom to personalize the look and feel of the RUN interface by crafting your application with a unique color palette and custom assets. To get started, access the [Run module](/docs/tagoio/tagorun) and navigate to the Theme tab. The available customization options are described below.
+You have the freedom to personalize the look and feel of the RUN interface by crafting your application with a unique color palette and custom assets. To get started, access the [Run module](https://admin.tago.io/am) and navigate to the Theme tab. The available customization options are described below.
 
 ## 1. Signup page
 
@@ -17,7 +17,7 @@ The Sidebar and the Navigation bar are the main components used to route users t
 
 ### 2.1 Sidebar
 
-The Sidebar contains the vertical menu housing your [sidebar buttons](/docs/tagoio/sidebar) and the dashboard list. Personalizing the background color ensures that icons and text automatically adapt their colors for optimal contrast and readability.
+The Sidebar contains the vertical menu housing your [sidebar buttons](/docs/tagoio/tagorun/getting-started/sidebar) and the dashboard list. Personalizing the background color ensures that icons and text automatically adapt their colors for optimal contrast and readability.
 
 ### 2.2 Navigation bar
 

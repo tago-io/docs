@@ -7,18 +7,12 @@ End-User Agreements is a feature designed to help you manage and track legal agr
 
 <!-- Image placeholder removed for build -->
 
-## On this page
-- See [Creating Agreements](#creating-agreements)
-- See [Accepting Agreements](#accepting-agreements)
-- See [Updating Agreements](#updating-agreements)
-- See [Monitoring Agreements](#monitoring-agreements)
-
 ## Creating Agreements
 Use this section to create and configure end-user agreements (terms of service, privacy policies, etc.) that users must accept before using the platform. Creating an agreement typically involves providing the agreement text, configuring visibility, and setting when the agreement must be accepted (for example, at first login or when a new version is introduced).
 
 **Steps to create a new agreement**
 
-1. Navigate to the **Run module** → **Signup Page** → **Agreements tab**.  
+1. Navigate to the **[Run module](https://admin.tago.io/run)** → **Signup Page** → **Agreements tab**.  
 2. Click the **_New Agreements_** button in the top right corner.  
 3. Define the following fields:
    - **Name:** Enter a descriptive name for the agreement.  

@@ -46,4 +46,4 @@ To delete a geofence in your condition, you can either draw another one, which w
 ## Related references
 
 - See [Editing Geofence](/docs/tagoio/widgets/map-and-location/map-widget/) for instructions on editing geofence shapes and parameters.
-- See [Defining Actions](../actions/) or [Actions](../actions/) for how to configure the action executed when the geofence condition is met.
+- See [Defining Actions](/docs/tagoio/actions/) or [Actions](/docs/tagoio/actions/) for how to configure the action executed when the geofence condition is met.

@@ -44,7 +44,3 @@ TagoIO provides sample CSV and JSON files accessible from the Import and Export 
 - The key should follow the same format as on the TagoIO Admin: all caps, no spaces (use underscores), only alphanumeric characters.
 
 > **Note:** The import and export functionality is available for users in the Scale plan.
-
-## See also
-- See [Using Dictionaries & Multi-language](/docs/tagoio/using-dictionaries-multi-language) for additional details about language handling and dictionary usage.
-- See [Learn more](/docs/tagoio/dictionaries) for further information about the Dictionary Pairs configuration and substitution behavior.

@@ -4,7 +4,7 @@ description: "This article explains how to define Targets within a policy in the
 tags: ["tagoio"]
 sidebar_position: 3
 ---
-You should define **Targets** in each policy that are used inside the [Access Management](/docs/tagoio/tagorun/access-management/) module (AM). Targets can be users or things (for example, [scripts](/docs/tagoio/analysis/)).
+You should define **Targets** in each policy that are used inside the [Access Management](https://admin.tago.io/am) module. Targets can be users or things (for example, [scripts](/docs/tagoio/analysis/)).
 
 > Targets are to whom or to what you are giving the permissions.
 
@@ -25,7 +25,7 @@ Target matching can be performed in several ways:
 2. **Tag** – match using tags from your target. Learn more about the [Tags System](/docs/tagoio/getting-started/tags-system).
 
    - Tags are composed of two fields: **Tag key** and **Tag value**.
-   - You can manually edit the tags for each user, or run [scripts](/docs/tagoio/analysis/) to set them. Learn more about [User Management](/docs/tagoio/account/user-management).
+   - You can manually edit the tags for each user, or run [scripts](/docs/tagoio/analysis/) to set them. Learn more about [User Management](/docs/tagoio/tagorun/getting-started/user-management).
    - For example, Joe Doe has a Tag key `user_level` and Tag value `supervisor`. If you create a policy with Targets using the same tags, the selected permissions will be granted for Joe Doe.
 
 3. **Tag Match** – the match is automatically by searching for those Tag Keys of the selected target.
@@ -35,9 +35,3 @@ Target matching can be performed in several ways:
    > The Tag Match option reduces the number of policies as you can create a single Policy that would grant access to all users or analysis that match the same tag keys.
 
 4. **ANY** – all will be automatically included.
-
-## See also
-- Access Management: [Access Management](/docs/tagoio/tagorun/access-management/)
-- Creating a Policy: [Creating a Policy](/docs/tagoio/tagorun/access-management/#creating-policies)
-- Defining Permissions: [Defining Permissions](/docs/tagoio/security/defining-permissions)
-- User Management: [User Management](/docs/tagoio/account/user-management)

@@ -6,10 +6,9 @@ sidebar_position: 2
 ---
 You can create individual policies to securely grant access to specific resources in your account for pre-defined targets.
 
-You create [Targets](../defining-targets) (for example, users) and decide which resource types they can access by assigning [Permissions](../security/defining-permissions) (for example, dashboards).
+You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets) (for example, users) and decide which resource types they can access by assigning [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions) (for example, dashboards).
 
-To do this, navigate to the Access module and click **Add Policy**.
+To do this, navigate to the [Access module](https://admin.tago.io/am) and click **Add Policy**.
 
-You can manually configure a policy by creating a Policy under the [Access module](/docs/tagoio/tagorun/access-management/).
 
 ![Access Management — policy list and Add Policy button](/docs_imagem/tagoio/creating-a-policy-2.png)

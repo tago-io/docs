@@ -104,7 +104,7 @@ Additionally, you can also send WhatsApp messages using Twilio Templates. To do 
 
 Actions have the power to initiate scripts that run in the [Analysis](/docs/tagoio/analysis/). This is a very powerful feature, as you can define exactly when your code will run.
 
-Learn more about [Running Analysis via Action](../actions/running-analysis-via-action).
+Learn more about [Running Analysis via Action](/docs/tagoio/actions/running-analysis-via-action).
 
 ## Publish to TagoIO MQTT Broker
 

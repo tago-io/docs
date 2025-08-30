@@ -37,5 +37,5 @@ It is always a good idea to access the link yourself before sharing to ensure th
 - [Creating Analysis](/docs/tagoio/analysis/creating-analysis)
 - [Running Analysis as External using Deno](/docs/tagoio/analysis/running-analysis-as-external-using-deno)
 - [Distributing Dashboards](/docs/tagoio/dashboards/distributing-dashboards)
-- [Running Analysis via Action](../actions/)
+- [Running Analysis via Action](/docs/tagoio/actions/)
 - [Analysis Overview](/docs/tagoio/analysis/)

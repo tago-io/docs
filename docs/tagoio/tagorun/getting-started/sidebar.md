@@ -10,7 +10,7 @@ You can customize your sidebar settings by accessing the Run module and selectin
 
 <!-- Image placeholder removed for build -->
 
-> **Note:** It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](run-theme).
+> **Note:** It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme).
 
 ### Dashboard Search Bar and Sorting Options
 The Dashboard Search feature enhances the end‑user experience by providing a search functionality and sorting options for dashboards within the Run portal panel.
@@ -18,7 +18,7 @@ The Dashboard Search feature enhances the end‑user experience by providing a s
 ![Image 2](/docs_imagem/tagoio/external-8ae4366e.png)
 
 To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.  
-You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/docs/tagoio/using-dictionaries-multi-language).
+You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language).
 
 ### Logo Button Configuration
 You can define what happens when an end user clicks on your logo or what message is displayed when the mouse hovers over it.
@@ -30,12 +30,12 @@ To display a tooltip over your logo, write text in the **Button tooltip** field.
 
 ![Image 4](/docs_imagem/tagoio/info-8.png)
 
-Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/using-dictionaries-multi-language) to display text that will be substituted according to the languages available for your end users.
+Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries) to display text that will be substituted according to the languages available for your end users.
 
 #### 2. Button Action
 By default, when an end user clicks on your logo, they are redirected to your Run URL domain. You can customize what happens after clicking on it. The actions can be:
 
-1. **Open Dashboard** – opens the selected dashboard (the user must have access). Read more about [Access Management](/docs/tagoio/tagorun/access-management/).
+1. **Open Dashboard** – opens the selected dashboard (the user must have access).
 2. **Show iFrame** – opens an external link inside the Run application; the page must be embeddable.
 3. **Show HTML file content** – displays a custom HTML file that can be hosted in [Files](/docs/tagoio/files).
 4. **Open external link** – opens a URL outside of Run.
@@ -72,4 +72,4 @@ Customize how many buttons appear per line. The slider lets you move a button to
 ![Image 6](/docs_imagem/tagoio/file.png)
 
 #### Visibility Conditions
-By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags. Read more about [configuring Tags for end‑users](/docs/tagoio/tagorun/access-management/).
+By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags.
