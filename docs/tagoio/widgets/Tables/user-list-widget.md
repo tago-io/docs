@@ -8,7 +8,7 @@ The User List widget is a table that dynamically populates with information abou
 ## 1. Editing the user list
 The User List works as a dynamic table: you can customize its colors and columns, and filter which users appear in the list.
 
-![Setting up user filtering](/static/docs_imagem/tagoio/user-list-widget--4.gif)
+![Setting up user filtering](/docs_imagem/tagoio/user-list-widget--4.gif)
 
 To edit a specific section of the widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
 
