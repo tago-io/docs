@@ -3,7 +3,11 @@ title: "Sending Data"
 description: "This article explains how devices send data to TagoIO using the POST endpoint, lists the available request fields and their requirements, and notes authentication and variable naming considerations."
 tags: ["tagoio"]
 ---
-> When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
+:::info
+
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
+
+:::
 
 A device can send data to TagoIO by using the POST method.
 
@@ -23,15 +27,14 @@ POST https://api.<region>.tago.io/data
 | location  | object \| geoJSON              | no          |
 | metadata  | object (max 10kB)              | no          |
 
-You must include a Device-Token to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](../api/restful-api).
+You must include a [Device-Token](/docs/tagoio/devices/device-token) to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](/docs/tagoio/api/restful-api).
 
 ## Notes and restrictions
 
-- Variable should NOT contain the characters listed in the documentation (see the Sending Data restrictions for the full list).
 - Variables are always converted to lowercase.
 - Variable names may not include special characters such as `*?!<>.-=$` or spaces.
 - You can send multiple registers in a single POST by sending an array of objects. The maximum payload size is 200 kB (approximately 8,000 registers).
-- Metadata can be attached to variables to influence widget behavior and store additional information. For example:
+- [Metadata](/docs/tagoio/payload-parser/metadata) can be attached to variables to influence widget behavior and store additional information. For example:
   
   ```json
   {
@@ -44,10 +47,10 @@ You must include a Device-Token to authorize the operation. Learn more about the
   ```
   
   When displayed in a table, the row will be red; when displayed on a map widget, the pin will be red with a car icon.
-- Rate limits apply to API requests. Read more about them here: [Rate Limits](../rate-limits-hard-limits).
+- Rate limits apply to API requests. Read more about them here: [Rate Limits](/docs/tagoio/api/rate-limits-hard-limits).
 - For testing, try our Device Emulator to post data and learn the JSON structure: [Device Emulator](/docs/tagoio/devices/device-emulator).
 
-Example payload:
+## Example payload:
 
 ```json
 {

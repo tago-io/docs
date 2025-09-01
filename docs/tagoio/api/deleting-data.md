@@ -3,7 +3,11 @@ title: "Deleting Data"
 description: "This article explains how to delete data via the TagoIO API, including the endpoint, required headers, and optional query string parameters used to select which data to remove."
 tags: ["tagoio"]
 ---
-> Important: When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://docs.tago.io/api/)
+:::info
+
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://docs.tago.io/api/)
+
+:::info
 
 ## Endpoint
 ```
@@ -29,7 +33,7 @@ Use the same query strings you use to get data to select which data will be dele
 | end_date   | string | End date                            |
 | variable   | string | Filter by variable                  |
 
-To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](../api/restful-api).
+To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](/docs/tagoio/api/getting-data).
 
 ## Examples
 
@@ -51,6 +55,11 @@ To delete data, TagoIO uses the same query string parameters used to get data; f
 - Delete the last value from an array of variables  
   `https://api.<region>.tago.io/data?variable[]=temperature&variable[]=pressure&query=last_value`
 
-> **Tip:** Make sure your request is `DELETE` and not `POST` when trying to delete items. Posting data is relatively instantaneous, while deleting data can take between 10 and 30 seconds to complete.
+:::tip
 
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).
+Make sure your request is `DELETE` and not `POST` when trying to delete items. Posting data is relatively instantaneous, while deleting data can take between 10 and 30 seconds to complete.
+
+:::
+
+## Rate Limits
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/api/rate-limits-hard-limits).

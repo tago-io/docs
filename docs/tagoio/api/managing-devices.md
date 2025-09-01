@@ -1,11 +1,15 @@
 ---
-title: "Managing Devices"
+title: "Managing Devices using API"
 description: "This article explains how to manage devices via the TagoIO API using an account token, including creating a device with a POST request and the required request payload. It also highlights the need to use the appropriate regional API endpoint."
 tags: ["tagoio", "devices"]
 ---
 Using the account token, you can manage your devices through API requests. You can create, edit, delete, and retrieve information about devices.
 
-> **Note:** When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
+:::info
+
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: [API documentation](https://docs.tago.io/api/)
+
+:::
 
 ## Create
 
@@ -129,4 +133,7 @@ DELETE - `https://api.<region>.tago.io/device/token/:token`
 }
 ```
 
-> **Note:** When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).
+:::info
+
+## Rate Limits
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).

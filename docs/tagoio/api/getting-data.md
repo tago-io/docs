@@ -3,7 +3,11 @@ title: "Getting Data"
 description: "This article explains how to request data from the TagoIO API, including the required regional endpoint, authorization header, endpoint URL, and available query parameters with their types and descriptions."
 tags: ["tagoio"]
 ---
-> ⚠️ When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: API documentation (link included in the original article).
+:::info
+
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: API documentation (link included in the original article).
+
+:::
 
 ## Headers
 Include your device token in the Authorization header.
@@ -31,8 +35,6 @@ The following querystring parameters are supported:
 | end_date    | string          | End date (e.g., "1 day" or ISO string) |
 | detail      | bool            | Include additional JSON fields in the returned results |
 
-Notes:
-- Replace `<region>` in the endpoint with the appropriate regional hostname as specified in the API documentation (see the linked "API documentation" in the original article).
 
 ## Response Example
 Below is a sample response when no query parameters are supplied:
@@ -127,4 +129,4 @@ If the interval contains more than 15 items, add `qty` to increase the limit.
 Relative dates are calculated from the current time.
 
 ## Rate Limits
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/api/rate-limits-hard-limits).

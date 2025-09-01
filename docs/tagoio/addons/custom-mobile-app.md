@@ -12,7 +12,7 @@ Your mobile app will be completely white‑label, so when your clients find and 
 ## Pricing
 Check the pricing for the Custom mobile add‑on on your [Profile & Teams](https://admin.tago.io/profile/) page.
 
-:::note
+:::info
 
 There is a one‑time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact) for details.
 
