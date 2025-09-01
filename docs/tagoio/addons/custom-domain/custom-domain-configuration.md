@@ -13,7 +13,11 @@ Before configuring your Custom Domain in your Admin, ensure you have:
 - A domain or a sub‑domain for your organization; you can obtain one from any domain provider. Ensure you can edit the DNS (Domain Name System) records for your custom domain in the domain provider’s settings.
 - The Custom Domain & Whitelabel add‑on is activated in your profile. Check the Pricing page for more information (see [Custom Domain & Whitelabel](/docs/tagoio/custom-domain-whitelabel) and [Pricing](https://tago.io/pricing)).
 
-> Note: The Custom Domain & Whitelabel add‑on is available per profile. If you need to use a custom domain in another profile, you will need to acquire another add‑on.
+:::info
+
+The Custom Domain & Whitelabel add‑on is available per profile. If you need to use a custom domain in another profile, you will need to acquire another add‑on.
+
+:::
 
 ## Adding your Custom Domain
 
@@ -45,10 +49,8 @@ After adding your custom domain, a new tab appears with the DNS records you need
 
 3. Due to DNS propagation, it may take a few minutes (up to 30 minutes) before TagoIO detects the changes. If after 30 minutes the domain still does not work, double‑check that the records were created exactly as shown.
 
-> **Important:** SSL certificate is mandatory; if you click **Check records** without setting up the SSL certificate, the domain will be mapped but disabled.
+:::info
 
-## Links and references
+SSL certificate is mandatory; if you click **Check records** without setting up the SSL certificate, the domain will be mapped but disabled.
 
-- See [Custom Domain & Whitelabel](/docs/tagoio/custom-domain-whitelabel) for add‑on details.
-- Access your Run module to perform the configuration (see [TagoRUN](/docs/tagoio/tagorun/)).
-- See [Pricing](https://tago.io/pricing) for subscription/add‑on pricing and availability.
+:::

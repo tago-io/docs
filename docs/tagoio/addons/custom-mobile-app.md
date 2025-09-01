@@ -10,19 +10,13 @@ Your mobile app will be completely white‑label, so when your clients find and 
 ![Mobile app preview](/docs_imagem/tagoio/mobileapp-GfU.png)
 
 ## Pricing
-Check the pricing for the Custom mobile add‑on on your [Profile & Teams](../account/profiles) page.
+Check the pricing for the Custom mobile add‑on on your [Profile & Teams](https://admin.tago.io/profile/) page.
 
-> Note: There is a one‑time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact) for details.
+:::note
+
+There is a one‑time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact) for details.
+
+:::
 
 ## Learn more
-Learn about the other add‑ons on the [Add‑ons](./add-ons-overview) page.
-
-## Related documentation
-- [Control Tower](./control-tower)
-- [Add‑ons Overview](./add-ons-overview)
-- [Custom Domain & Whitelabel](./custom-domain-whitelabel)
-- [Custom Domain Configuration](./custom-domain-configuration)
-- [Managing your account with the TagoIO Mobile App](../account/managing-your-account-with-the-tagoio-mobile-app)
-- [Account Plans](../billing/account-plans)
-- [ECharts Custom Widget Tutorial](/docs/tagoio/widgets/echarts-custom-widget-tutorial-)
-- [Custom Widget](/docs/tagoio/widgets/Custom Widget/custom-widget)
+Learn about the other add‑ons on the [Add‑ons](/docs/tagoio/addons/) page.
