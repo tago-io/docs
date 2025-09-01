@@ -5,12 +5,12 @@ tags: ["tagoio", "integration"]
 ---
 The TagoIO MCP Server bridges AI‑powered development tools with your TagoIO IoT platform, enabling intelligent workflows that understand and interact with your real device data, configurations, and platform resources.
 
-![TagoIO MCP in Claude AI](/docs_imagem/claude_chat_mcp.png)
+![TagoIO MCP in Claude AI](/docs_imagem/tagoio/claude_chat_mcp.png)
 
 ## What is a Model Context Protocol (MCP)?
 Model Context Protocol (MCP) is an open standard that connects AI assistants to external data sources and tools. When integrated with TagoIO, it allows AI models in your development environment to directly access your IoT data, analyze patterns, generate code, and provide context‑aware assistance based on your actual platform configuration.
 
-![TagoIO MCP Diagram](/docs_imagem/claude_chat_mcp.png)
+![TagoIO MCP Diagram](/docs_imagem/tagoio/mcp_diagram.png)
 
 ## Core capabilities
 
