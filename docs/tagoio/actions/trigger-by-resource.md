@@ -15,9 +15,13 @@ For example, you can trigger an Action when a new user signs up in your RUN or w
 
 ## Trigger Conditions
 
-After setting up the device, you should set a condition that causes your Action to be executed. To do this, open the Trigger section of the Action (see [Defining Actions](/docs/tagoio/actions/) / Trigger).
+After setting up the device, you should set a condition that causes your Action to be executed. To do this, open the Trigger section of the Action.
 
-> Note: You can set multiple conditions in an Action. If at least one condition matches, the Action will be executed.
+:::tip
+
+You can set multiple conditions in an Action. If at least one condition matches, the Action will be executed.
+
+:::
 
 ![Trigger panel — "If one of the conditions match, the action will be triggered."](/docs_imagem/tagoio/trigger-by-resource-2.png)
 

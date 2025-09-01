@@ -42,8 +42,3 @@ You must define whether the trigger should activate when the chosen variable is 
 
 To edit a geofence condition, simply select the condition and click on the pencil icon to resize or move it.  
 To delete a geofence in your condition, you can either draw another one, which will replace the previous geofence, or click on the trash icon to remove it.
-
-## Related references
-
-- See [Editing Geofence](/docs/tagoio/widgets/map-and-location/map-widget/) for instructions on editing geofence shapes and parameters.
-- See [Defining Actions](/docs/tagoio/actions/) or [Actions](/docs/tagoio/actions/) for how to configure the action executed when the geofence condition is met.

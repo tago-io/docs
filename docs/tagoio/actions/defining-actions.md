@@ -8,7 +8,7 @@ Actions are initiated based on specific conditions and can execute a variety of 
 
 ## Push Notification to myself
 
-This action can notify you on your account via the Admin (https://admin.tago.io/) in your browser or through the TagoIO app. You can customize the title and content of the notification. In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
+This action can notify you on your account via the [Admin](https://admin.tago.io/) in your browser or through the TagoIO app. You can customize the title and content of the notification. In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
 Please note that the notification is only sent to the account where it was created.
 
@@ -16,7 +16,7 @@ Please note that the notification is only sent to the account where it was creat
 
 ## Push Notifications to Run Users
 
-Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](../notifications/notifications-for-users).
+Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](/docs/tagoio/tagorun/getting-started/notifications-for-users).
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
@@ -38,7 +38,7 @@ In the message field, you can use variables to dynamically include information i
 
 An email will be sent via SMTP when a specific condition is met. This action allows you to send emails via external providers. To configure this action, you need to create a **Secret** of type **SMTP** to authorize TagoIO to connect to your email provider and send emails; you will need to supply the server address, port number, username, and password. This information is usually provided by your email hosting service.
 
-Learn here how to create this secret: [Secrets](../secrets).
+Learn here how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
@@ -46,7 +46,7 @@ In the message field, you can use variables to dynamically include information i
 
 An email will be sent via SendGrid when a specific condition is met. To configure this action, you need to create a Secret of type **Text** containing the _SendGrid API Key_. Ensure that the SendGrid API Key is set in TagoIO Secrets beforehand so it appears in the dropdown menu.
 
-Learn here how to create this secret: [Secrets](../secrets).
+Learn here how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 5](/docs_imagem/tagoio/external-da256072.png)
 
@@ -56,7 +56,7 @@ Learn here how to create this secret: [Secrets](../secrets).
 
 This action sends messages to Amazon SQS when triggered. It requires authentication via Secrets. You will need to provide the region, queue URL, and access key id and secret access key.
 
-Learn how to create this secret: [Secrets](../secrets).
+Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ## Send SMS
 
@@ -76,7 +76,7 @@ Some costs may occur when using the SMS service, which varies based on the count
 
 Use this action to send an SMS message via Twilio when a specified condition is met. You will need to provide the recipient's phone number, the sender's "from" number, and the message content. The message field supports variables, allowing you to dynamically include information in your text.
 
-Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](../secrets).
+Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
 
@@ -92,7 +92,7 @@ You can send SMS directly from scripts within the [Analysis](/docs/tagoio/analys
 
 Use this action to send a WhatsApp message via Twilio when a specified condition is met. You will need to provide the recipient's phone number, the sender's "from" number, and the message content. The message field supports variables, allowing you to dynamically include information in your text.
 
-Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](../secrets).
+Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 12](/docs_imagem/tagoio/external-01a6551b.png)
 
@@ -115,7 +115,7 @@ To set the MQTT action up, select the option **Publish to MQTT**, select the dev
 ![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
 
 ![Image 14: Notes](/docs_imagem/tagoio/file.png)  
-TagoIO [MQTT Broker](../mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](../integrations/connecting-your-mqtt-broker-to-tagoio) feature.
+TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
 
 ## Post data to HTTP End-Point
 
@@ -176,7 +176,7 @@ You can use most of the payload fields from our API:
 | `$LOCATION$` | Location value |
 | `$DEVICE$` | Device ID |
 | `$DEVICE.NAME$` | Name of your device |
-| `$ACTION.STATE$` | Current state of your [Action](../trigger-unlock): locked or unlocked |
+| `$ACTION.STATE$` | Current state of your [Action](/docs/tagoio/actions//trigger-unlock): locked or unlocked |
 
 For example, a personalized message like this
 
