@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 TagoIO offers a broad range of services that can be provisioned according to your application's needs. By selecting which services each profile will use during the month, you can track usage and know exactly how much you will be charged.
 
-You can view limits and usage history for each service in the Usage Statistics tab, located under the Profiles section of your TagoIO account. If you have more than one profile, you must allocate the resources for each profile (see [Allocating Services to profiles](../services/allocating-services-to-profiles)).
+You can view limits and usage history for each service in the **Usage Statistics** tab, located under the Profiles section of your TagoIO account. If you have more than one profile, you must allocate the resources for each profile (see [Allocating Services to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles)).
 
 Currently, the following services are available for selection on your account. Some services are reset monthly.
 
@@ -25,30 +25,16 @@ Currently, the following services are available for selection on your account. S
 | SMS | Message | Monthly | Messages sent out. |
 | End user (RUN user) | User | Maximum at any time | End users registered in your RUN applications. |
 
-**Service Alerts**  
+## Service Alerts
+
 TagoIO will send warning emails and push notifications when a service usage exceeds 80%, 90%, or 100% of the limit set for a specific profile. This helps you stay informed before reaching your quota.
+
+:::tip
+
+You can add scripts in the [Analysis](/docs/tagoio/analysis/) to automatically upgrade your plan or to increase the limit for a service to avoid service blockages.
+
+:::
 
 ## Where to view usage
 
-- Usage limits and history: see the Usage Statistics tab under the Profiles section in your TagoIO account (refer to [Profiles](../account/profiles)).
-- To assign services per profile: see [Allocating Services to profiles](../services/allocating-services-to-profiles).
-
-## Related documentation
-
-- See [Profile](../account/profiles) for profile configuration and management.
-- Services reference:
-  - [Analysis Service](/docs/tagoio/analysis/analysis-service)
-  - [Data Input Service](../services/data-input-service)
-  - [Data Output Service](../services/data-output-service)
-  - [E-mail Service](../services/e-mail-service)
-  - [End-Users service](../services/end-users-service)
-  - [File storage service](../services/file-storage-service)
-  - [Notification Service](../services/notification-service)
-  - [SMS Service](../services/sms-service)
-- Other helpful articles:
-  - [Analysis Overview](/docs/tagoio/analysis/)
-  - [Profiles](../account/profiles)
-  - [Defining Actions](/docs/tagoio/actions/)
-  - [Dashboard Overview](/docs/tagoio/dashboards/)
-
-<!-- Image placeholder removed for build -->
+Usage limits and history: see the Usage Statistics tab under the [Profiles](https://admin.tago.io/profile) page or in the home of your [TagoIO admin](https://admin.tago.io/).

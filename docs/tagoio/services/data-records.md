@@ -7,15 +7,12 @@ tags: ["tagoio"]
 
 A Data Record represents the variables stored and sent by devices. Each register consists of a variable and all metadata associated with it. The profile's data record limit defines the maximum storage capacity for the selected Profile at all times.
 
-Learn more about [Allocating Services to profiles](../services/allocating-services-to-profiles).
-
 Fields such as [location](data-manipulation#location) that contain latitude/longitude as part of a variable should be considered part of the same register. The same rule applies to metadata fields.
 
-## Key rule
+## Metadata
 
-All fields and metadata stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
+All fields and [metadata](/docs/tagoio/payload-parser/metadata) stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
 
-## Example
 
 ```json
 [
@@ -36,6 +33,8 @@ All fields and metadata stored with a given variable are counted together as a s
 ]
 ```
 
+Another simple example: Your device sends speed, temperature, and humidity with location every 1hour. As a result, 3 new registers will be added every hour.
+
 ## Notes
 
 - The "variable" and its associated metadata (for example, [metadata](/docs/tagoio/payload-parser/metadata)) are counted together as one register regardless of how many fields are present.
@@ -45,12 +44,6 @@ All fields and metadata stored with a given variable are counted together as a s
 ## Additional considerations
 
 - If the Data Record limit is exceeded, no data will be saved until the limit is increased or the number of registers is reduced. The API response will indicate that the limit was exceeded for that Profile.
+- Location stored inside the variable (lat/lng) is considered part of the same register.
 - When you reduce the number of registers, the Usage Statistics in your [Admin](https://admin.tago.io/) page may take some minutes to update to the new amount of data records.
 - TagoIO will send warning Emails to you each time the storage exceeds 80%, 90%, and 100% of the limit.
-- Another simple example: Your device sends speed, temperature, and humidity with location every hour. As a result, three new registers will be added each hour.
-
-## Related documentation
-
-- See [Allocating Services to profiles](../services/allocating-services-to-profiles)
-- Refer to the Targets documentation or other relevant TagoIO service articles for additional context.
-- For more information about examples and FAQ, see our [Pricing Page](https://tago.io/pricing/).

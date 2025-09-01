@@ -23,16 +23,8 @@ Only scripts that are configured to run on TagoIO are counted. Scripts that run 
 
 ![Run this script from options (TagoIO / External)](/docs_imagem/tagoio/analysis-service-2.png)
 
-> If this limit is exceeded, no scripts in that Profile will be executed for the rest of the month.
+:::note
 
-## See also / Related articles
+If this limit is exceeded, no scripts in that Profile will be executed for the rest of the month.
 
-- [Analysis Overview](/docs/tagoio/analysis/)
-- [Running Analysis as External using Deno](/docs/tagoio/analysis/running-analysis-as-external-using-deno)
-- [Running Analysis via Action](/docs/tagoio/actions/)
-- [Creating Analysis](/docs/tagoio/analysis/creating-analysis)
-- [Services Overview](../services/services-overview)
-
-## Notes and references
-
-- "Analysis" and "Profile" in this article refer to the corresponding sections in the TagoIO documentation: [Analysis](/docs/tagoio/analysis/) and [Profile](../account/profiles).
+:::
