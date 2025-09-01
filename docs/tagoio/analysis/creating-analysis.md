@@ -16,7 +16,7 @@ Select the runtime environment for your analysis. An example shown in the dialog
 - **Deno** (deno‑2025‑08‑01)
 
 Currently supported runtimes include **Deno**, **Python**, and **Node.js** if you run your script on TagoIO.  
-> ⚠️ Once an analysis has been created, its runtime cannot be changed.
+
 
 ## Run this script from
 Choose where the analysis will run:
@@ -25,16 +25,24 @@ Choose where the analysis will run:
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
 
-- [Python SDK](../sdk/python-sdk)
-- [Javascript SDK](../sdk/nodejs-sdk) for Deno and NodeJS
+- [Python SDK](/docs/tagoio/sdk/python-sdk)
+- [Javascript SDK](/docs/tagoio/sdk/nodejs-sdk) for Deno and NodeJS
 
-> ⚠️ When changing between External mode and TagoIO mode, the Analysis Token will be reset and a new token will be generated.
+:::warning
+
+When changing between External mode and TagoIO mode, the Analysis Token will be reset and a new token will be generated.
+
+:::
 
 ## Code example
 You can optionally start your analysis from a code example template. The Add Analysis dialog includes a dropdown to choose a code example. If you don't want a template, select **No, thanks**.
 
-> 📌 It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.  
-> ⚠️ You can only select one of these code examples if you are running your script on TagoIO.
+:::tip
+
+It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.  
+You can only select one of these code examples if you are running your script on TagoIO.
+
+:::
 
 ## Other fields
 The Add Analysis dialog also shows:
@@ -49,13 +57,3 @@ You can trigger your analysis script manually, but you can also define a time in
 ### Analysis Token
 This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
 [Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs).
-
-Related documentation:
-- See [Analysis Overview](/docs/tagoio/analysis/)
-- See [Script Editor](../script-editor)
-- See [Script Examples](../tutorials/script-examples)
-- See [Console for Debug](../console-for-debug)
-- See [Environment Variables](../environment-variables)
-- See [Distributing analysis](/docs/tagoio/analysis/distributing-analysis)
-- See [Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-deno)
-- See [Running Analysis as External using Deno](/docs/tagoio/analysis/running-analysis-as-external-using-deno)

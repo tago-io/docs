@@ -19,7 +19,7 @@ Visit the Deno Installation Guide for platform‑specific instructions: https://
 
 ## 2. Create your Analysis
 
-### 2-1. Create a new file for your Analysis
+### 2.1 Create a new file for your Analysis
 
 For this example, call it `analysis.ts`:
 
@@ -28,56 +28,22 @@ import { Analysis, Device, Utils } from "jsr:@tago-io/sdk";
 import { DateTime } from "npm:luxon";
 
 async function myAnalysis(context: any) {
-  const body = context.vars || {};
-  const result: any = {};
-
-  const value = await Device.findById(body.device || "");
-
-  if (!value) {
-    throw new Error("Device not found");
-  }
-
-  const tag = (value.live?.find((i: any) => i.variable === "temperature") || {}).value;
-
-  if (!tag) {
-    return;
-  }
-
-  const date = DateTime.fromISO(tag.time);
-
-  await Utils.sendData({
-    device: value.id,
-    variables: [
-      {
-        variable: "temperature_c",
-        value: (tag.value - 32) * (5 / 9),
-        unit: "C",
-        serie: "1",
-        time: date.toISO(),
-      },
-    ],
-  });
-
-  // Optional debugging output
-  console.log("Analysis executed for device:", value.id);
+  // Your analysis logic here
+  console.log("Running external Deno analysis");
+  console.log("Context:", context);
+  
+  const now = DateTime.now().toISO();
+  console.log("Current time:", now);
 }
+
+Analysis.use(myAnalysis, { token: "MY-ANALYSIS-TOKEN-HERE" });
 ```
 
-> **Tip** – If you prefer to use the SDK’s `Analysis.use` helper, you can wrap your function like this:
->
-> ```ts
-> Analysis.use(myAnalysis, { token: "MY-ANALYSIS-TOKEN-HERE" });
-> ```
+## 3. Configure Permissions
 
-### 2-2. Save the file and run the Analysis with Deno
+Deno runs with secure defaults. Create a deno.json configuration file to specify permissions:
 
-```bash
-deno run --allow-net --allow-env --allow-read --allow-write --allow-ffi --unstable analysis.ts
-```
-
-If you want a more convenient way to start your script, create a `deno.json` configuration file:
-
-```jsonc
+```ts
 {
   "tasks": {
     "start": "deno run --allow-net --allow-env analysis.ts"
@@ -85,53 +51,39 @@ If you want a more convenient way to start your script, create a `deno.json` con
 }
 ```
 
-Then you can launch it with:
-
-```bash
-deno task start
-```
-
-## 3. Configure Permissions
-
-From the Analysis editor in the TagoIO Console, open the **Permissions** tab and create the necessary token(s) for your external Analysis. Create token(s) that grant the scopes required by your script (for example, the ability to read device data and send data). Store these tokens securely; they will be used by your external runtime to authenticate with TagoIO.
-
-(If you need to manage tokens, use the **Analysis → Permissions** section in the TagoIO Console.)
-
-> The `--allow-net` flag permits network requests to TagoIO APIs, and `--allow-env` allows reading environment variables. Add any additional permissions your script requires (e.g., `--allow-read`, `--allow-write`) as shown above.
+The `--allow-net` flag permits network requests to TagoIO APIs, and `--allow-env` allows reading environment variables.
 
 ## 4. Running your Analysis
 
-Set the token you created as an environment variable so your Deno process can authenticate with TagoIO. For example, on macOS/Linux:
+Replace `MY-ANALYSIS-TOKEN-HERE` with your actual Analysis token. You can get this by:
 
-```bash
-export TAGOIO_TOKEN="YOUR_TOKEN_HERE"
-TAGOIO_TOKEN="$TAGOIO_TOKEN" deno run --allow-net --allow-env --allow-read --allow-write --allow-ffi --unstable analysis.ts
+1. Access your Analysis page at TagoIO
+
+2. Select External for 'Run the scripts from'
+3. Copy the generated token
+
+For better security, use environment variables:
+
+```ts
+const token = Deno.env.get("ANALYSIS_TOKEN") || "MY-ANALYSIS-TOKEN-HERE";
+
+Analysis.use(myAnalysis, { token });
 ```
+Run your Analysis:
 
-On Windows (PowerShell):
-
-```powershell
-$env:TAGOIO_TOKEN="YOUR_TOKEN_HERE"
-deno run --allow-net --allow-env --allow-read --allow-write --allow-ffi --unstable analysis.ts
-```
-
-If you created a `deno.json` task, you can also start it with:
-
-```bash
+```ts
+# Using the task defined in deno.json
 deno task start
+
+# Or directly
+deno run --allow-net --allow-env analysis.ts
 ```
 
-> Ensure your script reads the token from the environment (for example, via `Deno.env.get("TAGOIO_TOKEN")`) or let the SDK automatically use the environment token if supported.  
-> After starting, you should see output indicating that the Analysis is connected and waiting for triggers.
+You should see output indicating the Analysis is connected and waiting for triggers.
+
 
 ## More Examples
 
-Refer to other Analysis examples and the Script Examples documentation in the TagoIO Knowledge Base for additional use cases and patterns.
+Check our Deno Analysis examples: https://github.com/tago-io/analysis-snippets/tree/main/snippets
 
-Related internal documentation:
-- [Analysis Overview](/docs/tagoio/analysis/) (refer to the Analysis section in the TagoIO docs)
-- [Creating Analysis](/docs/tagoio/analysis/creating-analysis) (refer to Creating Analysis)
-- [Script Editor and Script Examples](../script-editor) (see Script Editor and Script Examples)
-- [Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs) (see the corresponding Node.js external analysis guide)
-
-> Note: Keep internal links that begin with `https://help.tago.io/` or `https://admin.tago.io/` as they appear in the TagoIO documentation for cross‑references.
+You now have everything needed to run external Analysis with Deno, leveraging TypeScript support, remote imports, and modern development tools to create powerful TagoIO applications.
