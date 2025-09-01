@@ -5,15 +5,19 @@ tags: ["tagoio"]
 ---
 *Sandbox* refers to an isolated testing environment that enables developers to run applications without affecting other applications that have critical devices or users connected.
 
-> Use sandboxes to test new applications with the confidence that they will not impact others.
+:::tip
+
+Use sandboxes to test new applications with the confidence that they will not impact others.
+
+:::
 
 ## How to create a sandbox
-To create a sandbox, just add a new [Profile](../account/profiles) and use it for your tests. Make sure that all critical applications are running in another profile.
+To create a sandbox, just add a new [Profile](https://admin.tago.io/profile) and use it for your tests. Make sure that all critical applications are running in another profile.
 
 For example, if any of your tests demand a higher level of services (limits) and lock that profile, it will not block the applications running in other profiles.
 
 ## Collaboration
-Increase team collaboration and add more developers to your sandbox. To do this, share your profile with others by using the [Profiles & Teams](../account/profiles) functionality.
+Increase team collaboration and add more developers to your sandbox. To do this, share your profile with others by using the [Profiles & Teams](/docs/tagoio//profiles/team-management-sharing-your-profile) functionality.
 
 ## Notes
 - Use a separate profile for all non-critical testing to avoid impacting production devices or users.
