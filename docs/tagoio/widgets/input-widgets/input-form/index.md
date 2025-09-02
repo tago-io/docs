@@ -45,10 +45,8 @@ From the option **Data From** on the right menu, select the source of the data, 
 ##### Blueprint Dashboards
 From the option **Data From** on the right menu, select the source of the data, which can be either a Device or an Entity. Add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable or field that contains the information.
 
-![Info icon](/docs_imagem/tagoio/info-8.png)  
 When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the inputs Variable or Field will not list the contents to be picked because it doesn't know the entities or devices linked to your Blueprint Associations.
 
-![Notes icon](/docs_imagem/tagoio/file.png)  
 When using Entities, certain fields might be marked as required. If these essential fields are not included in your form, an error will occur. To resolve this issue, you can either add the missing fields to your input form or modify the field settings in your Entity so that it is no longer mandatory. See the article on [Entities](/docs/tagoio/getting-started/entities).
 
 ## Buttons
@@ -58,5 +56,4 @@ It is also possible to create and customize buttons that can perform actions suc
 
 After the button has been clicked, you can show a confirmation dialog message that needs to be accepted so that the actions of the button can be performed.
 
-![Info icon](/docs_imagem/tagoio/info-8.png)  
 When the button triggers an analysis, it sends the field data and the button identifier through the analysis’s scope.
