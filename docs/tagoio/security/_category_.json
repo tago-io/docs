@@ -1,9 +1,5 @@
 {
   "label": "Security and Compliance",
   "position": 21,
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "tagoio/security/index"
-  }
+  "collapsed": true
 }
