@@ -36,7 +36,7 @@ Learn more information about the [ABS devices configuration](http://www.abstelem
 
 ## TagoIO Setup
 
-Add a **[device](/docs/tagoio/devices/)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
+Add a **[device](https://tago.io/devices)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
 
 ![Image 2](/docs_imagem/tagoio/Screen-20Shot-202019-10-28-20at-2016.41.44-bjQ.png)
 

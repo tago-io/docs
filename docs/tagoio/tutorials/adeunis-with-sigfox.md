@@ -14,7 +14,7 @@ All data sent by your device will be readily available to be displayed in widget
 
 ## Adding a device
 To add an Adeunis device in TagoIO:
-1. Go to [Devices](/docs/tagoio/devices/).
+1. Go to [Devices](https://tago.io/devices).
 2. Click on "Add Devices".
 3. Filter the list by network and select "Sigfox".
 4. Pick your specific Adeunis device from the list.
@@ -29,7 +29,7 @@ To add an Adeunis device in TagoIO:
 You can start building **dashboards** immediately: [Dashboard Overview](/docs/tagoio/dashboards/).
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
-- Notifications: [Notifications](../notifications/notification)  
+- Notifications: [Notifications](/docs/tagoio/actions/)  
 - Scripts: [Creating Analysis Scripts](/docs/tagoio/analysis/creating-analysis)
 
-If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](../tutorials/sigfox).
+If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/sigfox).

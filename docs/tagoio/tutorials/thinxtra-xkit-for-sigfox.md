@@ -45,7 +45,7 @@ Xkit can be programmed with a file that will send data from the sensors with a p
 
 ### 1. Xkit Setup
 
-Follow the installation guide from [Thinxtra](https://www.thinxtra.com/xkit/) and prepare your Xkit to send data to the [Sigfox network](../tutorials/sigfox).
+Follow the installation guide from [Thinxtra](https://www.thinxtra.com/xkit/) and prepare your Xkit to send data to the [Sigfox network](/docs/tagoio/integrations/networks/sigfox).
 
 ### 2. TagoIO and Sigfox Setup
 
@@ -55,7 +55,7 @@ Go to **[Devices](https://admin.tago.io/devices)**, click on *Add Devices*, and 
 
 Then, just follow the directions to integrate your Xkit with TagoIO and start building your own application in minutes.
 
-> If you have questions about how to configure your account for Sigfox and TagoIO, read the article [Sigfox](../tutorials/sigfox).
+> If you have questions about how to configure your account for Sigfox and TagoIO, read the article [Sigfox](/docs/tagoio/integrations/networks/sigfox).
 
 Now, click on the new dashboard created (left menu), and associate it with the device that you just added.
 
@@ -69,8 +69,8 @@ You can start editing your dashboard as needed.
 
 > You can edit the [parse script](/docs/tagoio/payload-parser/) created for your device that extracts variables from the payload.
 
-Also, you can create [notifications](../notifications/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
+Also, you can create [notifications](/docs/tagoio/getting-started/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
 
-Learn more about [Downlink for Sigfox](../tutorials/sigfox-downlink).
+Learn more about [Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink).
 
 Enjoy your Thinxtra Xkit with Tago!

@@ -47,15 +47,11 @@ If you are using Sens'it v2, you may want to edit the **parse function** in your
 ## Advanced Features
 
 You can create **notifications** and advanced **scripts** as needed:
-- Notifications: [Notifications](../notifications/notification)
+- Notifications: [Notifications](/docs/tagoio/getting-started/notification)
 - Scripts / Analysis: [Analysis Overview](/docs/tagoio/analysis/)
 
 ## Notes
 
 - The integration supports both Sens'it v2 and v3 devices.
 - Ensure your Sigfox devkit is properly activated before registering the device in TagoIO.
-- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](../tutorials/sigfox).
-
-References:
-- Sigfox Buy website: https://buy.sigfox.com/
-- Devices (TagoIO): [Devices](/docs/tagoio/devices/)
+- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](/docs/tagoio/integrations/networks/sigfox).

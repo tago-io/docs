@@ -11,7 +11,7 @@ This simple tutorial uses the BeagleBone Black (BBB) board to demonstrate key pr
 The circuit is straightforward: a single digital input is connected to a normally open switch on connector **P8 pin 19**. A 2.2 kΩ resistor pulls the line low (0 V) when the switch is closed, ensuring a clean signal for the BBB’s GPIO pin.
 
 ### Adding the Device
-1. Log in to your TagoIO account and navigate to the **Devices** section.  
+1. Log in to your TagoIO account and navigate to the **[Devices](https://tago.io/devices)** section.  
 2. Click the blue **Add Device** button, give it the name `dev01`, and click **Save**.  
 3. All devices must use a valid token when accessing Tago. The token is automatically generated upon creation. Open the device’s **General information** page, click **QR Code** or **Tokens**, and copy the token to insert into your BBB code later.
 

@@ -1,9 +1,9 @@
-
 ---
 title: "PDF Service Generator"
 description: "This article explains how to generate PDF documents using the TagoIO PDF service generator by making an HTTP POST request and receiving a base64-encoded PDF. It documents the endpoint, required headers, request body fields, and size limitations."
 tags: ["tagoio"]
 ---
+
 Learn how to create PDF documents using the TagoIO PDF service generator. Make an HTTP POST request to the PDF service endpoint and the response will be a base64‑encoded PDF. The base64 response can be sent by an Analysis or saved in Files. See the Analysis and Files documentation for examples on sending or saving the response ([Analysis](/docs/tagoio/analysis/), [Files](/docs/tagoio/files)).
 
 ## Notes
@@ -55,8 +55,3 @@ You can decode and save it as a PDF file, or use Analysis to send it via email a
 
 ## Using the PDF Service in Analysis
 You can also generate PDFs directly from TagoIO Analysis by following this example: [analysis-example-generatepdf-report](https://github.com/tago-io/analysis-example-generatepdf-report).
-
-## Related documentation
-- Analysis: [Analysis](/docs/tagoio/analysis/)
-- Files: [Files](/docs/tagoio/files)
-- Analysis token: [Analysis token](/docs/tagoio/analysis/)
