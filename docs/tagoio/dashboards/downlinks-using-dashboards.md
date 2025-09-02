@@ -14,14 +14,8 @@ To use this method you must install the Analysis template available at the follo
 
 http://admin.tago.io/template/5f513aabd4555600277f858c
 
-![TagoIO downlink template preview](/docs_imagem/tagoio/downlinks-using-dashboards-2.png)
-
-Caption: Sending downlink using dashboard. Click "Get Analysis Template" on the template page to install it in your account.
-
 ## After installing the template
-After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your device (/docs/tagoio/devices/):
-
-![Environment variables tab of the device](/docs_imagem/tagoio/downlinks-using-dashboards-2.png)
+After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your [device](https://tago.io/devices):
 
 Configure the environment variables according to the template instructions so the Analysis can correctly address and send downlink payloads to your device.
 

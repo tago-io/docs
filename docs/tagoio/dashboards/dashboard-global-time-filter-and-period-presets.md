@@ -21,6 +21,3 @@ You can set period presets to allow users to easily change the filter range by s
 
 ### Disabling the Dashboard Period Preset for a single widget
 If you want to disable the Dashboard Period Preset for a specific widget, enable the **Override Dashboard Presets** option for widgets that have their own preset period (e.g., Line Chart, Area Chart, Map).
-
-## Example UI
-<!-- Image placeholder removed for build -->

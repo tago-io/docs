@@ -18,7 +18,6 @@ To add or change a dashboard icon:
   - Choose an icon from the list.  
   - To set its color, click the square button next to the icon; a color palette will appear for you to pick a color.
 
-![Configure option in the dashboard options menu (Configure highlighted)](/docs_imagem/tagoio/dashboard-icons-2.png)
 
 ## Notes
 

@@ -4,8 +4,6 @@ description: "Learn about TagoIO dashboards - where you place widgets to visuali
 tags: ["tagoio", "dashboards"]
 ---
 
-# Dashboard Overview
-
 A dashboard is where you place your widgets to visualize and interact with data, all in real-time. Dashboards can also be shared with end-users that will access your application using [TagoRUN](/docs/tagoio/tagorun/).
 
 <!-- Dashboard overview image -->
@@ -19,6 +17,12 @@ There are two types of dashboards:
 - **Normal**: simply create a dashboard for pre-selected devices and variables.
 - [**Blueprint**](/docs/tagoio/dashboards/blueprint-dashboard): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
 
+:::note
+
+There is a limit of **100 widgets** per dashboard
+
+:::
+
 ## Building dashboards
 
 To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](/docs/tagoio/dashboards/distributing-dashboards).
@@ -28,12 +32,6 @@ In this window, you can also switch the **Blueprint slider** to generate a Bluep
 <!-- Dashboard creation interface image -->
 
 <YouTube videoId="D2lmCHF4Eg4" title="Building Dashboards and Widgets" />
-
-:::note
-
-There is a limit of **100 widgets** per dashboard
-
-:::
 
 
 ## Dashboard Icons

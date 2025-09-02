@@ -5,7 +5,7 @@ tags: ["tagoio", "dashboards"]
 ---
 A great feature of TagoIO is its native sharing capability for dashboards — useful when a dashboard becomes a feature you want to share with others.
 
-:::note
+:::tip
 
 If you want to share only the template of your dashboards, use the [Distribute](/docs/tagoio/dashboards/distributing-dashboards) feature.
 
