@@ -26,7 +26,7 @@ On the left side, the 'Account Service Allocation' column shows the total servic
 
 On the right, 'Profile Usage Allocation' show how much of each service has been used by each profile, highlighting which profiles are close to or have reached their limits. Clicking on a resource opens a new window for customizing its allocation.
 
-![Resource allocation graph](/docs_imagem/resource_allocation_profile.png)
+![Resource allocation graph](/static/docs_imagem/tagoio/resource_allocation_profile.png)
 
 Profiles are sorted by those that have reached their limits and those nearing their limits, helping you quickly identify which profiles may face service disruption and require immediate attention.
 
