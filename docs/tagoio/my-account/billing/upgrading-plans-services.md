@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 When you upgrade your plan from Free to a Starter or Scale plan for the first time, the date and hour of that upgrade define the billing cycle for your account. You will be charged for the full month at that time, and the plan will be automatically renewed until you cancel or downgrade it.
 
-![Image 1: Alert](/docs_imagem/tagoio/exclamation-4.png)
+
 
 If you make additional upgrades to your plan during a billing cycle, we will apply a one-time prorated charge at the moment of the upgrade for the remaining days in that billing cycle.
 

@@ -52,7 +52,6 @@ It is also possible to define the X‑axis time range dynamically, using another
 }
 ```
 
-![Image 6: Alert](/docs_imagem/tagoio/exclamation-4.png)  
 The `start_date` specifies the start of the range, and the `end_date` specifies the end of the range. In this case, the date and format should be in the ISO 8601 format.
 
 ### 2.2 Y-axis

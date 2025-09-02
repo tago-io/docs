@@ -7,7 +7,7 @@ Device is the link between your external things and the data in your account. To
 
 Devices are managed through your [Admin](https://admin.tago.io/) interface, where users can access detailed information about each device, including its ID and other settings.
 
-:::note
+:::info
 
 Our [TagoIO API documentation](/docs/tagoio/api/) offers comprehensive instructions on how to interface with devices, ensuring developers can effectively integrate their hardware with the platform.
 

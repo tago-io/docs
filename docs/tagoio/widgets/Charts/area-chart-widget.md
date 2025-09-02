@@ -22,8 +22,6 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 Click on the **cog icon** to edit specific options for this variable, such as formulas, color, and more. Click on the **close icon** to remove this variable from the widget's data.
 
-![Image 3](/docs_imagem/tagoio/exclamation-4.png)
-
 ### 1.2 'Data From' for Blueprint Dashboards
 From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
@@ -60,8 +58,6 @@ It is also possible to define the X‑axis time range dynamically, using another
 }
 ```
 
-![Image 8](/docs_imagem/tagoio/exclamation-4.png)
-
 The `start_date` specifies the start of the range, and the `end_date` specifies the end of the range. In this case, the date and format should be in ISO 8601.
 
 ### 2.2 Y-axis
@@ -85,7 +81,5 @@ When a chart has a large number of data points, you can increase the widget perf
 
 Downsampling has two concepts: **Threshold** and **Factor**.  
 The Threshold limits the amount of data to start the downsampling, and the factor determines how many samples will be cut.
-
-![Image 13](/docs_imagem/tagoio/exclamation-4.png)
 
 The greater the factor, the greater the performance improvement, but as the factor increases, the data also becomes less recognizable.

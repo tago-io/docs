@@ -56,8 +56,6 @@ The supported file format is CSV.
 
 ![Image 8](/docs_imagem/tagoio/external-e4940a38.png)
 
-![Image 9: Alert](/docs_imagem/tagoio/exclamation-4.png)
-
 The device payload parser does not execute during data import. Therefore, ensure that the data is properly formatted before importing.
 
 ### CSV format requirements
