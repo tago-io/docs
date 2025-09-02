@@ -16,12 +16,14 @@ https://github.com/tago-io/decoders
 <YouTube videoId="7ejN2q0YWo0" title="
 How to publish Connectors using the Open Connector Github repository" />
 
-## Important note
-> When you publish your connector, anyone on the internet will be able to see the decoder code because our GitHub is open‑source.
 
+:::tip 
 
+When you publish your connector, anyone on the internet will be able to see the decoder code because our GitHub is open‑source.
 
 If you want to keep your code private, share your connector directly with others instead of publishing it. Read more about [Sharing Connectors & Networks](/docs/tagoio/payload-parser/connector/sharing-connectors-networks).
+
+:::
 
 ## Repository Overview
 The repository offers comprehensive resources for:

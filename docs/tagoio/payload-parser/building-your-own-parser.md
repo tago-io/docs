@@ -11,7 +11,6 @@ You can create parsers for devices that are not listed in the Devices registry (
 
 If you want to learn more about how data packages are sent to TagoIO, see [Integration](/docs/tagoio/integrations/).
 
----
 
 ## Tutorials
 

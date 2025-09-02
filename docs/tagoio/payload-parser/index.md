@@ -36,8 +36,6 @@ There are some concepts about [global variables and context](/docs/tagoio/payloa
 
 For this example, let's connect a toaster to Tago.
 
-![Image 3](/docs_imagem/tagoio/comic-cartoon-toaster-vector-7023342-G8Y.jpg)
-
 A toaster could send data to TagoIO when your bread is toasted in the following format:
 
 ![Image 4](/docs_imagem/tagoio/1544036821426-yHM.png)

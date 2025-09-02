@@ -49,24 +49,3 @@ let temp = payload.value;
 // Example 3
 var temp = payload.value;
 ```
-
-## See also (Payload Parser‑related documentation)
-- [Connector Overview](../integrations/)
-- [Parser vs. Analysis Comparison](/docs/tagoio/analysis/parser-vs-analysis-comparison)
-- [Building your own parser](/docs/tagoio/payload-parser/building-your-own-parser)
-- [Payload Parser - Context & global variables](/docs/tagoio/payload-parser/-context-global-variables)
-- [Filtering Out Variables with Parser Code](/docs/tagoio/payload-parser/filtering-out-variables-with-parser-code)
-- [Publishing, updating and accessing decoders](/docs/tagoio/payload-parser/publishing-updating-and-accessing-decoders)
-- [Sharing Connectors & Networks](../integrations/sharing-connectors-networks)
-- [Metadata](/docs/tagoio/payload-parser/metadata)
-- [Payload Parser Troubleshooting](payload-parser-troubleshooting)
-- [Payload Parser timeUtils Library](/docs/tagoio/payload-parser/-timeutils-library)
-
-## Related Articles
-- [Publishing, updating and accessing decoders](publishing-updating-accessing-decoders)
-- [Payload Parser](payload-parser)
-- [Payload Parser timeUtils Library](/docs/tagoio/payload-parser/-timeutils-library)
-
-Still need help? Contact our support team through the [Help Center](https://help.tago.io/portal/en/newticket?) page.
-
-<!-- Image placeholder removed for build -->

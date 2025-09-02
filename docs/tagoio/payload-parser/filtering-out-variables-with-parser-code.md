@@ -5,7 +5,11 @@ tags: ["tagoio"]
 ---
 When your device sends sensor data to TagoIO, you can add parser code to the device (in the "Payload Parser" tab) to extract and create variables in the device's data storage using TagoIO format. If you want to save space in register storage, you can ignore variables you don't want added by editing the parser.
 
-> By default, some fields and metadata sent by providers like LoRaWAN and Sigfox are already ignored to avoid unnecessary storage.
+:::info
+
+By default, some fields and metadata sent by providers like LoRaWAN and Sigfox are already ignored to avoid unnecessary storage.
+
+:::
 
 ## How it works
 - The parser runs on incoming payloads and decides which variables to create in the device's data storage.

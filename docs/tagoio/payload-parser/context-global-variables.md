@@ -26,4 +26,8 @@ These global variables can vary from simple objects to complex functions or arra
 > - This variable must be an [Array of TagoIO data](/docs/tagoio/api/sending-data) when the code ends.  
 > - These are functions available to be used in the Payload Parser.
 
-Note: The list above shows the most commonly used globals visible in this article. Additional global variables (which can range from simple objects to complex functions or arrays) are available — see the Payload Parser tab in the [Device](/docs/tagoio/devices/) details for the complete list.
+:::info
+
+The list above shows the most commonly used globals visible in this article. Additional global variables (which can range from simple objects to complex functions or arrays) are available — see the Payload Parser tab in the [Device](/docs/tagoio/devices/) details for the complete list.
+
+:::

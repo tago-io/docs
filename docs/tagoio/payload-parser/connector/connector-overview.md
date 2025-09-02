@@ -14,12 +14,9 @@ They also help you automate and scale your devices: after creating a device with
 
 ## Creating a connector
 
-To create a new connector, go to the [Connector management page](https://admin.tago.io/integrations/connector) and press the following button on the right side of the page:
+To create a new connector, go to the [Connector management page](https://admin.tago.io/integrations/connector) and press the '+ Add connector' on the right side of the page:'
 
-![Add connector button](/docs_imagem/tagoio/connector-overview-2.png)
-
-You must specify the connector's name and the network(s) it belongs to.  
-* You can add as many networks as you like, but at least one network must be selected.
+You must specify the connector's name and the network(s) it belongs to.  You can add as many networks as you like, but at least one network must be selected.
 
 ### Connector parameters
 

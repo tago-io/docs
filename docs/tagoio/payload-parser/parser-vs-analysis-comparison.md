@@ -3,7 +3,6 @@ title: "Parser vs. Analysis Comparison"
 description: "This article explains the differences between TagoIO's Payload Parser and Analysis, summarizing capabilities, limits, and built-in features to help choose the right option for processing device payloads."
 tags: ["tagoio", "analysis"]
 ---
-## Overview
 
 The [Payload Parser](/docs/tagoio/payload-parser/) was created to handle raw payloads sent by devices in order to extract measured variables or execute simple operations. The [Analysis](/docs/tagoio/analysis/) feature is more powerful — it includes access to [Devices](/docs/tagoio/devices/) and external services, but there is a cost to run analyses. Payload Parser uses a simple JavaScript engine developed by TagoIO to be easy, lightweight, and free.
 

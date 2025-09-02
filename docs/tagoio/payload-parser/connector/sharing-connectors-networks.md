@@ -3,7 +3,6 @@ title: "Sharing Connectors & Networks"
 description: "This article explains how to share custom Connectors and Networks in TagoIO, including the steps to share with another Profile and how to request a public connector for all users."
 tags: ["tagoio"]
 ---
-## Overview
 
 TagoIO provides many pre-integrated devices and networks so you can quickly connect devices. When a new device or network is not yet integrated, you can create a custom Connector or network integration. Those custom solutions can be shared with members of your team or with any external Profile for their use.
 
