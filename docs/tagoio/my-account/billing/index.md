@@ -3,7 +3,7 @@ title: "Billing"
 description: "This article explains how to view an overview of your account's costs for the current month using the Billing Summary page, including the three available views and a note about how estimated profile costs are calculated."
 tags: ["tagoio"]
 ---
-You can get an overview of your account's costs for the current month by clicking on the [Summary](billing-summary) tab. This view helps you track the costs of sub-accounts (profiles) that you may use to bill your own customers.
+You can get an overview of your account's costs for the current month by clicking on the [Summary](https://admin.tago.io/account/billing) tab. This view helps you track the costs of sub-accounts (profiles) that you may use to bill your own customers.
 
 ## Views
 This page consists of three views:
@@ -14,6 +14,12 @@ This page consists of three views:
 
 <!-- Image placeholder removed for build -->
 
-> Notice: The estimated cost of a profile does NOT include the cost of the current plan.<br />
-> Also, the sum of all profiles plus the plan may not match the overall amount of your account if some resources are not allocated to any profile.&lt;br /&gt;
-> Discounts and credits are not included in the summary view.
+:::info 
+
+The estimated cost of a profile does NOT include the cost of the current plan.
+
+Also, the sum of all profiles plus the plan may not match the overall amount of your account if some resources are not allocated to any profile.
+
+Discounts and credits are not included in the summary view.
+
+:::
