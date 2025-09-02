@@ -37,7 +37,7 @@ temperature,$random$,2019-09-19,1568913302243
 - $timestamp$: This function will be replaced by the current date and time as a Unix epoch timestamp.
 - $date$: This function will be replaced by the current date in the format `YYYY-MM-DD`. If you are using this function in a JSON payload, wrap it around quotes (`"$date$"`).
 
-:::info
+:::tip
 
 If you are unsure of how to use functions, look for samples in the editor.
 

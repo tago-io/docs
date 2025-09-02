@@ -22,10 +22,13 @@ To send downlink messages from TagoIO to your LoRaWAN™ provider:
 
 The downlink payload should be placed into the parameter's value field. Below is an example of the configuration screen showing the `downlink` parameter and where to enter the value.
 
-<!-- Image placeholder removed for build -->
 
-> **Note:**  
-> - Downlink messages can only be sent when the device sends an uplink message.  
-> - For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/docs/tagoio/dashboards/downlinks-using-dashboards) article to send payloads manually.  
-> - The downlink payload may be expressed in **base64** or **HEX** format; TagoIO will automatically convert it before sending.  
-> - After a successful transmission, the `downlink` parameter is marked as **Read**.
+
+:::info 
+
+- Downlink messages can only be sent when the device sends an uplink message.  
+- For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/docs/tagoio/dashboards/downlinks-using-dashboards) article to send payloads manually.  
+- The downlink payload may be expressed in **base64** or **HEX** format; TagoIO will automatically convert it before sending.  
+- After a successful transmission, the `downlink` parameter is marked as **Read**.
+
+:::

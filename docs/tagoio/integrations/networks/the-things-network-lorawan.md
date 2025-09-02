@@ -16,7 +16,7 @@ Before you begin, ensure you have the following:
 - TTN v3 account — If you don't have one, [register here](https://www.thethingsnetwork.org/get-started).
 - LoRaWAN device — Ensure your device is connected to TTN and transmitting data. If you need help doing that, watch this [TTN video tutorial](https://www.youtube.com/watch?v=duwUwXt-hs8).
 
----
+
 
 ## Step 1: Create Authorization in TagoIO
 
@@ -31,7 +31,7 @@ Before you begin, ensure you have the following:
 ### Copy the Authorization Token
 After creation, copy the authorization token. You will need this in later steps.
 
----
+
 
 ## Step 2: Configure TTN Integration
 
@@ -52,7 +52,7 @@ After creation, copy the authorization token. You will need this in later steps.
 
 ![Image 4](/docs_imagem/tagoio/external-eae39401.png)
 
----
+
 
 ## Step 3: Add Your Device to TagoIO
 
@@ -70,7 +70,7 @@ After creation, copy the authorization token. You will need this in later steps.
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
----
+
 
 ## Step 4: Finalize Setup
 

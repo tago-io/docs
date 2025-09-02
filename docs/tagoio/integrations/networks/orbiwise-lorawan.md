@@ -14,8 +14,6 @@ Before you begin, ensure you have the following:
 - Orbiwise account — If you don't have one, register here (https://orbiwise.com/).
 - LoRaWAN device — Ensure your device is connected to Orbiwise and transmitting data.
 
----
-
 ## Step 1: Create Authorization in TagoIO
 
 1. **Access Authorizations**  
@@ -46,7 +44,7 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 :::
 
----
+
 
 ## Step 2: Add Integration to Orbiwise
 
@@ -66,7 +64,7 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 ![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
 
----
+
 
 ## Step 3: Add Device in TagoIO
 
@@ -84,7 +82,6 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
----
 
 ### Finalizing Setup
 

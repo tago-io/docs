@@ -3,11 +3,14 @@ title: "Sigfox using 'Advanced Data'"
 description: "This article explains how to configure a Sigfox callback using the Advanced Data option so TagoIO receives additional uplink information (e.g., SNR, RSSI, STATION). It provides the exact callback settings, headers, and request format required."
 tags: ["tagoio"]
 ---
-**Sigfox using 'Advanced Data'**
 
 The Advanced Data option allows you to receive additional information such as SNR, RSSI, STATION, and other metadata.  
 
-> Note: The type of information available will depend on your Data Plan contracted with Sigfox.
+:::note
+
+The type of information available will depend on your Data Plan contracted with Sigfox.
+
+:::
 
 ## Create the callback on the Sigfox Backend Portal
 1. On the Sigfox Backend Portal, create a callback of type `uplink`.
