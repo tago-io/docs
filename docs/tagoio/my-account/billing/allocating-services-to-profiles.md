@@ -12,11 +12,11 @@ The services within each profile can be limited so that when a profile exceeds i
 
 You can easily allocate services to your profiles through your [Admin](https://admin.tago.io/) home page or through the '[Resource Allocation](https://admin.tago.io/account/billing/allocation)' tab on the Billing page. Simply click on the resource you wish to allocate and adjust the limits accordingly.
 
-![How allocate resources Gif](/docs_imagem/tagoio/resource_allocation_gif.gif.png)
+![How allocate resources Gif](/docs_imagem/tagoio/resource_allocation_gif.gif)
 
 This interface provides all necessary information for each service, helping you make informed decisions about resource allocation. It displays the service amount allocated to each profile and, for deeper insights, you can view a profile's usage history for both past and current months by clicking on the chart icon.
 
-![Resource allocation graph](/docs_imagem/tagoiographic_resource_allocation.png)
+![Resource allocation graph](/docs_imagem/graphic_resource_allocation.png)
 
 
 ## Monitoring allocated resources
