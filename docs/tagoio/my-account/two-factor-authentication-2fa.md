@@ -12,7 +12,11 @@ Two-factor authentication (2FA) adds an extra layer of security to your account 
 - SMS — a six-digit code sent to your mobile phone via text message.
 - E-mail — a six-digit code sent to your account e‑mail address.
 
-Note: The SMS and E‑mail authentication methods are available only for Starter or Scale plans.
+:::info
+
+The SMS and E‑mail authentication methods are available only for Starter or Scale plans.
+
+:::
 
 ## How 2FA codes work
 The second factor is a six‑digit code. That code is either:
@@ -21,8 +25,10 @@ The second factor is a six‑digit code. That code is either:
 
 Once a method is configured for your account, you will be asked to type the six‑digit code:
 - when signing in, and
-- when generating a new [Account Token](../account/account-token).
+- when generating a new [Account Token](/docs/tagoio/api/account-token).
 
-> Tip: You can choose the authentication method that suits you best when prompted by clicking the message "Can't access your two-factor device?"
+:::tip
 
-![2FA setup screenshot or further instructions](/docs_imagem/tagoio/two-factor-authentication-2fa-2.png)
+You can choose the authentication method that suits you best when prompted by clicking the message "Can't access your two-factor device?"
+
+:::

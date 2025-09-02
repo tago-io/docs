@@ -11,12 +11,16 @@ If you make additional upgrades to your plan during a billing cycle, we will app
 
 For example, if you upgrade from the Starter to the Scale plan when there are 10 days remaining in the billing cycle, we will charge one-third of the Scale monthly price immediately (pro‑rated for the remaining days), minus the amount you already paid for the Starter plan. On the next billing cycle, we will charge the full price of the Scale plan and its provisioned services.
 
-> Note: Some services are not prorated if they are consumable. For example, if you increase the SMS limit in the middle of your billing cycle, you will be charged the full price (minus the amount already paid for the previous setting) because you then have the right to use all available SMS messages.
+:::warning
 
-To upgrade your billing, go to the [Billing](../billing/billing-summary) option in the top‑right dropdown menu.
+Some services are not prorated if they are consumable. For example, if you increase the SMS limit in the middle of your billing cycle, you will be charged the full price (minus the amount already paid for the previous setting) because you then have the right to use all available SMS messages.
+
+:::
+
+To upgrade your billing, go to the [Billing](https://admin.tago.io/account/billing) option in the top‑right dropdown menu.
 
 ## How to auto-scale
 
 If you want to automate upgrades of your account using an auto‑scaling feature, see the following tutorial:
 
-- [How to auto-scale your profile limit](/docs/tagoio/analysis/)
+- [How to auto-scale your profile limit](https://help.tago.io/portal/en/community/topic/how-to-auto-scale-your-account-limits-24-2-2022)

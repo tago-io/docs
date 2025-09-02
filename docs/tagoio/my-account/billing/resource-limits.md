@@ -9,7 +9,11 @@ TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing a
 
 The limits for each resource are determined by your specific plan. The table below shows the limits for each plan.
 
-> **Note:** Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
+:::info
+
+Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
+
+:::
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
@@ -30,8 +34,8 @@ The limits for each resource are determined by your specific plan. The table bel
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.
 
-If your requirements exceed these limits, consider upgrading to the **Scale** plan or contacting us through the [Help Center](https://help.tago.io/portal/en/newticket). For more information about our plans and services, check our [Pricing Page](https://tago.io/pricing).
+If your requirements exceed these limits, consider upgrading to the **Scale** plan or contacting us through  support@tago.io. For more information about our plans and services, check our [Pricing Page](https://tago.io/pricing).
 
 ## Monitoring resources across your entire account
 
-You can monitor the amount of resources you have used by accessing the account menu in the top right corner of your Admin page and selecting the **Hard Limits** option.
+You can monitor the amount of resources you have used by accessing the account menu in the top right corner of your Admin page and selecting the **[Hard Limits](https://admin.tago.io/limits/hard)** option.

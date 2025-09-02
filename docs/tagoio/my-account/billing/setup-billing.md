@@ -3,7 +3,7 @@ title: "Setup Billing"
 description: "This article explains how to access and configure your billing settings in TagoIO, including where to add company and payment information and how to select an account plan."
 tags: ["tagoio"]
 ---
-To set up your billing, open the top‑right account menu (just under your avatar) and click the **Billing** option.
+To set up your billing, open the top‑right account menu (just under your avatar) and click the **[Billing](https://admin.tago.io/account/billing** option.
 
 <!-- Image placeholder removed for build -->
 
@@ -20,7 +20,3 @@ You may also set limits for any services where you think you'll need more than w
 
 ### Add‑ons
 Optional add‑ons can be selected to enhance your account, though they are not required for a basic setup.
-
-Notes:
-- The Billing option is located in the account dropdown in the top-right of the application.
-- Make sure invoice and payment details are accurate to avoid issues with billing and invoicing.
