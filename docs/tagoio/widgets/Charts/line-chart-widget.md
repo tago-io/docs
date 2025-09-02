@@ -26,7 +26,6 @@ From the option **Data From** on the right menu, select one device from your lis
 From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-![Image 3: Info](/docs_imagem/tagoio/info-8.png)
 
 ## 2. Composing X-axis and Y-axis
 In the line chart widget, it is possible to customize how the data will be displayed in the horizontal and vertical axis.

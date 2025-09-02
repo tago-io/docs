@@ -43,8 +43,6 @@ This will start the installation of the TagoIO SDK and the TagoIO‑Builder if y
 
 **2.4** Create a file called `analysis.js`. Open it with your favorite editor, like Visual Studio Code or even Notepad. You can write the code exactly as you would do on the TagoIO editor.
 
-![Image 1](/docs_imagem/tagoio/info-8.png)
-
 You can get the Hello World analysis example by clicking [here](https://raw.githubusercontent.com/tago-io/analysis-example-console/master/analysis.js).
 
 ## 3. Running your Analysis

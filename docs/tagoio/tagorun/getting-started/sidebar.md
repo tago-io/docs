@@ -28,7 +28,6 @@ To display a tooltip over your logo, write text in the **Button tooltip** field.
 
 ![Image 3](/docs_imagem/tagoio/external-2aac36db.png)
 
-![Image 4](/docs_imagem/tagoio/info-8.png)
 
 Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries) to display text that will be substituted according to the languages available for your end users.
 
@@ -44,8 +43,6 @@ You can also add the action **“Open Setup Wi‑Fi Device.”** To enable this 
 
 ### Sidebar Buttons
 Buttons allow end users to quickly navigate between dashboards, pages, or scan a new Wi‑Fi device. Dashboards used as buttons are automatically hidden from the dashboard list on the sidebar, keeping the interface cleaner.
-
-![Image 5](/docs_imagem/tagoio/file.png)
 
 #### Label
 Define the text displayed under the icon.
@@ -69,7 +66,6 @@ Choose where to display the button: Desktop, Mobile, or both.
 #### Break Line
 Customize how many buttons appear per line. The slider lets you move a button to a new line or place multiple buttons on the same line. You can have up to three buttons arranged side by side.
 
-![Image 6](/docs_imagem/tagoio/file.png)
 
 #### Visibility Conditions
 By default, every button is visible to all users. To restrict visibility (e.g., an “Admin Settings” button only for administrators), set a visibility condition using user tags.

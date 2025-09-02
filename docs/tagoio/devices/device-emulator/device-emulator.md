@@ -21,19 +21,19 @@ TagoIO accepts two types of payloads: JSON and Raw.
 - Use the Emulator tab to validate and send payloads using the device's credentials.
 - The emulator UI includes a payload editor, an option to load samples, function helpers, and a **Send payload** button to submit the data.
 
-### Sending Payload Data
+## Sending Payload Data
 
 To send a JSON payload from the emulator, you will need to:
 
 1. Build a data payload that should contain at least the `variable` field (pick one example from the list);
 2. Edit the fields of the payload;
-3. Click on ![Send button](/docs_imagem/tagoio/1624563795800-Zq8.png) to send the payload.
+3. Click on **Send button** to send the payload.
 
 ![Example payload editor](/docs_imagem/tagoio/Screen-20Shot-202021-06-24-20at-2016.46.47-0OI.png)
 
 ### Functions
 
-Functions are helper variables that you can add to your payload. Each function has a purpose. To add a function to your payload, click on ![Add function button](/docs_imagem/tagoio/1624878287784-MzI.png) and select a function.
+Functions are helper variables that you can add to your payload. Each function has a purpose. To add a function to your payload, click on **Add function** button and select a function.
 
 ![Function selection dialog](/docs_imagem/tagoio/1624564657419-ttY.png)
 

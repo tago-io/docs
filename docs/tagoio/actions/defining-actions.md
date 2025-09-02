@@ -30,7 +30,6 @@ In the message field, you can use variables to dynamically include information i
 
 ![Image 3](/docs_imagem/tagoio/1576606418570-3DI.png)
 
-![Image 4: Warning](/docs_imagem/tagoio/caution.png)
 
 **Attention:** starting **January 1st, 2025**, TagoIO will discontinue its email services. We recommend integrating with external providers to send emails using the "Send Email using SMTP/SendGrid" action.
 
@@ -68,8 +67,6 @@ In the message field, you can use variables to dynamically include information i
 
 Some costs may occur when using the SMS service, which varies based on the country of operation. Check the [pricing](https://tago.io/pricing/), [terms of use](https://tago.io/terms-of-support/), and your plan before using the SMS service.
 
-![Image 8: Warning](/docs_imagem/tagoio/caution.png)
-
 **Attention:** starting on **November 1st, 2024**, TagoIO will no longer offer SMS services. We recommend integrating with external providers to send SMS using the "Send SMS with Twilio" action.
 
 ## Send SMS with Twilio
@@ -79,8 +76,6 @@ Use this action to send an SMS message via Twilio when a specified condition is 
 Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
-
-![Image 10: Notes](/docs_imagem/tagoio/file.png)
 
 If you're using Twilio Long Code for messaging, be aware that it requires a Toll‑Free verification process. Please consult Twilio's documentation for instructions on how to verify your phone number before proceeding. Depending on Twilio's rules for your account, the Toll‑Free verification may be skipped.
 
@@ -114,7 +109,6 @@ To set the MQTT action up, select the option **Publish to MQTT**, select the dev
 
 ![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
 
-![Image 14: Notes](/docs_imagem/tagoio/file.png)  
 TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
 
 ## Post data to HTTP End-Point

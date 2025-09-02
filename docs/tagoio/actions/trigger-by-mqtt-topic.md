@@ -34,10 +34,6 @@ After setting up the device, you should set a condition for your action to be ex
 
 For each row, you need to set the topic that will be listened to. You may use MQTT [wildcards](/docs/tagoio/integrations/networks/mqtt/) for the topic if you prefer.
 
-![Image 5: Info](/docs_imagem/tagoio/info-8.png)
-
 You can set multiple conditions in an action; if at least one of them results in a match, the action will be executed.
-
-![Image 6: Notes](/docs_imagem/tagoio/file.png)
 
 > Note that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.

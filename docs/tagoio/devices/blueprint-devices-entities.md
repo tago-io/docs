@@ -8,7 +8,11 @@ Blueprint Devices and [Entities](/docs/tagoio/getting-started/entities) serve as
 
 <!-- Image placeholder removed for build -->
 
-> **Note:** Blueprint Entities can only be utilized by widgets that support them. If a widget does not display the entity in its data-source selection, that widget does not support entities yet.
+:::note
+
+Blueprint Entities can only be utilized by widgets that support them. If a widget does not display the entity in its data-source selection, that widget does not support entities yet.
+
+:::
 
 ## How it works
 Blueprint devices or entities are crucial for leveraging Blueprint Dashboards. The system works by associating devices or entities with specific tag keys and values. Devices or entities that match those tags become available for selection in the dashboard dropdown menu.
@@ -16,8 +20,6 @@ Blueprint devices or entities are crucial for leveraging Blueprint Dashboards. T
 This feature is particularly beneficial when you want a single dashboard to be used by different end-users without exposing each other's data. It allows you to focus on one centralized dashboard, eliminating the need to maintain multiple dashboards for each type of end-user.
 
 ![Image 1](/docs_imagem/tagoio/external-82f6c83e.png)
-
-![Image 2: Notes](/docs_imagem/tagoio/file.png)
 
 To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/docs/tagoio/getting-started/tags-system).
 

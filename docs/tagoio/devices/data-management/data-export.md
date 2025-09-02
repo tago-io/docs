@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 At TagoIO, you can export device data in several ways: directly from the Admin panel on a device's page, via the [API](/docs/tagoio/api/), or from [Widgets](/docs/tagoio/widgets/) in either the Admin panel or the [TagoRun portal](/docs/tagoio/tagorun/getting-started/tagorun-mobile-app). Exporting data consumes your [Data Output](/docs/tagoio/services/data-output-service) service quota.
 
-Here's how to use each export source:
+Here's how to use each export source.
 
 ## From the device page
 
@@ -26,11 +26,15 @@ To export, click the "Export" button in the top-right corner. The export dialog 
 - A reminder that "Export data will consume your Data Output service."
 - **Export button** — located at the bottom-right of the dialog to start the export.
 
-> **Note:** For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](/docs/tagoio/devices/data-management/chunk-management).
+:::info
+
+For immutable devices that group data into chunks, you can also export data in chunks. Learn more about exporting data chunks here: [Chunk Management](/docs/tagoio/devices/data-management/chunk-management).
+
+:::
 
 <!-- Image placeholder removed for build -->
 
 Notes:
 - Use filtering options on the device "Data" tab to limit the exported data and reduce Data Output quota usage.
 - Some widgets within the dashboard offer the capability to export the data they present. This feature is not available for all widgets; check by clicking the three dots in the widget's header.
-- For instructions on exporting from Widgets or via the API, refer to the corresponding sections: From [Widgets] ([/docs/tagoio/widgets/]) and Using our [API] ([/docs/tagoio/api/]).
+- For instructions on exporting from Widgets or via the API, refer to the corresponding sections: From [Widgets]([/docs/tagoio/widgets/]) and Using our [API]([/docs/tagoio/api/]).

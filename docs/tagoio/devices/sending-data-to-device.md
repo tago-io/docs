@@ -9,4 +9,4 @@ TagoIO supports two-way communication with devices so they can both send and rec
 - [Publish to MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing)
 - [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
 - [Create a script](/docs/tagoio/analysis/creating-analysis) that runs in the Analysis to access an external API
-- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol ([Support Team](support@tago.io))
+- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol Support Team (support@tago.io)

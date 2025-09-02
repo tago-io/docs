@@ -25,7 +25,6 @@ Click on the **cog icon** to edit specific options for this variable, such as fo
 ### 1.2 'Data From' for Blueprint Dashboards
 From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-![Image 4](/docs_imagem/tagoio/info-8.png)
 
 When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
@@ -39,7 +38,6 @@ In the area chart widget, it is possible to customize how the data will be displ
 By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.  
 If you need to group your data through the X‑axis even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **series**.
 
-![Image 6](/docs_imagem/tagoio/info-8.png)
 
 Data is ordered by time ascending, but it is possible to change it to series:
 
@@ -63,11 +61,8 @@ The `start_date` specifies the start of the range, and the `end_date` specifies 
 ### 2.2 Y-axis
 In the vertical axis, you can customize the scaling behavior: apply metric prefixes and abbreviations, change the step value (the difference between each tick), and more.
 
-![Image 9](/docs_imagem/tagoio/info-8.png)
 
 The Y‑axis will automatically find the best scale for your data; it is not necessary to customize it unless you want to do so.
-
-![Image 10](/docs_imagem/tagoio/file.png)
 
 ## 3. Filtering data
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.

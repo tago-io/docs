@@ -13,18 +13,18 @@ Configuration Parameters are stored on the configuration page of your device. Yo
 
 Each Configuration Parameter has three configurable fields:
 
-1. **Key**  
-   - Name of the parameter that you can use to reference it in your code or widgets.
+1. **Key**: Name of the parameter that you can use to reference it in your code or widgets.
 
-2. **Value**  
-   - The value you want to assign to your device for that parameter.
+2. **Value**: The value you want to assign to your device for that parameter.
 
-3. **Read & Unread**  
-   - A boolean value (true or false) that indicates whether the parameter has been sent to the device.
+3. **Read & Unread**: A boolean value (true or false) that indicates whether the parameter has been sent to the device.
 
-(The image above illustrates the fields: 1 = Key, 2 = Value, 3 = Read/Unread.)
 
-> **Maximum limit:** The maximum number of parameters per Device is **60**. If you attempt to add additional items beyond this limit, a notification will appear indicating that the maximum capacity has been reached.
+:::note
+
+**Maximum limit:** The maximum number of parameters per Device is **60**. If you attempt to add additional items beyond this limit, a notification will appear indicating that the maximum capacity has been reached.
+
+:::
 
 ## Managing Configuration Parameters
 

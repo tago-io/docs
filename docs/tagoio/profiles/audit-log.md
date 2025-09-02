@@ -40,20 +40,14 @@ The log uses your account’s timezone preference to display the timeline of eve
 ### Time interval
 Use the **Time Interval** filter to inspect events that occurred within a specific range. Shorter ranges speed up the search; the maximum selectable period is 7 days.
 
-![Time interval info](/docs_imagem/tagoio/info-8.png)
-
 ### Event initiator
 Filter by the agent that performed the action (you, a team member, TagoIO system, or TagoRUN system). Removed team members appear as “Unknown user”.
-
-![Event initiator file icon](/docs_imagem/tagoio/file.png)
 
 ### Resource type
 Select a resource type to view only events related to that category (Devices, Actions, Analysis, etc.).
 
 ### Resource ID
 Search for an event tied to a specific resource by its ID. If you choose a Resource Type first, the filter changes to a dropdown with all relevant IDs.
-
-![Resource ID info](/docs_imagem/tagoio/info-8.png)
 
 ### Event messages
 Each event includes a message describing the action performed on the resource. You can filter events based on these messages.

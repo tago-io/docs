@@ -84,8 +84,6 @@ When importing data, the [Data Input](/docs/tagoio/services/data-input-service) 
 
 Additionally, before uploading the data to your device, you must first upload it to your [Files](/docs/tagoio/files). Ensure you have enough space to upload your CSV file.
 
-![Image 10: Notes](/docs_imagem/tagoio/file.png)
-
 If needed, you can increase the data storage or file limits by accessing the [Billing page](https://admin.tago.io/account/billing) in your Admin.
 
 ### Differences between importing data to Mutable vs. Immutable Devices
@@ -129,11 +127,8 @@ would result in a file address such as:
 /device/6297aa7691e70a00654f9816/2022-04-01_2022-06-30.csv
 ```
 
-![Image 12](/docs_imagem/tagoio/info-8.png)
-
 Date variables such as $FROM$ and $TO$ will be in the ISO 8601 format (YYYY-MM-DD).
 
-![Image 13: Warning](/docs_imagem/tagoio/caution.png)
 
 When exporting a chunk to a location where a file already exists, all the data will be replaced with the new one.
 

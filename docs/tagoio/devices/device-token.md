@@ -6,7 +6,11 @@ sidebar_position: 2
 ---
 The secret key used between TagoIO and your device is called a Device Token. Any access from a device is granted only with a valid token. This token should be kept secret and shared only with people you trust.
 
-> Note: Each time a device is created, the system automatically creates a device token.
+:::note
+
+ Each time a device is created, the system automatically creates a device token.
+
+ :::
 
 ## Finding the Device Token
 

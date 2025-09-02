@@ -37,8 +37,6 @@ import { z } from "https://deno.land/x/zod/mod.ts";
 
 This means you can write your entire Analysis in the TagoIO editor, add imports as you need them, and run immediately. The editor includes linting and formatting to help catch issues early.
 
-![Image 1: Info](/docs_imagem/tagoio/info-8.png)
-
 Dependencies are fetched and cached on first run, so initial executions may take a bit longer.
 
 ### Node.js Runtime
