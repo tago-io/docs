@@ -13,8 +13,6 @@ This widget also accepts features such as [metadata](/docs/tagoio/payload-parser
 
 This field allows you to set the device and variable that will be used in this widget.
 
-![Device and variable selection example](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
-
 ### Editing Variable Options
 Click on the **cog** icon next to a variable to edit its options, such as formulas or color. Click on the **close** icon to remove that variable from the widget’s data.
 

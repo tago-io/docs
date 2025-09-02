@@ -26,7 +26,4 @@ When users access the map from a mobile device, they will have the option to sel
 * Apple Maps  
 * Waze  
 
-![Mobile navigation options](
-<!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/2xG7aEgHH_FpZnpi5WKP1LKQExVZg5e2GYz6uBhNiNU/router_tagoIO-iuo.png -->)
-
 > **Note:** Only Google Maps is available when using a browser from a computer.

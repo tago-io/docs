@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Heat Map widget to your dashboard, choose "Heat map" from the widget list and customize it to your preference. Edit the widget using the options located on the right side of the widget editor.
 
-![Heat Map widget editor options](/docs_imagem/tagoio/heat-map-widget-2.png)
-
 ### Widget compatibility
 
 This widget works for both **Normal** dashboards and **Blueprint** dashboards.

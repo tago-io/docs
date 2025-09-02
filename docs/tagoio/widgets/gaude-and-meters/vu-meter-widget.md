@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the VU Meter widget to your dashboard, choose the VU Meter widget from the widget list and customize it to your preference. You can edit the widget using the options located on the right side of the widget.
 
-![Adding a VU Meter to the dashboard](/docs_imagem/tagoio/vu-meter-widget-2.gif)
-
 
 ### 'Data From' Field
 

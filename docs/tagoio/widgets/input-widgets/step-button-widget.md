@@ -14,8 +14,6 @@ You can also define the incremental step value and the allowed limits.
 
 To add the Step Button widget to your dashboard, choose the Step Button widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.
 
-![Dashboard editor showing Step Button placement and the widget options panel on the right](/docs_imagem/tagoio/step-button-widget-2.png)
-
 ### Data From Field
 
 This field allows you to set the device and variable that will be used in this widget.

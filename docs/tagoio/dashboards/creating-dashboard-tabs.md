@@ -31,7 +31,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 <!-- Tab creation interface image -->
 :::info
 
-You can add up to **10 (ten)** tabs in your dashboard.
+You can add up to **10** tabs in your dashboard.
 
 :::
 

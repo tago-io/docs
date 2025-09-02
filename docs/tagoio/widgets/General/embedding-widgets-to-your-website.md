@@ -3,7 +3,6 @@ title: "Embedding Widgets to your website"
 description: "This article explains what embedded widgets are in TagoIO and how to generate embedding code to display your widget data on a website or other applications, with a simple visual example."
 tags: ["tagoio", "widgets"]
 ---
-## Overview
 
 Embedded widgets are a convenient way to display your data from Tago in another application. By generating the embedding code on a [widget](/docs/tagoio/widgets/), you can add that widget to your website or any other application.
 

@@ -5,7 +5,11 @@ tags: ["tagoio", "widgets"]
 ---
 The caching system optimizes the performance of your dashboards by storing widget data and any computations performed using [Data Analytics](/docs/tagoio/widgets/general/data-analytics). This allows future requests to be served faster by reusing results from earlier requests, speeding up load times and improving the overall responsiveness of your dashboard. Because less data needs to be queried, caching also reduces Dashboard data output consumption.
 
-> **Note:** The caching system is mandatory when using [Data Analytics](/docs/tagoio/widgets/general/data-analytics).
+:::info
+
+The caching system is mandatory when using [Data Analytics](/docs/tagoio/widgets/general/data-analytics).
+
+:::
 
 ## How It Works
 

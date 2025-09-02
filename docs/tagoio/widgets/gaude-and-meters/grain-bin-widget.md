@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Grain Bin widget to your dashboard, choose the Grain Bin widget from the widget list and customize it to your preference. Edit the widget using the options located on the right side of the widget configuration panel.
 
-![Widget configuration options](/docs_imagem/tagoio/grain-bin-widget-2.png)
-
 Here is an animated preview of the Grain Bin widget in action:
 ![Animated grain bin](/docs_imagem/tagoio/grainbin-Ya8.gif)
 

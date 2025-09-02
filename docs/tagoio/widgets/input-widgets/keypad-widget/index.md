@@ -11,9 +11,6 @@ Keypad allows the user to submit a PIN code along with an optional action string
 
 To add the Keypad to your dashboard, choose the Keypad widget from the widget list and customize it to your preference. You can edit its settings using the options located on the right side of the widget.
 
-![Keypad widget on dashboard with settings panel on the right](/docs_imagem/tagoio/keypad-widget-2.png)
-
-
 
 ## 1. 'Data From' Field
 
@@ -33,8 +30,6 @@ From the option **‘Data From’** on the right menu, add the [Blueprint device
 
 By default, the numeric keypad contains 10 digits that range from 0‑9, and it also contains an asterisk (*) and a number sign (#).  
 You have the option to customize the content of the keypad by creating buttons that will appear along with the digits.
-
-![Example of custom buttons inside the Keypad](/docs_imagem/tagoio/keypad-widget-2.png)
 
 Learn more about the [customization options of your keypad](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-visualization).
 

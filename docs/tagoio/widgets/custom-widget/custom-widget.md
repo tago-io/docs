@@ -21,9 +21,13 @@ Below are example outputs from Custom Widgets (charts and a map) to illustrate w
 
 ![Hexbin chart example](/docs_imagem/tagoio/custom-widget-2.gif)
 
-![Polar / flower chart example](/docs_imagem/tagoio/custom-widget-2.gif)
+![Polar / flower chart example](/docs_imagem/tagoio/custom_widget_3.gif)
 
-![Map with markers and popups example](/docs_imagem/tagoio/custom-widget-2.gif)
+![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_4.gif)
+
+![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_5.png)
+
+![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_6.png)
 
 ## Notes
 
@@ -42,8 +46,6 @@ Due to their versatility, Custom Widgets allow you to use data from different so
 You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
 
 You can also use data from **resources** such as devices and users – just like on the [Device List](/docs/tagoio/widgets/tables/device-list-widget) and [User List](/docs/tagoio/widgets/tables/user-list-widget) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
-
-![Data source example](/docs_imagem/tagoio/external-6c842fb5.png)
 
 ## Main Configuration
 

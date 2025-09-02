@@ -14,7 +14,6 @@ Under the **"Formula"** tab, select the option that indicates the origin of the 
 This option uses the selected variable's **`unit`** field to display alongside the value in the widget.  
 If the variable doesn't have a unit, it will be left empty.
 
----
 
 ## 2. Unit from variable used in Formula
 
@@ -23,7 +22,6 @@ When you set a [Formula](/docs/tagoio/widgets/general/formula) in your widget wh
 This is helpful when you need to build an application that changes the output dynamically.  
 For example, users can select the scale they want to see a temperature at among the options: °C, °F, or K.
 
----
 
 ## 3. Fixed Unit
 

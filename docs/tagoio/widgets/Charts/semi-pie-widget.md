@@ -16,8 +16,6 @@ It works for both Normal and Blueprint dashboards.
 
 To add the Semi Pie widget to your dashboard, choose the Semi Pie widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.
 
-![Dashboard editing view showing the Semi Pie widget and its options on the right side](/docs_imagem/tagoio/semi-pie-widget-2.png)
-
 ### Data From Field
 
 This field allows you to set the device and variable that will be used in this widget. Click on the cog icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.

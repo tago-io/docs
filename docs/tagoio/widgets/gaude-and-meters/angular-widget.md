@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Angular widget to your dashboard, choose the Angular widget from the widget list and customize it to your preference. You can edit the widget using the options located on the right side of the widget.
 
-![Angular widget configuration area](/docs_imagem/tagoio/angular-widget-2.gif)
-
 ### Data From Field
 
 The **Data From** field lets you specify which device and variable will feed data into the gauge.

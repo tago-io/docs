@@ -17,7 +17,7 @@ There are two types of dashboards:
 - **Normal**: simply create a dashboard for pre-selected devices and variables.
 - [**Blueprint**](/docs/tagoio/dashboards/blueprint-dashboard): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
 
-:::note
+:::info
 
 There is a limit of **100 widgets** per dashboard
 

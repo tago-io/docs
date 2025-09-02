@@ -7,7 +7,7 @@ Geofences allow developers to color parts of the map and detect or trigger event
 
 ![Map example showing colored geofences on a map](/docs_imagem/tagoio/geofences-in-map-widgets-2.png)
 
-![Video: Mapping and Geofencing IoT Devices on TagoIO (thumbnail)](/docs_imagem/tagoio/geofences-in-map-widgets-2.png)
+<YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
 
 ## Creating geofences

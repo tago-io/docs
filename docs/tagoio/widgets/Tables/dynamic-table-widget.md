@@ -8,7 +8,7 @@ Dynamic tables are tables that populate dynamically as your data arrives while k
 ## Editing the dynamic table
 You can customize the widget color, apply formulas to columns, show a time column, enable a control column, and more.
 
-:::note
+:::info
 
  This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 

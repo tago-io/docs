@@ -1,8 +1,8 @@
-
+---
 title: "Map Widget"
 description: "Learn how to use the Map Widget to visualize location variables of your device on a map, customize visualization with icons, pins, images, links, geofences, filters and more."
 tags: ["tagoio", "widgets"]
-
+---
 # Map Widget
 
 The Map Widget allows you to visualize the location variables of your device on a map, as well as customize the visualization in many ways. By default, the map widget uses OpenStreetMap as provider; however, you can integrate your preferred map provider like Mapbox, Google Maps, or Here to fit your needs.
@@ -95,7 +95,7 @@ Also, you can customize an image and a link that could be set through the edit s
 
 In addition, the map widget supports [series](/docs/tagoio/devices/grouping-variables), so you can group your variables' data in the same infobox.
 
-:::note
+:::tip
 
 If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 

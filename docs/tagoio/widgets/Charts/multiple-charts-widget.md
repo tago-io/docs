@@ -15,8 +15,6 @@ This widget also accepts features like metadata (/docs/tagoio/payload-parser/met
 
 This field allows you to set the device and variable that will be used in this widget.
 
-![Device and variable selection UI](/docs_imagem/tagoio/multiple-charts-widget-2.png)
-
 Click on the **cog icon** to edit specific options for this variable, such as the chart type, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
 
 ### Normal Dashboards

@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Dial widget to your dashboard, choose the Dial widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
-![Dial widget editor](/docs_imagem/tagoio/dial-widget-2.gif)
-
 > This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
 
 ### 'Data From' Field

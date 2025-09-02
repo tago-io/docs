@@ -17,8 +17,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 ## 1. 'Data From' Field
 This field allows you to set the device and variable that will be used by the widget.
 
-![Device and Variable selector](/docs_imagem/tagoio/line-chart-widget-2.png)
-
 ### 1.1 'Data From' for Normal Dashboards
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 

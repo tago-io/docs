@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the widget to your dashboard, choose the Image Marker widget from the widget list and customize it to your preference. You can edit it by configuring the options located on the right side of the widget.
 
-![Image Marker widget configuration on a dashboard canvas](/docs_imagem/tagoio/image-marker-widget-2.png)
-
 ### 1. 'Data From' Field
 
 This field allows you to set the device and variable that will be used in this widget.  

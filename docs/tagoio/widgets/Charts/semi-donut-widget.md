@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the widget to your dashboard, select the Semi Donut widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget editor.
 
-![Semi Donut widget shown in the dashboard editor with options on the right side](/docs_imagem/tagoio/semi-donut-widget-2.png)
-
 
 
 ### 1. 'Data From' Field

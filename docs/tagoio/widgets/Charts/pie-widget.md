@@ -15,7 +15,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Pie widget to your dashboard, choose the Pie widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.
 
-![Pie widget editor and options](/docs_imagem/tagoio/pie-widget-2.png)
 
 ### Data From Field
 

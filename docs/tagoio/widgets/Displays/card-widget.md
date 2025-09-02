@@ -13,8 +13,6 @@ This widget also accepts features like metadata (see the Metadata documentation)
 
 To add a Card to your dashboard, choose the Card widget from the widget list and customize it to your preference. Edit the widget using the options located on the right side of the widget.
 
-![Card widget being placed on a dashboard for customization](/docs_imagem/tagoio/card-widget-2.gif)
-
 ### 1. Data From field
 
 This field allows you to set the device and variable that will be used in this widget.  
@@ -28,8 +26,6 @@ When using a Blueprint dashboard, the Variable field will not list variables to 
 
 You can configure colors for the text, background, and mini‑chart based on conditions that use the value of the selected variable.  
 The colors can be controlled by parameters defined in the widget configuration or by metadata stored within the variable.
-
-![Color configuration example](/docs_imagem/tagoio/card-widget-2.gif)
 
 ### 3. Using colors from metadata
 

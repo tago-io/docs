@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Cylinder widget to your dashboard, choose the Cylinder widget from the widget list and customize it to your preference. You can edit the widget using the options located on the right side of the widget.
 
-![Adding and editing the Cylinder widget on the dashboard](/docs_imagem/tagoio/cylinder-widget-2.gif)
-
 ### Data source configuration
 
 The **Data From** field allows you to select the device and variable that will feed data into this widget.  

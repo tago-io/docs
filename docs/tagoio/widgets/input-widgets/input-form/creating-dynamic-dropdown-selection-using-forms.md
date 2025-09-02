@@ -11,8 +11,6 @@ The items for a Dynamic Dropdown are sourced from a variable. Because of that, y
 
 You will typically use this feature when you need the dropdown options to change often. For example, imagine you need to add supervisors to your application and later attach those supervisors (clients) to a device. Using a Dynamic Dropdown you can change the client options simply by adding or removing entries from the [device's data storage](/docs/tagoio/devices/).
 
-![Field type: Dropdown configuration](/docs_imagem/tagoio/creating-dynamic-dropdown-selection-using-forms-2.png)
-
 ### Setting up a Dynamic Dropdown
 
 1. **Create an Input Form widget**  

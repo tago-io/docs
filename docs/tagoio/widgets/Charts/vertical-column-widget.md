@@ -15,8 +15,6 @@ This widget also supports features such as [metadata](/docs/tagoio/payload-parse
 
 This field allows you to set the device and variable that will be used by the widget.
 
-![Device and Variable selection panel showing "Device: My Device" and a Variable selector](/docs_imagem/tagoio/vertical-column-widget-2.png)
-
 **Editing options for the selected variable**
 
 * Click on the **cog icon** to edit specific options such as formulas, color, and more.  

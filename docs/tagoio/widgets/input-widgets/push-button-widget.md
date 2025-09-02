@@ -18,8 +18,6 @@ To add the Push Button widget to your dashboard:
 - Customize it to your preference.
 - Edit its properties using the options located on the right side of the widget.
 
-![Push Button editor options](/docs_imagem/tagoio/push-button-widget-2.png)
-
 **Data From field**  
 This field allows you to set the device and variable that will be used in this widget.  
 For Normal dashboards, select a device and its variable from the list.  
