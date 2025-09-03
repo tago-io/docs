@@ -5,8 +5,6 @@ tags: ["tagoio"]
 ---
 ![Adeunis logo](/docs_imagem/tagoio/adeunis-with-lorawan-2.png)
 
-## Overview
-
 TagoIO supports most Adeunis devices by providing integration with several LoRaWAN™ networks. TagoIO parses incoming payloads and extracts the measured variable values in real time, making all device data readily available for display or processing in your Analysis.
 
 See [Analysis](/docs/tagoio/analysis/) for working with and visualizing your incoming device data.

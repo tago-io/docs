@@ -16,19 +16,15 @@ Here is a diagram of the Xkit board's pinout. For more details, click [here](htt
 
 (Note: The image above shows the Thinxtra Xkit pin‑out configuration including a color legend for pins linked to Power, Sensors, and Module.)
 
----
-
 ## Xkit Board
 
 ![Xkit board](/docs_imagem/tagoio/thinxtra-xkit-for-sigfox-2.png)
 
----
 
 ## Pinout Diagram (Alternate View)
 
 ![Xkit pin‑out diagram](/docs_imagem/tagoio/xkit_pinout-Sgw.png)
 
----
 
 ## Payload Example
 
@@ -38,7 +34,6 @@ Xkit can be programmed with a file that will send data from the sensors with a p
 
 > Calculations to extract temperature, pressure, photo, acceleration are done by the parser script.
 
----
 
 ## Setup Steps
 
@@ -66,7 +61,11 @@ You can start editing your dashboard as needed.
 
 ![Dashboard](/docs_imagem/tagoio/thinxtra_Dash-7pM.png)
 
-> You can edit the [parse script](/docs/tagoio/payload-parser/) created for your device that extracts variables from the payload.
+:::info
+
+You can edit the [parse script](/docs/tagoio/payload-parser/) created for your device that extracts variables from the payload.
+
+:::
 
 Also, you can create [notifications](/docs/tagoio/getting-started/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
 
