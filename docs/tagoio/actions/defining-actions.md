@@ -49,8 +49,6 @@ Learn here how to create this secret: [Secrets](/docs/tagoio/getting-started/sec
 
 ![Image 5](/docs_imagem/tagoio/external-da256072.png)
 
-![Image 6: Idea](/docs_imagem/tagoio/lights.png)
-
 ## Send Message to AWS SQS
 
 This action sends messages to Amazon SQS when triggered. It requires authentication via Secrets. You will need to provide the region, queue URL, and access key id and secret access key.
@@ -80,8 +78,6 @@ Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets b
 If you're using Twilio Long Code for messaging, be aware that it requires a Toll‑Free verification process. Please consult Twilio's documentation for instructions on how to verify your phone number before proceeding. Depending on Twilio's rules for your account, the Toll‑Free verification may be skipped.
 
 You can send SMS directly from scripts within the [Analysis](/docs/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
-
-![Image 11: Idea](/docs_imagem/tagoio/lights.png)
 
 ## Send WhatsApp message with Twilio
 

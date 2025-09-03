@@ -6,7 +6,7 @@ tags: ["tagoio", "widgets"]
 
 Embedded widgets are a convenient way to display your data from Tago in another application. By generating the embedding code on a [widget](/docs/tagoio/widgets/), you can add that widget to your website or any other application.
 
-![Widget editor showing an embedded widget](docs_imagem/tagoio/embedded_widget_example.png)
+![Widget editor showing an embedded widget](/docs_imagem/tagoio/embedded_widget_example.png)
 
 ## Example
 

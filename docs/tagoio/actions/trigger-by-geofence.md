@@ -5,28 +5,6 @@ tags: ["tagoio"]
 ---
 The “Trigger by Geofence” feature allows you to execute an [Action](/docs/tagoio/actions/) whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. For example, you can configure an action to trigger when a device enters or exits a designated zone.
 
-<!-- Image placeholder removed for build -->
-
-## Trigger configuration (text extracted from screenshot)
-
-- Alert when outside geofence  
-- Type: Geofence  
-- Action Run Analysis | Last triggered at Never  
-- Action | Tags | More  
-- Trigger  
-- Single device  
-  - Watch a single device.  
-- Multiple devices  
-  - Watch all devices with matching tags.  
-- Select the device  
-  - Bus Simulator  
-- Trigger  
-  - If one of the conditions match, the action will be triggered.  
-- location  
-- Inside | Outside  
-- Add new condition  
-- Mapbox | OpenStreetMap  
-
 ![Image 1](/docs_imagem/tagoio/external-5fc8df08.png)
 
 ## Setting the Trigger Conditions

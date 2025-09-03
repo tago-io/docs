@@ -35,5 +35,3 @@ When an Action triggers an Analysis, it automatically adds context variables tha
 | `_action_type` | The category or type of Action that triggered the Analysis. |
 | `_action_state` | Indicates whether the Action was locked or unlocked at the time this Analysis was run. |
 | `_device_id`   | The identifier of the device that triggered the Action, if triggered by a device. |
-
----

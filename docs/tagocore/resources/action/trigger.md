@@ -14,7 +14,7 @@ Currently, there is only 1 type of trigger you can use:
 
 This type allows you to execute your [Actions](/docs/tagocore/action) when one or more variables meet certain conditions.
 
-There are 2 (two) categories inside of this trigger type:
+There are 2 categories inside of this trigger type:
 
 - **Single device**: Allows you to watch a specific [Device](/docs/tagocore/device) in your list. Any data that is sent by that device will be tested against your conditions to decide if this action should be triggered or not.
 

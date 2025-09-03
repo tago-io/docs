@@ -12,10 +12,10 @@ TagoIO provides its own MQTT broker that pushes data to clients when new message
 
 The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
 
-::
+:::
 
 ## Trigger categories
-There are 2 (two) categories for this trigger type:
+There are 2 categories for this trigger type:
 
 1. **Single device**  
    Allows you to watch a specific device from your device list. Any data sent by that device will be tested against your topics to determine whether this action should be triggered.
@@ -36,4 +36,8 @@ For each row, you need to set the topic that will be listened to. You may use MQ
 
 You can set multiple conditions in an action; if at least one of them results in a match, the action will be executed.
 
-> Note that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.
+:::info
+
+Note that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.
+
+:::
