@@ -25,9 +25,9 @@ Below are example outputs from Custom Widgets (charts and a map) to illustrate w
 
 ![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_4.gif)
 
-![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_5.png)
+![Custom widget example 5](/docs_imagem/tagoio/custom-widget-5.png)
 
-![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_6.png)
+![Custom widget example 6](/docs_imagem/tagoio/custom_widget_6.png)
 
 ## Notes
 
