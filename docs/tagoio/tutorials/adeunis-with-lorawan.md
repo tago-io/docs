@@ -11,9 +11,11 @@ TagoIO supports most Adeunis devices by providing integration with several LoRaW
 
 See [Analysis](/docs/tagoio/analysis/) for working with and visualizing your incoming device data.
 
-## Note
+:::tip
 
-> You can check whether a [parser](/docs/tagoio/payload-parser/) script was added to your device under the tab **Payload Parser**.
+You can check whether a [parser](/docs/tagoio/payload-parser/) script was added to your device under the tab **Payload Parser** in your device page.
+
+:::
 
 ## Adding a device
 

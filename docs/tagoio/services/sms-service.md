@@ -11,7 +11,7 @@ Each SMS unit is limited to 140 characters.
 
 As anticipated, starting on **November 1st, 2024**, TagoIO will no longer offer built-in SMS services. You can still send SMS by integrating directly with external providers such as Twilio or AWS. [Read more](https://help.tago.io/portal/en/community/topic/tagoio-will-soon-stop-providing-sms-and-emails-services)
 
-
+:::
 
 ## Limits and usage
 

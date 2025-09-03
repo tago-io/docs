@@ -9,8 +9,6 @@ This tutorial shows how to bring electric power and energy measurements from the
 
 The Zooz [Zen15](https://www.getzooz.com/zen15-power-switch/) Power Switch connects to the SmartThings hub using Z‑Wave wireless technology. The Zen15 can control loads and measure power and energy in real time so data can be displayed and processed by TagoIO.
 
-![Zen connecting with Samsung Hub](/docs_imagem/tagoio/connecting-zen15-power-using-smartthings-hub-2.png)
-
 ## On this page
 1. SmartThings Setup  
 2. TagoIO Setup

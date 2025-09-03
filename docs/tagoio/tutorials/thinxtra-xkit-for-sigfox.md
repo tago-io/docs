@@ -3,7 +3,6 @@ title: "Thinxtra Xkit for Sigfox"
 description: "This article explains how to connect the Thinxtra Xkit Sigfox board to TagoIO and other platforms, and provides a diagram of the Xkit board pinout for reference."
 tags: ["tagoio"]
 ---
-## Overview
 
 This tutorial explains how to connect the Xkit from Thinxtra with TagoIO. The Sigfox board can be connected to a PC, Mac, Arduino, Raspberry Pi, and other platforms.
 
