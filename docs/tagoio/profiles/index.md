@@ -53,7 +53,7 @@ Once you request a transfer, our support team will assist you with the next step
 
 You can request the profile transfer by navigating to [Profiles](https://admin.tago.io/profile) > More > and clicking on "Transfer this profile to another account", then typing the Account E-mail of the destination account in the field shown below:
 
-:::note
+:::info
 
 Profile transfer is available for Starter and Scale accounts. Check the pricing page for more information: https://tago.io/pricing/
 

@@ -65,7 +65,7 @@ A significant feature provided by the Control Tower is the capability to access 
 
 In the advanced statistics view, you have the option to filter your usage by date and time, as well as to view only the highest, average, and lowest usage. This is beneficial for understanding how your application is performing and determining if any actions are necessary to mitigate the usage of your hard limits.
 
-:::note
+:::info
 
 **Graph behavior:** The graph always displays a minimum value of 25 % for usage, even if the actual usage falls below this threshold. If usage is 0 %, it will still be represented as 25 %.
 

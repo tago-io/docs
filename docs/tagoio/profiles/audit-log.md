@@ -21,14 +21,13 @@ Each action executed by an agent on a resource is considered an event. Agents ca
 
 TagoIO keeps a 6‑month log for each profile; events older than that will not be displayed.
 
+![Event overview](/docs_imagem/tagoio/external-d3b441c9.png)
+
 :::info
 
 Only the account that owns the profile can visualize the log. Team members added as Team Members cannot view logs from shared profiles.
 
 :::
-
-
-![Event overview](/docs_imagem/tagoio/external-d3b441c9.png)
 
 ## Filtering events
 

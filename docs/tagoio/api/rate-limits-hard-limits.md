@@ -117,7 +117,7 @@ The following table lists the API resources for which the hard limit applies, th
 
 If, for some special reason, your requirements exceed the limits in the table, consider upgrading your plan to **[Scale](https://admin.tago.io/account/billing)**. If you are already on the Scale plan,take a look at enterprise version [TagoDeploy](https://tago.io/deploy), or please [contact us](support@tago.io).
 
-::
+:::
 
 ## Response code
 
