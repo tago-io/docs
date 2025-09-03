@@ -11,7 +11,11 @@ Run works synchronized with the [Access](/docs/tagoio/tagorun/access-management/
 
 ![Platform customized with your brand](/docs_imagem/tagorun/tagorun-2.png)
 
-> Note: By default, your URL may be a subdomain of run.tago.io (for example, mycompany.tago.run) or a fully customized URL using your current company domain (for example, portal.mycompany.com).
+:::info
+
+By default, your URL may be a subdomain of run.tago.io (for example, mycompany.tago.run) or a fully customized URL using your current company domain (for example, portal.mycompany.com).
+
+:::
 
 With Run you can set up three main things:
 1. Your Run (Application portal)

@@ -68,4 +68,8 @@ You can set the session expiration to occur after a specific number of hours, da
 
 Enable captcha to reduce automated or bot activity on signup and other user actions. The UI offers a checkbox to request a captcha test and enables captcha protection when active.
 
-> 🛡️ **Captcha protects your application from automated actions** such as web scraping, spamming, and brute‑force password attacks by ensuring that only genuine human users can proceed.
+:::tip
+
+**Captcha protects your application from automated actions** such as web scraping, spamming, and brute‑force password attacks by ensuring that only genuine human users can proceed.
+
+:::

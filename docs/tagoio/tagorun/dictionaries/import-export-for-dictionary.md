@@ -13,6 +13,12 @@ All data in a Dictionary can be exported into a CSV or JSON file. Exported files
 
 ![Dictionary Pairs menu showing Import/Export options and sample downloads](/docs_imagem/tagoio/import-export-for-dictionary-2.png)
 
+:::info 
+
+The import and export functionality is available for users in the Scale plan.
+
+:::
+
 ## Exporting a Dictionary
 - Use the Export button at the top of the Dictionary page to download all key/value pairs as a CSV or JSON file.
 - Choose CSV or JSON based on how you plan to edit or process the data.
@@ -43,4 +49,3 @@ TagoIO provides sample CSV and JSON files accessible from the Import and Export 
 - Should be an array of objects containing a `key` and a `value` only; anything else is ignored.
 - The key should follow the same format as on the TagoIO Admin: all caps, no spaces (use underscores), only alphanumeric characters.
 
-> **Note:** The import and export functionality is available for users in the Scale plan.

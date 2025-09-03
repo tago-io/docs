@@ -24,11 +24,3 @@ There are two primary ways to send notifications to users in TagoRun:
    See [Analysis](/docs/tagoio/analysis/) for details on sending notifications from an Analysis script.
 
 > By pushing notifications using Analysis, you can add custom buttons allowing for more interaction.
-
-## Example notification (UI sample)
-The notifications UI can display items similar to the following example:
-
-- Title: Refrigerator Alarm  
-- Message: Your Refrigerator Temperature is higher than: 86 °F  
-- Timestamp: 6 minutes ago  
-- Link/button: Refrigerator Dashboard

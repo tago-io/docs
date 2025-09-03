@@ -32,7 +32,12 @@ Your customers will engage with your brand as they sign up and access the applic
 8. **Geolocation and Wi‑Fi setup**  
 9. **Google Analytics and CRM integrations**
 
-> * Buy the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+:::tip
+
+Unlock the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+
+:::
+
 
 ## How it works with mobile App
 

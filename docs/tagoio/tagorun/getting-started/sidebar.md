@@ -10,7 +10,11 @@ You can customize your sidebar settings by accessing the Run module and selectin
 
 <!-- Image placeholder removed for build -->
 
-> **Note:** It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme).
+:::tip
+
+It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme).
+
+:::
 
 ### Dashboard Search Bar and Sorting Options
 The Dashboard Search feature enhances the end‑user experience by providing a search functionality and sorting options for dashboards within the Run portal panel.

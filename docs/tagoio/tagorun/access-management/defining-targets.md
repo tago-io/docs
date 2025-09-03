@@ -6,7 +6,11 @@ sidebar_position: 3
 ---
 You should define **Targets** in each policy that are used inside the [Access Management](https://admin.tago.io/am) module. Targets can be users or things (for example, [scripts](/docs/tagoio/analysis/)).
 
-> Targets are to whom or to what you are giving the permissions.
+:::tip
+
+Targets are to whom or to what you are giving the permissions.
+
+:::
 
 Currently, you can select [Run Users](/docs/tagoio/services/end-users-service) and [Analysis](/docs/tagoio/analysis/) as Targets.
 
@@ -32,6 +36,10 @@ Target matching can be performed in several ways:
    - Run User: tag keys presented in your users will be listed.
    - Analysis: only tag keys presented in your [Analysis](/docs/tagoio/analysis/) will be listed.
 
-   > The Tag Match option reduces the number of policies as you can create a single Policy that would grant access to all users or analysis that match the same tag keys.
+   :::tip
+   
+   The Tag Match option reduces the number of policies as you can create a single Policy that would grant access to all users or analysis that match the same tag keys.
+
+   :::
 
 4. **ANY** – all will be automatically included.

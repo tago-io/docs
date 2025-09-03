@@ -12,6 +12,7 @@ Use the Dictionary to deploy applications to end-users (RUN users) in any langua
 End-users can select the language in their applications.
 
 :::info
+
 End-users are able to switch languages within their accounts. By default, the system will use the language identified by their browsers. If the language is not available in the application, the system will default to the **Fallback language**.
 
 You can create multiple dictionaries and use them in your applications with the Free/Starter plans. However, to use multiple languages in your Run environment other than the **Fallback language**, you need to upgrade to the Scale plan. Check out our Pricing page [Pricing](https://tago.io/pricing).
@@ -53,7 +54,11 @@ Add another language (e.g., French) by changing the values:
 After creating the Slug and Keys, use them anywhere in your application.  
 For example, if you created a dictionary with a Slug `DIC1` and want to use the Key `TITLE1` as a widget title, input `#DIC1.TITLE1#`.
 
-> Fields that accept Dictionary have auto‑complete enabled: click the icon on the right or type `#` to get the list of available Slugs and Keys.
+:::tip
+
+Fields that accept Dictionary have auto‑complete enabled: click the icon on the right or type `#` to get the list of available Slugs and Keys.
+
+:::
 
 You can also substitute variable names, values, tooltips, messages sent by email, SMS, push notifications, etc.  
 Some widgets (e.g., **Map** and **Image Marker**) offer a *Custom Texts* option where you can enter text directly or use `#` to substitute it with your dictionary.
