@@ -3,7 +3,6 @@ title: "E-mail Service"
 description: "This article explains how TagoIO counts Email usage, monthly limits and warnings, and the end of TagoIO's native E-mail service (effective January 1, 2025). It also points to alternatives and related documentation."
 tags: ["tagoio"]
 ---
-## Overview
 
 Each time an Email is successfully sent by the [Action](/docs/tagoio/actions/) or [Analysis](/docs/tagoio/analysis/) function, it is counted as one unit. This limit defines the maximum number of Emails that can be sent from that Profile during a one-month period. Unused Emails in a billing cycle will not be carried over to the next cycle.
 

@@ -26,7 +26,7 @@ Accessing data from dashboards — including downloading a .csv file from widget
 
 The system will also count Data Output when using the function "Export Data" from the [Device](/docs/tagoio/devices/).
 
-:::note
+:::info
 
 Request limits are applied to a wide range of interactions within the platform, including activities such as reading and exporting data. Read more about our [Rate Limits](/docs/tagoio/api/rate-limits-hard-limits).
 
