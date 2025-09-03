@@ -9,7 +9,7 @@ You can filter the results displayed on a map to minimize the amount of informat
 
 In the widget configuration, under Filter options, you can customize the filter and how pins' data will be listed in the table.
 
-> Note: The Filter table lists the pins' data that are displayed on the map. You can choose either the device name or a variable value to represent a pin's data. When a row in the table is clicked, the corresponding pin will be centered on the map.
+The Filter table lists the pins' data that are displayed on the map. You can choose either the device name or a variable value to represent a pin's data. When a row in the table is clicked, the corresponding pin will be centered on the map.
 
 To add a filter, select the Add filter button. There are three ways to filter results:
 

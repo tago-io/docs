@@ -9,7 +9,8 @@ You can enable the Router option to allow users to get directions to a destinati
 
 ### How to configure the Router
 
-To use the router you must first define an **origin** point.  
+To use the router enter the map widget in edit mode, navigate to 
+ you must first define an **origin** point.  
 This is done by selecting a device and specifying the variable that holds its coordinates (for example, GPS data from the TagoIO mobile app or any other device that reports latitude/longitude).
 
 ![Router example showing origin and destination](

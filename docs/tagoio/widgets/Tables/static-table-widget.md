@@ -15,7 +15,7 @@ It is possible to customize the widget color, apply a formula to a cell, edit op
 When you want to change a specific cell, simply hover over it and click. A configuration panel will appear on the right side of the editor with all editable options for that element.  
 You can delete an entire row or column by clicking the top‑right corner of the table and selecting the appropriate option.
 
-> The widget works in both Normal dashboards and Blueprint dashboards. For Blueprint dashboards, the “Data From” field behaves slightly differently (see below).
+The widget works in both Normal dashboards and Blueprint dashboards. For Blueprint dashboards, the “Data From” field behaves slightly differently (see below).
 
 
 ### 1. ‘Data From’ Field

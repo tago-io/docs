@@ -50,7 +50,11 @@ The following metadata fields can be used:
 }
 ```
 
-> TIP: You can always enter colors using #HEX or RGB values instead of a color name.
+:::tip
+
+You can always enter colors using #HEX or RGB values instead of a color name.
+
+:::
 
 ```json
 {

@@ -3,7 +3,6 @@ title: "Semi Pie Widget"
 description: "This article explains the Semi Pie widget, which generates a semi-circle pie chart from multiple variables, and shows how to add and customize it on your dashboard."
 tags: ["tagoio", "widgets"]
 ---
-## Overview
 
 Using data from multiple variables, the Semi Pie widget automatically produces a Semi Pie chart where each slice represents a variable's value.
 

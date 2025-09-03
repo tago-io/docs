@@ -9,8 +9,6 @@ With icons, you can create highly personalized widgets for your applications. Th
 
 Users can add up to 9 variables to this widget. Each variable will display its latest value.
 
-*This widget works for both Normal and Blueprint dashboards.*
-
 ## Creating your own
 
 To add the Icons widget to your dashboard, choose the Icon widget from the list and customize it to your preference. Edit the widget using the options located on the right side of the widget editor.

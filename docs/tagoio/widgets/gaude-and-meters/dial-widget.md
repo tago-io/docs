@@ -13,8 +13,6 @@ This widget also accepts features like [metadata](/docs/tagoio/payload-parser/me
 
 To add the Dial widget to your dashboard, choose the Dial widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
-> This widget works for both dashboards, Normal and [Blueprint](/docs/tagoio/dashboards/blueprint-dashboard).
-
 ### 'Data From' Field
 
 This field allows you to set the device and variable that will be used in this widget.
@@ -29,4 +27,8 @@ From the option **'Data From'** on the right menu, select one device from your l
 
 From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+:::info
+
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+
+:::

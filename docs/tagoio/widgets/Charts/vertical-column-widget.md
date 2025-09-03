@@ -9,7 +9,6 @@ Charts are a powerful way to visualize your data and gain insights. The Vertical
 
 This widget also supports features such as [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
----
 
 ## 1. 'Data From' Field
 
@@ -20,7 +19,7 @@ This field allows you to set the device and variable that will be used by the wi
 * Click on the **cog icon** to edit specific options such as formulas, color, and more.  
 * Click on the **close icon** to remove this variable from the widget’s data.
 
-> The available variables depend on the type of dashboard you are using; the difference is explained below.
+The available variables depend on the type of dashboard you are using; the difference is explained below.
 
 ### 1.1 Data From for Normal Dashboards
 

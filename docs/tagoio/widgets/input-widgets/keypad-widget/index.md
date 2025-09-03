@@ -24,7 +24,11 @@ From the option **‘Data From’** on the right menu, select one device from yo
 
 From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/widgets/blueprint-devices) and input the name of the variable that contains the information.
 
-> When using a Blueprint dashboard, the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+:::info
+
+When using a Blueprint dashboard, the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+
+:::
 
 ## 2. Visualization
 
@@ -35,7 +39,7 @@ Learn more about the [customization options of your keypad](/docs/tagoio/widgets
 
 ## 3. Data manipulation
 
-> The keypad will send the data immediately after pressing a custom button, or just by inputting a combination of numeric digits and waiting 3 seconds.
+The keypad will send the data immediately after pressing a custom button, or just by inputting a combination of numeric digits and waiting 3 seconds.
 
 Whenever a PIN code is submitted, the structure sent to the variable will be:
 

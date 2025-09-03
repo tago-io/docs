@@ -44,7 +44,7 @@ This field allows you to set the device and variable that will be used in this w
 
 Click on the **cog icon** to edit specific options for this variable, such as: pin icon, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
 
-> This field is dependent on the **type of dashboard** you are using; the difference is explained below.
+This field is dependent on the **type of dashboard** you are using; the difference is explained below.
 
 ### 1.1 'Data From' for Normal Dashboards
 
@@ -54,14 +54,22 @@ From the option 'Data From' on the right menu, select one device from your list 
 
 From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the **location** information.
 
-> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+:::info
+
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+
+:::
 
 
 ## 2. Tile Provider
 
 This option allows you to define which map provider will be used on your widget to display the map. This is great if you need to have customized maps to fit your specific use case. By default, the map tile provider is OpenStreetMap, which is free to use; however, you can go with other providers like [Mapbox](https://www.mapbox.com/), [Here Maps](https://www.here.com/), or [Google Maps](https://developers.google.com/maps).
 
-> **Info:** Each map provider has its own customization options for the tiles and pricing tiers, which often may be free up to a certain amount of tile requests. You should consult the providers to make an informed decision.
+:::tip
+
+Each map provider has its own customization options for the tiles and pricing tiers, which often may be free up to a certain amount of tile requests. You should consult the providers to make an informed decision.
+
+:::
 
 ### 2.1 How to configure a map title provider on TagoIO
 

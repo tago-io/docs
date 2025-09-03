@@ -5,11 +5,11 @@ tags: ["tagoio", "widgets"]
 ---
 Charts are a powerful way to visualize your data and find insights. The Multiple Charts widget lets you customize colors, apply Formula (/docs/tagoio/widgets/general/formula), change line shapes (step or smooth), choose whether series are stacked, and more.
 
-> Note: In multiple charts, each variable produces a different chart. In the same widget it is possible to have each chart as an [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget), [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget), [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget), or [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget).
+When using multiple charts widget, each variable produces a different chart. In the same widget it is possible to have each chart as an [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget), [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget), [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget), or [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget).
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
-This widget also accepts features like metadata (/docs/tagoio/payload-parser/metadata) and series (/docs/tagoio/devices/data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

@@ -96,4 +96,8 @@ You can control the colors of the Step Button widget by using information stored
    }
    ```
 
-> TIP: You can always enter colors using `#HEX` or `RGB` values instead of a color name.
+:::tip
+
+You can always enter colors using `#HEX` or `RGB` values instead of a color name.
+
+:::

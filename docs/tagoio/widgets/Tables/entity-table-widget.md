@@ -7,7 +7,7 @@ The Entity Table widget enables you to display data in a tabular format using fi
 
 :::tip
 
- **Ensure that appropriate [Access Management](/docs/tagoio/tagorun/access-management/) permissions are granted** to allow end-users to view the data displayed in the widget.
+ Ensure that appropriate [Access Management](/docs/tagoio/tagorun/access-management/) permissions are granted to allow end-users to view the data displayed in the widget.
 
  :::
 
