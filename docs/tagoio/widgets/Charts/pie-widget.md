@@ -9,8 +9,6 @@ Using data from multiple variables, the Pie widget automatically produces a pie 
 
 This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) that can be set in your variable data.
 
-> This widget works for both dashboards, Normal and Blueprint.
-
 ## Creating your own
 
 To add the Pie widget to your dashboard, choose the Pie widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.

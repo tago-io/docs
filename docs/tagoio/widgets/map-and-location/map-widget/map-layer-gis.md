@@ -3,7 +3,6 @@ title: "Map Layer GIS"
 description: "This article explains how to use the Map widget's GIS layer to display geometries and spatial features from GeoJSON or shapefile data, and lists the supported file types and conversion behavior."
 tags: ["tagoio"]
 ---
-## Overview
 Display geometries, boundaries, areas, roads, pipelines, and other spatial features using the [Map widget](/docs/tagoio/widgets/map-and-location/map-widget/) GIS layer. Each layer is defined by GeoJSON files (`.geojson`, `.json`, `.zip`), which you can upload and manage either statically or dynamically.
 
 ## Supported file types and shapefile conversion

@@ -84,5 +84,3 @@ The Threshold limits the amount of data at which downsampling starts, and the Fa
 The greater the factor, the higher the performance gain, but as the factor increases, the data becomes less recognizable.
 
 :::
-
----

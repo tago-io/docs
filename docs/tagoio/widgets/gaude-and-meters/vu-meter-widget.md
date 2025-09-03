@@ -34,4 +34,4 @@ From the option **Data From** on the right menu, add the [Blueprint device](/doc
 
 When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-:::info
+:::

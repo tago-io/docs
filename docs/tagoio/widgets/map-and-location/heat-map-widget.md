@@ -63,4 +63,8 @@ You can also set coordinates directly in the widget editor. If metadata is not p
 You can define a custom range for the heat bar that appears at the bottom of the image. By default, the scale is generated automatically from your variable values.  
 The scale determines which color corresponds to each value; even if you hide the heat bar, bubbles will still respect this mapping.
 
-> The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/docs/tagoio/gauge-data-range-format).
+:::info
+
+The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/docs/tagoio/gauge-data-range-format).
+
+:::

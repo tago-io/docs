@@ -7,7 +7,11 @@ You can push notification messages directly to the users registered in your Tago
 
 Notifications for users are similar to your account's regular notifications, but they include additional customization options.
 
-> Note: Users registered in your TagoRun account can only receive notifications sent by your application.
+:::info
+
+Users registered in your TagoRun account can only receive notifications sent by your application.
+
+:::
 
 ![Notifications list example](/docs_imagem/tagoio/notifications-for-users-2.png)
 

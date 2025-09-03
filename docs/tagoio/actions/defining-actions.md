@@ -183,5 +183,3 @@ And a message like this
 Would result in the following message:
 
 - **2021‑01‑02T22:51:48.005Z**: Warning, device with ID **547e353d7dbf3af122c0257d** is **90 °F**.
-
----

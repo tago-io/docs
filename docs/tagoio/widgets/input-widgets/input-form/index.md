@@ -33,11 +33,11 @@ Learn more about [Input Form fields type](/docs/tagoio/widgets/input-widgets/inp
 It is also possible to change a field’s visibility based on other fields’ values: see the article on [Form fields visibility](/docs/tagoio/widgets/input-widgets/input-form/form-fields-visibility).
 
 #### Data From Field
-This field allows you to set the device and variable that will be used in this widget.
+This field allows you to set the device and variable that will be used in this widget. This field is dependent on the **type of dashboard** you are using; the difference is explained below.
 
 ![Data From example](/docs_imagem/tagoio/external-75b8ef8b.png)
 
-> This field is dependent on the **type of dashboard** you are using; the difference is explained below.
+
 
 ##### Normal Dashboards
 From the option **Data From** on the right menu, select the source of the data, which can be either a [Device](/docs/tagoio/devices/) or an [Entity](/docs/tagoio/getting-started/entities). After that you can select the specific Device or Entity and its field or variable.

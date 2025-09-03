@@ -3,7 +3,6 @@ title: "Trigger by MQTT Topic"
 description: "This article explains how the \"Trigger by MQTT Topic\" trigger works in TagoIO, describes broker availability restrictions, and details the two trigger categories—Single device and Multiple devices—used to watch incoming MQTT data."
 tags: ["tagoio"]
 ---
-## Overview
 The trigger type **"Trigger by Variable"** allows you to execute an [Action](/docs/tagoio/actions/) when data is sent to an MQTT topic.
 
 TagoIO provides its own MQTT broker that pushes data to clients when new messages are published to the topics they are subscribed to. To learn more about the MQTT infrastructure used by TagoIO, see [MQTT](/docs/tagoio/integrations/networks/mqtt).
