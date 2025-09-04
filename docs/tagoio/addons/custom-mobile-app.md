@@ -14,7 +14,7 @@ Check the pricing for the Custom mobile add‑on on your [Profile & Teams](https
 
 :::info
 
-There is a one‑time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact) for details.
+There is a one‑time fee to prepare the package and deploy the app to the stores on your behalf. [Contact us](https://tago.io/contact-us) for details.
 
 :::
 

@@ -10,7 +10,7 @@ Each time an Email is successfully sent by the [Action](/docs/tagoio/actions/) o
 
 :::warning
 
-As anticipated last year, starting on January 1st, 2025, TagoIO will no longer offer native E-mail services. You can still send E-mails by integrating with external providers such as AWS SES directly. Read more: [External Email Integration Guide](https://docs.tago.io/api/external-integrations/email).
+As anticipated last year, starting on January 1st, 2025, TagoIO will no longer offer native E-mail services. You can still send E-mails by integrating with external providers such as AWS SES directly. Read more: [External Email Integration Guide](https://api.docs.tago.io/external-integrations/email).
 
 :::
 

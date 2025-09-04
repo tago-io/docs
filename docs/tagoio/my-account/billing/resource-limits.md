@@ -24,8 +24,8 @@ Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
 | [Device](/docs/tagoio/devices/) | 5 | 100 | 10,000 |
 | [Profile](/docs/tagoio/profiles) | 1 / account | 2 / account | 5 / account |
 | [Team Member](/docs/tagoio/profiles/team-management-sharing-your-profile) | 0 | 1 | 5 |
-| [TagoCore](/tagocore) | 10 | 10 | 10 |
-| [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
+| [TagoCore](https://tagocore.com/) | 10 | 10 | 10 |
+| [TagoCore Cluster](https://tagocore.com/) | 3 | 3 | 3 |
 | [Custom Connector](/docs/tagoio/integrations/) | 3 | 20 | 50 |
 | [Custom Network](/docs/tagoio/integrations/general/creating-a-network-integration) | 1 | 5 | 10 |
 | [Device service authorization](/docs/tagoio/integrations/general/authorization) | 10 | 50 | 200 |

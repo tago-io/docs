@@ -33,7 +33,7 @@ const convertedTime = timeUtils.convertTimezone(
 ```
 
 ### formatInTimezone(dateInput, timezone, format)
-Formats a date in a specific timezone according to the specified format string. The formatting options are based on the chrono `strftime` specification. You can find all available format specifiers in the [chrono documentation](https://docs.rs/chrono/latest/chrono/format/strftime/.html).
+Formats a date in a specific timezone according to the specified format string. The formatting options are based on the chrono `strftime` specification. You can find all available format specifiers in the [chrono documentation](https://docs.rs/releases/search?query=chrono).
 
 Example:
 ```javascript

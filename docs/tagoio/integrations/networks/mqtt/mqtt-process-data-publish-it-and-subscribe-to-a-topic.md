@@ -116,6 +116,6 @@ Now, whenever a message is published on the topic `sensor/input`, the analysis w
 
 :::tip
 
-If you need help with your MQTT connection, request help in our [Community](https://help.tago.io/portal/en/community/tagoio/devices-and-connectors)!
+If you need help with your MQTT connection, request help in our [Community](https://community.tago.io/)!
 
 :::

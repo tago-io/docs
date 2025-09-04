@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 :::info
 
-When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://docs.tago.io/api/)
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://api.docs.tago.io/)
 
 :::
 

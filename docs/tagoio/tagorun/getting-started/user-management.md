@@ -29,7 +29,7 @@ The fields `tag_key` and `tag_value` from the users can be used in the Targets w
 
 :::warning
 
-Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](/docs/tagoio/services/data-output-for-dashboards) for quota and billing details.
+Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards) for quota and billing details.
 
 :::
 

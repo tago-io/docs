@@ -8,4 +8,4 @@ Through a TagoIO middleware, companies can connect devices that use their own pr
 For more detailed steps on implementing middleware, see [Creating a Networks Integration](/docs/tagoio/integrations/general/creating-a-network-integration).
 
  
-Additionally, follow this step‑by‑step guide: [How to create your own network to integrate with TagoIO](https://community.tago.io/t/how-to-create-your-own-network-to-integrate-with-tagoio/429).
+Additionally, follow this step‑by‑step guide: [How to create your own network to integrate with TagoIO](https://tagoio.discourse.group/t/how-to-create-your-own-network-to-integrate-with-tagoio/407).

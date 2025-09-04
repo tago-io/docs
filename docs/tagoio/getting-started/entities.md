@@ -7,7 +7,7 @@ The Entity feature is an excellent tool for storing data in a tabular format. Un
 
 Within an Entity, you can create custom fields similar to columns in a traditional database and define specific data types. You can also improve search and retrieval performance by implementing single or multiple indexes. Entities are well suited to store diverse data such as site information, organizational metadata, contact lists, equipment details, and product information.
 
-Once your information is stored, you can access the data through [Analysis](/docs/tagoio/analysis/), the [TagoIO API](https://docs.tago.io/api/), and—soon—[Widgets](/docs/tagoio/widgets/).
+Once your information is stored, you can access the data through [Analysis](/docs/tagoio/analysis/), the [TagoIO API](https://api.docs.tago.io/), and—soon—[Widgets](/docs/tagoio/widgets/).
 
 ## Creating an Entity
 
@@ -80,7 +80,7 @@ The following global variables are available in the Schema Parser:
 
 ## Managing the data in your Entity
 
-Once the data is added to your Entity, you can easily manage it by viewing, filtering, inserting, editing, and deleting data entries. You can also manage your data through Analysis SDK or the [TagoIO API](https://docs.tago.io/api/).
+Once the data is added to your Entity, you can easily manage it by viewing, filtering, inserting, editing, and deleting data entries. You can also manage your data through Analysis SDK or the [TagoIO API](https://api.docs.tago.io/).
 
 Additionally, you can completely empty the data of your Entity by going to the **More** tab and clicking the "**Empty Entity Data**" button.
 

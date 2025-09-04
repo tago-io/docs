@@ -7,7 +7,7 @@ It is easy to connect devices, data sources, or third‑party apps to your accou
 
 We provide a comprehensive set of APIs that give you full control to manage your accounts, data, devices, dashboards, and scripts. You can use the resources available in the Admin page to create, delete, or edit your accounts and dashboards; however, you can perform all the same actions directly using the API.
 
-Access the [API documentation](https://docs.tago.io/api/).
+Access the [API documentation](https://api.docs.tago.io/).
 
 We follow RESTful principles. Before checking the API documentation, there are a few details you should know.
 
@@ -47,7 +47,7 @@ All responses from the TagoIO API follow a consistent pattern. You will typicall
 - result: contains the response data (array or object) or error details.
 - message: optional text included for warnings or additional information on failures.
 
-For more details and endpoints, refer to the full [API documentation](https://docs.tago.io/api/) and the SDK page above.
+For more details and endpoints, refer to the full [API documentation](https://api.docs.tago.io/) and the SDK page above.
 
 ## Security
 TagoIO takes the necessary steps to protect your data in the database and also during the communication between our server and your devices. 

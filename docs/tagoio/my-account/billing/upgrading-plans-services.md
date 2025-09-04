@@ -23,4 +23,4 @@ To upgrade your billing, go to the [Billing](https://admin.tago.io/account/billi
 
 If you want to automate upgrades of your account using an auto‑scaling feature, see the following tutorial:
 
-- [How to auto-scale your profile limit](https://help.tago.io/portal/en/community/topic/how-to-auto-scale-your-account-limits-24-2-2022)
+- [How to auto-scale your profile limit](https://tagoio.discourse.group/t/how-to-auto-scale-your-profile-limits/1075)

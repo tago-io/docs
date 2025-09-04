@@ -13,4 +13,4 @@ To solve this, include a `group` field in the JSON for each sample. A batch of a
 
 When visualizing these batches of data combined in a Table or Map, select the option "Group by group" to view variables grouped by their `group` value rather than by timestamp.
 
-To learn how to add the `group` field in the JSON, see the [API documentation](https://docs.tago.io/api/).
+To learn how to add the `group` field in the JSON, see the [API documentation](https://api.docs.tago.io/).

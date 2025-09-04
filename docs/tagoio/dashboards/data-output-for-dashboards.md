@@ -27,7 +27,7 @@ Data consumed by dashboards will not be counted against the [Data Output Service
 
 When your account approaches the predefined limit, you will receive a notification suggesting an upgrade to your plan. This notification will be sent to your Admin panel and to your registered email address. Note that you cannot increase the dashboard data output limit yourself (this is different from the limit control available for the general Data Output Service).
 
-Customers on the Scale plan can request an increase in this limit by contacting our [Sales Team](https://tago.io/contact-us) or opening a ticket through our Help Center.
+Customers on the Scale plan can request an increase in this limit by contacting our [Sales Team](https://tago.io/contact-us-us) or opening a ticket through our Help Center.
 
 ### Monitoring your limit
 

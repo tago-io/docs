@@ -11,7 +11,7 @@ If you are entitled to a refund, complete these steps:
 
 1. [Downgrade your plan](/docs/tagoio/my-account/billing/downgrading-plans-services) to the free plan to avoid any further charges.
 2. Do not delete your account.
-3. [Open a ticket requesting a refund](https://tago.io/contact).
+3. [Open a ticket requesting a refund](https://tago.io/contact-us).
 
 ## When are you entitled to a refund
 

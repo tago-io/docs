@@ -85,7 +85,7 @@ Once you have a Secret with your API key created, you can go to your **Map widge
 
 ### 2.2 How to configure Google Maps as map provider
 
-For instance, using Google Maps as a provider is quite simple. All you need to do is have a Google account and set up an API Key. Read the full tutorial here: [How to Set Up Google Maps in Your Map Widget](https://help.tago.io/portal/en/community/topic/how-to-set-up-google-maps-in-your-map-widget)
+For instance, using Google Maps as a provider is quite simple. All you need to do is have a Google account and set up an API Key. Read the full tutorial here: [How to Set Up Google Maps in Your Map Widget](https://tagoio.discourse.group/t/how-to-set-up-google-maps-in-your-map-widget/1742)
 
 
 ## 3. Infobox
@@ -127,7 +127,7 @@ Draw colored geographic boundaries to make it easy to see your devices' trajecto
 
 <!-- Geofence example image -->
 
-You can draw polygon or circle figures and associate them with events, and build an [analysis](https://community.tago.io/t/implementing-an-analysis-to-notify-when-a-device-is-inside-of-a-geofence/617) to receive notifications when the device enters or leaves the zone.
+You can draw polygon or circle figures and associate them with events, and build an [analysis](https://tagoio.discourse.group/t/implementing-an-analysis-to-notify-when-a-device-is-inside-of-a-geofence/525) to receive notifications when the device enters or leaves the zone.
 
 <YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 

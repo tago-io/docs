@@ -8,7 +8,7 @@ Our TagoRUN mobile app is designed for end users to access applications created 
 
 ![TagoRUN Mobile App Screenshot](/docs_imagem/tagoio/external-7f89c0ba.png)
 
-Download the TagoRUN app from the [AppStore](https://apps.apple.com/us/app/tagorun/id1506822629) or [GooglePlay](https://play.google.com/store/apps/details?id=com.tago.app).
+Download the TagoRUN app from the [AppStore](https://apps.apple.com/br/app/tagorun/id1475966647) or [GooglePlay](https://play.google.com/store/apps/details?id=io.tago.run&hl=en).
 
 :::tip
 

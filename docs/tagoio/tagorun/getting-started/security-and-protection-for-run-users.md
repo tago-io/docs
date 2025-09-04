@@ -41,7 +41,7 @@ You can also enforce 2FA if any method is enabled.
 
 :::info
 
-*Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/docs/tagoio/services/allocating-services-to-profiles).
+*Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles).
 
 :::
 

@@ -64,7 +64,7 @@ You can also substitute variable names, values, tooltips, messages sent by email
 Some widgets (e.g., **Map** and **Image Marker**) offer a *Custom Texts* option where you can enter text directly or use `#` to substitute it with your dictionary.
 
 ### 3) Configure the language for your RUN
-Dictionary can also be applied in your [RUN](../run) application so that you can configure additional texts used in common places (e.g., 'Save' button, sign‑in form, tooltips).  
+Dictionary can also be applied in your [RUN](/docs/tagoio/tagorun/) application so that you can configure additional texts used in common places (e.g., 'Save' button, sign‑in form, tooltips).  
 If you haven’t done so, create a dictionary to be used as a baseline by accessing the **[RUN] > Multi‑language** section. The system can create a dictionary with all available Keys for editing or use it as a basis for other languages.
 
 > This dictionary will also contain the Keys used in your TagoRUN mobile app.

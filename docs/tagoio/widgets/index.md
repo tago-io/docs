@@ -48,7 +48,7 @@ The following widgets are provided out of the box (icons and labels shown):
 - [Note](/docs/tagoio/widgets/displays/note-widget) - Text notes and annotations
 
 ### Input Widgets
-- [Input Form](/docs/tagoio/widgets/input-widgets/input-form-widget) - Data input forms
+- [Input Form](/docs/tagoio/widgets/input-widgets/input-form/) - Data input forms
 - [Input Control](/docs/tagoio/widgets/input-widgets/input-control-widget) - Control elements
 - [Keypad](/docs/tagoio/widgets/input-widgets/keypad-widget) - Number input keypad
 - [Push Button](/docs/tagoio/widgets/input-widgets/push-button-widget) - Action buttons

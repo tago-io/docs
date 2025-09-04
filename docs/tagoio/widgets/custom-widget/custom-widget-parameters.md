@@ -16,7 +16,7 @@ Note: You can specify up to 20 parameters.
 
 ## Usage in code
 
-Before reading this section, you should read the [Custom Widget tutorial](https://community.tago.io/t/custom-widget-iframe/279) to understand how the widget code works.
+Before reading this section, you should read the [Custom Widget tutorial](https://help.tago.io/portal/en/community/topic/custom-widget-iframe) to understand how the widget code works.
 
 In your code, the parameters are received in the `onStart` function, for example:
 

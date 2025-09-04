@@ -19,6 +19,6 @@ Single Sign-On (SSO) allows RUN applications to delegate authentication to an ex
 
 The RUN configuration is intentionally simple: import the Identity Provider after you finish its application setup and user provisioning on the IdP.
 
-The configuration of your SSO will vary depending on the identity provider you choose, but the overall process is generally similar across different providers. [Here’s a guide on how to configure your SSO using Auth0](https://help.tago.io/portal/en/community/topic/auth0-sso-configuration).
+The configuration of your SSO will vary depending on the identity provider you choose, but the overall process is generally similar across different providers. [Here’s a guide on how to configure your SSO using Auth0](https://tagoio.discourse.group/t/how-to-set-up-single-sign-on-sso-on-tagorun-with-auth0/1727).
 
-If you are using a different SSO tool, you can still refer to the [Auth0 documentation](https://help.tago.io/portal/en/community/topic/auth0-sso-configuration), as the steps are often comparable for other providers.
+If you are using a different SSO tool, you can still refer to the [Auth0 documentation](https://tagoio.discourse.group/t/how-to-set-up-single-sign-on-sso-on-tagorun-with-auth0/1727), as the steps are often comparable for other providers.

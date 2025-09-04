@@ -16,5 +16,5 @@ Make sure you comply with cookie and privacy laws that apply to your users' regi
 ## Integrations / Tutorials
 
 Follow one of the tutorials below to integrate your application with:
-- Google Analytics — See [Google Analytics](../google-analytics)
-- Zoho SalesIQ — See [Zoho SalesIQ](../zoho-salesiq)
+- Google Analytics — See [Google Analytics](/docs/tagoio/tagorun/integrations/google-analytics)
+- Zoho SalesIQ — See [Zoho SalesIQ](/docs/tagoio/tagorun/integrations/zoho-salesiq)
