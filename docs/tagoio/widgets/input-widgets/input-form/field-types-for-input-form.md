@@ -11,19 +11,25 @@ The field defines the relationship between the user-inputted data and the Device
 ## 1. Text
 A typical text input will appear. The value saved for this field will be whatever the user typed into it.
 
+<div align="center">
 ![Text input example](/docs_imagem/tagoio/field-types-for-input-form-2.gif)
+</div>
 
 ## 2. Address
 This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](data-management/data-manipulation#location) for details.
 
 > For the **Input Form Widget**, it is possible to enable a map under the input.
 
+<div align="center">
 ![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-3.gif)
+</div>
 
 ## 3. Calendar
 It will display a calendar field that allows the user to enter a date, or a date range, as a value through a calendar popup. When receiving the user answer in your **device**, you will be able to get it in the value parameter and the metadata parameter. The latter one will be in date string format as `start_date` and `end_date`.
 
+<div align="center">
 ![Calendar input with preset example](/docs_imagem/tagoio/field-types-for-input-form-4.png)
+</div>
 
 For example, the input above will produce the following payload:
 
@@ -41,12 +47,18 @@ For example, the input above will produce the following payload:
 ## 4. Checkbox
 A traditional checkbox will appear and the value will be set as `true` (checked) or `false` (not checked).
 
+<div align="center">
 ![Checkbox input example](/docs_imagem/tagoio/field-types-for-input-form-5.png)
+</div>
 
 > ☑ Alert the user when new data arrives?
 
 ## 5. Clock set
 It will display a step button to select the hour range without the date.
+
+<div align="center">
+![Clock set example](/docs_imagem/tagoio/field-types-for-input-form-6.gif)
+</div>
 
 > Field #1
 > 00:00
@@ -55,6 +67,11 @@ It will display a step button to select the hour range without the date.
 It will display a dropdown field with all an account's devices. The value of the field will be the id of the selected device.
 
 > You can customize the devices shown by the list through tags. Configuring tags will show only the devices with a tag correspondence.
+
+<div align="center">
+![Device example](/docs_imagem/tagoio/field-types-for-input-form-7.gif)
+</div>
+
 
 ## 7. Dropdown
 It displays a dropdown menu with options that you define. The value of the field will be the selected options, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
