@@ -60,8 +60,7 @@ It will display a step button to select the hour range without the date.
 ![Clock set example](/docs_imagem/tagoio/field-types-for-input-form-6.gif)
 </div>
 
-> Field #1
-> 00:00
+
 
 ## 6. Device
 It will display a dropdown field with all an account's devices. The value of the field will be the id of the selected device.
@@ -76,11 +75,24 @@ It will display a dropdown field with all an account's devices. The value of the
 ## 7. Dropdown
 It displays a dropdown menu with options that you define. The value of the field will be the selected options, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
 
+<div align="center">
+![Dropdown example](/docs_imagem/tagoio/field-types-for-input-form-8.gif)
+</div>
+
+
 ## 8. Dropdown Multiple
 It displays a dropdown menu with options that you define. The value of the field will be the multiple options selected, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable.
 
+<div align="center">
+![Dropdown multiple example](/docs_imagem/tagoio/field-types-for-input-form-9.gif)
+</div>
+
 ## 9. Email
 It displays a field to submit multiple emails, separated by a comma.
+
+<div align="center">
+![Email example](/docs_imagem/tagoio/field-types-for-input-form-10.gif)
+</div>
 
 > Field #1
 > enter one or more email addresses
@@ -89,6 +101,10 @@ It displays a field to submit multiple emails, separated by a comma.
 It will display a dropdown using values contained in your Entities. You are able to select which field from your entity should be displayed in the dropdown, as well as which field from your entity should be submitted when pressing the Submit button.
 
 The difference between the Entity and Entity Multiple is that the last one allows you to select multiple values in the dropdown, instead of just one.
+
+<div align="center">
+![Email example](/docs_imagem/tagoio/field-types-for-input-form-11.gif)
+</div>
 
 ## 11. File Upload
 It will display an option to upload files to TagoIO. These files will be stored in the files section under the folder `devices/your_device_id/` by default. It is possible to restrict the number of files per upload, allow users to use their mobile camera, and more.
@@ -113,6 +129,10 @@ The variable that receives this data keeps the file name in the value parameter,
 
 ## 12. Filtered Variables
 It will display a dropdown field, with options that change dynamically based on other fields. In the example below, the Food field changes based on the Food Type field. Learn more about **Filtered Variables**
+
+<div align="center">
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-12.gif)
+</div>
 
 ## 13. Image / Video Select
 Whenever you need to choose a value by using images instead of entering text, the image Field is the best option in form widgets. By entering media URLs into the options, the field will be filled with these images or videos and you will be able to select one or many of them. Learn more about Adding Image Selector field on Forms.
