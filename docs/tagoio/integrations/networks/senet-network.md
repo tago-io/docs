@@ -42,7 +42,7 @@ Go to **"Notification Target"**. Make sure the status is *Enabled*, select **HTT
 | Field | Description |
 |-------|-------------|
 | **Name** | Enter a unique identifier (e.g., `tagoio-integration`). |
-| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/docs/tagoio/integrations/network-integration)**. |
+| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/docs/tagoio/integrations/)**. |
 | **Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Optional Data Fields** | Enable *RF Data* and any other optional field you would like to receive in your device. |
 

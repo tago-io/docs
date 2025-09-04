@@ -46,7 +46,7 @@ The example above means that the action will be triggered when **my_variable is 
 
 :::tip
 
-Looking to create more complex logic statements? You can use the [Action](/docs/tagoio/actions/) to trigger an [Analysis](/docs/tagoio/analysis/analysis), and then manually create custom logic inside of the code.
+Looking to create more complex logic statements? You can use the [Action](/docs/tagoio/actions/) to trigger an [Analysis](/docs/tagoio/analysis/), and then manually create custom logic inside of the code.
 
 :::
 

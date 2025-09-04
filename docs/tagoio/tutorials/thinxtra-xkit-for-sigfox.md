@@ -69,6 +69,6 @@ You can edit the [parse script](/docs/tagoio/payload-parser/) created for your d
 
 Also, you can create [notifications](/docs/tagoio/getting-started/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
 
-Learn more about [Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink).
+Learn more about [Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/-downlink).
 
 Enjoy your Thinxtra Xkit with Tago!

@@ -68,7 +68,7 @@ Set device parameters in the **Configuration Parameters** tab. These can be used
 
 ## Setting rate limits for your devices
 
-- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/rate-limits-hard-limits)**.
+- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/api/rate-limits-hard-limits)**.
 - You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](/docs/tagoio/services/data-input-service) or [Output](/docs/tagoio/services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 

@@ -65,6 +65,6 @@ The scale determines which color corresponds to each value; even if you hide the
 
 :::info
 
-The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/docs/tagoio/gauge-data-range-format).
+The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/docs/tagoio/widgets/gaude-and-meters/gauge-data-range-format).
 
 :::

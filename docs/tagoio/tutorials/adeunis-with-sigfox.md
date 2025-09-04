@@ -35,4 +35,4 @@ Additionally, you can create **notifications** or write advanced **scripts** to 
 - Notifications: [Notifications](/docs/tagoio/actions/)  
 - Scripts: [Creating Analysis Scripts](/docs/tagoio/analysis/creating-analysis)
 
-If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/sigfox).
+If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/).

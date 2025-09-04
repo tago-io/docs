@@ -11,7 +11,7 @@ The Custom Domain & Whitelabel add‑on lets you promote your organization’s b
 Before configuring your Custom Domain in your Admin, ensure you have:
 
 - A domain or a sub‑domain for your organization; you can obtain one from any domain provider. Ensure you can edit the DNS (Domain Name System) records for your custom domain in the domain provider’s settings.
-- The Custom Domain & Whitelabel add‑on is activated in your profile. Check the Pricing page for more information (see [Custom Domain & Whitelabel](/docs/tagoio/custom-domain-whitelabel) and [Pricing](https://tago.io/pricing)).
+- The Custom Domain & Whitelabel add‑on is activated in your profile. Check the Pricing page for more information (see [Custom Domain & Whitelabel](/docs/tagoio/addons/custom-domain/) and [Pricing](https://tago.io/pricing)).
 
 :::info
 

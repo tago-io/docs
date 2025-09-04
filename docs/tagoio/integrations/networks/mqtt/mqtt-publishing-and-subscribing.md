@@ -24,7 +24,7 @@ services.mqtt.publish('mytopic', 'my message')
 - Any device that subscribes to the topic "mytopic" will receive the published message.
 - Typical subscribe text: Subscribe to the topic: "mytopic"
 
-This section describes how to publish and subscribe to topics on the TagoIO MQTT Broker. It assumes you already know how to connect to MQTT; if you do not, see the [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt) article for connection instructions.
+This section describes how to publish and subscribe to topics on the TagoIO MQTT Broker. It assumes you already know how to connect to MQTT; if you do not, see the [MQTT](/docs/tagoio/integrations/networks/mqtt/) article for connection instructions.
 
 ### Publishing to TagoIO
 

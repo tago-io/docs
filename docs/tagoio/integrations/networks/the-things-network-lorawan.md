@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 This tutorial provides a step-by-step guide to integrate The Things Network (TTN) with the TagoIO platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 
-> If you're trying to integrate TTI or TTN v3, use our [TTI integration](../tutorials/tti-integration) instructions.
+> If you're trying to integrate TTI or TTN v3, use our [TTI integration](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-ttn-v3) instructions.
 
 ![Integration diagram showing LoRaWAN devices, The Things Network, a connector, and TagoIO](/docs_imagem/tagoio/the-things-network-lorawan-2.png)
 

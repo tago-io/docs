@@ -105,7 +105,7 @@ To set the MQTT action up, select the option **Publish to MQTT**, select the dev
 
 ![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
 
-TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
+TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
 
 ## Post data to HTTP End-Point
 

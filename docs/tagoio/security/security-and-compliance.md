@@ -20,11 +20,3 @@ If you wish to know how we process and protect personal data that is subject to 
 ## TagoIO Security Portal
 
 For a detailed overview of our security practices, you should visit our [Security Portal](https://security.tago.io/). Here, you will find comprehensive information on the measures we take to safeguard your data, from encryption and access control to security policies and other documents.
-
-## See also
-
-- [Access Management](./access-management)
-- [Authorization](./authorization)
-- [Two-Factor Authentication (2FA)](./two-factor-authentication-2fa)
-- [Single Sign-On (SSO)](./single-sign-on-sso)
-- [Audit Log](./audit-log)

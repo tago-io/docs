@@ -32,7 +32,7 @@ TagoIO provides network integrations fully hosted in different regions. Based on
 For the second method above, here is a list of some Network Integrations ready to be used:
 
 - [Sigfox](/docs/tagoio/tutorials/sigfox)
-- [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt)
+- [MQTT](/docs/tagoio/integrations/networks/mqtt/)
 - [Actility LoRaWAN](https://help.tago.io/portal/en/community/topic/how-to-integrate-tagoio-with-actility-ns)
 - [Everynet LoRaWAN](/docs/tagoio/integrations/networks/everynet-lorawan)
 - Kore Brazil LoRaWaN (select [Everynet](/docs/tagoio/integrations/networks/everynet-lorawan))

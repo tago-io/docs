@@ -3,7 +3,7 @@ title: "SMS Service"
 description: "This article explains how SMS units are counted and billed in TagoIO, outlines limits and country coverage, and provides important notices about service discontinuation and short-number behavior."
 tags: ["tagoio"]
 ---
-Each time an SMS message is successfully sent by an [Action](/docs/tagoio/actions/) or [Analysis](/docs/tagoio/analysis/) function, it is counted as one SMS unit. The service limit defined inside each [Profile](../account/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
+Each time an SMS message is successfully sent by an [Action](/docs/tagoio/actions/) or [Analysis](/docs/tagoio/analysis/) function, it is counted as one SMS unit. The service limit defined inside each [Profile](/docs/tagoio/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
 
 Each SMS unit is limited to 140 characters.
 

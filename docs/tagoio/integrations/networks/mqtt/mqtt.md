@@ -58,5 +58,5 @@ If you don’t send the data using the [TagoIO data format](/docs/tagoio/api/sen
 
 Here are some additional documentation links on MQTT resources:
 
-- [MQTT - Publishing and Subscribing](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing)
+- [MQTT - Publishing and Subscribing](/docs/tagoio/integrations/networks/mqtt/-publishing-and-subscribing)
 - [MQTT - Action Triggers by Topic](/docs/tagoio/actions/trigger-by-mqtt-topic)

@@ -11,7 +11,7 @@ This tutorial provides a step-by-step guide to integrate Sigfox with the TagoIO 
 
 ![Sigfox architecture diagram showing Modules → Sigfox stations → Sigfox Cloud™ → TagoIO (Uplink / Downlink flows)](/docs_imagem/tagoio/sigfox-2.png)
 
-Uplink is the process of sending data from the devices to TagoIO. Downlink is used to send data back to the devices. Learn how to perform [downlink for SigFox](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink).
+Uplink is the process of sending data from the devices to TagoIO. Downlink is used to send data back to the devices. Learn how to perform [downlink for SigFox](/docs/tagoio/integrations/networks/sigfox/-downlink).
 
 Follow these steps to set up the Sigfox backend and TagoIO.
 
@@ -40,7 +40,7 @@ Follow these steps to set up the Sigfox backend and TagoIO.
 ## Step 2: Set Up Integration in Sigfox
 
 On the Sigfox Backend Portal, create a **callback** of type `_uplink_`. We will use the **Data Uplink** option to obtain the basic information in the messages.  
-If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](/docs/tagoio/integrations/networks/sigfox/sigfox-using-advanced-data).
+If your contract with Sigfox allows you to get more information like RSSI, SNR, STATION, you can use the [Advanced Data option](/docs/tagoio/integrations/networks/sigfox/-using-advanced-data).
 
 1. **Create a new callback**  
    Go to your Sigfox console and create a new callback under the menu:  
@@ -104,6 +104,6 @@ For detailed instructions on adding devices, visit the [Adding Devices](/docs/ta
    - In TagoIO, navigate to the *Device* and into the *Data* tab to confirm that data is being received.  
    - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real‑time.
 
-Information about Downlink can be found at the [Sigfox - Downlink](../tutorials/sigfox-downlink) documentation.
+Information about Downlink can be found at the [Sigfox - Downlink](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink) documentation.
 
 You also can [create your own parse scripts](/docs/tagoio/payload-parser/building-your-own-parser) to process variables from the payload.

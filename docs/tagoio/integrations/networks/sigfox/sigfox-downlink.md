@@ -7,7 +7,7 @@ TagoIO is ready to receive data from and send data to Sigfox devices. The downli
 
 :::warning
 
-It's essential to carefully follow all the steps outlined in the [Sigfox network documentation](/docs/tagoio/integrations/networks/sigfox/sigfox) in order to send downlinks. The completion of Step D is crucial so that TagoIO can accurately authenticate your downlink.  
+It's essential to carefully follow all the steps outlined in the [Sigfox network documentation](/docs/tagoio/integrations/networks/sigfox/) in order to send downlinks. The completion of Step D is crucial so that TagoIO can accurately authenticate your downlink.  
 
 :::
 
@@ -15,7 +15,7 @@ It's essential to carefully follow all the steps outlined in the [Sigfox network
 
 Downlink Diagram
 
-Information about uplink can be found in this [tutorial](../tutorials/sigfox-uplink).
+Information about uplink can be found in this [tutorial](/docs/tagoio/integrations/networks/sigfox/).
 
 ## Downlink Setup
 

@@ -31,7 +31,7 @@ Each column has the field **Data From**; this field allows you to set the device
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 #### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/data-management/blueprint-devices) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
 
 > When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 

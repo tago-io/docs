@@ -11,7 +11,7 @@ Once your information is stored, you can access the data through [Analysis](/doc
 
 ## Creating an Entity
 
-To create a new Entity, open the [Entity module](../entities/) on your Admin page and click on "+ New Entity" (or the equivalent action). You will be prompted to define a name and add fields. Note that once an entity is created, its name cannot be changed; however, you can still add or remove fields as needed.
+To create a new Entity, open the [Entity module](https://admin.tago.io/entities) on your Admin page and click on "+ New Entity" (or the equivalent action). You will be prompted to define a name and add fields. Note that once an entity is created, its name cannot be changed; however, you can still add or remove fields as needed.
 
 ### Mandatory default fields
 
