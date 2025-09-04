@@ -23,6 +23,8 @@ This field displays a text input integrated with Google Maps to search for an ad
 ## 3. Calendar
 It will display a calendar field that allows the user to enter a date, or a date range, as a value through a calendar popup. When receiving the user answer in your **device**, you will be able to get it in the value parameter and the metadata parameter. The latter one will be in date string format as `start_date` and `end_date`.
 
+![Calendar input with preset example](/docs_imagem/tagoio/field-types-for-input-form-4.png)
+
 For example, the input above will produce the following payload:
 
 ```json
@@ -38,6 +40,8 @@ For example, the input above will produce the following payload:
 
 ## 4. Checkbox
 A traditional checkbox will appear and the value will be set as `true` (checked) or `false` (not checked).
+
+![Checkbox input example](/docs_imagem/tagoio/field-types-for-input-form-5.png)
 
 > ☑ Alert the user when new data arrives?
 
