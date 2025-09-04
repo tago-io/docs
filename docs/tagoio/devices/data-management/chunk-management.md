@@ -48,7 +48,7 @@ When exporting a chunk, you can activate the **Include Header** option to add co
 
 ### How exporting is billed
 
-Exporting data consumes the [Data Output service](/docs/tagoio/services/data-output-service). The number of transactions billed is rounded to the next multiple of 10 000. For example:
+Exporting data consumes the [Data Output service](/docs/tagoio/profiles/services/data-output-service). The number of transactions billed is rounded to the next multiple of 10 000. For example:
 
 1. Exporting 700 registers will consume 10 000 data output transactions.  
 2. Exporting 12 000 registers will consume 20 000 data output transactions.  

@@ -25,8 +25,8 @@ Choose where the analysis will run:
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
 
-- [Python SDK](/docs/tagoio/sdk/python-sdk)
-- [Javascript SDK](/docs/tagoio/sdk/nodejs-sdk) for Deno and NodeJS
+- [Python SDK](/docs/tagoio/analysis/sdk/python-sdk)
+- [Javascript SDK](/docs/tagoio/analysis/sdk/nodejs-sdk) for Deno and NodeJS
 
 :::warning
 

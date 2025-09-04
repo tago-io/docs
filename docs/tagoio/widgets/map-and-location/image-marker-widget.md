@@ -7,7 +7,7 @@ The image marker widget allows you to place pins on images and customize each pi
 
 ![Image marker example showing pins on a floor plan](/docs_imagem/tagoio/image-marker-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [groups](/docs/tagoio/devices/grouping-variables), which can be set in your variable data to alter how the widget behaves.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [groups](/docs/tagoio/devices/grouping-variables), which can be set in your variable data to alter how the widget behaves.
 
 ## Creating your own
 

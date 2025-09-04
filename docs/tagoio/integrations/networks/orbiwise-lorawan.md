@@ -78,7 +78,7 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/payload-parser/connector/connector-overview).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview).
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 

@@ -7,7 +7,7 @@ VU Meter gauges display the variable in a velocimeter-style gauge.
 
 ![Three VU meters example](/docs_imagem/tagoio/vu-meter-widget-2.gif)
 
-This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) that can be set in your variable data.
 
 ## Creating your own
 

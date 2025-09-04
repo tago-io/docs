@@ -43,7 +43,7 @@ You can build great [dashboards](/docs/tagoio/dashboards/) to visualize data, in
 ![Image 3](/docs_imagem/tagoio/temp-3UQ.gif)
 
 ### Step 3. Send data
-Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](/docs/tagoio/api/). You can use one of our [SDKs](/docs/tagoio/sdk/) designed for your platform.
+Now that you have completed the setup of your account, you are ready to send data from your electronic devices using our [APIs](/docs/tagoio/api/). You can use one of our [SDKs](/docs/tagoio/analysis/sdk/) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a server with HTTP. Below, you will learn how to quickly send data depending on the OS that you are using.
 
@@ -82,4 +82,4 @@ This is just the beginning! Check out how powerful TagoIO is to deploy solutions
 
 Create powerful [analysis](/docs/tagoio/analysis/) in real‑time using our script capabilities in JavaScript. Program [actions](/docs/tagoio/actions/) to be taken based on your rules.
 
-Learn more about our powerful [API’s](/docs/tagoio/api/). And check out the tutorials and [SDKs](/docs/tagoio/sdk/) prepared for different boards and applications.
+Learn more about our powerful [API’s](/docs/tagoio/api/). And check out the tutorials and [SDKs](/docs/tagoio/analysis/sdk/) prepared for different boards and applications.

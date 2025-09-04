@@ -25,7 +25,7 @@ To create your Custom Settings, first navigate to your [Run](https://admin.tago.
 
 Keep in mind that the Values set in the Field Options are supposed to be unique since they are used as identifiers.
 
-After saving the options for a dropdown field, it's essential not to change the Value from Field Options. If you need to modify the Value or remove an option, you should update your users' preferences using the [SDK](/docs/tagoio/sdk/) or an [Analysis](/docs/tagoio/analysis/).
+After saving the options for a dropdown field, it's essential not to change the Value from Field Options. If you need to modify the Value or remove an option, you should update your users' preferences using the [SDK](/docs/tagoio/analysis/sdk/) or an [Analysis](/docs/tagoio/analysis/).
 
 Keep in mind that editing the options for a field will not automatically update the preferences that your users have already saved.
 

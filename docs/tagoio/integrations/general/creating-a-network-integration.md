@@ -27,7 +27,7 @@ You only need to specify the network's name. For example, enter the name and cli
 
 ## Sharing Networks
 
-You can share a private network with other **[Profiles](/docs/tagoio/profiles)** from different accounts. Read more about [Sharing Connectors & Networks](/docs/tagoio/payload-parser/connector/sharing-connectors-networks).
+You can share a private network with other **[Profiles](/docs/tagoio/profiles)** from different accounts. Read more about [Sharing Connectors & Networks](/docs/tagoio/devices/payload-parser/connector/sharing-connectors-networks).
 
 :::tip
 
@@ -60,7 +60,7 @@ Example: A dropdown parameter appears in the user view as shown below (image omi
 
 ![Dropdown parameter](/docs_imagem/tagoio/dropdown_parameter.png)
 
-For details on accessing these parameters in the payload parser, see the [Payload parser context overview](/docs/tagoio/payload-parser/context-global-variables).
+For details on accessing these parameters in the payload parser, see the [Payload parser context overview](/docs/tagoio/devices/payload-parser/context-global-variables).
 
 ## Tokens and Getting Devices
 

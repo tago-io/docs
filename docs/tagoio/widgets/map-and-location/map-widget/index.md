@@ -24,7 +24,7 @@ The variable data should look like the following payload. Note that the 'lat' an
 }
 ```
 
-This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), that can be set in your variable data.
 
 
 ## Creating your own

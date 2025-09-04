@@ -7,7 +7,7 @@ Angular gauges allow you to display your variable in an angular gauge meter.
 
 ![Three example Angular gauges showing temperature readings](/docs_imagem/tagoio/angular-widget-2.gif)
 
-This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata), which can be set in your variable data.
 
 ## Creating your own
 

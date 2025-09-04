@@ -66,7 +66,7 @@ To ensure a successful import, your CSV file must adhere to the following requir
 2. Values should be separated by a comma. Semicolons are not supported.
 3. The file size should not exceed 200 MB.
 4. The file should contain a maximum of 1 million rows.
-5. Data integrity and structure should align with TagoIO's data format. For more information, refer to the [Sending Data](/docs/tagoio/api/sending-data) documentation.
+5. Data integrity and structure should align with TagoIO's data format. For more information, refer to the [Sending Data](/docs/tagoio/devices/sending-data) documentation.
 
 The following headers are available for import. Any additional headers beyond those listed will be ignored:
 
@@ -80,7 +80,7 @@ The following headers are available for import. Any additional headers beyond th
 
 ### Service limits for importing
 
-When importing data, the [Data Input](/docs/tagoio/services/data-input-service) limit is not affected. However, since you are adding new data to your devices, the amount of new data will count against your [Data Storage](/docs/tagoio/services/data-records) service. You must have at least 10 000 Data Storage registers available to perform the import, even if you are importing less data than that.
+When importing data, the [Data Input](/docs/tagoio/profiles/services/data-input-service) limit is not affected. However, since you are adding new data to your devices, the amount of new data will count against your [Data Storage](/docs/tagoio/profiles/services/data-records) service. You must have at least 10 000 Data Storage registers available to perform the import, even if you are importing less data than that.
 
 Additionally, before uploading the data to your device, you must first upload it to your [Files](/docs/tagoio/files). Ensure you have enough space to upload your CSV file.
 

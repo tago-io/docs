@@ -12,7 +12,7 @@ Targets are to whom or to what you are giving the permissions.
 
 :::
 
-Currently, you can select [Run Users](/docs/tagoio/services/end-users-service) and [Analysis](/docs/tagoio/analysis/) as Targets.
+Currently, you can select [Run Users](/docs/tagoio/profiles/services/end-users-service) and [Analysis](/docs/tagoio/analysis/) as Targets.
 
 ![Targets configuration example](/docs_imagem/tagoio/defining-targets-2.png)
 

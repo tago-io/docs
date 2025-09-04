@@ -39,7 +39,7 @@ Add others to your profiles by adding their e‑mails in the team section. To in
 
 ## Generating Account Tokens
 
-[Account tokens](/docs/tagoio/api/account-token) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
+[Account tokens](/docs/tagoio/profiles/account-token) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
 
 1. Click on the **Tokens** tab.  
 2. Add a name, permission, expiration, and click **Generate Token**.  

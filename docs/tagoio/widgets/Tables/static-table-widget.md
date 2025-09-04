@@ -8,7 +8,7 @@ Static tables are tables where each cell represents a different piece of informa
 ## Editing the static table
 It is possible to customize the widget color, apply a formula to a cell, edit options, and more.
 
-> This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata), which can be set in your variable data. (See the metadata documentation in the TagoIO help center for details.)
+> This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata), which can be set in your variable data. (See the metadata documentation in the TagoIO help center for details.)
 
 ![Static table editing screen](/docs_imagem/tagoio/static-table-widget-2.gif)
 

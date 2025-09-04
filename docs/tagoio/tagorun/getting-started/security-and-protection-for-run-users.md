@@ -21,7 +21,7 @@ You can choose to enable the following options:
 
 1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](/docs/tagoio/tagorun/getting-started/user-management) module.
 2. **Immediately delete user account** – you can consent to TagoIO to process the request and immediately delete the user account.
-3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](/docs/tagoio/analysis/) and our [SDK](/docs/tagoio/sdk/).
+3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](/docs/tagoio/analysis/) and our [SDK](/docs/tagoio/analysis/sdk/).
 
 :::note
 

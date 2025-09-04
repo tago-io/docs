@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and look for insights. You can 
 
 ![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
 
-This widget also accepts features such as [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

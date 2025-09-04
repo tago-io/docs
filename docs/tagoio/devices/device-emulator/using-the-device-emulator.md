@@ -17,7 +17,7 @@ You can send payloads in different formats, including:
 - Standard JSON (recommended)
 - Raw payloads (for custom data structures, e.g., CSV)
 
-If you send raw data or any format other than JSON, you must create a [Payload parser](/docs/tagoio/payload-parser/building-your-own-parser) to convert the output into the JSON format that TagoIO accepts.
+If you send raw data or any format other than JSON, you must create a [Payload parser](/docs/tagoio/devices/payload-parser/building-your-own-parser) to convert the output into the JSON format that TagoIO accepts.
 
 ## Example JSON payload
 
@@ -39,5 +39,5 @@ Below is a simple JSON example you can use in the Emulator payload editor:
 ## Notes and references
 
 - Access the emulator from: [Devices](/docs/tagoio/devices/) → select your device → Emulator tab.
-- If you need to convert non‑JSON payloads, see the [Payload parser](/docs/tagoio/payload-parser/building-your-own-parser) documentation for instructions on creating parsers that output JSON for TagoIO.
+- If you need to convert non‑JSON payloads, see the [Payload parser](/docs/tagoio/devices/payload-parser/building-your-own-parser) documentation for instructions on creating parsers that output JSON for TagoIO.
 - You can also use Functions and Timer to send data automatically to your devices.

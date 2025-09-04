@@ -25,7 +25,7 @@ TagoIO provides network integrations fully hosted in different regions. Based on
 
 **For example, use everynet.middleware.us-e1.tago.io for Everynet network in the USA.**
 
-**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](/docs/tagoio/services/data-input-service) operations. Network operations themselves do not generate any charges.
+**Network usage is free for all users.** When receiving data from a network, costs are only incurred for [Data Input](/docs/tagoio/profiles/services/data-input-service) operations. Network operations themselves do not generate any charges.
 
 ## Available Network Integrations
 

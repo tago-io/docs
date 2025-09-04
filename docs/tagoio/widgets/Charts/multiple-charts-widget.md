@@ -9,7 +9,7 @@ When using multiple charts widget, each variable produces a different chart. In 
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 

@@ -15,7 +15,7 @@ Our [TagoIO API documentation](/docs/tagoio/api/) offers comprehensive instructi
 
 ## Adding devices
 
-Devices are connected to TagoIO using [Connectors](/docs/tagoio/payload-parser/connector/connector-overview), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started/) article.
+Devices are connected to TagoIO using [Connectors](/docs/tagoio/devices/payload-parser/connector/connector-overview), which act as a bridge between TagoIO and external networks to transmit and receive data. To follow a step‑by‑step tutorial on how to add a device, see the [Getting Started](/docs/tagoio/getting-started/) article.
 
 
 ## Device type and data storage
@@ -40,7 +40,7 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 
 - **General Information tab**: shows the device’s name, network it uses to send data, and the connector used to decode the data.
 - Manage the **Device Token** and **Serial number** by generating or deleting them.
-- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](/docs/tagoio/services/data-input-service) and [Output](/docs/tagoio/services/data-output-service).  
+- View usage‑history statistics for the specific device – useful for visibility and control over your [Data Input](/docs/tagoio/profiles/services/data-input-service) and [Output](/docs/tagoio/profiles/services/data-output-service).  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deactivating devices
@@ -51,12 +51,12 @@ Once you create a device, it will store all the data sent by your sensors. Durin
 
 ## Inspecting your connection
 
-- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/docs/tagoio/payload-parser/) and monitoring traffic to and from your device.
+- Use the **Live Inspector** tool by accessing its respective tab on your device’s page. It is useful for debugging [parser scripts](/docs/tagoio/devices/payload-parser/) and monitoring traffic to and from your device.
 
 ## Customizing payload parser
 
 - Run your own parser by activating the script console in the **Payload Parser** tab inside your device’s page.
-- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/docs/tagoio/payload-parser/connector/connector-overview).
+- You can also create your own connector if you need to use the same payload parser for several devices. Read more about [creating a Connector](/docs/tagoio/devices/payload-parser/connector/connector-overview).
 
 ## Emulating data sending
 
@@ -68,8 +68,8 @@ Set device parameters in the **Configuration Parameters** tab. These can be used
 
 ## Setting rate limits for your devices
 
-- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/api/rate-limits-hard-limits)**.
-- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](/docs/tagoio/services/data-input-service) or [Output](/docs/tagoio/services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
+- When sending data to TagoIO, you will have a limit on the number of requests that can be made during a certain time period – see **[Rate Limits (Hard Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits)**.
+- You can set custom request rate limits for your device to protect it from malfunctioning and using too much [Data Input](/docs/tagoio/profiles/services/data-input-service) or [Output](/docs/tagoio/profiles/services/data-output-service), or to avoid a single device from sending too many requests and reaching the hard limit for requests of your account, which would block other devices from sending or receiving data for a whole minute.  
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deleting devices

@@ -43,6 +43,6 @@ Also, you can create [notifications](/docs/tagoio/getting-started/notification) 
 
 :::tip
 
-Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](/docs/tagoio/payload-parser/) in your device if necessary.
+Depending on your type of device, a Parser may be automatically added. You may want to edit the [parse function](/docs/tagoio/devices/payload-parser/) in your device if necessary.
 
 :::

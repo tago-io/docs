@@ -15,7 +15,7 @@ File storage is commonly used to send and receive files from devices, store data
 
 To use the files via **Admin**, go to *Files* in the left menu. From there you can see and manage all the files and folders that are stored on your account, as well as upload new files.
 
-> Developers can use our [SDK](/docs/tagoio/sdk/) to store and manage files using their applications, upload files from devices, and more.
+> Developers can use our [SDK](/docs/tagoio/analysis/sdk/) to store and manage files using their applications, upload files from devices, and more.
 
 ### Features
 

@@ -22,7 +22,7 @@ Learn how to use the relay here: [tago-io/mqtt-relay: TagoIO | MQTT Relay](https
 ### Data Flow
 1. **MQTT Broker Connection** – The relay connects to your MQTT broker and subscribes to predefined topics.  
 2. **Data Redirection** – Incoming data on these topics is forwarded to TagoIO [Devices](/docs/tagoio/devices/).  
-3. **Network Integration** – The relay uses the Integration Network and [Connector](/docs/tagoio/payload-parser/connector/connector-overview) to process the payload.  
+3. **Network Integration** – The relay uses the Integration Network and [Connector](/docs/tagoio/devices/payload-parser/connector/connector-overview) to process the payload.  
 4. **Device Identification** – A Payload Parser exports a serial that TagoIO uses to store the information in the correct device within your [Profile](/docs/tagoio/profiles/).
 
 ## Customization

@@ -9,7 +9,7 @@ Rate limits apply to a wide range of interactions within the platform, including
 
 :::note
 
-Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](/docs/tagoio/services/) that are reset monthly. You still need to make sure you have enough resources to run your application.
+Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](/docs/tagoio/profiles/services/) that are reset monthly. You still need to make sure you have enough resources to run your application.
 
 :::
 

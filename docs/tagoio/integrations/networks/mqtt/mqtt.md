@@ -32,7 +32,7 @@ For example, a temperature sensor might publish a new value to the topic `temper
 
 ## Connection
 
-To connect to our broker, use the following details. Note that there is a limit on the number of connections, publications, and subscriptions you can make, enforced based on your account plan. For more information, read about [Rate Limits (Hard Limits)](/docs/tagoio/api/rate-limits-hard-limits).
+To connect to our broker, use the following details. Note that there is a limit on the number of connections, publications, and subscriptions you can make, enforced based on your account plan. For more information, read about [Rate Limits (Hard Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits).
 
 > **Host:** `mqtt.tago.io`  
 > **TCP/IP port:** 1883  
@@ -52,7 +52,7 @@ When you first send data through MQTT to your device, you’ll be able to visual
 
 From this point, you need to create an [Action](/docs/tagoio/actions/) with trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you should see the data being stored in the Live Inspector.
 
-If you don’t send the data using the [TagoIO data format](/docs/tagoio/api/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](/docs/tagoio/payload-parser/).
+If you don’t send the data using the [TagoIO data format](/docs/tagoio/devices/sending-data), you’ll need to normalize your data and change it to the correct format. Check out our documentation on how to use a [Payload Parser](/docs/tagoio/devices/payload-parser/).
 
 ## More Resources
 

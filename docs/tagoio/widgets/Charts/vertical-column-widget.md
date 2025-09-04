@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and gain insights. The Vertical
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
-This widget also supports features such as [metadata](/docs/tagoio/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also supports features such as [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 
 ## 1. 'Data From' Field

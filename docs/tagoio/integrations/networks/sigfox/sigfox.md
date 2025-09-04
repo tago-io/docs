@@ -91,7 +91,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
 
 3. **Add Device Support via Connectors (If Necessary)**  
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
-   - For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/payload-parser/connector/connector-overview).
+   - For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview).
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
@@ -106,4 +106,4 @@ For detailed instructions on adding devices, visit the [Adding Devices](/docs/ta
 
 Information about Downlink can be found at the [Sigfox - Downlink](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink) documentation.
 
-You also can [create your own parse scripts](/docs/tagoio/payload-parser/building-your-own-parser) to process variables from the payload.
+You also can [create your own parse scripts](/docs/tagoio/devices/payload-parser/building-your-own-parser) to process variables from the payload.

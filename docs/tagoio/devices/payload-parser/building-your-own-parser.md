@@ -20,7 +20,7 @@ We provide three tutorials to help you understand how the Payload Parser works:
 - [LoRaWAN/Sigfox Payload Parser Tutorial](https://tagoio.discourse.group/t/how-to-build-a-lorawan-sigfox-payload-parser/843)
 - [MQTT Payload Parser Tutorial](https://tagoio.discourse.group/t/how-to-build-an-mqtt-payload-parser/1032)
 
-Learn more about the overall concept in the [Payload Parser Overview](/docs/tagoio/payload-parser/).
+Learn more about the overall concept in the [Payload Parser Overview](/docs/tagoio/devices/payload-parser/).
 
 For a step-by-step visual guide to payload parsing, watch this video:
 

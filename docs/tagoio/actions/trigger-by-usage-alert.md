@@ -9,15 +9,15 @@ The “Trigger by Usage Alert” feature lets you execute an Action when a speci
 
 | Resources | Services |
 |---|---|
-| [Access Management](/docs/tagoio/tagorun/access-management/) | [Input](/docs/tagoio/services/data-input-service) |
-| [Actions](/docs/tagoio/actions/) | [Output](/docs/tagoio/services/data-output-service) |
+| [Access Management](/docs/tagoio/tagorun/access-management/) | [Input](/docs/tagoio/profiles/services/data-input-service) |
+| [Actions](/docs/tagoio/actions/) | [Output](/docs/tagoio/profiles/services/data-output-service) |
 | [TCore](/docs/tagocore/) | [Analysis](/docs/tagoio/analysis/) |
-| [Device](/docs/tagoio/devices/) | [Data Records](/docs/tagoio/services/data-records) |
-| [Team Members](/docs/tagoio/profiles/team-management-sharing-your-profile) | [SMS](/docs/tagoio/services/sms-service) |
-| [Dashboards](/docs/tagoio/dashboards/) | [Emails](/docs/tagoio/services/e-mail-service) |
-| [Analysis](/docs/tagoio/analysis/) | [Run Users](/docs/tagoio/services/end-users-service) |
-|  | [Push Notifications](/docs/tagoio/services/notification-service) |
-|  | [File Storage](/docs/tagoio/services/file-storage-service) |
+| [Device](/docs/tagoio/devices/) | [Data Records](/docs/tagoio/profiles/services/data-records) |
+| [Team Members](/docs/tagoio/profiles/team-management-sharing-your-profile) | [SMS](/docs/tagoio/profiles/services/sms-service) |
+| [Dashboards](/docs/tagoio/dashboards/) | [Emails](/docs/tagoio/profiles/services/e-mail-service) |
+| [Analysis](/docs/tagoio/analysis/) | [Run Users](/docs/tagoio/profiles/services/end-users-service) |
+|  | [Push Notifications](/docs/tagoio/profiles/services/notification-service) |
+|  | [File Storage](/docs/tagoio/profiles/services/file-storage-service) |
 
 For example, you can configure an Action to trigger when Analysis usage reaches a specified threshold. Once that threshold is met, a notification can be sent to the profile administrator.
 

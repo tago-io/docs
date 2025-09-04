@@ -15,7 +15,7 @@ TagoIO offers three account plans that allow you to use the platform's tools and
 
 ## Service limits
 
-A certain limit of [Services](/docs/tagoio/services/) are already included in your plan.
+A certain limit of [Services](/docs/tagoio/profiles/services/) are already included in your plan.
 
 > For more details about the features and pricing of each plan, access our [Pricing](https://tago.io/pricing) page.
 

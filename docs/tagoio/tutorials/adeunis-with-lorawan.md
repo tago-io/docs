@@ -11,7 +11,7 @@ See [Analysis](/docs/tagoio/analysis/) for working with and visualizing your inc
 
 :::tip
 
-You can check whether a [parser](/docs/tagoio/payload-parser/) script was added to your device under the tab **Payload Parser** in your device page.
+You can check whether a [parser](/docs/tagoio/devices/payload-parser/) script was added to your device under the tab **Payload Parser** in your device page.
 
 :::
 
