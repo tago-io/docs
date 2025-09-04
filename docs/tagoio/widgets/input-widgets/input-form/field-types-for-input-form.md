@@ -18,7 +18,7 @@ This field displays a text input integrated with Google Maps to search for an ad
 
 > For the **Input Form Widget**, it is possible to enable a map under the input.
 
-![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-2.gif)
+![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-3.gif)
 
 ## 3. Calendar
 It will display a calendar field that allows the user to enter a date, or a date range, as a value through a calendar popup. When receiving the user answer in your **device**, you will be able to get it in the value parameter and the metadata parameter. The latter one will be in date string format as `start_date` and `end_date`.
