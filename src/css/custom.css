@@ -81,7 +81,7 @@ html[data-theme="dark"] {
   --ifm-menu-color-background-active: #ffffff12;
   --ifm-menu-link-sublist-icon-filter: invert(100%);
   --sidebar-border-c: #2f2f2f;
-  --ifm-hover-overlay: #ffffff0d; 
+  --ifm-hover-overlay: #ffffff0d;
   --ifm-link-color: var(--c-blue-70);
   --ifm-link-hover-color: #4d8dffcc;
   --sidebar-category-c: #fff;
@@ -636,6 +636,29 @@ html[data-theme="dark"] .changelog-timeline__item a {
 }
 html[data-theme="dark"] .changelog-timeline__item a:hover {
   color: #ffffff !important;
+}
+
+/* Breadcrumbs – dark mode accessibility */
+html[data-theme="dark"] {
+  /* Ensure active crumb has adequate contrast without implying interactivity */
+  --ifm-breadcrumb-color-active: var(--ifm-font-color-base);
+  --ifm-breadcrumb-item-background-active: #ffffff14;
+}
+/* Only real links should look interactive */
+html[data-theme="dark"] a.breadcrumbs__link {
+  color: var(--ifm-font-color-base);
+}
+html[data-theme="dark"] a.breadcrumbs__link:hover,
+html[data-theme="dark"] a.breadcrumbs__link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1.5px;
+  background: var(--ifm-breadcrumb-item-background-active);
+}
+/* Current location (non-link) stays neutral, not underlined */
+html[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
 }
 
 /* Year title */
