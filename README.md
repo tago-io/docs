@@ -44,6 +44,9 @@ npm run biome:fix   # lint + format (write)
   - docs_imagem/ – Local images used by docs (organized by section)
   - img/ – Site images (logos, social cards, icons)
 - changelog/ – Changelog posts (surfaced via the Blog plugin at /changelog)
+- cdk/ – AWS CDK infrastructure for static site hosting
+  - cdk.ts – CDK stack definition (S3 + CloudFront + redirects)
+  - redirect-function.js – CloudFront edge function for URL mappings
 - src/ – Docusaurus site code
   - components/
     - youtube.tsx – YouTube MDX component wrapper
@@ -87,9 +90,27 @@ Embeds
 
 ## Deployment
 
+### GitHub Pages (Default)
 GitHub Actions deploys to GitHub Pages on pushes to main
 - Workflow: .github/workflows/deploy.yml
 - Steps: install → build → upload Pages artifact → deploy
+
+### AWS Infrastructure (Alternative)
+AWS CDK deployment for production hosting with custom domain and redirects
+```bash
+npm run cdk:deploy
+```
+- Creates S3 bucket for static hosting
+- Sets up CloudFront distribution with custom domain support
+- Configures edge redirects for legacy help.tago.io URLs
+- Outputs CloudFront URL for access
+
+CDK Commands
+```bash
+npm run cdk:build   # Compile CDK TypeScript
+npm run cdk:watch   # Watch mode for development
+npm run cdk:deploy  # Full deployment (build + deploy)
+```
 
 Site URL and base path
 - docusaurus.config.ts
@@ -111,6 +132,9 @@ Search (Algolia)
 - npm run swizzle – Customize theme components
 - npm run typecheck – TypeScript typecheck
 - npm run biome – Run Biome checks (lint/format)
+- npm run cdk:build – Compile CDK TypeScript
+- npm run cdk:watch – Watch CDK files for changes
+- npm run cdk:deploy – Deploy to AWS (build docs + CDK + deploy)
 
 ## Contributing
 - Add or update Markdown files under docs/

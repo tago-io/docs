@@ -38,6 +38,25 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
   - YouTube component available as `<YouTube videoId="..." />`
   - Mermaid diagrams available via `<Mermaid chart={`...`} />` (renders client-side using mermaid)
 
+### AWS CDK Infrastructure
+- CDK Stack: cdk/cdk.ts - AWS infrastructure as code for static site hosting
+  - S3 bucket for static website hosting (auto-delete on destroy)
+  - CloudFront distribution with Origin Access Identity for secure S3 access
+  - CloudFront Function for URL redirects (legacy help.tago.io → new docs paths)
+  - Automatic deployment of built Docusaurus site to S3 with cache invalidation
+- Redirect Function: cdk/redirect-function.js - CloudFront edge function for URL mappings
+  - Maps 250+ legacy help.tago.io URLs to new documentation paths
+  - Performs 301 redirects for SEO preservation
+  - Uses url-mappings.json data embedded in the function
+- CDK Scripts (package.json):
+  - `npm run cdk:build` - Compile CDK TypeScript
+  - `npm run cdk:watch` - Watch mode for CDK development
+  - `npm run cdk:deploy` - Full deployment: build docs → build CDK → deploy to AWS
+- CDK Dependencies (devDependencies):
+  - aws-cdk-lib: AWS CDK library v2.149.0
+  - constructs: CDK constructs framework
+  - source-map-support: Enhanced error reporting
+
 ### Automation & Scripts (local-only under ./infra)
 - Content fetching
   - fetch_original_markdown.js – Fetch original articles via Jina Reader; saves to infra/original_markdown/
@@ -114,6 +133,8 @@ Usage pattern
   - Review reports: deduplication-results-*.json, duplicate-analysis-*.json
 - Run the site
   - npm run start | npm run build | npm run serve
+- Deploy infrastructure
+  - npm run cdk:deploy (builds docs + deploys to AWS)
 
 ## Code style & Biome rules (for agents)
 - Always run Biome before committing
