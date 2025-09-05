@@ -6,7 +6,11 @@ tags: ["tagoio"]
 ---
 The field defines the relationship between the user-inputted data and the Device data for certain widgets.
 
-> Fields can be of many types, depending on the widget they are used with.
+:::info
+
+Fields can be of many types, depending on the widget they are used with.
+
+:::
 
 ## 1. Text
 A typical text input will appear. The value saved for this field will be whatever the user typed into it.
@@ -101,6 +105,10 @@ It displays a field to submit multiple emails, separated by a comma.
 It will display a dropdown using values contained in your Entities. You are able to select which field from your entity should be displayed in the dropdown, as well as which field from your entity should be submitted when pressing the Submit button.
 
 The difference between the Entity and Entity Multiple is that the last one allows you to select multiple values in the dropdown, instead of just one.
+
+<div align="center">
+![Email example](/docs_imagem/tagoio/input_form_entity.gif)
+</div>
 
 
 ## 11. File Upload
