@@ -137,6 +137,10 @@ It will display a dropdown field, with options that change dynamically based on 
 ## 13. Image / Video Select
 Whenever you need to choose a value by using images instead of entering text, the image Field is the best option in form widgets. By entering media URLs into the options, the field will be filled with these images or videos and you will be able to select one or many of them. Learn more about Adding Image Selector field on Forms.
 
+<div align="center">
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-13.gif)
+</div>
+
 ## 14. Incremental Step
 It will display a step button to select a numerical value.
 
