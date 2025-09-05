@@ -108,8 +108,6 @@ It displays a field to submit multiple emails, separated by a comma.
 ![Email example](/docs_imagem/tagoio/field-types-for-input-form-10.gif)
 </div>
 
-> Field #1
-> enter one or more email addresses
 
 ## 10. Entity & Entity Multiple
 It will display a dropdown using values contained in your Entities. You are able to select which field from your entity should be displayed in the dropdown, as well as which field from your entity should be submitted when pressing the Submit button.
