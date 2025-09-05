@@ -81,6 +81,7 @@ You can customize the devices shown by the list through tags. Configuring tags w
 
 :::
 
+
 <div align="center">
 ![Device example](/docs_imagem/tagoio/field-types-for-input-form-7.gif)
 </div>
