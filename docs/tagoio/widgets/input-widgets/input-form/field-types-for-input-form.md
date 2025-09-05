@@ -61,7 +61,6 @@ A traditional checkbox will appear and the value will be set as `true` (checked)
 ![Checkbox input example](/docs_imagem/tagoio/field-types-for-input-form-5.png)
 </div>
 
-> ☑ Alert the user when new data arrives?
 
 ## 5. Clock set
 It will display a step button to select the hour range without the date.
