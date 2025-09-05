@@ -39,7 +39,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: "TagoIO Platform",
       imgSrc: "/img/tagoio-icon-original.png",
-      href: "/docs/tagoio",
+      href: "/docs/tagoio/getting-started",
       description: (
         <>
           The core IoT cloud platform for connecting devices, visualizing data,
@@ -54,7 +54,7 @@ export default function HomepageFeatures(): ReactNode {
     {
       title: "TagoRUN",
       imgSrc: "/img/tagorun-icon-original.png",
-      href: "/docs/tagorun",
+      href: "/docs/tagoio/tagorun",
       description: (
         <>
           Deploy custom IoT applications to end-users with full control over
