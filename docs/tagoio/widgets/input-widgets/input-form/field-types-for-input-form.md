@@ -103,7 +103,7 @@ It will display a dropdown using values contained in your Entities. You are able
 The difference between the Entity and Entity Multiple is that the last one allows you to select multiple values in the dropdown, instead of just one.
 
 <div align="center">
-![Email example](/docs_imagem/tagoio/field-types-for-input-form-11.gif)
+![Email example](/docs_imagem/tagoio/field-types-for-input-form-12.gif)
 </div>
 
 ## 11. File Upload
@@ -131,21 +131,21 @@ The variable that receives this data keeps the file name in the value parameter,
 It will display a dropdown field, with options that change dynamically based on other fields. In the example below, the Food field changes based on the Food Type field. Learn more about **Filtered Variables**
 
 <div align="center">
-![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-12.gif)
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-13.gif)
 </div>
 
 ## 13. Image / Video Select
 Whenever you need to choose a value by using images instead of entering text, the image Field is the best option in form widgets. By entering media URLs into the options, the field will be filled with these images or videos and you will be able to select one or many of them. Learn more about Adding Image Selector field on Forms.
 
 <div align="center">
-![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-13.gif)
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-14.gif)
 </div>
 
 ## 14. Incremental Step
 It will display a step button to select a numerical value.
 
 <div align="center">
-![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-14.gif)
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-15.gif)
 </div>
 
 
@@ -153,7 +153,7 @@ It will display a step button to select a numerical value.
 A traditional Radio input will appear. Once selected, you will be able to define its options with their labels and values. The value of the field will be one of the selected options.
 
 <div align="center">
-![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-15.gif)
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-16.gif)
 </div>
 
 ## 16. Validation
