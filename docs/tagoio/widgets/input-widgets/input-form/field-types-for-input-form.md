@@ -144,10 +144,17 @@ Whenever you need to choose a value by using images instead of entering text, th
 ## 14. Incremental Step
 It will display a step button to select a numerical value.
 
-> + Field #1
+<div align="center">
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-14.gif)
+</div>
+
 
 ## 15. Radio
 A traditional Radio input will appear. Once selected, you will be able to define its options with their labels and values. The value of the field will be one of the selected options.
+
+<div align="center">
+![Filtered Variables example](/docs_imagem/tagoio/field-types-for-input-form-15.gif)
+</div>
 
 ## 16. Validation
 This field type does not represent a form input value. Instead, the variable assigned to this field expects to receive text data that displays as a message above the form. The validation message supports four predefined types: warning, info, danger, and success. You can specify the message type by including a type property in the metadata object.
