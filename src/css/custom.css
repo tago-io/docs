@@ -81,7 +81,7 @@ html[data-theme="dark"] {
   --ifm-menu-color-background-active: #ffffff12;
   --ifm-menu-link-sublist-icon-filter: invert(100%);
   --sidebar-border-c: #2f2f2f;
-  --ifm-hover-overlay: #ffffff0d;
+  --ifm-hover-overlay: #ffffff0d; 
   --ifm-link-color: var(--c-blue-70);
   --ifm-link-hover-color: #4d8dffcc;
   --sidebar-category-c: #fff;
@@ -615,7 +615,7 @@ code {
   text-align: center;
 }
 .changelog-timeline__item a {
-  color: var(--c-indigo-80) !important;
+  color: var(--c-indigo-90) !important;
   text-decoration: none;
   opacity: 1;
   font-weight: 500;
@@ -776,15 +776,29 @@ html[data-theme="dark"] .timeline--current-year:before {
 }
 
 /* Dark mode: make documentation links more distinguishable */
-html[data-theme="dark"] .markdown a {
-  color: var(--c-blue-70);
+html[data-theme="dark"] .markdown a,
+html[data-theme="dark"] .theme-doc-markdown a {
+  color: var(--ifm-font-color-base) !important;
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1.5px;
 }
-html[data-theme="dark"] .markdown a:hover {
-  color: #639cff;
+html[data-theme="dark"] .markdown a:hover,
+html[data-theme="dark"] .theme-doc-markdown a:hover {
+  color: #ffffff !important;
 }
+
+/* Prefer variable override so built-in link styles pick up neutral color */
+html[data-theme="dark"] .theme-doc-markdown {
+  --ifm-link-color: var(--ifm-font-color-base);
+  --ifm-link-hover-color: #ffffff;
+}
+/* Fallback: set for doc pages when container classes differ */
+html.docs-doc-page[data-theme="dark"] {
+  --ifm-link-color: var(--ifm-font-color-base);
+  --ifm-link-hover-color: #ffffff;
+}
+
 /* Make whole card clickable affordance */
 .changelog-card {
   text-decoration: none;

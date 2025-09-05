@@ -21,6 +21,10 @@ function Feature({ title, imgSrc, href, description }: FeatureItem) {
             <img
               src={useBaseUrl(imgSrc)}
               alt={title}
+              width={80}
+              height={80}
+              loading="lazy"
+              decoding="async"
               className={styles.featureImg}
             />
           </div>
