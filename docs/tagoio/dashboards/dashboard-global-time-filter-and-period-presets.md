@@ -21,24 +21,3 @@ You can set period presets to allow users to easily change the filter range by s
 
 ### Disabling the Dashboard Period Preset for a single widget
 If you want to disable the Dashboard Period Preset for a specific widget, enable the **Override Dashboard Presets** option for widgets that have their own preset period (e.g., Line Chart, Area Chart, Map).
-
-## Example UI
-<!-- Image placeholder removed for build -->
-
-## On this page
-- How to apply global time-filters to your dashboards — See [Dashboard Overview](../dashboards/dashboard-overview)
-- Applying a maximum period range to your date picker — See [Dashboard Overview](../dashboards/dashboard-overview)
-- Setting period presets — See [Dashboard Overview](../dashboards/dashboard-overview)
-- Disabling the filter for specific widgets — See [Widget Cache system](../widgets/widget-cache-system)
-
-## Related Dashboards documentation
-- [Dashboard Overview](../dashboards/dashboard-overview)  
-- [Blueprint Dashboard](../dashboards/blueprint-dashboard)  
-- [Data Output for dashboards](/tagoio/services/data-output-for-dashboards)  
-- [Creating Dashboard Tabs](../dashboards/creating-dashboard-tabs)  
-- [Dashboard icons](../dashboards/dashboard-icons)  
-- [Dashboard global time filter and period presets](#) (this article)
-- [Grouping Dashboards](../dashboards/grouping-dashboards)  
-- [Sharing Dashboards](../dashboards/sharing-dashboards)  
-- [Distributing Dashboards](../dashboards/distributing-dashboards)  
-- [Restoring your Dashboard to a previous version](/tagoio/dashboards/restoring-your-dashboard-to-a-previous-version)

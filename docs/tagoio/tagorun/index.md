@@ -3,7 +3,7 @@ title: "TagoRun - Branding and Deploying Applications"
 description: "This article explains how to use the Run module to deploy a customizable IoT platform (RUN) for end users, and outlines deployment and branding options, including mobile app considerations."
 tags: ["tagorun"]
 ---
-Use the Run module to deploy your own IoT platform for your end-users (see [Run module](link-to-run-module)).
+Use the [Run](https://admin.tago.io/run) module to deploy your own IoT platform for your end-users.
 
 ![TagoRUN dashboard illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
 
@@ -32,34 +32,15 @@ Your customers will engage with your brand as they sign up and access the applic
 8. **Geolocation and Wi‑Fi setup**  
 9. **Google Analytics and CRM integrations**
 
-> * Buy the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+:::tip
+
+Unlock the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+
+:::
+
 
 ## How it works with mobile App
 
-Your users can download the free [TagoRUN Mobile App](link-to-tagorun-mobile-app). They will simply need to enter your Run domain the first time they log in. For example, if your Run is `mycompany.run.tago.io`, they will enter “mycompany”, and from there the mobile App will present the colors, logo, and buttons that you saved in the Run configuration.
+Your users can download the free [TagoRUN Mobile App](/docs/tagoio/tagorun/getting-started/tagorun-mobile-app). They will simply need to enter your Run domain the first time they log in. For example, if your Run is `mycompany.run.tago.io`, they will enter “mycompany”, and from there the mobile App will present the colors, logo, and buttons that you saved in the Run configuration.
 
-Learn also about other add‑ons.
-
-## On this page
-
-- Deploying
-- Branding
-- How it works with mobile App
-
-## Getting Started (related documentation)
-
-- [Branding and Deploying Applications](link-to-branding-and-deploying-applications)
-- [TagoRun](link-to-tagorun)
-- [Run Theme](../tagoio/run-theme)
-- [Sidebar](../tagoio/sidebar)
-- [Navigation bar](../tagoio/navigation-bar)
-- [Custom Settings](../tagoio/custom-settings)
-- [TagoRUN Mobile App](link-to-tagorun-mobile-app)
-- [User Management](link-to-user-management)
-- [Notifications for Users](link-to-notifications-for-users)
-- [Security and Protection for RUN users](../tagoio/account/security-and-protection-for-run-users)
-- Show More
-
-## Related Articles
-
-- [Navigation bar](../tagoio/navigation-bar)
+Learn also about other [Add‑on](/docs/tagoio/addons/).

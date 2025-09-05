@@ -5,32 +5,34 @@ tags: ["tagoio"]
 ---
 Custom Settings is a feature that lets you create unique visualization preferences for your end-users that extend beyond TagoRUN's default settings. After you configure custom settings, they will appear in your end-users' Account Settings.
 
-With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](formula) to ensure displayed data matches user expectations.
+With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](/docs/tagoio/widgets/general/formula) to ensure displayed data matches user expectations.
 
-## Where these settings appear
-Custom Settings are visible to end-users in their Account Settings under the Visualization Preferences tab. The example below highlights the Preferences area where unit choices (Temperature Unit, Distance Unit) are exposed to the user.
+![Custom Settings on TagoRun portal](/docs_imagem/tagoio/tagorun_customsettings.png)
 
-<!-- Image placeholder removed for build -->
+## How it works
+To create your Custom Settings, first navigate to your [Run](https://admin.tago.io/run) and click on the Custom Settings tab. From there, you can configure the following fields:
 
-## Example fields shown in Visualization Preferences
-- Language
-  - Example: English (United States)
-- Dashboard
-  - Show last updated at: Widget menu (example selection)
-- Decimal separator
-  - Options shown: Comma, Dot (Dot selected in example)
-  - Example formatting: 1,234.56
-- Date format
-  - Example shown: MM/DD/YYYY
-- Time format
-  - Options shown: 24-Hour, 12-Hour (12-Hour selected in example)
-  - Example formatting: 10/15/2019 05:50 PM
-- Preferences (highlighted)
-  - Temperature Unit
-    - Example selection: Celsius
-  - Distance Unit
-    - Example selection: Meter
 
-## Notes
-- After you set up Custom Settings, they are available to end-users in their Account Settings and affect how data is displayed across TagoRUN interfaces.
-- Consider pairing Custom Settings with [Dynamic Formulas](formula) when you need data units or formats to be recalculated or reformatted dynamically.
+**1. Name:** the name of the field that will be displayed for your end-users.
+
+**2. Type:** determines the type of field that the user will interact with.
+
+**3. Tooltip:** the text that will display when the user hovers over the field.
+
+**4. Required:** if you set the field as required, the user will not be able to save without selecting a preference.
+
+**5. Field Options:** allows you to specify the options that the user can select. You must define a Value to be used with Dynamic Formulas and a Label that will be displayed for your end-users. Additionally, you can set a value as Default, which will be applied to new users. At least one option must be set as the default.
+
+Keep in mind that the Values set in the Field Options are supposed to be unique since they are used as identifiers.
+
+After saving the options for a dropdown field, it's essential not to change the Value from Field Options. If you need to modify the Value or remove an option, you should update your users' preferences using the [SDK](/docs/tagoio/analysis/sdk/) or an [Analysis](/docs/tagoio/analysis/).
+
+Keep in mind that editing the options for a field will not automatically update the preferences that your users have already saved.
+
+Once you have created your Custom Fields and deployed your updated RUN, your users can select their preferences by navigating to the Visualization Preferences tab on their Account page.
+
+## Configuring your Custom settings
+
+After setting up your Custom Fields, the next crucial step is to configure your widgets to utilize Dynamic Formulas. This feature allows you to apply formulas to your Custom Fields created through Custom Settings. 
+
+Read more about the [Dynamic Formulas](/docs/tagoio/widgets/general/formula).

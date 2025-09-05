@@ -9,29 +9,33 @@ TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing a
 
 The limits for each resource are determined by your specific plan. The table below shows the limits for each plan.
 
-> **Note:** Most of the limits below are applied per [Profile](/tagoio/account/profiles).
+:::info
+
+Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
+
+:::
 
 | Resource type / Plan | Free | Starter | Scale |
 |---|---:|---:|---:|
-| [Actions](/tagoio/actions/actions) | 5 | 100 | 200 |
-| [Analysis](/tagoio/analysis/analysis-overview) | 5 | 100 | 200 |
-| [Dashboard](/tagoio/dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
-| [Entity](entities/entities) | 5 | 50 | 80 |
-| [Device](/tagoio/devices/devices) | 5 | 100 | 10,000 |
-| [Profile](/tagoio/account/profiles) | 1 / account | 2 / account | 5 / account |
-| [Team Member](/tagoio/account/team-management-sharing-your-profile) | 0 | 1 | 5 |
-| [TagoCore](/tagocore) | 10 | 10 | 10 |
-| [TagoCore Cluster](/tagocore/tagocore-cluster) | 3 | 3 | 3 |
-| [Custom Connector](/tagoio/integrations/connector-overview) | 3 | 20 | 50 |
-| [Custom Network](/tagoio/integrations/creating-a-network-integration) | 1 | 5 | 10 |
-| [Device service authorization](/tagoio/security/authorization) | 10 | 50 | 200 |
-| [Access Management Policies](/tagoio/security/access-management) | 5 | 30 | 100 |
-| [Dictionary & Multi-language](/tagoio/dictionaries) | 2 | 10 | 50 |
+| [Actions](/docs/tagoio/actions/) | 5 | 100 | 200 |
+| [Analysis](/docs/tagoio/analysis/) | 5 | 100 | 200 |
+| [Dashboard](/docs/tagoio/dashboards/creating-dashboard-tabs) | 5 | 100 | 1,000 |
+| [Entity](/docs/tagoio/getting-started/entities) | 5 | 50 | 80 |
+| [Device](/docs/tagoio/devices/) | 5 | 100 | 10,000 |
+| [Profile](/docs/tagoio/profiles) | 1 / account | 2 / account | 5 / account |
+| [Team Member](/docs/tagoio/profiles/team-management-sharing-your-profile) | 0 | 1 | 5 |
+| [TagoCore](https://tagocore.com/) | 10 | 10 | 10 |
+| [TagoCore Cluster](https://tagocore.com/) | 3 | 3 | 3 |
+| [Custom Connector](/docs/tagoio/integrations/) | 3 | 20 | 50 |
+| [Custom Network](/docs/tagoio/integrations/general/creating-a-network-integration) | 1 | 5 | 10 |
+| [Device service authorization](/docs/tagoio/integrations/general/authorization) | 10 | 50 | 200 |
+| [Access Management Policies](/docs/tagoio/tagorun/access-management/) | 5 | 30 | 100 |
+| [Dictionary & Multi-language](/docs/tagoio/tagorun/getting-started/dictionaries) | 2 | 10 | 50 |
 
 If you attempt to add additional resources after reaching your limit, a notification will be shown indicating that you have run out of available slots.
 
-If your requirements exceed these limits, consider upgrading to the **Scale** plan or contacting us through the [Help Center](https://help.tago.io/portal/en/newticket). For more information about our plans and services, check our [Pricing Page](https://tago.io/pricing).
+If your requirements exceed these limits, consider upgrading to the **Scale** plan or contacting us through  support@tago.io. For more information about our plans and services, check our [Pricing Page](https://tago.io/pricing).
 
 ## Monitoring resources across your entire account
 
-You can monitor the amount of resources you have used by accessing the account menu in the top right corner of your Admin page and selecting the **Hard Limits** option.
+You can monitor the amount of resources you have used by accessing the account menu in the top right corner of your Admin page and selecting the **[Hard Limits](https://admin.tago.io/limits/hard)** option.

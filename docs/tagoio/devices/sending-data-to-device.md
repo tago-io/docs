@@ -6,26 +6,7 @@ tags: ["tagoio", "devices"]
 TagoIO supports two-way communication with devices so they can both send and receive data. Below are the primary options for sending data from your application to a device.
 
 ## Methods to send data
-- [Publish to MQTT](../mqtt-publishing-and-subscribing)
-- [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
-- [Create a script](../analysis/creating-analysis) that runs in the Analysis to access an external API
-- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol ([Support Team](https://help.tago.io/portal/en/newticket))
-
-## Notes
-- Use MQTT when you need lightweight, topic-based messaging and real-time updates.
-- Use HTTP endpoints when the device or integration expects RESTful requests or webhooks.
-- Use Analysis scripts when you need to transform, aggregate, or call external APIs before sending data to a device.
-- Contact Support if your device requires a custom protocol or middleware integration that TagoIO does not natively provide.
-
-## See also
-- [Publish to MQTT](../mqtt-publishing-and-subscribing)
-- [Post data to an endpoint using HTTP](https://docs.tago.io/api/#operation/postDataHTTP)
-- [Create a script in Analysis](../analysis/creating-analysis)
-- [Support Team / Custom integrations](https://help.tago.io/portal/en/newticket)
-
-## Related articles
-- [Device data management](/tagoio/devices/device-data-management)
-- [Sending Data](/tagoio/data-management/sending-data)
-- [MQTT - Process data, Publish it and Subscribe to a topic](/tagoio/mqtt-process-data-publish-it-and-subscribe-to-a-topic)
-- [Defining Actions](/tagoio/actions/defining-actions)
-- [Devices](/tagoio/devices/devices)
+- [Publish to MQTT](/docs/tagoio/integrations/networks/mqtt/-publishing-and-subscribing)
+- [Post data to an endpoint using HTTP](https://api.docs.tago.io/#operation/postDataHTTP)
+- [Create a script](/docs/tagoio/analysis/creating-analysis) that runs in the Analysis to access an external API
+- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol Support Team (support@tago.io)

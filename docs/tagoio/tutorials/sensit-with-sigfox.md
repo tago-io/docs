@@ -23,7 +23,7 @@ Sens'it + Sigfox + TagoIO Connectivity Diagram
 
 ## Add the device to TagoIO
 
-1. In TagoIO, go to Devices (see [Devices](../devices/devices) for the Devices section).
+1. In TagoIO, go to Devices (see [Devices](/docs/tagoio/devices/) for the Devices section).
 2. Click on "Add Devices".
 3. Filter the network by "Sigfox" and choose your Sens'it device from the list (select v2 or v3 accordingly).
 4. After adding the device, incoming data will be parsed by TagoIO and become available for widgets and Analysis.
@@ -42,20 +42,16 @@ Every time the device sends data, the parser is executed, the extracted data is 
 
 ## Custom Parsing (v2)
 
-If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](/tagoio/payload-parser/payload-parser) and the Sigfox developer guide for detailed information.
+If you are using Sens'it v2, you may want to edit the **parse function** in your device to extract variables from more modes. Check the complete payload documentation: [Payload Parser](/docs/tagoio/devices/payload-parser/) and the Sigfox developer guide for detailed information.
 
 ## Advanced Features
 
 You can create **notifications** and advanced **scripts** as needed:
-- Notifications: [Notifications](/tagoio/notifications/notification)
-- Scripts / Analysis: [Analysis Overview](/tagoio/analysis/analysis-overview)
+- Notifications: [Notifications](/docs/tagoio/getting-started/notification)
+- Scripts / Analysis: [Analysis Overview](/docs/tagoio/analysis/)
 
 ## Notes
 
 - The integration supports both Sens'it v2 and v3 devices.
 - Ensure your Sigfox devkit is properly activated before registering the device in TagoIO.
-- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](/tagoio/tutorials/sigfox).
-
-References:
-- Sigfox Buy website: https://buy.sigfox.com/
-- Devices (TagoIO): [Devices](../devices/devices)
+- For any specific Sigfox backend configuration or Sigfox Cloud settings, consult Sigfox documentation or the Sigfox Cloud console: [Sigfox](/docs/tagoio/integrations/networks/sigfox).

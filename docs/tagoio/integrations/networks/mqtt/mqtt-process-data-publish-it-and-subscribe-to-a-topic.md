@@ -1,9 +1,15 @@
 ---
-title: "MQTT - Process data, Publish it and Subscribe to a topic"
+title: "Process data, Publish it and Subscribe to a topic"
 description: "This article explains how to process data, publish it to a topic, and subscribe to that topic using MQTT (the tutorial uses the MQTTX client). It also shows how to connect a device to the TagoIO MQTT broker and retrieve the device token."
 tags: ["tagoio"]
 ---
-> Starting on June 1st, TagoIO will no longer provide an MQTT broker to Free accounts. [Read more](https://help.tago.io/portal/en/community/topic/changes-to-our-mqtt-broker-service-availability)
+:::warning
+
+TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
+
+For EU accounts, a public MQTT broker without SLA guarantees is planned for the future. The main purpose of that broker will be proof‑of‑concept testing.
+
+:::
 
 In this tutorial, you will learn how to process data, publish to a topic, and subscribe to it. The tutorial uses the **MQTTX** client throughout.
 
@@ -26,7 +32,11 @@ Open **MQTTX** and create a new connection
 | **Password** | Your device token |
 | **Client ID** | Can be set to any unique identifier |
 
-> The Client Identifier (ClientID) is a required field to connect to the TagoIO MQTT Broker.
+:::warning
+
+The Client Identifier (ClientID) is a required field to connect to the TagoIO MQTT Broker.
+
+:::
 
 ## Subscribing to a topic
 
@@ -37,6 +47,8 @@ Open **MQTTX** and create a new connection
 ## Processing the data
 
 In this step we create an analysis that converts temperature from Fahrenheit to Celsius and publishes it on the topic `sensor/output`. The analysis is triggered whenever a message is received on the topic `sensor/input`.
+
+>**Note**: Replace "DEVICE_ID" with your actual device ID. You can obtain this ID by accessing your device's page and copying it from the URL, for example: https://admin.tago.io/devices/652425f4516e99000a522dce.
 
 ```js
 const { Analysis, Services } = require("@tago-io/sdk");
@@ -87,6 +99,8 @@ module.exports = new Analysis(mqttPushExample);
 
 This analysis requires permission to send MQTT data to the device. Enable this access in the **[Access Management](https://admin.tago.io/am)** module by creating a new **Policy**.
 
+![MQTT Permission](/docs_imagem/tagoio/mqq_permission.png)
+
 **Creating an Action**
 
 1. Go to the **[Actions](https://admin.tago.io/actions)** module and create a new action.
@@ -100,7 +114,8 @@ This analysis requires permission to send MQTT data to the device. Enable this a
 
 Now, whenever a message is published on the topic `sensor/input`, the analysis will run, convert the temperature to Celsius, and publish it to `sensor/output`. You can test this by publishing the value `32` on `sensor/input` using MQTTX; the converted value should appear in the client.
 
-## References and related documentation
+:::tip
 
-- Devices module in Admin panel (see **[Devices](https://admin.tago.io/devices)** in Admin)
-- For internal TagoIO documentation links referenced elsewhere in the article, retain the link text as shown in the original article.
+If you need help with your MQTT connection, request help in our [Community](https://community.tago.io/)!
+
+:::

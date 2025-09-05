@@ -3,9 +3,9 @@ title: "Live Inspector"
 description: "The Live Inspector is a developer tool in TagoIO used to debug parser scripts and monitor device traffic; this article explains how to open and use the Live Inspector from a device page."
 tags: ["tagoio"]
 ---
-The live inspector is a tool for developers to debug [parser scripts](payload-parser/payload-parser) and monitor traffic to and from [devices](/tagoio/devices/devices).
+The live inspector is a tool for developers to debug [parser scripts](payload-parser/) and monitor traffic to and from [devices](/docs/tagoio/devices/).
 
-To access the live inspector, go to the Device section (see [Device](/tagoio/devices/devices) documentation), select the device, and click the Live Inspector tab.
+To access the live inspector, go to the [Device](https://admin.tago.io/devices), select the device, and click the Live Inspector tab.
 
 ![Device page showing the Live Inspector tab highlighted](/docs_imagem/tagoio/live-inspector-2.png)
 
@@ -24,5 +24,3 @@ Start the live inspector by clicking the green arrow on the right of the Live In
   - Log/list area showing incoming device traffic and connection details.
 - All traffic to and from the device is monitored in real time; each package sent is recorded and displayed in the Live Inspector.
 - The inspector stops automatically when you leave the page or close the browser; it does not run in the background after the window has been closed.
-
-Refer to the Parser Scripts and Devices documentation for further details on debugging and message parsing.

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 This tutorial provides a step-by-step guide to integrate The Things Network (TTN) with the TagoIO platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 
-> If you're trying to integrate TTI or TTN v3, use our [TTI integration](../tutorials/tti-integration) instructions.
+> If you're trying to integrate TTI or TTN v3, use our [TTI integration](https://tagoio.discourse.group/t/how-to-integrate-tagoio-with-ttn-v3/1026) instructions.
 
 ![Integration diagram showing LoRaWAN devices, The Things Network, a connector, and TagoIO](/docs_imagem/tagoio/the-things-network-lorawan-2.png)
 
@@ -16,7 +16,7 @@ Before you begin, ensure you have the following:
 - TTN v3 account — If you don't have one, [register here](https://www.thethingsnetwork.org/get-started).
 - LoRaWAN device — Ensure your device is connected to TTN and transmitting data. If you need help doing that, watch this [TTN video tutorial](https://www.youtube.com/watch?v=duwUwXt-hs8).
 
----
+
 
 ## Step 1: Create Authorization in TagoIO
 
@@ -31,7 +31,7 @@ Before you begin, ensure you have the following:
 ### Copy the Authorization Token
 After creation, copy the authorization token. You will need this in later steps.
 
----
+
 
 ## Step 2: Configure TTN Integration
 
@@ -46,13 +46,13 @@ After creation, copy the authorization token. You will need this in later steps.
 |-------|-------------|
 | **Webhook ID** | Enter a unique identifier (e.g., `tagoio-integration`). |
 | **Webhook Format** | JSON |
-| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/tagoio/integrations/network-integration). |
+| **Base URL** | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/docs/tagoio/integrations/). |
 | **Additional Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`. |
 
 ![Image 4](/docs_imagem/tagoio/external-eae39401.png)
 
----
+
 
 ## Step 3: Add Your Device to TagoIO
 
@@ -68,9 +68,9 @@ After creation, copy the authorization token. You will need this in later steps.
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
 - For more information on available connectors and how to use them, refer to the **Connector Overview**.
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
----
+
 
 ## Step 4: Finalize Setup
 
@@ -79,6 +79,6 @@ For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the Device and open the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.

@@ -3,7 +3,7 @@ title: "Environment Variables"
 description: "This article explains how to configure environment variables for TagoIO Analyses, how they are accessed inside a script, and what each field in the environment variables UI represents."
 tags: ["tagoio"]
 ---
-Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the `context.environment` global object. See [Analysis](/tagoio/analysis/analysis-overview) for more about Analyses.
+Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the `context.environment` global object.
 
 <!-- Image placeholder removed for build -->
 
@@ -26,6 +26,6 @@ In the environment variables UI (see image above):
 
 You can have up to **20 environment variables** per Analysis. If you exceed this limit, the UI will display a notification indicating that the maximum capacity has been reached.
 
-If you need to store sensitive information such as passwords or API keys, consider using **Secrets**, which are encrypted environment variables designed for this purpose. Learn more about [Secrets](/tagoio/secrets).
+If you need to store sensitive information such as passwords or API keys, consider using **Secrets**, which are encrypted environment variables designed for this purpose. Learn more about [Secrets](/docs/tagoio/getting-started/secrets).
 
 Note: After adding or editing environment variables in the Analysis editor, save or run the Analysis so the changes take effect.

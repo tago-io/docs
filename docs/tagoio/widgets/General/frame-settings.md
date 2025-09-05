@@ -28,6 +28,3 @@ By default, widget headers are set to “show always”. You can change this beh
 These settings currently apply to TagoIO web applications; we’re working to extend this functionality to mobile platforms.
 
 <!-- Image placeholder removed for build -->
-
-## Related documentation
-- Widget header: See [Widgets Overview](widgets/widgets-overview) for details on what the header contains and how header visibility affects your widget.

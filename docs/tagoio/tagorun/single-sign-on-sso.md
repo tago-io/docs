@@ -10,15 +10,6 @@ By using Single Sign-On (SSO) integration, end users can sign in to a RUN applic
 ## Overview
 Single Sign-On (SSO) allows RUN applications to delegate authentication to an external identity provider (IdP). This enables centralized user management, single credential use across multiple services, and simplified user access to RUN and other connected services.
 
-## Supported identity providers
-TagoIO supports identity providers such as:
-- Okta
-- Auth0
-- Microsoft Azure AD
-- OneLogin
-- PingIdentity
-- Google Workspace
-- Several other SAML/OpenID Connect (OIDC) compatible identity providers
 
 ## How it works
 1. Configure an application (client) on your chosen Identity Provider (IdP).  
@@ -28,29 +19,6 @@ TagoIO supports identity providers such as:
 
 The RUN configuration is intentionally simple: import the Identity Provider after you finish its application setup and user provisioning on the IdP.
 
-## Enabling SAML Single Sign-On
-TagoIO provides a SAML Single Sign-On option in RUN that lets users authenticate using credentials from your trusted user database.
+The configuration of your SSO will vary depending on the identity provider you choose, but the overall process is generally similar across different providers. [Here’s a guide on how to configure your SSO using Auth0](https://tagoio.discourse.group/t/how-to-set-up-single-sign-on-sso-on-tagorun-with-auth0/1727).
 
-- Feature: SAML Single Sign-On  
-- Description: Allow users to sign in to RUN using credentials from your trusted user database.  
-- Typical workflow: Configure an application on the Identity Provider, add your users, then import and enable the Identity Provider in RUN.
-
-<!-- Image placeholder removed for build -->
-
-## Managing users and access
-You can use your Identity Provider to:
-- Manage users and group membership centrally.  
-- Control user permissions centrally.  
-- Allow users to access multiple services (including RUN) with the same credentials.  
-- Store and update user information such as profile data, roles, and attributes.  
-
-Only users who are registered in the IdP **and** have permission to access the application will be able to sign in via SSO.
-
-## Related articles
-- See [Run Theme](../run-theme)  
-- See [Security and Protection for RUN users](/tagoio/account/security-and-protection-for-run-users)  
-- See [Using Dictionaries & Multi-language](../using-dictionaries-multi-language)  
-- See [Dictionaries](../dictionaries)  
-- See [TagoRun](../tagorun/tagorun-mobile-app)
-
-If you need configuration specifics for a particular Identity Provider (for example, "How to set up Okta with TagoIO" or "Configuring Auth0 for SSO"), refer to that provider's setup guide and then import the configured IdP into RUN.
+If you are using a different SSO tool, you can still refer to the [Auth0 documentation](https://tagoio.discourse.group/t/how-to-set-up-single-sign-on-sso-on-tagorun-with-auth0/1727), as the steps are often comparable for other providers.

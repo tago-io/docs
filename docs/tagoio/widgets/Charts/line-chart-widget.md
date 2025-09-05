@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](../../data-management/metadata) and [series](../../data-management/data-records), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  
@@ -17,16 +17,13 @@ This widget also accepts features like [metadata](../../data-management/metadata
 ## 1. 'Data From' Field
 This field allows you to set the device and variable that will be used by the widget.
 
-![Device and Variable selector](/docs_imagem/tagoio/line-chart-widget-2.png)
-
 ### 1.1 'Data From' for Normal Dashboards
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-![Image 3: Info](/docs_imagem/tagoio/info-8.png)
 
 ## 2. Composing X-axis and Y-axis
 In the line chart widget, it is possible to customize how the data will be displayed in the horizontal and vertical axis.
@@ -52,7 +49,6 @@ It is also possible to define the X‑axis time range dynamically, using another
 }
 ```
 
-![Image 6: Alert](/docs_imagem/tagoio/exclamation-4.png)  
 The `start_date` specifies the start of the range, and the `end_date` specifies the end of the range. In this case, the date and format should be in the ISO 8601 format.
 
 ### 2.2 Y-axis
@@ -63,10 +59,3 @@ The Y‑axis will automatically find the best scale for your data; it is not nec
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
 ![Image 7](/docs_imagem/tagoio/filteringData-e2c.gif)
-
-## Related articles
-- [Area Chart Widget](../Charts/area-chart-widget)  
-- [Multiple Charts Widget](../Charts/multiple-charts-widget)  
-- [Horizontal Bar Widget](../Charts/horizontal-bar-widget)  
-- [Vertical Column Widget](../Charts/vertical-column-widget)  
-- [Map Widget](../Map & Location/Map Widget/map-widget)

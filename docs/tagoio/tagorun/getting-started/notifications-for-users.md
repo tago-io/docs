@@ -7,7 +7,11 @@ You can push notification messages directly to the users registered in your Tago
 
 Notifications for users are similar to your account's regular notifications, but they include additional customization options.
 
-> Note: Users registered in your TagoRun account can only receive notifications sent by your application.
+:::info
+
+Users registered in your TagoRun account can only receive notifications sent by your application.
+
+:::
 
 ![Notifications list example](/docs_imagem/tagoio/notifications-for-users-2.png)
 
@@ -18,23 +22,9 @@ Before sending notifications, ensure you have users registered in your account�
 There are two primary ways to send notifications to users in TagoRun:
 
 1. Notifications using Actions  
-   See [Actions](../actions/actions) for details on configuring Actions to send user notifications.
+   See [Actions](/docs/tagoio/actions/) for details on configuring Actions to send user notifications.
 
 2. Notification using Analysis  
-   See [Analysis](../analysis/analysis-overview) for details on sending notifications from an Analysis script.
+   See [Analysis](/docs/tagoio/analysis/) for details on sending notifications from an Analysis script.
 
 > By pushing notifications using Analysis, you can add custom buttons allowing for more interaction.
-
-## Example notification (UI sample)
-The notifications UI can display items similar to the following example:
-
-- Title: Refrigerator Alarm  
-- Message: Your Refrigerator Temperature is higher than: 86 °F  
-- Timestamp: 6 minutes ago  
-- Link/button: Refrigerator Dashboard
-
-## Related documentation
-- See [Actions](../actions/actions)  
-- See [Analysis](../analysis/analysis-overview)  
-- Refer to the Targets documentation (if applicable) for targeting multiple users or groups  
-- See [Notifications for Users using Analysis](/tagoio/analysis/notifications-for-users-using-analysis)

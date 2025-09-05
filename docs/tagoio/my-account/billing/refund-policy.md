@@ -9,19 +9,19 @@ TagoIO offers refunds in certain situations if you forgot to cancel your plan or
 
 If you are entitled to a refund, complete these steps:
 
-1. [Downgrade your plan](../services/downgrading-plans-services) to the free plan to avoid any further charges.
+1. [Downgrade your plan](/docs/tagoio/my-account/billing/downgrading-plans-services) to the free plan to avoid any further charges.
 2. Do not delete your account.
-3. [Open a ticket requesting a refund](https://tago.io/contact).
+3. [Open a ticket requesting a refund](https://tago.io/contact-us).
 
 ## When are you entitled to a refund
 
 You may be entitled to a refund in the following cases:
 
-1. You were charged for your next monthly plan within the last 14 days and had no service usage during that period (no use of SMS, email, Data Input, or Data Output).
-2. You were charged for your next yearly plan within the last 14 days (applies only to yearly plans).
+1. You were charged for your next **monthly** plan within the last **14 days** and had no service usage during that period (no use of SMS, email, Data Input, or Data Output).
+2. You were charged for your next **yearly plan** within the last **14 days** (applies only to yearly plans).
 
-> Note: When a payment method different from credit card is used, there may be an additional bank or processing fee associated with the refund process.
+:::info
 
-Related internal links referenced in this article:
-- Downgrading Plans & Services: [Downgrade your plan](../services/downgrading-plans-services)
-- Support / Ticket submission: [Open a ticket requesting a refund](https://tago.io/contact)
+When a payment method different from credit card is used, there may be an additional bank or processing fee associated with the refund process.
+
+:::

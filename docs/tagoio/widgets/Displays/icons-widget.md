@@ -9,13 +9,9 @@ With icons, you can create highly personalized widgets for your applications. Th
 
 Users can add up to 9 variables to this widget. Each variable will display its latest value.
 
-*This widget works for both Normal and Blueprint dashboards.*
-
 ## Creating your own
 
 To add the Icons widget to your dashboard, choose the Icon widget from the list and customize it to your preference. Edit the widget using the options located on the right side of the widget editor.
-
-![Icon widget editor](/docs_imagem/tagoio/icons-widget-2.gif)
 
 ### 1. 'Data From' Field
 
@@ -37,11 +33,3 @@ The widget changes its content based on two types of conditions, **Icon conditio
 - It is possible to show your own images in the widget by adding their icon URL.
 
 <!-- Image temporarily disabled: Conditions example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/6urQaiVLijluk8JJulhV5B4xTQgm9ZjdlYuJpFGanMg/editingConditions-vVQ.gif -->
-
-## Related Articles
-
-- See [Map Widget](../Map & Location/Map Widget/map-widget)  
-- See [Image Marker Widget](../Map & Location/image-marker-widget)  
-- See [Compose Widget](../Media Widgets/compose-widget)  
-- See [Custom Widget](../Custom Widget/custom-widget)  
-- See [Formula](../General/formula)

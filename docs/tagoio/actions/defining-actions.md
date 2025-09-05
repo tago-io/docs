@@ -8,7 +8,7 @@ Actions are initiated based on specific conditions and can execute a variety of 
 
 ## Push Notification to myself
 
-This action can notify you on your account via the Admin (https://admin.tago.io/) in your browser or through the TagoIO app. You can customize the title and content of the notification. In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
+This action can notify you on your account via the [Admin](https://admin.tago.io/) in your browser or through the TagoIO app. You can customize the title and content of the notification. In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
 Please note that the notification is only sent to the account where it was created.
 
@@ -16,7 +16,7 @@ Please note that the notification is only sent to the account where it was creat
 
 ## Push Notifications to Run Users
 
-Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](/tagoio/notifications/notifications-for-users).
+Send notifications to designated **Run Users** within your **Run**. You must specify the particular Run User you wish to notify. For notifying multiple users, please refer to our documentation on [notifications using analysis](/docs/tagoio/tagorun/getting-started/notifications-for-users).
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
@@ -30,7 +30,6 @@ In the message field, you can use variables to dynamically include information i
 
 ![Image 3](/docs_imagem/tagoio/1576606418570-3DI.png)
 
-![Image 4: Warning](/docs_imagem/tagoio/caution.png)
 
 **Attention:** starting **January 1st, 2025**, TagoIO will discontinue its email services. We recommend integrating with external providers to send emails using the "Send Email using SMTP/SendGrid" action.
 
@@ -38,7 +37,7 @@ In the message field, you can use variables to dynamically include information i
 
 An email will be sent via SMTP when a specific condition is met. This action allows you to send emails via external providers. To configure this action, you need to create a **Secret** of type **SMTP** to authorize TagoIO to connect to your email provider and send emails; you will need to supply the server address, port number, username, and password. This information is usually provided by your email hosting service.
 
-Learn here how to create this secret: [Secrets](/tagoio/secrets).
+Learn here how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 In the message field, you can use variables to dynamically include information in your text. For more details on how to use message variables, refer to the "Message Variables" section at the end of this page.
 
@@ -46,17 +45,15 @@ In the message field, you can use variables to dynamically include information i
 
 An email will be sent via SendGrid when a specific condition is met. To configure this action, you need to create a Secret of type **Text** containing the _SendGrid API Key_. Ensure that the SendGrid API Key is set in TagoIO Secrets beforehand so it appears in the dropdown menu.
 
-Learn here how to create this secret: [Secrets](/tagoio/secrets).
+Learn here how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 5](/docs_imagem/tagoio/external-da256072.png)
-
-![Image 6: Idea](/docs_imagem/tagoio/lights.png)
 
 ## Send Message to AWS SQS
 
 This action sends messages to Amazon SQS when triggered. It requires authentication via Secrets. You will need to provide the region, queue URL, and access key id and secret access key.
 
-Learn how to create this secret: [Secrets](/tagoio/secrets).
+Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ## Send SMS
 
@@ -68,43 +65,37 @@ In the message field, you can use variables to dynamically include information i
 
 Some costs may occur when using the SMS service, which varies based on the country of operation. Check the [pricing](https://tago.io/pricing/), [terms of use](https://tago.io/terms-of-support/), and your plan before using the SMS service.
 
-![Image 8: Warning](/docs_imagem/tagoio/caution.png)
-
 **Attention:** starting on **November 1st, 2024**, TagoIO will no longer offer SMS services. We recommend integrating with external providers to send SMS using the "Send SMS with Twilio" action.
 
 ## Send SMS with Twilio
 
 Use this action to send an SMS message via Twilio when a specified condition is met. You will need to provide the recipient's phone number, the sender's "from" number, and the message content. The message field supports variables, allowing you to dynamically include information in your text.
 
-Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/tagoio/secrets).
+Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
 
-![Image 10: Notes](/docs_imagem/tagoio/file.png)
-
 If you're using Twilio Long Code for messaging, be aware that it requires a Toll‑Free verification process. Please consult Twilio's documentation for instructions on how to verify your phone number before proceeding. Depending on Twilio's rules for your account, the Toll‑Free verification may be skipped.
 
-You can send SMS directly from scripts within the [Analysis](/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
-
-![Image 11: Idea](/docs_imagem/tagoio/lights.png)
+You can send SMS directly from scripts within the [Analysis](/docs/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track SMS delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
 ## Send WhatsApp message with Twilio
 
 Use this action to send a WhatsApp message via Twilio when a specified condition is met. You will need to provide the recipient's phone number, the sender's "from" number, and the message content. The message field supports variables, allowing you to dynamically include information in your text.
 
-Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/tagoio/secrets).
+Ensure that the _Twilio SID_ and _Twilio Auth Token_ are set in TagoIO Secrets beforehand for them to appear in the dropdown menu. Use a Secret of type **Text**. Learn how to create this secret: [Secrets](/docs/tagoio/getting-started/secrets).
 
 ![Image 12](/docs_imagem/tagoio/external-01a6551b.png)
 
-You can send WhatsApp messages directly from scripts within the [Analysis](/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
+You can send WhatsApp messages directly from scripts within the [Analysis](/docs/tagoio/analysis/creating-analysis) using the Twilio service. Before proceeding, ensure you review Twilio's terms of use and confirm your plan details. You must register your "From" number in the Twilio console before integrating it. The Twilio console also allows you to track the delivery status and view message content. Note that TagoIO does not charge for utilizing this third‑party Twilio service.
 
 Additionally, you can also send WhatsApp messages using Twilio Templates. To do this, you need to set a Twilio Template SID in TagoIO Secrets and configure the Template variables. Template variables also support dynamic content, allowing you to include information dynamically within them.
 
 ## Run Analysis Script
 
-Actions have the power to initiate scripts that run in the [Analysis](/tagoio/analysis/analysis-overview). This is a very powerful feature, as you can define exactly when your code will run.
+Actions have the power to initiate scripts that run in the [Analysis](/docs/tagoio/analysis/). This is a very powerful feature, as you can define exactly when your code will run.
 
-Learn more about [Running Analysis via Action](/tagoio/actions/running-analysis-via-action).
+Learn more about [Running Analysis via Action](/docs/tagoio/actions/running-analysis-via-action).
 
 ## Publish to TagoIO MQTT Broker
 
@@ -114,12 +105,11 @@ To set the MQTT action up, select the option **Publish to MQTT**, select the dev
 
 ![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
 
-![Image 14: Notes](/docs_imagem/tagoio/file.png)  
-TagoIO [MQTT Broker](/tagoio/mqtt) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/connecting-your-mqtt-broker-to-tagoio) feature.
+TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/) is available exclusively for **Starter** and **Scale** accounts in the **US database region**. Free accounts and European database region accounts may utilize third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
 
 ## Post data to HTTP End-Point
 
-This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](/tagoio/devices/sending-data-to-device).
+This action can post data directly to an endpoint defined by you. When the action is triggered, it will POST the entire data payload received from the device to the configured HTTP endpoint address using the [TagoIO Standard Data Format](/docs/tagoio/devices/sending-data-to-device).
 
 ![Image 15](/docs_imagem/tagoio/1628001560181-oQ.png)
 
@@ -176,7 +166,7 @@ You can use most of the payload fields from our API:
 | `$LOCATION$` | Location value |
 | `$DEVICE$` | Device ID |
 | `$DEVICE.NAME$` | Name of your device |
-| `$ACTION.STATE$` | Current state of your [Action](/tagoio/trigger-unlock): locked or unlocked |
+| `$ACTION.STATE$` | Current state of your [Action](/docs/tagoio/actions//trigger-unlock): locked or unlocked |
 
 For example, a personalized message like this
 
@@ -193,5 +183,3 @@ And a message like this
 Would result in the following message:
 
 - **2021‑01‑02T22:51:48.005Z**: Warning, device with ID **547e353d7dbf3af122c0257d** is **90 °F**.
-
----

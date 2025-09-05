@@ -65,7 +65,7 @@ Block quote example:
 
 ## Images
 
-Need to upload an image? [TagoIO Files](/tagoio/files) has a great interface.
+Need to upload an image? [TagoIO Files](/docs/tagoio/files) has a great interface.
 
 Example Markdown for an image:
 
@@ -136,4 +136,4 @@ alert(example);
 ```
 
 References:
-- See the TagoIO Files interface for uploading images: [TagoIO Files](/tagoio/files)
+- See the TagoIO Files interface for uploading images: [TagoIO Files](/docs/tagoio/files)

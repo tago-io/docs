@@ -3,9 +3,9 @@ title: "Trigger by Variable"
 description: "This article explains the \"Trigger by Variable\" action type in TagoIO, describing its two categories (Single device and Multiple devices), how each works, and a note about Trigger Unlock availability."
 tags: ["tagoio"]
 ---
-The trigger type, [Actions](/tagoio/actions/actions), Trigger by Variable, allows you to execute an action when a variable meets specified conditions. If a device sends data and the variables meet those conditions, the action will be triggered.
+The trigger type, [Actions](/docs/tagoio/actions/), Trigger by Variable, allows you to execute an action when a variable meets specified conditions. If a device sends data and the variables meet those conditions, the action will be triggered.
 
-There are 2 (two) categories inside this trigger type:
+There are 2 categories inside this trigger type:
 
 ## 1. Single device
 Allows you to watch a specific device from your device list. Any data sent by that device will be tested against your conditions to determine whether the action should be triggered.
@@ -17,15 +17,19 @@ Allows you to watch multiple devices. Any data sent by those devices will be tes
 
 ![Selecting tags for multiple devices (tag_key / tag_value)](/docs_imagem/tagoio/trigger-by-variable-2.png)
 
-It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/tagoio/trigger-unlock).
+It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/docs/tagoio/actions/trigger-unlock).
 
 ## Trigger Conditions
 
 After setting up the device, you should set a condition for your action to be executed. To do so, head over to the **Trigger** section.
 
-> You can set multiple conditions in an action; if at least one of them results in a match, the action will be executed.
->
-> Notice that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.
+You can set multiple conditions in an action; if at least one of them results in a match, the action will be executed.
+
+:::info
+
+Notice that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.
+
+:::
 
 1. **Select a variable**: Choose a variable to be tested. This will be one of the variables that will be compared against the data from the device.
 2. **Condition**: The type of condition to test the variable. The available test conditions are:
@@ -40,7 +44,11 @@ After setting up the device, you should set a condition for your action to be ex
 
 The example above means that the action will be triggered when **my_variable is less than 15**.
 
-> Looking to create more complex logic statements? You can use the [Action](/tagoio/actions/actions) to trigger an [Analysis](../analysis/analysis), and then manually create custom logic inside of the code.
+:::tip
+
+Looking to create more complex logic statements? You can use the [Action](/docs/tagoio/actions/) to trigger an [Analysis](/docs/tagoio/analysis/), and then manually create custom logic inside of the code.
+
+:::
 
 ### Preventing the action from running every time the conditions are met
 

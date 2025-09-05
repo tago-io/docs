@@ -23,22 +23,25 @@ Open the [Node.js Installation Guide](https://nodejs.org/en/download/) for instr
 
 In order to start writing your code, you first must set up the environment with Node.JS and NPM.
 
-**2‑1.** Open your favorite command‑line tool like the Windows Command Prompt, PowerShell, Cygwin, Bash or the Git shell (which is installed along with Github for Windows). Then create or navigate to your new project folder.
+**2.1** Open your favorite command‑line tool like the Windows Command Prompt, PowerShell, Cygwin, Bash or the Git shell (which is installed along with Github for Windows). Then create or navigate to your new project folder.
 
-**2‑2.** If the folder is empty, run `npm init` and fill in all prompted requests. If this is your first time, you can leave all defaults by just pressing enter.
+**2.2** If the folder is empty, run `npm init` and fill in all prompted requests. If this is your first time, you can leave all defaults by just pressing enter.
 
-**2‑3.** Now install the Tago SDK and the TagoIO‑Builder SDK:
+**2.3** Now install the Tago SDK and the TagoIO‑Builder SDK:
 
 ```bash
 npm install --save @tago-io/sdk
 npm install -g @tago-io/builder
 ```
+:::tip
+
+To know how to use the SDK for coding an Analysis, use our SDK documentation.
+
+:::
 
 This will start the installation of the TagoIO SDK and the TagoIO‑Builder if you wish to upload your script later at TagoIO.
 
-**2‑4.** Create a file called `analysis.js`. Open it with your favorite editor, like Visual Studio Code or even Notepad. You can write the code exactly as you would do on the TagoIO editor.
-
-![Image 1](/docs_imagem/tagoio/info-8.png)
+**2.4** Create a file called `analysis.js`. Open it with your favorite editor, like Visual Studio Code or even Notepad. You can write the code exactly as you would do on the TagoIO editor.
 
 You can get the Hello World analysis example by clicking [here](https://raw.githubusercontent.com/tago-io/analysis-example-console/master/analysis.js).
 
@@ -94,28 +97,4 @@ You can check our analysis examples with the full environment already set up for
 * [Average Min/Max Example](https://github.com/tago-io/analysis-example-avgMinMax)
 * [Find Example](https://github.com/tago-io/analysis-example-find)
 
-## References and related documentation
-
-- See [Analysis](../analysis/analysis-overview) for an overview of creating and managing analyses in TagoIO.
-- See [Analysis‑Builder](/tagoio/console-for-debug) for details on bundling and uploading scripts that use third‑party packages.
-
-On this page (for reference)
-- 1. Install Node.js and NPM
-- 2. Create your Environment
-- 3. Running your Analysis
-- 4. Use Analysis‑Builder to Upload the Script
-- More Examples
-
-Related articles (within TagoIO documentation)
-- Analysis Overview
-- Creating Analysis
-- Script Editor
-- Script Examples
-- Console for Debug
-- Environment Variables
-- Distributing analysis
-- Running Analysis as External using Node.JS
-- Running Analysis as External using Deno
-
-Notes:
-- Internal documentation links have been preserved as link text; replace "link-to‑..." placeholders with the actual internal URLs when integrating into the docs site.
+Now you have everything you need to know about running analysis in your machine and can start to creating full applications and powerful analysis using TagoIO

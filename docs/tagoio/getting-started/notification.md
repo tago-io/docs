@@ -18,7 +18,7 @@ There are four types of notifications:
   Used by the TagoIO backend to notify users about the system or your account. Example: "There is a new application in the Healthcare industry that you may be interested in."
 
 - TagoRUN User  
-  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](../notifications/notifications-for-users).
+  Notifications sent to users registered in your account's User Management. Only your account (or authorized users) can send notifications to these users. Learn more in [Run Users Notifications](/docs/tagoio/tagorun/getting-started/notifications-for-users).
 
 ## Viewing notifications
 When you log in to your account, you can see all your notifications in the top‑right corner of the admin page.
@@ -44,14 +44,3 @@ After you make a decision and choose to accept or decline a notification, the sy
 Application notifications can give you the option to be redirected to a dashboard that can contain more information about the event. The content of the notification and the button that links to the dashboard (which is optional) is defined by the developer.
 
 To learn how to create an Application notification from an Analysis, check our [SDK documentation](https://js.sdk.tago.io/).
-
-## Related sections
-- See [Notifications from Other Users](../notifications/notifications-for-users)  
-- See [Notifications from Applications](../notifications/notifications-for-users)
-
-## Related articles
-- See [Defining Actions](../actions/actions)  
-- See [Notification Service](../services/notification-service)  
-- See [Running Analysis via Action](../actions/actions)  
-- See [Compose Widget](../widgets/compose-widget)  
-- See [Tags System](../data-management/tags-system)

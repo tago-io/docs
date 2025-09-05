@@ -14,8 +14,6 @@ Before you begin, ensure you have the following:
 - Orbiwise account — If you don't have one, register here (https://orbiwise.com/).
 - LoRaWAN device — Ensure your device is connected to Orbiwise and transmitting data.
 
----
-
 ## Step 1: Create Authorization in TagoIO
 
 1. **Access Authorizations**  
@@ -39,10 +37,14 @@ Before you begin, ensure you have the following:
 
 ![Authorization token screenshot](/docs_imagem/tagoio/1563385125217-eok.png)
 
-> You must enter the **username;password;host DASS url** separated by a semicolon.  
-> Only one **Authorization** per application is necessary. Don't do it for each device.
+:::tip
 
----
+You must enter the **username;password;host DASS url** separated by a semicolon.  
+Only one **Authorization** per application is necessary. Don't do it for each device.
+
+:::
+
+
 
 ## Step 2: Add Integration to Orbiwise
 
@@ -62,7 +64,7 @@ Before you begin, ensure you have the following:
 
 ![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
 
----
+
 
 ## Step 3: Add Device in TagoIO
 
@@ -76,11 +78,10 @@ Before you begin, ensure you have the following:
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices/devices#Adding_devices).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview).
 
-For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/devices/devices#Adding_devices) page.
+For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
----
 
 ### Finalizing Setup
 
@@ -89,8 +90,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](/tagoio/
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/tagoio/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.
 
-Learn how to perform [downlink for LoRaWAN](/tagoio/tutorials/downlink-for-lorawan).
+Learn how to perform [downlink for LoRaWAN](/docs/tagoio/integrations/networks/downlink-for-lorawan).

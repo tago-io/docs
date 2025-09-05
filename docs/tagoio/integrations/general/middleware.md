@@ -5,23 +5,7 @@ tags: ["tagoio"]
 ---
 Through a TagoIO middleware, companies can connect devices that use their own protocols. The middleware acts as a protocol converter from any transport type (for example, TCP/IP, UDP, etc.) to the standard TagoIO APIs.
 
-For more detailed steps on implementing middleware, see [Creating a Networks Integration](/tagoio/integrations/creating-a-network-integration).
+For more detailed steps on implementing middleware, see [Creating a Networks Integration](/docs/tagoio/integrations/general/creating-a-network-integration).
 
-Also review the tutorial available in the TagoIO [community](https://community.tago.io) to get your network up and running.  
-**Additionally, follow this step‑by‑step guide:** [How to create your own network to integrate with TagoIO](https://community.tago.io/t/how-to-create-your-own-network-to-integrate-with-tagoio/429).
-
-## Related documentation
-
-General:
-- [Network Integration](../integrations/connector-overview)
-- [Creating a Network integration](/tagoio/integrations/creating-a-network-integration)
-- [Authorization](../security/authorization)
-- [Serial Number Format](../serial-number-format)
-- [Middleware](../middleware/middleware)
-
-Related Articles:
-- [Network Integration](../integrations/connector-overview)
-- [Everynet LoRaWAN](../tutorials/everynet-lorawan)
-- [Running Analysis as External using Deno](../analysis/running-analysis-as-external-using-deno)
-- [Profiles](../account/profiles)
-- [Device data management](../devices/device-data-management)
+ 
+Additionally, follow this step‑by‑step guide: [How to create your own network to integrate with TagoIO](https://tagoio.discourse.group/t/how-to-create-your-own-network-to-integrate-with-tagoio/407).

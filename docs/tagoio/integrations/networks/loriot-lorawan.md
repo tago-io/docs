@@ -23,7 +23,7 @@ Click on **Generate another authentication token**, a token will be generated. C
 
 1. **Access Authorizations**  
    - Go to **Devices**.  
-   - Click on **Authorizations** at the top of the page.  
+   - Click on **[Authorizations](https://admin.tago.io/devices/authorization)** at the top of the page.  
 
 2. **Create a New Authorization**  
    - Click the **Create Authorization** button.  

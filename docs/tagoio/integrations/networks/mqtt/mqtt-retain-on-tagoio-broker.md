@@ -3,11 +3,15 @@ title: "MQTT Retain on TagoIO Broker"
 description: "This article explains how to implement an MQTT \"retain\"-like behavior on the TagoIO MQTT broker using Actions or Analysis to store and resend the last message when a new client subscribes."
 tags: ["tagoio"]
 ---
-> **Note:** TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the MQTT Relay feature (see the [MQTT Relay documentation](mqtt)).
+:::warning
+
+TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature.
+
+:::
 
 TagoIO's MQTT broker does not natively support the standard MQTT **retain** feature. However, you can implement an equivalent workaround by using TagoIO Analysis and Actions to store the last message published to a topic and resend it when a new client subscribes.
 
-This approach involves using the [Analysis](/tagoio/analysis/analysis-overview) and [Actions](/tagoio/actions/actions) features to store the last message published to a topic and then resend it when a new client subscribes.
+This approach involves using the [Analysis](/docs/tagoio/analysis/) and [Actions](/docs/tagoio/actions/) features to store the last message published to a topic and then resend it when a new client subscribes.
 
 ## Setting Up Message on Subscribing
 
@@ -65,8 +69,4 @@ module.exports = new Analysis(mqttPushExample);
 ### 3. Trigger Analysis
 - Configure an Action or another event to trigger the execution of your Analysis (e.g., a device update, a scheduled time, or any other event in your TagoIO application).
 
-Refer to the [Analysis documentation](/tagoio/analysis/analysis-overview) for details on creating scripts and integrating them with Actions and MQTT.
-
-Additional references:
-- Actions documentation: [Actions](/tagoio/actions/actions)
-- MQTT Relay feature documentation: [MQTT Relay](mqtt)
+Refer to the [Analysis documentation](/docs/tagoio/analysis/) for details on creating scripts and integrating them with Actions and MQTT.

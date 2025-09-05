@@ -10,27 +10,9 @@ Go beyond the typical IoT solution and integrate your application with external 
 
 Watch this short video to learn the key concepts.
 
-<!-- Image placeholder removed for build -->
+<YouTube videoId="UDt-iwoEiRA" title="Integrating IoT and services using Tago.io" />
 
-Take a look at this short interactive [introduction](https://tago.io/demo) about the main features. Alternatively, explore the interactive introduction at https://intro.tago.io/.
 
-Use [Get started](/tagoio/getting-started) to add a device.
+Take a look at this short interactive introduction at https://intro.tago.io/.
 
-## Related documentation
-
-Other Getting Started topics:
-- [Getting Started](/tagoio/getting-started)
-- [How it works](./how-it-works)
-- [Building Solutions](#) (this article)
-- [Deploying Applications](./deploying-applications)
-- [Language Preferences](./language-preferences)
-- [Tags System](/tagoio/data-management/tags-system)
-- [Secrets](./secrets)
-- [Audit Log](/tagoio/security/audit-log)
-
-Related articles:
-- [Building your own parser](/tagoio/payload-parser/building-your-own-parser)
-- [Dashboard Overview](/tagoio/dashboards/dashboard-overview)
-- [Analysis Overview](/tagoio/analysis/analysis-overview)
-- [Running Analysis as External using Deno](/tagoio/analysis/running-analysis-as-external-using-deno)
-- [Custom Widget](/tagoio/widgets/custom-widget)
+Use [Get started](/docs/tagoio/getting-started/) to add a device.

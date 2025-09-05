@@ -22,26 +22,6 @@ TagoIO converts latitude and longitude fields to the specific format required, s
 
 After your device is sending latitude and longitude information to TagoIO:
 
-- Create a dashboard (see [create a dashboard](../dashboards/dashboard-overview)).
-- Add a Map widget (see [Map widget](../widgets/map-widget)).
-- Look for the device (see [device](../devices/devices)) and add the variable `location` inside the Map widget.
-
-References and related documentation:
-
-- Breadcrumb context: Knowledge Base / TagoIO / Widgets / Map Widget
-
-Map Widget section (internal links):
-- [Map Widget](../widgets/map-widget)
-- [Map filters](../map-filters)
-- [Geofences in map widgets](../widgets/geofences-in-map-widgets)
-- [Map Layer GIS](../map-layer-gis)
-- [Images and Links in the map's pins](../images-and-links-in-the-maps-pins)
-- [Router](../router)
-- [Displaying Locations on a Map with TTN LoRaWAN](#) (this article)
-
-Related Articles (internal links):
-- [LoRaWAN Publication of Environmental Measurements](/tagoio/tutorials/lorawan-publication-of-environmental-measurements-with-a-lora-e5-module)
-- [Map Widget](../widgets/map-widget)
-- [The Things Network LoRaWAN™](../tutorials/the-things-network-lorawan)
-- [Network Integration](../integrations/connector-overview)
-- [Adeunis with LoRaWAN™](../tutorials/adeunis-with-lorawan)
+- Create a dashboard.
+- Add a [Map widget](/docs/tagoio/widgets/map-and-location/map-widget/).
+- Look for the device and add the variable `location` inside the Map widget.
