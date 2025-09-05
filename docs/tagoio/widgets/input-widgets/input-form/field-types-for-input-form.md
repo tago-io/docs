@@ -22,11 +22,17 @@ A typical text input will appear. The value saved for this field will be whateve
 ## 2. Address
 This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](data-management/data-manipulation#location) for details.
 
-> For the **Input Form Widget**, it is possible to enable a map under the input.
 
 <div align="center">
 ![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-3.gif)
 </div>
+
+:::info
+
+For the **Input Form Widget**, it is possible to enable a map under the input.
+
+:::
+
 
 ## 3. Calendar
 It will display a calendar field that allows the user to enter a date, or a date range, as a value through a calendar popup. When receiving the user answer in your **device**, you will be able to get it in the value parameter and the metadata parameter. The latter one will be in date string format as `start_date` and `end_date`.
@@ -69,7 +75,11 @@ It will display a step button to select the hour range without the date.
 ## 6. Device
 It will display a dropdown field with all an account's devices. The value of the field will be the id of the selected device.
 
-> You can customize the devices shown by the list through tags. Configuring tags will show only the devices with a tag correspondence.
+:::info
+
+You can customize the devices shown by the list through tags. Configuring tags will show only the devices with a tag correspondence.
+
+:::
 
 <div align="center">
 ![Device example](/docs_imagem/tagoio/field-types-for-input-form-7.gif)
@@ -114,7 +124,11 @@ The difference between the Entity and Entity Multiple is that the last one allow
 ## 11. File Upload
 It will display an option to upload files to TagoIO. These files will be stored in the files section under the folder `devices/your_device_id/` by default. It is possible to restrict the number of files per upload, allow users to use their mobile camera, and more.
 
+:::info
+
 You can customize the path, however. For example, if you want to save the files in a folder called `images` and a subfolder called `icons`, you would need to type `devices/your_device_id/images/icons`
+
+:::
 
 The variable that receives this data keeps the file name in the value parameter, and in the metadata it keeps the file's parameter. So sending a file will produce variable data like this:
 
@@ -164,7 +178,11 @@ A traditional Radio input will appear. Once selected, you will be able to define
 ## 16. Validation
 This field type does not represent a form input value. Instead, the variable assigned to this field expects to receive text data that displays as a message above the form. The validation message supports four predefined types: warning, info, danger, and success. You can specify the message type by including a type property in the metadata object.
 
+:::info
+
 By default, validation messages are displayed to all users viewing the widget. To target specific users, capture the User Session ID using the Capture User field and include the session_id parameter in the metadata object.
+
+:::
 
 | Parameter    | Type    | Required   | Description    |
 |---|---|---|---|
