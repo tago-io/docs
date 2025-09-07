@@ -19,7 +19,7 @@
     "biome:format": "biome format .",
     "cdk:build": "cd cdk && tsc",
     "cdk:watch": "cd cdk && tsc -w",
-    "cdk:deploy": "npm run build && cd cdk && npm run build && cdk deploy --require-approval never --app \"tsx cdk.ts\""
+    "cdk:deploy": "npm run build && cdk deploy --require-approval never --app \"tsx cdk/cdk.ts\""
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",

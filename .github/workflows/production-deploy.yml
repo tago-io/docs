@@ -1,0 +1,47 @@
+name: Release Deploy (AWS)
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy-prod:
+    name: Deploy to CloudFront/S3 (docs.tago.io)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    env:
+      SITE_URL: https://docs.tago.io
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site for production domain
+        run: npm run build
+
+      - name: Install AWS CDK CLI
+        run: npm install -g aws-cdk
+
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::154399404768:role/github-actions-deploy-role
+          aws-region: us-east-1
+          role-session-name: docsReleaseDeploy
+
+      - name: Deploy CDK stack
+        env:
+          CDK_DEFAULT_REGION: us-east-1
+        run: npm run cdk:deploy

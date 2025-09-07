@@ -1,22 +1,19 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (beta)
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy to GitHub Pages (docs.beta.tago.io)
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
       id-token: write
-    
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,14 +21,27 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build website (beta domain)
+        env:
+          SITE_URL: https://docs.beta.tago.io
         run: npm run build
+
+      - name: Write CNAME for custom domain
+        run: |
+          echo "docs.beta.tago.io" > build/CNAME
+
+      - name: Block indexing via robots.txt (beta only)
+        run: |
+          cat > build/robots.txt << 'EOF'
+          User-agent: *
+          Disallow: /
+          EOF
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

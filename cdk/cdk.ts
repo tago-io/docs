@@ -30,6 +30,17 @@ class TagoDocsStack extends cdk.Stack {
       },
     );
 
+    // Certificate for custom domains (docs.tago.io and changelog.tago.io)
+    const certificate = new certificatemanager.Certificate(
+      this,
+      "DocsCertificate",
+      {
+        domainName: "docs.tago.io",
+        subjectAlternativeNames: ["changelog.tago.io"],
+        validation: certificatemanager.CertificateValidation.fromDns(),
+      },
+    );
+
     // Grant CloudFront access to the bucket
     siteBucket.addToResourcePolicy(
       new cdk.aws_iam.PolicyStatement({
@@ -60,6 +71,8 @@ class TagoDocsStack extends cdk.Stack {
       this,
       "TagoDocsDistribution",
       {
+        certificate: certificate,
+        domainNames: ["docs.tago.io", "changelog.tago.io"],
         defaultBehavior: {
           origin: new origins.S3Origin(siteBucket, {
             originAccessIdentity: originAccessIdentity,
@@ -113,3 +126,5 @@ new TagoDocsStack(app, "TagoDocsStack", {
   // env: { account: '123456789012', region: 'us-east-1' },
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+import * as certificatemanager from "aws-cdk-lib/aws-certificatemanager";

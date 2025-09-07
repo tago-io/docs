@@ -90,20 +90,20 @@ Embeds
 
 ## Deployment
 
-### GitHub Pages (Default)
-GitHub Actions deploys to GitHub Pages on pushes to main
-- Workflow: .github/workflows/deploy.yml
-- Steps: install → build → upload Pages artifact → deploy
+### GitHub Pages (Beta)
+Pushes to `main` auto-deploy to docs.beta.tago.io
+- Workflow: `.github/workflows/beta-deploy.yml`
+- Steps: install → build with `SITE_URL=https://docs.beta.tago.io` → write CNAME → write robots.txt (Disallow all) → upload Pages artifact → deploy
 
-### AWS Infrastructure (Alternative)
-AWS CDK deployment for production hosting with custom domain and redirects
+### AWS Infrastructure (Production)
+GitHub Releases deploy to CloudFront/S3 using CDK with production domains
 ```bash
 npm run cdk:deploy
 ```
 - Creates S3 bucket for static hosting
-- Sets up CloudFront distribution with custom domain support
+- Sets up CloudFront distribution with `docs.tago.io` and `changelog.tago.io`
 - Configures edge redirects for legacy help.tago.io URLs
-- Outputs CloudFront URL for access
+- Uses GitHub OIDC to assume an AWS IAM role (no long‑lived keys)
 
 CDK Commands
 ```bash
@@ -114,8 +114,13 @@ npm run cdk:deploy  # Full deployment (build + deploy)
 
 Site URL and base path
 - docusaurus.config.ts
-  - url: https://new-docs.tago-io.com
+  - url: defaults to https://docs.tago.io; override with env `SITE_URL` (beta build uses https://docs.beta.tago.io)
   - baseUrl: "/"
+  - Beta builds add meta robots noindex and workflow writes a Disallow-all robots.txt
+
+Workflows
+- Beta: `.github/workflows/beta-deploy.yml` → GitHub Pages at docs.beta.tago.io
+- Production: `.github/workflows/production-deploy.yml` → AWS CDK deploy to CloudFront/S3 (region: us-east-1, OIDC role)
 - If deploying under a subpath (https://<org>.github.io/<repo>/), set baseUrl to "/<repo>/" before building
 
 Search (Algolia)

@@ -4,6 +4,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const SITE_URL = process.env.SITE_URL || "https://docs.tago.io";
+const IS_BETA = SITE_URL.includes("docs.beta.tago.io");
+
 const config: Config = {
   title: "TagoIO Docs",
   tagline: "Easy IoT. Powerful Outcomes.",
@@ -14,8 +17,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: "https://new-docs.tago-io.com",
+  // Set the production url of your site here (override with env SITE_URL for staging/beta builds)
+  url: SITE_URL,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/", // Changed from '/docs/' for local development
@@ -77,6 +80,15 @@ const config: Config = {
 
   themeConfig: {
     image: "img/tago-social-card.png",
+    // Add global meta for beta builds to prevent indexing
+    ...(IS_BETA
+      ? {
+          metadata: [
+            { name: "robots", content: "noindex, nofollow" },
+            { name: "googlebot", content: "noindex, nofollow" },
+          ],
+        }
+      : {}),
     algolia: {
       appId: "8HPN5WF45N",
       apiKey: "12cc282e7dcb99632185962ad2624a49",

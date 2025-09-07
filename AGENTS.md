@@ -5,6 +5,17 @@ For local automation and maintenance scripts, see ./infra/AGENTS.md (the infra f
 ## Project Overview
 Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb to Docusaurus, storing all assets locally and maintaining working internal links and sidebars.
 
+## Domains & Deployments (Updated)
+- Production domains
+  - docs.tago.io – main documentation site (Docusaurus via CloudFront/S3)
+  - changelog.tago.io – redirects to /changelog on docs.tago.io
+- Beta domain
+  - docs.beta.tago.io – GitHub Pages environment for not‑ready docs
+- Indexing policy
+  - Beta: blocked from indexing (robots.txt Disallow all + meta robots noindex)
+  - Production: controlled by static/robots.txt in repo root under static/
+    - Note: current static/robots.txt disallows /changelog; adjust as desired
+
 ## Current Repository Status (8/22/2025)
 - Docusaurus site configured and running
   - Node >= 18 required
@@ -33,6 +44,8 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
 
 ### Docusaurus Integration
 - Config: docusaurus.config.ts (url, baseUrl, navbar, Algolia, blog as changelog)
+- SITE_URL env var: overrides `url` at build time (beta uses https://docs.beta.tago.io)
+- Beta builds inject meta robots noindex/nofollow automatically
 - Sidebars: sidebars.ts
 - MDX Components: src/theme/MDXComponents.tsx registers custom components
   - YouTube component available as `<YouTube videoId="..." />`
@@ -44,6 +57,8 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
   - CloudFront distribution with Origin Access Identity for secure S3 access
   - CloudFront Function for URL redirects (legacy help.tago.io → new docs paths)
   - Automatic deployment of built Docusaurus site to S3 with cache invalidation
+  - Custom domains: `docs.tago.io` and `changelog.tago.io`
+  - ACM certificate (us-east-1) for `docs.tago.io` with SAN `changelog.tago.io`
 - Redirect Function: cdk/redirect-function.js - CloudFront edge function for URL mappings
   - Maps 250+ legacy help.tago.io URLs to new documentation paths
   - Performs 301 redirects for SEO preservation
@@ -116,6 +131,16 @@ Usage pattern
 - Build-ready structure with local images and internal links
 
 ## Standard Workflows
+### CI/CD
+- Beta (GitHub Pages)
+  - Workflow: `.github/workflows/beta-deploy.yml`
+  - Trigger: push to `main`
+  - Build with `SITE_URL=https://docs.beta.tago.io`, write `CNAME` and `robots.txt` (Disallow all), deploy to Pages
+- Production (AWS)
+  - Workflow: `.github/workflows/production-deploy.yml`
+  - Trigger: GitHub Release published (tags)
+  - Uses GitHub OIDC to assume IAM role `arn:aws:iam::154399404768:role/github-actions-deploy-role` in `us-east-1`
+  - Runs `npm run cdk:deploy` to push to S3/CloudFront
 - Fetch original articles (for parity checks)
   - cd infra; node fetch_original_markdown.js [--test]
 - Rewrite external links to local
