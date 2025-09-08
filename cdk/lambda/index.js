@@ -1,66 +1,64 @@
-// biome-ignore lint/correctness/noUnusedVariables: CloudFront requires 'handler' to be defined
-function handler(event) {
-  var request = event.request;
-  var uri = request.uri;
-  var _host = request.headers?.host ? request.headers.host.value : "";
-  var remainder = "";
-  var topic = "";
-  // Vars for querystring preservation in fallbacks
-  var qs = null;
-  var hasQs = false;
-  var q = "";
-  var parts = [];
-  var k;
-  var key;
-  var item;
+// Lambda@Edge function for redirecting help.tago.io and changelog.tago.io
+// Handler for viewer-request events
+// Node.js 22 runtime
 
-  // 0) Any request to changelog.tago.io → docs.tago.io/changelog
-  if (_host === "changelog.tago.io") {
+exports.handler = async (event) => {
+  const request = event.Records[0].cf.request;
+  const uri = request.uri;
+  const headers = request.headers;
+  const host = headers?.host?.[0]?.value || "";
+
+  // Helper function to create redirect response
+  function createRedirect(location) {
     return {
-      statusCode: 301,
+      status: "301",
       statusDescription: "Moved Permanently",
       headers: {
-        location: { value: "https://docs.tago.io/changelog" },
+        location: [{ key: "Location", value: location }],
       },
     };
+  }
+
+  // 0) Any request to changelog.tago.io → docs.tago.io/changelog
+  if (host === "changelog.tago.io") {
+    return createRedirect("https://docs.tago.io/changelog");
   }
 
   // This function is attached to help.tago.io distribution.
   // 1) Root -> support portal
   if (uri === "/" || uri === "") {
-    return {
-      statusCode: 301,
-      statusDescription: "Moved Permanently",
-      headers: {
-        location: { value: "https://support.tago.io" },
-      },
-    };
+    return createRedirect("https://support.tago.io");
   }
 
-  // 2) Community topics -> community forum
+  // 2) Community paths -> community forum
+  if (uri === "/portal/en/community" || uri === "/portal/en/community/") {
+    return createRedirect("https://community.tago.io");
+  }
+
+  if (uri === "/portal/en/community/tagoio" || uri === "/portal/en/community/tagoio/") {
+    return createRedirect("https://community.tago.io/c/tagoio");
+  }
+
+  if (uri === "/portal/en/community/tagorun" || uri === "/portal/en/community/tagorun/") {
+    return createRedirect("https://community.tago.io/c/tagorun");
+  }
+
+  if (uri === "/portal/en/community/tagodeploy" || uri === "/portal/en/community/tagodeploy/") {
+    return createRedirect("https://community.tago.io/c/tagodeploy");
+  }
+
+  // 3) Community topics -> community forum
   if (uri.indexOf("/portal/en/community/topic/") === 0) {
-    remainder = uri.substring("/portal/en/community/topic/".length);
-    topic = remainder.split("/")[0];
+    const remainder = uri.substring("/portal/en/community/topic/".length);
+    const topic = remainder.split("/")[0];
     if (!topic) {
-      return {
-        statusCode: 301,
-        statusDescription: "Moved Permanently",
-        headers: {
-          location: { value: "https://community.tago.io" },
-        },
-      };
+      return createRedirect("https://community.tago.io");
     }
-    return {
-      statusCode: 301,
-      statusDescription: "Moved Permanently",
-      headers: {
-        location: { value: `https://community.tago.io/t/${topic}` },
-      },
-    };
+    return createRedirect(`https://community.tago.io/t/${topic}`);
   }
 
-  // URL mappings from url-mappings.json
-  var urlMappings = {
+  // URL mappings - direct path mappings
+  const urlMappings = {
     "/portal/en/kb/articles/1-getting-started": "/docs/tagoio/getting-started",
     "/portal/en/kb/articles/101-language-preferences":
       "/docs/tagoio/tagorun/getting-started/language-preferences",
@@ -533,62 +531,36 @@ function handler(event) {
       "/docs/tagoio/widgets/tables/user-list-widget",
   };
 
-  // Check if the URI matches any mapping
+  // Check for direct URL mapping
   if (urlMappings[uri]) {
-    return {
-      statusCode: 301,
-      statusDescription: "Moved Permanently",
-      headers: {
-        // Always send users to docs.tago.io
-        location: { value: `https://docs.tago.io${urlMappings[uri]}` },
-      },
-    };
+    return createRedirect(`https://docs.tago.io${urlMappings[uri]}`);
   }
 
   // Generic fallback: anything under /portal/en/kb → docs home
   if (uri.indexOf("/portal/en/kb") === 0) {
     return {
-      statusCode: 301,
+      status: "301",
       statusDescription: "Moved Permanently",
       headers: {
-        location: { value: "https://docs.tago.io" },
+        location: [{ key: "Location", value: "https://docs.tago.io" }],
       },
     };
   }
 
   // Default fallback: send any other help.tago.io path to support.tago.io, preserving path and query
-  qs = request.querystring;
-  hasQs = false;
-  q = "";
-  if (qs) {
-    for (k in qs) {
-      if (Object.hasOwn(qs, k)) {
-        hasQs = true;
-        break;
-      }
-    }
-    if (hasQs) {
-      parts = [];
-      for (key in qs) {
-        if (Object.hasOwn(qs, key)) {
-          item = qs[key];
-          if (item && item.value !== undefined) {
-            parts.push(
-              `${encodeURIComponent(key)}=${encodeURIComponent(item.value)}`,
-            );
-          }
-        }
-      }
-      if (parts.length > 0) {
-        q = `?${parts.join("&")}`;
-      }
-    }
+  const querystring = request.querystring;
+  let query = "";
+  if (querystring) {
+    query = `?${querystring}`;
   }
+
   return {
-    statusCode: 301,
+    status: "301",
     statusDescription: "Moved Permanently",
     headers: {
-      location: { value: `https://support.tago.io${uri}${q}` },
+      location: [
+        { key: "Location", value: `https://support.tago.io${uri}${query}` },
+      ],
     },
   };
-}
+};

@@ -52,11 +52,9 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
   - Mermaid diagrams available via `<Mermaid chart={`...`} />` (renders client-side using mermaid)
 
 ### AWS CDK Infrastructure
-- CDK Stack: cdk/cdk.ts - AWS infrastructure as code for static site hosting
-  - S3 bucket for static website hosting (auto-delete on destroy)
-  - Two CloudFront distributions:
-    - Docs distribution for `docs.tago.io` (serves Docusaurus from S3; no edge function)
-    - Redirects distribution for `help.tago.io` + `changelog.tago.io` (edge redirects only)
+- CDK Stacks (split to allow individual deployments):
+  - cdk/docs-cdk.ts – Docs distribution for `docs.tago.io` (serves Docusaurus from S3; no edge function)
+  - cdk/redirects-cdk.ts – Redirects distribution for `help.tago.io` + `changelog.tago.io` (edge redirects only)
   - Automatic deployment of built Docusaurus site to S3 with cache invalidation (docs distribution)
 - Custom certificates (us-east-1) — provided via environment variables:
   - `DOCS_CERT_ARN`: ACM cert ARN for `docs.tago.io` (CN `docs.tago.io`).
@@ -73,7 +71,9 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
 - CDK Scripts (package.json):
   - `npm run cdk:build` - Compile CDK TypeScript
   - `npm run cdk:watch` - Watch mode for CDK development
-  - `npm run cdk:deploy` - Full deployment: build docs → build CDK → deploy to AWS
+  - `npm run cdk:deploy:docs` - Deploy only docs stack (cdk/docs-cdk.ts)
+  - `npm run cdk:deploy:redirects` - Deploy only redirects stack (cdk/redirects-cdk.ts)
+  - `npm run cdk:deploy` - Deploy both stacks sequentially
 - CDK Dependencies (devDependencies):
   - aws-cdk-lib: AWS CDK library v2.149.0
   - constructs: CDK constructs framework
