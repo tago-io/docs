@@ -45,8 +45,9 @@ npm run biome:fix   # lint + format (write)
   - img/ – Site images (logos, social cards, icons)
 - changelog/ – Changelog posts (surfaced via the Blog plugin at /changelog)
 - cdk/ – AWS CDK infrastructure for static site hosting
-  - cdk.ts – CDK stack definition (S3 + CloudFront + redirects)
-  - redirect-function.js – CloudFront edge function for URL mappings
+  - cdk.ts – CDK stack definition (S3 + CloudFront). Two distributions: docs (site) and redirects (help + changelog)
+    - Certificates are read from env vars (GitHub secrets): `DOCS_CERT_ARN`, `REDIRECTS_CERT_ARN` (ACM must be in us-east-1)
+  - redirect-function.js – CloudFront edge function (redirects distribution)
 - src/ – Docusaurus site code
   - components/
     - youtube.tsx – YouTube MDX component wrapper
@@ -100,10 +101,21 @@ GitHub Releases deploy to CloudFront/S3 using CDK with production domains
 ```bash
 npm run cdk:deploy
 ```
-- Creates S3 bucket for static hosting
-- Sets up CloudFront distribution with `docs.tago.io` and `changelog.tago.io`
-- Configures edge redirects for legacy help.tago.io URLs
+- Creates S3 bucket for static hosting (docs site)
+- Sets up two CloudFront distributions:
+  - docs.tago.io (serves the site; no edge function)
+  - redirects distribution for help.tago.io + changelog.tago.io (edge redirects only)
+- Redirect rules (cdk/redirect-function.js):
+  - help.tago.io/ → https://support.tago.io
+  - help.tago.io/portal/en/community/topic/{topic} → https://community.tago.io/t/{topic}
+  - help.tago.io/portal/en/kb/... → https://docs.tago.io{mappedPath} (or docs home if unmapped)
+  - Any other help.tago.io path → https://support.tago.io{path}[?query]
+  - changelog.tago.io → https://docs.tago.io/changelog
 - Uses GitHub OIDC to assume an AWS IAM role (no long‑lived keys)
+  - Role: set secret `AWS_ROLE_TO_ASSUME` (e.g., `arn:aws:iam::154399404768:role/github-actions-deploy-role`)
+  - Certificates: configure GitHub repo/environment secrets and expose as env:
+    - `DOCS_CERT_ARN` → ACM cert ARN for docs.tago.io (CN docs.tago.io)
+    - `REDIRECTS_CERT_ARN` → ACM cert ARN for help.tago.io (CN) with SAN changelog.tago.io
 
 CDK Commands
 ```bash

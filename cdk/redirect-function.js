@@ -2,17 +2,59 @@
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
+  var _host = request.headers?.host ? request.headers.host.value : "";
+  var remainder = "";
+  var topic = "";
+  // Vars for querystring preservation in fallbacks
+  var qs = null;
+  var hasQs = false;
+  var q = "";
+  var parts = [];
+  var k;
+  var key;
+  var item;
 
-  // Redirect changelog.tago.io to /changelog on docs.tago.io
-  if (
-    request.headers.host &&
-    request.headers.host.value === "changelog.tago.io"
-  ) {
+  // 0) Any request to changelog.tago.io → docs.tago.io/changelog
+  if (_host === "changelog.tago.io") {
     return {
       statusCode: 301,
       statusDescription: "Moved Permanently",
       headers: {
         location: { value: "https://docs.tago.io/changelog" },
+      },
+    };
+  }
+
+  // This function is attached to help.tago.io distribution.
+  // 1) Root -> support portal
+  if (uri === "/" || uri === "") {
+    return {
+      statusCode: 301,
+      statusDescription: "Moved Permanently",
+      headers: {
+        location: { value: "https://support.tago.io" },
+      },
+    };
+  }
+
+  // 2) Community topics -> community forum
+  if (uri.indexOf("/portal/en/community/topic/") === 0) {
+    remainder = uri.substring("/portal/en/community/topic/".length);
+    topic = remainder.split("/")[0];
+    if (!topic) {
+      return {
+        statusCode: 301,
+        statusDescription: "Moved Permanently",
+        headers: {
+          location: { value: "https://community.tago.io" },
+        },
+      };
+    }
+    return {
+      statusCode: 301,
+      statusDescription: "Moved Permanently",
+      headers: {
+        location: { value: `https://community.tago.io/t/${topic}` },
       },
     };
   }
@@ -493,16 +535,60 @@ function handler(event) {
 
   // Check if the URI matches any mapping
   if (urlMappings[uri]) {
-    // Perform 301 redirect
     return {
       statusCode: 301,
       statusDescription: "Moved Permanently",
       headers: {
-        location: { value: urlMappings[uri] },
+        // Always send users to docs.tago.io
+        location: { value: `https://docs.tago.io${urlMappings[uri]}` },
       },
     };
   }
 
-  // If no mapping found, continue with the original request
-  return request;
+  // Generic fallback: anything under /portal/en/kb → docs home
+  if (uri.indexOf("/portal/en/kb") === 0) {
+    return {
+      statusCode: 301,
+      statusDescription: "Moved Permanently",
+      headers: {
+        location: { value: "https://docs.tago.io" },
+      },
+    };
+  }
+
+  // Default fallback: send any other help.tago.io path to support.tago.io, preserving path and query
+  qs = request.querystring;
+  hasQs = false;
+  q = "";
+  if (qs) {
+    for (k in qs) {
+      if (Object.hasOwn(qs, k)) {
+        hasQs = true;
+        break;
+      }
+    }
+    if (hasQs) {
+      parts = [];
+      for (key in qs) {
+        if (Object.hasOwn(qs, key)) {
+          item = qs[key];
+          if (item && item.value !== undefined) {
+            parts.push(
+              `${encodeURIComponent(key)}=${encodeURIComponent(item.value)}`,
+            );
+          }
+        }
+      }
+      if (parts.length > 0) {
+        q = `?${parts.join("&")}`;
+      }
+    }
+  }
+  return {
+    statusCode: 301,
+    statusDescription: "Moved Permanently",
+    headers: {
+      location: { value: `https://support.tago.io${uri}${q}` },
+    },
+  };
 }

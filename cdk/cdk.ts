@@ -7,6 +7,19 @@ import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import type { Construct } from "constructs";
 
+// ACM certificate ARNs are provided via environment variables.
+// Set these in your CI (GitHub Actions) as secrets and export to env:
+// - DOCS_CERT_ARN: ACM cert ARN for docs.tago.io (CN docs.tago.io)
+// - REDIRECTS_CERT_ARN: ACM cert ARN for help.tago.io (CN) with SAN changelog.tago.io
+// Note: CloudFront requires certificates in us-east-1.
+const DOCS_CERT_ARN = process.env.DOCS_CERT_ARN ?? "";
+const REDIRECTS_CERT_ARN = process.env.REDIRECTS_CERT_ARN ?? "";
+if (!DOCS_CERT_ARN || !REDIRECTS_CERT_ARN) {
+  throw new Error(
+    "Missing certificate ARNs. Provide DOCS_CERT_ARN and REDIRECTS_CERT_ARN environment variables (ACM in us-east-1).",
+  );
+}
+
 class TagoDocsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -30,15 +43,11 @@ class TagoDocsStack extends cdk.Stack {
       },
     );
 
-    // Certificate for custom domains (docs.tago.io and changelog.tago.io)
-    const certificate = new certificatemanager.Certificate(
+    // Use manually-provisioned ACM certificates (in us-east-1)
+    const docsCertificate = certificatemanager.Certificate.fromCertificateArn(
       this,
       "DocsCertificate",
-      {
-        domainName: "docs.tago.io",
-        subjectAlternativeNames: ["changelog.tago.io"],
-        validation: certificatemanager.CertificateValidation.fromDns(),
-      },
+      DOCS_CERT_ARN,
     );
 
     // Grant CloudFront access to the bucket
@@ -54,37 +63,22 @@ class TagoDocsStack extends cdk.Stack {
       }),
     );
 
-    // CloudFront function for URL redirects
-    const redirectFunction = new cloudfront.Function(
-      this,
-      "TagoDocsRedirectFunction",
-      {
-        code: cloudfront.FunctionCode.fromFile({
-          filePath: path.join(__dirname, "redirect-function.js"),
-        }),
-        runtime: cloudfront.FunctionRuntime.JS_2_0,
-      },
-    );
+    // No redirect function on docs distribution. Redirect logic lives in a
+    // separate distribution dedicated to help/changelog domains.
 
-    // CloudFront distribution
+    // CloudFront distribution (docs.tago.io only)
     const distribution = new cloudfront.Distribution(
       this,
       "TagoDocsDistribution",
       {
-        certificate: certificate,
-        domainNames: ["docs.tago.io", "changelog.tago.io"],
+        certificate: docsCertificate,
+        domainNames: ["docs.tago.io"],
         defaultBehavior: {
           origin: new origins.S3Origin(siteBucket, {
             originAccessIdentity: originAccessIdentity,
           }),
           viewerProtocolPolicy:
             cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-          functionAssociations: [
-            {
-              function: redirectFunction,
-              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
-            },
-          ],
         },
         defaultRootObject: "index.html",
         errorResponses: [
@@ -106,9 +100,87 @@ class TagoDocsStack extends cdk.Stack {
     });
 
     // Output the CloudFront URL
-    new cdk.CfnOutput(this, "CloudFrontURL", {
+    new cdk.CfnOutput(this, "DocsCloudFrontURL", {
       value: `https://${distribution.distributionDomainName}`,
-      description: "CloudFront Distribution URL",
+      description: "CloudFront Distribution URL for docs.tago.io",
+    });
+
+    // ==============================
+    // help.tago.io Redirect Frontend
+    // ==============================
+
+    // Minimal S3 bucket to satisfy origin requirement (no public access)
+    const helpBucket = new s3.Bucket(this, "HelpPlaceholderBucket", {
+      publicReadAccess: false,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
+
+    const helpOai = new cloudfront.OriginAccessIdentity(this, "HelpOAI", {
+      comment: "OAI for help.tago.io redirect distribution",
+    });
+
+    helpBucket.addToResourcePolicy(
+      new cdk.aws_iam.PolicyStatement({
+        actions: ["s3:GetObject"],
+        resources: [helpBucket.arnForObjects("*")],
+        principals: [
+          new cdk.aws_iam.CanonicalUserPrincipal(
+            helpOai.cloudFrontOriginAccessIdentityS3CanonicalUserId,
+          ),
+        ],
+      }),
+    );
+
+    // Certificate for redirects distribution (help.tago.io + changelog.tago.io)
+    const redirectsCertificate =
+      certificatemanager.Certificate.fromCertificateArn(
+        this,
+        "RedirectsCertificate",
+        REDIRECTS_CERT_ARN,
+      );
+
+    // CloudFront function dedicated to help.tago.io redirects
+    const helpRedirectFunction = new cloudfront.Function(
+      this,
+      "HelpRedirectFunction",
+      {
+        code: cloudfront.FunctionCode.fromFile({
+          filePath: path.join(__dirname, "redirect-function.js"),
+        }),
+        runtime: cloudfront.FunctionRuntime.JS_2_0,
+      },
+    );
+
+    // CloudFront distribution (help.tago.io + changelog.tago.io). Used solely for redirects.
+    const helpDistribution = new cloudfront.Distribution(
+      this,
+      "RedirectsDistribution",
+      {
+        certificate: redirectsCertificate,
+        domainNames: ["help.tago.io", "changelog.tago.io"],
+        defaultBehavior: {
+          origin: new origins.S3Origin(helpBucket, {
+            originAccessIdentity: helpOai,
+          }),
+          viewerProtocolPolicy:
+            cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+          functionAssociations: [
+            {
+              function: helpRedirectFunction,
+              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+            },
+          ],
+        },
+        defaultRootObject: "index.html",
+      },
+    );
+
+    new cdk.CfnOutput(this, "RedirectsCloudFrontURL", {
+      value: `https://${helpDistribution.distributionDomainName}`,
+      description:
+        "CloudFront Distribution URL for help.tago.io + changelog.tago.io",
     });
   }
 }

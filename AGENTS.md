@@ -54,15 +54,22 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
 ### AWS CDK Infrastructure
 - CDK Stack: cdk/cdk.ts - AWS infrastructure as code for static site hosting
   - S3 bucket for static website hosting (auto-delete on destroy)
-  - CloudFront distribution with Origin Access Identity for secure S3 access
-  - CloudFront Function for URL redirects (legacy help.tago.io → new docs paths)
-  - Automatic deployment of built Docusaurus site to S3 with cache invalidation
-  - Custom domains: `docs.tago.io` and `changelog.tago.io`
-  - ACM certificate (us-east-1) for `docs.tago.io` with SAN `changelog.tago.io`
-- Redirect Function: cdk/redirect-function.js - CloudFront edge function for URL mappings
-  - Maps 250+ legacy help.tago.io URLs to new documentation paths
-  - Performs 301 redirects for SEO preservation
-  - Uses url-mappings.json data embedded in the function
+  - Two CloudFront distributions:
+    - Docs distribution for `docs.tago.io` (serves Docusaurus from S3; no edge function)
+    - Redirects distribution for `help.tago.io` + `changelog.tago.io` (edge redirects only)
+  - Automatic deployment of built Docusaurus site to S3 with cache invalidation (docs distribution)
+- Custom certificates (us-east-1) — provided via environment variables:
+  - `DOCS_CERT_ARN`: ACM cert ARN for `docs.tago.io` (CN `docs.tago.io`).
+  - `REDIRECTS_CERT_ARN`: ACM cert ARN for `help.tago.io` (CN) with SAN `changelog.tago.io`.
+  - Set these in GitHub Actions as secrets and export to env for the CDK step.
+- Redirect Function: cdk/redirect-function.js - CloudFront edge function (attached to the redirects distribution)
+  - Maps 250+ legacy `help.tago.io/portal/en/kb/...` URLs to new documentation paths under docs.tago.io
+  - Handles community topics: `/portal/en/community/topic/{topic}` → `https://community.tago.io/t/{topic}`
+  - Root of help: `/` → `https://support.tago.io`
+  - Fallbacks:
+    - Any `/portal/en/kb*` not explicitly mapped → `https://docs.tago.io`
+    - Any other help path → `https://support.tago.io{path}[?query]` (preserves path and query)
+  - Handles `Host: changelog.tago.io` by redirecting to `https://docs.tago.io/changelog`
 - CDK Scripts (package.json):
   - `npm run cdk:build` - Compile CDK TypeScript
   - `npm run cdk:watch` - Watch mode for CDK development
@@ -139,7 +146,8 @@ Usage pattern
 - Production (AWS)
   - Workflow: `.github/workflows/production-deploy.yml`
   - Trigger: GitHub Release published (tags)
-  - Uses GitHub OIDC to assume IAM role `arn:aws:iam::154399404768:role/github-actions-deploy-role` in `us-east-1`
+  - Uses GitHub OIDC to assume IAM role (provided via secret):
+    - `AWS_ROLE_TO_ASSUME` → e.g., `arn:aws:iam::154399404768:role/github-actions-deploy-role` (region: us-east-1)
   - Runs `npm run cdk:deploy` to push to S3/CloudFront
 - Fetch original articles (for parity checks)
   - cd infra; node fetch_original_markdown.js [--test]
@@ -160,6 +168,7 @@ Usage pattern
   - npm run start | npm run build | npm run serve
 - Deploy infrastructure
   - npm run cdk:deploy (builds docs + deploys to AWS)
+  - Ensure ACM validations complete for both distributions (docs cert, redirects cert)
 
 ## Code style & Biome rules (for agents)
 - Always run Biome before committing
