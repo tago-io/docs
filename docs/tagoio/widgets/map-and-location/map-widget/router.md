@@ -18,8 +18,7 @@ This is done by selecting a device and specifying the variable that holds its co
 
 Once the origin is set, you can enable the router option in the map widget settings. The following screenshot shows how to activate it:
 
-![Router option configuration](
-<!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/1po3_tsiPad8stRYHbDMsr8vOffCuEeh48UwrhG6BaA/router_option-KkE.png -->)
+![Router option configuration](/docs/tagoio/router.jpeg)
 
 When users access the map from a mobile device, they will have the option to select one of the following navigation services:
 
