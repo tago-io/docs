@@ -5,6 +5,6 @@ tags: ["tagoio"]
 ---
 ![Raspberry Pi board](/docs_imagem/tagoio/raspberry-pi-2.png)
 
-Visit this [tutorial (Community)](https://tagoio.discourse.group/t/raspberry-pi-tagoio-using-sdk-or-mqtt-getting-started/991) to learn how to communicate a Raspberry Pi board with TagoIO using the TagoIO SDK or the MQTT protocol.
+Visit this [tutorial (Community)](https://community.tago.io/t/raspberry-pi-tagoio-using-sdk-or-mqtt-getting-started/991) to learn how to communicate a Raspberry Pi board with TagoIO using the TagoIO SDK or the MQTT protocol.
 
 More tutorials like this are available in the [Forum inside our Community](https://community.tago.io/).

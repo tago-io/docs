@@ -35,7 +35,7 @@ Below are example outputs from Custom Widgets (charts and a map) to illustrate w
 ## Creating your own
 
 The sky's the limit when using this widget. You can build your widget using Angular, React, Vue.js, or even plain old JavaScript.  
-To understand how to write the code for your Custom Widget, click [here](https://tagoio.discourse.group/t/custom-widget-iframe/842).
+To understand how to write the code for your Custom Widget, click [here](https://community.tago.io/t/custom-widget-iframe/842).
 
 ## Data Sources
 
