@@ -1,5 +1,5 @@
 ---
-title: "Dashboard icons"
+title: "Dashboard Icons"
 description: "This article explains how to add and customize icons for dashboards in TagoIO, where icons appear, and how to access the dashboard Configure option to change them."
 tags: ["tagoio", "dashboards"]
 ---

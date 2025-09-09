@@ -1,5 +1,5 @@
 ---
-title: "Custom mobile app"
+title: "Custom Mobile App"
 description: "This article explains the Custom mobile app add-on for TagoIO, describing its white-label capabilities, pricing reference, and deployment fee, with links to related add-ons and documentation."
 tags: ["tagoio"]
 ---

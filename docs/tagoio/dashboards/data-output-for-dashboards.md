@@ -1,5 +1,5 @@
 ---
-title: "Data Output for dashboards"
+title: "Data Output for Dashboards"
 description: "This article explains how dashboard data output is counted in TagoIO, the monthly output limits per plan, and what happens when you reach those limits."
 tags: ["tagoio", "dashboards"]
 sidebar_position: 2

@@ -1,5 +1,5 @@
 ---
-title: "Dashboard global time filter and period presets"
+title: "Dashboard Global Time Filter and Period Presets"
 description: "This article describes the Dashboard Period Preset feature in TagoIO, which sets global time-based filters and quick period presets across all widgets, and explains using the date picker to select specific ranges and define a maximum selectable period."
 tags: ["tagoio", "dashboards"]
 ---

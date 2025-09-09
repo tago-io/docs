@@ -1,5 +1,5 @@
 ---
-title: "Action cron"
+title: "Action Cron"
 description: "This article explains how to use and modify an Action cron in TagoIO, showing where to enter a cron expression and what each part of the interface means."
 tags: ["tagoio", "actions"]
 ---

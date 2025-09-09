@@ -1,5 +1,5 @@
 ---
-title: "Geofences in map widgets"
+title: "Geofences in Map Widgets"
 description: "This article explains how geofences are used in map widgets to color map areas and trigger events in specific regions, and points to related documentation for creating geofences and handling geofence variable data."
 tags: ["tagoio", "widgets"]
 ---

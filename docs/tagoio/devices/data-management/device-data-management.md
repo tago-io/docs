@@ -1,5 +1,5 @@
 ---
-title: "Device data management"
+title: "Device Data Management"
 description: "This article explains how to use the Device page in TagoIO to visualize, filter, edit, import, and export device variables, and describes how the platform displays the amount of stored data for a device."
 tags: ["tagoio", "devices"]
 sidebar_position: 1

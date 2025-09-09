@@ -1,5 +1,5 @@
 ---
-title: "Distributing analysis"
+title: "Distributing Analysis"
 description: "This article explains how to distribute a copy of an Analysis in TagoIO by sending a customized install link so others can add and edit their own copy without affecting yours."
 tags: ["tagoio", "analysis"]
 ---

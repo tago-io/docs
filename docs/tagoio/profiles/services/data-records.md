@@ -1,5 +1,5 @@
 ---
-title: "Data Records"
+title: "Data Records Service"
 description: "This article explains how Data Records are structured in TagoIO, what counts toward a profile's data record limit, and provides a JSON example showing how a single register can include variable fields, location, and metadata."
 tags: ["tagoio"]
 ---
