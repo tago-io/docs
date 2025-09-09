@@ -26,7 +26,7 @@ When users access the map from a mobile device, they will have the option to sel
 * Apple Maps  
 * Waze  
 
-![Maps services options](/static/docs_imagem/tagoio/router screenshot.png)
+![Maps services options](/docs_imagem/tagoio/router_screenshot.png)
 
 
 :::info
