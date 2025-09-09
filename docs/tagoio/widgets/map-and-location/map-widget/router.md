@@ -26,6 +26,9 @@ When users access the map from a mobile device, they will have the option to sel
 * Apple Maps  
 * Waze  
 
+![Maps services options](/static/docs_imagem/tagoio/router screenshot.png)
+
+
 :::info
 
 Only Google Maps is available when using a browser from a computer.
