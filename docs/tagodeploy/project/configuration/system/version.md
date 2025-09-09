@@ -34,7 +34,7 @@ it is not possible to roll back to a previous version. The system does not
 support rollback or downgrade operations. Additionally, you should maintain
 appropriate backup and recovery strategies to mitigate any potential issues
 introduced by an upgrade utilizing the
-[backup](/docs/tagodeploy/project/management/backups.md) functionality.
+[backup](/tagodeploy/project/management/backups.md) functionality.
 
 ## Components Affected by Version Updates
 

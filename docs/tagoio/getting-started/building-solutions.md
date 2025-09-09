@@ -4,15 +4,18 @@ description: "This article explains how to begin building applications on TagoIO
 tags: ["tagoio"]
 sidebar_position: 2
 ---
-You can start building your application using your own devices, third-party devices, simulators, or an external database.
 
-Go beyond the typical IoT solution and integrate your application with external services such as Microsoft 365, Google Sheets, Slack, Zoho CRM, HubSpot, ERPs, and more.
+You can start building your application using your own devices, third-party
+devices, simulators, or an external database.
+
+Go beyond the typical IoT solution and integrate your application with external
+services such as Microsoft 365, Google Sheets, Slack, Zoho CRM, HubSpot, ERPs,
+and more.
 
 Watch this short video to learn the key concepts.
 
 <YouTube videoId="UDt-iwoEiRA" title="Integrating IoT and services using Tago.io" />
 
-
 Take a look at this short interactive introduction at https://intro.tago.io/.
 
-Use [Get started](/docs/tagoio/getting-started/.md) to add a device.
+Use [Get started](/tagoio/getting-started/getting-started.md) to add a device.

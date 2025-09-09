@@ -91,7 +91,7 @@ To integrate your device with the TagoIO Platform, follow these guidelines:
 
 3. **Add Device Support via Connectors (If Necessary)**  
    - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.  
-   - For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview.md).
+   - For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices/payload-parser/connector/connector-overview.md).
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
@@ -102,8 +102,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](/docs/ta
 
 2. **Verify Data Reception**  
    - In TagoIO, navigate to the *Device* and into the *Data* tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) within your device settings to monitor incoming data in real‑time.
+   - Alternatively, use the [Live Inspector](/tagoio/devices/live-inspector.md) within your device settings to monitor incoming data in real‑time.
 
-Information about Downlink can be found at the [Sigfox - Downlink](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink.md) documentation.
+Information about Downlink can be found at the [Sigfox - Downlink](/tagoio/integrations/networks/sigfox/sigfox-downlink.md) documentation.
 
-You also can [create your own parse scripts](/docs/tagoio/devices/payload-parser/building-your-own-parser.md) to process variables from the payload.
+You also can [create your own parse scripts](/tagoio/devices/payload-parser/building-your-own-parser.md) to process variables from the payload.

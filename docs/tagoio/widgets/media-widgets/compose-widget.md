@@ -7,7 +7,7 @@ The compose widget allows you to add pins to images and videos. You can change t
 
 ![Example of Compose widget showing pins on an image](/docs_imagem/tagoio/compose-widget-2.gif)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
+This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md) and [groups](/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## Creating your own
 

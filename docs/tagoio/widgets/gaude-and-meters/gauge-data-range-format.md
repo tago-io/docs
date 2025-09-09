@@ -41,7 +41,7 @@ The variable that contains the metadata can be selected in the **Get metadata fr
 You can choose one of 3 options in the **Get metadata from** field:
 
 1. **From original variable**: The metadata property will be acquired from the variable that contains the gauge's value.
-2. **From variable used in formula**: The metadata property will be acquired from the variable that is being used in the formula. This option will only be enabled if your gauge is using [Formula](/docs/tagoio/widgets/general/formula.md), and the Formula is being used with a variable.
+2. **From variable used in formula**: The metadata property will be acquired from the variable that is being used in the formula. This option will only be enabled if your gauge is using [Formula](/tagoio/widgets/general/formula.md), and the Formula is being used with a variable.
 3. **From another variable**: The metadata will be acquired from a variable of your choice. If you select this option, a variable selector will appear.
 
 <!-- Image temporarily disabled: Gauge example showing dynamic range - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/JcEqhWiKdOri4fx-LbJq5WSzwHf0sqGYAoLLv6FxMsA/1584998743226-9_Q.png -->

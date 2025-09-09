@@ -132,33 +132,101 @@ class InternalLinkReviewer {
   }
 
   /**
-   * Find the target file for a given link path
+   * Verify if a file actually exists on disk
+   */
+  fileExists(filePath) {
+    try {
+      return fs.existsSync(filePath) && fs.statSync(filePath).isFile();
+    } catch (error) {
+      return false;
+    }
+  }
+
+  /**
+   * Search for a file by name across all directories
+   */
+  searchFileByName(fileName) {
+    const results = [];
+    const cleanName = fileName.replace(/\.md$/, "");
+
+    for (const [key, fileInfo] of this.allFiles) {
+      if (fileInfo.fileName === cleanName) {
+        results.push(fileInfo);
+      }
+    }
+
+    return results;
+  }
+
+  /**
+   * Calculate the best matching file based on directory similarity
+   */
+  findBestMatch(candidates, fromDirectory) {
+    if (candidates.length === 0) return null;
+    if (candidates.length === 1) return candidates[0];
+
+    // Score candidates based on directory similarity
+    const scored = candidates.map((candidate) => {
+      const candidateDir = candidate.directory;
+      const fromDirParts = fromDirectory.split("/").filter((p) => p);
+      const candidateDirParts = candidateDir.split("/").filter((p) => p);
+
+      // Calculate similarity score
+      let score = 0;
+      const minLength = Math.min(fromDirParts.length, candidateDirParts.length);
+
+      for (let i = 0; i < minLength; i++) {
+        if (fromDirParts[i] === candidateDirParts[i]) {
+          score += 1;
+        } else {
+          break;
+        }
+      }
+
+      // Prefer files in the same product area (tagoio, tagorun, etc.)
+      if (fromDirParts[0] === candidateDirParts[0]) {
+        score += 10;
+      }
+
+      return { candidate, score };
+    });
+
+    // Sort by score (descending) and return the best match
+    scored.sort((a, b) => b.score - a.score);
+    return scored[0].candidate;
+  }
+
+  /**
+   * Find the target file for a given link path with comprehensive search
    */
   findTargetFile(linkPath, fromDirectory) {
     // Remove .md extension if present for lookup
     const cleanPath = linkPath.replace(/\.md$/, "");
+    const originalHadMdExtension = linkPath.endsWith(".md");
 
-    // Try different variations of the path
+    // Step 1: Try exact path resolution first
     const variations = [
-      linkPath, // Original path with .md
+      linkPath, // Original path
       cleanPath, // Without .md
       cleanPath + ".md", // Ensure .md
-      path.basename(cleanPath), // Just filename
-      path.basename(cleanPath) + ".md", // Just filename with .md
     ];
 
     for (const variation of variations) {
-      // First try exact match by relative path
+      // Check by exact relative path match
       if (this.allFiles.has(variation)) {
         const fileInfo = this.allFiles.get(variation);
-        return {
-          found: true,
-          path: fileInfo.relativePath,
-          needsMdExtension: !variation.endsWith(".md"),
-        };
+        // Verify file actually exists on disk
+        if (this.fileExists(fileInfo.filePath)) {
+          return {
+            found: true,
+            path: fileInfo.relativePath,
+            needsMdExtension: !originalHadMdExtension,
+            reconstructed: false,
+          };
+        }
       }
 
-      // Try to find by resolving relative path
+      // Try to resolve relative paths
       if (
         variation.includes("/") ||
         variation.startsWith("../") ||
@@ -174,20 +242,91 @@ class InternalLinkReviewer {
               fileInfo.relativePath === resolved + ".md" ||
               fileInfo.relativePath.replace(/\.md$/, "") === resolved
             ) {
-              return {
-                found: true,
-                path: fileInfo.relativePath,
-                needsMdExtension: !fileInfo.relativePath.endsWith(".md"),
-              };
+              // Verify file actually exists on disk
+              if (this.fileExists(fileInfo.filePath)) {
+                return {
+                  found: true,
+                  path: fileInfo.relativePath,
+                  needsMdExtension: !originalHadMdExtension,
+                  reconstructed: false,
+                };
+              }
             }
           }
         } catch (error) {
-          // Path resolution failed, continue to next variation
+          // Path resolution failed, continue
         }
       }
     }
 
-    return { found: false, path: null, needsMdExtension: false };
+    // Step 2: If exact path not found, search by filename across all directories
+    const fileName = path.basename(cleanPath);
+    const candidates = this.searchFileByName(fileName);
+
+    if (candidates.length > 0) {
+      // Filter candidates that actually exist on disk
+      const existingCandidates = candidates.filter((candidate) =>
+        this.fileExists(candidate.filePath),
+      );
+
+      if (existingCandidates.length > 0) {
+        const bestMatch = this.findBestMatch(existingCandidates, fromDirectory);
+
+        if (bestMatch) {
+          return {
+            found: true,
+            path: bestMatch.relativePath,
+            needsMdExtension: !originalHadMdExtension,
+            reconstructed: true,
+            originalPath: linkPath,
+            suggestedPath: "/" + bestMatch.relativePath,
+          };
+        }
+      }
+    }
+
+    // Step 3: Try fuzzy matching for common variations
+    const fuzzyVariations = [
+      fileName.replace(/-/g, "_"), // Replace hyphens with underscores
+      fileName.replace(/_/g, "-"), // Replace underscores with hyphens
+      fileName.toLowerCase(),
+      fileName.replace(/\s+/g, "-").toLowerCase(),
+    ];
+
+    for (const fuzzyName of fuzzyVariations) {
+      const fuzzyCandidates = this.searchFileByName(fuzzyName);
+      if (fuzzyCandidates.length > 0) {
+        const existingCandidates = fuzzyCandidates.filter((candidate) =>
+          this.fileExists(candidate.filePath),
+        );
+
+        if (existingCandidates.length > 0) {
+          const bestMatch = this.findBestMatch(
+            existingCandidates,
+            fromDirectory,
+          );
+
+          if (bestMatch) {
+            return {
+              found: true,
+              path: bestMatch.relativePath,
+              needsMdExtension: !originalHadMdExtension,
+              reconstructed: true,
+              originalPath: linkPath,
+              suggestedPath: "/" + bestMatch.relativePath,
+              fuzzyMatch: true,
+            };
+          }
+        }
+      }
+    }
+
+    return {
+      found: false,
+      path: null,
+      needsMdExtension: false,
+      reconstructed: false,
+    };
   }
 
   /**
@@ -224,61 +363,87 @@ class InternalLinkReviewer {
         const correctPath = target.path;
         const currentPath = link.linkPath;
 
-        // Check if path needs .md extension
-        if (target.needsMdExtension && !currentPath.endsWith(".md")) {
-          const fixedPath = currentPath + ".md";
-          const fixedLink = `[${link.linkText}](${fixedPath})`;
+        // If the file was reconstructed (found in a different location), suggest the new path
+        if (target.reconstructed) {
+          const suggestedPath = target.suggestedPath || "/" + correctPath;
+          const fixedLink = `[${link.linkText}](${suggestedPath})`;
 
           const fix = {
-            type: "add_md_extension",
+            type: target.fuzzyMatch
+              ? "reconstruct_with_fuzzy_match"
+              : "reconstruct_path",
             file: relativePath,
             originalLink: link.fullMatch,
             fixedLink: fixedLink,
             originalPath: currentPath,
-            fixedPath: fixedPath,
+            fixedPath: suggestedPath,
             startIndex: link.startIndex,
             endIndex: link.endIndex,
+            message: target.fuzzyMatch
+              ? `Found similar file with fuzzy matching: ${currentPath} → ${suggestedPath}`
+              : `File found in different location: ${currentPath} → ${suggestedPath}`,
           };
           fileFixes.push(fix);
           this.fixes.push(fix);
-        }
+        } else {
+          // Apply standard fixes for correctly located files
 
-        // Check if path needs to be converted to absolute path
-        if (currentPath.startsWith("./") || currentPath.startsWith("../")) {
-          const absolutePath = "/" + correctPath;
-          const fixedLink = `[${link.linkText}](${absolutePath})`;
+          // Check if path needs .md extension
+          if (target.needsMdExtension && !currentPath.endsWith(".md")) {
+            const fixedPath = currentPath + ".md";
+            const fixedLink = `[${link.linkText}](${fixedPath})`;
 
-          const fix = {
-            type: "convert_to_absolute",
-            file: relativePath,
-            originalLink: link.fullMatch,
-            fixedLink: fixedLink,
-            originalPath: currentPath,
-            fixedPath: absolutePath,
-            startIndex: link.startIndex,
-            endIndex: link.endIndex,
-          };
-          fileFixes.push(fix);
-          this.fixes.push(fix);
-        }
+            const fix = {
+              type: "add_md_extension",
+              file: relativePath,
+              originalLink: link.fullMatch,
+              fixedLink: fixedLink,
+              originalPath: currentPath,
+              fixedPath: fixedPath,
+              startIndex: link.startIndex,
+              endIndex: link.endIndex,
+            };
+            fileFixes.push(fix);
+            this.fixes.push(fix);
+          }
 
-        // Check if path needs to be converted to lowercase
-        const lowercasePath = currentPath.toLowerCase();
-        if (currentPath !== lowercasePath) {
-          const fixedLink = `[${link.linkText}](${lowercasePath})`;
+          // Check if path needs to be converted to absolute path
+          if (currentPath.startsWith("./") || currentPath.startsWith("../")) {
+            const absolutePath = "/" + correctPath;
+            const fixedLink = `[${link.linkText}](${absolutePath})`;
 
-          const fix = {
-            type: "convert_to_lowercase",
-            file: relativePath,
-            originalLink: link.fullMatch,
-            fixedLink: fixedLink,
-            originalPath: currentPath,
-            fixedPath: lowercasePath,
-            startIndex: link.startIndex,
-            endIndex: link.endIndex,
-          };
-          fileFixes.push(fix);
-          this.fixes.push(fix);
+            const fix = {
+              type: "convert_to_absolute",
+              file: relativePath,
+              originalLink: link.fullMatch,
+              fixedLink: fixedLink,
+              originalPath: currentPath,
+              fixedPath: absolutePath,
+              startIndex: link.startIndex,
+              endIndex: link.endIndex,
+            };
+            fileFixes.push(fix);
+            this.fixes.push(fix);
+          }
+
+          // Check if path needs to be converted to lowercase
+          const lowercasePath = currentPath.toLowerCase();
+          if (currentPath !== lowercasePath) {
+            const fixedLink = `[${link.linkText}](${lowercasePath})`;
+
+            const fix = {
+              type: "convert_to_lowercase",
+              file: relativePath,
+              originalLink: link.fullMatch,
+              fixedLink: fixedLink,
+              originalPath: currentPath,
+              fixedPath: lowercasePath,
+              startIndex: link.startIndex,
+              endIndex: link.endIndex,
+            };
+            fileFixes.push(fix);
+            this.fixes.push(fix);
+          }
         }
       }
     }
@@ -322,9 +487,13 @@ class InternalLinkReviewer {
         filesWithFixes.push(relativePath);
         console.log(`  🔧 Found ${result.fixes.length} fixes needed`);
         result.fixes.forEach((fix) => {
-          console.log(
-            `    - ${fix.type}: ${fix.originalPath} → ${fix.fixedPath}`,
-          );
+          if (fix.message) {
+            console.log(`    - ${fix.type}: ${fix.message}`);
+          } else {
+            console.log(
+              `    - ${fix.type}: ${fix.originalPath} → ${fix.fixedPath}`,
+            );
+          }
         });
       }
 

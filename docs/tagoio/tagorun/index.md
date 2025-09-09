@@ -41,6 +41,6 @@ Unlock the Custom Domain & Whitelabel add-on to remove any reference to TagoIO b
 
 ## How it works with mobile App
 
-Your users can download the free [TagoRUN Mobile App](/docs/tagoio/tagorun/getting-started/tagorun-mobile-app.md). They will simply need to enter your Run domain the first time they log in. For example, if your Run is `mycompany.run.tago.io`, they will enter “mycompany”, and from there the mobile App will present the colors, logo, and buttons that you saved in the Run configuration.
+Your users can download the free [TagoRUN Mobile App](/tagoio/tagorun/getting-started/tagorun-mobile-app.md). They will simply need to enter your Run domain the first time they log in. For example, if your Run is `mycompany.run.tago.io`, they will enter “mycompany”, and from there the mobile App will present the colors, logo, and buttons that you saved in the Run configuration.
 
 Learn also about other [Add‑on](/docs/tagoio/addons/).

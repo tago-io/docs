@@ -7,7 +7,7 @@ TagoIO will send downlink messages to your devices through Configuration Paramet
 
 :::warning
 
-mportant: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](/docs/tagoio/integrations/general/authorization.md).
+mportant: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](/tagoio/integrations/general/authorization.md).
 
 :::
 
@@ -27,7 +27,7 @@ The downlink payload should be placed into the parameter's value field. Below is
 :::info 
 
 - Downlink messages can only be sent when the device sends an uplink message.  
-- For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/docs/tagoio/dashboards/downlinks-using-dashboards.md) article to send payloads manually.  
+- For Class C devices, you cannot rely on this automatic trigger; instead use the [Downlinks using Dashboards](/tagoio/dashboards/downlinks-using-dashboards.md) article to send payloads manually.  
 - The downlink payload may be expressed in **base64** or **HEX** format; TagoIO will automatically convert it before sending.  
 - After a successful transmission, the `downlink` parameter is marked as **Read**.
 

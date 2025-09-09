@@ -7,7 +7,7 @@ slug: /tagocore/installation
 # Installing TagoCore
 
 :::info
-To install TagoCore, you need to [Download it](/docs/tagocore/download.md) first.
+To install TagoCore, you need to [Download it](/tagocore/getting-started/download.md) first.
 :::
 
 ## Decompressing
@@ -56,4 +56,4 @@ That's it! Access the URL in your browser and start building your applications.
 
 <!-- ## Next Steps
 
-If you have no idea how TagoCore works, you should check out our [TagoCore Overview](/tagocore/overview.md). However, if you are already familiar with some concepts, you can engage with [our community](https://community.tago.io/c/tagocore/19) by answering questions from other folks! -->
+If you have no idea how TagoCore works, you should check out our [TagoCore Overview](/tagocore/resources/action/overview.md). However, if you are already familiar with some concepts, you can engage with [our community](https://community.tago.io/c/tagocore/19) by answering questions from other folks! -->

@@ -8,7 +8,7 @@ Using data from multiple variables, the Semi Pie widget automatically produces a
 
 ![Example Semi Pie charts showing three styling variants](/docs_imagem/tagoio/semi-pie-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.  
+This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.  
 It works for both Normal and Blueprint dashboards.
 
 ## Creating your own
@@ -27,7 +27,7 @@ From the option 'Data From' on the right menu, select one device from your list 
 
 #### For Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.  
+From the option 'Data From' on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 <!-- Image temporarily disabled: Creating Semi Pie widget GIF - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/rtbtbysxI4zx8hoRmN7YBBG2t4QiUo0GiSLYJmV9Mys/creatingsemipie-_UQ.gif -->

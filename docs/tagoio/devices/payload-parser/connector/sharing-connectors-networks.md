@@ -43,4 +43,4 @@ Once you enable your custom network for a specific connector, the user will be a
 
 ## Making a connector or network public
 
-If you want your connector or network to be accessible to all TagoIO users, you can request to make it public. Read more about [Publishing connectors](/docs/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders.md).
+If you want your connector or network to be accessible to all TagoIO users, you can request to make it public. Read more about [Publishing connectors](/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders.md).

@@ -47,13 +47,13 @@ networking, compute, and a default autoscaling policy.
 
 You can attach a custom DNS domain to a middleware after deployment. See Domain
 Registration at
-[TagoDeploy Domains Management](docs/tagodeploy/project/domains.md).
+[TagoDeploy Domains Management](/tagodeploy/project/management/domains.md).
 
 ## Using the Middleware
 
 Once deployed, you can use the middleware’s public endpoint with your external
 network or platform. Follow the integration steps for your network in the TagoIO
-documentation at [TagoIO Network Integrations](docs/tagoio/integrations/.md).
+documentation at [TagoIO Network Integrations](/tagodeploy/project/configuration/integrations.md).
 
 The middleware authenticates using the Network Token you selected at install
 time. That token scopes which devices the middleware can write and read in your

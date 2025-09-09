@@ -3,7 +3,7 @@ title: "Data Output Service"
 description: "This article explains how Data Output transactions are counted in TagoIO, how to set monthly Data Output limits per Profile, and how different actions (including dashboard downloads and device exports) affect those limits."
 tags: ["tagoio"]
 ---
-One transaction of Data Output is counted for each register read from a [device's](/docs/tagoio/devices/) data storage. Learn more in [Getting Data](/docs/tagoio/devices/getting-data.md).
+One transaction of Data Output is counted for each register read from a [device's](/docs/tagoio/devices/) data storage. Learn more in [Getting Data](/tagoio/devices/getting-data.md).
 
 You need to define the **Data Output limit per month** for each Profile where your applications are running.
 
@@ -22,12 +22,12 @@ If the limit is exceeded, any attempt to read data (GET) will be denied for the 
 
 :::
 
-Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards.md).
+Accessing data from dashboards — including downloading a .csv file from widgets — does **not** count toward the general Data Output limit. Instead, dashboards consume a separate Data Output limit specifically for dashboards. For more details, see [Data Output for Dashboards](/tagoio/dashboards/data-output-for-dashboards.md).
 
 The system will also count Data Output when using the function "Export Data" from the [Device](/docs/tagoio/devices/).
 
 :::info
 
-Request limits are applied to a wide range of interactions within the platform, including activities such as reading and exporting data. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
+Request limits are applied to a wide range of interactions within the platform, including activities such as reading and exporting data. Read more about our [Rate Limits](/tagoio/profiles/services/rate-limits-hard-limits.md).
 
 :::

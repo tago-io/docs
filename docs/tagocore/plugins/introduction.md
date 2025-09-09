@@ -18,7 +18,7 @@ Read our [Creating Plugins](/docs/tagocore/plugins/create) article to starting c
 ## Installing a plugin
 
 If you have developed your own Plugin, you may be looking for a way to install it in TagoCore. If that's the case,
-check out our [Manual installation](/docs/tagocore/plugins/install/manually.md) guide.
+check out our [Manual installation](/tagocore/plugins/install/manually.md) guide.
 
 However, if you are trying to install Plugins from other developers, the best way is via the
-[Plugin Store](/docs/tagocore/plugins/install/pluginstore.md).
+[Plugin Store](/tagocore/plugins/install/pluginstore.md).

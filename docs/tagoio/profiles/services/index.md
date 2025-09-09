@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 TagoIO offers a broad range of services that can be provisioned according to your application's needs. By selecting which services each profile will use during the month, you can track usage and know exactly how much you will be charged.
 
-You can view limits and usage history for each service in the **Usage Statistics** tab, located under the Profiles section of your TagoIO account. If you have more than one profile, you must allocate the resources for each profile (see [Allocating Services to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md)).
+You can view limits and usage history for each service in the **Usage Statistics** tab, located under the Profiles section of your TagoIO account. If you have more than one profile, you must allocate the resources for each profile (see [Allocating Services to profiles](/tagoio/my-account/billing/allocating-services-to-profiles.md)).
 
 Currently, the following services are available for selection on your account. Some services are reset monthly.
 

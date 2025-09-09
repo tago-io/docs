@@ -3,11 +3,11 @@ title: "Area Chart Widget"
 description: "This article explains how to use the Area Chart widget in TagoIO, including customization options, supported variable features, and how to configure the data source for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](/docs/tagoio/widgets/general/formula.md), and customizing the line shape (step or smooth), among other options.
+Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](/tagoio/widgets/general/formula.md), and customizing the line shape (step or smooth), among other options.
 
 ![Example area charts illustrating different styles and color schemes](/docs_imagem/tagoio/area-chart-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
+This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md) and [series](/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -21,7 +21,7 @@ From the option **'Data From'** on the right menu, select one device from your l
 Click on the **cog icon** to edit specific options for this variable, such as formulas, color, and more. Click on the **close icon** to remove this variable from the widget's data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
 
 When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.

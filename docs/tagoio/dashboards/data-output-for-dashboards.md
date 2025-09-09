@@ -4,7 +4,7 @@ description: "This article explains how dashboard data output is counted in Tago
 tags: ["tagoio", "dashboards"]
 sidebar_position: 2
 ---
-In TagoIO, each time someone accesses data from the Dashboards using TagoIO Admin or TagoRUN, a data output is counted for each variable displayed. For example, when an end user loads a dashboard that displays 3,000 registers, that same number will be counted against your dashboard's output limit. This counter is separate from the [Data Output Service](/docs/tagoio/profiles/services/data-output-service.md).
+In TagoIO, each time someone accesses data from the Dashboards using TagoIO Admin or TagoRUN, a data output is counted for each variable displayed. For example, when an end user loads a dashboard that displays 3,000 registers, that same number will be counted against your dashboard's output limit. This counter is separate from the [Data Output Service](/tagoio/profiles/services/data-output-service.md).
 
 The data output limit for dashboards is predefined by your plan, applied to each profile, and resets every month. If attempts are made to visualize data from your dashboards after this limit is reached, an error will occur. The table below lists the output limits for each plan.
 

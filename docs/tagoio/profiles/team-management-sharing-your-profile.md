@@ -15,7 +15,7 @@ Once you invite a team member, they can accept the invitation by clicking on the
 After accepting, the new member can access the shared profile by clicking on the profile selection button. Shared profiles are marked with a tag.
 
 ## Plan limits
-The number of members you can invite to a Profile depends on your current plan. Check the list of features and limits available for each plan [here](/docs/tagoio/my-account/billing/resource-limits.md).
+The number of members you can invite to a Profile depends on your current plan. Check the list of features and limits available for each plan [here](/tagoio/my-account/billing/resource-limits.md).
 
 ## Removing access
 You can remove any granted access at any time by removing the user's email from the team members list.

@@ -31,7 +31,7 @@ More than one token can be created for the same profile. Permissions and expirat
 4. [Actions](/docs/tagoio/actions/)
 5. [Files](/docs/tagoio/files)
 6. [Access Management](/docs/tagoio/tagorun/access-management/)
-7. [TagoRun](/tagorun) and [Run users](/docs/tagoio/tagorun/getting-started/user-management.md)
+7. [TagoRun](/tagorun) and [Run users](/tagoio/tagorun/getting-started/user-management.md)
 8. [Dictionary](/tagoio/tagorun/getting-started/dictionaries.md)
 
 #### Expiration and Auto-Generated Tokens

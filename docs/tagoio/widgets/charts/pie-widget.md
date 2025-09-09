@@ -7,7 +7,7 @@ Using data from multiple variables, the Pie widget automatically produces a pie 
 
 ![Pie widget examples](/docs_imagem/tagoio/pie-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data.
+This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data.
 
 ## Creating your own
 

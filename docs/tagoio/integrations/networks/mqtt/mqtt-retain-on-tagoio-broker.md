@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 :::warning
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
+TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
 
 :::
 

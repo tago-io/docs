@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 
-Unlike regular[Environment Variables](/docs/tagoio/analysis/environment-variables.md), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your [Analysis documentation](/docs/tagoio/analysis/) code and use them in some [Actions documentation](/docs/tagoio/actions/).
+Unlike regular[Environment Variables](/tagoio/analysis/environment-variables.md), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your [Analysis documentation](/docs/tagoio/analysis/) code and use them in some [Actions documentation](/docs/tagoio/actions/).
 
 To start using secrets, open your [Admin](https://admin.tago.io/) panel , navigate to the Account menu, and select "Secrets".
 
@@ -16,7 +16,7 @@ To create a secret, open the "Secrets" page in the Admin panel and click on "+ N
 - **Key** — the name used to reference the secret.  
   *Keys cannot be edited once the secret is created, so choose your keys carefully.*
 - **Value** — the secret data (encrypted and hidden). This field can contain plain text or a structured value depending on the chosen secret type.
-- **Tags** — metadata to organize and filter secrets. [Tags](/docs/tagoio/getting-started/tags-system.md) are used across various assets within TagoIO and allow you to grant Analysis access to specific secrets via Access Management policies.
+- **Tags** — metadata to organize and filter secrets. [Tags](/tagoio/getting-started/tags-system.md) are used across various assets within TagoIO and allow you to grant Analysis access to specific secrets via Access Management policies.
 
 ### Types of Secrets
 
@@ -28,7 +28,7 @@ A secure storage option for text-based data that allows both letters and numbers
 #### SMTP Secret
 Used exclusively for securely storing information required to configure an action that sends emails through external email providers.  
 - Supports TLS connections on port **587**.
-- Refer to the [Defining Actions](/docs/tagoio/actions/defining-actions.md) documentation for more details about this action.
+- Refer to the [Defining Actions](/tagoio/actions/defining-actions.md) documentation for more details about this action.
 
 #### AWS SQS Secret
 Used exclusively for securely storing information required to communicate with Amazon SQS.  

@@ -25,8 +25,8 @@ Choose where the analysis will run:
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
 
-- [Python SDK](/docs/tagoio/analysis/sdk/python-sdk.md)
-- [Javascript SDK](/docs/tagoio/analysis/sdk/nodejs-sdk.md) for Deno and NodeJS
+- [Python SDK](/tagoio/analysis/sdk/python-sdk.md)
+- [Javascript SDK](/tagoio/analysis/sdk/nodejs-sdk.md) for Deno and NodeJS
 
 :::warning
 
@@ -56,4 +56,4 @@ You can trigger your analysis script manually, but you can also define a time in
 
 ### Analysis Token
 This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
-[Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs.md).
+[Running Analysis as External using Node.JS](/tagoio/analysis/running-analysis-as-external-using-nodejs.md).

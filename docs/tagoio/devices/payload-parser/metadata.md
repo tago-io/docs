@@ -6,7 +6,7 @@ tags: ["tagoio"]
 
 Metadata is one of the most important concepts when creating [dashboards](/docs/tagoio/dashboards/) and [widgets](/docs/tagoio/widgets/). Metadata is a piece of information that you can store in the variable payload.
 
-With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](/docs/tagoio/widgets/map-and-location/map-widget/) pin color or place a [heat map](/docs/tagoio/widgets/map-and-location/heat-map-widget.md) bubble in another position, and more.
+With metadata, it is possible to dynamically change the behavior of the widget and how it displays the variable data. For example, it can change a [map](/docs/tagoio/widgets/map-and-location/map-widget/) pin color or place a [heat map](/tagoio/widgets/map-and-location/heat-map-widget.md) bubble in another position, and more.
 
 ## JSON example
 

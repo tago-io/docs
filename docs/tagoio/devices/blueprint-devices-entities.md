@@ -4,7 +4,7 @@ description: "This article explains how Blueprint Devices and Entities function 
 tags: ["tagoio", "devices"]
 sidebar_position: 3
 ---
-Blueprint Devices and [Entities](/docs/tagoio/getting-started/entities.md) serve as dynamic data sources for [Blueprint Dashboards](/docs/tagoio/dashboards/blueprint-dashboard.md). These dashboards let you change data sources dynamically while keeping the same widgets and configurations. By creating blueprint devices or entities, you define which data sources can be dynamically altered. The selected data sources appear in a dropdown menu at the top of a Blueprint Dashboard.
+Blueprint Devices and [Entities](/tagoio/getting-started/entities.md) serve as dynamic data sources for [Blueprint Dashboards](/tagoio/dashboards/blueprint-dashboard.md). These dashboards let you change data sources dynamically while keeping the same widgets and configurations. By creating blueprint devices or entities, you define which data sources can be dynamically altered. The selected data sources appear in a dropdown menu at the top of a Blueprint Dashboard.
 
 <!-- Image placeholder removed for build -->
 
@@ -21,7 +21,7 @@ This feature is particularly beneficial when you want a single dashboard to be u
 
 ![Image 1](/docs_imagem/tagoio/external-82f6c83e.png)
 
-To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/docs/tagoio/getting-started/tags-system.md).
+To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/tagoio/getting-started/tags-system.md).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.
@@ -42,4 +42,4 @@ You can easily modify the appearance of your Blueprint and the behavior of the b
 
 ![Image 5](/docs_imagem/tagoio/external-c405fa26.png)
 
-For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](/docs/tagoio/dashboards/blueprint-dashboard.md) and [Visualization Settings](/docs/tagoio/widgets/).
+For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](/tagoio/dashboards/blueprint-dashboard.md) and [Visualization Settings](/docs/tagoio/widgets/).

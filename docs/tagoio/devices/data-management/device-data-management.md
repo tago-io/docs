@@ -22,7 +22,7 @@ When the value is greater than 1,000 registers it may be shown with a letter suf
 
 The last input information refers to the last time the device received communication; it does not necessarily mean that the data sent was actually stored as data. This information is useful to verify the last time your sensor received an attempt of data input.
 
-If you desire to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
+If you desire to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/tagoio/devices/live-inspector.md) feature.
 
 ![Image 5](/docs_imagem/tagoio/external-474cf6ac.png)
 
@@ -46,7 +46,7 @@ To delete variables, first select the ones you want to remove. Once selected, cl
 
 ![Image 7](/docs_imagem/tagoio/external-39e17ef8.png)
 
-For [immutable devices](/docs/tagoio/devices/), it is not possible to edit data individually; data can only be deleted through the data chunks. Read more about it here: [Chunk Management](/docs/tagoio/devices/data-management/chunk-management.md).
+For [immutable devices](/docs/tagoio/devices/), it is not possible to edit data individually; data can only be deleted through the data chunks. Read more about it here: [Chunk Management](/tagoio/devices/data-management/chunk-management.md).
 
 ## Importing
 
@@ -66,7 +66,7 @@ To ensure a successful import, your CSV file must adhere to the following requir
 2. Values should be separated by a comma. Semicolons are not supported.
 3. The file size should not exceed 200 MB.
 4. The file should contain a maximum of 1 million rows.
-5. Data integrity and structure should align with TagoIO's data format. For more information, refer to the [Sending Data](/docs/tagoio/devices/sending-data.md) documentation.
+5. Data integrity and structure should align with TagoIO's data format. For more information, refer to the [Sending Data](/tagoio/devices/sending-data.md) documentation.
 
 The following headers are available for import. Any additional headers beyond those listed will be ignored:
 
@@ -80,7 +80,7 @@ The following headers are available for import. Any additional headers beyond th
 
 ### Service limits for importing
 
-When importing data, the [Data Input](/docs/tagoio/profiles/services/data-input-service.md) limit is not affected. However, since you are adding new data to your devices, the amount of new data will count against your [Data Storage](/docs/tagoio/profiles/services/data-records.md) service. You must have at least 10 000 Data Storage registers available to perform the import, even if you are importing less data than that.
+When importing data, the [Data Input](/tagoio/profiles/services/data-input-service.md) limit is not affected. However, since you are adding new data to your devices, the amount of new data will count against your [Data Storage](/tagoio/profiles/services/data-records.md) service. You must have at least 10 000 Data Storage registers available to perform the import, even if you are importing less data than that.
 
 Additionally, before uploading the data to your device, you must first upload it to your [Files](/docs/tagoio/files). Ensure you have enough space to upload your CSV file.
 
@@ -90,13 +90,13 @@ If needed, you can increase the data storage or file limits by accessing the [Bi
 
 TagoIO supports two types of devices: [Mutable](/docs/tagoio/devices/) and [Immutable](/docs/tagoio/devices/). Each has specific considerations when importing data.
 
-1. **Immutable Devices**: If your CSV includes data for the **time** field, the time must fall within your [chunk period and retention configuration](/docs/tagoio/devices/data-management/data-retention-feature.md). If you attempt to import data outside the retention period, you will encounter an error. To resolve this, ensure the date and time information fits within your retention period.
+1. **Immutable Devices**: If your CSV includes data for the **time** field, the time must fall within your [chunk period and retention configuration](/tagoio/devices/data-management/data-retention-feature.md). If you attempt to import data outside the retention period, you will encounter an error. To resolve this, ensure the date and time information fits within your retention period.
 
 2. **Mutable Devices**: These devices can store up to 50 000 records. Your import will fail if this limit is exceeded. You can check the number of data records in your bucket in the Device module.
 
 ## Exporting
 
-The **Export** button, located in the top right corner of the **Data** tab, allows for variable data export in various formats. Further details on exporting data for specific device types can be found under: [Data Export](/docs/tagoio/devices/data-management/data-export.md).
+The **Export** button, located in the top right corner of the **Data** tab, allows for variable data export in various formats. Further details on exporting data for specific device types can be found under: [Data Export](/tagoio/devices/data-management/data-export.md).
 
 ## Backing up your data
 

@@ -7,7 +7,7 @@ The Grain Bin widget produces a grain-bin illustration so you can easily track v
 
 ![Grain bin illustration](/docs_imagem/tagoio/grain-bin-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data.
+This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data.
 
 ## Creating your own
 
@@ -32,6 +32,6 @@ From the option 'Data From' on the right menu, select one device from your list 
 
 #### 1.2 Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
+From the option 'Data From' on the right menu, add the [Blueprint device](/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/tagoio/dashboards/blueprint-dashboard.md), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.

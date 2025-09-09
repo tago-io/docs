@@ -43,7 +43,7 @@ Due to their versatility, Custom Widgets allow you to use data from different so
 
 You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
 
-You can also use data from **resources** such as devices and users – just like on the [Device List](/docs/tagoio/widgets/tables/device-list-widget.md) and [User List](/docs/tagoio/widgets/tables/user-list-widget.md) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
+You can also use data from **resources** such as devices and users – just like on the [Device List](/tagoio/widgets/tables/device-list-widget.md) and [User List](/tagoio/widgets/tables/user-list-widget.md) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
 
 ## Main Configuration
 
@@ -61,7 +61,7 @@ One use of these parameters is to change the way your code behaves. You can have
 
 ![Parameter example](/docs_imagem/tagoio/custom-widget-parameters-2.png)
 
-Read more about [Custom Widget Paramenter](/docs/tagoio/widgets/custom-widget/custom-widget-parameters.md).
+Read more about [Custom Widget Paramenter](/tagoio/widgets/custom-widget/custom-widget-parameters.md).
 
 ## User Control
 
