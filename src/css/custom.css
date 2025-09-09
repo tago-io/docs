@@ -893,7 +893,9 @@ html[data-theme="light"] .changelog-page .card__header .text--secondary {
   overflow: hidden;
   margin: 1rem 0 2rem 0;
   border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .youtube-container iframe {
@@ -911,19 +913,19 @@ html[data-theme="light"] .changelog-page .card__header .text--secondary {
     margin: 0.75rem 0 1.5rem 0;
     border-radius: 6px;
   }
-  
+
   /* Ensure proper spacing around video on mobile */
   .markdown .youtube-container {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   /* Ensure content after video has proper spacing */
   .markdown h2:has(+ .youtube-container),
   .markdown h3:has(+ .youtube-container) {
     margin-bottom: 1rem;
   }
-  
+
   /* Add extra spacing after video on mobile to prevent text cutoff */
   .youtube-container + * {
     margin-top: 1.5rem !important;
@@ -935,27 +937,13 @@ html[data-theme="light"] .changelog-page .card__header .text--secondary {
     margin: 0.5rem 0 1rem 0;
     border-radius: 4px;
   }
-  
-  /* Ensure proper spacing for mobile content */
-  .markdown {
-    padding: 0 0.5rem;
-  }
-  
-  .markdown h2,
-  .markdown h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .markdown p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
 }
 
 /* Dark mode adjustments for video container */
 html[data-theme="dark"] .youtube-container {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 /* Mermaid styles (ported from TagoCore docs) */
