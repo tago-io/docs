@@ -1,5 +1,5 @@
 ---
-title: "Embedding Widgets to your website"
+title: "Embedding Widgets to Your Website"
 description: "This article explains what embedded widgets are in TagoIO and how to generate embedding code to display your widget data on a website or other applications, with a simple visual example."
 tags: ["tagoio", "widgets"]
 ---

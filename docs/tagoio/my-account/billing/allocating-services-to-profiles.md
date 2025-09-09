@@ -1,5 +1,5 @@
 ---
-title: "Allocating Services to profiles"
+title: "Allocating Services to Profiles"
 description: "This article explains how to allocate service resources to individual profiles in your TagoIO account using the Billing page and the Resource Allocation tab, and how to monitor those allocations and usage."
 tags: ["tagoio"]
 ---

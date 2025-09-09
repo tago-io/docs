@@ -1,5 +1,5 @@
 ---
-title: "Context & global variables"
+title: "Context & Global Variables"
 description: "A concise guide to the context and global variables available when creating a Payload Parser in TagoIO, including descriptions of the most common globals and where to find the full list."
 tags: ["tagoio"]
 ---

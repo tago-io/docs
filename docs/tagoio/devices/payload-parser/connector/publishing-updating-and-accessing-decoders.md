@@ -1,5 +1,5 @@
 ---
-title: "Publishing, updating and accessing decoders"
+title: "Publishing, Updating and Accessing Decoders"
 description: "This article explains how to publish, update, and share custom decoders (connectors) in TagoIO, including how to make a connector public via the GitHub repository and a video walkthrough."
 tags: ["tagoio"]
 ---

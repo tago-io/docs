@@ -1,5 +1,5 @@
 ---
-title: "Building your own parser"
+title: "Building your Own Parser"
 description: "This article explains how to convert raw payloads from devices into measurable variables using the TagoIO Payload Parser and links to three step-by-step tutorials plus a video walkthrough."
 tags: ["tagoio"]
 ---

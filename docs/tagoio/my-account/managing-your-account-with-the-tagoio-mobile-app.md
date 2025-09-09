@@ -1,5 +1,5 @@
 ---
-title: "Managing your account with the TagoIO Mobile App"
+title: "Managing Your Account with the TagoIO Mobile App"
 description: "A brief guide to the TagoIO Mobile App, describing how it helps you monitor and manage IoT applications, receive notifications, and where to download the app."
 tags: ["tagoio"]
 sidebar_position: 1
