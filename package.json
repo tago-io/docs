@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start -h 0.0.0.0",
-    "build": "docusaurus build",
+    "build": "rm -rf build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -19,7 +19,9 @@
     "biome:format": "biome format .",
     "cdk:build": "cd cdk && tsc",
     "cdk:watch": "cd cdk && tsc -w",
-    "cdk:deploy": "npm run build && cdk deploy --require-approval never --app \"tsx cdk/cdk.ts\""
+    "cdk:deploy:docs": "cdk deploy --require-approval never --app \"tsx cdk/docs-cdk.ts\"",
+    "cdk:deploy:redirects": "cdk deploy --require-approval never --app \"tsx cdk/redirects-cdk.ts\"",
+    "cdk:deploy": "npm run cdk:deploy:docs && npm run cdk:deploy:redirects"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -33,12 +35,13 @@
     "react-youtube": "^10.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.0",
+    "@biomejs/biome": "2.2.3",
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
-    "@types/node": "20.14.10",
-    "aws-cdk-lib": "2.149.0",
+    "@types/node": "22.18.1",
+    "aws-cdk": "^2.1029.0",
+    "aws-cdk-lib": "2.214.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21",
     "tsx": "^4.7.0",

@@ -1,5 +1,5 @@
 ---
-title: "Common Billing issues"
+title: "Common Billing Issues"
 description: "This article explains common reasons a card charge may be declined and how to find more information about a specific decline, including what TagoIO can and cannot determine from the error information."
 tags: ["tagoio"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Grouping variables"
+title: "Grouping Variables"
 description: "This article explains how to synchronize multiple variables sent by a device using the JSON \"group\" field so they can be visualized together (for example, in tables or maps). It describes the problem with mismatched timestamps and how to use grouped samples to keep related variables in sync."
 tags: ["tagoio"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Map filters"
+title: "Map Filters"
 description: "This article explains how to apply filters to pins shown on the Map widget in order to reduce clutter and locate specific devices or variable values quickly."
 tags: ["tagoio"]
 ---

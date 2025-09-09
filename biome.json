@@ -3,7 +3,17 @@
   "root": true,
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!node_modules", "!build", "!.docusaurus", "!infra"]
+    "includes": [
+      "**",
+      "!node_modules",
+      "!build",
+      "!.docusaurus",
+      "!infra",
+      "!cdk",
+      "!cdk.out",
+      "!.crush",
+      "!.claude"
+    ]
   },
   "formatter": {
     "indentStyle": "space",

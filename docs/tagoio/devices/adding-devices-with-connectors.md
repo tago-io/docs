@@ -1,5 +1,5 @@
 ---
-title: "Adding devices with connectors"
+title: "Adding Devices with Connectors"
 description: "This article explains how connectors let you create devices with built-in behaviors to communicate with networks, and describes the available methods for sending and receiving data as well as common connector functions."
 tags: ["tagoio", "devices"]
 sidebar_position: 1

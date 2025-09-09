@@ -575,17 +575,28 @@ code {
 }
 
 @media (max-width: 996px) {
-  /* Hide search and right-side items so only hamburger + brand show */
-  [class*="navbarSearchContainer"] {
-    display: none !important;
-  }
+  /* Ensure right-side container is visible */
   .navbar__items--right {
+    display: flex !important;
+    align-items: center;
+  }
+  /* Explicitly show the search container/button on mobile (Docusaurus uses CSS modules) */
+  .navbar__search,
+  [class*="navbarSearchContainer"],
+  .DocSearch-Button {
+    display: inline-flex !important;
+    align-items: center;
+  }
+  /* Hide everything else on the right side except the search */
+  .navbar__items--right > :not([class*="navbarSearchContainer"]) {
     display: none !important;
   }
+  /* Additional specific hides */
   .navbar-status-badge {
     display: none !important;
   }
-  .navbar__items .navbar__link {
+  .navbar__items--right .navbar__link,
+  .navbar__items--right a[href*="tago.io"] {
     display: none !important;
   }
 }

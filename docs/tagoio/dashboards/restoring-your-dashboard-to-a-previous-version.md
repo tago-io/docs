@@ -1,5 +1,5 @@
 ---
-title: "Restoring your Dashboard to a previous version"
+title: "Restoring your Dashboard to a Previous Version"
 description: "This article explains how TagoIO Admin automatically creates backup versions of dashboards and how to access and restore a dashboard to a previously saved version."
 tags: ["tagoio", "dashboards"]
 ---

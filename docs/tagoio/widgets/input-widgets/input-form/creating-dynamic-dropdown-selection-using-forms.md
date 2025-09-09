@@ -1,5 +1,5 @@
 ---
-title: "Creating Dynamic Dropdown selection using Forms"
+title: "Creating Dynamic Dropdown Selection using Forms"
 description: "This article explains how Dynamic Dropdown fields in TagoIO Forms pull their options from a variable so you can update selection items dynamically, and when you would use this feature."
 tags: ["tagoio"]
 ---
