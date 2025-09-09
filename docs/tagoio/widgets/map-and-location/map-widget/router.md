@@ -18,7 +18,7 @@ This is done by selecting a device and specifying the variable that holds its co
 
 Once the origin is set, you can enable the router option in the map widget settings. The following screenshot shows how to activate it:
 
-![Router option configuration](/docs/tagoio/router.jpeg)
+![Router option configuration](/docs_imagem/tagoio/router.jpeg)
 
 When users access the map from a mobile device, they will have the option to select one of the following navigation services:
 
