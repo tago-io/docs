@@ -239,10 +239,18 @@ html[data-theme="light"] .footer__bottom {
   padding-bottom: 0;
 }
 
-.navbar__items:not(.navbar__items--right) .navbar__link {
+/* Apply compact pill + transition to all navbar links */
+.navbar__link {
   align-items: center;
-  align-self: stretch;
+  /* Don't stretch full navbar height; mimic the toggle size */
+  align-self: center;
+  height: 2rem;
+  line-height: 2rem;
   position: relative;
+  border-radius: 999px; /* pill-like */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: background var(--animation-fast) ease;
 }
 
 /* Active navbar link styling */
@@ -264,6 +272,14 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 .navbar__items:not(.navbar__items--right) .navbar__link--active:after {
   content: none;
   display: none;
+}
+
+/* Copy hover style from the color mode toggle to navbar links */
+/* Hover/focus state for all navbar links */
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  background-color: var(--ifm-color-emphasis-200);
+  text-decoration: none;
 }
 
 /* Remove hover effect on navbar title/logo */
