@@ -125,10 +125,9 @@ const config: Config = {
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {
-          type: "html",
+          href: "https://community.tago.io/",
+          label: "Community",
           position: "right",
-          value:
-            '<div class="navbar-status-badge" style="display:inline-flex;align-items:center;height:var(--ifm-navbar-height)"><iframe class="status-badge--light" src="https://status.tago.io/badge?theme=light" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;" loading="lazy" referrerpolicy="no-referrer"></iframe><iframe class="status-badge--dark" src="https://status.tago.io/badge?theme=dark" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;" loading="lazy" referrerpolicy="no-referrer"></iframe></div>',
         },
         {
           href: "https://tago.io",

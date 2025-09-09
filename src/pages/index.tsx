@@ -29,6 +29,30 @@ function HomepageHeader() {
           The Full-Stack IoT Platform to transform sensor data into smart
           solutions — simple, affordable, and free of cloud complexity.
         </p>
+        <div className="home-status-badge">
+          <iframe
+            className="status-badge--light"
+            src="https://status.tago.io/badge?theme=light"
+            width={187}
+            height={30}
+            frameBorder={0}
+            scrolling="no"
+            title="System status"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+          />
+          <iframe
+            className="status-badge--dark"
+            src="https://status.tago.io/badge?theme=dark"
+            width={187}
+            height={30}
+            frameBorder={0}
+            scrolling="no"
+            title="System status"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         <div className={styles.buttons}>
           <Link
             className={clsx("button button--lg", styles.demoButton)}

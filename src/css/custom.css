@@ -145,6 +145,23 @@ html[data-theme="dark"] .navbar-status-badge .status-badge--dark {
   display: inline-block;
 }
 
+.home-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 2rem;
+}
+.home-status-badge .status-badge--dark {
+  display: none;
+}
+html[data-theme="dark"] .home-status-badge .status-badge--light {
+  display: none;
+}
+html[data-theme="dark"] .home-status-badge .status-badge--dark {
+  display: inline-block;
+}
+
 /* Footer styling */
 .footer {
   background: var(--ifm-background-surface-color);
@@ -256,6 +273,14 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 .navbar__title:hover {
   color: var(--ifm-navbar-link-color) !important;
   text-decoration: none !important;
+}
+
+/* Hide external-link icon next to Community navbar link */
+.navbar a .iconExternalLink,
+.navbar a [class*="iconExternalLink"],
+.navbar a::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Sidebar */
