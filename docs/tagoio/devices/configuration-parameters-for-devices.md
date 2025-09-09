@@ -33,7 +33,7 @@ You can manage your device’s configuration parameters through several methods:
 - **Manually** – Add, edit, or delete parameters directly from the device page on TagoIO using its user interface.
 - **Analysis SDK** – Use JavaScript code in an analysis script to create, update, or remove parameters with functions such as `paramList`, `paramSet`, and `paramRemove`.
 - **API endpoint** – Send HTTP requests (GET, POST, PUT, DELETE) with JSON payloads to TagoIO’s API for programmatic parameter management.
-- **Widgets** – Some widgets allow you to edit device configuration parameters natively, such as the [Device List Widget](/docs/tagoio/widgets/tables/device-list-widget).
+- **Widgets** – Some widgets allow you to edit device configuration parameters natively, such as the [Device List Widget](/docs/tagoio/widgets/tables/device-list-widget.md).
 
 ## Common Use Cases
 

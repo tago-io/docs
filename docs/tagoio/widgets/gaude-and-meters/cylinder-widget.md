@@ -7,7 +7,7 @@ Cylinders are simple and useful widgets that visualize values relative to a defi
 
 ![Cylinder widget examples](/docs_imagem/tagoio/cylinder-widget-2.gif)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) that can be set in your variable data. (Refer to the Metadata documentation for details.)
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data. (Refer to the Metadata documentation for details.)
 
 ## Creating your own
 

@@ -10,7 +10,7 @@ You can customize the widget color, apply formulas to columns, show a time colum
 
 :::info
 
- This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
  :::
 
@@ -31,9 +31,9 @@ Each column has the field **Data From**; this field allows you to set the device
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 #### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
-> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+> When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field *Variable* will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ### 2. Grouping data
 The dynamic table lets you group related data from multiple columns in the same row by either **series** or time.
@@ -63,4 +63,4 @@ You can allow users to modify a variable's value inside of a table by enabling t
 
 Dynamic Table offers a bunch of field types to indicate what kind of value can be submitted in the input once the user modifies it. These types are **Text, Password, Number, Dropdown, Dropdown Multiple, Address, Entities** and **Device** (configured by tags).
 
-These field types have the same behavior as the [Form's fields](/docs/tagoio/widgets/input-widgets/input-form/field-types-for-input-form).
+These field types have the same behavior as the [Form's fields](/docs/tagoio/widgets/input-widgets/input-form/field-types-for-input-form.md).

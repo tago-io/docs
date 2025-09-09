@@ -7,7 +7,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## On this page
 1. 'Data From' Field  
@@ -21,7 +21,7 @@ This field allows you to set the device and variable that will be used by the wi
 From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.  
+From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.  
 When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 

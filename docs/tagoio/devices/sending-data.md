@@ -27,14 +27,14 @@ POST https://api.<region>.tago.io/data
 | location  | object \| geoJSON              | no          |
 | metadata  | object (max 10kB)              | no          |
 
-You must include a [Device-Token](/docs/tagoio/devices/device-token) to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](/docs/tagoio/getting-started/restful-api).
+You must include a [Device-Token](/docs/tagoio/devices/device-token.md) to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](/docs/tagoio/getting-started/restful-api.md).
 
 ## Notes and restrictions
 
 - Variables are always converted to lowercase.
 - Variable names may not include special characters such as `*?!<>.-=$` or spaces.
 - You can send multiple registers in a single POST by sending an array of objects. The maximum payload size is 200 kB (approximately 8,000 registers).
-- [Metadata](/docs/tagoio/devices/payload-parser/metadata) can be attached to variables to influence widget behavior and store additional information. For example:
+- [Metadata](/docs/tagoio/devices/payload-parser/metadata.md) can be attached to variables to influence widget behavior and store additional information. For example:
   
   ```json
   {
@@ -47,8 +47,8 @@ You must include a [Device-Token](/docs/tagoio/devices/device-token) to authoriz
   ```
   
   When displayed in a table, the row will be red; when displayed on a map widget, the pin will be red with a car icon.
-- Rate limits apply to API requests. Read more about them here: [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits).
-- For testing, try our Device Emulator to post data and learn the JSON structure: [Device Emulator](/docs/tagoio/devices/device-emulator).
+- Rate limits apply to API requests. Read more about them here: [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
+- For testing, try our Device Emulator to post data and learn the JSON structure: [Device Emulator](/docs/tagoio/devices/device-emulator.md).
 
 ## Example payload:
 

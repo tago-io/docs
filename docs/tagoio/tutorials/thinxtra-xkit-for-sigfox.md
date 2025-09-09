@@ -28,7 +28,7 @@ Here is a diagram of the Xkit board's pinout. For more details, click [here](htt
 
 ## Payload Example
 
-Xkit can be programmed with a file that will send data from the sensors with a payload format as shown below. TagoIO is flexible enough to parse this payload in order to extract the variables – it is done through a script coded in the [Payload Parser](/docs/tagoio/devices/payload-parser/).
+Xkit can be programmed with a file that will send data from the sensors with a payload format as shown below. TagoIO is flexible enough to parse this payload in order to extract the variables – it is done through a script coded in the [Payload Parser](/docs/tagoio/devices/payload-parser/.md).
 
 ![Payload example](/docs_imagem/tagoio/paylot_xkit-i8s.png)
 
@@ -39,7 +39,7 @@ Xkit can be programmed with a file that will send data from the sensors with a p
 
 ### 1. Xkit Setup
 
-Follow the installation guide from [Thinxtra](https://www.thinxtra.com/xkit/) and prepare your Xkit to send data to the [Sigfox network](/docs/tagoio/integrations/networks/sigfox).
+Follow the installation guide from [Thinxtra](https://www.thinxtra.com/xkit/) and prepare your Xkit to send data to the [Sigfox network](/docs/tagoio/integrations/networks/sigfox.md).
 
 ### 2. TagoIO and Sigfox Setup
 
@@ -49,7 +49,7 @@ Go to **[Devices](https://admin.tago.io/devices)**, click on *Add Devices*, and 
 
 Then, just follow the directions to integrate your Xkit with TagoIO and start building your own application in minutes.
 
-> If you have questions about how to configure your account for Sigfox and TagoIO, read the article [Sigfox](/docs/tagoio/integrations/networks/sigfox).
+> If you have questions about how to configure your account for Sigfox and TagoIO, read the article [Sigfox](/docs/tagoio/integrations/networks/sigfox.md).
 
 Now, click on the new dashboard created (left menu), and associate it with the device that you just added.
 
@@ -63,11 +63,11 @@ You can start editing your dashboard as needed.
 
 :::info
 
-You can edit the [parse script](/docs/tagoio/devices/payload-parser/) created for your device that extracts variables from the payload.
+You can edit the [parse script](/docs/tagoio/devices/payload-parser/.md) created for your device that extracts variables from the payload.
 
 :::
 
-Also, you can create [notifications](/docs/tagoio/getting-started/notification) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
+Also, you can create [notifications](/docs/tagoio/getting-started/notification.md) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis.md) as needed.
 
 Learn more about [Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/-downlink).
 

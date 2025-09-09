@@ -3,7 +3,7 @@ title: "Control Tower"
 description: "This article describes the Control Tower add-on for TagoIO, explaining its capabilities for monitoring and limiting data input/output and Hard Limits usage, and how to view per-device statistics after activation."
 tags: ["tagoio"]
 ---
-The Control Tower is an add‑on designed to enhance your profile by providing access to features that increase your visibility and control over data input and output. It also offers advanced statistics on the usage of your [Hard Limits (Rate Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits). By using Control Tower, you can:
+The Control Tower is an add‑on designed to enhance your profile by providing access to features that increase your visibility and control over data input and output. It also offers advanced statistics on the usage of your [Hard Limits (Rate Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md). By using Control Tower, you can:
 
 - View data input and output statistics for each device.
 - Set data input and output limits for each individual device or for the whole profile.
@@ -34,7 +34,7 @@ Control Tower allows you to set custom request rate limits for your profile or i
 There are two types of limits:
 
 - **Hard limits** – fixed limits that apply to all accounts, determined by your plan.  
-  You can read more about them in the [Rate Limits (Hard limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits) documentation.
+  You can read more about them in the [Rate Limits (Hard limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md) documentation.
 - **Soft limits** – flexible limits that you can customize. They let you control the input and output of your profile or devices and prevent excessive consumption.
 
 You can apply a soft rate limit to:
@@ -51,7 +51,7 @@ You can apply a soft rate limit to:
 
 :::info
 
-The **hard limits** take precedence over **soft limits** due to restrictions on the API level, You can't set a soft limit higher than the ones in the [Rate Limits documentation](/docs/tagoio/profiles/services/rate-limits-hard-limits).
+The **hard limits** take precedence over **soft limits** due to restrictions on the API level, You can't set a soft limit higher than the ones in the [Rate Limits documentation](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
 For example: if the hard limit of your plan is 5,000 , even if the soft limit is set to 10,000 requests in a profile or a device, the limit will still be maintained in 5,000 requests per minute.
 
 :::

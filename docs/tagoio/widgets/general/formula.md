@@ -107,7 +107,7 @@ or
 More options are available in the dropdown list of the Formula field.
 
 ### Units for output variables
-After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/docs/tagoio/widgets/general/displaying-units).
+After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/docs/tagoio/widgets/general/displaying-units.md).
 
 ### Minimum and Maximum limits
 The formula does not adjust the widget’s data range. The Min and Max values are still controlled by the settings in the **Data Range** tab.
@@ -115,7 +115,7 @@ The formula does not adjust the widget’s data range. The Min and Max values ar
 ## Dynamic Formulas
 Dynamic Formulas allow formulas to adapt based on user preferences or browser settings. To use them:
 
-1. Create a new visualization preference in **TagoRUN** via **[Custom Settings](/docs/tagoio/tagorun/getting-started/custom-settings)**.
+1. Create a new visualization preference in **TagoRUN** via **[Custom Settings](/docs/tagoio/tagorun/getting-started/custom-settings.md)**.
 2. In the widget’s configuration, enable **Dynamic Formula** and select:
    - **Source** – user preference or browser preference.
    - **Option** – the specific custom setting created earlier.

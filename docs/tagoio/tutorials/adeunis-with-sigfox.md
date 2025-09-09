@@ -33,6 +33,6 @@ You can start building **dashboards** immediately: [Dashboard Overview](/docs/ta
 
 Additionally, you can create **notifications** or write advanced **scripts** to process the data:
 - Notifications: [Notifications](/docs/tagoio/actions/)  
-- Scripts: [Creating Analysis Scripts](/docs/tagoio/analysis/creating-analysis)
+- Scripts: [Creating Analysis Scripts](/docs/tagoio/analysis/creating-analysis.md)
 
-If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/).
+If you have questions about configuring your account for Sigfox and TagoIO, read the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/.md).

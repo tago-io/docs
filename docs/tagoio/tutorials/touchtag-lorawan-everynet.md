@@ -20,7 +20,7 @@ To add your TouchTAG device to TagoIO:
 3. Select the connector "LoRaWAN Everynet" (select the LoRaWAN Everynet connector).
 4. Search for "TouchTag" and create the device.  
    After creating the device, generate an **Authorization** for it (one per application).  
-   [Generate Authorization](/docs/tagoio/integrations/general/authorization)
+   [Generate Authorization](/docs/tagoio/integrations/general/authorization.md)
 
 ![Connector selection and device search in TagoIO](/docs_imagem/tagoio/touchtag-lorawan-everynet-2.png)
 
@@ -29,7 +29,7 @@ To add your TouchTAG device to TagoIO:
 - The connector handles decryption and parsing of the TouchTAG payloads so measured variables are available in real time in TagoIO.
 - When configuring devices, ensure you select the correct connector ("LoRaWAN Everynet") and the correct device type ("TouchTag") so the parsing rules are applied.
 - After creating your device, generate an **Authorization** for it (one per application).  
-  [Generate Authorization](/docs/tagoio/integrations/general/authorization)
+  [Generate Authorization](/docs/tagoio/integrations/general/authorization.md)
 - Turn your TouchTAG device on and wait for data to arrive. Each time the device sends data, the parser is executed, extracted data is sent to the bucket, and it becomes available in dashboards.
 - You can create **notifications** and more advanced **scripts** as needed.
 
@@ -39,4 +39,4 @@ To add your TouchTAG device to TagoIO:
 
 - Refer to the [Devices](/docs/tagoio/devices/) documentation for general instructions on creating and managing devices in TagoIO.
 - Learn how to configure your account for Everynet:  
-  [Everynet configuration guide](/docs/tagoio/integrations/networks/everynet-lorawan)
+  [Everynet configuration guide](/docs/tagoio/integrations/networks/everynet-lorawan.md)

@@ -9,7 +9,7 @@ With a valid authorization, those services can also create new devices in your a
 
 :::info
 
-Authorization is different from [device-token](/docs/tagoio/devices/device-token).
+Authorization is different from [device-token](/docs/tagoio/devices/device-token.md).
 
 > When to use each:
 > - Use authorization only when integrating with external services, such as LoRaWAN or Sigfox.  
@@ -27,7 +27,7 @@ To generate an authorization and give an external service access to your devices
 2. In the next screen, enter a name you can identify later, fill any additional parameters requested by the integration, and press the Generate button.
    ![Generate Authorization screen showing name and parameters fields](/docs_imagem/tagoio/authorization-3.png)
 
-Only certain integrations require an **Additional Parameter**. Check out the [list of integrations](/docs/tagoio/integrations/) to learn the parameter needed for each provider.
+Only certain integrations require an **Additional Parameter**. Check out the [list of integrations](/docs/tagoio/integrations/.md) to learn the parameter needed for each provider.
 
 Once the authorization is created, you can copy and paste it into the external service portal.
 

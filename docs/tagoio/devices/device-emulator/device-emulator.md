@@ -14,7 +14,7 @@ To access the device emulator, go to the [Device](/docs/tagoio/devices/) section
 TagoIO accepts two types of payloads: JSON and Raw.
 
 - **JSON**: The payload is a JSON object that follows TagoIO's data schema by using the following fields: `variable`, `value`, `unit`, `time`, `serie`, `location`, and `metadata`.
-- **Raw**: Raw binary data. If you need to parse text data such as CSV or XML, add a [Payload Parser](/docs/tagoio/devices/payload-parser/).
+- **Raw**: Raw binary data. If you need to parse text data such as CSV or XML, add a [Payload Parser](/docs/tagoio/devices/payload-parser/.md).
 
 ## Notes
 
@@ -37,7 +37,7 @@ Functions are helper variables that you can add to your payload. Each function h
 
 ![Function selection dialog](/docs_imagem/tagoio/1624564657419-ttY.png)
 
-To learn more about using functions in the device emulator, read the article [Device Emulator Functions](/docs/tagoio/devices/device-emulator/device-emulator-functions).
+To learn more about using functions in the device emulator, read the article [Device Emulator Functions](/docs/tagoio/devices/device-emulator/device-emulator-functions.md).
 
 ### Timer
 
@@ -45,7 +45,7 @@ The timer helps to automatically send your payload at a fixed time interval. Thi
 
 ![Timer interface](/docs_imagem/tagoio/1624568411436-YYo.png)
 
-> If you close the **Emulator** tab, the system will stop sending payloads. You may want to use the [Simulator](/docs/tagoio//devices/simulator-data-stream) or create a script to keep sending all the time.
+> If you close the **Emulator** tab, the system will stop sending payloads. You may want to use the [Simulator](/docs/tagoio//devices/simulator-data-stream.md) or create a script to keep sending all the time.
 
 > Before sending any kind of payload, always make sure that the device is **Active**.
 

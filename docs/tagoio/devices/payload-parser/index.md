@@ -7,7 +7,7 @@ The Payload Parser handles the raw payload sent by devices to extract measured v
 
 You can also use the parser to process payloads in real time and convert values to the desired unit. For example, if your data contains a temperature in °F, you can use the parser to convert it to °C before inserting the data into the [Device](/docs/tagoio/devices/).
 
-You can learn about the [differences between Payload Parser and Analysis](/docs/tagoio/devices/payload-parser/).
+You can learn about the [differences between Payload Parser and Analysis](/docs/tagoio/devices/payload-parser/.md).
 
 ## Parser execution
 TagoIO can run up to two parsers for a device:
@@ -16,7 +16,7 @@ TagoIO can run up to two parsers for a device:
 
 :::info
 
-The parsers are executed in sequence. First the one from the [Connector](../integrations/), then your custom parser.
+The parsers are executed in sequence. First the one from the [Connector](/tagodeploy/project/configuration/integrations.md), then your custom parser.
 
 :::
 
@@ -33,7 +33,7 @@ The connector type is defined based on your selection from the list of devices d
 
 The payload parser is automatically triggered every time the device sends data to TagoIO (no need to set up anything). Your payload parser is the first step that gets triggered before saving data in the [Device's](/docs/tagoio/devices/) data storage, so if your code has an error it will be returned directly to the device HTTP post response.
 
-There are some concepts about [global variables and context](/docs/tagoio/devices/payload-parser/context-global-variables) that you may want to learn.
+There are some concepts about [global variables and context](/docs/tagoio/devices/payload-parser/context-global-variables.md) that you may want to learn.
 
 ### A parse example
 

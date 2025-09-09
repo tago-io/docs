@@ -11,7 +11,7 @@ See [Analysis](/docs/tagoio/analysis/) for working with and visualizing your inc
 
 :::tip
 
-You can check whether a [parser](/docs/tagoio/devices/payload-parser/) script was added to your device under the tab **Payload Parser** in your device page.
+You can check whether a [parser](/docs/tagoio/devices/payload-parser/.md) script was added to your device under the tab **Payload Parser** in your device page.
 
 :::
 
@@ -29,12 +29,12 @@ The exact configuration steps will vary depending on the LoRaWAN™ provider you
 
 Select one of the following provider-specific integration guides to continue your setup:
 
-- [TTN (The Things Network)](/docs/tagoio/integrations/networks/the-things-network-lorawan)
-- [Loriot](/docs/tagoio/integrations/networks/loriot-lorawan)
-- [Everynet](/docs/tagoio/integrations/networks/everynet-lorawan)
-- [Senet](/docs/tagoio/integrations/networks/senet-network)
-- [Orbiwise](/docs/tagoio/integrations/networks/orbiwise-lorawan)
-- [machineQ](/docs/tagoio/integrations/networks/machineq-lorawan)
+- [TTN (The Things Network)](/docs/tagoio/integrations/networks/the-things-network-lorawan.md)
+- [Loriot](/docs/tagoio/integrations/networks/loriot-lorawan.md)
+- [Everynet](/docs/tagoio/integrations/networks/everynet-lorawan.md)
+- [Senet](/docs/tagoio/integrations/networks/senet-network.md)
+- [Orbiwise](/docs/tagoio/integrations/networks/orbiwise-lorawan.md)
+- [machineQ](/docs/tagoio/integrations/networks/machineq-lorawan.md)
 
 Each provider link points to the corresponding TagoIO tutorial for configuring Adeunis devices with that network.
 
@@ -42,4 +42,4 @@ After you have completed the setup above, you will be ready to move forward.
 Now, just turn your Adeunis device on and wait for the data to hit your **data bucket**. Every time the device sends data, the parser will be executed, the extracted data sent to the bucket, and it will be ready to be shown in the dashboards.
 
 You can start building your [dashboards](/docs/tagoio/dashboards/) immediately.  
-Also, you can create [notifications](/docs/tagoio/actions/) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis) as needed.
+Also, you can create [notifications](/docs/tagoio/actions/) and more advanced [scripts](/docs/tagoio/analysis/creating-analysis.md) as needed.

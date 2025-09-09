@@ -17,10 +17,10 @@ If you change your mind any time before the end of the billing cycle, you can mo
 - You can cancel or modify scheduled downgrades at any time until the end of your billing cycle.
 
 ## Multiple profiles (important)
-If you have more than one profile, make sure you manually [reduce the resources for each profile](/docs/tagoio/my-account/billing/allocating-services-to-profiles) before your next billing cycle to avoid any disruption to your application.
+If you have more than one profile, make sure you manually [reduce the resources for each profile](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md) before your next billing cycle to avoid any disruption to your application.
 
 ## How to downgrade
 To downgrade your billing, go to [Billing](https://admin.tago.io/account/billing) on the top-right dropdown menu in your account.
 
 ## Refunds
-See our [Refund Policy](/docs/tagoio/my-account/billing/refund-policy).
+See our [Refund Policy](/docs/tagoio/my-account/billing/refund-policy.md).

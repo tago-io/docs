@@ -26,7 +26,7 @@ Deployment and management tools for IoT applications.
 
 If you're new to TagoIO, we recommend starting with:
 
-1. [TagoIO Getting Started](/tagoio/getting-started) - Your first steps with the platform
+1. [TagoIO Getting Started](/tagoio/getting-started.md) - Your first steps with the platform
 2. [Device Management](/tagoio/devices/devices) - Learn how to connect and manage devices
 3. [Dashboard Creation](/tagoio/dashboards) - Build beautiful data visualizations
 

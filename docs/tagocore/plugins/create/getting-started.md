@@ -12,12 +12,12 @@ Plugins are programs or applications created by the community and TagoIO that ex
 ## Prerequisites
 
 Like TagoCore itself, Plugins are built using Node.js. You’ll need an understanding of **JavaScript** or **TypeScript** and **Node.js** to
-develop plugins. You should take a look at our [Prerequisites](/docs/tagocore/plugins/create/prerequisites) before starting.
+develop plugins. You should take a look at our [Prerequisites](/docs/tagocore/plugins/create/prerequisites.md) before starting.
 
 ## Lifecycle
 
 Before jumping into development, it's important to understand how Plugins run in TagoCore, and how TagoCore manages
-Plugins. Learn more about a [Plugin's Lifecycle](/docs/tagocore/plugin/create/lifecycle).
+Plugins. Learn more about a [Plugin's Lifecycle](/docs/tagocore/plugin/create/lifecycle.md).
 
 ## Development
 
@@ -35,7 +35,7 @@ npm init --yes
 
 ### Manifest
 
-Every Plugin needs a [manifest](/docs/tagocore/plugins/create/manifest). The Plugin manifest is defined within the package.json
+Every Plugin needs a [manifest](/docs/tagocore/plugins/create/manifest.md). The Plugin manifest is defined within the package.json
 of your project, so open the `package.json` file in your favorite text editor and add a `tcore` property to it.
 
 Your Plugin's `package.json` should look something like this:
@@ -66,7 +66,7 @@ npm install @tago-io/tcore-sdk
 With the TagoCore Plugin SDK installed, we are free to start adding functionality to our Plugin. To do so, create a new
 JavaScript file called `index.js`.
 
-Inside of the `index.js` file, we will create our first [Module](/docs/tagocore/plugins/create/module). Modules are JavaScript
+Inside of the `index.js` file, we will create our first [Module](/docs/tagocore/plugins/create/module.md). Modules are JavaScript
 classes that allow you to add a specific functionality for your Plugin. Each **Plugin should have at least one module**.
 
 Each Module should be instantiated with an `id` and `name` properties, which means our code should look something
@@ -104,7 +104,7 @@ case, we are creating a Service Module so we must add a `service` type to the ma
 ### Installing your Plugin
 
 Your Plugin is ready. It doesn't do anything, but it can already be installed in TagoCore. Since you already have
-created your Plugin you need to install it [Manually](/docs/tagocore/plugins/install/manually).
+created your Plugin you need to install it [Manually](/docs/tagocore/plugins/install/manually.md).
 
 Once you do so, you should see something like this as soon as the application starts:
 
@@ -146,7 +146,7 @@ numbers because of its `type`, and it is required to have a value because of the
 
 Now that the user has informed a port and saved it, it's time for us to actually use the value informed by the user.
 That's where the `onLoad` and `onDestroy` Module functions come in. These functions are a part of the
-[Plugin's Lifecycle](/docs/tagocore/plugin/create/lifecycle).
+[Plugin's Lifecycle](/docs/tagocore/plugin/create/lifecycle.md).
 
 - `onLoad` will always be the first function called for each Module. It is in here that you should add the starting
   functionality for a single Module (starting an http server for example).

@@ -24,7 +24,7 @@ If you pick the By Date type, you can customize it in either a basic or an advan
 - Basic customization: Use the interface fields to define the date or recurring date rules.
 - Advanced customization: Write a cron expression to define the date/time more precisely.
 
-To learn more about advanced (cron) customization, see [this article](/docs/tagoio/actions/action-cron).
+To learn more about advanced (cron) customization, see [this article](/docs/tagoio/actions/action-cron.md).
 
 ### 1. Basic customization details
 
@@ -42,4 +42,4 @@ The basic mode provides several interface fields that let you fine‑tune when y
 
 ### 2. Advanced customization details
 
-When you need more granular control, switch to the advanced mode and enter a cron expression. This allows you to specify exact dates, times, and recurrence patterns beyond what the basic interface offers. For guidance on writing cron expressions, refer to [this article](/docs/tagoio/actions/action-cron).
+When you need more granular control, switch to the advanced mode and enter a cron expression. This allows you to specify exact dates, times, and recurrence patterns beyond what the basic interface offers. For guidance on writing cron expressions, refer to [this article](/docs/tagoio/actions/action-cron.md).

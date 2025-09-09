@@ -26,6 +26,6 @@ In the environment variables UI (see image above):
 
 You can have up to **20 environment variables** per Analysis. If you exceed this limit, the UI will display a notification indicating that the maximum capacity has been reached.
 
-If you need to store sensitive information such as passwords or API keys, consider using **Secrets**, which are encrypted environment variables designed for this purpose. Learn more about [Secrets](/docs/tagoio/getting-started/secrets).
+If you need to store sensitive information such as passwords or API keys, consider using **Secrets**, which are encrypted environment variables designed for this purpose. Learn more about [Secrets](/docs/tagoio/getting-started/secrets.md).
 
 Note: After adding or editing environment variables in the Analysis editor, save or run the Analysis so the changes take effect.

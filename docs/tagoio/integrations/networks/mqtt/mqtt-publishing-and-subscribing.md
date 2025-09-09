@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 :::warning
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
+TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
 
 For EU accounts, a public MQTT broker without SLA guarantees is planned for the future. The main purpose of that broker will be proof‑of‑concept testing.
 
@@ -24,11 +24,11 @@ services.mqtt.publish('mytopic', 'my message')
 - Any device that subscribes to the topic "mytopic" will receive the published message.
 - Typical subscribe text: Subscribe to the topic: "mytopic"
 
-This section describes how to publish and subscribe to topics on the TagoIO MQTT Broker. It assumes you already know how to connect to MQTT; if you do not, see the [MQTT](/docs/tagoio/integrations/networks/mqtt/) article for connection instructions.
+This section describes how to publish and subscribe to topics on the TagoIO MQTT Broker. It assumes you already know how to connect to MQTT; if you do not, see the [MQTT](/docs/tagoio/integrations/networks/mqtt/.md) article for connection instructions.
 
 ### Publishing to TagoIO
 
-You can create an [Action](/docs/tagoio/actions/trigger-by-mqtt-topic) and attach it to any specific topic or wildcard topics, then trigger actions from there.
+You can create an [Action](/docs/tagoio/actions/trigger-by-mqtt-topic.md) and attach it to any specific topic or wildcard topics, then trigger actions from there.
 
 <!-- Image temporarily disabled: Action example - /cdn.elev.io/file/uploads/pmfKQdI17QsonYtKqFR0lo14i0mduRrZCtXE2bzClic/V6qqrtoqow2xmYBCAXSAPiLPUuftZotTvMGTz_dq0W8/1588011165303-pog.png -->
 
@@ -41,7 +41,7 @@ For raw payloads, transform your data into the TagoIO JSON format by wrapping it
 
 The Quality of Service (_QoS_) level is an agreement between the sender of a message and the receiver. TagoIO officially supports QoS 0 and 1.
 
-TagoIO does not support the native retain feature found in standard MQTT protocol implementations; however, we offer a workaround to achieve similar functionality. Read more here: [MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker).
+TagoIO does not support the native retain feature found in standard MQTT protocol implementations; however, we offer a workaround to achieve similar functionality. Read more here: [MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
 
 ### How to Debug MQTT with TagoIO
 

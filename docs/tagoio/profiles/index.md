@@ -14,7 +14,7 @@ Profiles are similar to having different sub-accounts under your main account. Y
    Allow external users limited access to specific applications and organizations.
 
 3. **Track cost of individual applications and customers**  
-   Visualize cost breakdown per Profile and Services on the [Statistics](/docs/tagoio/my-account/billing/index) page.
+   Visualize cost breakdown per Profile and Services on the [Statistics](/docs/tagoio/my-account/billing/index.md) page.
 
 ## Switching Profiles
 
@@ -39,7 +39,7 @@ Add others to your profiles by adding their e‑mails in the team section. To in
 
 ## Generating Account Tokens
 
-[Account tokens](/docs/tagoio/profiles/account-token) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
+[Account tokens](/docs/tagoio/profiles/account-token.md) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
 
 1. Click on the **Tokens** tab.  
 2. Add a name, permission, expiration, and click **Generate Token**.  

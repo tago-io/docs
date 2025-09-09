@@ -23,7 +23,7 @@ You can create multiple dictionaries and use them in your applications with the 
 
 ## Importing and exporting dictionaries
 
-To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](/docs/tagoio/tagorun/dictionaries/import-export-for-dictionary).  
+To make the process easier and faster, you can import and export dictionary files in any language. Learn more in the Import & Export for Dictionary documentation: [Import & Export for Dictionary](/docs/tagoio/tagorun/dictionaries/import-export-for-dictionary.md).  
 An auto‑complete feature is available to find Slugs and Keys as shown below.
 
 ## How to use dictionary keys

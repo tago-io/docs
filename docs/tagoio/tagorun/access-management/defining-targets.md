@@ -12,7 +12,7 @@ Targets are to whom or to what you are giving the permissions.
 
 :::
 
-Currently, you can select [Run Users](/docs/tagoio/profiles/services/end-users-service) and [Analysis](/docs/tagoio/analysis/) as Targets.
+Currently, you can select [Run Users](/docs/tagoio/profiles/services/end-users-service.md) and [Analysis](/docs/tagoio/analysis/) as Targets.
 
 ![Targets configuration example](/docs_imagem/tagoio/defining-targets-2.png)
 
@@ -26,10 +26,10 @@ Target matching can be performed in several ways:
 
 1. **ID** – select a target from the list.
 
-2. **Tag** – match using tags from your target. Learn more about the [Tags System](/docs/tagoio/getting-started/tags-system).
+2. **Tag** – match using tags from your target. Learn more about the [Tags System](/docs/tagoio/getting-started/tags-system.md).
 
    - Tags are composed of two fields: **Tag key** and **Tag value**.
-   - You can manually edit the tags for each user, or run [scripts](/docs/tagoio/analysis/) to set them. Learn more about [User Management](/docs/tagoio/tagorun/getting-started/user-management).
+   - You can manually edit the tags for each user, or run [scripts](/docs/tagoio/analysis/) to set them. Learn more about [User Management](/docs/tagoio/tagorun/getting-started/user-management.md).
    - For example, Joe Doe has a Tag key `user_level` and Tag value `supervisor`. If you create a policy with Targets using the same tags, the selected permissions will be granted for Joe Doe.
 
 3. **Tag Match** – the match is automatically by searching for those Tag Keys of the selected target.

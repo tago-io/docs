@@ -38,7 +38,7 @@ With an Analysis, you are able to execute **any type of code** in **any language
 
 ## Code sample
 
-This code sample shows a **Node.js Analysis** that simply logs the value of a variable to the [Analysis Console](/docs/tagocore/analysis/console).
+This code sample shows a **Node.js Analysis** that simply logs the value of a variable to the [Analysis Console](/docs/tagocore/analysis/console.md).
 
 ```js
 const data = process.env.TAGOCORE_DATA;

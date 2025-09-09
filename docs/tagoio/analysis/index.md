@@ -19,7 +19,7 @@ Analyses can be triggered by Actions (schedule or condition), by Dashboard UI el
 ## Environments
 Analyses run in TagoIO as an asynchronous, serverless service. There’s no strict queue order, and multiple executions can run at the same time. Usage counts against your profile’s Analysis Run limits.
 
-If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](/docs/tagoio/analysis/sdk/nodejs-sdk) for Deno/Node.js, as well as a [Python SDK](/docs/tagoio/analysis/sdk/python-sdk) to help with local development, packaging, and deployment.
+If you prefer to host code yourself, you can run External Analyses from your own infrastructure. TagoIO provides the [TagoIO CLI](https://github.com/tago-io/tagoio-cli) and [Javascript SDKs](/docs/tagoio/analysis/sdk/nodejs-sdk.md) for Deno/Node.js, as well as a [Python SDK](/docs/tagoio/analysis/sdk/python-sdk.md) to help with local development, packaging, and deployment.
 
 ## Runtimes
 TagoIO supports three runtimes for Analysis. Each runtime has different approaches to dependency management and development workflows.
@@ -80,7 +80,7 @@ Here’s the short path to get an Analysis running:
    In your Admin, go to the [Analysis module](https://admin.tago.io/analysis), create an analysis and choose a runtime: Deno, Node.js, or Python based on your stack and dependency needs.
 
 2. **Grant the needed permissions to your analysis.**  
-   When you create an analysis, it doesn’t have the needed permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](/docs/tagoio/tagorun/access-management/creating-a-policy).
+   When you create an analysis, it doesn’t have the needed permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](/docs/tagoio/tagorun/access-management/creating-a-policy.md).
 
 3. **Code your script**  
    Use the [SDK](/docs/tagoio/analysis/sdk/) for your runtime to read/write data, call external APIs, and log output. Keep functions idempotent when possible.
@@ -88,7 +88,7 @@ Here’s the short path to get an Analysis running:
 4. **Add triggers (optional)**  
    1. [Actions](/docs/tagoio/actions/): schedule (cron) or condition (e.g., variable thresholds)  
    2. [Dashboards](/docs/tagoio/dashboards/): buttons, inputs, or other UI hooks  
-   3. [External](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs): expose an endpoint for webhooks
+   3. [External](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs.md): expose an endpoint for webhooks
 
 5. **Run and monitor**  
    Execute on demand to test, then let triggers handle it. Check logs, run history, and usage.

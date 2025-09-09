@@ -33,7 +33,7 @@ Use the same query strings you use to get data to select which data will be dele
 | end_date   | string | End date                            |
 | variable   | string | Filter by variable                  |
 
-To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](/docs/tagoio/devices/getting-data).
+To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](/docs/tagoio/devices/getting-data.md).
 
 ## Examples
 
@@ -62,4 +62,4 @@ Make sure your request is `DELETE` and not `POST` when trying to delete items. P
 :::
 
 ## Rate Limits
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits).
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

@@ -31,7 +31,7 @@ TagoIO will deny requests from any devices linked to the Profile that is blocked
 
 :::note
 
-Rate limits are applied to a wide range of interactions within the platform, including data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP). Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits).
+Rate limits are applied to a wide range of interactions within the platform, including data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP). Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
 
 :::
 

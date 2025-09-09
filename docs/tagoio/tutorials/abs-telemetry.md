@@ -30,7 +30,7 @@ Change the method to **POST** and go to **Send Commands** – you will have to c
 | `_extcmd=postcfg erase` | Delete POST settings |
 | `_extcmd=postcfg Content-type,text/plain;Device-Token,_device_token_;;;` | Set the two parameters required to configure POST for Tago |
 
-> Replace the text `device_token` with the value of your [device‑token](/docs/tagoio/devices/device-token).
+> Replace the text `device_token` with the value of your [device‑token](/docs/tagoio/devices/device-token.md).
 
 Learn more information about the [ABS devices configuration](http://www.abstelemetria.com/abs-cel-io/#tab-id-2).
 

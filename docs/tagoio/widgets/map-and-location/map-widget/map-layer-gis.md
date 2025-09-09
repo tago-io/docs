@@ -20,7 +20,7 @@ In the static layer, you can use the widget configuration to input and choose a 
 ### 2. Dynamic layer
 In the dynamic layer, the files are saved in a variable so developers can manage them easily and display the layers dynamically. This is similar to the **Data From** field of the Map widget.
 
-Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](/docs/tagoio/widgets/tables/dynamic-table-widget) or the [Input Form widget](/docs/tagoio/widgets/input-widgets/input-form/).  
+Each variable value will display a GIS layer; you can control that using the [Dynamic Table widget](/docs/tagoio/widgets/tables/dynamic-table-widget.md) or the [Input Form widget](/docs/tagoio/widgets/input-widgets/input-form/).  
 A variable should have a payload like this so that the Map widget can successfully display a layer:
 
 ```json

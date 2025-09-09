@@ -12,7 +12,7 @@ With Actions you can:
 
 - Run scripts using an [Analysis](/docs/tagocore/analysis);
 - Make HTTP POST requests to endpoints;
-- Use [triggers](/docs/tagocore/action/trigger) and [types](/docs/tagocore/action/type) from Plugins;
+- Use [triggers](/docs/tagocore/action/trigger.md) and [types](/docs/tagocore/action/type.md) from Plugins;
 - And much more in the future.
 
 
@@ -22,4 +22,4 @@ To add a new Action, press the&nbsp; <img className="inline-image" src="/docs_im
 
 <img className="big-image" src="/docs_imagem/tagocore/action/add-action-modal.png" height="300px" />
 
-In this modal, you must define a name, a [trigger](/docs/tagocore/action/trigger), and a [type](/docs/tagocore/action/type).
+In this modal, you must define a name, a [trigger](/docs/tagocore/action/trigger.md), and a [type](/docs/tagocore/action/type.md).

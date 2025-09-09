@@ -86,8 +86,8 @@ For detailed instructions on adding devices, visit the [Adding Devices](/docs/ta
 
 2. **Verify Data Reception**
    - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.
-   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector) within your device settings to monitor incoming data in real-time.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating dashboards, adding notifications, and creating scripts to process your data.
 
-Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/docs/tagoio/integrations/networks/downlink-for-lorawan/).
+Learn how to perform downlink for LoRaWAN: [downlink for LoRaWAN](/docs/tagoio/integrations/networks/downlink-for-lorawan/.md).

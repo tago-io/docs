@@ -7,13 +7,13 @@ Transform your raw sensor data into actionable insights using visual calculation
 
 Data Analytics is currently available for the widgets listed below, with support for additional widgets to be added in the future:
 
-- [Display](/docs/tagoio/widgets/displays/display-widget)
-- [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget)
-- [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget)
-- [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget)
-- [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget)
-- [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget)
-- [Icon](/docs/tagoio/widgets/Displays/icons-widget)
+- [Display](/docs/tagoio/widgets/displays/display-widget.md)
+- [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget.md)
+- [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget.md)
+- [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md)
+- [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md)
+- [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md)
+- [Icon](/docs/tagoio/widgets/displays/icons-widget)md)
 
 ## Available Functions
 
@@ -38,7 +38,7 @@ The following table lists the calculations you can perform:
 These functions perform fundamental mathematical operations on data within a specified period, up to one month. All functions are considered basic calculations except for the Aggregate function. When applied, these calculations process all data within the chosen timeframe. Note that these calculations are limited to data in a period of 1 month.
 
 #### Data aggregation operations
-This includes the **Aggregate** function, which aggregates data over an interval and applies mathematical operations. Unlike basic calculations, there is no period restriction; the calculation will be applied to all available data by default or to the period configured in the [Dashboard Period Preset](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets).
+This includes the **Aggregate** function, which aggregates data over an interval and applies mathematical operations. Unlike basic calculations, there is no period restriction; the calculation will be applied to all available data by default or to the period configured in the [Dashboard Period Preset](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets.md).
 
 Available intervals:
 - Per minute
@@ -57,7 +57,7 @@ When applying an interval, the system uses the first data point as a starting re
 3. Click the cog icon to access the **Data Analytics** tab.
 4. Choose a function from the list above.
 5. For basic calculations, define a period (up to one month).  
-   - The period can be set directly in the Data Analytics tab, on the X‑axis, or via global preset periods using the [Dashboard Period Presets](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets).
+   - The period can be set directly in the Data Analytics tab, on the X‑axis, or via global preset periods using the [Dashboard Period Presets](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets.md).
 6. For aggregation functions, set a default interval or create a preset interval by navigating to the **Preset Interval** option after entering the widget in Edit Mode.
 7. The system will prompt you to define **Cache settings**, which are mandatory for maintaining dashboard responsiveness and performance.  
-   - You can also set an expiration time to prevent rapid consumption of your [Dashboard Data Output](/docs/tagoio/dashboards/data-output-for-dashboards).
+   - You can also set an expiration time to prevent rapid consumption of your [Dashboard Data Output](/docs/tagoio/dashboards/data-output-for-dashboards.md).

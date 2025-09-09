@@ -19,7 +19,7 @@ First, go to the [Devices](/docs/tagoio/devices/) module in our admin, look for 
 
 ### Create Device
 
-Type a name for your device, select a **[data storage type](/docs/tagoio/devices/)** and define a **[Data Retention](/docs/tagoio/devices/data-management/data-retention-feature)**, then click on *Create device*.
+Type a name for your device, select a **[data storage type](/docs/tagoio/devices/)** and define a **[Data Retention](/docs/tagoio/devices/data-management/data-retention-feature.md)**, then click on *Create device*.
 
 ![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
 
@@ -42,7 +42,7 @@ Go to **"Notification Target"**. Make sure the status is *Enabled*, select **HTT
 | Field | Description |
 |-------|-------------|
 | **Name** | Enter a unique identifier (e.g., `tagoio-integration`). |
-| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/docs/tagoio/integrations/)**. |
+| **Forward To HTTP URL** | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/docs/tagoio/integrations/.md)**. |
 | **Headers** | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1. |
 | **Optional Data Fields** | Enable *RF Data* and any other optional field you would like to receive in your device. |
 

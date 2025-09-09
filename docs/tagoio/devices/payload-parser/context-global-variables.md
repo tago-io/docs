@@ -16,14 +16,14 @@ These global variables can vary from simple objects to complex functions or arra
 | payload* | Content of the message that was sent. It usually is an Array of data or a string. At the end of the parser, the payload content is added to your device. |
 | device | Device information containing configuration parameters, tags, device ID, etc. |
 | raw_payload | Payload sent in the original request, without changes by any parser. Useful when you want to access the data before it has been changed by a Network parser. |
-| timeUtils | [timeUtils library](/docs/tagoio/devices/payload-parser/payload-parser-timeutils-library) |
+| timeUtils | [timeUtils library](/docs/tagoio/devices/payload-parser/payload-parser-timeutils-library.md) |
 | dayjs** | [Day.js library](https://day.js.org/) |
-| console.log** | Show an info message in the [Live Inspector](/docs/tagoio/devices/live-inspector). |
-| console.debug** | Show a debug message in the [Live Inspector](/docs/tagoio/devices/live-inspector). |
-| console.error** | Show an error message in the [Live Inspector](/docs/tagoio/devices/live-inspector). |
+| console.log** | Show an info message in the [Live Inspector](/docs/tagoio/devices/live-inspector.md). |
+| console.debug** | Show a debug message in the [Live Inspector](/docs/tagoio/devices/live-inspector.md). |
+| console.error** | Show an error message in the [Live Inspector](/docs/tagoio/devices/live-inspector.md). |
 
 
-> - This variable must be an [Array of TagoIO data](/docs/tagoio/devices/sending-data) when the code ends.  
+> - This variable must be an [Array of TagoIO data](/docs/tagoio/devices/sending-data.md) when the code ends.  
 > - These are functions available to be used in the Payload Parser.
 
 :::info
