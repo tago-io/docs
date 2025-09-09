@@ -35,7 +35,7 @@ jobs:
         run: npm install -g aws-cdk
 
       - name: Configure AWS Credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: us-east-1
@@ -46,4 +46,4 @@ jobs:
           CDK_DEFAULT_REGION: us-east-1
           DOCS_CERT_ARN: ${{ secrets.DOCS_CERT_ARN }}
           REDIRECTS_CERT_ARN: ${{ secrets.REDIRECTS_CERT_ARN }}
-        run: npm run cdk:deploy
+        run: npm run cdk:deploy:docs
