@@ -19,16 +19,7 @@ export default function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
   };
 
   return (
-    <div
-      style={{
-        position: "relative",
-        paddingBottom: "56.25%",
-        height: 0,
-        overflow: "visible",
-        maxWidth: "100%",
-        marginBottom: "20px",
-      }}
-    >
+    <div className="youtube-container">
       <YouTube
         videoId={videoId}
         opts={opts}
