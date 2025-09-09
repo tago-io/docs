@@ -83,11 +83,11 @@ const config: Config = {
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
       ? {
-          metadata: [
-            { name: "robots", content: "noindex, nofollow" },
-            { name: "googlebot", content: "noindex, nofollow" },
-          ],
-        }
+        metadata: [
+          { name: "robots", content: "noindex, nofollow" },
+          { name: "googlebot", content: "noindex, nofollow" },
+        ],
+      }
       : {}),
     algolia: {
       appId: "8HPN5WF45N",
@@ -129,6 +129,11 @@ const config: Config = {
           position: "right",
           value:
             '<div class="navbar-status-badge" style="display:inline-flex;align-items:center;height:var(--ifm-navbar-height)"><iframe class="status-badge--light" src="https://status.tago.io/badge?theme=light" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;" loading="lazy" referrerpolicy="no-referrer"></iframe><iframe class="status-badge--dark" src="https://status.tago.io/badge?theme=dark" width="187" height="30" frameborder="0" scrolling="no" title="System status" style="vertical-align: middle;" loading="lazy" referrerpolicy="no-referrer"></iframe></div>',
+        },
+        {
+          href: "https://community.tago.io",
+          label: "Community",
+          position: "right",
         },
         {
           href: "https://tago.io",
