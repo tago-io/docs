@@ -9,6 +9,7 @@
 .claude/**/*
 .crush
 .playwright-mcp
+.testaaa
 
 # Generated files
 .docusaurus
