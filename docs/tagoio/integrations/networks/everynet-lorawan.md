@@ -58,7 +58,7 @@ TagoIO application.
      `https://everynet.middleware.REGION.tago.io/{type}`\
      Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For
      a list of available regions, visit
-     [TagoIO Network Integration](/docs/tagodeploy/project/configuration/integrations.md).
+     [TagoIO Network Integration](/docs/tagoio/integrations/index.md).
    - **Description** – Enter a unique identifier (e.g., `tagoio-integration`).
    - **Authorization Header** – Paste the Authorization token you copied in
      Step 1.

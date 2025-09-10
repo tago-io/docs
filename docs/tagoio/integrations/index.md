@@ -11,11 +11,11 @@ from other protocols, by using one of the following methods:
 1. Create a script that initiates access to external services using
    [Analysis](/docs/tagoio/analysis/). For example: get a weather forecast or
    read/write data in a Google Sheet.
-2. Use our [Network Integration](/docs/tagodeploy/project/configuration/integrations.md) prepared to
+2. Use our [Network Integration](/docs/tagoio/integrations/index.md) prepared to
    connect and translate data from devices connected to providers such as
    LoRaWAN, Sigfox, or satellite, or that use different protocols such as TCP/IP
    or UDP.
-3. Create your own [Network Integration](/docs/tagodeploy/project/configuration/integrations.md) that can
+3. Create your own [Network Integration](/docs/tagoio/integrations/index.md) that can
    push data to TagoIO into the correct device based on its serial number, using
    your own protocol.
 

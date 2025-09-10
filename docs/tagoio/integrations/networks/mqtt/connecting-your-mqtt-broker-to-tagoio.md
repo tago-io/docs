@@ -48,7 +48,7 @@ Learn how to use the relay here:
 
 Given the diverse strategies for data transmission, the MQTT Relay supports a
 broad range of solutions. You can customize how the Device is identified using
-our [Network Integrations](/docs/tagodeploy/project/configuration/integrations.md). The Payload Parser
+our [Network Integrations](/docs/tagoio/integrations/index.md). The Payload Parser
 inside the Network can export a Serial, ensuring the data is stored accurately
 within your Profile.
 

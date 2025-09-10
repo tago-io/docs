@@ -15,7 +15,7 @@ additional calculations on the data after the system runs the parser provided by
 the selected connector.
 
 If you want to learn more about how data packages are sent to TagoIO, see
-[Integration](/docs/tagodeploy/project/configuration/integrations.md).
+[Integration](/docs/tagoio/integrations/index.md).
 
 ## Tutorials
 

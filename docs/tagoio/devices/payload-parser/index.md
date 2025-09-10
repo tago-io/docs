@@ -26,7 +26,7 @@ TagoIO can run up to two parsers for a device:
 :::info
 
 The parsers are executed in sequence. First the one from the
-[Connector](/docs/tagodeploy/project/configuration/integrations.md), then your custom
+[Connector](/docs/tagoio/integrations/index.md), then your custom
 parser.
 
 :::
