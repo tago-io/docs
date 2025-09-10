@@ -7,7 +7,7 @@ slug: /tagocore/installation
 # Installing TagoCore
 
 :::info
-To install TagoCore, you need to [Download it](/docs/tagocore/download) first.
+To install TagoCore, you need to [Download it](/docs/tagocore/getting-started/download.md) first.
 :::
 
 ## Decompressing
@@ -23,7 +23,7 @@ Open a terminal in the folder where you downloaded TagoCore and execute the foll
 tar -xvzf community_images.tar.gz
 ```
 
-This command uses the `tar` command from unix to decompress the `.tar.gz` file in the current directory. 
+This command uses the `tar` command from unix to decompress the `.tar.gz` file in the current directory.
 
 ### .zip
 
@@ -34,7 +34,7 @@ Open a terminal in the folder where you downloaded TagoCore and execute the foll
 unzip file.zip
 ```
 
-This command uses the `zip` command to decompress the `.zip` file in the current directory. 
+This command uses the `zip` command to decompress the `.zip` file in the current directory.
 
 ## Executing TagoCore
 
@@ -56,4 +56,4 @@ That's it! Access the URL in your browser and start building your applications.
 
 <!-- ## Next Steps
 
-If you have no idea how TagoCore works, you should check out our [TagoCore Overview](/tagocore/overview). However, if you are already familiar with some concepts, you can engage with [our community](https://community.tago.io/c/tagocore/19) by answering questions from other folks! -->
+If you have no idea how TagoCore works, you should check out our [TagoCore Overview](/docs/tagocore/resources/action/overview.md). However, if you are already familiar with some concepts, you can engage with [our community](https://community.tago.io/c/tagocore/19) by answering questions from other folks! -->

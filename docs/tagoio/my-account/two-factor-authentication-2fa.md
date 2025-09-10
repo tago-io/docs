@@ -25,7 +25,7 @@ The second factor is a six‑digit code. That code is either:
 
 Once a method is configured for your account, you will be asked to type the six‑digit code:
 - when signing in, and
-- when generating a new [Account Token](/docs/tagoio/profiles/account-token).
+- when generating a new [Account Token](/docs/tagoio/profiles/account-token.md).
 
 :::tip
 

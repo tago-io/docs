@@ -8,7 +8,7 @@ slug: /tagodeploy/project/management/collaborators
 Collaborators are users who can access and work on your TagoDeploy Project. They
 can view and edit project resources but cannot delete the project. Collaborators
 are different from Admin Portal developers, which you manage separately under
-[TagoIO Admin Accounts](/docs/tagodeploy/project/accounts).
+[TagoIO Admin Accounts](/docs/tagodeploy/project/configuration/accounts.md).
 
 A collaborator must have their own TagoDeploy account to accept an invitation.
 

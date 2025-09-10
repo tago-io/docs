@@ -6,11 +6,11 @@ tags: ["tagoio"]
 
 A Data Record represents the variables stored and sent by devices. Each register consists of a variable and all metadata associated with it. The profile's data record limit defines the maximum storage capacity for the selected Profile at all times.
 
-Fields such as [location](data-manipulation#location) that contain latitude/longitude as part of a variable should be considered part of the same register. The same rule applies to metadata fields.
+Fields such as [location](/docs/tagoio/devices/sending-data.md) that contain latitude/longitude as part of a variable should be considered part of the same register. The same rule applies to metadata fields.
 
 ## Metadata
 
-All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata) stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
+All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata.md) stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
 
 
 ```json
@@ -36,7 +36,7 @@ Another simple example: Your device sends speed, temperature, and humidity with 
 
 ## Notes
 
-- The "variable" and its associated metadata (for example, [metadata](/docs/tagoio/devices/payload-parser/metadata)) are counted together as one register regardless of how many fields are present.
+- The "variable" and its associated metadata (for example, [metadata](/docs/tagoio/devices/payload-parser/metadata.md)) are counted together as one register regardless of how many fields are present.
 - Location stored inside the variable (lat/lng) is considered part of the same register.
 - The data record limit is enforced per Profile and defines the maximum number of registers stored for that Profile.
 

@@ -13,7 +13,7 @@ infrastructure. API usage is directly tied to your project’s billing costs, as
 resource consumption such as compute, memory, and network utilization impacts
 your overall charges. For detailed information on how API resource usage affects
 your costs and how to optimize your spending, refer to the
-[TagoIO Billing and Cost Management Documentation](../bills/billing.md).
+[TagoIO Billing and Cost Management Documentation](/docs/tagodeploy/project/management/billing.md).
 
 An active API instance is required for your TagoIO services to function. Without
 it, none of the TagoIO platform features or integrations will be accessible.
@@ -97,4 +97,4 @@ costs while ensuring your project remains responsive and reliable.
 
 For more information on billing models, usage analysis, and cost optimization
 strategies, consult the
-[TagoIO Billing and Cost Management Documentation](../bills/billing.md).
+[TagoIO Billing and Cost Management Documentation](/docs/tagodeploy/project/management/billing.md).

@@ -7,7 +7,7 @@ The image marker widget allows you to place pins on images and customize each pi
 
 ![Image marker example showing pins on a floor plan](/docs_imagem/tagoio/image-marker-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [groups](/docs/tagoio/devices/grouping-variables), which can be set in your variable data to alter how the widget behaves.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data to alter how the widget behaves.
 
 ## Creating your own
 
@@ -15,7 +15,7 @@ To add the widget to your dashboard, choose the Image Marker widget from the wid
 
 ### 1. 'Data From' Field
 
-This field allows you to set the device and variable that will be used in this widget.  
+This field allows you to set the device and variable that will be used in this widget.
 The widget requires **at least two variables**: one for the pin’s data (e.g., temperature, status) and another to store all pin positions on the image.
 
 - **Normal Dashboards** – Select a device from your list of devices and choose the variable that contains the pin data.

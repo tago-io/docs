@@ -7,7 +7,7 @@ Using data from multiple variables, the Pie widget automatically produces a pie 
 
 ![Pie widget examples](/docs_imagem/tagoio/pie-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data.
 
 ## Creating your own
 
@@ -16,7 +16,7 @@ To add the Pie widget to your dashboard, choose the Pie widget from the widget l
 
 ### Data From Field
 
-This field allows you to set the device and variable that will be used in this widget.  
+This field allows you to set the device and variable that will be used in this widget.
 Click on the cog icon to edit specific options for this variable, such as formulas or color. Click on the close icon to remove this variable from the widget's data.
 
 #### Normal Dashboards
@@ -25,5 +25,5 @@ From the option **Data From** on the right menu, select one device from your lis
 
 #### Blueprint Dashboards
 
-From the option **Data From** on the right menu, add the *Blueprint device* and input the name of the variable that contains the information.  
+From the option **Data From** on the right menu, add the *Blueprint device* and input the name of the variable that contains the information.
 When using a Blueprint dashboard, the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.

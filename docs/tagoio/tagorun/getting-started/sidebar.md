@@ -12,7 +12,7 @@ You can customize your sidebar settings by accessing the Run module and selectin
 
 :::tip
 
-It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme).
+It is possible to modify the appearance of your sidebar with your own color palette. Learn more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme.md).
 
 :::
 
@@ -21,8 +21,8 @@ The Dashboard Search feature enhances the end‑user experience by providing a s
 
 ![Image 2](/docs_imagem/tagoio/external-8ae4366e.png)
 
-To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.  
-You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language).
+To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.
+You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md).
 
 ### Logo Button Configuration
 You can define what happens when an end user clicks on your logo or what message is displayed when the mouse hovers over it.
@@ -33,7 +33,7 @@ To display a tooltip over your logo, write text in the **Button tooltip** field.
 ![Image 3](/docs_imagem/tagoio/external-2aac36db.png)
 
 
-Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries) to display text that will be substituted according to the languages available for your end users.
+Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries.md) to display text that will be substituted according to the languages available for your end users.
 
 #### 2. Button Action
 By default, when an end user clicks on your logo, they are redirected to your Run URL domain. You can customize what happens after clicking on it. The actions can be:

@@ -4,55 +4,81 @@ description: "This article explains what Connectors are in TagoIO, how they mana
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Connectors let you create devices with built‑in behaviors that enable them to communicate with a Network easily. Once a device is created using a connector, the device will automatically run the connector's payload parser to decode incoming data.
+
+Connectors let you create devices with built‑in behaviors that enable them to
+communicate with a Network easily. Once a device is created using a connector,
+the device will automatically run the connector's payload parser to decode
+incoming data.
 
 ![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
 
 Device data flow
 
-They also help you automate and scale your devices: after creating a device with a connector, the connector's payload parser will be executed to decode incoming data.
+They also help you automate and scale your devices: after creating a device with
+a connector, the connector's payload parser will be executed to decode incoming
+data.
 
 ## Creating a connector
 
-To create a new connector, go to the [Connector management page](https://admin.tago.io/integrations/connector) and press the '+ Add connector' on the right side of the page:'
+To create a new connector, go to the
+[Connector management page](https://admin.tago.io/integrations/connector) and
+press the '+ Add connector' on the right side of the page:'
 
-You must specify the connector's name and the network(s) it belongs to.  You can add as many networks as you like, but at least one network must be selected.
+You must specify the connector's name and the network(s) it belongs to. You can
+add as many networks as you like, but at least one network must be selected.
 
 ### Connector parameters
 
-After creating a connector you can define several optional parameters that will be available in the payload parser:
+After creating a connector you can define several optional parameters that will
+be available in the payload parser:
 
-| Parameter | Description |
-|-----------|-------------|
-| **Name** | The connector's name. |
-| **Description** | A quick description of what the connector does. |
-| **Logo URL** | An image URL for the sensor or company logo (used when a device is created). |
+| Parameter       | Description                                                                  |
+| --------------- | ---------------------------------------------------------------------------- |
+| **Name**        | The connector's name.                                                        |
+| **Description** | A quick description of what the connector does.                              |
+| **Logo URL**    | An image URL for the sensor or company logo (used when a device is created). |
 
-By default, a newly created connector is visible only to you. You can share it with other [Profiles](/docs/tagoio/profiles) from different accounts. Read more about [Sharing Connectors & Networks](/docs/tagoio/devices/payload-parser/connector/sharing-connectors-networks).
+By default, a newly created connector is visible only to you. You can share it
+with other [Profiles](/docs/tagoio/profiles) from different accounts. Read more
+about
+[Sharing Connectors & Networks](/docs/tagoio/devices/payload-parser/connector/sharing-connectors-networks.md).
 
-If you want to make your connector public, submit a Pull Request on our GitHub repository: https://github.com/tago-io/decoders. For details, see the article on [Publishing, updating and accessing decoders](/docs/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders).
+If you want to make your connector public, submit a Pull Request on our GitHub
+repository: https://github.com/tago-io/decoders. For details, see the article on
+[Publishing, updating and accessing decoders](/docs/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders.md).
 
 ### Documentation
 
-You can provide additional information that will be shown to users when they create a device with this connector:
+You can provide additional information that will be shown to users when they
+create a device with this connector:
 
-- **Description** – A full description of the device. Include links to datasheets or other resources.
-- **Completion Text** – Information displayed immediately after the device is created (optional).
+- **Description** – A full description of the device. Include links to
+  datasheets or other resources.
+- **Completion Text** – Information displayed immediately after the device is
+  created (optional).
 - **Device Annotation** – Text always available on the user's devices page.
 
-It’s recommended to add links to dashboard templates here so users can quickly set up visualizations for their new devices.
+It’s recommended to add links to dashboard templates here so users can quickly
+set up visualizations for their new devices.
 
 ### Device parameters
 
-When a user creates a device with your connector, you can expose custom parameters that will be accessible in the payload parser. Supported types include:
+When a user creates a device with your connector, you can expose custom
+parameters that will be accessible in the payload parser. Supported types
+include:
 
 - **Number**
 - **Text**
 - **Dropdown** – Users choose from predefined options.
 - **Switch** – Boolean on/off value.
 
-These values are available as global variables in the payload parser context (see the [Payload parser context overview](/docs/tagoio/devices/payload-parser/context-global-variables)).
+These values are available as global variables in the payload parser context
+(see the
+[Payload parser context overview](/docs/tagoio/devices/payload-parser/context-global-variables.md)).
 
 ### Payload parser
 
-The connector’s payload parser follows the same rules and syntax as a regular device payload parser. All parsing logic, variable names, and error handling are identical to those described in the article on [Payload Parser](/docs/tagoio/devices/payload-parser/).
+The connector’s payload parser follows the same rules and syntax as a regular
+device payload parser. All parsing logic, variable names, and error handling are
+identical to those described in the article on
+[Payload Parser](/docs/tagocore/resources/device/payload-parser.md).

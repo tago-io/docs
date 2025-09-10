@@ -21,7 +21,7 @@ Each user has a Tags tab. Tags can be provided in three ways:
 
 - Manually (by an administrator)
 - Programmatically (by script)
-- By the user during the [Signup process](/docs/tagoio/tagorun/getting-started/signup-fields)
+- By the user during the [Signup process](/docs/tagoio/tagorun/getting-started/signup-fields.md)
 
 > Note: All customized fields defined in your Signup Page under the Run module are added in the Tags here.
 
@@ -29,12 +29,12 @@ The fields `tag_key` and `tag_value` from the users can be used in the Targets w
 
 :::warning
 
-Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards) for quota and billing details.
+Accessing data from dashboards using TagoRUN — even when downloading it as a .csv from widgets — is counted towards your Data Output for Dashboards. See [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards.md) for quota and billing details.
 
 :::
 
 ## Anonymous User
-You can create an Anonymous User to allow access to dashboards in your TagoRun without having to sign in with credentials. This user is required if you want to share your dashboard with anyone using a URL. Read more about [Sharing Dashboards](/docs/tagoio/dashboards/sharing-dashboards).
+You can create an Anonymous User to allow access to dashboards in your TagoRun without having to sign in with credentials. This user is required if you want to share your dashboard with anyone using a URL. Read more about [Sharing Dashboards](/docs/tagoio/dashboards/sharing-dashboards.md).
 
 The anonymous user behaves as a normal user, except for not having a password. You can still use Tags to grant access to resources through Access Management policies.
 

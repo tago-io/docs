@@ -28,8 +28,8 @@ const config: Config = {
   organizationName: "tago-io", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
 
-  onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

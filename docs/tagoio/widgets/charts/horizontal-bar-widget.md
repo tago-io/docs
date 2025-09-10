@@ -3,11 +3,11 @@ title: "Horizontal Bar Widget"
 description: "A brief guide to the Horizontal Bar Widget that explains what it does, notes supported variable features, and documents the \"Data From\" field used to select device and variable inputs for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](/docs/tagoio/widgets/general/formula), decide whether bars are stacked, and configure other visual options.
+Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), decide whether bars are stacked, and configure other visual options.
 
 ![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
 
-This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -23,7 +23,7 @@ The available options in the *Data From* field depend on whether you are using a
 From the *Data From* option on the right‑hand menu, select one device from your list of devices and then choose the variable that contains the data.
 
 #### 1.2 'Data From' for Blueprint Dashboards
-From the *Data From* option on the right‑hand menu, add a **Blueprint device** and input the name of the variable that holds the information.  
+From the *Data From* option on the right‑hand menu, add a **Blueprint device** and input the name of the variable that holds the information.
 When using a blueprint dashboard, the *Variable* selector will not list variables because it does not know which devices are linked to your blueprint device.
 
 ## 2. X-axis and Y-axis
@@ -31,7 +31,7 @@ When using a blueprint dashboard, the *Variable* selector will not list variable
 In the horizontal bar chart widget you can customize how data is displayed on both axes.
 
 ### 2.1 X‑axis
-By default, the X‑axis shows the time of each value, and you can set a custom time range.  
+By default, the X‑axis shows the time of each value, and you can set a custom time range.
 If you need to group data that does not share the same timestamp, select a variable that contains the grouping key; all values will then be grouped by **series**.
 
 You can also define the X‑axis time range dynamically using another variable’s metadata:
@@ -50,7 +50,7 @@ You can also define the X‑axis time range dynamically using another variable�
 The `start_date` and `end_date` must be in ISO 8601 format.
 
 ### 2.2 Y‑axis
-On the horizontal axis you can adjust scaling behavior, apply metric prefixes or abbreviations, change the step value (the distance between ticks), and more.  
+On the horizontal axis you can adjust scaling behavior, apply metric prefixes or abbreviations, change the step value (the distance between ticks), and more.
 By default the widget automatically selects an appropriate scale for your data; manual adjustments are only needed if you have specific requirements.
 
 ## 3. Filtering Data
@@ -59,7 +59,7 @@ You can pre‑set date filters that will be shown when the widget loads. Filters
 
 ## 4. Performance Optimization – Downsampling
 
-When a chart contains many data points, enable the **Downsampling** feature to improve performance and readability.  
+When a chart contains many data points, enable the **Downsampling** feature to improve performance and readability.
 Two parameters control downsampling:
 
 - **Threshold** – the number of data points at which downsampling starts.

@@ -25,4 +25,4 @@ Device tokens should be kept secret and only be shared with those you trust.
 
 ## Payload Parser
 
-Payload Parsers allows you to manipulate the raw payload sent by devices. For example, it can be used to transform a HEX payload sent by a device into `temperature` and `battery` variables. [Learn more about Payload parsers](/docs/tagocore/device/payload-parser).
+Payload Parsers allows you to manipulate the raw payload sent by devices. For example, it can be used to transform a HEX payload sent by a device into `temperature` and `battery` variables. [Learn more about Payload parsers](/docs/tagocore/resources/device/payload-parser.md).

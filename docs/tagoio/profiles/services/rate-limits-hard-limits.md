@@ -15,7 +15,7 @@ Hard limits are used to prevent high-frequency usage beyond a healthy acceptable
 
 :::info
 
-TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](/docs/tagoio/my-account/billing/resource-limits) and [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards).
+TagoIO also enforces limits on the number of resources you can have and the amount of data displayed on your dashboards. Read more about [Resource Limits](/docs/tagoio/my-account/billing/resource-limits.md) and [Data Output for Dashboards](/docs/tagoio/dashboards/data-output-for-dashboards.md).
 
 :::
 
@@ -29,7 +29,7 @@ The system aggregates all requests performed inside a Profile for each route. Th
 
 :::tip
 
-Check our [Control Tower add‑on](/docs/tagoio/addons/control-tower).
+Check our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
 :::
 
@@ -111,7 +111,7 @@ The following table lists the API resources for which the hard limit applies, th
 | | Subscribe-Receive | MQTT payload from TagoIO broker | 250 | 5 000 | 15 000 |
 | | Connection-Connect to TagoIO broker | 20 | 100 | 200 |
 
->[*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/docs/tagoio/addons/control-tower).
+>[*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
 :::tip
 
@@ -135,5 +135,4 @@ If you need help adapting your project to these hard limits, try our [Community]
 
 ## Rate limits usage monitoring
 
-You can monitor the hard limits for each function by accessing the account menu located in the top right corner of your [Admin](https://admin.tago.io/limits/hard) page and selecting the **Hard Limits** option. If the [Control Tower](/docs/tagoio/addons/control-tower) add‑on is active in your account, you will have the ability to view historical and detailed statistics of your usage for Hard Limits, providing insights into your requests per minute.
-
+You can monitor the hard limits for each function by accessing the account menu located in the top right corner of your [Admin](https://admin.tago.io/limits/hard) page and selecting the **Hard Limits** option. If the [Control Tower](/docs/tagoio/addons/control-tower.md) add‑on is active in your account, you will have the ability to view historical and detailed statistics of your usage for Hard Limits, providing insights into your requests per minute.

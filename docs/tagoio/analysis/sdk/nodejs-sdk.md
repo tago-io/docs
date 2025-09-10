@@ -16,4 +16,4 @@ https://tago-sdk-js-documentation.rtfd.io/
 > Note: The old SDK will be discontinued in 2030.
 
 ## Rate limits
-When executing requests to TagoIO, there is a limit on the number of requests that can be made within a given time period. Read more about our [Rate Limits](../rate-limits-hard-limits).
+When executing requests to TagoIO, there is a limit on the number of requests that can be made within a given time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

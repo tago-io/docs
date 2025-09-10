@@ -28,7 +28,7 @@ is preserved and can be restored in case of data loss.
 
 Backups are created automatically every day to ensure consistent data
 protection. The backup schedule can be configured in the
-[Main Database](./main-database.md) page.
+[Main Database](/docs/tagodeploy/project/project-services/main-database.md) page.
 
 ## Backup Information
 

@@ -21,8 +21,8 @@ for (const file of files) {
     /(^|\n)slug:\s*\/(?!tagocore\b)/,
     (_m, p1) => `${p1}slug: /tagocore/`,
   );
-  // Fix markdown links: ](/something) -> ](/tagocore/something) when not already prefixed
-  src = src.replace(/\]\(\/(?!tagocore\b)/g, "](/tagocore/");
+  // Fix markdown links: ](/something) -> ](/docs/tagocore/something) when not already prefixed
+  src = src.replace(/\]\(\/(?!tagocore\b)/g, "](/docs/tagocore/");
   writeFileSync(file, src, "utf8");
 }
 

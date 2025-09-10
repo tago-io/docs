@@ -44,9 +44,9 @@ Example formula (temperature conversion):
 
 ### Source options
 When configuring a formula you can choose between two source types:
-- **Fixed** – enter the formula directly into the field.  
+- **Fixed** – enter the formula directly into the field.
   Example: `$value$ * 2 + 5`
-- **Variable** – store the formula in a variable’s `value` field (and optionally a unit).  
+- **Variable** – store the formula in a variable’s `value` field (and optionally a unit).
   Example JSON for a temperature conversion variable:
   ```json
   {
@@ -79,7 +79,7 @@ The `Date()` function formats date and time values dynamically.
 Date(source, format_string)
 ```
 
-- **source** – the value containing the date/time (variable, metadata field, or system value).  
+- **source** – the value containing the date/time (variable, metadata field, or system value).
 - **format_string** – desired output format using supported tokens or preference variables (`DATE_FORMAT`, `TIME_FORMAT`).
 
 Special variables are replaced at runtime based on the current TagoRUN user’s settings.
@@ -107,7 +107,7 @@ or
 More options are available in the dropdown list of the Formula field.
 
 ### Units for output variables
-After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/docs/tagoio/widgets/general/displaying-units).
+After converting a value, you can set the unit that appears next to it. Use the **Unit Origin** field to define where the displayed unit comes from. Learn more about [Display Units](/docs/tagoio/widgets/general/displaying-units.md).
 
 ### Minimum and Maximum limits
 The formula does not adjust the widget’s data range. The Min and Max values are still controlled by the settings in the **Data Range** tab.
@@ -115,7 +115,7 @@ The formula does not adjust the widget’s data range. The Min and Max values ar
 ## Dynamic Formulas
 Dynamic Formulas allow formulas to adapt based on user preferences or browser settings. To use them:
 
-1. Create a new visualization preference in **TagoRUN** via **[Custom Settings](/docs/tagoio/tagorun/getting-started/custom-settings)**.
+1. Create a new visualization preference in **TagoRUN** via **[Custom Settings](/docs/tagoio/tagorun/getting-started/custom-settings.md)**.
 2. In the widget’s configuration, enable **Dynamic Formula** and select:
    - **Source** – user preference or browser preference.
    - **Option** – the specific custom setting created earlier.

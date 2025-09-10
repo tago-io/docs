@@ -35,6 +35,6 @@ from pandas import DataFrame
 import requests
 ```
 
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](../rate-limits-hard-limits).
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
 
 <!-- Image placeholder removed for build -->

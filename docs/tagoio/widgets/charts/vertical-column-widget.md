@@ -3,11 +3,11 @@ title: "Vertical Column Widget"
 description: "A brief guide to the Vertical Column Widget in TagoIO, explaining what it does, configurable features (like Formula, metadata, and series), and the first configuration field ('Data From') used to select device and variable data for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](/docs/tagoio/widgets/general/formula), choose whether series are stacked, and more.
+Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), choose whether series are stacked, and more.
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
-This widget also supports features such as [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also supports features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 
 ## 1. 'Data From' Field
@@ -16,7 +16,7 @@ This field allows you to set the device and variable that will be used by the wi
 
 **Editing options for the selected variable**
 
-* Click on the **cog icon** to edit specific options such as formulas, color, and more.  
+* Click on the **cog icon** to edit specific options such as formulas, color, and more.
 * Click on the **close icon** to remove this variable from the widget’s data.
 
 The available variables depend on the type of dashboard you are using; the difference is explained below.
@@ -27,7 +27,7 @@ From the option **'Data From'** in the right‑hand menu, select one device from
 
 ### 1.2 Data From for Blueprint Dashboards
 
-From the option **'Data From'** in the right‑hand menu, add the **Blueprint device** and input the name of the variable that contains the information.  
+From the option **'Data From'** in the right‑hand menu, add the **Blueprint device** and input the name of the variable that contains the information.
 When using a Blueprint dashboard, the **Variable** field will not list variables to pick because it does not know which devices are linked to your Blueprint Device.
 
 
@@ -37,7 +37,7 @@ In the vertical column chart widget you can customize how data is displayed on b
 
 ### 2.1 X‑axis
 
-By default, the X‑axis shows the time of each value, and you can set a custom time range.  
+By default, the X‑axis shows the time of each value, and you can set a custom time range.
 If you need to group data that does not share the same timestamp, select a variable that contains the grouping key; all values will then be grouped by **series**.
 
 Data is ordered by time ascending by default, but it can also be sorted by series.
@@ -59,7 +59,7 @@ The `start_date` specifies the start of the range, and the `end_date` specifies 
 
 ### 2.2 Y‑axis
 
-You can customize the scaling behavior on the vertical axis, apply metric prefixes or abbreviations, change the step value (the difference between each tick), and more.  
+You can customize the scaling behavior on the vertical axis, apply metric prefixes or abbreviations, change the step value (the difference between each tick), and more.
 The Y‑axis will automatically find the best scale for your data; manual adjustments are only needed if you have specific requirements.
 
 

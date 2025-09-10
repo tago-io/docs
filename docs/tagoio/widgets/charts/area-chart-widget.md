@@ -3,11 +3,11 @@ title: "Area Chart Widget"
 description: "This article explains how to use the Area Chart widget in TagoIO, including customization options, supported variable features, and how to configure the data source for the widget."
 tags: ["tagoio", "widgets"]
 ---
-Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](/docs/tagoio/widgets/general/formula), and customizing the line shape (step or smooth), among other options.
+Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](/docs/tagoio/widgets/general/formula.md), and customizing the line shape (step or smooth), among other options.
 
 ![Example area charts illustrating different styles and color schemes](/docs_imagem/tagoio/area-chart-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata) and [series](/docs/tagoio/devices/grouping-variables), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -21,10 +21,10 @@ From the option **'Data From'** on the right menu, select one device from your l
 Click on the **cog icon** to edit specific options for this variable, such as formulas, color, and more. Click on the **close icon** to remove this variable from the widget's data.
 
 ### 1.2 'Data From' for Blueprint Dashboards
-From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and input the name of the variable that contains the information.
+From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
 
-When using a **Blueprint dashboard** (/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a **Blueprint dashboard** (/docs/tagoio/blueprint-dashboard), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ## 2. Composing X-axis and Y-axis
 
@@ -33,7 +33,7 @@ In the area chart widget, it is possible to customize how the data will be displ
 ![Image 5](/docs_imagem/tagoio/areaChartaxis-W_0.gif)
 
 ### 2.1 X-axis
-By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.  
+By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.
 If you need to group your data through the X‑axis even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **series**.
 
 
@@ -72,7 +72,7 @@ When a chart has a large number of data points, you can increase the widget perf
 
 ![Image 12](/docs_imagem/tagoio/areaDownsampling-cyw.gif)
 
-Downsampling has two concepts: **Threshold** and **Factor**.  
+Downsampling has two concepts: **Threshold** and **Factor**.
 The Threshold limits the amount of data to start the downsampling, and the factor determines how many samples will be cut.
 
 The greater the factor, the greater the performance improvement, but as the factor increases, the data also becomes less recognizable.

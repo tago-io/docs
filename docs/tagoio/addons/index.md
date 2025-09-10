@@ -14,8 +14,8 @@ In your account, go to [Profiles & Teams](https://admin.tago.io/profile/), selec
 Currently, these add-ons are available:
 
 1. [Custom Domain & Whitelabel](/docs/tagoio/addons/custom-domain/)
-2. [Custom Mobile App](/docs/tagoio/addons/custom-mobile-app)
-3. [Control Tower](/docs/tagoio/addons/control-tower)
+2. [Custom Mobile App](/docs/tagoio/addons/custom-mobile-app.md)
+3. [Control Tower](/docs/tagoio/addons/control-tower.md)
 
 :::info
 

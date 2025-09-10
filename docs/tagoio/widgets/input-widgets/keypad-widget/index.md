@@ -22,7 +22,7 @@ From the option **‘Data From’** on the right menu, select one device from yo
 
 ### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/widgets/blueprint-devices) and input the name of the variable that contains the information.
+From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
 :::info
 
@@ -32,10 +32,10 @@ When using a Blueprint dashboard, the field *Variable* will not list variables t
 
 ## 2. Visualization
 
-By default, the numeric keypad contains 10 digits that range from 0‑9, and it also contains an asterisk (*) and a number sign (#).  
+By default, the numeric keypad contains 10 digits that range from 0‑9, and it also contains an asterisk (*) and a number sign (#).
 You have the option to customize the content of the keypad by creating buttons that will appear along with the digits.
 
-Learn more about the [customization options of your keypad](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-visualization).
+Learn more about the [customization options of your keypad](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-visualization.md).
 
 ## 3. Data manipulation
 
@@ -53,4 +53,4 @@ For instance, if the user has clicked the sequence **1234** and then **DISARM**,
 1234,disarm
 ```
 
-Learn more about how to [manipulate the keypad's data](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-data-manipulation).
+Learn more about how to [manipulate the keypad's data](/docs/tagoio/widgets/input-widgets/keypad-widget/keypad-data-manipulation.md).

@@ -11,7 +11,7 @@ The innovative dictionary feature from TagoIO enables you to improve your applic
 
 Any text present in dashboard frames, inside widgets, variables, and your RUN application (including the mobile app) can be replaced using the dictionary. Create your own dictionary by editing fields (key & value) for each language you want to make available to end users.
 
-Learn how to [set up the dictionary](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language).
+Learn how to [set up the dictionary](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md).
 
 ## Customize texts for the same language
 
@@ -19,4 +19,4 @@ You can also customize text values for the same language to adapt wording for di
 
 Because each dictionary has a unique slug, you can substitute the same data with different texts using the format `#slug.key#`. For instance, show a title in a widget for a certain group of users using `#DIC1.TITLE#`, and another title for other users using `#DIC2.TITLE#`. In this case, the values associated with the key `TITLE` would be different for dictionaries `DIC1` and `DIC2`.
 
-Refer to [Customize texts for the same language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language) for details.
+Refer to [Customize texts for the same language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md) for details.

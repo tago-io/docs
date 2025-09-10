@@ -4,7 +4,7 @@ description: "This article explains how Access Management (AM) in TagoIO lets yo
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Access Management (AM) lets you securely grant access to specific resources in your TagoIO account. You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets) (users or things) and assign [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions) that determine which resources those Targets can access.
+Access Management (AM) lets you securely grant access to specific resources in your TagoIO account. You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets.md) (users or things) and assign [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions.md) that determine which resources those Targets can access.
 
 ![Access Management interface example](/docs_imagem/tagoio/access-management-2.png)
 
@@ -12,16 +12,16 @@ Access Management (AM) lets you securely grant access to specific resources in y
 
 Some examples of how AM can be used:
 
-1. Share one specific dashboard only with users that contain certain tags.  
+1. Share one specific dashboard only with users that contain certain tags.
    Example: Share the dashboard "Regional Sales View" with users who have the tag `level = supervisor`.
 
-2. Share all dashboards with certain tags only with users that contain certain tags.  
-   Example: Share dashboards that contain the tag `state = NY` or `state = MA` with users that have the tag `region = northeast`. 
+2. Share all dashboards with certain tags only with users that contain certain tags.
+   Example: Share dashboards that contain the tag `state = NY` or `state = MA` with users that have the tag `region = northeast`.
 
-3. Share all my dashboards with all users.  
+3. Share all my dashboards with all users.
    For this, you just need to set the field in Targets like `Run User = Any`, and the `Permissions = Any` to share everything with anyone.
 
-4. Allow an Analysis to do a bulk device upload.  
+4. Allow an Analysis to do a bulk device upload.
    Example: An Analysis with the tag `script = device_upload`, and the `Permission = device` with rules `Create` and with field `Any`.
 
 *By using the option `Any` in the matching fields, you expose all that resource without restrictions.*

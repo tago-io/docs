@@ -50,7 +50,7 @@ All responses from the TagoIO API follow a consistent pattern. You will typicall
 For more details and endpoints, refer to the full [API documentation](https://api.docs.tago.io/) and the SDK page above.
 
 ## Security
-TagoIO takes the necessary steps to protect your data in the database and also during the communication between our server and your devices. 
+TagoIO takes the necessary steps to protect your data in the database and also during the communication between our server and your devices.
 
 All communication is performed through Hypertext Transfer Protocol Secure (HTTPS) to avoid man‑in‑the‑middle and wiretapping attacks. Although HTTP can be used, it is not recommended because it removes the security of authentication and encryption provided by SSL/TLS protocols that are part of HTTPS. If you must use HTTP without SSL, add `_ssl=false` in the header or URL query string.
 
@@ -65,7 +65,7 @@ There are four types of tokens: **Account‑Token**, **Device‑Token**, **Analy
 | Middleware-Token  | Only Middleware Token |
 | Authentication    | Any Token (Account or Device) |
 
-Check the [usage policy](/docs/tagoio/profiles/services/usage-policy) based on number of requests per a certain period.
+Check the [usage policy](/docs/tagoio/profiles/services/usage-policy.md) based on number of requests per a certain period.
 
 ## Regional endpoints
 When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. The device data URL is `https://api.<region>.tago.io/data` through port `443`. For other regions use:
