@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Overview
+title: Device Overview
 slug: /tagocore/device
 ---
 
