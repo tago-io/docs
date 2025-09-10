@@ -19,7 +19,7 @@ Remember to always set your files to Public if you plan on using them inside wid
 
 If you do not wish to manually select the files, you can drag-and-drop them into a specific folder or into the main panel.
 
-<!-- Image temporarily disabled: Drag‑and‑drop example - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/7ovs-DY9T7QFbCfy2jRh4RLbS1_gqT3N25BaammzRuU/Screen%20Shot%202021-08-02%20at%2011.39.40-ruU.png -->
+![Files list example](/docs_imagem/tagoio/files-2.gif)
 
 ## Folders
 
