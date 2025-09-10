@@ -9,24 +9,24 @@ All chart-type widgets in TagoIO can be configured to display reference lines wi
 
 ## Supported widgets
 
-The widgets that support this feature include the [Area Chart](/tagoio/widgets/charts/area-chart-widget.md), [Line Chart](/tagoio/widgets/charts/line-chart-widget.md), [Horizontal Bar](/tagoio/widgets/charts/horizontal-bar-widget.md), [Vertical Column](/tagoio/widgets/charts/vertical-column-widget.md), and [Multiple Charts](/tagoio/widgets/charts/multiple-charts-widget.md).
+The widgets that support this feature include the [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget.md), [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget.md), [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md), [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md), and [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md).
 
 ## Adding reference lines to your chart
 
-You can set reference lines by navigating to your widget's edit page and accessing the `Reference Lines` option.  
+You can set reference lines by navigating to your widget's edit page and accessing the `Reference Lines` option.
 Up to **5** reference lines per widget are allowed.
 
 ### Defining a new line
 
-1. Click **Add Reference Line** (or the equivalent button in the UI).  
+1. Click **Add Reference Line** (or the equivalent button in the UI).
 2. Choose the *source* of the value:
    - **Fixed** – Enter a static numeric value that will be displayed as a horizontal or vertical line.
    - **Variable** – Select one of your device’s variables; the line’s value will update dynamically based on that variable.
 
 ### Fixed vs Variable source
 
-- When using a **fixed** source, you can manually set a *Label* and *Color* for the line.  
-- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/tagoio/devices/payload-parser/metadata.md) article.
+- When using a **fixed** source, you can manually set a *Label* and *Color* for the line.
+- If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/docs/tagoio/devices/payload-parser/metadata.md) article.
 
 ### Multiple axes
 
@@ -35,7 +35,7 @@ If your chart uses multiple Y‑axes, you can associate a reference line with a 
 ### Applying formulas
 
 You can apply a formula to the reference line’s value. This is especially useful when:
-- The dataset variables already have a [Formula](/tagoio/widgets/general/formula.md) applied, or
+- The dataset variables already have a [Formula](/docs/tagoio/widgets/general/formula.md) applied, or
 - You want to use a **Dynamic Formula** for custom unit conversions.
 
 The formula will be evaluated each time the chart refreshes, keeping the reference line in sync with your data.

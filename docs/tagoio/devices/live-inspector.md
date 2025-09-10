@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 
 The live inspector is a tool for developers to debug
-[parser scripts](/tagoio/devices/payload-parser/index.md) and monitor traffic to
+[parser scripts](/docs/tagoio/devices/payload-parser/index.md) and monitor traffic to
 and from [devices](/docs/tagoio/devices/).
 
 To access the live inspector, go to the [Device](https://admin.tago.io/devices),

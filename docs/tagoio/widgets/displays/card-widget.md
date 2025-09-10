@@ -15,16 +15,16 @@ To add a Card to your dashboard, choose the Card widget from the widget list and
 
 ### 1. Data From field
 
-This field allows you to set the device and variable that will be used in this widget.  
+This field allows you to set the device and variable that will be used in this widget.
 For **Normal dashboards** you select one device from your list of devices and then pick the variable that contains the data.
 
-For **Blueprint dashboards** you add a Blueprint device (see [Blueprint devices](/tagoio/devices/blueprint-devices-entities.md)) and input the name of the variable.  
+For **Blueprint dashboards** you add a Blueprint device (see [Blueprint devices](/docs/tagoio/devices/blueprint-devices-entities.md)) and input the name of the variable.
 When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 
 ### 2. Color options
 
-You can configure colors for the text, background, and mini‑chart based on conditions that use the value of the selected variable.  
+You can configure colors for the text, background, and mini‑chart based on conditions that use the value of the selected variable.
 The colors can be controlled by parameters defined in the widget configuration or by metadata stored within the variable.
 
 ### 3. Using colors from metadata
@@ -71,7 +71,7 @@ Example JSON:
 
 ### 4. Mini‑chart
 
-A mini‑chart can be added at the bottom of the widget to display up to the last **30 points** (values).  
+A mini‑chart can be added at the bottom of the widget to display up to the last **30 points** (values).
 The chart is optional and its number of points is configurable. It does not show absolute values; it only depicts the trend of the variable.
 
 ### 5. Clickable link

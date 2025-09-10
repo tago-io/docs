@@ -17,7 +17,7 @@ Allows you to watch multiple devices. Any data sent by those devices will be tes
 
 ![Selecting tags for multiple devices (tag_key / tag_value)](/docs_imagem/tagoio/trigger-by-variable-2.png)
 
-It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/tagoio/actions/trigger-unlock.md).
+It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/docs/tagoio/actions/trigger-unlock.md).
 
 ## Trigger Conditions
 

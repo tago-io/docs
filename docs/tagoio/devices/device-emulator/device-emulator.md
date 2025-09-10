@@ -21,7 +21,7 @@ TagoIO accepts two types of payloads: JSON and Raw.
   using the following fields: `variable`, `value`, `unit`, `time`, `serie`,
   `location`, and `metadata`.
 - **Raw**: Raw binary data. If you need to parse text data such as CSV or XML,
-  add a [Payload Parser](/tagocore/resources/device/payload-parser.md).
+  add a [Payload Parser](/docs/tagocore/resources/device/payload-parser.md).
 
 ## Notes
 
@@ -50,7 +50,7 @@ button and select a function.
 ![Function selection dialog](/docs_imagem/tagoio/1624564657419-ttY.png)
 
 To learn more about using functions in the device emulator, read the article
-[Device Emulator Functions](/tagoio/devices/device-emulator/device-emulator-functions.md).
+[Device Emulator Functions](/docs/tagoio/devices/device-emulator/device-emulator-functions.md).
 
 ### Timer
 
@@ -62,7 +62,7 @@ a dashboard, for example.
 
 > If you close the **Emulator** tab, the system will stop sending payloads. You
 > may want to use the
-> [Simulator](/tagoio/devices/simulator-data-stream.md) or create a script
+> [Simulator](/docs/tagoio/devices/simulator-data-stream.md) or create a script
 > to keep sending all the time.
 
 > Before sending any kind of payload, always make sure that the device is

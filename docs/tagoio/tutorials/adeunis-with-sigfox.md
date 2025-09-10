@@ -48,7 +48,7 @@ process the data:
 
 - Notifications: [Notifications](/docs/tagoio/actions/)
 - Scripts:
-  [Creating Analysis Scripts](/tagoio/analysis/creating-analysis.md)
+  [Creating Analysis Scripts](/docs/tagoio/analysis/creating-analysis.md)
 
 If you have questions about configuring your account for Sigfox and TagoIO, read
-the article about [SigFox](/tagoio/integrations/networks/sigfox/sigfox.md).
+the article about [SigFox](/docs/tagoio/integrations/networks/sigfox/sigfox.md).

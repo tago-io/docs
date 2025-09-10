@@ -28,7 +28,7 @@ There are four types of notifications:
   Notifications sent to users registered in your account's User Management. Only
   your account (or authorized users) can send notifications to these users.
   Learn more in
-  [Run Users Notifications](/tagoio/tagorun/getting-started/notifications-for-users.md).
+  [Run Users Notifications](/docs/tagoio/tagorun/getting-started/notifications-for-users.md).
 
 ## Viewing notifications
 

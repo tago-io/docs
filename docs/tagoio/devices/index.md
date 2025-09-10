@@ -17,7 +17,7 @@ and other settings.
 
 :::info
 
-Our [TagoIO API documentation](/tagodeploy/project/project-services/api.md) offers comprehensive
+Our [TagoIO API documentation](/docs/tagodeploy/project/project-services/api.md) offers comprehensive
 instructions on how to interface with devices, ensuring developers can
 effectively integrate their hardware with the platform.
 
@@ -26,10 +26,10 @@ effectively integrate their hardware with the platform.
 ## Adding devices
 
 Devices are connected to TagoIO using
-[Connectors](/tagoio/devices/payload-parser/connector/connector-overview.md),
+[Connectors](/docs/tagoio/devices/payload-parser/connector/connector-overview.md),
 which act as a bridge between TagoIO and external networks to transmit and
 receive data. To follow a step‑by‑step tutorial on how to add a device, see the
-[Getting Started](/tagoio/getting-started/getting-started.md) article.
+[Getting Started](/docs/tagoio/getting-started/getting-started.md) article.
 
 ## Device type and data storage
 
@@ -42,11 +42,11 @@ storage to be used. There are two types of data storage you can choose from:
 - Stores up to **36 million** data points per device.
 - Highly optimized for short and long retention periods; query responses are
   faster, which means less latency for the devices and a cost reduction when
-  running an [Analysis](/tagoio/analysis/creating-analysis.md).
+  running an [Analysis](/docs/tagoio/analysis/creating-analysis.md).
 - Because the data is immutable, no one can change or delete individual sets of
   data – ideal for compliance.
 - Data stored in the optimized device can only be removed by the
-  [data retention policy](/tagoio/devices/data-management/data-retention-feature.md).
+  [data retention policy](/docs/tagoio/devices/data-management/data-retention-feature.md).
 
 ### Managed Data Optimized (Mutable database)
 
@@ -64,8 +64,8 @@ storage to be used. There are two types of data storage you can choose from:
   them.
 - View usage‑history statistics for the specific device – useful for visibility
   and control over your
-  [Data Input](/tagoio/profiles/services/data-input-service.md) and
-  [Output](/tagoio/profiles/services/data-output-service.md).\
+  [Data Input](/docs/tagoio/profiles/services/data-input-service.md) and
+  [Output](/docs/tagoio/profiles/services/data-output-service.md).\
   This feature is unlocked once you activate the **Control Tower add‑on**.
 
 ## Deactivating devices
@@ -82,7 +82,7 @@ storage to be used. There are two types of data storage you can choose from:
 
 - Use the **Live Inspector** tool by accessing its respective tab on your
   device’s page. It is useful for debugging
-  [parser scripts](/tagocore/resources/device/payload-parser.md) and monitoring
+  [parser scripts](/docs/tagocore/resources/device/payload-parser.md) and monitoring
   traffic to and from your device.
 
 ## Customizing payload parser
@@ -91,7 +91,7 @@ storage to be used. There are two types of data storage you can choose from:
   tab inside your device’s page.
 - You can also create your own connector if you need to use the same payload
   parser for several devices. Read more about
-  [creating a Connector](/tagoio/devices/payload-parser/connector/connector-overview.md).
+  [creating a Connector](/docs/tagoio/devices/payload-parser/connector/connector-overview.md).
 
 ## Emulating data sending
 
@@ -102,18 +102,18 @@ your device as if it was sent by a real sensor.
 
 Set device parameters in the **Configuration Parameters** tab. These can be used
 to specify how to decode data or send downlink messages, filter your devices on
-[Widgets](/docs/tagoio/widgets/), or interact with [API](/tagodeploy/project/project-services/api.md)
+[Widgets](/docs/tagoio/widgets/), or interact with [API](/docs/tagodeploy/project/project-services/api.md)
 and [Analysis](/docs/tagoio/analysis/) scripts.
 
 ## Setting rate limits for your devices
 
 - When sending data to TagoIO, you will have a limit on the number of requests
   that can be made during a certain time period – see
-  **[Rate Limits (Hard Limits)](/tagoio/profiles/services/rate-limits-hard-limits.md)**.
+  **[Rate Limits (Hard Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md)**.
 - You can set custom request rate limits for your device to protect it from
   malfunctioning and using too much
-  [Data Input](/tagoio/profiles/services/data-input-service.md) or
-  [Output](/tagoio/profiles/services/data-output-service.md), or to avoid a
+  [Data Input](/docs/tagoio/profiles/services/data-input-service.md) or
+  [Output](/docs/tagoio/profiles/services/data-output-service.md), or to avoid a
   single device from sending too many requests and reaching the hard limit for
   requests of your account, which would block other devices from sending or
   receiving data for a whole minute.\

@@ -11,11 +11,11 @@ from other protocols, by using one of the following methods:
 1. Create a script that initiates access to external services using
    [Analysis](/docs/tagoio/analysis/). For example: get a weather forecast or
    read/write data in a Google Sheet.
-2. Use our [Network Integration](/tagodeploy/project/configuration/integrations.md) prepared to
+2. Use our [Network Integration](/docs/tagodeploy/project/configuration/integrations.md) prepared to
    connect and translate data from devices connected to providers such as
    LoRaWAN, Sigfox, or satellite, or that use different protocols such as TCP/IP
    or UDP.
-3. Create your own [Network Integration](/tagodeploy/project/configuration/integrations.md) that can
+3. Create your own [Network Integration](/docs/tagodeploy/project/configuration/integrations.md) that can
    push data to TagoIO into the correct device based on its serial number, using
    your own protocol.
 
@@ -38,7 +38,7 @@ USA.**
 
 **Network usage is free for all users.** When receiving data from a network,
 costs are only incurred for
-[Data Input](/tagoio/profiles/services/data-input-service.md) operations.
+[Data Input](/docs/tagoio/profiles/services/data-input-service.md) operations.
 Network operations themselves do not generate any charges.
 
 ## Available Network Integrations
@@ -46,21 +46,21 @@ Network operations themselves do not generate any charges.
 For the second method above, here is a list of some Network Integrations ready
 to be used:
 
-- [Sigfox](/tagoio/integrations/networks/sigfox/sigfox.md)
-- [MQTT](/tagoio/integrations/networks/mqtt/mqtt.md)
+- [Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox.md)
+- [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt.md)
 - [Actility LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-actility-ns/611)
-- [Everynet LoRaWAN](/tagoio/integrations/networks/everynet-lorawan.md)
+- [Everynet LoRaWAN](/docs/tagoio/integrations/networks/everynet-lorawan.md)
 - Kore Brazil LoRaWaN (select
-  [Everynet](/tagoio/integrations/networks/everynet-lorawan.md))
+  [Everynet](/docs/tagoio/integrations/networks/everynet-lorawan.md))
 - [Kerlink LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-kerlink-lorawan/668)
-- [Loriot LoRaWAN](/tagoio/integrations/networks/loriot-lorawan.md)
-- [machineQ LoRAWAN](/tagoio/integrations/networks/machineq-lorawan.md)
-- [Orbiwise LoRaWAN](/tagoio/integrations/networks/orbiwise-lorawan.md)
-- [Senet LoRaWAN](/tagoio/integrations/networks/senet-network.md)
+- [Loriot LoRaWAN](/docs/tagoio/integrations/networks/loriot-lorawan.md)
+- [machineQ LoRAWAN](/docs/tagoio/integrations/networks/machineq-lorawan.md)
+- [Orbiwise LoRaWAN](/docs/tagoio/integrations/networks/orbiwise-lorawan.md)
+- [Senet LoRaWAN](/docs/tagoio/integrations/networks/senet-network.md)
 - [Swisscom LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-swisscom-lorawan-ns/1016)
 - [Tektelic LoRaWAN](https://community.tago.io/t/how-to-integrate-tektelic-network-server-with-tagoio/847)
 - [TTI/TTN V3 LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-ttn-v3/1026)
-- [TTN LoRaWAN](/tagoio/integrations/networks/the-things-network-lorawan.md)
+- [TTN LoRaWAN](/docs/tagoio/integrations/networks/the-things-network-lorawan.md)
 - [Chirpstack LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-chirpstack-lorawan/1017)
 - [Helium LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-helium/992)
 

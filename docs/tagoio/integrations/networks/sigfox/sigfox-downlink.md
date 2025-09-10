@@ -12,7 +12,7 @@ how to set up a downlink.
 :::warning
 
 It's essential to carefully follow all the steps outlined in the
-[Sigfox network documentation](/tagoio/integrations/networks/sigfox/sigfox.md) in
+[Sigfox network documentation](/docs/tagoio/integrations/networks/sigfox/sigfox.md) in
 order to send downlinks. The completion of Step D is crucial so that TagoIO can
 accurately authenticate your downlink.
 
@@ -23,7 +23,7 @@ accurately authenticate your downlink.
 Downlink Diagram
 
 Information about uplink can be found in this
-[tutorial](/tagoio/integrations/networks/sigfox/sigfox.md).
+[tutorial](/docs/tagoio/integrations/networks/sigfox/sigfox.md).
 
 ## Downlink Setup
 

@@ -10,7 +10,7 @@ Welcome to TagoIO! Here are some options to get started.
 ## Options to get started
 
 1. Follow the manual steps described below to start quickly.
-2. Use our [SIMULATOR](/tagoio/devices/simulator-data-stream.md) to start
+2. Use our [SIMULATOR](/docs/tagoio/devices/simulator-data-stream.md) to start
    right away even if you don't have a physical IoT device.
 3. Go deeper by following the video below.
 
@@ -35,7 +35,7 @@ your account.
 ![Image 1](/docs_imagem/tagoio/throw-miA.gif)
 
 All devices should use a valid
-[device-token](/tagoio/devices/device-token.md) when accessing TagoIO. One
+[device-token](/docs/tagoio/devices/device-token.md) when accessing TagoIO. One
 device‑token is generated when a device is created and it is available for you
 to copy if you want to insert it in a real device.
 
@@ -62,7 +62,7 @@ interact with your devices and share with others. You can build it with the
 ### Step 3. Send data
 
 Now that you have completed the setup of your account, you are ready to send
-data from your electronic devices using our [APIs](/tagodeploy/project/project-services/api.md). You can
+data from your electronic devices using our [APIs](/docs/tagodeploy/project/project-services/api.md). You can
 use one of our [SDKs](/docs/tagoio/analysis/sdk/) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a
@@ -116,6 +116,6 @@ Create powerful [analysis](/docs/tagoio/analysis/) in real‑time using our scri
 capabilities in JavaScript. Program [actions](/docs/tagoio/actions/) to be taken
 based on your rules.
 
-Learn more about our powerful [API’s](/tagodeploy/project/project-services/api.md). And check out the
+Learn more about our powerful [API’s](/docs/tagodeploy/project/project-services/api.md). And check out the
 tutorials and [SDKs](/docs/tagoio/analysis/sdk/) prepared for different boards
 and applications.

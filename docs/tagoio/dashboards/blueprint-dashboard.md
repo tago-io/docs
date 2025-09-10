@@ -18,6 +18,6 @@ This means that you can distribute the same Dashboard to hundreds of different T
 
 ### Blueprint Devices
 
-[Blueprint Devices](/tagoio/devices/blueprint-devices-entities.md) are dynamic devices that can be changed by the User while viewing the Dashboard. Changing these devices will reload the data for the Widgets that use them.
+[Blueprint Devices](/docs/tagoio/devices/blueprint-devices-entities.md) are dynamic devices that can be changed by the User while viewing the Dashboard. Changing these devices will reload the data for the Widgets that use them.
 
 ![Image 5](/docs_imagem/tagoio/1592330671692-dtA.png)

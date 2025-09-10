@@ -5,7 +5,7 @@ tags: ["tagoio", "devices"]
 sidebar_position: 1
 ---
 
-[Connectors](/tagoio/devices/payload-parser/connector/connector-overview.md)
+[Connectors](/docs/tagoio/devices/payload-parser/connector/connector-overview.md)
 enable you to create a [device](/docs/tagoio/devices/) with built‑in behaviors
 that allow it to communicate with a network easily.
 
@@ -13,11 +13,11 @@ When creating devices at TagoIO, there are different ways to allow them to send
 and receive data through connectors:
 
 1. It can be done directly using MQTT or HTTPS methods with our APIs, where one
-   [Device token](/tagoio/devices/device-token.md) per device is required
+   [Device token](/docs/tagoio/devices/device-token.md) per device is required
    to grant access.
 2. When using external services from providers (e.g., LoRaWAN, Sigfox, or
    cellular), it is necessary to generate an
-   [Authorization](/tagoio/integrations/general/authorization.md) per group
+   [Authorization](/docs/tagoio/integrations/general/authorization.md) per group
    or application.
 
 That is why you need to select the right connector when creating your device at
@@ -29,8 +29,8 @@ services.
 Connectors may provide one or more of the following functions:
 
 - Interface with the
-  [middleware](/tagoio/integrations/general/middleware.md) that connects
+  [middleware](/docs/tagoio/integrations/general/middleware.md) that connects
   with the provider when necessary.
 - Present logo, name, description, and tags for the device.
-- Add [payload parsers](/tagocore/resources/device/payload-parser.md) in the device
+- Add [payload parsers](/docs/tagocore/resources/device/payload-parser.md) in the device
   (optional).

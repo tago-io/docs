@@ -7,14 +7,14 @@ Profiles are similar to having different sub-accounts under your main account. Y
 
 ## Benefits of Profiles
 
-1. **Isolate applications from different customers**  
+1. **Isolate applications from different customers**
    If you have two profiles and one reaches its service limits, only that profile will be impacted or blocked; the other will remain unaffected.
 
-2. **Grant restricted access for external individuals**  
+2. **Grant restricted access for external individuals**
    Allow external users limited access to specific applications and organizations.
 
-3. **Track cost of individual applications and customers**  
-   Visualize cost breakdown per Profile and Services on the [Statistics](/tagoio/profiles/index.md) page.
+3. **Track cost of individual applications and customers**
+   Visualize cost breakdown per Profile and Services on the [Statistics](/docs/tagoio/profiles/index.md) page.
 
 ## Switching Profiles
 
@@ -35,15 +35,15 @@ Navigate to your **[Profiles & Teams](https://admin.tago.io/profile)** page and 
 
 ### Sharing Profiles with Teams
 
-Add others to your profiles by adding their e‑mails in the team section. To invite someone, go to the specific profile, select the **Team** tab, and add the user’s email. Make sure that the person already has a TagoIO account before inviting them. Read more about [Team management](/tagoio/profiles/team-management-sharing-your-profile.md)
+Add others to your profiles by adding their e‑mails in the team section. To invite someone, go to the specific profile, select the **Team** tab, and add the user’s email. Make sure that the person already has a TagoIO account before inviting them. Read more about [Team management](/docs/tagoio/profiles/team-management-sharing-your-profile.md)
 
 ## Generating Account Tokens
 
-[Account tokens](/tagoio/profiles/account-token.md) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
+[Account tokens](/docs/tagoio/profiles/account-token.md) are used to authenticate requests in the TagoIO API. You can use our API to make integrations and create devices, buckets, dashboards, send data, and more. To create an account token, follow these steps:
 
-1. Click on the **Tokens** tab.  
-2. Add a name, permission, expiration, and click **Generate Token**.  
-3. Insert your password.  
+1. Click on the **Tokens** tab.
+2. Add a name, permission, expiration, and click **Generate Token**.
+3. Insert your password.
 4. Click **Generate my token**.
 
 

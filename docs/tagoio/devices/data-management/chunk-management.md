@@ -19,14 +19,14 @@ By selecting one or multiple chunks, you can export them to your TagoIO Files in
 
 During export you can customize the file address so each chunk file has its own path inside your TagoIO Files. In the Advanced Settings you can use variables to change the path that will be created. The available variables are:
 
-- `$DEVICE$` – the device ID  
-- `$CHUNK$` – the chunk ID (useful if you need a unique identifier)  
-- `$CHUNK_START$` – the chunk initial date (UTC)  
-- `$CHUNK_END$` – the chunk end date (UTC)  
-- `$FROM$` – the chunk start date (ISO 8601 format)  
-- `$TO$` – the chunk end date (ISO 8601 format)  
-- `$ORGID$` – the organization ID  
-- `$ENVIRONMENT$` – the environment name  
+- `$DEVICE$` – the device ID
+- `$CHUNK$` – the chunk ID (useful if you need a unique identifier)
+- `$CHUNK_START$` – the chunk initial date (UTC)
+- `$CHUNK_END$` – the chunk end date (UTC)
+- `$FROM$` – the chunk start date (ISO 8601 format)
+- `$TO$` – the chunk end date (ISO 8601 format)
+- `$ORGID$` – the organization ID
+- `$ENVIRONMENT$` – the environment name
 
 Use these variables in the file address template to automatically generate meaningful file paths for each exported chunk. For example, a template such as:
 
@@ -48,18 +48,18 @@ When exporting a chunk, you can activate the **Include Header** option to add co
 
 ### How exporting is billed
 
-Exporting data consumes the [Data Output service](/tagoio/profiles/services/data-output-service.md). The number of transactions billed is rounded to the next multiple of 10 000. For example:
+Exporting data consumes the [Data Output service](/docs/tagoio/profiles/services/data-output-service.md). The number of transactions billed is rounded to the next multiple of 10 000. For example:
 
-1. Exporting 700 registers will consume 10 000 data output transactions.  
-2. Exporting 12 000 registers will consume 20 000 data output transactions.  
-3. Exporting 32 000 registers will consume 40 000 data output transactions.  
+1. Exporting 700 registers will consume 10 000 data output transactions.
+2. Exporting 12 000 registers will consume 20 000 data output transactions.
+3. Exporting 32 000 registers will consume 40 000 data output transactions.
 4. Exporting 103 000 registers will consume 110 000 data output transactions.
 
 The billing scheme above does not apply when fetching data using the API; for example, a GET request consumes one transaction per fetched register.
 
 ## Delete chunks
 
-You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](/tagoio/profiles/audit-log.md).
+You can delete chunks to optimize your data storage. This is an irreversible process, and once done there is no going back, so make sure you are certain before removing anything. Hover over the graph to check the chunk range information before deleting. All interactions with this feature are logged in the [Audit Log](/docs/tagoio/profiles/audit-log.md).
 
 ## Automation
 

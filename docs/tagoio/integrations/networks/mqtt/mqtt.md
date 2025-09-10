@@ -13,7 +13,7 @@ TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in
 the US database region. European (EU) database region accounts cannot access
 this service due to new security requirements, but they may use third‑party MQTT
 services with TagoIO via the
-[MQTT Relay](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
+[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
 feature. Free accounts can access MQTT functionality through the MQTT Relay as
 well.
 
@@ -42,7 +42,7 @@ full‑featured MQTT implementation, it focuses mainly on ingesting sensor data
 into our data buckets, so some standard features such as the native **Retain**
 flag are not supported. A workaround that achieves similar functionality can be
 found in the article
-[MQTT Retain on TagoIO Broker](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md).
+[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md).
 
 For example, a temperature sensor might publish a new value to the topic
 `temperature` each time it receives an update. Devices that need to react to
@@ -56,7 +56,7 @@ forwards the payload to all subscribed clients.
 To connect to our broker, use the following details. Note that there is a limit
 on the number of connections, publications, and subscriptions you can make,
 enforced based on your account plan. For more information, read about
-[Rate Limits (Hard Limits)](/tagoio/profiles/services/rate-limits-hard-limits.md).
+[Rate Limits (Hard Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
 
 > **Host:** `mqtt.tago.io`\
 > **TCP/IP port:** 1883\
@@ -64,7 +64,7 @@ enforced based on your account plan. For more information, read about
 > **Username:** Token\
 > **Password:** _Your Device‑Token_
 
-If the [Device‑token](/tagoio/devices/device-token.md) is removed from a
+If the [Device‑token](/docs/tagoio/devices/device-token.md) is removed from a
 device, or if it is deleted, that device will be disconnected from the MQTT
 broker.
 
@@ -82,7 +82,7 @@ an extra layer of protection.
 
 When you first send data through MQTT to your device, you’ll be able to
 visualize the connection and message through the
-[Live Inspector](/tagoio/devices/live-inspector.md) on your device. Those
+[Live Inspector](/docs/tagoio/devices/live-inspector.md) on your device. Those
 messages indicate that the connection is working, but nothing is being stored in
 your bucket yet.
 
@@ -91,14 +91,14 @@ trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you
 should see the data being stored in the Live Inspector.
 
 If you don’t send the data using the
-[TagoIO data format](/tagoio/devices/sending-data.md), you’ll need to
+[TagoIO data format](/docs/tagoio/devices/sending-data.md), you’ll need to
 normalize your data and change it to the correct format. Check out our
 documentation on how to use a
-[Payload Parser](/tagocore/resources/device/payload-parser.md).
+[Payload Parser](/docs/tagocore/resources/device/payload-parser.md).
 
 ## More Resources
 
 Here are some additional documentation links on MQTT resources:
 
 - [MQTT - Publishing and Subscribing](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing.md)
-- [MQTT - Action Triggers by Topic](/tagoio/actions/trigger-by-mqtt-topic.md)
+- [MQTT - Action Triggers by Topic](/docs/tagoio/actions/trigger-by-mqtt-topic.md)

@@ -19,7 +19,7 @@ This section configures how your application handles end‑user requests to dele
 
 You can choose to enable the following options:
 
-1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](/tagoio/tagorun/getting-started/user-management.md) module.
+1. **Send an e‑mail to the profile owner** – you can receive an e‑mail and manually process the request through the [User Management](/docs/tagoio/tagorun/getting-started/user-management.md) module.
 2. **Immediately delete user account** – you can consent to TagoIO to process the request and immediately delete the user account.
 3. **Run an Analysis** – you can implement a script to analyze and process the requests using [Analysis](/docs/tagoio/analysis/) and our [SDK](/docs/tagoio/analysis/sdk/).
 
@@ -36,12 +36,12 @@ Enable 2FA to add an extra layer of security for user logins. Available methods 
 - SMS (note that SMS messages may incur billing)
 - Email (note that emails may incur billing)
 
-Once 2FA is activated, users can navigate to their **Account Settings** to configure their preferred authentication method, similar to the [Two‑Factor Authentication](/tagoio/my-account/two-factor-authentication-2fa.md) setup available on Admin.  
+Once 2FA is activated, users can navigate to their **Account Settings** to configure their preferred authentication method, similar to the [Two‑Factor Authentication](/docs/tagoio/my-account/two-factor-authentication-2fa.md) setup available on Admin.
 You can also enforce 2FA if any method is enabled.
 
 :::info
 
-*Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/tagoio/my-account/billing/allocating-services-to-profiles.md).
+*Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md).
 
 :::
 
@@ -55,13 +55,13 @@ Configure password rules to meet your security policy:
 
 :::tip
 
-Just like other features within TagoRUN, you can customize the appearance and sentences used for these features on mobile and on the web through the [Run Theme](/tagoio/tagorun/getting-started/run-theme.md) and [Dictionaries & Multi‑language](/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md).
+Just like other features within TagoRUN, you can customize the appearance and sentences used for these features on mobile and on the web through the [Run Theme](/docs/tagoio/tagorun/getting-started/run-theme.md) and [Dictionaries & Multi‑language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md).
 
 :::
 
 ## User session management
 
-Set the session expiration to control how long a user stays logged in before re‑authenticating. The UI provides a selector for duration (for example, 3 Months).  
+Set the session expiration to control how long a user stays logged in before re‑authenticating. The UI provides a selector for duration (for example, 3 Months).
 You can set the session expiration to occur after a specific number of hours, days, weeks, or months, depending on your security requirements and user convenience.
 
 ## Enabling Captcha

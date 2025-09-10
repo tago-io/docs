@@ -15,7 +15,7 @@ This is the identifier for your analysis. You can use whitespace, numbers, and a
 Select the runtime environment for your analysis. An example shown in the dialog is:
 - **Deno** (deno‑2025‑08‑01)
 
-Currently supported runtimes include **Deno**, **Python**, and **Node.js** if you run your script on TagoIO.  
+Currently supported runtimes include **Deno**, **Python**, and **Node.js** if you run your script on TagoIO.
 
 
 ## Run this script from
@@ -25,8 +25,8 @@ Choose where the analysis will run:
 
 If you select the external option, we provide the following SDKs so you can run the analysis directly from your machine:
 
-- [Python SDK](/tagoio/analysis/sdk/python-sdk.md)
-- [Javascript SDK](/tagoio/analysis/sdk/nodejs-sdk.md) for Deno and NodeJS
+- [Python SDK](/docs/tagoio/analysis/sdk/python-sdk.md)
+- [Javascript SDK](/docs/tagoio/analysis/sdk/nodejs-sdk.md) for Deno and NodeJS
 
 :::warning
 
@@ -39,7 +39,7 @@ You can optionally start your analysis from a code example template. The Add Ana
 
 :::tip
 
-It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.  
+It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.
 You can only select one of these code examples if you are running your script on TagoIO.
 
 :::
@@ -55,5 +55,5 @@ After creating the analysis you can open the Script Editor to add and manage the
 You can trigger your analysis script manually, but you can also define a time interval to automatically trigger it. In this field you will find a couple of predefined time options, and you can set your own custom time interval by selecting the **Custom** option.
 
 ### Analysis Token
-This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article  
-[Running Analysis as External using Node.JS](/tagoio/analysis/running-analysis-as-external-using-nodejs.md).
+This field is only used if you are running your analysis as **external**. If you want more information on how the token works, check out the article
+[Running Analysis as External using Node.JS](/docs/tagoio/analysis/running-analysis-as-external-using-nodejs.md).

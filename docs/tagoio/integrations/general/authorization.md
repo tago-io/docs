@@ -14,7 +14,7 @@ easier to scale your applications.
 :::info
 
 Authorization is different from
-[device-token](/tagoio/devices/device-token.md).
+[device-token](/docs/tagoio/devices/device-token.md).
 
 > When to use each:
 >
@@ -38,7 +38,7 @@ devices, follow these steps:
    ![Generate Authorization screen showing name and parameters fields](/docs_imagem/tagoio/authorization-3.png)
 
 Only certain integrations require an **Additional Parameter**. Check out the
-[list of integrations](/tagodeploy/project/configuration/integrations.md) to learn the parameter
+[list of integrations](/docs/tagodeploy/project/configuration/integrations.md) to learn the parameter
 needed for each provider.
 
 Once the authorization is created, you can copy and paste it into the external

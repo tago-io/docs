@@ -16,30 +16,30 @@ Before you begin, ensure you have the following:
 
 ## Step 1: Create Authorization in TagoIO
 
-1. **Access Authorizations**  
-   - Go to **Devices**.  
+1. **Access Authorizations**
+   - Go to **Devices**.
    - Click on the **Authorizations** link (https://admin.tago.io/devices/authorization) at the top of the page.
 
-2. **Create a New Authorization**  
-   1. Click the **Create Authorization** button.  
-   2. Provide a meaningful name for the authorization (e.g., `MachineQ-Integration`).  
-   3. In the **Additional Parameters** section, enter your Orbiwise Username, Password and DASS URL from Step 2 in the following format:  
+2. **Create a New Authorization**
+   1. Click the **Create Authorization** button.
+   2. Provide a meaningful name for the authorization (e.g., `MachineQ-Integration`).
+   3. In the **Additional Parameters** section, enter your Orbiwise Username, Password and DASS URL from Step 2 in the following format:
 
       ```
       USERNAME;PASSWORD;DASS_URL
       ```
 
-      Example: `tagoio;iot;<your_dass_url>;`  
+      Example: `tagoio;iot;<your_dass_url>;`
    4. Click **Save**.
 
-3. **Copy the Authorization Token**  
+3. **Copy the Authorization Token**
    - After creation, copy the authorization token. You will need this in later steps.
 
 ![Authorization token screenshot](/docs_imagem/tagoio/1563385125217-eok.png)
 
 :::tip
 
-You must enter the **username;password;host DASS url** separated by a semicolon.  
+You must enter the **username;password;host DASS url** separated by a semicolon.
 Only one **Authorization** per application is necessary. Don't do it for each device.
 
 :::
@@ -48,8 +48,8 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 ## Step 2: Add Integration to Orbiwise
 
-1. Go to your Orbiwise console and create a new Application.  
-   - Navigate through the menu: **Application > Add Application > Manage Apps > Push Settings**.  
+1. Go to your Orbiwise console and create a new Application.
+   - Navigate through the menu: **Application > Add Application > Manage Apps > Push Settings**.
 
 2. In the **Manage Apps** screen, click on **Push Settings** and fill in the following fields:
 
@@ -59,7 +59,7 @@ Only one **Authorization** per application is necessary. Don't do it for each de
    | Port           | `443`                                                                  |
    | Host Pass      | Set its value to the authorization token you copied in Step 1.         |
 
-3. **Start Push**  
+3. **Start Push**
    - Make sure that you set the status of your Application to **&lt;Start Push&gt;**.
 
 ![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
@@ -73,25 +73,25 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 - The Device EUI must match exactly to establish a successful connection between Orbiwise and TagoIO.
 
 ### Select the Appropriate Network and Device Type
-1. Choose the **LoRaWAN** Orbiwise Network during the device setup process.  
+1. Choose the **LoRaWAN** Orbiwise Network during the device setup process.
 2. Select the correct device type from the available options. If your device is not listed, you can add support through connectors.
 
 ### Add Device Support via Connectors (If Necessary)
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
-- For more information on available connectors and how to use them, refer to the [Connector Overview](/tagoio/devices/payload-parser/connector/connector-overview.md).
+- For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview.md).
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
 
 
 ### Finalizing Setup
 
-1. **Power On Your Devices**  
+1. **Power On Your Devices**
    - Turn on your LoRaWAN device and gateway to initiate data transmission.
 
-2. **Verify Data Reception**  
-   - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.  
-   - Alternatively, use the [Live Inspector](/tagoio/devices/live-inspector.md) within your device settings to monitor incoming data in real-time.
+2. **Verify Data Reception**
+   - In TagoIO, navigate to the Device and into the **Data** tab to confirm that data is being received.
+   - Alternatively, use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) within your device settings to monitor incoming data in real-time.
 
 With data successfully flowing into TagoIO, you can start creating Dashboards, Analyses, and Actions to visualize and manage your device data effectively.
 
-Learn how to perform [downlink for LoRaWAN](/tagoio/integrations/networks/downlink-for-lorawan.md).
+Learn how to perform [downlink for LoRaWAN](/docs/tagoio/integrations/networks/downlink-for-lorawan.md).

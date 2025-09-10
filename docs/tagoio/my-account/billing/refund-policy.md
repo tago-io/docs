@@ -9,7 +9,7 @@ TagoIO offers refunds in certain situations if you forgot to cancel your plan or
 
 If you are entitled to a refund, complete these steps:
 
-1. [Downgrade your plan](/tagoio/my-account/billing/downgrading-plans-services.md) to the free plan to avoid any further charges.
+1. [Downgrade your plan](/docs/tagoio/my-account/billing/downgrading-plans-services.md) to the free plan to avoid any further charges.
 2. Do not delete your account.
 3. [Open a ticket requesting a refund](https://tago.io/contact-us).
 

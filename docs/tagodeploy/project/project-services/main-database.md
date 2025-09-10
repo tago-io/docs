@@ -22,7 +22,7 @@ needs. Each backup is preserved based on a defined **retention period**, which
 controls how long it's stored before deletion—allowing a balance between data
 protection and storage management.
 
-For detailed instructions, refer to the [Backups](/tagodeploy/project/management/backups.md) guide.
+For detailed instructions, refer to the [Backups](/docs/tagodeploy/project/management/backups.md) guide.
 
 ## Automatic Backup Process
 

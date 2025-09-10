@@ -41,11 +41,11 @@ be available in the payload parser:
 By default, a newly created connector is visible only to you. You can share it
 with other [Profiles](/docs/tagoio/profiles) from different accounts. Read more
 about
-[Sharing Connectors & Networks](/tagoio/devices/payload-parser/connector/sharing-connectors-networks.md).
+[Sharing Connectors & Networks](/docs/tagoio/devices/payload-parser/connector/sharing-connectors-networks.md).
 
 If you want to make your connector public, submit a Pull Request on our GitHub
 repository: https://github.com/tago-io/decoders. For details, see the article on
-[Publishing, updating and accessing decoders](/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders.md).
+[Publishing, updating and accessing decoders](/docs/tagoio/devices/payload-parser/connector/publishing-updating-and-accessing-decoders.md).
 
 ### Documentation
 
@@ -74,11 +74,11 @@ include:
 
 These values are available as global variables in the payload parser context
 (see the
-[Payload parser context overview](/tagoio/devices/payload-parser/context-global-variables.md)).
+[Payload parser context overview](/docs/tagoio/devices/payload-parser/context-global-variables.md)).
 
 ### Payload parser
 
 The connector’s payload parser follows the same rules and syntax as a regular
 device payload parser. All parsing logic, variable names, and error handling are
 identical to those described in the article on
-[Payload Parser](/tagocore/resources/device/payload-parser.md).
+[Payload Parser](/docs/tagocore/resources/device/payload-parser.md).

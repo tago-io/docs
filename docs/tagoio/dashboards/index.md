@@ -15,7 +15,7 @@ All your dashboards are listed on the sidebar of the screen. On the top right yo
 There are two types of dashboards:
 
 - **Normal**: simply create a dashboard for pre-selected devices and variables.
-- [**Blueprint**](/tagoio/dashboards/blueprint-dashboard.md): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
+- [**Blueprint**](/docs/tagoio/dashboards/blueprint-dashboard.md): create dashboards by associating **tags** to scale up your application. One single dashboard can be used with multiple devices and users.
 
 :::info
 
@@ -25,7 +25,7 @@ There is a limit of **100 widgets** per dashboard
 
 ## Building dashboards
 
-To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](/tagoio/dashboards/distributing-dashboards.md).
+To create a new dashboard, start by clicking the **+** button on the left side of Admin page. A new window will appear, giving you the option to either build a dashboard from scratch or choose from one of the pre-designed [templates](/docs/tagoio/dashboards/distributing-dashboards.md).
 
 In this window, you can also switch the **Blueprint slider** to generate a Blueprint dashboard instead of a Normal one. Simply enter a name for your new dashboard and click **Save** to begin adding [Widgets](https://help.tago.io/portal/en/kb/tagoio/9-widgets).
 
@@ -36,7 +36,7 @@ In this window, you can also switch the **Blueprint slider** to generate a Bluep
 
 ## Dashboard Icons
 
-You can add [icons](/tagoio/dashboards/dashboard-icons.md) to your dashboard, making it look just the way that you want it.
+You can add [icons](/docs/tagoio/dashboards/dashboard-icons.md) to your dashboard, making it look just the way that you want it.
 
 <!-- Dashboard icons image -->
 
@@ -56,7 +56,7 @@ Although video formats are not accepted, you can upload animations using the **.
 
 ## Reordering widgets for mobile app on TagoRUN
 
-When accessing dashboards through the [TagoRUN app](/tagoio/tagorun/getting-started/tagorun-mobile-app.md), widgets appear in the sequence of their creation by default. To modify this arrangement, simply switch your dashboard to **Edit mode** and click on the small smartphone icon located at right top corner.
+When accessing dashboards through the [TagoRUN app](/docs/tagoio/tagorun/getting-started/tagorun-mobile-app.md), widgets appear in the sequence of their creation by default. To modify this arrangement, simply switch your dashboard to **Edit mode** and click on the small smartphone icon located at right top corner.
 
 To reorder the widgets for the mobile app, just drag them to your preferred position. The adjustments will take effect immediately, although you might need to refresh the dashboard on the mobile app to see the changes.
 

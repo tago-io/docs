@@ -63,7 +63,7 @@ Set the path of an image file to act as your Plugin's main icon. We recommend yo
 
 ### types
 
-This is an array that should contain all [module](/tagocore/plugins/create/sdk/module.md) types used by your Plugin. For instance,
+This is an array that should contain all [module](/docs/tagocore/plugins/create/sdk/module.md) types used by your Plugin. For instance,
 if you are using a [Service Module](/docs/tagocore/plugins/create/service) and a [Payload Encoder Module](/docs/tagocore/plugins/create/encoder)
 in your code, you should have an array like this:
 
@@ -81,7 +81,7 @@ Here are all the types of modules:
 
 ### permissions
 
-This array specifies which API calls you will be able to make to TagoCore's API via the [core](/tagocore/plugins/create/sdk/core.md) object. For instance, if you wish to create a new [Device](/docs/tagocore/device) via the `core.createDevice` function, you have need to add the `device` property to this permissions array.
+This array specifies which API calls you will be able to make to TagoCore's API via the [core](/docs/tagocore/plugins/create/sdk/core.md) object. For instance, if you wish to create a new [Device](/docs/tagocore/device) via the `core.createDevice` function, you have need to add the `device` property to this permissions array.
 
 These are all the possibilities for this array:
 

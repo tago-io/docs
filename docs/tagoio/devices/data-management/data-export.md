@@ -5,11 +5,11 @@ tags: ["tagoio"]
 ---
 
 At TagoIO, you can export device data in several ways: directly from the Admin
-panel on a device's page, via the [API](/tagodeploy/project/project-services/api.md), or from
+panel on a device's page, via the [API](/docs/tagodeploy/project/project-services/api.md), or from
 [Widgets](/docs/tagoio/widgets/) in either the Admin panel or the
-[TagoRun portal](/tagoio/tagorun/getting-started/tagorun-mobile-app.md).
+[TagoRun portal](/docs/tagoio/tagorun/getting-started/tagorun-mobile-app.md).
 Exporting data consumes your
-[Data Output](/tagoio/profiles/services/data-output-service.md) service
+[Data Output](/docs/tagoio/profiles/services/data-output-service.md) service
 quota.
 
 Here's how to use each export source.
@@ -20,7 +20,7 @@ Access this feature in the Admin panel under the
 [Device module](/docs/tagoio/devices/). Select a device and open the "Data" tab.
 Before exporting, use the filtering options to refine the data you need and
 avoid unnecessary consumption of your Data Output quota. Learn more in
-[Filtering Variables](/tagoio/devices/payload-parser/filtering-out-variables-with-parser-code.md).
+[Filtering Variables](/docs/tagoio/devices/payload-parser/filtering-out-variables-with-parser-code.md).
 
 To export, click the "Export" button in the top-right corner. The export dialog
 provides the following options:
@@ -45,7 +45,7 @@ provides the following options:
 
 For immutable devices that group data into chunks, you can also export data in
 chunks. Learn more about exporting data chunks here:
-[Chunk Management](/tagoio/devices/data-management/chunk-management.md).
+[Chunk Management](/docs/tagoio/devices/data-management/chunk-management.md).
 
 :::
 

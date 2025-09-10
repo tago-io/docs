@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 :::warning
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
+TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
 
 :::
 
@@ -19,12 +19,12 @@ To build an MQTT **retain** workaround with TagoIO, you can either publish direc
 
 ## Using Actions to Publish a Message to a Subscriber
 
-1. **Create an Action**  
-   - Navigate to the Actions section in your TagoIO dashboard and create a new action.  
+1. **Create an Action**
+   - Navigate to the Actions section in your TagoIO dashboard and create a new action.
    - Choose the event that will trigger this action. It could be a variable update, a scheduled time, or another custom trigger.
 
-2. **Configure MQTT Publish**  
-   - In the action configuration, select **"MQTT Publish"** as the action type.  
+2. **Configure MQTT Publish**
+   - In the action configuration, select **"MQTT Publish"** as the action type.
    - Specify the topic you wish to publish to and the message payload.
 
 ![Image 2](/docs_imagem/tagoio/external-41c105e7.png)
@@ -34,7 +34,7 @@ To build an MQTT **retain** workaround with TagoIO, you can either publish direc
 For scenarios where you need to publish for a large number of devices/topics and also require more control over the publishing process, you can use an Analysis script.
 
 ### 1. Create an Analysis
-- Go to the **Analysis** section and create a new analysis.  
+- Go to the **Analysis** section and create a new analysis.
 - Choose **Node.js** as the environment.
 
 ### 2. Implement MQTT Publish Script

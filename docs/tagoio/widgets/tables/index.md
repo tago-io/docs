@@ -16,20 +16,20 @@ The following table widgets are available:
 
 ## Static Table
 
-A Static Table is a special kind of widget that does not use the traditional variable selector. Instead, you specify a fixed number of rows and columns. This option is useful when you do not want to display historical values for variables and only need a fixed layout of data. Learn more about [Static Table](/tagoio/widgets/tables/static-table-widget.md).
+A Static Table is a special kind of widget that does not use the traditional variable selector. Instead, you specify a fixed number of rows and columns. This option is useful when you do not want to display historical values for variables and only need a fixed layout of data. Learn more about [Static Table](/docs/tagoio/widgets/tables/static-table-widget.md).
 
 ## Dynamic Table
 
-Dynamic tables are tables that are populated dynamically as your data arrive while keeping the history of the previous data in each row. The configuration is very easy, all you have to do is pick your variables. Learn more about [Dynamic Table](/tagoio/widgets/tables/dynamic-table-widget.md).
+Dynamic tables are tables that are populated dynamically as your data arrive while keeping the history of the previous data in each row. The configuration is very easy, all you have to do is pick your variables. Learn more about [Dynamic Table](/docs/tagoio/widgets/tables/dynamic-table-widget.md).
 
 ## Device List
 
-Device List widget is a table that dynamically populates with information about your devices, such as names, tags, configuration parameters, and IDs. Learn more about [Device List](/tagoio/widgets/tables/device-list-widget.md).
+Device List widget is a table that dynamically populates with information about your devices, such as names, tags, configuration parameters, and IDs. Learn more about [Device List](/docs/tagoio/widgets/tables/device-list-widget.md).
 
 ## User List
 
-The User List widget is a table that dynamically populates with information about your users, such as names, tags, email, and IDs. Learn more about [User List](/tagoio/widgets/tables/user-list-widget.md).
+The User List widget is a table that dynamically populates with information about your users, such as names, tags, email, and IDs. Learn more about [User List](/docs/tagoio/widgets/tables/user-list-widget.md).
 
 ## Entity Table
 
-The Entity Table widget enables you to display data in a tabular format using fields from your Entities. Unlike the Static and Dynamic Table widgets, it does not utilize data from Devices. Learn more about [Entity Table](/tagoio/widgets/tables/entity-table-widget.md).
+The Entity Table widget enables you to display data in a tabular format using fields from your Entities. Unlike the Static and Dynamic Table widgets, it does not utilize data from Devices. Learn more about [Entity Table](/docs/tagoio/widgets/tables/entity-table-widget.md).

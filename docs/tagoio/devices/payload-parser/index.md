@@ -14,7 +14,7 @@ can use the parser to convert it to °C before inserting the data into the
 [Device](/docs/tagoio/devices/).
 
 You can learn about the
-[differences between Payload Parser and Analysis](/tagocore/resources/device/payload-parser.md).
+[differences between Payload Parser and Analysis](/docs/tagocore/resources/device/payload-parser.md).
 
 ## Parser execution
 
@@ -26,7 +26,7 @@ TagoIO can run up to two parsers for a device:
 :::info
 
 The parsers are executed in sequence. First the one from the
-[Connector](/tagodeploy/project/configuration/integrations.md), then your custom
+[Connector](/docs/tagodeploy/project/configuration/integrations.md), then your custom
 parser.
 
 :::
@@ -54,7 +54,7 @@ data storage, so if your code has an error it will be returned directly to the
 device HTTP post response.
 
 There are some concepts about
-[global variables and context](/tagoio/devices/payload-parser/context-global-variables.md)
+[global variables and context](/docs/tagoio/devices/payload-parser/context-global-variables.md)
 that you may want to learn.
 
 ### A parse example

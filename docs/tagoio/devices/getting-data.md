@@ -71,7 +71,7 @@ Below is a sample response when no query parameters are supplied:
 ```
 
 ## Variables
-The `variable` parameter specifies which variable(s) to return.  
+The `variable` parameter specifies which variable(s) to return.
 Example for a single variable:
 
 ```
@@ -129,4 +129,4 @@ If the interval contains more than 15 items, add `qty` to increase the limit.
 Relative dates are calculated from the current time.
 
 ## Rate Limits
-When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/tagoio/profiles/services/rate-limits-hard-limits.md).
+When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

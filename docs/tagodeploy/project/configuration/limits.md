@@ -19,7 +19,7 @@ service. Higher limits may necessitate additional computational resources,
 either through vertical scaling (increasing CPU and memory per instance) or
 horizontal scaling (adding more API instances). For detailed guidance on scaling
 strategies and their implications, refer to the
-[API Documentation](/tagodeploy//project/project-services/api.md).
+[API Documentation](/docs/tagodeploy//project/project-services/api.md).
 
 Before increasing Request limits, it is highly recommended to ensure that all
 Analysis scripts within the profile are thoroughly optimized. Optimization

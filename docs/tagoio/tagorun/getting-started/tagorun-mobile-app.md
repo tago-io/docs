@@ -14,6 +14,6 @@ Download the TagoRUN app from the [AppStore](https://apps.apple.com/br/app/tagor
 
 A custom mobile app can also be deployed with your brand.
 
-For more information on deploying a custom mobile app with your brand, see the [Custom Mobile App](/tagoio/addons/custom-mobile-app.md) article.
+For more information on deploying a custom mobile app with your brand, see the [Custom Mobile App](/docs/tagoio/addons/custom-mobile-app.md) article.
 
 :::

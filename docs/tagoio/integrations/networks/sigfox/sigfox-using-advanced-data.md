@@ -69,4 +69,4 @@ Configure the `uplink` callback with the following settings:
 <!-- Image placeholder removed for build -->
 
 Learn more about
-[how to integrate with Sigfox](/tagoio/integrations/networks/sigfox/sigfox.md).
+[how to integrate with Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox.md).

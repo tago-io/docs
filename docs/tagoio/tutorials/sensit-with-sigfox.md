@@ -58,14 +58,14 @@ analysis.
 
 If you are using Sens'it v2, you may want to edit the **parse function** in your
 device to extract variables from more modes. Check the complete payload
-documentation: [Payload Parser](/tagocore/resources/device/payload-parser.md) and the
+documentation: [Payload Parser](/docs/tagocore/resources/device/payload-parser.md) and the
 Sigfox developer guide for detailed information.
 
 ## Advanced Features
 
 You can create **notifications** and advanced **scripts** as needed:
 
-- Notifications: [Notifications](/tagoio/getting-started/notification.md)
+- Notifications: [Notifications](/docs/tagoio/getting-started/notification.md)
 - Scripts / Analysis: [Analysis Overview](/docs/tagoio/analysis/)
 
 ## Notes
@@ -75,4 +75,4 @@ You can create **notifications** and advanced **scripts** as needed:
   in TagoIO.
 - For any specific Sigfox backend configuration or Sigfox Cloud settings,
   consult Sigfox documentation or the Sigfox Cloud console:
-  [Sigfox](/tagoio/integrations/networks/sigfox/sigfox.md).
+  [Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox.md).

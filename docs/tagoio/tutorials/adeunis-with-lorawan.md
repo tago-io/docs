@@ -16,7 +16,7 @@ incoming device data.
 
 :::tip
 
-You can check whether a [parser](/tagocore/resources/device/payload-parser.md) script
+You can check whether a [parser](/docs/tagocore/resources/device/payload-parser.md) script
 was added to your device under the tab **Payload Parser** in your device page.
 
 :::
@@ -38,12 +38,12 @@ choose.
 Select one of the following provider-specific integration guides to continue
 your setup:
 
-- [TTN (The Things Network)](/tagoio/integrations/networks/the-things-network-lorawan.md)
-- [Loriot](/tagoio/integrations/networks/loriot-lorawan.md)
-- [Everynet](/tagoio/integrations/networks/everynet-lorawan.md)
-- [Senet](/tagoio/integrations/networks/senet-network.md)
-- [Orbiwise](/tagoio/integrations/networks/orbiwise-lorawan.md)
-- [machineQ](/tagoio/integrations/networks/machineq-lorawan.md)
+- [TTN (The Things Network)](/docs/tagoio/integrations/networks/the-things-network-lorawan.md)
+- [Loriot](/docs/tagoio/integrations/networks/loriot-lorawan.md)
+- [Everynet](/docs/tagoio/integrations/networks/everynet-lorawan.md)
+- [Senet](/docs/tagoio/integrations/networks/senet-network.md)
+- [Orbiwise](/docs/tagoio/integrations/networks/orbiwise-lorawan.md)
+- [machineQ](/docs/tagoio/integrations/networks/machineq-lorawan.md)
 
 Each provider link points to the corresponding TagoIO tutorial for configuring
 Adeunis devices with that network.
@@ -56,4 +56,4 @@ dashboards.
 
 You can start building your [dashboards](/docs/tagoio/dashboards/) immediately.\
 Also, you can create [notifications](/docs/tagoio/actions/) and more advanced
-[scripts](/tagoio/analysis/creating-analysis.md) as needed.
+[scripts](/docs/tagoio/analysis/creating-analysis.md) as needed.

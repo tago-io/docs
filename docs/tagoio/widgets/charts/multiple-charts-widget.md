@@ -11,16 +11,16 @@ choose whether series are stacked, and more.
 
 When using multiple charts widget, each variable produces a different chart. In
 the same widget it is possible to have each chart as an
-[Area Chart](/tagoio/widgets/charts/area-chart-widget.md),
-[Line Chart](/tagoio/widgets/charts/line-chart-widget.md),
-[Horizontal Bar](/tagoio/widgets/charts/horizontal-bar-widget.md), or
-[Vertical Column](/tagoio/widgets/charts/vertical-column-widget.md).
+[Area Chart](/docs/tagoio/widgets/charts/area-chart-widget.md),
+[Line Chart](/docs/tagoio/widgets/charts/line-chart-widget.md),
+[Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md), or
+[Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md).
 
 ![Multiple charts examples (area, line and column)](/docs_imagem/tagoio/multiple-charts-widget-2.png)
 
 This widget also accepts features like
-[metadata](/tagoio/devices/payload-parser/metadata.md) and
-[series](/tagoio/devices/grouping-variables.md), which can be set in your
+[metadata](/docs/tagoio/devices/payload-parser/metadata.md) and
+[series](/docs/tagoio/devices/grouping-variables.md), which can be set in your
 variable data.
 
 ## 1. 'Data From' Field
@@ -40,7 +40,7 @@ list of devices and the variable that contains the data.
 ### Blueprint Dashboards
 
 From the option **'Data From'** on the right menu, add the
-[Blueprint device](/tagoio/devices/blueprint-devices-entities.md) and input the
+[Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the
 name of the variable that contains the information.\
 When using a blueprint dashboard, the field **Variable** will not list variables
 to be picked because it doesn't know the devices linked to your Blueprint

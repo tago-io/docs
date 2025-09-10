@@ -18,7 +18,7 @@ TagoIO application.
 1. **Access Authorizations**
    - Go to Devices.
    - Click on
-     [Authorizations](/tagoio/integrations/general/authorization.md) at the
+     [Authorizations](/docs/tagoio/integrations/general/authorization.md) at the
      top of the page.
 
 2. **Create a New Authorization**
@@ -58,7 +58,7 @@ TagoIO application.
      `https://everynet.middleware.REGION.tago.io/{type}`\
      Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For
      a list of available regions, visit
-     [TagoIO Network Integration](/tagodeploy/project/configuration/integrations.md).
+     [TagoIO Network Integration](/docs/tagodeploy/project/configuration/integrations.md).
    - **Description** – Enter a unique identifier (e.g., `tagoio-integration`).
    - **Authorization Header** – Paste the Authorization token you copied in
      Step 1.
@@ -89,7 +89,7 @@ TagoIO application.
    - In TagoIO, navigate to the Device page and open the _Data_ tab to confirm
      that data is being received.
    - Alternatively, use the
-     [Live Inspector](/tagoio/devices/live-inspector.md) within your device
+     [Live Inspector](/docs/tagoio/devices/live-inspector.md) within your device
      settings to monitor incoming data in real time.
 
 Once data successfully flows into TagoIO, you can start creating dashboards,

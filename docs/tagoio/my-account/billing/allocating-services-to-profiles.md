@@ -32,6 +32,6 @@ Profiles are sorted by those that have reached their limits and those nearing th
 
 :::tip
 
-You can also manage the limits of your account's services and allocate profiles directly from your mobile device through the [TagoIO mobile app](/tagoio/my-account/managing-your-account-with-the-tagoio-mobile-app.md).
+You can also manage the limits of your account's services and allocate profiles directly from your mobile device through the [TagoIO mobile app](/docs/tagoio/my-account/managing-your-account-with-the-tagoio-mobile-app.md).
 
 :::

@@ -7,7 +7,7 @@ With the Heat Map widget you can create a colorful layer of bubbles over an imag
 
 ![Heat map example on a background image (floor plan)](/docs_imagem/tagoio/heat-map-widget-2.png)
 
-This widget also accepts features like [metadata](/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
 
 ## Creating your own
 
@@ -19,18 +19,18 @@ This widget works for both **Normal** dashboards and **Blueprint** dashboards.
 
 ### Data From field
 
-The *Data From* field lets you select the device and variable that will feed data into this widget.  
-- In a Normal dashboard, choose one of your devices from the list and then pick the variable that contains the data.  
-- In a Blueprint dashboard, add the **Blueprint device** and input the name of the variable that holds the information.  
+The *Data From* field lets you select the device and variable that will feed data into this widget.
+- In a Normal dashboard, choose one of your devices from the list and then pick the variable that contains the data.
+- In a Blueprint dashboard, add the **Blueprint device** and input the name of the variable that holds the information.
   When using a Blueprint dashboard, the variable selector will not list variables because it does not know which devices are linked to your Blueprint Device.
 
 ### Setting a background image
 
 The widget supports three types of background images:
 
-1. **Static** – an image from a fixed URL.  
-2. **Conditional** – multiple conditions each with its own image URL; the image that matches the condition is displayed.  
-   ![Conditional image example](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-23-2019-51-03-Op0.png)  
+1. **Static** – an image from a fixed URL.
+2. **Conditional** – multiple conditions each with its own image URL; the image that matches the condition is displayed.
+   ![Conditional image example](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-23-2019-51-03-Op0.png)
 3. **Dynamic** – the image URL comes from variable data.
 
 > You can store images in TagoIO’s [file system](/docs/tagoio/files) and use a public URL.
@@ -55,16 +55,16 @@ The widget will display a heat bubble at that location.
 
 #### Using the widget editor
 
-You can also set coordinates directly in the widget editor. If metadata is not present, the editor values are used.  
+You can also set coordinates directly in the widget editor. If metadata is not present, the editor values are used.
 ![Bubble position example](/docs_imagem/tagoio/byHeatmap-RtA.gif)
 
 ### Range of scale
 
-You can define a custom range for the heat bar that appears at the bottom of the image. By default, the scale is generated automatically from your variable values.  
+You can define a custom range for the heat bar that appears at the bottom of the image. By default, the scale is generated automatically from your variable values.
 The scale determines which color corresponds to each value; even if you hide the heat bar, bubbles will still respect this mapping.
 
 :::info
 
-The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/tagoio/widgets/gaude-and-meters/gauge-data-range-format.md).
+The range can be set with fixed or dynamic values using another variable’s data, similar to [Gauge's range](/docs/tagoio/widgets/gaude-and-meters/gauge-data-range-format.md).
 
 :::

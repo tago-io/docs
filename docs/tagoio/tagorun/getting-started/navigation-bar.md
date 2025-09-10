@@ -9,18 +9,18 @@ The navigation bar is a section of your Run portal that lets end users easily na
 
 ## Your logo & colors
 
-You can add your company's logo by accessing the [Run module](https://admin.tago.io/run) and inserting the URL of your image in the **Main Configuration** section. This will apply the logo to the navigation bar and to signup pages. For more advanced customization, you can set a distinct logo for the navigation bar or implement dynamic logos based on [Run User Tags](/tagoio/getting-started/tags-system.md)
+You can add your company's logo by accessing the [Run module](https://admin.tago.io/run) and inserting the URL of your image in the **Main Configuration** section. This will apply the logo to the navigation bar and to signup pages. For more advanced customization, you can set a distinct logo for the navigation bar or implement dynamic logos based on [Run User Tags](/docs/tagoio/getting-started/tags-system.md)
 
 ### Color scheme
 
-The color scheme for the bar, text, and icons can be configured in the **Theme** section of your Run. Discover more about [Run Themes](/tagoio/tagorun/getting-started/run-theme.md) and their capabilities.
+The color scheme for the bar, text, and icons can be configured in the **Theme** section of your Run. Discover more about [Run Themes](/docs/tagoio/tagorun/getting-started/run-theme.md) and their capabilities.
 
 ### Implementing dynamic logos
 
-Create a personalized experience for different user groups or roles by displaying unique logos in the navigation bar with the help of the [Tags System](/tagoio/getting-started/tags-system.md).
+Create a personalized experience for different user groups or roles by displaying unique logos in the navigation bar with the help of the [Tags System](/docs/tagoio/getting-started/tags-system.md).
 
 1.  Navigate to the **Run module** → *Navigation Bar* → *Navigation Bar Logo* and enable the **Use dynamic logo** option.
-2.  A new **Tag Match** field will appear, allowing you to specify a [tag key](/tagoio/getting-started/tags-system.md) that corresponds to the custom logo URL.
+2.  A new **Tag Match** field will appear, allowing you to specify a [tag key](/docs/tagoio/getting-started/tags-system.md) that corresponds to the custom logo URL.
 3.  Existing end‑user tags will be displayed here. If you haven’t created a tag containing your logo image URL, you can do so by accessing the **User** module and adding the appropriate tag to your end‑users.
 4.  For users without a matching tag key, the logo specified in the **Default Logo URL** field will be displayed, ensuring consistent branding across all user experiences.
 
@@ -36,6 +36,6 @@ To add new items to your user menu:
     - **Icon:** choose the icon along with its color, which will be displayed next to the option.
     - **Type:** determines the type of field the user will interact with.
     - **Alignment:** choose the text alignment direction for the item.
-    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](/tagoio/getting-started/tags-system.md) associated with the [Access Management](/docs/tagoio/tagorun/access-management/) feature.
+    - **Visibility options** (eye icon): allows you to restrict certain items to specific users using the [Tag System](/docs/tagoio/getting-started/tags-system.md) associated with the [Access Management](/docs/tagoio/tagorun/access-management/) feature.
 
 Once you have configured your user menu and deployed your updated Run, your users can see the menu items that they have permission to view when signed in.

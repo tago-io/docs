@@ -33,7 +33,7 @@ color legend for pins linked to Power, Sensors, and Module.)
 Xkit can be programmed with a file that will send data from the sensors with a
 payload format as shown below. TagoIO is flexible enough to parse this payload
 in order to extract the variables – it is done through a script coded in the
-[Payload Parser](/tagocore/resources/device/payload-parser.md).
+[Payload Parser](/docs/tagocore/resources/device/payload-parser.md).
 
 ![Payload example](/docs_imagem/tagoio/paylot_xkit-i8s.png)
 
@@ -46,7 +46,7 @@ in order to extract the variables – it is done through a script coded in the
 
 Follow the installation guide from [Thinxtra](https://www.thinxtra.com/xkit/)
 and prepare your Xkit to send data to the
-[Sigfox network](/tagoio/integrations/networks/sigfox/sigfox.md).
+[Sigfox network](/docs/tagoio/integrations/networks/sigfox/sigfox.md).
 
 ### 2. TagoIO and Sigfox Setup
 
@@ -79,14 +79,14 @@ You can start editing your dashboard as needed.
 
 :::info
 
-You can edit the [parse script](/tagocore/resources/device/payload-parser.md) created
+You can edit the [parse script](/docs/tagocore/resources/device/payload-parser.md) created
 for your device that extracts variables from the payload.
 
 :::
 
 Also, you can create
-[notifications](/tagoio/getting-started/notification.md) and more advanced
-[scripts](/tagoio/analysis/creating-analysis.md) as needed.
+[notifications](/docs/tagoio/getting-started/notification.md) and more advanced
+[scripts](/docs/tagoio/analysis/creating-analysis.md) as needed.
 
 Learn more about
 [Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink.md).

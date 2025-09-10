@@ -16,9 +16,9 @@ The RESTful API supports a wide range of operations, including (but not limited 
 ## Token types
 To use the RESTful API you must provide a token. There are three different types of tokens in TagoIO:
 
-- `Device-Token` — Performs data requests. See [Device‑Token documentation](/tagoio/devices/device-token.md).
-- `Account-token` — Performs entity requests, such as creating devices. See [Account‑Token documentation](/tagoio/profiles/account-token.md).
-- `Network-token` — Performs data requests through a network connection; only useful if you are using your own network. See [Network integration documentation](/tagoio/integrations/general/creating-a-network-integration.md).
+- `Device-Token` — Performs data requests. See [Device‑Token documentation](/docs/tagoio/devices/device-token.md).
+- `Account-token` — Performs entity requests, such as creating devices. See [Account‑Token documentation](/docs/tagoio/profiles/account-token.md).
+- `Network-token` — Performs data requests through a network connection; only useful if you are using your own network. See [Network integration documentation](/docs/tagoio/integrations/general/creating-a-network-integration.md).
 
 ## Rate limits
-When executing requests to TagoIO, there is a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/tagoio/profiles/services/rate-limits-hard-limits.md).
+When executing requests to TagoIO, there is a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

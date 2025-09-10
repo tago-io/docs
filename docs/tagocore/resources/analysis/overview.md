@@ -65,4 +65,4 @@ There are 3 ways to execute your Analysis:
 You may write your Analysis's code in whatever way you prefer. However, we do have some coding guidelines and best practices
 that may help you in your quest to create powerful Analyses.
 
-To learn more about best practices, coding guidelines, and how to retrieve [Device](/tagocore/resources/device/data.md) data inside of your Analysis, check out the [Analysis Code](/tagocore/resources/analysis/code.md) article.
+To learn more about best practices, coding guidelines, and how to retrieve [Device](/docs/tagocore/resources/device/data.md) data inside of your Analysis, check out the [Analysis Code](/docs/tagocore/resources/analysis/code.md) article.

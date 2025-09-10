@@ -18,7 +18,7 @@ Payload Parsers must be associated to a [Device](/docs/tagocore/device), and you
 Payload Parsers can only be written in JavaScript.
 :::
 
-Inside of your JavaScript code, you can use the `payload` global variable to have access to the data sent by your device. You may also modify this global variable if you wish to change the data before it is saved in the Device's [Data](/tagocore/resources/device/data.md).
+Inside of your JavaScript code, you can use the `payload` global variable to have access to the data sent by your device. You may also modify this global variable if you wish to change the data before it is saved in the Device's [Data](/docs/tagocore/resources/device/data.md).
 
 The global `payload` will contain whatever your Device has sent in the body of the HTTP request, which means it doesn't have a specific type and can be an `array`, `object`, or even a `string` or `number`.
 

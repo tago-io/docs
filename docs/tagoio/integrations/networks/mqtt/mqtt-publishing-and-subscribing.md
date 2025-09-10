@@ -10,7 +10,7 @@ TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in
 the US database region. European (EU) database region accounts cannot access
 this service due to new security requirements, but they may use third‑party MQTT
 services with TagoIO via the
-[MQTT Relay](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
+[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
 feature. Free accounts can access MQTT functionality through the MQTT Relay as
 well.
 
@@ -43,12 +43,12 @@ services.mqtt.publish("mytopic", "my message");
 
 This section describes how to publish and subscribe to topics on the TagoIO MQTT
 Broker. It assumes you already know how to connect to MQTT; if you do not, see
-the [MQTT](/tagoio/integrations/networks/mqtt/mqtt.md) article for connection
+the [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt.md) article for connection
 instructions.
 
 ### Publishing to TagoIO
 
-You can create an [Action](/tagoio/actions/trigger-by-mqtt-topic.md) and
+You can create an [Action](/docs/tagoio/actions/trigger-by-mqtt-topic.md) and
 attach it to any specific topic or wildcard topics, then trigger actions from
 there.
 
@@ -71,7 +71,7 @@ message and the receiver. TagoIO officially supports QoS 0 and 1.
 TagoIO does not support the native retain feature found in standard MQTT
 protocol implementations; however, we offer a workaround to achieve similar
 functionality. Read more here:
-[MQTT Retain on TagoIO Broker](/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
+[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
 
 ### How to Debug MQTT with TagoIO
 

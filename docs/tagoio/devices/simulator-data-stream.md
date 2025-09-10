@@ -33,4 +33,4 @@ This is an easy and quick way to start with TagoIO!
 
 Data can take a few minutes to appear in the device. For example, weather data may take up to 15 minutes to present for the first time.
 
-Use our [Live Inspector](/tagoio/devices/live-inspector.md) to monitor raw data arriving on your account in real‑time.
+Use our [Live Inspector](/docs/tagoio/devices/live-inspector.md) to monitor raw data arriving on your account in real‑time.

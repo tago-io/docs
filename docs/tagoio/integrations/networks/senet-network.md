@@ -26,7 +26,7 @@ Senet, and select it.
 
 Type a name for your device, select a
 **[data storage type](/docs/tagoio/devices/)** and define a
-**[Data Retention](/tagoio/devices/data-management/data-retention-feature.md)**,
+**[Data Retention](/docs/tagoio/devices/data-management/data-retention-feature.md)**,
 then click on _Create device_.
 
 ![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
@@ -55,7 +55,7 @@ Go to **"Notification Target"**. Make sure the status is _Enabled_, select
 | Field                    | Description                                                                                                                                                                                                                                      |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Name**                 | Enter a unique identifier (e.g., `tagoio-integration`).                                                                                                                                                                                          |
-| **Forward To HTTP URL**  | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/tagodeploy/project/configuration/integrations.md)**. |
+| **Forward To HTTP URL**  | Use the endpoint format `https://senet.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit **[TagoIO Network Integration](/docs/tagodeploy/project/configuration/integrations.md)**. |
 | **Headers**              | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1.                                                                                                                                              |
 | **Optional Data Fields** | Enable _RF Data_ and any other optional field you would like to receive in your device.                                                                                                                                                          |
 

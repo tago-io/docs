@@ -20,7 +20,7 @@ You can perform both uplink and downlink operations.
 
 First go to your TagoIO account, and if this is your first device connected
 between Radio Bridge and TagoIO, you will need to create an
-[Authorization](/tagoio/integrations/general/authorization.md).\
+[Authorization](/docs/tagoio/integrations/general/authorization.md).\
 Copy the Authorization by clicking in the COPY button to use in the next step.
 
 ### Step 2:
@@ -60,13 +60,13 @@ shown in the dashboard: [bucket](/docs/tagoio/devices/).\
 You can start editing the installed dashboard.
 
 Also, you can create
-[notifications](/tagoio/getting-started/notification.md) and more advanced
-[scripts](/tagoio/analysis/creating-analysis.md) as needed.
+[notifications](/docs/tagoio/getting-started/notification.md) and more advanced
+[scripts](/docs/tagoio/analysis/creating-analysis.md) as needed.
 
 :::tip
 
 Depending on your type of device, a Parser may be automatically added. You may
-want to edit the [parse function](/tagocore/resources/device/payload-parser.md) in
+want to edit the [parse function](/docs/tagocore/resources/device/payload-parser.md) in
 your device if necessary.
 
 :::

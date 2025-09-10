@@ -4,7 +4,7 @@ description: "This article explains the differences between TagoIO's Payload Par
 tags: ["tagoio", "analysis"]
 ---
 
-The [Payload Parser](/tagocore/resources/device/payload-parser.md) was created to
+The [Payload Parser](/docs/tagocore/resources/device/payload-parser.md) was created to
 handle raw payloads sent by devices in order to extract measured variables or
 execute simple operations. The [Analysis](/docs/tagoio/analysis/) feature is
 more powerful — it includes access to [Devices](/docs/tagoio/devices/) and
@@ -36,7 +36,7 @@ simple JavaScript engine developed by TagoIO to be easy, lightweight, and free.
 - Analysis offers broader capabilities (access to devices, external services,
   larger code size, and more advanced error handling), suitable for more complex
   workflows.
-- Use the [Payload Parser](/tagocore/resources/device/payload-parser.md) for simple,
+- Use the [Payload Parser](/docs/tagocore/resources/device/payload-parser.md) for simple,
   free parsing needs and [Analysis](/docs/tagoio/analysis/) when you need
   external integration, advanced JavaScript features, or persistence across
   executions.

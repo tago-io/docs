@@ -10,14 +10,14 @@ The trigger type **"Trigger by Variable"** allows you to execute an
 TagoIO provides its own MQTT broker that pushes data to clients when new
 messages are published to the topics they are subscribed to. To learn more about
 the MQTT infrastructure used by TagoIO, see
-[MQTT](/tagoio/integrations/networks/mqtt/mqtt.md).
+[MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt.md).
 
 :::info
 
 The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts
 in the US database region. Free accounts and accounts hosted in the European
 database region may use third-party MQTT services with TagoIO via the
-[MQTT Relay](/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
+[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
 feature.
 
 :::
@@ -49,7 +49,7 @@ executed. To do so, you must head over to the **Trigger** section.
 ![Image 4](/docs_imagem/tagoio/1588075755429-J4Y.png)
 
 For each row, you need to set the topic that will be listened to. You may use
-MQTT [wildcards](/tagoio/integrations/networks/mqtt/mqtt.md) for the topic if
+MQTT [wildcards](/docs/tagoio/integrations/networks/mqtt/mqtt.md) for the topic if
 you prefer.
 
 You can set multiple conditions in an action; if at least one of them results in

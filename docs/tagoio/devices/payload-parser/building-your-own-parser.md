@@ -15,7 +15,7 @@ additional calculations on the data after the system runs the parser provided by
 the selected connector.
 
 If you want to learn more about how data packages are sent to TagoIO, see
-[Integration](/tagodeploy/project/configuration/integrations.md).
+[Integration](/docs/tagodeploy/project/configuration/integrations.md).
 
 ## Tutorials
 
@@ -26,7 +26,7 @@ We provide three tutorials to help you understand how the Payload Parser works:
 - [MQTT Payload Parser Tutorial](https://community.tago.io/t/how-to-build-an-mqtt-payload-parser/1032)
 
 Learn more about the overall concept in the
-[Payload Parser Overview](/tagocore/resources/device/payload-parser.md).
+[Payload Parser Overview](/docs/tagocore/resources/device/payload-parser.md).
 
 For a step-by-step visual guide to payload parsing, watch this video:
 

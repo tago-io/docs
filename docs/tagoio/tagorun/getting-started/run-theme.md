@@ -21,7 +21,7 @@ The Sidebar and the Navigation bar are the main components used to route users t
 
 ### 2.1 Sidebar
 
-The Sidebar contains the vertical menu housing your [sidebar buttons](/tagoio/tagorun/getting-started/sidebar.md) and the dashboard list. Personalizing the background color ensures that icons and text automatically adapt their colors for optimal contrast and readability.
+The Sidebar contains the vertical menu housing your [sidebar buttons](/docs/tagoio/tagorun/getting-started/sidebar.md) and the dashboard list. Personalizing the background color ensures that icons and text automatically adapt their colors for optimal contrast and readability.
 
 ### 2.2 Navigation bar
 

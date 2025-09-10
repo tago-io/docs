@@ -16,7 +16,7 @@ TagoIO MQTT Relay is fast, open‑source, and highly scalable.
 
 The relay connects to your broker on predefined topics and redirects incoming
 data to **[Devices](/docs/tagoio/devices/)** in your Profile using an
-**[Authorization Key](/tagoio/integrations/general/authorization.md)** from
+**[Authorization Key](/docs/tagoio/integrations/general/authorization.md)** from
 your profile settings. It leverages TagoIO’s Integration Network and Connector
 to process and store the data. In addition to receiving data, the relay can also
 publish to topics, allowing bi‑directional communication via standard TagoIO
@@ -38,7 +38,7 @@ Learn how to use the relay here:
 2. **Data Redirection** – Incoming data on these topics is forwarded to TagoIO
    [Devices](/docs/tagoio/devices/).
 3. **Network Integration** – The relay uses the Integration Network and
-   [Connector](/tagoio/devices/payload-parser/connector/connector-overview.md)
+   [Connector](/docs/tagoio/devices/payload-parser/connector/connector-overview.md)
    to process the payload.
 4. **Device Identification** – A Payload Parser exports a serial that TagoIO
    uses to store the information in the correct device within your
@@ -48,7 +48,7 @@ Learn how to use the relay here:
 
 Given the diverse strategies for data transmission, the MQTT Relay supports a
 broad range of solutions. You can customize how the Device is identified using
-our [Network Integrations](/tagodeploy/project/configuration/integrations.md). The Payload Parser
+our [Network Integrations](/docs/tagodeploy/project/configuration/integrations.md). The Payload Parser
 inside the Network can export a Serial, ensuring the data is stored accurately
 within your Profile.
 

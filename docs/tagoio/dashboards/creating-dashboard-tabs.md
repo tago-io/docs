@@ -26,7 +26,7 @@ To create a tab, you must set the name of the tab and select its type. The type 
 
 - **Dashboard**: The tab will be able to contain widgets.
 - **Link**: The tab will be a link to another dashboard or another web page. You **cannot** put widgets inside of this tab.
-- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](/tagoio/widgets/general/widget-header.md).
+- **Hidden tab**: The tab will be able to contain widgets, but it will be hidden from your users. You will only be able to access this tab in **edit mode**. Good use of this option is to use it with the [Widget Header](/docs/tagoio/widgets/general/widget-header.md).
 
 <!-- Tab creation interface image -->
 :::info

@@ -27,18 +27,18 @@ Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
 | ------------------------------------------------------------------------------------- | ----------: | ----------: | ----------: |
 | [Actions](/docs/tagoio/actions/)                                                      |           5 |         100 |         200 |
 | [Analysis](/docs/tagoio/analysis/)                                                    |           5 |         100 |         200 |
-| [Dashboard](/tagoio/dashboards/creating-dashboard-tabs.md)                       |           5 |         100 |       1,000 |
-| [Entity](/tagoio/getting-started/entities.md)                                    |           5 |          50 |          80 |
+| [Dashboard](/docs/tagoio/dashboards/creating-dashboard-tabs.md)                       |           5 |         100 |       1,000 |
+| [Entity](/docs/tagoio/getting-started/entities.md)                                    |           5 |          50 |          80 |
 | [Device](/docs/tagoio/devices/)                                                       |           5 |         100 |      10,000 |
 | [Profile](/docs/tagoio/profiles)                                                      | 1 / account | 2 / account | 5 / account |
-| [Team Member](/tagoio/profiles/team-management-sharing-your-profile.md)          |           0 |           1 |           5 |
+| [Team Member](/docs/tagoio/profiles/team-management-sharing-your-profile.md)          |           0 |           1 |           5 |
 | [TagoCore](https://tagocore.com/)                                                     |          10 |          10 |          10 |
 | [TagoCore Cluster](https://tagocore.com/)                                             |           3 |           3 |           3 |
-| [Custom Connector](/tagodeploy/project/configuration/integrations.md)                                      |           3 |          20 |          50 |
-| [Custom Network](/tagoio/integrations/general/creating-a-network-integration.md) |           1 |           5 |          10 |
-| [Device service authorization](/tagoio/integrations/general/authorization.md)    |          10 |          50 |         200 |
+| [Custom Connector](/docs/tagodeploy/project/configuration/integrations.md)                                      |           3 |          20 |          50 |
+| [Custom Network](/docs/tagoio/integrations/general/creating-a-network-integration.md) |           1 |           5 |          10 |
+| [Device service authorization](/docs/tagoio/integrations/general/authorization.md)    |          10 |          50 |         200 |
 | [Access Management Policies](/docs/tagoio/tagorun/access-management/)                 |           5 |          30 |         100 |
-| [Dictionary & Multi-language](/tagoio/tagorun/getting-started/dictionaries.md)   |           2 |          10 |          50 |
+| [Dictionary & Multi-language](/docs/tagoio/tagorun/getting-started/dictionaries.md)   |           2 |          10 |          50 |
 
 If you attempt to add additional resources after reaching your limit, a
 notification will be shown indicating that you have run out of available slots.

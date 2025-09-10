@@ -19,7 +19,7 @@ The first step is to configure the basic working parameters. At the main configu
 
 | host type | 99 |
 
-After that, go to the **Extended Commands** tab and press the **HTTP** button.  
+After that, go to the **Extended Commands** tab and press the **HTTP** button.
 Add *TagoIO Host* in the **HTTP URL** field.
 
 Change the method to **POST** and go to **Send Commands** – you will have to configure some commands:
@@ -30,7 +30,7 @@ Change the method to **POST** and go to **Send Commands** – you will have to c
 | `_extcmd=postcfg erase` | Delete POST settings |
 | `_extcmd=postcfg Content-type,text/plain;Device-Token,_device_token_;;;` | Set the two parameters required to configure POST for Tago |
 
-> Replace the text `device_token` with the value of your [device‑token](/tagoio/devices/device-token.md).
+> Replace the text `device_token` with the value of your [device‑token](/docs/tagoio/devices/device-token.md).
 
 Learn more information about the [ABS devices configuration](http://www.abstelemetria.com/abs-cel-io/#tab-id-2).
 
