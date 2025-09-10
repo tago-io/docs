@@ -1,44 +1,65 @@
 ---
-sidebar_position: 3
-title: Installation
+sidebar_position: 2
+title: Download & Installation
 slug: /tagocore/installation
 ---
 
-# Installing TagoCore
+# Download & Installation
 
-:::info
-To install TagoCore, you need to [Download it](/docs/tagocore/getting-started/download.md) first.
-:::
+TagoCore offers two installation methods to fit your needs: a quick Docker setup for immediate use, or a source code installation for development and customization.
 
-## Decompressing
+## Method 1: Docker Installation (Recommended)
 
-TagoCore code can be downloaded either as a compressed `tar.gz` file or a compressed `zip` file, and in both cases you need to decompress the code before using TagoCore.
+The fastest way to get TagoCore running is with Docker. This method requires no additional setup or dependencies.
 
-### .tar.gz
+### Prerequisites
 
-If you have downloaded TagoCore compressed as a **.tar.gz** file, you need to execute a couple of commands before running the application.
-Open a terminal in the folder where you downloaded TagoCore and execute the following command:
+- [Docker](https://docs.docker.com/get-docker/) installed on your system
 
+### Quick Start
+
+Run this single command to start TagoCore:
+
+```shell
+docker run -p 8888:8888 -p 8999:8999 tagoio/tagocore
+```
+
+TagoCore will be available at `http://localhost:8888` in your browser.
+
+## Method 2: Source Code Installation
+
+Install from source code when you need to customize TagoCore or contribute to its development.
+
+### Prerequisites
+
+- Node.js (version 20 or higher)
+- [Just](https://github.com/casey/just) command runner
+
+### Download
+
+Download the latest release from the [GitHub releases page](https://github.com/tago-io/tagocore/releases/latest). 
+
+Choose your preferred format:
+- **community_images.tar.gz** (Linux/macOS)
+- **community_images.zip** (Windows/Cross-platform)
+
+### Extract the Files
+
+Navigate to your download folder and extract the archive:
+
+**For .tar.gz files:**
 ```shell
 tar -xvzf community_images.tar.gz
 ```
 
-This command uses the `tar` command from unix to decompress the `.tar.gz` file in the current directory.
-
-### .zip
-
-If you have downloaded TagoCore compressed as a **.zip** file, you need to execute a couple of commands before running the application.
-Open a terminal in the folder where you downloaded TagoCore and execute the following command:
-
+**For .zip files:**
 ```shell
-unzip file.zip
+unzip community_images.zip
 ```
 
-This command uses the `zip` command to decompress the `.zip` file in the current directory.
+### Install and Run
 
-## Executing TagoCore
-
-After you decompress the downloaded code, you may execute the following command to execute the TagoCore:
+Navigate to the extracted folder and run these commands:
 
 ```shell
 just install
@@ -46,14 +67,15 @@ just build-console
 just server
 ```
 
-As soon as TagoCore runs, it will open a webserver and output the URL of the server in the terminal:
-
+TagoCore will start and display:
 ```shell
 TagoCore is now available at http://localhost:8888
 ```
 
-That's it! Access the URL in your browser and start building your applications.
+## Verification
 
-<!-- ## Next Steps
+Once TagoCore is running, open your browser and navigate to `http://localhost:8888`. You should see the TagoCore setup screen, confirming your installation was successful.
 
-If you have no idea how TagoCore works, you should check out our [TagoCore Overview](/docs/tagocore/resources/action/overview.md). However, if you are already familiar with some concepts, you can engage with [our community](https://community.tago.io/c/tagocore/19) by answering questions from other folks! -->
+## Next Steps
+
+With TagoCore installed, you're ready to start building IoT applications. Check out our [Core Concepts](/docs/tagocore/) to understand how Devices, Analyses, Actions, and Plugins work together.
