@@ -60,7 +60,7 @@ building your own application in minutes.
 
 > If you have questions about how to configure your account for Sigfox and
 > TagoIO, read the article
-> [Sigfox](/tagoio/integrations/networks/sigfox/sigfox.md).
+> [Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox.md).
 
 Now, click on the new dashboard created (left menu), and associate it with the
 device that you just added.
@@ -89,6 +89,6 @@ Also, you can create
 [scripts](/tagoio/analysis/creating-analysis.md) as needed.
 
 Learn more about
-[Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/-downlink).
+[Downlink for Sigfox](/docs/tagoio/integrations/networks/sigfox/sigfox-downlink.md).
 
 Enjoy your Thinxtra Xkit with Tago!

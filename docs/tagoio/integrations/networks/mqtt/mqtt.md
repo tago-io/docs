@@ -73,8 +73,8 @@ broker.
 Encryption across the network can be handled with SSL independently of the MQTT
 protocol itself. Additional security can also be added through
 application‑encrypted data that is sent and received. At TagoIO you can send
-your data encrypted directly to [Analysis](/docs/tagoio/analysis/), decrypt it
-there, and then insert the data into your [Bucket](/docs/tagoio/devices/). This
+your data encrypted directly to [Analysis](/docs/tagoio/analysis/index.md), decrypt it
+there, and then insert the data into your [Bucket](/docs/tagoio/devices/index.md). This
 procedure can increase security if your data is sensitive or if you simply want
 an extra layer of protection.
 
@@ -86,7 +86,7 @@ visualize the connection and message through the
 messages indicate that the connection is working, but nothing is being stored in
 your bucket yet.
 
-From this point, you need to create an [Action](/docs/tagoio/actions/) with
+From this point, you need to create an [Action](/docs/tagoio/actions/index.md) with
 trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you
 should see the data being stored in the Live Inspector.
 
@@ -100,5 +100,5 @@ documentation on how to use a
 
 Here are some additional documentation links on MQTT resources:
 
-- [MQTT - Publishing and Subscribing](/docs/tagoio/integrations/networks/mqtt/-publishing-and-subscribing)
+- [MQTT - Publishing and Subscribing](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing.md)
 - [MQTT - Action Triggers by Topic](/tagoio/actions/trigger-by-mqtt-topic.md)

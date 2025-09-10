@@ -22,7 +22,7 @@ From the option **‘Data From’** on the right menu, select one device from yo
 
 ### 1.2 'Data From' for Blueprint Dashboards
 
-From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/widgets/blueprint-devices) and input the name of the variable that contains the information.
+From the option **‘Data From’** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
 :::info
 

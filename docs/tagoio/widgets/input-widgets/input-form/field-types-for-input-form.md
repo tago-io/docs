@@ -20,7 +20,7 @@ A typical text input will appear. The value saved for this field will be whateve
 </div>
 
 ## 2. Address
-This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](data-management/data-manipulation#location) for details.
+This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](/docs/tagoio/devices/sending-data.md) for details.
 
 
 <div align="center">

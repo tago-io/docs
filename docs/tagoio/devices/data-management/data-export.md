@@ -59,5 +59,5 @@ Notes:
   present. This feature is not available for all widgets; check by clicking the
   three dots in the widget's header.
 - For instructions on exporting from Widgets or via the API, refer to the
-  corresponding sections: From [Widgets]([/docs/tagoio/widgets/]) and Using our
-  [API]([/docs/tagoio/api/]).
+  corresponding sections: From [Widgets](/docs/tagoio/widgets/index.md) and Using our
+  [API](/docs/tagoio/api/api_overview.md).

@@ -10,25 +10,25 @@ Welcome to the comprehensive documentation for all TagoIO products and services.
 
 ## Products
 
-### [TagoIO](/tagoio)
+### [TagoIO](/docs/tagoio/getting-started/getting-started.md)
 The complete IoT platform for device management, data visualization, and automation.
 
-### [TagoRUN](/tagorun) 
+### [TagoRUN](/docs/tagoio/tagorun/index.md)
 Edge computing solution for real-time data processing and analysis.
 
-### [TagoCore](/tagocore)
+### [TagoCore](/docs/tagocore/getting-started/welcome.md)
 Core infrastructure components and services.
 
-### [TagoDeploy](/tagodeploy)
+### [TagoDeploy](/docs/tagodeploy/getting-started/index.md)
 Deployment and management tools for IoT applications.
 
 ## Getting Started
 
 If you're new to TagoIO, we recommend starting with:
 
-1. [TagoIO Getting Started](/tagoio/getting-started/getting-started.md) - Your first steps with the platform
-2. [Device Management](/tagoio/devices/devices) - Learn how to connect and manage devices
-3. [Dashboard Creation](/tagoio/dashboards) - Build beautiful data visualizations
+1. [Quick Start with TagoIO](/docs/tagoio/getting-started/getting-started.md) - Your first steps connecting a device
+2. [Device Management](/docs/tagoio/devices/index.md) - Learn how to connect and manage devices
+3. [Dashboard Creation](/docs/tagoio/dashboards/index.md) - Build beautiful data visualizations
 
 ## Need Help?
 

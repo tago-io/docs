@@ -25,14 +25,14 @@ More than one token can be created for the same profile. Permissions and expirat
 
 #### Entities Authenticated by Account Tokens
 
-1. [Devices](/docs/tagoio/devices/)
-2. [Dashboards](/docs/tagoio/dashboards/) and [Widgets](/docs/tagoio/widgets/)
-3. [Analysis](/docs/tagoio/analysis/)
-4. [Actions](/docs/tagoio/actions/)
-5. [Files](/docs/tagoio/files)
-6. [Access Management](/docs/tagoio/tagorun/access-management/)
-7. [TagoRun](/tagorun) and [Run users](/tagoio/tagorun/getting-started/user-management.md)
-8. [Dictionary](/tagoio/tagorun/getting-started/dictionaries.md)
+1. [Devices](/docs/tagoio/devices/index.md)
+2. [Dashboards](/docs/tagoio/dashboards/index.md) and [Widgets](/docs/tagoio/widgets/index.md)
+3. [Analysis](/docs/tagoio/analysis/index.md)
+4. [Actions](/docs/tagoio/actions/index.md)
+5. [Files](/docs/tagoio/files/index.md)
+6. [Access Management](/docs/tagoio/tagorun/access-management/index.md)
+7. [TagoRun](/docs/tagoio/tagorun/index.md) and [Run users](/docs/tagoio/tagorun/getting-started/user-management.md)
+8. [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries.md)
 
 #### Expiration and Auto-Generated Tokens
 
