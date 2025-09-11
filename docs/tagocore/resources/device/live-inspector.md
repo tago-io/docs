@@ -6,18 +6,20 @@ slug: /tagocore/device/live-inspector
 
 # Live Inspector
 
-Live Inspector is a useful tool for developers to debug [Payload Parser scripts](/docs/tagocore/resources/device/payload-parser.md) and monitor traffic **to** and **from** [Devices](/docs/tagocore/device).
+The Live Inspector is a real-time monitoring tool that shows you exactly what data is flowing between TagoCore and your [Devices](/docs/tagocore/device). It's perfect for troubleshooting connection issues, testing [Payload Parser scripts](/docs/tagocore/resources/device/payload-parser.md), and watching your device communication in action.
 
-## How to activate it
+Think of it as a window into your device's communication - you can see every message sent and received, helping you understand what's happening behind the scenes.
 
-To activate the Live Inspector of a Device, click the&nbsp; <img src="/docs_imagem/tagocore/device/live-inspector-play-button.png" height="25px" /> &nbsp;button.
+## Starting Live Inspector
 
-While the Live Inspector is active, all traffic related to the Device will be monitored in real time and each package sent will be recorded and displayed on the screen.
+To start monitoring your device traffic, click the&nbsp; <img src="/docs_imagem/tagocore/device/live-inspector-play-button.png" height="25px" /> &nbsp;button on your device page.
 
-:::info
-The Live Inspector will only stay activated while the Device page is open. It will be automatically deactivated once the page has been closed.
+Once activated, the Live Inspector will display all communication in real-time. Every data packet, request, and response will appear on screen as it happens, giving you instant visibility into your device's activity.
+
+:::info Session-Based Monitoring
+Live Inspector only works while you have the device page open in your browser. It automatically stops when you close or navigate away from the page.
 :::
 
-## How to deactivate it
+## Stopping Live Inspector
 
-To deactivate the Live Inspector of a Device, click the&nbsp; <img src="/docs_imagem/tagocore/device/live-inspector-stop-button.png" height="25px" /> &nbsp;button.
+To stop monitoring and clear the display, click the&nbsp; <img src="/docs_imagem/tagocore/device/live-inspector-stop-button.png" height="25px" /> &nbsp;button.
