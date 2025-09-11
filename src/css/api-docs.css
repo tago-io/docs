@@ -1,0 +1,105 @@
+/* API Documentation specific styles - aggressive targeting */
+
+/* Use OpenAPI-specific selectors that definitely exist */
+.theme-api-markdown,
+.openapi__heading,
+.openapi-tabs__code-container,
+.openapi-explorer__request-container,
+.openapi-explorer__response-container {
+  /* Mark that we found API content */
+}
+
+/* Target any page that contains OpenAPI components */
+body:has(.theme-api-markdown) .main-wrapper,
+body:has(.openapi__heading) .main-wrapper {
+  max-width: none !important;
+  width: 100vw !important;
+}
+
+body:has(.theme-api-markdown) .container,
+body:has(.openapi__heading) .container {
+  max-width: none !important;
+  width: 100% !important;
+  padding: 0 3rem !important;
+}
+
+body:has(.theme-api-markdown) .theme-doc-markdown,
+body:has(.openapi__heading) .theme-doc-markdown {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+body:has(.theme-api-markdown) .row,
+body:has(.openapi__heading) .row {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Fallback - target pages with API in URL or class patterns */
+html[data-current-page*="api"] .main-wrapper,
+body[class*="api-"] .main-wrapper,
+.docs-wrapper[class*="api"] .main-wrapper {
+  max-width: none !important;
+  width: 100vw !important;
+}
+
+html[data-current-page*="api"] .container,
+body[class*="api-"] .container,
+.docs-wrapper[class*="api"] .container {
+  max-width: none !important;
+  width: 100% !important;
+  padding: 0 3rem !important;
+}
+
+/* Direct targeting of API content elements */
+.theme-api-markdown {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.theme-api-markdown .markdown {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* OpenAPI specific components styling */
+.openapi-explorer__request-container,
+.openapi-explorer__response-container,
+.openapi-tabs__code-container {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* API method cards styling */
+.api-method {
+  margin-bottom: 1rem;
+}
+
+/* Improve spacing for API endpoints */
+.openapi__heading {
+  margin-bottom: 1.5rem;
+  max-width: none !important;
+}
+
+/* Better spacing for API parameters */
+.openapi-tabs__schema-container {
+  margin: 1rem 0;
+  max-width: none !important;
+}
+
+/* More aggressive approach - target any element that might contain API docs */
+div:has(.openapi__heading),
+div:has(.theme-api-markdown) {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Nuclear option - make everything wider when API elements are present */
+.openapi__heading ~ * {
+  max-width: none !important;
+}
+
+.theme-api-markdown ~ * {
+  max-width: none !important;
+}

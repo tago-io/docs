@@ -1,3 +1,126 @@
+@import './api-docs.css';
+
+/* Direct API docs width override - placed here for maximum priority */
+.theme-api-markdown,
+.openapi__heading,
+.openapi-explorer__request-container,
+.openapi-explorer__response-container,
+.openapi-tabs__code-container {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Target the main containers when API elements are present */
+body:has(.theme-api-markdown) .main-wrapper,
+body:has(.openapi__heading) .main-wrapper {
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+body:has(.theme-api-markdown) .container,
+body:has(.openapi__heading) .container {
+  max-width: none !important;
+  width: 100% !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+/* Position navigation buttons at edges on API docs only */
+body:has(.theme-api-markdown) .pagination-nav,
+body:has(.openapi__heading) .pagination-nav {
+  max-width: none !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0 !important;
+  padding: 0 3rem !important;
+}
+
+/* Previous button - positioned on the left, always 200px wide */
+body:has(.theme-api-markdown) .pagination-nav__item--prev,
+body:has(.openapi__heading) .pagination-nav__item--prev {
+  width: 200px !important;
+  max-width: 200px !important;
+  flex: 0 0 200px !important;
+  margin-right: 0 !important;
+}
+
+/* Next button - positioned on the right, always 200px wide */
+body:has(.theme-api-markdown) .pagination-nav__item--next,
+body:has(.openapi__heading) .pagination-nav__item--next {
+  width: 200px !important;
+  max-width: 200px !important;
+  flex: 0 0 200px !important;
+  margin-left: auto !important;
+}
+
+/* When there's only a next button (first page), force it to the right */
+body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next,
+body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next {
+  margin-left: auto !important;
+}
+
+/* When there's only a prev button (last page), keep it on the left */
+body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev,
+body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev {
+  margin-right: auto !important;
+}
+
+body:has(.theme-api-markdown) .pagination-nav__link,
+body:has(.openapi__heading) .pagination-nav__link {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 1rem 1.5rem !important;
+}
+
+/* Show HTTP methods in sidebar for API endpoints */
+.api-method::before {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.api-method.get::before {
+  content: "GET";
+  background-color: #61affe;
+  color: white;
+}
+
+.api-method.post::before {
+  content: "POST";
+  background-color: #49cc90;
+  color: white;
+}
+
+.api-method.put::before {
+  content: "PUT";
+  background-color: #fca130;
+  color: white;
+}
+
+.api-method.delete::before {
+  content: "DELETE";
+  background-color: #f93e3e;
+  color: white;
+}
+
+.api-method.patch::before {
+  content: "PATCH";
+  background-color: #50e3c2;
+  color: white;
+}
+
+/* Ensure proper spacing and alignment in sidebar */
+.theme-doc-sidebar-item-link.api-method {
+  display: flex;
+  align-items: center;
+}
+
 :root {
   --c-blue-0: #f0f6ff;
   --c-blue-70: #4d8dff;
