@@ -13,7 +13,10 @@
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_close",
       "Bash(grep:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebFetch(domain:api.docs.tago.io)",
+      "Bash(npm run docusaurus:*)",
+      "Bash(npm run start:*)"
     ],
     "deny": [],
     "ask": []
