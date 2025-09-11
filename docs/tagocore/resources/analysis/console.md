@@ -6,36 +6,41 @@ slug: /tagocore/analysis/console
 
 # Analysis Console
 
-The Analysis Console shows the output of your Analysis's code, as well as any validation errors that happened before your Analysis executed.
+The Analysis Console is your window into what your Analysis is doing. It displays all output from your code, including debug messages, results, and any errors that occur during execution. Think of it as a real-time log of your Analysis activity.
 
-The latest logs from your code will always be on top of the Console, and each log will have a timestamp that indicates when the log was outputted.
+The console shows the most recent messages at the top, with each entry timestamped so you know exactly when something happened. There's no limit to how many log entries you can have.
 
-There are no log limits.
+## How to Add Log Messages
 
-## Adding logs
+TagoCore automatically captures anything your code prints out and displays it in the console. This works with standard output methods in any programming language:
 
-The Analysis system automatically picks up anything that your code outputs to the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) or [stderr](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)) streams and adds it to the logs.
+**For normal messages** (information, debug output):
+- **Node.js**: Use `console.log("Your message")`
+- **Python**: Use `print("Your message")`
+- **Any language**: Write to standard output (stdout)
 
-- To output normal logs to the Console, use the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) stream inside of your code (e.g. `console.log` in Node.js)
-- To output error logs to the Console, use the [stderr](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)) stream inside of your code (e.g. `console.error` in Node.js).
+**For error messages** (warnings, errors):
+- **Node.js**: Use `console.error("Error message")`
+- **Python**: Use `print("Error message", file=sys.stderr)`
+- **Any language**: Write to standard error (stderr)
 
-## Validation errors
+## Understanding Validation Errors
 
-Before your code can be executed via the Analysis system, TagoCore validates the **Binary executable path** and the **File path** to make sure that the files exist and that there is permission in the filesystem to use them.
+Before your Analysis runs, TagoCore checks that everything is set up correctly:
+- Does the executable file exist and can it be run?
+- Does your script file exist and can it be accessed?
+- Are the file permissions correct?
 
-If something goes wrong during this validation process, an error will be logged to the Console with details about the error. Your code will not be executed if a validation error happens.
+If any of these checks fail, you'll see a validation error in the console explaining what went wrong. Your Analysis won't run until these issues are fixed.
 
-## Clearing logs
+## Managing Console Output
 
-If you ever feel like there is too much information in your Console, feel free to click the &nbsp;<img src="/docs_imagem/tagocore/icons/ban.svg" width="15px"/> &nbsp;button to hide all the logs and make room for new ones.
+**Clear the Console**: When the console gets too cluttered, click the &nbsp;<img src="/docs_imagem/tagocore/icons/ban.svg" width="15px"/> &nbsp;button to hide current messages and start fresh.
 
-Clearing logs is a temporary measure, all the logs will be back if you leave the Analysis' page and come back.
+Note that clearing is temporary - if you navigate away and come back to your Analysis page, all the original log messages will reappear.
 
+**Download Logs**: Save your console output as a text file by clicking the &nbsp;<img src="/docs_imagem/tagocore/icons/download.svg" width="15px" /> &nbsp;button in the console header.
 
-## Downloading logs
-
-TagoCore offers the possibility to download the logs of your Analysis by clicking the &nbsp;<img src="/docs_imagem/tagocore/icons/download.svg" width="15px" /> &nbsp;button located in the Console header. The logs will be downloaded as a **.txt** file.
-
-:::info
-Only the logs currently visible on the screen will be downloaded. If you clear the logs before downloading, the log file will be empty.
+:::info Download Behavior
+Only currently visible messages are included in the download. If you've cleared the console, the downloaded file will be empty.
 :::
