@@ -1,0 +1,71 @@
+---
+id: delete-device-param
+title: "Delete Device Param"
+description: "Delete Device Param"
+sidebar_label: "Delete Device Param"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVk1v2zgQ/SsD5tBEkO10sSfdgsTYDVBsg3wgKBIDpaWxxEYiWXJkV2vovxcjSraceJEeCuzJMjl8780HZ7gVJHMvkidx48xKlQinj4oK6P9N7s0L6jMRiytcqxS9iMWl0SuV106SMhpupJOVWMTC8gcSOkbbCi0rFIm4qKkwTv3bGYtYKC0SUaDM0IlYOPxeK4eZSFay9BiLDH3qlO2ME3EpNSwRctToJGEGSkNjage21+qRSOncw+ltj8RS8YesbMnsX0bGE2JXRCx8WmAlRbIV1Fi28uSUzkXbxnvZaYqW3te7p5LWlirt3Jx98+ZXibIurNdXA5WVVBwQkavfxGXvLRy4e3rfWAwRCrhwfXX2i0K69P1+HR3suzIWzOSt0R497/9xfs4/Ie680r6mvsISOfUgIVRmKERYNtA5kRpNqIlR3mQm2b6VYpbfMOWEW2csOlJBiCdJtR/ZLY0pUWrRdorrko65046CsccIERxOibs6TdH7VV2WDdxiZdaY8dn2uK944KeIRYVUmKwrId5m6ZyzRMxC7mfbobbaWZcFP9v2SW45GejWw12tXSkSsd0upccHV7at4MJ4syorwZlSemU6rxV12b6Xubn+DBc31yIWjBlUf5yeT8/Fa19OYG8OVyatK9TU5eZZP+tLo0mmBHe1tcZRwmsT+EtRUS8TeCKZm4kyi9OCyPpkNjt71gAAbHRpqqrWipoEnnqK3dKRA8/65OTkBKLob7MBMlB7BCqUh2ysKYrY8r7A3TK3POXB21IRF9umUGkBXWvhgv/gEIY7M8AqDVSEZfQ0ZfZeoHVmrTL08CdkarVCh5oClu9dj6KQ9dCHoygBFhPoVs5U48se92IaU0MqNeRIwYbZg8kHD1bmON2HLYoOOj0zXJTewIs2G5AeLtLU1JrC7hS+mHqPe7wVvyH4B2lj3Mue4Np3kl570dtN4bMuG5BrqUq5LBHUaois2Wh0YFbdcR3MdzNBacI8DKUjIi60LBuvfFCRRNHRQMreKh7Th/QNW4fQz3oymYRqgrsQgc6aq3uuM2uUJrjFvK/vxwI1VPIlNK6+IrhO+Mz+YsRdDqvaE0hOhreYqlUTdFjuUE5J4pJiYFkC9lRTuCyM8QhG4xCnlSlLs2HGwcoDX+kMTB+5HE3upC1UKssec1d+D1rx4L0jSehhLj3BR44ehAg8DNdmwIZNgT3sqO/ylQmcfTRRekKn4QB+OqBG0cPtJ2b5OtxbadW09hP8OOUeMFVm9nWc3XnNXRse8TfIYxCWFjDf0YT1ZDPSxGPBGk+V7KZMP1qP9++DvribIYQ/aGZLqboR07Xgbd/Yn/rHgohFMno2hN7Oi8MIX8SiMJ74xLinL2LxvUbXiORpEYu1dIrruxsAmfL8/R/vsO1+mo5H/uH0P6q/X5S64dEgy5r/iVi8YDN++/C0+X8kDCFrF208PPM4IGF39woczr15SvA83A3iq/mn+f1ctO1PmorbgA==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Device Param"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/device/{deviceID}/params/{paramID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Device Param
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required) ","example":"(Type your device ID)","schema":{"type":"string"}},{"name":"paramID","in":"path","required":true,"description":"(Required) ","example":"(Type your param ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Deleting a Device Param by ID","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

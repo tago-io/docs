@@ -1,0 +1,71 @@
+---
+id: create-user
+title: "Create User"
+description: "Create User"
+sidebar_label: "Create User"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BUkC8JiuxCb0Ea7AZYNEUSIygcA6WlscRGIllyGNc1/O+LESVfGm/zsk+GqNE5h3M547UgWXqRTcVnZxaqRjh9VFRB9zR4MM+o34tUPMjSwN3kk0jFxKPzYpYKK51skPgpm66Flg2KTFwGqoxTPyUpo0UqlBaZqFAW6EQqHH4PymEhsoWsPaaiQJ87ZdvgTFxJDXOEEjU6SViA0rAywYHt5HkkUrr0cHrXIbE6/CEbWzP7l73gAbF6kQqfV9hIka0FrSxHeXJKl2KzSbeyr4wm1DR44Ig3Ve8IpbW1ytvLjr5583u6GUN5a7RHz+/Px2P+iTztyYGMbP3fWL/VsNm8SqxDyYkDyVWE4Nt75ZGN4V9hHCM382+Yk0iFdcaiIxWv4UlS8Htxc2NqlJpVOvShprcxWkVHUrbZ7F91x0Uu4D56/F5cnM/Hf14Ui/M/cvxQjMdn53O8mMs8Ih1PC8IkpqNBqkwhMmGNbxVKqkQmRi7oUWi7PhUe3Uvf8cHVIhPr9Vx6nLh6sxHcUK9OZSO48kovTHtDRW3VeKRubuHy841IBWNGSWfD8XAsfhV6Artw+Gjy0KCmtlpP+klz18ic4D5YaxxlfDaAvxRVYZ7BlGRpBsrMTisi67PR6P2TBgDgoCvTNEErWmUw7Si2R0c+eNInJycnkCR/myWQ4UYCqpSHYl9TknDkQ4XbY2U0KA/e1opgvoJlpfIK2gHlAX/nEPoh62GVBqriMXoaMnsn0Drzogr08AEKtVigQ00Ry3dXT5KP+KLyzsCSJAMWE+kWzjTRVIo2Ju3ErEyAXGookWIMs8eQdx6sLHG4S1uSHFgkM1zW3sCzNkuQHi7z3ASeY347hC8m7HCPG9orgk9IS+OedwQ3vpX06y26uCHc6noF8kWqWs5rBLXoM2uWGh2YRfu5juFbZ1WasHRt2Y6IuNSyXnnlo4osSY4mUnZR6T59LF//6hD6SQ8Gg9hNcB8z0EZzd1/rwhqlCe6w7Pr7sUINjXyOBtZ1BPcJf7MbjLStYRM8geRieIu5WqyiDst+4xSPu2uBZQ3YUQ3hqjLGIxiNfZ4Wpq7Nkhn7KA880gWYLnMlmtJJW6lc1h3mtv0mWvH6uidJ6OFaeoIzzh7EDEz6semxYVlhB7vnxDwykbPLJkpP6DQcwA971CSZ3P3DLF/7uZVWDYMf4NmQPWCozOjrfnWvA3swPOL/II9BWFrEfEMThsFyTxMvCvbcRrZ7p1/JB+Z84IfbPUH4g0a2lqpdNq31rjvfngoXeB2H/v9Kxa6eTQ8Me5aK7wHdSmTTWSpepFPcvPy0Sfv9z1b/jCv+b5PnaHkzvMg6HN+8s7018vn2/kFsNv8CFHw3EA==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create User"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/run/users"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create User
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Creating a RUN user","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"user":{"type":"string"}}}}},"example":{"status":true,"result":{"user":"62b086df27ce4d0012be6bac"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

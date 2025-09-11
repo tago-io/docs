@@ -1,0 +1,71 @@
+---
+id: generate-public-token
+title: "Generate Public Token"
+description: "Generate Public Token"
+sidebar_label: "Generate Public Token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zYQ/isH5kNTQfJb0qbVtyAJugDDGrQOii4JVlo6S2wkkiVPdjXD/32gKNly7CzbsHwxQh3vee65492tGPHMsviO3Rg1FwXC8RdBObT/RVP1iPI1C9klt/lMcZNa9hAyzQ0vkdC4qysmeYksZvhTC4N/kCiRhUxIFrMfFZqahczgj0oYTFk854XFkKVoEyM0CeXMpqJEyMQCJQgJuaqMDVNe23CJ+GjDUknKLRx/ar04QviTl7pwsGNIucOwSY4lZ/GKUa3dByEJMzRsvQ43HM8rypURf/IGuWWZI0/RvEzzgkuYIWQo0XDC1JGtVWVAt+JZJBIye5bq155xRE7bQ7wtGSGzXdpJgppe5ruF4loXImnCHH636p8CpV2ery87NM0p38EiU+1Jsw0YdiI+ntYagcPGL1xfvv5bLg8OymolLVr3fTIauR8fsztZP8X+4PMhZAYc4KaaFSKBaatuoiShJOdiT5J4tc9Dzb5j4pTWRmk0JDwLS5wq27ObKVUgl2zd0K0KetmHT/h+yOHOy9n7HrK5MiWnJjuEUWO1dn89obcMfXZ6nDwqG03ezk5P5rNodnKC0enZGY9m8/FZdDZKx3x0+v7dm7cT9oQKm4wmk2j0NpqMppOTeDyK37wfTN69+d3jP5cJfJqEEilXKYtZho0srqJiNtwUxXDVq7v10Obc4FA3PlytoFl0raYyBYvZajXjFm9NsV4zV7x7p7xkrpCEnKtGA0FNNU55pq4/wvnNNQuZ8+lpjwejwYg9DeYItuZwqZKqRElN9dzLe3mhJPGE4HOltTIUu7MIPgjKq1kMd8QzFQn1cJwTaRsPh6/vJQCAM7pQZVlJQXUMdy3E5ujAhXt5dHR0BEHwi1oCKagsAuXCQtrnFATOcprj5lgoCcKC1YUgmNWwzEWSQ1MOrmu9Mgjdm+7cCgmU+2O0NHDoLUFt1EKkaOEUUjGfo0FJ3pdtQw+CS1yIpJ0ZQRCDI+Ph5kaVvlOmjU3YkqlVBQmXkCF5G4fuTV5Z0DzDwVa2INiZSg7hvLAKHqVaArdwniSqkuS/DuCrqrZ+D3fpPYDfkJbKPG4Brm1D6WkUrd0APsqiBr7gouCzAkHMO2XVUqIBNW+uS2++GRfNYDJN2g6QOJe8qK2wnkUcBAeF5K1V2If36es+7bq+l1EU+WqCz16BxtpV95VMtRKS4BNmbX1/yVFCyR99V20rwtWJu7N9GGGTw7KyBNwlw2pMxLz2PLTrf0a4hmAax7wAbKEGcJErZRGUxE6nuSoKtXSInZUF96RTUK1yGarMcJ2LhBetz0353UrhZvJn4oQWrrglGDv1wCtw2z2bzjcsc2zd9iaDezIes1UTuSU0EnbcDzqvQXD76VeH8q17t1yLQWUjHA9cDxgINfzWz+5V5WYCfMH/gZ5z4qh5ny9wwipa9ji5saOVpZI3I6kd/8818J3OuBlQhD9pqAsumjHYNOFV29zvtpsEC1m8u1Y0/d3NAd/hH0KWK0vuUr+xP4Tt+uj6fiqsK/FnNrPVdsz/l13yYDiPWO/ttAteVM6yGS4LboTj9C/59Tal3aXpIIv2kMu6D9+x68u6fliH3WboGHmLzeLY3d1bglwom/n84WrK1uu/AJPIHS8=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Generate Public Token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dashboard/{dashboardID}/share/public"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Generate Public Token
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"expire_time","in":"query","required":false,"description":"Time given in hours,days,weeks,months (Required)","example":"1 day","schema":{"type":"integer"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"dashboardID","in":"path","required":true,"description":"(Required) ","example":"(Type a dashboard ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Generating a  Public Token","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"token":{"type":"string"},"expire_time":{"type":"string","format":"date-time"}}}}},"example":{"status":true,"result":{"token":"026b43fb-b33e-477a-bf17-70d1a0498562","expire_time":"2022-06-20T23:10:59.285Z"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

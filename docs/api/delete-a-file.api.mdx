@@ -1,0 +1,71 @@
+---
+id: delete-a-file
+title: "Delete a file"
+description: "Delete a file"
+sidebar_label: "Delete a file"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu3EYM/RWCfkgiaNdO0Se9ufa2DRA0gS8wAttAZiVKmng0o8xwvNks9O8FdfHKzqYFij4tljokD89wyNkhqypgdosfvSu1IXh9o7mG8d/iyj2QfYMp/q4NBbxPsVVeNcTkxWuHVjWEGZ5Grp3X3xVrZzFFbTHDmlRBHlP09DVqTwVmpTKBUiwo5F63PTjDM2VhTVCRJa+YCtAWti56aEdOgZi1rQK8vhgjCSX6pprWSPZPM/CChTKmGPKaGoXZDnnbCiqw17bCrrsXRqF1NlCQ77+cnMjPQLe3nDnLZHlx1Xvufh5rzkK1rdF5r8Dxl+Asdt3LSs/JkFQCCoQrppgPmST0D/6HErv1F8oZU2y9a8mzHkoIrDiGGW7tnCFlhaGnEA0fEmJOfx+DfaS9F17GPKcQymjMFi6ocY9UiG/XDQdLgX9zxVYi/Mdi5jRsNKb7iXC0l60hrl2BGRb9B9FDcY0ZHpd9o6YYyD9OTRq9wQx3u7UKdO1N12GXHrCqBqU3hO7FvrDVk0Kd9HXp+gI092d+pSr37gOcfnyHKUq+ge7b5cnyBF8WcQR7OJy7PDZkuZfozt5Z6TmVM1zGtnWeM7Et4A/NdVxncMuqcgvt7l/XzG3Ijo/f3FkAAAGduaaJVvM2g9sxxZPpgMOdPTo6OoIk+dNtgB3EQMC1DlDMOSWJIK9qejJrZ0EHCK3RDOstbGqd19DfN7mvrzzBdNOnsNoC14OZAi8l+0iw9e5RFxTgVyh0WZIny0OsMJaeJOf0qPNxCCVJBkJmSFd61wwzougx6Uhm6yLkykJFPGAk+wB5FaBVFS33siXJszEnGU5NcPBg3QZUgNM8d1GmgHxdwicX93EPz6cfEvxFvHH+YZ/gXegpvaxixC3hgzVbUI9KG7U2BLqclHUbSx5c2bvbAf40KLVlqnx/bAdInFpltkGHgUWWJAeFVCMqnacfjm/69Dz0nV0sFkM3weWgQI+W7l7ZonXaMlxQNfb3TU0WGvUwjL+xI6RPxGd/MdL+DJsYGJQcRmgp1+V24NHK1PNasbSUBFYGaEy1hLPauUDgLE06lc4Yt5GMEyqAXPcC3KhcRa7yqq11rswY86n9rq2WbXTJiinASgWGt6IeDApcT9dmig2bmsaws/EnV2bIOapJKjB5C8/CL6eoSXJ98V6yfJ7urWr1MoYFvV3KDFhqd/x5frqrKJsAbuh/oCdBhNoQ8184UVxsZpxkjLcucKP6YT8+DF4O7mcT8WkRMH3j49Yo3S+sfjDvxol+i+X09KhdYDHMB/l9il8j+S1mt/cpPiqvpXHlX5dODxBZAQ+0lZfGfK8L3MTDmzudPE7znFr+R+z9bB2dr96vrlaY4npciY0rxMurjbyD1AYzxBRdL0C/r3vbDo2yVVSVYMe3Q9d1fwNPek5A
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a file"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/files"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a file
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Deleting a file","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

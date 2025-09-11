@@ -1,0 +1,71 @@
+---
+id: get-entity-data-amount
+title: "Get Entity Data Amount"
+description: "Get Entity Data Amount"
+sidebar_label: "Get Entity Data Amount"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v4zYQ/SsD5rCJIH+k6Ek3IwnSAEV3kTgIFomxS0tjiRuJ5JIje11D/70YUbLlxGkvPSUmh2/efL3RTpDMvUiexRdnVqpEOH9SVED3azQ3r6gvRCxuNCnaikUsrHSyQkLHz3ZCywpFImY1FcapvyUpo0UslBaJKFBm6EQsHP6slcNMJCtZeoxFhj51yrbGibiSGpYIOWp0kjADpWFrage2I+WRSOncw/l9h8Sc8JesbMnevw6MR8ScRSx8WmAlRbITtLVs5ckpnYumife0sQ3rm8p6ylZScUSYXI1DV+fzrUWQGsJTuLu++FdfCwbz1miPnu9/m075T0hNe3JlNKGm0bx9ufsYa0hDWluqtM325Ic3mqN6k9XbkLSeaCZJgqxMrUnEIg1O2cs7qFMczPIHpvzQOmPRkQrReJJU+4Hd0pgSpWayDn1d0uBOacIcnWiaYSgHkJDq/tnldNo0zcmwIHQjXHNIsz6kCqkwmUhEji1RrmQiJiH8yW5f6mbCqfi2T4VHt+67uXalSMRut5QeH13ZNIKb5d2prAQXVumVaeNT1BZlLnNz9xlmX+5ELBgzML4cT8dT8TaOMziYw7VJ6wo1tVV40S+am0KmBA+1tcZRwmcjuFVU1MsEnknmZqTM4rwgsj6ZTC5eNAAAG12Zqqq1om0Cz52L/dGJBy/67OzsDKLoD7MBMlB7BCqUh2zIKYrYcl7g/lgZDcqDt6UiWG5hU6i0gHb4eHg/OYR+inpYpYGKcIyexuy9I2idWasMPfwOmVqt0KGmgOW70KPoGtcq7SQpihJgMsHdypkqCEbW2sQdma2pIZUacqRgw96DyScPVuY4PqQtio5Ejz3MSm/gVZsNSA+zNOWGCbdj+GrqA+5psXrn4C+kjXGvBwd3vqX0NorObgyfdbkFuZaqlMsSQa36zJqNRgdm1T7XwXyvmu2cubZsJ0jMtCy3XvnAIomik4mUnVU8dB/K118dQ7/o0WgUugkeOuVha+7uG51ZozTBPeZdfz8VqKGSr2wm+47gPuE3h8GI2xpWtSeQXAxvMVWrbeBhWYucksQtxcCyBOxcjeGqMMYjGI19nlamLM0mSGKw8sAjnYHpMpejyZ20hUpl2WHu2+9RK15NDyQJPdxIT3DJ2YOQgcd+bHps2BTYwQ4Ulkcm+OyyidITOg1H8OMeNYoe7/9kL9/7uZVWjWs/wssxa8BYmcn3YXVvatZneML/gR6DMLWA+R+csB5tBpx4AVjjqZLtPunW7YfafSSN+4VB+IsmtpSq3SetCu86XX/uVreIRTJc4kNpX8SiMJ7YeKjoi1j8rNFtRfK8iMVaOsXd3cp/pjz//8F3yu6wNcXhQwREfJpvdyg1k1zLsuZfIhavuD368mgWTdx/KjGJcD9LU7Q0ePl+4y8GO+/2Zi6a5h/HxF2y
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Entity Data Amount"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/entity/{entity_id}/data_amount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Entity Data Amount
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"entity_id","in":"path","required":true,"example":"(Type an entity ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting entity data amount","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"integer"}}},"example":{"status":true,"result":100}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: edit-device-configuration-parameter
+title: "Edit Device Configuration Parameter"
+description: "Edit Device Configuration Parameter"
+sidebar_label: "Edit Device Configuration Parameter"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9V9tu2zgQ/ZXB5KGJINvpYp+EooA3CXYDFE2QC4oiMVBaGktsJFIlqbiuoX9fjEjZcuL0hsU+JaGGcw7PXLNGJ3KLyR2+J7fU5gEOP0hXQPhrdKMfSB3hLMZaGFGRI8PWa1SiIkxw2rhCG/lNOKkVxigVJliQyMhgjIa+NNJQhslClJZizMimRtadcYJTUAHUMQzkpMgIRxlIBSvdGHAFbWwsOSdVbjFG+iqqumT8j2y1QxZjtGlBlcBkjW5Vs5V1Rqoc2zbeELdkJL1vqnlHtKNdC1fskHamecb5lB5lSnBNRooSvAMwlEvryFAGwsGNyPX5xU/yEPsEfIHJz/jLOn7np7/tasbGttbKkuXvfxwf8w8f0+7kRCtHyo1uupvrl30NAyXqupRp98rJZ6sVk34i7VkmXRfxVKuFzBvTWcMm8TDG1EMz1jOH+5jo+WdKHcZYG12TcdK/yZBtSreXsXXCNXbwaa51SYL5Dt+z9dFnxMkO6cueNNzWGac0bl1zBNq288dhIev+0tmKff7q84QxYsWRdlTZHz9bZnuf/ECrveePomxov0iB5NPc2ZHozgPim60W56dweHF5c37xfvru6C0GaHzjHfBBwBweeTB8EwLxFttZ+0LyfD8UGGNFrtBMqta204erI8GJVI5ybz8J/Way7kupnXQpaDsu5rHvgI0pMcH1ei4s3ZqybZHL8NmpqJBrimN4tY322VOVgoa9JJs/e0E2B0GOXvMZ1/lCd9GQris1339gennO98lYr9Dr8fH4GJ/qdgBbczjVaVORcp0Q9+pecamL1MF1U9fauITPRvC3dEUzT+DOiVyPpJ4dFs7VNplMju4VAAAbneiqapR0qwTuAsTmaM+Fe3VwcHAAUfSPXoLT0FgCV0gL2ZBTFLHlTUGbY46wtGDrUjqYr2BZyLQI82Slm1eGoO99vVupui4Tam/M6IFgbfSjzMjCn5DJxYIMKed92fD0KPI55mdNFCXAZDzcwujKjy2fOXEgs9INpILHm/M2jO5NXlmoRU7jrWxRdGn0QpYDhGlpNTwovQRhYZqmuuHmy1/H8FE3W78ddu2vb8blc4CdcckA57aj9PQVwW4MF6pcgXgUshTzkkAuemX1UpEBvdiZ0/3sHtTUHhJTJcqVldazSKJor5AiWMVDeB++/tOu63s1Go18NsG1V6Cz5uw+U1mtpXJwRXnI7w8FKajEA5uJPiM4T/jOtjDiLoZVYx0IDoatKZWLledRc5M1Ujjq9gCtRAkUoMZwUmhtCbSiXqeFLku9ZMTeygJ3iwx0UC4nnRtRFzIVZfC5Sb9bJXlBunbCkYUzYR28ZvXAK3Dbl03vG5YFBbeDkcIl4zGDmiR4f1Gw437ce42i26t3jPKpr1tRy3FjR/R6zD1gLPXk0zC6Zw0PHvhA/wE9dsLUvM8fcKJmtBxw4mHFrb4S3QANO9LPzYqdPrmZdY6+ukldCqnYd9ft12GM3OEg5THGUBAYYzLYysIsmcVY8AxK7nZGyCzGLw2ZFSZ3M27+RnLOd2Mik5Z/f2GZHiwPeHgVOt4R/Mq6uveF/aahVoNhtB1Tgy2ap99vcfw96N3F+X8G38SznbVx//8OB8l/3tmQt9ef78Bxf2OaplS779rOBuvL5cX1DcY4D3tjpTO+Y8SSV32x9FR193K/8PLZGkuh8kbkbBt28LZt/wU9es8e
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit Device Configuration Parameter"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/integration/network/{deviceID}/params"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Edit Device Configuration Parameter
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"A network token generated in your the network settings","example":"Your Network-Token","schema":{"type":"string"}},{"name":"serieNumber","in":"path","required":true,"description":"Device Serial Number registered at TagoIO","schema":{"type":"string"}},{"name":"authorization","in":"path","required":true,"schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"key":{"type":"string"},"value":{"type":"string"},"sent":{"type":"string"}}}},"example":[{"id":"<Parameter ID (OPTIONAL)>","key":"<string>","value":"<string>","sent":"<boolean>"}]}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Edit the configuration parameter","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string"},"status":{"type":"boolean"}}},"example":{"result":"Device Configuration Parameter Updated","status":true}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

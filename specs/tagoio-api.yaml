@@ -1,0 +1,5904 @@
+---
+openapi: 3.0.0
+info:
+  title: TagoIO API
+  description: This is a simple API
+  contact:
+    email: contact@tago.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://api.tago.io
+  description: TagoIO API
+tags:
+- name: Devices
+  description: Data operations using Device-Token
+- name: Account
+  description: Operations with Accounts
+- name: Account.devices
+  description: Operations with Devices using account
+- name: Account.run
+  description: Operations with Run
+- name: Account.buckets
+  description: Operations with Buckets
+- name: Account.dashboards
+  description: dashboard
+- name: Account.dashboards.widgets
+  description: Operations with Dashboard's Widgets
+- name: Network
+  description: Operations with Networks
+paths:
+  /info:
+    get:
+      tags:
+      - Devices
+      - Network
+      summary: Current Device or Network Information
+      description: |
+        Get information about the current device or network depending on the chosen token type
+      parameters:
+      - name: device-token
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      - name: token
+        in: header
+        description: Network token
+        required: false
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/NetworkToken'
+      - name: details
+        in: query
+        description: Only for Network
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: get information about current device or network successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+  /data:
+    get:
+      tags:
+      - Devices
+      summary: Get data from device
+      description: |
+        Get data from the bucket attached to the device.
+      parameters:
+      - name: device-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      - name: variables
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One variable
+            value:
+            - Variable A
+          ab:
+            summary: Two variables
+            value:
+            - Variable A
+            - Variable B
+      - name: origins
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One origin
+            value:
+            - Origin A
+          ab:
+            summary: Two origins
+            value:
+            - Origin A
+            - Origin B
+      - name: series
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One series
+            value:
+            - Series A
+          ab:
+            summary: Two series
+            value:
+            - Series A
+            - Series B
+      - name: ids
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One ID
+            value:
+            - ID A
+          ab:
+            summary: Two IDs
+            value:
+            - ID A
+            - ID B
+      - name: values
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            oneOf:
+            - type: string
+            - type: number
+            - type: boolean
+        examples:
+          none:
+            summary: No filter
+            value: []
+          String:
+            summary: String value query
+            value:
+            - text value
+          Number:
+            summary: Number value query
+            value:
+            - 5
+            - 10
+          Boolean:
+            summary: Boolean value query
+            value:
+            - true
+      - name: start_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/start_date'
+        examples:
+          none:
+            summary: No filter
+            value: ""
+          date:
+            summary: Date
+            value: 2021-01-01
+          date2:
+            summary: Datetime
+            value: 2021-01-01T08:00:00Z
+      - name: end_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/end_date'
+        examples:
+          none:
+            summary: No filter
+            value: ""
+          date:
+            summary: Date
+            value: 2021-01-01
+          date2:
+            summary: Datetime
+            value: 2021-01-01T08:00:00Z
+      - name: query
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          enum:
+          - last_item
+          - last_value
+          - last_location
+          - last_insert
+          - first_item
+          - first_value
+          - first_location
+          - first_insert
+          - avg
+          - sum
+          - min
+          - max
+          - count
+      - name: qty
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+        examples:
+          twenty:
+            summary: Twenty
+            value: 20
+          eight:
+            summary: Eight
+            value: 8
+      - name: details
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: ordination
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: descending
+          enum:
+          - descending
+          - ascending
+      - name: skip
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+        examples:
+          zero:
+            summary: Don't skip
+            value: 0
+          two:
+            summary: Skip Two
+            value: 2
+      responses:
+        "200":
+          description: data retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+    post:
+      tags:
+      - Devices
+      summary: Send data to device
+      description: |
+        Send data to the bucket attached to the device
+      parameters:
+      - name: device-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/DataToSend'
+        required: true
+      responses:
+        "200":
+          description: data sent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Devices
+      summary: Delete data from device
+      description: |
+        Delete data from the current bucket in the device
+      parameters:
+      - name: device-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      - name: variables
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One variable
+            value:
+            - Variable A
+          ab:
+            summary: Two variables
+            value:
+            - Variable A
+            - Variable B
+      - name: origins
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One origin
+            value:
+            - Origin A
+          ab:
+            summary: Two origins
+            value:
+            - Origin A
+            - Origin B
+      - name: series
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One series
+            value:
+            - Series A
+          ab:
+            summary: Two series
+            value:
+            - Series A
+            - Series B
+      - name: ids
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+        examples:
+          none:
+            summary: No filter
+            value: []
+          a:
+            summary: One ID
+            value:
+            - ID A
+          ab:
+            summary: Two IDs
+            value:
+            - ID A
+            - ID B
+      - name: values
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            oneOf:
+            - type: string
+            - type: number
+            - type: boolean
+        examples:
+          none:
+            summary: No filter
+            value: []
+          String:
+            summary: String value query
+            value:
+            - text value
+          Number:
+            summary: Number value query
+            value:
+            - 5
+            - 10
+          Boolean:
+            summary: Boolean value query
+            value:
+            - true
+      - name: start_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/start_date_1'
+        examples:
+          none:
+            summary: No filter
+            value: ""
+          date:
+            summary: Date
+            value: 2021-01-01
+          date2:
+            summary: Datetime
+            value: 2021-01-01T08:00:00Z
+      - name: end_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/end_date_1'
+        examples:
+          none:
+            summary: No filter
+            value: ""
+          date:
+            summary: Date
+            value: 2021-01-01
+          date2:
+            summary: Datetime
+            value: 2021-01-01T08:00:00Z
+      - name: query
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: last_item
+          enum:
+          - default
+          - last_item
+          - last_value
+          - last_location
+          - last_insert
+          - first_item
+          - first_value
+          - first_location
+          - first_insert
+          - avg
+          - sum
+          - min
+          - max
+          - count
+      - name: qty
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+        examples:
+          twenty:
+            summary: Twenty
+            value: 20
+          eight:
+            summary: Eight
+            value: 8
+      - name: details
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: ordination
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: descending
+          enum:
+          - descending
+          - ascending
+      - name: skip
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+        examples:
+          zero:
+            summary: Don't skip
+            value: 0
+          two:
+            summary: Skip Two
+            value: 2
+      responses:
+        "200":
+          description: data deleted successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /device:
+    get:
+      tags:
+      - Account.devices
+      summary: List devices
+      description: |
+        Retrieves a list with all devices from the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+        examples:
+          none:
+            summary: No Filter
+          one:
+            summary: First page
+            value: 1
+          two:
+            summary: Second page
+            value: 2
+      - name: fields
+        in: query
+        description: Minimum two items
+        required: false
+        style: form
+        explode: true
+        schema:
+          minItems: 2
+          type: array
+          items:
+            type: string
+            enum:
+            - name
+            - description
+            - active
+            - visible
+            - tags
+            - serie_number
+            - connector
+            - network
+            - connector_parse
+            - parse_function
+            - id
+            - profile
+            - bucket
+            - last_output
+            - last_input
+            - updated_at
+            - created_at
+            - inspected_at
+          default:
+          - id
+          - name
+        examples:
+          none:
+            summary: No Filter
+            value: []
+          name_description:
+            summary: Name
+            value:
+            - name
+          all:
+            summary: All fields
+            value:
+            - name
+            - description
+            - active
+            - visible
+            - tags
+            - serie_number
+            - connector
+            - network
+            - connector_parse
+            - parse_function
+            - id
+            - profile
+            - bucket
+            - last_output
+            - last_input
+            - updated_at
+            - created_at
+            - inspected_at
+      - name: filter
+        in: query
+        description: All filters can be found in Schema DeviceInfoPartial
+        required: false
+        style: deepObject
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceInfoPartial'
+        examples:
+          none:
+            summary: No Filter
+            value: {}
+          id_one:
+            summary: Search for a device with id 1
+            value:
+              id: 1
+          active_name:
+            summary: Search for a device by name and active
+            value:
+              name: Device name
+              active: true
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 20
+        examples:
+          five:
+            summary: 5 results
+            value: 5
+          ten:
+            summary: 10 results
+            value: 10
+      - name: orderBy
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: name,asc
+          enum:
+          - name,asc
+          - name,desc
+          - visible,asc
+          - visible,desc
+          - active,asc
+          - active,desc
+          - last_input,asc
+          - last_input,desc
+          - last_output,asc
+          - last_output,desc
+          - created_at,asc
+          - created_at,desc
+          - updated_at,asc
+          - updated_at,desc
+        examples:
+          name_asc:
+            summary: Order by name ascending
+            value: name,asc
+          output_desc:
+            summary: Order by last input descending
+            value: last_output,desc
+      - name: resolveBucketName
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          default: false
+      responses:
+        "200":
+          description: List of devices retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_3'
+    post:
+      tags:
+      - Account.devices
+      summary: Create new Device
+      description: |
+        Create new Device on current account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeviceCreateInfo'
+        required: true
+      responses:
+        "200":
+          description: device created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_4'
+  /device/{{deviceID}}:
+    get:
+      tags:
+      - Account.devices
+      summary: Device Info
+      description: |
+        Get info of the device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: information of the device retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_5'
+    put:
+      tags:
+      - Account.devices
+      summary: Edit device
+      description: |
+        Modify any property of the device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeviceInfoPartial'
+        required: true
+      responses:
+        "200":
+          description: device edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account.devices
+      summary: Delete device
+      description: |
+        Deletes a device from the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: device deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /device/{{deviceID}}/params:
+    get:
+      tags:
+      - Account.devices
+      summary: List Device Params
+      description: |
+        List params for the device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: sent_status
+        in: query
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+        examples:
+          "true":
+            summary: Only sent parameters
+            value: true
+          "false":
+            summary: Only unsent parameters
+            value: false
+      responses:
+        "200":
+          description: Params from de device were retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_6'
+    post:
+      tags:
+      - Account.devices
+      summary: Create and Edit Device Params
+      description: |
+        Create and edit params for the device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfigurationParamsPartial'
+        required: true
+      responses:
+        "200":
+          description: Operation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /device/{{deviceID}}/params/{{paramID}}:
+    delete:
+      tags:
+      - Account.devices
+      summary: Delete Device Param
+      description: |
+        Delete param from the device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: paramID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: parameter deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /device/token:
+    post:
+      tags:
+      - Account.devices
+      summary: Create token
+      description: |
+        Generate and retrieve a new token
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenParams'
+            example:
+              device: device id
+              name: token name
+              expire_time: relative time (1 day, 8 hours) or never
+              permission: write or read or full or deny
+              serie_number: serial number of device
+              verification_code: verification code to validate middleware requests
+              middleware: middleware
+        required: true
+      responses:
+        "200":
+          description: token created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_7'
+  /device/token/{{deviceID}}:
+    get:
+      tags:
+      - Account.devices
+      summary: List of Tokens
+      description: |
+        Retrieves list of all tokens from device
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: deviceID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 1
+        examples:
+          one:
+            summary: First page
+            value: 1
+          two:
+            summary: Second page
+            value: 2
+      - name: fields
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - token
+            - device_id
+            - network_id
+            - name
+            - permission
+            - serie_number
+            - last_authorization
+            - expire_time
+            - created_at
+          default:
+          - name
+          - token
+          - permission
+        examples:
+          name_description:
+            summary: Name
+            value:
+            - name
+          all:
+            summary: All fields
+            value:
+            - token
+            - device_id
+            - network_id
+            - name
+            - permission
+            - serie_number
+            - last_authorization
+            - expire_time
+            - created_at
+      - name: filter
+        in: query
+        description: All filters can be found in Schema DeviceTokens
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/DeviceTokens'
+        examples:
+          serie_number:
+            summary: Search for a token with serie_number abc123
+            value:
+              serie_number: abc123
+          expire_name:
+            summary: Search for a token by name and expire time
+            value:
+              name: Token name
+              expire_time: never
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 20
+        examples:
+          five:
+            summary: 5 results
+            value: 5
+          ten:
+            summary: 10 results
+            value: 10
+      - name: orderBy
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: created_at,asc
+          enum:
+          - name,asc
+          - name,desc
+          - permission,asc
+          - permission,desc
+          - serie_number,asc
+          - serie_number,desc
+          - last_authorization,asc
+          - last_authorization,desc
+          - created_at,asc
+          - created_at,desc
+        examples:
+          name_asc:
+            summary: Order by name ascending
+            value: name,asc
+          output_desc:
+            summary: Order by serie number descending
+            value: serie_number,desc
+      responses:
+        "200":
+          description: List of tokens from device retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_8'
+  /device/params:
+    get:
+      tags:
+      - Devices
+      summary: Get parameters the configuration parameters of the device
+      description: |
+        Get parameters from the current device
+      parameters:
+      - name: sent_status
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+        examples:
+          "true":
+            summary: Only read parameters
+            value: true
+          "false":
+            summary: Only unread parameters
+            value: false
+      - name: device-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      responses:
+        "200":
+          description: parameters retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_6'
+  /device/params/{{genericID}}:
+    put:
+      tags:
+      - Devices
+      summary: Mark a configuration parameter as read
+      description: |
+        Mark parameter as read on current device
+      parameters:
+      - name: genericID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: device-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/DeviceToken'
+      responses:
+        "200":
+          description: parameter marked as read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /account:
+    get:
+      tags:
+      - Account
+      summary: Current account information
+      description: |
+        Get all information from current account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      responses:
+        "200":
+          description: get information about current account successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_9'
+    put:
+      tags:
+      - Account
+      summary: Edit Account
+      description: |
+        Edit current account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PartialAccountInfo'
+        required: true
+      responses:
+        "200":
+          description: account edited successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    post:
+      tags:
+      - Account
+      summary: Create Account
+      description: |
+        Create new TagoIO account
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountCreateInfo'
+        required: true
+      responses:
+        "200":
+          description: account created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account
+      summary: Delete Account
+      description: |
+        Delete current Account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      responses:
+        "200":
+          description: account deleted successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /account/profile/token:
+    post:
+      tags:
+      - Account
+      summary: Generate Token
+      description: |
+        Generates and retrieves a new token for the account
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenCreateInfo'
+        required: true
+      responses:
+        "200":
+          description: token created successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_10'
+  /account/login:
+    post:
+      tags:
+      - Account
+      summary: Login to Account
+      description: |
+        Login to account using email and password
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Credentials'
+        required: true
+      responses:
+        "200":
+          description: logged in
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_11'
+  /run:
+    get:
+      tags:
+      - Account.run
+      summary: Get information
+      description: |
+        Retrieve information about Run
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      responses:
+        "200":
+          description: information retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_12'
+    put:
+      tags:
+      - Account.run
+      summary: Edit information
+      description: |
+        Edit information about Run
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RunInfoPartial'
+        required: true
+      responses:
+        "200":
+          description: information edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /run/users:
+    get:
+      tags:
+      - Account.run
+      summary: List Users
+      description: |
+        List users from Run
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 1
+        examples:
+          one:
+            summary: First page
+            value: 1
+          two:
+            summary: Second page
+            value: 2
+      - name: fields
+        in: query
+        description: Need zero or more than one selected
+        required: false
+        style: form
+        explode: true
+        schema:
+          minItems: 2
+          type: array
+          items:
+            type: string
+            enum:
+            - name
+            - email
+            - timezone
+            - company
+            - phone
+            - language
+            - tags
+            - active
+            - id
+            - profile
+            - newsletter
+            - last_login
+            - created_at
+            - updated_at
+            - options
+          default:
+          - id
+          - name
+        examples:
+          none:
+            summary: No Filter
+            value: []
+          name_description:
+            summary: Name and Email
+            value:
+            - name
+            - email
+          all:
+            summary: All fields
+            value:
+            - name
+            - email
+            - timezone
+            - company
+            - phone
+            - language
+            - tags
+            - active
+            - id
+            - profile
+            - newsletter
+            - last_login
+            - created_at
+            - updated_at
+            - options
+      - name: filter
+        in: query
+        description: All filters can be found in Schema UserInfoPartial
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/UserInfoPartial'
+        examples:
+          none:
+            summary: No Filter
+            value: {}
+          id:
+            summary: Search for a user in Run with id 1
+            value:
+              id: 1
+          name_company:
+            summary: Search for user by name and company
+            value:
+              name: User name
+              company: Company name
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 20
+        examples:
+          five:
+            summary: 5 results
+            value: 5
+          ten:
+            summary: 10 results
+            value: 10
+      - name: orderBy
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: name,asc
+          enum:
+          - name,asc
+          - name,desc
+          - active,asc
+          - active,desc
+          - last_login,asc
+          - last_login,desc
+          - created_at,asc
+          - created_at,desc
+          - updated_at,asc
+          - updated_at,desc
+        examples:
+          name_asc:
+            summary: Order by name ascending
+            value: name,asc
+          created_at_desc:
+            summary: Order by creation date descending
+            value: created_at,desc
+      responses:
+        "200":
+          description: list of users
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_13'
+    post:
+      tags:
+      - Account.run
+      summary: Create User
+      description: |
+        Create user on Run
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreateInfo'
+        required: true
+      responses:
+        "200":
+          description: user created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /run/users/{{userID}}:
+    get:
+      tags:
+      - Account.run
+      summary: User Information
+      description: |
+        Get information about an user using userID
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: userID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: information about user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_14'
+    put:
+      tags:
+      - Account.run
+      summary: Edit User
+      description: |
+        Edit information about an user using userID
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: userID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInfoPartial'
+        required: true
+      responses:
+        "200":
+          description: user edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account.run
+      summary: Delete User
+      description: |
+        Delete user from Run using userID
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: userID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: user deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /run/users/{{userID}}/login:
+    get:
+      tags:
+      - Account.run
+      summary: Login as User
+      description: |
+        Login as User on Run
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: userID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: expire_time
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: 8 hours
+        examples:
+          months:
+            summary: 3 Months
+            value: 3 months
+          year:
+            summary: 1 Year
+            value: 1 year
+          hours:
+            summary: 20 Hours
+            value: 20 hours
+      responses:
+        "200":
+          description: login successfuly
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_15'
+  /run/notification/{{userID}}:
+    get:
+      tags:
+      - Account.run
+      summary: List of Notifications
+      description: |
+        List of notifications for an user
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: userID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: list of notifications retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_16'
+  /run/notification:
+    post:
+      tags:
+      - Account.run
+      summary: Create Notification
+      description: |
+        Create Notification for an user
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NotificationCreate'
+        required: true
+      responses:
+        "200":
+          description: notification created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_17'
+  /bucket:
+    get:
+      tags:
+      - Account.buckets
+      summary: List of Buckets
+      description: |
+        Retrieves list of all buckets from account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 1
+        examples:
+          one:
+            summary: First page
+            value: 1
+          two:
+            summary: Second page
+            value: 2
+      - name: fields
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - name
+            - description
+            - visible
+            - tags
+            - id
+            - data_retention
+            - data_retention_ignore
+            - profile
+            - database
+            - last_backup
+            - last_retention
+            - created_at
+            - updated_at
+          default:
+          - id
+          - name
+        examples:
+          none:
+            summary: No Filter
+            value: []
+          name_description:
+            summary: Name
+            value:
+            - name
+          all:
+            summary: All fields
+            value:
+            - name
+            - description
+            - visible
+            - tags
+            - id
+            - data_retention
+            - data_retention_ignore
+            - profile
+            - database
+            - last_backup
+            - last_retention
+            - created_at
+            - updated_at
+      - name: filter
+        in: query
+        description: All filters can be found in Schema BucketInfoPartial
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/BucketInfoPartial'
+        examples:
+          name_visible:
+            summary: Search for buckets by name and visibility
+            value:
+              name: Bucket name
+              visible: false
+          profile:
+            summary: Search for buckets by profile id
+            value:
+              profile: abc123
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 20
+        examples:
+          five:
+            summary: 5 results
+            value: 5
+          ten:
+            summary: 10 results
+            value: 10
+      - name: orderBy
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: name,asc
+          enum:
+          - name,asc
+          - name,desc
+          - visible,asc
+          - visible,desc
+          - data_retention,asc
+          - data_retention,desc
+          - created_at,asc
+          - created_at,desc
+          - updated_at,asc
+          - updated_at,desc
+        examples:
+          name_asc:
+            summary: Order by name ascending
+            value: name,asc
+          output_desc:
+            summary: Order by creation date descending
+            value: created_at,desc
+      responses:
+        "200":
+          description: list of buckets retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_18'
+    post:
+      tags:
+      - Account.buckets
+      summary: Create Bucket
+      description: |
+        Generate and retrieves a new bucket for the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BucketCreateInfo'
+      responses:
+        "200":
+          description: Bucket created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_19'
+  /bucket/{{bucketID}}:
+    get:
+      tags:
+      - Account.buckets
+      summary: Bucket Information
+      description: |
+        Retrieves information about the bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: list of buckets retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_18'
+    put:
+      tags:
+      - Account.buckets
+      summary: Edit Bucket
+      description: |
+        Modify any property of the bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BucketCreateInfoPartial'
+      responses:
+        "200":
+          description: Bucket edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account.buckets
+      summary: Delete Bucket
+      description: |
+        Deletes a bucket from the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: bucket deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /bucket/{{bucketID}}/data_amount:
+    get:
+      tags:
+      - Account.buckets
+      summary: Bucket Data Amount
+      description: |
+        Retrieves amount of data on the bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: amount of data retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_20'
+  /bucket/{{bucketID}}/variable:
+    get:
+      tags:
+      - Account.buckets
+      summary: List variables on Bucket
+      description: |
+        Retrieves a list of variables inside the bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          default: false
+      - name: deleted
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          default: false
+      - name: resolveOriginName
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          default: false
+      responses:
+        "200":
+          description: list of variables retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_21'
+  /bucket/{{bucketID}}/device:
+    get:
+      tags:
+      - Account.buckets
+      summary: Get all Devices of Bucket
+      description: |
+        Get all devices that are associated with this bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: bucketID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: list of devices retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_22'
+  /data/export:
+    post:
+      tags:
+      - Account.buckets
+      summary: Export Data
+      description: |
+        Export data from bucket
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: output
+        in: query
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+          - xml
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body'
+        required: true
+      responses:
+        "200":
+          description: Data exported
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /dashboard:
+    get:
+      tags:
+      - Account.dashboards
+      summary: List Dashboards
+      description: |
+        Retrieves a list with all dashboards from the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 1
+        examples:
+          none:
+            summary: No Filter
+          one:
+            summary: First page
+            value: 1
+          two:
+            summary: Second page
+            value: 2
+      - name: fields
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          minItems: 2
+          type: array
+          items:
+            type: string
+            enum:
+            - label
+            - arrangement
+            - tags
+            - visible
+            - id
+            - created_at
+            - updated_at
+            - last_access
+            - group_by
+            - tabs
+            - icon
+            - background
+            - type
+            - blueprint_device_behavior
+            - blueprint_selector_behavior
+            - theme
+            - setup
+            - shared
+          default:
+          - id
+          - label
+        examples:
+          none:
+            summary: No Filter
+            value: []
+          label_id:
+            summary: Label and Id
+            value:
+            - id
+            - label
+          all:
+            summary: All fields
+            value:
+            - label
+            - arrangement
+            - tags
+            - visible
+            - id
+            - created_at
+            - updated_at
+            - last_access
+            - group_by
+            - tabs
+            - icon
+            - background
+            - type
+            - blueprint_device_behavior
+            - blueprint_selector_behavior
+            - theme
+            - setup
+            - shared
+      - name: filter
+        in: query
+        description: All filters can be found in Schema FilterDashboardInfoPartial
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/FilterDashboardInfoPartial'
+        examples:
+          none:
+            summary: No Filter
+            value: {}
+          type:
+            summary: Search for dashboards by type
+            value:
+              type: Dashboard type
+          id:
+            summary: Search for dashboards by id
+            value:
+              id: abc123
+      - name: amount
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: number
+          default: 20
+        examples:
+          five:
+            summary: 5 results
+            value: 5
+          ten:
+            summary: 10 results
+            value: 10
+      - name: orderBy
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+          default: label,asc
+          enum:
+          - name,asc
+          - name,desc
+          - label,asc
+          - label,desc
+          - active,asc
+          - active,desc
+          - created_at,asc
+          - created_at,desc
+          - updated_at,asc
+          - updated_at,desc
+        examples:
+          name_asc:
+            summary: Order by name ascending
+            value: name,asc
+          label_asc:
+            summary: Order by label ascending
+            value: label,asc
+      responses:
+        "200":
+          description: list of dashboards retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_23'
+    post:
+      tags:
+      - Account.dashboards
+      summary: Create Dashboard
+      description: |
+        Create and Retrieves a new dashboard from the account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DashboardCreateInfo'
+        required: true
+      responses:
+        "200":
+          description: dashboard created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_24'
+  /dashboard/{{dashboardID}}:
+    get:
+      tags:
+      - Account.dashboards
+      summary: Get Information
+      description: |
+        Get information about the dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Dashboard edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_25'
+    put:
+      tags:
+      - Account.dashboards
+      summary: Edit Dashboard
+      description: |
+        Modify any property of the dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DashboardInfoPartial'
+      responses:
+        "200":
+          description: Dashboard edited
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account.dashboards
+      summary: Delete Dashboard
+      description: |
+        Delete the dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Dashboard deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /dashboard/{{dashboardID}}/duplicate:
+    post:
+      tags:
+      - Account.dashboards
+      summary: Duplicate dashboard
+      description: |
+        Duplicate the dashboard to your own account
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_1'
+      responses:
+        "200":
+          description: dashboard duplicated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_26'
+  /dashboard/{{dashboardID}}/share/public:
+    get:
+      tags:
+      - Account.dashboards
+      summary: Generate Public Token
+      description: |
+        Generate a new public token for the dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: expire_time
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/expire_time'
+        examples:
+          never:
+            summary: Never expire
+            value: never
+          date:
+            summary: Date
+            value: 2021-01-01
+      responses:
+        "200":
+          description: Public token generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_27'
+  /dashboard/{{dashboardID}}/devices:
+    get:
+      tags:
+      - Account.dashboards
+      summary: List Devices related to Dashboard
+      description: |
+        List of devices related to this dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: devices related to dashboard retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_28'
+  /dashboard/{dashboardID}/analysis:
+    get:
+      tags:
+      - Account.dashboards
+      summary: List Analysis related to Dashboard
+      description: |
+        List of analysis related to this dashboard
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: analysis related to dashboard retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_29'
+  /dashboard/{{dashboardID}}/widget:
+    post:
+      tags:
+      - Account.dashboards.widgets
+      summary: Create Dashboard Widget
+      description: |
+        Create a Dashboard Widget, after created it is not added into the dashboard arrangement, is necessary to edit the dashboard to include it
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WidgetInfo'
+      responses:
+        "200":
+          description: widget created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_30'
+  /dashboard/{{dashboardID}}/widget/{{widgetID}}:
+    get:
+      tags:
+      - Account.dashboards.widgets
+      summary: Get Widget Information
+      description: |
+        Get information about the dashboard widget
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: widget created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_31'
+    put:
+      tags:
+      - Account.dashboards.widgets
+      summary: Edit Widget
+      description: |
+        Edit dashboard widget
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WidgetInfoPartial'
+      responses:
+        "200":
+          description: widget created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+    delete:
+      tags:
+      - Account.dashboards.widgets
+      summary: Delete Widget
+      description: |
+        Delete dashboard widget, but after deleted, it is not removed from the dashboard arrangement, is necessary to edit the dashboard to remove it
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: widget deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /data/{{dashboardID}}/{{widgetID}}:
+    get:
+      tags:
+      - Account.dashboards.widgets
+      summary: Get Widget Data
+      description: |
+        Get all data of the dashboard widget
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: overwrite_start_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/Any'
+      - name: overwrite_end_date
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/Any'
+      - name: overwrite_timezone
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          $ref: '#/components/schemas/Any'
+      responses:
+        "200":
+          description: data retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_32'
+    post:
+      tags:
+      - Account.dashboards.widgets
+      summary: Update Widget Data
+      description: |
+        Update value of variable for the current widget
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: bypass_bucket
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+          default: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "200":
+          description: data updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_32'
+    delete:
+      tags:
+      - Account.dashboards.widgets
+      summary: Delete Widget Data
+      description: |
+        Delete data by it's id, bucket and variable must be associeted with the widget
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: ids
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: data deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /dashboard/{{dashboardID}}/widget/{{widgetID}}/token:
+    get:
+      tags:
+      - Account.dashboards.widgets
+      summary: Generate Token
+      description: |
+        Generate a new token for the embed widgets
+      parameters:
+      - name: account-token
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/AccountToken'
+      - name: dashboardID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: widgetID
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: token generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_33'
+  /integration/network/resolve/{{serialNumber}}:
+    get:
+      tags:
+      - Network
+      summary: Get Token
+      description: |
+        Get a valid token using token serie
+      parameters:
+      - name: token
+        in: header
+        description: Network token
+        required: false
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/NetworkToken'
+      - name: serialNumber
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        examples:
+          one:
+            summary: 01-02-03-04-05-06-07-08
+            value: "0102030405060708"
+      - name: details
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: got a valid token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+  /integration/network/resolve/{{serialNumber}}/{{authorization}}:
+    get:
+      tags:
+      - Network
+      summary: Get Token
+      description: |
+        Get a valid token using token serie
+      parameters:
+      - name: token
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/NetworkToken'
+      - name: serialNumber
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        examples:
+          one:
+            summary: 01-02-03-04-05-06-07-08
+            value: "0102030405060708"
+      - name: authorization
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: details
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: got a valid token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+components:
+  schemas:
+    Any: {}
+    Data:
+      required:
+      - origin
+      - time
+      - variable
+      type: object
+      properties:
+        id:
+          type: string
+        variable:
+          type: string
+          example: temperature
+        value:
+          example: 55
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+        location:
+          $ref: '#/components/schemas/Data_location'
+        metadata:
+          $ref: '#/components/schemas/Metadata'
+        serie:
+          type: string
+        unit:
+          type: string
+          example: F
+        origin:
+          type: string
+        time:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+    DeviceInfo:
+      required:
+      - active
+      - bucket
+      - connector
+      - connector_parse
+      - created_at
+      - description
+      - id
+      - inspected_at
+      - last_input
+      - last_output
+      - name
+      - network
+      - parse_function
+      - profile
+      - tags
+      - updated_at
+      - visible
+      type: object
+      properties:
+        id:
+          type: string
+        profile:
+          type: string
+        bucket:
+          $ref: '#/components/schemas/DeviceInfo_bucket'
+        connector:
+          type: string
+        network:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        active:
+          type: boolean
+        last_output:
+          type: string
+          format: date-time
+          nullable: true
+        last_input:
+          type: string
+          format: date-time
+          nullable: true
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceInfo_tags'
+        connector_parse:
+          type: boolean
+        parse_function:
+          type: string
+        updated_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+        inspected_at:
+          type: string
+          format: date-time
+          nullable: true
+        serie_number:
+          type: string
+    DeviceInfoPartial:
+      type: object
+      properties:
+        id:
+          type: string
+        profile:
+          type: string
+        bucket:
+          $ref: '#/components/schemas/DeviceInfo_bucket'
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        active:
+          type: boolean
+        last_output:
+          type: string
+          format: date-time
+          nullable: true
+        last_input:
+          type: string
+          format: date-time
+          nullable: true
+        connector:
+          type: string
+        network:
+          type: string
+        connector_parse:
+          type: boolean
+        parse_function:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceInfo_tags'
+        updated_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+        inspected_at:
+          type: string
+          format: date-time
+          nullable: true
+        serie_number:
+          type: string
+    DeviceListItem:
+      required:
+      - active
+      - bucket
+      - connector
+      - connector_parse
+      - created_at
+      - description
+      - id
+      - inspected_at
+      - last_input
+      - last_output
+      - name
+      - network
+      - parse_function
+      - profile
+      - tags
+      - updated_at
+      - visible
+      type: object
+      properties:
+        id:
+          type: string
+        profile:
+          type: string
+        bucket:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        active:
+          type: boolean
+        last_output:
+          type: string
+          format: date-time
+          nullable: true
+        last_input:
+          type: string
+          format: date-time
+          nullable: true
+        connector:
+          type: string
+        network:
+          type: string
+        connector_parse:
+          type: boolean
+        parse_function:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceInfo_tags'
+        updated_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+        inspected_at:
+          type: string
+          format: date-time
+          nullable: true
+        serie_number:
+          type: string
+    DeviceCreateInfo:
+      required:
+      - name
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        active:
+          type: boolean
+        visible:
+          type: boolean
+        configuration_params:
+          type: array
+          items:
+            $ref: '#/components/schemas/ConfigurationParams'
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        serie_number:
+          type: string
+        connector:
+          type: string
+        network:
+          type: string
+        connector_parse:
+          type: boolean
+        parse_function:
+          type: string
+    DeviceCreateResponse:
+      required:
+      - bucket
+      - device_id
+      - token
+      type: object
+      properties:
+        device_id:
+          type: string
+        bucket:
+          type: string
+        token:
+          type: string
+    DataToSend:
+      required:
+      - variable
+      type: object
+      properties:
+        variable:
+          type: string
+          example: temperature
+        value:
+          nullable: true
+          example: 55
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+        location:
+          $ref: '#/components/schemas/Data_location'
+        metadata:
+          $ref: '#/components/schemas/Metadata'
+        serie:
+          type: string
+        unit:
+          type: string
+          example: F
+        time:
+          nullable: true
+          example: 2015-11-03 13:44:33
+          oneOf:
+          - type: string
+            format: date-time
+          - type: string
+    Metadata:
+      type: object
+      additionalProperties:
+        oneOf:
+        - type: string
+        - type: number
+        - type: boolean
+        - $ref: '#/components/schemas/Metadata'
+    ConfigurationParams:
+      required:
+      - key
+      - sent
+      - value
+      type: object
+      properties:
+        sent:
+          type: boolean
+        key:
+          type: string
+        value:
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+        id:
+          type: string
+    ConfigurationParamsPartial:
+      type: object
+      properties:
+        id:
+          type: string
+        sent:
+          type: boolean
+        key:
+          type: string
+        value:
+          type: string
+    TagsObj:
+      required:
+      - key
+      - value
+      type: object
+      properties:
+        key:
+          type: string
+        value:
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+    TagsObjPartial:
+      type: object
+      properties:
+        key:
+          type: string
+        value:
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+    DeviceToken:
+      type: string
+      format: uuid
+      example: 5e12345a-d70a-4e2d-b83d-5c0123456789
+    AccountToken:
+      type: string
+      format: uuid
+      example: 12345678-12ab-1cd2-ef1f-3a123b4c567d
+    NetworkToken:
+      type: string
+      format: uuid
+      example: 5e12345a-d70a-4e2d-b83d-5c0123456789
+    AccountInfo:
+      required:
+      - active
+      - blocked
+      - created_at
+      - email
+      - id
+      - language
+      - last_login
+      - name
+      - options
+      - phone
+      - plan
+      - send_invoice
+      - stripe_id
+      - timezone
+      - type
+      - updated_at
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        timezone:
+          type: string
+        company:
+          type: string
+        newsletter:
+          type: boolean
+        developer:
+          type: boolean
+        active:
+          type: boolean
+        blocked:
+          type: boolean
+        id:
+          type: string
+        language:
+          type: string
+        last_login:
+          type: string
+          format: date-time
+          nullable: true
+        options:
+          $ref: '#/components/schemas/AccountInfo_options'
+        phone:
+          type: string
+          nullable: true
+        send_invoice:
+          type: boolean
+        stripe_id:
+          type: string
+          nullable: true
+        type:
+          type: string
+        plan:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+    PartialAccountInfo:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        timezone:
+          type: string
+        company:
+          type: string
+        newsletter:
+          type: boolean
+        developer:
+          type: boolean
+        active:
+          type: boolean
+        blocked:
+          type: boolean
+        id:
+          type: string
+        language:
+          type: string
+        last_login:
+          type: string
+          format: date-time
+          nullable: true
+        options:
+          $ref: '#/components/schemas/AccountInfo_options'
+        phone:
+          type: string
+          nullable: true
+        send_invoice:
+          type: boolean
+        stripe_id:
+          type: string
+          nullable: true
+        type:
+          type: string
+        plan:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+    TokenCreateInfo:
+      required:
+      - email
+      - name
+      - password
+      - profile_id
+      type: object
+      properties:
+        name:
+          type: string
+          example: token_name
+        profile_id:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+          format: password
+    Credentials:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+          format: password
+    LoginResponse:
+      required:
+      - company
+      - email
+      - id
+      - name
+      - profiles
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+        id:
+          type: string
+        email:
+          type: string
+        company:
+          type: string
+        name:
+          type: string
+        profiles:
+          type: array
+          items:
+            $ref: '#/components/schemas/Profile'
+    RunLoginResponse:
+      required:
+      - expire_date
+      - token
+      type: object
+      properties:
+        token:
+          type: string
+        expire_date:
+          oneOf:
+          - type: string
+            enum:
+            - never
+          - type: string
+            format: date-time
+    Profile:
+      required:
+      - account
+      - id
+      - logo_url
+      - name
+      type: object
+      properties:
+        account:
+          type: string
+        id:
+          type: string
+        name:
+          type: string
+        logo_url:
+          type: string
+          nullable: true
+    AccountCreateInfo:
+      required:
+      - cpassword
+      - email
+      - name
+      - password
+      - timezone
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+          format: password
+        cpassword:
+          type: string
+          format: password
+        country:
+          type: string
+        timezone:
+          type: string
+        company:
+          type: string
+        newsletter:
+          type: boolean
+        developer:
+          type: boolean
+    DeviceTokens:
+      type: object
+      properties:
+        token:
+          type: string
+        device_id:
+          type: string
+        network_id:
+          type: string
+        name:
+          type: string
+        permission:
+          type: string
+          enum:
+          - write
+          - read
+          - full
+          - deny
+        serie_number:
+          type: string
+          nullable: true
+        last_authorization:
+          type: string
+          format: date-time
+          nullable: true
+        verification_code:
+          type: string
+          nullable: true
+        expire_time:
+          oneOf:
+          - type: string
+            format: date-time
+          - type: string
+            enum:
+            - never
+        created_at:
+          type: string
+      default: {}
+    TokenParams:
+      required:
+      - device
+      - name
+      - permission
+      type: object
+      properties:
+        device:
+          type: string
+        name:
+          type: string
+        expire_time:
+          oneOf:
+          - type: string
+          - type: string
+            enum:
+            - never
+        permission:
+          type: string
+          enum:
+          - write
+          - read
+          - full
+          - deny
+        serie_number:
+          type: string
+        verification_code:
+          type: string
+        middleware:
+          type: string
+    TokenCreateResponse:
+      required:
+      - expire_date
+      - permission
+      - token
+      type: object
+      properties:
+        token:
+          type: string
+        expire_date:
+          oneOf:
+          - type: string
+            format: date-time
+          - type: string
+            enum:
+            - never
+        permission:
+          type: string
+          enum:
+          - write
+          - read
+          - full
+          - deny
+    RunInfo:
+      required:
+      - active
+      - email_domain
+      - email_templates
+      - favicon
+      - feature_devicewifisetup
+      - feature_geolocation
+      - integration
+      - logo
+      - name
+      - profile
+      - sidebar_buttons
+      - signup_fields
+      - signup_logo
+      - signup_logo_options
+      - signup_method
+      - sub_title
+      - theme
+      - url
+      type: object
+      properties:
+        profile:
+          type: string
+        active:
+          type: boolean
+        name:
+          type: string
+        sub_title:
+          type: string
+        url:
+          type: string
+        email_domain:
+          type: string
+          nullable: true
+        signup_method:
+          type: string
+        favicon:
+          type: string
+          nullable: true
+        logo:
+          type: string
+          nullable: true
+        signup_logo:
+          type: string
+          nullable: true
+        signup_logo_options:
+          type: object
+          additionalProperties: true
+        sidebar_buttons:
+          type: array
+          items:
+            $ref: '#/components/schemas/RunInfo_sidebar_buttons'
+        signup_fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/RunInfo_signup_fields'
+        email_templates:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/RunInfo_email_templates'
+        feature_devicewifisetup:
+          $ref: '#/components/schemas/RunInfo_feature_devicewifisetup'
+        feature_geolocation:
+          $ref: '#/components/schemas/RunInfo_feature_geolocation'
+        theme:
+          $ref: '#/components/schemas/RunInfo_theme'
+        integration:
+          type: object
+          additionalProperties: true
+    RunInfoPartial:
+      type: object
+      properties:
+        profile:
+          type: string
+        active:
+          type: boolean
+        name:
+          type: string
+        sub_title:
+          type: string
+        url:
+          type: string
+        email_domain:
+          type: string
+          nullable: true
+        signup_method:
+          type: string
+        favicon:
+          type: string
+          nullable: true
+        logo:
+          type: string
+          nullable: true
+        signup_logo:
+          type: string
+          nullable: true
+        signup_logo_options:
+          type: object
+        sidebar_buttons:
+          type: array
+          items:
+            $ref: '#/components/schemas/RunInfoPartial_sidebar_buttons'
+        signup_fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/RunInfoPartial_signup_fields'
+        email_templates:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/RunInfoPartial_email_templates'
+        feature_devicewifisetup:
+          $ref: '#/components/schemas/RunInfoPartial_feature_devicewifisetup'
+        feature_geolocation:
+          $ref: '#/components/schemas/RunInfoPartial_feature_geolocation'
+        theme:
+          $ref: '#/components/schemas/RunInfoPartial_theme'
+        integration:
+          type: object
+    UserInfoPartial:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        timezone:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string
+        language:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObjPartial'
+        active:
+          type: boolean
+        id:
+          type: string
+        profile:
+          type: string
+        newsletter:
+          type: boolean
+        last_login:
+          type: string
+          format: date-time
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        options:
+          type: object
+          additionalProperties: true
+    UserInfo:
+      required:
+      - active
+      - created_at
+      - email
+      - id
+      - last_login
+      - name
+      - newsletter
+      - options
+      - profile
+      - tags
+      - timezone
+      - updated_at
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        timezone:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string
+        language:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        active:
+          type: boolean
+        id:
+          type: string
+        profile:
+          type: string
+        newsletter:
+          type: boolean
+        last_login:
+          type: string
+          format: date-time
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        options:
+          type: object
+          additionalProperties: true
+    UserCreateInfo:
+      required:
+      - email
+      - name
+      - password
+      - timezone
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+          format: password
+        timezone:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string
+        language:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        active:
+          type: boolean
+    NotificationButton:
+      required:
+      - id
+      - label
+      type: object
+      properties:
+        label:
+          type: string
+        id:
+          type: string
+        color:
+          type: string
+        analysis:
+          type: string
+        url:
+          type: string
+    NotificationCreateInfo:
+      required:
+      - message
+      - title
+      type: object
+      properties:
+        title:
+          type: string
+        message:
+          type: string
+        buttons:
+          type: array
+          items:
+            $ref: '#/components/schemas/NotificationButton'
+        button_autodisable:
+          type: boolean
+    NotificationCreateInfoPartial:
+      type: object
+      properties:
+        title:
+          type: string
+        message:
+          type: string
+        buttons:
+          type: array
+          items:
+            $ref: '#/components/schemas/NotificationButton'
+        button_autodisable:
+          type: boolean
+    NotificationCreate:
+      allOf:
+      - required:
+        - run_user
+        type: object
+        properties:
+          run_user:
+            type: string
+      - $ref: '#/components/schemas/NotificationCreateInfo'
+    BucketInfo:
+      required:
+      - created_at
+      - data_retention
+      - data_retention_ignore
+      - database
+      - id
+      - last_backup
+      - last_retention
+      - name
+      - profile
+      - updated_at
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        id:
+          type: string
+        data_retention:
+          type: string
+        data_retention_ignore:
+          type: array
+          items: {}
+        profile:
+          type: string
+        database:
+          type: string
+        last_backup:
+          type: string
+        last_retention:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+    BucketInfoPartial:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObjPartial'
+        id:
+          type: string
+        data_retention:
+          type: string
+        data_retention_ignore:
+          type: array
+          items: {}
+        profile:
+          type: string
+        database:
+          type: string
+        last_backup:
+          type: string
+        last_retention:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+      default: {}
+    BucketCreateInfo:
+      required:
+      - name
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+    BucketCreateInfoPartial:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        visible:
+          type: boolean
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+    VariablesInfo:
+      required:
+      - origin
+      - variable
+      type: object
+      properties:
+        variable:
+          type: string
+        origin:
+          type: string
+        origin_name:
+          type: string
+        amount:
+          type: number
+        deleted:
+          type: array
+          items:
+            $ref: '#/components/schemas/VariablesInfo_deleted'
+    ExportBucketOption:
+      type: object
+      properties:
+        start_date:
+          type: string
+          format: date-time
+        end_date:
+          type: string
+          format: date-time
+    ExportBucket:
+      type: array
+      items:
+        $ref: '#/components/schemas/ExportBucket_inner'
+    Arrangement:
+      required:
+      - height
+      - widget_id
+      - width
+      - x
+      - "y"
+      type: object
+      properties:
+        widget_id:
+          type: string
+        x:
+          type: number
+        y:
+          type: number
+        width:
+          type: number
+        height:
+          type: number
+        tab:
+          type: string
+          nullable: true
+    ArrangementPartial:
+      type: object
+      properties:
+        widget_id:
+          type: string
+        x:
+          type: number
+        y:
+          type: number
+        width:
+          type: number
+        height:
+          type: number
+        tab:
+          type: string
+          nullable: true
+    DashboardCreateInfo:
+      required:
+      - label
+      type: object
+      properties:
+        label:
+          type: string
+        arrangement:
+          type: array
+          items:
+            $ref: '#/components/schemas/Arrangement'
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        visible:
+          type: boolean
+    DashboardCreateInfoPartial:
+      type: object
+      properties:
+        label:
+          type: string
+        arrangement:
+          type: array
+          items:
+            $ref: '#/components/schemas/Arrangement'
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObj'
+        visible:
+          type: boolean
+    FilterDashboardCreateInfoPartial:
+      type: object
+      properties:
+        label:
+          type: string
+        arrangement:
+          type: array
+          items:
+            $ref: '#/components/schemas/ArrangementPartial'
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/TagsObjPartial'
+        visible:
+          type: boolean
+    DashboardInfo:
+      allOf:
+      - $ref: '#/components/schemas/DashboardCreateInfo'
+      - required:
+        - background
+        - blueprint_device_behavior
+        - blueprint_selector_behavior
+        - created_at
+        - group_by
+        - icon
+        - id
+        - last_access
+        - setup
+        - shared
+        - tabs
+        - theme
+        - type
+        - updated_at
+        type: object
+        properties:
+          id:
+            type: string
+          created_at:
+            type: string
+            format: date-time
+          updated_at:
+            type: string
+            format: date-time
+          last_access:
+            type: string
+            format: date-time
+            nullable: true
+          group_by:
+            type: array
+            items: {}
+          tabs:
+            type: array
+            items: {}
+          icon:
+            $ref: '#/components/schemas/DashboardInfo_icon'
+          background:
+            $ref: '#/components/schemas/Any'
+          type:
+            type: string
+          blueprint_device_behavior:
+            $ref: '#/components/schemas/Any'
+          blueprint_selector_behavior:
+            $ref: '#/components/schemas/Any'
+          theme:
+            $ref: '#/components/schemas/Any'
+          setup:
+            $ref: '#/components/schemas/Any'
+          shared:
+            $ref: '#/components/schemas/DashboardInfo_shared'
+    FilterDashboardInfoPartial:
+      allOf:
+      - $ref: '#/components/schemas/FilterDashboardCreateInfoPartial'
+      - type: object
+        properties:
+          id:
+            type: string
+          created_at:
+            type: string
+            format: date-time
+          updated_at:
+            type: string
+            format: date-time
+          last_access:
+            type: string
+            format: date-time
+            nullable: true
+          group_by:
+            type: array
+            items: {}
+          tabs:
+            type: array
+            items: {}
+          icon:
+            $ref: '#/components/schemas/DashboardInfo_icon'
+          background:
+            $ref: '#/components/schemas/Any'
+          type:
+            type: string
+          blueprint_device_behavior:
+            $ref: '#/components/schemas/Any'
+          blueprint_selector_behavior:
+            $ref: '#/components/schemas/Any'
+          theme:
+            $ref: '#/components/schemas/Any'
+          setup:
+            $ref: '#/components/schemas/Any'
+          shared:
+            $ref: '#/components/schemas/FilterDashboardInfoPartial_shared'
+    DashboardInfoPartial:
+      allOf:
+      - $ref: '#/components/schemas/DashboardCreateInfoPartial'
+      - type: object
+        properties:
+          id:
+            type: string
+          created_at:
+            type: string
+            format: date-time
+          updated_at:
+            type: string
+            format: date-time
+          last_access:
+            type: string
+            format: date-time
+            nullable: true
+          group_by:
+            type: array
+            items: {}
+          tabs:
+            type: array
+            items: {}
+          icon:
+            $ref: '#/components/schemas/DashboardInfo_icon'
+          background:
+            $ref: '#/components/schemas/Any'
+          type:
+            type: string
+          blueprint_device_behavior:
+            $ref: '#/components/schemas/Any'
+          blueprint_selector_behavior:
+            $ref: '#/components/schemas/Any'
+          theme:
+            $ref: '#/components/schemas/Any'
+          setup:
+            $ref: '#/components/schemas/Any'
+          shared:
+            $ref: '#/components/schemas/FilterDashboardInfoPartial_shared'
+    DevicesRelated:
+      required:
+      - bucket
+      - id
+      - name
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        bucket:
+          type: string
+    AnalysisRelated:
+      required:
+      - id
+      - name
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+    WidgetInfo:
+      required:
+      - data
+      - label
+      - type
+      type: object
+      properties:
+        analysis_run:
+          type: string
+        dashboard:
+          type: string
+        display:
+          type: object
+          additionalProperties: true
+        data:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        id:
+          type: string
+        label:
+          type: string
+        realtime:
+          type: boolean
+          nullable: true
+        type:
+          type: string
+    WidgetInfoPartial:
+      type: object
+      properties:
+        analysis_run:
+          type: string
+        dashboard:
+          type: string
+        display:
+          type: object
+          additionalProperties: true
+        data:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        id:
+          type: string
+        label:
+          type: string
+        realtime:
+          type: boolean
+          nullable: true
+        type:
+          type: string
+    IDeviceParameters:
+      type: object
+      properties:
+        name:
+          type: string
+        label:
+          type: string
+        type:
+          type: string
+          enum:
+          - text
+          - dropdown
+          - switch
+          - number
+        default:
+          $ref: '#/components/schemas/Any'
+        group:
+          type: string
+          enum:
+          - default
+          - main
+          - advanced
+          - hide
+        options:
+          type: array
+          description: |
+            Only for dropdown
+          items:
+            $ref: '#/components/schemas/Any'
+    INetworkInfo:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        logo_url:
+          type: string
+        icon_url:
+          type: string
+        banner_url:
+          type: string
+        device_parameters:
+          type: array
+          items:
+            $ref: '#/components/schemas/IDeviceParameters'
+        middleware_endpoint:
+          type: string
+        payload_encoder:
+          type: string
+        payload_decoder:
+          type: string
+        public:
+          type: boolean
+        documentation_url:
+          type: string
+        serial_number:
+          $ref: '#/components/schemas/INetworkInfo_serial_number'
+    inline_response_200:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            oneOf:
+            - $ref: '#/components/schemas/DeviceInfo'
+            - $ref: '#/components/schemas/INetworkInfo'
+    start_date:
+      type: string
+      oneOf:
+      - format: date
+      - type: string
+    end_date:
+      type: string
+      oneOf:
+      - format: date
+      - type: string
+    inline_response_200_1:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/Data'
+    inline_response_200_2:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: string
+    start_date_1:
+      type: string
+      oneOf:
+      - format: date
+      - type: string
+    end_date_1:
+      type: string
+      oneOf:
+      - format: date
+      - type: string
+    inline_response_200_3:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceListItem'
+    inline_response_200_4:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/DeviceCreateResponse'
+    inline_response_200_5:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/DeviceInfo'
+    inline_response_200_6:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/ConfigurationParams'
+    inline_response_200_7:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/TokenCreateResponse'
+    inline_response_200_8:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceTokens'
+    inline_response_200_9:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/AccountInfo'
+    inline_response_200_10:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_10_result'
+    inline_response_200_11:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/LoginResponse'
+    inline_response_200_12:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/RunInfo'
+    inline_response_200_13:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserInfoPartial'
+    inline_response_200_14:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/UserInfo'
+    inline_response_200_15:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/RunLoginResponse'
+    inline_response_200_16:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/NotificationCreateInfo'
+    inline_response_200_17:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_17_result'
+    inline_response_200_18:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/BucketInfo'
+    inline_response_200_19:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_19_result'
+    inline_response_200_20:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: number
+    inline_response_200_21:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/VariablesInfo'
+    inline_response_200_22:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceInfo_bucket'
+    body:
+      required:
+      - buckets
+      type: object
+      properties:
+        buckets:
+          $ref: '#/components/schemas/ExportBucket'
+        optionsObj:
+          $ref: '#/components/schemas/ExportBucketOption'
+    inline_response_200_23:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/DashboardInfo'
+    inline_response_200_24:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_24_result'
+    inline_response_200_25:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/DashboardInfo'
+    body_1:
+      type: object
+      properties:
+        setup:
+          type: object
+          additionalProperties: true
+        new_label:
+          type: string
+    inline_response_200_26:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_26_result'
+    expire_time:
+      oneOf:
+      - type: string
+        format: date-time
+      - type: string
+        enum:
+        - never
+    inline_response_200_27:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_27_result'
+    inline_response_200_28:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/DevicesRelated'
+    inline_response_200_29:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/AnalysisRelated'
+    inline_response_200_30:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_30_result'
+    inline_response_200_31:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/WidgetInfo'
+    inline_response_200_32:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          type: object
+          additionalProperties: true
+    inline_response_200_33:
+      required:
+      - result
+      - status
+      type: object
+      properties:
+        status:
+          type: boolean
+        result:
+          $ref: '#/components/schemas/inline_response_200_33_result'
+    Data_location:
+      required:
+      - lat
+      - lng
+      type: object
+      properties:
+        lat:
+          type: number
+        lng:
+          type: number
+      example: '{"lat":42.2974279,"lng":-85.628292}'
+    DeviceInfo_bucket:
+      required:
+      - id
+      - name
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+    DeviceInfo_tags:
+      type: object
+      properties:
+        key:
+          type: string
+        value:
+          oneOf:
+          - type: string
+          - type: number
+          - type: boolean
+    AccountInfo_options:
+      required:
+      - decimal_separator
+      - last_whats_new
+      - thousand_separator
+      - user_view_welcome
+      type: object
+      properties:
+        user_view_welcome:
+          type: boolean
+        decimal_separator:
+          type: string
+        thousand_separator:
+          type: string
+        last_whats_new:
+          type: string
+          format: date-time
+          nullable: true
+    RunInfo_sidebar_buttons:
+      required:
+      - color
+      - href
+      - iconUrl
+      - text
+      - type
+      type: object
+      properties:
+        color:
+          type: string
+        href:
+          type: string
+        iconUrl:
+          type: string
+        text:
+          type: string
+        type:
+          type: string
+    RunInfo_signup_fields:
+      required:
+      - name
+      - placeholder
+      - required
+      - type
+      type: object
+      properties:
+        name:
+          type: string
+        placeholder:
+          type: string
+        required:
+          type: boolean
+        type:
+          type: string
+    RunInfo_email_templates:
+      required:
+      - subject
+      - value
+      type: object
+      properties:
+        subject:
+          type: string
+        value:
+          type: string
+    RunInfo_feature_devicewifisetup:
+      required:
+      - background_color
+      - button_cancel_background_color
+      - button_cancel_text_color
+      - button_confirm_background_color
+      - button_confirm_text_color
+      - enabled
+      - ip
+      - language
+      - name
+      - port
+      - protocol
+      - text_color
+      - translations
+      type: object
+      properties:
+        background_color:
+          type: string
+        button_cancel_background_color:
+          type: string
+        button_cancel_text_color:
+          type: string
+        button_confirm_background_color:
+          type: string
+        button_confirm_text_color:
+          type: string
+        enabled:
+          type: boolean
+        ip:
+          type: string
+        language:
+          type: string
+        name:
+          type: string
+        port:
+          type: string
+        protocol:
+          type: string
+        text_color:
+          type: string
+        translations:
+          type: object
+          additionalProperties:
+            type: object
+            additionalProperties: true
+    RunInfo_feature_geolocation:
+      required:
+      - buffer_size
+      - device
+      - enabled
+      - middleware_url
+      - minimum_distance
+      - minimum_interval
+      - target
+      type: object
+      properties:
+        buffer_size:
+          type: number
+        device:
+          type: string
+          nullable: true
+        enabled:
+          type: boolean
+        middleware_url:
+          type: string
+        minimum_distance:
+          type: number
+        minimum_interval:
+          type: number
+        target:
+          type: string
+    RunInfo_theme:
+      required:
+      - actionSchedule
+      - actionTriggerByData
+      - actionTriggerByMQTT
+      - actionTriggerByResource
+      - alertDangerBackground
+      - alertInfoBackground
+      - alertWarningBackground
+      - analysisExternal
+      - analysisInternal
+      - auth_bg_opacity
+      - auth_bg_src
+      - auth_bg_type
+      - auth_form_opacity
+      - buttonDanger
+      - buttonDangerText
+      - buttonDefault
+      - buttonDefaultText
+      - buttonDisabled
+      - buttonDisabledText
+      - buttonIconLabel
+      - buttonPrimary
+      - buttonPrimaryText
+      - buttonSuccess
+      - buttonSuccessText
+      - buttonWarning
+      - buttonWarningText
+      - deviceInputOutput1Day
+      - deviceInputOutput3Days
+      - deviceInputOutput3Hours
+      - deviceInputOutput6Hours
+      - deviceInputOutputRest
+      - dottedBorder
+      - dropdownAccent
+      - dropdownBackground
+      - floatingSidebarTitle
+      - footerBackground
+      - formControlBorder
+      - gaugeEmpty
+      - gaugeFill
+      - gaugePrimaryText
+      - gaugeSecondaryText
+      - iconRadioSelected
+      - iconRadioSubTitle
+      - informationIcon
+      - inputBackground
+      - inputBackgroundReadOnly
+      - inputError
+      - inputForeground
+      - inputForegroundReadOnly
+      - lightBorder
+      - limitAlert
+      - link
+      - listNavColor
+      - listTitleLabel
+      - loading
+      - loginButton
+      - loginButtonText
+      - loginForeground
+      - loginForm
+      - modalContainer
+      - modalOverlay
+      - navDescription
+      - navbar
+      - navbarBetaDeveloperBorder
+      - navbarButton
+      - navbarDropdownBorder
+      - navbarDropdownOption
+      - navbarDropdownOptionBorder
+      - navbarText
+      - notificationButtonAmount
+      - notificationButtonAmountText
+      - notificationFilterBackground
+      - notificationFooter
+      - notificationItemBorder
+      - notificationItemDate
+      - notificationItemTextAccepted
+      - notificationItemUnread
+      - primary
+      - publicPageNavigationBar
+      - sidebarAccessSelected
+      - sidebarAccountSelected
+      - sidebarActionSelected
+      - sidebarAnalysisSelected
+      - sidebarBackground
+      - sidebarBillingSelected
+      - sidebarBucketSelected
+      - sidebarDashboardSelected
+      - sidebarDeviceSelected
+      - sidebarExploreSelected
+      - sidebarFileSelected
+      - sidebarForegroundIcon
+      - sidebarForegroundText
+      - sidebarHomeSelected
+      - sidebarItem
+      - sidebarRibbon
+      - sidebarRunSelected
+      - sidebarSeparator
+      - sidebarSeparatorForeground
+      - sidebarUserSelected
+      - snakeButtonOutline
+      - svgTagoFont
+      - svgTagoIOHole
+      - switchDisabledBackground
+      - switchSlider
+      - tabBackground
+      - tabLabelBorder
+      - tooltipContainer
+      - tooltipText
+      - verticalTabItem
+      - verticalTabItemBorder
+      - widgetCardBackground
+      - widgetIconsAccent
+      - widgetIconsBackground
+      - widgetIconsColor
+      - widgetIconsFooterBasic
+      - widgetIconsFooterPremium
+      type: object
+      properties:
+        actionSchedule:
+          type: string
+        actionTriggerByData:
+          type: string
+        actionTriggerByResource:
+          type: string
+        actionTriggerByMQTT:
+          type: string
+        alertDangerBackground:
+          type: string
+        alertInfoBackground:
+          type: string
+        alertWarningBackground:
+          type: string
+        analysisExternal:
+          type: string
+        analysisInternal:
+          type: string
+        buttonDanger:
+          type: string
+        buttonDangerText:
+          type: string
+        buttonDefault:
+          type: string
+        buttonDefaultText:
+          type: string
+        buttonDisabled:
+          type: string
+        buttonDisabledText:
+          type: string
+        buttonIconLabel:
+          type: string
+        buttonPrimary:
+          type: string
+        buttonPrimaryText:
+          type: string
+        buttonSuccess:
+          type: string
+        buttonSuccessText:
+          type: string
+        buttonWarning:
+          type: string
+        buttonWarningText:
+          type: string
+        deviceInputOutput1Day:
+          type: string
+        deviceInputOutput3Days:
+          type: string
+        deviceInputOutput3Hours:
+          type: string
+        deviceInputOutput6Hours:
+          type: string
+        deviceInputOutputRest:
+          type: string
+        dottedBorder:
+          type: string
+        dropdownAccent:
+          type: string
+        dropdownBackground:
+          type: string
+        floatingSidebarTitle:
+          type: string
+        footerBackground:
+          type: string
+        formControlBorder:
+          type: string
+        gaugeEmpty:
+          type: string
+        gaugeFill:
+          type: string
+        gaugePrimaryText:
+          type: string
+        gaugeSecondaryText:
+          type: string
+        iconRadioSelected:
+          type: string
+        iconRadioSubTitle:
+          type: string
+        informationIcon:
+          type: string
+        inputBackground:
+          type: string
+        inputBackgroundReadOnly:
+          type: string
+        inputError:
+          type: string
+        inputForeground:
+          type: string
+        inputForegroundReadOnly:
+          type: string
+        lightBorder:
+          type: string
+        limitAlert:
+          type: string
+        link:
+          type: string
+        listNavColor:
+          type: string
+        listTitleLabel:
+          type: string
+        loading:
+          type: string
+        loginButton:
+          type: string
+        loginButtonText:
+          type: string
+        loginForeground:
+          type: string
+        loginForm:
+          type: string
+        modalContainer:
+          type: string
+        modalOverlay:
+          type: string
+        navbar:
+          type: string
+        navbarBetaDeveloperBorder:
+          type: string
+        navbarButton:
+          type: string
+        navbarDropdownBorder:
+          type: string
+        navbarDropdownOption:
+          type: string
+        navbarDropdownOptionBorder:
+          type: string
+        navbarText:
+          type: string
+        navDescription:
+          type: string
+        notificationButtonAmount:
+          type: string
+        notificationButtonAmountText:
+          type: string
+        notificationFilterBackground:
+          type: string
+        notificationFooter:
+          type: string
+        notificationItemBorder:
+          type: string
+        notificationItemDate:
+          type: string
+        notificationItemTextAccepted:
+          type: string
+        notificationItemUnread:
+          type: string
+        primary:
+          type: string
+        publicPageNavigationBar:
+          type: string
+        sidebarAccessSelected:
+          type: string
+        sidebarAccountSelected:
+          type: string
+        sidebarActionSelected:
+          type: string
+        sidebarAnalysisSelected:
+          type: string
+        sidebarBackground:
+          type: string
+        sidebarBillingSelected:
+          type: string
+        sidebarBucketSelected:
+          type: string
+        sidebarDashboardSelected:
+          type: string
+        sidebarDeviceSelected:
+          type: string
+        sidebarExploreSelected:
+          type: string
+        sidebarFileSelected:
+          type: string
+        sidebarForegroundIcon:
+          type: string
+        sidebarForegroundText:
+          type: string
+        sidebarHomeSelected:
+          type: string
+        sidebarItem:
+          type: string
+        sidebarRibbon:
+          type: string
+        sidebarRunSelected:
+          type: string
+        sidebarSeparator:
+          type: string
+        sidebarSeparatorForeground:
+          type: string
+        sidebarUserSelected:
+          type: string
+        snakeButtonOutline:
+          type: string
+        svgTagoFont:
+          type: string
+        svgTagoIOHole:
+          type: string
+        switchDisabledBackground:
+          type: string
+        switchSlider:
+          type: string
+        tabBackground:
+          type: string
+        tabLabelBorder:
+          type: string
+        tooltipContainer:
+          type: string
+        tooltipText:
+          type: string
+        verticalTabItem:
+          type: string
+        verticalTabItemBorder:
+          type: string
+        widgetCardBackground:
+          type: string
+        widgetIconsAccent:
+          type: string
+        widgetIconsBackground:
+          type: string
+        widgetIconsColor:
+          type: string
+        widgetIconsFooterBasic:
+          type: string
+        widgetIconsFooterPremium:
+          type: string
+        auth_bg_opacity:
+          type: string
+        auth_bg_src:
+          type: string
+        auth_bg_type:
+          type: string
+        auth_form_opacity:
+          type: string
+    RunInfoPartial_sidebar_buttons:
+      type: object
+      properties:
+        color:
+          type: string
+        href:
+          type: string
+        iconUrl:
+          type: string
+        text:
+          type: string
+        type:
+          type: string
+    RunInfoPartial_signup_fields:
+      type: object
+      properties:
+        name:
+          type: string
+        placeholder:
+          type: string
+        required:
+          type: boolean
+        type:
+          type: string
+    RunInfoPartial_email_templates:
+      type: object
+      properties:
+        subject:
+          type: string
+        value:
+          type: string
+    RunInfoPartial_feature_devicewifisetup:
+      type: object
+      properties:
+        background_color:
+          type: string
+        button_cancel_background_color:
+          type: string
+        button_cancel_text_color:
+          type: string
+        button_confirm_background_color:
+          type: string
+        button_confirm_text_color:
+          type: string
+        enabled:
+          type: boolean
+        ip:
+          type: string
+        language:
+          type: string
+        name:
+          type: string
+        port:
+          type: string
+        protocol:
+          type: string
+        text_color:
+          type: string
+        translations:
+          type: object
+          additionalProperties:
+            type: object
+    RunInfoPartial_feature_geolocation:
+      type: object
+      properties:
+        buffer_size:
+          type: number
+        device:
+          type: string
+          nullable: true
+        enabled:
+          type: boolean
+        middleware_url:
+          type: string
+        minimum_distance:
+          type: number
+        minimum_interval:
+          type: number
+        target:
+          type: string
+    RunInfoPartial_theme:
+      type: object
+      properties:
+        actionSchedule:
+          type: string
+        actionTriggerByData:
+          type: string
+        actionTriggerByResource:
+          type: string
+        actionTriggerByMQTT:
+          type: string
+        alertDangerBackground:
+          type: string
+        alertInfoBackground:
+          type: string
+        alertWarningBackground:
+          type: string
+        analysisExternal:
+          type: string
+        analysisInternal:
+          type: string
+        buttonDanger:
+          type: string
+        buttonDangerText:
+          type: string
+        buttonDefault:
+          type: string
+        buttonDefaultText:
+          type: string
+        buttonDisabled:
+          type: string
+        buttonDisabledText:
+          type: string
+        buttonIconLabel:
+          type: string
+        buttonPrimary:
+          type: string
+        buttonPrimaryText:
+          type: string
+        buttonSuccess:
+          type: string
+        buttonSuccessText:
+          type: string
+        buttonWarning:
+          type: string
+        buttonWarningText:
+          type: string
+        deviceInputOutput1Day:
+          type: string
+        deviceInputOutput3Days:
+          type: string
+        deviceInputOutput3Hours:
+          type: string
+        deviceInputOutput6Hours:
+          type: string
+        deviceInputOutputRest:
+          type: string
+        dottedBorder:
+          type: string
+        dropdownAccent:
+          type: string
+        dropdownBackground:
+          type: string
+        floatingSidebarTitle:
+          type: string
+        footerBackground:
+          type: string
+        formControlBorder:
+          type: string
+        gaugeEmpty:
+          type: string
+        gaugeFill:
+          type: string
+        gaugePrimaryText:
+          type: string
+        gaugeSecondaryText:
+          type: string
+        iconRadioSelected:
+          type: string
+        iconRadioSubTitle:
+          type: string
+        informationIcon:
+          type: string
+        inputBackground:
+          type: string
+        inputBackgroundReadOnly:
+          type: string
+        inputError:
+          type: string
+        inputForeground:
+          type: string
+        inputForegroundReadOnly:
+          type: string
+        lightBorder:
+          type: string
+        limitAlert:
+          type: string
+        link:
+          type: string
+        listNavColor:
+          type: string
+        listTitleLabel:
+          type: string
+        loading:
+          type: string
+        loginButton:
+          type: string
+        loginButtonText:
+          type: string
+        loginForeground:
+          type: string
+        loginForm:
+          type: string
+        modalContainer:
+          type: string
+        modalOverlay:
+          type: string
+        navbar:
+          type: string
+        navbarBetaDeveloperBorder:
+          type: string
+        navbarButton:
+          type: string
+        navbarDropdownBorder:
+          type: string
+        navbarDropdownOption:
+          type: string
+        navbarDropdownOptionBorder:
+          type: string
+        navbarText:
+          type: string
+        navDescription:
+          type: string
+        notificationButtonAmount:
+          type: string
+        notificationButtonAmountText:
+          type: string
+        notificationFilterBackground:
+          type: string
+        notificationFooter:
+          type: string
+        notificationItemBorder:
+          type: string
+        notificationItemDate:
+          type: string
+        notificationItemTextAccepted:
+          type: string
+        notificationItemUnread:
+          type: string
+        primary:
+          type: string
+        publicPageNavigationBar:
+          type: string
+        sidebarAccessSelected:
+          type: string
+        sidebarAccountSelected:
+          type: string
+        sidebarActionSelected:
+          type: string
+        sidebarAnalysisSelected:
+          type: string
+        sidebarBackground:
+          type: string
+        sidebarBillingSelected:
+          type: string
+        sidebarBucketSelected:
+          type: string
+        sidebarDashboardSelected:
+          type: string
+        sidebarDeviceSelected:
+          type: string
+        sidebarExploreSelected:
+          type: string
+        sidebarFileSelected:
+          type: string
+        sidebarForegroundIcon:
+          type: string
+        sidebarForegroundText:
+          type: string
+        sidebarHomeSelected:
+          type: string
+        sidebarItem:
+          type: string
+        sidebarRibbon:
+          type: string
+        sidebarRunSelected:
+          type: string
+        sidebarSeparator:
+          type: string
+        sidebarSeparatorForeground:
+          type: string
+        sidebarUserSelected:
+          type: string
+        snakeButtonOutline:
+          type: string
+        svgTagoFont:
+          type: string
+        svgTagoIOHole:
+          type: string
+        switchDisabledBackground:
+          type: string
+        switchSlider:
+          type: string
+        tabBackground:
+          type: string
+        tabLabelBorder:
+          type: string
+        tooltipContainer:
+          type: string
+        tooltipText:
+          type: string
+        verticalTabItem:
+          type: string
+        verticalTabItemBorder:
+          type: string
+        widgetCardBackground:
+          type: string
+        widgetIconsAccent:
+          type: string
+        widgetIconsBackground:
+          type: string
+        widgetIconsColor:
+          type: string
+        widgetIconsFooterBasic:
+          type: string
+        widgetIconsFooterPremium:
+          type: string
+        auth_bg_opacity:
+          type: string
+        auth_bg_src:
+          type: string
+        auth_bg_type:
+          type: string
+        auth_form_opacity:
+          type: string
+    VariablesInfo_deleted:
+      required:
+      - created_at
+      - origin
+      type: object
+      properties:
+        origin:
+          type: string
+        created_at:
+          type: string
+    ExportBucket_inner:
+      required:
+      - id
+      - origin
+      - variables
+      type: object
+      properties:
+        id:
+          type: string
+        origin:
+          type: string
+        variables:
+          type: array
+          items:
+            type: string
+    DashboardInfo_icon:
+      required:
+      - url
+      type: object
+      properties:
+        url:
+          type: string
+        color:
+          type: string
+    DashboardInfo_shared:
+      required:
+      - allow_share
+      - allow_tags
+      - email
+      - expire_time
+      - free_account
+      - id
+      - name
+      type: object
+      properties:
+        id:
+          type: string
+        email:
+          type: string
+        name:
+          type: string
+        free_account:
+          type: boolean
+        allow_tags:
+          type: boolean
+        expire_time:
+          type: string
+        allow_share:
+          type: boolean
+    FilterDashboardInfoPartial_shared:
+      type: object
+      properties:
+        id:
+          type: string
+        email:
+          type: string
+        name:
+          type: string
+        free_account:
+          type: boolean
+        allow_tags:
+          type: boolean
+        expire_time:
+          type: string
+        allow_share:
+          type: boolean
+    INetworkInfo_serial_number:
+      type: object
+      properties:
+        mask:
+          type: string
+        label:
+          type: string
+        image:
+          type: string
+        case:
+          type: string
+        help:
+          type: string
+        required:
+          type: boolean
+    inline_response_200_10_result:
+      required:
+      - token
+      type: object
+      properties:
+        token:
+          type: string
+    inline_response_200_17_result:
+      required:
+      - id
+      type: object
+      properties:
+        id:
+          type: string
+    inline_response_200_19_result:
+      required:
+      - bucket
+      type: object
+      properties:
+        bucket:
+          type: string
+    inline_response_200_24_result:
+      required:
+      - dashboard
+      type: object
+      properties:
+        dashboard:
+          type: string
+    inline_response_200_26_result:
+      required:
+      - dashboard_id
+      - message
+      type: object
+      properties:
+        dashboard_id:
+          type: string
+        message:
+          type: string
+    inline_response_200_27_result:
+      required:
+      - expire_time
+      - token
+      type: object
+      properties:
+        token:
+          type: string
+        expire_time:
+          oneOf:
+          - type: string
+            format: date-time
+          - type: string
+            enum:
+            - never
+    inline_response_200_30_result:
+      required:
+      - widget
+      type: object
+      properties:
+        widget:
+          type: string
+    inline_response_200_33_result:
+      required:
+      - widget_token
+      type: object
+      properties:
+        widget_token:
+          type: string

@@ -1,0 +1,71 @@
+---
+id: edit-notification
+title: "Edit Notification"
+description: "Edit Notification"
+sidebar_label: "Edit Notification"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vt9v2zYQ/lcOzENTQbbTYU96y5JgCzCkRRKjKBJjpaWzxEYiWfIY1zP8vw8nSrb8o+seivnFEHm87+N3d7xbC5KlF9mT+ODMQtUI5x8VVdB9jR7NC+q3IhWPsjRwP70TqZh6dF6k4s6QWqhckjJazFJhpZMNEm9mT2uhZYMiE5eBKuPU39EsFUqLTFQoC3QiFQ6/BuWwENlC1h5TUaDPnbKtcSaupIY5QokanSQsQGlYmeDAdmw9Eildeji/7zwxWfwmG1sz+qeB8Yj4MiIVPq+wkSJbC1pZtvLklC7FZpNuaV8ZTahp9MgWP2S9A5TW1p0mky/e/Fe4yzxHS/8DkB4E7fa6B7SSqj04cuEoGN+R+JwlilG5n97BEABur9/+K68ZY3prtEfP+79cXPBfvD+vbA5J3BSKAw6yBQse3R6iSEUeI8d+jjTK1sdkzPwL5iy9dcaiIxWpeJIU/MBubkyNUotNyznUdOpCm4EyOx9Rzf5UW0u372FYP8BFBQ8hz9H7RajrFUxtwSnPTjebGBv09JspVuz6J92SFEWqBxdJRYPey/L0nkNZnFZmHoiM9n+hlvMaTxodaNQxEBqX+7kTNwZEjk36rZ5R1PmIAy9HEY9zaS8KLRpVpuCSCK1aXBiZmLigJ0PoyXq/kDac5uhe+8cvuFpkYr2eS49TV282gmvwaFU2gmuAo3a/i+/NsTqd9kM1tks/vjtX+cIM/XUpePnhVqSCWUdF3o0vxhfiUKcz2JnDtclDg5raiz/rZ80vpcwJHoK1xlHGayP4XVEV5hk8kSzNSJnZeUVkfTaZvH3WAABsdGWaJmhFqwyeOojt0okDz/rs7OwMkuQPswQyXP1AlfJQDDklCVs+Vrhd5lRRHrytFcF8BctK5RW03YDfrTcOoX/5erdKA1VxGT2NGb0jaJ15VQV6+BUKtVigQ03Rl++uniTX+KryrnkmSQZMJsItnGniW1m0NmlHZmUC5FJDiRRtGD2avPFgZYnjnWxJsteeGeGy9gZetFmC9HCZ5yZw7+LdMXwyYef3dPc8ArhDWhr3sgO49S2lw1t0dmN4r+sVyFepak48UIteWbPU6MAs2uM6mm/buNKEpWvDdoLEpZb1yisfWWRJclJI2VmlQ/gYvn5r3/WzHo1GMZvgISrQWnN23+jCGqUJ7rHs8vtjhRoa+RK7TpcRnCd8ZlcYaRvDJngCycHwFnO1WEUell9dpyRxSrFjWQN2UGO4qozxCEZjr9PC1LVZMmJv5YEfjQJMp1yJpnTSViqXdedzm35TrXhWeiBJ6OFGeoJ3rB5EBaZ92fS+YVlh53bQS7hkImanJkpP6DTsuR/3XpNkev8no3zu61ZaNQ5+hO/G/AaMlZl8Hkb3JnAngo/4E+ixE6YWff6AE4bRcsCJ25Y1nhrZds5uTjrVG/ZexW1jI/xGE1tL1TbA9olfd33jSbjABw8mlOxgCJulojKe2H7YMWap+BrQrUT2NEvFq3SKc7ttL4Xy3ft+amweTAeDoW1/RD5JvluUesVdQdaBv0QqXnB1PDpuZpu0n1SZUzQ6mJt7J0czCrfDeGI7+n7fdjboyx+mjyIV824MakzBR5xcciOUy8jXtEK0A067tha11GWIfTO65N8/xWV6fQ==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit Notification"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/run/notification/{notificationID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Edit Notification
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"notificationID","in":"path","required":true,"description":"(Required)","example":"(Type your RUN notification ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"title":{"type":"string"},"message":{"type":"string"},"read":{"type":"boolean"},"buttons_enabled":{"type":"boolean"}}},"example":{"title":"new notification title","message":"new notification message","read":true,"buttons_enabled":true}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Editing a RUN user notification","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"TagoIO Notification User Successfully Updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

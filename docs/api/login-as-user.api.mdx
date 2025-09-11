@@ -1,0 +1,71 @@
+---
+id: login-as-user
+title: "Login as User"
+description: "Login as User"
+sidebar_label: "Login as User"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20gM/RVi8tDUkHxLmqZ62iApugEWbZEmKLpJ0NISLU0jzagzVFyv4X9fUBdfYnezC6xfBA85PIeXIblQjKlX0a366OxU5wSHnzVn0P4Lr+0DmZcqUNeYWri6ea/uA1Wiw4KYnFxcKIMFqUjRz1I7+sq6IBUobVSkflTk5ipQjn5U2lGioinmngKVkI+dLllbUcts5XyQ4NwHhTWceTj8UMswF2j6iUWZC8QRNHIVKB9nVKCKFornpci0YUrJqeUyWFE6qzizTv+FNVBLKiNMyD3P6hwNTAhSMuSQKQFtYG4rB2UbKU/M2qQeDq9aS9tsv2wohyyB3Mfbs9Mm3aYdx1Ty83zXUFiWuY5rNwffvf23QJUnd3nRAZXI2RYMu2onKmtfYcvZw+t5SYBSIiBm4fLi5T+yuBckX1rjyYt8PBzKp/FWTpZPof+wqTaAvkW58XVUYmuYDMvdnShEi10CdvKdYglu6WxJjnUD7xm58ht6E2tzQqOWNc8q5+dtNDne9TVo471H4CrzVcK1V7j5onbkgZpaVyCrSCXIFNZaS/ltpGXtV5PLDU8armpKp+Pp6fFJmIzexOHxeHIUnp4cYfiaXidpnLwavaET1TnQpmAyh6vKwFlSaKM9O2TrDl1lUA5+K1Dn/dgWkv61e+pkRJPxKzxOTvAYx8PhaJQcx8lRrJ74qcbD8TgcnoTj0fXwKBqOotGw/2Z4+mfj3K+roq2HgjiziYpUSnWGpKgjNXCVGQgTP1g0Vb8c5HJTapTcY9fLKperSC0WE/R04/LlUslz2TnFQkkBazO1dTA1149AmuTlBzj7eKkCJTYbiqP+sD9UT4kfwFodLmxcFWS4Lt47c2fOrWGMGT5VZWkdR3IWwjvNWTWJ4JYxtaG294cZc+mjweDlnQEAEKVzWxSV0TyP4LaFWB3tuXBnDg4ODqDX+93OgK28XuBMe0g2OfV6onmd0epYWwPagy9zzVISs0zHGdR1JX3yhSPoWklnVhvgrDkmz31BbwmWzj7qhDwcQ6KnU3JkuLHlW9d7vQt61HE7knq9CIRMAzd1tmh6c1LrBC2Zua0gRgMpcaMj6I3KCw8lptRfh63X2xp6gnCWewsPxs6kvs7i2FaGG2kfvthqbXf/XNgBeE88s+5hDXDpa0pPvWj1+vDB5HPAR9Q5TnICPe0ia2eGHNhpfd006qsBVY9CV6dtD4kzg/nca9+wiHq9vYHEVivYhG/S14m2Td+ZMAybaoJPTQRqbanutyYprTYMV5S29f05IwMFPogadhUhdSJ31g8jqHNYVJ4BJRm+pFhP5w2PUtqv08hSUmm9LwC1UH04z6z1BNZQF6epzXM7E8ROy4M86QRsG7mUbOqwzHSMeWtzVX43RssW8ImRycNb9AwjiR40Ebjpnk1nG2YZtWY3BpM8mQazjSahZ3IGtsz3O6u93s3VH4LyrXu3WOp+5UMa9aUH9LUdfNvM7ttKRhJ8pv+BnhgRao3NZzhRFc42OMn8Kq3nAuuJuDU/1s16qyOuJhzTTx6UOep6+tbNd9E28lsZKSqoNxdZA6PVCtN08/tAZdazKG428fug3UWlxyfaSzn/Yu9brDeK5xbTvXQfaL6zDD9iXolmPTQe0WnB/49cNhav7R1sL4v2EM18E75j1wZteb8MuvVSyDTC1fbZXdtZq8SL1Zh99/ZaLZd/AxG8KYo=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Login as User"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/run/users/{userID}/login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Login as User
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"expire_time","in":"query","required":false,"description":"hours,days,months (Optional)","example":"3 months","schema":{"type":"integer"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"userID","in":"path","required":true,"description":"(Required) ","example":"(Type a RUN user ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Login as a RUN User","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"token":{"type":"string"},"name":{"type":"string"},"run_user":{"type":"string"},"expire_time":{"type":"string","format":"date-time"}}}}},"example":{"status":true,"result":{"token":"fe82f846-d19c-42b3-863a-7e7dgcd519e6","name":"Login by Run Administrator(runadmin@mail.com)","run_user":"61eb25a4d6a4a20011d4cd3c","expire_time":"2022-06-21T03:01:10.908Z"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

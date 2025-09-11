@@ -1,0 +1,71 @@
+---
+id: login-to-account
+title: "Login to Account"
+description: "Login to Account"
+sidebar_label: "Login to Account"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zYQ/iuHy4e2mvzWtGmrT8u6YCtQtEWToCgcY6Xls8RG4qkkFdcw9N+Hkyi/LG6KDfMX2+Txuece3gs36FXmMJniB8tLXRA8/qR9DuHf4IpvyTzBGM/TlGvjcRZjpawqyZOVcxs0qiRM8DUbT8YPrtYVYYzaYII5qQVZjNHSt1pbWmCyVIWjGOm7KqtCzqmqKnSqvGYz+urYYIwuzalUmGzQC1iCzlttMmyamUC5io0jJ/tPx2P56vy0Kwc0ks2PsR7k0DQxLsilVleyiAm+5UwLt7TDF8B7p4654/lXSj3GWFmuyHrdEXde+drt2c2ZC1JGeFlydeF/juFDiPcC04vj8ZZKF/d3YlyyLZXHJFg0MVY5myPYe6a1TwelLgrtKJUTKZeVMuujjrsMObJRdVm2r4OyVq0lfzyV7ucaqJCW/0KGH7IpOOO/attKZOqiUHNJDm9rasJnL2d2VygGRy6tdm3mCwk8mzwlNX5Op2k6fvFyPJ6cvpi8fPV8Mhnj9lp66F/l7zDlErfXgL+8On11dnp2+uz5i8nTM9xTu//VBtXHhp+5tvCuW9ppPN2T62FKD5Oe7BwF8OB9J6DI18x60aT6yfnfeNHmx38soX31W/wfFCl4hr5bxViSz1nCqdi16aN8jgmOghKjItS1I3vXd7Q2BNxs5srRtS2aBpv4yKoqURqS8P64i/BimyGSgmbJbSTat43mSmX85j2cf3iDMYq/jvdkOB6K7ofRnMDOHH7ntC7J+FarG3NjpNGp1MNlXVVsfSJrA/hD+7yeJzD1KuOB5tnj3PvKJaPRkxsDACBGr7ksa6P9OoFpcLFdOnLgxpycnJxAFP3JKxG3dgQ+1w4W+5yiSCyvctouazagHbiq0B7ma1jlOs3By0SBNdePLEE/F3pYub28Wybnh+I9EKws3+kFOXgGC71ckiXjOywXQo+i3+lOp2FmRVECQqZzt7Rcik8Li9YmDmTWXEOqDGTkOxvx3pk8clCpjIY72aLoYCqKh/PCMdwaXoFyfdJ1u0P4zPUOt/UdqgUcea9NdsTBO/Irtrc7B29cS+mfUQS7Ibw3xRrUndJttwK97JXllSELvGyPm85c5G2Pa+Mps+21HSFxblSxdtp1LJIoOiqkClbxvvvu+vqtQ+gbMxgMumyCy06B1lqy+8IsKtbGw0fKQn5/yslAqW7FTPUZIXkiZ3aFEbd3WNbOg5LLcBWlernueFQyLKxWXlJKgFUBFFwN4XXO7AjYUK/TkouCV+Kxt3Ig5b4ADsplxJlVVa5TVQTMbfpdG+1pAZdeeXJwoZyHiagHnQLXfdn02LDKKcDu9UEpmc5nUJOU82QNHMAPe9Qouv74Vrx86etWVXpYuwFNhtIDhppHX/Zv96KWAQqf6H+gJyBCrcP8CSeqB6s9Tu38Z+dL1Xb9MFCOdPCDprgdCp6++1FVKN0+mcLU7pr7dDvm2pGkjTxac2n/yfSgq89i/FaTXWMyncV4p6zuRv501sT921XmwS2t7z9w71RRH387xv2J8zSlyj9oO9ubUB/eX15hjPMwJkteyBmrVvKAVitMEGPkVoj27dOubbBQJqtVJrbh7do0zd8PIQP1
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Login to Account"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/account/login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Login to Account
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Login","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"type":{"type":"string"},"id":{"type":"string"},"email":{"type":"string","format":"email"},"phone":{"type":"string","format":"utc-millisec"},"company":{"type":"string"},"name":{"type":"string"},"profiles":{"type":"array","items":{"type":"object","properties":{"account":{"type":"string"},"id":{"type":"string"},"name":{"type":"string"},"logo_url":{"nullable":true}}}}}}}},"example":{"status":true,"result":{"type":"user","id":"612ea05e3cc078001371895110","email":"example@mail.com","phone":"+9396363457126","company":"companyname","name":"Your Name","profiles":[{"account":"612ea05e3cc078001371895110","id":"612ea05e3cc078001371895111","name":"profilename","logo_url":null}]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: create-entity
+title: "Create Entity"
+description: "Create Entity"
+sidebar_label: "Create Entity"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BUkB2nSJuu3rJpsBtgsQlyQVAkATqWxhIbiVTJkV2toX9fjC6+JG4CLPbJMDU858xweIZLxZh6Fd2rS2dnOifYv9OcQf9vdGOfyLxXoTozrLlWj6Eq0WFBTE62LZXBglSkTirOrNP/IGtrVKi0UZHKCBNyKlSOflTaUaKiGeaeQpWQj50u2+BInaKBKUFKhhwyJaAN1LZyUPaiPDFrk3rYv+qRRBP9xKLMhf3rRvCIRbMKlY8zKlBFS8V1KVGenTapappwJfvUGibDoxuJeFP1mhDLMtdxm+zBd29fp3sUKF9a48nL9w+Tifx0PO3Kloxo+WusVzU0zYvCOkIpHKAB6k4wVHFHJugvIHZx2+l3ilmFqnS2JMe6y8IzcuU34qbW5oRGRDryVc5vY+hkV72aZjPPNRO7ijaxZbf6dPwBPx1Nfzv8PDmOk+PJ5PMU6Sj52OE03SmS599tUsum/5j9piJT5Xnzi2ITnA11LogzKxJL69vUkTMVqYPVQXhy8+EaVS5XkVoup+jp1uVNo6RLX6xioaSdRO3VOq+zVa0a6eGZbfVrbtvkBlN7fgEnl+cqVMLXqT0cT8YT9TyHPViHwxcbVwUZbiv0YB6MtCnGDNdVWVrHkayN4A/NWTWN4J4xtSNtH/cz5tJHBwfvHwwAgASd2qKojOY6gvueYrW0Y8OD2dvb24Mg+NMugC1UnoAz7SHZ1BQEEnmT0WpZWwPagy9zzTCtYZHpOIPWEcRR3jmC4VYPsNoAZ90yeR4Ley+wdHauE/JwBImezciR4Q7L96kHwRea67j3ySCIQMR0dDNni87FkjYm7MXUtoIYDaTEXYywdyHvPJSY0nhdtiDYcmJhOMm9hSdjF4AeTuLYVmIc8nUMX221xt3toC8I/iZeWPe0Jjj3raTnWfRxY7gweQ04R53jNCfQs6GydmHIgZ21200XvrJybZhS1x7bDhEnBvPaa9+piIJgZyGxjwo36bvjGz5tQz+Y0WjUdRNcdxVoo6W7z0xSWm0Yrijt+/suIwMFPrWOOXSE9InsWV+MsD3DovIMKIfhS4r1rO50lOJwTosTuBYYc6CeagynmbWewBoa6jSzeW4XwjhEeZDrnoDtK5eSTR2WmY4x7zFX7XdrtMzLa0YmD2foGQ6letBV4Ha4NgM2LDLqYTfcT65Mx9lXk9AzOQNb8OMBNQhur/4Slm/DvcVSjys/osOxeMBY24Nvm6d7Vonrwx39D/IERKR1mG9oomq02NAkLi5mXGDr9cMb4Jlvbzniag4w/eSDMkfdDrjWmJe9pd8rWr2OMvH66H7LyR9D9aMiV6vo/jFUc3RaOlf+NeHw2pAZ8ET1yyfJHPNq97QPhx0ncUwlvxr7uDGOLi+ub1Sopv1ALGwiexwu5MmDCxUpFSrb5t8O6XZtqXI0aYWpxPavjaZp/gUZX4S9
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Entity"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/entity"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create Entity
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Creating an entity","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"id":{"type":"string"}}}}},"example":{"status":true,"result":{"id":"672a64b91807cd7008bae4d5"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: device-data-amount
+title: "Device data amount"
+description: "Device data amount"
+sidebar_label: "Device data amount"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9v2zYQ/lcOzEMTQbaTYnuY3owkyAIMa5EmCIrEWGnpLLGRSJY8xdUM/e/DiZItx+66hz0lJo/3fffrO20EydyL5El8dGalSoTTR0UF9L8m9+YF9ZmIxRW+qhS9WMTCSicrJHT8biO0rFAkYl5TYZz6W5IyWsRCaZGIAmWGTsTC4bdaOcxEspKlx1hk6FOnbGeciEupYYmQo0YnCTNQGhpTO7A9K49ESuceTu96T0wKv8vKloz+eWQ8ISYtYuHTAispko2gxrKVJ6d0Lto23tK+NJpQ0+SeLX7KegcorS1V2gU7++rNf4XLujTeXg1QVlKxB0SuPsjOD2I+Zc4gIfiE26uzfyWxYBhvjfbo+f79+Tn/CcHySfsW9yYkfQeRSZIgK1NrErFIQ+rYyUE2ks0hE7P8iik/tM5YdKQCD0+Saj+yWxpTotSi7QjXJY3ulCbM0Ym2bUep2DkJ6Rue/fr+t7btTPcDuzoWToVUmEwkIseOJFcmEbMQ+mwzVK6d8bO/ts88utdhFGpXikRsNkvp8cGVbSu49AenshJcDaVXpgtNUVfPe5mb2w8w/3grYsE+A9mL6fn0XLwN4QR25nBl0rpCTV0BnvWz5q6WKcGn2lrjKOGzCdwoKuplAk8kczNRZnFaEFmfzGZnzxoAgI0uTVXVWlGTwFMPsT068uBZn5ycnEAU/W7WQAZqj0CF8pCNOUURW94XuD1WRoPy4G2pCJYNrAuVFtBNLk/+O4cwDMXgVmmgIhyjpymj9wStM68qQw+/QKZWK3SoKfjyfehRFGoeBC2KEmAyAW7lTBXUJtQ47sk0poZUasiRgg2jB5N3HqzMcbpLWxTtSSYjzEtv4EWbNUgP8zTlhgm3U/hs6p3f40p3APAn0tq4lx3Are8ovY2it5vCB102IF+lKuWyRFCrIbNmrdGBWXXPdTDfSm43Yq4r2xEScy3LxisfWCRRdDSRsreKx/ChfMPVvutnPZlMQjfBp1522Jq7+1pn1ihNcId539+PBWqo5EtQp74juE/4zW4w4q6GVe0JJBfDW0zVqgk8LMuQU5K4pdixLAF7qClcFsZ4BKNxyNPKlKVZM+Jg5YFHOgPTZy5HkztpC5XKsve5bb8HrXivfSJJ6OFaeoILzh6EDDwMYzP4hnWBvduRuPLIBMw+myg9odOw5346eI2ih7s/GOXLMLfSqmntJ3gxZQ2YKjP7Mq7udc3SDI/4P9BjJ0wt+PwJJ6wn6xEn1n5rPFWyWyX98jwq23uyuN0ThN9pZkupujXSKfCml/SnfgmLWCSjdTxW9UUsCuOJbcdivojFtxpdI5KnRSxepVPc2J3yZ8rz/z/4vtnsduVome9/yxwl3h9K3fBKkGXNv0QsXrAZf0y0izYevlqYTbiepylaGj082NK8hbZr7+b6XrTtP6RKcRM=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Device data amount"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/device/{deviceID}/data_amount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Device data amount
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required)","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Getting a device data amount","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"integer"}}},"example":{"status":true,"result":529}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

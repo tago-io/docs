@@ -1,0 +1,71 @@
+---
+id: add-entity-data
+title: "Add Entity Data"
+description: "Add Entity Data"
+sidebar_label: "Add Entity Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu40YM/RVi8rBZQbaTok96c5OgDVB0F7lgsUiMLi3R0mykGe0MFa9r6N8LaiRbTrwXFH1KPCJ5Ds9wSG4VY+5V8qDeO7vSJcHpB80F9L8md/aJzFsVqyvDmjdqEasaHVbE5MRtqwxWpBI1b7iwTv+DrK1RsdJGJaogzMipWDn60mhHmUpWWHqKVUY+dbrujBN1gQaWBDkZcsiUgTawsY2DuifliVmb3MPpTR9JONFXrOpS0D+OjCcsnFWsfFpQhSrZKt7UYuXZaZOrto13tC+sYTI8uROLH7LeA2Jdlzrtkp199vZn4ahT8W+dDVg1cnGAxK55Jc+Q80HKp0IZ0ECICdeXb79LYiEovrbGk5fvv5ydyZ+QbHdyoEWy/Xas7wrRti/pz7MMQvnAJTKqWKUBSUK/8j8GbJefKWUVq9rZmhzrkIJn5MaP7JbWloRGGDryTcnHhBjT38cIug9e6ryjCvMso0x82jZcEnn+zWYb8fyPSYzhTVOW7c8IVhEXNpN6sb7TQcomUbNw97Ptrq7aWRY8PLnn4Yk2rlSJ2m6X6OnelW2rpCRfnWKlpEokgZt9qlc7rVqp2ZXtUtLc3f4d5vb6HczfX6tYCV5I4Hx6Nj1TL9M6gb05XNq0qchwJ9qjeTRSfZgy3DZ1bR0ncjaB3zUXzTKBB8bcTrRdnBbMtU9ms7ePBgBAjC5sVTVG8yaBhx5id3TE4dGcnJycQBT9YdfAFhpPwIX2kI05RZFY3hW0O9bWgPbg61IzLDewLnRaQNdtpFu9cQTDOx7CagNchGPyPBX0nmDt7LPOyMOvkOnVihwZDrF8n3oUXdKzTvseHEUJCJkAt3K2Ch0y62zinszGNpCigZw42Ah6MHnjocacpnvZouigywvCvPQWnoxdA3qYp6ltpB/I1yl8tM0+7vHu/ArgL+K1dU97gGvfUXqZRW83hXem3AA+oy5xWRLo1aCsXRtyYFeduwnmuzGhDVPuums7QmJusNx47QOLJIqOCom9VTyGD9c3fDoM/Wgmk0moJrgNCnTWUt1XJqutNgw3lPf1/aEgAxU+iRkOFSF1Ij77hxF3d1g1ngHlMnxNqV5tAo9a+p/TyFJSEhhLoB5qCheFtZ7AGhp0WtmytGtBHKw8yHPPwPbK5WRzh3WhUyz7mLvyuzdaZvEtI5OHK/QM56IeBAXuh2czxIZ1QX3YUUOUJxMwezUJPZMzcBB+OkSNovubPwXl0/BusdbTxk/ofCo9YKrt7NP4dq8amQnwgf4HehJEqIWYP+BEzWQ94iSNXbpzhV37H9aiV638oCfuhgPTV57VJepueHWtedt3+Yd+a1CxSsb7Q9foF7EqZCQkDwf9fRGrLw25jUoeFrF6RqelnrthkGkv/39jFRuNNbXftWC0gRwl3B+iEZbPWDbyS8XqiTYHW0+7aONhvxIy4fuLJWzwf71axIPHPE2p5u/aLkZT8/272zsVq2U/uSubiY/DtaxeuA5cbSdBt050Z1tVoskbzMW2X23atv0XVfTXAw==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Entity Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/entity/{entity_id}/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add Entity Data
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"entity_id","in":"path","required":true,"description":"Required","example":"(Type an entity ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Add Entity Data","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"1 Data Added"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

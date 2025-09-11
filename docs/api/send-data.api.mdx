@@ -1,0 +1,71 @@
+---
+id: send-data
+title: "Send data"
+description: "Send data"
+sidebar_label: "Send data"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BEkO2k2Ce9GUmwG2CxCXJBUDgGOpbGEhuJZMmRXcPwvy9GF1tJ3BYL7JNh8vCcw+FctFWMeVDJTF3RSqcU4PRZcwHtv9GjfSVzpuaxcuixIiYv4K0yWJFKVNbCWGAqVtqoRBWEGXkVK0/fa+0pU8kSy0CxyiikXjvWVnANNzhvVzqjDKwBLqgT/hTAYU5wet9xnKlY0Q+sXCmyX2zt4Z12SAuqUCVbxRsnoMBem1ztdvHe7qU1TIZHj4L4rd2DHjpX6hTF+ORbsL+WmwtVcNYECrL/+fxcflqdZuWNjWT7c65fetjt3kf0gUymTQ5VXbJ2JUGGjCpWaasnAh9YjsnbxTdKWcXKeevIs24vEhi5DgPcwtqS0IhPT6Eu+Vg4hpc4cLCv6XBKfYYrZIRpllEmZ47frb9PRVzYTCXK2dDYRC5UoibddiC/6vO09qVK1Ha7wEBPvtztlKTDh1WslLybNkvb3EFzE/NHzO3NLUzvblSshLP1cjE+H5+r9w5P4ACHK5vWFRluIv1iXoy8OaYMD7Vz1nMiayP4U3NRLxKYMeZ2pO38tGB2IZlMzl4MAICALm1V1UbzJoFZJ7FfOnLgxZycnJxAFP1l18AW6kDAhQ6QDT1FkSAfC9ova2tABwiu1AyLDawLnRbQlBdsbP3JE/Ql0tPqtmZlmQKPRb0z2JV1gD8g08sleTLccoXu6lE07DFRlICYaeWW3lai2Rd53JnZ2BpSNJATtxhRz4YdY3wIWxTdebvU5UBhWgYLr8auAQNM09TWUoWyO4Yvtj7wNtquPQ6BmLXJjwj8Q7y2/vUgcBMaS+9v0eHGcGvKDeAKdYmLkkAv+8jatSEPdtkcNy1cwtsc14Yp982zHTExNVhugg6tiySKjgYSO1Q8lG+fr996S/1iRqNRm03w0EagQUt2X5vMWW0Y7inv8vu5IAMVvgoM+4yQPJEzh8KImzes6sCA8hjBUaqXm9aHk37jNbKklBBjCdRJjeGysDYQWEN9nJa2LO1aFHtUACnpZpg0t87J5h5doVMsO859+j0ZzZTBAyNTgGsMDBcSPWgj8NSXTc8N64I62kEXlZJpNbtoEgYmb+AN/bhnjaKn+79F5Wtft+j0uA4juhhLDxhrO/k6fN3rWnowPNP/YE9IxFrL+RtPVI/WA0/S5KXdVtjMjG6gDrvym264nwNMP3jiStTNmGga77Zr2DPVnJzHqpA+nsze9Ol5rL7X5Dcqmc1jtUKvJWfl3y7uh7Z0+EwH2fjJV8b2MPz++wfH0Su80ubjh88Ky1qgzXRpEdM0JceDvY8DfD4YZXe3D49qt/sX5EFF4Q==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send data
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"device-token","in":"header","required":false,"description":"Token provided on the Device's page (Required)","example":"Your device-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Sending multiple data","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"2 Data Added"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

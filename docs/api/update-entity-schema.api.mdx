@@ -1,0 +1,71 @@
+---
+id: update-entity-schema
+title: "Update Entity Schema"
+description: "Update Entity Schema"
+sidebar_label: "Update Entity Schema"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9v2zYQ/lcOzENTQbbTYU96y9JgCzCsRX6gKBJjpaWzxIYiVfIYTzP0vw8nSracOO0w7Ckxdbzvu++Od7cVJEsvsnvx0dm10ginnxRVMPya3dpHNG9FKi4NKWrFMhWNdLJGQsfXtsLIGkUmzgNV1qm/JSlrRCqUEZmoUBboRCocfgvKYSGytdQeU1Ggz51qeuNMXEgDK4QSDTpJWIAy0NrgoBlIeSRSpvRwej14Yk74l6wbzeifJ8YzYs4iFT6vsJYi2wpqG7by5JQpRdelO9oX1hAamt2yxQ9Z7wFl02iV98Euvnr7b+GwV/FPVYxYjaTqAIlceCHPGPNByKdMGaSB6BOu3r/9Loklo/jGGo+ev/90dsZ/YrD9yYEW2fZ1X98Vouue079rCsnZm5BdK9QF9KKkIo+4DPTC2zEadvUVcxKpaJxt0JGKAXmSFPzEbmWtRmmYr0MfNP3YR43eyxKP6dd107j3cDFhe4Cdi+HJwE3Ic/R+HbRuodcCi+ivi4lHT7/YouXL/1GKKTMTtO5eSQLCyCk6SkWNVNmCCzH0anA5ZmIR07TY7uq1W/jxikf3ND7+4LTIxHa7kh7vnO46wcX+4lTWguuPw7jeB3y5E7Pj17C2fWCK+rq6laW9+gDnH69EKhgvhvFufjY/E8+DO4G9Oby3eajRUC/dg3kwXNcyJ7gJTWMdZXw2g18VVWGVwT3J0s6UXZ5WRI3PFou3DwYAgI0ubF0Ho6jN4H6A2B0dufBgTk5OTiBJfrMbIAvBI1ClPBRTTknClrcV7o6VNaA8+EYrglULm0rlFfR9jPvgG4cwdojRrTJAVTxGT3NGHwg2zj6pAj38DIVar9GhoejLD6EnyXt8UvnQ3ZMkAyYT4dbO1rH3Fr1NOpBpbYBcGiiRog2jR5M3HhpZ4nwvW5IczA9GONfewqOxG5AezvPcBu40/HUOn23Y+z3e918A/IG0se5xD3Dle0rPoxjs5vDB6Bbkk1RarjSCWo/K2o1BB3bdXzfRfDeAlCEsXZ+2IyTOjdStVz6yyJLkqJBysEqn8DF946dD1w9mNpvFaoKbqEBvzdV9aYrGKkNwjeVQ358qNFDLx77FjhXBdcJ39g8j7XNYB08gORm+wVyt28ij4T7oFLcI1zuWGnCAmsNFZa1HsAZHndZWa7thxNHKAz/3AuygXIm2dLKpVC714HNXfndG8ZS/IUno4VJ6gnesHkQF7sZnM/qGTYWD20lb5CcTMQc1UXpCZ+DA/Xz0miR3178zypfx3cpGzYOf4bs594C5sosv0+xeBp4N8An/B3rshKlFnz/ghGG2mXDi9t5YT7Xsh8CwSrzS0A8a425OEP5Fi0ZL1U/Dvj9vh2Z/PywlIhXZdD0Z+v0yFZX1xHbTNr9MxbeArhXZ/TIVT9IpLut+JhTK8/+v7HqTGSf2yxxMVpyjlIdDaZjnk9SBf4lUPGJ7sFZ1yy4dFzgmE78/2/LG+y93l3S8cZ7n2NB3bZeT6fnx7lakYjVM8doWfMXJDa92chOp2l6Bfs3oz7ZCS1OGuCsMq1PXdf8Ayxj8Ug==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Entity Schema"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/entity/{entity_id}/schema"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update Entity Schema
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"entity_id","in":"path","required":true,"description":"Required","example":"(Type an entity ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Updating an entity field name","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"message":{"type":"string"}}}}},"example":{"status":true,"result":{"message":"Entity Successfully Updated"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

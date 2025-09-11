@@ -1,0 +1,71 @@
+---
+id: generate-profile-token
+title: "Generate Profile-Token"
+description: "Generate Profile-Token"
+sidebar_label: "Generate Profile-Token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZXB5KGtIPmS5qq3IA26BRaboEkQLBxjS0sji7FEquTIrmD43wuKUmxvne3L5sUxOTznzN1rZDG3GE/wzuhMFgTvnyTn0H2LHvSC1AechlgJI0piMs56jUqUhDFea8WkOHpoKsIQpcIYcxIpGQzR0PdaGkoxzkRhKUT6IcqqcO9EVRUyESy1Gr5YrTBEm+RUCozXyA4sRstGqjluNlMHZSutLFl3fzwauQ/P057syYjXb2P9p4bNJsSUbGJk5Q4xRnbuQ2JIMKVg6yQha7O6aDDExHM6kl+QDknQsxdKGEOsjK7IsPTOWBZc2x27mdYFCeW0GrJ1wb/HaGUe9Nan6cBF5RN88K7z959Zc/gpmVJaK/UhSve3E+Stf2xq2vPIa0ZKXhZZcnpK0fHxJUUno4uP0eXZ2XmUXpxd5OeX4mRMl9h7go2uDbT/7/iA5+NjEqNT+pgko/OL0Wh8fD4+HY/HY9z35k3DEe77hVldFN6bX4riMykygmm/STDEkjjXKcZYadsmSXCOMQ5Fkuha8bDTO+TO3pJZ9v1UmwJjXK9nwtKjKTYb3IQHTkWJrh2kynQbRMmt/w9irr/cwtXdFwzRYXql48Fo4Dzb138EW3P4pJO6JMVt8T6rZ+VaSSQM93VVacOxO4vgs+S8nsUwYTHXkdTT9zlzZePh8MOzAgBwRte6LGsluYlh0lG8Hh148KyOjo6OIAj+0CtgDbUl4FxaSHc1BYGzfMjp9VhqBdKCrQrJMGtglcskB9+qja7fGYJ+8vSwUgHn/pgsDxx7J7AyeilTsnACqcwyMqTYY9nO9SD4REuZdGkOghicGE+XGV1CW5JpaxN2YhpdQyIUzIm9jWP3Ju8sVGJOg23YgmCvkBzDVWE1LJRegbBw5cvH3w7gb11vcVvurq7AErNU8wMEfxGvtFlsCb7YVtK/vejsBnCrigbEUshCzAoCmfWR1StFBnTWPlfe3IW3fS4V09y0aTsg4kqJorHSehVxEBwMpOiswl16n77+ah/6WUVR5KsJ7n0EWmtX3TcqrbRUDF9p3tX3U04KSrFwZqKvCFcn7s22McI2h2VtGYRLhq0okVnjdVRu/BrpZoBpgUUB1FEN4DrX2hJoRX2cMl0UeuUYeysLrqVT0F3k5qTnRlS5TETRYb6W36OSbvvcs2CycCMsw9hFD3wEHvu26bFhlVMHu7OYXMt4zi6aJCyTUbAHP+hRg+Dx65+O5Vvft6KSg9pGNB64GTCQevhtN7s3tVtJ8ET/gzwH4qR5zN9oojpa7WhqN5S2XIp2PXVr482ZvTcaX7cZ0w8eVoWQ7Rpup/C6G+cT7Mb5zgIKu202DTF3oz+e7E3yaYjfazINxpNpiEthpKtq920T9r+W3A5YkFtRV0lClUNfiqI+/DtlurNr7m7vH3Cz+QkHIVQ4
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Generate Profile-Token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/account/profile/token"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Generate Profile-Token
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"token created successfuly","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"token":{"type":"string"},"name":{"type":"string"},"profile":{"type":"string"},"created_by":{"type":"string"},"permission":{"type":"string"}}}}},"example":{"status":true,"result":{"token":"ecjkfc55e-229e-4083-9667-d868h79a41e9","name":"your name","profile":"712ea05e3cc07800127151111","created_by":"712ea05e3cc07800127151110","permission":"full"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

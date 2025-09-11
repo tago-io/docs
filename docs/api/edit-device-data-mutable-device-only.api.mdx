@@ -1,0 +1,71 @@
+---
+id: edit-device-data-mutable-device-only
+title: "Edit Device Data(mutable device only)"
+description: "Edit Device Data(mutable device only)"
+sidebar_label: "Edit Device Data(mutable device only)"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/ZUB87CJINtJ0Se9pUnQBii6QS4IFomBpaWxxI1EcslhvK6hfy9GlGw58e4WRZ9skXM5c+GZ2QiSpRfZk7hxZqlqhONHRRX0X5N784L6RKTiEl9Vjl7MU2Glkw0SOtbbCC0bFJk4D1QZp/6WpIwWqVBaZKJCWaATqXD4NSiHhciWsvaYigJ97pTthDNxITUsEErU6CRhAUrD2gQHtkflkUjp0sPxbW+JQeE32diavR9/GklPaEDt8wobKbKNoLVlOU9O6VK0bboFXnSRXV8OmK2kag8xufAO8BYGGF2voQkkFzVCtPUG2v3aIsj+Dq4vfwxszq69Ndqj5/tfTk/5J2ayO7kwmlDT5L7T3Hzf1hiFtLZWeVec2RdvNKfgTUxXheIc76AWkqRIRR79sYN3Vg65N4svmJNIhXXGoiMVA/EkKfiR3MKYGqVmnA59qOlQOsZB7GzEkgxa4gwUYXPsTyDYgvuHFds2FhE9/WaKNav/x0jGGHSo6/Zw7iC+EbiUJI/3O6LrEq57g1SZgrssdBniXsvELErNNkMvtrM+9x7d6/DQgqtFJjabhfT44Oq2FdzF705lI7iJOKjbXfhX2yS23OdL04WpqGuOe1ma649wfnMtUsH+YlBn09PpqXgb6hHsxOHS5KFBTV0in/Wz5uaUOcFdsNY4yvhsAr8rqsIigyeSpZkoMz+uiKzPZrOTZw0AwEIXpmmCVrTO4Kl3sT06oPCsj46OjiBJ/jArIAPBI1ClPBRjTEnCkvcVbo+V0aA8eFsrgsUaVpXKK+gogznng0MY3v5gVmmgKh6jpyl77wFaZ15VgR5+hUItl+hQU7Tl+9CTJLZFpNIkyYDBRHdLZ5rIc7HwaQ9mbQLkUkOJFGXYexT54MHKEqe7tCXJHlmzh/PaG3jRZgXSw3mem8B0wbdT+GTCzu5hjn3n4C+klXEvOwfXvoP0NopebgofmRTlq1R19wjUcsisWWl0YJaduo7iW7JXmrB0XdkOgDjXsl575SOKLEkOJlL2UunYfSzfcLVv+llPJpPYTXAXM9BJc3df6cIapQlusez7+7FCDY18iUTZdwT3CevsHkba1bAJnkByMbzFXC3XEYdlYnRKErcUG5Y1YO9qCheVMZ4ZA4c8LU1dmxV7HKQ88HPn4ROjLtGUTtpK5bLubW7b70Ernqh3JAk9XElPcMbZg5iBh+HZDLZhVWFvdkSS/GSizz6bKD2h07BnfjpYTZKH2z/Zy+fh3UqrpsFP8GzKHDBVZvZ5XN2rwMMCHvF/gMdGGFq0+RNMGCarESYme2s8NbIbCf2O8G/pfY8pt2OE8BvNbC1VN+s6wt701P/Urx8iFdloEenYf56KynhioTHpz1PxNaBbi+xpnopX6RQj6SZEoTz//86WNZp/u/3lBH66yhyMoj+Ues0jQ9aBv0QqXnA93qnaeZsOWyAjjNd7G8xO/f2Okg4a53mOln4oOx9N15uHe5GKRT/2G1OwipMr3uvkKiI1XVq6haQ724ha6jLIkmX7Falt238AQK/Qsg==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit Device Data(mutable device only)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/device/{deviceID}/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Edit Device Data(mutable device only)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"(Your profile-token)","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required only mutable device)","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Editing a device data","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"1 item(s) updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

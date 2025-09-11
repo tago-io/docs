@@ -45,6 +45,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          docItemComponent: "@theme/ApiItem",
           editUrl: "https://github.com/tago-io/docs/tree/main/",
         },
         blog: {
@@ -74,12 +75,40 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "tagoio-api",
+        docsPluginId: "default",
+        config: {
+          tagoio: {
+            specPath: "specs/tagoio-api.yaml",
+            outputDir: "docs/api",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+            },
+          },
+        },
+      },
+    ],
+  ],
+
+  themes: ["docusaurus-theme-openapi-docs"],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
 
+  clientModules: [require.resolve('./src/theme/Root.tsx')],
+
   themeConfig: {
     image: "img/tago-social-card.png",
+    api: {
+      methodLabelComponent: 'MethodEndpoint',
+      authPersistence: 'localStorage',
+    },
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
       ? {
@@ -122,6 +151,12 @@ const config: Config = {
           sidebarId: "tagocoreSidebar",
           position: "left",
           label: "TagoCore",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "TagoIO API",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {

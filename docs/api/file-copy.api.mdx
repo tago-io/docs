@@ -1,0 +1,71 @@
+---
+id: file-copy
+title: "File Copy"
+description: "File Copy"
+sidebar_label: "File Copy"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXB+CEJQUlO0b7wzXXcNkDbBL4gCGwBWZEjcmNyd7M7tMIK/PdilqRFx2qDAn0StDwzc+ayZ3aPrMqA2S2+93ara4KXHzRXMP5bXNt7Mq8wxV90TQHXKTrlVUNMXqz2aFRDmOFZy5X1+i/F2hpMURvMsCJVkMcUPX1ptacCs62qA6VYUMi9dhGc4bkysCEoyZBXTAVoA51tPbiRUyBmbcoALy9HT0KJvqrG1RL94wy8YKGMKYa8okZhtkfunKACe21K7Pu1MArOmkBBvv9weio/A914cm4Nk+HFdbTc/7OvOQvlXK3zWIHV52AN9v23mf6h7rUpQUFMK7euwxTzIZh4f+biWGy7+Uw5Y4rOW0ee9ZBFYMVtmOE21takjJD0FNqaj9VinsHBB/uWDlZ41eY5hbBt67qDG1dIk8S274feUuCfbdGJh/+ajPJeSRE0UxO+n+TW2+ZoG9gezW6e3u1kjqtadeRPf1o6U+Jg+3gGCzi3rouf+nX/vIdyEyIEU2yIK1tghq6NXBVX4kq6G1ZjewP5h+m2tL7GDPf7jQp04+u+xz49cqoalCGVol0eynvxPJEx0TGFKe213L/tUBDNcTavVWnfvoOz928xRaEz5PJ6ebo8xW8zPIEDHN7YvG3IcOzjnbkzcjdUznDVOmc9Z3K2gF81V+0mg1tWpV1ou35ZMbuQrVav7gwAgIDObdO0RnOXwe0Y4vHoiMGdOTk5OYEk+c3ugC20gYArHaCYc0oSQV5X9HisrQEdILhaM2w62FU6ryDqgujKC08wKdLkVhvgajimwEuJPhJ03j7oggL8CIXebsmT4cFXGFNPkjf0oPNRLJMkAyEzhJM+DVpWREw6kulsC7kyUBIPGIk+QF4EcKqk5aFsSfJEjiXCWR0s3Bu7AxXgLM9tK2olX5fw0bYHv8d19FmAP4l31t8fArwNkdK3WYy4JbwzdQfqQelabWoCvZ0qa3eGPNhtNDcD/FHQtWEqfWzbERJnRtVd0GFgkSXJ0UKqEZXOww/tmz49dX1nFovFME1wNVQgomW6L0zhrDYMl1SO8/2hIgPNJNTjRMiciM3hYqSxh00bGJQ0IzjK9bYbeDhRLa8Vy0iJY1UDjaGWcF5ZGwisoalOW1vXdicRJ1QAUYMC7Fi5kmzplat0rurR5+P43RgtW/OKFVOACxUYXkv1YKjAzXRtJt+wq2h0O9NouTJDzLGapAKTN/DE/XLymiQ3l79LlE/TvVVOL9uwoNdL0YCltqtP8+5etKLk8IH+B3riRKgNPr/DidrFbsZJtoWzgRsVN9L4gJmr+hM1fFwqTF955Wql40aNmr0fFf8Wo+LHXe46eSVVNrCcz6V+neKXlnyH2e06xQfltcyu/OvT6a0k2n5PnTyK5k8Qgdft8UdGOlmc5Tk5/lfseray3t9cY4qbcW83thATr3byXlM7zBBTtLEIcfPGsz3WypStKgU7vnH6vv8bGbiFvg==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"File Copy"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/files/copy"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+File Copy
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"from":{"type":"string"},"to":{"type":"string"}}}},"example":[{"from":"/layer05.png","to":"/layer05 - Copy.png"}]}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Making a file copy","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

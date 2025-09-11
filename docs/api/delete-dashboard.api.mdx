@@ -1,0 +1,71 @@
+---
+id: delete-dashboard
+title: "Delete Dashboard"
+description: "Delete Dashboard"
+sidebar_label: "Delete Dashboard"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/ZUB87CJINvZok96C2KjDbDoLnJBUCQGlpbGEjcUySVH9qqG/r0YXWw5drt96JMtajjnzJmbdoJkHkTyIr54u1Ya4fJZUQH90+TRvqG5ErGYy1CsrPRZEMtYOOlliYSer+6EkSWKRNxUVFiv/pKkrBGxUEYkokCZoRex8Pi9Uh4zkaylDhiLDEPqlWuNE3ErDawQcjToJWEGykBtKw+uJxaQSJk8wOV974l54Q9ZOs3oj7XDoxsTYvIiFiEtsJQi2QmqHZsG8srkomniA/c0RUc/J33Ak85plbaxzr4F+1+BskHIu/mA5iQVR1jkqxN9DlHDUdiXbdwS9n7hbn71r1yWDBWcNQEDv//l+pp/upj5pHmPPUeNrP0YRsQitYbQEF8+ESPZnTKwq2+YssbOW4eeVIcfSFIVRnYrazVKI5qWaKXpXBTNSISDj0654ZZ4qNIUQ1hXWtdwj6XdYMZ3m/MhIsxH4ZVIhc04Ze075s2JSsRsL8JsN0pnw6qj3wxdUXktErHbrWTAJ6+bRnAZnJzKUnBKlFnbNk5FXTnL3N59hpsvdyIW7LPj+XF6Pb0W79lfwMEc5jatSjTUZuPVvJpba0imBA+Vc9ZTwmcT+E1RUa0SeCGZ24myy8uCyIVkNrt6NQAAbHRry7IyiuoEXnqI/dGZC6/m4uLiAqLod7sFslAFBCpUgGzMKYrY8rHA/bGyBlSA4LQiWNWwLVRaQNu/3NIfPMLQHYNbZYCK7hgDTRm9J+i83agMA/wKmVqv0aOhzlfoQ4+iOW5U2o+3KEqAyXRwa2/LboxkrU3ck6ltBak0kCN1NozemXwI4GSO04NsUXQ0QBnhRgcLb8ZuQQa4SVNbGereTuFPWx38nh96JwB/IG2tfzsA3IWW0vsoerspfDa6BrmRSsuVRlDrQVm7NejBrtvrpjPfT19lCHPfpu0MiRsjdR1U6FgkUXRWSNlbxWP4Ln3Dq2PXr2YymXTVBA+dAq01V/fCZM4qQ3CPeV/fzwUaKOVbN6H6iuA64TuHxojbHJZVIJCcjOAwVeu64+F4JnkliUuKHUsN2ENN4bawNiBYg4NOa6u13TLiYBWAWzoD2yuXo829dIVKpe597svvyShecQ8kCQMsZCD4yOpBp8DT0DaDb9gW2LsdTVpumQ6zVxNlIPQGjtxPB69R9HT/iVG+Dn0rnZpWYYIfpzwDpsrOvo6zu6h4TsMz/g/02AlT63z+hBNWk+2IEy8CZwOVst0r/SI9M7GPhuJ+ZRD+oJnTUrUbpZ2/u36Uv4jxPkvGu3kZi8IGYpvxCF/G4nuFvhbJyzIWG+kVl3M77zMV+P8/fODsDutyvMuP1/pZxv2hNDVvAqkrfhKxeMP63fdEs2zi4duFGXUW+0+b4e7Jsub9s99288WnxeNCNM3f8TB1yg==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Dashboard"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/dashboard/{dashboardID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Dashboard
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Type your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"dashboardID","in":"path","required":true,"description":"(Required) ","example":"(Type a dashboard ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Deleting a dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

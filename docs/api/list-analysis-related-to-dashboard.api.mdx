@@ -1,0 +1,71 @@
+---
+id: list-analysis-related-to-dashboard
+title: "List Analysis related to Dashboard"
+description: "List Analysis related to Dashboard"
+sidebar_label: "List Analysis related to Dashboard"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1v2zoM/SuE+rDNcBInvetWvxVtsVtguBu6FsPQBphiM7ZWW9Ikullu4P9+QX8kTpt9PNynJApFHh6Sh9oIkpkX8Z346MxSFQgvPyvKofs1ujEPqF+JUFxIny+MdKkX81BY6WSJhI6vboSWJYpYnFWUG6f+laSMFqFQWsQiR5miE6Fw+L1SDlMRL2XhMRQp+sQp2xjH4lxqWCBkqNFJwhSUhrWpHNgOmEcipTMPL687T4wLf8jSFhz9y8B4RIxbhMInOZZSxBtBa8tWnpzSmajrcAv73GhCTaMbtvgt6l1AaW2hkibZyTdv/jRc2jN5ddFHs5LyvVjkqmcE7dKGvbxfL4/xzdvZQk7Tk+MoimZvjqevkwgPwVGaMEMn6nrO4bw12qNng1kU8Uebd3OyR0u8+Xluv+Skrp/m8a6tI0golCcwS5BaFmuvPDgsmtKTAcoRtkyJUCQtGg7/LMYhcGbxDRMSobDOWHSk2jQd+qqggZ10Tq65DoSl//19lR4koC3t86pz9p4kVUPXC2MKlEzNkLodtrs2jDiZnp6cylny9s30JFpE0fTt6fHsBE9FuB24nrgomgpusV/cS2cH780Et0KPkfuubmHvF+09l+rsQJ0uBjUqkXLDCDJsmOOujsVkW8bJZtD79aQvOzcqusdeTCpXiFhsNgvp8dYVdd1k9uxUlg1ypZem4VZR04A3MjNXH+Ds45UIBfts8U/H0TgST7M6gp05XJikKlFT01j3+l7zAMiE4FNlrXEU89kI3inKq0UMdyQzM1Jm/jInsj6eTF7dawAANjo3ZVlpResY7roQ26MDF+710dHREQTB32bFpFYegXLlIR1iCgK2vOHB6I6V0aA8eFsogsUaVrlKcmi0j7XzhUPoNaV3q3QzWnyMnsYcvQNonXlUKXr4C1K1XKJDTa0v36UeBBf4qJJuKwRBDAymDbd0pmz1Om1swg7M2lSQSA0ZUmvTDHZj8sKDlRmOd7QFwd7e4QhnhTfwoM0KpIezJDEVSxL/O4Yvptr5PbwrngX4B2ll3MMuwJVvID3NorMbwwddrEE+SlXIRYGglj2zZqXRsXzxdd2ab5dWI7SuKdsBEP0gtSjiIDhIZD8f4TB8W76tYu65vtej0ajtJvjUqSxbc3df6tQapQmuMev6+3OOGkr50Ipx1xG99u4GI2xqWFaeQHIxvMVELdctDsvy6JQkbil2LAvALtQYznNjPILR2PO0NEVhVhyxt/LAI52C6ZjL0GRO2lwlsuh8btvvViuWnU8kCT1cSk8wZfagZeC2H5veN6xy7NwOlgaPTBuzYxOlJ3Qa9tyPe69BcHv9nqN87edWWjWu/AinY9aAsTKTr8PqXla8MuAz/g/w2AlDa33+BhNWo9UAEy8mazyVslmRnfb/kZLvyeR2cRH+oIktpNLsulHkTafyd2K4rOP9N85W6OehyI3nFben7/NQfK/QrUV8Nw/Fo3SKe71ZBqny/P0nj8bN7lkwfB7tv5QOgu+3v+bd/yiLin+JUDzg+skTrZ7XYf8cZEStxVmSoKXB3ecPn/lgIb67vBF1/R/qpuFl
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Analysis related to Dashboard"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dashboard/{dashboardID}/analysis"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List Analysis related to Dashboard
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"dashboardID","in":"path","required":true,"description":"(Required) ","example":"5f3e782ba1d6300027315c0e","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting a list of analysis related to the dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"}}}},"status":{"type":"boolean"}}},"example":{"result":[{"id":"61969a2c87160b00189326e9","name":"Analysis 001"},{"id":"61969a2c87160b00189326d2","name":"Analysis 002"}],"status":true}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

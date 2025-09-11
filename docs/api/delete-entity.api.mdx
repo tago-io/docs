@@ -1,0 +1,71 @@
+---
+id: delete-entity
+title: "Delete Entity"
+description: "Delete Entity"
+sidebar_label: "Delete Entity"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVktv20YQ/iuD8SE2QUlO0RNvgi20BoIm8ANGYAvNihyJG5O7m92hFEbQfy+GD4my5fbSk8TZ2W++ee8WWa0CJk/4xdulLgjOHzXn0H2N7u0LmQuMcWZYc43zGJ3yqiQmL9e2aFRJmOC04tx6/UuxtgZj1AYTzEll5DFGTz8q7SnDZKmKQDFmFFKvXaOc4JUysCBYkSGvmDLQBmpbeXAdqUDM2qwCnN92SMKJfqrSFWL960B5xMIZYwxpTqXCZItcO9EK7LVZ4W4X72lT49bfOuspO8X5EWH21Ru+PYkjDuf3tSNQBlpMuLm++FcSc7ESnDWBgpz/dnkpP23MGsmVNUyGR/fNze37WEMayrlCp00aJt+DNeLuK/rXVJCE80AWY0xbY4L+BuKUbbv4TiljjM5bR55160VgxVUY6C2sLUgZIekpVAWfisXQgwNGG/r+VleCcFelKYWwrIqihlsq7ZoygXjHT4JZ72JJnNsME8yaA+Eu2U5w0kZhst2Xw05SR37dV3nlC0xwu12oQA++2O1QiuiNVJUoedVmaRs3NTc5uVcre/MZpl9uMEbBbPl9HF+OL/E16zM4qMO1TauSDDfJeDbPRmpCpQx3lXPWcyKyEfyhOa8WCTyxWtmRtvPznNmFZDK5eDYAAKJ0ZcuyMprrBJ46E3vRiQvP5uzs7Ayi6E+7AbZQBQLOdYBsyCmKRPM+p71YWwM6QHCFZljUsMl1mkPTlNLUHzxB3109rDbAeSumwGOx3hF03q51RgF+h0wvl+TJcIsVOtej6JrWOu1GVRQlIGRac0tvy3aQZI1O3JGpbQWpMrAibnXEeqvyIYBTKxofwhZFR8NQLEyLYOHF2A2oANM0tZV0qZyO4autDrinh9gbA38Rb6x/ORi4CQ2l1150emP4bIoa1FrpQi0KAr3sI2s3hjzYZXPdtOr7aaoN08o3aTtBYmpUUQcdWhZJFJ0MpOq04qH5Nn390TH0sxmNRm01wV0bgUZbqntmMme1YbilVVffjzkZKNVLM576ipA6kTuHxoibHJZVYFCSjOAo1cu65eFkJHmtWEpKgFUB1Jkaw1VubSCwhvo4LW1R2I1Y7LUCSEtnYLvIrciuvHK5TlXRYe7L78FoWVl3rJgCzFRg+CjRgzYCD33b9NiwyamDHQxaaZnWZhdNUoHJGziCH/eoUfRw+0msfOv7Vjk9rsKIPo5lBoy1nXwbZndWyZiGR/of6AmIUGsx/4MTVaPNgJPsAWcDl6pZK90afj2pjybifl0w/eSJK5RutkkzfLfdCH/C/SJLDjt9HmNuA8vxcHTPY/xRka8xeZrHuFZeSxk3cz7TQf6/81DZHrYkHl4iMHgOnGTaCZURemtVVPKFMb5QffQE2c13cf9mEjLt+TRNyfHg5tsNPx/stuvZp9n9DHe7fwDzIGLo
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Entity"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/entity/{entity_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Entity
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"entity_id","in":"path","required":true,"description":"Required","example":"(Type an entity ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Deleting an entity","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Entity Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

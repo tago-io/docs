@@ -1,0 +1,71 @@
+---
+id: get-tags
+title: "Get Tags"
+description: "Get Tags"
+sidebar_label: "Get Tags"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVktv20YQ/iuD8SE2QUlO0RNvqm24AYomSGwYgS0gK3JEbkzubnaHUlRB/70YLinRsdIe2pOo3Xl88/pmd8iqDJg94gdvV7omOH/QXEH/b3Jnn8lc4CJFp7xqiMmL9A6NaggznLdcWa//UqytwRS1wQwrUgV5TNHTt1Z7KjBbqTpQigWF3GvXCWd4pQwsCUoy5BVTAdrA1rYeXI8lELM2ZYDzj72lC0yRvqvG1eL980h4wgIVUwx5RY3CbIe8dSIV2GtT4n6fHmB3Nz1ap7h6gZV9+wrq+TzPyXGAuVH1NuiQwjWtdU4p3AfyKVyrUC2t8kUK81yULn4GOur9I9CFwAnOmkBB7n+5vJSfmNfu5MoaJsOTu05z93NbY8/KuVrnXalmX4M1kpIf4rwl7gODO2mMFPPoSUy/0j/l2C6/Us6YovPWkWcdQwisuA0juaW1NSkjCD2FtubRnfJebaU+TE04laD9OK6j8Vi5wdwjmrZZkl+rupV8r9uufzFFpiAIlw5TVJ6UfNc2f8YUu262hlWNKTZtzVp8pNiGTtN5u6ypwRRX1jdtLap5pbyY++0DLvYR2+uk9tlsiCtbYIYldTmS3stwJkM4e6ZtmO0k1L10B/n1MGytrzHD3W6pAt37er9H6eVXp6pBaR1tVrZLmuau7HeqtO/ew/zDO0kC+RBRvZ1eTi/xR6xncBSHa5u3DRnuSv5knoy0ncoZPrXOWc+ZnE3gVnPVLjN4ZFXaibaL84rZhWw2u3gyAAAidGWbpjWatxk89i4ORycUnszZ2dkZJMnvdgNsoQ0EXOkAxRhTkojkXUWHY20N6ADB1ZphuYVNpfMKOm4QbnnjCYZJH8xqA1zFYwo8Fe89QOftWhcU4Fco9GpFngxHW6EPPUnitESiTJIMBEx0t/K2iXxW9FQRwWxtC7kyUBJHGfEeRd4EcKqk6TFtSfKCisXDvA4Wno3dgAowz3PbChHI7RQ+2/Zo9zSXvnLwJ/HG+uejg3ehg/RjFL3cFN6begtqrXStljWBXg2ZtRtDHuyqUzdR/EDq2jCVvivbCRADr0YUWZKcTKQ6sO/IfSzfcPXS9JOZTCaxm+BTzEAnLd19YwpntWH4SGXf3w8VGWjUs4ipoSOkT0TnOBhpV8OmDQxKihEc5Xq1jTicEJ/XiqWlxLCqgXpXU7iqrA0E1tCQp5Wta7sRj4NUABnpAmyfuZJs6ZWrdK7q3uah/e6Nls35iRVTgBsVGN5K9iBm4H4Ym8E2bCrqzY7oXEYm+uyzSSoweQMvzE8Hq0ly//EP8fJlmFvl9LQNE3o7FQ6Yajv7Mq7uTSvLAB7of4AnRgRatPkvmKidbEaYZNs4G7hR3fLqXwMjfn5Bhoe9w/SdZ65WultXHe/ueu5+jA+oFIW9McWsU1nIIgndDhqz9iLFby35LWaPixTXymvp4I7iCx3k+ydPpd1xDePxWQH/+VVyMr5hCRtZwXF5ZhgjHJ5O+8U+HZ55gj5eRTQjpdcPjsVoBd7e3OF+/zch+pXI
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Tags"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/tags/keys/{type}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Tags
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"type","in":"path","required":true,"description":"(Accepts Analysis, Device, User, Dashboard, Action) (Required)","example":"Device","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Get Device Tags","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"array","items":{"type":"string"}}}},"example":{"status":true,"result":["numbervalue","vumeter","test","bp","area","block","horizontal","multiple","user","problem","formula","chart","BP"]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: export-data-to-csv-in-files
+title: "Export data to CSV in Files"
+description: "Export data to CSV in Files"
+sidebar_label: "Export data to CSV in Files"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXB+iEOQV3sxE7NN9dxWwNtHfjSILCFZESOyI3JXWZ3KVkV+O/FcEmJshWnKPpkazl7zpnLzsxKOEytiO7EB6NnMifY/yhdBu2vwY1+IPVahOI9zWVMVoTij8rhNCfwJ2ISihINFuTIMNBKKCxIROK0cpk28m90UisRCqlEJDLChIwIhaFvlTSUiGiGuaVQJGRjI8vGOBJnqGBKkJIig44SkAqWujJQtjItOSdVamH/qkVilfSIRZkz+/6nnvXAdW7YOKMCRbQSblmynXVGqlTUdbgWfqaVI+UGN2zxQ90bSizLXMaNu6OvtvH539AlTRw/y6TjKtFlW0zOVM8C1Hm97TRLBgQPCRfvX3Z5wiS21MqS5e+H4zH/8b42J1uhiFbfx3oxDnX9VP35Y6kN5w8SdAhOwy8yb6or9oxM8QxnlwA9/UqxE6EojS7JOOldsQ5dZXt2U61zQsVKDdkqdz/G4Mr5jEliyNpd4avrvtsbTp+uDcs2Tpvv0fFxMn17ND0+OjpMDpLxeHzy7uToOKHRwbs3h+M3Jyfjg8OfDoexnXuq2lcEWfezTpaM+x9D1Retqjyvv5eedW7Orv/i99elqCCX6YQLVdsmalyvkRi1jq3WBV2PGGE0xfihKrkSycy7JlGZXERitZqipVuT17XgJ/HsFAvBZco+XW28P18HveY3M9ONl9I15XeDqb64hNMPFyIUzOd9OhiOh2Px1NM92JjDex1XBSnXxPFe3Ssuf4wdXFclByTiswH8Kl1WTSO4c5jqgdST/cy50kaj0et7BQDARme6KCol3TKCu5ZifbTjwr3a29vbgyD4TS845JUlcJm0kPQ1BQFb3mS0PpZagbRgy1w6mC5hkck4g6bdcb98ZQi6PtLBSgUu88dk3ZDZW4Gl0XOZkIW3kMjZjAwp57Fs63oQ+K7v50IQRMBiPN3M6ML3aF8AYStmqSuIUUFKztswuzd5ZaHElIabsAXB1uRhhtPcanhQegFo4TSOdcUNib8O4ZOuNri758Mzgj/JLbR52BBc2EbSUy9auyFcqnwJOEeZN3NPzrrI6oUiA3rWXFfefD2opHKUmiZtO0ScKsyXVlqvIgqCnYHE1irs0/v0dZ+2oe/VYDDw1QTXPgKNNVf3uUpKLZWDK0rb+v6YkYICH9gMu4rgOuE7m4cRNjksKusAORm2pFjOll5HyU3TSHRcUgyMOVBLNYSzTGtLoBV1cZrpPNcLZuysLPBzT0C3kUtJpwbLTMaYt5jr8rtVkreBa4eOLJyjdXDA0QMfgdvu2XTYsMiohe31SH4ynrONJqF1ZBRswQ871CC4vfqdWb507xZLOazsgA6G3AOGUo++9LN7XvEggY/0P8hjEJbmMX+giarBoqeJez036QKbidAuHC93963+uJ4djh7dqMxRNhO0adOrtvHftRNNhCLq7zKML0LRdv9JKDIeF9HdVtOfhOJbRWYportJKOZoJBd5MyESafn/72yIvfEnNisg9NaincrbQ1RLHg6YV/xLhOKBllurWD2pw27pYzH++5PNsLv/fOEJuxuncUyle9F20puoHy6vbzhm7YQvdMJ3DC54H8SF16qbEDQrSXO2EjmqtMKUbduFq67rfwCROQ2u
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Export data to CSV in Files"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device/{device_id}/data/backup"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Export data to CSV in Files
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"(Your profile-token)","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"device_id","in":"path","required":true,"description":"Required","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Exporting data to Files","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"file_address":{"type":"string"}}}}},"example":{"status":true,"result":{"file_address":"device/66db45b6552d1d00097956de/1732039901282.csv"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

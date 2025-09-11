@@ -1,0 +1,71 @@
+---
+id: update-dictionary
+title: "Update Dictionary"
+description: "Update Dictionary"
+sidebar_label: "Update Dictionary"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1P4zgQ/isj82EhSls43ad84wDtIZ1uERShFVS3bjJNvCS21x7TzVb576fJS5tC2ZPu7hPUeTzzzIufmY0gmXuRPIobZ1aqRDh+UFRA/2syN8+oT0QsLlVKymjparGIhZVOVkjo+OpGaFmhSMR5oMI49UMyUsRCaZGIAmWGTsTC4begHGYiWcnSYywy9KlTtgUn4kJqWCLkqNFJwgyUhtoEB7Yn5pFI6dzD8W1viXnhd1nZkr1/HoEnxLxFLHxaYCVFshFUW0Z5ckrnomniLe1sG9pfKhtoW0nFHmly4T3OZklS6Y4yFQgfr+awyxc49NZoj+/wPp7XFsf468uTnzJfMK3OpOfvv5ye8p8u0e3JhdGEmibz9ubmfVtjHtLaUqVt7WZfvdGco1fx3ttMcg1Ajvm2aYxF2jllL29MHeJgll8xJREL64xFR6qLxpOk4Ee4pTElSs1kHfpQ0qGcjCPZ2ehqNtwSdyFN0ftVKMsa2lgw47tN0xUaPf1mspot/MtgxjR0KMvmnRyO6y1iUSEVJuOuC21CuPcSMds15myz16QN9we6l+H9BVeKRGw2S+nx3pVNI7i935zKSnDzcBC3u3CvtnlruPdXpg1LUdsUc5mb609wfnMtYsH+uiDOpqfTU/E6tCPYweHSpKFCTW3invST5qaUKcFdsNY4SvhsAh8VFWGZwCPJ3EyUWRwXRNYns9nJkwYAYNCFqaqgFdUJPPYutkcHLjzpo6OjI4ii380ayEDwCFQoD9mYUxQxcl7g9lgZDcqDt6UiWNawLlRaQCslLEUfHMKgB4PZ/sX33TNl7z1B68yLytDDr5Cp1Qodaups+T70KLrEF5X2IhtFCTCZzt3KmaqTv6zFxD2Z2gRIpYYcqcOw9w7ywYOVOU53aYuiPRlnD+elN/CszRqkh/M0NYFlgr9O4bMJO7uHpfeNgz+R1sY97xxc+5bS6yh63BQ+6bIG+SJVKZclgloNmTVrjQ7Mqr2uO/h2BihNmLu2bAdInGtZ1l75jkUSRQcTKXtUPHbflW/4tG/6SU8mk66b4K7LQIvm7r7SmTVKE9xi3vf3Q4EaKvnc6WPfEdwnfGf3MOK2hlXwBJKL4S2malV3PCxroVMsEK41LEvA3tUULgpjPILROORpZcrSrNnjgPLAzz0D02cuR5M7aQuVyrK3uW2/e6140N6RJPRwJT3BGWcPugzcD89msA3rAnuzI1HkJ9P57LOJ0hM6DXvmp4PVKLq//YO9fBnerbRqGvwEz6asAVNlZl/G1b0KPB/gAf8HemyEqXU2/4EThsl6xInF3RpPlWxHQL88HJLzPVXcjgjC7zSzpVTtKGvFedNL/eNoBxGxSPY3kkUsCuOJYWOJX8TiW0BXi+RxEYsX6RS3dDsPMuX5/3dWrdF0E7udBP7DMnMwwv5Qag7pRZaBf4lYPGP9ZulqFk08bIocQIfZW2N2Nt4uKvFw4zxN0dJPsYvRuL25n4tYLPuZX5mMrzi55sVPrju6ps1au5C0ZxtRSp0HmTO235OapvkbWv7lJA==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Dictionary"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/dictionary/{dictionary_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update Dictionary
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"dictionary_id","in":"path","required":true,"description":"Can be obtained in the GET Dictionary response(Required)","example":"(Type Dictionary ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Updating a Dictionary name","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

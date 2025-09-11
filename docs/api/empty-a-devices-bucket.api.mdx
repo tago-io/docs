@@ -1,0 +1,71 @@
+---
+id: empty-a-devices-bucket
+title: "Empty a Device's Bucket"
+description: "Empty a Device's Bucket"
+sidebar_label: "Empty a Device's Bucket"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/ZXB5GGzgmwnRZ/0liZBG6BoFrkgWCQGlpbGFjcSySVH9qqG/r0YUfJlk21f+mSLHJ45c+EZbpHVKmD2jJ+8XeqK4PRJcwnD1+TBvpL5iCle0VrnFHCeolNe1cTk5dwWjaoJM7xouLRe/61YW4MpaoMZlqQK8piip2+N9lRgtlRVoBQLCrnXrjfO8FIZWBCsyJBXTAVoA61tPLiBVSBmbVYBTu8GJCFF31XtKvH++cB4wkIaUwx5SbXCbIvcOrEK7LVZYdelO9pFH9fN1cjYKS6P+LJv3tD9CYnTh9YRKIiYcHP18V9JzMVNcNYECrL/y9mZ/MScyUr3o99YhA8BFk3+SgxUO24xxdwaJsNyWjlX6bwvwuxrkFPbtxTs4ivljCk6bx151pFAYMVNOLBbWFuRMtj1TJuK3wujO0jBHiOmbTyFV4oV3Dd5TiEsm6pq4Y5qu6ZCALo3gV5LYKBgF/BvfcCYYk1c2kIKZUMfgdQrw1nM+Ww71rObjckJ5Ndjrza+wgy324UK9OirrkNphTerqkapjjZL20esua/vg1rZm1u4+HSDKQpmJHs+PZue4Y8hnMDeHK5s3tRkuK/Li3kxl9awyhnuG+es50zWJvC75rJZZPDMamUn2s5PS2YXstns44sBABCjS1vXjdHcZvA8uNgtvXPgxZycnJxAkvxhN8AWmkDApQ5QHHJKErF8KGm3rK0BHSC4SjMsWtiUOi+hv1pyNT94gvGSjLDaAJdxmQJPxftA0Hm71gUF+BUKvVySJ8MRKwyhJ0msdVScJMlAyER3S2/rKAexuulAprUN5MrAijjaiPdibBmnVjTdpy1JjjRNPFxUwcKrsRtQAS7y3DaG4+4UPttmj/u+FL1x8BfxxvrXvYOb0FP6MYrBbgq3pmpBrZWu1KIi0Msxs3ZjyINd9sdNNN9pojZMK9+X7R0SF0ZVbdAhssiS5N1EqsEqPXQfyzduHUO/mMlkErsJ7mMGemvp7mtTOKsNwx2thv5+KslArV7FTI0dIX0iZ/YXI+1rWDeBQUkxgqNcL9vIw4k6ea1YWkqAVQU0uJrCZWltILCGxjwtbVXZjXgcrQLIlS7ADplbkV155Uqdq2rA3LXfo9EyeO5ZMQW4VoHhXLIHMQOP47UZsWFT0gB7oLlyZaLPIZukApM3cAQ/HVGT5PHuT/HyZby3yulpEyZ0PhUNmGo7+3JY3etGFBue6H+gJyBCLWL+BydqJpsDTjISRIFr1U+YYZj+XLaPtHE3Q5i+88xVSvcjppfh7aDoz8NkxhSzgxkdRX2eYinynz0fafk8xW8N+Raz53mKa+W19HUv/IUO8v8n74/tfoIezPbjt8a7lIdFZWTQrFXVyBem+Ert4duim3fp+BYSNnH7Is/J8cHBN7NbhtBu4H26vX/ArvsHdYNQYQ==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Empty a Device's Bucket"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device/{deviceID}/empty"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Empty a Device's Bucket
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required)","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Device's bucket empty","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Data Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

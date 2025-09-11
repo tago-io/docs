@@ -1,0 +1,71 @@
+---
+id: convert-device-type
+title: "Convert Device Type"
+description: "Convert Device Type"
+sidebar_label: "Convert Device Type"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/ZUB87CJINvZok96S5OgDdB2F7kgKBIDS0tjiRuJ1JLDeLWG/r0YUvJl7WDbonlxRA7PnDkznOFakCydyJ7ER2uWqkY4fVRUwfA1uTcvqM9EKq7wVeXoxDwVrbSyQULL59ZCywZFJi48Vcaqb5KU0SIVSotMVCgLtCIVFr94ZbEQ2VLWDlNRoMutaoNxJi6lhgVCiRqtJCxAaeiMt9AOrBwSKV06OL0dkJgUfpVNW7P30/uuRZCj/YRG3i6vsJEiWwvqWrZ0ZJUuRd+nW+p5ji39mPPWnWzbWuUh1NlnF+L9J46KIOLN1eiqlVTtOSLrD7TZRAwSGk9yUSMYC6oZPyIq3Fwdl2Rv+22Wc+bhWqMdOt7/6fycf6IavNIfJM3oV7Sclq0XRgUy8EfkJlKRG02oibEOVMvWh4TM4jPmnIzWmpbhIx1HkrzbsVsYU6PUog+8fU3Hgup3BNliRJXHU0NpB+qzvPL6BVbSQR6jw4Jh+j5mCR39YoqOwf5jXLuMtK/rAH1UVxh4cRpFKhqkyhRcNMYFebh2MjGLws/WY231s4E5Zxvt63hNva1FJtbrhXT4YOu+F1yYB6uyEVwKHMbtNuDrjYg9l+7ShMAUhUK7l6W5+QAXH29EKthfDOP99Hx6Lr4P7gS25nBlct+gpiDds37Wl0aTzAnufNsaSxmvTeBXRZVfZPBEsjQTZeanFVHrstns7FkDALDRpWkarxV1GTwNLjZLRw4865OTkxNIkt/MigvWOwSqlINil1OSsOV9hZtlZTQoB66tFcGig1Wl8gpCu+GO9c4ijNd5hFUaqIrL6GjK3geCrTWvqkAHP0Ohlku0qCliuSH0JIlVEBtxkmTAZKK7pTVN7JIx9+lApjMecqmhRIo27D2avHPQyhKnW9mSZK/Vs4eL2hl40WYF0sFFnhuvKe5O4S/jt7jHO/SBgz+RVsa+bB3cuEDp+ygGuyl80HUH8lWqOvQ3tRyVNSuNFswyHNfRfDMqlCYsbUjbERIXWtadUy6yyJLkqJBysEp33cf0jVv70M96MpnEaoK7qECw5uq+1kVrlCa4xXKo78cKNTTyJfbMoSK4TvjM9mKkIYeNdwSSk+FazNWyizxaboxWSeKSYmBZAw6upnBZGeMQjMZRp6Wpa7Nij6OVA77uBZhBuRJNaWVbqVzWA+am/B604nl8R5LQwbV0BO9ZPYgKPIzXZsSGVYUD7E5b5CsTfQ5qonSEVsMe/HRETZKH29/Zy6fx3spWTb2b4Psp94CpMrNPu9m99jws4BH/B3oMwtQi5g84oZ+sdjhxe+f+3MgwBIaxf7yh7/XFzZgg/EqztpYqTLbQntdDr38a3g8iFdnOS2Js9/NUVDwasqe9Lj9PxRePthPZ0zwVr9KqMJh5JBTK8f9vPMp2Rtz2DXIG/+45cjSqYVHqjgeGrD1/iVS8YLf7SOrnfTq+xphu3L6MpCaDiuPxgxnM0y2e2Dzv3rad78zXjx/u7kUqFsOcb0zBZ6xc8UtNriJVE0QK75Gwtha11KWXJdtGTP77G2HO5k8=
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Convert Device Type"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device/{deviceID}/convert"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Convert Device Type
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"(Type a profile-token)","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required a mutable or immutable device ID)","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Converting a device type to Mutable","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Device type/chunk was converted"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-profile-file-list
+title: "Get profile file list"
+description: "Get profile file list"
+sidebar_label: "Get profile file list"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BUkBXZSYtCb0Ga7RYout02QdF1jC0tjSU2EqmSw7iu4X9fjC62HLubl77EETkz5/BwLlwLkrkTyVR8sGahSoTTz4oK6L5GN+Ye9XMRij9UiU7MQlFLKysktOy1FlpWKBLxnVYiFErzvx4tf1j87pXFTCQLWToMRYYutaomZdjs9G8vNSlagVkAYzkgA3MEi+StxgyUBir429VGO3wOp+8NAYe1CjMmhT9kVZeMr301RytC4dICKymStaBVzTuOrNK52GzCLdlLT4Wx6qdsqHS0C5RZE+EJ3ldSM8scNVpJLc2V8RbqTkCHRErnDk4/dpH2qX5h415fYn3/l/aMGbUKON6fxDH/tHSblSujCTWNbhrP9a9jDVnIui5V2ihw9s0ZzQI9OukbpJ7nMwdNAsA75UiEIm0hGeMg0DEGZv4NU3asranRkmrP4kiSdwO7uTElSs1ULTpf0tMxyJAsB2ZKE+ZoOYR3MsfBVpckm1A0+TbYkdbKJoEJK/c0Jru3uXREY6d+4nE+pXT0b2UytVCcXo99Q7EwtpIkEpFJwhGpCtmt9vNSpcdU2vClLUzZZ8ITp9nmVOu4TYbdRZD1uCd9K+6LeCvmyyiebPWbDqUQpVyhjcdR3ZylleHl+cWr+ODkYhJPzkfjeDR+eTM+TyYvkvgiiuP4H7E7LVPhmj0AmOwBTM7PLy4unkQ4T168OoowGwg4FXOf3iM51q7i4856rQ4roy/35k/ZlkWFVBhGz7FJGkmFSMRZq1YoHNqHvm96W4pErNdz6fDWlpuN4MMerMpKMEWlF6a5D0VN9d7I3Lz9Cy4/vBWh4Jgtr3EUR7F4zPYEdubw2qS+Qk1Nwd7pO83dQ6YEn3xdG0sJr43gjaLCzxOYkszNSJnZaUFUu+Ts7PmdBgBgoytTVV4rWiUw7SC2S0cc7vTJyckJBMGfZsm93jsEKpSDbMgpCNjypsDtsjIalANXl4pgvoJlodICms7JnfeZReh7dh92Ozq+e3QUMXpHsLbmQWXo4AIytVigRU1tLNcdPQhe44NKu9kXBAkwmRZuYU3VdvussQk7MivjIZUacqTWhtFbk2cOapljtJMtCPamKyNcls7AvTZLkA4u09R47ue8G8EX43dxj0+aA4D3SEtj73cAb11D6fEpOrsI/tLlCuSDVKWclwhq0Strlhotj2h21635duQ1vc0213aExKWW5cop17JIguCokLKzCofw7fX1W/uh7/RoNGqzCT61CjTWnN3XOquN0gQfMe/y+3OBGip5z2ayzwjOE/bZFUbY3GHlHYHky3A1pmqxannU3P6tksQpxYFlCdhBRXBVGOMQjMZep4UpS7NkxN7KAZd0BqZTLkeTW1kXKpVlF3Obfrda8bviE0lCB9fSEYxZPWgVuO3Lpo8NywK7sINhzCXTYnZqonSEVsNe+KiPGgS3H98xyte+bmWtIu9GOI64B0TKnH0d3u6155EIn/E30OMgTK2N+QQn9KPlgFMzIY2jSjZPj25U/KpD73XG7WAk/EFndSlV8/JomvC6697TbtbNQlEYR7wwbNqzsHvvck/PlOP0/cXLcb17Nf2Wx+9R7ve42r7GH2Tp2aKZIA/SKiYnkulsE/avXWbdulymKdY08Dp8IM4GA+7N9Y3YbP4DULIpNA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get profile file list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/files"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get profile file list
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"qty","in":"query","required":false,"description":"(Quantity of files to be returned in the response) (Not requried)","example":"number","schema":{"type":"string"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your Profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Get Profile's Files List","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"total":{"type":"integer"},"usage":{"type":"number"},"files":{"type":"array","items":{"type":"object","properties":{"filename":{"type":"string"},"size":{"type":"integer"},"last_modified":{"type":"string","format":"date-time"},"public":{"type":"boolean"}}}},"folders":{"type":"array","items":{"type":"string"}}}}}},"example":{"status":true,"result":{"total":50,"usage":6.02,"files":[{"filename":"layer01.png","size":63480,"last_modified":"2023-10-16T13:25:04.000Z","public":true},{"filename":"layer02.png","size":233444,"last_modified":"2023-10-16T13:23:58.000Z","public":true}],"folders":["buckets","image"]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

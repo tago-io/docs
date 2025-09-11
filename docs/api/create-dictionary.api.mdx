@@ -1,0 +1,71 @@
+---
+id: create-dictionary
+title: "Create Dictionary"
+description: "Create Dictionary"
+sidebar_label: "Create Dictionary"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXB+CEOQUl26iYw31TbaAMUteELjEAWkBU5Ijcmd5ndoRVV4L8Xw4tExUoDFH0StDw758zs7JndIKvUYzTDG2eXOic4ftScQfdvdG+fybzFEC91zNoa5dY4D7FUThXE5GTrBo0qCCOcVpxZp/9WgsQQtcEIM1IJOQzR0ddKO0owWqrcU4gJ+djpsgFHeKEMLAhSMuQUUwLawNpWDspOmCdmbVIPx7ddJNFF31RR5sL+aQAesejGEH2cUaEw2iCvS0F5dtqkWNdzUeRLazx5+f7u5FR+WrnNyoU1TIZH983OzY9jDVWossx13FRg8sVbg3X9KlNHSjIBBcmuqiHGLZ8QvIpyiN4uvlDMGGLpbEmOdZuIZ8WVH+AW1uakjOh05Kucfx5joOtA6ep6mPKOkV1FQ45hFHz/69kiic/Ozs4/vD+PT05Ozj8siX5518ar2/4gz7/ZpCH9j9UYKjNVntc/qD/B5bD2BXFmE4ywtL4ph+IMI5zsHZAn99K3fOVyjHCzWShPDy6va6zDA6uqQOk0UX27y+9qW7tabsnSNnlobjroXqX24zVMbz5iiMLXqj4dn4xP8PtcjmAHh0sbVwUZbir1ZJ6MdLCKGe6qsrSOI1kbwe+as2oRwYxVakfazo8z5tJHk8nbJwMAIKALWxSV0byOYNZRbJcObHgyR0dHRxAEf9gVsIXKE3CmPSRDTUEgyPuMtsvaGtAefJlrhsUaVpmOM2hur9z+N46g940+rDbAWbtMnsfC3gksnX3RCXk4g0Qvl+TIcBvLd6kHwSW96LjztSCIQMS0dEtni9ZxkgYTdmLWtoJYGUiJW4ywt5A3HkqV0nhXtiDYc05hmObewrOxK1AepnFsK/EU+TqGT7baxT3sdq8I/iJeWfe8I/joG0nfZ9HhxnBt8jWoF6VztcgJ9LKvrF0ZcmCXzXbTwre2qw1T6ppjOyBialS+9tq3KqIgOFhI1aHCIX17fP2n/dBPZjQatd0Ed20FGrR095VJSqsNwy2lXX8/ZmSgUM+tmXYdIX0ie3YXI2zOsKg8g5LD8CXFerludZTifE6LI7gmsMqBOqoxXGTWegJrqK/T0ua5XQljj/Ig1z0B21UuJZs6VWY6VnkXc9t+D0bLbLtjxeThSnmGU6ketBV46K9NHxtWGXVhBy4oV6bl7KpJyjM5A3vhx33UIHi4/VNYPvf3VpV6XPkRnY7FA8baTj4PT/eqkmkAj/Q/yJMgIq2N+RNNVI1WA03i5mLIhWo8v3tmHPLvPVfczgSmbzwpc6Wb4deY86az9tlwOs1DzMT3o9meo89D/FqRTK/ZPMQX5bR0sPyrw/5dI7PgmWTA7T0XBJ5Xhx8EYb9jGsdU8r9i54PRdHN9d48hLroBWdhE9ji1kseVWmGEGKJtatAM8WZtg7kyaaVSwXYPkrqu/wGIlm6Z
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Dictionary"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/dictionary"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create Dictionary
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Creating a dictionary","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"dictionary":{"type":"string"}}}}},"example":{"status":true,"result":{"dictionary":"654bdc4449769c00097fee32"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

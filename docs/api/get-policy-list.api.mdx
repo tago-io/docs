@@ -1,0 +1,71 @@
+---
+id: get-policy-list
+title: "Get Policy List"
+description: "Get Policy List"
+sidebar_label: "Get Policy List"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20gM/RVi8tBU8C3ZNNvozZsG2QDtNsgFQZEYW1qipWmkGXWGsus1/O8L6hLLibN5Wb0YnuGcc4bkkFwpxsSr8F5dOjvTGcH+neYUmn/9G/tI5r3qqXEUkffwBQ0mlJNhNempAh3mxOQEYaUM5qRCZV1M7o+l6iltVKh+luTkj6OfpXYUq3CGmaeeislHThesrZjtXzX7wka/MC8yAYscIVP8N7LqKR+llKMKV4qXhex6dtokar3uPbGPS06t0/9ghdtoSAljcm+LOEUDU4KEDDmhBW1gaUsHReMdT8zaJB5ekfutY9xncd5/yp6IIl9Y48nL/uFoJD+13Grl1Bomw/2b6uTqdayuCiyKTEeVB4Y/vDXioGc3Pa8vApc209ESPmsvDo5qNoF/gbGL3E5/UCQHC2cLcqzra3hGLn3HbmptRmhEpSNfZtzZQ+ewSham3L+NreOdl6/T+FVQcUATll1xkK/jwM0N2JW00Xxf06vjD0f4Ox0f4m9H05NoJN/xx4/H0aFqhdxPOnzq+HCGJ3T8gUZTjKej0cGJBHo9aXhfROZZVHLi1ApvQpU/kFMVqiHmklvk5u37K12mQrVaTdHTrcvWayXv4sUq5koST5uZrXyhuRJ5g4m9+ArjywvVU4JZyzkYjAYj9VzkHmzM4ZONSikJVbI8mAcjSYsRw3VZFNZxKGt9ONecltMQ7hkT29d2sp8yFz4cDt8/GAAAMTq1eV4azcsQ7huKp6UdBx7M3t7eHgTBn3YBbKH0BJxqD3FXUxCI5U1KT8vaGtAefJFphukSFqmOUqgerDz4d46gLRUtrDbAab1MngfC3ggsnJ3rmDwcQaxnM3JkuMbyzdWD4BPNddTU0yAIQcTUdDNn87rIxJVNrxGztCVEaCAhrm2EvTZ556HAhAYbtwXBVsUWhnHmLTwauwD0MI4iW0oZkd0BfLPlBnd3gXtB8BfxwrrHDcGFryQ9v0VjN4CvJlsCzlFnOM0I9Kz1rF0YcmBn1XFTmz9VWm2YEleFbYeIscFs6bWvVYRBsNOR2Fj1uvR1+NqtbegH0+/362yC66YyirVk95mJC6sNwxUlTX7fpWQgx0cxwzYjJE/kzOZh9KoY5qVnQAmGLyjSs2Wto5Cy5jSypJQAYwbUUA3gNLXWE1hDrZ9mNsvsQhhbKw/ypGOwjecSsonDItURZg3mU/rdGi3t7JqRycMZeoYD8R7UHrhtn02LDYuUGthOI5AnU3M23iT0TM7AFvygRQ2C26vPwvK9fbdY6EHp+3QwkBow0Hb4vRvds1JKPdzR/yBPQERajfmGJir7i44maSiF9Zxj1faayeJlYd6qiU9dhekXD4sMddXvqvK7aor2vcJcBqfUemknW7V60mtGJSnlsfaSta/MKatNo96em3YqeKTl1lQ2x6wUq6oLzNFpYZKWte61g5JIqI/J3Fdw59TL2WLS6VDnZzdqvf4XnZSE5w==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Policy List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/am"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Policy List
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"orderBy","in":"query","required":false,"description":"(Required)","example":"created_at","schema":{"type":"string"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting Policy List","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"tags":{"type":"array","items":{}},"profile":{"type":"string"}}}}}},"example":{"status":true,"result":[{"id":"654a7e62a34b9c000006886c2","tags":[],"profile":"62fa9e65e0badb0019200"}]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

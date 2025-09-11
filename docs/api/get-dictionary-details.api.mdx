@@ -1,0 +1,71 @@
+---
+id: get-dictionary-details
+title: "Get Dictionary Details"
+description: "Get Dictionary Details"
+sidebar_label: "Get Dictionary Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXB+iGOQMqXNEHBN9U2XANtE9gygtQWkhE5Ijcmd9ndoRRV0L8Xw4tEWXKCotWLpN3ZmTNnrivFmHoVPagPzs50TnD8UXMG7b9wbJ/IvFaButQxa2vQLdUkUCU6LIjJydOVMliQitSo4sw6/TeKpAqUNipSGWFCTgXK0V+VdpSoaIa5p0Al5GOny1o4UhdoYEqQkiGHTAloA0tbOShbYJ6YtUk9HN+2mgQXfcOizMX6p55wyIJbBcrHGRWoopXiZSlSnp02qVqvgw3sZOPaZ510sEvkbAc0u+olzHbKqE0DmTOC66sxbPkCR760xtMLuI/Hy5L68jeXr7+LfCKwGpVe7s9PT+WrIbo+ubCGyXA4rl+uXtbVx4Flmeu4jt3JV2+NcPTM3+smBLWTPcAJMercq0DFjWGxtKfuEA47/Uoxq0CVzpbkWDceeUaufE9uam1OaASwI1/l/GMdTXAPeOzzKj14ETuSxPuMvH8dqJl1hdyoBJlC1gXJm6pM/vWbGeb5FOOngyByNGmFKfW9R+dwKYnJVPgfex7b5LDnGLOe0yFa208vHbZBaBJ/S3tX7EmhDVyiz6YWndRNQ6waXf6udslU56fnb8LT8/DszfjsXfT2XfT2zfD053d/ql0Cvye3JU2RCe/v1A5VD53Xm8vOV0Evtd5d+/DqO9clh7/cPr+edOTsFUO/CC43RVAQZzZRkUqpDo50kkidbNvMyWqn5ayFO3LzrptWLleRWq2m6One5eu1EoR7p1goaQXazGwdUs11GY8xtTfvYfThRgVKdDZoz4anw1P13Icj2IrDpY2rggzXNftoHo20EYwZ7qqytI4jOQvhWnNWTSN4YExtqO3kOGMufXRy8vrRAACI0IUtispoXkbw0JrYHB148GiOjo6OYDD41S6ALVSegDPtIeljGgxEcpzR5lhbA9qDL3PNMF3CItNxBnXzl+HxyhF0HbxT2/ZoOSbPQ7HeAiydneuEPPwEiZ7NyJHhRpdvXR8MLmmu43YsDgYRCJjG3MzZohlYSS0TtGCWtoIYDaTEjYxYb0ReeSgxpeGWtsFgZ/CKhVHuLTwZuwD0MIpjW0ljl9shfLLVVu/hYbln4A/ihXVPWwM3vob03ItWbgjvTb4EnKPOcZoT6FnHrF0YcmBn9XPTiG+mtjZMqavDdgDEyGC+9No3KKLB4CCR2EoFffNN+LqrXdWPJgzDJpvgrjerJLuvTFJabRhuKW3z+2NGBgp8EjHsMkLyRN5sCyOoY1hUngElGL6kWM+WDY5Seq/TyJJSohhzoNbUEC4yaz2BNdTxNLN5bhdisZPyICWdgG2ZS8mmDstMx5i3Ojfpd2+0rEZ3jEwertAznAl70DBw35VNpxsWGbVqe/NYSqax2bJJ6JmcgR31w07rYHB/+5tY+dLVLZZ6WPmQzobSA4bannzpR/eqknkEH+l/gCdKBFqj8weYqAoXPUwy80rruUDTG1wv9u2d1riZkUzf+KTMUdfbR92FV21Pf+itjipQ0e4iOQlUZj2LWL+XTwL1V0VuqaKHSaDm6LTkdd34E+3l9wsb8mq7XantKgn/YQc96GG3cxhxaY55Jf9UoJ5oubcrryfroFvwxYFGZhTHVHLv9f5mOelNyeursVqv/wHbuUY2
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dictionary Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dictionary/{dictionary_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Dictionary Details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"dictionary_id","in":"path","required":true,"description":"Can be obtained in the GET Dictionary response(Required)","example":"(Type Dictionary ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting the Dictionary details","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"name":{"type":"string"},"slug":{"type":"string"},"created_at":{"type":"string","format":"date-time"},"updated_at":{"type":"string","format":"date-time"},"fallback":{"type":"string"},"languages":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"active":{"type":"boolean"}}}}}}}},"example":{"status":true,"result":{"name":"Admin Dashboard","slug":"ADM","created_at":"2023-02-13T16:56:53.086Z","updated_at":"2023-02-13T16:56:53.086Z","fallback":"en-US","languages":[{"code":"en-US","active":true},{"code":"es-ES","active":true},{"code":"pt-BR","active":true}]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

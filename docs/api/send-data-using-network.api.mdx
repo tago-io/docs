@@ -1,0 +1,71 @@
+---
+id: send-data-using-network
+title: "Send Data using Network"
+description: "Send Data using Network"
+sidebar_label: "Send Data using Network"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9v20YM/lcI5qGtINvJtie9GUmwBRiWokkQFI6xniVauka6u95Rdj3D//tA/bDlxOk2YE+GT+THjzzy422RVR4wmeEfxGvrn+H9o+YCun+je/tM5gPOY3TKq4qYvFhv0aiKMEFVc2G9/kuxtuZPFmuMURtM8FtNfoMxevpWa08ZJktVBooxo5B67cQDE5wOEaCJB0tvK+CCoA7kwXm71CVhjPRdVa6UuB/bs9GRd8sWYwxpQZXCZIu8cWIe2GuT424X75kfefacC1IZ+X9BGkxXriZlyMmQV0wZaAMbW/uGfW8TiFmbPBxl8Fmsjsr8Q+Jz4RScNYGCfP/p/Fx+WsLNyaU1TIZH943n9m2sIQvlXKnTpgaTr8EaKdGLXO/IZHClWGGMaRtDQF95ngppF18pZYzReevIs27JB1Zch4HdwtqSlBFunkJd8qkSDIkfMNjXdPDCnxuqMM0yysSnSWepOshDud5OE+qgTd5fzY8K8sIyxoq4sBkm6GxoslZcYIITbZhy39aqa4pJ1lY0kF/1M1X7EhPcbhcq0IMvdzuUfn11qiqUdtBmaZsyaW6u8l7l9uYWph9vMEbBbNlejM/H5/gyhzM4mMOVTeuKDDcEn8yTkVZSKcNd7Zz1nMjZCH7VXNSLBGascjvSdv6+YHYhmUw+PBkAADG6tFVVG82bBGZdiP3RCYcnc3Z2dgZR9JtdA1sZeOBCB8iGnKJILO8L2h+LVugAwZWaYbGBdaHTohvGja3feYJ+hHtYbZqhlGMKPJboHUHn7UpnFOAXyPRySZ4Mt1ihSz2KrmilU2oHNYoSEDJ8EKtm5rPGJu7IbGwNqRJt4IOgtSbvAjiV0/hQtijqFW0fYVoGC8/GrkEFmKaprWW45esYPtv6gNvE7kRyrzWvAxxpjQS4CQ2ll1l0dmO4NeUG1ErpUi1KAr3sK2vXhjzY5ZHI9cI36PUTJKZGlZugQ8siiaKThVSdVTwM315f/+kY+smMRqO2m+CurUBjLd19bTJntWH4RHnX348FGajUs5ipviOkT8TnMBhxc4dVHRiUXEZwlOrlpuXhRNK8ViwtJcCqBOpCjeGysDYQWEN9nZa2LO1aIvZWAWSkM7Bd5XKyuVeu0KkqO8x9+z0YLdvljhVTgGsVGC6ketBW4KEfmx4b1gV1sAOhlpFpY3bVJBWYvIEj+HGPGkUPn36XKF/6uVVOj+swoouxaMBY28mX4e1e1yLz8Ej/Az0BEWot5j9wonq0HnCSPSISXKlmLXUb/23dPtLG/eJh+s4TVyrd7KVGhredpM9w0OYYozlAiazPYyxkAySzIzWfx92jSMQ+00H6+o0Xxvawav/TC+kk9WfavPlUW6myFo9mpayU10IKk9l8F/evIWHbQkzTlBwPvF4/H+aDLfjx9u4ed7u/AfCzl+0=
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send Data using Network"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/integration/network/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send Data using Network
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"authorization_token","in":"query","required":false,"description":"Authorization Token from the user profile","example":"Profile-Authorization-Token","schema":{"type":"string"}},{"name":"Authorization","in":"header","required":false,"description":"A network token generated in your the network settings","example":"Your Network-Token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Send Data","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"3 Data Added"}}}},"default":{"headers":{},"description":"Send Data using Network"}}}
+>
+  
+</StatusCodes>
+
+
+      

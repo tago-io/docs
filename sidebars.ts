@@ -1,4 +1,5 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+import apiSidebar from "./docs/api/sidebar";
 
 const sidebars: SidebarsConfig = {
   tagoioSidebar: [
@@ -19,6 +20,7 @@ const sidebars: SidebarsConfig = {
       dirName: "tagocore",
     },
   ],
+  apiSidebar: apiSidebar,
 };
 
 export default sidebars;

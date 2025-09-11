@@ -1,0 +1,71 @@
+---
+id: create-new-device
+title: "Create new Device"
+description: "Create new Device"
+sidebar_label: "Create new Device"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFP20gQ/iuj4aHUsgOhtNf6DVF0V+muoAJCFaDrZD2Jt9i77u6aNBflv5/GaycBouvLPUVZj+f79puZb7zEQDOP+S1eODvVFcP+jQ4l9P+yK/vA5jWm+JEftWKPKf7VBppUDPEE71NsyFHNgZ0kWqKhmjHHkzaU1ul/KGhrMEVtMMeSqWCHKTr+0WrHBeZTqjynWLBXTjddcI6nZGDCMGPDjgIXoA0sbOug6Wl6DkGbmYf9L30mYck/qW4qQf+6FZwFuQWm6FXJNWG+xLBoJMoHp80MV6t0TfvUmsAmZFcS8UvWG0Bqmkqr7rIH3739b7h7SeUbazx7eX50OJafiCMnq+eCDKoXneqgHIssmKKKfOX1FxTy5UsOdvKdVcAUG2cbdkFHBj5QaP1W3MTaisngqqPaVuHXOSK3v3Wx48opxiLsEGO1Wm0JuaESXMvb4Fvp8W2hqBiro/G78W/H6vBwrOjoDU0+4BoH39L43fHh22k2eXOksmP1YZwRv/mQqcnkSNGExu+L9xH9hdinnbpgeD50eYo1h9IKdGN9d3UKJeZ4UAwBnt3jMAKtqzDH5XJCnq9dtVqhdNiLU6pRWkGbqe2E0aFrpSua2U/ncHLxCVOUnJHVeHQ4OsTnXPdgEw4frWprNqHrgTtzZ6SbSQW4bJvGupDLWQa/61C2kxxuA81spu39fhlC4/ODg9d3BgBAgk5tXbdGh0UOtz3E+mjHC3dmb29vD5LkDzuHYKH1DKHUHoptTkkikVclr4+1NaA9+KbSASYLmJdaldAVUSb+lWMYpm5Iqw2EMh6zDyNB7wk2zj7qgj0cQ6GnU3ZsQszl+6snSaxodLYkyUHIRLips3V0mVjUtCezsC0oMjDjEGMEPYa88tDQjEcb2ZLkiXcKwknlLTwYOwfycKKUbcVf5OkIvtp2k3e3w70A+Mxhbt3DBuCT7yg9v0UfN4JzUy2AHklXnYfo6aCsnRt2YKfd6yaGr61Wm8Az15VtB4kTQ9XCax9Z5EmyU0jqo9Jt+Fi+4dHT1Hcmy7LYTXAZFeiipbvPTNFYbQJ84Vnf3zclG6jpQcJo6AjpE3lnMxhpV8O69QFIiuEbVnq6iDwacTGnZeJdl5gq4B5qBKeltZ7BGh50mtqqsnNBHKI8yEgXYHvlZmxnjppSK6r6nOv2uzZa9tlloMAezsgHGIt6EBW4HsZmyA3zkvu0W/4uIxMxezWZfGBn4En60ZA1Sa6//Cko34a5pUaPWp/xeCQeMNL24Nt2dc9acXa44f+BniQRajHnLzhxm823OMniEMOtqVsdw47e4c9PXHG9ZAL/DAdNRbpbZJ0BL3vrvu0XinzBlOLp+e0Tx75P8UfLboH57X2Kj+S0dK/8W6XDF4F4/QMv5GtHKW5kLzxS1e78HhCnXy+Ri/PLK1yt/gVX/z1X
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create new Device"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create new Device
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"headers":{},"description":"Mutable device created","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"device_id":{"type":"string"},"token":{"type":"string"}}}}},"example":{"status":true,"result":{"device_id":"5dcad1c216174c001ca23ab9","token":"5a16405f-b32c-4c91-ae39-cbb2caba18d8"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

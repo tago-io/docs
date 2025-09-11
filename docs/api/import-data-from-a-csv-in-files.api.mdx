@@ -1,0 +1,71 @@
+---
+id: import-data-from-a-csv-in-files
+title: "Import Data from a CSV in Files"
+description: "Import Data from a CSV in Files"
+sidebar_label: "Import Data from a CSV in Files"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v20YM/ivc5UNTQbbTYZ/0LUuyLcCwFnlZUSQGSku0dI10p95LXNfQfx94J9ly4jTDsE+JTzzy4cPnSG6Ew9KK7E58MHopa4Ljj9JV0P+a3OgHUm9FKs7pUeZkxTwVLRpsyJHhexuhsCGRiVPvKm3kd3RSK5EKqUQmKsKCjEiFoa9eGipEtsTaUioKsrmRbTDOxBkqWBCUpMigowKkgrX2BtoelSXnpCotHF/1nhgUfcOmrTn68aeR9cQNqG1eUYMi2wi3btnOOiNVKbou3QI/08qRcpMbtngV9y4ktm0t85Du7IsNOf+bcEUg8vJ8CNWiq/YCOeOf8TMkvZ8zIwaE6BEuz3+c8ZyD2FYrS5a//3xywn9iquFkj4ls87KvH9LQdU/RXzatNlw+KNAhLI1u4DdZkxWpyGNMDvLM0yEIevGFcidS0RrdknEyJmMdOm9Hdguta0LFWA1ZX7tDlIwT2fmIBRhuiXPGLEMKgEVBBTgNriL46skTWJ/nZO3S1/X6J/bZdbGaZN2vuliz5/+Y5Bie8nXdvUQtnG95RTi7/pufz0BwQ67SBQtN28Ab6y0Ts6ia2WbQYzfj4swMWacNPwRL5nF4497UIhObzQIt3Zq66wQr+tkpNoJlxnld7Ri42FLcseaXOmQqXZDPDZb68j2cfrgUqeB4Ma9305PpiXia7RHszOFc574h5QKX9+pesXwxd3DtWyYl47MJ/C5d5RcZ3Dks9UTq+XHlXGuz2eztvQIAYKMz3TReSbfO4K4PsT06cOFeHR0dHUGS/KFXrAZvCVwlLRRjTEnCljcVbY+lViAt2LaWDhZrWFUyryB0K253bwzB0AcGt1IFrfWCmnL0HmBr9KMsyMIvUMjlkgwpF33ZPvUkiV07dvEkyYDBxHBBLKHFRgGkPZi19pCjgpJctOHo0eSNhRZLmu5oS5K9OcERTmur4UHpFaCF0zzXnhsKf53CJ+13fg+392cB/iK30uZhF+DSBkhPs+jtpvBe1WvAR5Q1LmoCuRyY1StFBvQyXFfRfDtnpHJUmlC2AyBOFdZrK21EkSXJQSKxt0rH4WP5hk/7ru/VZDKJaoLryECwZnVfqKLVUjm4orLX98eKFDT4wGY4KGJoRruHkYYaNt46QC6GbSmXy3XE0XLbNBIdS4odYw3Uh5rCWaW1JdCKBp6Wuq71iiMOVhb4uRege+ZK0qXBtpI51r3PrfxuleRhfu3QkYULtA7eMXsQGbgdns3gG1YV9W5HfZKfTIzZs0loHRkFe+6ng9ckub36k6N8Ht4ttnLq7YTeTbkHTKWefR5X98LzKIGP9D/AYycMLfp8BRP5yWqEifs9N+kGw1To94XXO/xej9zOEEff3KytUYYZGFr1pm/+d/0SIlKRjdYR7v9hE4kTYJ6KikdGdrfX+Oep+OrJrEV2N0/FIxrJQg9TopCW/39hyRuNQbHb4mC02hxE3h+iWvOAwNrzL5GKB1qPt6lu3qXD2sZY4ucnu91w/fnOkg43TvOcWvdD2/loqH54f30jUrHoB32jC75jcMVE4ipC1YGBsJ2Es42oUZUeS7btd6au6/4BEzP1Tw==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Import Data from a CSV in Files"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device/{deviceID}/data/restore"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Import Data from a CSV in Files
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"(Your profile-token)","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"Required","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Importing data from Files","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Data import added to the queue successfully!"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

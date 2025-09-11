@@ -1,0 +1,71 @@
+---
+id: get-dictionary-list
+title: "Get Dictionary List"
+description: "Get Dictionary List"
+sidebar_label: "Get Dictionary List"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v20YM/ivE5UNbQ3LsZAk6fcuSoCvQrUVeUHSOsdISJV0j3al3lF3P8H8fqBe/JF6LDfMXQ0ce+dxD3sNbKcbMq2iiPjib6oLg5UfNOXRf4Z19JPNKBepKx6ytQbdU00BV6LAkJidbV8pgSSpSFzXn1um/UDxVoLRRkcoJE3IqUI6+1tpRoqIUC0+BSsjHTleNc6Qu0cCMICNDDpkS0AaWtnZQdcA8MWuTeXh500USXPQNy6qQ7J92nEMW3CpQPs6pRBWtFC8r8fLstMnUej0VRL6yxpMX+8loJH8t3Gbl0homw+Fds3P1z7F2UWBVFTpuGDj+4q1R6/XTk75pDwKcEyQbWqHQnlWg4jarpHkW6xAIO/tCsWysnK3IsW6P4xm59jt+M2sLQiNoHfm64B0bOodLKRhT6X8cWycHSWi74IDBF3V20JBiUcwwfjxojB1JH/yJ/NwcqNS6UiwqQaaQdUmyp66Sf72nQJPVmJH/74TENjl8coxZz+lQFfrfTu9si8aupm2ZJi3j6vyU8HyWnL0eJ7OT8Wg0+jlNX6fjRAWbC5iU2sAV+nxm0YmhpV5dXP2mdulWZML7W7VPsjoZnZyGo5NwfHo3Po/OzqOz0+Ho9fkfap/Y7/ntkDnpedkk69mQ462DrdmH198xVxz+cvPUPF1PO/qe3S3YShW8a+9USZxboTCjpnjIuYrU8fbyCVPk5r2e1a5QkVqtZujp3hXrtRI8z1axVCIj2qS2KbHmRgLuMLNv38PFh7cqUBKzhTYejoYj9RTwEWzd4crGdUmGmyv/YB6MSBDGDLd1VVnHkayF8EZzXs8imDBmNtR2+jJnrnx0fPzqwQAAiNOlLcvaaF5GMOlSbJYObHgwR0dHRzAY/GoXwBZqT8C59pDsYhoMxPNOhKtb1taA9uCrQjPMlrDIdZxDI78i3y8cQS/8fVhtGumTZfI8lOwdwMrZuU7Iw0+Q6DQlR4bbWL47+mBwRXMdd4NpMIhAwLTpUmfLdmQkjU/QgVnaGmI0kBG3Po3wNi4vPFSY0XBL22CwN/okw0XhLTwauwD0cBHHtpahINYhfLL1Nu7hcfUswe/EC+setwne+gbS01N0fkN4b4ol4Bx1gbOCQKc9s3ZhyIFNm+2mdd/MTW2YMteU7QCIC4PF0mvfoogGg4NEYucV7KZvy9eb9kM/mDAM226C2505J919bZLKasNwQ1nX3x9zMlDio7hh3xHSJ7JnezGCpoZl7RlQiuErinW6bHFUosVOI0tLSWAsgLpUQ7jMrfUE1lDPU2qLwi4kY+/lQa50ArZjLiObOaxyHWPRxdy0373R8ji5ZWTycI2eYSzsQcvAfX9t+tiwyKkLuzPO5cq0OTs2CT2TM7AXfthHHQzub95Jls/9vcVKD2sf0ngoGjDU9vjzbnWva5lP8JH+B3gSRKC1MX+AiepwsYNJZmBlPZfYPF66MXVYpPd0cTMwmb7xcVWgbl4ujQSvOgGfqGTvUZpbL9NyT7engfpak1uqaDIN1Bydlh6Wr3XQP01F8R9pKWMyjqkSLHMs6sOvuenONHlzfafW678BhdTR3g==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dictionary List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dictionary"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Dictionary List
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting the dictionary list","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"},"slug":{"type":"string"},"fallback":{"type":"string"},"created_at":{"type":"string","format":"date-time"},"updated_at":{"type":"string","format":"date-time"},"languages":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"active":{"type":"boolean"}}}}}}}}},"example":{"status":true,"result":[{"id":"63ea6bd581db210009ff8f1d","name":"Admin Dashboard","slug":"ADM","fallback":"en-US","created_at":"2023-02-13T16:56:53.086Z","updated_at":"2023-02-13T16:56:53.086Z","languages":[{"code":"en-US","active":true},{"code":"es-ES","active":true},{"code":"pt-BR","active":true}]}]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

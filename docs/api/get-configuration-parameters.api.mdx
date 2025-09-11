@@ -1,0 +1,71 @@
+---
+id: get-configuration-parameters
+title: "Get configuration parameters"
+description: "Get configuration parameters"
+sidebar_label: "Get configuration parameters"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zgM/iuE+mGd4bx0KIarv/W23m7AcBu6FsOQBpti07ZWW/IkulkQ5L8PlOQmabMVAy5fklAUn4cU39aCZOVENhOv8U7l6OD4k6Iawr/RlblF/VzMU9FJK1sktKy8Flq2KDLhUNMXR5J6J1KhtMjE9x7tSqTC4vdeWSxEVsrGYSoKdLlVHSnDav+ohtDCYgXhOszO8xw7gr+NaVDqORy/97qyeS5SgT9k2zUMSbZHkQqX19hKka0FrTqWL8I9sdmk9/SK4AWxFwO/GmWB9mmC3nXorLlTBRZgNFCNMS7PHHSyQji+jDb2KX42vYUH2I/4OrJKV3t0XxlNqGl0xRpP0t3iya5rVC6Z+OSbM7+Hm7Mp1xnt0PH5i+mUvwKOl+zRyNa/tvVbDpvNw4i+U47AlJAbXaqqt14ZtokFFqm3GguRijxwYNBHlg9RMotvmJNIRWdNh5ZUcC6m5oEs8VHoG9o5k9ZKzlxF2LqnbaviYEhucXVQfiebHg+euOjoo0Tmz06Mt+5wDWwdmAUu4uWL09PT6UmJL/86W5xNpyen5dnixdmZiKRCDX/h3/d0oiz8G6j4BNvMI/7+I75B+uUDilS0SLVhMhX6iEmqRSYmoRgmXtV5HHs3tJLeNiIT6/VCOry2zWYjuCQeSWUrOHeVLo0PliKfd1eyMm/fw/mHt+wUWhdonoyn46l4SP4Iturw2uR9i5q8Fzf6RnPey5zgY991xlLGshG8UVT3iwxmJCszUmZ+XBN1LptMnt9oAABWemXatteKVhnMIsS96MCFG310dHQESfKvWQIZ6B0C1cpBscspSVjzqsZ7MYdbOXBdo4hb57JWeQ2+xcDK9M8swtAmBrMq9C0Wo6Mxo0eCsbU5OIVClSVa1BRsueh6kuyOgSTJgMkEuNKaljGHRpdGMivTQy41VEhBh9GL3a453oYtST5YU6pmB+G8cQZutVmCdHCe56bnTsSnY/hs+q1dj92F6+CQSOnqAMB/SEtjb7cAb52n9NCLqDeG97pZgbyTqpGLBkGVQ2TNUqPl/sXXdVDn8PrrShNWoSAOkDjXslk55QKLLEkOBlJGrXQXPjzfcLRv+kaPRqOQTfAxRMBrc3Zf6KIzShNcYhXz+1ONGlp5y2pyyAjOE76zLYzUv2HbOwLJj+E6zFW5Cjw67oFWSeKUqvx4BoxQY3hVG+MQjMYhTqVpGrNkxEHLAZe0H6je6wpNZWVXq1w20eZ9+l1rRVjAR5KEDi6kIzjh6EGIwPVQNoNtWNYYze5MDS6ZgBmjidIRWg175seD1SS5vnzHKF+HupWdGvduhCdj7gFjZSZfd1/3oue5AJ/wf6DHRphasPkEJ+xHyx1OPEs646iVfkbGpeKJhr3XIO9nEOEPmnSNVH5S+l68js18FrcqEXdCx9thbRwPor0uPk/jLshNvlCO8/kXy9Z6O+//dDE8SDiMu/3ldBh4forcSauYj8hm8006LFl/RvSPF8TfUH2wLG65puuoEYKwc/Z44ZrvjN83F1dis/kJNBcSVg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get configuration parameters"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/device/params"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get configuration parameters
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"sent_status","in":"query","required":false,"description":"Filter by status [Accept Boolean] (Optional)","example":"true","schema":{"type":"boolean"}},{"name":"device-token","in":"header","required":false,"description":"Token provided on the Device's page (Required)","example":"Your device-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"List of configuration parameters returned","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"key":{"type":"string"},"value":{"type":"string"},"sent":{"type":"boolean"}}}}}},"example":{"status":true,"result":[{"id":"6244401fe689b90014f9b299","key":"param_key","value":"param_value","sent":false}]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

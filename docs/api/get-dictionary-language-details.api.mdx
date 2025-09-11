@@ -1,0 +1,71 @@
+---
+id: get-dictionary-language-details
+title: "Get Dictionary Language Details"
+description: "Get Dictionary Language Details"
+sidebar_label: "Get Dictionary Language Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BUkO10sU96C5IgG6DYFo2DoEiMlpbGEhuKZMlRXK/hf1+MKFlK42y73X2KQ83lzO3MbAXJMojsTrz3dqU0wvGtogq6/yZz+4DmtUjFucpJWSP9RixS4aSXNRJ6Vt0KI2sUmThtqLJe/SVZUqRCGZGJCmWBXqTC49dGeSxEtpI6YCoKDLlXrhXOxJk0sEQo0aCXhAUoAxvbeHAdsIBEypQBjj90lhgXfpO10+z940h4QoxbpCLkFdZSZFtBG8dSgbwypdjt0j3soJvyk/Wfin2In1TRw3eSqifgyTcvYbdLkspE6FQhXF7MYcgbeAzOmoAv4D+ebxzCtW5KsH6sd3X++icj0dKUjSzxX4F/2ykBVZJgrbTmWDxS4zmWB9yEJzj38me2wH8EtmDXMebA3387OeE/sSPalzNrCA1N5q3m9mVbYwDSOa3ytslmX4I1nILvYrqMvQIShqJCnx0okKTSHFUe/bPDZ1YPwbHLL5iTSIXz1qEnFQMLJKkJI7mltRqlYdweQ6PpxzYecHMoh7vdOPbBVazkYLxVF49SNxi1DuVk3FX7Mp7vs1EjVbYQmSixxcfdk4nZkMLZ9uCs7GbbPrc7bgj0jz0zNF6LTGy3SxnwxuvdTnC7PnuVteBuUWZl2yQoais9l6W9egen769EKthmjOTN9GR6Ir6P7wgGcTi3eVOjobae9+becKfJnOC6cc56yvhtApeKqmaZwR3J0k6UXRxXRC5ks9nrewMAwEJntq4bo2iTwV3nYv90QOHeHB0dHUGS/GHXQBaawKOlAhRjTEnCkvMK98/KGlABgtOKYLmBdaXyCloiYyJ85Xko4yD3Zjue4WcMNGXvHUDn7aMqMMDvUKjVCj0airZCF3qSnOOjyjuKT5IMGEx0t/K2juRbtDJpB2ZjG8ilgRIpyrD3KPIqgJMlToe0JcmTJcIeTnWw8GDsGmSA0zy3Dc8+f53CR9sMdg8T/zMHfyKtrX8YHFyFFtL3UXRyU3hn9Abko1RaLjWCWvWZtWuDHuyqVTdRfL+BlCEsfVu2AyBOjdSboEJEkSXJwUTKTiodu4/l6z89NX1vJpNJ7Ca47uiMpbm7L0zhrDIEH7Ds+vu2QgO1fIis13UE9wnrDIORtjWsm0AguRjBYa5Wm4jDMSN5JYlbig1LDdi5msJZZW1AsAb7PK2s1nbNHnupADzSBdgucyXa0ktXqVzqzua+/W6M4jV/TZIwwIUMBG84exAzcNOPTW8b1hV2ZkdczSMTfXbZRBkIvYEn5qe91SS5+fCWvXzu51Y6NW3CBN9MmQOmys4+j6t70TBLwy3+D/DYCEOLNn+ACZvJeoSJV4mzgWrZbqZu4f+Y059w5H69EH6jmdNStSuqpeNtx/d3YuB2kYrspeso2x8bi1RUNhCrjol+kYqvDfqNyO4WqXiUXnHTt1uhUIF/v3AKboe1LIZbCf7DkXUw6u5RGg4zLs5MiLTbpIfD5uX1S+B/7sj6BZz7KuwWu7Q/tjnH8fNpnqOjkeLz42kxWvyXF3Ox2/0NqNMscA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dictionary Language Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dictionary/{slug_or_dictionary_id}/{language}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Dictionary Language Details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"slug_or_dictionary_id","in":"path","required":true,"description":"Can be obtained in the GET Dictionary response(Required)","example":"(Type Slug or Dictionary ID)","schema":{"type":"string"}},{"name":"language","in":"path","required":true,"description":"Language that will be returned keys","example":"Language Code","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Getting a dictionary language details","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"object","properties":{"key":{"type":"string"}}}}},"example":{"status":true,"result":{"key":"value"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

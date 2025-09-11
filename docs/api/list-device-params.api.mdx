@@ -1,0 +1,71 @@
+---
+id: list-device-params
+title: "List Device Params"
+description: "List Device Params"
+sidebar_label: "List Device Params"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zgM/iuE+mGt4SRNNww3f+u1vV2B4Vr0BcXQBjfFZmyttqRJdLIsyH8/0LLz0uTWHXD5kkSi+DykHpFcCJK5F8mjuHZmokqEwwdFBbT/enfmGfWRiMU5TlWKXsTizOiJymsnSRkN19LJSoxiYfkHEjr2thBaVigS4VHT354k1XxUaZGIbzW6uYiFw2+1cpiJZCJLj7HI0KdOWXYrEvGHKgkdjOfwuzElSg2HV82eLI9AxAK/y8qWjNEcF7HwaYGVFMlC0NzyxjgcFMtlvCJ0WlNhnPrRsO8oFSgzdK9zOpMaxgg5anSSMAOlYW5qB7ZNnkcipXMPhzetp6Mtqp83jHvEud3H25NTOt+mnaZo6XW+ayhpbanSJszBV29+FShr7vnyvIOykootIHL1Tl7W0W7fzOHd3GLIUPALl+dHPyUyYihvjfboef/k+Ji/QsC8snyJ/Ul5gqDOIEYWWmo0oSY+upOHZLGLb8ZfMeX0WmcsOlIBvRXuHkU1NOuSNvakc5J1rQgr/7pvle2JPxbPON+7PpVljXt3fBvojuj5s3Eb63DCFXYBPAYu4v2JHP928uFdOpTp2w/Hx8O374c4HI5FSyq88KFYcQnfvBAoNBJkKf3MXbrt7uSlu5MX7kZtGL9w6RVSYRg6xybdrNxEDILyBotO2cuB7U54dNOuYNWuFIlYLMbS470rl0vBoeysykqwSJWemCbpihql38ncXF7B6fUlB4TOB57D/nH/WLxkfwBrczg3aV2hpkahT/pJnxlNMiW4ra01jhJe68FHRUU9TuCRZG56yowOCyLrk8Hg6EkDALDRmamqWiuaJ/DYQqyW9hx40gcHBwcQRX+aGZCB2iNQoTxkm5yiiC3vClwtc91XHrwtFXGBnhUqLaApZ/zY3ziErl50bpUGKsIyeuozekvQOjNVGXp4B5maTNChpuDLt6FHUbjp0IyiKAEmE+AmzlSbBSZuycxNDanUkCMFG0YPJm88WJljf522KNpqd4xwWnoDz9rMQHo4TVNTawq7ffhs6rXf/eV/B+AvpJlxz2uAS99QehlFa9eHK13OQU6lKuW4RFCTLrNmptGBmTTHdTBf9SGlCfPQmfeQONWynHvlA4skivYmUrZW8SZ8uL5ua9v1k+71ekFNcBsy0Fizui90Zo3SBDeYt/p+KFBDJZ/ZTHaKYJ3wmfXDiJs7rGpPIPkyvMVUTeaBh+Va6pQkllTeDAWALVQfzgpjPILR2OVpYsrSzBixs/LATzoD02YuR5M7aQuVyrL1uZLfvVbc7G9JEnq4kJ5gyNmDkIH77tl0vmFWYOt2o/vwkwmYbTZRekKnYct9v/MaRfc3nxjlS/dupVX92vdw2Oca0Fdm8GXzdi9q7i/wgP8DPXbC1ILPVzhh3ZttcOKeZI2nSja9tp0r9lbsrbK46mCE32lgS6maPttU4EVbzR/b+UTEItmYVNqCPopFYTy3tK06PorbmZPLfKY8K/pfJrzFenJ4dQDdyza0tu2pt+tvTeOYSqeYwH8kszFhbQ9be1l0E4meb8J37FaJW46WcTdLMp2wvRo1u4M7ExTHsWq2Hy/uxHL5D3uSKe4=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Device Params"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/device/{deviceID}/params"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List Device Params
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"sent_status","in":"query","required":false,"description":"Filter by Boolean (Optional) ","example":"false","schema":{"type":"boolean"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required) ","example":"(Type your device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"List Device Params","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"key":{"type":"string"},"value":{"type":"string"},"sent":{"type":"boolean"}}}}}},"example":{"status":true,"result":[{"id":"62ab8294c1ac39001361e11b","key":"param1","value":"value1","sent":false},{"id":"62ab8294c1ac39001361e11c","key":"param2","value":"value2","sent":false}]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

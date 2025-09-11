@@ -1,0 +1,71 @@
+---
+id: bucket-data-amount
+title: "Bucket Data Amount"
+description: "Bucket Data Amount"
+sidebar_label: "Bucket Data Amount"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v20YQ/SuD9SEOQUlO0UPBm2sbqYGiCRIbRmALzYgckRuTu5vdoRVV4H8vZklKVOw2PfRka3d23puvN9wpxjKo7F6993ata4LTO80VDL9mN/aRzGuVql/b/JE4qGWqHHpsiMnLu50y2JDK1HnLlfX6L2RtjUqVNipTFWFBXqXK09dWeypUtsY6UKoKCrnXLhpn6gINrAhKMuSRqQBtYGtbD25gFYhZmzLA6YfBk5Cib9i4WtA/TYxnLKRVqkJeUYMq2yneOrEK7LUpVdelB9p5To5/zPcAhc7VOo9hLr4E+1+BVjGB15cjlEOujoDYt8/ycogWjsI9vdk66jPU+4Xry9f/SmQpUMFZEyjI/U9nZ/KnD1hOuu+x3xIDVwQFMoKnUgcpOWBjW8Ng14ADtkpVbg2TYfH4LD3Z7jktu/pCuTx03jryrHtSgZHbMLFbWVsTGtVF9m3NkzttmEryquu6SWoOTvp8js9+OTvrumh6HGXf13ApQZ7H0FSqGuLKFipTZYwulipTiz7cxW4sZbeQ3PyJ47NA/mmcitbXKlO73QoD3fq665T0wrNTbJSURpu1jaFpjvW9wdJev4Pz99cqVeKzJ/tmfjY/U9+HcAIHc7i0eduQ4ViAB/NgLqxhzBk+ts5Zz5mczeCt5qpdZXDPWNqZtsvTitmFbLF4/WAAAMTowjZNazRvM7gfIPZHLzx4MCcnJyeQJL/ZDbCFNhBwpQMUU05JIpY30ljDsbYGdIDgas2w2sKm0nkFcYilxV95gnFKRrfaxNaUYwo8F/SBoPP2SRcU4Gco9HpNngz3vsIQepJc0pPOB21LkgyETA+39rbpx6qINulAZmtbyNFASdzbxMGIJq8COCxpfkhbkhyppyCc18HCo7EbwADneS4N09/O4ZNtD35fFr1nAH8Qb6x/PABch0jp+ygGuzm8M/UW8Al1jauaQK/HzNqNIS/TLM9Nb75X3zhiPpbtBRLnButt0KFnkSXJi4nEwSqdwvflG6+OXT+Y2WzWdxN87DMQraW7r0zhrDYMH6gc+vuuIgMNPooZjh0hfSJvDoORxho2bWBAKUZwlOv1tufhRIa8RqYodNZgDTRAzeGisjYQWENjnta2ru1GEEerADLSBdghcyXZ0qOrdI714HPffrdGy4r7yMgU4AoDwxvJHvQZuB3HZvQNm4oGtxNxlZHpMYdsEopAGzhyPx+9Jsnth98F5fM4t+j0vA0zejMXDZhru/g8re5VK9IMd/Q/0BMnQq33+QNO1M42E06i/c4GbjCukmGbvijbR7K43xNM33jhatRxjUQF3g2Sfq/2Gyyb7Oepqi9TVdnAYjsV82Wqvrbktyq7X6bqCb2Wxo7KX+gg///Dp87usCun2/140b/IfDhEs5WdgHUrv1SqHmk7/bzoll06fscInf56/5kzPny2pmUN7ffe26sb1XV/A/E4dRU=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Bucket Data Amount"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/bucket/{bucketID}/data_amount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Bucket Data Amount
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"bucketID","in":"path","required":true,"description":"(Required) ","example":"(Type your bucket ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{},"description":"Get the data registers amount of a bucket","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"integer"}}},"example":{"status":true,"result":800}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

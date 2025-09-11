@@ -1,0 +1,71 @@
+---
+id: delete-dictionary
+title: "Delete Dictionary"
+description: "Delete Dictionary"
+sidebar_label: "Delete Dictionary"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/ZUB87CJINtJ0Se9GYmxDbDoLhIHwSIxurQ0lrihSC45slc1/O/F6GLLidMWaJ9skYdnzlzJrSCZB5E8iS/erpRGOH9UVED3NZrbFzQXIhY3KiVljfS1WMTCSS9LJPR8dCuMLFEkYlpRYb36UzJSxEIZkYgCZYZexMLjj0p5zESykjpgLDIMqVeuASfiWhpYIuRo0EvCDJSB2lYeXCcsIJEyeYDzu46JdeFPWTrN1r8OwCNi3SIWIS2wlCLZCqodowJ5ZXKx28V72dnetT9U1st2kooj0eSr9zTbJUllWslUIHyczeEQL/AYnDUB39F9Pq8dDvG3Nxd/q3zBslrKwPu/XF7yTxvoZuXaGkJDo3lzcvs+11CHdE6rtMnd5HuwhmP0yt8b1EhDrSIWaWuLyd8wnDJtl98xJREL561DT6p1IpCkKgxwS2s1SsMaPYZK06lQDB04cLSp6k+J+ypNMYRVpXUNd1jaNWZ89t/5VyIVNuMyaTZZOJdGIiaHuplsj2pox+lDv+7bo/JaJGK7XcqAD17vdoKr782qLAXnVpmVbXxV1ORlLnN7+xmmX25FLJiz1Xo1vhxfitcenMEBDjc2rUo01GTk2TwbrguZEtxXzllPCa+N4KOiolom8EQytyNlF+cFkQvJZHLxbAAAGHRty7IyiuoEnjoT+6UTB57N2dnZGUTRb3YDZKEKCFSoANlQUxQxcl7gfllZAypAcFoRLGvYFCotoOlmngYfPELfkj1t13S8jIHGbL0T6LxdqwwD/AqZWq3Qo6GWK3SuR9ENrlXazbkoSoDFtOZW3pbtBMoaTNyJqW0FqTSQI7UYtt5CPgRwMsfxIWxRdDRJ2cJUBwsvxm5ABpimqa24U3l3DF9tdeA9Pf3eGPgdaWP9y8HAbWgkvfaiw43hs9E1yLVUWi41glr1kbUbgx7sqjluWvh+DCtDmPsmbSdETI3UdVChVZFE0clAyg4VD8236eu3jqmfzWg0aqsJ7tsINGiu7pnJnFWG4A7zrr4fCzRQyheGyb4iuE74zKEx4iaHZRUIJCcjOEzVqm51OJ5LXknikmJiqQE7U2O4LqwNCNZgH6eV1dpu2GKPCsAtnYHtIpejzb10hUql7jj35fdgFN919yQJA8xkILji6EEbgYe+bXpu2BTY0Q6mLbdMa7OLJspA6A0c0Y971ih6uPvEVr71fSudGldhhFdjngFjZSffhtmdVTyr4RH/B3lMwtJazn/QhNVoM9DEl4GzgUrZ3C3d/X1qah9Nxf29QfiTJk5L1VwrzQDeduP8afAMELFIjh8Fi1gUNhDDhmN8EYsfFfpaJE+LWKylV1zSzczPVOD/77x2todrUxyeBfAf3hMnPewWpWGX1lJX/CVi8YL1m3fPbrGL+8caO9BipmmKjgan374SFoM78mb2aTafid3uL/1FkIE=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Dictionary"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/dictionary/{dictionary_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Dictionary
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"dictionary_id","in":"path","required":true,"description":"Can be obtained in the GET Dictionary response(Required)","example":"(Type Dictionary ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Delete Dictionary","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Successfully Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

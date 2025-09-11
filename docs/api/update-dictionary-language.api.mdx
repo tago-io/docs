@@ -1,0 +1,71 @@
+---
+id: update-dictionary-language
+title: "Update Dictionary Language"
+description: "Update Dictionary Language"
+sidebar_label: "Update Dictionary Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9v2zYQ/lcOzENTQbbTYU96y5KgC1CsQeIgKBJjpaWzxIYiVfIYVzP0vw+nH7acOO3W7Skx9fHuu++Od7cRJHMvkntx5exKaYTjO0UF9L8mc/uI5q2IxblKSVkjXS0WsaikkyUSOr66EUaWKBJxGqiwTv0lGSlioYxIRIEyQydi4fBrUA4zkayk9hiLDH3qVNWCE3EmDSwRcjToJGEGykBtg4OqJ+aRSJncw/F1b4l54TdZVpq9fxqBJ8S8RSx8WmApRbIRVFeM8uSUyUXTxFva2Ta0P1U20K4kFXukyYXXONslSWU6ylQgvL+Yw04vcOgrazy+wvt4Xlc4xl+ev/2HzLU0eZA5/ivSH/pLQIUkWCutOYZQZaz6HrMt8sxm+F1KC3baRen5+y8nJ/yny317cmYNoaHJvL25ed3WmICsKq3StpxmX7w1HPyzaK4CjbX7sFMk7Tyyixd2DhGwyy+YkohF5WyFjlQXiidJwY9wS2s1SsNMHfqg6ZAg4zB2Nrp0DLdGbwqGTMJNSFP0fhW0ruG2T0rTtBY5r+jpN5vVbPUnAxxTM0Hr5qWond9XdC2RCptxtYVWLa65RMx2r2i22XtRzWwzRNdwEaF7GvpGcFokYrNZSo+3TjeN4OJ+cSpLwRXGgV3vJLjY6ttw+a9sG6qitnLmMreXH+H06lLEgv11gb2bnkxPxPNwj2AHh3ObhhINtWI+mAfDlStTgptQVdZRwmcTeK+oCMsE7knmdqLs4rggqnwym719MAAADDqzZRmMojqB+97F9ujAhQdzdHR0BFH0u10DWQieH6nykI05RREj5wVuj5U1oDz4SiuCZQ3rQqUFtC2QW+gbhzC0hMFs36n6ipqy955g5eyTytDDr5Cp1QodGups+T70KDrHJ5X2wyGKEmAynbuVs2XXtrMWE/dkahsglQZypA7D3jvIGw+VzHG6ky2K9sYPezjV3sKjsWuQHk7T1AbuJfx1Cp9s2Nk9PDJeOPgDaW3d487BpW8pPY+ix03ho9E1yCeptFxqBLUalLVrgw7sqr1uOvh2dilDmLs2bQdInBqpa698xyKJooNCyh4Vj9136Rs+7Zt+MJPJpKsmuOkUaNFc3Rcmq6wyBNeY9/V9V6CBUj4yTA4VwXXCd3YPI25zWAZPIDkZvsJUreqOR8U90yluGq41LDVg72oKZ4W1HsEaHHRaWa3tmj0OKA/83DOwvXI52tzJqlCp1L3NbfndGsULwg1JQg8X0hO8Y/WgU+B2eDaDbVgX2JsdNUp+Mp3PXk2UntAZ2DM/HaxG0e31B/byeXi3slLT4Cf4bso9YKrs7PM4uxeB5wjc4f9Aj40wtc7mDzhhmKxHnLjhV9ZTKdux0K8O323xe+1xOz8Iv9Gs0lK1s6/t0pu+/d+PligRi+T5SpVsN5VFLArria+M+/4iFl8Dulok94tYPEmnuM7bIZEpz/+/sjeOxqDYLVjwHzazg9H2h9JweE9SB/4lYvGI9YsNkmfYT5H+0Wb2E8y2ujeLJh52cVa1+7y3le2uv9y74uHGaZpiRd/FLkY7wtXtXMRi2W8sJe+RiXByzVuqXHdMbatKu2K1Z5sd60T0a1/TNH8D3PBfVA==
+sidebar_class_name: "put api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Dictionary Language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/dictionary/{dictionary_id}/{language}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update Dictionary Language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"dictionary_id","in":"path","required":true,"description":"Can be obtained in the GET Dictionary response(Required)","example":"(Type Dictionary ID)","schema":{"type":"string"}},{"name":"language","in":"path","required":true,"description":"Language that will be updated","example":"Language Code","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Put Dictionary Language","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Dictionary language Successfully Updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: delete-device-data-mutable-device-only
+title: "Delete Device Data(mutable device only)"
+description: "Delete Device Data(mutable device only)"
+sidebar_label: "Delete Device Data(mutable device only)"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89BEkO1ksU96M+JgN0CxLXJBUCQGSktji41EsuTIrtfwvy+GlGw5cTYtdp8MU3M5czszG0Fy4UX2KD47M1cVwumDohLaf4M784z6TKRigkuVoxfTVFjpZI2EjvU2QssaRSZU4UUqlBaZ+N6gW4tUOPzeKIeFyOay8piKAn3ulCVlWOx6curPwMyhkCSBDCyQoMAKCQs4vWmV2Tn+kLWt2MuERa8nIhU+L7GWItsIWlv+5MkpvRDbbbrDNG6oNE79LYPHFl2JskD3PrxLqWGGsECNTjIkpWFtGge2zZRHIqUX/i2sX3rCA+JE/iTsIuQ6RBkQW0nlAV5yzSu4OxBgdLWGuiE5qxCirUNgp3driyDbb3A9OftXYFN27a3RHj1//+38nH9iHsPLpdGEmgZ3QXPztq0+CmltpfJQmtE3bzSn4EVMk9AMEHsPuPanh3GFWBl9HhGwy1d2jwEys2+Yk0iFdcaiIxVD8ySp8T25mTEVSs3IHfqmomMJ6oe1txGL1GmJi4AfbrA2SyxY67/EWyOVpgi9wiocCDdJJkZRcLTpmmg74vHiAqNbdjPbuEpkYrOZSY/3rtpuBbffq1dZC66+0nMT4lYUKncnF+b6E4w/X4tUsM2I/mJ4PjwXL2M6gb04TEze1KgpVOdJP2nuHJkT3DbWGkcZvw3gD0VlM8vgkeTCDJSZnpZE1mej0dmTBgBgoUtT141WtM7gsXWxezqi8KRPTk5OIEn+NCsmm8YjUKk8FH1MScKSdyXunpXRoDx4WymC2RpWpcpLCOPMdPDBIXSD2ZlVGqiMz+hpyN5bgNaZpSrQw+9QqPkcHWqKtnwbepLE6kfmTZIMGEx0N3emjhQUi5u2YNamgVzqwJ9Bhr1HkQ8erFzgcJ+2JDngdvYwrryBZ21WID2M89w0PMv8dQhfTLO3e5z+Xjn4C2ll3PPewbUPkF5G0coN4RMzllxKVYVeV/Mus2al0fGKYHUdxXc8rDThwoWyHQEx1rJae+UjiixJjiZStlJp330sX/fp0PSTHgwGsZvgNmYgSHN3X+nCGqUJbnDR9vdDiRpq+cxisusI7hPW2Q9GGmpYN55AcjG8xVzN1xGHZY5yShK3FBuWFWDragiXpTGeiQG7PM1NVZkVe+ykPPBI82aIUS/QLJy0pcpl1drctd+9VrzsbkkSeriSnuCCswcxA/fd2HS2YVVia7bHvDwy0WebTZSe0Gk4MD/srCbJ/c1H9vK1m1tp1bDxA7wYMgcMlRl97Vf3qmHehgf8H+CxEYYWbb6DCZvBqoeJF4M1nmoZ9ky7wH+exw+4crdZCH/QyFZShcUTaHnTEvxjex2IVGS9OyFw/DQVpfHEQn1qn6btRcbMXyjPON44ejb7RfoL59lR1M+43l2FS1k1LBG2yVI6xRB+Ec7eI7x76hwF1D5Kve4j6oDucrmdbtPuRmSE8fM4z9FST/H19TLtbeXJ1ceruyux3f4D1knhrA==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Device Data(mutable device only)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/device/{deviceID}/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Device Data(mutable device only)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","required":false,"description":"ID(s) of data to get deleted (Required)","example":"Data ID","schema":{"type":"string"}},{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required only mutable device)","example":"(Type a device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"Delete Device Data(mutable device only)","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"1 Data Removed"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

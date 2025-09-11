@@ -1,0 +1,71 @@
+---
+id: get-device-token-with-serial-number-authorization
+title: "Get Device-Token with Serial Number & Authorization"
+description: "Get Device-Token with Serial Number & Authorization"
+sidebar_label: "Get Device-Token with Serial Number & Authorization"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v20YM/isEA6yJINvJsE/CMMBogyzA0BZNgqJIDPQs0dI10p16R9n1DP33gXqxpcTd2mCfbN3xyIcvD8kdsko9Rvf4lnhj3SOcftScQfc1ubWPZM5wEWKpnCqIyYn0Do0qCCOcV5xZp/9WrK3BELXBCDNSCTkM0dHXSjtKMFqp3FOICfnY6bIRjnAOpjPKYgZSMuQUUwLawNZWDjijvYwnZm1SjyHSN1WUudj/JFIjsBiijzMqFEY75G0pUp6dNinWdbgH7slpelsVywZoA7tUnI1As6ueYX5Dax0T3JDTKodWAThKtWdylIBiuFWpvX73gzjUsQD+EJJR6KHxHVbOFk3QKk8OSmdXOqd/RbIQM760xpOX+1/Pz+WnTWFz8toaJsOT2+bl7vu6hnlRZZnruIE2++KtEZ+f4E8tg4K1ynXS5h9DjFtbovyZhmOm7fILxYwhls6W5Fi3TjjyVc5HIXpWXPnB1dLanJQAHDpw0IG/t4//wMNjSUdd1899uiKGtkLaYoSNkGlcLL/AU9IUxJlNJCTU+CLZj3CmDVPq2gh0JJg58jZf02w3qN96thtVUS1Iya17qlYuxwh3u6XydOfyukapv2enqkCpBm1WtgmP5iaTbTXD/P01hig6W08vpufTc3zq/wkcxOGNjauCDDegHsyDkUpSMcNNVZbWcSRnE7jSnFXLCO5ZpXai7eI0Yy59NJudPRgAABF6bYuiMpq3Edx3JvZHRx48mJOTkxMIgj/tBtgKHYAz7SEZYgoCkbzNaH8sTNIefJlrhuUWNpmOs647bW31yhH0pOzVatMQTo7J81SsdwBLZ9c6IQ+/QaJXK3JkuNXlO9eDYFgsQRCBgOEDlZsmmDQyYQdmayuIlTRLPtC9FXnloVQpTQ9hC4L3bQ84WJjn3sKjsRtQHuZxbCvhttxO4ZOtDnob210L2Tff5wZGzVcMXPsG0lMvOrkpvDP5FtRa6VwtcwK96iNrN4Yc2NWo6/eTYECGIyDmRuVbr32LIgqCo4FUnVQ4NN+mr78aq34wk8mkrSa4aSPQSEt1X5qktNowfKC0q++PGRko1KOIqb4ipE7kzYEYYZPDovIMSpLhS4r1atviKKWTOa2YmqlijcqBOlNTeJ1Z6wmsoT5OK5vndiMWeykPQukEbBe5lGzqVJnpWOWdzn353Rkt4/aGFZOHS+UZLiR60EbgrqdNrxs2GXVqB/1ZKNPa7KJJSqahgZH6aa81CO4+/CVWPve8VaWeVn5CF1PpAVNtZ5+H2b2spLvDR/of4IkSgdbq/A9MVE02A0wyP0rruVDNNOom+Mt6/qhv7ocR0zeelbnSRmw1LXrXzYN7HFAAQ+wI0qwJzUzAEKPxVhONl4tFiJn1LKqGw2AR4teK3Baj+0WIa+W0EKOZHIn28v87+9vuMK7x9EPXFs/gZzako253h8psZeKovJIvDPGRtk8WN5ljL8L4M7vTCzCO414v6rDfiSWqrcw8jqnkwevnK9NisBpcXd5iXf8DfNcLaA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Device-Token with Serial Number & Authorization"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/integration/network/resolve/{serieNumber}/{authorization}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Device-Token with Serial Number & Authorization
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"A network token generated in your the network settings","example":"Your Network-Token","schema":{"type":"string"}},{"name":"serieNumber","in":"path","required":true,"description":"Device Serial Number registered at TagoIO","schema":{"type":"string"}},{"name":"authorization","in":"path","required":true,"description":"Authorization Token from the user profile","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"headers":{"Content-Type":{"schema":{"type":"string"},"example":"application/json"}},"description":"got a valid token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string"},"status":{"type":"boolean"}}},"example":{"result":"<string>","status":true}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

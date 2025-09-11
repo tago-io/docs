@@ -1,0 +1,71 @@
+---
+id: create-and-edit-device-params
+title: "Create and Edit Device Params"
+description: "Create and Edit Device Params"
+sidebar_label: "Create and Edit Device Params"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vttu4zYQ/ZUB87CJINtJ0Se9pUnQBiiaIBcEi8TA0tJY4oYiubzEqxr692JEyZZjb1MURfMSmx6eOXM4tzXzvHQse2a3Vi+FRDh+Er6C/tvkQb+iOmEpu8Q3kaNjKbvQainKYLkXWsEtt7xm85QZ+oAeLaGtmeI1soydB19pK/7sjFnKhGIZq5AXaFnKLH4LwmLBsiWXDlNWoMutMJ1xxi64ggVCiQot91iAUNDoYMH0XB16L1Tp4PiuRyKq+J3XRpL3zyPjiadQWMpcXmHNWbZmvjFk5bwVqmRtm25oX2jlUfnJA1l8yHrrkBsjRd4FO/vq9D91d57naPz/4KjoXvH6cnBluK92HHkb9p5hKy7sqHtM6sQHibhwfXnyt0Tm5MoZrRw6+v2n0zP6FwOmk3YvBSxyemLgEDPwk4spR5mYx1ciiD09svU+D734ijnJbKw2aL2ILJznPriR3UJriVyxtqMbpD8USzuSYosR9RtusUgV7kOeo3PLIGUDj6agZCaIto3ao/O/6KIhoH8Z05iNClJ20AekROCqgKtC+F7PrZo1+koXlBTadSJRbmRsFt92th5yp52Z4YpD+zYUfLCSZWy9XnCHj1a2LaO82zvlNaM0oHjutpFfbZRsKTOXuotQ+C7PHnipr2/g/PaapYz8xXjOpqfTU/Y+yiPYmsOlzkONyncavqgXRXXNcw/3wRhtfUZnE/hV+CosMnj2vNQToefHlffGZbPZyYsCACCjC13XQQnfZPDcu9gcHbjwoo6Ojo4gSX7TK/AagkPwlXBQjDklCVk+VLg5pp4qHDgjhYdFA6tK5BV0vYtK7ZNFGKp1gBUKfBWP0fkpee8JGqvfRIEOfoZCLJdoUfmI5frQkySmQWz0SZIBkYnullbX4/JOezKNDpBzBSX6aEPei6E6DS9xupUtSXZGCXk4l07Dq9Ir4A7O81wH6rT06xQ+67DFPdzr9xz8gX6l7evWwbXrKL2Porebwo2SDfA3LiRfSASxHJTVK4UW9LK7rqL5ZugI5bGMU+8AiXPFZeOEiyyyJDkoJO+t0rH7+HzDT7vQL2oymcRsgvuoQGdN2X2lCqOF8nCHZZ/fTxUqqPlr7Jh9RlCe0J1tYaTdG9bBeeD0GM5gLpZN5GGoO1pBvcJ2wFwC9q6mcFFp7RC0wkGnpZZSr8jjYOWAyr0A3StXoi4tN5XIuewxN+n3qARN9nvPPTq44s7DGakHUYHHoWwGbFhV2MOO+iOVTPTZq4ncebQKduCnA2qSPN79Tl6+DHXLjZgGN8GzKfWAqdCzL+PXvQo0MeAJ/wN6BELUIuYHnDBMViNO1OepPde8mwbDtvJBZ9/pkJvJ4fG7nxnJRTfouka97pv+c78osJRlo5Wh7/vzlFU0IrLnnXY/T9m3gLZh2fM8ZW/cCkrvbjYUwtHnH+x5o6E33jV2146DpPtDrhqaDFwG+sZS9orNeNlp5206bFVEJ/78bscbru9NXRpj8cZmTfux7Xw0R29v7h9Yyhb9ZK91QXcsX9HGxVeRqu5E6LaP7mzNJFdl4CXZRkz6+wvGE/36
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create and Edit Device Params"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/device/{deviceID}/params"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create and Edit Device Params
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Authorization","in":"header","required":false,"description":"Can be generated in your profile settings (Required)","example":"Your profile-token","schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"Accept","in":"header","required":false,"example":"application/json","schema":{"type":"string"}},{"name":"deviceID","in":"path","required":true,"description":"(Required) ","example":"(Type your device ID)","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object"},"example":null}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"headers":{},"description":"Creating a Device's Params","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean"},"result":{"type":"string"}}},"example":{"status":true,"result":"Params Successfully Updated"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
