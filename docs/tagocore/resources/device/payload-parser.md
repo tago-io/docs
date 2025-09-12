@@ -6,33 +6,41 @@ slug: /tagocore/device/payload-parser
 
 # Payload Parser
 
-Payload Parser allows you to manipulate the raw payload sent by devices. For example, it can be used to transform a HEX payload sent by a device into `temperature` and `battery` variables.
+A Payload Parser transforms raw data from your devices into a format that's easier to work with. For example, it can convert cryptic hex data like `41BC7E` into meaningful values like temperature and battery readings that you can actually understand and use.
 
-## Associating it
+## Setting Up a Payload Parser
 
-Payload Parsers must be associated to a [Device](/docs/tagocore/device), and you can define one by selecting a file in the **Payload parser** field of a Device. Each device can only have **one** Payload Parser.
+To use a payload parser with your device:
+1. Go to your [Device](/docs/tagocore/device) settings
+2. In the **Payload parser** field, select your JavaScript file
+3. Save your changes
 
-## Writing code
+Each device can have only **one** payload parser, but you can create different parsers for different types of devices.
 
-:::info
-Payload Parsers can only be written in JavaScript.
+## Writing Your Parser Code
+
+:::info JavaScript Required
+Payload parsers must be written in JavaScript - no other programming languages are supported.
 :::
 
-Inside of your JavaScript code, you can use the `payload` global variable to have access to the data sent by your device. You may also modify this global variable if you wish to change the data before it is saved in the Device's [Data](/docs/tagocore/resources/device/data.md).
+Your JavaScript code has access to a special variable called `payload` that contains the raw data sent by your device. You can read from this variable and modify it to transform the data before TagoCore saves it to your [Device Data](/docs/tagocore/resources/device/data.md).
 
-The global `payload` will contain whatever your Device has sent in the body of the HTTP request, which means it doesn't have a specific type and can be an `array`, `object`, or even a `string` or `number`.
+The `payload` variable can contain different types of data depending on what your device sends:
+- An **array** of data points
+- An **object** with multiple properties  
+- A simple **string** or **number**
 
-:::tip Good to know
-- Your code **doesn't need** to be in a function;
-- You do not need to use a `return` statement at the end of your code;
-- You cannot use `require`, `import`, or `window` inside of your code.
+:::tip Writing Tips
+- Write your code directly - no need to wrap it in a function
+- Don't use `return` statements - just modify the `payload` variable
+- Keep it simple - avoid `require`, `import`, or `window` statements
 :::
 
-In general, your script should **not take too long** to transform the payload of your Device in order to avoid a bottleneck in your application.
+Keep your parser code fast and efficient to avoid slowing down data processing for your entire application.
 
-## Code sample
+## Example: Temperature Conversion
 
-This code sample shows how you can convert a `Celsius` temperature value to a `Fahrenheit` temperature value.
+This example shows how to convert temperature from Fahrenheit to Celsius and add proper units:
 
 ```js
 // This code:
