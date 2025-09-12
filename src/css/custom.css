@@ -36,21 +36,21 @@ body:has(.openapi__heading) .pagination-nav {
   padding: 0 3rem !important;
 }
 
-/* Previous button - positioned on the left, always 200px wide */
+/* Previous button - positioned on the left, always 400px wide */
 body:has(.theme-api-markdown) .pagination-nav__item--prev,
 body:has(.openapi__heading) .pagination-nav__item--prev {
-  width: 200px !important;
-  max-width: 200px !important;
-  flex: 0 0 200px !important;
+  width: 400px !important;
+  max-width: 400px !important;
+  flex: 0 0 400px !important;
   margin-right: 0 !important;
 }
 
-/* Next button - positioned on the right, always 200px wide */
+/* Next button - positioned on the right, always 400px wide */
 body:has(.theme-api-markdown) .pagination-nav__item--next,
 body:has(.openapi__heading) .pagination-nav__item--next {
-  width: 200px !important;
-  max-width: 200px !important;
-  flex: 0 0 200px !important;
+  width: 400px !important;
+  max-width: 400px !important;
+  flex: 0 0 400px !important;
   margin-left: auto !important;
 }
 
@@ -68,9 +68,12 @@ body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--next
 
 body:has(.theme-api-markdown) .pagination-nav__link,
 body:has(.openapi__heading) .pagination-nav__link {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 1rem 1.5rem !important;
+  width: 400px !important;
+  max-width: 400px !important;
+  padding: 0.8rem 1rem !important;
+  display: block !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
 }
 
 /* Show HTTP methods in sidebar for API endpoints */
@@ -83,29 +86,33 @@ body:has(.openapi__heading) .pagination-nav__link {
   border-radius: 3px;
   text-transform: uppercase;
   font-family: monospace;
+  width: 60px;
+  text-align: center;
+  min-width: 60px;
+  box-sizing: border-box;
 }
 
 .api-method.get::before {
   content: "GET";
-  background-color: #61affe;
+  background-color: #3880ff;
   color: white;
 }
 
 .api-method.post::before {
   content: "POST";
-  background-color: #49cc90;
+  background-color: #00a400;
   color: white;
 }
 
 .api-method.put::before {
   content: "PUT";
-  background-color: #fca130;
+  background-color: #54c7ec;
   color: white;
 }
 
 .api-method.delete::before {
   content: "DELETE";
-  background-color: #f93e3e;
+  background-color: #fa383e;
   color: white;
 }
 
@@ -119,6 +126,29 @@ body:has(.openapi__heading) .pagination-nav__link {
 .theme-doc-sidebar-item-link.api-method {
   display: flex;
   align-items: center;
+}
+
+/* Make API parameter headers bolder and larger */
+body:has(.theme-api-markdown) .openapi-params__list-container h3,
+body:has(.openapi__heading) .openapi-params__list-container h3 {
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
+
+/* Parameter section headers */
+body:has(.theme-api-markdown) .openapi-tabs__content h4,
+body:has(.openapi__heading) .openapi-tabs__content h4,
+body:has(.theme-api-markdown) .openapi-params h4,
+body:has(.openapi__heading) .openapi-params h4 {
+  font-weight: bold !important;
+  font-size: 1.15em !important;
+}
+
+/* Headers for Parameters, Query Parameters, Request Body, etc. */
+body:has(.theme-api-markdown) .theme-api-markdown h3,
+body:has(.openapi__heading) .theme-api-markdown h3 {
+  font-weight: bold !important;
+  font-size: 1.25em !important;
 }
 
 :root {
