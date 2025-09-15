@@ -6,16 +6,13 @@ slug: /tagocore/analysis/code
 
 # Analysis Code
 
-You may write your Analysis's code in whatever way you prefer. However, we do have some coding guidelines, best practices, and tips
-that may help you in your quest to create powerful Analyses.
+You have complete freedom in how you write your Analysis code - use any programming language, framework, or coding style you prefer. This guide covers the essentials of accessing device data and structuring your Analysis code effectively.
 
-## Using data
+## Accessing Device Data
 
-You can run your Analysis in many different ways, and one of them is by using an [Action](/docs/tagocore/action).
+When your Analysis is triggered by an [Action](/docs/tagocore/action) (for example, when a device sends new data), you can access that triggering data through a special environment variable called `TAGOCORE_DATA`.
 
-When a Device sends data that triggers an Action, and that Action in turn runs your Analysis, you may access the data sent by the Device via the `TAGOCORE_DATA` environment variable.
-
-The `TAGOCORE_DATA` environment variable will contain an array of objects or a single object, depending on the data sent by the Device. It will look something like this:
+This environment variable contains the device data that triggered your Analysis. The data might be a single data point or multiple data points, depending on what your device sent. Here's what a typical data point looks like:
 
 ```json
 {
@@ -26,22 +23,30 @@ The `TAGOCORE_DATA` environment variable will contain an array of objects or a s
 }
 ```
 
+**Key fields explained:**
+- `variable`: The type of data (e.g., "temperature", "humidity", "pressure")
+- `value`: The actual measurement or reading
+- `unit`: The measurement unit (e.g., "°F", "°C", "%")
+- `origin`: The unique ID of the device that sent this data
 
-## Writing code
+## Writing Your Code
 
-With an Analysis, you are able to execute **any type of code** in **any language** you desire. The way this is achieved is through the `Binary Executable path` and the `File path` fields. For more information, see our [Analysis Overview](/docs/tagocore/analysis) article.
+TagoCore supports any programming language through the `Binary Executable path` and `File path` configuration. For details on setting this up, see the [Analysis Overview](/docs/tagocore/analysis) guide.
 
-:::tip Good to know
-- Your code **doesn't have** to be in a function;
-- You do not have to use a `return` statement at the end of your code.
+:::tip Keep It Simple
+- Write your code directly - no need to wrap it in functions
+- Skip `return` statements - just execute your logic
+- Focus on processing the data and producing results
 :::
 
-## Code sample
+## Example: Temperature Monitor
 
-This code sample shows a **Node.js Analysis** that simply logs the value of a variable to the [Analysis Console](/docs/tagocore/resources/analysis/console.md).
+This Node.js example shows how to access device data and log temperature readings to the [Analysis Console](/docs/tagocore/resources/analysis/console.md):
 
 ```js
 const data = process.env.TAGOCORE_DATA;
 const temperatureItem = data.find((i) => i.variable === 'temperature');
 console.log("Temperature is at:", temperatureItem.value);
 ```
+
+This simple Analysis reads the device data, finds the temperature variable, and outputs the current temperature reading to the console where you can monitor it.

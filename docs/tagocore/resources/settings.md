@@ -6,59 +6,65 @@ slug: /tagocore/settings
 
 # Settings
 
-The settings page allows you to modify any configuration related to TagoCore. You can visit this page by clicking on the &nbsp;<img src="/docs_imagem/tagocore/icons/cog.svg" width="15px"/>&nbsp; button on the sidebar.
+The Settings page is your control panel for configuring how TagoCore operates. Here you can customize core system behavior, choose which plugins to use, and adjust network settings to match your environment.
 
-Settings are saved to a `.yml` file located in the `tagocore` folder, which resides in your Operating System's `Home Directory`.
+Access Settings by clicking the &nbsp;<img src="/docs_imagem/tagocore/icons/cog.svg" width="15px"/>&nbsp; gear icon in the sidebar.
 
-## Settings folder
+All settings are automatically saved to a configuration file (`tagocore.yml`) in your system's home directory, ensuring your preferences persist between restarts.
 
-The first configuration you will find is the **Settings folder**. This is a read-only field that shows you where the settings are located in your filesystem.
+## Settings Location
 
-## Port
+**Settings Folder** shows you exactly where your configuration file is stored on your computer. This read-only field helps you locate the file if you need to back it up or troubleshoot configuration issues.
 
-This field allows you to change the port that TagoCore will run on. By default it has a value of `8888`, but you can change it to whatever port you prefer.
+## Network Configuration
 
-Changing the port will:
+### Port Setting
+Controls which network port TagoCore uses to communicate. The default port is `8888`, but you can change this if:
+- Another application is already using port 8888
+- Your network requires a specific port number
+- You want to run multiple TagoCore instances
 
-- Change the API endpoint where you make requests;
-- Change the endpoint that you use to open TagoCore in your browser.
+**What changes when you modify the port:**
+- The web address you use to access TagoCore (e.g., `http://localhost:9000`)
+- The API endpoint your devices use to send data
 
-:::tip
-This field requires TagoCore to restart for it to take effect.
+:::tip Restart Required
+TagoCore must restart after changing the port. Your devices will need the updated port number to continue sending data.
 :::
 
-:::info
-This configuration only affects TagoCore, and not any plugins that may start web servers.
+:::info Plugin Independence
+This setting only affects TagoCore itself. Plugins that start their own web servers use separate port configurations.
 :::
 
-## Database plugin
+## Plugin Configuration
 
-This field allows you to define which Database plugin you want to use.
+### Database Plugin
+Determines where TagoCore stores your device data and system information. If you have multiple database plugins installed, you can switch between them here.
 
-By default this configuration will use the first Database plugin it finds, but this option is ideal for you if you have multiple database plugins.
+**Default behavior:** TagoCore automatically uses the first available database plugin it finds.
 
-Once you switch to another Database Plugin, TagoCore will start using that Database as the data source for the application.
+**When to change:** You have specific database requirements (like PostgreSQL instead of SQLite) or want to migrate to a different storage system.
 
-:::tip
-This field requires TagoCore to restart for it to take effect.
-::: 
-
-:::info
-Data is not replicated between database plugins.
+:::tip Restart Required
+TagoCore must restart when switching database plugins.
 :::
 
-## Queue Plugin
-
-This field allows you to define which Queue plugin you want to use.
-
-:::info Good to know
-This field requires TagoCore to restart for it to take effect.
+:::info Data Migration
+Switching database plugins doesn't automatically transfer your existing data. You'll need to manually migrate data between different database systems.
 :::
 
-## Filesystem Plugin
+### Queue Plugin
+Manages how TagoCore handles background tasks and message processing. Queues help TagoCore process multiple operations efficiently without blocking other activities.
 
-This field allows you to define which Filesystem plugin you want to use. By default, it must be the Local Disk Filesystem plugin.
+:::info Restart Required
+TagoCore must restart when changing queue plugins.
+:::
 
-:::info Good to know
-This field requires TagoCore to restart for it to take effect.
+### Filesystem Plugin
+Controls how TagoCore accesses and stores files on your system. The default Local Disk plugin works for most installations.
+
+**When to change:** You need specialized file storage (like network drives or cloud storage) through custom plugins.
+
+:::info Restart Required
+TagoCore must restart when changing filesystem plugins.
 :::

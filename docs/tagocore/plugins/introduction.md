@@ -1,24 +1,25 @@
 ---
 sidebar_position: 1
-title: Overview
+title: Plugin Overview
 slug: /tagocore/plugins
 ---
 
 # Plugins
 
-Plugins are programs or applications created by the community and TagoIO that extend the functionality of TagoCore.
+Plugins are add-on components that expand TagoCore's capabilities beyond its core features. Think of them as apps for your IoT platform - they add new integrations, data sources, storage options, and specialized functionality created by both the TagoCore community and TagoIO team.
 
-## Creating a plugin
+Plugins help you customize TagoCore to fit your specific needs without modifying the core system.
 
-All TagoCore plugins are created using Node.js and soon you will be able to publish your Plugin to the world by using
-our Plugin Store.
+## Creating Your Own Plugin
 
-Read our [Creating Plugins](/docs/tagocore/plugins/create) article to starting creating your own Plugins.
+Want to build custom functionality for TagoCore? All plugins are developed using Node.js, making them accessible to JavaScript developers.
 
-## Installing a plugin
+Once you've built a plugin, you'll soon be able to share it with the community through the upcoming Plugin Store.
 
-If you have developed your own Plugin, you may be looking for a way to install it in TagoCore. If that's the case,
-check out our [Manual installation](/docs/tagocore/plugins/install/manually.md) guide.
+Ready to start? Check out our [Creating Plugins](/docs/tagocore/plugins/create) guide for step-by-step instructions.
 
-However, if you are trying to install Plugins from other developers, the best way is via the
-[Plugin Store](/docs/tagocore/plugins/install/pluginstore.md).
+## Installing Plugins
+
+**For your own plugins**: If you've developed a custom plugin, use our [Manual Installation](/docs/tagocore/plugins/install/manually.md) guide to add it to your TagoCore instance.
+
+**For community plugins**: The easiest way to discover and install plugins from other developers is through the [Plugin Store](/docs/tagocore/plugins/install/pluginstore.md), where you can browse available plugins and install them with just a few clicks.

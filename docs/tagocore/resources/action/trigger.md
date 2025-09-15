@@ -6,35 +6,43 @@ slug: /tagocore/action/trigger
 
 # Action Trigger
 
-Currently, there is only 1 type of trigger you can use:
+A trigger defines when your Action should run. Think of it as the "when" part of your automation rule. TagoCore offers two main types of triggers to cover different automation scenarios:
 
-- **Variable**: The Action will be triggered when one or more variables meet certain conditions. If your [Device](/docs/tagocore/device) has sent data and the variables are meeting those conditions, the Action will be triggered.
+- **Variable Trigger**: Executes when device data meets specific conditions (e.g., temperature > 30°C)
+- **Schedule Trigger**: Executes at specific times or intervals (e.g., every day at 9 AM, every 5 minutes)
 
-## Trigger by Variable
+## Variable Trigger
 
-This type allows you to execute your [Actions](/docs/tagocore/action) when one or more variables meet certain conditions.
+This trigger watches your device data and executes Actions when certain conditions are met. Perfect for responding to sensor readings, alerts, or changes in device status.
 
-There are 2 categories inside of this trigger type:
+### Device Scope Options
 
-- **Single device**: Allows you to watch a specific [Device](/docs/tagocore/device) in your list. Any data that is sent by that device will be tested against your conditions to decide if this action should be triggered or not.
+**Single Device**: Monitor one specific [Device](/docs/tagocore/device) in your system. When that device sends data matching your conditions, the Action triggers.
 
-- **Multiple devices**: Allows you to watch multiple [Devices](/docs/tagocore/device). Any data that is sent by those devices will be tested against your conditions to decide if this action should be triggered or not. For this type, you must supply the tag key and tag value of the devices you want to watch.
+**Multiple Devices**: Monitor several [Devices](/docs/tagocore/device) at once by using device tags. Any device with matching tags that sends data meeting your conditions will trigger the Action.
 
-### Trigger Conditions
-After setting up the [Device](/docs/tagocore/device), you should set a condition for your Action to be executed.
+### Setting Up Conditions
+
+After choosing your device scope, define the conditions that will trigger your Action:
 
 <img className="big-image" src="/docs_imagem/tagocore/action/action-conditions.png" height="100px" />
 
-1. **Select a variable** to be tested. This will be one of the variables that will be compared against the data from the device.
-2. **Define the type** of condition to test the variable. The available test conditions are:
-  - **Less than**: matches when the value of the variable is less than the value defined;
-  - **Greater than**: matches when the value of the variable is greater than the value defined;
-  - **Equal to**: matches when the value of the variable is equal to the value defined;
-  - **Different from**: matches when the value of the variable is different from the value defined;
-  - **Any**: matches whenever a new value of the variable is sent to the device;
-  - **Between**: matches when the new value is between a fixed value range.
-3. **Set a value** to complement the condition. In the example above, the value for the condition is 15.
+1. **Choose a variable** to monitor (e.g., "temperature", "humidity", "battery")
+2. **Select a condition type**:
+   - **Less than**: Triggers when the value is below your threshold
+   - **Greater than**: Triggers when the value exceeds your threshold  
+   - **Equal to**: Triggers when the value exactly matches
+   - **Different from**: Triggers when the value changes from a specific value
+   - **Any**: Triggers whenever new data arrives (regardless of value)
+   - **Between**: Triggers when the value falls within a specific range
+3. **Set the comparison value** (e.g., 15 for "temperature > 15")
 
-## Roadmap
+## Schedule Trigger
 
-Just like our [TagoIO Cloud](https://admin.tago.io) platform, we plan to implement new Action triggers in the future, such as Trigger by Resource, and Trigger by Schedule.
+This trigger runs Actions based on time schedules rather than device data. Use it for regular maintenance tasks, periodic reports, or time-based automation.
+
+Schedule triggers support flexible timing options:
+- **Specific times**: Daily at 9:00 AM, weekly on Mondays
+- **Regular intervals**: Every 5 minutes, every hour, every month, every year
+
+Perfect for tasks like daily data backups, weekly reports, or periodic system health checks.
