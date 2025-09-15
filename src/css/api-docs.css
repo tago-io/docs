@@ -1,16 +1,5 @@
 /* API Documentation specific styles - aggressive targeting */
 
-/* General markdown heading sizes */
-.markdown > h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-}
-.markdown > h2 {
-  font-size: 2rem;
-}
-.markdown > h3 {
-  font-size: 1.5rem;
-}
-
 /* Direct API docs width override - placed here for maximum priority */
 .theme-api-markdown,
 .openapi__heading,
