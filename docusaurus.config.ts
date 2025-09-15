@@ -101,13 +101,13 @@ const config: Config = {
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
 
-  clientModules: [require.resolve('./src/theme/Root.tsx')],
+  clientModules: [require.resolve("./src/theme/Root.tsx")],
 
   themeConfig: {
     image: "img/tago-social-card.png",
     api: {
-      methodLabelComponent: 'MethodEndpoint',
-      authPersistence: 'localStorage',
+      methodLabelComponent: "MethodEndpoint",
+      authPersistence: "localStorage",
     },
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
