@@ -4,16 +4,26 @@ title: Plugin Store
 slug: /tagocore/plugins/install/pluginstore
 ---
 
-# Activate plugin via Store
+# Using the Plugin Store
 
-All plugins in the store are inside plugins, meaning the plugin code is already included in TagoCore. Therefore, you don't need to install them, you only need to activate them. The list of all plugins you find here [Plugins](https://github.com/tago-io/tagocore/tree/main/plugins).
+The Plugin Store is your one-stop shop for discovering and enabling new TagoCore functionality. All available plugins are already built into TagoCore - you just need to activate the ones you want to use.
 
-To activate a plugin from the Plugin Store, simply follow these steps:
+Think of it like enabling features rather than installing new software. All plugin code is already included with your TagoCore installation, so activation is instant and doesn't require downloading anything.
 
-- Click the `Plugins` button located in the TagoCore's sidebar.
-- Select the Plugin you want to activate;
-- Click on `Activate` in the right side of the page to activate the Plugin.
+You can browse all available plugins in the [TagoCore plugins repository](https://github.com/tago-io/tagocore/tree/main/plugins).
 
-:::info Good to know
-You won't be able to activate a Plugin that is not compatible with your Platform.
+<img src="/docs_imagem/tagocore/plugin/plugin-store.png" width="700px"/>
+
+## Activating a Plugin
+
+Ready to add new functionality to your TagoCore? Here's how to activate a plugin:
+
+1. **Open Plugin Store**: Click the `Plugins` button in TagoCore's sidebar
+2. **Choose Your Plugin**: Browse the available plugins and select one that meets your needs
+3. **Activate**: Click the `Activate` button on the right side of the page
+
+Once activated, the plugin will immediately be available for use in your TagoCore system.
+
+:::info Compatibility Check
+TagoCore automatically prevents you from activating plugins that aren't compatible with your current platform or system configuration.
 :::

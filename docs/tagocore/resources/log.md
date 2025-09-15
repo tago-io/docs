@@ -6,24 +6,34 @@ slug: /tagocore/log
 
 # Application Logs
 
-Application Logs allow you to visualize the logs of the application and plugins.
+Application Logs provide a real-time view of what's happening inside TagoCore and its plugins. Think of them as a detailed activity feed that helps you monitor system health, troubleshoot issues, and understand how your platform is performing.
 
-To access this page, click on the &nbsp;<img src="/docs_imagem/tagocore/icons/scroll.svg" width="15px"/>&nbsp; button located on the upper right-hand corner of the screen.
+## Choosing Log Sources (Channels)
 
+You can filter logs by their source using the Channel selector. This helps you focus on specific parts of your system:
 
-## Channel
+**Application Channel** (default): Shows logs from the core TagoCore system - startup messages, device connections, data processing activities, and system-level events.
 
-You can select which log channel to view. By default, this option is set to `Application`, which means that only the native TagoCore application logs are shown on the screen.
+**Plugin Channels**: Each installed plugin has its own dedicated channel. Select a plugin's channel to see only logs related to that specific plugin's activities, making it easier to debug plugin-specific issues.
 
-Each plugin has its own log channel, so if you want to see the logs for a specific plugin, just select its channel.
+## Understanding Log Types
 
-## Type
+TagoCore displays two types of log messages to help you quickly identify their importance:
 
-There are 2 types of logs:
+### Error Logs
+These appear in **red** and indicate problems that need your attention. Error logs help you identify:
+- Connection failures with devices or external services
+- Configuration issues that prevent proper operation
+- Plugin crashes or malfunctions
+- Data processing errors
 
-- Error
-- Verbose
+Some error logs may include technical details (called a stack trace) to help with troubleshooting.
 
-Error logs are error messages that TagoCore or a plugin can generate in order to warn you that something is not right. These types of logs appear with a red color and the [Stack Trace](https://en.wikipedia.org/wiki/Stack_trace) may or may not appear for each log, depending if a plugin wants to use them.
+### Verbose Logs
+These are **informational messages** that show normal system activity. Verbose logs are more common and indicate healthy operation:
+- Successful device data reception
+- Plugin startup and shutdown events
+- Regular system maintenance activities
+- Data processing confirmations
 
-Verbose logs are default messages that indicate that something is happening. These types of logs are more common and do not symbolize any type of errors.
+These logs help you confirm that everything is working as expected and provide visibility into your system's daily operations.
