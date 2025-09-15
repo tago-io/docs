@@ -1,16 +1,5 @@
 @import "./api-docs.css";
 
-/* General markdown heading sizes */
-.markdown > h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-}
-.markdown > h2 {
-  font-size: 2rem;
-}
-.markdown > h3 {
-  font-size: 1.5rem;
-}
-
 :root {
   --c-blue-0: #f0f6ff;
   --c-blue-70: #4d8dff;
