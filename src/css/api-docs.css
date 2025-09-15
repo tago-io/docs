@@ -1,69 +1,8 @@
 /* API Documentation specific styles - aggressive targeting */
 
-/* Use OpenAPI-specific selectors that definitely exist */
+/* Direct API docs width override - placed here for maximum priority */
 .theme-api-markdown,
 .openapi__heading,
-.openapi-tabs__code-container,
-.openapi-explorer__request-container,
-.openapi-explorer__response-container {
-  /* Mark that we found API content */
-}
-
-/* Target any page that contains OpenAPI components */
-body:has(.theme-api-markdown) .main-wrapper,
-body:has(.openapi__heading) .main-wrapper {
-  max-width: none !important;
-  width: 100vw !important;
-}
-
-body:has(.theme-api-markdown) .container,
-body:has(.openapi__heading) .container {
-  max-width: none !important;
-  width: 100% !important;
-  padding: 0 3rem !important;
-}
-
-body:has(.theme-api-markdown) .theme-doc-markdown,
-body:has(.openapi__heading) .theme-doc-markdown {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-body:has(.theme-api-markdown) .row,
-body:has(.openapi__heading) .row {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-/* Fallback - target pages with API in URL or class patterns */
-html[data-current-page*="api"] .main-wrapper,
-body[class*="api-"] .main-wrapper,
-.docs-wrapper[class*="api"] .main-wrapper {
-  max-width: none !important;
-  width: 100vw !important;
-}
-
-html[data-current-page*="api"] .container,
-body[class*="api-"] .container,
-.docs-wrapper[class*="api"] .container {
-  max-width: none !important;
-  width: 100% !important;
-  padding: 0 3rem !important;
-}
-
-/* Direct targeting of API content elements */
-.theme-api-markdown {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-.theme-api-markdown .markdown {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* OpenAPI specific components styling */
 .openapi-explorer__request-container,
 .openapi-explorer__response-container,
 .openapi-tabs__code-container {
@@ -71,35 +10,176 @@ body[class*="api-"] .container,
   width: 100% !important;
 }
 
-/* API method cards styling */
-.api-method {
-  margin-bottom: 1rem;
+/* Target the main containers when API elements are present */
+body:has(.theme-api-markdown) .main-wrapper,
+body:has(.openapi__heading) .main-wrapper {
+  max-width: 100vw !important;
+  width: 100vw !important;
 }
 
-/* Improve spacing for API endpoints */
-.openapi__heading {
-  margin-bottom: 1.5rem;
+body:has(.theme-api-markdown) .container,
+body:has(.openapi__heading) .container {
   max-width: none !important;
+  width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
-/* Better spacing for API parameters */
-.openapi-tabs__schema-container {
-  margin: 1rem 0;
+/* Override the default document container width for API pages */
+body:has(.theme-api-markdown) #__docusaurus [class*="docItemContainer_"],
+body:has(.openapi__heading) #__docusaurus [class*="docItemContainer_"] {
   max-width: none !important;
+  width: 100% !important;
+  flex-grow: 1 !important;
 }
 
-/* More aggressive approach - target any element that might contain API docs */
-div:has(.openapi__heading),
-div:has(.theme-api-markdown) {
+/* Make the main content area utilize full width */
+body:has(.theme-api-markdown) .theme-doc-markdown,
+body:has(.openapi__heading) .theme-doc-markdown {
   max-width: none !important;
   width: 100% !important;
 }
 
-/* Nuclear option - make everything wider when API elements are present */
-.openapi__heading ~ * {
+/* Ensure row containers take full width */
+body:has(.theme-api-markdown) .row,
+body:has(.openapi__heading) .row {
   max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
 }
 
-.theme-api-markdown ~ * {
+/* Position navigation buttons at edges on API docs only */
+body:has(.theme-api-markdown) .pagination-nav,
+body:has(.openapi__heading) .pagination-nav {
   max-width: none !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0 !important;
+  padding: 0 1rem !important;
+}
+
+/* Previous button - positioned on the left, always 400px wide */
+body:has(.theme-api-markdown) .pagination-nav__item--prev,
+body:has(.openapi__heading) .pagination-nav__item--prev {
+  width: 400px !important;
+  max-width: 400px !important;
+  flex: 0 0 400px !important;
+  margin-right: 0 !important;
+}
+
+/* Next button - positioned on the right, always 400px wide */
+body:has(.theme-api-markdown) .pagination-nav__item--next,
+body:has(.openapi__heading) .pagination-nav__item--next {
+  width: 400px !important;
+  max-width: 400px !important;
+  flex: 0 0 400px !important;
+  margin-left: auto !important;
+}
+
+/* When there's only a next button (first page), force it to the right */
+body:has(.theme-api-markdown) .pagination-nav:not(
+    :has(.pagination-nav__item--prev)
+  )
+  .pagination-nav__item--next,
+body:has(.openapi__heading)
+  .pagination-nav:not(:has(.pagination-nav__item--prev))
+  .pagination-nav__item--next {
+  margin-left: auto !important;
+}
+
+/* When there's only a prev button (last page), keep it on the left */
+body:has(.theme-api-markdown) .pagination-nav:not(
+    :has(.pagination-nav__item--next)
+  )
+  .pagination-nav__item--prev,
+body:has(.openapi__heading)
+  .pagination-nav:not(:has(.pagination-nav__item--next))
+  .pagination-nav__item--prev {
+  margin-right: auto !important;
+}
+
+body:has(.theme-api-markdown) .pagination-nav__link,
+body:has(.openapi__heading) .pagination-nav__link {
+  width: 400px !important;
+  max-width: 400px !important;
+  padding: 0.8rem 1rem !important;
+  display: block !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* Show HTTP methods in sidebar for API endpoints */
+.api-method::before {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: monospace;
+  width: 60px;
+  text-align: center;
+  min-width: 60px;
+  box-sizing: border-box;
+}
+
+.api-method.get::before {
+  content: "GET";
+  background-color: #3880ff;
+  color: white;
+}
+
+.api-method.post::before {
+  content: "POST";
+  background-color: #00a400;
+  color: white;
+}
+
+.api-method.put::before {
+  content: "PUT";
+  background-color: #54c7ec;
+  color: white;
+}
+
+.api-method.delete::before {
+  content: "DELETE";
+  background-color: #fa383e;
+  color: white;
+}
+
+.api-method.patch::before {
+  content: "PATCH";
+  background-color: #50e3c2;
+  color: white;
+}
+
+/* Ensure proper spacing and alignment in sidebar */
+.theme-doc-sidebar-item-link.api-method {
+  display: flex;
+  align-items: center;
+}
+
+/* Make API parameter headers bolder and larger */
+body:has(.theme-api-markdown) .openapi-params__list-container h3,
+body:has(.openapi__heading) .openapi-params__list-container h3 {
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
+
+/* Parameter section headers */
+body:has(.theme-api-markdown) .openapi-tabs__content h4,
+body:has(.openapi__heading) .openapi-tabs__content h4,
+body:has(.theme-api-markdown) .openapi-params h4,
+body:has(.openapi__heading) .openapi-params h4 {
+  font-weight: bold !important;
+  font-size: 1.15em !important;
+}
+
+/* Headers for Parameters, Query Parameters, Request Body, etc. */
+body:has(.theme-api-markdown) .theme-api-markdown h3,
+body:has(.openapi__heading) .theme-api-markdown h3 {
+  font-weight: bold !important;
+  font-size: 1.25em !important;
 }
