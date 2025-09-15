@@ -101,7 +101,7 @@ const config: Config = {
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
 
-  clientModules: [require.resolve("./src/theme/Root.tsx")],
+  clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
 
   themeConfig: {
     image: "img/tago-social-card.png",
