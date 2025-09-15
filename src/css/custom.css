@@ -1,4 +1,4 @@
-@import './api-docs.css';
+@import "./api-docs.css";
 
 /* Direct API docs width override - placed here for maximum priority */
 .theme-api-markdown,
@@ -55,14 +55,24 @@ body:has(.openapi__heading) .pagination-nav__item--next {
 }
 
 /* When there's only a next button (first page), force it to the right */
-body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next,
-body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next {
+body:has(.theme-api-markdown) .pagination-nav:not(
+    :has(.pagination-nav__item--prev)
+  )
+  .pagination-nav__item--next,
+body:has(.openapi__heading)
+  .pagination-nav:not(:has(.pagination-nav__item--prev))
+  .pagination-nav__item--next {
   margin-left: auto !important;
 }
 
 /* When there's only a prev button (last page), keep it on the left */
-body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev,
-body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev {
+body:has(.theme-api-markdown) .pagination-nav:not(
+    :has(.pagination-nav__item--next)
+  )
+  .pagination-nav__item--prev,
+body:has(.openapi__heading)
+  .pagination-nav:not(:has(.pagination-nav__item--next))
+  .pagination-nav__item--prev {
   margin-right: auto !important;
 }
 
@@ -126,6 +136,17 @@ body:has(.openapi__heading) .pagination-nav__link {
 .theme-doc-sidebar-item-link.api-method {
   display: flex;
   align-items: center;
+}
+
+/* General markdown heading sizes */
+.markdown > h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+.markdown > h2 {
+  font-size: 2rem;
+}
+.markdown > h3 {
+  font-size: 1.5rem;
 }
 
 /* Make API parameter headers bolder and larger */
@@ -612,16 +633,6 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   #__docusaurus [class*="docMainContainer_"] > .container > .row {
     flex-wrap: nowrap;
   }
-}
-
-.markdown > h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-}
-.markdown > h2 {
-  font-size: 2rem;
-}
-.markdown > h3 {
-  font-size: 1.5rem;
 }
 
 /* Code blocks */
