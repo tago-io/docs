@@ -70,6 +70,8 @@
   --animation-fast: 200ms;
   --animation-medium: 300ms;
   --animation-slow: 500ms;
+  /* OpenAPI specific surface color override used by plugin inline styles */
+  --openapi-card-background-color: var(--ifm-background-surface-color);
 }
 
 html[data-theme="dark"] {
@@ -96,6 +98,8 @@ html[data-theme="dark"] {
   --ifm-navbar-search-input-placeholder-color: #ffffff80;
   --footer-border-c: var(--c-gray-90);
   --home-features-bg: var(--ifm-background-color);
+  /* Keep right panel cards readable in dark */
+  --openapi-card-background-color: var(--ifm-background-surface-color);
 }
 
 /* Navbar */

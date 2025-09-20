@@ -109,50 +109,56 @@ body:has(.openapi__heading) .pagination-nav__link {
   box-sizing: border-box !important;
 }
 
-/* Show HTTP methods in sidebar for API endpoints */
+/* Show HTTP methods in sidebar for API endpoints (subtle style) */
 .api-method::before {
   display: inline-block;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.2rem 0.4rem;
-  margin-right: 0.5rem;
-  border-radius: 3px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.08rem 0.35rem;
+  margin-right: 0.45rem;
+  border-radius: 4px;
   text-transform: uppercase;
   font-family: monospace;
-  width: 60px;
+  width: 56px;
+  min-width: 56px;
   text-align: center;
-  min-width: 60px;
   box-sizing: border-box;
+  box-shadow: none;
 }
 
 .api-method.get::before {
   content: "GET";
-  background-color: #3880ff;
-  color: white;
+  background-color: #e7f0ff;
+  color: #1f5bd8;
+  border: 1px solid #c9dcff;
 }
 
 .api-method.post::before {
   content: "POST";
-  background-color: #00a400;
-  color: white;
+  background-color: #e9f7ea;
+  color: #1b7d1b;
+  border: 1px solid #cdeecd;
 }
 
 .api-method.put::before {
   content: "PUT";
-  background-color: #54c7ec;
-  color: white;
+  background-color: #e8f7fb;
+  color: #1783a7;
+  border: 1px solid #c7ebf5;
 }
 
 .api-method.delete::before {
   content: "DELETE";
-  background-color: #fa383e;
-  color: white;
+  background-color: #ffe9e6;
+  color: #b92111;
+  border: 1px solid #ffd0c9;
 }
 
 .api-method.patch::before {
   content: "PATCH";
-  background-color: #50e3c2;
-  color: white;
+  background-color: #e9fbf6;
+  color: #138f76;
+  border: 1px solid #c8f1e6;
 }
 
 /* Ensure proper spacing and alignment in sidebar */
@@ -161,25 +167,151 @@ body:has(.openapi__heading) .pagination-nav__link {
   align-items: center;
 }
 
-/* Make API parameter headers bolder and larger */
-body:has(.theme-api-markdown) .openapi-params__list-container h3,
-body:has(.openapi__heading) .openapi-params__list-container h3 {
-  font-weight: bold !important;
-  font-size: 1.2em !important;
+/* API Sub-category styling - simple separator */
+.api-sub-category > .menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  border-top: 1px solid var(--ifm-toc-border-color);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
 }
 
-/* Parameter section headers */
-body:has(.theme-api-markdown) .openapi-tabs__content h4,
-body:has(.openapi__heading) .openapi-tabs__content h4,
-body:has(.theme-api-markdown) .openapi-params h4,
-body:has(.openapi__heading) .openapi-params h4 {
-  font-weight: bold !important;
-  font-size: 1.15em !important;
+
+.api-sub-category > .menu__list-item-collapsible > .menu__link:hover {
+  color: var(--ifm-color-primary);
 }
 
-/* Headers for Parameters, Query Parameters, Request Body, etc. */
-body:has(.theme-api-markdown) .theme-api-markdown h3,
-body:has(.openapi__heading) .theme-api-markdown h3 {
-  font-weight: bold !important;
-  font-size: 1.25em !important;
+/* Dark mode adjustments */
+[data-theme='dark'] .api-sub-category > .menu__list-item-collapsible > .menu__link {
+  color: var(--ifm-color-emphasis-600);
+  border-color: var(--ifm-color-gray-700);
+}
+
+[data-theme='dark'] .api-sub-category > .menu__list-item-collapsible > .menu__link:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+
+/* ------------------------------------------------------------
+   OpenAPI Explorer — Contrast & UX improvements
+   ------------------------------------------------------------ */
+/* Right panel container contrast and spacing */
+.openapi-right-panel__container {
+  border-left: 1px solid var(--sidebar-border-c);
+  padding-left: 1rem;
+}
+
+/* Security/authorization card inside right panel */
+.openapi-right-panel__container .openapi-security__details pre {
+  background: var(--openapi-card-background-color) !important;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 10px;
+  padding: 0.75rem 0.875rem;
+}
+.openapi-right-panel__container .openapi-security__summary-header {
+  font-size: 0.938rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+/* Code language choices – make them compact and secondary */
+.openapi-tabs__code-list-container .openapi-tabs__code-item {
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  border-radius: 6px;
+}
+.openapi-tabs__code-list-container .openapi-tabs__code-item.active {
+  background: var(--ifm-menu-color-background-active);
+  color: var(--ifm-menu-color-active);
+}
+
+/* Inner variants (FETCH / JQUERY / XHR) equally compact */
+.openapi-tabs__code-container-inner .openapi-tabs__code-item--variant {
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.72rem;
+  border-radius: 6px;
+}
+.openapi-tabs__code-container-inner .openapi-tabs__code-item--variant.active {
+  background: var(--ifm-menu-color-background-active);
+  color: var(--ifm-menu-color-active);
+}
+
+/* Code block container borders for separation from background */
+.openapi-explorer__code-block-container {
+  border: 1px solid var(--ifm-toc-border-color);
+  background-color: unset;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Request form — sectionize details into soft cards */
+.openapi-explorer__request-form {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+.openapi-explorer__request-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.openapi-explorer__request-title {
+  font-weight: 700;
+}
+
+/* Each expandable section becomes a card */
+details.openapi-explorer__details-container {
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+}
+.openapi-explorer__details-summary {
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Inputs: clearer affordance */
+.openapi-explorer__form-item-input {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.5rem 0.625rem;
+}
+.openapi-explorer__form-item-input:focus,
+.openapi-explorer__form-item-input:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+  border-color: var(--ifm-color-primary);
+}
+
+/* Required badge more visible but subtle */
+.openapi-schema__required {
+  background: var(--ifm-menu-color-background-active);
+  color: var(--ifm-menu-color-active);
+  border-radius: 999px;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.65rem;
+  margin-left: 0.375rem;
+}
+
+/* Keep floating edit button unobtrusive */
+.openapi-explorer__floating-btn button {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 6px;
+}
+
+/* Better List Items */
+.openapi-params__list-item {
+  padding-bottom: 0.5rem;
 }
