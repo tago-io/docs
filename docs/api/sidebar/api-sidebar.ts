@@ -4,6 +4,7 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "category",
+      className: "api-category",
       label: "API Overview",
       collapsible: false,
       items: [
@@ -16,104 +17,91 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "Device Token (Device-level)",
       collapsible: false,
       collapsed: false,
       items: [
         {
-          type: "category",
-          label: "Device Data",
-          collapsible: false,
-          className: "api-sub-category",
-          items: [
-            {
-              type: "doc",
-              id: "api/current-device-information",
-              label: "Device Information",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/get-data",
-              label: "Get Data",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/edit-data",
-              label: "Edit Data",
-              className: "api-method put",
-            },
-            {
-              type: "doc",
-              id: "api/send-data",
-              label: "Send Data",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
-              id: "api/delete-data",
-              label: "Delete Data",
-              className: "api-method delete",
-            },
-            {
-              type: "doc",
-              id: "api/get-configuration-parameters",
-              label: "List Config. parameters",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/mark-a-configuration-parameter-as-read",
-              label: "Mark Config. Parameter as Read",
-              className: "api-method put",
-            },
-          ],
+          type: "doc",
+          id: "api/current-device-information",
+          label: "Device Information",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/get-data",
+          label: "Get Data",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/send-data",
+          label: "Send Data",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/edit-data",
+          label: "Edit Data",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "api/delete-data",
+          label: "Delete Data",
+          className: "api-method delete",
+        },
+        {
+          type: "doc",
+          id: "api/get-configuration-parameters",
+          label: "List Config. Parameters",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/mark-a-configuration-parameter-as-read",
+          label: "Mark Config. Parameter as Read",
+          className: "api-method put",
         },
       ],
     },
     {
       type: "category",
+      className: "api-category",
       label: "Network Token (Network-level)",
       collapsible: false,
       collapsed: false,
       items: [
         {
-          type: "category",
-          label: "Network Ingest",
-          collapsible: false,
-          className: "api-sub-category",
-          items: [
-            {
-              type: "doc",
-              id: "api/get-device-token-with-serial-number-authorization",
-              label: "Get Device-Token with Serial Number & Authorization Key",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/get-device-token-with-serial-number",
-              label: "Get Device-Token with Serial Number",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/edit-device-configuration-parameter",
-              label: "Edit Device Configuration Parameter",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
-              id: "api/send-data-using-network",
-              label: "Send Data using Network",
-              className: "api-method post",
-            },
-          ],
+          type: "doc",
+          id: "api/get-device-token-with-serial-number-authorization",
+          label: "Get Device-Token with Serial Number & Authorization Key",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/get-device-token-with-serial-number",
+          label: "Get Device-Token with Serial Number",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/edit-device-configuration-parameter",
+          label: "Edit Device Configuration Parameter",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/send-data-using-network",
+          label: "Send Data using Network",
+          className: "api-method post",
         },
       ],
     },
     {
       type: "category",
+      className: "api-category",
       label: "Device Management",
       collapsible: false,
       collapsed: false,
@@ -132,15 +120,15 @@ const sidebar: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "api/create-new-device",
-              label: "Create Device",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
               id: "api/device-information",
               label: "Device Information",
               className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/create-new-device",
+              label: "Create Device",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -160,29 +148,25 @@ const sidebar: SidebarsConfig = {
               label: "Convert Device Type",
               className: "api-method post",
             },
-            {
-              type: "doc",
-              id: "api/device-data-amount",
-              label: "Device Data Amount",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/import-data-from-a-csv-in-files",
-              label: "Import Data from a CSV in Files",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
-              id: "api/empty-a-device-s-data",
-              label: "Empty a Device's Data",
-              className: "api-method post",
-            },
+          ]
+        },
+        {
+          type: "category",
+          label: "Device Data",
+          collapsible: false,
+          className: "api-sub-category",
+          items: [
             {
               type: "doc",
               id: "api/get-device-data",
               label: "Get Device Data",
               className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/send-data-to-device",
+              label: "Send Device Data",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -195,6 +179,18 @@ const sidebar: SidebarsConfig = {
               id: "api/delete-device-data",
               label: "Delete Device Data",
               className: "api-method delete",
+            },
+            {
+              type: "doc",
+              id: "api/empty-a-device-s-data",
+              label: "Empty Device's Data",
+              className: "api-method post",
+            },
+            {
+              type: "doc",
+              id: "api/device-data-amount",
+              label: "Device Data Amount",
+              className: "api-method get",
             },
           ],
         },
@@ -226,7 +222,7 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "category",
-          label: "Mutable Device",
+          label: "Import/Export",
           collapsible: false,
           className: "api-sub-category",
           items: [
@@ -236,11 +232,17 @@ const sidebar: SidebarsConfig = {
               label: "Export data to CSV in Files",
               className: "api-method post",
             },
+            {
+              type: "doc",
+              id: "api/import-data-from-a-csv-in-files",
+              label: "Import Data from a CSV in Files",
+              className: "api-method post",
+            },
           ],
         },
         {
           type: "category",
-          label: "Immutable Device",
+          label: "Immutable Device Only",
           collapsible: false,
           className: "api-sub-category",
           items: [
@@ -268,7 +270,8 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Tago RUN",
+      className: "api-category",
+      label: "TagoRUN",
       collapsible: false,
       collapsed: false,
       items: [
@@ -280,9 +283,20 @@ const sidebar: SidebarsConfig = {
           items: [
             {
               type: "doc",
+              id: "api/list-users",
+              label: "List Users",
+              className: "api-method get",
+            }, {
+              type: "doc",
               id: "api/user-information",
               label: "User Information",
               className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/create-user",
+              label: "Create User",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -296,18 +310,6 @@ const sidebar: SidebarsConfig = {
               label: "Delete User",
               className: "api-method delete",
             },
-            {
-              type: "doc",
-              id: "api/list-users",
-              label: "List Users",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/create-user",
-              label: "Create User",
-              className: "api-method post",
-            },
           ],
         },
         {
@@ -318,15 +320,15 @@ const sidebar: SidebarsConfig = {
           items: [
             {
               type: "doc",
-              id: "api/create-notification",
-              label: "Create Notification",
-              className: "api-method post",
+              id: "api/list-of-notifications",
+              label: "List Notifications",
+              className: "api-method get",
             },
             {
               type: "doc",
-              id: "api/list-of-notifications",
-              label: "List of Notifications",
-              className: "api-method get",
+              id: "api/create-notification",
+              label: "Create Notification",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -351,7 +353,13 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-dictionary-list",
-              label: "Get Dictionary List",
+              label: "List of Dictionaries",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/get-dictionary-details",
+              label: "Dictionary Information",
               className: "api-method get",
             },
             {
@@ -359,12 +367,6 @@ const sidebar: SidebarsConfig = {
               id: "api/create-dictionary",
               label: "Create Dictionary",
               className: "api-method post",
-            },
-            {
-              type: "doc",
-              id: "api/get-dictionary-details",
-              label: "Get Dictionary Details",
-              className: "api-method get",
             },
             {
               type: "doc",
@@ -396,6 +398,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "Dashboards",
       collapsible: false,
       collapsed: false,
@@ -408,6 +411,23 @@ const sidebar: SidebarsConfig = {
           items: [
             {
               type: "doc",
+              id: "api/list-dashboards",
+              label: "List Dashboards",
+              className: "api-method get",
+            }, {
+              type: "doc",
+              id: "api/get-information",
+              label: "Dashboard Information",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/create-dashboard",
+              label: "Create Dashboard",
+              className: "api-method post",
+            },
+            {
+              type: "doc",
               id: "api/edit-dashboard",
               label: "Edit Dashboard",
               className: "api-method put",
@@ -417,18 +437,6 @@ const sidebar: SidebarsConfig = {
               id: "api/delete-dashboard",
               label: "Delete Dashboard",
               className: "api-method delete",
-            },
-            {
-              type: "doc",
-              id: "api/list-dashboards",
-              label: "List Dashboards",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/create-dashboard",
-              label: "Create Dashboard",
-              className: "api-method post",
             },
             {
               type: "doc",
@@ -465,8 +473,14 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-widget-information",
-              label: "Get Widget Information",
+              label: "Widget Information",
               className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/create-dashboard-widget",
+              label: "Create Widget",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -488,20 +502,8 @@ const sidebar: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "api/create-dashboard-widget",
-              label: "Create Widget",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
               id: "api/generate-token",
-              label: "Generate Token",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/get-information",
-              label: "Get Information",
+              label: "Generate Embed Token",
               className: "api-method get",
             },
           ],
@@ -510,6 +512,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "File(s) Management",
       collapsible: false,
       collapsed: false,
@@ -523,20 +526,20 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-profile-file-list",
-              label: "Get Profile File List",
+              label: "List Files",
               className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/edit-a-file",
-              label: "Move File",
-              className: "api-method put",
             },
             {
               type: "doc",
               id: "api/upload-file-part",
               label: "Upload File",
               className: "api-method post",
+            },
+            {
+              type: "doc",
+              id: "api/edit-a-file",
+              label: "Move File",
+              className: "api-method put",
             },
             {
               type: "doc",
@@ -553,7 +556,7 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/file-copy",
-              label: "File Copy",
+              label: "Copy File",
               className: "api-method put",
             },
           ],
@@ -562,36 +565,11 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "Profile",
       collapsible: false,
       collapsed: false,
       items: [
-        {
-          type: "category",
-          label: "Statistics / Billing",
-          collapsible: false,
-          className: "api-sub-category",
-          items: [
-            {
-              type: "doc",
-              id: "api/get-the-account-plan",
-              label: "Get the Account Plan",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/get-account-resources-allocation",
-              label: "Get Account Resources Allocation",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/update-the-account-resources-allocation",
-              label: "Update the Account Resources Allocation",
-              className: "api-method post",
-            },
-          ],
-        },
         {
           type: "category",
           label: "Account",
@@ -607,7 +585,13 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-account-information",
-              label: "Get Account Information",
+              label: "Account Information",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/get-the-account-plan",
+              label: "Account Plan",
               className: "api-method get",
             },
             {
@@ -615,6 +599,18 @@ const sidebar: SidebarsConfig = {
               id: "api/edit-account",
               label: "Edit Account",
               className: "api-method put",
+            },
+            {
+              type: "doc",
+              id: "api/get-account-resources-allocation",
+              label: "Account Resources Allocation",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/update-the-account-resources-allocation",
+              label: "Update Account Resources Allocation",
+              className: "api-method post",
             },
           ],
         },
@@ -626,20 +622,20 @@ const sidebar: SidebarsConfig = {
           items: [
             {
               type: "doc",
+              id: "api/get-a-profile-details",
+              label: "Profile Information",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
               id: "api/get-a-profile-statistics",
-              label: "Get a Profile Statistics",
+              label: "Profile Statistics",
               className: "api-method get",
             },
             {
               type: "doc",
               id: "api/get-a-profile-summary",
-              label: "Get a Profile Summary",
-              className: "api-method get",
-            },
-            {
-              type: "doc",
-              id: "api/get-a-profile-details",
-              label: "Get a Profile Details",
+              label: "Profile Summary",
               className: "api-method get",
             },
             {
@@ -651,7 +647,7 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-tags",
-              label: "Get Tags",
+              label: "List Used Tags",
               className: "api-method get",
             },
           ],
@@ -660,6 +656,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "Entities",
       collapsible: false,
       collapsed: false,
@@ -678,15 +675,15 @@ const sidebar: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "api/create-entity",
-              label: "Create Entity",
-              className: "api-method post",
-            },
-            {
-              type: "doc",
               id: "api/get-entity-info",
               label: "Entity Info",
               className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/create-entity",
+              label: "Create Entity",
+              className: "api-method post",
             },
             {
               type: "doc",
@@ -696,15 +693,15 @@ const sidebar: SidebarsConfig = {
             },
             {
               type: "doc",
-              id: "api/delete-entity",
-              label: "Delete Entity",
-              className: "api-method delete",
-            },
-            {
-              type: "doc",
               id: "api/update-entity-schema",
               label: "Update Entity Schema",
               className: "api-method put",
+            },
+            {
+              type: "doc",
+              id: "api/delete-entity",
+              label: "Delete Entity",
+              className: "api-method delete",
             },
           ],
         },
@@ -717,7 +714,7 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-entity-data-amount",
-              label: "Get Entity Data Amount",
+              label: "Data Amount",
               className: "api-method get",
             },
             {
@@ -750,6 +747,7 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      className: "api-category",
       label: "Resources",
       collapsible: false,
       collapsed: false,
@@ -763,7 +761,7 @@ const sidebar: SidebarsConfig = {
             {
               type: "doc",
               id: "api/get-policy-list",
-              label: "Get Policy List",
+              label: "List of Policies",
               className: "api-method get",
             },
             {

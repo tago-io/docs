@@ -104,14 +104,16 @@ components:
           description: Provide a unit of measurement to the data. Most widgets will display the unit.
         metadata:
           type: object
-          description: Can be attached to variables to influence widget behavior and store additional information.
+          description: Can be attached to the data to influence widget behavior and store additional information.
           additionalProperties: true
           example:
             color: red
             icon: car
 
     DeviceData:
-      description: Accepts a single item or an array of items.
+      description: |
+        Accepts a single item or an array of items when sent as application/json.
+        For text/plain content, use the [Payload Parser](/docs/tagoio/devices/payload-parser/) to normalize the data into TagoIO JSON format.
       oneOf:
         - $ref: '#/components/schemas/DeviceDataItem'
         - $ref: '#/components/schemas/DeviceDataArray'
@@ -147,6 +149,17 @@ components:
                   location:
                     lat: 40.712776
                     lng: -74.005974
+        text/plain:
+          schema:
+            type: string
+            description: Raw text data that will be processed by the device's Payload Parser to normalize into TagoIO JSON format.
+          examples:
+            Raw sensor data:
+              value: "temperature:23.5,humidity:45.2,battery:87"
+            HEX payload:
+              value: "41BC7E1F2A"
+            Custom format:
+              value: "sensor_id=123&temp=25.6&status=ok"
 
   parameters:
     DeleteFilterQty:
@@ -230,8 +243,8 @@ tags:
     description: Manage device tokens (Profile Token).
   - name: Configuration Params
     description: Manage device configuration parameters (Profile Token).
-  - name: Mutable Device
-    description: Operations specific to mutable device type (Profile Token).
+  - name: Import/Export
+    description: Import/Export Operations for devices  (Profile Token).
   - name: Immutable Device
     description: Operations specific to immutable device type (Profile Token).
   - name: TagoRUN
@@ -275,7 +288,7 @@ x-tagGroups:
       - Devices
       - Device Tokens
       - Configuration Param
-      - Mutable Device
+      - Import/Export
       - Immutable Device
   - name: Tago RUN
     tags:
@@ -598,7 +611,7 @@ paths:
         - Device Data
       summary: Send Data
       description: |
-        Send data to the Device
+        Send Device Data
       operationId: sendData
       security:
         - Device-Token: []
@@ -662,7 +675,9 @@ paths:
         - Device Data
       summary: List Config. parameters
       description: |
-        Get parameters from the current device
+        Retrieve configuration parameters for the current device. This is useful for delivering settings or instructions that your device can periodically check for updates.
+
+        [Configuration Parameters](/docs/tagoio/devices/configuration-parameters-for-devices) can be used to provide URLs (such as for firmware updates) or any other settings needed to control device behavior.
       operationId: getConfigurationParameters
       parameters:
         - name: sent_status
@@ -698,11 +713,6 @@ paths:
                         value:
                           type: string
                           example: param_value
-                    example:
-                      - id: 6244401fe689b90014f9b299
-                        key: param_key
-                        sent: false
-                        value: param_value
                   status:
                     type: boolean
                     example: true
@@ -712,7 +722,9 @@ paths:
         - Device Data
       summary: Mark Config. Parameter as Read
       description: |
-        Mark parameter as read on current device
+        Marks a configuration parameter as read on the current device.  
+        
+        This is useful when collecting settings from Configuration Parameters and you need to track whether you have already processed the current value. Use this endpoint to set the `sent` field to `true`.
       operationId: markAConfigurationParameterAsRead
       security:
         - Device-Token: []
@@ -741,7 +753,7 @@ paths:
     get:
       tags:
         - Device Tokens
-      summary: List of Tokens
+      summary: List Tokens
       description: |
         Retrieves list of all tokens from device
       operationId: listOfTokens
@@ -1306,7 +1318,7 @@ paths:
   /device/{deviceID}/data/backup:
     post:
       tags:
-        - Mutable Device
+        - Import/Export
       summary: Export data to CSV in Files
       description: Export data to CSV in Files
       operationId: exportDataToCsvInFiles
@@ -1356,7 +1368,7 @@ paths:
     get:
       tags:
         - Immutable Device
-      summary: List of Chunks
+      summary: List Chunks
       description: List of chunks
       operationId: listOfChunks
       responses:
@@ -1764,7 +1776,7 @@ paths:
     get:
       tags:
         - Devices
-      summary: Device Data Amount
+      summary: Data Amount
       description: Get the total number of data items stored within the device.
       operationId: deviceDataAmount
       responses:
@@ -1791,7 +1803,7 @@ paths:
   /device/{deviceID}/data/restore:
     post:
       tags:
-        - Devices
+        - Import/Export
       summary: Import Data from a CSV in Files
       description: Import Data from a CSV in Files
       operationId: importDataFromACsvInFiles
@@ -1834,7 +1846,7 @@ paths:
     post:
       tags:
         - Devices
-      summary: Empty a Device's Data
+      summary: Empty Device Storage
       description: Empty a Device's Data
       operationId: emptyADeviceSData
       responses:
@@ -1858,12 +1870,13 @@ paths:
         schema:
           type: string
           example: '67aa1f9135b1a7000a9db33c'
+          
   /device/{deviceID}/data:
     get:
       tags:
         - Devices
       summary: Get Device Data
-      description: Get Device Data
+      description: Get Device Data for a specific Device within your profile
       operationId: getDeviceData
       parameters:
         - name: qty
@@ -2252,6 +2265,31 @@ paths:
                         value: '19'
                         variable: temperature
                     status: true
+    post:
+      tags:
+        - Devices
+      summary: Send Device Data
+      description: |
+        Send data to a specific Device within your profile
+      operationId: sendDataToDevice
+      security:
+        - Device-Token: []
+      requestBody:
+        $ref: '#/components/requestBodies/DeviceDataBody'
+      responses:
+        '200':
+          description: Sending data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: 2 Data Added
+                  status:
+                    type: boolean
+                    example: true
     put:
       tags:
         - Devices
@@ -2336,11 +2374,6 @@ paths:
                   status:
                     type: boolean
                     example: true
-              examples:
-                Delete Device Data:
-                  value:
-                    result: 1 Data Removed
-                    status: true
     parameters:
       - name: deviceID
         in: path
@@ -2445,7 +2478,7 @@ paths:
     get:
       tags:
         - Notifications
-      summary: List of Notifications
+      summary: List Notifications
       description: |
         List of notifications for an user
       operationId: listOfNotifications
@@ -4161,8 +4194,8 @@ paths:
     get:
       tags:
         - Entity
-      summary: Entity Info
-      description: Get Entity Info
+      summary: Entity Information
+      description: Get Entity Details
       operationId: getEntityInfo
       responses:
         '200':
@@ -4459,7 +4492,7 @@ paths:
     get:
       tags:
         - Entity Data
-      summary: Get Entity Data Amount
+      summary: Entity Data Amount
       description: Get Entity Data Amount
       operationId: getEntityDataAmount
       responses:
@@ -4518,7 +4551,7 @@ paths:
                       action: delete
       responses:
         '200':
-          description: Updating an entity field name / Removing an entity field
+          description: Updating any entity field
           content:
             application/json:
               schema:
@@ -4533,17 +4566,6 @@ paths:
                   status:
                     type: boolean
                     example: true
-              examples:
-                Removing an entity field:
-                  value:
-                    result:
-                      message: Entity Successfully Updated
-                    status: true
-                Updating an entity field name:
-                  value:
-                    result:
-                      message: Entity Successfully Updated
-                    status: true
     parameters:
       - name: entity_id
         in: path
@@ -4803,9 +4825,9 @@ paths:
     get:
       tags:
         - Widgets
-      summary: Get Widget Information
+      summary: Widget Information
       description: |
-        Get information about the dashboard widget
+        Retrieve the complete JSON structure of the dashboard widget, including all settings and data/resource instructions used to populate the widget's data.
       operationId: getWidgetInformation
       responses:
         '200':
@@ -5144,9 +5166,9 @@ paths:
     get:
       tags:
         - Widgets
-      summary: Get Widget Data
+      summary: Resolve Widget Data
       description: |
-        Get all data of the dashboard widget
+        Retrieve all the data necessary to display a widget, according to its configuration in the `data` and `resource` fields.
       operationId: getWidgetData
       responses:
         '200':
@@ -5435,13 +5457,13 @@ paths:
         - Widgets
       summary: Create Widget
       description: >
-        Create a Widget in a specific dashboard of your profile.
+        Create a widget within a specific dashboard in your profile.
 
-        Since each widget has unique properties, it's recommended to access your Admin Developer Panel, access the Dashboard and Copy the Widget JSON Structure.
+        Each widget has unique properties. To ensure accuracy, we recommend opening your Admin Developer Panel, navigating to the desired Dashboard, and copying the Widget's JSON structure directly.  
 
         :::warning  
         
-        After you create a a widget, it doesn't get automatically added to the Arrangement parameter of your dashboard. You need to edit the Dashboard Arranagement to include the widget position in the grid.  
+        After you create a widget, it is not automatically added to the dashboard's Arrangement parameter. You must manually edit the dashboard arrangement to include the widget's position in the grid.  
         
         :::
 
@@ -5540,7 +5562,14 @@ paths:
         - Widgets
       summary: Generate Token
       description: |
-        Generate a new token for the embed widgets
+        Generates a secure, public token for [embedding](/docs/tagoio/widgets/general/embedding-widgets-to-your-website) a specific widget from a dashboard.  
+        Use this token to display the widget in external applications or websites via the TagoIO embed service.  
+
+        Example embed URL:  
+
+        `https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`  
+
+        This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.  
       operationId: generateToken
       responses:
         '200':
@@ -5581,10 +5610,10 @@ paths:
   /dashboard/{dashboardID}:
     get:
       tags:
-        - Widgets
-      summary: Get Information
+        - Dashboards
+      summary: Dashboard Information
       description: |
-        Get information about the dashboard
+        Get settings information of the dashboard. 
       operationId: getInformation
       responses:
         '200':
@@ -5826,6 +5855,13 @@ paths:
       summary: Edit Dashboard
       description: |
         Modify any property of the dashboard
+
+        :::warning
+        The arrangement is **not automatically populated** when you create a widget.  
+        After creating a widget, you **must manually edit the arrangement field** to include the new widget and specify its position in the dashboard.
+        :::
+
+        Each item in the arrangement array represents a widget's placement and sizing.
       operationId: editDashboard
       requestBody:
         content:
@@ -5833,9 +5869,23 @@ paths:
             schema:
               type: object
               properties:
+                label:
+                  type: string
+                  description: The Dashboard Label 
+                type:
+                  type: string
+                  enum:
+                    - dashboard
+                    - blueprint
+                  example: blueprint
+                  description: The type of dashboard. Can be "dashboard" or "blueprint".
                 group_by:
                   type: array
                   items: {}
+                visible:
+                  type: boolean
+                  example: true
+                  description: Determines if the dashboard is visible in the sidebar. If set to false, the dashboard remains accessible from the Dashboard list.
                 icon:
                   type: object
                   properties:
@@ -5846,9 +5896,6 @@ paths:
                       type: string
                       example: >-
                         https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg
-                label:
-                  type: string
-                  description: The Dashboard Label 
                 tabs:
                   type: array
                   items:
@@ -5889,16 +5936,145 @@ paths:
                       value: updatedvalue
                     - key: updatedkey
                       value: updatedvalue
-                type:
-                  type: string
-                  enum:
-                    - dashboard
-                    - blueprint
-                  example: blueprint
-                  description: The type of dashboard. Can be "dashboard" or "blueprint".
-                visible:
-                  type: boolean
-                  example: true
+                blueprint_devices:
+                  type: array
+                  description: >
+                    Only present for dashboards of type "blueprint".
+
+                    Defines the list of devices associated with a blueprint dashboard. Each device entry describes a device type, its conditions, and optional filter conditions.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: The unique identifier of the blueprint device.
+                        example: 68d2f3e0a6343f0009318e4c
+                      name:
+                        type: string
+                        description: The name of the blueprint.
+                        example: sensor
+                      type:
+                        type: string
+                        description: The type of the blueprint.
+                        enum:
+                          - device
+                          - entity
+                        example: device
+                      conditions:
+                        type: array
+                        description: List of tag conditions that define this blueprint's characteristics.
+                        items:
+                          type: object
+                          properties:
+                            key:
+                              type: string
+                              description: The condition key.
+                              example: is_sensor
+                            value:
+                              type: string
+                              description: The condition value.
+                              example: "true"
+                        example:
+                          - key: is_sensor
+                            value: "true"
+                      filter_conditions:
+                        type: array
+                        description: Optional filter conditions for the device.
+                        items:
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                              description: The type of filter condition.
+                              example: tag_match
+                            tag_key:
+                              type: string
+                              description: The tag key to match.
+                              example: location
+                            blueprint_device:
+                              type: string
+                              description: The name of the blueprint device to match against.
+                              example: customer
+                        example:
+                          - type: tag_match
+                            tag_key: location
+                            blueprint_device: customer
+                  example:
+                    - id: 68d2f3e0a6343f0009318e4c
+                      name: sensor
+                      type: device
+                      conditions:
+                        - key: is_sensor
+                          value: "true"
+                      filter_conditions: []
+                    - id: 68d2f3e0a6343f0009318e4d
+                      name: customer
+                      type: device
+                      conditions:
+                        - key: company
+                          value: JohnDoe
+                      filter_conditions: []
+                arrangement:
+                  type: array
+                  description: |
+                    The arrangement property defines the layout and positioning of widgets within the dashboard grid.
+                  items:
+                    type: object
+                    properties:
+                      height:
+                        type: number
+                        example: 3
+                        description: The height of the widget in grid units.
+                      tab:
+                        description: The tab identifier if the widget is placed in a tab, or null.
+                        example: null
+                      widget_id:
+                        type: string
+                        example: 6230e740f5772600124c81e1
+                        description: The ID of the widget.
+                      width:
+                        type: number
+                        example: 1
+                        description: The width of the widget in grid units.
+                      x:
+                        type: number
+                        example: 0
+                        description: The X (column) position of the widget in the grid.
+                      y:
+                        type: number
+                        example: 0
+                        description: The Y (row) position of the widget in the grid.
+                  example:
+                    - height: 3
+                      tab: null
+                      widget_id: 6230e740f5772600124c81e1
+                      width: 1
+                      x: 0
+                      y: 0
+                    - height: 3
+                      tab: null
+                      widget_id: 6230e75df5772600124c81e2
+                      width: 1
+                      x: 1
+                      y: 0
+                    - height: 3
+                      tab: null
+                      widget_id: 6230e44cf5772600124c81de
+                      width: 1
+                      x: 2
+                      y: 0
+                    - height: 3
+                      tab: null
+                      widget_id: 6230e84df5772600124c81e7
+                      width: 2.33
+                      x: 0.33
+                      y: 7
+                    - height: 5
+                      tab: null
+                      widget_id: 62750cf1253eb800126aefc0
+                      width: 2
+                      x: 2.67
+                      y: 7
       responses:
         '200':
           description: Updating a dashboard information
@@ -5985,15 +6161,6 @@ paths:
             Pass the parameter multiple times to include more than one field.
 
             Example: `?fields[]=label&fields[]=id&fields[]=type`
-
-            Available fields:
-            - `label`: dashboard title label
-            - `id`: dashboard ID
-            - `type`: dashboard type (`dashboard` or `blueprint`)
-            - `tags`: dashboard tags
-            - `visible`: visibility status (boolean)
-            - `created_at`: creation timestamp
-            - `last_access`: last access timestamp
           schema:
             type: array
             items:
@@ -6043,7 +6210,8 @@ paths:
                     group_by:
                       type: array
                       description: List of tags to group in the sidebar
-                      items: {}
+                      items:
+                        type: string
                       example: []
                     created_at:
                       type: string
@@ -6231,7 +6399,10 @@ paths:
         - Dashboards
       summary: Duplicate Dashboard
       description: |
-        Creates a copy of the specified dashboard in your account. You can optionally provide a new label for the duplicated dashboard and configure setup parameters, such as configuration options for widgets or devices. This endpoint is useful for quickly cloning dashboards, including their configuration, for further customization or reuse.
+        Duplicate an existing dashboard, including its configuration, widgets, and settings.  
+        Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.  
+        
+        Use this endpoint to quickly clone dashboards for reuse or further customization.   
       operationId: duplicateDashboard
       requestBody:
         required: false
@@ -6260,11 +6431,11 @@ paths:
                         properties:
                           id:
                             type: string
-                            description: Configuration or device ID.
+                            description: Analysis ID, Device ID, Blueprint Device/Entity ID.
                             example: 68c9baabb24379000ab1c8cc
                           name:
                             type: string
-                            description: Name of the configuration or device.
+                            description: Reference name that will be displayed when setting up the copy.
                             example: Freezer Simulator
             examples:
               Duplicate dashboard:
@@ -6309,7 +6480,12 @@ paths:
         - Dashboards
       summary: Generate Public Token
       description: |
-        Generate a new public token for the dashboard
+        Make your dashboard accessible to anyone by generating a public access token.  
+
+        Public dashboards allow you to share live data and visualizations with users who do not have a TagoIO account. 
+        You control the expiration and can revoke access at any time.  
+
+        [Learn more about sharing dashboards and public access](/docs/tagoio/dashboards/sharing-dashboards)
       operationId: generatePublicToken
       parameters:
         - name: expire_time
@@ -6451,7 +6627,7 @@ paths:
     get:
       tags:
         - Files
-      summary: Get Profile File List
+      summary: List Files
       description: Get profile file list
       operationId: getProfileFileList
       parameters:
@@ -6801,7 +6977,7 @@ paths:
     put:
       tags:
         - Files
-      summary: File Copy
+      summary: Copy File
       description: File Copy
       operationId: fileCopy
       requestBody:
@@ -6849,7 +7025,7 @@ paths:
     get:
       tags:
         - Statistics / Billing
-      summary: Get the Account Plan
+      summary: Account Plan
       description: Get the Account Plan
       operationId: getTheAccountPlan
       responses:
@@ -6878,8 +7054,8 @@ paths:
   /account/allocation:
     get:
       tags:
-        - Statistics / Billing
-      summary: Get Account Resources Allocation
+        - Account
+      summary: Resources Allocation
       description: Get account resources allocation
       operationId: getAccountResourcesAllocation
       responses:
@@ -7005,8 +7181,8 @@ paths:
                     status: true
     post:
       tags:
-        - Statistics / Billing
-      summary: Update the Account Resources Allocation
+        - Account
+      summary: Update Resources Allocation
       description: Update the account resources allocation
       operationId: updateTheAccountResourcesAllocation
       requestBody:
@@ -7016,7 +7192,12 @@ paths:
               type: array
               items:
                 type: object
+                required:
+                  - profile
                 properties:
+                  profile:
+                    type: string
+                    example: 62cdb70512b7320012dc0880
                   analysis:
                     type: number
                     example: 200
@@ -7035,9 +7216,6 @@ paths:
                   output:
                     type: number
                     example: 100000
-                  profile:
-                    type: string
-                    example: 62cdb70512b7320012dc0880
                   push_notification:
                     type: number
                     example: 4
@@ -7215,7 +7393,7 @@ paths:
     get:
       tags:
         - Account
-      summary: Get Account Information
+      summary: Account Information
       description: |
         Get all information from current account
       operationId: getAccountInformation
@@ -7429,8 +7607,8 @@ paths:
     get:
       tags:
         - Access Management
-      summary: Get Policy List
-      description: Get Policy List
+      summary: List Policies
+      description: List all access policies in your profile
       operationId: getPolicyList
       parameters:
         - name: orderBy
@@ -7452,31 +7630,30 @@ paths:
                     items:
                       type: object
                       properties:
+                        active:
+                          type: boolean
+                          description: Indicates if the policy is active
+                          example: true
                         id:
                           type: string
                           example: 654a7e62a34b9c000006886c2
                         profile:
                           type: string
                           example: 62fa9e65e0badb0019200
+                        name: 
+                          type: string
+                          example: My Analysis Policy
+                        created_at:
+                          type: string
+                          description: Date and time when the policy was created
+                          example: '2023-11-01T12:34:56.789Z'
                         tags:
                           type: array
                           items: {}
                           example: []
-                    example:
-                      - id: 654a7e62a34b9c000006886c2
-                        profile: 62fa9e65e0badb0019200
-                        tags: []
                   status:
                     type: boolean
                     example: true
-              examples:
-                Getting Policy List:
-                  value:
-                    result:
-                      - id: 654a7e62a34b9c000006886c2
-                        profile: 62fa9e65e0badb0019200
-                        tags: []
-                    status: true
     post:
       tags:
         - Access Management
@@ -7911,8 +8088,8 @@ paths:
     get:
       tags:
         - Profile
-      summary: Get a Profile Statistics
-      description: Get a Profile Statistics
+      summary: Profile Statistics
+      description: Get your Profile Statistics
       operationId: getAProfileStatistics
       parameters:
         - name: date
@@ -8138,12 +8315,12 @@ paths:
     get:
       tags:
         - Profile
-      summary: Get a Profile Summary
-      description: Get a Profile Summary
+      summary: Profile Summary
+      description: Get your Profile Summary
       operationId: getAProfileSummary
       responses:
         '200':
-          description: Getting a profile summary
+          description: Get a general summary of your profile resources
           content:
             application/json:
               schema:
@@ -8344,8 +8521,8 @@ paths:
     get:
       tags:
         - Profile
-      summary: Get a Profile Details
-      description: Get a Profile Details
+      summary: Profile Information
+      description: Get your profile settings
       operationId: getAProfileDetails
       responses:
         '200':
@@ -8447,40 +8624,6 @@ paths:
                   status:
                     type: boolean
                     example: true
-              examples:
-                Get a Profile Details:
-                  value:
-                    result:
-                      account_plan: starter
-                      addons:
-                        control_tower: true
-                        custom_dns: false
-                        mobile: false
-                        profile: 61fac4d9a5c9f40012a5ff92
-                        updated_at: '2023-09-06T13:47:08.192Z'
-                      allocation:
-                        analysis: 5
-                        data_records: 250000
-                        email: 10
-                        file_storage: 132
-                        input: 350000
-                        output: 342153
-                        push_notification: 58
-                        run_users: 5
-                        sms: 60
-                      info:
-                        account: 612ea05e3cc07800127153892
-                        banner_url: null
-                        created_at: '2022-02-02T16:44:09.134Z'
-                        id: 61fac4d9a5c9f40012a5ff92
-                        logo_url: ''
-                        name: Test Profile
-                        region: us-1
-                        rpm:
-                          data_input: 98283293
-                          data_output: 10
-                        updated_at: '2023-10-13T11:54:20.081Z'
-                    status: true
     parameters:
       - name: id
         in: path
@@ -8493,8 +8636,8 @@ paths:
     get:
       tags:
         - Dictionary
-      summary: Get Dictionary List
-      description: Get Dictionary List
+      summary: List Dictionaries
+      description: List of Dictionaries
       operationId: getDictionaryList
       responses:
         '200':
@@ -8630,7 +8773,7 @@ paths:
     get:
       tags:
         - Dictionary
-      summary: Get Dictionary Details
+      summary: Dictionary Information
       description: Get Dictionary Details
       operationId: getDictionaryDetails
       responses:
@@ -8934,7 +9077,7 @@ paths:
     get:
       tags:
         - Profile
-      summary: Get Tags
+      summary: List Used Tags
       description: Get a list containing all device tags in use on your profile
       operationId: getTags
       responses:
@@ -8980,14 +9123,13 @@ paths:
     get:
       tags:
         - Network Ingest
-      summary: Get Device-Token with Serial Number & Authorization Key
+      summary: Find Device by Serial & Authorization Key
       description: >-
-        Get a valid device-token using token serial number and profile authorization.  
+        Retrieve a valid device token using the device's serial number and a profile authorization key.  
 
-        This is the recommended query when working with a Network available to multiple profiles, as it supports serial number to be duplicated
-        between different profiles.  
+        This endpoint is recommended when you need additional security or if your Network is available to multiple profiles, as it allows serial numbers to be duplicated across different profiles.  
 
-        You must have a Network and a Network-Token to use this query.
+        You must have both a Network and a Network-Token to use this endpoint.  
       operationId: getDeviceTokenWithSerialNumberAuthorization
       security:
         - Network-Token: []
@@ -9022,13 +9164,13 @@ paths:
     get:
       tags:
         - Network Ingest
-      summary: Get Device-Token with Serial Number
+      summary: Find Device by Serial
       description: >-
         Get a valid device-token using token serial number only. It will match the serial in any profile.
 
         :::warning  
         
-        If the serial number is duplicated between different profiles, you will get the device-token only for the latest device created. See the option with Authorization for multiple profiles support.  
+        If the serial number is duplicated between different profiles, you will get the device-token only for the latest device created. See [Find Device with Authorization](/docs/api/get-device-token-with-serial-number-authorization) for multiple profiles support.  
         
         :::
 
@@ -9064,12 +9206,15 @@ paths:
         - Network Ingest
       summary: Edit Device Configuration Parameter
       description: >-
-        Edit a device configuration parameter using the Network-token. At this
-        point, you must already have the device ID.
+        Edit a device configuration parameter using the Network-token. You must already have the device ID to use this endpoint.
 
+        This is useful when your Network integration requires configuration parameters for performing downlinks, or if your decoder benefits from configuration parameters for parsing data.
 
-        You can get the Device ID by resolving the device-token and using the
-        /info route to get details on the Device.
+        :::info
+
+        To obtain the **Device ID**, first resolve the device-token, then use the [Device Information](/docs/api/current-device-information) endpoint to retrieve detailed information about the device.
+
+        :::
       operationId: editDeviceConfigurationParameter
       security:
         - Network-Token: []
@@ -9134,7 +9279,7 @@ paths:
         Send data to TagoIO using the Network instead.
 
 
-        This endpoint allows the Network Payload Parser to identify and redirect
+        This endpoint allows the [Network Payload Parser](/docs/tagoio/devices/payload-parser/) to identify and redirect
         data to the correct device created using the Network associated with the
         Network Token.
 
@@ -9163,7 +9308,7 @@ paths:
             schema:
               type: string
               description: >
-                Arbitrary payload. Your Network Payload Parser must normalize this
+                Arbitrary payload. Your [Network Payload Parser](/docs/tagoio/devices/payload-parser/) must normalize this
                 text to the TagoIO array format accepted by application/json.
             examples:
               Send Data using Network:

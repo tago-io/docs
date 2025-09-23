@@ -62,8 +62,9 @@ interact with your devices and share with others. You can build it with the
 ### Step 3. Send data
 
 Now that you have completed the setup of your account, you are ready to send
-data from your electronic devices using our [APIs](/docs/tagodeploy/project/project-services/api.md). You can
-use one of our [SDKs](/docs/tagoio/analysis/sdk/) designed for your platform.
+data from your electronic devices using our
+[APIs](/docs/tagodeploy/project/project-services/api.md). You can use one of our
+[SDKs](/docs/tagoio/analysis/sdk/) designed for your platform.
 
 You can simulate your device using any tool that transfers data to and from a
 server with HTTP. Below, you will learn how to quickly send data depending on
@@ -88,7 +89,7 @@ your dashboard. You should see something like this:
 #### Windows
 
 To send data, there are some tools that support HTTP communication like
-[Postman](https://api.docs.tago.io/#intro) or Insomnia. Considering the same
+[Postman](/docs/api/sidebar/tagoio-api-intro) or Insomnia. Considering the same
 input as used above, you can make a POST by entering the URL, Device-Token, and
 configuration in Postman like this:
 
@@ -116,6 +117,7 @@ Create powerful [analysis](/docs/tagoio/analysis/) in real‑time using our scri
 capabilities in JavaScript. Program [actions](/docs/tagoio/actions/) to be taken
 based on your rules.
 
-Learn more about our powerful [API’s](/docs/tagodeploy/project/project-services/api.md). And check out the
+Learn more about our powerful
+[API’s](/docs/tagodeploy/project/project-services/api.md). And check out the
 tutorials and [SDKs](/docs/tagoio/analysis/sdk/) prepared for different boards
 and applications.
