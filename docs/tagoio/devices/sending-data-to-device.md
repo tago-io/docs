@@ -1,12 +1,31 @@
 ---
 title: "Sending Data to Device"
-description: "This article explains the options available in TagoIO for sending data from your application to a device, covering MQTT, HTTP, Analysis scripts, and working with Support for custom middleware."
+description: "How to send data to a device via MQTT, HTTP, Analysis, or custom middleware."
 tags: ["tagoio", "devices"]
 ---
-TagoIO supports two-way communication with devices so they can both send and receive data. Below are the primary options for sending data from your application to a device.
+
+TagoIO supports two-way communication with devices. Below are the main options
+for sending data from your application to a device.
 
 ## Methods to send data
+
 - [Publish to MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing.md)
-- [Post data to an endpoint using HTTP](https://api.docs.tago.io/#operation/postDataHTTP)
-- [Create a script](/docs/tagoio/analysis/creating-analysis.md) that runs in the Analysis to access an external API
-- Work with our Support Team to build a middleware that will communicate directly with your device using its native protocol Support Team (support@tago.io)
+- [Send data over HTTP](/docs/api/send-data.api)
+- [Run an Analysis script](/docs/tagoio/analysis/creating-analysis.md) that
+  calls an external API
+- [Integrate through Network Services](/docs/tagoio/integrations/index.md)
+- Work with Support to build middleware that speaks your device's native
+  protocol (support@tago.io).
+
+## Reading data from TagoIO
+
+Devices can also retrieve data from TagoIO using different endpoints depending
+on the type of data needed:
+
+- [Configuration parameters](/docs/api/get-configuration-parameters.api) to read
+  device settings (e.g., thresholds, behavior)
+- [Data endpoint](/docs/api/get-data.api) to read device data (e.g., sensor
+  values, locations, history)
+
+**Best Practice**: Use configuration parameters for device settings; use the
+data endpoint for measurements.

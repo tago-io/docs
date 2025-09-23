@@ -28,7 +28,8 @@ is preserved and can be restored in case of data loss.
 
 Backups are created automatically every day to ensure consistent data
 protection. The backup schedule can be configured in the
-[Main Database](/docs/tagodeploy/project/project-services/main-database.md) page.
+[Main Database](/docs/tagodeploy/project/project-services/main-database.md)
+page.
 
 ## Backup Information
 
@@ -60,7 +61,7 @@ using several methods:
 
 - Manually transferring data between the backup project and the target project.
 - Executing analysis scripts or the
-  [TagoIO API](https://api.docs.tago.io/#intro) to automate data migration
+  [TagoIO API](/docs/api/sidebar/tagoio-api-intro) to automate data migration
   between projects.
 - Utilizing the [TagoIO CLI](https://github.com/tago-io/tago-cli) to facilitate
   bulk data transfer from the backup project to the active project.

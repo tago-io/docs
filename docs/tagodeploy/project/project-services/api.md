@@ -25,7 +25,7 @@ enables different software applications to communicate and exchange data. It
 defines the rules, protocols, and data formats for requests and responses,
 allowing disparate systems to work together seamlessly.
 
-Within TagoIO, [the API](https://api.docs.tago.io/#intro) acts as the central
+Within TagoIO, [the API](/docs/api/sidebar/tagoio-api-intro) acts as the central
 gateway through which all services, applications, and devices interact with your
 project’s data and features. Every operation relies on the availability and
 performance of your API service.
