@@ -1,0 +1,72 @@
+---
+id: delete-notification
+title: "Delete Notification"
+description: "Delete notification on Run"
+sidebar_label: "Delete Notification"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89DWkOzEsXPRQ4FgE+waW6SFk6BY1AZKSyOLjUyqJGVXMPzvxZCSLeXS9mH9Yls6czszQ54ts3xpWPSF3SorUhFzK5Q0bB6wBE2sRUH/WcSuMUeLIFsoUBKmpZxJFjBVoHYPJwmLWOLAbY8sYBpNoaRBw6ItGx4f09cLMYRcAofpwy2UBnUnIAtYrKRFacmWF0Vevxh8M+Rgy0yc4YrTL1sVyCKmFt8wtixghaYUrfDhNZoyty2csVrIJQsY/uCrIqdHd2UcozFpmecVTHGl1piwXcCM5bY0LduFUjly2Ta2usSd/wSs4Jqv0KImnrdM8hVZtQubXLOACaKg4DZzXH0vhcbEewqe1/VCvm/vqwKhUqV27HU6Nbl+x3a7ecBWaDN1aBERQxEjNtClHLRtBttuhjsWMIN63ZRR6pxFLLO2MNFgwAvRL02IJ33Ll6ovFNsFL2GwDDctzJx8xqUWtnJOP2mVihzv1SNKFn2ZtwF3xIFv3zWuRYxhDduTwgvxL1bs6eheQRsPNuMWhIFSiu8lglWes8Rh+vA3ShplBA7W4RcVcDcJNJkO6t29MVDwJfZZ0LS0k1bd0Ax5gpoF7Ed4aNUYT4anozEPk/NjHo5wmISLi9MkHMfH7sXZ+cUljdot2o3Sj39eaG0Av6y0BvXhypUFE2lx6bfXwPu9j/feiyG75VNSUqW7zg4svFb+tTBFzqtbj+qW1qUnTcajS54Mw4uT0zgcJWdn4SI9H4bj4wscLy4veIqnRE89LX9OT21Q1/AKPSit0AiFx7YGQkgP4HGsSmnBoKXTyrRq72b0qxHgJ2PkY+RhkgyTcBSfnYYXl6NxeDlcjEcJH52fDzmj00PIVLnahHWG93ypJh/h6tPkWYFHR0dH0Ov9ozZUTGkQbCYMJCouVyit63CvN5P3GXYfEgumyIWlYd9kIs5qiipVvtEIzXHUuBVEnn+MxvYBZrJOq9BqLRI0MIJEpClqlNb7MtFMhtDrtZek14uAkqlnSqtVexeDOpVKlRBzCUu0HkOxk84OziQAZUEBOj2gCFe5UfAo1Qa4oZmn5vm3ffhPlQe/Lnbd9313nwfojC4FmBiX0tMq9nv2UeYV8DUXOV/kCCJteFUbiRpU6sxlvXfNmIn2Wj5L4kryvDLC+CyiXu9FInmNCtrhffOaV43rMAxn0k3Qna/coa4+TeBGJoUS0sIUl0LJmfycoYQVf/RXdT0FNBtkcZjPwHVuVRoLnFpgCoxFWvnoBV3IWtBeaeeW54B1oD78lSllEJTEhp1U5bnaUMQGZWDBDSakQlytS1RLzYtMxDyvfUYz6dl6kMJiAneWWzRww42FE+IMPKUPzao0vmGTYbPtB5lBa+Jj1hwiNxa1hI77fuO113uYfqAoX1+9JQdf2z29KUmkwGf8H9IjJ5Sa9/mbnDq3MuXk86FWwjUWuar22dDCmEyVeeJOApeD2kg3KA/TD/tDtTNv/tZUKy6kAYOxV4/pfl58DDpHSV74w+ykf9w/rhUfj0mrOS2ljF1xd9jvL10nTJ+Izc7BuD3Ixt/p2PoGsfjDDoqcC0n3jJMx21opfWG6JOQTYRo90XPzgGXKWMJvt9SVB53vdvT4e4ma1M48YGuuBXHktE8iDP1OWJTy3OAvang7rc/jd/Bays1NKOkaXPO8pH8sYI9YPdeeu/kuaG4pysSDSB0UtmX+THB3BOX1zYeb+xu22/0E/1ozAg==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Notification"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/run/notification/{notificationID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete notification on Run
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"notificationID","in":"path","required":true,"schema":{"type":"string","example":"(Type your RUN notification ID)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Deleting a RUN user notification","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: delete-entity-data
+title: "Delete Entity Data"
+description: "Delete Entity Data"
+sidebar_label: "Delete Entity Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89DWkGzHsXPRQ4FgE+wGW7RFmqBY1MGWFscWNzKpklRcwdC/L4aUbKlxun3YJxvUmTNnbuRsmeMry5Iv7Fo56Sq44o6zh4gJtKmRhZNasYRdYY4OoYuJmC7QcALcCJYw4SEB0QAM2kIri5YlWzYZj+nnF3hTrRwqR2heFLlMvZPRP5ZMtsymGa45/XNVgSxhevEPpo5FrDAkycng0KAtc9fBWWekWrGI4Xe+LnI6moB0uH5t30CQL1gdMeu4K23HcKF1jlx1LZ0psa7r3YmHH4gm2bInnpfYFXTA695pQ1x78oIbvkaHhiq0ZYqvSQ56/r8lmUnKYsFd5tP9rZQGRSCJnifqQAJe31UFAlcQSOHm6g2r64eIrdFlel9Xyi55SdgoIEfbnYx6JELhLJqnVmtpcpawzLnCJqMRL+SwtDEeDx1f6aHUrI4OYbCMNx3MA3GmpZGu8qQfjV7KHO/0IyqWfHnoAj5RtG0dnmSKcQPbhc8L+SdW7MfevoQuHlzGHUgLpZLfSgSnodKlAeExQ/gdFXU9Agfn8YsKeJqitVKtAjTQvbJQ8BUOWdTWrSerKV2GXKBhEfse74syw+PJyXTGY3E25vEUJyJenJ+IeJaO/YfTs/MLatT36DbaPP56oI0B/DTSBjSESx8W3CiHqzDoFt7uON4GFkt2qx+TstSmT7bPwkvhX0lb5Lx6H1D90PrpWYrZ9IKLSXx+fJLGU3F6Gi+WZ5N4Nj7H2eLinC/xhNLTdMuvp6cxaGJ4IT3U9gahCNhOQ0gVADxNdakcWHROqpXtxN5X9LMW4Mcz5DPksRATEU/T05P4/GI6iy8mi9lU8OnZ2YQzuiKkWmofm3Te8I6v9M0HuPx48yzAo6OjIxgM/tAbCqa0CC6TFoROyzUq5ys8GMzVXYb9Q8qCLXLpqNk3mUyzJkWVLl8ZhPbiaWklJS8co3VDgLlqZBVGP0mBFqYg5HKJBpULXDaZqxgGg+6QDAYJkJimp4xed2cxaqRUuoSUK1ihCxjyLXozOFcApIIc9GpAHi5zq+FR6Q1wSz1PxQtfh/CXLve83ndT9111nzvotS45uLFe0o9R7Obsg8or4E9c5nyRI8hlm1e9UWhAL725auaubTPZHctnIi4VzysrbVCRDAYHE8kbVNR1H4rXfmqp4zieK99Bn0LkHnX58QaulSi0VA5ucSW1mqvPGSpY80cC8bYLqDfIYt+fka/curQOOJXAFpjKZRW8F/SWG0lzZTwtzwEbR0P4LdPaImiFbXaWOs/1hjy2KAsLblGAbvK1Qr0yvMhkyvOGM5mrkK17JR0K+OS4QwvX3Do4ppxBSOl9OyotN2wybKd9v6HQmASfTQ6RW4dGQY9+2LIOBve378jL1xdfydHXbk2vS9pv4DP+D/KIhKQFzv/Q1HuVSVPQQ6WEKyxyXe3U0MDYTJe58DeB16A3yjfK/e273aXa67fwauo1l8qCxdSrbQpLToIPukdpvQiX2fFwPBw3yyJPac3zC5O2bs39Zb97dA9smL17cbtfOA+jm2fD4Xc3KnIuFT0ufnfZNkvRl2YnYxFLutuZaJbpTFtHqO2WCnBv8rqm428lGlpsHiL2xI2kdPg1R0hL/wVLljy3+BO9r2+bq/cNvCS0ffQUqWt2UcYi9ohVb5esH+qofYtIRPhOO0DhOpbPNvLesnh1/e767prV9b+dIS84
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Entity Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/entity/{entity_id}/data"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Entity Data
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"entity_id","in":"path","required":true,"schema":{"type":"string","example":"(Type an entity ID)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Delete Entity Data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"2 item(s) deleted"},"status":{"type":"boolean","example":true}}},"examples":{"Delete Entity Data":{"value":{"result":"2 item(s) deleted","status":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

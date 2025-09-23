@@ -1,0 +1,72 @@
+---
+id: login-as-user
+title: "Get User Token"
+description: "Get TagoRUN User Token and allow to perform request to TagoRUN specific endpoints (not available)."
+sidebar_label: "Get User Token"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User Token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/run/users/{userID}/login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get TagoRUN User Token and allow to perform request to TagoRUN specific endpoints (not available).
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"expire_time","in":"query","schema":{"type":"string","example":"3 months"},"description":"hours,days,months."},{"name":"userID","in":"path","required":true,"schema":{"type":"string","example":"(Type a RUN user ID)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Login as a RUN User","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"expire_time":{"type":"string","example":"2022-06-21T03:01:10.908Z"},"name":{"type":"string","example":"Login by Run Administrator(runadmin@mail.com)"},"run_user":{"type":"string","example":"61eb25a4d6a4a20011d4cd3c"},"token":{"type":"string","example":"fe82f846-d19c-42b3-863a-7e7dgcd519e6"}}},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

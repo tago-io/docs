@@ -1,0 +1,71 @@
+---
+id: get-dictionary-language-details
+title: "Get Dictionary Language Details"
+description: "Get Dictionary Language Details"
+sidebar_label: "Get Dictionary Language Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV1tv00oQ/iuj7QMQ2UmbJr34AamiVU91EKBehI5oBRN7Yi91ds3uusGK8t/ReO3EaSj0IPrSyjs78803l/26EA5TK6JP4lTGTmqFphJ3gUjIxkYW/EVE4pwcrM/hLaq0xJTglBzK3IpA6IIM8vlFIiKRklubt9ZrY0O20MqSFdFCDHd3+ddWQCdVCgjJOmzehk1WnmKtHCnHDrAochnXGAZfLXtZCBtnNEP+y1UFiUjoyVeKnQhEYRixkx6DIVvm7vd291R1jKwzUqUiEPQdZ0XOnx4wL0ksl8tAWIeutB3zidY5oeraO1PS0v8EokCDM3JkuBwLoXBWB8nL9LM2n9c8fJaJCIRkmgp0Wc3nt1IaSrzDYDvtnyB9eV0VBFd5mYI23eJenL4Sy8cN8AYVTAj0xKFUlIBU4DKC87Pr7tW2rmIZrPC3RfsLkFdt90YntI1xdewydDCXec6QDbnSMOR7qqxY3gViRi7TTZdyhRlQJAZrggeLn5K+HCzaZJYiEJbMQ1ur0uQiEplzhY0GAyxkv7Qh7fUdprovdc3Htg2V4bxjc8c+49JIV9VOPxg9lTld63tSIvp01zW4Yrp8T57Sg4wpbMxW/GEh/6VKPCbpBLr2nippoVTyW0ngNFS6NJDUNn04J8VjTYDgavtJBRjHZC0PZ23q3b2wUGBKfRG0dd+A1dQ+I0zIiEB8D9dVHdPecH80xjA53MVwRMMknBztJ+E43q0PDg6PjrnY78jNtbl/fqLNBfhlpo1RH07qtOBCOUr9JrPweuXjtfdi+V76mJSpNpvO1iw8lf6ptEWO1TtvtZnaJj3TZDw6xmQYHu3tx+EoOTgIJ9PDYTjePaLx5PgIp7TP9DTd8nx6mgtNDk/QQ8pJQ1B4205DSOUNMI51qRxYv7BtJ/dNRL9qAdwbE44JwyQZJuEoPtgPj45H4/B4OBmPEhwdHg5R8IqUaqrr3KSrL15jqi/ew8mHi60Ed3Z2dqDX+0fPOZnS8lqQFhIdlzNSrq5wr3errjPa/Mgs2CKXjpt9nsk4ayiqdPnC8ELxm6t126xC/kzW9QFuVQOrMPpBJmRhBImcTsmQct6XjW5VCL1ed0h6vQgYTNNTRs+6sxg0UCpdQowKUnLehmMnGzN4qwAYBQfYqAFHOMmthnul54CWe56L50/78J8u137r2E3dV9XdDrDRuhzgwtaQHmexmrP3Kq8AH1DmOMkJ5LTlVc8VGdDT+rpq5q5tM9kdyy0QJwrzykrrUUS93k+JxMYq6Ib3xWuPWtdhGN6quoOuGiHCVicfLuBMJYWWysElpVKrW/UxIwUzvPdqpekC7g2+se7PoK7crLQOkEtgC4rltPLRC1YZRvJcmdot5kBNoD68ybS2BFpRy85U57mec8TWysIELSWgG75S0qnBIpMx5o3P6FZ5tm6UdJTAlUNHFs7QOthjzsBTetOOSusb5hm1077WWDwmPmbDIaF1ZBRsuO+3Xnu9m8u3HOXLk6/k4Eu3pmclKy/4SH8BHjthaN7nbzBtvMqMyePhUsIpFbmuVmh4YGymyzypN0GNQc9V3Sg3l29XS3Wj3/yrqWcolQVLtcBoC8tBfAzeoywv/DLb6+/2dxu5izEL1VowautmWC/7ZuX+XqdvLMnFWj8/42rzoDj67gZFjlLxs1OrmkUjoj6JtWASgYie0q7RShTeBSLT1vHVxYLrdWPy5ZI/fyvJsA66C8QDGsns1aookZb/TkQ0xdzSLzJ6edls6lfwP+XrE7m2L6ri5LzSj4QI/H8FTwh1Vn5/BPk5avaPcK64X94tg/Y9Zmb9MeugwnUubv1ftaGhz8+uxXL5A/bn4nQ=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dictionary Language Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/dictionary/{slug_or_dictionary_id}/{language}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Dictionary Language Details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"slug_or_dictionary_id","in":"path","required":true,"schema":{"type":"string","example":"(Type Slug or Dictionary ID)"},"description":"Can be obtained in the GET Dictionary response"},{"name":"language","in":"path","required":true,"schema":{"type":"string","example":"Language Code"},"description":"Language that will be returned keys"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Getting a dictionary language details","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"key":{"type":"string","example":"value"}}},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

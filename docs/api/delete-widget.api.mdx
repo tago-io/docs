@@ -1,0 +1,78 @@
+---
+id: delete-widget
+title: "Delete Widget"
+description: "Delete a widget from the dashboard."
+sidebar_label: "Delete Widget"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV1tv2kgU/itH04e2yIaEQC5+qBRtol20VVvlompVIvVgH/BszIw7Mw5FiP++OjO2Mbl0+1Dtyz4B9rl+5/axEQ4XViRfxGeZLchZcReJjGxqZOmkViIRF1SQI0BYeQmYG70ElxNkaPOZRpP1p2qqkiRZoVFSLQD4t1fjX61ipsmC0g6wcnqJTqZYFGswtNQPBPI5y4DGoFrQkpTrw1+6gmVlHSxRVV6XMule1gCnG+texieS1eH0Q5hJkkyViIQuySBnPMlEIoJogEREwpAttbJkRbIRw4MD/ngGpJBtq5Vq5Ug5FsayLGTq7Q/+tqyxETbNaYn8za1LEonQs78pZcXScDROBn+GbFW4jpx1RqqFiAR9x2VZ8KPrKk3J2nnFoFz5lDOxjYR16Crb0Z1pXRCqrrIzFW232/aJF3+aT7IRD1hU1A3peb87t7XprTdfosElOTLcbhuhcMkBtYWbXIhISMayRJd70L9V0lAWzERP8XoGhzc365JbddcOk4u3YruNWn+h+L/UWd3ewdNdJJbkcr3rIi4oO0nEoA1rsOnkvR0EC4NNE9yWMSTz0GBVmUIkIneutMlggKXsVzamw77Dhe5LLTi/pzJUxauOzB3bTCsj3dob/WT0XBZ0o+9JieTLXVfgmtNvOuFBphTXYi0eWMo/aS0eL4tz6MqDy9GBtFAp+a0inse1rgxkXqYPv5PiqWMQnZefrQF9R3HredFg7rWFEhfUF1FTx72w6lrmhBkZEYnv8a5KYzocHo3GGGcnBxiPaJjFs9OjLB6nB/7F8cnpGY/KB3Irbe5/PtFaAX6YaS3Uh3OfFkyUo0VYNBbetTbeBSuW9RaPQZlrs29sh8JL6V9IWxa4/hCk9lPbh2eejUdnmA3j08OjNB5lx8fxbH4yjMcHpzSenZ3inI4Ynrpbfh6eWqHO4QV4SDlpCMog22kIqYIApqmulANLjteR7eS+H9GPWgAPx4RjwjjLhlk8So+P4tOz0Tg+G87GowxHJydD5CUhpJprn5t0XvEGF3ryEc4/TZ4k+OrVq1fQ6/2hV5xMZfnESAuZTis+Pb7Cvd5U3fDh6T5kFGxZSMfNvsplmtcQrXX12hA0m6gxK5U/XvyYbLhadVil0Q8yIwsjyOR8TiacPO6jZKpi6PW6Q9LrJcDB1D3Fp7Yzi1EdylpXkKKC/UO/N4NTBcBRsIO9GrCH88JquFd6BWi557l44W04361d77uue1vdpw72WpcdTKwP6XEW7Zx9VMUa8AFlgbOCQM4bXPVKkQE99+qqnrumzWR3LJ8Eca6wWFtpQxRJr/cskFhLRV33oXjNq8Z0HMdT5TvoOmTupc4/TeBSZaWWysEVLaRWU/U5JwVLvA+3uO4C7g3W2PVn5CvnyRFyCWxJqZyvg/eSCYWRPFfGm8UCqHbUh99yrS2BVtSgM9dFoVfssZGyMENLGegarwXphcEyZwpX20yYTTFat0oyy7p26MjCJVoHh4wZBEhvm1FpbMMqp2badzSJxyT4rDEktI6Mgj3z/cZqr3d79Z69fH3xSg6+dmt6WTHJgs/0C8JjIxxasPkvMe1dZY4pxMOlhAsqC71uo+GBsbmuisxvAh+DXinfKLdX79ulutdv4WrqJUplwVLqo60Ly06CD96jTC/CMjvsH/QPasaKKXM9T9i0dUv0y749uv6vQMtw91biZkd4/yf/GeoT6Oi7G5QFSsWH0vOwTU35vuz4rYhEsk92Vw2MSUtK7yKRa+tYcbPh/ro1xXbLj79VZJi33UXiAY3kansWl0nL3zORzLGw9IOavLmqL8tbeCn25qYrPug12xciEve0fkTVmXH+h65bgLZ326g58px+eM3kqnQdxSf/t/Z4+cXl+8ubS7Hd/gNu6x++
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Widget"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/dashboard/{dashboardID}/widget/{widgetID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a widget from the dashboard.
+
+:::warning  
+
+Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.  
+
+:::
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}},{"name":"widgetID","in":"path","required":true,"schema":{"type":"string","example":"(Type a widget ID)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Deleting a Widget","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting a Widget":{"value":{"result":"Successfully Removed","status":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

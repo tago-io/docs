@@ -45,6 +45,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          docItemComponent: "@theme/ApiItem",
           editUrl: "https://github.com/tago-io/docs/tree/main/",
         },
         blog: {
@@ -74,12 +75,36 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "tagoio-api",
+        docsPluginId: "classic",
+        config: {
+          tagoio: {
+            specPath: "specs/tagoio-api.yaml",
+            outputDir: "docs/api",
+          },
+        },
+      },
+    ],
+  ],
+
+  themes: ["docusaurus-theme-openapi-docs"],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
 
+  clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
+
   themeConfig: {
     image: "img/tago-social-card.png",
+    api: {
+      methodLabelComponent: "MethodEndpoint",
+      authPersistence: "localStorage",
+    },
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
       ? {
@@ -96,6 +121,38 @@ const config: Config = {
       contextualSearch: true,
       searchPagePath: "search",
     },
+    languageTabs: [
+      {
+        highlight: "bash",
+        language: "curl",
+        logoClass: "bash",
+      },
+      {
+        highlight: "python",
+        language: "python",
+        logoClass: "python",
+      },
+      {
+        highlight: "go",
+        language: "go",
+        logoClass: "go",
+      },
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+      },
+      {
+        highlight: "rust",
+        language: "rust",
+        logoClass: "rust",
+      },
+      {
+        highlight: "swift",
+        language: "swift",
+        logoClass: "swift",
+      },
+    ],
     navbar: {
       title: "Docs",
       logo: {
@@ -122,6 +179,12 @@ const config: Config = {
           sidebarId: "tagocoreSidebar",
           position: "left",
           label: "TagoCore",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "API",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {

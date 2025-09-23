@@ -1,0 +1,71 @@
+---
+id: delete-chunk
+title: "Delete Chunk"
+description: "Delete chunk"
+sidebar_label: "Delete Chunk"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV9tu2zgQ/ZUB89DWkHy/xHooENTBrrFFW6QJikUTbGlpZHEjkypJxTUM//tiSMmWkqZbFM1LHHMuZ87MkCd7ZvnasOgzW242peWrHGGBDyJGdhewBE2sRWGFkixiC8zRIsRZKe9ZwFSBmtPRMmERS9zhm+pMoymUNGhYtGfDfp9+tYM5S/BeCaRabSDxeQMWK2lRWnLiRZGL2KXp/WvIc89MnOGG0ye7K5BFTK3+xdiygBWaQFnh82o0ZW4bdsZqIdcsYPiNb4ocjzAG08lsPJ9N+/1/BtPJ+aA/HM3nNTh2CJix3JamEWqlVI5cNmNZXeLB/wSs4Jpv0KImbvdM8g06kqjC5YIFTBAJBbeZY+trKTQmPkbwtMDvAJ/OOB+k88FoshrwWb/f5/NkNRrFhPZx2ygpLBfsEByRuCb+FiAvr3cFAvdjAcvFq6cI3lRH7HAXsA3aTJ0mhrpGySPW8+z09jVLh56L2dtXYA8sYAb1Q01qqXMWsczawkS9Hi9EtzQhDrqWr1VXKFfuUxssw23D5o5ixqUWdueCftAqFTleq3uULPp81zT4SHT42fKkhpXZkR9eiL9wxx4TcAFNe7AZtyAMlFJ8LRGsgp0qdTX/XfgDJW0WkWqd/WoHPI7RGCHX3tSHe2Gg4GvssqBuawtW1dsMeYKaBexbeOraBAfD0XjCw2TW5+EYh0m4Oh8l4STuu4Pp7HxOjXyHdqv0/c8XWjnADyutjLpw4cqCpbS49peJgdfHGK99FEN+68ekpEq3g51YeK78hTBFznfvvFW7tDY9aTIZz3kyDM8HozgcJ9NpuEpnw3DSP8fJan7OUxwRPdW0/Dw9lUNVwzP0oLRCIxTetjEQQnoDHseqlBYMWivk2jRqbyP60QjwwQT5BHmYJMMkHMfTUXg+H0/C+XA1GSd8PJsNOaO7TMhUudqEdY7XfK2W7+Hiw/JJgWdnZ2fQ6fyptlRMaRBsJgwkKi43KK3rcKdzK68zbH9JLJgiF5aGfZuJOKso2qnyhUaob6Y6rCDy/NdobBfgVlawCq0eRIIGxpCINEWN0vpYJrqVIXQ6zSXpdCIgMNVM0TPU2MWggrJTJcRcwhqtt6HcSWsHbyUAoaAErR5QhovcKLiXagvc0MxT8/xpF/5W5Smuy131/djdpwlao0sJlsZBelzFcc/ey3wH/IGL3L3wIq15VVuJGlTq3GW1d/WYieZaPgFxIXm+M8J4FFGn810ieWUVNNP75tVHdegwDG+lm6CPvnJndfFhCZcyKZSQFq5wLZS8lZ8ylLDh92TE6ymg2SCP03wGrnOb0ljg1AJTYCzSnc9ekFrQgvZKu7A8B6wSdeFNppRBUBJrdlKV52pLGWsrAytuMAFV8bVGtda8yETM8ypmdCs9WzdSkND5aLlFA5fcWBgQZ+ApvalXpY4N2wzrbT9pIFoTn7PiELmxqCW0wnfrqJ3OzdVbyvLl2Vey96XZ08uSFBR8wt8Aj4IQNB/zfzC1XmXC5PFQK2GBRa52RzS0MCZTZZ64m8BhUFvpBuXm6u3xUm3Nm3811YYLacBg7NBWjaUkPgfdoyQv/GU26Pa7/UqO8piEpFN2ytgNd5f98dF1urjWvq0bcX8Ss4/1c/VUWPxme0XOhaQHxemVfSWJPrOjJI4a0rEOENUi7i5gmTKWHPZ74v9G54cDff21RE265i5gD1wLYsOpnEQY+pywKOW5wR+AfnlV3byv4CQknwFfP36SXr4Hnpf0FwvYPe6a4pd02S8BOOrIX8pfs3W4OwT1i0hc+FNSIoVt+D35z6MlXheXby+vL9nh8B9inHUZ
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Chunk"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/device/{deviceID}/chunk/{chunkID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete chunk
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"},"description":"Device ID"},{"name":"chunkID","in":"path","required":true,"schema":{"type":"string","example":"(Type a chunk ID)"},"description":"Chunk ID"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Chunk deleted from device","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Chunk 1657497600_1658102399 deleted"},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

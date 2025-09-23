@@ -1,0 +1,72 @@
+---
+id: delete-token
+title: "Delete Token"
+description: "Delete a token"
+sidebar_label: "Delete Token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/ZUB89DWkGzHsXPRQ4FgHewaG7RFLigWtYHS0shiI5MqSdkVDP/7YkjJlpqk24f1i23pcObMmQtnxyxfGRZ9YVPciBjhQT2hNGwRsARNrEVhhZIsYlPM0SJwsASYSxYwVaDm9HqWsIglDuCOs4BpNIWSBg2Ldmw0HNLXiwabA7GSFqUlHC+KXMTO8uCbIfCOmTjDNadftiqQRUwtv2FsWcAKTTys8K40mjK3LZyxWsgVCxj+4Osip0fOJdyXcYzGpGWeV3CHa7XBhO0DZiy3pWlZWCqVI5dtE1aXuPefgBVc8zVa1CTjjkm+plNOptmUBUxQtAW3mZPleyk0Jt5E8DysF+i+faiKg/Awm4JVsETweifv2H6/CNgabaaOaSBdyGPEBonL68CdHuxqWnsWMIN605Audc4illlbmGgw4IXolybE077lK9UXiu2DlzBYhtsWZkE241ILWzmjn7RKRV6XRPRl0QbcU+A+Zb7wwhp2UIIX4m+s2M91eA1tPNiMWxAGSim+l0jSVKrU4IPuw58oqUaP8i0r4C7vQq481Jt7Y6DgK+yzoElgh1adxQx5gpoF7Ed4zM8ET0dn4wkPk4shD8c4SsLl5VkSTuKhe3F+cXlFhfUB7Vbpp98PtD4Av4y0BvXh2oUFM2lx5dvSwPuDjfd1Y9O51c+ipEp3jR1VeC38qTBFzqsPHtUNrStPmkzGVzwZhZenZ3E4Ts7Pw2V6MQonw0ucLK8ueYpnJE9dLb8vT32gjuEVeVBaoREKj20VhJAewONYldKCQWuFXJlW7F1GvyoBfjpBPkEeJskoCcfx+Vl4eTWehFej5WSc8PHFxYgzmhVCpsrFJqwfRXylZh/h+tPsWYAnJycn0Ov9pbYUTGkQbCYMJCou1yity3CvN5cPGXYfkgqmyIWlYt9mIs5qiSpVvtEIzQxqzAoSzz9GY/sAc1nTKrTaiAQNjCERaYoapfW2TDSXIfR67Sbp9SIgMnVNabVu92JQU6lUCTGXsELrMeQ76fTgXAIQC3LQyQF5uM6NgieptsAN1Twlz7/twz+qPNp1vuu8H7L73EGndMnBzDhKP0dx6LOPMq+Ab7jI+TJHEGmjq9pK1KBSd1zWfdeUmWi35TMS15LnlRHGs4h6vReF5DUqaLv3yWteNabDMJxLV0H3PnKHuv40gxuZFEpIC3e4EkrO5ecMJaz5E4F4UwVUG3TiWJ+By9y6NBY4pcAUGIu08t4LuoS1oL7SzizPAWtHffgjU8ogKImNOqnKc7Uljw3KwJIbTEDVeq1QrTQvMhHzvLYZzaVX61EKiwncW27RwA03Fk5JM/CSPjat0tiGbYZNtx9XC2oT77PWELmxqCV0zPcbq73e490tefn66i05+NrO6U1Jiwl8xv+BHhkhat7mf3Dq3MrEyfOhVMIUi1xVBzbUMCZTZZ64SeA4qK10hfJ4d3sYqp1687emWnMhDRiMHds6seTE+6A5SuuFH2an/WF/WG95PKb9zG1Oytg1d8P+cOl2lsLORNwdd8SXttH6urD4ww6KnAtJl4rbWXb1LvSF+TlD4NpB1Kxpi4BlylgC7Xak+6PO93t6/L1ETfvMImAbrgWp4LabRBj6nbAo5bnBX5B9e1dP3HfwGs/mrpN00W14XtI/FrAnrFq75H6xD5oLiCj4t3TxF7Z17tn+3FkQpze3Nw83bL//FwAUDmk=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/device/token/{tokenID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a token
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"tokenID","in":"path","required":true,"schema":{"type":"string","example":"(Type a token ID to be deleted)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Delete Token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Token Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

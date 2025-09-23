@@ -1,0 +1,72 @@
+---
+id: delete-user
+title: "Delete User"
+description: "Delete user from Run using userID"
+sidebar_label: "Delete User"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVltv2kgU/itHk4e2yAZCIBc/VIqWaBdt1Va5qFoFpA72MZ7GzLhzCbUQ/311ZuxgmqTbh+UFsM/lO9+5bpnlK8OSe3ZnUBu2iFiGJtWiskJJlrAplmgRnEENuVZruHYSnBFy5Z/NpnPJIqYq1Jw0ZhlLWOZ1yCCLmEZTKWnQsGTLRsMhfb3gggxyuL77GFwta5hNWcRSJS1KS0q8qkqRei+Db4Y0t8ykBa45/bJ1hSxhavkNU8siVmnCZEXwq9G40nbkjNVCrljE8AdfVyU9unFpisbkrixruMa1esSM7SJmLLfOdHSXSpXIZVfZaoe78IlYxTVfoyU6k/stk3xNWoEtFjFBMVfcFp6c705ozIKF6Hk8L+B8e1tX2OVqNn3HdrtFxNZoC7VPALFAbhI20E4OSNYMtgHHjkXMoH5sQTpdsoQV1lYmGQx4JfrOxHjct3yl+kKxXfSSDLp405FZkM3UaWFrb/SzVrko8VY9oGTJ/aIrcEORhuRM8VGkGDdiT6HzSvyNNfu5IC+hKw+24BaEASfFd4dgFdTKaci8TB/+REmVSXxZL7+sgfs8U8F50WDujYGKr7DPojZhB7CatBXIM1/VP+J9QiZ4PDoZT3icnQ15PMZRFi/PT7J4kg79i9Oz8wsqpI9oN0o//H6gjQL8MtJGqA+XPiyYSYur0IwG3j/ZeB+sGNJb/UxKrvShsT0Lr4U/FaYqef0xSB2GdkhPnk3GFzwbxefHJ2k8zk5P42V+Noonw3OcLC/OeY4nRE9TLb9PT6PQxPAKPSit0AhVkO0UhJBBgKepctKCQUtDyHRiP0T0qxLgxxPkE+Rxlo2yeJyensTnF+NJfDFaTsYZH5+djTij2SBkrnxswnrFW75Ss09w+Xn2LMCjo6Mj6PX+UhsKxhkEWwgDmUrdGqX1Ge715vK2wMOHxIKpSmGp2DeFSIuGolq5NxqhHTqtWUHkhcdobB9gLhtYlVaPIkMDY8hEnqNGaYMtk8xlDL1et0l6vQQITFNTtCw6vRg1UGrlIOUSVmiDDPnODnpwLgEIBTk4yAF5uCyNggepNsAN1TwlL7ztwz/K7e16303en7L73MFB6ZKDmfGQfo7iqc8+ybIG/shFyZclgshbXtVGogaVe3XZ9F1bZqLbls9AXEpe1kaYgCLp9V4kkjdSUdd9SF77qjUdx/Fc+gq6CZF7qcvPM7iSWaWEtHCNK6HkXH4pUMKaP4QN3FQB1QZp7Osz8plbO2OBUwpMhanI6+C9onWrBfWV9mZ5Cdg46sMfhVIGQUls2clVWaoNeWylDCy5wQxUw9cK1UrzqhApLxubyVwGtu6ksJjBjeUWDVxxY+GYOINA6V3bKq1t2BTYdvv+iKA2CT4bDpEbi1rCgfl+a7XXu7v+QF6+vrolB1+7Ob1ydILAF/wf4JERghZs/gemg61MmAIeSiVMsSpV/YSGGsYUypWZnwQeg9pIXyh31x+ehupBvYWtqdZcSAMGU4+2SSw5CT5ojtJ5EYbZcX/YHzb3HE/pEvOXkjJ2zf2wf1q6/txsbseDgbjdH4O/eZU2C8TiDzuoSi4krRl/xWyby+ieaUeS/jZiEUuaK20RsUIZSwLbLWXhTpe7HT3+7lDTdbOI2CPXgjjxt04mDP3OWJLz0uAvsL+9bubvO3gNY7v5JK29R146+sci9oD1/pLcLXZRu40IQXhJV0BlO2rPzuaDS3F69eHq9ortdv8CeS0SrQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete User"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/run/users/{userID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete user from Run using userID
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"userID","in":"path","required":true,"schema":{"type":"string","example":"(Type a RUN user ID)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Deleting a RUN user by ID","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
