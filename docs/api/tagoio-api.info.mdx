@@ -1,7 +1,7 @@
 ---
 id: tagoio-api
 title: "TagoIO API"
-description: "Overview of authentication types and regional API endpoints for TagoIO."
+description: "#### **How to use this documentation**"
 sidebar_label: Introduction
 sidebar_position: 0
 hide_title: true
@@ -30,10 +30,29 @@ import Export from "@theme/ApiExplorer/Export";
 
 
 #### **How to use this documentation**
+The documentation is split by which token you're required to use in the request.  
+TagoIO provides 4 different tokens:
+- **Device-Token**: The token from your device, which you can get from the device's page.
+    
+- **Profile-Token**: Also know as Account-Token. You get from your profile settings page.
+    
+- **Network-Token**: Is the token from your Network. Only available if you're owner of the network in your integrations page.
+    
+- **Analysis-Token:** The token from your analysis, available in the analysis page.
+---
+#### Setting the API Endpoint Region
+When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Choose one of the following endpoints based on your geographical region:
 
-This page explains how to authenticate and which base URL (region) to call.  
-All requests must include exactly one of the tokens below in the HTTP headers.
+- **United States East 1:**  
+    Use this endpoint when your application is based in the eastern United States.  
+    **URL:** `https://api.us-e1.tago.io/`
+    
+- **Europe West 1:**  
+    Use this endpoint when your application is based in Western Europe.  
+    **URL:** `https://api.eu-w1.tago.io/`
 
+- **Tago Deploy:**  
+  You should use your own API URL that is available in your Domains section of the TagoDeploy.
 
 <div
   style={{"marginBottom":"2rem"}}
@@ -44,56 +63,91 @@ All requests must include exactly one of the tokens below in the HTTP headers.
     className={"openapi-tabs__heading"}
     children={"Authentication"}
   >
-  </Heading>
-  Send exactly one of the headers below with every request.
-  <SchemaTabs
+  </Heading><SchemaTabs
     className={"openapi-tabs__security-schemes"}
   >
     <TabItem
-      label={"Device-Token"}
+      label={"API Key: Device-Token"}
       value={"Device-Token"}
     >
-      Use for device data and device-scoped operations. Create it on the Device page.
-
-      ```bash
-      curl -H "Device-Token: <your-device-token>" \
-        https://api.us-e1.tago.io/status
-      ```
+      
+      
+      A Device-Token that is unique to your device. Generate a token by accessing your Device's page.
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                Device-Token
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </TabItem><TabItem
-      label={"Network-Token"}
+      label={"API Key: Network-Token"}
       value={"Network-Token"}
     >
-      Use for Network Integrations (your network posting messages). Create it at Integrations → Network → Tokens.
-
-      ```bash
-      curl -H "Token: <your-network-token>" \
-        https://api.us-e1.tago.io/status
-      ```
+      
+      
+      A Network Token that is unique to your Network. Access Integrations > Network > Tokens to generate a token for your Network.
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                Token
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </TabItem><TabItem
-      label={"Profile-Token"}
+      label={"API Key: Profile-Token"}
       value={"Profile-Token"}
     >
-      Use for profile-wide admin and API calls across your resources. Generate it in Account settings.
-
-      ```bash
-      curl -H "Profile-Token: <your-profile-token>" \
-        https://api.us-e1.tago.io/status
-      ```
+      
+      
+      A Profile token that is unique to your entire profile. Generate in your account settings.
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                Profile-Token
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </TabItem>
   </SchemaTabs>
 </div>
-
----
-
-## Setting the API Endpoint Region
-
-Choose the API base URL closest to your users/devices for lower latency:
-
-- **United States East 1**  
-  `https://api.us-e1.tago.io/`
-    
-- **Europe West 1**  
-  `https://api.eu-w1.tago.io/`
-
-- **TagoDeploy**  
-  Use the API URL listed under Domains in your TagoDeploy project.
+      
