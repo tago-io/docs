@@ -1215,10 +1215,6 @@ paths:
                       type: string
                       description: "Serial number - only required if specified by the network"
                       example: "AB87392C12CA"
-                    action:
-                      type: boolean
-                      description: "Enable actions for this device"
-                      example: true
                     active:
                       type: boolean
                       description: "Device active status"
