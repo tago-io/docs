@@ -13,8 +13,7 @@
       "!cdk.out",
       "!.crush",
       "!.claude"
-    ],
-    "ignore": ["**/*.mdx"]
+    ]
   },
   "formatter": {
     "indentStyle": "space",
