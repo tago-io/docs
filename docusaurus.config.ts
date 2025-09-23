@@ -1,25 +1,11 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
-import { ApiPageMetadata, SchemaPageMetadata, SidebarOptions } from "docusaurus-plugin-openapi-docs/src/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const SITE_URL = process.env.SITE_URL || "https://docs.tago.io";
 const IS_BETA = SITE_URL.includes("docs.beta.tago.io");
-
-function createDocItem(item: ApiPageMetadata | SchemaPageMetadata, context: { sidebarOptions: SidebarOptions; basePath: string }) {
-  if (item.id === "api/tagoio-api") {
-    return null;
-  }
-
-  return {
-    type: "doc",
-    id: item.id,
-    label: item.title,
-    ...(context.sidebarOptions.customProps ?? {}),
-  } as const;
-}
 
 const config: Config = {
   title: "TagoIO Docs",
@@ -99,7 +85,7 @@ const config: Config = {
         config: {
           tagoio: {
             specPath: "specs/tagoio-api.yaml",
-            outputDir: "docs/api"
+            outputDir: "docs/api",
           },
         },
       },
@@ -122,11 +108,11 @@ const config: Config = {
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
       ? {
-        metadata: [
-          { name: "robots", content: "noindex, nofollow" },
-          { name: "googlebot", content: "noindex, nofollow" },
-        ],
-      }
+          metadata: [
+            { name: "robots", content: "noindex, nofollow" },
+            { name: "googlebot", content: "noindex, nofollow" },
+          ],
+        }
       : {}),
     algolia: {
       appId: "8HPN5WF45N",
@@ -160,11 +146,12 @@ const config: Config = {
         highlight: "rust",
         language: "rust",
         logoClass: "rust",
-      }, {
+      },
+      {
         highlight: "swift",
         language: "swift",
         logoClass: "swift",
-      }
+      },
     ],
     navbar: {
       title: "Docs",
@@ -197,7 +184,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "apiSidebar",
           position: "left",
-          label: "TagoIO API",
+          label: "API",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {

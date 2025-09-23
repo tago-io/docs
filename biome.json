@@ -12,7 +12,8 @@
       "!cdk",
       "!cdk.out",
       "!.crush",
-      "!.claude"
+      "!.claude",
+      "!.mdx"
     ]
   },
   "formatter": {

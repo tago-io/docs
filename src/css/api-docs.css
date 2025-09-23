@@ -177,21 +177,25 @@ body:has(.openapi__heading) .pagination-nav__link {
   margin-top: 0.75rem;
 }
 
-
 .api-sub-category > .menu__list-item-collapsible > .menu__link:hover {
   color: var(--ifm-color-primary);
 }
 
 /* Dark mode adjustments */
-[data-theme='dark'] .api-sub-category > .menu__list-item-collapsible > .menu__link {
+[data-theme="dark"]
+  .api-sub-category
+  > .menu__list-item-collapsible
+  > .menu__link {
   color: var(--ifm-color-emphasis-600);
   border-color: var(--ifm-color-gray-700);
 }
 
-[data-theme='dark'] .api-sub-category > .menu__list-item-collapsible > .menu__link:hover {
+[data-theme="dark"]
+  .api-sub-category
+  > .menu__list-item-collapsible
+  > .menu__link:hover {
   color: var(--ifm-color-primary-light);
 }
-
 
 /* ------------------------------------------------------------
    OpenAPI Explorer — Contrast & UX improvements
