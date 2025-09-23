@@ -53,7 +53,7 @@ To send data from your device to TagoCore:
 3. Send your data in the JSON format shown above
 
 For complete parameter details and examples, check the
-[API documentation](/docs/api/send-data.api).
+[API documentation](/docs/api/send-data).
 
 ## Retrieving Data
 

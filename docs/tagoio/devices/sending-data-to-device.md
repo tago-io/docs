@@ -22,10 +22,10 @@ for sending data from your application to a device.
 Devices can also retrieve data from TagoIO using different endpoints depending
 on the type of data needed:
 
-- [Configuration parameters](/docs/api/get-configuration-parameters.api) to read
+- [Configuration parameters](/docs/api/get-configuration-parameters) to read
   device settings (e.g., thresholds, behavior)
-- [Data endpoint](/docs/api/get-data.api) to read device data (e.g., sensor
-  values, locations, history)
+- [Data endpoint](/docs/api/get-data) to read device data (e.g., sensor values,
+  locations, history)
 
 **Best Practice**: Use configuration parameters for device settings; use the
 data endpoint for measurements.
