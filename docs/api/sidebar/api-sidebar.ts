@@ -9,7 +9,7 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/tagoio-api",
+          id: "api/sidebar/tagoio-api-intro",
           label: "Introduction",
         },
       ],

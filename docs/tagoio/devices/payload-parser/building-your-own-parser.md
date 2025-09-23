@@ -7,7 +7,7 @@ tags: ["tagoio"]
 In this tutorial, you will learn how to convert (parse) a raw payload sent by a
 device into measurable variables.
 
-![Data flow structure – sensor uplink → payload parser → data is stored](/docs_imagem/tagoio/building-your-own-parser-2.png)
+![Data flow structure – sensor uplink → payload parser → data is stored](/docs_imagem/tagoio/sensor_flow_rounded_border.webp)
 
 You can create parsers for devices that are not listed in the Devices registry
 (for example, when using a Custom device connector). You can also perform

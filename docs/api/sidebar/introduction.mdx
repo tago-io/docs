@@ -1,0 +1,113 @@
+---
+id: tagoio-api-intro
+title: "TagoIO API"
+description: "Overview of authentication types and regional API endpoints for TagoIO."
+sidebar_label: Introduction
+sidebar_position: 0
+hide_title: true
+custom_edit_url: null
+---
+
+import ApiLogo from "@theme/ApiLogo";
+import Heading from "@theme/Heading";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+import Export from "@theme/ApiExplorer/Export";
+
+<span
+  className={"theme-doc-version-badge badge badge--secondary"}
+  children={"Version: 2.0.0"}
+>
+</span>
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TagoIO API"}
+>
+</Heading>
+
+This page explains how to authenticate to the TagoIO API and which regional base URL to use. All HTTP requests must include exactly one valid token in the headers and must target the correct regional endpoint.
+
+#### Authentication
+
+TagoIO uses token-based authentication. Include one (and only one) of the supported tokens in your HTTP headers depending on the scope of your request.
+
+- **Device-Token**: Use for device-scoped operations, such as sending or reading a device’s data. See the Device Token guide in [Device-Token](docs/tagoio/devices/device-token.md).
+- **Profile-Token**: Use for profile-level management (create devices, dashboards, users, etc.). See [Profile-Token](docs/tagoio/profiles/account-token.md).
+- **Network-Token**: Use for custom Network Integrations when sending data via a Network. See [Creating a Network Integration](docs/tagoio/integrations/general/authorization.md).
+
+You should add the token to the request header using the token’s specific header key, or the generic Authorization header as documented in the API overview. For a broader discussion of token types and header usage, consult the API Overview.
+
+<div
+  style={{"marginBottom":"2rem"}}
+>
+  
+  Send exactly one of the headers below with every request.
+  <SchemaTabs
+    className={"openapi-tabs__security-schemes"}
+  >
+    <TabItem
+      label={"Device-Token"}
+      value={"Device-Token"}
+    >
+      Use for device data and device-scoped operations. Create it on the Device page.
+
+      ```bash
+      curl -H "Device-Token: <your-device-token>" \
+        https://api.us-e1.tago.io/status
+      ```
+    </TabItem><TabItem
+      label={"Profile-Token"}
+      value={"Profile-Token"}
+    >
+      Use for profile-wide admin and API calls across your resources. Generate it in Account settings.
+
+      ```bash
+      curl -H "Profile-Token: <your-profile-token>" \
+        https://api.us-e1.tago.io/status
+      ```
+    </TabItem><TabItem
+      label={"Network-Token"}
+      value={"Network-Token"}
+    >
+      Use for Network Integrations (your network posting messages). Create it at Integrations → Network → Tokens.
+
+      ```bash
+      curl -H "Token: <your-network-token>" \
+        https://api.us-e1.tago.io/status
+      ```
+    </TabItem>
+  </SchemaTabs>
+</div>
+
+:::info
+**Rate limits** apply to all API requests. Plan accordingly and handle pagination/limits. See [Rate Limits / Usage Policy](docs/tagoio/profiles/services/rate-limits-hard-limits.md).
+:::
+
+---
+
+
+### Setting the API Endpoint Region
+
+Choose the API base URL based on your TagoIO account's region. Replace `<region>` in the base URL with your region.
+
+- **United States East 1**: `https://api.us-e1.tago.io/`
+- **Europe West 1**: `https://api.eu-w1.tago.io/`
+
+Use the following pattern to construct your endpoint URLs based on the selected region:
+```
+https://api.<region>.tago.io/<path>
+```
+
+<br />
+
+Examples:
+
+- Create a device (Profile-Token):  
+  `POST https://api.us-e1.tago.io/device`
+
+- Read device data (Device-Token):  
+  `GET https://api.eu-w1.tago.io/data?variable=temperature&qty=100`
+
+<br />
