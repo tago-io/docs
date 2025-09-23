@@ -15,7 +15,7 @@ each data point to ensure it follows the correct format. This validation helps
 prevent errors and ensures your data is properly stored.
 
 All data points use the same JSON structure as the
-[TagoIO Cloud](/docs/api/send-data.api) platform:
+[TagoIO Cloud](/docs/api/send-data) platform:
 
 ```json
 {

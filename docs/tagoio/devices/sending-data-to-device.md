@@ -10,7 +10,7 @@ for sending data from your application to a device.
 ## Methods to send data
 
 - [Publish to MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt-publishing-and-subscribing.md)
-- [Send data over HTTP](/docs/api/send-data.api)
+- [Send data over HTTP](/docs/api/send-data)
 - [Run an Analysis script](/docs/tagoio/analysis/creating-analysis.md) that
   calls an external API
 - [Integrate through Network Services](/docs/tagoio/integrations/index.md)
