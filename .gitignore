@@ -31,7 +31,5 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.claude/settings.local.json
 updated_url_mappings.json
-.claude/settings.local.json
-.claude/settings.local.json
+.claude/
