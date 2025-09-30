@@ -78,7 +78,11 @@ class RedirectsStack extends cdk.Stack {
       "RedirectsDistribution",
       {
         certificate: redirectsCertificate,
-        domainNames: ["help.tago.io", "changelog.tago.io"],
+        domainNames: [
+          "help.tago.io",
+          "changelog.tago.io",
+          "api.docs.tago.io",
+        ],
         httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
         defaultBehavior: {
           origin: origins.S3BucketOrigin.withOriginAccessIdentity(helpBucket, {
@@ -100,7 +104,7 @@ class RedirectsStack extends cdk.Stack {
     new cdk.CfnOutput(this, "RedirectsCloudFrontURL", {
       value: `https://${helpDistribution.distributionDomainName}`,
       description:
-        "CloudFront Distribution URL for help.tago.io + changelog.tago.io",
+        "CloudFront Distribution URL for help.tago.io + changelog.tago.io + api.docs.tago.io",
     });
   }
 }

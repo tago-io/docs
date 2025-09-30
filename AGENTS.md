@@ -9,6 +9,7 @@ Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb t
 - Production domains
   - docs.tago.io – main documentation site (Docusaurus via CloudFront/S3)
   - changelog.tago.io – redirects to /changelog on docs.tago.io
+  - api.docs.tago.io – redirects to /docs/api/tagoio-api on docs.tago.io
 - Beta domain
   - docs.beta.tago.io – GitHub Pages environment for not‑ready docs
 - Indexing policy
@@ -54,11 +55,11 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
 ### AWS CDK Infrastructure
 - CDK Stacks (split to allow individual deployments):
   - cdk/docs-cdk.ts – Docs distribution for `docs.tago.io` (serves Docusaurus from S3; no edge function)
-  - cdk/redirects-cdk.ts – Redirects distribution for `help.tago.io` + `changelog.tago.io` (edge redirects only)
+  - cdk/redirects-cdk.ts – Redirects distribution for `help.tago.io` + `changelog.tago.io` + `api.docs.tago.io` (edge redirects only)
   - Automatic deployment of built Docusaurus site to S3 with cache invalidation (docs distribution)
 - Custom certificates (us-east-1) — provided via environment variables:
   - `DOCS_CERT_ARN`: ACM cert ARN for `docs.tago.io` (CN `docs.tago.io`).
-  - `REDIRECTS_CERT_ARN`: ACM cert ARN for `help.tago.io` (CN) with SAN `changelog.tago.io`.
+  - `REDIRECTS_CERT_ARN`: ACM cert ARN for `help.tago.io` (CN) with SAN `changelog.tago.io`, `api.docs.tago.io`.
   - Set these in GitHub Actions as secrets and export to env for the CDK step.
 - Redirect Function: cdk/redirect-function.js - CloudFront edge function (attached to the redirects distribution)
   - Maps 250+ legacy `help.tago.io/portal/en/kb/...` URLs to new documentation paths under docs.tago.io
@@ -68,6 +69,7 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
     - Any `/portal/en/kb*` not explicitly mapped → `https://docs.tago.io`
     - Any other help path → `https://support.tago.io{path}[?query]` (preserves path and query)
   - Handles `Host: changelog.tago.io` by redirecting to `https://docs.tago.io/changelog`
+  - Handles `Host: api.docs.tago.io` by redirecting to `https://docs.tago.io/docs/api/sidebar/tagoio-api-intro`
 - CDK Scripts (package.json):
   - `npm run cdk:build` - Compile CDK TypeScript
   - `npm run cdk:watch` - Watch mode for CDK development
