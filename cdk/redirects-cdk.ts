@@ -64,13 +64,12 @@ class RedirectsStack extends cdk.Stack {
       },
     );
 
-    const helpRedirectLambdaVersion = new lambda.Version(
-      this,
-      "HelpRedirectLambdaEdgeVersion",
-      {
-        lambda: helpRedirectLambda,
-        removalPolicy: cdk.RemovalPolicy.RETAIN,
-      },
+    const helpRedirectLambdaVersion = helpRedirectLambda.currentVersion;
+    const helpRedirectLambdaVersionResource =
+      helpRedirectLambdaVersion.node
+        .defaultChild as lambda.CfnVersion;
+    helpRedirectLambdaVersionResource.applyRemovalPolicy(
+      cdk.RemovalPolicy.RETAIN,
     );
 
     const helpDistribution = new cloudfront.Distribution(
