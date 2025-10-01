@@ -17,7 +17,7 @@ If you are entitled to a refund, complete these steps:
 
 You may be entitled to a refund in the following cases:
 
-1. You were charged for your next **monthly** plan within the last **14 days** and had no service usage during that period (no use of SMS, email, Data Input, or Data Output).
+1. You were charged for your next **monthly** plan within the last **14 days** and had no service usage during that period (no use of Analysis, email, Data Input, or Data Output).
 2. You were charged for your next **yearly plan** within the last **14 days** (applies only to yearly plans).
 
 :::info
