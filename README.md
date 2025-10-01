@@ -104,18 +104,19 @@ npm run cdk:deploy
 - Creates S3 bucket for static hosting (docs site)
 - Sets up two CloudFront distributions:
   - docs.tago.io (serves the site; no edge function)
-  - redirects distribution for help.tago.io + changelog.tago.io (edge redirects only)
+  - redirects distribution for help.tago.io + changelog.tago.io + api.docs.tago.io (edge redirects only)
 - Redirect rules (cdk/redirect-function.js):
   - help.tago.io/ → https://support.tago.io
   - help.tago.io/portal/en/community/topic/{topic} → https://community.tago.io/t/{topic}
   - help.tago.io/portal/en/kb/... → https://docs.tago.io{mappedPath} (or docs home if unmapped)
   - Any other help.tago.io path → https://support.tago.io{path}[?query]
   - changelog.tago.io → https://docs.tago.io/changelog
+  - api.docs.tago.io → https://docs.tago.io/docs/api/sidebar/tagoio-api-intro
 - Uses GitHub OIDC to assume an AWS IAM role (no long‑lived keys)
   - Role: set secret `AWS_ROLE_TO_ASSUME` (e.g., `arn:aws:iam::154399404768:role/github-actions-deploy-role`)
   - Certificates: configure GitHub repo/environment secrets and expose as env:
     - `DOCS_CERT_ARN` → ACM cert ARN for docs.tago.io (CN docs.tago.io)
-    - `REDIRECTS_CERT_ARN` → ACM cert ARN for help.tago.io (CN) with SAN changelog.tago.io
+    - `REDIRECTS_CERT_ARN` → ACM cert ARN for help.tago.io (CN) with SAN changelog.tago.io, api.docs.tago.io
 
 CDK Commands
 ```bash
