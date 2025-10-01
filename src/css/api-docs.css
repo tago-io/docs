@@ -250,6 +250,10 @@ body:has(.openapi__heading) .pagination-nav__link {
   overflow: hidden;
 }
 
+.openapi-explorer__code-block > code {
+  background: var(--prism-background-color);
+}
+
 /* Request form — sectionize details into soft cards */
 .openapi-explorer__request-form {
   background: var(--ifm-background-surface-color);

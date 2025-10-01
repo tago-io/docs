@@ -62,7 +62,7 @@
   --sidebar-border-c: #f3f3f3;
 
   --doc-sidebar-width: 300px;
-  --doc-item-container-width: 42rem;
+  --doc-item-container-width: 50rem;
   --sidebar-category-c: var(--c-carbon-100);
   --footer-border-c: var(--c-indigo-30);
 
@@ -476,6 +476,10 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 }
 .markdown > h3 {
   font-size: 1.5rem;
+}
+
+.markdown > table > td {
+
 }
 
 /* Code blocks */
