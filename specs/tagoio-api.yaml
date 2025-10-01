@@ -1001,7 +1001,7 @@ paths:
         - Devices
       summary: List of Devices
       description: |
-        Retrieves a list with all devices from the account
+        Retrieves a list with all devices from the profile
       operationId: listOfDevices
       parameters:
         - name: page
@@ -1591,7 +1591,7 @@ paths:
         - Devices
       summary: Delete Device
       description: |
-        Deletes a device from the account
+        Deletes a device from the profile
       operationId: deleteDevice
       responses:
         '200':
@@ -6133,7 +6133,7 @@ paths:
         - Dashboards
       summary: List Dashboards
       description: |
-        Retrieves a list with all dashboards from the account
+        Retrieves a list with all dashboards from the profile
       operationId: listDashboards
       parameters:
         - name: page
@@ -6482,7 +6482,7 @@ paths:
       description: |
         Make your dashboard accessible to anyone by generating a public access token.  
 
-        Public dashboards allow you to share live data and visualizations with users who do not have a TagoIO account. 
+        Public dashboards allow you to share live data and visualizations with users who do not have a TagoIO/TagoRUN account. 
         You control the expiration and can revoke access at any time.  
 
         [Learn more about sharing dashboards and public access](/docs/tagoio/dashboards/sharing-dashboards)
