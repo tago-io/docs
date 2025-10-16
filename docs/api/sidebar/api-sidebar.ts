@@ -148,7 +148,7 @@ const sidebar: SidebarsConfig = {
               label: "Convert Device Type",
               className: "api-method post",
             },
-          ]
+          ],
         },
         {
           type: "category",
@@ -286,7 +286,8 @@ const sidebar: SidebarsConfig = {
               id: "api/list-users",
               label: "List Users",
               className: "api-method get",
-            }, {
+            },
+            {
               type: "doc",
               id: "api/user-information",
               label: "User Information",
@@ -414,7 +415,8 @@ const sidebar: SidebarsConfig = {
               id: "api/list-dashboards",
               label: "List Dashboards",
               className: "api-method get",
-            }, {
+            },
+            {
               type: "doc",
               id: "api/get-information",
               label: "Dashboard Information",

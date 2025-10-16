@@ -1,4 +1,4 @@
-// Lambda@Edge function for redirecting help.tago.io and changelog.tago.io
+// Lambda@Edge function for redirecting help.tago.io, changelog.tago.io, and api.docs.tago.io
 // Handler for viewer-request events
 // Node.js 22 runtime
 
@@ -22,6 +22,11 @@ exports.handler = async (event) => {
   // 0) Any request to changelog.tago.io → docs.tago.io/changelog
   if (host === "changelog.tago.io") {
     return createRedirect("https://docs.tago.io/changelog");
+  }
+
+  // 0b) Any request to api.docs.tago.io → docs.tago.io/docs/api/sidebar/tagoio-api-intro
+  if (host === "api.docs.tago.io") {
+    return createRedirect("https://docs.tago.io/docs/api/sidebar/tagoio-api-intro");
   }
 
   // This function is attached to help.tago.io distribution.

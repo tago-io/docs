@@ -19,7 +19,7 @@ TagoCore is a **free**, **fast**, and **open-source** IoT platform designed for 
 - **Open Source**: Full access to source code and community-driven development
 - **Cloud Integration**: Plugin support to connect with any cloud provider or server of your choice
 
-<img className="big-image" src="/docs_imagem/tagocore/welcome/main-diagram-tagocore.png" height="500px" />
+<img className="big-image" src="/docs_imagem/tagocore/welcome/main-diagram-tagocore.png" height="400px" />
 
 ### Why Choose TagoCore?
 
