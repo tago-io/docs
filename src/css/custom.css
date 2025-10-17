@@ -478,7 +478,6 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   font-size: 1.5rem;
 }
 
-
 /* Code blocks */
 code {
   background: var(--ifm-code-background);
