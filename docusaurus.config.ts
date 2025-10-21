@@ -188,6 +188,11 @@ const config: Config = {
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {
+          href: "https://support.tago.io/tickets-view",
+          label: "Open a Ticket",
+          position: "right",
+        },
+        {
           href: "https://community.tago.io/",
           label: "Community",
           position: "right",
