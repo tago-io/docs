@@ -29,39 +29,20 @@ import Export from "@theme/ApiExplorer/Export";
 
 This page explains how to authenticate to the TagoDeploy API and which base URL to use. All HTTP requests must include a valid token in the headers.
 
+#### How to create a token
+
+To create a api token, you need to access the **Tokens** tab in the project **Settings**. Click on the **Create Token** button and follow the instructions to generate a new token.
+
 #### Authentication
 
 TagoDeploy uses token-based authentication. Include a valid token in your HTTP headers for your requests.
 
-- **Authorization**: Use Bearer token authentication for TagoDeploy API operations.
+You should add the token to the request header using the **"token"** header as documented in the API overview.
 
-You should add the token to the request header using the Authorization header as documented in the API overview.
-
-<div
-  style={{"marginBottom":"2rem"}}
->
-
-  Send the Authorization header with every request.
-  <SchemaTabs
-    className={"openapi-tabs__security-schemes"}
-  >
-    <TabItem
-      label={"Authorization"}
-      value={"Authorization"}
-    >
-      Use for TagoDeploy API operations. Generate your token through TagoDeploy authentication.
-
-      ```bash
-      curl -H "Authorization: Bearer <your-token>" \
-        https://api.tagodeploy.com/status
-      ```
-    </TabItem>
-  </SchemaTabs>
-</div>
-
-:::info
-**Rate limits** may apply to TagoDeploy API requests. Check the documentation for current limits and best practices.
-:::
+```bash
+    curl -H "token: <your-token>" \
+    https://deploy.tago.io/api/...
+```
 
 ---
 
@@ -70,21 +51,11 @@ You should add the token to the request header using the Authorization header as
 
 TagoDeploy API is available at:
 
-- **Base URL**: `https://api.tagodeploy.com/`
+- **Base URL**: `https://deploy.tago.io/api/`
 
 Use the following pattern to construct your endpoint URLs:
 ```
-https://api.tagodeploy.com/<path>
+https://deploy.tago.io/api/<path>
 ```
-
-<br />
-
-Examples:
-
-- Health check:
-  `GET https://api.tagodeploy.com/health`
-
-- List MQTT clients:
-  `GET https://api.tagodeploy.com/mqtt/clients`
 
 <br />
