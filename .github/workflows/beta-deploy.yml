@@ -1,9 +1,10 @@
 name: Deploy to GitHub Pages (beta)
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - beta
 
 jobs:
   deploy:
