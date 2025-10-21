@@ -87,6 +87,10 @@ const config: Config = {
             specPath: "specs/tagoio-api.yaml",
             outputDir: "docs/api",
           },
+          tdeploy: {
+            specPath: "specs/tdeploy-api.yaml",
+            outputDir: "docs/api-tdeploy",
+          },
         },
       },
     ],
@@ -185,6 +189,12 @@ const config: Config = {
           sidebarId: "apiSidebar",
           position: "left",
           label: "API",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiTdeploySidebar",
+          position: "left",
+          label: "TagoDeploy API",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {

@@ -1,0 +1,71 @@
+---
+id: list-project-services
+title: "List project services"
+description: "Retrieve all services for a specific project"
+sidebar_label: "List project services"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9v2zYQ/yoEX7YBsi07SZPoLV3SztiaZKmDAU2DgBbPNluJZEgqi2Houw9HSqpkO6nTbX0qEDiCdP9/d8c7rigHmxqhnVCSJvQKnBHwAIRlGbFgHkQKlsyUIYxYDamYiZRooz5B6mhEHZtbmtzQ9xUlvY2ohbQwwi1pcrOil4G0N1GfQdLk5ra8jahmhuXgwFhPI1kONKGV1DvBaUQFGqOZW9CIGrgvhAFOE2cKiNYsniygNogIDtKJmQBDI2rTBeSMJivqlhoVWGeEnNOIwiPLdYavDuLD2XB2eDhNZ0evUn54fLy/dxwPh7REOw1YraQFi0JGcYz/usr/ENYRNWsMqCNGI5oq6UA65GFaZyJlyDP4ZJFxtWkdM4Yt0XMHuW29V9Mq1tooDcaJYI7g2zzrWnctxX0Brah4IN0Cajt3icWIlhFlqRMP0NI4VSoDJjdU/rUAt4COEiIsqfhb6hDKMqpB/7ovl9sg3gXIiKYGmAN+x7aqmSmT4xfKmYOeEzlsc0p2PPqbWVJJ7Vgxikd7vXjYi4eTOE783we0oND8f7AgY9aRSvROZqRMppBlLzNEFlnGpjVku4Wm1tO2CuWUEX0AY0UogecBr1oKqRnaDg77cT/2HhXWqfwudJCvSfzVExMkfrYQ3i3Juz8nE/LaqM9gUI0F54Sc228v18+w3MVlr4YgcdugnD3epUpKSJHQokUPLCt2cLmWGMg7IYxjH8HAv6scT9UWI4t8ijFCScL5VxXt2EGOCrajmio5E/PC+KZImviGjsCLTkf4Fx3wMgh7qmugrrv83jkPclbMd5foqTsg3TvXmzYps1tK1tI8dScHuwnY4dpVaPttRzaTbA48JHkO1rI5kGB5Uw/f2vN1HfBnev5/149rbS/rx61crUJ19qiZ5MDXv2HeVRnbIimRaj8ebo4DJ4VbYKKFs540g8vLp4Ench6MUebrGXCGZDW0nYhcgVWFSYFI5chMFZL7Nqr4DskapHratsjzi8ndm4vr89OQqI6JbGtDXAsV5wIfWUa8U6TmjChrPl22nPfJ04LHW4MqG0ua8DyLA3pKr89Prie/XVyNP5yd0hrQvS2ApilYSzhI8QPG7w/jRvQ9eG8url6PT0/Pzhvk9jeR2xKhH/B9X/iegICvmRtAzMEtFKcJnYMPOK5+CR0wLQbVjmAHqy8rYjlorVr4WC+ThcloQhfOaZsMkL3PQWdq2XdsrvpCPXVahjEE5dAyaotJBoNMpSxbKOuSo/h4tCHhD/zcMLc24PeYTyFl1vbgL2OkFr/7aW8NF9JhIG7B/JlahI3OKbJUBaKFIeiTtyDBMAeEEefpp0vCfPHg0OZJK3k/WaLZHPq0nlCoZ6g37gUw7mekx15rSuodwHC0t3/AevwwZr19GPHe9GiP9w7S2H94dXh07M9OIWfKe1elx4TN1fiCnHoIyMnleNPTy7EfxnMcStDaLkuNff+j/ChPsoywL60dOAHJtRLS2brHE4azruAhDv2P6FmzclR7Q+gDLMyYVRQqre8LrZXBBOzmUZ08ZUQzkYK00OJ9N55sMCgNMmR/X5n5oGKyA6TFQGllXc5kS4q/Sthyj7A2+jUt7MVXNSHhHDy6gc6YkH4xRaNXVbXdYDbSZidH5UnnUsa2bnmwHJBltZoyC9cmK0t8fV+AwZufW1xRjAiL482KcmHxmdNkxjK7vka23fr5qjqtfyFPXu1s9aWuKInlVO1HlEZh9WrfLpW3ZVRnOtoWCPCw0a7FunFCYGk3bertGYKO2dit5rC7VQ8ofatZddEF1fiLTWcr6WoVekRZNvTh05McTREHaozObVmW/wB0Ec/O
+sidebar_class_name: "get api-method"
+info_path: docs/api-tdeploy/tagoio-deploy-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List project services"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/projects/{project_id}/services"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve all services for a specific project
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"project_id","in":"path","required":true,"description":"The project identifier","schema":{"type":"string","example":"507f1f77bcf86cd799439011"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"List of project services","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the service","example":"507f1f77bcf86cd799439012"},"active":{"type":"boolean","description":"Whether the service is active","example":true},"project":{"type":"string","description":"Project identifier","example":"507f1f77bcf86cd799439011"},"created_at":{"type":"string","format":"date-time","description":"When the service was created","example":"2023-01-01T00:00:00Z"},"updated_at":{"type":"string","format":"date-time","description":"When the service was last updated","example":"2023-01-01T00:00:00Z"},"cancelled_at":{"type":"string","format":"date-time","nullable":true,"description":"When the service was cancelled","example":null},"version":{"type":"string","description":"Service version","example":"1.0.0"},"custom_name":{"type":"string","description":"Custom name for the service","example":"My MQTT Broker"},"settings":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","description":"Setting key","example":"max_connections"},"value":{"type":"string","description":"Setting value","example":"1000"},"type":{"type":"string","description":"Setting type","example":"number"}},"title":"SettingItem"},"description":"Service configuration settings"},"product":{"type":"object","properties":{"id":{"type":"string","description":"Product identifier","example":"prod_mqtt"},"slug":{"type":"string","description":"Product slug","example":"mqtt-broker"},"name":{"type":"string","description":"Product name","example":"MQTT Broker"},"description":{"type":"string","description":"Product description","example":"Managed MQTT message broker service"},"active":{"type":"boolean","description":"Whether the product is active","example":true},"created_at":{"type":"string","format":"date-time","description":"When the product was created","example":"2023-01-01T00:00:00Z"}},"title":"ProductExpanded"}},"title":"ProjectServiceExpanded"}}}}},"401":{"description":"Authentication required","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Authentication required","code":"UNAUTHORIZED"}}}},"403":{"description":"Access denied","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Access denied","code":"FORBIDDEN"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Resource not found","code":"NOT_FOUND"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

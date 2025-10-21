@@ -1,5 +1,6 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 import apiSidebar from "./docs/api/sidebar/api-sidebar";
+import apiTdeploySidebar from "./docs/api-tdeploy/sidebar/api-sidebar";
 
 const sidebars: SidebarsConfig = {
   tagoioSidebar: [
@@ -21,6 +22,7 @@ const sidebars: SidebarsConfig = {
     },
   ],
   apiSidebar: apiSidebar,
+  apiTdeploySidebar: apiTdeploySidebar,
 };
 
 export default sidebars;
