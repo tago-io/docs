@@ -15,7 +15,7 @@ Running an Analysis externally with Deno provides several advantages:
 
 Deno is a secure runtime for JavaScript and TypeScript built on V8, Rust, and Tokio. It includes TypeScript support out of the box, a built‑in formatter and linter, and secure defaults. Learn more about [Deno](https://deno.land).
 
-Visit the Deno Installation Guide for platform‑specific instructions: https://deno.land/manual/getting_started/installation
+Visit the [Deno Installation Guide](https://deno.land/manual/getting_started/installation) for platform‑specific instructions.
 
 ## 2. Create your Analysis
 
@@ -84,6 +84,6 @@ You should see output indicating the Analysis is connected and waiting for trigg
 
 ## More Examples
 
-Check our Deno Analysis examples: https://github.com/tago-io/analysis-snippets/tree/main/snippets
+Check our [Deno Analysis examples](https://github.com/tago-io/analysis-snippets/tree/main/snippets).
 
 You now have everything needed to run external Analysis with Deno, leveraging TypeScript support, remote imports, and modern development tools to create powerful TagoIO applications.

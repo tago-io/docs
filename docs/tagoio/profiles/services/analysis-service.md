@@ -20,7 +20,7 @@ to run your Analyses. It is safer to add some extra time to account for time var
 
 Only scripts that are configured to run on TagoIO are counted. Scripts that run from "External" do not count.
 
-![Run this script from options (TagoIO / External)](/docs_imagem/tagoio/analysis-service-2.png)
+![Run this script from options (TagoIO / External)](/docs_imagem/tagoio/rounded-image-1761224026116.png)
 
 :::warning
 

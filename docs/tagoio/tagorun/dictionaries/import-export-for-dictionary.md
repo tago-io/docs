@@ -11,7 +11,7 @@ All data in a Dictionary can be exported into a CSV or JSON file. Exported files
 - Sending for translation to another language by keeping the keys and editing only the values
 - Keeping a backup to revert any changes to a known state
 
-![Dictionary Pairs menu showing Import/Export options and sample downloads](/docs_imagem/tagoio/import-export-for-dictionary-2.png)
+![Dictionary Pairs menu showing Import/Export options and sample downloads](/docs_imagem/tagoio/rounded-image-1761160129581.png)
 
 :::info 
 

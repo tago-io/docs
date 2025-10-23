@@ -20,7 +20,7 @@ Profiles are similar to having different sub-accounts under your main account. Y
 
 To switch profiles, click the current profile shown on the top left and select another one.
 
-<!-- Image placeholder removed for build -->
+![Switching Profiles](/docs_imagem/tagoio/rounded-image-1761227083363.png)
 
 
 ## Adding Profiles
@@ -55,6 +55,6 @@ You can request the profile transfer by navigating to [Profiles](https://admin.t
 
 :::info
 
-Profile transfer is available for Starter and Scale accounts. Check the pricing page for more information: https://tago.io/pricing/
+Profile transfer is available for Starter and Scale accounts. Check the [pricing page](https://tago.io/pricing/) for more information.
 
 :::
