@@ -9289,6 +9289,158 @@ paths:
         required: true
         schema:
           type: string
+  /integration/network/device:
+    post:
+      tags:
+        - Network Ingest
+      summary: Create Device using Network
+      description: Create either an immutable or a mutable device. Immutable devices require chunking parameters and are optimized for long-term, append-only storage. Mutable devices behave like classic devices and do not require chunk settings.
+      operationId: createDeviceUsingNetwork
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - title: "Immutable Device Creation"
+                  type: object
+                  required: ["name", "type", "connector", "chunk_period", "chunk_retention"]
+                  properties:
+                    name:
+                      type: string
+                      description: "Device name"
+                      example: "My first immutable device"
+                    type:
+                      type: string
+                      enum: ["immutable"]
+                      description: "Device type - must be 'immutable' for immutable devices"
+                      example: "immutable"
+                    connector:
+                      type: string
+                      description: "Connector ID for the device"
+                      example: "5f5a8f3351d4db99c40dece5"
+                    chunk_period:
+                      type: string
+                      enum: ["day", "week", "month", "quarter"]
+                      description: "Chunk period for data storage - one of day, week, month, quarter"
+                      example: "quarter"
+                    chunk_retention:
+                      type: number
+                      minimum: 0
+                      maximum: 36
+                      description: "Number of chunks to retain (0-36)"
+                      example: 36
+                    serie_number:
+                      type: string
+                      description: "Serial number - only required if specified by the network"
+                      example: "AB87392C17CA"
+                    tags:
+                      type: array
+                      description: "Device tags as key-value string pairs"
+                      items:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            description: "Tag key"
+                            example: "tagKey1"
+                          value:
+                            type: string
+                            description: "Tag value"
+                            example: "value1"
+                      example:
+                        - key: "tagKey1"
+                          value: "value1"
+                        - key: "tagKey2"
+                          value: "value2"
+                - title: "Mutable Device Creation"
+                  type: object
+                  required: ["name", "type", "connector"]
+                  properties:
+                    name:
+                      type: string
+                      description: "Device name"
+                      example: "My first device"
+                    type:
+                      type: string
+                      enum: ["mutable"]
+                      description: "Device type - must be 'mutable' for mutable devices"
+                      example: "mutable"
+                    connector:
+                      type: string
+                      description: "Connector ID for the device"
+                      example: "5f5a8f3351d4db99c40dece5"
+                    serie_number:
+                      type: string
+                      description: "Serial number - only required if specified by the network"
+                      example: "AB87392C12CA"
+                    active:
+                      type: boolean
+                      description: "Device active status"
+                      example: true
+                    tags:
+                      type: array
+                      description: "Device tags"
+                      items:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            example: "tagKey1"
+                          value:
+                            type: string
+                            example: "value1"
+                      example:
+                        - key: "tagKey1"
+                          value: "value1"
+                        - key: "tagKey2"
+                          value: "value2"
+                    visible:
+                      type: boolean
+                      description: "Device visibility status"
+                      example: true
+                      
+            examples:
+              Create Immutable Device:
+                value:
+                  name: "My first immutable device"
+                  type: "immutable"
+                  connector: "5f5a8f3351d4db99c40dece5"
+                  chunk_period: "quarter"
+                  chunk_retention: 36
+                  serie_number: "AB87392C17CA"
+              Create Mutable Device:
+                value:
+                  name: "My first device"
+                  type: "mutable"
+                  connector: "5f5a8f3351d4db99c40dece5"
+                  serie_number: "AB87392C12CA"
+          text/plain:
+            examples:
+              Create Immutable Device:
+                value: "{\r\n  \"name\": \"My first immutable device\",\r\n  \"type\": \"immutable\",\r\n  \"connector\": \"5f5a8f3351d4db99c40dece5\",\r\n  \"chunk_period\": \"quarter\", //define a chunk period by \"day\",\"week\", \"month\", \"quarter\"\r\n  \"chunk_retention\": 36, //acceptable range between 0-36\r\n  \"serie_number\": \"AB87392C17CA\" //only if required by network (optional)\r\n }"
+              Create Mutable Device:
+                value: "{\r\n  \"name\": \"My first device\",\r\n  \"type\": \"mutable\",\r\n  \"connector\": \"5f5a8f3351d4db99c40dece5\",\r\n  \"serie_number\": \"AB87392C12CA\" //only if required by network (optional)\r\n }"
+      responses:
+        '201':
+          description: >-
+            Mutable device created / Immutable device created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      deviceID:
+                        type: string
+                        example: 5dcad1c216174c001ca23ab9
+                      token:
+                        type: string
+                        example: 5a16405f-b32c-4c91-ae39-cbb2caba18d8
+                  status:
+                    type: boolean
+                    example: true
   /integration/network/data:
     post:
       tags:
