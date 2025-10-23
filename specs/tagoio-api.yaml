@@ -9294,7 +9294,18 @@ paths:
       tags:
         - Network Ingest
       summary: Create Device using Network
-      description: Create either an immutable or a mutable device. Immutable devices require chunking parameters and are optimized for long-term, append-only storage. Mutable devices behave like classic devices and do not require chunk settings.
+      description:  >-
+        Create either an immutable or a mutable device.
+         - Immutable devices require chunking parameters and are optimized for long-term, append-only storage.
+         - Mutable devices behave like classic devices and do not require chunk settings.
+
+        You must have a Network and a Network-Token to use this endpoint. 
+
+        :::warning  
+        
+        Your Network-Token must have the create device privilege as true.  
+        
+        :::        
       operationId: createDeviceUsingNetwork
       security:
         - Network-Token: []
