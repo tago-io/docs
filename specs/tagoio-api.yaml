@@ -9296,6 +9296,8 @@ paths:
       summary: Create Device using Network
       description: Create either an immutable or a mutable device. Immutable devices require chunking parameters and are optimized for long-term, append-only storage. Mutable devices behave like classic devices and do not require chunk settings.
       operationId: createDeviceUsingNetwork
+      security:
+        - Network-Token: []
       requestBody:
         content:
           application/json:
