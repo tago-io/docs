@@ -9454,6 +9454,68 @@ paths:
                   status:
                     type: boolean
                     example: true
+  /integration/network/token:
+    post:
+      tags:
+        - Network Ingest
+      summary: Create a Token for the Network
+      description: >-
+        Create a token for the network to use in network endpoints
+      operationId: createNetworkToken
+      security:
+        - Profile-Token: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: ["name", "network"]
+              properties:
+                network:
+                  type: string
+                  example: 667570627d2ad1000999dca2
+                name:
+                  type: string
+                  example: Token #1
+                privilege:
+                  type: object
+                  example: {
+                    createDevice: true
+                  }
+              example:
+                - network: 667570627d2ad1000999dca2
+                  name: Token #1
+                  privilege: {
+                    createDevice: true
+                  }
+            examples:
+              Create a Token with Create Device privilege:
+                value:
+                  - network: 667570627d2ad1000999dca2
+                    name: Token #1
+                    privilege: {
+                      createDevice: true
+                    }
+        '200':
+          description: Create a Token with Create Device privilege
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    example: {
+                      "name": "Token #5",
+                      "network": "667570627d2ad1000999dca2",
+                      "privilege": {
+                          "createDevice": true
+                      },
+                      "token": "e0e6ce49-7901-46a2-b5ee-3170cb2797d8"
+                    }
+                  status:
+                    type: boolean
+                    example: true
   /integration/network/data:
     post:
       tags:
@@ -9512,3 +9574,4 @@ paths:
                   status:
                     type: boolean
                     example: true
+  
