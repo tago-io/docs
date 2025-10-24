@@ -9479,9 +9479,10 @@ paths:
                   example: Token #1
                 previlegies:
                   type: object
-                  example: {
-                    createDevice: true
-                  }
+                  properties:
+                    createDevice:
+                      type: boolean
+                      example: true
               example:
                 - network: 667570627d2ad1000999dca2
                   name: Token #1
