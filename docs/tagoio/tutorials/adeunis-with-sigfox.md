@@ -9,7 +9,7 @@ backend. Incoming messages from Adeunis devices are parsed in real time so
 measured variables are extracted and made available to TagoIO for display in
 widgets and for processing.
 
-![Adeunis + Sigfox + TagoIO diagram](/docs_imagem/tagoio/adeunis-with-sigfox-2.png)
+![Adeunis + Sigfox + TagoIO diagram](/docs_imagem/tagoio/rounded-image-1761311243395.png)
 
 All data sent by your device will be readily available to be displayed in
 widgets and processed in your [Analysis](/docs/tagoio/analysis/).
@@ -26,11 +26,9 @@ Parser".
 To add an Adeunis device in TagoIO:
 
 1. Go to [Devices](https://tago.io/devices).
-2. Click on "Add Devices".
+2. Click on "+ New Device".
 3. Filter the list by network and select "Sigfox".
 4. Pick your specific Adeunis device from the list.
-
-![Select the device type screen in TagoIO](/docs_imagem/tagoio/adeunis-with-sigfox-2.png)
 
 ### Integrate your Adeunis with TagoIO
 

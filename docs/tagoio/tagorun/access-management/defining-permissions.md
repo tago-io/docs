@@ -8,7 +8,7 @@ You need to set up Permissions to define which types of resources your Targets w
 
 The resources available to grant permission depend on the Target you select, and the rules available depend on the resource selected. See [Defining Targets](/docs/tagoio/tagorun/access-management/defining-targets.md).
 
-![Permissions editor showing Targets and Permissions](/docs_imagem/tagoio/defining-permissions-2.png)
+![Permissions editor showing Targets and Permissions](/docs_imagem/tagoio/rounded-image-1761226750000.png)
 
 ## Adding resources and how rules are applied
 You can add as many resources as needed. An OR operation is applied between permissions: as you add more permissions, more resources will be included in the verification process.

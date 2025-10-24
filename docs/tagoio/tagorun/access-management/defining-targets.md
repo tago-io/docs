@@ -14,7 +14,7 @@ Targets are to whom or to what you are giving the permissions.
 
 Currently, you can select [Run Users](/docs/tagoio/profiles/services/end-users-service.md) and [Analysis](/docs/tagoio/analysis/) as Targets.
 
-![Targets configuration example](/docs_imagem/tagoio/defining-targets-2.png)
+![Targets configuration example](/docs_imagem/tagoio/rounded-image-1761226494988.png)
 
 ## How multiple Targets work
 You can add more Targets of the same type as needed. Multiple Targets are combined using a logical OR, so adding more targets makes the resulting options more inclusive. For example:

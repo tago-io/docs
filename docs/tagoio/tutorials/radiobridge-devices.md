@@ -5,23 +5,24 @@ tags: ["tagoio", "devices"]
 ---
 
 TagoIO is fully integrated with RadioBridge devices connected over Sigfox or
-LoRaWAN, providing seamless integration with the RadioBridge backend.
+LoRaWAN, providing seamless integration with the RadioBridge backend. Read more about [Radio Bridge](https://radiobridge.com/).
 
-![Diagram of devices, network, RadioBridge server, and TagoIO with uplink/downlink arrows](/docs_imagem/tagoio/radiobridge-devices-2.png)
-
-Read more about [Radio Bridge](https://radiobridge.com/).
+![Diagram of devices, network, RadioBridge server, and TagoIO with uplink/downlink arrows](/docs_imagem/tagoio/rounded-image-1761312825480.png)
 
 All data sent by your device will be readily available to display in widgets or
 to be processed by your Analysis.
 
+:::info
 You can perform both uplink and downlink operations.
+:::
 
 ## Step 1:
 
 First go to your TagoIO account, and if this is your first device connected
 between Radio Bridge and TagoIO, you will need to create an
-[Authorization](/docs/tagoio/integrations/general/authorization.md).\
-Copy the Authorization by clicking in the COPY button to use in the next step.
+[Authorization](/docs/tagoio/integrations/general/authorization.md).
+
+Copy the **Authorization** to use in the next step.
 
 ### Step 2:
 
@@ -33,8 +34,6 @@ TagoIO callback URL and set an Authorization Header of your choice.
 - **Callback URL:**
   [https://radiobridge.middleware.tago.io/uplink](https://radiobridge.middleware.tago.io/uplink)
 - **Header Authorization Code:** Enter the one you generated at Step 1.
-
-Copy the Unique API URL for the next step and press Update.
 
 ### Step 3:
 
@@ -54,9 +53,8 @@ Then follow the directions to integrate your device with TagoIO and start
 building your own application.\
 When completed, click on **Create Device**.
 
-Turn your Radio Bridge device on, and wait for the data to arrive in your
-bucket. Every time the device sends data it will be available in the bucket and
-shown in the dashboard: [bucket](/docs/tagoio/devices/).\
+Turn your Radio Bridge device on, and wait for the data to be stored on your
+device. Every time the [device](/docs/tagoio/devices/) sends data it will be stored in the device's data and be ready to be shown in the dashboard.\
 You can start editing the installed dashboard.
 
 Also, you can create
