@@ -421,8 +421,6 @@ exports.handler = async (event) => {
       "/docs/tagoio/getting-started/how-it-works",
     "/portal/en/kb/articles/7-beagle-bone-black":
       "/docs/tagoio/tutorials/beagle-bone-black",
-    "/portal/en/kb/articles/75-thinxtra-xkit-for-sigfox":
-      "/docs/tagoio/tutorials/thinxtra-xkit-for-sigfox",
     "/portal/en/kb/articles/8-raspberry-pi":
       "/docs/tagoio/tutorials/raspberry-pi",
     "/portal/en/kb/articles/83-connecting-zen15-power-using-smartthings-hub":

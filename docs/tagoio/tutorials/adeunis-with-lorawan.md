@@ -49,9 +49,9 @@ Each provider link points to the corresponding TagoIO tutorial for configuring
 Adeunis devices with that network.
 
 After you have completed the setup above, you will be ready to move forward.\
-Now, just turn your Adeunis device on and wait for the data to hit your **data
-bucket**. Every time the device sends data, the parser will be executed, the
-extracted data sent to the bucket, and it will be ready to be shown in the
+Now, just turn your Adeunis device on and wait for the data to be stored on your **device**.\
+Every time the device sends data, the parser will be executed, the
+extracted data will be stored in the device, and it will be ready to be shown in
 dashboards.
 
 You can start building your [dashboards](/docs/tagoio/dashboards/) immediately.\

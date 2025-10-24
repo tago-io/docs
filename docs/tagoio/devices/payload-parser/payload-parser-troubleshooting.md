@@ -3,9 +3,9 @@ title: "Payload Parser Troubleshooting"
 description: "This article explains common problems that stop the Payload Parser from decoding device data on TagoIO and provides straightforward fixes for each issue."
 tags: ["tagoio"]
 ---
-When using the Payload Parser on TagoIO, you may encounter common problems that stop the parser from decoding your device data correctly. When the parser stops, the data will not be saved on TagoIO. These problems are usually related to mistakes in how the payload parser code is written, but they can be fixed easily.
+When using the Payload Parser on TagoIO, you may encounter common problems that stop the parser from decoding your device data correctly. When the parser stops, the data will not be saved on TagoIO. These problems are usually related to mistakes in how the payload parser code is written, but they can be easily fixed.
 
-For updates on system status, visit the health status page at https://status.tago.io/.
+For updates on system status, visit the health [status page](https://status.tago.io/).
 
 ## Common Issues
 
