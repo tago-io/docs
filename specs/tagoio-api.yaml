@@ -9496,6 +9496,7 @@ paths:
                     privilege: {
                       createDevice: true
                     }
+      responses:
         '200':
           description: Create a Token with Create Device privilege
           content:
@@ -9505,14 +9506,22 @@ paths:
                 properties:
                   result:
                     type: object
-                    example: {
-                      "name": "Token #5",
-                      "network": "667570627d2ad1000999dca2",
-                      "privilege": {
-                          "createDevice": true
-                      },
-                      "token": "e0e6ce49-7901-46a2-b5ee-3170cb2797d8"
-                    }
+                    properties:
+                      name:
+                        type: string
+                        example: Token #1
+                      network:
+                        type: string
+                        example: 667570627d2ad1000999dca2
+                      privilege:
+                        type: object
+                        properties:
+                          createDevice:
+                            type: boolean
+                            example: true
+                      token: 
+                        type: string
+                        example: aaabbbcc-1111-2222-3333-4444aaaabbbb
                   status:
                     type: boolean
                     example: true
