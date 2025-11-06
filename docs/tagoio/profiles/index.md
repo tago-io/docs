@@ -22,16 +22,15 @@ To switch profiles, click the current profile shown on the top left and select a
 
 ![Switching Profiles](/docs_imagem/tagoio/rounded-image-1761227083363.png)
 
-
 ## Adding Profiles
 
-Go to your account, select **[Profiles & Teams](https://admin.tago.io/profile)** from the list, and click on **Add Profile**.
+Go to your account menu on the bottom left corner, hover over "Profiles & Billing" and select **[Profiles & Teams](https://admin.tago.io/profile)** from the list, and click on **Add Profile**.
 
 After that, you can edit the profile to change the name, logo, and upgrade services & add‑ons for it. Each profile starts with certain services included; you can increase the limits as you scale up the applications that run on that profile.
 
 ## Renaming Your Profiles
 
-Navigate to your **[Profiles & Teams](https://admin.tago.io/profile)** page and select the **Profile** tab. Click on the profile name, type a new one, and click **Save** to finalize your changes. It is possible to use the exact same name for multiple profiles.
+Navigate to your **[Profiles & Teams](https://admin.tago.io/profile)** page and select the **Profile** tab. Click on the profile name, type a new one. It is possible to use the same name for multiple profiles.
 
 ### Sharing Profiles with Teams
 
@@ -51,7 +50,7 @@ Add others to your profiles by adding their e‑mails in the team section. To in
 
 Once you request a transfer, our support team will assist you with the next steps. When you submit a profile transfer request, a support ticket is automatically created, and our team will contact you by email to confirm required information and prerequisites before proceeding with the transfer. The process is manual and may take a few hours to complete.
 
-You can request the profile transfer by navigating to [Profiles](https://admin.tago.io/profile) > More > and clicking on "Transfer this profile to another account", then typing the Account E-mail of the destination account in the field shown below:
+You can request the profile transfer by navigating to [Profiles](https://admin.tago.io/profile) > ... Profile Preferences > and clicking on "Transfer to another account", then typing the Account E-mail of the destination account in the field shown below:
 
 :::info
 

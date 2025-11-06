@@ -21,7 +21,7 @@ section at the end of this page.
 Please note that the notification is only sent to the account where it was
 created.
 
-![Push notification action configuration](/docs_imagem/tagoio/defining-actions-2.png)
+![Push notification action configuration](/docs_imagem/tagoio/rounded-image-1761748581641.png)
 
 ## Push Notifications to Run Users
 
@@ -34,7 +34,7 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 2](/docs_imagem/tagoio/1576606566858-r_Q.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1761748615221.png)
 
 ## Send Email
 
@@ -46,7 +46,7 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 3](/docs_imagem/tagoio/1576606418570-3DI.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1761748510973.png)
 
 **Attention:** starting **January 1st, 2025**, TagoIO will discontinue its email
 services. We recommend integrating with external providers to send emails using
@@ -67,6 +67,8 @@ Learn here how to create this secret:
 In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
+
+![Send Email using SMTP action configuration](/docs_imagem/tagoio/rounded-image-1761748797456.png)
 
 ## Send Email with SendGrid
 
@@ -89,6 +91,8 @@ access key id and secret access key.
 Learn how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
 
+![Send Message to AWS SQS action configuration](/docs_imagem/tagoio/rounded-image-1761749001761.png)
+
 ## Send SMS
 
 Sends SMS messages when certain conditions are met. You can specify one or
@@ -100,7 +104,7 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 7](/docs_imagem/tagoio/1576605304356-hps.png)
+![Image 7](/docs_imagem/tagoio/rounded-image-1761749278409.png)
 
 Some costs may occur when using the SMS service, which varies based on the
 country of operation. Check the [pricing](https://tago.io/pricing/),
@@ -123,7 +127,7 @@ beforehand for them to appear in the dropdown menu. Use a Secret of type
 **Text**. Learn how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
 
-![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
+![Image 9](/docs_imagem/tagoio/rounded-image-1761749322927.png)
 
 If you're using Twilio Long Code for messaging, be aware that it requires a
 Toll‑Free verification process. Please consult Twilio's documentation for
