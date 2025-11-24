@@ -9,9 +9,9 @@ You can create a copy of your analysis and send a link to anyone so they can add
 
 When other users access the link you sent, they will see a screen like the one shown below. The images and text on that install page are fully customizable.
 
-![Map pin example](/docs_imagem/tagoio/distributing-analysis-2.png)
+![Map pin example](/docs_imagem/tagoio/rounded-image-1761144346438.png)
 
-To distribute an analysis, first click in the analysis menu of your admin panel, then select the desired analysis.  
+To distribute an analysis, first click in the analysis menu of your admin panel, then select the desired analysis.
 Now head over to the distribute section of your analysis by clicking on the **Distribute** tab.
 
 The **Distribute** function relies on creating a customized install page for anyone to install a copy of your analysis. To tailor this page you can modify the title, logo and main image in the corresponding fields. At the bottom of the page there is also a section where you can set values for the copy’s environment variables; these default to the values defined in your own environment but can be changed without affecting your original settings.

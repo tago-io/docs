@@ -60,8 +60,7 @@ For example: if the hard limit of your plan is 5,000 , even if the soft limit is
 
 A significant feature provided by the Control Tower is the capability to access detailed statistics on Hard Limits through your Admin page. Upon activating the add-on, data regarding your requests will begin to be recorded and presented on the [Hard Limits > Requests page](https://admin.tago.io/limits/hard). This enables you to view the current, highest, lowest, and average usage of each hard limit. Furthermore, it allows for the display of advanced statistics, offering a historical view of your usage.
 
-
-![Control tower advanced statistics](/docs_imagem/tagoio/rpm_list_advanced_statistics.png)
+![Control tower advanced statistics](/docs_imagem/tagoio/rounded-image-1761140461575.png)
 
 In the advanced statistics view, you have the option to filter your usage by date and time, as well as to view only the highest, average, and lowest usage. This is beneficial for understanding how your application is performing and determining if any actions are necessary to mitigate the usage of your hard limits.
 

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the `context.environment` global object.
 
-<!-- Image placeholder removed for build -->
+![Environment Variables](/docs_imagem/tagoio/rounded-image-1761143952960.png)
 
 ## How to use Environment Variables
 
