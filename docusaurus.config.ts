@@ -185,10 +185,19 @@ const config: Config = {
           label: "TagoCore",
         },
         {
-          type: "docSidebar",
-          sidebarId: "apiSidebar",
-          position: "left",
           label: "API",
+          position: "left",
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "apiSidebar",
+              label: "TagoIO API",
+            },
+            {
+              to: "/tagodeploy/project/api",
+              label: "TagoDeploy API",
+            },
+          ],
         },
         {
           type: "docSidebar",
