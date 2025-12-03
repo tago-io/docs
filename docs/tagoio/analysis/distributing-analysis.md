@@ -3,16 +3,17 @@ title: "Distributing Analysis"
 description: "This article explains how to distribute a copy of an Analysis in TagoIO by sending a customized install link so others can add and edit their own copy without affecting yours."
 tags: ["tagoio", "analysis"]
 ---
-You can create a copy of your analysis and send a link to anyone so they can add a copy to their account through a customized install page. Recipients can edit the analysis as they wish.
+You can distribute your Analysis by generating a shareable link that lets others install their own copy through a customized install page. Each recipient gets a completely independent copy in their TagoIO account, which they can freely edit without impacting your original Analysis.
 
 > Others will be able to edit the analysis that they received without impacting yours.
 
-When other users access the link you sent, they will see a screen like the one shown below. The images and text on that install page are fully customizable.
+When other users access the link you sent, they will see a screen similar to the one shown below. The images and text on that install page are fully customizable.
 
-![Map pin example](/docs_imagem/tagoio/rounded-image-1761144346438.png)
 
 To distribute an analysis, first click in the analysis menu of your admin panel, then select the desired analysis.
 Now head over to the distribute section of your analysis by clicking on the **Distribute** tab.
+
+![Map pin example](/docs_imagem/tagoio/rounded-image-1761144346438.png)
 
 The **Distribute** function relies on creating a customized install page for anyone to install a copy of your analysis. To tailor this page you can modify the title, logo and main image in the corresponding fields. At the bottom of the page there is also a section where you can set values for the copy’s environment variables; these default to the values defined in your own environment but can be changed without affecting your original settings.
 

@@ -32,7 +32,7 @@ devices, follow these steps:
 1. Go to the Device section of your TagoIO account and click the
    "[Authorization](https://admin.tago.io/devices/authorization)" button.
    
-   ![Devices list with Authorization button highlighted](/docs_imagem/tagoio/rounded-image-1762433135370.png)
+   ![Devices list with Authorization button highlighted](/docs_imagem/tagoio/rounded-image-1764611068050.png)
 
 2. In the next screen, enter a name you can identify later, fill any additional
    parameters requested by the integration, and press the Generate button.

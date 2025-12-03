@@ -31,7 +31,7 @@ The import and export functionality is available for users in the Scale plan.
 ## Behavior when adding new keys
 - When you add new keys to a language via import, the Dictionary will also add those keys with empty values to all other languages in the Dictionary.
 
-## Samples
+## CSV & JSON Samples
 TagoIO provides sample CSV and JSON files accessible from the Import and Export buttons for convenience and reference. In the Dictionary UI the menu includes options such as:
 - Import CSV
 - Import JSON

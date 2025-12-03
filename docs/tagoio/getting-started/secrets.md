@@ -5,13 +5,13 @@ tags: ["tagoio"]
 ---
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 
-Unlike regular [Environment Variables](/docs/tagoio/analysis/environment-variables.md), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your [Analysis documentation](/docs/tagoio/analysis/) code and use them in some [Actions documentation](/docs/tagoio/actions/).
+Unlike regular [Environment Variables](/docs/tagoio/analysis/environment-variables.md), secrets are encrypted so their contents remain hidden after encryption. This security feature is essential for protecting sensitive data within TagoIO. Secrets are especially useful when scripts or services need access to confidential information without exposing it to users or developers. You can retrieve secrets from the Analysis context in your [Analysis](/docs/tagoio/analysis/) code and use them in some [Actions](/docs/tagoio/actions/).
 
-To start using secrets, open your [Admin](https://admin.tago.io/) panel , navigate to the Account menu, hover over "configuration & Integeration", and select "Secrets".
+To start using secrets, open your [Admin](https://admin.tago.io/) panel, and click on the "Secrets" button in the sidebar menu. Don't forget that you must [grant access to the Secrets to the Analysis](/docs/tagoio/getting-started/secrets#granting-your-analysis-access-to-secrets) you want to use them in.
 
 ## Creating a Secret
 
-To create a secret, open the "Secrets" page in the Admin panel and click on "+ New Secret". For every secret you create, you must define:
+To create a secret, open the "Secrets" page in the Admin panel and click on "+ New Secret". For every secret you create, you can define:
 
 - **Key** — the name used to reference the secret.
   *Keys cannot be edited once the secret is created, so choose your keys carefully.*

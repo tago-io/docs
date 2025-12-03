@@ -4,8 +4,8 @@ description: "This article explains how to define Targets within a policy in the
 tags: ["tagoio"]
 sidebar_position: 3
 ---
-You should define **Targets** in each policy that are used inside the [Access Management](https://admin.tago.io/am) module. Targets can be users or things (for example, [scripts](/docs/tagoio/analysis/)).
 
+You can define multiple **Targets** in each policy that are used inside the [Access Management](https://admin.tago.io/am) module.
 :::tip
 
 Targets are to whom or to what you are giving the permissions.
@@ -22,9 +22,9 @@ You can add more Targets of the same type as needed. Multiple Targets are combin
 
 ## Target Matching Options
 
-Target matching can be performed in several ways:
+Selecting a Target can be performed in several ways:
 
-1. **ID** – select a target from the list.
+1. **ID** – select a specific target from the list.
 
 2. **Tag** – match using tags from your target. Learn more about the [Tags System](/docs/tagoio/getting-started/tags-system.md).
 
@@ -34,12 +34,12 @@ Target matching can be performed in several ways:
 
 3. **Tag Match** – the match is automatically by searching for those Tag Keys of the selected target.
    - Run User: tag keys presented in your users will be listed.
-   - Analysis: only tag keys presented in your [Analysis](/docs/tagoio/analysis/) will be listed.
+   - Analysis: tag keys presented in your [Analysis](/docs/tagoio/analysis/) will be listed.
 
-   :::tip
+:::tip
 
-   The Tag Match option reduces the number of policies as you can create a single Policy that would grant access to all users or analysis that match the same tag keys.
+The **Tag Match** option reduces the number of policies you need to create, as you can create a single Policy that would grant access to all users or analysis that match the same tag keys.
 
-   :::
+:::
 
 4. **ANY** – all will be automatically included.

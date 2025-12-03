@@ -29,7 +29,7 @@ The system aggregates all requests performed inside a Profile for each route. Th
 
 :::tip
 
-Check our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
+Check out the [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
 :::
 

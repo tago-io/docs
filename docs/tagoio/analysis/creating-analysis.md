@@ -35,17 +35,14 @@ When changing between External mode and TagoIO mode, the Analysis Token will be 
 :::
 
 ## Code example
-You can optionally start your analysis from a code example template. The Add Analysis dialog includes a dropdown to choose a code example. If you don't want a template, you can ignore this field.
+You can optionally start your Analysis from a code example template. The Add Analysis dialog includes a dropdown to choose a code example. If you don't want a template, you can ignore this field.
 
 :::tip
 
-It is highly recommended for beginners to use a real‑world example, as it provides insight into the functions and scopes of the script.
+It is highly recommended for beginners to use an Analysis template, as it provides insight into the functions and scopes of the script.
 You can only select one of these code examples if you are running your script on TagoIO.
 
 :::
 
 ## Other fields
-The New Analysis dialog also shows:
-- Buttons to **“Cancel”** or **“Create Analysis”** once you have configured the fields.
-
 After creating the analysis you can open the [Script Editor](/docs/tagoio/analysis/script-editor.md) to add and manage the analysis code, adjust environment variables, and configure distribution or external execution as needed.

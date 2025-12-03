@@ -9,8 +9,8 @@ Mapping summary:
 
 | Signup field     | Tag created for the User |
 |------------------|--------------------------|
-| Field name       | ---> Tag key             |
-| Input from user  | ---> Tag value           |
+| Field name       | Tag key             |
+| Input from user  | Tag value           |
 
 ## Customization
 

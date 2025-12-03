@@ -29,7 +29,7 @@ An auto‑complete feature is available to find Slugs and Keys as shown below.
 ## How to use dictionary keys
 
 ### 1) Create a Dictionary
-First, create the Dictionary by clicking on the your account on the bottom-left menu in your Admin, then hover over Configuration & Integrations and select Dictionaries. 
+First, create the Dictionary by clicking on the Dictonaries button in the sidebar menu in your Admin. 
 You will be asked to select a language that will be the first one made available; you may edit or add more languages later. You will also need to create a Slug for the dictionary which can also be edited later.
 
 Populate the dictionary with Key & Value pairs for substitution, then save it. Example for English:
