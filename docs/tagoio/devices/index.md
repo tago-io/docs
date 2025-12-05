@@ -4,7 +4,7 @@ description: "This article explains what a Device is in TagoIO, how devices comm
 tags: ["tagoio", "devices"]
 ---
 
-Device's are the link between your external things and the data in your account. To
+Devices are the link between your external things and the data in your account. To
 allow anything to send or receive data from TagoIO, you need to create a device.
 The communication between external devices and TagoIO is done via HTTP or MQTT
 using [JSON format](/docs/tagoio/devices/sending-data.md). To enable this communication, a device must be created within

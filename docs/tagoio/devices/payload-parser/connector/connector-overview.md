@@ -22,7 +22,7 @@ data.
 
 To create a new connector, go to the
 [Integrations](https://admin.tago.io/integrations/connector) page and
-press the '+ Add connector' on the right side of the page:'
+press the '+ Add connector' on the right side of the page.
 
 You must specify the connector's name and the network(s) it belongs to. You can
 add as many networks as you like, but at least one network must be selected.

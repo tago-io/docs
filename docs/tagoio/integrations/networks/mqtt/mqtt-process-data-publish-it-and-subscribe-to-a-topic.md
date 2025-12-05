@@ -62,7 +62,7 @@ async function mqttPushExample(context, scope) {
   }
 
   const myData =
-    scope.find((x) => x.variable === "payload") || scope[0];pn
+    scope.find((x) => x.variable === "payload") || scope[0];
   if (!myData) {
     return context.log(
       "Couldn't find any variable in the scope."
