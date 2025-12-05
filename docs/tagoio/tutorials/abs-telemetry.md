@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Devices from ABS Telemetry can be easily integrated with TagoIO. The integration allows uplink communication between the device and TagoIO while parsing messages to extract commands and variables in real time.
 
-![ABS Telemetry device integration diagram (device → cellular network → TagoIO)](/docs_imagem/tagoio/abs-telemetry-2.png)
+![ABS Telemetry device integration diagram (device → cellular network → TagoIO)](/docs_imagem/tagoio/rounded-image-1761311582465.png)
 
 You will need to set up your device using the ABS portal and your TagoIO account.
 
@@ -38,12 +38,12 @@ Learn more information about the [ABS devices configuration](http://www.abstelem
 
 Add a **[device](https://tago.io/devices)** in your account at TagoIO. Go to *Devices* and click on **'Add Devices'**, filter network by **'Cellular'** and pick your device from the list.
 
-![Image 2](/docs_imagem/tagoio/Screen-20Shot-202019-10-28-20at-2016.41.44-bjQ.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1761311651518.png)
 
 > Currently, the following device is integrated with TagoIO: **ABS CEL IO**
 
 Click on **'Create Device'**, and you will have confirmation that the device was created.
 
-Turn your device on, and wait for the data to arrive and hit your data **[bucket](/docs/tagoio/devices/)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](/docs/tagoio/dashboards/)** by adding gauges, tables and more.
+Turn your device on, and wait for the data to arrive and be stored in your **[device](/docs/tagoio/devices/)**; it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](/docs/tagoio/dashboards/)** by adding graphs, tables and more.
 
 Enjoy your ABS devices with TagoIO!

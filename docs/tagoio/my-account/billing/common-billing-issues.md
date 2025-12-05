@@ -7,7 +7,7 @@ tags: ["tagoio"]
 
 Declines can occur for many reasons determined by the cardholder’s bank. Each bank uses a system that considers various signals, such as the cardholder’s spending habits, account balance, and card information like the expiration date and CVV/CVC security number.
 
-Since these signals change over time, a card that was previously successful may be declined for a future charge.
+Since these signals change over time, a card that was previously successful may be declined for future charges.
 
 :::info
 
@@ -17,7 +17,7 @@ Even if all card information is correct and the cardholder previously had a succ
 
 ## Finding out more information about a specific decline
 
-TagoIO displays all information we receive from the cardholder’s bank and the payment processor about a decline in the error message. Because of this, we do not have additional details beyond the error information provided to us.
+TagoIO displays all information we receive from the cardholder's bank and the payment processor about a decline in the error message. Because of this, we do not have additional details beyond what is provided to us.
 
 :::info
 
@@ -43,5 +43,5 @@ The cardholder’s bank is the entity declining the charge and sending the error
 “Your card has insufficient funds.”
 
 - The cardholder's bank is saying that they don't have enough funds in their account to cover the costs of the purchase.
-- Sometimes cardholders banks don't properly assess the risk of currency conversion of purchases. If they see that the purchase is in a different currency the bank will decline the charge as insufficient funds so the currency conversion or the currency conversion fee doesn't overdraw the account.
+- Sometimes cardholder's banks don't properly assess the risk of currency conversion for purchases. If they see that the purchase is in a different currency, the bank will decline the charge as insufficient funds so that the currency conversion or the currency conversion fee doesn't overdraw the account.
 - If a cardholder sees this error message, they should contact their bank.

@@ -7,7 +7,7 @@ The Chunk Management feature lets you view and manage the data of Immutable devi
 
 ## Accessing Chunk Management
 
-Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](/docs/tagoio/devices/) and [Device](/docs/tagoio/devices/) for details on device types and the Device module.
+Access the Device module and select a Device Data Optimized (Immutable) device type from your list. In the device view, you will find the Chunk Management section, which displays a graph of your data chunks according to the period you chose when creating the device. See [Immutable devices](/docs/tagoio/devices/) and [Device](/docs/tagoio/devices/) for details on device types and the Device module.
 
 <!-- Image placeholder removed for build -->
 

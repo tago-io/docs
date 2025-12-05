@@ -24,7 +24,7 @@ You can easily monitor the amount of resources available in your account that ca
 
 On the left side, the 'Account Service Allocation' column shows the total service amounts available for distribution across your account. These are the limits you've set for your entire account, which can be increased by clicking the 'Upgrade account limits' button or through the [Billing](https://admin.tago.io/account/billing) page in the 'Services' tab.
 
-On the right, 'Profile Usage Allocation' show how much of each service has been used by each profile, highlighting which profiles are close to or have reached their limits. Clicking on a resource opens a new window for customizing its allocation.
+On the right, 'Profile Usage Allocation' shows how much of each service has been used by each profile, highlighting which profiles are close to or have reached their limits. Clicking on a resource opens a new window for customizing its allocation.
 
 ![Resource allocation graph](/docs_imagem/tagoio/resource_allocation_profile.png)
 
