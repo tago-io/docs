@@ -13,7 +13,7 @@ easier to scale your applications.
 
 :::info
 
-Authorization is different from
+A Authorization token is different than a
 [device-token](/docs/tagoio/devices/device-token.md).
 
 > When to use each:

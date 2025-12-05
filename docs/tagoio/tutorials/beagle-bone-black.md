@@ -13,7 +13,7 @@ The circuit is straightforward: a single digital input is connected to a normall
 ### Adding the Device
 1. Log in to your TagoIO account and navigate to the **[Devices](https://tago.io/devices)** section.  
 2. Click the blue **Add Device** button, give it the name `dev01`, and click **Save**.  
-3. All devices must use a valid token when accessing Tago. The token is automatically generated upon creation. Open the device’s **General information** page, click **QR Code** or **Tokens**, and copy the token to insert into your BBB code later.
+3. All devices must use a valid token when accessing TagoIO. The token is automatically generated upon creation. Open the device's **General information** page, click **QR Code** or **Tokens**, and copy the token to insert into your BBB code later.
 
 ### Building the Dashboard
 1. In the left sidebar, open **Dashboards** and click the plus icon (`+`).  
@@ -92,7 +92,7 @@ while True:
 ```
 
 #### Tips for your code
-1. Import the Tago library: `from tago import Tago`.  
+1. Import the TagoIO library: `from tago import Tago`.  
 2. Replace `MY_DEVICE_TOKEN` with the token created for your device.  
 3. Prepare a JSON payload, e.g., `data_to_insert = {'variable': 'switch', 'value': 'closed'}`.  
 4. Send data: `result = my_device.insert(data_to_insert)`.  

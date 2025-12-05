@@ -23,7 +23,7 @@ By clicking on the Analysis, you can open the editor. Here are some of the optio
 
 When you save the script, it will be deployed on TagoIO servers. You can then click **Run** to execute it immediately and view the results in the console below.
 
-To learn more about our examples, you can visit our [Script Examples](/docs/tagoio/analysis/script-examples.md) article, or access the [Analysis](https://admin.tago.io/analysis) click on the "+ Add Analysis" button in, the top right corner and select a code example.
+To learn more about our examples, you can visit our [Script Examples](/docs/tagoio/analysis/script-examples.md) article, or access the [Analysis](https://admin.tago.io/analysis), click on the "+ Add Analysis" button in the top right corner, and select a code example.
 
 ## TagoAI Assistant
 

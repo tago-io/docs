@@ -13,7 +13,7 @@ Data Analytics is currently available for the widgets listed below, with support
 - [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md)
 - [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md)
 - [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md)
-- [Icon](/docs/tagoio/widgets/displays/icons-widget.md)md)
+- [Icon](/docs/tagoio/widgets/displays/icons-widget.md)
 
 ## Available Functions
 

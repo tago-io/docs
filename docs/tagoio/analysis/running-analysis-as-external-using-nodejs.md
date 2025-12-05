@@ -27,7 +27,7 @@ In order to start writing your code, you first must set up the environment with 
 
 **2.2** If the folder is empty, run `npm init` and fill in all prompted requests. If this is your first time, you can leave all defaults by just pressing enter.
 
-**2.3** Now install the Tago SDK and the TagoIO‑Builder SDK:
+**2.3** Now install the TagoIO SDK and the TagoIO‑Builder SDK:
 
 ```bash
 npm install --save @tago-io/sdk
@@ -97,4 +97,4 @@ You can check our analysis examples with the full environment already set up for
 * [Average Min/Max Example](https://github.com/tago-io/analysis-example-avgMinMax)
 * [Find Example](https://github.com/tago-io/analysis-example-find)
 
-Now you have everything you need to know about running analysis in your machine and can start to creating full applications and powerful analysis using TagoIO
+Now you have everything you need to know about running analysis on your machine and can start creating full applications and powerful analysis using TagoIO.

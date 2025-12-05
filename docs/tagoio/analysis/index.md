@@ -80,7 +80,7 @@ Here’s the short path to get an Analysis running:
    In your Admin, go to the [Analysis module](https://admin.tago.io/analysis), create an analysis and choose a runtime: Deno, Node.js, or Python based on your stack and dependency needs.
 
 2. **Grant the needed permissions to your analysis.**
-   When you create an analysis, it doesn’t have the needed permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](/docs/tagoio/tagorun/access-management/creating-a-policy.md).
+   When you create an analysis, it does not have the necessary permissions to access data or run services. For that reason, you need to generate a policy that gives access only to operations and data within scopes your Analysis needs (e.g., users, devices, entities). Read more about [Creating a Policy](/docs/tagoio/tagorun/access-management/creating-a-policy.md).
 
 3. **Code your script**
    Use the [SDK](/docs/tagoio/analysis/sdk/) for your runtime to read/write data, call external APIs, and log output. Keep functions idempotent when possible.

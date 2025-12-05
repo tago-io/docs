@@ -33,7 +33,7 @@ There are four types of notifications:
 ## Viewing notifications
 
 When you log in to your account, you can see all your notifications in the
-bottom-left corner of the admin page with a blinking light red dot indicating unread notifications.
+bottom-left corner of the admin page with a blinking blue dot indicating unread notifications.
 
 ![Notifications UI showing unread count](/docs_imagem/tagoio/rounded-image-1764011430847.png)
 
@@ -54,7 +54,7 @@ request before the shared item is available to you.
 > The user who sent the request can track the status of the request by checking
 > the “Share” tab of each item (Dashboard/Profile).
 
-After you accept or decline a notification, the system remove the dark blue unread icon.
+After you accept or decline a notification, the system removes the dark blue unread icon.
 TagoIO automatically removes all ignored notifications that are older than two weeks.
 
 ### Notifications from Applications

@@ -22,7 +22,7 @@ When the value is greater than 1,000 registers it may be shown with a letter suf
 
 The last input information refers to the last time the device received communication; it does not necessarily mean that the data sent was actually stored as data. This information is useful to verify the last time your sensor received an attempt of data input.
 
-If you desire to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
+If you want to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
 
 ![Image 5](/docs_imagem/tagoio/external-474cf6ac.png)
 
@@ -134,6 +134,6 @@ When exporting a chunk to a location where a file already exists, all the data w
 
 ## Emptying your Device Data
 
-While it's feasible to remove variables one by one, there's a more efficient method to wipe all data simultaneously.
+While it's possible to remove variables one by one, there's a more efficient method to wipe all data simultaneously.
 
 Navigate to the [Device](https://admin.tago.io/devices) module and choose the device you wish to clear. Then, click the **More** button located in the top right corner, then select **Empty Device Data** under the **Data** tab.

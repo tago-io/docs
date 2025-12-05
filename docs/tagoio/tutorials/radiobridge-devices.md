@@ -18,7 +18,7 @@ You can perform both uplink and downlink operations.
 
 ## Step 1:
 
-First go to your TagoIO account, and if this is your first device connected
+First, go to your TagoIO account, and if this is your first device connected
 between Radio Bridge and TagoIO, you will need to create an
 [Authorization](/docs/tagoio/integrations/general/authorization.md).
 
@@ -54,7 +54,7 @@ building your own application.\
 When completed, click on **Create Device**.
 
 Turn your Radio Bridge device on, and wait for the data to be stored on your
-device. Every time the [device](/docs/tagoio/devices/) sends data it will be stored in the device's data and be ready to be shown in the dashboard.\
+device. Every time the [device](/docs/tagoio/devices/) sends data, it will be stored in the device's data and be ready to be shown in the dashboard.\
 You can start editing the installed dashboard.
 
 Also, you can create

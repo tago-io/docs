@@ -44,6 +44,6 @@ Add a **[device](https://tago.io/devices)** in your account at TagoIO. Go to *De
 
 Click on **'Create Device'**, and you will have confirmation that the device was created.
 
-Turn your device on, and wait for the data to arrive and be stored in your **[device](/docs/tagoio/devices/)**, and it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](/docs/tagoio/dashboards/)** by adding graphs, tables and more.
+Turn your device on, and wait for the data to arrive and be stored in your **[device](/docs/tagoio/devices/)**; it will be ready to be shown in the dashboards. You can start to build your **[Dashboard](/docs/tagoio/dashboards/)** by adding graphs, tables and more.
 
 Enjoy your ABS devices with TagoIO!

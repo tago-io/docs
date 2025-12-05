@@ -10,8 +10,8 @@ You can distribute your Analysis by generating a shareable link that lets others
 When other users access the link you sent, they will see a screen similar to the one shown below. The images and text on that install page are fully customizable.
 
 
-To distribute an analysis, first click in the analysis menu of your admin panel, then select the desired analysis.
-Now head over to the distribute section of your analysis by clicking on the **Distribute** tab.
+To distribute an analysis, first click on the analysis menu of your admin panel, then select the desired analysis.
+Now navigate to the distribute section of your analysis by clicking on the **Distribute** tab.
 
 ![Map pin example](/docs_imagem/tagoio/rounded-image-1761144346438.png)
 

@@ -87,7 +87,7 @@ You can customize the devices shown by the list through tags. Configuring tags w
 
 
 ## 7. Dropdown
-It displays a dropdown menu with options that you define. The value of the field will be the selected options, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
+It displays a dropdown menu with options that you define. The value of the field will be the selected option, and these options can be defined as static or dynamic with the dropdown being populated with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
 
 <div align="center">
 ![Dropdown example](/docs_imagem/tagoio/field-types-for-input-form-8.gif)
@@ -95,7 +95,7 @@ It displays a dropdown menu with options that you define. The value of the field
 
 
 ## 8. Dropdown Multiple
-It displays a dropdown menu with options that you define. The value of the field will be the multiple options selected, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable.
+It displays a dropdown menu with options that you define. The value of the field will be the multiple options selected, and these options can be defined as static or dynamic with the dropdown being populated with data coming from a variable.
 
 <div align="center">
 ![Dropdown multiple example](/docs_imagem/tagoio/field-types-for-input-form-9.gif)

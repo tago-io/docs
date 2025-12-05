@@ -17,7 +17,7 @@ As anticipated, starting on **November 1st, 2024**, TagoIO will no longer offer 
 
 - If the SMS service limit is exceeded, no SMS for that Profile will be sent until the limit is increased or the billing period ends.
 
-- SMS pricing is only valid for: United States, Australia, Germany, United Kingdom, Canada, Mexico, Brasil, Colombia, Japan, and Chile. For other countries, contact us.
+- SMS pricing is only valid for: United States, Australia, Germany, United Kingdom, Canada, Mexico, Brazil, Colombia, Japan, and Chile. For other countries, contact us.
 - SMS messages not used during the period will not be carried over to the next month.
 - For more information on pricing and FAQs, see the [Pricing Page](https://tago.io/pricing/).
 

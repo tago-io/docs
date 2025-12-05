@@ -77,7 +77,7 @@ Track platform access and new user activity:
 
 #### Trend Analysis
 Perform complex queries across multiple data sources:
-> Quote"Compare energy consumption patterns between weekdays and weekends for all smart meters"
+> "Compare energy consumption patterns between weekdays and weekends for all smart meters"
 
 #### Anomaly Detection
 Identify unusual patterns in sensor data:
