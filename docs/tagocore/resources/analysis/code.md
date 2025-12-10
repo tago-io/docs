@@ -10,7 +10,7 @@ You have complete freedom in how you write your Analysis code - use any programm
 
 ## Accessing Device Data
 
-When your Analysis is triggered by an [Action](/docs/tagocore/action) (for example, when a device sends new data), you can access that triggering data through a special environment variable called `TAGOCORE_DATA`.
+When your Analysis is triggered by an [Action](/docs/tagocore/action) (for example, when a device sends new data), you can access that triggering data through a special environment variable called `T_ANALYSIS_DATA`.
 
 This environment variable contains the device data that triggered your Analysis. The data might be a single data point or multiple data points, depending on what your device sent. Here's what a typical data point looks like:
 
@@ -44,7 +44,7 @@ TagoCore supports any programming language through the `Binary Executable path` 
 This Node.js example shows how to access device data and log temperature readings to the [Analysis Console](/docs/tagocore/resources/analysis/console.md):
 
 ```js
-const data = process.env.TAGOCORE_DATA;
+const data = process.env.T_ANALYSIS_DATA;
 const temperatureItem = data.find((i) => i.variable === 'temperature');
 console.log("Temperature is at:", temperatureItem.value);
 ```
