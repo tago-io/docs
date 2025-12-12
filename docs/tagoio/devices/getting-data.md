@@ -29,7 +29,7 @@ The following querystring parameters are supported:
 | Key         | Type            | Description |
 |-------------|-----------------|-------------|
 | variable    | string or array | Get variables |
-| query       | string          | Pre-defined by Tago |
+| query       | string          | Pre-defined by TagoIO |
 | qty         | string          | Maximum number of data points to be returned |
 | start_date  | string          | Start date (e.g., "1 day" or ISO string) |
 | end_date    | string          | End date (e.g., "1 day" or ISO string) |

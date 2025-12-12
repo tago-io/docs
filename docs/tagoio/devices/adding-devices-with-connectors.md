@@ -6,7 +6,7 @@ sidebar_position: 1
 ---
 
 [Connectors](/docs/tagoio/devices/payload-parser/connector/connector-overview.md)
-enable you to create a [device](/docs/tagoio/devices/) with built‑in behaviors
+allow you to create a [device](/docs/tagoio/devices/) with built‑in behaviors
 that allow it to communicate with a network easily.
 
 When creating devices at TagoIO, there are different ways to allow them to send
@@ -18,10 +18,10 @@ and receive data through connectors:
 2. When using external services from providers (e.g., LoRaWAN, Sigfox, or
    cellular), it is necessary to generate an
    [Authorization](/docs/tagoio/integrations/general/authorization.md) per group
-   or application.
+   or application. The Authorization is used to direct data to the correct profile.
 
 That is why you need to select the right connector when creating your device at
-TagoIO: to take advantage of the integrations already implemented with these
+TagoIO: to take advantage of the integrations and parsers already implemented with these
 services.
 
 ## Connector functions
