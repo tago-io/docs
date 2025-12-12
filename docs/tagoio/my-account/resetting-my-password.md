@@ -10,7 +10,7 @@ On the [signup page](https://admin.tago.io/signup), click the "Forgot your passw
 To change your existing password:
 - Click on your account name at the bottom-left menu in your Admin.
 - Hover over "Profiles & Billing" and select "My Account".
-- Go to the [Security](https://next-admin.test.tago.io/account/security) tab.
+- Go to the [Security](https://admin.tago.io/account/security) tab.
 - Click the "Change password" button and follow the prompts.
 
 ![Forgot your password?](/docs_imagem/tagoio/rounded-image-1761224471130.png)

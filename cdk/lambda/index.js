@@ -524,8 +524,6 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/tagoio-mqtt-relay":
       "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
     "/portal/en/kb/articles/tags": "/docs/tagoio/getting-started/tags-system",
-    "/portal/en/kb/articles/ticket-severity-options":
-      "/docs/tagoio/support/ticket-severity-options",
     "/portal/en/kb/articles/trigger-by-geofence":
       "/docs/tagoio/actions/trigger-by-geofence",
     "/portal/en/kb/articles/trigger-by-usage-alert":
