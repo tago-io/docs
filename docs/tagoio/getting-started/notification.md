@@ -35,7 +35,7 @@ There are four types of notifications:
 When you log in to your account, you can see all your notifications in the
 bottom-left corner of the admin page with a blinking blue dot indicating unread notifications.
 
-![Notifications UI showing unread count](/docs_imagem/tagoio/rounded-image-1764011430847.png)
+![Notifications UI showing unread count](/docs_imagem/tagoio/rounded-image-1765546342632.png)
 
 ## Filtering and searching
 

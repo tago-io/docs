@@ -19,7 +19,7 @@ Once you activate Control Tower, you can view data input and output statistics f
 
 You can monitor the statistics by going to your Devices module on your Admin and selecting the device you want to visualize:
 
-![Control tower overview](/docs_imagem/tagoio/ctower_device_statistics.png)
+![Control tower overview](/docs_imagem/tagoio/rounded-image-1765199046181.png)
 
 :::info
 
@@ -42,12 +42,12 @@ You can apply a soft rate limit to:
 - **Your whole profile** – all devices in the profile follow this limit.
   To set it, navigate to your Admin page → [Profiles & Teams](https://admin.tago.io/profile) → “More” tab.
 
-![Control tower profile](/docs_imagem/tagoio/profile_limit_ctower.png)
+![Control tower profile](/docs_imagem/tagoio/rounded-image-1765199260734.png)
 
 - **A specific device** – overrides the profile limit for that device.
   To set it, go to the [Devices](/docs/tagoio/devices/) module, select the desired device, and click the “More” tab.
 
-![Control tower device](/docs_imagem/tagoio/device_limit_ctower.png)
+![Control tower device](/docs_imagem/tagoio/rounded-image-1765199355157.png)
 
 :::info
 

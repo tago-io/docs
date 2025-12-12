@@ -6,17 +6,15 @@ sidebar_position: 1
 ---
 The device page provides tools for visualizing, filtering, editing, importing, and exporting variables to facilitate management of the data received from your device. You can access these tools by navigating to the Device module, selecting a device, and clicking on the "Data" tab. Refer to the Device module documentation for navigation details.
 
-<!-- Image placeholder removed for build -->
-
 ## Amount of data records
 
-The amount of data stored in each device is displayed at the top of the page. When the number of data records exceeds 1,000 registers, TagoIO will start to display a truncated value. This represents an estimated number of data records stored in the device.
+The amount of data stored in each device is displayed at the right side of the page. When the number of data records exceeds 1,000 registers, TagoIO will start to display a truncated value. This represents an estimated number of data records stored in the device.
 
 When the value is greater than 1,000 registers it may be shown with a letter suffix: **K** for thousand, **M** for million, **B** for billion, and **T** for trillion.
 
-![Image 2](/docs_imagem/tagoio/external-549c623a.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1765201391949.png)
 
-![Image 3](/docs_imagem/tagoio/external-525092fc.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1765201662687.png)
 
 ## Last Input
 
@@ -24,7 +22,7 @@ The last input information refers to the last time the device received communica
 
 If you want to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
 
-![Image 5](/docs_imagem/tagoio/external-474cf6ac.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1765201715662.png)
 
 ## Managing variable data
 

@@ -20,5 +20,6 @@ To use the files via **Admin**, go to *Files* in the left menu. From there you c
 - Drag‑and‑drop files onto the page to upload them to the current folder.
 - Select multiple files by holding **Shift** or **Ctrl** while clicking on the desired files.
 - Right‑click a file to open a context menu with actions such as rename, delete, move, and download.
-  ![Context menu example](/docs_imagem/tagoio/1627914062208-mNE.png)
+
+  ![Context menu example](/docs_imagem/tagoio/rounded-image-1765199766266.png)
 - Selecting a row shows detailed information about the file or folder in the right‑side panel.

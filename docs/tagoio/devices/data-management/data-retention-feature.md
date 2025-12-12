@@ -13,7 +13,7 @@ costs by deleting data that does not need to be kept long-term.
 :::info
 
 The Data Retention feature is available only for
-[Optimized Device Data (Immutable)](/docs/tagoio/devices/).
+[Optimized Device Data](/docs/tagoio/devices/).
 
 :::
 
@@ -21,20 +21,19 @@ The Data Retention feature is available only for
 
 To configure Data Retention, you must select two fields:
 
-- **Period** — the chunk period for retaining data (for example, Daily or
-  Monthly).
+- **Period** — the chunk period for retaining data.
 - **Retention** — how many of those periods to keep the data.
 
 These two fields are combined to create the device’s data retention policy.
 
-<!-- Image placeholder removed for build -->
+![Data Retention](/docs_imagem/tagoio/rounded-image-1765391484647.png)
 
 UI helper text shown in the configuration:
 
-- This selection limits the storage for this device to 1 Million data registers
-  per month (you cannot change this Period). But you can always edit the
-  Retention from 0 to 36 months.
-- The retention starts considering the current period — if you select “0” months
+- This selection limits the storage for this device to 1 million data registers
+  per month, you cannot change the chunk period. But you can always edit the
+  retention from 0 to 36 months.
+- The retention starts considering the current period — if you select 0 months
   it will delete all data when a new month starts.
 
 ## Period
@@ -45,13 +44,17 @@ how long data should be kept on your device.
 
 Examples and important considerations:
 
-- Setting Period to _Monthly_ allows storing up to 1 Million data registers per
+- Setting Period to _Monthly_ allows storing up to 1 million data registers per
   month.
-- Setting Period to _Daily_ allows storing up to 1 Million data registers per
+- Setting Period to _Daily_ allows storing up to 1 million data registers per
   day.
-- You cannot change the Period field later on, so choose it carefully.
-- Retention can be edited between 0 and 36 months. Selecting 0 months will
-  delete all data when the next period starts.
+- You cannot change the Chunk Period field later on, so choose it carefully.
+- Chunk Retention can be edited between the range of the selected period. 
+
+:::info
+
+Setting your devices Chunk Retention to 0 will cause the platform to delete all device data when the next period starts.
+:::
 
 ### Retention ranges by period
 
@@ -62,9 +65,12 @@ Examples and important considerations:
 | Monthly   | 0–36            |
 | Quarterly | 0–36            |
 
-Each period chunk is limited to **1 Million registers**.\
-The retention feature keeps data for the selected retention _plus_ the data in
-the current period.
+:::tip
+Each period chunk is limited to **1 million registers**. The retention feature keeps data for the selected retention _plus_ the data in
+the current period. 
+
+Keep that in mind when setting your Chunk Retention, if your device sends more than 1 million data registers per period, you will lose data.
+:::
 
 ### How it works
 

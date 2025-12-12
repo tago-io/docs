@@ -3,7 +3,7 @@ title: "Uploading Files"
 description: "This article explains how to upload files using the TagoIO admin platform, the default access setting for uploaded files, and a reminder about file visibility when using widgets."
 tags: ["tagoio"]
 ---
-To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the `Upload File` button in the top-right corner of the page.
+To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the "Upload File" button in the top-right corner of the page.
 
 
 
@@ -19,7 +19,7 @@ Remember to always set your files to Public if you plan on using them inside wid
 
 If you do not wish to manually select the files, you can drag-and-drop them into a specific folder or into the main panel.
 
-![Files list example](/docs_imagem/tagoio/files-2.gif)
+![Files list example](/docs_imagem/tagoio/filesvid.gif)
 
 ## Folders
 
