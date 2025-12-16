@@ -32,9 +32,15 @@ The **Data** tab on your device page lists all stored variables, including their
 
 Filter options within the **Data** tab enable you to refine your variable search based on specific criteria.
 
-The table visualization can be customized by adjusting column visibility or changing the time format; this option is accessible through the cog icon in the table's lower-left corner.
+The table visualization can be customized by adjusting column visibility or changing the time format; this option is accessible through the display icon immediately above the table, on the left side.
 
-![Image 6](/docs_imagem/tagoio/external-e4612149.png)
+![Image 6](/docs_imagem/tagoio/rounded-image-1765548629176.png)
+
+:::tip
+
+You can also increase the number of rows that are displayed per page by clicking the display icon and selecting the desired number of rows.
+
+:::
 
 ## Editing and deleting variables individually
 
@@ -42,7 +48,7 @@ For [mutable devices](/docs/tagoio/devices/), individual variables can be edited
 
 To delete variables, first select the ones you want to remove. Once selected, click **Delete selected** to proceed with the deletion. This action is irreversible.
 
-![Image 7](/docs_imagem/tagoio/external-39e17ef8.png)
+![Image 7](/docs_imagem/tagoio/rounded-image-1765563420353.png)
 
 For [immutable devices](/docs/tagoio/devices/), it is not possible to edit data individually; data can only be deleted through the data chunks. Read more about it here: [Chunk Management](/docs/tagoio/devices/data-management/chunk-management.md).
 
@@ -52,7 +58,7 @@ To import data in bulk into your device, navigate to the **Data** tab and click 
 
 The supported file format is CSV.
 
-![Image 8](/docs_imagem/tagoio/external-e4940a38.png)
+![Image 8](/docs_imagem/tagoio/rounded-image-1765548850873.png)
 
 The device payload parser does not execute during data import. Therefore, ensure that the data is properly formatted before importing.
 
@@ -102,7 +108,7 @@ To back up your device data, click the **More** button located in the top right 
 
 The tool automatically backs up all your device data. If you need to apply filters before backing up, use the Data Export function to refine your data, and then save it locally or in your Files. For [Immutable devices](/docs/tagoio/devices/), clicking the **Backup to Files** button will redirect you to the **Chunk Management** tab, where you can select specific chunks of data to back up to your Files.
 
-![Image 11](/docs_imagem/tagoio/external-df29aa3f.png)
+![Image 11](/docs_imagem/tagoio/rounded-image-1765548941649.png)
 
 ### File Address Template
 
