@@ -30,7 +30,7 @@ All runtimes support the same TagoIO SDK functionality for working with devices,
 Deno runs TypeScript and JavaScript with built‑in TypeScript support—no compilation step needed. The standout feature is remote imports: you can import packages directly from URLs without any bundling or upload process.
 
 ```ts
-import { Analysis, Device } from "jsr:@tago-io/sdk";
+import { Analysis, Device } from "npm:@tago-io/sdk";
 import { DateTime } from "npm:luxon";
 import { z } from "https://deno.land/x/zod/mod.ts";
 ```
