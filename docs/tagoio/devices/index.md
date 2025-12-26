@@ -4,10 +4,10 @@ description: "This article explains what a Device is in TagoIO, how devices comm
 tags: ["tagoio", "devices"]
 ---
 
-Device is the link between your external things and the data in your account. To
+Devices are the link between your external things and the data in your account. To
 allow anything to send or receive data from TagoIO, you need to create a device.
 The communication between external devices and TagoIO is done via HTTP or MQTT
-using JSON format. To enable this communication, a device must be created within
+using [JSON format](/docs/tagoio/devices/sending-data.md). To enable this communication, a device must be created within
 the platform; this involves specifying the device type and configuring it to
 send and receive data correctly.
 
@@ -40,18 +40,17 @@ storage to be used. There are two types of data storage you can choose from:
 ### Device Optimized Data (Immutable database)
 
 - Stores up to **36 million** data points per device.
+- Native [data retention](/docs/tagoio/devices/data-management/data-retention-feature.md).
 - Highly optimized for short and long retention periods; query responses are
   faster, which means less latency for the devices and a cost reduction when
   running an [Analysis](/docs/tagoio/analysis/creating-analysis.md).
 - Because the data is immutable, no one can change or delete individual sets of
   data – ideal for compliance.
-- Data stored in the optimized device can only be removed by the
-  [data retention policy](/docs/tagoio/devices/data-management/data-retention-feature.md).
 
 ### Managed Data Optimized (Mutable database)
 
 - Allows you to edit or delete data.
-- **No** data retention.
+- **No** native data retention; you can utilize Analysis to delete data on a scheduled basis.
 - Limited to **50 k** data registers.
 - Optimized for the storage and manipulation of configurable variables coming
   from sensors, web services, and forms.
@@ -95,8 +94,8 @@ storage to be used. There are two types of data storage you can choose from:
 
 ## Emulating data sending
 
-Inside your device’s page, find the **Emulator** tab where you can send data to
-your device as if it was sent by a real sensor.
+Inside your device's page, find the **Emulator** tab where you can send data to
+your device as if it were sent by a real sensor.
 
 ## Customizing behavior of your device
 

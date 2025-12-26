@@ -18,7 +18,7 @@ accurately authenticate your downlink.
 
 :::
 
-![Downlink diagram](/docs_imagem/tagoio/sigfox-downlink-2.png)
+![Downlink diagram](/docs_imagem/tagoio/rounded-image-1762441468085.png)
 
 Downlink Diagram
 
