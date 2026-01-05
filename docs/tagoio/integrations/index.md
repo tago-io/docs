@@ -63,7 +63,7 @@ to be used:
 - [TTN LoRaWAN](/docs/tagoio/integrations/networks/the-things-network-lorawan.md)
 - [Chirpstack LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-chirpstack-lorawan/1017)
 - [Helium LoRaWAN](https://community.tago.io/t/how-to-integrate-tagoio-with-helium/992)
-
+- [Blecon BLE](https://community.tago.io/t/how-to-integrate-with-blecon-ble/1769)
 - [Myriota](https://community.tago.io/t/how-to-integrate-tagoio-with-myriota-satellite-connectivity/451)
 - [AWS IoT Core](https://community.tago.io/t/how-to-integrate-tagoio-with-aws-iot-core/669)
 - [Kinéis](https://community.tago.io/t/how-to-integrate-tagoio-with-kineis/1491)

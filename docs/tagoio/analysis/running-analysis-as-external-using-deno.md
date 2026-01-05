@@ -24,7 +24,7 @@ Visit the Deno Installation Guide for platform‑specific instructions: https://
 For this example, call it `analysis.ts`:
 
 ```ts
-import { Analysis, Device, Utils } from "jsr:@tago-io/sdk";
+import { Analysis, Device, Utils } from "npm:@tago-io/sdk";
 import { DateTime } from "npm:luxon";
 
 async function myAnalysis(context: any) {
