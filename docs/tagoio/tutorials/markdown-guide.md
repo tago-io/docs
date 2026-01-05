@@ -65,17 +65,13 @@ Block quote example:
 
 ## Images
 
-Need to upload an image? [TagoIO Files](/docs/tagoio/files) has a great interface.
+Need to upload an image? [TagoIO Files](/docs/tagoio/files) can help you with that.
 
 Example Markdown for an image:
 
 ```markdown
 ![Alt text](path/to/image.jpg)
 ```
-
-Rendered example image placeholder:
-
-<!-- Image placeholder removed for build -->
 
 ## Tables
 

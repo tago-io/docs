@@ -5,7 +5,7 @@ tags: ["tagoio", "billing"]
 ---
 ## Overview
 
-TagoIO offers three account plans that allow you to use the platform's tools and capabilities for your application. Select your plan on the [My Billing](https://admin.tago.io/account/billing) page.
+TagoIO offers three account plans that allow you to use the platform's tools and capabilities for your application. Select your plan in the [My Billing](https://admin.tago.io/account/billing) page.
 
 ### Plan Types
 

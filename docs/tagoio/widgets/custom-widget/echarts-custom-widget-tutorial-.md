@@ -7,7 +7,7 @@ In this tutorial, we will guide you through creating a Ring Gauge custom widget 
 
 To achieve this, we leverage the [ECharts library](https://echarts.apache.org/), a robust and highly customizable charting library that simplifies the development of interactive and visually appealing data visualizations. Using ECharts can significantly speed up development and help ensure the custom widget is both efficient and aesthetically pleasing.
 
-<!-- Image placeholder removed for build -->
+![Ring Gauge custom widget](/docs_imagem/tagoio/rounded-image-1761311392776.png)
 
 This tutorial is structured into three comprehensive sections to facilitate a smooth learning experience:
 

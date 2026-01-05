@@ -49,6 +49,6 @@ plans and services, check our [Pricing Page](https://tago.io/pricing).
 
 ## Monitoring resources across your entire account
 
-You can monitor the amount of resources you have used by accessing the account
-menu in the top right corner of your Admin page and selecting the
+You can monitor the amount of resources you have used by accessing the profile
+menu in the top left corner of your Admin page and selecting the
 **[Hard Limits](https://admin.tago.io/limits/hard)** option.

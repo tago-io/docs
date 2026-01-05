@@ -32,7 +32,7 @@ All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata.md) store
 ]
 ```
 
-Another simple example: Your device sends speed, temperature, and humidity with location every 1hour. As a result, 3 new registers will be added every hour.
+Another simple example: Your device sends speed, temperature, and humidity with location every hour. As a result, 3 new registers will be added every hour.
 
 ## Notes
 

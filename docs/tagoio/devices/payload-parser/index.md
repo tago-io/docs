@@ -39,7 +39,7 @@ with that device.
 
 ## Parser settings
 
-![Parser settings to enable the parsers](/docs_imagem/tagoio/payload-parser-2.png)
+![Parser settings to enable the parsers](/docs_imagem/tagoio/rounded-image-1767033964525.png)
 
 > The script contained inside the parser from the Connector is not visible.
 
@@ -64,7 +64,12 @@ For this example, let's connect a toaster to Tago.
 A toaster could send data to TagoIO when your bread is toasted in the following
 format:
 
-![Image 4](/docs_imagem/tagoio/1544036821426-yHM.png)
+```javascript
+{
+  "variable": "toastValues",
+  "value": "01 350 00"
+}
+```
 
 The value above could represent XX YYY ZZ. Where:
 
@@ -81,12 +86,31 @@ need to parse this payload.
 Let's code the Payload Parser to transform that payload into real variables.
 First, click on your Device and go to the Payload Parser tab.
 
-![Image 5](/docs_imagem/tagoio/Screen-20Shot-202018-12-05-20at-2016.29.43-WbU.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1767034014646.png)
 
 On the Payload Parser tab you will see the code editor. Then, you can write the
 following code:
 
-![Image 6](/docs_imagem/tagoio/1544035425383-V2U.png)
+```javascript
+const rawValues = payload.find(item => item.variable === 'toastValues');
+
+if (rawValues) {
+  const valuesString = rawValues.value;
+
+  const splitValues = valuesString.split(' ');
+
+  const successCode = splitValues[0];
+  const tempF = splitValues[1];
+  const errorCode = splitValues[2];
+
+  payload.push({ "variable": "successCode", "value": successCode });
+  payload.push({ "variable": "temperature", "value": tempF, "unit": "F" });
+
+  if (errorCode !== '00') {
+    payload.push({ "variable": "error", "value": errorCode });
+  }
+}
+```
 
 Save, and you are ready. Now, every time the toaster sends those variables, the
 parser will transform it into real variables, and you can use them to build

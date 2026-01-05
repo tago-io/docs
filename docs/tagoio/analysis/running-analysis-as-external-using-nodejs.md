@@ -27,7 +27,7 @@ In order to start writing your code, you first must set up the environment with 
 
 **2.2** If the folder is empty, run `npm init` and fill in all prompted requests. If this is your first time, you can leave all defaults by just pressing enter.
 
-**2.3** Now install the Tago SDK and the TagoIO‑Builder SDK:
+**2.3** Now install the TagoIO SDK and the TagoIO‑Builder SDK:
 
 ```bash
 npm install --save @tago-io/sdk
@@ -55,9 +55,9 @@ In order to do that, every analysis has the following line below. Replace `MY-AN
 module.exports = new Analysis(myAnalysis, { token: '**MY-ANALYSIS-TOKEN-HERE**' } );
 ```
 
-You can get the analysis token by accessing your analysis page at TagoIO and selecting **External** for “Run the scripts from”. Create a new analysis if you don’t have any.
+You can get the analysis token by accessing your analysis page at TagoIO and selecting **External** for “Runs on”. Create a new analysis if you don’t have any.
 
-![Image 2](/docs_imagem/tagoio/1600873613832-4Vc.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1761144951026.png)
 
 Now run the script from your command line:
 
@@ -69,9 +69,9 @@ You should see a prompt similar to this:
 
 ![Image 3](/docs_imagem/tagoio/Screen-20Shot-202019-03-06-20at-2016.32.35-37A.png)
 
-Go back to Tago and click **Save and Run** or just **Run** to run your script. You can also configure an action to run your script automatically.
+Go back to TagoIO and click **Run** to run your script. You can also configure an [Action](/docs/tagoio/actions/running-analysis-via-action.md) to run your script automatically.
 
-![Image 4](/docs_imagem/tagoio/1611084833441-Ers.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1761145033874.png)
 
 ## 4. Use Analysis‑Builder to Upload the Script
 
@@ -97,4 +97,4 @@ You can check our analysis examples with the full environment already set up for
 * [Average Min/Max Example](https://github.com/tago-io/analysis-example-avgMinMax)
 * [Find Example](https://github.com/tago-io/analysis-example-find)
 
-Now you have everything you need to know about running analysis in your machine and can start to creating full applications and powerful analysis using TagoIO
+Now you have everything you need to know about running analysis on your machine and can start creating full applications and powerful analysis using TagoIO.

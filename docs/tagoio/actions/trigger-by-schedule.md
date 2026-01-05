@@ -10,12 +10,12 @@ There are two categories within this trigger type:
 1. By Interval
    Allows you to specify a time interval to trigger the Action automatically. Choose the time interval on the right side of the interface; the minimum allowed time is 1 minute.
 
-   ![By Interval selector showing an interval selection (e.g., 15 Minutes)](/docs_imagem/tagoio/trigger-by-schedule-2.png)
+   ![By Interval selector showing an interval selection (e.g., 15 Minutes)](/docs_imagem/tagoio/rounded-image-1767018081996.png)
 
 2. By Date
    Allows you to specify a date or a recurring date rule to trigger the Action. For example, you can choose to run an Action on the second Wednesday of each month.
 
-   ![By Date selector showing date-based scheduling options](/docs_imagem/tagoio/trigger-by-schedule-2.png)
+   ![By Date selector showing date-based scheduling options](/docs_imagem/tagoio/rounded-image-1767018166748.png)
 
 ## Customizing By Date
 

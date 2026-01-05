@@ -6,25 +6,23 @@ sidebar_position: 1
 ---
 The device page provides tools for visualizing, filtering, editing, importing, and exporting variables to facilitate management of the data received from your device. You can access these tools by navigating to the Device module, selecting a device, and clicking on the "Data" tab. Refer to the Device module documentation for navigation details.
 
-<!-- Image placeholder removed for build -->
-
 ## Amount of data records
 
-The amount of data stored in each device is displayed at the top of the page. When the number of data records exceeds 1,000 registers, TagoIO will start to display a truncated value. This represents an estimated number of data records stored in the device.
+The amount of data stored in each device is displayed at the right side of the page. When the number of data records exceeds 1,000 registers, TagoIO will start to display a truncated value. This represents an estimated number of data records stored in the device.
 
 When the value is greater than 1,000 registers it may be shown with a letter suffix: **K** for thousand, **M** for million, **B** for billion, and **T** for trillion.
 
-![Image 2](/docs_imagem/tagoio/external-549c623a.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1765201391949.png)
 
-![Image 3](/docs_imagem/tagoio/external-525092fc.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1765201662687.png)
 
 ## Last Input
 
 The last input information refers to the last time the device received communication; it does not necessarily mean that the data sent was actually stored as data. This information is useful to verify the last time your sensor received an attempt of data input.
 
-If you desire to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
+If you want to verify if your data was received and added to your device, the best approach is to check the variable in the **Data** tab, or use the [Live Inspector](/docs/tagoio/devices/live-inspector.md) feature.
 
-![Image 5](/docs_imagem/tagoio/external-474cf6ac.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1765201715662.png)
 
 ## Managing variable data
 
@@ -34,9 +32,15 @@ The **Data** tab on your device page lists all stored variables, including their
 
 Filter options within the **Data** tab enable you to refine your variable search based on specific criteria.
 
-The table visualization can be customized by adjusting column visibility or changing the time format; this option is accessible through the cog icon in the table's lower-left corner.
+The table visualization can be customized by adjusting column visibility or changing the time format; this option is accessible through the display icon immediately above the table, on the left side.
 
-![Image 6](/docs_imagem/tagoio/external-e4612149.png)
+![Image 6](/docs_imagem/tagoio/rounded-image-1765548629176.png)
+
+:::tip
+
+You can also increase the number of rows that are displayed per page by clicking the display icon and selecting the desired number of rows.
+
+:::
 
 ## Editing and deleting variables individually
 
@@ -44,7 +48,7 @@ For [mutable devices](/docs/tagoio/devices/), individual variables can be edited
 
 To delete variables, first select the ones you want to remove. Once selected, click **Delete selected** to proceed with the deletion. This action is irreversible.
 
-![Image 7](/docs_imagem/tagoio/external-39e17ef8.png)
+![Image 7](/docs_imagem/tagoio/rounded-image-1765563420353.png)
 
 For [immutable devices](/docs/tagoio/devices/), it is not possible to edit data individually; data can only be deleted through the data chunks. Read more about it here: [Chunk Management](/docs/tagoio/devices/data-management/chunk-management.md).
 
@@ -54,7 +58,7 @@ To import data in bulk into your device, navigate to the **Data** tab and click 
 
 The supported file format is CSV.
 
-![Image 8](/docs_imagem/tagoio/external-e4940a38.png)
+![Image 8](/docs_imagem/tagoio/rounded-image-1765548850873.png)
 
 The device payload parser does not execute during data import. Therefore, ensure that the data is properly formatted before importing.
 
@@ -104,7 +108,7 @@ To back up your device data, click the **More** button located in the top right 
 
 The tool automatically backs up all your device data. If you need to apply filters before backing up, use the Data Export function to refine your data, and then save it locally or in your Files. For [Immutable devices](/docs/tagoio/devices/), clicking the **Backup to Files** button will redirect you to the **Chunk Management** tab, where you can select specific chunks of data to back up to your Files.
 
-![Image 11](/docs_imagem/tagoio/external-df29aa3f.png)
+![Image 11](/docs_imagem/tagoio/rounded-image-1765548941649.png)
 
 ### File Address Template
 
@@ -134,6 +138,6 @@ When exporting a chunk to a location where a file already exists, all the data w
 
 ## Emptying your Device Data
 
-While it's feasible to remove variables one by one, there's a more efficient method to wipe all data simultaneously.
+While it's possible to remove variables one by one, there's a more efficient method to wipe all data simultaneously.
 
 Navigate to the [Device](https://admin.tago.io/devices) module and choose the device you wish to clear. Then, click the **More** button located in the top right corner, then select **Empty Device Data** under the **Data** tab.

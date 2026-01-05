@@ -12,7 +12,7 @@ messages are published to the topics they are subscribed to. To learn more about
 the MQTT infrastructure used by TagoIO, see
 [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt.md).
 
-:::info
+:::warning
 
 The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts
 in the US database region. Free accounts and accounts hosted in the European
@@ -31,7 +31,7 @@ There are 2 categories for this trigger type:
    that device will be tested against your topics to determine whether this
    action should be triggered.
 
-   ![Single-device selection UI](/docs_imagem/tagoio/trigger-by-mqtt-topic-2.png)
+   ![Single-device selection UI](/docs_imagem/tagoio/rounded-image-1767016336359.png)
 
 2. **Multiple devices**\
    Allows you to watch multiple devices. Any data sent by those devices will be
@@ -39,14 +39,14 @@ There are 2 categories for this trigger type:
    triggered. For this type, you must supply the tag keys and tag values of the
    devices you want to watch.
 
-   ![Multiple-devices tag selection UI](/docs_imagem/tagoio/trigger-by-mqtt-topic-2.png)
+   ![Multiple-devices tag selection UI](/docs_imagem/tagoio/rounded-image-1767016364577.png)
 
 ## Trigger Conditions
 
 After setting up the device, you should set a condition for your action to be
 executed. To do so, you must head over to the **Trigger** section.
 
-![Image 4](/docs_imagem/tagoio/1588075755429-J4Y.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1767016482525.png)
 
 For each row, you need to set the topic that will be listened to. You may use
 MQTT [wildcards](/docs/tagoio/integrations/networks/mqtt/mqtt.md) for the topic if
@@ -56,9 +56,13 @@ You can set multiple conditions in an action; if at least one of them results in
 a match, the action will be executed.
 
 :::info
+When you set up multiple conditions, the action will execute only once per MQTT
+message, even if that message matches multiple conditions. For example, if you
+have two conditions:
 
-Note that setting up multiple conditions will execute the action only once if
-any of the conditions are matched. This means that if you send two variables
-that would trigger the action at the same time, it will only trigger one action.
+- Condition 1: Topic `sensors/+/temperature`
+- Condition 2: Topic `sensors/+/+`
 
+And you receive a message on topic `sensors/device1/temperature`, it matches
+both conditions, but the action will trigger only once for that single message.
 :::

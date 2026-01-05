@@ -4,9 +4,9 @@ description: "This article explains how Access Management (AM) in TagoIO lets yo
 tags: ["tagoio"]
 sidebar_position: 1
 ---
-Access Management (AM) lets you securely grant access to specific resources in your TagoIO account. You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets.md) (users or things) and assign [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions.md) that determine which resources those Targets can access.
+Access Management (AM) lets you securely grant access to specific resources in your TagoIO account. You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets.md) (Users or Analysis) and assign [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions.md) that determine which resources those Targets can access.
 
-![Access Management interface example](/docs_imagem/tagoio/access-management-2.png)
+![Access Management interface example](/docs_imagem/tagoio/rounded-image-1764600146285.png)
 
 ## Examples
 
@@ -24,4 +24,7 @@ Some examples of how AM can be used:
 4. Allow an Analysis to do a bulk device upload.
    Example: An Analysis with the tag `script = device_upload`, and the `Permission = device` with rules `Create` and with field `Any`.
 
-*By using the option `Any` in the matching fields, you expose all that resource without restrictions.*
+5. Allow an Analysis to get data from specific devices.
+   Example: An Analysis with the tag `script = device_upload`, and the `Permission = device` with rules `Read` and with field `Tag` and the tag key `device_id` and the tag value `1234567890`.
+
+*By using the option `Any` in the matching fields, you expose all of that resource without restrictions.*

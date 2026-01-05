@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 Queclink GPS can be integrated with TagoIO through middleware that translates the device's TCP/IP protocol. The middleware enables uplink communication between the device and TagoIO while parsing messages to extract commands and variables in real time.
 
-![Queclink device, Cellular Network, and TagoIO flow diagram](/docs_imagem/tagoio/queclink-gps-2.png)
+![Queclink device, Cellular Network, and TagoIO flow diagram](/docs_imagem/tagoio/rounded-image-1761312647438.png)
 
 > Downlink messages must be accomplished using SMS messages or Queclink tools; they cannot be sent from TagoIO.
 
@@ -34,13 +34,11 @@ Add a device in your account at TagoIO. Go to [Devices](https://admin.tago.io/de
 - GV55*
   *contact us for updates*
 
-Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your bucket: [Buckets](/docs/tagoio/devices/). The data will be ready to display in dashboards.
+Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to be stored on your [Device](/docs/tagoio/devices/).
 
 ### Building Dashboards
 
-Create a dashboard by adding gauges, maps (add the variable **'location'**), tables, and more. For example:
-
-<!-- Image temporarily disabled: Map example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/6LPZjX_2YWmgn4JzYDzS5zptzsjgMzKMYqaPmHmobi4/map%20truck%20queclink%20tagoio-M6o.png -->
+Create a dashboard by adding gauges, maps (add the variable **'location'**), tables, and more.
 
 You can also set up notifications to send push notifications, SMS, or emails: [Notifications](/docs/tagoio/getting-started/notification.md). Advanced analysis scripts are available here: [Scripts](/docs/tagoio/analysis/creating-analysis.md).
 

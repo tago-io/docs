@@ -421,8 +421,6 @@ exports.handler = async (event) => {
       "/docs/tagoio/getting-started/how-it-works",
     "/portal/en/kb/articles/7-beagle-bone-black":
       "/docs/tagoio/tutorials/beagle-bone-black",
-    "/portal/en/kb/articles/75-thinxtra-xkit-for-sigfox":
-      "/docs/tagoio/tutorials/thinxtra-xkit-for-sigfox",
     "/portal/en/kb/articles/8-raspberry-pi":
       "/docs/tagoio/tutorials/raspberry-pi",
     "/portal/en/kb/articles/83-connecting-zen15-power-using-smartthings-hub":
@@ -526,8 +524,6 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/tagoio-mqtt-relay":
       "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
     "/portal/en/kb/articles/tags": "/docs/tagoio/getting-started/tags-system",
-    "/portal/en/kb/articles/ticket-severity-options":
-      "/docs/tagoio/support/ticket-severity-options",
     "/portal/en/kb/articles/trigger-by-geofence":
       "/docs/tagoio/actions/trigger-by-geofence",
     "/portal/en/kb/articles/trigger-by-usage-alert":
