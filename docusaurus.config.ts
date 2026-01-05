@@ -194,16 +194,11 @@ const config: Config = {
               label: "TagoIO API",
             },
             {
-              to: "/tagodeploy/project/api",
+              type: "docSidebar",
+              sidebarId: "apiTdeploySidebar",
               label: "TagoDeploy API",
             },
           ],
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "apiTdeploySidebar",
-          position: "left",
-          label: "TagoDeploy API",
         },
         { to: "/changelog", label: "Changelog", position: "left" },
         {
