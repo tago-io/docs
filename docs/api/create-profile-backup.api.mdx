@@ -1,0 +1,76 @@
+---
+id: create-profile-backup
+title: "Create Backup"
+description: "Generate a comprehensive backup of your profile resources and files"
+sidebar_label: "Create Backup"
+hide_title: true
+hide_table_of_contents: true
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Backup"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/profile/{profile_id}/backup"}
+  context={"endpoint"}
+>
+
+</MethodEndpoint>
+
+Initiates a new backup generation for the specified profile. The backup is processed asynchronously in a background queue.
+
+**What's included in the backup:**
+- User storage files (uploaded via `/files` route)
+- Dashboard version history
+- Analysis script versions
+- All resource configurations as JSON files (devices, actions, dashboards, analysis, access management, networks, connectors, secrets, dictionaries, run users, etc.)
+
+**Important notes:**
+- Backups are rate-limited (1 per day based on your account timezone)
+- Free plan users do not have access to backup features
+- Backup generation may take several minutes depending on profile size
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"profile_id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile to backup. Can be found in the profile's information tab."}]}
+>
+
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Backup creation initiated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","example":"Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint."},"profile":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"backup_id":{"type":"string","example":"678abc123def456789012345"}}}}}},"400":{"description":"Bad request - Invalid profile ID or missing parameters","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid profile ID"}}}}}},"403":{"description":"Forbidden - Free plan or rate limit exceeded","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit."}}}}}}}}
+>
+
+</StatusCodes>

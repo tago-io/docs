@@ -654,6 +654,38 @@ const sidebar: SidebarsConfig = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Backup",
+          collapsible: false,
+          className: "api-sub-category",
+          items: [
+            {
+              type: "doc",
+              id: "api/create-profile-backup",
+              label: "Create Backup",
+              className: "api-method post",
+            },
+            {
+              type: "doc",
+              id: "api/list-profile-backups",
+              label: "List Backups",
+              className: "api-method get",
+            },
+            {
+              type: "doc",
+              id: "api/download-profile-backup",
+              label: "Download Backup",
+              className: "api-method post",
+            },
+            {
+              type: "doc",
+              id: "api/delete-profile-backup",
+              label: "Delete Backup",
+              className: "api-method delete",
+            },
+          ],
+        },
       ],
     },
     {

@@ -1,0 +1,67 @@
+---
+id: delete-profile-backup
+title: "Delete Backup"
+description: "Permanently remove a backup from storage"
+sidebar_label: "Delete Backup"
+hide_title: true
+hide_table_of_contents: true
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Backup"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/profile/{profile_id}/backup/{backup_id}"}
+  context={"endpoint"}
+>
+
+</MethodEndpoint>
+
+Permanently removes a backup from storage. This action is irreversible.
+
+**Security:** This endpoint requires account password verification to prevent accidental or unauthorized deletion. If you have Two-Factor Authentication (2FA) enabled, you must also provide the OTP code.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"profile_id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile"},{"name":"backup_id","in":"path","required":true,"schema":{"type":"string","example":"678abc123def456789012345"},"description":"The ID of the backup to delete"}]}
+>
+
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","required":["password"],"properties":{"password":{"type":"string","description":"Your account password for verification","example":"your_account_password"},"otp_type":{"type":"string","enum":["authenticator","sms","email"],"description":"Type of OTP if 2FA is enabled (optional)","example":"authenticator"},"pin_code":{"type":"string","description":"OTP code if 2FA is enabled (optional)","example":"123456"}}},"examples":{"without_otp":{"summary":"Without 2FA","value":{"password":"your_account_password"}},"with_otp":{"summary":"With 2FA enabled","value":{"password":"your_account_password","otp_type":"authenticator","pin_code":"123456"}}}}}}}
+>
+
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Backup deleted successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Backup successfully removed"},"status":{"type":"boolean","example":true}}}}}},"401":{"description":"Unauthorized - Invalid password or OTP","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid password"}}}}}},"404":{"description":"Not found - Backup does not exist","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Backup not found or you don't have permission to delete it."}}}}}}}}
+>
+
+</StatusCodes>

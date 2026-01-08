@@ -1,0 +1,69 @@
+---
+id: download-profile-backup
+title: "Download Backup"
+description: "Generate a secure, time-limited download URL for a specific backup"
+sidebar_label: "Download Backup"
+hide_title: true
+hide_table_of_contents: true
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Download Backup"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/profile/{profile_id}/backup/{backup_id}/download"}
+  context={"endpoint"}
+>
+
+</MethodEndpoint>
+
+Generates a secure, time-limited download URL for a specific backup. The download URL is valid for **2 hours**.
+
+**Security:** This endpoint requires account password verification to prevent unauthorized access to backup data. If you have Two-Factor Authentication (2FA) enabled, you must also provide the OTP code.
+
+**Important:** Only backups with status `completed` can be downloaded.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"profile_id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile"},{"name":"backup_id","in":"path","required":true,"schema":{"type":"string","example":"678abc123def456789012345"},"description":"The ID of the backup to download"}]}
+>
+
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","required":["password"],"properties":{"password":{"type":"string","description":"Your account password for verification","example":"your_account_password"},"otp_type":{"type":"string","enum":["authenticator","sms","email"],"description":"Type of OTP if 2FA is enabled (optional)","example":"authenticator"},"pin_code":{"type":"string","description":"OTP code if 2FA is enabled (optional)","example":"123456"}}},"examples":{"without_otp":{"summary":"Without 2FA","value":{"password":"your_account_password"}},"with_otp":{"summary":"With 2FA enabled","value":{"password":"your_account_password","otp_type":"authenticator","pin_code":"123456"}}}}}}}
+>
+
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Download URL generated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"url":{"type":"string","example":"https://s3.amazonaws.com/tago-io/...?X-Amz-Algorithm=...","description":"Pre-signed S3 URL for downloading the backup (valid for 2 hours)"},"size":{"type":"number","example":15728640,"description":"File size in bytes"},"size_unit":{"type":"string","example":"bytes"},"file_size_mb":{"type":"string","example":"15.00","description":"File size in megabytes (formatted)"},"expire_at":{"type":"string","example":"2025-01-07T16:30:00.000Z","description":"When the download URL expires"},"backup_id":{"type":"string","example":"678abc123def456789012345"},"created_at":{"type":"string","example":"2025-01-07T14:30:00.000Z"}}}}}},"400":{"description":"Bad request - Backup not ready or invalid parameters","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Backup is not ready for download. Current status: processing"}}}}}},"401":{"description":"Unauthorized - Invalid password or OTP","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid password"}}}}}},"404":{"description":"Not found - Backup does not exist","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Backup not found or you don't have permission to access it."}}}}}}}}
+>
+
+</StatusCodes>
