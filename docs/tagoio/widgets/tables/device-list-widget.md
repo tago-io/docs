@@ -11,7 +11,7 @@ The Device List works as a dynamic table. You can customize its colors and colum
 ![Device List widget configuration and preview](/docs_imagem/tagoio/device-list-widget-2.png)
 
 ### 2. Device filtering
-This option is required to be filled up in order to show your devices. You can either filter the devices that will show up in your list by the devices' tag key and tag value, or by tag match for one of the blueprint devices on your dashboard.
+This option is required to be filled in order to show your devices. You can either filter the devices that will show up in your list by the devices' tag key and tag value, or by tag match for one of the blueprint devices on your dashboard.
 
 You can also have multiple filters working at the same time. It works as an AND operator, and the device must match all the filters.
 

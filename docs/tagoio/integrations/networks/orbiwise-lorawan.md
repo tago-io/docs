@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 This tutorial provides a step-by-step guide to integrate **Orbiwise** LoRaWAN™ with the TagoIO Platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 
-![Orbiwise and TagoIO integration diagram](/docs_imagem/tagoio/orbiwise-lorawan-2.jpg)
+![Orbiwise and TagoIO integration diagram](/docs_imagem/tagoio/rounded-image-1762438341819.png)
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Before you begin, ensure you have the following:
 
 2. **Create a New Authorization**
    1. Click the **Create Authorization** button.
-   2. Provide a meaningful name for the authorization (e.g., `MachineQ-Integration`).
+   2. Provide a meaningful name for the authorization (e.g., `Orbiwise-Integration`).
    3. In the **Additional Parameters** section, enter your Orbiwise Username, Password and DASS URL from Step 2 in the following format:
 
       ```
@@ -35,7 +35,7 @@ Before you begin, ensure you have the following:
 3. **Copy the Authorization Token**
    - After creation, copy the authorization token. You will need this in later steps.
 
-![Authorization token screenshot](/docs_imagem/tagoio/1563385125217-eok.png)
+![Authorization token screenshot](/docs_imagem/tagoio/rounded-image-1762440792183.png)
 
 :::tip
 

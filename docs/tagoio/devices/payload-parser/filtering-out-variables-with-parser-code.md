@@ -23,7 +23,7 @@ For example, if your device sends data from TTN (The Things Network), most varia
 
 A variable called **location** is automatically created by combining the fields `latitude` and `longitude`. Use this combined field when plotting maps.
 
-![Application Data Console screenshot](/docs_imagem/tagoio/filtering-out-variables-with-parser-code-2.png)
+![Application Data Console screenshot](/docs_imagem/tagoio/rounded-image-1767729055179.png)
 
 ## Editing the parser
 - Go to [Devices](https://admin.tago.io/devices) at your Admin panel, select your device, open the device settings and go to the "Payload Parser" tab.

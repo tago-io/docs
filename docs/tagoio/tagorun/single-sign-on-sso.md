@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 By using Single Sign-On (SSO) integration, end users can sign in to a RUN application using credentials from your trusted user database provided by third‑party identity services. Supported providers include Okta, Auth0, Microsoft Azure AD, OneLogin, PingIdentity, Google Workspace, and others.
 
-![TagoIO SSO integrated with 3rd-party services](/docs_imagem/tagoio/single-sign-on-sso-2.png)
+![TagoIO SSO integrated with 3rd-party services](/docs_imagem/tagoio/rounded-image-1764611428517.png)
 
 ## Overview
 Single Sign-On (SSO) allows RUN applications to delegate authentication to an external identity provider (IdP). This enables centralized user management, single credential use across multiple services, and simplified user access to RUN and other connected services.

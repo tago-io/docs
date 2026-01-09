@@ -26,8 +26,7 @@ tools such as the API and SDK.
 
 ## Installation
 
-Learn how to use the relay here:
-[tago-io/mqtt-relay: TagoIO | MQTT Relay](https://github.com/tago-io/mqtt-relay)
+Learn how to use the relay by checking out the [TagoIO MQTT Relay GitHub repository](https://github.com/tago-io/mqtt-relay).
 
 ## How it works
 

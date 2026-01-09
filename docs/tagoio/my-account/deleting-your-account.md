@@ -5,11 +5,12 @@ tags: ["tagoio"]
 ---
 ## How to delete your account
 
-If you need to cancel your account, go to Account Settings by accessing [My Account](https://admin.tago.io/account).
+If you need to cancel your account, go to Account Settings by accessing [My Account](https://admin.tago.io/account/general).
 
 Steps:
-- Open Account Settings via [My Account](https://admin.tago.io/account).
-- In the Account Settings, open the "More" tab and click the `delete my account` button.
+- Click on your account name at the bottom-left menu in your Admin and select "My Account".
+- Hover over "Profiles & Billing" and select "My Account".
+- On the top right corner click "... Account Details" and click the "Delete my account" button.
 - TagoIO will delete your account, including all profiles associated with it, and will send a confirmation email when the deletion is complete.
 
 :::warning

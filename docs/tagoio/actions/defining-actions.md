@@ -21,7 +21,7 @@ section at the end of this page.
 Please note that the notification is only sent to the account where it was
 created.
 
-![Push notification action configuration](/docs_imagem/tagoio/defining-actions-2.png)
+![Push notification action configuration](/docs_imagem/tagoio/rounded-image-1761748581641.png)
 
 ## Push Notifications to Run Users
 
@@ -34,7 +34,7 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 2](/docs_imagem/tagoio/1576606566858-r_Q.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1761748615221.png)
 
 ## Send Email
 
@@ -46,11 +46,13 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 3](/docs_imagem/tagoio/1576606418570-3DI.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1761748510973.png)
 
-**Attention:** starting **January 1st, 2025**, TagoIO will discontinue its email
+:::warning
+Starting **January 1st, 2025**, TagoIO will discontinue its email
 services. We recommend integrating with external providers to send emails using
 the "Send Email using SMTP/SendGrid" action.
+:::
 
 ## Send Email using SMTP
 
@@ -68,6 +70,8 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
+![Send Email using SMTP action configuration](/docs_imagem/tagoio/rounded-image-1761748797456.png)
+
 ## Send Email with SendGrid
 
 An email will be sent via SendGrid when a specific condition is met. To
@@ -78,7 +82,7 @@ Secrets beforehand so it appears in the dropdown menu.
 Learn here how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
 
-![Image 5](/docs_imagem/tagoio/external-da256072.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1767014262674.png)
 
 ## Send Message to AWS SQS
 
@@ -88,6 +92,8 @@ access key id and secret access key.
 
 Learn how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
+
+![Send Message to AWS SQS action configuration](/docs_imagem/tagoio/rounded-image-1761749001761.png)
 
 ## Send SMS
 
@@ -100,7 +106,7 @@ In the message field, you can use variables to dynamically include information
 in your text. For more details on how to use message variables, refer to the
 "Message Variables" section at the end of this page.
 
-![Image 7](/docs_imagem/tagoio/1576605304356-hps.png)
+![Image 7](/docs_imagem/tagoio/rounded-image-1761749278409.png)
 
 Some costs may occur when using the SMS service, which varies based on the
 country of operation. Check the [pricing](https://tago.io/pricing/),
@@ -123,7 +129,7 @@ beforehand for them to appear in the dropdown menu. Use a Secret of type
 **Text**. Learn how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
 
-![Image 9](/docs_imagem/tagoio/external-ef92af1a.png)
+![Image 9](/docs_imagem/tagoio/rounded-image-1761749322927.png)
 
 If you're using Twilio Long Code for messaging, be aware that it requires a
 Toll‑Free verification process. Please consult Twilio's documentation for
@@ -150,7 +156,7 @@ beforehand for them to appear in the dropdown menu. Use a Secret of type
 **Text**. Learn how to create this secret:
 [Secrets](/docs/tagoio/getting-started/secrets.md).
 
-![Image 12](/docs_imagem/tagoio/external-01a6551b.png)
+![Image 12](/docs_imagem/tagoio/rounded-image-1767014361018.png)
 
 You can send WhatsApp messages directly from scripts within the
 [Analysis](/docs/tagoio/analysis/creating-analysis.md) using the Twilio service.
@@ -174,6 +180,8 @@ define exactly when your code will run.
 Learn more about
 [Running Analysis via Action](/docs/tagoio/actions/running-analysis-via-action.md).
 
+![Run Analysis Script action configuration](/docs_imagem/tagoio/rounded-image-1767014455919.png)
+
 ## Publish to TagoIO MQTT Broker
 
 This action can publish to an MQTT topic defined by the developer. This means
@@ -185,7 +193,7 @@ To set the MQTT action up, select the option **Publish to MQTT**, select the
 device which will receive that topic and type in the topic. The content of the
 MQTT payload that subscribed devices will receive can be defined as well.
 
-![Image 13](/docs_imagem/tagoio/1576605830665-DPI.png)
+![Image 13](/docs_imagem/tagoio/rounded-image-1767014507673.png)
 
 TagoIO [MQTT Broker](/docs/tagoio/integrations/networks/mqtt/mqtt.md) is available
 exclusively for **Starter** and **Scale** accounts in the **US database
@@ -201,13 +209,13 @@ action is triggered, it will POST the entire data payload received from the
 device to the configured HTTP endpoint address using the
 [TagoIO Standard Data Format](/docs/tagoio/devices/sending-data-to-device.md).
 
-![Image 15](/docs_imagem/tagoio/1628001560181-oQ.png)
+![Image 15](/docs_imagem/tagoio/rounded-image-1767014557842.png)
 
 > You can use payload fields in the HTTP endpoint, like the example above but
 > with a variable (`https://myapi.io/endpoint/$VALUE$`), or even in the HTTP
 > Headers like in the example below:
 
-![Image 16](/docs_imagem/tagoio/1628001652255-dcw.png)
+![Image 16](/docs_imagem/tagoio/rounded-image-1767014631018.png)
 
 The `TagoIO-Retries` header is managed by the TagoIO API and sent in every Post
 request for this Action type, and indicates the number of attempts to post the
@@ -223,7 +231,7 @@ fails to receive it.
 To set up a fallback device, enable it in the bottom part of the HTTP Post
 action settings and put the token for the device you intend to hold the data.
 
-![Image 17](/docs_imagem/tagoio/1628001764337-3t4.png)
+![Image 17](/docs_imagem/tagoio/rounded-image-1767014751312.png)
 
 After 10 unsuccessful attempts, the data will be sent to the fallback device
 with some information added to the `metadata` in the `_http_*` properties
@@ -253,6 +261,8 @@ with some information added to the `metadata` in the `_http_*` properties
 
 This option is only available if your Action is of the type **MQTT Topic**. This
 action will insert the data directly into the device's data storage.
+
+![Insert to Device's data storage action configuration](/docs_imagem/tagoio/rounded-image-1767014904194.png)
 
 ## Message Variables
 

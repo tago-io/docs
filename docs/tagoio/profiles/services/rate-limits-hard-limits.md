@@ -9,7 +9,7 @@ Rate limits apply to a wide range of interactions within the platform, including
 
 :::note
 
-Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different from [TagoIO services](/docs/tagoio/profiles/services/) that are reset monthly. You still need to make sure you have enough resources to run your application.
+Hard limits are used to prevent high-frequency usage beyond a healthy acceptable level; this is different than [TagoIO services](/docs/tagoio/profiles/services/) that are reset monthly. You still need to make sure you have enough resources to run your application.
 
 :::
 
@@ -29,7 +29,7 @@ The system aggregates all requests performed inside a Profile for each route. Th
 
 :::tip
 
-Check our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
+Check out the [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
 :::
 
@@ -127,12 +127,8 @@ When a hard limit has been exceeded, TagoIO will return an **HTTP 429 “Too Man
 { "status": false, "message": "Too many requests (Retry-After: 8)" }
 ```
 
-When using the Admin, the following error will be displayed:
-
-![Image](/docs_imagem/tagoio/external-bf3190c0.png)
-
 If you need help adapting your project to these hard limits, try our [Community](https://community.tago.io/).
 
 ## Rate limits usage monitoring
 
-You can monitor the hard limits for each function by accessing the account menu located in the top right corner of your [Admin](https://admin.tago.io/limits/hard) page and selecting the **Hard Limits** option. If the [Control Tower](/docs/tagoio/addons/control-tower.md) add‑on is active in your account, you will have the ability to view historical and detailed statistics of your usage for Hard Limits, providing insights into your requests per minute.
+You can monitor the hard limits for each function by accessing the profile menu located in the top left corner of your [Admin](https://admin.tago.io/limits/hard) page and selecting the **Hard Limits** option. If the [Control Tower](/docs/tagoio/addons/control-tower.md) add‑on is active in your account, you will have the ability to view historical and detailed statistics of your usage for Hard Limits, providing insights into your requests per minute.

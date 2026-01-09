@@ -29,7 +29,7 @@ Type a name for your device, select a
 **[Data Retention](/docs/tagoio/devices/data-management/data-retention-feature.md)**,
 then click on _Create device_.
 
-![Device creation screen](/docs_imagem/tagoio/external-00c113a0.png)
+![Device creation screen](/docs_imagem/tagoio/rounded-image-1762441561759.png)
 
 ### Generate Service Authorization
 
@@ -74,7 +74,7 @@ In order to support downlinks from TagoIO to Senet, you need an additional step.
 3. Click to edit the **Additional Parameters** of the Authorization.
 4. Paste your Developer API Key and press _Save_.
 
-![Developer API Key configuration](/docs_imagem/tagoio/external-969e5674.png)
+![Developer API Key configuration](/docs_imagem/tagoio/rounded-image-1762441641103.png)
 
 Now you are all set; every time your device sends data to Senet, your data will
 be available at TagoIO.

@@ -11,14 +11,13 @@ You can easily integrate your RUN application with Zoho SalesIQ to track and eng
 
 2. Copy the key (only the key value shown after `widgetcode:` in the SalesIQ script).
 
-
 ![SalesIQ widget setup screenshot](/docs_imagem/tagoio/zoho-salesiq-2.png)
 
 3. Enable Visitor Tracking for your RUN URL.
 
-4. Then, back to TagoIO, in your [RUN](https://admin.tago.io/run) setup page, under the session Integration> User Engagement, paste the key in the Zoho ID field.
+4. Then, back to TagoIO, in your [RUN](https://admin.tago.io/run) setup page, under **Integrations > User Engagement**, paste the key in the Zoho ID field.
 
-You are now ready to track visitors (your RUN users) using SalesIQ!
+You are now ready to track your RUN users using SalesIQ!
 
 You will be able to know who is accessing your RUN, when, for how long, and what type of browser and devices were used. Also, you can enable Chat, Bots, remote screen access, analytics, and add functions to comply with GDPR (cookies disclaimer).
 

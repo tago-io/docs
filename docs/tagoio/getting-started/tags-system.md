@@ -43,7 +43,7 @@ When this tag is present on a resource, any attempt to delete it will be blocked
 Tags can be managed from several sources:
 
 1. **TagoIO Interface** – Manually add or edit tags by clicking the asset and then selecting the Tags tab.
-2. **Analysis SDK** – Programmatically add or edit tags from an analysis script using methods such as `account.devices.edit()` or `account.actions.edit()`.
+2. **Analysis SDK** – Programmatically add or edit tags from an analysis script using methods such as `Resources.devices.edit()` or `Resources.actions.edit()`.
 3. **TagoIO API** – Use REST API endpoints for each asset type to add or edit tags by sending HTTP requests with JSON payloads containing the tag information.
 
 ### Common use cases

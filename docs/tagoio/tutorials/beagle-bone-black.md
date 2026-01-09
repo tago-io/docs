@@ -3,7 +3,7 @@ title: "Beagle Bone Black"
 description: "This short tutorial explains how to integrate a BeagleBone Black (BBB) board with TagoIO, demonstrating how to send a digital input status to a dashboard and configure an Action to email when the switch closes."
 tags: ["tagoio"]
 ---
-![BeagleBone Black board](/docs_imagem/tagoio/beagle-bone-black-2.jpg)
+![BeagleBone Black board](/docs_imagem/tagoio/rounded-image-1761311943540.png)
 
 ## Overview
 This simple tutorial uses the BeagleBone Black (BBB) board to demonstrate key principles for integrating your solution with TagoIO. Beyond connecting the BBB to the cloud, you will learn how to structure and reuse this code in your own application.
@@ -13,13 +13,13 @@ The circuit is straightforward: a single digital input is connected to a normall
 ### Adding the Device
 1. Log in to your TagoIO account and navigate to the **[Devices](https://tago.io/devices)** section.  
 2. Click the blue **Add Device** button, give it the name `dev01`, and click **Save**.  
-3. All devices must use a valid token when accessing Tago. The token is automatically generated upon creation. Open the device’s **General information** page, click **QR Code** or **Tokens**, and copy the token to insert into your BBB code later.
+3. All devices must use a valid token when accessing TagoIO. The token is automatically generated upon creation. Open the device's **General information** page, click **QR Code** or **Tokens**, and copy the token to insert into your BBB code later.
 
 ### Building the Dashboard
 1. In the left sidebar, open **Dashboards** and click the plus icon (`+`).  
 2. Name the dashboard (e.g., `BBB Dashboard`) and click **Save**.  
 3. Add a widget: click the top‑right plus icon, choose **Display**, and configure it to show the variable `switch`.  
-4. Select your bucket (`dev01`), device (`dev01`), and click **Select as new option** then **Save**.  
+4. Select your device (`dev01`), and click **Select as new option** then **Save**.  
 5. The widget will update in real time once data starts flowing from the BBB.
 
 ### Sending e‑mail Action
@@ -92,7 +92,7 @@ while True:
 ```
 
 #### Tips for your code
-1. Import the Tago library: `from tago import Tago`.  
+1. Import the TagoIO library: `from tago import Tago`.  
 2. Replace `MY_DEVICE_TOKEN` with the token created for your device.  
 3. Prepare a JSON payload, e.g., `data_to_insert = {'variable': 'switch', 'value': 'closed'}`.  
 4. Send data: `result = my_device.insert(data_to_insert)`.  

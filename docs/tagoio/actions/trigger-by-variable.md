@@ -10,14 +10,16 @@ There are 2 categories inside this trigger type:
 ## 1. Single device
 Allows you to watch a specific device from your device list. Any data sent by that device will be tested against your conditions to determine whether the action should be triggered.
 
-![Single device vs Multiple devices selection](/docs_imagem/tagoio/trigger-by-variable-2.png)
+![Single-device selection UI](/docs_imagem/tagoio/rounded-image-1767016336359.png)
 
 ## 2. Multiple devices
 Allows you to watch multiple devices. Any data sent by those devices will be tested against your conditions to determine whether the action should be triggered. For this type, you must supply the tag key and tag value of the devices you want to watch.
 
-![Selecting tags for multiple devices (tag_key / tag_value)](/docs_imagem/tagoio/trigger-by-variable-2.png)
+ ![Multiple-devices tag selection UI](/docs_imagem/tagoio/rounded-image-1767016364577.png)
 
-It's important to note that only the Single device category allows you to set Trigger Unlock conditions. To learn more, see [Trigger Unlock](/docs/tagoio/actions/trigger-unlock.md).
+:::warning
+Note that only the **Single device** category allows you to set **Trigger Unlock** conditions. To learn more, see [Trigger Unlock](/docs/tagoio/actions/trigger-unlock.md).
+:::
 
 ## Trigger Conditions
 
@@ -26,9 +28,15 @@ After setting up the device, you should set a condition for your action to be ex
 You can set multiple conditions in an action; if at least one of them results in a match, the action will be executed.
 
 :::info
+When you set up multiple conditions, the action will execute only once per data
+message, even if that message matches multiple conditions. For example, if you
+have two conditions:
 
-Notice that setting up multiple conditions will execute the action only once if any of the conditions are matched. This means that if you send two variables that would trigger the action at the same time, it will only trigger one action.
+- Condition 1: Variable `temperature` is greater than `25`
+- Condition 2: Variable `temperature` is greater than `20`
 
+And you receive a message with `temperature` set to `30`, it matches both
+conditions, but the action will trigger only once for that single message.
 :::
 
 1. **Select a variable**: Choose a variable to be tested. This will be one of the variables that will be compared against the data from the device.
