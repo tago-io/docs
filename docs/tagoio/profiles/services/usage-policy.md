@@ -7,7 +7,7 @@ When executing API requests to TagoIO — either posting (data input) or getting
 
 ## How limits work
 - Limits are based on the number of transactions allowed for a given time period (for example, per hour or per minute).
-- A global (higher-level) limit is also applied to all accounts to help prevent attacks on TagoIO servers (for example, DDoS) and to provide a way to limit usage from applications.
+- A global (higher-level) limit is also applied to all accounts to help prevent attacks on TagoIO servers (for example, DDoS attacks) and to provide a way to limit usage from applications.
 
 >Check our comprehensive documentation on [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
 

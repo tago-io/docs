@@ -14,8 +14,8 @@ JSON example using a function:
 [
   {
     "variable": "temperature",
-    "unit": "F",
-    "value": $random$
+    "value": $random$,
+    "unit": "F"
   }
 ]
 ```
@@ -29,16 +29,19 @@ temperature,$random$,2019-09-19,1568913302243
 
 ## List of functions
 
-- $random$: This function will be replaced by a random number that ranges from 0 to 100 whenever you send your payload.
-- $randomBoolean$: This function will be replaced by a random boolean (true or false) whenever you send your payload.
-- $busRoute$: This function will be replaced by a sequential bus route through Chicago. The location will change to a new one every time you send your payload. You should only use this function in the `location` field of a JSON payload.
-- $sequential$: This function will be replaced by a number that is increased by 1 every time you send your payload.
-- $sequentialHex$: This function will be replaced by a hexadecimal value that is increased by 1 every time you send your payload. If you are using this function in a JSON payload, wrap it around quotes (`"$sequentialHex$"`).
-- $timestamp$: This function will be replaced by the current date and time as a Unix epoch timestamp.
-- $date$: This function will be replaced by the current date in the format `YYYY-MM-DD`. If you are using this function in a JSON payload, wrap it around quotes (`"$date$"`).
+- **$random$**: This function will be replaced by a random number that ranges from 0 to 100 whenever you send your payload.
+- **$randomBoolean$**: This function will be replaced by a random boolean (true or false) whenever you send your payload.
+- **$busRoute$**: This function will be replaced by a sequential bus route through Chicago. The location will change to a new one every time you send your payload. You should only use this function in the `location` field of a JSON payload.
+- **$sequential$**: This function will be replaced by a number that is increased by 1 every time you send your payload.
+- **$sequentialHex$**: This function will be replaced by a hexadecimal value that is increased by 1 every time you send your payload. If you are using this function in a JSON payload, wrap it around quotes (`"$sequentialHex$"`).
+- **$unixtime$**: This function will be replaced by the current date and time as a Unix epoch timestamp.
+- **$timestamp$**: This function will be replaced by the current date and time as 'YYYY-MM-DDTHH:mm:ss.sssZ' (ISO-8601) format.
+- **$date$**: This function will be replaced by the current date in the format `YYYY-MM-DD`. If you are using this function in a JSON payload, wrap it around quotes (`"$date$"`).
 
 :::tip
 
 If you are unsure of how to use functions, look for samples in the editor.
+
+![Device Emulator functions samples](/docs_imagem/tagoio/rounded-image-1766777720645.png)
 
 :::

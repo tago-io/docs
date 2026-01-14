@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 You can grant access to other TagoIO accounts to any of your [Profiles](/docs/tagoio/profiles/) by using the Team feature. By adding other accounts to your team, they will have access to all applications that run on that Profile.
 
-<!-- Image placeholder removed for build -->
+![Team Management - Sharing your profile](/docs_imagem/tagoio/rounded-image-1762263403092.png)
 
 ## Invitation notification
 The invitation can only be sent to email addresses that already have a TagoIO account. If the invited user doesn't have an account, the invitation email will guide them to create one.

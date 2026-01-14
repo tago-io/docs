@@ -21,7 +21,7 @@ You can check if your action is locked by looking at the **Locked** switch, as s
 
 The lock button will only appear once you add at least one condition.
 
-![Image 1](/docs_imagem/tagoio/external-4f45b6c0.png)
+![Image 1](/docs_imagem/tagoio/rounded-image-1767030524609.png)
 
 ### Manual Locking
 

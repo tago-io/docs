@@ -16,10 +16,10 @@ You can also adjust the table’s appearance by changing colors, font styles, an
 
 ## 2. User List filtering
 
-This option is required to be filled up in order to show your users. You can filter which users appear in the list by:
+This option is required to be filled in order to show your users. You can filter which users appear in the list by:
 
 - **Tag Key and Tag Value** – All users for the list must have the same tag key and tag value specified by you in this filter.
-- **Blueprint Device Tags** – Select a blueprint device from the dashboard and one tag key. The user for the list must match the same value of that tag key in the selected blueprint device.
+- **Blueprint Device Tags** – Select a blueprint device from the dashboard and one tag key. The users for the list must match the same value of that tag key in the selected blueprint device.
 
 You can also apply multiple filters simultaneously; note that this works as an AND operator, so the user must match *all* specified filters.
 
