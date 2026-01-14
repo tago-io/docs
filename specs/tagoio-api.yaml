@@ -4869,6 +4869,54 @@ paths:
           type: string
           example: (Type an entity ID)
     description: Entity ID
+  /entity/{entity_id}/data/backup:
+    post:
+      tags:
+        - Entity Data
+      summary: Export Entity Data
+      description: |
+        Export data from the entity to a file in the Files.
+      operationId: exportEntityData
+      parameters:
+        - name: entity_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Entity ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file_address:
+                  type: string
+                  example: /my_data/export.csv
+                  description: Path in the Files to save the export.
+                headers:
+                  type: boolean
+                  example: true
+                  description: Whether to include headers in the export.
+              required:
+                - file_address
+      responses:
+        '200':
+          description: Exporting data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      file_address:
+                        type: string
+                        example: /my_data/export.csv
+                  status:
+                    type: boolean
+                    example: true
   /dashboard/{dashboardID}/widget/{widgetID}:
     get:
       tags:
