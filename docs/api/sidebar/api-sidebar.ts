@@ -775,6 +775,12 @@ const sidebar: SidebarsConfig = {
               label: "Delete Entity Data",
               className: "api-method delete",
             },
+            {
+              type: "doc",
+              id: "api/export-entity-data",
+              label: "Export Entity Data",
+              className: "api-method post",
+            },
           ],
         },
       ],
