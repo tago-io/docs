@@ -9103,6 +9103,334 @@ paths:
           type: string
           example: 678abc123def456789012345
         description: The ID of the backup to delete
+  /profile/{id}/service:
+    put:
+      tags:
+        - Profile
+      summary: Configure Service Provider
+      description: |
+        Configure external service providers for your profile. This allows you to set up integrations with third-party services for SMS and Email messaging.
+
+        **Available service providers:**
+
+        | Service Type | Provider | Description |
+        |--------------|----------|-------------|
+        | `sms` | Twilio | Send SMS messages via Twilio |
+        | `sms` | SNS | Send SMS messages via Amazon SNS |
+        | `email` | SendGrid | Send emails via SendGrid API |
+        | `email` | SES | Send emails via Amazon SES |
+        | `email` | SMTP | Send emails via custom SMTP server |
+
+        **Important notes:**
+        - Credentials are securely stored using [TagoIO Secrets](/docs/tagoio/getting-started/secrets). You must create the appropriate secrets before configuring a service provider.
+        - Each service type can only have one active provider configuration at a time
+        - Use the test endpoint to verify your configuration before using it in production
+
+        **Required secrets by provider:**
+        - **Twilio SMS**: Create two Text secrets containing your Twilio SID and Auth Token
+        - **SNS SMS**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
+        - **SendGrid Email**: Create a Text secret containing your SendGrid API Key
+        - **SES Email**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
+        - **SMTP Email**: Create an SMTP Secret with your server configuration
+      operationId: configureProfileService
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: object
+                  description: Email service configuration
+                  properties:
+                    provider:
+                      type: string
+                      enum: [sendgrid, ses, smtp]
+                      description: The email provider to use
+                      example: smtp
+                    from:
+                      type: string
+                      description: Sender email address
+                      example: noreply@example.com
+                    secrets:
+                      type: object
+                      description: Secret IDs for provider credentials
+                      properties:
+                        data:
+                          type: string
+                          description: Secret ID containing SMTP configuration (required for SMTP provider) or AWS SQS Secret (required for SES provider)
+                          example: 68c9977a28079e0010aaf399
+                        api_key:
+                          type: string
+                          description: Secret ID containing SendGrid API Key (required for SendGrid provider)
+                          example: 68c9977a28079e0010aaf399
+                sms:
+                  type: object
+                  description: SMS service configuration
+                  properties:
+                    provider:
+                      type: string
+                      enum: [twilio, sns]
+                      description: The SMS provider to use
+                      example: twilio
+                    from:
+                      type: string
+                      description: Sender phone number in E.164 format (required for Twilio, optional for SNS)
+                      example: '+15551234567'
+                    secrets:
+                      type: object
+                      description: Secret IDs for provider credentials
+                      properties:
+                        twilio_sid:
+                          type: string
+                          description: Secret ID containing Twilio Account SID (required for Twilio provider)
+                          example: 674f1740f9ccd2000aaa4551
+                        twilio_token:
+                          type: string
+                          description: Secret ID containing Twilio Auth Token (required for Twilio provider)
+                          example: 674f1736f9ccd2000aaa4550
+                        data:
+                          type: string
+                          description: Secret ID containing AWS SQS Secret (required for SNS provider)
+                          example: 68c9977a28079e0010aaf399
+            examples:
+              Configure SMS and Email:
+                value:
+                  email:
+                    provider: smtp
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+                  sms:
+                    provider: twilio
+                    from: '+15551234567'
+                    secrets:
+                      twilio_sid: 674f1740f9ccd2000aaa4551
+                      twilio_token: 674f1736f9ccd2000aaa4550
+              Configure SMS only:
+                value:
+                  sms:
+                    provider: twilio
+                    from: '+15551234567'
+                    secrets:
+                      twilio_sid: 674f1740f9ccd2000aaa4551
+                      twilio_token: 674f1736f9ccd2000aaa4550
+              Configure Email with SendGrid:
+                value:
+                  email:
+                    provider: sendgrid
+                    from: noreply@example.com
+                    secrets:
+                      api_key: 68c9977a28079e0010aaf399
+              Configure Email with SMTP:
+                value:
+                  email:
+                    provider: smtp
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+              Configure Email with SES:
+                value:
+                  email:
+                    provider: ses
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+              Configure SMS with SNS:
+                value:
+                  sms:
+                    provider: sns
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+      responses:
+        '200':
+          description: Service provider configured successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Service provider configured successfully
+                  status:
+                    type: boolean
+                    example: true
+        '400':
+          description: Bad request - Invalid configuration
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid credentials format for the selected provider
+        '401':
+          description: Unauthorized - Invalid or missing token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Unauthorized
+        '403':
+          description: Forbidden - Insufficient permissions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: You do not have permission to configure services for this profile
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+  /profile/{id}/service/test/{service_type}:
+    post:
+      tags:
+        - Profile
+      summary: Test Service Provider
+      description: |
+        Test a configured service provider by sending a test message. This helps verify that your service provider configuration is working correctly before using it in production.
+
+        **Supported service types:**
+        - `sms` - Sends a test SMS message to the specified phone number
+        - `email` - Sends a test email to the specified email address
+
+        **Important notes:**
+        - A service provider must be configured before testing
+        - Test messages will consume your provider's quota/credits
+        - For SMS, ensure the recipient number is in E.164 format (e.g., +15551234567)
+      operationId: testProfileService
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - to
+              properties:
+                to:
+                  type: string
+                  description: |
+                    The recipient address for the test message.
+                    - For SMS: Phone number in E.164 format (e.g., +15551234567)
+                    - For Email: Email address (e.g., user@example.com)
+                  example: '+15559876543'
+                message:
+                  type: string
+                  description: Custom test message content (optional). If not provided, a default test message will be sent.
+                  example: This is a test message from TagoIO
+                subject:
+                  type: string
+                  description: Email subject line (only for email service type, optional)
+                  example: Test Email from TagoIO
+            examples:
+              Test SMS:
+                value:
+                  to: '+15559876543'
+                  message: This is a test SMS from TagoIO
+              Test Email:
+                value:
+                  to: user@example.com
+                  subject: Test Email from TagoIO
+                  message: This is a test email from TagoIO to verify your email service configuration.
+      responses:
+        '200':
+          description: Test message sent successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Test message sent successfully
+                      message_id:
+                        type: string
+                        description: Provider's message ID for tracking (if available)
+                        example: SM1234567890abcdef1234567890abcdef
+                  status:
+                    type: boolean
+                    example: true
+        '400':
+          description: Bad request - Invalid recipient or message format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid phone number format. Use E.164 format (e.g., +15551234567)
+        '404':
+          description: Service provider not configured
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: No service provider configured for the specified service type
+        '500':
+          description: Provider error - Failed to send test message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: 'Failed to send test message: Invalid credentials'
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+      - name: service_type
+        in: path
+        required: true
+        schema:
+          type: string
+          enum: [sms, email]
+          example: sms
+        description: The type of service to test (sms or email)
   /dictionary:
     get:
       tags:
