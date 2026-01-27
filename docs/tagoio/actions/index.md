@@ -19,11 +19,11 @@ Learn about [Defining Actions](/docs/tagoio/actions/defining-actions.md).
 
 To create a new Action, click the "Action" button in the sidebar, then click the + button in the top right.
 
-![Actions screen showing the Add Action button and Actions list](/docs_imagem/tagoio/actions-2.png)
+![Actions screen showing the Add Action button and Actions list](/docs_imagem/tagoio/rounded-image-1769103195000.png)
 
 ### Type of trigger
 
-There are 5 types of triggers you can use:
+There are 6 types of triggers you can use:
 
 * **Variable** – The action will be triggered when one variable meets certain conditions. If your device has sent data and the variables are meeting those conditions, this action will be triggered. Learn more about [Trigger by Variable](/docs/tagoio/actions/trigger-by-variable.md).
 
@@ -34,6 +34,12 @@ There are 5 types of triggers you can use:
 * **Usage Alert** – This action will be triggered upon a Services and/or Resources usage percentage set by the user. This type keeps watching Services and Resources and triggers the Action when the conditions are met. Learn more about [Trigger by Usage Alert](/docs/tagoio/actions/trigger-by-usage-alert.md).
 
 * **Geofence** – This action will be triggered whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. Learn more about [Trigger by Geofence](/docs/tagoio/actions/trigger-by-geofence.md).
+
+* **MQTT Topic** – This action will be triggered when a message is received on an MQTT topic. Learn more about [Trigger by MQTT Topic](/docs/tagoio/actions/trigger-by-mqtt-topic.md).
+
+:::warning
+Note that the **TagoIO MQTT Broker** is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
+:::
 
 To prevent your action from continuously activating when a trigger condition is met, it is advisable to define a reset trigger condition. Ensure you check the “[Trigger Unlock]” option to avoid potential issues with your logic and account:
 [Trigger Unlock](/docs/tagoio/actions/trigger-unlock.md).

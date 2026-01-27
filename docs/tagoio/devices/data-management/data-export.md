@@ -49,8 +49,6 @@ chunks. Learn more about exporting data chunks here:
 
 :::
 
-<!-- Image placeholder removed for build -->
-
 Notes:
 
 - Use filtering options on the device "Data" tab to limit the exported data and

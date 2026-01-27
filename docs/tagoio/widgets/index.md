@@ -76,4 +76,4 @@ The following widgets are provided out of the box (icons and labels shown):
 
 ### Common Features
 
-Check the Widgets > General documentations for commom features that can be used accross almost all widgets.
+Check the Widgets > General documentations for common features that can be used across almost all widgets.

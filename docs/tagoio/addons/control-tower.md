@@ -19,7 +19,7 @@ Once you activate Control Tower, you can view data input and output statistics f
 
 You can monitor the statistics by going to your Devices module on your Admin and selecting the device you want to visualize:
 
-![Control tower overview](/docs_imagem/tagoio/ctower_device_statistics.png)
+![Control tower overview](/docs_imagem/tagoio/rounded-image-1765199046181.png)
 
 :::info
 
@@ -42,12 +42,12 @@ You can apply a soft rate limit to:
 - **Your whole profile** – all devices in the profile follow this limit.
   To set it, navigate to your Admin page → [Profiles & Teams](https://admin.tago.io/profile) → “More” tab.
 
-![Control tower profile](/docs_imagem/tagoio/profile_limit_ctower.png)
+![Control tower profile](/docs_imagem/tagoio/rounded-image-1765199260734.png)
 
 - **A specific device** – overrides the profile limit for that device.
   To set it, go to the [Devices](/docs/tagoio/devices/) module, select the desired device, and click the “More” tab.
 
-![Control tower device](/docs_imagem/tagoio/device_limit_ctower.png)
+![Control tower device](/docs_imagem/tagoio/rounded-image-1765199355157.png)
 
 :::info
 
@@ -60,8 +60,7 @@ For example: if the hard limit of your plan is 5,000 , even if the soft limit is
 
 A significant feature provided by the Control Tower is the capability to access detailed statistics on Hard Limits through your Admin page. Upon activating the add-on, data regarding your requests will begin to be recorded and presented on the [Hard Limits > Requests page](https://admin.tago.io/limits/hard). This enables you to view the current, highest, lowest, and average usage of each hard limit. Furthermore, it allows for the display of advanced statistics, offering a historical view of your usage.
 
-
-![Control tower advanced statistics](/docs_imagem/tagoio/rpm_list_advanced_statistics.png)
+![Control tower advanced statistics](/docs_imagem/tagoio/rounded-image-1761140461575.png)
 
 In the advanced statistics view, you have the option to filter your usage by date and time, as well as to view only the highest, average, and lowest usage. This is beneficial for understanding how your application is performing and determining if any actions are necessary to mitigate the usage of your hard limits.
 

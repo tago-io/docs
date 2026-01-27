@@ -13,7 +13,7 @@ easier to scale your applications.
 
 :::info
 
-Authorization is different from
+A Authorization token is different than a
 [device-token](/docs/tagoio/devices/device-token.md).
 
 > When to use each:
@@ -31,11 +31,13 @@ devices, follow these steps:
 
 1. Go to the Device section of your TagoIO account and click the
    "[Authorization](https://admin.tago.io/devices/authorization)" button.
-   ![Devices list with Authorization button highlighted](/docs_imagem/tagoio/authorization-2.png)
+   
+   ![Devices list with Authorization button highlighted](/docs_imagem/tagoio/rounded-image-1769101086998.png)
 
 2. In the next screen, enter a name you can identify later, fill any additional
    parameters requested by the integration, and press the Generate button.
-   ![Generate Authorization screen showing name and parameters fields](/docs_imagem/tagoio/authorization-3.png)
+
+   ![Generate Authorization screen showing name and parameters fields](/docs_imagem/tagoio/rounded-image-1762433245481.png)
 
 Only certain integrations require an **Additional Parameter**. Check out the
 [list of integrations](/docs/tagoio/integrations/index.md) to learn the parameter
