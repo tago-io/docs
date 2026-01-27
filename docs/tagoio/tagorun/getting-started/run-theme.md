@@ -15,6 +15,12 @@ You can upload the image files for the background and logo on [TagoIO's file sto
 
 :::
 
+:::warning
+
+If you don't have any TagoRun User Resources available, the signup link will not be visible. You can allocate more TagoRun Users to your profile in the [Billing](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md) page.
+
+:::
+
 ## 2. Sidebar & Navigation bar
 
 The Sidebar and the Navigation bar are the main components used to route users through the application.
