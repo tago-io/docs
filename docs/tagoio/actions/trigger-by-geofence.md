@@ -14,7 +14,7 @@ For each condition, you can only set one geofence, so if you need multiple geofe
 
 You must define whether the trigger should activate when the chosen variable is **inside** or **outside** the geofence. When the selected variable receives new location data, the system checks if this location meets the specified geofence condition.
 
-![Image 2](/docs_imagem/tagoio/external-bef9d9d6.png)
+![Image 2](/docs_imagem/tagoio/external-notanymore.gif)
 
 ### Editing Geofence
 

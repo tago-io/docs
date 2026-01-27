@@ -8,7 +8,7 @@ sidebar_position: 1
 To create a new integration, go to the admin panel and click on the [Integrations](https://admin.tago.io/integrations/connector) button in the sidebar menu.
 From there you can click on the "My Networks" on the menu on the right side of the page and finally click on the "Add network" button.
 
-![Create a new integration](/docs_imagem/tagoio/rounded-image-1764610801394.png)
+![Create a new integration](/docs_imagem/tagoio/rounded-image-1769101024685.png)
 
 All you'll need to add is the network's name and click on the "Create my Network" button. Now you can configure the network's parameters by clicking on the "My networks" list.
 

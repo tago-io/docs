@@ -20,8 +20,6 @@ The integration is accomplished in two parts:
 First, go to the [Devices](/docs/tagoio/devices/) module in our admin, look for
 Senet, and select it.
 
-![Connector selection showing the Senet connector in the Devices module](/docs_imagem/tagoio/senet-network-4.png)
-
 ### Create Device
 
 Type a name for your device, select a
@@ -47,7 +45,7 @@ Now, log in to **[Senet portal](http://portal.senetco.io/)** and go to your
 devices.\
 Choose the device to connect to TagoIO and click on the gear icon.
 
-![Senet device settings](/docs_imagem/tagoio/senet-network-4.png)
+![Senet device settings](/docs_imagem/tagoio/rounded-image-1769102832066.png)
 
 Go to **"Notification Target"**. Make sure the status is _Enabled_, select
 **HTTP** in the 'forward to' field, and fill the fields accordingly:
@@ -59,7 +57,7 @@ Go to **"Notification Target"**. Make sure the status is _Enabled_, select
 | **Headers**              | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1.                                                                                                                                              |
 | **Optional Data Fields** | Enable _RF Data_ and any other optional field you would like to receive in your device.                                                                                                                                                          |
 
-![Notification Target configuration](/docs_imagem/tagoio/external-b2ca369e.png)
+![Notification Target configuration](/docs_imagem/tagoio/rounded-image-1769102866603.png)
 
 ### Setting up Downlink
 

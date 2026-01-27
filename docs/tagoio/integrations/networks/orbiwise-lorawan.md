@@ -62,7 +62,7 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 3. **Start Push**
    - Make sure that you set the status of your Application to **&lt;Start Push&gt;**.
 
-![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
+![Orbiwise backend configuration](/docs_imagem/tagoio/rounded-image-1769101996090.png)
 
 
 

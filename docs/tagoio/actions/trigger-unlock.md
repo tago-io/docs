@@ -31,7 +31,7 @@ You can also set this Locked parameter manually; all you have to do is click it 
 
 Additionally, you can run the action again when an unlock condition is met. For example, if you are triggering an [Analysis](/docs/tagoio/analysis/creating-analysis.md)​ to set a device in alert mode due to high-temperature readings, you can also switch to safe mode upon meeting an unlock condition.
 
-![Image 2](/docs_imagem/tagoio/external-205c14dd.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1769103607957.png)
 
 ### Duplicate Trigger Warning
 

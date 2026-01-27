@@ -19,7 +19,7 @@ Learn about [Defining Actions](/docs/tagoio/actions/defining-actions.md).
 
 To create a new Action, click the "Action" button in the sidebar, then click the + button in the top right.
 
-![Actions screen showing the Add Action button and Actions list](/docs_imagem/tagoio/rounded-image-1767013673736.png)
+![Actions screen showing the Add Action button and Actions list](/docs_imagem/tagoio/rounded-image-1769103195000.png)
 
 ### Type of trigger
 

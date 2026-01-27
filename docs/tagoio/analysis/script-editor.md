@@ -30,7 +30,7 @@ To learn more about our examples, you can visit our [Script Examples](/docs/tago
 The TagoAI Assistant helps you write, debug, and generate code for your Analysis scripts.
 You can open it by clicking the star-shaped TagoAI Assistant button in the top-right corner of the script editor.
 
-![TagoAI Assistant](/docs_imagem/tagoio/rounded-image-1764605013109.png)
+![TagoAI Assistant](/docs_imagem/tagoio/rounded-image-1769103890139.png)
 
 The assistant lets you:
 

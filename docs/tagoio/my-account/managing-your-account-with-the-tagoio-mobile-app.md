@@ -6,7 +6,7 @@ sidebar_position: 1
 ---
 The TagoIO App is your gateway to streamlining your ecosystem and managing all your IoT applications in one place. It enables you to monitor and control services and resources across all your profiles and receive real‑time notifications and alerts on your smartphone so you stay informed about activities.
 
-![TagoIO App](/docs_imagem/tagoio/external-93280f88.png)
+![TagoIO App](/docs_imagem/tagoio/rounded-image-1769103991697.png)
 
 ## Download
 Download the TagoIO App from the App Store (iOS) or Google Play (Android).

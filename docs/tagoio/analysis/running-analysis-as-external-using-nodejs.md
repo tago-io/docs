@@ -57,7 +57,7 @@ module.exports = new Analysis(myAnalysis, { token: '**MY-ANALYSIS-TOKEN-HERE**' 
 
 You can get the analysis token by accessing your analysis page at TagoIO and selecting **External** for “Runs on”. Create a new analysis if you don’t have any.
 
-![Image 2](/docs_imagem/tagoio/rounded-image-1761144951026.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1769103706398.png)
 
 Now run the script from your command line:
 
@@ -67,11 +67,11 @@ node ./analysis.js
 
 You should see a prompt similar to this:
 
-![Image 3](/docs_imagem/tagoio/Screen-20Shot-202019-03-06-20at-2016.32.35-37A.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1769103781795.png)
 
 Go back to TagoIO and click **Run** to run your script. You can also configure an [Action](/docs/tagoio/actions/running-analysis-via-action.md) to run your script automatically.
 
-![Image 4](/docs_imagem/tagoio/rounded-image-1761145033874.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1769103742011.png)
 
 ## 4. Use Analysis‑Builder to Upload the Script
 

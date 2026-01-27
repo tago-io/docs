@@ -39,7 +39,7 @@ To send a JSON payload from the emulator, you will need to:
 2. Edit the fields of the payload;
 3. Click on **Send button** to send the payload.
 
-![Example payload editor](/docs_imagem/tagoio/rounded-image-1766775731728.png)
+![Example payload editor](/docs_imagem/tagoio/image.png)
 
 ### Functions
 

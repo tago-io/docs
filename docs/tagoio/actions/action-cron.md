@@ -9,7 +9,7 @@ Inside TagoIO, cron is used to define when a Schedule Action will be triggered. 
 
 To modify the cron of the Action, select the Advanced property in the top-right of the Recurrence options panel.
 
-![Recurrence options screenshot with cron fields and visual explanation](/docs_imagem/tagoio/action-cron-2.png)
+![Recurrence options screenshot with cron fields and visual explanation](/docs_imagem/tagoio/rounded-image-1769103294865.png)
 
 ## Cron example and visual preview
 
