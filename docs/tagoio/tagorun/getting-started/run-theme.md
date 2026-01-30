@@ -15,6 +15,12 @@ You can upload the image files for the background and logo on [TagoIO's file sto
 
 :::
 
+:::warning
+
+If you don't have any Run User Services available, **the signup link will not be visible**. You can allocate more Run Users to your profile in the [Billing page](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md).
+
+:::
+
 ## 2. Sidebar & Navigation bar
 
 The Sidebar and the Navigation bar are the main components used to route users through the application.
