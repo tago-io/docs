@@ -19,7 +19,7 @@ There are four types of notifications:
   Displayed when another user shares something with you. Example: "John wishes
   to share a Dashboard with you."
 
-- Tago system\
+- TagoIO system\
   Used by the TagoIO backend to notify users about the system or your account.
   Example: "There is a new application in the Healthcare industry that you may
   be interested in."
@@ -33,12 +33,9 @@ There are four types of notifications:
 ## Viewing notifications
 
 When you log in to your account, you can see all your notifications in the
-top‑right corner of the admin page.
+bottom-left corner of the admin page with a blinking blue dot indicating unread notifications.
 
-> The number in red indicates how many new notifications you have. If you have
-> more than 99 notifications, it will display as "99+".
-
-![Notifications UI showing unread count](/docs_imagem/tagoio/notification-2.png)
+![Notifications UI showing unread count](/docs_imagem/tagoio/rounded-image-1765546342632.png)
 
 ## Filtering and searching
 
@@ -55,12 +52,10 @@ accept dashboards or profiles. In these cases, you need to first accept the
 request before the shared item is available to you.
 
 > The user who sent the request can track the status of the request by checking
-> into the “Share” tab of each item (Dashboard/Profile).
+> the “Share” tab of each item (Dashboard/Profile).
 
-After you make a decision and choose to accept or decline a notification, the
-system will change it to a faded‑like color and remove the blue unread icon.
-TagoIO automatically removes all ignored notifications that are older than two
-weeks.
+After you accept or decline a notification, the system removes the dark blue unread icon.
+TagoIO automatically removes all ignored notifications that are older than two weeks.
 
 ### Notifications from Applications
 

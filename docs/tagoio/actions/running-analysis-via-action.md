@@ -17,12 +17,12 @@ To run an Analysis from an Action:
 2. Set the field "Type of action" to "Run Analysis".
 3. Select one or more Analyses to run.
 
-![Action Run Analysis UI](/docs_imagem/tagoio/running-analysis-via-action-2.png)
+![Action Run Analysis UI](/docs_imagem/tagoio/rounded-image-1767033430352.png)
 
 Notes about the UI shown above:
 - The "Type of action" field should be set to "Run Analysis".
 - Use the "Run one or more analyses" area to add the Analyses you want to execute (e.g., Analysis 1, Analysis 2).
-- Use the plus (+) and minus (−) controls to add or remove Analyses from the Action's list.
+- Use the plus and trash can icons to add or remove Analyses from the Action's list.
 - You can specify up to **10 Analyses** that will run in parallel when the Action is triggered.
 
 ## Action Context Variables

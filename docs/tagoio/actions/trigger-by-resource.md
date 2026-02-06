@@ -19,11 +19,11 @@ After setting up the device, you should set a condition that causes your Action 
 
 :::tip
 
-You can set multiple conditions in an Action. If at least one condition matches, the Action will be executed.
+You can set multiple conditions for different resource types in a single Action. If at least one condition matches, the Action will be executed.
 
 :::
 
-![Trigger panel — "If one of the conditions match, the action will be triggered."](/docs_imagem/tagoio/trigger-by-resource-2.png)
+![Trigger panel — "If one of the conditions match, the action will be triggered."](/docs_imagem/tagoio/rounded-image-1767016776767.png)
 
 1. **Resource** – Select a resource to be tested.  
 2. **Tag key** – The tag key of the resource to be tested.  

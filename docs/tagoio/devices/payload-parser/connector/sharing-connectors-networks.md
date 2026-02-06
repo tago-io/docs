@@ -14,27 +14,22 @@ To share a custom Connector or Network with another Profile:
 1. Go to the [Integrations page](https://admin.tago.io/integrations/connector).
 2. Select the connector or network you want to share.
 3. Open the Share tab.
+3. Click on the "Invite to Connector" or "Invite to Network" button.
 4. Enter the Profile ID of the person you want to share it with.
 5. Click the Share button.
 
 Note: Profiles with access to the shared connector cannot modify it; they can only use it to create devices.
 
-<!-- Image placeholder removed for build -->
+ ![Share Connector](/docs_imagem/tagoio/rounded-image-1764772930690.png)
 
-The Share modal contains:
-- Title: "Share connector"
-- Input: "Profile ID" (field to enter the Profile ID to share this connector)
-- Small note: "Profiles with access to the shared connector cannot modify it, only use it to create devices."
-- Buttons: "Cancel" and "Share"
+### Utilizing a shared Connector
 
-### Utilizing the shared Connector
+Once shared, the recipient profiles can select your connector when adding new devices through the [Connector Selection](https://admin.tago.io/integrations/connector) page. They can view all connectors that have been shared with them by navigating to the **My Shared Connectors** list.
 
-Once shared, the recipient profiles can select your connector when adding new devices through the [Connector Selection](https://admin.tago.io/integrations/connector) page. They can view all connectors that have been shared with them by navigating to the **Shared Connectors** list.
+### Utilizing a shared Network
 
-### Utilizing the shared Network
-
-Custom networks are only applicable for Connectors created by you. To make your custom network available for your connector, head to the configuration page of your network within the [Integrations](https://admin.tago.io/integrations/connector) page. Then:
-- Navigate to the **General Information** tab.
+Custom networks are only applicable for Connectors created by you. To make your custom network available for your connector, head to the configuration page of your network within the [Integrations](https://admin.tago.io/integrations/connector) page and select the connector. Then:
+- Navigate to the **General** tab.
 - Select your custom network from the "**Select the networks for this connector**" option.
 
 Ensure that the Profiles you are sharing the Connector with have access to at least one of the Networks used by the Connector. If the Connector is utilizing a non-public Network, it is crucial to share both the Connector and the Network with the Profile.

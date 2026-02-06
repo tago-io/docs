@@ -27,7 +27,7 @@ To build an MQTT **retain** workaround with TagoIO, you can either publish direc
    - In the action configuration, select **"MQTT Publish"** as the action type.
    - Specify the topic you wish to publish to and the message payload.
 
-![Image 2](/docs_imagem/tagoio/external-41c105e7.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1769101281198.png)
 
 ## Using Analysis for Advanced Scenarios
 

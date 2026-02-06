@@ -9,7 +9,7 @@ the TagoIO Platform. By following these instructions, you will enable both
 uplink and downlink operations, allowing data exchange between your LoRaWAN
 devices and the TagoIO application.
 
-![machineQ to TagoIO integration diagram](/docs_imagem/tagoio/machineq-lorawan-2.png)
+![machineQ to TagoIO integration diagram](/docs_imagem/tagoio/rounded-image-1762438254444.png)
 
 Follow these steps in order to integrate your devices. You may skip some steps
 depending on your situation. For example, if you have already generated an

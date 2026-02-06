@@ -52,9 +52,9 @@ typically receive responses similar to the examples below:
 }
 ```
 
-- status: boolean indicating general request success (true) or failure (false).
-- result: contains the response data (array or object) or error details.
-- message: optional text included for warnings or additional information on
+- **status**: boolean indicating general request success (true) or failure (false).
+- **result**: contains the response data (array or object) or error details.
+- **message**: optional text included for warnings or additional information on
   failures.
 
 For more details and endpoints, refer to the full
@@ -87,7 +87,7 @@ can also be defined. Add them in the header of your HTTP request:
 | Authentication   | Any Token (Account or Device) |
 
 Check the [usage policy](/docs/tagoio/profiles/services/usage-policy.md) based
-on number of requests per a certain period.
+on the number of requests per a certain period.
 
 ## Regional endpoints
 

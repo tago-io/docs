@@ -5,6 +5,8 @@ tags: ["tagoio"]
 ---
 You can integrate your RUN application with Google Analytics to track users and obtain actionable insights. Google Analytics lets you analyze in-depth details about your RUN users and provides data to help improve your solution.The tool can provide valuable insights to help you improve your solution based on real data.
 
+![Google Analytics integration](/docs_imagem/tagoio/rounded-image-1764602658282.png)
+
 All you need from Google Analytics is the [Measurement ID](https://support.google.com/analytics/answer/12270356?hl=en#:~:text=A%20Measurement%20ID%20is%20an,same%20as%20your%20destination%20ID) to add to your RUN setup.
 
 ## How to integrate Google Analytics with TagoIO
@@ -17,7 +19,7 @@ To integrate, follow these steps:
 
 3. Copy the Measurement ID from the web stream details in Google Analytics.  
 
-4. Back to TagoIO, go to your [RUN setup page](https://admin.tago.io/run), under **Session Integration > User Engagement**, paste the key into the *Google Analytics ID* field and save.
+4. Back to TagoIO, go to your [RUN setup page](https://admin.tago.io/run), under **Integrations > User Engagement**, paste the key into the *Google Analytics ID* field and save.
 
 You are ready to track the visitors (your RUN users) using Google Analytics!
 

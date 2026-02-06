@@ -14,7 +14,7 @@ The integration is accomplished in two parts:
 1. Go to the [devices](/docs/tagoio/devices/) section, search for "SenRa", and select it.
 2. Type a name for your device and click "Create device".
 
-![TagoIO device creation screen](/docs_imagem/tagoio/senra-network-2.png)
+![senra device settings](/docs_imagem/tagoio/rounded-image-1769102191287.png)
 
 3. Access the device you just created, open the "Token" tab, and copy the `device-token`. You will use this token in the next step.
 
