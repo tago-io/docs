@@ -28,7 +28,20 @@
       "Bash(npm outdated:*)",
       "Bash(yarn outdated:*)",
       "Bash(npm ls:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git -C /Users/felipefdl/Projects/tago/docs config --file .gitmodules --list)",
+      "Bash(git submodule:*)",
+      "Bash(git config:*)",
+      "Bash(git -C /Users/felipefdl/Projects/tago/docs submodule status)",
+      "Bash(cat:*)",
+      "Bash(git ls-tree:*)",
+      "WebSearch",
+      "Bash(curl:*)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_wait_for",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(gh api:*)"
     ],
     "deny": [],
     "ask": []
