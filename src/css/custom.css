@@ -26,8 +26,8 @@
     -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI emoji";
   --ifm-font-family-monospace:
-    "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier,
-    monospace;
+    "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
   --ifm-font-weight-semibold: 600;
   --ifm-font-weight-bold: 700;
 

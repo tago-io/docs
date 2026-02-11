@@ -23,7 +23,12 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git rm:*)",
-      "Bash(npx docusaurus:*)"
+      "Bash(npx docusaurus:*)",
+      "Bash(du:*)",
+      "Bash(npm outdated:*)",
+      "Bash(yarn outdated:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []

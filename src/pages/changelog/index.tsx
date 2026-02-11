@@ -64,13 +64,16 @@ export default function ChangelogIndex({
     .map((i) => parsePost(i.content))
     .filter((p) => p.version && p.product);
   const hasTagoDeploy = changelogs.some((p) => p.product === "tagodeploy");
-  const allowedFilters: string[] = [
-    "all",
-    "tagoio-admin",
-    "tagoio-api",
-    "tagocore",
-    ...(hasTagoDeploy ? ["tagodeploy"] : []),
-  ];
+  const allowedFilters = React.useMemo<string[]>(
+    () => [
+      "all",
+      "tagoio-admin",
+      "tagoio-api",
+      "tagocore",
+      ...(hasTagoDeploy ? ["tagodeploy"] : []),
+    ],
+    [hasTagoDeploy],
+  );
 
   const getYear = (dateStr: string) =>
     new Date(dateStr).getFullYear().toString();
@@ -137,7 +140,7 @@ export default function ChangelogIndex({
       setActiveFilter("all");
     }
     setIsReady(true);
-  }, [allowedFilters.includes]);
+  }, [allowedFilters]);
 
   React.useEffect(() => {
     if (!isReady) return;
@@ -156,7 +159,7 @@ export default function ChangelogIndex({
   }, [
     activeFilter,
     isReady,
-    history.replace,
+    history,
     location.hash,
     location.pathname,
     location.search,
