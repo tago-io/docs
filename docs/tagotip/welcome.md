@@ -17,8 +17,8 @@ PUSH|ate2bd...c0d0|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 | | HTTP/JSON | TagoTiP | TagoTiP/S (encrypted) |
 |---|---|---|---|
 | **Payload size** | ~487 bytes | ~130 bytes | ~115 bytes |
-| **vs. HTTP/JSON** | — | 3.7x smaller | 4.2x smaller |
-| **TLS required?** | Yes | Recommended | No — AES-128-CCM built-in |
+| **vs. HTTP/JSON** | — | 3.7× smaller | 4.2× smaller |
+| **TLS required?** | Yes | Recommended | No — AEAD encryption built-in |
 | **Parse complexity** | JSON parser | Linear scan, no backtracking | Envelope + linear scan |
 
 ### Built for constrained devices
@@ -27,6 +27,7 @@ PUSH|ate2bd...c0d0|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 - **Type-safe** — explicit operators for numbers (`:=`), strings (`=`), booleans (`?=`), and locations (`@=`)
 - **C-friendly** — predictable buffer sizes, no dynamic allocation, linear parsing
 - **Compact** — variable, value, unit, timestamp, group, location, and metadata in a single frame
+- **Transport-agnostic** — works over UDP, TCP, HTTP(S), MQTT, or any byte-capable channel
 
 ### Runs over anything
 
@@ -41,9 +42,45 @@ TagoTiP is transport-agnostic. Pick the transport that fits your hardware and ne
 
 ### Encryption without TLS
 
-Need security on LoRa, Sigfox, NB-IoT, or raw UDP where TLS is too expensive? **TagoTiP/S** wraps frames in an AES-128-CCM authenticated encryption envelope — only **25 bytes** of overhead, with built-in replay protection and integrity verification.
+Need security on LoRa, Sigfox, NB-IoT, or raw UDP where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope — as little as **25 bytes** of overhead, with built-in replay protection and integrity verification.
+
+Choose the cipher suite that fits your security and resource constraints:
+
+| Cipher Suite | Key | Tag | Envelope Overhead |
+|---|---|---|---|
+| **AES-128-CCM** | 128-bit | 8 B | 25 bytes |
+| AES-128-GCM | 128-bit | 16 B | 33 bytes |
+| AES-256-CCM | 256-bit | 8 B | 25 bytes |
+| AES-256-GCM | 256-bit | 16 B | 33 bytes |
+| ChaCha20-Poly1305 | 256-bit | 16 B | 33 bytes |
 
 Read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
+
+## How it compares
+
+### TagoTiP vs. other IoT data formats
+
+| | TagoTiP | HTTP + JSON | MQTT + JSON | Protobuf |
+|---|---|---|---|---|
+| **Typical payload** | ~130 bytes | ~487 bytes | ~210 bytes | ~80 bytes |
+| **Human-readable** | Yes | Partially | Partially | No |
+| **Schema required** | No | No | No | Yes |
+| **Debug in a terminal** | Yes | Verbose | Binary framing | No |
+| **Build with `sprintf`** | Yes | Complex | Needs MQTT library | Needs code generator |
+| **IoT type system** | Built-in (number, string, bool, location) | Application-defined | Application-defined | Schema-defined |
+| **Metadata, unit, group, timestamp** | Native syntax | Application-defined | Application-defined | Schema-defined |
+
+### TagoTiP/S vs. other IoT security
+
+| | TagoTiP/S | TLS 1.3 | DTLS 1.2 |
+|---|---|---|---|
+| **Handshake** | None — 0 bytes | ~2–4 KB | ~2–5 KB |
+| **Round trips before first data** | 0 | 1–2 | 2–3 |
+| **Per-message overhead** | 25–33 bytes | ~29 bytes + TCP | ~29 bytes |
+| **Session state** | Stateless | Per-connection | Per-connection |
+| **Certificate management** | None | Required | Required or PSK |
+| **Works over LoRa / Sigfox / NB-IoT** | Yes | No | No |
+| **Works without TCP** | Yes | No | UDP only |
 
 ## Quick example
 
