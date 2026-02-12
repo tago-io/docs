@@ -97,6 +97,18 @@ const sidebar: SidebarsConfig = {
           label: "Send Data using Network",
           className: "api-method post",
         },
+        {
+          type: "doc",
+          id: "api/create-device-using-network",
+          label: "Create Device using Network",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/create-network-token",
+          label: "Create Network Token",
+          className: "api-method post",
+        },
       ],
     },
     {
