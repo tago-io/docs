@@ -31,6 +31,7 @@ const FILES = [
       "---",
       "sidebar_position: 3",
       "title: TagoTiPs Specification",
+      "sidebar_label: TagoTiP/s Specification",
       `custom_edit_url: ${REPO_URL}/edit/main/TagoTiPs.md`,
       "---",
     ].join("\n"),
