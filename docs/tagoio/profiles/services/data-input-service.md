@@ -38,4 +38,4 @@ Rate limits are applied to a wide range of interactions within the platform, inc
 ## Viewing limits and usage history
 You can visualize the limits and usage history of each service in the Profile tab, located under the [Profiles & Teams](https://admin.tago.io/profile) section of your account.
 
-![Image 1](/docs_imagem/tagoio/external-f4bf5eb6.png)
+![Image 1](/docs_imagem/tagoio/rounded-image-1762263846752.png)

@@ -19,14 +19,14 @@ Blueprint devices or entities are crucial for leveraging Blueprint Dashboards. T
 
 This feature is particularly beneficial when you want a single dashboard to be used by different end-users without exposing each other's data. It allows you to focus on one centralized dashboard, eliminating the need to maintain multiple dashboards for each type of end-user.
 
-![Image 1](/docs_imagem/tagoio/external-82f6c83e.png)
+![Image 1](/docs_imagem/tagoio/rounded-image-1767728631182.png)
 
 To create blueprint devices or entities, it is essential to first assign tags to them. For more information, please refer to the [Tags System documentation](/docs/tagoio/getting-started/tags-system.md).
 
 ### Creating a blueprint
 You can create blueprints during the creation of a blueprint dashboard or by accessing the Blueprint Settings on the edit page of your blueprint dashboard.
 
-![Image 4](/docs_imagem/tagoio/external-e4b19db0.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1767728352363.png)
 
 **Key concepts for each field:**
 
@@ -40,6 +40,6 @@ You can add up to 20 blueprints in a single dashboard.
 ### Visualization Settings
 You can easily modify the appearance of your Blueprint and the behavior of the blueprint selector.
 
-![Image 5](/docs_imagem/tagoio/external-c405fa26.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1767728974371.png)
 
 For instructions on creating and configuring blueprints or adjusting visualization options, see [Creating a blueprint](/docs/tagoio/dashboards/blueprint-dashboard.md) and [Visualization Settings](/docs/tagoio/widgets/).

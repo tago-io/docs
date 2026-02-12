@@ -9,6 +9,8 @@ Within an Entity, you can create custom fields similar to columns in a tradition
 
 Once your information is stored, you can access the data through [Analysis](/docs/tagoio/analysis/), the [TagoIO API](https://api.docs.tago.io/), and—soon—[Widgets](/docs/tagoio/widgets/).
 
+![Entity module](/docs_imagem/tagoio/rounded-image-1765546206780.png)
+
 ## Creating an Entity
 
 To create a new Entity, open the [Entity module](https://admin.tago.io/entities) on your Admin page and click on "+ New Entity" (or the equivalent action). You will be prompted to define a name and add fields. Note that once an entity is created, its name cannot be changed; however, you can still add or remove fields as needed.

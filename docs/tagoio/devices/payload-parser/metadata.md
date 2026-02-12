@@ -47,7 +47,7 @@ For example, this article uses the `color` and `icon` metadata fields in the fol
 
 You can use your own icon by placing the SVG file URL in the `icon` metadata field. For your SVG to be displayed correctly, make sure that it has the property **viewBox** before using it.
 
-![Image 1](/docs_imagem/tagoio/iconMetadata-y6I.gif)
+![Image 1](/docs_imagem/tagoio/peek_37.gif)
 
 ## Available Metadata Fields
 

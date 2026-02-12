@@ -19,7 +19,6 @@ Some of the most commonly used languages for RUN applications include:
 ## How end-users choose a language
 All end-users can select their preferred language from the "Visualization Preferences" tab on the Account Setting page.
 
-
 :::info
 
 Make sure that your current plan allows the deployment of multi-language for your end-users. See [pricing page](https://tago.io/pricing)

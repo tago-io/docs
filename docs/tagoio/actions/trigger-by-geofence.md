@@ -10,11 +10,11 @@ The “Trigger by Geofence” feature allows you to execute an [Action](/docs/
 ## Setting the Trigger Conditions
 
 To set up this trigger, you need to draw geofences on the map. Geofences can be either polygons or circles, and you must select a variable that contains the location data.  
-For each condition you can only set one geofence, so if you need multiple geofences you will have to create additional conditions—up to 10 in total.
+For each condition, you can only set one geofence, so if you need multiple geofences, you will have to create additional conditions—up to 10 in total.
 
 You must define whether the trigger should activate when the chosen variable is **inside** or **outside** the geofence. When the selected variable receives new location data, the system checks if this location meets the specified geofence condition.
 
-![Image 2](/docs_imagem/tagoio/external-bef9d9d6.png)
+![Image 2](/docs_imagem/tagoio/external-notanymore.gif)
 
 ### Editing Geofence
 

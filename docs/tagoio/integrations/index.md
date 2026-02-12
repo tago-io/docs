@@ -21,7 +21,7 @@ from other protocols, by using one of the following methods:
 
 ## Device data flow
 
-![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
+![Device data flow diagram](/docs_imagem/tagoio/devicedataflowupdated.png)
 
 ## Network Endpoints by Region
 

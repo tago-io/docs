@@ -14,12 +14,13 @@ The secret key used between TagoIO and your device is called a Device Token. Any
 
 ## Finding the Device Token
 
-- Open the device in the TagoIO Console (see the Devices documentation for details).
-- Go to the "General Information" tab for that device.
-- Click the reveal button to show the token.
-- You can copy the token by clicking the "Copy token" option.
+- Open the [Devices](https://admin.tago.io/devices) module in the TagoIO Console.
+- Select the device you want to get the token for.
+- Go to the "General" tab.
+- In the "Token & Serial Number" window, click on the 3 dot menu.
+- Select "Copy Token" to copy the token to the clipboard.
 
-<!-- Image placeholder removed for build -->
+![Device Token](/docs_imagem/tagoio/rounded-image-1764604280634.png)
 
 ## Security recommendations
 

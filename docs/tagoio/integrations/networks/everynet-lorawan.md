@@ -11,7 +11,7 @@ TagoIO application.
 
 ## Connecting the platforms
 
-![Everynet to TagoIO integration diagram](/docs_imagem/tagoio/everynet-lorawan-2.jpg)
+![Everynet to TagoIO integration diagram](/docs_imagem/tagoio/rounded-image-1762437763780.png)
 
 ## Step 1: Create Authorization in TagoIO
 

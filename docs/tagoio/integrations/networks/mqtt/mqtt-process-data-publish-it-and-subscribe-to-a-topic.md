@@ -99,7 +99,7 @@ module.exports = new Analysis(mqttPushExample);
 
 This analysis requires permission to send MQTT data to the device. Enable this access in the **[Access Management](https://admin.tago.io/am)** module by creating a new **Policy**.
 
-![MQTT Permission](/docs_imagem/tagoio/mqq_permission.png)
+![MQTT Permission](/docs_imagem/tagoio/rounded-image-1762441866641.png)
 
 **Creating an Action**
 

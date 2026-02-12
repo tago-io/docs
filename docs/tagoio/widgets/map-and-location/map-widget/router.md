@@ -9,12 +9,10 @@ You can enable the Router option to allow users to get directions to a destinati
 
 ### How to configure the Router
 
-To use the router enter the map widget in edit mode, navigate to 
- you must first define an **origin** point.  
+To use the router, enter the map widget in edit mode. You must first define an **origin** point.  
 This is done by selecting a device and specifying the variable that holds its coordinates (for example, GPS data from the TagoIO mobile app or any other device that reports latitude/longitude).
 
-![Router example showing origin and destination](
-<!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/9z77pHL2QbGjjb7zC7zTBDddaFsnKAlzDLoOUHrvr88/router_example-5Vo.png -->)
+![Router example showing origin and destination](https://cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/9z77pHL2QbGjjb7zC7zTBDddaFsnKAlzDLoOUHrvr88/router_example-5Vo.png)
 
 Once the origin is set, you can enable the router option in the map widget settings. The following screenshot shows how to activate it:
 

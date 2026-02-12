@@ -7,7 +7,7 @@ TagoIO will send downlink messages to your devices through Configuration Paramet
 
 :::warning
 
-mportant: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](/docs/tagoio/integrations/general/authorization.md).
+Important: Most network servers require downlinks to be authenticated; otherwise they are denied access. If you're having problems sending downlinks, make sure you've correctly generated your [authorization codes](/docs/tagoio/integrations/general/authorization.md).
 
 :::
 

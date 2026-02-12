@@ -5,7 +5,7 @@ tags: ["tagoio"]
 ---
 You can use third-party analytics and engagement tools to track and interact with your RUN users. The Integration module in the RUN session enables easy setup with popular solutions such as [Google Analytics](/docs/tagoio/tagorun/integrations/google-analytics.md) and [Zoho SalesIQ](/docs/tagoio/tagorun/integrations/zoho-salesiq.md).
 
-![TagoRUN integrations screenshot](/docs_imagem/tagoio/user-engagement-2.png)
+![TagoRUN integrations screenshot](/docs_imagem/tagoio/rounded-image-1767013456603.png)
 
 Some tools provide more than analytics and insights — they can add chat, bots, calls, remote screen access, and other engagement features to your RUN application.
 

@@ -14,7 +14,7 @@ Notice that in the example above we have three tabs: the dashboard itself, the c
 
 ## Creating & Editing a Tab
 
-To create a **tab** on your application, go to the dashboard you want to create it, click the edit button to enter in **edit mode**, and then click on the settings button.
+To create a **tab** on your application, go to the dashboard you want to create it in, click the edit button to enter **edit mode**, and then click on the settings button.
 
 <!-- Dashboard edit mode image -->
 

@@ -4,10 +4,7 @@ description: "This article explains how to open the account settings in TagoIO a
 tags: ["tagoio"]
 ---
 ## Accessing your account settings
-To manage your account details, click the top-right menu in the TagoIO interface and select the option [My Account](https://admin.tago.io/account/).
-
-The avatar shown in the top right corner represents the profile picture linked to your email address. If you don't currently have one, you can create an avatar using [Gravatar](https://en.gravatar.com/).
-
+To manage your account details, click the bottom-left menu in the TagoIO interface and hover over "Profiles & Billing" and select the option [My Account](https://admin.tago.io/account/general).
 
 ## What you can edit
 From the Account settings page you can edit various personal and account preferences, including:

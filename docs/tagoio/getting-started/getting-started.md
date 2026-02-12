@@ -32,14 +32,14 @@ your account.
 4. In the field _"Device Name"_, add any name for your device.
 5. Click the **Create Device** button.
 
-![Image 1](/docs_imagem/tagoio/throw-miA.gif)
+![Image 1](/docs_imagem/tagoio/creatingDevice.gif)
 
 All devices should use a valid
 [device-token](/docs/tagoio/devices/device-token.md) when accessing TagoIO. One
 device‑token is generated when a device is created and it is available for you
 to copy if you want to insert it in a real device.
 
-![Image 2](/docs_imagem/tagoio/token-cj4.gif)
+![Image 2](/docs_imagem/tagoio/deviceCreation2.gif)
 
 ### Step 2. Build a dashboard
 
@@ -57,7 +57,7 @@ interact with your devices and share with others. You can build it with the
    be sent by the device as temperature, and click **Save** – your widget will
    be ready!
 
-![Image 3](/docs_imagem/tagoio/temp-3UQ.gif)
+![Image 3](/docs_imagem/tagoio/widgetcreation.gif)
 
 ### Step 3. Send data
 
@@ -73,18 +73,26 @@ the OS that you are using.
 #### Mac or Linux Command Line
 
 Let’s use curl to post the data. Enter the following command replacing the
-**YOUR_DEVICE_TOKEN** by the token created earlier for your device.
+**&lt;Device-Token&gt;** by the token created earlier for your device.
 
 ```bash
-curl -H "Content-Type: application/json" \
-     -H "Device-Token: YOUR_DEVICE_TOKEN" \
-     -X POST -d '{"variable":"temperature","value":100,"unit":"F"}' https://api.tago.io/data
+curl -L 'https://api.us-e1.tago.io/data' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-H 'Device-Token: <Device-Token>' \
+-d '[
+    {
+        "variable": "temperature",
+        "value": 27,
+        "unit": "F"
+    }
+   ]'
 ```
 
 Try to send more data by changing the value of the ‘temperature’. Keep an eye on
 your dashboard. You should see something like this:
 
-![Image 4](/docs_imagem/tagoio/1621971979910-jRM.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1768488678984.png)
 
 #### Windows
 
@@ -93,20 +101,18 @@ To send data, there are some tools that support HTTP communication like
 input as used above, you can make a POST by entering the URL, Device-Token, and
 configuration in Postman like this:
 
-![Image 5](/docs_imagem/tagoio/postman1-OU0.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1768488814377.png)
 
 Then, input the variable information in the JSON body. Make sure that you select
 the same configuration as shown in the picture below.
 
-![Image 6](/docs_imagem/tagoio/postman2-rSE.png)
+![Image 6](/docs_imagem/tagoio/rounded-image-1769086495362.png)
 
 The response should look like this:
 
-![Image 7](/docs_imagem/tagoio/postman3-wEs.png)
+![Image 7](/docs_imagem/tagoio/rounded-image-1769086543434.png)
 
-![Image 8](/docs_imagem/tagoio/postman-DU8.gif)
-
-![Image 9](/docs_imagem/tagoio/1621972232616-8Gk.png)
+![Image 8](/docs_imagem/tagoio/peek_36.gif)
 
 ### Step 4. Create complete solutions
 

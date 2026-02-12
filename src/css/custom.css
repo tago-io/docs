@@ -1008,6 +1008,29 @@ html[data-theme="dark"] .youtube-container {
   vertical-align: bottom;
 }
 
+.rounded-image {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #CCCCCC;
+}
+
+/* Automatically apply rounded-image styles to all GIF images */
+.gif-wrapper {
+  display: inline-block;
+  border-radius: 20px;
+  border: 8px solid #CCCCCC;
+  background-color: #CCCCCC;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.gif-wrapper .gif-image {
+  display: block;
+  clip-path: inset(2px);
+  max-width: 100%;
+  height: auto;
+}
+
 .mermaid {
   display: flex;
   align-items: center;

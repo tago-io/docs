@@ -22,6 +22,6 @@ You may be entitled to a refund in the following cases:
 
 :::info
 
-When a payment method different from credit card is used, there may be an additional bank or processing fee associated with the refund process.
+When a payment method other than a credit card is used, there may be an additional bank or processing fee associated with the refund process.
 
 :::

@@ -13,7 +13,7 @@ devices and the TagoIO application.
 > [TTI integration](https://community.tago.io/t/how-to-integrate-tagoio-with-ttn-v3/1026)
 > instructions.
 
-![Integration diagram showing LoRaWAN devices, The Things Network, a connector, and TagoIO](/docs_imagem/tagoio/the-things-network-lorawan-2.png)
+![Integration diagram showing LoRaWAN devices, The Things Network, a connector, and TagoIO](/docs_imagem/tagoio/rounded-image-1762440999827.png)
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Before you begin, ensure you have the following:
 3. Provide a meaningful name for the authorization (e.g., `TTN-Integration`).
 4. Click **Save**.
 
-![Image 2](/docs_imagem/tagoio/external-122ff21d.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1762441089626.png)
 
 ### Copy the Authorization Token
 
@@ -46,7 +46,7 @@ After creation, copy the authorization token. You will need this in later steps.
 2. Go to **Integrations > Webhook > + Add Webhook**.
 3. Select **Custom Webhook** from the list.
 
-![Image 3](/docs_imagem/tagoio/tagoIO_ttn-WUw.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1762441177206.png)
 
 ### Webhook Configuration
 
@@ -58,7 +58,7 @@ After creation, copy the authorization token. You will need this in later steps.
 | **Additional Headers**  | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1.                                                                                                                                        |
 | **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`.                                                                                                                       |
 
-![Image 4](/docs_imagem/tagoio/external-eae39401.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1762441267639.png)
 
 ## Step 3: Add Your Device to TagoIO
 

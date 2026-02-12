@@ -9,7 +9,7 @@ the Sigfox backend and parses incoming messages to extract measured variables in
 real time. All data sent by your device will be available to display in widgets
 or to process in your Analysis.
 
-![Sens'it + Sigfox + TagoIO Connectivity Diagram](/docs_imagem/tagoio/sensit-with-sigfox-2.png)
+![Sens'it + Sigfox + TagoIO Connectivity Diagram](/docs_imagem/tagoio/rounded-image-1761313210646.png)
 
 Sens'it + Sigfox + TagoIO Connectivity Diagram
 
@@ -30,17 +30,12 @@ Sens'it + Sigfox + TagoIO Connectivity Diagram
 
 ## Add the device to TagoIO
 
-1. In TagoIO, go to Devices (see [Devices](/docs/tagoio/devices/) for the
-   Devices section).
-2. Click on "Add Devices".
+1. In TagoIO, go to [Devices](https://admin.tago.io/devices).
+2. Click on "+ New Device".
 3. Filter the network by "Sigfox" and choose your Sens'it device from the list
    (select v2 or v3 accordingly).
 4. After adding the device, incoming data will be parsed by TagoIO and become
    available for widgets and Analysis.
-
-![TagoIO — Select the device type](/docs_imagem/tagoio/sensit-with-sigfox-2.png)
-
-TagoIO — Select the device type (use the network filter to find Sigfox devices)
 
 ## Dashboard Setup
 
@@ -48,11 +43,10 @@ After adding the device, click on the newly created dashboard in the left menu
 and associate it with your Sens'it device. Turn the device on; data will arrive
 automatically into the bucket and be displayed in widgets.
 
-## Data Buckets
+## Data Storage
 
 Every time the device sends data, the parser is executed, the extracted data is
-sent to a bucket, and it becomes ready for display in dashboards or further
-analysis.
+sent to the device's data, and it will be ready to be displayed in dashboards or processed in [Analysis](/docs/tagoio/analysis/).
 
 ## Custom Parsing (v2)
 
