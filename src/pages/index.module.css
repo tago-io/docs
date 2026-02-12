@@ -22,9 +22,6 @@
 .brandLogo {
   margin-bottom: 0;
 }
-html[data-theme="dark"] .brandLogo {
-  filter: invert(1) brightness(1.2) contrast(1.1);
-}
 .brandDoc {
   font-weight: 700;
   font-size: 0.875rem;
@@ -105,4 +102,14 @@ html[data-theme="dark"] .brandLogo {
 }
 .demoButton:active {
   opacity: 0.85;
+}
+
+.getStartedButton {
+  border: 2px solid var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
+}
+.getStartedButton:hover {
+  background: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-0);
+  border-color: var(--ifm-color-emphasis-700);
 }
