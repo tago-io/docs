@@ -4,13 +4,12 @@
  * braces outside code blocks (so MDX doesn't parse them as JSX), rewrites
  * cross-references, and writes the results into docs/tagotip/.
  */
-import { writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const BASE_URL =
-  "https://raw.githubusercontent.com/tago-io/tagotip/main/";
+const BASE_URL = "https://raw.githubusercontent.com/tago-io/tagotip/main/";
 const REPO_URL = "https://github.com/tago-io/tagotip";
 
 const FILES = [
@@ -73,9 +72,7 @@ function escapeInline(text) {
     parts.push(match[0]); // keep inline code as-is
     last = match.index + match[0].length;
   }
-  parts.push(
-    text.slice(last).replace(/\{/g, "\\{").replace(/\}/g, "\\}"),
-  );
+  parts.push(text.slice(last).replace(/\{/g, "\\{").replace(/\}/g, "\\}"));
   return parts.join("");
 }
 
@@ -83,13 +80,11 @@ function rewriteLinks(text) {
   // Cross-references between the two spec files
   text = text.replace(
     /\(TagoTiP\.md(#[^)]+)?\)/g,
-    (_, anchor) =>
-      `(/docs/tagotip/specification${anchor || ""})`,
+    (_, anchor) => `(/docs/tagotip/specification${anchor || ""})`,
   );
   text = text.replace(
     /\(TagoTiPs\.md(#[^)]+)?\)/g,
-    (_, anchor) =>
-      `(/docs/tagotip/tagotips-specification${anchor || ""})`,
+    (_, anchor) => `(/docs/tagotip/tagotips-specification${anchor || ""})`,
   );
 
   // LICENSE / NOTICE → GitHub repo URLs
