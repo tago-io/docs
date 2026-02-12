@@ -1,7 +1,6 @@
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Heading from "@theme/Heading";
-import clsx from "clsx";
 import type { ReactNode } from "react";
 import styles from "./styles.module.css";
 
@@ -14,7 +13,7 @@ type FeatureItem = {
 
 function Feature({ title, imgSrc, href, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--3", styles.featureCol)}>
+    <div className={styles.featureCol}>
       <Link to={href} className={styles.featureLink}>
         <div className={styles.featureCard}>
           <div className="text--center">
@@ -103,12 +102,10 @@ export default function HomepageFeatures(): ReactNode {
 
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props) => (
-            <Feature key={props.title} {...props} />
-          ))}
-        </div>
+      <div className={styles.featureRow}>
+        {FeatureList.map((props) => (
+          <Feature key={props.title} {...props} />
+        ))}
       </div>
     </section>
   );

@@ -33,3 +33,4 @@ yarn-debug.log*
 yarn-error.log*
 updated_url_mappings.json
 .claude/
+screenshots/

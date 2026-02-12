@@ -1,12 +1,13 @@
 @import "./api-docs.css";
 
 :root {
-  --c-blue-0: #f0f6ff;
-  --c-blue-70: #4d8dff;
-  --c-blue-90: #1b6dff;
+  /* Legacy aliases (kept for any remaining references) */
+  --c-blue-0: #e6f5f3;
+  --c-blue-70: #2cb1bc;
+  --c-blue-90: #1a9aa0;
   --c-indigo-10: #f6f8fc;
-  --c-indigo-20: #e9edf3;
-  --c-indigo-30: #dee3ea;
+  --c-indigo-20: #e8e7e0;
+  --c-indigo-30: #e8e7e0;
   --c-indigo-40: #ced6e0;
   --c-indigo-60: #92a0b3;
   --c-indigo-80: #445b78;
@@ -18,12 +19,13 @@
   --c-gray-0: #f8f9fa;
   --c-gray-90: #2f2f2f;
 
-  --ifm-color-primary: #3880ff;
-  --ifm-link-color: var(--c-blue-90);
-  --ifm-link-hover-color: #1b6dffcc;
+  /* Primary: warm teal */
+  --ifm-color-primary: #17888d;
+  --ifm-link-color: #17888d;
+  --ifm-link-hover-color: #126f73;
 
   --ifm-font-family-base:
-    -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif,
+    "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI emoji";
   --ifm-font-family-monospace:
     "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo,
@@ -32,25 +34,26 @@
   --ifm-font-weight-bold: 700;
 
   --ifm-navbar-height: 3.75rem;
-  --ifm-navbar-background-color: #fff;
+  --ifm-navbar-background-color: #f5f5f2;
   --ifm-navbar-link-color: var(--ifm-font-color-base);
   --ifm-navbar-link-hover-color: initial;
 
-  --ifm-background-color: #fff;
-  --ifm-background-surface-color: #fff;
-  --ifm-color-content: #1c1e21;
+  /* Light mode: warm cream */
+  --ifm-background-color: #fafaf8;
+  --ifm-background-surface-color: #f5f5f2;
+  --ifm-color-content: #1a1b26;
   --ifm-font-color-base: var(--ifm-color-content);
 
-  --home-features-bg: #f8f9fa;
+  --home-features-bg: #f5f5f2;
 
-  --ifm-code-background: var(--c-indigo-10);
+  --ifm-code-background: #f0efe8;
   --ifm-code-border-radius: 0.4rem;
   --ifm-pre-background: var(--ifm-code-background);
 
   --ifm-menu-color: var(--c-indigo-80);
   --ifm-menu-color-active: var(--ifm-link-color);
   --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
-  --ifm-menu-color-background-active: var(--c-blue-0);
+  --ifm-menu-color-background-active: #e6f5f3;
   --ifm-menu-link-padding-vertical: 0.5rem;
 
   --dropdown-icon-width: 0.625rem;
@@ -59,12 +62,17 @@
   --ifm-menu-link-sublist-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2IiBmaWxsPSJub25lIj48cGF0aCBzdHJva2U9IiMwMzA2MEIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik05IDUgNSAxIDEgNSIvPjwvc3ZnPg==");
   --ifm-menu-link-sublist-icon-filter: none;
 
-  --sidebar-border-c: #f3f3f3;
+  --sidebar-border-c: #e8e7e0;
 
   --doc-sidebar-width: 300px;
   --doc-item-container-width: 50rem;
   --sidebar-category-c: var(--c-carbon-100);
-  --footer-border-c: var(--c-indigo-30);
+  --footer-border-c: #e8e7e0;
+
+  /* Surface hierarchy */
+  --surface-elevated: #ffffff;
+  --surface-raised: #f0efe8;
+  --border-visible: #e8e7e0;
 
   /* Animation durations */
   --animation-fast: 200ms;
@@ -76,35 +84,61 @@
 
 html[data-theme="dark"] {
   --ifm-color-scheme: dark;
-  --ifm-background-color: #1b1b1d;
-  --ifm-background-surface-color: #242526;
-  --ifm-color-content: #e3e3e3;
+
+  /* Dark mode: neutral gray (VitePress-inspired) */
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-color-content: #e0e0e0;
   --ifm-font-color-base: var(--ifm-color-content);
-  --ifm-code-background: #232a33;
-  --ifm-menu-color: #c7cbd1;
-  --ifm-menu-color-background-active: #ffffff12;
+  --ifm-heading-color: #ebebeb;
+  --ifm-code-background: #161616;
+
+  /* Surface hierarchy */
+  --surface-elevated: #1e1e1e;
+  --surface-raised: #252525;
+  --border-visible: #333333;
+
+  /* Emphasis scale overrides */
+  --ifm-color-emphasis-200: #1e1e1e;
+  --ifm-color-emphasis-300: #2a2a2a;
+  --ifm-color-emphasis-600: #707070;
+  --ifm-color-emphasis-700: #a0a0a0;
+  --ifm-color-emphasis-800: #e0e0e0;
+  --ifm-color-emphasis-900: #ebebeb;
+  --ifm-color-emphasis-1000: #ebebeb;
+
+  --ifm-menu-color: #a0a0a0;
+  --ifm-menu-color-background-active: #2cb1bc1a;
   --ifm-menu-link-sublist-icon-filter: invert(100%);
-  --sidebar-border-c: #2f2f2f;
+  --sidebar-border-c: #2a2a2a;
   --ifm-hover-overlay: #ffffff0d;
-  --ifm-link-color: var(--c-blue-70);
-  --ifm-link-hover-color: #4d8dffcc;
-  --sidebar-category-c: #fff;
-  --ifm-navbar-background-color: var(--ifm-background-surface-color);
-  --ifm-navbar-link-color: var(--c-gray-0);
-  --ifm-navbar-link-hover-color: var(--ifm-link-color);
-  --ifm-navbar-shadow: 0 1px 0 0 var(--c-gray-90);
-  --ifm-navbar-search-input-background-color: #ffffff1a;
-  --ifm-navbar-search-input-color: #fff;
-  --ifm-navbar-search-input-placeholder-color: #ffffff80;
-  --footer-border-c: var(--c-gray-90);
-  --home-features-bg: var(--ifm-background-color);
+
+  /* Primary: teal for dark mode */
+  --ifm-color-primary: #2cb1bc;
+  --ifm-link-color: #2cb1bc;
+  --ifm-link-hover-color: #36c5c9;
+
+  --sidebar-category-c: #ebebeb;
+  --ifm-navbar-background-color: #1a1a1a;
+  --ifm-navbar-link-color: #e0e0e0;
+  --ifm-navbar-link-hover-color: #2cb1bc;
+  --ifm-navbar-shadow: 0 1px 0 0 #2a2a2a;
+  --ifm-navbar-search-input-background-color: #252525;
+  --ifm-navbar-search-input-color: #e0e0e0;
+  --ifm-navbar-search-input-placeholder-color: #707070;
+  --footer-border-c: #2a2a2a;
+  --home-features-bg: #121212;
+
+  /* TOC and misc borders */
+  --ifm-toc-border-color: #2a2a2a;
+
   /* Keep right panel cards readable in dark */
-  --openapi-card-background-color: var(--ifm-background-surface-color);
+  --openapi-card-background-color: #1e1e1e;
 }
 
 /* Navbar */
 .navbar {
-  box-shadow: 0 1px 0 0 var(--c-indigo-20);
+  box-shadow: 0 1px 0 0 var(--border-visible);
   padding-top: 0; /* even top/bottom */
   padding-bottom: 0; /* even top/bottom */
 }
@@ -119,9 +153,6 @@ html[data-theme="dark"] {
   align-items: center;
   height: var(--ifm-navbar-height);
 }
-html[data-theme="dark"] .navbar__brand img {
-  filter: invert(1) brightness(1.2) contrast(1.1);
-}
 .navbar__items {
   display: flex;
   align-items: center;
@@ -134,7 +165,27 @@ html[data-theme="dark"] .navbar__brand img {
 }
 
 html[data-theme="dark"] .navbar {
-  box-shadow: 0 1px 0 0 var(--c-gray-90);
+  box-shadow: 0 1px 0 0 #2a2a2a;
+}
+
+/* Tighten navbar in narrow desktop range to prevent overlap */
+@media (min-width: 997px) and (max-width: 1200px) {
+  .navbar__link {
+    font-size: 0.78rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .navbar__brand {
+    margin-right: 0.25rem;
+  }
+  .navbar__title {
+    display: none !important;
+  }
+  /* Hide less essential right-side links */
+  .navbar__items--right a[href*="support.tago.io"],
+  .navbar__items--right a[href*="community.tago.io"] {
+    display: none !important;
+  }
 }
 
 /* Better Stack status badge: toggle light/dark iframes */
@@ -222,7 +273,7 @@ html[data-theme="dark"] .home-status-badge .status-badge--dark {
 
 /* Light mode-only footer background */
 html[data-theme="light"] .footer {
-  background: #f8f9fa;
+  background: #f2f2ee;
 }
 /* Light mode footer title color for better contrast */
 html[data-theme="light"] .footer__title {
@@ -267,7 +318,7 @@ html[data-theme="light"] .footer__bottom {
 /* Better contrast in dark mode */
 html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   .navbar__link--active {
-  color: #4d8dff;
+  color: #2cb1bc;
 }
 
 /* Remove active underline bar to avoid floating blue bar */
@@ -336,10 +387,10 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 /* Spacing between top-level (bold) categories like Ionic */
 .theme-doc-sidebar-item-category-level-1 > .menu__list
   > .menu__list-item:last-of-type {
-  padding-bottom: 1rem;
+  padding-bottom: 0.25rem;
 }
 .theme-doc-sidebar-item-category-level-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 /* Sidebar menu links */
@@ -347,7 +398,7 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   font-size: 0.813rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-  line-height: 16px;
+  line-height: 1.5;
   color: var(--ifm-menu-color);
   padding: var(--ifm-menu-link-padding-vertical) 0.75rem;
   transition: opacity var(--animation-fast) ease-out;
@@ -452,7 +503,7 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   color: var(--sidebar-category-c);
   font-size: 0.938rem;
   font-weight: 600;
-  line-height: 100%;
+  line-height: 1.3;
 }
 
 /* Content width and headings */
@@ -623,6 +674,10 @@ code {
 }
 
 @media (max-width: 996px) {
+  /* Hide left-side nav links on mobile — they move into hamburger menu */
+  .navbar__items:not(.navbar__items--right) .navbar__link {
+    display: none !important;
+  }
   /* Ensure right-side container is visible */
   .navbar__items--right {
     display: flex !important;
@@ -691,17 +746,17 @@ code {
 
 /* Dark mode colors for better contrast */
 html[data-theme="dark"] .changelog-timeline__item a {
-  color: var(--c-gray-0) !important;
+  color: #a0a0a0 !important;
 }
 html[data-theme="dark"] .changelog-timeline__item a:hover {
-  color: #ffffff !important;
+  color: #e0e0e0 !important;
 }
 
 /* Breadcrumbs – dark mode accessibility */
 html[data-theme="dark"] {
   /* Ensure active crumb has adequate contrast without implying interactivity */
   --ifm-breadcrumb-color-active: var(--ifm-font-color-base);
-  --ifm-breadcrumb-item-background-active: #ffffff14;
+  --ifm-breadcrumb-item-background-active: #252525;
 }
 /* Only real links should look interactive */
 html[data-theme="dark"] a.breadcrumbs__link {
@@ -765,12 +820,12 @@ html[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
   );
 }
 
-/* Improve contrast in dark mode with white glow and animation */
+/* Improve contrast in dark mode with teal glow and animation */
 html[data-theme="dark"] {
-  --timeline-line: rgba(255, 255, 255, 0.22);
-  --timeline-line-strong: rgba(255, 255, 255, 0.85);
-  --timeline-dot: #ffffff;
-  --timeline-dot-glow: rgba(255, 255, 255, 0.45);
+  --timeline-line: rgba(44, 177, 188, 0.22);
+  --timeline-line-strong: rgba(44, 177, 188, 0.7);
+  --timeline-dot: #2cb1bc;
+  --timeline-dot-glow: rgba(44, 177, 188, 0.35);
 }
 html[data-theme="dark"] .timeline:before {
   background: var(--timeline-line);
@@ -803,13 +858,13 @@ html[data-theme="dark"] .timeline--current-year:before {
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(56, 128, 255, 0.5);
+    box-shadow: 0 0 0 0 rgba(44, 177, 188, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(56, 128, 255, 0.05);
+    box-shadow: 0 0 0 8px rgba(44, 177, 188, 0.05);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(56, 128, 255, 0.05);
+    box-shadow: 0 0 0 0 rgba(44, 177, 188, 0.05);
   }
 }
 
@@ -857,28 +912,19 @@ html[data-theme="dark"] .timeline--current-year:before {
   color: var(--ifm-color-emphasis-700);
 }
 
-/* Dark mode: make documentation links more distinguishable */
+/* Dark mode: teal links with semi-transparent underline */
 html[data-theme="dark"] .markdown a,
 html[data-theme="dark"] .theme-doc-markdown a {
-  color: var(--ifm-font-color-base) !important;
+  color: #2cb1bc !important;
   text-decoration: underline;
+  text-decoration-color: #2cb1bc66;
   text-underline-offset: 2px;
   text-decoration-thickness: 1.5px;
 }
 html[data-theme="dark"] .markdown a:hover,
 html[data-theme="dark"] .theme-doc-markdown a:hover {
-  color: #ffffff !important;
-}
-
-/* Prefer variable override so built-in link styles pick up neutral color */
-html[data-theme="dark"] .theme-doc-markdown {
-  --ifm-link-color: var(--ifm-font-color-base);
-  --ifm-link-hover-color: #ffffff;
-}
-/* Fallback: set for doc pages when container classes differ */
-html.docs-doc-page[data-theme="dark"] {
-  --ifm-link-color: var(--ifm-font-color-base);
-  --ifm-link-hover-color: #ffffff;
+  color: #36c5c9 !important;
+  text-decoration-color: #36c5c9;
 }
 
 /* Make whole card clickable affordance */
@@ -1022,7 +1068,7 @@ html[data-theme="dark"] .youtube-container {
 .mermaid rect.actor,
 .mermaid .node rect {
   stroke: none !important;
-  fill: black !important;
+  fill: #17888d !important;
 }
 .mermaid .actor tspan {
   fill: white !important;
@@ -1050,4 +1096,311 @@ html[data-theme="dark"] .mermaid .messageText {
 }
 .mermaid .node div {
   color: white;
+}
+/* Allow wide diagrams to scroll instead of shrinking */
+.mermaid svg {
+  max-width: none;
+  min-width: fit-content;
+}
+
+/* ============================================================
+   Phase 5: Dark mode surface hierarchy
+   ============================================================ */
+
+/* Light mode code blocks — subtle border for distinction */
+html[data-theme="light"] pre {
+  border: 1px solid var(--border-visible);
+}
+
+/* Dark mode code blocks — inset feel */
+html[data-theme="dark"] pre {
+  background: #161616 !important;
+  border: 1px solid #2a2a2a;
+}
+
+/* Dark mode sidebar surface */
+html[data-theme="dark"] .theme-doc-sidebar-container {
+  background: #1a1a1a;
+  border-right-color: #2a2a2a;
+}
+
+/* Dark mode footer surface */
+html[data-theme="dark"] .footer {
+  background: #1a1a1a;
+}
+
+/* Dark mode cards — elevated surface */
+html[data-theme="dark"] .timeline-card {
+  background: var(--surface-elevated);
+  border-color: #2a2a2a;
+}
+html[data-theme="dark"] .changelog-chip {
+  background: var(--surface-elevated);
+  border-color: #2a2a2a;
+}
+
+/* Dark mode OpenAPI cards and forms */
+html[data-theme="dark"] .openapi-explorer__request-form {
+  background: var(--surface-elevated);
+  border-color: #2a2a2a;
+}
+html[data-theme="dark"] details.openapi-explorer__details-container {
+  background: #121212;
+  border-color: #2a2a2a;
+}
+
+/* ============================================================
+   Dark mode admonitions — elegant left-border style (VitePress-inspired)
+   ============================================================ */
+/* Light mode admonitions — clean card with left border */
+.alert {
+  border: none;
+  border-left: 4px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+html[data-theme="dark"] .alert {
+  border: none;
+  border-left: 4px solid #2cb1bc;
+  background: rgba(44, 177, 188, 0.06);
+  border-radius: 0 8px 8px 0;
+  box-shadow: none;
+  color: var(--ifm-font-color-base);
+}
+html[data-theme="dark"] .alert--warning {
+  border-left-color: #f0c040;
+  background: rgba(240, 192, 64, 0.06);
+}
+html[data-theme="dark"] .alert--danger {
+  border-left-color: #f38ba8;
+  background: rgba(243, 139, 168, 0.06);
+}
+/* Heading text color matches left border */
+html[data-theme="dark"] .alert--info [class*="admonitionHeading"],
+html[data-theme="dark"] .alert--success [class*="admonitionHeading"],
+html[data-theme="dark"] .alert--secondary [class*="admonitionHeading"] {
+  color: #2cb1bc;
+}
+html[data-theme="dark"] .alert--warning [class*="admonitionHeading"] {
+  color: #f0c040;
+}
+html[data-theme="dark"] .alert--danger [class*="admonitionHeading"] {
+  color: #f38ba8;
+}
+
+/* ============================================================
+   Mermaid — shared overrides (both light and dark)
+   ============================================================ */
+
+/* All node labels white — teal backgrounds need white text */
+.mermaid .nodeLabel {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+/* Light mode only: stadium/path nodes have light backgrounds — reset to dark text */
+html[data-theme="light"] .mermaid .node:has(path) .nodeLabel {
+  color: #333 !important;
+  fill: #333 !important;
+}
+
+/* Block-beta text — always white on teal blocks */
+.mermaid .block .nodeLabel {
+  color: #fff !important;
+}
+
+/* ============================================================
+   Mermaid dark mode — comprehensive overrides
+   ============================================================ */
+
+/* Default SVG text fill → light for dark backgrounds */
+html[data-theme="dark"] .mermaid svg {
+  color: #e0e0e0;
+}
+html[data-theme="dark"] .mermaid svg[id^="mermaid"] {
+  fill: #e0e0e0 !important;
+}
+
+/* Node labels — white text */
+html[data-theme="dark"] .mermaid .nodeLabel,
+html[data-theme="dark"] .mermaid .node .label,
+html[data-theme="dark"] .mermaid .label text,
+html[data-theme="dark"] .mermaid .label span {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+/* Edge labels (e.g. "TagoTiP", "TagoTiP/S") */
+html[data-theme="dark"] .mermaid .labelBkg {
+  background: #1e1e1e !important;
+  outline: 1px solid rgba(44, 177, 188, 0.35);
+  border-radius: 3px !important;
+}
+html[data-theme="dark"] .mermaid .labelBkg p,
+html[data-theme="dark"] .mermaid .edgeLabel span,
+html[data-theme="dark"] .mermaid .edgeLabel span p {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+/* Edge lines/paths — visible on dark backgrounds */
+html[data-theme="dark"] .mermaid .flowchart-link,
+html[data-theme="dark"] .mermaid .edge-pattern-solid,
+html[data-theme="dark"] .mermaid .edgePath path {
+  stroke: #8a8a8a !important;
+}
+
+/* Arrowheads */
+html[data-theme="dark"] .mermaid marker path {
+  fill: #8a8a8a !important;
+  stroke: #8a8a8a !important;
+}
+
+/* Secondary/tertiary node shapes (stadium, circle, etc.) — darken light fills */
+html[data-theme="dark"] .mermaid .node path,
+html[data-theme="dark"] .mermaid .node circle {
+  fill: #1a5c60 !important;
+  stroke: #2cb1bc !important;
+}
+
+/* Block-beta text inside blocks */
+html[data-theme="dark"] .mermaid .block .nodeLabel,
+html[data-theme="dark"] .mermaid foreignObject div {
+  color: #fff !important;
+}
+
+/* ============================================================
+   Inline code dark mode — subtle border for distinction
+   ============================================================ */
+html[data-theme="light"] :not(pre) > code {
+  color: #17888d;
+  background: rgba(23, 136, 141, 0.08);
+  border: 1px solid rgba(23, 136, 141, 0.2);
+}
+html[data-theme="dark"] :not(pre) > code {
+  color: #2cb1bc;
+  background: rgba(44, 177, 188, 0.1);
+  border: 1px solid rgba(44, 177, 188, 0.25);
+}
+
+/* ============================================================
+   Blockquote — callout style (both modes)
+   ============================================================ */
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-emphasis-300);
+  background: rgba(44, 177, 188, 0.05);
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  color: var(--ifm-color-emphasis-700);
+}
+.markdown blockquote > p {
+  margin: 0;
+}
+
+/* ============================================================
+   Tables — teal accent header, clean rows
+   ============================================================ */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.markdown thead tr {
+  background: transparent;
+  border-bottom: 2px solid #2cb1bc;
+}
+.markdown thead th {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-700);
+}
+.markdown tbody tr {
+  background: transparent;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+.markdown tbody tr:nth-child(2n) {
+  background: transparent;
+}
+.markdown tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* ============================================================
+   DocSearch — light mode overrides
+   ============================================================ */
+:root {
+  --docsearch-primary-color: #17888d;
+  --docsearch-highlight-color: #17888d;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px #17888d;
+}
+.DocSearch-Hit[aria-selected="true"] a {
+  background: rgba(23, 136, 141, 0.1);
+}
+.DocSearch-Button {
+  border-color: var(--border-visible);
+}
+.DocSearch-Button:hover {
+  border-color: #ced6e0;
+  box-shadow: none;
+}
+.DocSearch-Button-Key {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-visible);
+  color: var(--c-indigo-60);
+  box-shadow: none;
+}
+.DocSearch-Search-Icon {
+  color: var(--c-indigo-60);
+}
+
+/* ============================================================
+   DocSearch modal — dark mode overrides
+   ============================================================ */
+html[data-theme="dark"] {
+  --docsearch-modal-background: #1a1a1a;
+  --docsearch-searchbox-background: #252525;
+  --docsearch-searchbox-focus-background: #252525;
+  --docsearch-hit-background: #1e1e1e;
+  --docsearch-hit-color: #e0e0e0;
+  --docsearch-hit-active-color: #fff;
+  --docsearch-highlight-color: #2cb1bc;
+  --docsearch-muted-color: #707070;
+  --docsearch-container-background: rgba(0, 0, 0, 0.6);
+  --docsearch-footer-background: #1a1a1a;
+  --docsearch-footer-shadow: 0 -1px 0 0 #2a2a2a;
+  --docsearch-key-gradient: linear-gradient(-225deg, #252525, #1e1e1e);
+  --docsearch-key-shadow:
+    inset 0 -2px 0 0 #333, inset 0 0 1px 1px #333,
+    0 1px 2px 1px rgba(0, 0, 0, 0.3);
+  --docsearch-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --docsearch-text-color: #e0e0e0;
+  --docsearch-primary-color: #2cb1bc;
+  --docsearch-logo-color: #707070;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px #2cb1bc;
+}
+html[data-theme="dark"] .DocSearch-Hit[aria-selected="true"] a {
+  background: rgba(44, 177, 188, 0.12);
+}
+html[data-theme="dark"] .DocSearch-Button {
+  background: #252525;
+  border-color: #333;
+  color: #a0a0a0;
+}
+html[data-theme="dark"] .DocSearch-Button:hover {
+  background: #2a2a2a;
+  border-color: #444;
+  box-shadow: none;
+}
+html[data-theme="dark"] .DocSearch-Button-Key {
+  background: #333;
+  border: 1px solid #444;
+  color: #a0a0a0;
+  box-shadow: none;
+}
+html[data-theme="dark"] .DocSearch-Search-Icon {
+  color: #707070;
 }

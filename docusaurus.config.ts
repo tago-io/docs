@@ -30,6 +30,7 @@ const config: Config = {
 
   onBrokenLinks: "throw",
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: "throw",
     },
@@ -96,7 +97,7 @@ const config: Config = {
     ],
   ],
 
-  themes: ["docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
@@ -162,6 +163,7 @@ const config: Config = {
       logo: {
         alt: "TagoIO Logo",
         src: "img/tagoio-official-logo.svg",
+        srcDark: "img/tagoio-official-logo-white.svg",
         width: 110,
         height: 26,
       },
@@ -212,6 +214,24 @@ const config: Config = {
     prism: {
       theme: prismThemes.nightOwlLight,
       darkTheme: prismThemes.nightOwl,
+      additionalLanguages: ["abnf", "yaml"],
+    },
+    mermaid: {
+      theme: {
+        light: "base",
+        dark: "dark",
+      },
+      options: {
+        themeVariables: {
+          primaryColor: "#2cb1bc",
+          primaryTextColor: "#ffffff",
+          primaryBorderColor: "transparent",
+          lineColor: "#707070",
+          edgeLabelBackground: "transparent",
+          clusterBkg: "transparent",
+          clusterBorder: "#2a2a2a",
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
