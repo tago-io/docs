@@ -4,8 +4,6 @@ title: Module
 slug: /tagocore/plugins/create/module
 ---
 
-import Mermaid from '@theme/Mermaid';
-
 # Module
 
 Modules are JavaScript classes that allow you to add a specific functionality for your Plugin.
@@ -41,11 +39,50 @@ new ServiceModule(setup);
 
 This Module allows you to encode data before it reaches a device. Learn more about it [here](/docs/tagocore/plugins/create/encoder).
 
-<Mermaid chart={`
+```mermaid
 graph LR
     A[Device sends data] --> B[Payload Encoder]
     B[Payload Encoder] --> C[Payload Parser]
     C[Payload Parser] --> D[Data added to Device]
 
     classDef default fill:#333,stroke:#333,stroke-width:2px,color:#fff,font-weight:bold
-`}/>
+```
+
+## Service Module
+
+This Module allows you to create a service that will run in your Plugin. Learn more about it [here](/docs/tagocore/plugins/create/service).
+
+## Action Trigger Module
+
+This Module allows you to create a new trigger for Actions. Learn more about it [here](/docs/tagocore/plugins/create/action-trigger).
+
+## The `configs` property
+
+If your Module has a `configs` property in the `setup` object, you can access the current values of those configurations
+using the `.configs` getter.
+
+The `.configs` getter retrieves the latest configuration values from TagoCore, so you should have the latest values
+every time. Below is a sample code of how to use it:
+
+```js
+const { ServiceModule } = require("@tago-io/tcore-sdk");
+
+const service = new ServiceModule({
+  id: "my-service",
+  name: "Service",
+  configs: [
+    {
+      name: "Token",
+      field: "token",
+      type: "string",
+      required: true,
+    },
+  ],
+});
+
+service.onLoad = async () => {
+  // Retrieves the latest config values from TagoCore
+  const configs = await service.configs;
+  const token = configs.token;
+};
+```

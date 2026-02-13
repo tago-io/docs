@@ -1054,51 +1054,49 @@ html[data-theme="dark"] .youtube-container {
   vertical-align: bottom;
 }
 
-.mermaid {
+.docusaurus-mermaid-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--ifm-paragraph-margin-bottom);
+  overflow-x: auto;
 }
 /* keep rounded rectangles, selector placed before more specific rules to avoid specificity issues */
-.mermaid rect {
+.docusaurus-mermaid-container rect {
   ry: 3;
   rx: 3;
 }
-.mermaid rect.actor,
-.mermaid .node rect {
+.docusaurus-mermaid-container rect.actor,
+.docusaurus-mermaid-container .node rect {
   stroke: none !important;
   fill: #17888d !important;
 }
-.mermaid .actor tspan {
+.docusaurus-mermaid-container .actor tspan {
   fill: white !important;
   font-weight: bold;
 }
-.mermaid line:not([class^="messageLin"]) {
+.docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(0, 0, 0, 0.2) !important;
 }
-html[data-theme="dark"] .mermaid line:not([class^="messageLin"]) {
+html[data-theme="dark"] .docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(255, 255, 255, 0.2) !important;
 }
-html[data-theme="dark"] .mermaid [class^="messageLin"] {
+html[data-theme="dark"] .docusaurus-mermaid-container [class^="messageLin"] {
   stroke: rgba(255, 255, 255, 1) !important;
 }
-.mermaid .messageText {
+.docusaurus-mermaid-container .messageText {
   stroke: none !important;
 }
-html[data-theme="dark"] .mermaid .messageText {
+html[data-theme="dark"] .docusaurus-mermaid-container .messageText {
   stroke: rgba(255, 255, 255, 1) !important;
 }
-.mermaid * {
-  font-family:
-    Menlo, Consolas, "Liberation Mono", Courier, monospace !important;
-  font-size: 16px;
-}
-.mermaid .node div {
+/* Font family and size are configured in docusaurus.config.ts mermaid themeVariables
+   so mermaid calculates node sizes correctly during rendering */
+.docusaurus-mermaid-container .node div {
   color: white;
 }
 /* Allow wide diagrams to scroll instead of shrinking */
-.mermaid svg {
+.docusaurus-mermaid-container svg {
   max-width: none;
   min-width: fit-content;
 }
@@ -1194,19 +1192,19 @@ html[data-theme="dark"] .alert--danger [class*="admonitionHeading"] {
    ============================================================ */
 
 /* All node labels white — teal backgrounds need white text */
-.mermaid .nodeLabel {
+.docusaurus-mermaid-container .nodeLabel {
   color: #fff !important;
   fill: #fff !important;
 }
 
 /* Light mode only: stadium/path nodes have light backgrounds — reset to dark text */
-html[data-theme="light"] .mermaid .node:has(path) .nodeLabel {
+html[data-theme="light"] .docusaurus-mermaid-container .node:has(path) .nodeLabel {
   color: #333 !important;
   fill: #333 !important;
 }
 
 /* Block-beta text — always white on teal blocks */
-.mermaid .block .nodeLabel {
+.docusaurus-mermaid-container .block .nodeLabel {
   color: #fff !important;
 }
 
@@ -1215,58 +1213,58 @@ html[data-theme="light"] .mermaid .node:has(path) .nodeLabel {
    ============================================================ */
 
 /* Default SVG text fill → light for dark backgrounds */
-html[data-theme="dark"] .mermaid svg {
+html[data-theme="dark"] .docusaurus-mermaid-container svg {
   color: #e0e0e0;
 }
-html[data-theme="dark"] .mermaid svg[id^="mermaid"] {
+html[data-theme="dark"] .docusaurus-mermaid-container svg[id^="mermaid"] {
   fill: #e0e0e0 !important;
 }
 
 /* Node labels — white text */
-html[data-theme="dark"] .mermaid .nodeLabel,
-html[data-theme="dark"] .mermaid .node .label,
-html[data-theme="dark"] .mermaid .label text,
-html[data-theme="dark"] .mermaid .label span {
+html[data-theme="dark"] .docusaurus-mermaid-container .nodeLabel,
+html[data-theme="dark"] .docusaurus-mermaid-container .node .label,
+html[data-theme="dark"] .docusaurus-mermaid-container .label text,
+html[data-theme="dark"] .docusaurus-mermaid-container .label span {
   color: #fff !important;
   fill: #fff !important;
 }
 
 /* Edge labels (e.g. "TagoTiP", "TagoTiP/S") */
-html[data-theme="dark"] .mermaid .labelBkg {
+html[data-theme="dark"] .docusaurus-mermaid-container .labelBkg {
   background: #1e1e1e !important;
   outline: 1px solid rgba(44, 177, 188, 0.35);
   border-radius: 3px !important;
 }
-html[data-theme="dark"] .mermaid .labelBkg p,
-html[data-theme="dark"] .mermaid .edgeLabel span,
-html[data-theme="dark"] .mermaid .edgeLabel span p {
+html[data-theme="dark"] .docusaurus-mermaid-container .labelBkg p,
+html[data-theme="dark"] .docusaurus-mermaid-container .edgeLabel span,
+html[data-theme="dark"] .docusaurus-mermaid-container .edgeLabel span p {
   color: #fff !important;
   background: transparent !important;
 }
 
 /* Edge lines/paths — visible on dark backgrounds */
-html[data-theme="dark"] .mermaid .flowchart-link,
-html[data-theme="dark"] .mermaid .edge-pattern-solid,
-html[data-theme="dark"] .mermaid .edgePath path {
+html[data-theme="dark"] .docusaurus-mermaid-container .flowchart-link,
+html[data-theme="dark"] .docusaurus-mermaid-container .edge-pattern-solid,
+html[data-theme="dark"] .docusaurus-mermaid-container .edgePath path {
   stroke: #8a8a8a !important;
 }
 
 /* Arrowheads */
-html[data-theme="dark"] .mermaid marker path {
+html[data-theme="dark"] .docusaurus-mermaid-container marker path {
   fill: #8a8a8a !important;
   stroke: #8a8a8a !important;
 }
 
 /* Secondary/tertiary node shapes (stadium, circle, etc.) — darken light fills */
-html[data-theme="dark"] .mermaid .node path,
-html[data-theme="dark"] .mermaid .node circle {
+html[data-theme="dark"] .docusaurus-mermaid-container .node path,
+html[data-theme="dark"] .docusaurus-mermaid-container .node circle {
   fill: #1a5c60 !important;
   stroke: #2cb1bc !important;
 }
 
 /* Block-beta text inside blocks */
-html[data-theme="dark"] .mermaid .block .nodeLabel,
-html[data-theme="dark"] .mermaid foreignObject div {
+html[data-theme="dark"] .docusaurus-mermaid-container .block .nodeLabel,
+html[data-theme="dark"] .docusaurus-mermaid-container foreignObject div {
   color: #fff !important;
 }
 
