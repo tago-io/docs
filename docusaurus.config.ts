@@ -236,6 +236,8 @@ const config: Config = {
           edgeLabelBackground: "transparent",
           clusterBkg: "transparent",
           clusterBorder: "#2a2a2a",
+          fontFamily: "Menlo, Consolas, 'Liberation Mono', Courier, monospace",
+          fontSize: "16px",
         },
       },
     },
