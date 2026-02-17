@@ -9,15 +9,25 @@ slug: /tagotip/
 Send IoT data to TagoIO in **130 bytes** instead of 487. No JSON, no HTTP headers — just a single human-readable line your microcontroller can build with `sprintf`.
 
 ```
-PUSH|ate2bd...c0d0|sensor-01|[temperature:=32.5#C;humidity:=65#%]
+PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 ```
+
+:::note Connect to TagoTiP
+**Host** `tip.tago.io` -- **IP** `166.117.80.175`
+
+| Transport | Ports |
+|-----------|-------|
+| **UDP** | `5683` (TagoTiP) / `5684` (TagoTiP/S) |
+| **TCP** | `5693` / `5694` (TLS) |
+| **HTTP** | `5703` / `5704` (HTTPS) |
+:::
 
 ## Why TagoTiP?
 
 | | HTTP/JSON | TagoTiP | TagoTiP/S (encrypted) |
 |---|---|---|---|
-| **Payload size** | ~487 bytes | ~130 bytes | ~115 bytes |
-| **vs. HTTP/JSON** | — | 3.7× smaller | 4.2× smaller |
+| **Payload size** | ~487 bytes | ~130 bytes | ~119 bytes |
+| **vs. HTTP/JSON** | -- | 3.7x smaller | 4.1x smaller |
 | **TLS required?** | Yes | Recommended | No — AEAD encryption built-in |
 | **Parse complexity** | JSON parser | Linear scan, no backtracking | Envelope + linear scan |
 
@@ -42,19 +52,19 @@ TagoTiP is transport-agnostic. Pick the transport that fits your hardware and ne
 
 ### Encryption without TLS
 
-Need security on LoRa, Sigfox, NB-IoT, or raw UDP where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope — as little as **25 bytes** of overhead, with built-in replay protection and integrity verification.
+Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope -- as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
 
 Choose the cipher suite that fits your security and resource constraints:
 
 | Cipher Suite | Key | Tag | Envelope Overhead |
 |---|---|---|---|
-| **AES-128-CCM** | 128-bit | 8 B | 25 bytes |
-| AES-128-GCM | 128-bit | 16 B | 33 bytes |
-| AES-256-CCM | 256-bit | 8 B | 25 bytes |
-| AES-256-GCM | 256-bit | 16 B | 33 bytes |
-| ChaCha20-Poly1305 | 256-bit | 16 B | 33 bytes |
+| **AES-128-CCM** | 128-bit | 8 B | 29 bytes |
+| AES-128-GCM | 128-bit | 16 B | 37 bytes |
+| AES-256-CCM | 256-bit | 8 B | 29 bytes |
+| AES-256-GCM | 256-bit | 16 B | 37 bytes |
+| ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
 
-Read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
+Learn more in the [TagoTiP/S Overview](/docs/tagotip/tagotips/overview) or read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
 
 ## How it compares
 
@@ -76,10 +86,10 @@ Read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
 |---|---|---|---|
 | **Handshake** | None — 0 bytes | ~2–4 KB | ~2–5 KB |
 | **Round trips before first data** | 0 | 1–2 | 2–3 |
-| **Per-message overhead** | 25–33 bytes | ~29 bytes + TCP | ~29 bytes |
+| **Per-message overhead** | 29-37 bytes | ~29 bytes + TCP | ~29 bytes |
 | **Session state** | Stateless | Per-connection | Per-connection |
 | **Certificate management** | None | Required | Required or PSK |
-| **Works over LoRa / Sigfox / NB-IoT** | Yes | No | No |
+| **Works over raw UDP** | Yes | No | UDP only |
 | **Works without TCP** | Yes | No | UDP only |
 
 ## Quick example
@@ -87,13 +97,13 @@ Read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
 Push a temperature reading with unit, timestamp, and metadata — all in one frame:
 
 ```
-PUSH|ate2bd319014b24e0a8aca9f00aea4c0d0|sensor-01|^batch_42@1694567890000{firmware=2.1}[temperature:=32.5#C;position@=39.74,-104.99]
+PUSH|4deedd7bab8817ec|sensor-01|^batch_42@1694567890000{firmware=2.1}[temperature:=32.5#C;position@=39.74,-104.99]
 ```
 
 Pull the last value back:
 
 ```
-PULL|ate2bd319014b24e0a8aca9f00aea4c0d0|sensor-01|[temperature]
+PULL|4deedd7bab8817ec|sensor-01|[temperature]
 ← ACK|OK|[temperature:=32.5#C@1694567890000]
 ```
 

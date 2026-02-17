@@ -3,35 +3,42 @@ sidebar_position: 1
 title: Overview
 ---
 
-# TagoTiP TCP
+# TagoTiP over TCP
 
-:::info Work in Progress
-This documentation is currently being developed. Check back soon for updates.
+**Guaranteed delivery** and **real-time commands**. TagoTiP over TCP ensures every data point arrives in order -- and the server can push commands to your device the moment they are ready.
+
+:::note Connect Now
+**Host** `tip.tago.io` -- **IP** `166.117.80.175`
+
+| Port | TLS | TagoTiP | TagoTiP/S |
+|------|-----|---------|-----------|
+| **5693** | No | Yes | Yes |
+| **5694** | Yes | Yes | Yes |
 :::
 
-## Overview
+Both ports accept both data formats. The server detects the mode **once per connection** by inspecting the first byte. Use port `5694` for transport-level encryption (TLS). For application-level encryption, see [TagoTiP/S](/docs/tagotip/tagotips/overview).
 
-TagoTiP TCP provides a reliable, connection-oriented transport for communicating with TagoIO. TCP ensures guaranteed delivery and ordering of data, making it suitable for critical data transmissions.
+## Why TCP?
 
-## When to Use TCP
+- **Reliable delivery** -- every frame is acknowledged
+- **Persistent connections** -- one connect, many frames
+- **Real-time commands** -- server pushes `CMD` frames instantly
+- **Ordered data** -- frames arrive in sequence
 
-- Data that must be reliably delivered without loss
-- Bidirectional communication between device and platform
-- Scenarios requiring acknowledgment of data receipt
-- Devices with stable network connections
+## How It Works
 
-## Quick Start
+```
+Device                                    TagoIO
+  |                                         |
+  |── PUSH|hash|serial|[temp:=25]\n ──────> |
+  |<──────── ACK|OK|1\n ─────────────────── |
+  |                                         |
+  |<──────── ACK|CMD|reboot\n ───────────── |  (server push)
+```
 
-_Coming soon._
+The connection stays open. The server can push `CMD` frames at any time -- no polling needed.
 
-## Configuration
+## Get Started
 
-_Coming soon._
-
-## Data Format
-
-_Coming soon._
-
-## Examples
-
-_Coming soon._
+- [**Quick Start**](./quick-start) -- Send data in minutes
+- [**Reference**](./reference) -- Frame format, response codes, limits

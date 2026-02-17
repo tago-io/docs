@@ -29,11 +29,9 @@ const config: Config = {
   projectName: "docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
   markdown: {
     mermaid: true,
-    hooks: {
-      onBrokenMarkdownLinks: "throw",
-    },
   },
 
   // Even if you don't use internationalization, you can use this field to set
