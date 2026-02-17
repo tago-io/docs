@@ -1,4 +1,5 @@
 import Link from "@docusaurus/Link";
+import { useColorMode } from "@docusaurus/theme-common";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
@@ -9,13 +10,18 @@ import type { ReactNode } from "react";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
+  const { colorMode } = useColorMode();
+  const logoSrc =
+    colorMode === "dark"
+      ? "/img/tagoio-official-logo-white.svg"
+      : "/img/tagoio-official-logo.svg";
   return (
     <header className={clsx("hero", styles.heroBanner)}>
       <div className="container">
         <div className={styles.brandRow}>
           <span className={styles.brandDoc}>Documentation</span>
           <img
-            src={useBaseUrl("/img/tagoio-official-logo.svg")}
+            src={useBaseUrl(logoSrc)}
             alt="TagoIO"
             width={160}
             height={40}
@@ -61,7 +67,10 @@ function HomepageHeader() {
             Request a Demo
           </Link>
           <Link
-            className="button button--outline button--secondary button--lg"
+            className={clsx(
+              "button button--outline button--lg",
+              styles.getStartedButton,
+            )}
             to="https://tago.io/pricing"
           >
             Get Started

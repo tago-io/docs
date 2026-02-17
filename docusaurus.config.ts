@@ -29,7 +29,12 @@ const config: Config = {
   projectName: "docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -96,7 +101,7 @@ const config: Config = {
     ],
   ],
 
-  themes: ["docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
   ],
@@ -112,11 +117,11 @@ const config: Config = {
     // Add global meta for beta builds to prevent indexing
     ...(IS_BETA
       ? {
-          metadata: [
-            { name: "robots", content: "noindex, nofollow" },
-            { name: "googlebot", content: "noindex, nofollow" },
-          ],
-        }
+        metadata: [
+          { name: "robots", content: "noindex, nofollow" },
+          { name: "googlebot", content: "noindex, nofollow" },
+        ],
+      }
       : {}),
     algolia: {
       appId: "8HPN5WF45N",
@@ -162,6 +167,7 @@ const config: Config = {
       logo: {
         alt: "TagoIO Logo",
         src: "img/tagoio-official-logo.svg",
+        srcDark: "img/tagoio-official-logo-white.svg",
         width: 110,
         height: 26,
       },
@@ -185,6 +191,14 @@ const config: Config = {
           label: "TagoCore",
         },
         {
+          type: "docSidebar",
+          sidebarId: "tagotipSidebar",
+          position: "left",
+          label: "TagoTiP",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
           label: "API",
           position: "left",
           items: [
@@ -222,6 +236,26 @@ const config: Config = {
     prism: {
       theme: prismThemes.nightOwlLight,
       darkTheme: prismThemes.nightOwl,
+      additionalLanguages: ["abnf", "yaml"],
+    },
+    mermaid: {
+      theme: {
+        light: "base",
+        dark: "dark",
+      },
+      options: {
+        themeVariables: {
+          primaryColor: "#2cb1bc",
+          primaryTextColor: "#ffffff",
+          primaryBorderColor: "transparent",
+          lineColor: "#707070",
+          edgeLabelBackground: "transparent",
+          clusterBkg: "transparent",
+          clusterBorder: "#2a2a2a",
+          fontFamily: "Menlo, Consolas, 'Liberation Mono', Courier, monospace",
+          fontSize: "16px",
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };

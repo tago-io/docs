@@ -652,6 +652,18 @@ const sidebar: SidebarsConfig = {
               label: "List Used Tags",
               className: "api-method get",
             },
+            {
+              type: "doc",
+              id: "api/configure-profile-service",
+              label: "Configure Service Provider",
+              className: "api-method put",
+            },
+            {
+              type: "doc",
+              id: "api/test-profile-service",
+              label: "Test Service Provider",
+              className: "api-method post",
+            },
           ],
         },
         {
@@ -774,6 +786,12 @@ const sidebar: SidebarsConfig = {
               id: "api/delete-entity-data",
               label: "Delete Entity Data",
               className: "api-method delete",
+            },
+            {
+              type: "doc",
+              id: "api/export-entity-data",
+              label: "Export Entity Data",
+              className: "api-method post",
             },
           ],
         },
