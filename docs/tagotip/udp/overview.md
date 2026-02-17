@@ -3,35 +3,40 @@ sidebar_position: 1
 title: Overview
 ---
 
-# TagoTiP UDP
+# TagoTiP over UDP
 
-:::info Work in Progress
-This documentation is currently being developed. Check back soon for updates.
+The **fastest path** from sensor to cloud. No connection setup, no handshake -- a single datagram carries your data to TagoIO in as few as 60 bytes.
+
+:::note Connect Now
+**Host** `tip.tago.io` -- **IP** `166.117.80.175`
+
+| Port | TLS | TagoTiP | TagoTiP/S |
+|------|-----|---------|-----------|
+| **5683** | No | Yes | No |
+| **5684** | No | No | Yes |
 :::
 
-## Overview
+UDP does not support TLS. For application-level encryption, use [TagoTiP/S](/docs/tagotip/tagotips/overview) on port `5684`.
 
-TagoTiP UDP provides a lightweight, connectionless transport for sending data to TagoIO. UDP is ideal for scenarios where low latency and minimal overhead are more important than guaranteed delivery.
+## Why UDP?
 
-## When to Use UDP
+- **Zero connection overhead** -- no handshake, no teardown
+- **Minimal power consumption** -- ideal for battery-powered devices
+- **Fire-and-forget** -- send and move on
+- **Tiny footprint** -- a single `sprintf` builds your frame
 
-- High-frequency sensor data where occasional packet loss is acceptable
-- Battery-powered devices that need to minimize power consumption
-- Fire-and-forget telemetry data
-- Scenarios where network bandwidth is limited
+## How It Works
 
-## Quick Start
+```
+Device                              TagoIO
+  |                                   |
+  |── PUSH|hash|serial|[temp:=25] ──>|
+  |<──────── ACK|OK|1 ───────────────|
+```
 
-_Coming soon._
+One datagram in, one datagram out. Each datagram carries exactly **one** frame.
 
-## Configuration
+## Get Started
 
-_Coming soon._
-
-## Data Format
-
-_Coming soon._
-
-## Examples
-
-_Coming soon._
+- [**Quick Start**](./quick-start) -- Send data in minutes
+- [**Reference**](./reference) -- Frame format, response codes, limits

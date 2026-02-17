@@ -3,39 +3,50 @@ sidebar_position: 1
 title: Overview
 ---
 
-# TagoTiP HTTP
+# TagoTiP over HTTP
 
-:::info Work in Progress
-This documentation is currently being developed. Check back soon for updates.
+Standard HTTP you already know -- `POST` to send, `GET` to retrieve, `HEAD` to ping. A single `Authorization` header and a clean REST-style API. Works through every firewall and proxy.
+
+:::note Connect Now
+**Host** `tip.tago.io` -- **IP** `166.117.80.175`
+
+| Port | TLS | TagoTiP | TagoTiP/S |
+|------|-----|---------|-----------|
+| **5703** | No (HTTP) | Yes | Yes |
+| **5704** | Yes (HTTPS) | Yes | Yes |
 :::
 
-## Overview
+Both ports accept both data formats via URL path:
+- `/v1/tip/{serial}` -- TagoTiP
+- `/v1/tips` -- TagoTiP/S
 
-TagoTiP HTTP uses standard HTTP request/response communication for integrating with TagoIO. HTTP is the most widely supported protocol and is ideal for simple integrations and environments where HTTP infrastructure is already in place.
+Use port `5704` for HTTPS. For application-level encryption, see [TagoTiP/S](/docs/tagotip/tagotips/overview).
 
-## When to Use HTTP
+## Why HTTP?
 
-- Simple device-to-cloud data submissions
-- Environments with existing HTTP infrastructure
-- Integrations from web applications or servers
-- Scenarios where request/response confirmation is needed
+- **Universal** -- every language and platform has an HTTP client
+- **Firewall-friendly** -- passes through proxies and load balancers
+- **Familiar** -- standard methods, headers, and status codes
+- **Quick integration** -- one `curl` command gets you started
 
-## Quick Start
+## How It Works
 
-_Coming soon._
+| HTTP Method | TagoTiP Action | Purpose |
+|---|---|---|
+| `POST` | PUSH | Send data |
+| `GET` | PULL | Retrieve last values |
+| `HEAD` | PING | Keepalive / poll commands |
 
-## Configuration
+```bash
+curl -X POST https://tip.tago.io:5704/v1/tip/sensor-01 \
+  -H "Authorization: TagoTiP 4deedd7bab8817ec" \
+  -H "Content-Type: text/plain" \
+  -d '[temperature:=25.5#C]'
+```
 
-_Coming soon._
+Response: `200 OK` -- body `1` (one data point stored).
 
-## Endpoints
+## Get Started
 
-_Coming soon._
-
-## Authentication
-
-_Coming soon._
-
-## Examples
-
-_Coming soon._
+- [**Quick Start**](./quick-start) -- Send data in minutes
+- [**Reference**](./reference) -- Endpoints, response codes, limits
