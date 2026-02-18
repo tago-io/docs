@@ -29,7 +29,7 @@ dist/
 .env.production.local
 
 # Generated from tago-io/tagotip GitHub repo (scripts/sync-tagotip.mjs)
-docs/tagotip/specification.md
+docs/tagotip/tagotip-specification.md
 docs/tagotip/tagotips-specification.md
 
 npm-debug.log*
