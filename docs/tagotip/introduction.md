@@ -1,26 +1,17 @@
 ---
 sidebar_position: 1
-title: Welcome
+sidebar_label: Introduction
+title: TagoTiP -- Transport IoT Protocol
 slug: /tagotip/
 ---
 
-# TagoTiP — Transport IoT Protocol
+# TagoTiP -- Transport IoT Protocol
 
-Send IoT data to TagoIO in **130 bytes** instead of 487. No JSON, no HTTP headers — just a single human-readable line your microcontroller can build with `sprintf`.
+Send IoT data to TagoIO in **130 bytes** instead of 487. No JSON, no HTTP headers -- just a single human-readable line your microcontroller can build with `sprintf`.
 
 ```
 PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 ```
-
-:::note Connect to TagoTiP
-**Host** `tip.tago.io` -- **IP** `166.117.80.175`
-
-| Transport | Ports |
-|-----------|-------|
-| **UDP** | `5683` (TagoTiP) / `5684` (TagoTiP/S) |
-| **TCP** | `5693` / `5694` (TLS) |
-| **HTTP** | `5703` / `5704` (HTTPS) |
-:::
 
 ## Why TagoTiP?
 
@@ -28,33 +19,29 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 |---|---|---|---|
 | **Payload size** | ~487 bytes | ~130 bytes | ~119 bytes |
 | **vs. HTTP/JSON** | -- | 3.7x smaller | 4.1x smaller |
-| **TLS required?** | Yes | Recommended | No — AEAD encryption built-in |
+| **TLS required?** | Yes | Recommended | No -- AEAD encryption built-in |
 | **Parse complexity** | JSON parser | Linear scan, no backtracking | Envelope + linear scan |
 
 ### Built for constrained devices
 
-- **Human-readable** — debug frames in a terminal, compose them by hand
-- **Type-safe** — explicit operators for numbers (`:=`), strings (`=`), booleans (`?=`), and locations (`@=`)
-- **C-friendly** — predictable buffer sizes, no dynamic allocation, linear parsing
-- **Compact** — variable, value, unit, timestamp, group, location, and metadata in a single frame
-- **Transport-agnostic** — works over UDP, TCP, HTTP(S), MQTT, or any byte-capable channel
+- **Human-readable** -- debug frames in a terminal, compose them by hand
+- **Type-safe** -- explicit operators for numbers (`:=`), strings (`=`), booleans (`?=`), and locations (`@=`)
+- **C-friendly** -- predictable buffer sizes, no dynamic allocation, linear parsing
+- **Compact** -- variable, value, unit, timestamp, group, location, and metadata in a single frame
+- **Transport-agnostic** -- works over UDP, TCP, HTTP(S), MQTT, or any byte-capable channel
 
-### Runs over anything
+## Pick your transport
 
-TagoTiP is transport-agnostic. Pick the transport that fits your hardware and network:
-
-| Transport | Best For | Guide |
+| Transport | Best for | Guide |
 |-----------|----------|-------|
-| **[UDP](/docs/tagotip/udp/overview)** | High-frequency telemetry, fire-and-forget | Lowest overhead, no connection setup |
-| **[TCP](/docs/tagotip/tcp/overview)** | Reliable delivery, bidirectional commands | Persistent connections, server-pushed CMDs |
-| **[MQTT](/docs/tagotip/mqtt/overview)** | Pub/sub patterns, intermittent connectivity | Native topic-based routing |
-| **[HTTP](/docs/tagotip/http/overview)** | Simple integrations, request/response | Works through firewalls and proxies |
+| **[UDP](./udp)** | High-frequency telemetry, fire-and-forget | Lowest overhead, no connection setup |
+| **[TCP](./tcp)** | Reliable delivery, bidirectional commands | Persistent connections, server-pushed CMDs |
+| **[HTTP](./http)** | Simple integrations, request/response | Works through firewalls and proxies |
+| **[MQTT](./mqtt)** | Pub/sub patterns, intermittent connectivity | Native topic-based routing (coming soon) |
 
-### Encryption without TLS
+## Encryption without TLS
 
 Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope -- as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
-
-Choose the cipher suite that fits your security and resource constraints:
 
 | Cipher Suite | Key | Tag | Envelope Overhead |
 |---|---|---|---|
@@ -64,7 +51,7 @@ Choose the cipher suite that fits your security and resource constraints:
 | AES-256-GCM | 256-bit | 16 B | 37 bytes |
 | ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
 
-Learn more in the [TagoTiP/S Overview](/docs/tagotip/tagotips/overview) or read the full [TagoTiP/S Specification](/docs/tagotip/tagotips-specification).
+Learn more in the [Encryption](./encryption) guide.
 
 ## How it compares
 
@@ -84,8 +71,8 @@ Learn more in the [TagoTiP/S Overview](/docs/tagotip/tagotips/overview) or read 
 
 | | TagoTiP/S | TLS 1.3 | DTLS 1.2 |
 |---|---|---|---|
-| **Handshake** | None — 0 bytes | ~2–4 KB | ~2–5 KB |
-| **Round trips before first data** | 0 | 1–2 | 2–3 |
+| **Handshake** | None -- 0 bytes | ~2-4 KB | ~2-5 KB |
+| **Round trips before first data** | 0 | 1-2 | 2-3 |
 | **Per-message overhead** | 29-37 bytes | ~29 bytes + TCP | ~29 bytes |
 | **Session state** | Stateless | Per-connection | Per-connection |
 | **Certificate management** | None | Required | Required or PSK |
@@ -94,7 +81,7 @@ Learn more in the [TagoTiP/S Overview](/docs/tagotip/tagotips/overview) or read 
 
 ## Quick example
 
-Push a temperature reading with unit, timestamp, and metadata — all in one frame:
+Push a temperature reading with unit, timestamp, and metadata -- all in one frame:
 
 ```
 PUSH|4deedd7bab8817ec|sensor-01|^batch_42@1694567890000{firmware=2.1}[temperature:=32.5#C;position@=39.74,-104.99]
@@ -104,7 +91,7 @@ Pull the last value back:
 
 ```
 PULL|4deedd7bab8817ec|sensor-01|[temperature]
-← ACK|OK|[temperature:=32.5#C@1694567890000]
+<- ACK|OK|[temperature:=32.5#C@1694567890000]
 ```
 
 ## SDKs
@@ -121,10 +108,6 @@ All language SDKs share a single Rust core (`tagotip-codec`, `no_std`), so parsi
 
 Browse the full SDK source at [github.com/tago-io/tagotip-sdk](https://github.com/tago-io/tagotip-sdk).
 
-## Specification
-
-For the complete protocol grammar, parsing rules, and ABNF, see the [TagoTiP Specification](/docs/tagotip/specification).
-
 ## Open source
 
-TagoTiP is open source under the [Apache License 2.0](https://github.com/tago-io/tagotip). Implement clients, servers, libraries, or gateways — for any purpose, including commercial use.
+TagoTiP is open source under the [Apache License 2.0](https://github.com/tago-io/tagotip). Implement clients, servers, libraries, or gateways -- for any purpose, including commercial use.

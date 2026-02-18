@@ -15,10 +15,10 @@ const REPO_URL = "https://github.com/tago-io/tagotip";
 const FILES = [
   {
     remote: "TagoTiP.md",
-    out: "docs/tagotip/specification.md",
+    out: "docs/tagotip/tagotip-specification.md",
     frontmatter: [
       "---",
-      "sidebar_position: 2",
+      "sidebar_position: 10",
       "title: TagoTiP Specification",
       `custom_edit_url: ${REPO_URL}/edit/main/TagoTiP.md`,
       "---",
@@ -29,9 +29,9 @@ const FILES = [
     out: "docs/tagotip/tagotips-specification.md",
     frontmatter: [
       "---",
-      "sidebar_position: 3",
-      "title: TagoTiPs Specification",
-      "sidebar_label: TagoTiP/s Specification",
+      "sidebar_position: 11",
+      "title: TagoTiP/S Specification",
+      "sidebar_label: TagoTiP/S Specification",
       `custom_edit_url: ${REPO_URL}/edit/main/TagoTiPs.md`,
       "---",
     ].join("\n"),
@@ -83,7 +83,7 @@ function rewriteLinks(text) {
   // Cross-references between the two spec files
   text = text.replace(
     /\(TagoTiP\.md(#[^)]+)?\)/g,
-    (_, anchor) => `(/docs/tagotip/specification${anchor || ""})`,
+    (_, anchor) => `(/docs/tagotip/tagotip-specification${anchor || ""})`,
   );
   text = text.replace(
     /\(TagoTiPs\.md(#[^)]+)?\)/g,
