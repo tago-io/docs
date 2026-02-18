@@ -1078,7 +1078,9 @@ html[data-theme="dark"] .youtube-container {
 .docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(0, 0, 0, 0.2) !important;
 }
-html[data-theme="dark"] .docusaurus-mermaid-container line:not([class^="messageLin"]) {
+html[data-theme="dark"]
+  .docusaurus-mermaid-container
+  line:not([class^="messageLin"]) {
   stroke: rgba(255, 255, 255, 0.2) !important;
 }
 html[data-theme="dark"] .docusaurus-mermaid-container [class^="messageLin"] {
@@ -1198,7 +1200,9 @@ html[data-theme="dark"] .alert--danger [class*="admonitionHeading"] {
 }
 
 /* Light mode only: stadium/path nodes have light backgrounds — reset to dark text */
-html[data-theme="light"] .docusaurus-mermaid-container .node:has(path) .nodeLabel {
+html[data-theme="light"] .docusaurus-mermaid-container
+  .node:has(path)
+  .nodeLabel {
   color: #333 !important;
   fill: #333 !important;
 }
