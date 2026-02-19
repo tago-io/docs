@@ -6,20 +6,20 @@ title: TagoTiP over UDP
 
 # TagoTiP over UDP
 
-The **fastest path** from sensor to cloud. No connection setup, no handshake -- a single datagram carries your data to TagoIO in as few as 60 bytes.
+The **fastest path** from sensor to cloud. No connection setup, no handshake - a single datagram carries your data to TagoIO in as few as 60 bytes.
 
 ## Endpoint
 
-**Host:** `udp.tip.us-e1.tago.io` -- **IP:** `166.117.107.129` -- **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
+**Host:** `udp.tip.us-e1.tago.io` - **IP:** `166.117.107.129` - **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
 
 See [Servers & Endpoints](./servers) for all regions.
 
 ## Why UDP?
 
-- **Zero connection overhead** -- no handshake, no teardown
-- **Minimal power consumption** -- ideal for battery-powered devices
-- **Fire-and-forget** -- send and move on
-- **Tiny footprint** -- a single `sprintf` builds your frame
+- **Zero connection overhead** - no handshake, no teardown
+- **Minimal power consumption** - ideal for battery-powered devices
+- **Fire-and-forget** - send and move on
+- **Tiny footprint** - a single `sprintf` builds your frame
 
 ## How it works
 

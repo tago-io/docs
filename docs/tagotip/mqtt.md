@@ -6,11 +6,11 @@ title: TagoTiP over MQTT
 
 # TagoTiP over MQTT
 
-**Publish/subscribe messaging** with QoS delivery guarantees. TagoTiP over MQTT maps the protocol to standard MQTT topics -- the server pushes commands to your device in real time, and QoS levels handle delivery reliability at the transport layer.
+**Publish/subscribe messaging** with QoS delivery guarantees. TagoTiP over MQTT maps the protocol to standard MQTT topics - the server pushes commands to your device in real time, and QoS levels handle delivery reliability at the transport layer.
 
 ## Endpoint
 
-**Host:** `mqtt.tip.us-e1.tago.io` (port `1883`) / `mqtts.tip.us-e1.tago.io` (port `8883`, TLS) -- **IP:** `15.197.247.146`
+**Host:** `mqtt.tip.us-e1.tago.io` (port `1883`) / `mqtts.tip.us-e1.tago.io` (port `8883`, TLS) - **IP:** `15.197.247.146`
 
 See [Servers & Endpoints](./servers) for all regions.
 
@@ -20,10 +20,10 @@ Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when T
 
 ## Why MQTT?
 
-- **Pub/sub patterns** -- topic-based routing with flexible subscriptions
-- **QoS delivery** -- at-most-once (0), at-least-once (1), or exactly-once (2)
-- **Real-time commands** -- server pushes `CMD` to the device's `ack` topic instantly
-- **Intermittent connectivity** -- designed for unreliable networks
+- **Pub/sub patterns** - topic-based routing with flexible subscriptions
+- **QoS delivery** - at-most-once (0), at-least-once (1), or exactly-once (2)
+- **Real-time commands** - server pushes `CMD` to the device's `ack` topic instantly
+- **Intermittent connectivity** - designed for unreliable networks
 
 ## Authentication
 
