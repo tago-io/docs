@@ -10,29 +10,29 @@ TagoTiP servers are region-specific. Each transport protocol has its own dedicat
 
 ## US-East-1
 
-| Transport | Hostname | Static IP | Port | Protocol | Security |
-|-----------|----------|-----------|------|----------|----------|
-| UDP | `udp.tip.us-e1.tago.io` | `166.117.107.129` | 5683 | TagoTiP | None |
-| UDP | `udp.tip.us-e1.tago.io` | `166.117.107.129` | 5684 | TagoTiP/S | Encrypted (AEAD) |
-| TCP | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | 5693 | TagoTiP + TagoTiP/S | None |
-| TCP | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | 5694 | TagoTiP + TagoTiP/S | TLS |
-| HTTP | `http.tip.us-e1.tago.io` | `52.223.14.189` | 80 | TagoTiP + TagoTiP/S | None (HTTP) |
-| HTTP | `http.tip.us-e1.tago.io` | `52.223.14.189` | 443 | TagoTiP + TagoTiP/S | TLS (HTTPS) |
-| MQTT | `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | 1883 | TagoTiP | None (MQTT) |
-| MQTT | `mqtts.tip.us-e1.tago.io` | `15.197.247.146` | 8883 | TagoTiP | TLS (MQTTS) |
+| Transport | Hostname | Port | Protocol | Security |
+|-----------|----------|------|----------|----------|
+| UDP | `udp.tip.us-e1.tago.io`<br/><span class="ip-addr">166.117.107.129</span> | 5683 | TagoTiP | None |
+| UDP | `udp.tip.us-e1.tago.io`<br/><span class="ip-addr">166.117.107.129</span> | 5684 | TagoTiP(s) | Encrypted (AEAD) |
+| TCP | `tcp.tip.us-e1.tago.io`<br/><span class="ip-addr">75.2.126.170</span> | 5693 | TagoTiP(s) | None |
+| TCP | `tcp.tip.us-e1.tago.io`<br/><span class="ip-addr">75.2.126.170</span> | 5694 | TagoTiP(s) | TLS |
+| HTTP | `http.tip.us-e1.tago.io`<br/><span class="ip-addr">52.223.14.189</span> | 80 | TagoTiP(s) | None (HTTP) |
+| HTTP | `http.tip.us-e1.tago.io`<br/><span class="ip-addr">52.223.14.189</span> | 443 | TagoTiP(s) | TLS (HTTPS) |
+| MQTT | `mqtt.tip.us-e1.tago.io`<br/><span class="ip-addr">15.197.247.146</span> | 1883 | TagoTiP | None (MQTT) |
+| MQTT | `mqtts.tip.us-e1.tago.io`<br/><span class="ip-addr">15.197.247.146</span> | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## EU-West-1
 
-| Transport | Hostname | Static IP | Port | Protocol | Security |
-|-----------|----------|-----------|------|----------|----------|
-| UDP | `udp.tip.eu-w1.tago.io` | TBD | 5683 | TagoTiP | None |
-| UDP | `udp.tip.eu-w1.tago.io` | TBD | 5684 | TagoTiP/S | Encrypted (AEAD) |
-| TCP | `tcp.tip.eu-w1.tago.io` | TBD | 5693 | TagoTiP + TagoTiP/S | None |
-| TCP | `tcp.tip.eu-w1.tago.io` | TBD | 5694 | TagoTiP + TagoTiP/S | TLS |
-| HTTP | `http.tip.eu-w1.tago.io` | TBD | 80 | TagoTiP + TagoTiP/S | None (HTTP) |
-| HTTP | `http.tip.eu-w1.tago.io` | TBD | 443 | TagoTiP + TagoTiP/S | TLS (HTTPS) |
-| MQTT | `mqtt.tip.eu-w1.tago.io` | TBD | 1883 | TagoTiP | None (MQTT) |
-| MQTT | `mqtts.tip.eu-w1.tago.io` | TBD | 8883 | TagoTiP | TLS (MQTTS) |
+| Transport | Hostname | Port | Protocol | Security |
+|-----------|----------|------|----------|----------|
+| UDP | `udp.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 5683 | TagoTiP | None |
+| UDP | `udp.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 5684 | TagoTiP(s) | Encrypted (AEAD) |
+| TCP | `tcp.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 5693 | TagoTiP(s) | None |
+| TCP | `tcp.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 5694 | TagoTiP(s) | TLS |
+| HTTP | `http.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 80 | TagoTiP(s) | None (HTTP) |
+| HTTP | `http.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 443 | TagoTiP(s) | TLS (HTTPS) |
+| MQTT | `mqtt.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 1883 | TagoTiP | None (MQTT) |
+| MQTT | `mqtts.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## Choosing a transport
 
