@@ -12,17 +12,21 @@ title: TagoTiP/S -- Encrypted Communication
 
 - **No TLS available** -- UDP has no TLS support; TagoTiP/S is your only encryption option
 - **Constrained links** -- where TLS handshakes are too expensive
-- **Defense in depth** -- combine TagoTiP/S with TLS on ports `5694` or `5704` for layered security
+- **Defense in depth** -- combine TagoTiP/S with TLS on TCP port `5694` or HTTPS port `443` for layered security
 
 ## TagoTiP/S supported ports
+
+**US-East-1:**
 
 | Transport | Host | Port | TLS | Notes |
 |-----------|------|------|-----|-------|
 | **UDP** | `udp.tip.us-e1.tago.io` | 5684 | No | Dedicated port |
 | **TCP** | `tcp.tip.us-e1.tago.io` | 5693 | No | Auto-detected |
 | **TCP** | `tcp.tip.us-e1.tago.io` | 5694 | Yes | Auto-detected |
-| **HTTP** | `http.tip.us-e1.tago.io` | 5703 | No | `POST /v1/tips` |
-| **HTTP** | `http.tip.us-e1.tago.io` | 5704 | Yes | `POST /v1/tips` |
+| **HTTP** | `http.tip.us-e1.tago.io` | 80 | No | `POST /v1/tips` |
+| **HTTP** | `http.tip.us-e1.tago.io` | 443 | Yes | `POST /v1/tips` |
+
+See [Servers & Endpoints](./servers) for all regions.
 
 ## How it differs from TagoTiP
 

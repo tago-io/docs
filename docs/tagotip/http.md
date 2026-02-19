@@ -8,21 +8,14 @@ title: TagoTiP over HTTP
 
 Standard HTTP you already know -- `POST` to send, `GET` to retrieve, `HEAD` to ping. A single `Authorization` header and a clean REST-style API. Works through every firewall and proxy.
 
-:::note Endpoint
-**Host** `http.tip.us-e1.tago.io` -- **IP** `166.117.109.176`
+## Endpoint
 
-| Port | Protocol | Security |
-|------|----------|----------|
-| **5703** | TagoTiP + TagoTiP/S | None (HTTP) |
-| **5704** | TagoTiP + TagoTiP/S | TLS (HTTPS) |
-:::
+**Host:** `http.tip.us-e1.tago.io` -- **IP:** `166.117.109.176` -- **Ports:** `80` (HTTP) / `443` (HTTPS)
 
-Both ports accept both data formats via URL path:
-- `/v1/tip/{serial}` -- TagoTiP
-- `/v1/tips` -- TagoTiP/S
+Both ports accept TagoTiP and TagoTiP/S via URL path. See [Servers & Endpoints](./servers) for all regions.
 
 :::info Use HTTPS in production
-Port `5704` (HTTPS) for production. Port `5703` (HTTP) for development or when TLS is handled externally.
+Port `443` (HTTPS) for production. Port `80` (HTTP) for development or when TLS is handled externally.
 :::
 
 ## Why HTTP?
@@ -48,7 +41,7 @@ Port `5704` (HTTPS) for production. Port `5703` (HTTP) for development or when T
 
 const char* SSID       = "your-wifi";
 const char* PASSWORD   = "your-password";
-const char* TIP_URL    = "http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01";  // replace serial
+const char* TIP_URL    = "http://http.tip.us-e1.tago.io/v1/tip/sensor-01";  // replace serial
 const char* TOKEN_HASH = "4deedd7bab8817ec";  // replace with yours
 
 void setup() {
@@ -95,7 +88,7 @@ Replace `4deedd7bab8817ec` with your token hash and `sensor-01` with your serial
 ### Push a temperature reading
 
 ```bash
-curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
+curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
   -d '[temperature:=25.5#C]'
@@ -108,7 +101,7 @@ curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
 ### Push multiple variables
 
 ```bash
-curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
+curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
   -d '[temperature:=25.5#C;humidity:=60#%;active?=true]'
@@ -121,7 +114,7 @@ curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
 ### Push with body-level defaults
 
 ```bash
-curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
+curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
   -d '^batch_01@1694567890000{firmware=2.1}[temperature:=25.5#C;humidity:=60#%]'
@@ -130,7 +123,7 @@ curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
 ### Push location data
 
 ```bash
-curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/tracker-01 \
+curl -X POST https://http.tip.us-e1.tago.io/v1/tip/tracker-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
   -d '[position@=39.74,-104.99,1609;speed:=45.2#km/h]'
@@ -139,7 +132,7 @@ curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/tracker-01 \
 ### Push raw payload (passthrough)
 
 ```bash
-curl -X POST http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
+curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
   -d '>xDEADBEEF01020304'
@@ -150,7 +143,7 @@ Raw bytes are delivered to your device's [Payload Parser](/docs/tagoio/devices/p
 ### Pull the last stored values
 
 ```bash
-curl http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01?variables=temperature,humidity \
+curl https://http.tip.us-e1.tago.io/v1/tip/sensor-01?variables=temperature,humidity \
   -H "Authorization: TagoTiP 4deedd7bab8817ec"
 ```
 
@@ -161,7 +154,7 @@ curl http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01?variables=temperature,h
 ### Ping (connectivity check + command polling)
 
 ```bash
-curl -I http://http.tip.us-e1.tago.io:5703/v1/tip/sensor-01 \
+curl -I https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec"
 ```
 
@@ -228,19 +221,38 @@ No `Authorization` header. See [Encryption](./encryption).
 | `400 Bad Request` | Malformed body | `invalid_payload` |
 | `401 Unauthorized` | Invalid auth | `invalid_token` |
 | `404 Not Found` | Unknown device/variable | `device_not_found` |
+| `413 Payload Too Large` | Body exceeds max payload size | `payload_too_large` |
 | `429 Too Many Requests` | Rate limited | `rate_limited` |
 | `500 Internal Server Error` | Server error | `server_error` |
 
 ## Limits
 
+### Protocol limits
+
 | Limit | Value |
 |---|---|
-| Max request body | 16,384 bytes |
+| Max request body (wire) | 16,384 bytes |
 | Max variables per request | 100 |
 | Max metadata pairs | 32 |
 | Variable name length | 100 chars |
 | Unit length | 25 chars |
 | Serial length | 100 chars |
+
+### Per-profile rate limits
+
+| Resource | Scale | Starter | Free |
+|---|---|---|---|
+| Uplink RPM (POST, HEAD) | 1,000 | 500 | 60 |
+| Downlink RPM (GET) | 1,000 | 500 | 60 |
+| Connections per IP | 100 | 20 | 5 |
+
+### Per-device limits
+
+| Resource | Default |
+|---|---|
+| Max payload size | 100 KB |
+
+Unlike TCP/UDP, `HEAD` (PING) counts toward the uplink RPM on HTTP.
 
 ## Specification
 

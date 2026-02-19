@@ -8,14 +8,11 @@ title: TagoTiP over UDP
 
 The **fastest path** from sensor to cloud. No connection setup, no handshake -- a single datagram carries your data to TagoIO in as few as 60 bytes.
 
-:::note Endpoint
-**Host** `udp.tip.us-e1.tago.io` -- **IP** `166.117.99.158`
+## Endpoint
 
-| Port | Protocol | Security |
-|------|----------|----------|
-| **5683** | TagoTiP | None |
-| **5684** | TagoTiP/S | Encrypted (AEAD) |
-:::
+**Host:** `udp.tip.us-e1.tago.io` -- **IP:** `166.117.99.158` -- **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
+
+See [Servers & Endpoints](./servers) for all regions.
 
 ## Why UDP?
 
@@ -188,14 +185,16 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 | `ACK\|ERR\|invalid_payload` | Malformed frame or body |
 | `ACK\|ERR\|invalid_seq` | Counter not greater than last accepted |
 | `ACK\|ERR\|rate_limited` | Back off and retry |
-| `ACK\|ERR\|payload_too_large` | Frame exceeds 16 KB |
+| `ACK\|ERR\|payload_too_large` | Frame exceeds max payload size |
 | `ACK\|ERR\|server_error` | Retry after a delay |
 
 ## Limits
 
+### Protocol limits
+
 | Limit | Value |
 |---|---|
-| Max frame size | 16,384 bytes |
+| Max frame size (wire) | 16,384 bytes |
 | Max variables per frame | 100 |
 | Max metadata pairs | 32 |
 | Variable name length | 100 chars |
@@ -205,6 +204,21 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 :::tip
 Keep datagrams under ~1,400 bytes to avoid IP fragmentation.
 :::
+
+### Per-profile rate limits
+
+| Resource | Scale | Starter | Free |
+|---|---|---|---|
+| Uplink RPM (PUSH) | 1,000 | 500 | 60 |
+| Downlink RPM (PULL) | 1,000 | 500 | 60 |
+
+### Per-device limits
+
+| Resource | Default |
+|---|---|
+| Max payload size | 100 KB |
+
+PING is exempt from rate limiting on UDP.
 
 ## Specification
 
