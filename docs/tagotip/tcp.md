@@ -8,16 +8,11 @@ title: TagoTiP over TCP
 
 **Guaranteed delivery** and **real-time commands**. TagoTiP over TCP ensures every data point arrives in order -- and the server can push commands to your device the moment they are ready.
 
-:::note Endpoint
-**Host** `tcp.tip.us-e1.tago.io` -- **IP** `166.117.12.171`
+## Endpoint
 
-| Port | Protocol | Security |
-|------|----------|----------|
-| **5693** | TagoTiP + TagoTiP/S | None |
-| **5694** | TagoTiP + TagoTiP/S | TLS |
-:::
+**Host:** `tcp.tip.us-e1.tago.io` -- **IP:** `166.117.12.171` -- **Ports:** `5693` (plaintext) / `5694` (TLS)
 
-Both ports accept both data formats. The server detects the mode **once per connection** by inspecting the first byte. Use port `5694` for transport-level encryption (TLS). For application-level encryption, see [TagoTiP/S](./encryption).
+Both ports accept TagoTiP and TagoTiP/S. The server detects the mode **once per connection** by inspecting the first byte. See [Servers & Endpoints](./servers) for all regions.
 
 ## Why TCP?
 
@@ -223,23 +218,42 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 | `ACK\|ERR\|invalid_payload` | Malformed frame or body |
 | `ACK\|ERR\|invalid_seq` | Counter not greater than last accepted |
 | `ACK\|ERR\|rate_limited` | Back off and retry |
-| `ACK\|ERR\|payload_too_large` | Frame exceeds 16 KB |
+| `ACK\|ERR\|payload_too_large` | Frame exceeds max payload size |
 | `ACK\|ERR\|server_error` | Retry after a delay |
 
 ## Limits
 
+### Protocol limits
+
 | Limit | Value |
 |---|---|
-| Max frame size | 16,384 bytes |
+| Max frame size (wire) | 16,384 bytes |
 | Max variables per frame | 100 |
 | Max metadata pairs | 32 |
 | Variable name length | 100 chars |
 | Unit length | 25 chars |
 | Serial length | 100 chars |
-| Idle timeout | 60 seconds |
+
+### Per-profile rate limits
+
+| Resource | Scale | Starter | Free |
+|---|---|---|---|
+| Uplink RPM (PUSH) | 1,000 | 500 | 60 |
+| Downlink RPM (PULL) | 1,000 | 500 | 60 |
+| Connections per IP | 100 | 20 | 5 |
+
+### Per-device limits
+
+| Resource | Default |
+|---|---|
+| Max payload size | 100 KB |
+| Connection TTL | 60 s |
+| Keep-alive idle timeout | 20 s |
+
+PING is exempt from rate limiting on TCP.
 
 :::warning
-Send a `PING` at least every 60 seconds to keep the connection alive.
+Send a `PING` before the keep-alive idle timeout (default 20 seconds) to keep the connection alive. The connection is closed after the TTL (default 60 seconds) regardless of activity.
 :::
 
 ## Specification
