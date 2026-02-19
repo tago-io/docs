@@ -1332,6 +1332,15 @@ html[data-theme="dark"] :not(pre) > code {
 }
 
 /* ============================================================
+   Servers table — muted IP address color
+   ============================================================ */
+.ip-addr {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ============================================================
    DocSearch — light mode overrides
    ============================================================ */
 :root {
