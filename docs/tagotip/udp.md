@@ -10,7 +10,9 @@ The **fastest path** from sensor to cloud. No connection setup, no handshake - a
 
 ## Endpoint
 
-**Host:** `udp.tip.us-e1.tago.io` - **IP:** `166.117.107.129` - **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
+| Host | IP | Ports |
+|---|---|---|
+| `udp.tip.us-e1.tago.io` | `166.117.107.129` | `5683` (plaintext) / `5684` (TagoTiP/S) |
 
 See [Servers & Endpoints](./servers) for all regions.
 

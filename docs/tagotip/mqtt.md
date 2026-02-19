@@ -10,7 +10,9 @@ title: TagoTiP over MQTT
 
 ## Endpoint
 
-**Host:** `mqtt.tip.us-e1.tago.io` (port `1883`) / `mqtts.tip.us-e1.tago.io` (port `8883`, TLS) - **IP:** `15.197.247.146`
+| Host | IP | Ports |
+|---|---|---|
+| `mqtt.tip.us-e1.tago.io` / `mqtts.tip.us-e1.tago.io` (TLS) | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
 
 See [Servers & Endpoints](./servers) for all regions.
 
