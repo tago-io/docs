@@ -37,7 +37,7 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 | **[UDP](./udp)** | High-frequency telemetry, fire-and-forget | Lowest overhead, no connection setup |
 | **[TCP](./tcp)** | Reliable delivery, bidirectional commands | Persistent connections, server-pushed CMDs |
 | **[HTTP](./http)** | Simple integrations, request/response | Works through firewalls and proxies |
-| **[MQTT](./mqtt)** | Pub/sub patterns, intermittent connectivity | Native topic-based routing (coming soon) |
+| **[MQTT](./mqtt)** | Pub/sub patterns, intermittent connectivity | Native topic-based routing, QoS levels |
 
 ## Encryption without TLS
 

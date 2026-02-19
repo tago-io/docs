@@ -10,7 +10,7 @@ title: TagoTiP over TCP
 
 ## Endpoint
 
-**Host:** `tcp.tip.us-e1.tago.io` -- **IP:** `166.117.12.171` -- **Ports:** `5693` (plaintext) / `5694` (TLS)
+**Host:** `tcp.tip.us-e1.tago.io` -- **IP:** `75.2.126.170` -- **Ports:** `5693` (plaintext) / `5694` (TLS)
 
 Both ports accept TagoTiP and TagoTiP/S. The server detects the mode **once per connection** by inspecting the first byte. See [Servers & Endpoints](./servers) for all regions.
 
@@ -233,6 +233,8 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 | Variable name length | 100 chars |
 | Unit length | 25 chars |
 | Serial length | 100 chars |
+
+RPM = requests per minute.
 
 ### Per-profile rate limits
 

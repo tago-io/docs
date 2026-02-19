@@ -10,7 +10,7 @@ Standard HTTP you already know -- `POST` to send, `GET` to retrieve, `HEAD` to p
 
 ## Endpoint
 
-**Host:** `http.tip.us-e1.tago.io` -- **IP:** `166.117.109.176` -- **Ports:** `80` (HTTP) / `443` (HTTPS)
+**Host:** `http.tip.us-e1.tago.io` -- **IP:** `52.223.14.189` -- **Ports:** `80` (HTTP) / `443` (HTTPS)
 
 Both ports accept TagoTiP and TagoTiP/S via URL path. See [Servers & Endpoints](./servers) for all regions.
 
@@ -237,6 +237,8 @@ No `Authorization` header. See [Encryption](./encryption).
 | Variable name length | 100 chars |
 | Unit length | 25 chars |
 | Serial length | 100 chars |
+
+RPM = requests per minute.
 
 ### Per-profile rate limits
 

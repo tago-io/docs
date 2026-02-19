@@ -10,7 +10,7 @@ The **fastest path** from sensor to cloud. No connection setup, no handshake -- 
 
 ## Endpoint
 
-**Host:** `udp.tip.us-e1.tago.io` -- **IP:** `166.117.99.158` -- **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
+**Host:** `udp.tip.us-e1.tago.io` -- **IP:** `166.117.107.129` -- **Ports:** `5683` (plaintext) / `5684` (TagoTiP/S)
 
 See [Servers & Endpoints](./servers) for all regions.
 
@@ -204,6 +204,8 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 :::tip
 Keep datagrams under ~1,400 bytes to avoid IP fragmentation.
 :::
+
+RPM = requests per minute.
 
 ### Per-profile rate limits
 

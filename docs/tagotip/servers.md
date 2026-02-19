@@ -12,12 +12,14 @@ TagoTiP servers are region-specific. Each transport protocol has its own dedicat
 
 | Transport | Hostname | Static IP | Port | Protocol | Security |
 |-----------|----------|-----------|------|----------|----------|
-| UDP | `udp.tip.us-e1.tago.io` | `166.117.99.158` | 5683 | TagoTiP | None |
-| UDP | `udp.tip.us-e1.tago.io` | `166.117.99.158` | 5684 | TagoTiP/S | Encrypted (AEAD) |
-| TCP | `tcp.tip.us-e1.tago.io` | `166.117.12.171` | 5693 | TagoTiP + TagoTiP/S | None |
-| TCP | `tcp.tip.us-e1.tago.io` | `166.117.12.171` | 5694 | TagoTiP + TagoTiP/S | TLS |
-| HTTP | `http.tip.us-e1.tago.io` | `166.117.109.176` | 80 | TagoTiP + TagoTiP/S | None (HTTP) |
-| HTTP | `http.tip.us-e1.tago.io` | `166.117.109.176` | 443 | TagoTiP + TagoTiP/S | TLS (HTTPS) |
+| UDP | `udp.tip.us-e1.tago.io` | `166.117.107.129` | 5683 | TagoTiP | None |
+| UDP | `udp.tip.us-e1.tago.io` | `166.117.107.129` | 5684 | TagoTiP/S | Encrypted (AEAD) |
+| TCP | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | 5693 | TagoTiP + TagoTiP/S | None |
+| TCP | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | 5694 | TagoTiP + TagoTiP/S | TLS |
+| HTTP | `http.tip.us-e1.tago.io` | `52.223.14.189` | 80 | TagoTiP + TagoTiP/S | None (HTTP) |
+| HTTP | `http.tip.us-e1.tago.io` | `52.223.14.189` | 443 | TagoTiP + TagoTiP/S | TLS (HTTPS) |
+| MQTT | `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | 1883 | TagoTiP | None (MQTT) |
+| MQTT | `mqtts.tip.us-e1.tago.io` | `15.197.247.146` | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## EU-West-1
 
@@ -29,6 +31,8 @@ TagoTiP servers are region-specific. Each transport protocol has its own dedicat
 | TCP | `tcp.tip.eu-w1.tago.io` | TBD | 5694 | TagoTiP + TagoTiP/S | TLS |
 | HTTP | `http.tip.eu-w1.tago.io` | TBD | 80 | TagoTiP + TagoTiP/S | None (HTTP) |
 | HTTP | `http.tip.eu-w1.tago.io` | TBD | 443 | TagoTiP + TagoTiP/S | TLS (HTTPS) |
+| MQTT | `mqtt.tip.eu-w1.tago.io` | TBD | 1883 | TagoTiP | None (MQTT) |
+| MQTT | `mqtts.tip.eu-w1.tago.io` | TBD | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## Choosing a transport
 
@@ -50,26 +54,34 @@ Best for devices with an HTTP stack, or when you need to go through firewalls an
 
 [HTTP guide](./http)
 
+### MQTT -- pub/sub and intermittent connectivity
+
+Best for devices that need publish/subscribe patterns, QoS delivery guarantees, and native topic-based routing. The server pushes commands to the device's `ack` topic in real time. Use port `8883` for TLS.
+
+[MQTT guide](./mqtt)
+
 ## Rate limits
 
 Limits are enforced at two levels: per [profile](/docs/tagoio/profiles/) and per device. Defaults vary by plan. Exceeding a limit returns `ACK|ERR|rate_limited` (or HTTP `429`).
+
+RPM = requests per minute.
 
 ### Per profile
 
 | Resource | Transports | Scale | Starter | Free |
 |---|---|---|---|---|
-| Uplink requests/min (PUSH) | UDP, TCP, HTTP | 1,000 | 500 | 60 |
-| Downlink requests/min (PULL) | UDP, TCP, HTTP | 1,000 | 500 | 60 |
-| Connections per IP | TCP, HTTP | 100 | 20 | 5 |
+| Uplink RPM (PUSH) | UDP, TCP, HTTP, MQTT | 1,000 | 500 | 60 |
+| Downlink RPM (PULL) | UDP, TCP, HTTP, MQTT | 1,000 | 500 | 60 |
+| Connections per IP | TCP, HTTP, MQTT | 100 | 20 | 5 |
 
 ### Per device
 
 | Resource | Transports | Default |
 |---|---|---|
-| Max payload size | UDP, TCP, HTTP | 100 KB |
-| Connection TTL | TCP | 60 s |
-| Keep-alive idle timeout | TCP | 20 s |
+| Max payload size | UDP, TCP, HTTP, MQTT | 100 KB |
+| Connection TTL | TCP, MQTT | 60 s |
+| Keep-alive idle timeout | TCP, MQTT | 20 s |
 
-PING is exempt from rate limiting on TCP and UDP. On HTTP, `HEAD` counts toward the uplink RPM.
+PING is exempt from rate limiting on TCP and UDP. On HTTP, `HEAD` counts toward the uplink RPM. On MQTT, keepalive is handled natively by PINGREQ/PINGRESP.
 
 See each transport page for transport-specific limits.
