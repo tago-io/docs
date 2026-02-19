@@ -6,20 +6,20 @@ title: TagoTiP over TCP
 
 # TagoTiP over TCP
 
-**Guaranteed delivery** and **real-time commands**. TagoTiP over TCP ensures every data point arrives in order -- and the server can push commands to your device the moment they are ready.
+**Guaranteed delivery** and **real-time commands**. TagoTiP over TCP ensures every data point arrives in order - and the server can push commands to your device the moment they are ready.
 
 ## Endpoint
 
-**Host:** `tcp.tip.us-e1.tago.io` -- **IP:** `75.2.126.170` -- **Ports:** `5693` (plaintext) / `5694` (TLS)
+**Host:** `tcp.tip.us-e1.tago.io` - **IP:** `75.2.126.170` - **Ports:** `5693` (plaintext) / `5694` (TLS)
 
 Both ports accept TagoTiP and TagoTiP/S. The server detects the mode **once per connection** by inspecting the first byte. See [Servers & Endpoints](./servers) for all regions.
 
 ## Why TCP?
 
-- **Reliable delivery** -- every frame is acknowledged
-- **Persistent connections** -- one connect, many frames
-- **Real-time commands** -- server pushes `CMD` frames instantly
-- **Ordered data** -- frames arrive in sequence
+- **Reliable delivery** - every frame is acknowledged
+- **Persistent connections** - one connect, many frames
+- **Real-time commands** - server pushes `CMD` frames instantly
+- **Ordered data** - frames arrive in sequence
 
 ## How it works
 
@@ -32,7 +32,7 @@ Device                                        TagoIO
   |<──────── ACK|CMD|reboot\n ───────────────── |  (server push)
 ```
 
-The connection stays open. The server can push `CMD` frames at any time -- no polling needed. Each frame **must** end with `\n` (byte `0x0A`).
+The connection stays open. The server can push `CMD` frames at any time - no polling needed. Each frame **must** end with `\n` (byte `0x0A`).
 
 ## Arduino example (ESP32)
 
@@ -172,7 +172,7 @@ ACK|CMD|reboot
 ACK|CMD|ota=https://example.com/v2.1.bin
 ```
 
-No polling needed -- just keep the connection open.
+No polling needed - just keep the connection open.
 
 ## Using TLS (port 5694)
 
@@ -181,7 +181,7 @@ echo 'PUSH|4deedd7bab8817ec|sensor-01|[temperature:=25.5#C]' \
   | openssl s_client -connect tcp.tip.us-e1.tago.io:5694 -quiet
 ```
 
-Same protocol, same frames -- TLS is handled by the load balancer.
+Same protocol, same frames - TLS is handled by the load balancer.
 
 ## Operators
 

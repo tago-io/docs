@@ -6,11 +6,11 @@ title: TagoTiP over HTTP
 
 # TagoTiP over HTTP
 
-Standard HTTP you already know -- `POST` to send, `GET` to retrieve, `HEAD` to ping. A single `Authorization` header and a clean REST-style API. Works through every firewall and proxy.
+Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to ping. A single `Authorization` header and a clean REST-style API. Works through every firewall and proxy.
 
 ## Endpoint
 
-**Host:** `http.tip.us-e1.tago.io` -- **IP:** `52.223.14.189` -- **Ports:** `80` (HTTP) / `443` (HTTPS)
+**Host:** `http.tip.us-e1.tago.io` - **IP:** `52.223.14.189` - **Ports:** `80` (HTTP) / `443` (HTTPS)
 
 Both ports accept TagoTiP and TagoTiP/S via URL path. See [Servers & Endpoints](./servers) for all regions.
 
@@ -20,10 +20,10 @@ Port `443` (HTTPS) for production. Port `80` (HTTP) for development or when TLS 
 
 ## Why HTTP?
 
-- **Universal** -- every language and platform has an HTTP client
-- **Firewall-friendly** -- passes through proxies and load balancers
-- **Familiar** -- standard methods, headers, and status codes
-- **Quick integration** -- one `curl` command gets you started
+- **Universal** - every language and platform has an HTTP client
+- **Firewall-friendly** - passes through proxies and load balancers
+- **Familiar** - standard methods, headers, and status codes
+- **Quick integration** - one `curl` command gets you started
 
 ## HTTP method mapping
 
@@ -169,24 +169,24 @@ X-TagoTiP-CMD: reboot
 
 ## Endpoints
 
-### `POST /v1/tip/{serial}` -- Send Data
+### `POST /v1/tip/{serial}` - Send Data
 
 | | |
 |---|---|
 | **Header** | `Authorization: TagoTiP <token-hash>` |
 | **Content-Type** | `text/plain` |
 | **Body** | TagoTiP PUSH body |
-| **Success** | `200 OK` -- body is data point count |
+| **Success** | `200 OK` - body is data point count |
 
-### `GET /v1/tip/{serial}?variables=...` -- Retrieve Data
+### `GET /v1/tip/{serial}?variables=...` - Retrieve Data
 
 | | |
 |---|---|
 | **Header** | `Authorization: TagoTiP <token-hash>` |
 | **Query** | `variables=var1,var2,...` |
-| **Success** | `200 OK` -- body is variable list |
+| **Success** | `200 OK` - body is variable list |
 
-### `HEAD /v1/tip/{serial}` -- Keepalive / Commands
+### `HEAD /v1/tip/{serial}` - Keepalive / Commands
 
 | | |
 |---|---|
@@ -194,7 +194,7 @@ X-TagoTiP-CMD: reboot
 | **No command** | `204 No Content` |
 | **Pending command** | `200 OK` + `X-TagoTiP-CMD` header |
 
-### `POST /v1/tips` -- TagoTiP/S (Encrypted)
+### `POST /v1/tips` - TagoTiP/S (Encrypted)
 
 | | |
 |---|---|
@@ -217,7 +217,7 @@ No `Authorization` header. See [Encryption](./encryption).
 | HTTP Status | Meaning | Body |
 |---|---|---|
 | `200 OK` | Success | PUSH: count. PULL: variables. |
-| `204 No Content` | PING ok | -- |
+| `204 No Content` | PING ok | - |
 | `400 Bad Request` | Malformed body | `invalid_payload` |
 | `401 Unauthorized` | Invalid auth | `invalid_token` |
 | `404 Not Found` | Unknown device/variable | `device_not_found` |

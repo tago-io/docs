@@ -1,18 +1,18 @@
 ---
 sidebar_position: 8
 sidebar_label: Encryption
-title: TagoTiP/S -- Encrypted Communication
+title: TagoTiP/S - Encrypted Communication
 ---
 
-# TagoTiP/S -- Encrypted Communication
+# TagoTiP/S - Encrypted Communication
 
-**AEAD authenticated encryption** for your IoT data -- without TLS. TagoTiP/S wraps frames in a compact binary envelope with built-in integrity verification and replay protection. As little as **29 bytes** of overhead.
+**AEAD authenticated encryption** for your IoT data - without TLS. TagoTiP/S wraps frames in a compact binary envelope with built-in integrity verification and replay protection. As little as **29 bytes** of overhead.
 
 ## When to use TagoTiP/S
 
-- **No TLS available** -- UDP has no TLS support; TagoTiP/S is your only encryption option
-- **Constrained links** -- where TLS handshakes are too expensive
-- **Defense in depth** -- combine TagoTiP/S with TLS on TCP port `5694` or HTTPS port `443` for layered security
+- **No TLS available** - UDP has no TLS support; TagoTiP/S is your only encryption option
+- **Constrained links** - where TLS handshakes are too expensive
+- **Defense in depth** - combine TagoTiP/S with TLS on TCP port `5694` or HTTPS port `443` for layered security
 
 ## TagoTiP/S supported ports
 
@@ -87,7 +87,7 @@ Truncated to the cipher's key size (16 bytes for AES-128, 32 bytes for AES-256 /
 
 | Format | Size | vs. HTTP/JSON |
 |---|---|---|
-| HTTP + JSON | ~487 bytes | -- |
+| HTTP + JSON | ~487 bytes | - |
 | TagoTiP | ~112 bytes | 4.3x smaller |
 | **TagoTiP/S** | **~119 bytes** | **4.1x smaller** |
 
