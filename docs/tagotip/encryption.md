@@ -91,49 +91,6 @@ Truncated to the cipher's key size (16 bytes for AES-128, 32 bytes for AES-256 /
 | TagoTiP | ~112 bytes | 4.3x smaller |
 | **TagoTiP/S** | **~119 bytes** | **4.1x smaller** |
 
-## SDKs
-
-Use the TagoTiP SDK to build and parse TagoTiP/S envelopes:
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="node" label="TypeScript / Node.js">
-
-```bash
-npm install @tagoio/tagotip
-```
-
-</TabItem>
-<TabItem value="python" label="Python">
-
-```bash
-pip install tagotip
-```
-
-</TabItem>
-<TabItem value="go" label="Go">
-
-```bash
-go get github.com/tago-io/tagotip-sdk/tagotip-go
-```
-
-</TabItem>
-<TabItem value="rust" label="Rust">
-
-```bash
-cargo add tagotip-codec
-```
-
-</TabItem>
-<TabItem value="arduino" label="C / Arduino">
-
-Search for **TagoTiP** in the Arduino Library Manager.
-
-</TabItem>
-</Tabs>
-
 ## Specification
 
 For envelope parsing, nonce construction, ABNF grammar, and test vectors, see the [TagoTiP/S Specification](./specification).

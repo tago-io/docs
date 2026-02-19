@@ -10,7 +10,9 @@ Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to pi
 
 ## Endpoint
 
-**Host:** `http.tip.us-e1.tago.io` - **IP:** `52.223.14.189` - **Ports:** `80` (HTTP) / `443` (HTTPS)
+| Host | IP | Ports |
+|---|---|---|
+| `http.tip.us-e1.tago.io` | `52.223.14.189` | `80` (HTTP) / `443` (HTTPS) |
 
 Both ports accept TagoTiP and TagoTiP/S via URL path. See [Servers & Endpoints](./servers) for all regions.
 
