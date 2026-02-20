@@ -19,7 +19,7 @@ TagoTiP servers are region-specific. Each transport protocol has its own dedicat
 | HTTP | `http.tip.us-e1.tago.io`<br/><span class="ip-addr">52.223.14.189</span> | 80 | TagoTiP(s) | None (HTTP) |
 | HTTP | `http.tip.us-e1.tago.io`<br/><span class="ip-addr">52.223.14.189</span> | 443 | TagoTiP(s) | TLS (HTTPS) |
 | MQTT | `mqtt.tip.us-e1.tago.io`<br/><span class="ip-addr">15.197.247.146</span> | 1883 | TagoTiP | None (MQTT) |
-| MQTT | `mqtts.tip.us-e1.tago.io`<br/><span class="ip-addr">15.197.247.146</span> | 8883 | TagoTiP | TLS (MQTTS) |
+| MQTT | `mqtt.tip.us-e1.tago.io`<br/><span class="ip-addr">15.197.247.146</span> | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## EU-West-1
 
@@ -32,7 +32,7 @@ TagoTiP servers are region-specific. Each transport protocol has its own dedicat
 | HTTP | `http.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 80 | TagoTiP(s) | None (HTTP) |
 | HTTP | `http.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 443 | TagoTiP(s) | TLS (HTTPS) |
 | MQTT | `mqtt.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 1883 | TagoTiP | None (MQTT) |
-| MQTT | `mqtts.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 8883 | TagoTiP | TLS (MQTTS) |
+| MQTT | `mqtt.tip.eu-w1.tago.io`<br/><span class="ip-addr">TBD</span> | 8883 | TagoTiP | TLS (MQTTS) |
 
 ## Choosing a transport
 

@@ -12,7 +12,7 @@ title: TagoTiP over MQTT
 
 | Host | IP | Ports |
 |---|---|---|
-| `mqtt.tip.us-e1.tago.io` / `mqtts.tip.us-e1.tago.io` (TLS) | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
+| `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
 
 See [Servers & Endpoints](./servers) for all regions.
 
@@ -225,7 +225,7 @@ mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 1883 \
 ### Using TLS (port 8883)
 
 ```bash
-mosquitto_pub -h mqtts.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
+mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
   -u 4deedd7b -P ab8817ec \
   -t '$tip/sensor-01/push' -q 1 \
   -m '[temperature:=25.5#C]'
