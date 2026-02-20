@@ -47,7 +47,7 @@ const char* PASSWORD   = "your-password";
 const char* TIP_HOST   = "tcp.tip.us-e1.tago.io";
 const int   TIP_PORT   = 5693;
 const char* TOKEN_HASH = "4deedd7bab8817ec";  // replace with yours
-const char* SERIAL     = "sensor-01";          // replace with yours
+const char* SERIAL_N     = "sensor-01";          // replace with yours
 
 WiFiClient client;
 
@@ -76,7 +76,7 @@ void loop() {
   char frame[256];
   snprintf(frame, sizeof(frame),
     "PUSH|%s|%s|[temperature:=%.1f#C]\n",
-    TOKEN_HASH, SERIAL, temperature);
+    TOKEN_HASH, SERIAL_N, temperature);
 
   client.print(frame);
 

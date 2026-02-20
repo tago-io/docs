@@ -109,7 +109,7 @@ const char* MQTT_HOST  = "mqtt.tip.us-e1.tago.io";
 const int   MQTT_PORT  = 1883;
 const char* MQTT_USER  = "4deedd7b";  // first 8 hex chars of auth hash
 const char* MQTT_PASS  = "ab8817ec";  // last 8 hex chars of auth hash
-const char* SERIAL     = "sensor-01";
+const char* SERIAL_N     = "sensor-01";
 
 WiFiClient wifi;
 PubSubClient mqtt(wifi);
@@ -137,8 +137,8 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED) delay(500);
   Serial.println("WiFi connected");
 
-  snprintf(pushTopic, sizeof(pushTopic), "$tip/%s/push", SERIAL);
-  snprintf(ackTopic, sizeof(ackTopic), "$tip/%s/ack", SERIAL);
+  snprintf(pushTopic, sizeof(pushTopic), "$tip/%s/push", SERIAL_N);
+  snprintf(ackTopic, sizeof(ackTopic), "$tip/%s/ack", SERIAL_N);
 
   mqtt.setServer(MQTT_HOST, MQTT_PORT);
   mqtt.setCallback(onMessage);
