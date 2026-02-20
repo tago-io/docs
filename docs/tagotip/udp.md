@@ -45,7 +45,7 @@ const char* PASSWORD   = "your-password";
 const char* TIP_HOST   = "udp.tip.us-e1.tago.io";
 const int   TIP_PORT   = 5683;
 const char* TOKEN_HASH = "4deedd7bab8817ec";  // replace with yours
-const char* SERIAL_N     = "sensor-01";          // replace with yours
+const char* SERIAL_N   = "sensor-01";          // replace with yours
 
 WiFiUDP udp;
 
