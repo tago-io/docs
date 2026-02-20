@@ -188,6 +188,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "tagotipSidebar",
+          position: "left",
+          label: "TagoTiP",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "apiSidebar",
           position: "left",
           label: "API",

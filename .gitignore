@@ -28,6 +28,10 @@ dist/
 .env.test.local
 .env.production.local
 
+# Generated from tago-io/tagotip GitHub repo (scripts/sync-tagotip.mjs)
+docs/tagotip/tagotip-specification.md
+docs/tagotip/tagotips-specification.md
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
