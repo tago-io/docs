@@ -11,8 +11,8 @@ Set up your device and authorization before sending data over any transport.
 ## Step 1: Create a Device
 
 1. Go to **Devices** in your TagoIO account and create a new device.
-2. Select the network **TagoTiP** and the connector for your transport (UDP, TCP, or HTTP).
-3. Assign a **Serial Number** (e.g., `sensor-01`) - this is how TagoTiP identifies your device.
+2. Select the network **TagoTiP** and the connector for your transport (UDP, TCP, HTTP, or MQTT).
+3. Assign a **Serial Number** (e.g., `SN0042`) - this is how TagoTiP identifies your device.
 
 ## Step 2: Create an Authorization
 
@@ -41,3 +41,4 @@ Pick your transport and send your first data point:
 - [**UDP**](./udp) - fire-and-forget telemetry
 - [**TCP**](./tcp) - reliable delivery and real-time commands
 - [**HTTP**](./http) - simplicity and standard tooling
+- [**MQTT**](./mqtt) - pub/sub and intermittent connectivity
