@@ -98,6 +98,19 @@ export default function HomepageFeatures(): ReactNode {
         </>
       ),
     },
+    {
+      title: "TagoTiP",
+      imgSrc: "/img/tip-logo.png",
+      href: "/docs/tagotip",
+      description: (
+        <>
+          Lightweight IoT protocol. Human-readable, type-safe and
+          transport-agnostic.
+          <br />
+          <strong>Best for UDP, TCP, MQTT, and HTTP.</strong>
+        </>
+      ),
+    },
   ];
 
   return (

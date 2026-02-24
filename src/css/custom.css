@@ -1078,7 +1078,9 @@ html[data-theme="dark"] .youtube-container {
 .docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(0, 0, 0, 0.2) !important;
 }
-html[data-theme="dark"] .docusaurus-mermaid-container line:not([class^="messageLin"]) {
+html[data-theme="dark"]
+  .docusaurus-mermaid-container
+  line:not([class^="messageLin"]) {
   stroke: rgba(255, 255, 255, 0.2) !important;
 }
 html[data-theme="dark"] .docusaurus-mermaid-container [class^="messageLin"] {
@@ -1198,7 +1200,9 @@ html[data-theme="dark"] .alert--danger [class*="admonitionHeading"] {
 }
 
 /* Light mode only: stadium/path nodes have light backgrounds — reset to dark text */
-html[data-theme="light"] .docusaurus-mermaid-container .node:has(path) .nodeLabel {
+html[data-theme="light"] .docusaurus-mermaid-container
+  .node:has(path)
+  .nodeLabel {
   color: #333 !important;
   fill: #333 !important;
 }
@@ -1325,6 +1329,88 @@ html[data-theme="dark"] :not(pre) > code {
 }
 .markdown tbody tr:last-child {
   border-bottom: none;
+}
+
+/* ============================================================
+   Servers table — muted IP address color
+   ============================================================ */
+.ip-addr {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ============================================================
+   Transport cards — choosing a transport page
+   ============================================================ */
+.transport-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.transport-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--border-visible);
+  border-radius: 8px;
+  background: var(--surface-elevated);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition:
+    box-shadow var(--animation-fast) ease,
+    transform var(--animation-fast) ease,
+    border-color var(--animation-fast) ease;
+}
+.transport-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+}
+html[data-theme="dark"] .transport-card {
+  border-color: #2a2a2a;
+  background: var(--surface-elevated);
+}
+html[data-theme="dark"] .transport-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #2cb1bc;
+}
+.transport-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+.transport-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+.transport-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  border-top: 1px solid var(--border-visible);
+  padding-top: 0.75rem;
+}
+html[data-theme="dark"] .transport-card__details {
+  border-top-color: #333;
+}
+.transport-card__details span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--surface-raised);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.transport-card__details span a {
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none !important;
+}
+.transport-card__details span code {
+  font-size: 0.7rem;
+  padding: 0 0.2rem;
 }
 
 /* ============================================================

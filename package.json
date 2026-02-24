@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "sync:tagotip": "node scripts/sync-tagotip.mjs",
+    "prestart": "npm run sync:tagotip",
     "start": "docusaurus start -h 0.0.0.0",
+    "prebuild": "npm run sync:tagotip",
     "build": "rm -rf build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
