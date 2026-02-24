@@ -192,40 +192,32 @@ void loop() {
 
 ## Quick test with mosquitto
 
-Replace the username/password with your Authorization Hash halves and `sensor-01` with your serial.
-
-### Subscribe to responses
-
-```bash
-mosquitto_sub -h mqtt.tip.us-e1.tago.io -p 1883 \
-  -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/ack' -q 1
-```
+Replace the username/password with your Authorization Hash halves and `sensor-01` with your serial. `mosquitto_rr` sends the message and waits for the response on the `ack` topic in a single connection.
 
 ### Push a temperature reading
 
 ```bash
-mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 1883 \
+mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 1883 \
   -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/push' -q 1 \
+  -t '$tip/sensor-01/push' -e '$tip/sensor-01/ack' \
   -m '[temperature:=25.5#C]'
 ```
 
 ### Push multiple variables
 
 ```bash
-mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 1883 \
+mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 1883 \
   -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/push' -q 1 \
+  -t '$tip/sensor-01/push' -e '$tip/sensor-01/ack' \
   -m '[temperature:=25.5#C;humidity:=60#%;active?=true]'
 ```
 
 ### Push raw payload (passthrough)
 
 ```bash
-mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 1883 \
+mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 1883 \
   -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/push' -q 1 \
+  -t '$tip/sensor-01/push' -e '$tip/sensor-01/ack' \
   -m '>xDEADBEEF01020304'
 ```
 
@@ -234,18 +226,18 @@ Raw bytes are delivered to your device's [Payload Parser](/docs/tagoio/devices/p
 ### Pull the last stored values
 
 ```bash
-mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 1883 \
+mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 1883 \
   -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/pull' -q 1 \
+  -t '$tip/sensor-01/pull' -e '$tip/sensor-01/ack' \
   -m 'temperature,humidity'
 ```
 
 ### Using TLS (port 8883)
 
 ```bash
-mosquitto_pub -h mqtt.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
+mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
   -u 4deedd7b -P ab8817ec \
-  -t '$tip/sensor-01/push' -q 1 \
+  -t '$tip/sensor-01/push' -e '$tip/sensor-01/ack' \
   -m '[temperature:=25.5#C]'
 ```
 
