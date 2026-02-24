@@ -30,15 +30,6 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 - **Compact** - variable, value, unit, timestamp, group, location, and metadata in a single frame
 - **Transport-agnostic** - works over UDP, TCP, HTTP(S), MQTT, or any byte-capable channel
 
-## Pick your transport
-
-| Transport | Best for | Guide |
-|-----------|----------|-------|
-| **[UDP](./udp)** | High-frequency telemetry, fire-and-forget | Lowest overhead, no connection setup |
-| **[TCP](./tcp)** | Reliable delivery, bidirectional commands | Persistent connections, server-pushed CMDs |
-| **[HTTP](./http)** | Simple integrations, request/response | Works through firewalls and proxies |
-| **[MQTT](./mqtt)** | Pub/sub patterns, intermittent connectivity | Native topic-based routing, QoS levels |
-
 ## Encryption without TLS
 
 Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope - as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
@@ -51,7 +42,7 @@ Need security on raw UDP or constrained links where TLS is too expensive? **Tago
 | AES-256-GCM | 256-bit | 16 B | 37 bytes |
 | ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
 
-Learn more in the [Encryption](./encryption) guide.
+Learn more in the [Encryption](./specification/encryption) guide.
 
 ## How it compares
 
