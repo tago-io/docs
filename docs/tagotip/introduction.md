@@ -15,7 +15,7 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 
 ## Why TagoTiP?
 
-| | HTTP/JSON | TagoTiP | TagoTiP/S (encrypted) |
+| | HTTP/JSON | TagoTiP | TagoTiP(s) (encrypted) |
 |---|---|---|---|
 | **Payload size** | ~487 bytes | ~130 bytes | ~119 bytes |
 | **vs. HTTP/JSON** | - | 3.7x smaller | 4.1x smaller |
@@ -32,7 +32,7 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 
 ## Encryption without TLS
 
-Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP/S** wraps frames in an AEAD authenticated encryption envelope - as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
+Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP(s)** wraps frames in an AEAD authenticated encryption envelope - as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
 
 | Cipher Suite | Key | Tag | Envelope Overhead |
 |---|---|---|---|
@@ -58,9 +58,9 @@ Learn more in the [Encryption](./specification/encryption) guide.
 | **IoT type system** | Built-in (number, string, bool, location) | Application-defined | Application-defined | Schema-defined |
 | **Metadata, unit, group, timestamp** | Native syntax | Application-defined | Application-defined | Schema-defined |
 
-### TagoTiP/S vs. other IoT security
+### TagoTiP(s) vs. other IoT security
 
-| | TagoTiP/S | TLS 1.3 | DTLS 1.2 |
+| | TagoTiP(s) | TLS 1.3 | DTLS 1.2 |
 |---|---|---|---|
 | **Handshake** | None - 0 bytes | ~2-4 KB | ~2-5 KB |
 | **Round trips before first data** | 0 | 1-2 | 2-3 |

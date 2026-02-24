@@ -14,7 +14,7 @@ title: TagoTiP over MQTT
 |---|---|---|
 | `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
 
-See [Servers & Endpoints](../servers/endpoints) for all regions.
+See [Endpoints](../servers/endpoints) for all regions.
 
 :::info Use TLS in production
 Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when TLS is handled externally.

@@ -1,20 +1,20 @@
 ---
 sidebar_position: 1
 sidebar_label: Encryption
-title: TagoTiP/S - Encrypted Communication
+title: TagoTiP(s) - Encrypted Communication
 ---
 
-# TagoTiP/S - Encrypted Communication
+# TagoTiP(s) - Encrypted Communication
 
-**AEAD authenticated encryption** for your IoT data - without TLS. TagoTiP/S wraps frames in a compact binary envelope with built-in integrity verification and replay protection. As little as **29 bytes** of overhead.
+**AEAD authenticated encryption** for your IoT data - without TLS. TagoTiP(s) wraps frames in a compact binary envelope with built-in integrity verification and replay protection. As little as **29 bytes** of overhead.
 
-## When to use TagoTiP/S
+## When to use TagoTiP(s)
 
-- **No TLS available** - UDP has no TLS support; TagoTiP/S is your only encryption option
+- **No TLS available** - UDP has no TLS support; TagoTiP(s) is your only encryption option
 - **Constrained links** - where TLS handshakes are too expensive
-- **Defense in depth** - combine TagoTiP/S with TLS on TCP port `5694` or HTTPS port `443` for layered security
+- **Defense in depth** - combine TagoTiP(s) with TLS on TCP port `5694` or HTTPS port `443` for layered security
 
-## TagoTiP/S supported ports
+## TagoTiP(s) supported ports
 
 **US-East-1:**
 
@@ -26,11 +26,11 @@ title: TagoTiP/S - Encrypted Communication
 | **HTTP** | `http.tip.us-e1.tago.io` | 80 | No | `POST /v1/tips` |
 | **HTTP** | `http.tip.us-e1.tago.io` | 443 | Yes | `POST /v1/tips` |
 
-See [Servers & Endpoints](../servers/endpoints) for all regions.
+See [Endpoints](../servers/endpoints) for all regions.
 
 ## How it differs from TagoTiP
 
-| | TagoTiP | TagoTiP/S |
+| | TagoTiP | TagoTiP(s) |
 |---|---|---|
 | **Format** | Human-readable text | Binary envelope |
 | **Auth credential** | Token hash (16 hex chars) | Authorization token (`at...`) |
@@ -39,18 +39,18 @@ See [Servers & Endpoints](../servers/endpoints) for all regions.
 
 ### Credentials
 
-TagoTiP and TagoTiP/S use **different credentials** from the same authorization:
+TagoTiP and TagoTiP(s) use **different credentials** from the same authorization:
 
 | Protocol | Credential | Why |
 |---|---|---|
 | **TagoTiP** | Token hash (`4deedd7bab8817ec`) | Identifies your account. Safe on the wire. |
-| **TagoTiP/S** | Authorization token (`ate2bd...c0d0`) | Derives the encryption key. Never sent on the wire. |
+| **TagoTiP(s)** | Authorization token (`ate2bd...c0d0`) | Derives the encryption key. Never sent on the wire. |
 
 Both come from a single authorization with token format **TagoTiP(s)**. See the [Authorization guide](/docs/tagoio/integrations/general/authorization).
 
 ## How it works
 
-TagoTiP/S strips the method and auth from a TagoTiP frame, encrypts the rest, and wraps it in a fixed-structure binary envelope:
+TagoTiP(s) strips the method and auth from a TagoTiP frame, encrypts the rest, and wraps it in a fixed-structure binary envelope:
 
 ```
 [Flags 1B] [Counter 4B] [Auth Hash 8B] [Device Hash 8B] [Ciphertext + Tag]
@@ -89,8 +89,8 @@ Truncated to the cipher's key size (16 bytes for AES-128, 32 bytes for AES-256 /
 |---|---|---|
 | HTTP + JSON | ~487 bytes | - |
 | TagoTiP | ~112 bytes | 4.3x smaller |
-| **TagoTiP/S** | **~119 bytes** | **4.1x smaller** |
+| **TagoTiP(s)** | **~119 bytes** | **4.1x smaller** |
 
 ## Specification
 
-For envelope parsing, nonce construction, ABNF grammar, and test vectors, see the [TagoTiP/S Specification](./tagotips-specification).
+For envelope parsing, nonce construction, ABNF grammar, and test vectors, see the [TagoTiP(s) Specification](./tagotips-specification).

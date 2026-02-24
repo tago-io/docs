@@ -14,7 +14,7 @@ title: TagoTiP over TCP
 |---|---|---|
 | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | `5693` (plaintext) / `5694` (TLS) |
 
-Both ports accept TagoTiP and TagoTiP/S. The server detects the mode **once per connection** by inspecting the first byte. See [Servers & Endpoints](../servers/endpoints) for all regions.
+Both ports accept TagoTiP and TagoTiP(s). The server detects the mode **once per connection** by inspecting the first byte. See [Endpoints](../servers/endpoints) for all regions.
 
 ## Why TCP?
 

@@ -14,7 +14,7 @@ Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to pi
 |---|---|---|
 | `http.tip.us-e1.tago.io` | `52.223.14.189` | `80` (HTTP) / `443` (HTTPS) |
 
-Both ports accept TagoTiP and TagoTiP/S via URL path. See [Servers & Endpoints](../servers/endpoints) for all regions.
+Both ports accept TagoTiP and TagoTiP(s) via URL path. See [Endpoints](../servers/endpoints) for all regions.
 
 :::info Use HTTPS in production
 Port `443` (HTTPS) for production. Port `80` (HTTP) for development or when TLS is handled externally.
@@ -196,12 +196,12 @@ X-TagoTiP-CMD: reboot
 | **No command** | `204 No Content` |
 | **Pending command** | `200 OK` + `X-TagoTiP-CMD` header |
 
-### `POST /v1/tips` - TagoTiP/S (Encrypted)
+### `POST /v1/tips` - TagoTiP(s) (Encrypted)
 
 | | |
 |---|---|
 | **Content-Type** | `application/octet-stream` |
-| **Body** | Binary TagoTiP/S envelope |
+| **Body** | Binary TagoTiP(s) envelope |
 
 No `Authorization` header. See [Encryption](../specification/encryption).
 

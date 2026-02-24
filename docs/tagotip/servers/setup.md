@@ -4,7 +4,7 @@ sidebar_label: Quick Start
 title: Quick Start
 ---
 
-# Getting Started
+# Quick Start
 
 Set up your device and authorization before sending data over any transport.
 
@@ -26,19 +26,14 @@ You receive two credentials:
 | Credential | Example | Used for |
 |---|---|---|
 | **Token Hash** | `4deedd7bab8817ec` (16 hex chars) | TagoTiP frames (plaintext) |
-| **Authorization** | `ate2bd...c0d0` (34 chars) | [TagoTiP/S](../specification/encryption) encryption key derivation |
+| **Authorization** | `ate2bd...c0d0` (34 chars) | [TagoTiP(s)](../specification/encryption) encryption key derivation |
 
 :::tip
-The token hash is safe on the wire - it cannot be reversed to reveal the authorization. Keep the authorization (`at...`) secret; it is only needed for TagoTiP/S key derivation.
+The token hash is safe on the wire - it cannot be reversed to reveal the authorization. Keep the authorization (`at...`) secret; it is only needed for TagoTiP(s) key derivation.
 :::
 
 See the [Authorization guide](/docs/tagoio/integrations/general/authorization) for more details.
 
 ## Next steps
 
-Pick your transport and send your first data point:
-
-- [**UDP**](../transports/udp) - fire-and-forget telemetry
-- [**TCP**](../transports/tcp) - reliable delivery and real-time commands
-- [**HTTP**](../transports/http) - simplicity and standard tooling
-- [**MQTT**](../transports/mqtt) - pub/sub and intermittent connectivity
+Now [choose a transport](./choosing-a-transport) and send your first data point.
