@@ -9,6 +9,10 @@ When making a request to the TagoIO API, you must also specify the appropriate r
 
 :::
 
+:::tip Looking for a lighter protocol?
+[TagoTiP](/docs/tagotip/) lets you send the same data in ~130 bytes instead of ~487 - no JSON, no HTTP headers. Ideal for constrained devices. See [TagoTiP over HTTP](/docs/tagotip/transports/http) for the HTTP transport.
+:::
+
 A device can send data to TagoIO by using the POST method.
 
 ```
