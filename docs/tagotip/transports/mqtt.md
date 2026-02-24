@@ -17,7 +17,7 @@ title: TagoTiP over MQTT
 See [Endpoints](../servers/endpoints) for all regions.
 
 :::info Use TLS in production
-Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when TLS is handled externally.
+Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when TLS is handled externally. When using port `1883`, it is recommended to use the `$tips/` topic prefix (TagoTiP/S) for application-layer security — see [TagoTiP/S](#tagotips) below.
 :::
 
 ## Why MQTT?
@@ -55,6 +55,24 @@ TagoTiP uses the `$tip/` prefix for all protocol traffic:
 The device serial is embedded in the topic path, so it does not appear in the payload.
 
 The device **must subscribe** to `$tip/{serial}/ack` at connect time to receive responses and commands.
+
+## TagoTiP/S {#tagotips}
+
+TagoTiP/S provides application-layer encryption and is available on both ports. It is a good security option when not using TLS — for example, when connecting on port 1883.
+
+To enable it, replace the `$tip/` topic prefix with `$tips/`:
+
+| Topic | Direction | Purpose |
+|---|---|---|
+| `$tips/{serial}/push` | Device -> Server | Publish data |
+| `$tips/{serial}/pull` | Device -> Server | Request last values |
+| `$tips/{serial}/ack` | Server -> Device | Responses and commands |
+
+The payload format and all protocol semantics are identical to the standard `$tip/` topics — only the prefix changes.
+
+:::tip Enforce encrypted-only communication
+When creating the device in TagoIO, set **Protocol** to **"TagoTips only"**. The server will then reject any unencrypted traffic on `$tip/` topics for that device, ensuring all communication goes through TagoTiP/S.
+:::
 
 ## Payload format
 
@@ -277,6 +295,7 @@ Received on the `$tip/{serial}/ack` topic:
 | MQTT versions | 3.1, 5 |
 | QoS levels | 0, 1, 2 |
 | TLS | Yes (port 8883, recommended for production) |
+| TagoTiP/S | Yes |
 | Publish | Isolated per context |
 | Subscribe | Isolated per context |
 | Retain | No |
