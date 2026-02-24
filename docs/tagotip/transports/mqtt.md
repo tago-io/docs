@@ -84,7 +84,7 @@ Structured variables or passthrough:
 
 ```
 [temp:=32#C;humidity:=65#%]
-^batch_42@1694567890000[temp:=32#C]
+@1694567890000^batch_42[temp:=32#C]
 >xDEADBEEF01020304
 >b3q2+7wECAwQ=
 !42|[temp:=32#C;humidity:=65#%]

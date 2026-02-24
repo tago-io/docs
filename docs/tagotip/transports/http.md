@@ -119,7 +119,7 @@ curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
 curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
-  -d '^batch_01@1694567890000{firmware=2.1}[temperature:=25.5#C;humidity:=60#%]'
+  -d '@1694567890000^batch_01{firmware=2.1}[temperature:=25.5#C;humidity:=60#%]'
 ```
 
 ### Push location data

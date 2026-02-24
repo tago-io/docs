@@ -75,7 +75,7 @@ Learn more in the [Encryption](./specification/encryption) guide.
 Push a temperature reading with unit, timestamp, and metadata - all in one frame:
 
 ```
-PUSH|4deedd7bab8817ec|sensor-01|^batch_42@1694567890000{firmware=2.1}[temperature:=32.5#C;position@=39.74,-104.99]
+PUSH|4deedd7bab8817ec|sensor-01|@1694567890000^batch_42{firmware=2.1}[temperature:=32.5#C;position@=39.74,-104.99]
 ```
 
 Pull the last value back:
