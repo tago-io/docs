@@ -6,26 +6,43 @@ title: Choosing a Transport
 
 # Choosing a Transport
 
-## UDP - fire-and-forget telemetry
+TagoTiP is transport-agnostic - the same protocol frames work over any transport. Pick the one that fits your hardware and use case.
 
-Best for battery-powered devices that send periodic sensor readings. No connection setup, no handshake - a single datagram carries your data. Use port `5683` for plaintext or port `5684` for [TagoTiP/S encryption](../specification/encryption).
-
-[UDP guide](../transports/udp)
-
-## TCP - reliable delivery and real-time commands
-
-Best for devices that need guaranteed delivery, persistent connections, and server-pushed commands. The connection stays open so TagoIO can push `CMD` frames to your device instantly. Use port `5694` for TLS.
-
-[TCP guide](../transports/tcp)
-
-## HTTP - simplicity and standard tooling
-
-Best for devices with an HTTP stack, or when you need to go through firewalls and proxies. Standard `POST`/`GET`/`HEAD` methods map to TagoTiP `PUSH`/`PULL`/`PING`. Use port `443` for HTTPS.
-
-[HTTP guide](../transports/http)
-
-## MQTT - pub/sub and intermittent connectivity
-
-Best for devices that need publish/subscribe patterns, QoS delivery guarantees, and native topic-based routing. The server pushes commands to the device's `ack` topic in real time. Use port `8883` for TLS.
-
-[MQTT guide](../transports/mqtt)
+<div class="transport-list">
+  <a class="transport-card" href="../transports/udp">
+    <h3>UDP</h3>
+    <p>Battery-powered sensors that wake up, send a reading, and sleep. Zero connection overhead - one datagram in, one datagram out. Every milliamp counts.</p>
+    <div class="transport-card__details">
+      <span>No connection</span>
+      <span>Server push via PING poll</span>
+      <span><a href="../specification/encryption">TagoTiP(s)</a> on port <code>5684</code></span>
+    </div>
+  </a>
+  <a class="transport-card" href="../transports/tcp">
+    <h3>TCP</h3>
+    <p>Always-on gateways that stream data and need commands instantly - reboots, config updates, OTA triggers. Guaranteed, ordered delivery over a persistent connection.</p>
+    <div class="transport-card__details">
+      <span>Persistent connection</span>
+      <span>Instant CMD push</span>
+      <span>TLS on port <code>5694</code></span>
+    </div>
+  </a>
+  <a class="transport-card" href="../transports/http">
+    <h3>HTTP</h3>
+    <p>Cloud integrations, serverless functions, or any device behind firewalls and proxies. Standard POST/GET/HEAD with a single Authorization header. No special libraries needed.</p>
+    <div class="transport-card__details">
+      <span>Per-request</span>
+      <span>Server push via HEAD poll</span>
+      <span>HTTPS on port <code>443</code></span>
+    </div>
+  </a>
+  <a class="transport-card" href="../transports/mqtt">
+    <h3>MQTT</h3>
+    <p>Large device fleets on unreliable networks. Publish/subscribe with QoS levels 0, 1, and 2. Topic-based routing with native keepalive and reconnection handling.</p>
+    <div class="transport-card__details">
+      <span>Persistent connection</span>
+      <span>Instant via ack topic</span>
+      <span>TLS on port <code>8883</code></span>
+    </div>
+  </a>
+</div>
