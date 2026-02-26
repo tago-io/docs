@@ -10,11 +10,12 @@ Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to pi
 
 ## Endpoint
 
-| Host | IP | Ports |
-|---|---|---|
-| `http.tip.us-e1.tago.io` | `52.223.14.189` | `80` (HTTP) / `443` (HTTPS) |
+| Region | Host | IP | Ports |
+|---|---|---|---|
+| US-East-1 | `http.tip.us-e1.tago.io` | `52.223.14.189` | `80` (HTTP) / `443` (HTTPS) |
+| EU-West-1 | `http.tip.eu-w1.tago.io` | `166.117.2.140` | `80` (HTTP) / `443` (HTTPS) |
 
-Both ports accept TagoTiP and TagoTiP(s) via URL path. See [Endpoints](../servers/endpoints) for all regions.
+Both ports accept TagoTiP and TagoTiP(s) via URL path.
 
 :::info Use HTTPS in production
 Port `443` (HTTPS) for production. Port `80` (HTTP) for development or when TLS is handled externally.
@@ -248,7 +249,7 @@ RPM = requests per minute.
 |---|---|---|---|
 | Uplink RPM (POST, HEAD) | 1,000 | 500 | 60 |
 | Downlink RPM (GET) | 1,000 | 500 | 60 |
-| Connections per IP | 100 | 20 | 5 |
+| Connections per IP | 20 | 10 | 3 |
 
 ### Per-device limits
 
