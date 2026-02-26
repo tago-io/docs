@@ -10,11 +10,10 @@ title: TagoTiP over MQTT
 
 ## Endpoint
 
-| Host | IP | Ports |
-|---|---|---|
-| `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
-
-See [Endpoints](../servers/endpoints) for all regions.
+| Region | Host | IP | Ports |
+|---|---|---|---|
+| US-East-1 | `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
+| EU-West-1 | `mqtt.tip.eu-w1.tago.io` | `166.117.88.178` | `1883` (MQTT) / `8883` (MQTTS) |
 
 :::info Use TLS in production
 Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when TLS is handled externally. When using port `1883`, it is recommended to use the `$tips/` topic prefix (TagoTiP/S) for application-layer security — see [TagoTiP/S](#tagotips) below.
@@ -318,17 +317,17 @@ RPM = requests per minute.
 |---|---|---|---|
 | Uplink RPM (PUSH) | 1,000 | 500 | 60 |
 | Downlink RPM (PULL) | 1,000 | 500 | 60 |
-| Connections per IP | 100 | 20 | 5 |
+| Connections per IP | 20 | 10 | 3 |
 | Active connections per profile | 500 | 50 | 10 |
 | Subscription request RPM | 100 | 50 | 5 |
 
 ### Per-device limits
 
-| Resource | Default |
-|---|---|
-| Max payload size | 100 KB |
-| Connection TTL | 60 s |
-| Keep-alive idle timeout | 20 s |
+| Resource | Scale | Starter | Free |
+|---|---|---|---|
+| Max payload size | 100 KB | 100 KB | 100 KB |
+| Connection TTL | 15 s | 10 s | 10 s |
+| Keep-alive idle timeout | 5 s | 5 s | 5 s |
 
 Keepalive is handled natively by MQTT's PINGREQ/PINGRESP mechanism and does not require a TagoTiP-level PING.
 

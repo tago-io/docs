@@ -10,11 +10,12 @@ title: TagoTiP over TCP
 
 ## Endpoint
 
-| Host | IP | Ports |
-|---|---|---|
-| `tcp.tip.us-e1.tago.io` | `75.2.126.170` | `5693` (plaintext) / `5694` (TLS) |
+| Region | Host | IP | Ports |
+|---|---|---|---|
+| US-East-1 | `tcp.tip.us-e1.tago.io` | `75.2.126.170` | `5693` (plaintext) / `5694` (TLS) |
+| EU-West-1 | `tcp.tip.eu-w1.tago.io` | `15.197.224.153` | `5693` (plaintext) / `5694` (TLS) |
 
-Both ports accept TagoTiP and TagoTiP(s). The server detects the mode **once per connection** by inspecting the first byte. See [Endpoints](../servers/endpoints) for all regions.
+Both ports accept TagoTiP and TagoTiP(s). The server detects the mode **once per connection** by inspecting the first byte.
 
 ## Why TCP?
 
@@ -244,20 +245,20 @@ RPM = requests per minute.
 |---|---|---|---|
 | Uplink RPM (PUSH) | 1,000 | 500 | 60 |
 | Downlink RPM (PULL) | 1,000 | 500 | 60 |
-| Connections per IP | 100 | 20 | 5 |
+| Connections per IP | 20 | 10 | 3 |
 
 ### Per-device limits
 
-| Resource | Default |
-|---|---|
-| Max payload size | 100 KB |
-| Connection TTL | 60 s |
-| Keep-alive idle timeout | 20 s |
+| Resource | Scale | Starter | Free |
+|---|---|---|---|
+| Max payload size | 100 KB | 100 KB | 100 KB |
+| Connection TTL | 15 s | 10 s | 10 s |
+| Keep-alive idle timeout | 5 s | 5 s | 5 s |
 
 PING is exempt from rate limiting on TCP.
 
 :::warning
-Send a `PING` before the keep-alive idle timeout (default 20 seconds) to keep the connection alive. The connection is closed after the TTL (default 60 seconds) regardless of activity.
+Send a `PING` before the keep-alive idle timeout to keep the connection alive. The connection is closed after the TTL regardless of activity.
 :::
 
 ## Specification
