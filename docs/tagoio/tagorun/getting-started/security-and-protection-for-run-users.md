@@ -2,6 +2,7 @@
 title: "Security and Protection for RUN users"
 description: "This article explains how to use the Run module's Security and Protection settings in TagoRUN to handle account delete requests, enable two-factor authentication, set password rules, manage user sessions, and protect against bots (captcha)."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, security, two-factor authentication, password]
 ---
 With TagoRUN, you can add actions and methods to increase your application's security and protect your Run users. These controls help your application comply with data-privacy and security laws by providing end-user safeguards to prevent inappropriate access to personal data.
 

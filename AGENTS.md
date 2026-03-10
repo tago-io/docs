@@ -17,16 +17,12 @@ Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb t
   - Production: controlled by static/robots.txt in repo root under static/
     - Note: current static/robots.txt disallows /changelog; adjust as desired
 
-## Current Repository Status (8/22/2025)
+## Current Repository Status
 - Docusaurus site configured and running
   - Node >= 18 required
   - Root scripts: npm run start | build | serve | typecheck | biome
 - Documentation coverage in repo
-  - tagoio: 246 markdown files
-  - tagorun: 4 markdown files
-  - tagodeploy: 3 markdown files
-  - tagocore: 4 markdown files
-  - Total: 257 markdown files
+  - Total: 327 markdown files across tagoio, tagocore, tagodeploy, tagotip sections
   - Changelog: extensive historical posts under changelog/
 - Local images: 440 under static/docs_imagem/* (plus site images under static/img)
 - Sidebars fully wired in sidebars.ts
@@ -238,13 +234,16 @@ Biome configuration snapshot
   - Use kebab-case for filenames, e.g., `my-new-topic.md`
   - Keep names concise and descriptive; avoid special characters
 - Add front matter and title
-  - Required front matter keys: title, description, tags
+  - Required front matter keys: title, description, keywords, tags
   - H1 at the top should match the title; keep one H1 per page
+  - description: under 160 characters, concise summary of the page's purpose
+  - keywords: inline YAML array with 3-6 terms; always include the product name (`tagoio`, `tagocore`, `tagodeploy`, or `tagotip`) and `iot`, plus topic-specific terms
   - Example:
     ```markdown
     ---
     title: "My New Topic"
     description: "Short summary of what this page covers."
+    keywords: [tagoio, iot, devices, mqtt, integration]
     tags: ["tagoio"]
     ---
     # My New Topic
@@ -273,11 +272,39 @@ Biome configuration snapshot
   3) npm run build
   - Never run `npm run start` (the dev host usually runs it)
 
+## AI & SEO Enhancements
+
+### Frontmatter requirements
+Every doc page must have these frontmatter fields:
+- `title` - page title
+- `description` - under 160 characters, summarizes the page (used for `<meta name="description">`, OG images, and llms.txt)
+- `keywords` - inline YAML array, 3-6 terms: always include the product name (`tagoio`, `tagocore`, `tagodeploy`, or `tagotip`) and `iot`, plus topic-specific terms (renders as `<meta name="keywords">`)
+- `tags` - array with product name for Docusaurus tagging
+
+### Schema.org structured data (TechArticle JSON-LD)
+- Swizzled component: `src/theme/DocItem/Metadata/index.tsx`
+- Adds `TechArticle` JSON-LD to every doc page alongside the existing `BreadcrumbList`
+- Uses `useDoc()` for metadata and `useDocusaurusContext()` for site URL
+- Fields: headline, description, url, dateModified, publisher (TagoIO), mainEntityOfPage
+- If modifying this component, run `npm run biome:fix` and `npm run build` to verify
+
+### robots.txt
+- `static/robots.txt` includes `Llms-Txt: https://docs.tago.io/llms.txt` for AI crawler discovery
+- Keep this directive when editing robots.txt
+
+### llms.txt
+- Generated at build time by `docusaurus-plugin-llms`
+- Quality depends on every page having a good `description` frontmatter
+- Config in `docusaurus.config.ts` under the `docusaurus-plugin-llms` plugin entry
+
+### Auto-synced files (no frontmatter)
+- `docs/tagotip/specification/tagotip-specification.md` and `docs/tagotip/specification/tagotips-specification.md` are fetched from GitHub during build (`scripts/sync-tagotip.mjs`) and do not have managed frontmatter
+
 ## Backlog / Next Steps
 - Normalize residual external image references and ensure all are local
 - Consolidate image naming and consider moving long-term to static/img/docs with consistent naming
 - Continue running link audits after bulk edits
-- Add/standardize front matter (title/description/tags) across all pages
+- Add frontmatter to auto-synced TagoTiP spec files (requires changes to sync-tagotip.mjs)
 - Create redirect metadata for legacy help.tago.io links if needed (Docusaurus redirects)
 - Periodic content parity checks against infra/original_markdown
 

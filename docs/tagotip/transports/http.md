@@ -2,6 +2,8 @@
 sidebar_position: 3
 sidebar_label: HTTP
 title: TagoTiP over HTTP
+description: "Send and retrieve IoT data via standard HTTP POST, GET, and HEAD requests using the TagoTiP protocol."
+keywords: [tagotip, iot, http, rest, api]
 ---
 
 # TagoTiP over HTTP

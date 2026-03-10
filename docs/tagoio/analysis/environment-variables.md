@@ -2,6 +2,7 @@
 title: "Environment Variables"
 description: "This article explains how to configure environment variables for TagoIO Analyses, how they are accessed inside a script, and what each field in the environment variables UI represents."
 tags: ["tagoio"]
+keywords: [tagoio, iot, analysis, environment variables, configuration]
 ---
 Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the `context.environment` global object.
 

@@ -2,6 +2,8 @@
 sidebar_position: 4
 sidebar_label: Rate Limits
 title: Rate Limits
+description: "Per-profile and per-device rate limits for TagoTiP, including RPM caps, payload sizes, and connection TTLs."
+keywords: [tagotip, iot, rate limits, throttling]
 ---
 
 # Rate Limits

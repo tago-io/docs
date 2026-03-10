@@ -2,6 +2,7 @@
 title: "Managing Devices using API"
 description: "This article explains how to manage devices via the TagoIO API using an account token, including creating a device with a POST request and the required request payload. It also highlights the need to use the appropriate regional API endpoint."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, API, device management, account token]
 ---
 Using the account token, you can manage your devices through API requests. You can create, edit, delete, and retrieve information about devices.
 

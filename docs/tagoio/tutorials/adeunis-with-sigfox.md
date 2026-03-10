@@ -2,6 +2,7 @@
 title: "Adeunis with Sigfox"
 description: "This article explains how TagoIO integrates with Adeunis devices via the Sigfox backend, how incoming data is parsed and made available for Analysis, and how to add an Adeunis device in TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, adeunis, sigfox, device integration]
 ---
 
 TagoIO supports most Adeunis devices by providing an integration with the Sigfox

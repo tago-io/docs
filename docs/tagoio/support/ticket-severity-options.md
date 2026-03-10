@@ -2,6 +2,7 @@
 title: "Ticket Severity Options"
 description: "This article defines the TagoIO Support ticket severity levels and explains how to select the appropriate priority when opening a support ticket."
 tags: ["tagoio"]
+keywords: [tagoio, iot, support, ticket severity, troubleshooting]
 ---
 
 In order for your ticket to receive the correct priority, select the appropriate severity level when opening the ticket. The TagoIO Support team recommends following these definitions to avoid delays.

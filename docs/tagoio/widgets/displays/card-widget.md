@@ -2,6 +2,7 @@
 title: "Card Widget"
 description: "This article explains how the Card widget displays the latest value of a variable with its unit and a mini-chart, and how to add and customize the Card widget on a dashboard. It also notes that the widget supports variable metadata."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, card, display]
 ---
 Use Card to display the last value of a variable, its unit, and a mini‑chart. Card accepts links so that when users click on it, it can redirect them to another website, dashboard, or tab.
 

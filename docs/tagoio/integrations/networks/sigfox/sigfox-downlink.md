@@ -2,6 +2,7 @@
 title: "Sigfox - Downlink"
 description: "This article explains how to configure Sigfox downlinks in TagoIO, including preparatory steps and a two-part setup process (TagoIO and Sigfox Portal). It highlights important prerequisites and links to related documentation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sigfox, downlink, integration]
 ---
 
 TagoIO is ready to receive data from and send data to Sigfox devices. The

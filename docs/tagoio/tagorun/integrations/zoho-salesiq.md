@@ -2,6 +2,7 @@
 title: "Zoho SalesIQ"
 description: "This article explains how to integrate a TagoIO RUN application with Zoho SalesIQ by obtaining the SalesIQ widget key and placing it into the RUN setup. It includes the steps to create a SalesIQ account, retrieve the widget key, enable visitor tracking, and where to paste the key in TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, zoho salesiq, chat, integration]
 ---
 You can easily integrate your RUN application with Zoho SalesIQ to track and engage users. All you need to do is use your SalesIQ key in the RUN setup.
 

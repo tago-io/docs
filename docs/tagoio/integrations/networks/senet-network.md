@@ -2,6 +2,7 @@
 title: "Senet Network"
 description: "This article explains how to integrate a LoRaWAN device with the Senet Network and TagoIO, focusing on configuring the uplink so device data is sent to your TagoIO account."
 tags: ["tagoio"]
+keywords: [tagoio, iot, senet, lorawan, integration]
 ---
 
 Using this article, you will learn how to integrate a LoRaWAN device with the

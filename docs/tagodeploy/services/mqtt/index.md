@@ -1,6 +1,7 @@
 ---
 title: "MQTT Broker"
 description: "Overview of the TagoDeploy MQTT Broker, including what you get, how it works, and when to use it."
+keywords: [tagodeploy, iot, mqtt, broker, device communication]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt
 ---

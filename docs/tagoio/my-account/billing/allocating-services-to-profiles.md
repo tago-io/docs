@@ -2,6 +2,7 @@
 title: "Allocating Services to Profiles"
 description: "This article explains how to allocate service resources to individual profiles in your TagoIO account using the Billing page and the Resource Allocation tab, and how to monitor those allocations and usage."
 tags: ["tagoio"]
+keywords: [tagoio, iot, resource allocation, profiles, services]
 ---
 When you manage multiple profiles in your account, ensure each profile has the correct allocation of services so they operate efficiently. You can configure per-profile allocations on the Billing page under the [Resource Allocation](https://admin.tago.io/account/billing/allocation) tab.
 

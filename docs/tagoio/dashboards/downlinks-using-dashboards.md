@@ -2,6 +2,7 @@
 title: "Downlinks using Dashboards"
 description: "This article explains how to perform downlinks for LoRaWAN Class C or Class A devices using an Analysis and dashboards, including use cases and the required template installation."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, downlink, LoRaWAN]
 ---
 Learn how to perform downlinks for Class C or Class A devices using [Analysis](/docs/tagoio/analysis/). This article also shows how to send downlink data from [Dashboards](/docs/tagoio/dashboards/). This approach can be used in the following cases:
 

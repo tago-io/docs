@@ -2,6 +2,7 @@
 title: "Audit Log"
 description: "This article explains what the Audit Log is, how it records chronological activity from user Profiles, and what types of events you can monitor. It also notes plan restrictions for filtering log entries."
 tags: ["tagoio"]
+keywords: [tagoio, iot, audit log, activity tracking, events]
 ---
 ## Overview
 

@@ -2,6 +2,7 @@
 title: "Devices"
 description: "This article explains what a Device is in TagoIO, how devices communicate with the platform, where they are managed, and how to add devices and choose their data storage type."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, data storage, HTTP, MQTT]
 ---
 
 Device is the link between your external things and the data in your account. To

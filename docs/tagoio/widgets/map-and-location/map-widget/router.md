@@ -2,6 +2,7 @@
 title: "Router"
 description: "This article explains the Router option for the Map widget, which enables turn-by-turn routing so users can get directions to device locations displayed on the map."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, map, routing]
 ---
 You can enable the Router option to allow users to get directions to a destination on the map. This feature provides turn‑by‑turn routing to guide users to the locations of their devices.
 

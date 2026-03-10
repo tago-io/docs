@@ -2,6 +2,7 @@
 title: "Import & Export for Dictionary"
 description: "A brief guide explaining how to import and export key/value pairs in a Dictionary on TagoIO, including supported file formats, typical use cases, import behavior, and where to get sample files."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, dictionary, import, export]
 ---
 The Dictionary provides a quick and easy way to import and export a Dictionary's key/value pairs via the two buttons at the top of a Dictionary page.
 

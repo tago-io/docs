@@ -1,6 +1,7 @@
 ---
 title: "Deployment History"
 description: "View past deployments, statuses, and when deployments are triggered in your project."
+keywords: [tagodeploy, iot, deployments, history, audit]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/deployments/history
 ---

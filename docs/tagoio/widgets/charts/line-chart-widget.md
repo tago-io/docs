@@ -2,6 +2,7 @@
 title: "Line Chart Widget"
 description: "This article explains how to use the Line Chart widget to visualize data in TagoIO, including customization options and how to configure the widget's data source. It also lists the main sections covered and related articles."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, line chart, data visualization]
 ---
 Charts are a powerful way to visualize your data and discover insights. The Line Chart widget supports color customization, applying Formula, and changing the line shape (step or smooth), among other options.
 

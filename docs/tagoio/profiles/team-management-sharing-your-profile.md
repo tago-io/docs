@@ -2,6 +2,7 @@
 title: "Team Management - Sharing your profile"
 description: "This article explains how to share a TagoIO Profile with other TagoIO accounts using the Team feature, including invitation behavior, plan-based limits, and how to remove access."
 tags: ["tagoio"]
+keywords: [tagoio, iot, team management, sharing, collaboration]
 ---
 You can grant access to other TagoIO accounts to any of your [Profiles](/docs/tagoio/profiles/) by using the Team feature. By adding other accounts to your team, they will have access to all applications that run on that Profile.
 

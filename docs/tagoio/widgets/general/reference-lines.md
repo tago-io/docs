@@ -2,6 +2,7 @@
 title: "Reference Lines"
 description: "This article explains how to configure reference lines on TagoIO chart-type widgets and lists which widgets support this feature."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widgets, reference lines, charts]
 ---
 All chart-type widgets in TagoIO can be configured to display reference lines within the graph. These lines can serve as thresholds, upper and lower bounds, medians, or any other value that enhances the data visualization experience.
 

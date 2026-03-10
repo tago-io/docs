@@ -2,6 +2,7 @@
 title: "Compose Widget"
 description: "The Compose Widget article explains how to add customizable pins to images and videos within TagoIO, including support for metadata and groups. It also outlines the main sections for configuring the widget: data source, media backgrounds, pin positioning, pin editor, and infobox settings."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, compose, media]
 ---
 The compose widget allows you to add pins to images and videos. You can change the colors, values, and icons for each pin.
 

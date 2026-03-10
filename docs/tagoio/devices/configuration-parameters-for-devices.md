@@ -2,6 +2,7 @@
 title: "Configuration Parameters for Devices"
 description: "This article explains what Configuration Parameters are in TagoIO devices, where to find them, and the three configurable fields for each parameter (Key, Value, Read/Unread). It also shows how to access the Configuration Parameters tab on a device and how parameters can be set and retrieved."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, configuration parameters, key-value]
 ---
 Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](/docs/tagoio/devices/) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/), or interact with [API & Analysis](/docs/tagoio/analysis/) scripts.
 

@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Welcome
 slug: /tagocore/
+description: Introduction to TagoCore, a free open-source IoT platform for edge computing and data management.
+keywords: [tagocore, iot, edge computing, open source, platform]
 ---
 
 # Welcome to TagoCore

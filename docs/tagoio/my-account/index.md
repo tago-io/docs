@@ -2,6 +2,7 @@
 title: "Editing Accounts Details"
 description: "This article explains how to open the account settings in TagoIO and what account details you can edit, such as contact info, company, timezone, language, and notification preferences."
 tags: ["tagoio"]
+keywords: [tagoio, iot, account settings, account management]
 ---
 ## Accessing your account settings
 To manage your account details, click the top-right menu in the TagoIO interface and select the option [My Account](https://admin.tago.io/account/).

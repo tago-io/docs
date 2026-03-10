@@ -2,6 +2,7 @@
 title: "Data Retention Feature"
 description: "This article explains TagoIO's Data Retention feature, how to configure its Period and Retention fields, and important limits and behaviors to consider when using Immutable (optimized) device data."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, data retention, immutable, data management]
 ---
 
 ## Overview

@@ -2,6 +2,7 @@
 title: "Display Widget"
 description: "This article explains the Display widget, which shows the most recent value for a variable (string or number), and describes how to add and customize it on your dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, display, dashboard]
 ---
 Display is a widget that shows the last value of a variable, regardless of the format of the value (string or number).
 

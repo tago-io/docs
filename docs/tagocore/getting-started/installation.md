@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Download & Installation
 slug: /tagocore/installation
+description: Install TagoCore using Docker or from source code with step-by-step instructions for all platforms.
+keywords: [tagocore, iot, installation, docker, setup, edge computing]
 ---
 
 # Download & Installation

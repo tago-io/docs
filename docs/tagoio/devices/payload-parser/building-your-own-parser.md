@@ -2,6 +2,7 @@
 title: "Building your Own Parser"
 description: "This article explains how to convert raw payloads from devices into measurable variables using the TagoIO Payload Parser and links to three step-by-step tutorials plus a video walkthrough."
 tags: ["tagoio"]
+keywords: [tagoio, iot, payload parser, custom parser, decoder]
 ---
 
 In this tutorial, you will learn how to convert (parse) a raw payload sent by a

@@ -2,6 +2,8 @@
 sidebar_position: 4
 title: Module - Action Trigger
 slug: /tagocore/plugins/create/action-trigger
+description: Create custom action triggers in TagoCore plugins using the ActionTriggerModule from the SDK.
+keywords: [tagocore, iot, plugin, action trigger, module, automation]
 ---
 
 # Action Trigger Module

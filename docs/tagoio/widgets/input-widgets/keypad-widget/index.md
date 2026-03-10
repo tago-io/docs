@@ -2,6 +2,7 @@
 title: "Keypad Widget"
 description: "A brief guide to the Keypad widget for TagoIO, explaining what it does and how to add and customize it on a dashboard, with links to related documentation."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, keypad, input]
 ---
 Keypad allows the user to submit a PIN code along with an optional action string. This widget is ideal to represent an alarm or to request a PIN code to unlock a resource.
 

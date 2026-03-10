@@ -2,6 +2,7 @@
 title: "Files"
 description: "Brief overview of how TagoIO handles file storage and common use cases for files sent to and from IoT devices."
 tags: ["tagoio"]
+keywords: [tagoio, iot, files, file storage, uploads]
 ---
 You and your IoT devices can send and receive files such as images, CSV, TXT, and many other formats. All of these files can be stored and accessed in TagoIO.
 

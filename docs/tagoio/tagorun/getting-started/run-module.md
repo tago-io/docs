@@ -2,6 +2,7 @@
 title: "TagoRun Overview"
 description: "This article explains how to use the TagoRun Run module to create and deploy a branded application portal, configure URLs and signup pages, and manage email templates."
 tags: ["tagorun"]
+keywords: [tagoio, iot, tagorun, run module, portal, deployment]
 sidebar_position: 1
 ---
 

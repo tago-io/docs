@@ -2,6 +2,7 @@
 title: "Process data, Publish it and Subscribe to a topic"
 description: "This article explains how to process data, publish it to a topic, and subscribe to that topic using MQTT (the tutorial uses the MQTTX client). It also shows how to connect a device to the TagoIO MQTT broker and retrieve the device token."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, publish, subscribe]
 ---
 :::warning
 

@@ -2,6 +2,7 @@
 title: "Notifications for Users using Analysis"
 description: "This article explains how to send notifications to TagoRUN users using Analysis, how to configure notification buttons and their behaviors, and the basic customizable options available for notification actions."
 tags: ["tagoio", "analysis"]
+keywords: [tagoio, iot, tagorun, notifications, analysis]
 ---
 The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and buttons, see [Analysis](/docs/tagoio/analysis/) and buttons.
 

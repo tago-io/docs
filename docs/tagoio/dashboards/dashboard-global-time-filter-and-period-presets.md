@@ -2,6 +2,7 @@
 title: "Dashboard Global Time Filter and Period Presets"
 description: "This article describes the Dashboard Period Preset feature in TagoIO, which sets global time-based filters and quick period presets across all widgets, and explains using the date picker to select specific ranges and define a maximum selectable period."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, time filter, period presets, date picker]
 ---
 ## Overview
 The Dashboard Period Preset allows users to set global time-based filters that apply across all widgets in a dashboard. This enables effortless comparison of data across different periods, providing valuable insights and facilitating better decision-making.

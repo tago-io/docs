@@ -2,6 +2,7 @@
 title: "Rate Limits (Hard limits)"
 description: "This article explains TagoIO's hard rate limits: what they are, which interactions they apply to, and how limits are enforced (applied every minute) including links to related resource limits and dashboard data output constraints."
 tags: ["tagoio"]
+keywords: [tagoio, iot, rate limits, api limits, throttling]
 ---
 When executing requests to TagoIO, there is a limit on the number of requests that can be made during a given time period. These limits are applied in short intervals every minute to provide a reliable, scalable API for developers and to help prevent cyber attacks on our servers, such as DDoS.
 

@@ -2,6 +2,7 @@
 title: "Icons Widget"
 description: "This article explains the Icons widget for TagoIO, showing example styles, how many variables it supports, and how to add and customize the widget on a dashboard, including the \"Data From\" and \"Conditions\" configuration options."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, icons, display]
 ---
 With icons, you can create highly personalized widgets for your applications. The examples below illustrate a few possible styles, but the customization options are extensive.
 

@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 description: "Overview of the Projects page: view details, access consoles, and manage projects in TagoDeploy."
+keywords: [tagodeploy, iot, project, management]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/overview
 ---

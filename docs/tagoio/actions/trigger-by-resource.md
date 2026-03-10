@@ -2,6 +2,7 @@
 title: "Trigger by Resource"
 description: "Explains how the \"Trigger by Resource\" trigger works in TagoIO and how to configure trigger conditions so an Action runs when a resource meets specified criteria."
 tags: ["tagoio"]
+keywords: [tagoio, iot, actions, triggers, resources]
 ---
 The trigger type "Trigger by Resource" allows you to execute an Action when a resource meets certain conditions. A resource can be one of the following:
 

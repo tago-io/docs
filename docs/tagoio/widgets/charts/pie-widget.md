@@ -2,6 +2,7 @@
 title: "Pie Widget"
 description: "A brief guide to the Pie widget for TagoIO, describing how it uses variable data to produce pie charts and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, pie chart, data visualization]
 ---
 Using data from multiple variables, the Pie widget automatically produces a pie chart where each slice represents a variable's data.
 

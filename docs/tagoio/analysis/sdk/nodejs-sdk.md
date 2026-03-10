@@ -2,6 +2,7 @@
 title: "Node.js SDK"
 description: "This article links to the TagoIO Node.js SDK documentation, points to the legacy SDK docs for version 9.x.x, and warns about API request rate limits."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sdk, nodejs, javascript]
 ---
 ## Documentation
 You can access the Node.js SDK documentation here:

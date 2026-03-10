@@ -2,6 +2,7 @@
 title: "SDK"
 description: "TagoIO Software Development Kits - integrate TagoIO with your applications"
 tags: ["tagoio", "sdk", "development"]
+keywords: [tagoio, iot, sdk, development, integration]
 ---
 
 # SDK

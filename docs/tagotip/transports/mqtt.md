@@ -2,6 +2,8 @@
 sidebar_position: 4
 sidebar_label: MQTT
 title: TagoTiP over MQTT
+description: "Use TagoTiP over MQTT with pub/sub topics, QoS levels, and real-time command delivery for IoT device fleets."
+keywords: [tagotip, iot, mqtt, pub/sub, qos]
 ---
 
 # TagoTiP over MQTT

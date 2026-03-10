@@ -1,6 +1,7 @@
 ---
 title: "Deployment Logs"
 description: "Track deployment progress, understand change management behavior, and identify failures via real-time logs."
+keywords: [tagodeploy, iot, deployments, logs, monitoring]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/deployments/logs
 ---

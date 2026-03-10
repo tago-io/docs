@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Prerequisites
 slug: /tagocore/plugins/create/prerequisites
+description: Required tools and knowledge for developing TagoCore plugins, including Node.js and the Plugin SDK.
+keywords: [tagocore, iot, plugin, prerequisites, nodejs, sdk]
 ---
 
 # Prerequisites

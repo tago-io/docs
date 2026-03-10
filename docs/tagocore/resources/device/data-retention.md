@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Data Retention
 slug: /tagocore/device/data-retention
+description: Configure automatic data retention policies to manage storage by deleting old device data after a set period.
+keywords: [tagocore, iot, device, data retention, storage management]
 ---
 
 # Data Retention

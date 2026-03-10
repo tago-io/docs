@@ -2,6 +2,7 @@
 title: "LoRaWAN Publication of Environmental Measurements with a LoRa-E5 Module"
 description: "This article explains how to publish environmental sensor measurements over LoRaWAN using a Grove LoRa‑E5 module and a NUCLEO-WB55 board, integrating with The Things Network (TTN) and TagoIO, and includes the required hardware and basic assembly steps."
 tags: ["tagoio"]
+keywords: [tagoio, iot, lorawan, lora-e5, environmental sensors, ttn]
 ---
 This tutorial explains how to implement a LoRaWAN publication on The Things Network (TTN) with a TagoIO integration using a MicroPython driver for a Grove LoRa‑E5 module. It was originally posted in French at https://stm32python.gitlab.io/fr/docs/Micropython/grove/lora-e5 and credits Julien Terrier and Yannick Marietti.
 

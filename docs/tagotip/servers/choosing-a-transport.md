@@ -2,6 +2,8 @@
 sidebar_position: 3
 sidebar_label: Choosing a Transport
 title: Choosing a Transport
+description: "Compare UDP, TCP, HTTP, and MQTT transports for TagoTiP and choose the best fit for your hardware and use case."
+keywords: [tagotip, iot, transport, udp, tcp, mqtt]
 ---
 
 # Choosing a Transport

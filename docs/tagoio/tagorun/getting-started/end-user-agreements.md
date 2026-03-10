@@ -2,6 +2,7 @@
 title: "End-User Agreements"
 description: "This article explains the End-User Agreements feature in TagoIO, which lets administrators manage and track legal agreements or terms of service that users must accept before accessing the platform."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, user agreements, terms of service, compliance]
 ---
 End-User Agreements is a feature designed to help you manage and track legal agreements or terms of service that users must accept before accessing the platform. This feature ensures compliance and provides a transparent method for maintaining records of user consent. Once implemented, users are prompted to review and accept these agreements during their initial login or whenever new agreements are introduced.
 

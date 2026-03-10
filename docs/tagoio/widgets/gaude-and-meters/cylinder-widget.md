@@ -2,6 +2,7 @@
 title: "Cylinder Widget"
 description: "A brief guide to the Cylinder widget in TagoIO, explaining what it visualizes, an example image, metadata support, and how to add and customize the widget on your dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, cylinder gauge, meter]
 ---
 Cylinders are simple and useful widgets that visualize values relative to a defined range (with maximum and minimum limits) using a cylinder gauge.
 

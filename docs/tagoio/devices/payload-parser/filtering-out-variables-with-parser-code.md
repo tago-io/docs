@@ -2,6 +2,7 @@
 title: "Filtering Out Variables with Parser Code"
 description: "This article explains how to prevent unwanted variables from being saved to a device's data storage by modifying the device's payload parser code in TagoIO, and shows default behavior for common providers."
 tags: ["tagoio"]
+keywords: [tagoio, iot, payload parser, filtering, variables, data storage]
 ---
 When your device sends sensor data to TagoIO, you can add parser code to the device (in the "Payload Parser" tab) to extract and create variables in the device's data storage using TagoIO format. If you want to save space in register storage, you can ignore variables you don't want added by editing the parser.
 

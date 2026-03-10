@@ -2,6 +2,7 @@
 title: "Device List Widget"
 description: "A concise guide to the Device List widget that explains what it shows and how to edit its appearance and filters in a dynamic table format."
 tags: ["tagoio", "widgets", "devices"]
+keywords: [tagoio, iot, widget, device list, table]
 ---
 The Device List widget is a table that dynamically populates with information about your devices, such as names, tags, configuration parameters, and IDs. It cannot access devices' telemetry or sensor data.
 

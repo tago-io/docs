@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Module - Service
 slug: /tagocore/plugins/create/service
+description: Run custom code when a TagoCore plugin loads using the ServiceModule, such as HTTP servers or analytics.
+keywords: [tagocore, iot, plugin, service module, sdk, nodejs]
 ---
 
 # Service Module

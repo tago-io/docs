@@ -2,6 +2,7 @@
 title: "Connecting your MQTT Broker to TagoIO"
 description: "This article explains TagoIO's MQTT Relay, a command-line tool that bridges an external MQTT broker and the TagoIO platform, and points to the repository and a demonstration video for setup and usage."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, broker, relay]
 sidebar_position: 2
 ---
 

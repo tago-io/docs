@@ -2,6 +2,7 @@
 title: "Displaying Units"
 description: "Explains how to configure a widget to display the unit of a variable and how to select the unit origin (original variable, variable used in a formula, or a fixed unit)."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widgets, units, data visualization]
 ---
 You can set up your widget to present the unit of a variable (e.g., °C, °F, km, mm) in different ways.
 

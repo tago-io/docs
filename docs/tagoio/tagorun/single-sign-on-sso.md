@@ -2,6 +2,7 @@
 title: "Single Sign-On (SSO)"
 description: "This article explains how to enable and configure Single Sign-On (SSO) for TagoIO RUN applications, including supported third‑party identity providers and the basic steps to import an Identity Provider into RUN."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, sso, single sign-on, authentication]
 ---
 By using Single Sign-On (SSO) integration, end users can sign in to a RUN application using credentials from your trusted user database provided by third‑party identity services. Supported providers include Okta, Auth0, Microsoft Azure AD, OneLogin, PingIdentity, Google Workspace, and others.
 

@@ -1,6 +1,7 @@
 ---
 title: "Open Connectors"
 description: "Use and synchronize public device and network connectors from TagoIO's open-source Decoders repository."
+keywords: [tagodeploy, iot, connectors, decoders, devices]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/system/open-connectors
 ---

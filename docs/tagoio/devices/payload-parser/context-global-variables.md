@@ -2,6 +2,7 @@
 title: "Context & Global Variables"
 description: "A concise guide to the context and global variables available when creating a Payload Parser in TagoIO, including descriptions of the most common globals and where to find the full list."
 tags: ["tagoio"]
+keywords: [tagoio, iot, payload parser, context, global variables, JavaScript]
 ---
 If you are going to create your own parser, you need to understand how context works.
 

@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Module
 slug: /tagocore/plugins/create/module
+description: Overview of TagoCore plugin modules, their types, setup configuration, and the configs property.
+keywords: [tagocore, iot, plugin, module, sdk, configuration]
 ---
 
 # Module

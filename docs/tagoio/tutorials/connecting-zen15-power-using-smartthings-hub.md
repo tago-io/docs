@@ -2,6 +2,7 @@
 title: "Connecting ZEN15 Power using SmartThings Hub"
 description: "This article shows how to connect the Zooz ZEN15 power switch to a TagoIO account using a Samsung SmartThings hub, enabling real-time power and energy monitoring and control."
 tags: ["tagoio"]
+keywords: [tagoio, iot, smartthings, z-wave, power monitoring]
 ---
 This tutorial shows how to bring electric power and energy measurements from the Zen15 sensor into your TagoIO account using a Samsung SmartThings hub.
 

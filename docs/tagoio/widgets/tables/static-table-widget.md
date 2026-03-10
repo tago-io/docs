@@ -2,6 +2,7 @@
 title: "Static Table Widget"
 description: "This article explains what a Static Table Widget is in TagoIO and how to edit its appearance and behavior, including customization options and features accepted by the widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, static table, dashboard]
 ---
 Static tables are tables where each cell represents a different piece of information. A cell can contain fixed text or data from a variable.
 

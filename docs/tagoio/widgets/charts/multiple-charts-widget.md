@@ -2,6 +2,7 @@
 title: "Multiple Charts Widget"
 description: "This article explains how to use the Multiple Charts widget in TagoIO, including how each variable can produce a different chart type, configurable options, and the Data From field used to select device and variable sources."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, multiple charts, data visualization]
 ---
 
 Charts are a powerful way to visualize your data and find insights. The Multiple

@@ -2,6 +2,7 @@
 title: "Angular Widget"
 description: "This article explains how to use the Angular widget to display a variable in an angular gauge and how to add and customize it on your dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, angular gauge, meter]
 ---
 Angular gauges allow you to display your variable in an angular gauge meter.
 

@@ -2,6 +2,7 @@
 title: "Custom Mobile App"
 description: "This article explains the Custom mobile app add-on for TagoIO, describing its white-label capabilities, pricing reference, and deployment fee, with links to related add-ons and documentation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, addons, mobile app, whitelabel]
 ---
 Add the Custom mobile app add‑on to manage the deployment of your own white‑label mobile application.
 

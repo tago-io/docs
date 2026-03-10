@@ -1,6 +1,7 @@
 ---
 title: "Container Environment Variables"
 description: "Configure environment variables for containers, including security and configuration best practices."
+keywords: [tagodeploy, iot, container, environment variables, configuration]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/environment-variables
 ---

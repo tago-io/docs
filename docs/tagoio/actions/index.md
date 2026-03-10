@@ -2,6 +2,7 @@
 title: "Actions"
 description: "This article explains the Actions feature in TagoIO, what you can do with Actions, and how to create a new Action. It also provides links to related documentation sections such as Defining Actions, trigger types, and action types."
 tags: ["tagoio", "actions"]
+keywords: [tagoio, iot, actions, automation, triggers]
 ---
 Actions is a powerful feature that gives you total control over your devices by executing operations based on events you define.
 

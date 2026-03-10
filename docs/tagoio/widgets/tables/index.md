@@ -2,6 +2,7 @@
 title: "Tables"
 description: "This article explains TagoIO table widgets, how they present data in tabular form, and lists the available table widget types with a short description for the Static Table."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widgets, tables, data visualization]
 ---
 Table widgets present your data in a tabular way. You can also allow users to change values in cells, delete rows, and perform other table-related actions.
 

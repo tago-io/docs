@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Action Overview
 slug: /tagocore/action
+description: Create automated actions in TagoCore to run scripts, send HTTP requests, or trigger plugins based on device events.
+keywords: [tagocore, iot, actions, automation, triggers]
 ---
 
 # Action

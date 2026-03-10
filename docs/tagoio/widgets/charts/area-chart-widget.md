@@ -2,6 +2,7 @@
 title: "Area Chart Widget"
 description: "This article explains how to use the Area Chart widget in TagoIO, including customization options, supported variable features, and how to configure the data source for the widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, area chart, data visualization]
 ---
 Charts are a powerful way to visualize your data and discover insights. The Area Chart widget supports color customization, applying [Formula](/docs/tagoio/widgets/general/formula.md), and customizing the line shape (step or smooth), among other options.
 

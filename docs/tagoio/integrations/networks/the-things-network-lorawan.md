@@ -2,6 +2,7 @@
 title: "The Things Network LoRaWAN™"
 description: "This article explains how to integrate The Things Network (TTN) with the TagoIO platform, enabling uplink and downlink operations between LoRaWAN devices and TagoIO. It lists prerequisites and begins the step-by-step setup process."
 tags: ["tagoio"]
+keywords: [tagoio, iot, the things network, ttn, lorawan, integration]
 ---
 
 This tutorial provides a step-by-step guide to integrate The Things Network

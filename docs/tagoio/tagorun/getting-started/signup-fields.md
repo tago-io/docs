@@ -2,6 +2,7 @@
 title: "Signup Fields"
 description: "This article explains how to add and map custom fields on the Sign up page so that field names become user tag keys and the values entered by users become user tag values. It also highlights the Sign up page customization interface."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, signup, custom fields, user tags]
 ---
 Inside your Sign up page, you can add custom fields that appear in addition to the form's required fields. The field name you create is copied to the User tag key, and the value entered by the user during sign up is copied to the User tag value.
 

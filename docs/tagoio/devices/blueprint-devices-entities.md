@@ -3,6 +3,7 @@ title: "Blueprint Devices & Entities"
 description: "This article explains how Blueprint Devices and Entities function as dynamic data sources for Blueprint Dashboards, how they appear for selection, and important usage notes for widgets that support entities."
 tags: ["tagoio", "devices"]
 sidebar_position: 3
+keywords: [tagoio, iot, devices, blueprint, entities, dynamic data]
 ---
 Blueprint Devices and [Entities](/docs/tagoio/getting-started/entities.md) serve as dynamic data sources for [Blueprint Dashboards](/docs/tagoio/dashboards/blueprint-dashboard.md). These dashboards let you change data sources dynamically while keeping the same widgets and configurations. By creating blueprint devices or entities, you define which data sources can be dynamically altered. The selected data sources appear in a dropdown menu at the top of a Blueprint Dashboard.
 

@@ -2,6 +2,7 @@
 title: "Trigger by Usage Alert"
 description: "This article explains how the \"Trigger by Usage Alert\" feature works, lists which TagoIO resources and services can fire usage alerts, and describes how to define the conditions that trigger an action."
 tags: ["tagoio"]
+keywords: [tagoio, iot, actions, usage alerts, monitoring]
 ---
 The “Trigger by Usage Alert” feature lets you execute an Action when a specific service or resource meets predefined usage conditions. Below is a list of Resources and Services that can be used to trigger an Action.
 

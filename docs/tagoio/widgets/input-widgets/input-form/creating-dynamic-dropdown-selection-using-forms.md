@@ -2,6 +2,7 @@
 title: "Creating Dynamic Dropdown Selection using Forms"
 description: "This article explains how Dynamic Dropdown fields in TagoIO Forms pull their options from a variable so you can update selection items dynamically, and when you would use this feature."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, input form, dynamic dropdown]
 ---
 Dynamic Dropdown allows users to populate a dropdown list with dynamic items coming from a variable. The example below shows how a Dynamic Dropdown can present selectable country values that are updated dynamically.
 

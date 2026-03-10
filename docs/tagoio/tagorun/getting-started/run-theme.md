@@ -2,6 +2,7 @@
 title: "Run Theme"
 description: "This article explains how to customize the RUN interface theme in TagoIO, covering customization options for the Signup page, Sidebar, and Navigation bar, and where to upload background and logo files."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, theme, customization, branding]
 ---
 You have the freedom to personalize the look and feel of the RUN interface by crafting your application with a unique color palette and custom assets. To get started, access the [Run module](https://admin.tago.io/am) and navigate to the Theme tab. The available customization options are described below.
 

@@ -2,6 +2,7 @@
 title: "Running Analysis via Action"
 description: "This article explains how to run an Analysis from an Action in TagoIO, including when to trigger it and how to configure the Action to run one or more Analyses."
 tags: ["tagoio", "actions", "analysis"]
+keywords: [tagoio, iot, actions, analysis, automation]
 ---
 Actions can initiate scripts that run in the [Analysis](/docs/tagoio/analysis/). This lets you define exactly when your code will execute.
 

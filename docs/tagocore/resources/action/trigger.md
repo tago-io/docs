@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Trigger
 slug: /tagocore/action/trigger
+description: Configure variable-based or schedule-based triggers to control when TagoCore actions execute automatically.
+keywords: [tagocore, iot, triggers, automation, scheduling, conditions]
 ---
 
 # Action Trigger

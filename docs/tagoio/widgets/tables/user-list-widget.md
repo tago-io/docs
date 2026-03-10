@@ -2,6 +2,7 @@
 title: "User List Widget "
 description: "A quick guide to the User List widget that explains what it is, how to edit it, and where to find related documentation and widgets."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, user list, table]
 ---
 The User List widget is a table that dynamically populates with information about your users, such as names, tags, email addresses, and IDs.
 

@@ -2,6 +2,7 @@
 title: "Adding Image Selector Field on Forms"
 description: "This article explains the Image Selector field for Input Forms in TagoIO, showing how users pick one or multiple images and how the selected value is stored. It also documents the widget options you configure for this field type."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, input form, image selector]
 ---
 The Image Selector field type allows you to present an input where the user can select one or more images that correspond to predefined values.
 

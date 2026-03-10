@@ -1,6 +1,7 @@
 ---
 title: "Network Middlewares"
 description: "Overview of Network Middlewares in TagoDeploy, including LoRaWAN LNS such as Tektelic, TTI, and others, and how to assign them to projects."
+keywords: [tagodeploy, iot, middleware, lorawan, integration]
 tags: ["tagodeploy"]
 slug: /tagodeploy/services/middlewares
 ---

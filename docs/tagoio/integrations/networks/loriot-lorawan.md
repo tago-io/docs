@@ -2,6 +2,7 @@
 title: "Loriot LoRaWAN"
 description: "This article provides a concise, step-by-step guide to integrate Loriot LoRaWAN™ with the TagoIO Platform, enabling uplink and downlink operations and detailing how to generate an access token in the Loriot Console."
 tags: ["tagoio"]
+keywords: [tagoio, iot, loriot, lorawan, integration]
 ---
 This tutorial provides a step-by-step guide to integrate Loriot LoRaWAN™ with the TagoIO Platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 

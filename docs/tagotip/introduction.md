@@ -3,6 +3,8 @@ sidebar_position: 1
 sidebar_label: Introduction
 title: TagoTiP - Transport IoT Protocol
 slug: /tagotip/
+description: "TagoTiP is a lightweight IoT protocol that sends data in 130 bytes instead of 487, with optional AEAD encryption and multi-transport support."
+keywords: [tagotip, iot, protocol, embedded, encryption, transport]
 ---
 
 # TagoTiP - Transport IoT Protocol

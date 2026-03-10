@@ -2,6 +2,7 @@
 title: "API Overview"
 description: "A brief introduction to TagoIO's API, explaining how to connect devices and applications, where to find the API documentation and SDK, and the standard response pattern returned by the API."
 tags: ["tagoio", "api"]
+keywords: [tagoio, iot, api, rest, integration]
 ---
 
 It is easy to connect devices, data sources, or third‑party apps to your account

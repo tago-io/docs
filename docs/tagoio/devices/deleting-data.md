@@ -2,6 +2,7 @@
 title: "Deleting Data"
 description: "This article explains how to delete data via the TagoIO API, including the endpoint, required headers, and optional query string parameters used to select which data to remove."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, delete data, API]
 ---
 :::info
 

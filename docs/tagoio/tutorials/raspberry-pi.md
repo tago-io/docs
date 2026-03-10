@@ -2,6 +2,7 @@
 title: "Raspberry Pi"
 description: "A brief guide pointing to a community tutorial showing how to connect a Raspberry Pi to TagoIO using the TagoIO SDK or the MQTT protocol; also directs readers to additional tutorials in the TagoIO Community forum."
 tags: ["tagoio"]
+keywords: [tagoio, iot, raspberry pi, sdk, mqtt]
 ---
 ![Raspberry Pi board](/docs_imagem/tagoio/raspberry-pi-2.png)
 

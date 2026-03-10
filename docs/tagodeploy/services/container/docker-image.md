@@ -1,3 +1,11 @@
+---
+title: "Docker Image Configuration"
+description: "Configure Docker image settings and registry authentication for container deployments in TagoDeploy."
+keywords: [tagodeploy, iot, docker, container, registry]
+tags: ["tagodeploy", "container"]
+slug: /tagodeploy/project/container/docker-image
+---
+
 # Docker Image Configuration
 
 Configure the Docker image settings and authentication credentials for your container deployment. This section allows you to specify which Docker image to deploy and how to authenticate with private registries.

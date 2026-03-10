@@ -2,6 +2,7 @@
 title: "File Storage Service"
 description: "This article explains how the TagoIO File storage service is measured and how storage limits affect profiles, plus where to increase limits and find pricing/FAQ information."
 tags: ["tagoio"]
+keywords: [tagoio, iot, file storage, files, service limits]
 ---
 Use the [Files](/docs/tagoio/files) module to store any type of file (reports, videos, logos, background images, and more). File service usage is measured by the total size of all files stored across your profiles.
 

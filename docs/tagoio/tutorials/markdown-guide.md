@@ -2,6 +2,7 @@
 title: "Markdown Guide"
 description: "This article summarizes the basic Markdown syntax supported in TagoIO, including emphasis, headers, lists, links, quotes, images, tables, and how to display code examples."
 tags: ["tagoio", "guide"]
+keywords: [tagoio, iot, markdown, formatting, guide]
 ---
 ## Emphasis
 

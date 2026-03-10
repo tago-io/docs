@@ -2,6 +2,7 @@
 title: "Multiple Axes in Chart Widgets"
 description: "This article explains how to configure chart-type widgets in TagoIO to display more than one Y-axis and lists which widgets support this feature, plus instructions for enabling multiple axes in a widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, multiple axes, charts]
 sidebar_position: 1
 ---
 All chart-type widgets in TagoIO can be configured to display more than one Y‑axis. The widgets that support this feature include:

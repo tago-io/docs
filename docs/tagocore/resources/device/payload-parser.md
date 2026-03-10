@@ -2,6 +2,8 @@
 sidebar_position: 4
 title: Payload Parser
 slug: /tagocore/device/payload-parser
+description: Transform raw device data into readable values using JavaScript payload parsers in TagoCore.
+keywords: [tagocore, iot, device, payload parser, javascript, data transformation]
 ---
 
 # Payload Parser

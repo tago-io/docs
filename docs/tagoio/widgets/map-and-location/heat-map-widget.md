@@ -2,6 +2,7 @@
 title: "Heat Map Widget"
 description: "A brief guide to the Heat Map widget that explains how it displays variable intensity as colored bubbles over an image, and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, heat map, location]
 ---
 With the Heat Map widget you can create a colorful layer of bubbles over an image to represent the intensity of variables. Higher variable values produce redder (larger/intense) bubbles, and you can add a heat scale to the layer to show the value range.
 

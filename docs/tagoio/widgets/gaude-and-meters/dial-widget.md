@@ -2,6 +2,7 @@
 title: "Dial Widget"
 description: "A brief guide to the Dial widget in TagoIO, explaining what dials are used for and how to add and customize a Dial widget on your dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, dial gauge, meter]
 ---
 Dials are one of the simplest and most useful widgets. They make it easy to visualize values relative to a defined range (with maximum and minimum limits).
 

@@ -2,6 +2,7 @@
 title: "Grouping Dashboards"
 description: "This article explains how to group related dashboards in TagoIO using dashboard tags and how to configure up to three grouping levels so dashboards appear organized in the sidebar."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, grouping, tags, organization]
 ---
 You can group related dashboards using dashboard tags. Use the dashboard settings to create tags (key/value pairs) and then select those tag keys to define grouping levels. Dashboards will be grouped in the sidebar using the chosen tag keys and their values.
 

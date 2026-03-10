@@ -2,6 +2,7 @@
 title: "Frame Settings"
 description: "This article explains how to use the Frame Settings to customize the appearance of widgets — including corners, padding, shadows, and header visibility — and how to access these options from a widget's configuration page."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widgets, frame settings, dashboard customization]
 ---
 The Frame Settings allow you to adjust the appearance of your widgets by customizing the corners, padding, and shadows, and by toggling the widget's header visibility. These options help your widgets integrate seamlessly with your dashboard's design.
 

@@ -2,6 +2,7 @@
 title: "ECharts Custom Widget Tutorial "
 description: "This article explains how to create a Ring Gauge custom widget for TagoIO using the ECharts library, and outlines the three main steps: setting up your development environment, implementing the widget components, and deploying the widget to TagoIO Files."
 tags: ["tagoio", "widgets", "tutorial"]
+keywords: [tagoio, iot, custom widget, echarts, tutorial]
 ---
 In this tutorial, we will guide you through creating a Ring Gauge custom widget that displays multiple variables simultaneously in an interesting format.
 

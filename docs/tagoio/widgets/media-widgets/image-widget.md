@@ -2,6 +2,7 @@
 title: "Image Widget"
 description: "This article explains how to use the Image widget in TagoIO dashboards to present custom images (such as logos) and describes the widget's behavior and image source types."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, image, media]
 ---
 The Image widget provides the ability to present custom images in your dashboard. You can use it to display a company or customer logo, or any image that helps users better visualize your application.
 

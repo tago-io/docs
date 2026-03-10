@@ -5,3 +5,4 @@ Disallow: /changelog/
 Disallow: /changelog
 
 Sitemap: https://docs.tago.io/sitemap.xml
+Llms-Txt: https://docs.tago.io/llms.txt

@@ -2,6 +2,7 @@
 title: "Map Filters"
 description: "This article explains how to apply filters to pins shown on the Map widget in order to reduce clutter and locate specific devices or variable values quickly."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, map, filters]
 ---
 You can filter the results displayed on a map to minimize the amount of information shown and help you find exactly what you're looking for.
 

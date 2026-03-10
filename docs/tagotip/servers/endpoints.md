@@ -2,6 +2,8 @@
 sidebar_position: 2
 sidebar_label: Endpoints
 title: Endpoints
+description: "Region-specific TagoTiP server endpoints with hostnames, static IPs, and ports for UDP, TCP, HTTP, and MQTT."
+keywords: [tagotip, iot, endpoints, server, regions]
 ---
 
 # Endpoints

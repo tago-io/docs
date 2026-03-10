@@ -2,6 +2,7 @@
 title: "Access Management"
 description: "This article explains how Access Management (AM) in TagoIO lets you grant secure access to account resources by creating Targets (users or devices) and assigning Permissions. It also gives practical examples of common AM use cases."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, access management, permissions, policies]
 sidebar_position: 1
 ---
 Access Management (AM) lets you securely grant access to specific resources in your TagoIO account. You create [Targets](/docs/tagoio/tagorun/access-management/defining-targets.md) (users or things) and assign [Permissions](/docs/tagoio/tagorun/access-management/defining-permissions.md) that determine which resources those Targets can access.

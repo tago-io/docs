@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Home Dashboard
 slug: /tagocore/home
+description: Monitor your TagoCore platform health, system performance, network status, and real-time data flow from the home dashboard.
+keywords: [tagocore, iot, dashboard, monitoring, system performance]
 ---
 
 # Home Dashboard

@@ -2,6 +2,7 @@
 title: "Filtered Variables"
 description: "This article explains the Filtered Variables field for the Input Form widget, describing how it works, when it is useful, and how to configure it so one field's options update dynamically based on another field's value."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, input form, filtered variables]
 ---
 Filtered Variables is a field type in the [Input Form](/docs/tagoio/widgets/input-widgets/input-form/) widget. It lets the user select a single value from a list whose options change dynamically based on the values of other fields.
 

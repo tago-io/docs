@@ -2,6 +2,7 @@
 title: "Resource Limits"
 description: "This article explains TagoIO's resource limits across account plans and lists the per-plan limits for common resource types, noting that most limits apply per Profile."
 tags: ["tagoio"]
+keywords: [tagoio, iot, resource limits, plans, multi-tenancy]
 ---
 
 TagoIO implements multi-tenancy as a cost‑effective, performance‑enhancing

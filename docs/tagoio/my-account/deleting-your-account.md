@@ -2,6 +2,7 @@
 title: "Deleting Your Account"
 description: "This article explains how to permanently delete your TagoIO account and what happens during the deletion process. It also explains how to cancel a single profile or organization instead of the entire account."
 tags: ["tagoio"]
+keywords: [tagoio, iot, delete account, cancel account]
 ---
 ## How to delete your account
 

@@ -2,6 +2,7 @@
 title: "Queclink GPS"
 description: "This article explains how to integrate Queclink GPS devices with TagoIO using a middleware that translates the device TCP/IP protocol and shows the required device configuration (protocol, host URL, and port)."
 tags: ["tagoio"]
+keywords: [tagoio, iot, queclink, gps, tracking, cellular]
 ---
 Queclink GPS can be integrated with TagoIO through middleware that translates the device's TCP/IP protocol. The middleware enables uplink communication between the device and TagoIO while parsing messages to extract commands and variables in real time.
 

@@ -2,6 +2,7 @@
 title: "Navigation bar"
 description: "This article explains what the navigation bar in your Run portal is, where it appears, and how to customize its logo and colors to match your brand."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, navigation bar, branding, customization]
 ---
 The navigation bar is a section of your Run portal that lets end users easily navigate between pages and access their account information. The bar appears at the top of the Run portal for convenient visibility and can be customized to match your brand by adding your logo, choosing colors for the bar, text, and icons, and adding extra items to the user menu.
 

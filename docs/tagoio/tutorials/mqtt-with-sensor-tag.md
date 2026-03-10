@@ -2,6 +2,7 @@
 title: "MQTT with Sensor Tag"
 description: "This article explains how to use the Texas Instruments SensorTag (CC2650) to send sensor data to TagoIO via MQTT, including connectivity flow and the sensors available on the device."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, sensortag, bluetooth]
 ---
 This example shows how to use the SensorTag Bluetooth module (Texas Instruments CC2650) to send data to TagoIO. No code modification is required on the SensorTag itself; because the SensorTag is used with MQTT, only a configuration setup is necessary.
 

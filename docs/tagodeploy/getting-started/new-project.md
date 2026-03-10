@@ -1,6 +1,7 @@
 ---
 title: "Creating a New Project"
 description: "Create a new TagoDeploy project with a streamlined setup, then scale resources as needed."
+keywords: [tagodeploy, iot, project, getting started]
 tags: ["tagodeploy"]
 slug: /tagodeploy/new-project
 ---

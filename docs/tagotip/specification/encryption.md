@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: Encryption
 title: TagoTiP(s) - Encrypted Communication
+description: "AEAD authenticated encryption for TagoTiP without TLS, with cipher suite options and as little as 29 bytes overhead."
+keywords: [tagotip, iot, encryption, aead, security]
 ---
 
 # TagoTiP(s) - Encrypted Communication

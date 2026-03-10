@@ -2,6 +2,7 @@
 title: "Sending Data"
 description: "This article explains how devices send data to TagoIO using the POST endpoint, lists the available request fields and their requirements, and notes authentication and variable naming considerations."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, send data, API, POST]
 ---
 :::info
 

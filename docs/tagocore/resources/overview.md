@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Resources Overview
 slug: /tagocore/resources
+description: Overview of TagoCore resources including devices, analyses, actions, settings, and logs for your IoT platform.
+keywords: [tagocore, iot, resources, devices, analyses, actions]
 ---
 
 # Resources Overview

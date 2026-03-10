@@ -2,6 +2,7 @@
 title: "Widgets Overview"
 description: "This article describes the widgets available in TagoIO dashboards, how they display and collect real-time data, and limits for dashboard widgets. It also points to creating dashboards and building custom widgets."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widgets, dashboard, data visualization]
 sidebar_position: 2
 ---
 

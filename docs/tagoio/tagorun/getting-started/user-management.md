@@ -2,6 +2,7 @@
 title: "User Management"
 description: "This article explains how to view and manage users who sign up for your TagoIO application using the User Management module, including how tags are applied to users and how user fields can be used in Targets. It also notes how dashboard data access with TagoRUN affects Data Output quotas."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, user management, tags]
 ---
 You can visualize and control all users that sign up in your application under the User Management module (see the User Management documentation for details).
 

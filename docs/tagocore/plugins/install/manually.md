@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Manually
 slug: /tagocore/plugins/install/manually
+description: Install custom TagoCore plugins manually via the sidebar installer or the tagocore.yml config file.
+keywords: [tagocore, iot, plugin, manual installation, configuration]
 ---
 
 # Manual Plugin Installation

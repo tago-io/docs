@@ -2,6 +2,7 @@
 title: "Metadata"
 description: "This article explains what metadata is in TagoIO, how it can be used inside variable payloads to change widget behavior and appearance, and provides a JSON example illustrating metadata fields."
 tags: ["tagoio"]
+keywords: [tagoio, iot, metadata, variables, widgets, payload]
 ---
 
 Metadata is one of the most important concepts when creating [dashboards](/docs/tagoio/dashboards/) and [widgets](/docs/tagoio/widgets/). Metadata is a piece of information that you can store in the variable payload.

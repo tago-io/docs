@@ -2,6 +2,7 @@
 title: "Solid Widget"
 description: "This article explains how to use the Solid widget in TagoIO to display variables as solid gauge meters and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, solid gauge, meter]
 ---
 Solid gauges allow you to display a variable in a solid gauge meter.
 

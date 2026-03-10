@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Plugin Store
 slug: /tagocore/plugins/install/pluginstore
+description: Browse and activate built-in TagoCore plugins from the Plugin Store to extend platform functionality.
+keywords: [tagocore, iot, plugin, plugin store, activation]
 ---
 
 # Using the Plugin Store

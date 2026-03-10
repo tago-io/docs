@@ -2,6 +2,7 @@
 title: "Semi Donut Widget"
 description: "Explains how the Semi Donut widget displays variable data as a semi-donut chart and how to add and customize it in a TagoIO dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, semi donut chart, data visualization]
 ---
 Using data from multiple variables, the Semi Donut widget automatically produces a semi-donut chart in which each slice represents a variable's data.
 

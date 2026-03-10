@@ -2,6 +2,7 @@
 title: "Network Integration"
 description: "This article explains how devices can connect to TagoIO using HTTPS/MQTT or other network integrations, and introduces options for creating scripts, using prepared network integrations, or building a custom integration. It also begins details on selecting the correct network endpoint by region."
 tags: ["tagoio", "integration"]
+keywords: [tagoio, iot, integration, network, devices]
 ---
 
 Your devices can always connect directly to the TagoIO API using HTTPS or MQTT.

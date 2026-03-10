@@ -2,6 +2,7 @@
 title: "Publishing, Updating and Accessing Decoders"
 description: "This article explains how to publish, update, and share custom decoders (connectors) in TagoIO, including how to make a connector public via the GitHub repository and a video walkthrough."
 tags: ["tagoio"]
+keywords: [tagoio, iot, decoders, connectors, open source, GitHub]
 ---
 TagoIO provides a list of [pre-integrated IoT devices](https://admin.tago.io/connectors) for easy connection. However, due to the wide variety of manufacturers and ongoing sensor development, you might not find a connector for your specific device.
 

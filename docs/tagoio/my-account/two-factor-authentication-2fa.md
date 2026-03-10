@@ -2,6 +2,7 @@
 title: "Two-factor Authentication (2FA)"
 description: "This article explains TagoIO's two-factor authentication (2FA), the available authentication methods, how the generated codes work, and when you'll be prompted to enter them."
 tags: ["tagoio"]
+keywords: [tagoio, iot, two-factor authentication, 2fa, security]
 ---
 Two-factor authentication (2FA) adds an extra layer of security to your account by requiring more than just your password to sign in. It requires and provides another form of authentication that only you know or have access to.
 

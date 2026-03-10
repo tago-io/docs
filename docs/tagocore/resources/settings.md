@@ -2,6 +2,8 @@
 sidebar_position: 7
 title: Settings
 slug: /tagocore/settings
+description: Configure TagoCore network port, database, queue, and filesystem plugins to customize your IoT platform.
+keywords: [tagocore, iot, settings, configuration, plugins]
 ---
 
 # Settings

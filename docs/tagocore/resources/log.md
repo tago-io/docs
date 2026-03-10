@@ -2,6 +2,8 @@
 sidebar_position: 6
 title: Logs
 slug: /tagocore/log
+description: View and filter real-time application logs in TagoCore to monitor system health and troubleshoot issues.
+keywords: [tagocore, iot, logs, troubleshooting, debugging]
 ---
 
 # Application Logs

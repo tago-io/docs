@@ -2,6 +2,7 @@
 title: "Downgrading Plans & Services"
 description: "This article explains how scheduled downgrades for plans, service limits, and add‑ons work in TagoIO, when they take effect, how to modify or cancel them, and precautions for accounts with multiple profiles."
 tags: ["tagoio"]
+keywords: [tagoio, iot, downgrade, plan, billing]
 ---
 You can schedule downgrades in your account for your plan, service limits, and add‑ons.
 

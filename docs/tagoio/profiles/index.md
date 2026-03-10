@@ -2,6 +2,7 @@
 title: "Profiles"
 description: "This article explains what Profiles are in TagoIO, the benefits of using them, how to switch between profiles, and how profile transfers between TagoIO accounts are handled."
 tags: ["tagoio"]
+keywords: [tagoio, iot, profiles, sub-accounts, multi-tenancy]
 ---
 Profiles are similar to having different sub-accounts under your main account. You can create multiple profiles for people or organizations and share them with others. By doing this, you remain the owner of each "sub-account" while allowing others to access each profile separately.
 

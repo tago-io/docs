@@ -2,6 +2,7 @@
 title: "Beagle Bone Black"
 description: "This short tutorial explains how to integrate a BeagleBone Black (BBB) board with TagoIO, demonstrating how to send a digital input status to a dashboard and configure an Action to email when the switch closes."
 tags: ["tagoio"]
+keywords: [tagoio, iot, beaglebone, tutorial, device integration]
 ---
 ![BeagleBone Black board](/docs_imagem/tagoio/beagle-bone-black-2.jpg)
 

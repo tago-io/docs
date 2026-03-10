@@ -2,6 +2,7 @@
 title: "Control Tower"
 description: "This article describes the Control Tower add-on for TagoIO, explaining its capabilities for monitoring and limiting data input/output and Hard Limits usage, and how to view per-device statistics after activation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, addons, control tower, monitoring]
 ---
 The Control Tower is an add‑on designed to enhance your profile by providing access to features that increase your visibility and control over data input and output. It also offers advanced statistics on the usage of your [Hard Limits (Rate Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md). By using Control Tower, you can:
 

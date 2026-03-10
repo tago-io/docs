@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Finish
 slug: /tagocore/plugins/install/finish
+description: Summary of TagoCore capabilities and next steps for building IoT solutions after completing the docs.
+keywords: [tagocore, iot, getting started, community, open source]
 ---
 
 # You're Ready to Build Amazing IoT Solutions!

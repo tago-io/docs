@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: Core
 slug: /tagocore/plugins/create/core
+description: API reference for the TagoCore SDK core object to manage devices, actions, analyses, and device data.
+keywords: [tagocore, iot, plugin, sdk, api, core]
 ---
 
 # Core

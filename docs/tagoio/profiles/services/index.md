@@ -2,6 +2,7 @@
 title: "Services Overview"
 description: "A concise overview of the services available in TagoIO, how usage is measured, and where to view limits and history for each service."
 tags: ["tagoio"]
+keywords: [tagoio, iot, services, usage, limits]
 ---
 ## Overview
 

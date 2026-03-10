@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Module - Payload Encoder
 slug: /tagocore/plugins/create/encoder
+description: Encode device data before it reaches a device using the PayloadEncoderModule in TagoCore plugins.
+keywords: [tagocore, iot, plugin, payload encoder, module, data processing]
 ---
 
 # Payload Encoder Module

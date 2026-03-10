@@ -2,6 +2,7 @@
 title: "Step Button Widget"
 description: "This article explains how the Step Button widget lets users increment or decrement numeric or clock values using (-) and (+) controls, and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, step button, input]
 ---
 Step button allows users to increase and decrease values of a number or clock by using the (-) and (+) buttons.
 

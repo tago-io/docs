@@ -2,6 +2,7 @@
 title: "Images and Links in the Map's Pins"
 description: "This article explains how developers can add an image and a URL to each map pin in the Map widget and where to find the widget settings to configure them."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, map, pins]
 ---
 Developers can add an image and a URL link to each pin on the map.
 

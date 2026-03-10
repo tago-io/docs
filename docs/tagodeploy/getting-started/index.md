@@ -1,6 +1,7 @@
 ---
 title: "TagoDeploy"
 description: "A brief overview of Tago Deploy, a dedicated single-tenant IoT platform built on the TagoIO architecture, with an architecture overview and pointers to core capabilities, add-on services, and implementation considerations."
+keywords: [tagodeploy, iot, single-tenant, enterprise, infrastructure]
 slug: /tagodeploy
 ---
 

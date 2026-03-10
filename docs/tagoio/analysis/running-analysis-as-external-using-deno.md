@@ -2,6 +2,7 @@
 title: "Running Analysis as External using Deno"
 description: "This article explains how to run a TagoIO Analysis externally using the Deno runtime, covering installing Deno, creating an analysis TypeScript file, required permissions, and how to run the analysis with Deno."
 tags: ["tagoio", "analysis"]
+keywords: [tagoio, iot, analysis, deno, external runtime]
 ---
 Analysis enables you to create powerful applications on TagoIO. When creating an Analysis, you can choose to run it on TagoIO or externally on your own infrastructure.
 

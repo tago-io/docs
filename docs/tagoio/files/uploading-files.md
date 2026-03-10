@@ -2,6 +2,7 @@
 title: "Uploading Files"
 description: "This article explains how to upload files using the TagoIO admin platform, the default access setting for uploaded files, and a reminder about file visibility when using widgets."
 tags: ["tagoio"]
+keywords: [tagoio, iot, files, uploading, file management]
 ---
 To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the `Upload File` button in the top-right corner of the page.
 

@@ -2,6 +2,7 @@
 title: "Authorization"
 description: "This article explains what an Authorization is in TagoIO, when to use it versus a device-token, and how to generate an authorization for integrating external services with your devices."
 tags: ["tagoio", "security"]
+keywords: [tagoio, iot, authorization, integration, security]
 ---
 
 Authorization is used when you need to grant external services access to your

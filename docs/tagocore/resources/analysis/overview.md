@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Analysis Overview
 slug: /tagocore/analysis
+description: Create and run custom analysis scripts in any programming language to process IoT device data in TagoCore.
+keywords: [tagocore, iot, analysis, scripting, data processing]
 ---
 
 # Analysis

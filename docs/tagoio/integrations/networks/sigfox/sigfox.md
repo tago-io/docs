@@ -2,7 +2,7 @@
 title: "Sigfox"
 description: "This article explains how to integrate Sigfox with the TagoIO platform, describing uplink/downlink concepts and listing the setup steps and related internal documentation links."
 tags: ["tagoio"]
-
+keywords: [tagoio, iot, sigfox, integration, uplink, downlink]
 sidebar_position: 1
 ---
 

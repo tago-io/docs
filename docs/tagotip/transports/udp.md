@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: UDP
 title: TagoTiP over UDP
+description: "Send IoT data over UDP with zero connection overhead, ideal for battery-powered sensors and fire-and-forget use cases."
+keywords: [tagotip, iot, udp, datagram, low power]
 ---
 
 # TagoTiP over UDP

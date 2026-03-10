@@ -2,6 +2,7 @@
 title: "Image Marker Widget"
 description: "A short guide to the Image Marker widget in TagoIO, explaining its purpose, configurable features, and how to add and customize it on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, image marker, location]
 ---
 The image marker widget allows you to place pins on images and customize each pin's color, value, and icon. Use it to annotate floor plans, maps, and other visuals with live or historical data.
 

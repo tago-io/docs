@@ -2,6 +2,7 @@
 title: "Sens'it with Sigfox"
 description: "This article explains how to integrate Sens'it v2 and v3 devices with TagoIO using the Sigfox backend, how to activate a Sens'it devkit, and how to add the device to TagoIO so its data can be displayed or processed."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sensit, sigfox, device integration]
 ---
 
 TagoIO is fully integrated with Sens'it v2 and v3 devices. This integration uses

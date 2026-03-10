@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Code
 slug: /tagocore/analysis/code
+description: Write analysis code in any language to process device data in TagoCore using the T_ANALYSIS_DATA environment variable.
+keywords: [tagocore, iot, analysis, code, scripting, data processing]
 ---
 
 # Analysis Code

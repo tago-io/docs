@@ -2,6 +2,7 @@
 title: "Usage Policy"
 description: "This article describes how TagoIO enforces API usage limits, how transaction rate limits apply to accounts and tokens, and where to find related documentation and plan-based service limits."
 tags: ["tagoio"]
+keywords: [tagoio, iot, usage policy, api limits, rate limits]
 ---
 When executing API requests to TagoIO — either posting (data input) or getting (data output) — your account may be subject to usage limits configured in your [My Billing](https://admin.tago.io/account/billing) settings.
 

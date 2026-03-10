@@ -2,6 +2,7 @@
 title: "Clock Widget"
 description: "This article explains how the Clock widget displays time for a selected timezone, including how the seconds ring works and how the widget follows 12‑ or 24‑hour format based on account preferences."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, clock, timezone]
 ---
 Clock gauges allow you to visualize the time in a specific timezone. The widget can show the timezone, weekday, hour, minutes, and seconds.
 

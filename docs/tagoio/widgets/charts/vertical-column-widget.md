@@ -2,6 +2,7 @@
 title: "Vertical Column Widget"
 description: "A brief guide to the Vertical Column Widget in TagoIO, explaining what it does, configurable features (like Formula, metadata, and series), and the first configuration field ('Data From') used to select device and variable data for the widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, vertical column chart, data visualization]
 ---
 Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), choose whether series are stacked, and more.
 

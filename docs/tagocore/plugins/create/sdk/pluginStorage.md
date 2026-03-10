@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: Plugin Storage
 slug: /tagocore/plugins/create/pluginstorage
+description: Use the key-value database in TagoCore plugins to store, retrieve, and delete persistent data.
+keywords: [tagocore, iot, plugin, storage, key-value, sdk]
 ---
 
 # Plugin Storage

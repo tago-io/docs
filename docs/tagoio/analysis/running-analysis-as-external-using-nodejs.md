@@ -2,6 +2,7 @@
 title: "Running Analysis as External using Node.JS"
 description: "This article explains why and how to run a TagoIO Analysis externally using Node.js, and provides the first steps to prepare your local environment (installing Node.js and NPM) before running or uploading analyses."
 tags: ["tagoio", "analysis"]
+keywords: [tagoio, iot, analysis, nodejs, external runtime]
 ---
 Analysis is what allows you to create powerful applications on TagoIO. When creating an analysis, you must choose whether it will run on TagoIO or externally on your own machine.
 

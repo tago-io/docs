@@ -2,6 +2,7 @@
 title: "Analysis Service"
 description: "This article explains how Analysis runtime is counted against a Profile limit in TagoIO, how to estimate monthly runtime, and which scripts are included in the accounting."
 tags: ["tagoio", "analysis"]
+keywords: [tagoio, iot, analysis, runtime, service limits]
 ---
 
 Every time an Analysis runs one script, its runtime duration (measured in 1-second increments) is counted against the limit in that specific Profile. This limit defines the total available runtime your Analyses can use inside TagoIO.

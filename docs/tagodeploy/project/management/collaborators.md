@@ -1,6 +1,7 @@
 ---
 title: "Collaborators"
 description: "Add and manage collaborators to your project."
+keywords: [tagodeploy, iot, collaborators, team, permissions]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/management/collaborators
 ---

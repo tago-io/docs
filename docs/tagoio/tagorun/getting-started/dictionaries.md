@@ -2,6 +2,7 @@
 title: "Dictionaries"
 description: "This article describes TagoIO's Dictionaries feature, which lets you translate and customize text messages used in dashboards, widgets, variables, and the RUN application. It explains how to substitute texts per language and points to setup and customization references."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, dictionaries, translation, multi-language]
 ---
 The innovative dictionary feature from TagoIO enables you to improve your application by editing any displayed messages and providing your solution in multiple languages. Use dictionaries to substitute texts across dashboards, widgets, variables, and the RUN application (including the mobile app).
 

@@ -2,6 +2,7 @@
 title: "Grouping Variables"
 description: "This article explains how to synchronize multiple variables sent by a device using the JSON \"group\" field so they can be visualized together (for example, in tables or maps). It describes the problem with mismatched timestamps and how to use grouped samples to keep related variables in sync."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, variables, grouping, data synchronization]
 ---
 It is expected that most [devices](/docs/tagoio/devices/) will send more than one variable at a given time. When visualizing the data, users often want those variables synchronized for each sample period.
 

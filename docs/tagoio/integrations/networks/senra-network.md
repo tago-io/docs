@@ -2,6 +2,7 @@
 title: "SenRa Network"
 description: "This article explains how to integrate a LoRaWAN device with SenRa Network and TagoIO, focusing on the TagoIO device setup and the token required for uplink data."
 tags: ["tagoio"]
+keywords: [tagoio, iot, senra, lorawan, integration]
 ---
 Using this article, you will learn how to integrate a LoRaWAN device with SenRa Network and TagoIO.
 

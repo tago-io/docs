@@ -1,6 +1,7 @@
 ---
 title: "In-Memory Database"
 description: "Overview of the distributed in-memory database for caching, queues, and real-time data, including scaling and monitoring."
+keywords: [tagodeploy, iot, in-memory database, caching, scaling]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/in-memory-database
 ---

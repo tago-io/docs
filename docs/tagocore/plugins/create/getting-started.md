@@ -3,6 +3,8 @@ sidebar_position: 1
 title: Plugin - Getting Started
 sidebar_label: Getting Started
 slug: /tagocore/plugins/create
+description: Step-by-step tutorial for creating your first TagoCore plugin using the Plugin SDK and Node.js.
+keywords: [tagocore, iot, plugin, sdk, tutorial, nodejs]
 ---
 
 # Getting Started

@@ -2,6 +2,7 @@
 title: "Restoring your Dashboard to a Previous Version"
 description: "This article explains how TagoIO Admin automatically creates backup versions of dashboards and how to access and restore a dashboard to a previously saved version."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, restore, version history, backup]
 ---
 In TagoIO Admin, each time you make changes to your dashboards and widgets, the system automatically generates a backup version of each action taken. This ensures you can revert to a previous version of your dashboard if you encounter issues or want to undo recent modifications.
 

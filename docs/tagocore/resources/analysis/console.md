@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Console
 slug: /tagocore/analysis/console
+description: Monitor analysis output, debug messages, and errors in real time using the TagoCore analysis console.
+keywords: [tagocore, iot, analysis, console, debugging, logs]
 ---
 
 # Analysis Console

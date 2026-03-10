@@ -2,6 +2,7 @@
 title: "MQTT Retain on TagoIO Broker"
 description: "This article explains how to implement an MQTT \"retain\"-like behavior on the TagoIO MQTT broker using Actions or Analysis to store and resend the last message when a new client subscribes."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, retain, broker]
 ---
 :::warning
 

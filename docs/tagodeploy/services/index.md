@@ -1,6 +1,7 @@
 ---
 title: "Services"
 description: "Overview of Services in TagoDeploy, including Middleware and MQTT Broker options and how to assign them to projects."
+keywords: [tagodeploy, iot, services, middleware, mqtt]
 tags: ["tagodeploy"]
 slug: /tagodeploy/services/overview
 ---

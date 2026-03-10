@@ -2,6 +2,7 @@
 title: "Device Emulator Functions"
 description: "This article explains how to use built-in functions in the Device Emulator payloads, shows JSON and CSV examples, and lists the available emulator functions and their behavior."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, emulator, functions, testing]
 ---
 Functions are helper variables you can add to your payload when using the [Device Emulator](/docs/tagoio/devices/simulator-data-stream.md). Each function serves a specific purpose. To insert a function into your payload, click the `Functions` button and select the desired function.
 

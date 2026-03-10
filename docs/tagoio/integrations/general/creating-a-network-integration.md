@@ -2,6 +2,7 @@
 title: "Creating a Network Integration"
 description: "This article explains how to create a new Network integration in TagoIO and describes the configurable parameters available after creation."
 tags: ["tagoio", "integration"]
+keywords: [tagoio, iot, network integration, custom network, connector]
 sidebar_position: 1
 ---
 

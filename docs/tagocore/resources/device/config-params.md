@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: Configuration Parameters
 slug: /tagocore/device/configuration-parameter
+description: Send key-value configuration parameters to your IoT devices remotely through TagoCore.
+keywords: [tagocore, iot, device, configuration, parameters, remote settings]
 ---
 
 # Configuration Parameters

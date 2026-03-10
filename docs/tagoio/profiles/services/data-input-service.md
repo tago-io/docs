@@ -2,6 +2,7 @@
 title: "Data Input Service"
 description: "This article explains how TagoIO counts Data Input Transactions when devices send data, and where to view limits and usage history for each Profile. It also reminds you to estimate your monthly transaction volume."
 tags: ["tagoio"]
+keywords: [tagoio, iot, data input, transactions, service limits]
 ---
 Each time a device sends data to TagoIO, the system counts one Data Input Transaction for each variable included in that payload.
 

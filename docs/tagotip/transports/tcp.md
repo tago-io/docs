@@ -2,6 +2,8 @@
 sidebar_position: 2
 sidebar_label: TCP
 title: TagoTiP over TCP
+description: "Send IoT data over persistent TCP connections with guaranteed delivery and real-time server-pushed commands."
+keywords: [tagotip, iot, tcp, persistent connection, tls]
 ---
 
 # TagoTiP over TCP

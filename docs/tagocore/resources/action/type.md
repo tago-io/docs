@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Type
 slug: /tagocore/action/type
+description: Learn about TagoCore action types including running analysis scripts and sending HTTP requests to external services.
+keywords: [tagocore, iot, action types, automation, http requests, analysis]
 ---
 
 # Action Type

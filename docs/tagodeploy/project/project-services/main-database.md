@@ -1,6 +1,7 @@
 ---
 title: "Main Database"
 description: "Configure backups, scaling, and monitoring for the primary database that stores your TagoIO data."
+keywords: [tagodeploy, iot, database, backups, monitoring]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/main-database
 ---

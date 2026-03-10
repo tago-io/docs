@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: Quick Start
 title: Quick Start
+description: "Set up your device and authorization to start sending IoT data with TagoTiP over any transport."
+keywords: [tagotip, iot, quick start, setup, authorization]
 ---
 
 # Quick Start

@@ -1,6 +1,7 @@
 ---
 title: "Container Network Configuration"
 description: "Configure protocol, port mappings, TLS, and load balancer integration for container networking."
+keywords: [tagodeploy, iot, container, network, tls]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/network
 ---

@@ -2,6 +2,7 @@
 title: "Orbiwise LoRaWAN™"
 description: "This article provides a step-by-step guide to integrate Orbiwise LoRaWAN™ with the TagoIO platform, enabling uplink and downlink data exchange between your LoRaWAN devices and TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, orbiwise, lorawan, integration]
 ---
 This tutorial provides a step-by-step guide to integrate **Orbiwise** LoRaWAN™ with the TagoIO Platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 

@@ -2,6 +2,7 @@
 title: "machineQ LoRaWAN™"
 description: "This article provides a step-by-step guide to integrate machineQ LoRaWAN™ with the TagoIO platform, enabling uplink and downlink operations between your LoRaWAN devices and the TagoIO application."
 tags: ["tagoio"]
+keywords: [tagoio, iot, machineq, lorawan, integration]
 ---
 
 This tutorial provides a step-by-step guide to integrate machineQ LoRaWAN™ with

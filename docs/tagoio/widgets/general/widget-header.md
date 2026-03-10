@@ -2,6 +2,7 @@
 title: "Widget Header"
 description: "This article explains the Widget Header feature, which lets you add customized buttons to a widget's header to improve dashboard workflow. It shows the header buttons UI layout and an example of a widget using header buttons."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widgets, header buttons, dashboard]
 ---
 
 The widget header enables you to add customized buttons to the header of your widget in order to improve the flow of your dashboard.

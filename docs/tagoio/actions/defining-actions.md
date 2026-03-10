@@ -2,6 +2,7 @@
 title: "Defining Actions"
 description: "This article explains how to define Actions in TagoIO, including how to configure push notifications to yourself and references for using message variables."
 tags: ["tagoio", "actions"]
+keywords: [tagoio, iot, actions, notifications, configuration]
 sidebar_position: 1
 ---
 

@@ -2,6 +2,7 @@
 title: "Tile Widget"
 description: "A brief overview of the Tile widget in TagoIO, how it simplifies dashboard interactions by displaying clickable images, and initial steps for adding a Tile widget to a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, tile, dashboard navigation]
 ---
 Tiles allow you to simplify how users interact with your dashboards by providing a more intuitive and visually appealing set of options.
 

@@ -2,6 +2,7 @@
 title: "Secrets"
 description: "This article explains what Secrets are in TagoIO, why to use them, and how to create a secret in the Admin panel. It also points to related documentation for Environment Variables, Analysis, and Actions."
 tags: ["tagoio"]
+keywords: [tagoio, iot, secrets, encryption, security]
 ---
 Secrets are encrypted environment variables used to store sensitive information such as passwords and API keys. Each secret consists of a key (the secret's name) and a value (the sensitive data). Secrets keep their contents hidden once encrypted, making them safer than regular environment variables for confidential data.
 

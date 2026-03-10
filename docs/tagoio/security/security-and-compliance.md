@@ -2,6 +2,7 @@
 title: "Security and Compliance"
 description: "This article outlines TagoIO's approach to information security and compliance, highlighting the company's ISO 27001 certification and its commitments under the EU General Data Protection Regulation (GDPR)."
 tags: ["tagoio", "security"]
+keywords: [tagoio, iot, security, compliance, iso 27001, gdpr]
 ---
 At TagoIO, we understand that the foundation of trust with our customers is built on the assurance of information security and adherence to legal standards. Our commitment to data privacy and security is embedded in every part of our business. Our proactive approach to security, compliance policies, and dedication to legal obligations are at the core of our operations, providing you with the confidence that your information is in safe hands.
 

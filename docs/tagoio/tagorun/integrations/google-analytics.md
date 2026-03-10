@@ -2,6 +2,7 @@
 title: "Google Analytics"
 description: "This article explains how to integrate a RUN application with Google Analytics, obtain the Measurement ID, and use it in TagoIO to track users and gather insights."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, google analytics, tracking, integration]
 ---
 You can integrate your RUN application with Google Analytics to track users and obtain actionable insights. Google Analytics lets you analyze in-depth details about your RUN users and provides data to help improve your solution.The tool can provide valuable insights to help you improve your solution based on real data.
 

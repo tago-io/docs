@@ -2,6 +2,7 @@
 title: "Grain Bin Widget"
 description: "This article explains the Grain Bin widget for TagoIO, its purpose, and how to add and customize it on your dashboard. It also notes that the widget accepts metadata set in your variable data."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, grain bin, gauge]
 ---
 The Grain Bin widget produces a grain-bin illustration so you can easily track variable information.
 

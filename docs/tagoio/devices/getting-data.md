@@ -2,6 +2,7 @@
 title: "Getting Data"
 description: "This article explains how to request data from the TagoIO API, including the required regional endpoint, authorization header, endpoint URL, and available query parameters with their types and descriptions."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, API, get data, query parameters]
 ---
 :::info
 

@@ -1,6 +1,7 @@
 ---
 title: "TagoIO Documentation"
 description: "Complete documentation for TagoIO, TagoRUN, TagoCore, and TagoDeploy platforms"
+keywords: [tagoio, iot, documentation, platform, getting started]
 slug: /
 ---
 

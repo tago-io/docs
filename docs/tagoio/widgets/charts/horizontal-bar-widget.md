@@ -2,6 +2,7 @@
 title: "Horizontal Bar Widget"
 description: "A brief guide to the Horizontal Bar Widget that explains what it does, notes supported variable features, and documents the \"Data From\" field used to select device and variable inputs for the widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, horizontal bar chart, data visualization]
 ---
 Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), decide whether bars are stacked, and configure other visual options.
 

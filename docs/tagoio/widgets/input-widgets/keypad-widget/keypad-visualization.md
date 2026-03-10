@@ -2,6 +2,7 @@
 title: "Keypad Visualization"
 description: "This article explains the keypad visualization options for the TagoIO Keypad widget, including how to customize colors, visualization toggles, and additional button configuration options."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, keypad, visualization]
 ---
 The numeric keypad contains 10 digits that range from 0–9; it also contains an asterisk (*) and a number sign (#).
 

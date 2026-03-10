@@ -1,6 +1,7 @@
 ---
 title: "MQTT Certificates"
 description: "Enable TLS/SSL certificates for your MQTT broker, including required files and MTLS option."
+keywords: [tagodeploy, iot, mqtt, certificates, tls]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/certificates
 ---

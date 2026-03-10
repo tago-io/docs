@@ -2,6 +2,7 @@
 title: "Dynamic Table Widget"
 description: "This article describes the Dynamic Table widget in TagoIO, how it populates rows dynamically as data arrives, and how to customize its appearance and behavior (including metadata and series support)."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, dynamic table, data visualization]
 ---
 Dynamic tables are tables that populate dynamically as your data arrives while keeping the history of previous values in each row.
 

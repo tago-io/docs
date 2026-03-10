@@ -2,6 +2,7 @@
 title: "Creating a Sandbox"
 description: "This article explains what a sandbox is in TagoIO and how to create and use a sandbox (a separate profile) to safely test applications without affecting critical apps or users. It also covers collaboration tips for sharing sandboxes with other developers."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sandbox, testing, profiles]
 ---
 *Sandbox* refers to an isolated testing environment that enables developers to run applications without affecting other applications that have critical devices or users connected.
 

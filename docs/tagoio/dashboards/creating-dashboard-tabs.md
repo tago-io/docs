@@ -2,6 +2,7 @@
 title: "Creating Dashboard Tabs"
 description: "Learn how to create and manage dashboard tabs in TagoIO to divide dashboards into multiple sections and add links to organize your applications effectively."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, tabs, navigation]
 ---
 
 # Creating Dashboard Tabs

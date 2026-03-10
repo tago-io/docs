@@ -2,6 +2,7 @@
 title: "Data Analytics"
 description: "This article explains how Data Analytics transforms raw sensor data into actionable insights using visual calculations, lists the widgets that support Data Analytics, and provides a table of available analytic functions with their descriptions."
 tags: ["tagoio"]
+keywords: [tagoio, iot, data analytics, widgets, calculations]
 ---
 Transform your raw sensor data into actionable insights using visual calculations. Data Analytics enables operations such as averaging, summing, finding maximum and minimum values, and more, directly on your widget variables. This feature also lets you filter data, apply mathematical computations, visualize data as numbers, analyze trends, and perform other data transformations.
 

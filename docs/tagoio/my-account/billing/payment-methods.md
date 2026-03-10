@@ -2,6 +2,7 @@
 title: "Payment Methods"
 description: "This article describes the payment methods accepted by TagoIO, options for invoice payments and yearly plans, and how to arrange purchases of credits."
 tags: ["tagoio"]
+keywords: [tagoio, iot, payment methods, credit card, invoice]
 ---
 ## Accepted payment methods
 TagoIO accepts most major credit cards for payment.

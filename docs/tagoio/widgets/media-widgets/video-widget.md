@@ -2,6 +2,7 @@
 title: "Video Widget"
 description: "This article explains how to use the Video widget to present custom videos in TagoIO dashboards and summarizes the widget’s behavior and related references."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, video, media]
 ---
 The Video widget provides the ability to present custom videos in your dashboard. Use it to show a company or customer video, product demos, or any visual content that helps users better understand your application.
 

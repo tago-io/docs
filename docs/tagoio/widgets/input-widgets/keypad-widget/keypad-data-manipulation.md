@@ -2,6 +2,7 @@
 title: "Keypad Data Manipulation"
 description: "Explains the data structure the TagoIO Keypad widget sends when users enter PINs or press custom buttons, with examples and guidance on extracting that data using an analysis via the User Control tab."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, keypad, data manipulation]
 ---
 The keypad sends data either when a custom button is pressed or when a combination is entered and left for 3 seconds. The values are delivered as a single string variable following a simple structure.
 

@@ -2,6 +2,7 @@
 title: "ABS Telemetry"
 description: "This article explains how to integrate ABS Telemetry devices with TagoIO, covering the required ABS configurator download and the initial ABS device configuration steps."
 tags: ["tagoio"]
+keywords: [tagoio, iot, abs telemetry, cellular, device integration]
 ---
 Devices from ABS Telemetry can be easily integrated with TagoIO. The integration allows uplink communication between the device and TagoIO while parsing messages to extract commands and variables in real time.
 

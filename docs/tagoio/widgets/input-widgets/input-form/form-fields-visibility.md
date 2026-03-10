@@ -2,6 +2,7 @@
 title: "Form Fields Visibility"
 description: "This article explains how Fields Visibility in the Input Form widget lets you control which form fields are shown or hidden based on other fields' values, and summarizes the main benefits of using this feature."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, input form, fields visibility]
 ---
 Fields Visibility lets you control the visibility of specific fields in your Input Form widget. By defining conditions, you can hide or show fields based on the values of other fields.
 

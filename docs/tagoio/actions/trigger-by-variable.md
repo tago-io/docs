@@ -2,6 +2,7 @@
 title: "Trigger by Variable"
 description: "This article explains the \"Trigger by Variable\" action type in TagoIO, describing its two categories (Single device and Multiple devices), how each works, and a note about Trigger Unlock availability."
 tags: ["tagoio"]
+keywords: [tagoio, iot, actions, triggers, variables]
 ---
 The trigger type, [Actions](/docs/tagoio/actions/), Trigger by Variable, allows you to execute an action when a variable meets specified conditions. If a device sends data and the variables meet those conditions, the action will be triggered.
 
