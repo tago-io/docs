@@ -18,6 +18,7 @@
     ".crush",
     ".claude",
     ".mdx",
-    "lib"
+    "lib",
+    "docs/tagotip/specification"
   ]
 }

@@ -22,7 +22,7 @@ Scrape and migrate TagoIO documentation from https://help.tago.io/portal/en/kb t
 ## Current Repository Status
 
 - Docusaurus site configured and running
-  - Node >= 18 required
+  - Node >= 22 required
   - Root scripts: npm run start | build | serve | typecheck | check
 - Documentation coverage in repo
   - Total: 327 markdown files across tagoio, tagocore, tagodeploy, tagotip sections
@@ -64,7 +64,7 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
   - `DOCS_CERT_ARN`: ACM cert ARN for `docs.tago.io` (CN `docs.tago.io`).
   - `REDIRECTS_CERT_ARN`: ACM cert ARN for `help.tago.io` (CN) with SAN `changelog.tago.io`, `api.docs.tago.io`.
   - Set these in GitHub Actions as secrets and export to env for the CDK step.
-- Redirect Function: cdk/redirect-function.js - CloudFront edge function (attached to the redirects distribution)
+- Redirect Function: cdk/docusaurus-routing-function.js - CloudFront edge function (attached to the redirects distribution)
   - Maps 250+ legacy `help.tago.io/portal/en/kb/...` URLs to new documentation paths under docs.tago.io
   - Handles community topics: `/portal/en/community/topic/{topic}` → `https://community.tago.io/t/{topic}`
   - Root of help: `/` → `https://support.tago.io`
@@ -105,7 +105,7 @@ Local mapping mirrors the original taxonomy (Devices, Dashboards, Widgets, Actio
   - duplicate-analysis-\*.json – Reports for potential duplicates
 - Mappings and data
   - url-mapping-solution.js – Functions to convert help.tago.io URLs to local paths
-  - redirect-mappings.json, url-mappings.json – Mapping sources (root)
+  - redirect-mappings.json, url-mappings.json – Mapping sources
   - map_old2new.json, tagoio-sections.json – Additional mapping/structure helpers
   - articles-data.json, processed-articles.json, failed-articles.json – Processing logs
 - Other utilities
@@ -236,7 +236,7 @@ OXC configuration reference
 ## How to write a new documentation article (for agents)
 
 - Pick the right location
-  - Choose the product area and folder under docs/: tagoio/, tagorun/, tagodeploy/, or tagocore/
+  - Choose the product area and folder under docs/: tagoio/, tagodeploy/, tagocore/, or tagotip/
   - Use existing subfolders (e.g., widgets/, dashboards/, devices/, etc.) to match taxonomy
 - Name the file
   - Use kebab-case for filenames, e.g., `my-new-topic.md`
@@ -266,7 +266,7 @@ OXC configuration reference
 - Links
   - Prefer relative links within the same area: `../services/services-overview`
   - Cross-area links should use absolute docs paths: `/tagoio/widgets/widgets-overview`
-  - If replacing a legacy help.tago.io article, add a mapping entry in url-mappings.json (and redirects if needed)
+  - If replacing a legacy help.tago.io article, add a redirect entry in cdk/docusaurus-routing-function.js
 - Embeds and code
   - YouTube: `<YouTube videoId="XXXXXXXXXXX" />`
   - Mermaid: `<Mermaid chart={`graph LR\n A[Start] --> B{Choice} \n B -->|Yes| C[Do thing] \n B -->|No| D[Stop]`} />`
