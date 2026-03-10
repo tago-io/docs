@@ -74,6 +74,9 @@ const config: Config = {
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "ignore",
         },
+        sitemap: {
+          ignorePatterns: ["/changelog/**", "/search", "/markdown-page"],
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -92,6 +95,30 @@ const config: Config = {
             specPath: "specs/tagoio-api.yaml",
             outputDir: "docs/api",
           },
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: "docs",
+        title: "TagoIO Docs",
+        description:
+          "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
+        includeBlog: false,
+        ignoreFiles: ["api/**"],
+        logLevel: "normal",
+      },
+    ],
+    [
+      "@acid-info/docusaurus-og",
+      {
+        path: "./preview-images",
+        imageRenderers: {
+          "docusaurus-plugin-content-docs": require("./lib/docs-renderer")
+            .docsRenderer,
         },
       },
     ],

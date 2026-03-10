@@ -5,9 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "sync:tagotip": "node scripts/sync-tagotip.mjs",
-    "prestart": "npm run sync:tagotip",
+    "prestart": "tsc --project tsconfig.og.json && npm run sync:tagotip",
     "start": "docusaurus start -h 0.0.0.0",
-    "prebuild": "npm run sync:tagotip",
+    "prebuild": "tsc --project tsconfig.og.json && npm run sync:tagotip",
     "build": "rm -rf build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -27,6 +27,7 @@
     "cdk:deploy": "npm run cdk:deploy:docs && npm run cdk:deploy:redirects"
   },
   "dependencies": {
+    "@acid-info/docusaurus-og": "^1.0.3-beta.2",
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@docusaurus/theme-mermaid": "^3.9.2",
@@ -49,6 +50,7 @@
     "aws-cdk": "^2.1105.0",
     "aws-cdk-lib": "2.238.0",
     "constructs": "^10.0.0",
+    "docusaurus-plugin-llms": "^0.3.0",
     "source-map-support": "^0.5.21",
     "tsx": "^4.7.0",
     "typescript": "~5.9.3"

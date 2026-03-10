@@ -3,3 +3,5 @@
 User-agent: *
 Disallow: /changelog/
 Disallow: /changelog
+
+Sitemap: https://docs.tago.io/sitemap.xml
