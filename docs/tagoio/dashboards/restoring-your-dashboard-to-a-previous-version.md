@@ -4,28 +4,33 @@ description: "This article explains how TagoIO Admin automatically creates backu
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, restore, version history, backup]
 ---
+
 In TagoIO Admin, each time you make changes to your dashboards and widgets, the system automatically generates a backup version of each action taken. This ensures you can revert to a previous version of your dashboard if you encounter issues or want to undo recent modifications.
 
 ## Accessing the restore option
+
 To access the restore feature, open your dashboard in edit mode and click the "Restore dashboard to a previous version" button.
 
 <!-- Image placeholder removed for build -->
 
 ## Choosing and restoring a version
+
 A chronological list of your dashboard versions will appear, with each entry timestamped so you can identify when each backup was created. Select the desired version from the list and proceed to restore it.
 
 <!-- Image placeholder removed for build -->
 
 ### Version limits per plan
+
 The number of versions you can have is predefined by your plan:
 
-| Plan   | Versions per dashboard |
-|--------|------------------------|
-| Free   | 5                      |
-| Starter| 50                     |
-| Scale  | 150                    |
+| Plan    | Versions per dashboard |
+| ------- | ---------------------- |
+| Free    | 5                      |
+| Starter | 50                     |
+| Scale   | 150                    |
 
 Every time you restore a version, the system creates a new version post‑restoration. This ensures that you maintain a comprehensive and uninterrupted historical record of your dashboard’s evolution.
 
 ## Advanced Settings
+
 In the **Advanced settings** section, you have fine‑grained control over what is restored. For instance, if you want to retrieve only the tags from a previous version, simply select the tags; all other elements remain unchanged. By default, the system restores the entire dashboard.

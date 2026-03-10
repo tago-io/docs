@@ -5,14 +5,7 @@
   "projectTitle": "TagoIO Documentation",
   "description": "Official documentation for the TagoIO IoT platform, including TagoIO, TagoDeploy, TagoCore, TagoTiP, and the TagoIO REST API.",
   "folders": ["docs"],
-  "excludeFolders": [
-    "docs/api",
-    "changelog",
-    "cdk",
-    "node_modules",
-    "build",
-    ".docusaurus"
-  ],
+  "excludeFolders": ["docs/api", "changelog", "cdk", "node_modules", "build", ".docusaurus"],
   "excludeFiles": ["sync-tagotip.mjs"],
   "rules": [
     "TagoIO is an IoT (Internet of Things) cloud platform for device management, data storage, dashboards, and analysis.",

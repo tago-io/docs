@@ -4,6 +4,7 @@ description: "This article explains how to create a Ring Gauge custom widget for
 tags: ["tagoio", "widgets", "tutorial"]
 keywords: [tagoio, iot, custom widget, echarts, tutorial]
 ---
+
 In this tutorial, we will guide you through creating a Ring Gauge custom widget that displays multiple variables simultaneously in an interesting format.
 
 To achieve this, we leverage the [ECharts library](https://echarts.apache.org/), a robust and highly customizable charting library that simplifies the development of interactive and visually appealing data visualizations. Using ECharts can significantly speed up development and help ensure the custom widget is both efficient and aesthetically pleasing.
@@ -17,6 +18,7 @@ This tutorial is structured into three comprehensive sections to facilitate a sm
 3. Deploying your Custom Widget Code to TagoIO Files: Steps to deploy your widget code to the TagoIO Files section so it can be used within the platform.
 
 ## Installing Dependencies and Setting Up Your Development Environment
+
 We will walk you through the initial setup, including installation of required dependencies and configuration of your development environment. This ensures you have the tools and libraries needed for building and testing the Ring Gauge widget.
 
 ### Prerequisites
@@ -81,6 +83,7 @@ Once you have set up port forwarding, create the custom widget so that you can s
 By following these steps, you will have your custom widget up and running in your TagoIO dashboard.
 
 ## Key Components of Your Custom Widget
+
 This section covers the main components required to build the widget and how they interact:
 
 - `widget.tsx` — contains the widget logic, data handling, and integration points with TagoIO.
@@ -117,14 +120,15 @@ Key responsibilities:
 4. **Render the Widget** – ensures the gauge chart occupies the full available space.
 
 ## Deploying your Custom Widget Code to TagoIO Files
+
 Once your widget is ready and tested locally, this section explains how to upload and deploy the widget files to the TagoIO Files area so your custom widget becomes available in the platform.
 
 ### Creating the Custom Widget Folder and Getting Your Profile ID
 
-1. **Create a Folder in TagoIO Files**  
+1. **Create a Folder in TagoIO Files**
    - Go to your TagoIO Admin panel → **Files** module → create a new folder (e.g., `ring-gauge-widget`).
 
-2. **Retrieve Your Profile ID**  
+2. **Retrieve Your Profile ID**
    - Click on your account image in the top right corner → **My Account** → select the profile you are using → click **More** to find your profile ID and save it.
 
 ### Modify the `package.json` File for Your Use Case

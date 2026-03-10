@@ -4,6 +4,7 @@ description: "Learn how to use the Map Widget to visualize location variables of
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, map, geolocation]
 ---
+
 # Map Widget
 
 The Map Widget allows you to visualize the location variables of your device on a map, as well as customize the visualization in many ways. By default, the map widget uses OpenStreetMap as provider; however, you can integrate your preferred map provider like Mapbox, Google Maps, or Here to fit your needs.
@@ -27,15 +28,11 @@ The variable data should look like the following payload. Note that the 'lat' an
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
 
-
 ## Creating your own
 
 To add it to your dashboard, choose the Map widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
 <!-- Map widget creation image -->
-
-
-
 
 ## 1. 'Data From' Field
 
@@ -60,7 +57,6 @@ From the option 'Data From' on the right menu, add the [Blueprint device](/docs/
 When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 :::
-
 
 ## 2. Tile Provider
 
@@ -88,7 +84,6 @@ Once you have a Secret with your API key created, you can go to your **Map widge
 
 For instance, using Google Maps as a provider is quite simple. All you need to do is have a Google account and set up an API Key. Read the full tutorial here: [How to Set Up Google Maps in Your Map Widget](https://community.tago.io/t/how-to-set-up-google-maps-in-your-map-widget/1742)
 
-
 ## 3. Infobox
 
 Present more information with an infobox that'll automatically be associated with the pins, and customize it with icons, images, external links, street views, formulas, routes by GoogleMaps, and much more.
@@ -110,7 +105,6 @@ If a group of variables has more than one **external link** or **location data**
 
 :::
 
-
 ## 4. Filter
 
 The filter makes your data easier to visualize by allowing users to filter for results.
@@ -120,7 +114,6 @@ The filter makes your data easier to visualize by allowing users to filter for r
 You can filter pins by **device, variable, value,** and **time**. Filters also provide a table to list each pin that's being displayed, and you can click on a row to center it.
 
 Learn more about [Map filters](/docs/tagoio/widgets/map-and-location/map-widget/map-filters.md).
-
 
 ## 5. Geofence
 
@@ -133,7 +126,6 @@ You can draw polygon or circle figures and associate them with events, and build
 <YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
 Learn more about [Geofence in map widgets](/docs/tagoio/widgets/map-and-location/map-widget/geofences-in-map-widgets.md).
-
 
 ## 6. Layer GIS
 

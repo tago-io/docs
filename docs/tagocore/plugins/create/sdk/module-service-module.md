@@ -24,7 +24,7 @@ This sample starts an http server with [express](https://npmjs.com/package/expre
 
 ```js
 const { ServiceModule } = require("@tago-io/tcore-sdk");
-const express = require('express');
+const express = require("express");
 const app = express();
 let server = null;
 
@@ -36,8 +36,8 @@ const myService = new ServiceModule({
 // `onLoad` is used to run your code.
 // This function will be called once when your plugin gets loaded.
 myService.onLoad = async () => {
-  app.get('/', function (req, res) {
-    res.send('Hello World');
+  app.get("/", function (req, res) {
+    res.send("Hello World");
   });
   server = app.listen(3000);
 };
@@ -48,4 +48,3 @@ myService.onDestroy = async () => {
   server.close();
 };
 ```
-

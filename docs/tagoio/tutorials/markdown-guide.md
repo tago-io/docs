@@ -4,17 +4,19 @@ description: "This article summarizes the basic Markdown syntax supported in Tag
 tags: ["tagoio", "guide"]
 keywords: [tagoio, iot, markdown, formatting, guide]
 ---
+
 ## Emphasis
 
 Use Markdown to emphasize text:
 
 ```markdown
 **bold**
-*italics*
+_italics_
 ~~strikethrough~~
 ```
 
 Additional emphasis examples:
+
 - Italic using underscores: `_italic_`
 - Strikethrough with four tildes: `~~~~strikethrough~~~~`
 
@@ -24,8 +26,11 @@ Examples of header levels:
 
 ```markdown
 # Big header
+
 ## Medium header
+
 ### Small header
+
 #### Tiny header
 ```
 
@@ -34,9 +39,9 @@ Examples of header levels:
 Unordered list:
 
 ```markdown
-* Generic list item
-* Generic list item
-* Generic list item
+- Generic list item
+- Generic list item
+- Generic list item
 ```
 
 Ordered list:
@@ -84,7 +89,7 @@ Basic Markdown table example:
 
 ```markdown
 | Syntax    | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Header    | Title       |
 | Paragraph | Text        |
 ```
@@ -103,8 +108,8 @@ _Or without aligning the columns..._
 ```markdown
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |
-| John | Doe | Male |
-| Mary | Smith | Female |
+| John     | Doe      | Male     |
+| Mary     | Smith    | Female   |
 ```
 
 ## Displaying code
@@ -137,4 +142,5 @@ alert(example);
 ```
 
 References:
+
 - See the TagoIO Files interface for uploading images: [TagoIO Files](/docs/tagoio/files)

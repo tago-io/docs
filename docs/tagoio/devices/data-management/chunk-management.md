@@ -4,6 +4,7 @@ description: "This article explains how to use the Chunk Management feature to v
 tags: ["tagoio"]
 keywords: [tagoio, iot, devices, chunk management, data export, immutable]
 ---
+
 The Chunk Management feature lets you view and manage the data of Immutable devices to create backups or delete information.
 
 ## Accessing Chunk Management

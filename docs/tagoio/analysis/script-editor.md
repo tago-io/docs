@@ -1,9 +1,10 @@
 ---
 title: "Script Editor"
-description: "This article explains how to use the TagoIO Script Editor to create, edit, and run analysis scripts. It covers where to access the editor, key editor options (name, interval, run location), loading snippets or files, and shows a sample \"Hello World\" script."
+description: 'This article explains how to use the TagoIO Script Editor to create, edit, and run analysis scripts. It covers where to access the editor, key editor options (name, interval, run location), loading snippets or files, and shows a sample "Hello World" script.'
 tags: ["tagoio"]
 keywords: [tagoio, iot, analysis, script editor, coding]
 ---
+
 With the script editor, developers can create and edit their own scripts at TagoIO. These scripts are executed according to the configuration defined in the Analysis section.
 
 To use the script editor, go to [Analysis](/docs/tagoio/analysis/), then create or edit an analysis. Set the name, interval, and choose to run it at TagoIO.
@@ -15,6 +16,7 @@ The editor tab is only shown when you choose to run the script at TagoIO.
 :::
 
 By clicking the Analysis tab, you can open the editor. From there you can:
+
 - Load scripts from your computer
 - Download scripts from the editor
 - Choose from one of our snippet examples

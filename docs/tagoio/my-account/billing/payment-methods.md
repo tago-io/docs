@@ -4,16 +4,21 @@ description: "This article describes the payment methods accepted by TagoIO, opt
 tags: ["tagoio"]
 keywords: [tagoio, iot, payment methods, credit card, invoice]
 ---
+
 ## Accepted payment methods
+
 TagoIO accepts most major credit cards for payment.
 
 ## Invoice payments and bank transfers
+
 Making payments by invoice through ACH or wire transfer is available on request for Starter and Scale yearly plans.
 
 ## Yearly plans and purchasing credits
+
 TagoIO also offers a yearly plan with **flexible terms**. These terms allow companies to purchase credits that can be used for any service during the plan period.
 
 ## Contact to arrange payment
-Please [contact us](https://tago.io/contact-us) to arrange payment by invoice or to purchase credits.  
+
+Please [contact us](https://tago.io/contact-us) to arrange payment by invoice or to purchase credits.
 
 You may also reach out via email at **customercare@tago.io** with subject “Requesting information about yearly plans.”

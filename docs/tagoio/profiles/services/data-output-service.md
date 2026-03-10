@@ -4,6 +4,7 @@ description: "This article explains how Data Output transactions are counted in 
 tags: ["tagoio"]
 keywords: [tagoio, iot, data output, transactions, service limits]
 ---
+
 One transaction of Data Output is counted for each register read from a [device's](/docs/tagoio/devices/) data storage. Learn more in [Getting Data](/docs/tagoio/devices/getting-data.md).
 
 You need to define the **Data Output limit per month** for each Profile where your applications are running.

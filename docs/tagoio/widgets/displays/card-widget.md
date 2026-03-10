@@ -4,6 +4,7 @@ description: "This article explains how the Card widget displays the latest valu
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, card, display]
 ---
+
 Use Card to display the last value of a variable, its unit, and a mini‑chart. Card accepts links so that when users click on it, it can redirect them to another website, dashboard, or tab.
 
 ![Three Card widget examples showing value, unit, and mini-chart](/docs_imagem/tagoio/card-widget-2.gif)
@@ -22,7 +23,6 @@ For **Normal dashboards** you select one device from your list of devices and th
 For **Blueprint dashboards** you add a Blueprint device (see [Blueprint devices](/docs/tagoio/devices/blueprint-devices-entities.md)) and input the name of the variable.
 When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
-
 ### 2. Color options
 
 You can configure colors for the text, background, and mini‑chart based on conditions that use the value of the selected variable.
@@ -34,11 +34,11 @@ To let the Card use colors defined in the variable’s metadata, switch the opti
 
 Inside the metadata you can define the following fields:
 
-| Field | Description |
-|-------|-------------|
-| `color` | Text color |
+| Field              | Description             |
+| ------------------ | ----------------------- |
+| `color`            | Text color              |
 | `background_color` | Widget background color |
-| `chart_color` | Mini‑chart color |
+| `chart_color`      | Mini‑chart color        |
 
 Example JSON:
 

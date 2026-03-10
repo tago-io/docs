@@ -17,11 +17,13 @@ The console shows the most recent messages at the top, with each entry timestamp
 TagoCore automatically captures anything your code prints out and displays it in the console. This works with standard output methods in any programming language:
 
 **For normal messages** (information, debug output):
+
 - **Node.js**: Use `console.log("Your message")`
 - **Python**: Use `print("Your message")`
 - **Any language**: Write to standard output (stdout)
 
 **For error messages** (warnings, errors):
+
 - **Node.js**: Use `console.error("Error message")`
 - **Python**: Use `print("Error message", file=sys.stderr)`
 - **Any language**: Write to standard error (stderr)
@@ -29,6 +31,7 @@ TagoCore automatically captures anything your code prints out and displays it in
 ## Understanding Validation Errors
 
 Before your Analysis runs, TagoCore checks that everything is set up correctly:
+
 - Does the executable file exist and can it be run?
 - Does your script file exist and can it be accessed?
 - Are the file permissions correct?

@@ -19,53 +19,65 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Update Dictionary Language"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Update Dictionary Language"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/dictionary/{dictionary_id}/{language}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/dictionary/{dictionary_id}/{language}"} context={"endpoint"}></MethodEndpoint>
 
 Update Dictionary Language
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dictionary_id","in":"path","required":true,"schema":{"type":"string","example":"(Type Dictionary ID)"},"description":"Can be obtained in the GET Dictionary response"},{"name":"language","in":"path","required":true,"schema":{"type":"string","example":"Language Code"},"description":"Language that will be updated"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "dictionary_id",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "(Type Dictionary ID)" },
+      description: "Can be obtained in the GET Dictionary response",
+    },
+    {
+      name: "language",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "Language Code" },
+      description: "Language that will be updated",
+    },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"dictionary":{"type":"object","properties":{"test":{"type":"string","example":"teste"}}}}},"examples":{"Update Dictionary Language":{"value":{"dictionary":{"test":"teste"}}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: { dictionary: { type: "object", properties: { test: { type: "string", example: "teste" } } } },
+        },
+        examples: { "Update Dictionary Language": { value: { dictionary: { test: "teste" } } } },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Put Dictionary Language","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Dictionary language Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Put Dictionary Language",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Dictionary language Successfully Updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

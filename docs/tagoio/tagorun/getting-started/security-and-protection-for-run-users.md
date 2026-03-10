@@ -4,15 +4,16 @@ description: "This article explains how to use the Run module's Security and Pro
 tags: ["tagoio"]
 keywords: [tagoio, iot, tagorun, security, two-factor authentication, password]
 ---
+
 With TagoRUN, you can add actions and methods to increase your application's security and protect your Run users. These controls help your application comply with data-privacy and security laws by providing end-user safeguards to prevent inappropriate access to personal data.
 
 By accessing the [Run](https://admin.tago.io/run) module and selecting the "Security and Protection" tab, you can implement and customize:
+
 - How account delete requests will be processed
 - Two-Factor Authentication (2FA) options for end users
 - Password creation requirements (strength rules)
 - User session duration and management
 - Protection against automated (robot) activities using captcha
-
 
 ## Delete request process
 
@@ -33,6 +34,7 @@ You can choose to enable the following options:
 ## Two-Factor Authentication (2FA) for End-Users
 
 Enable 2FA to add an extra layer of security for user logins. Available methods in the Run UI include:
+
 - App Authenticator (recommended for most users)
 - SMS (note that SMS messages may incur billing)
 - Email (note that emails may incur billing)
@@ -42,13 +44,14 @@ You can also enforce 2FA if any method is enabled.
 
 :::info
 
-*Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service.* Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md).
+_Notice that each e‑mail and SMS sent to Run users will be counted as 1 transaction from the respective service._ Make sure to allocate the right amount of these resources to your profile. Read more about [Allocating Resources to profiles](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md).
 
 :::
 
 ## Password strength
 
 Configure password rules to meet your security policy:
+
 - Require upper and lower case letters
 - Require a mix of letters and numbers
 - Require special characters (examples: !, &, …)

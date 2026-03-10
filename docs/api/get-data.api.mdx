@@ -19,53 +19,146 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Get Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Get Data"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/data"} context={"endpoint"}></MethodEndpoint>
 
 Get data from the device.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"query","in":"query","schema":{"type":"string","enum":["count","min","max","avg","sum","last_item","last_location","aggregate","conditional"]},"description":"Select the query mode."},{"name":"qty","in":"query","schema":{"type":"integer","minimum":1,"example":20},"description":"Total quantity of data to retrieve."},{"name":"details","in":"query","schema":{"type":"boolean","example":true},"description":"Include additional fields (e.g., created_at)."},{"name":"ordination","in":"query","schema":{"type":"string","enum":["ascending","descending"],"example":"descending"},"description":"Sort order."},{"name":"skip","in":"query","schema":{"type":"integer","minimum":0,"example":15},"description":"Number of items to skip."},{"name":"variables","in":"query","schema":{"type":"string","example":"temperature"},"description":"Filter data by variable."},{"name":"values","in":"query","schema":{"type":"string","example":"25"},"description":"Filter data by value."},{"name":"groups","in":"query","schema":{"type":"string","example":"0923092039"},"description":"Filter by group identifier."},{"name":"start_date","in":"query","schema":{"type":"string","format":"date-time","example":"2022-09-09T10:28:44Z"},"description":"Start timestamp or relative date."},{"name":"end_date","in":"query","schema":{"type":"string","format":"date-time","example":"2022-09-10T10:28:44Z"},"description":"End timestamp or relative date."},{"name":"function","in":"query","schema":{"type":"string","enum":["avg","sum","min","max","gt","gte","lt","lte","eq","ne"],"example":"avg"},"description":"Allowed values depend on query mode: aggregate → avg,sum,min,max; conditional → gt,gte,lt,lte,eq,ne."}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "query",
+      in: "query",
+      schema: {
+        type: "string",
+        enum: ["count", "min", "max", "avg", "sum", "last_item", "last_location", "aggregate", "conditional"],
+      },
+      description: "Select the query mode.",
+    },
+    {
+      name: "qty",
+      in: "query",
+      schema: { type: "integer", minimum: 1, example: 20 },
+      description: "Total quantity of data to retrieve.",
+    },
+    {
+      name: "details",
+      in: "query",
+      schema: { type: "boolean", example: true },
+      description: "Include additional fields (e.g., created_at).",
+    },
+    {
+      name: "ordination",
+      in: "query",
+      schema: { type: "string", enum: ["ascending", "descending"], example: "descending" },
+      description: "Sort order.",
+    },
+    {
+      name: "skip",
+      in: "query",
+      schema: { type: "integer", minimum: 0, example: 15 },
+      description: "Number of items to skip.",
+    },
+    {
+      name: "variables",
+      in: "query",
+      schema: { type: "string", example: "temperature" },
+      description: "Filter data by variable.",
+    },
+    { name: "values", in: "query", schema: { type: "string", example: "25" }, description: "Filter data by value." },
+    {
+      name: "groups",
+      in: "query",
+      schema: { type: "string", example: "0923092039" },
+      description: "Filter by group identifier.",
+    },
+    {
+      name: "start_date",
+      in: "query",
+      schema: { type: "string", format: "date-time", example: "2022-09-09T10:28:44Z" },
+      description: "Start timestamp or relative date.",
+    },
+    {
+      name: "end_date",
+      in: "query",
+      schema: { type: "string", format: "date-time", example: "2022-09-10T10:28:44Z" },
+      description: "End timestamp or relative date.",
+    },
+    {
+      name: "function",
+      in: "query",
+      schema: {
+        type: "string",
+        enum: ["avg", "sum", "min", "max", "gt", "gte", "lt", "lte", "eq", "ne"],
+        example: "avg",
+      },
+      description:
+        "Allowed values depend on query mode: aggregate → avg,sum,min,max; conditional → gt,gte,lt,lte,eq,ne.",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Success Response","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"created_at":{"type":"string","example":"2021-09-16T17:51:43.672Z"},"device":{"type":"string","example":"612ea1694035dd0012f6d238"},"group":{"type":"string","example":"1631814703672"},"id":{"type":"string","example":"6143842f561c4e00199f517b"},"location":{"type":"object","properties":{"coordinates":{"type":"array","items":{"type":"number","example":-78.677328},"example":[-78.677328,35.770723]},"type":{"type":"string","example":"point"}}},"time":{"type":"string","example":"2021-09-16T17:51:43.672Z"},"unit":{"type":"string","example":"°C"},"value":{"type":"number","example":-12.67},"variable":{"type":"string","example":"temperature"}}},"example":[{"created_at":"2021-09-16T17:51:43.672Z","device":"612ea1694035dd0012f6d238","group":"1631814703672","id":"6143842f561c4e00199f517b","location":{"coordinates":[-78.677328,35.770723],"type":"point"},"time":"2021-09-16T17:51:43.672Z","unit":"°C","value":-12.67,"variable":"temperature"}]},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Success Response",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    created_at: { type: "string", example: "2021-09-16T17:51:43.672Z" },
+                    device: { type: "string", example: "612ea1694035dd0012f6d238" },
+                    group: { type: "string", example: "1631814703672" },
+                    id: { type: "string", example: "6143842f561c4e00199f517b" },
+                    location: {
+                      type: "object",
+                      properties: {
+                        coordinates: {
+                          type: "array",
+                          items: { type: "number", example: -78.677328 },
+                          example: [-78.677328, 35.770723],
+                        },
+                        type: { type: "string", example: "point" },
+                      },
+                    },
+                    time: { type: "string", example: "2021-09-16T17:51:43.672Z" },
+                    unit: { type: "string", example: "°C" },
+                    value: { type: "number", example: -12.67 },
+                    variable: { type: "string", example: "temperature" },
+                  },
+                },
+                example: [
+                  {
+                    created_at: "2021-09-16T17:51:43.672Z",
+                    device: "612ea1694035dd0012f6d238",
+                    group: "1631814703672",
+                    id: "6143842f561c4e00199f517b",
+                    location: { coordinates: [-78.677328, 35.770723], type: "point" },
+                    time: "2021-09-16T17:51:43.672Z",
+                    unit: "°C",
+                    value: -12.67,
+                    variable: "temperature",
+                  },
+                ],
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

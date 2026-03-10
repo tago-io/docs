@@ -19,22 +19,13 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Find Device by Serial"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Find Device by Serial"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/integration/network/resolve/{serieNumber}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Get a valid device-token using token serial number only. It will match the serial in any profile.
 :::warning  
@@ -42,34 +33,36 @@ If the serial number is duplicated between different profiles, you will get the 
 :::
 You must have a Network and a Network-Token to use this query.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"serieNumber","in":"path","required":true,"schema":{"type":"string"},"description":"Device Serial Number registered at TagoIO"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "serieNumber",
+      in: "path",
+      required: true,
+      schema: { type: "string" },
+      description: "Device Serial Number registered at TagoIO",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"got a valid token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"<string>"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "got a valid token",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { result: { type: "string", example: "<string>" }, status: { type: "boolean", example: true } },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

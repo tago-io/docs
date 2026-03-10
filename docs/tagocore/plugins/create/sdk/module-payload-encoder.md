@@ -37,7 +37,6 @@ is the data sent by a Device or parsed by other encoders.
 
 You should **always** return a value from the `onCall` function.
 
-
 ## Sample code
 
 ```js

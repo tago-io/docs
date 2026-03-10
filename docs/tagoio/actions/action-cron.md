@@ -4,6 +4,7 @@ description: "This article explains how to use and modify an Action cron in Tago
 tags: ["tagoio", "actions"]
 keywords: [tagoio, iot, actions, cron, scheduling]
 ---
+
 A cron is a command for scheduling a task to be executed periodically at a specified time in the future.
 
 Inside TagoIO, cron is used to define when a Schedule Action will be triggered. See [Schedule Action](/docs/tagoio/actions/trigger-by-schedule.md).
@@ -21,6 +22,7 @@ The example cron shown in the Recurrence options panel:
 ```
 
 The preview below the cron input shows:
+
 - "This action will run at 09:48 AM, only on Wednesday."
 - Note: "The action can take up to 1 minute to be executed."
 

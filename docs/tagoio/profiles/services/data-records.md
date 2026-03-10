@@ -13,7 +13,6 @@ Fields such as [location](/docs/tagoio/devices/sending-data.md) that contain lat
 
 All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata.md) stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
 
-
 ```json
 [
   {

@@ -1,6 +1,6 @@
 ---
 title: "Trigger by MQTT Topic"
-description: "This article explains how the \"Trigger by MQTT Topic\" trigger works in TagoIO, describes broker availability restrictions, and details the two trigger categories—Single device and Multiple devices—used to watch incoming MQTT data."
+description: 'This article explains how the "Trigger by MQTT Topic" trigger works in TagoIO, describes broker availability restrictions, and details the two trigger categories—Single device and Multiple devices—used to watch incoming MQTT data.'
 tags: ["tagoio"]
 keywords: [tagoio, iot, actions, mqtt, triggers]
 ---

@@ -4,6 +4,7 @@ description: "This article explains how to group related dashboards in TagoIO us
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, grouping, tags, organization]
 ---
+
 You can group related dashboards using dashboard tags. Use the dashboard settings to create tags (key/value pairs) and then select those tag keys to define grouping levels. Dashboards will be grouped in the sidebar using the chosen tag keys and their values.
 
 ## Steps to group dashboards
@@ -11,11 +12,11 @@ You can group related dashboards using dashboard tags. Use the dashboard setting
 1. Open the dashboard you want to group and click the gear icon to edit it (Dashboard > gear icon).
 
 2. Go to the "Tags" section and create the tags you need. Tags are key/value pairs that appear as custom columns in the dashboard list.
-   - Example keys and values:  
-     - Key: country — Value: USA  
-     - Key: state — Value: California  
+   - Example keys and values:
+     - Key: country — Value: USA
+     - Key: state — Value: California
      - Key: city — Value: Los Angeles
-     
+
    ![Tags and Tag Values in Dashboard Settings](/docs_imagem/tagoio/grouping-dashboards-2.png)
 
 3. In the "Group dashboards using Tags" section, select the Tag Key to be used for each grouping level (Level 1, Level 2, Level 3). You can include the tag in Run users by toggling the corresponding switch.

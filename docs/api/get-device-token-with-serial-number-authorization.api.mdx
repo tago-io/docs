@@ -19,55 +19,56 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Find Device by Serial & Authorization Key"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Find Device by Serial & Authorization Key"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/integration/network/resolve/{serieNumber}/{AuthorizationKey}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Retrieve a valid device token using the device's serial number and a profile authorization key.  
 This endpoint is recommended when you need additional security or if your Network is available to multiple profiles, as it allows serial numbers to be duplicated across different profiles.  
-You must have both a Network and a Network-Token to use this endpoint.  
+You must have both a Network and a Network-Token to use this endpoint.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"serieNumber","in":"path","required":true,"schema":{"type":"string"},"description":"Device Serial Number registered at TagoIO"},{"name":"AuthorizationKey","in":"path","required":true,"schema":{"type":"string"},"description":"Authorization key for the profile, used to resolve the device token when multiple profiles may have the same serial number."}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "serieNumber",
+      in: "path",
+      required: true,
+      schema: { type: "string" },
+      description: "Device Serial Number registered at TagoIO",
+    },
+    {
+      name: "AuthorizationKey",
+      in: "path",
+      required: true,
+      schema: { type: "string" },
+      description:
+        "Authorization key for the profile, used to resolve the device token when multiple profiles may have the same serial number.",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Successfully Token Response","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"<string>"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Successfully Token Response",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { result: { type: "string", example: "<string>" }, status: { type: "boolean", example: true } },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

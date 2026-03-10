@@ -4,6 +4,7 @@ description: "This article explains how to run a TagoIO Analysis externally usin
 tags: ["tagoio", "analysis"]
 keywords: [tagoio, iot, analysis, deno, external runtime]
 ---
+
 Analysis enables you to create powerful applications on TagoIO. When creating an Analysis, you can choose to run it on TagoIO or externally on your own infrastructure.
 
 Running an Analysis externally with Deno provides several advantages:
@@ -32,7 +33,7 @@ async function myAnalysis(context: any) {
   // Your analysis logic here
   console.log("Running external Deno analysis");
   console.log("Context:", context);
-  
+
   const now = DateTime.now().toISO();
   console.log("Current time:", now);
 }
@@ -70,6 +71,7 @@ const token = Deno.env.get("ANALYSIS_TOKEN") || "MY-ANALYSIS-TOKEN-HERE";
 
 Analysis.use(myAnalysis, { token });
 ```
+
 Run your Analysis:
 
 ```ts
@@ -81,7 +83,6 @@ deno run --allow-net --allow-env analysis.ts
 ```
 
 You should see output indicating the Analysis is connected and waiting for triggers.
-
 
 ## More Examples
 

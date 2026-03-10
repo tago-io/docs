@@ -5,6 +5,7 @@ tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, keypad, sdk]
 "sidebar_position": 1
 ---
+
 ## Overview
 
 This article demonstrates how to create a Keypad Widget using the TagoIO Node.js SDK. See [Keypad Widget](/docs/tagoio/widgets/input-widgets/keypad-widget) and [TagoIO Node.js SDK](/docs/tagoio/analysis/sdk/nodejs-sdk.md) for more information.
@@ -21,9 +22,7 @@ In order to create keypad widgets, send the following structure to the `account.
       "bucket": "5d8d06027fe011b001b8d236b",
       "origin": "5d8d06027fe011b001b8d236a",
       "timezone": "Your/Timezone",
-      "variables": [
-        "my_keypad_variable"
-      ]
+      "variables": ["my_keypad_variable"]
     }
   ],
   "display": {
@@ -54,6 +53,7 @@ In order to create keypad widgets, send the following structure to the `account.
 ```
 
 Notes:
+
 - **analysis_run**: This field should contain an ID indicating which analysis to run when a user submits the widget.
 - **data**: This field should contain an array of variables used in the keypad widget. By default, the widget only uses the first variable, so this array should typically contain a single object.
 - **display.buttons**: This field is required and defines all custom buttons inside the keypad widget. Each button’s position corresponds to its index in the array (0‑based). For example, the image below shows how each index maps to a physical key on the keypad:

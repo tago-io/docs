@@ -4,11 +4,13 @@ description: "This article explains how to view and manage users who sign up for
 tags: ["tagoio"]
 keywords: [tagoio, iot, tagorun, user management, tags]
 ---
+
 You can visualize and control all users that sign up in your application under the User Management module (see the User Management documentation for details).
 
 ![User Management screen](/docs_imagem/tagoio/user-management-2.png)
 
 ## Overview
+
 When you create and deploy your solution using TagoRun, all users that sign up will be listed in the [User Management](https://admin.tago.io/usermanagement) area. From there you can:
 
 - Grant or remove access
@@ -18,6 +20,7 @@ When you create and deploy your solution using TagoRun, all users that sign up w
 - Delete a user completely
 
 ## Tags
+
 Each user has a Tags tab. Tags can be provided in three ways:
 
 - Manually (by an administrator)
@@ -35,6 +38,7 @@ Accessing data from dashboards using TagoRUN — even when downloading it as a .
 :::
 
 ## Anonymous User
+
 You can create an Anonymous User to allow access to dashboards in your TagoRun without having to sign in with credentials. This user is required if you want to share your dashboard with anyone using a URL. Read more about [Sharing Dashboards](/docs/tagoio/dashboards/sharing-dashboards.md).
 
 The anonymous user behaves as a normal user, except for not having a password. You can still use Tags to grant access to resources through Access Management policies.
@@ -42,4 +46,5 @@ The anonymous user behaves as a normal user, except for not having a password. Y
 Only one anonymous user can be created per Profile.
 
 ## Exporting Users
+
 Click the **'Export Users'** button on the top right side of the module to download a .csv file containing data of all your users. The file also includes all Tags, user ID, subscription date, and activation status.

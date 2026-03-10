@@ -4,15 +4,16 @@ description: "This article explains how to reset a forgotten password and how to
 tags: ["tagoio"]
 keywords: [tagoio, iot, password reset, account security]
 ---
+
 On the [signup page](https://admin.tago.io/signup), click the "Forgot your password?" link and enter your email address. We'll send instructions to that email to reset your password.
 
 ## Want to change your password?
 
 To change your existing password:
+
 - Go to [My Account](https://admin.tago.io/account).
 - Select the "Account Settings" tab.
 - Click the "Change your password" button and follow the prompts.
-
 
 :::tip
 

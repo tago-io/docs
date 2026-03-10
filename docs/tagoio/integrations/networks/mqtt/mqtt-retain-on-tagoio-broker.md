@@ -1,9 +1,10 @@
 ---
 title: "MQTT Retain on TagoIO Broker"
-description: "This article explains how to implement an MQTT \"retain\"-like behavior on the TagoIO MQTT broker using Actions or Analysis to store and resend the last message when a new client subscribes."
+description: 'This article explains how to implement an MQTT "retain"-like behavior on the TagoIO MQTT broker using Actions or Analysis to store and resend the last message when a new client subscribes.'
 tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, retain, broker]
 ---
+
 :::warning
 
 TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
@@ -35,6 +36,7 @@ To build an MQTT **retain** workaround with TagoIO, you can either publish direc
 For scenarios where you need to publish for a large number of devices/topics and also require more control over the publishing process, you can use an Analysis script.
 
 ### 1. Create an Analysis
+
 - Go to the **Analysis** section and create a new analysis.
 - Choose **Node.js** as the environment.
 
@@ -57,7 +59,7 @@ async function mqttPushExample(context, scope) {
   // Publishing to MQTT
   const MQTT = new Services({ token: context.token }).MQTT;
   await MQTT.publish({
-    bucket: myData.device,          // for immutable/mutable devices
+    bucket: myData.device, // for immutable/mutable devices
     message: JSON.stringify(myDataObject),
     topic: "tago/my_topic",
     options,
@@ -68,6 +70,7 @@ module.exports = new Analysis(mqttPushExample);
 ```
 
 ### 3. Trigger Analysis
+
 - Configure an Action or another event to trigger the execution of your Analysis (e.g., a device update, a scheduled time, or any other event in your TagoIO application).
 
 Refer to the [Analysis documentation](/docs/tagoio/analysis/) for details on creating scripts and integrating them with Actions and MQTT.

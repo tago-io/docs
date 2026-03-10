@@ -4,6 +4,7 @@ description: "This article explains what Profiles are in TagoIO, the benefits of
 tags: ["tagoio"]
 keywords: [tagoio, iot, profiles, sub-accounts, multi-tenancy]
 ---
+
 Profiles are similar to having different sub-accounts under your main account. You can create multiple profiles for people or organizations and share them with others. By doing this, you remain the owner of each "sub-account" while allowing others to access each profile separately.
 
 ## Benefits of Profiles
@@ -22,7 +23,6 @@ Profiles are similar to having different sub-accounts under your main account. Y
 To switch profiles, click the current profile shown on the top left and select another one.
 
 <!-- Image placeholder removed for build -->
-
 
 ## Adding Profiles
 
@@ -46,7 +46,6 @@ Add others to your profiles by adding their e‑mails in the team section. To in
 2. Add a name, permission, expiration, and click **Generate Token**.
 3. Insert your password.
 4. Click **Generate my token**.
-
 
 ## Transferring Profiles Between TagoIO Accounts
 

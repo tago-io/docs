@@ -30,5 +30,5 @@ To create a new Action, click the&nbsp; <img className="inline-image" src="/docs
 You'll need to configure three essential components:
 
 1. **Name**: A descriptive name for your Action (e.g., "High Temperature Alert")
-2. **[Trigger](/docs/tagocore/resources/action/trigger.md)**: What event should activate this Action (e.g., when device data arrives)  
+2. **[Trigger](/docs/tagocore/resources/action/trigger.md)**: What event should activate this Action (e.g., when device data arrives)
 3. **[Type](/docs/tagocore/resources/action/type.md)**: What should happen when the Action runs (e.g., run an analysis, post to data to HTTP endpoint)

@@ -4,6 +4,7 @@ description: "This article explains how SMS units are counted and billed in Tago
 tags: ["tagoio"]
 keywords: [tagoio, iot, sms, messaging, service limits]
 ---
+
 Each time an SMS message is successfully sent by an [Action](/docs/tagoio/actions/) or [Analysis](/docs/tagoio/analysis/) function, it is counted as one SMS unit. The service limit defined inside each [Profile](/docs/tagoio/profiles) determines the maximum number of SMS messages that can be sent during a one-month period (based on your billing cycle).
 
 Each SMS unit is limited to 140 characters.
@@ -23,6 +24,7 @@ As anticipated, starting on **November 1st, 2024**, TagoIO will no longer offer 
 - For more information on pricing and FAQs, see the [Pricing Page](https://tago.io/pricing/).
 
 ## Short-number behavior
+
 The short number used to send messages is randomly selected by our SMS provider, Amazon SNS. Companies that use the same provider might share the same short number of origin, so users may receive SMS from other services that use the same sender number.
 
 Analysis is able to integrate with any SMS service; you can register a unique number for your own origin if desired.

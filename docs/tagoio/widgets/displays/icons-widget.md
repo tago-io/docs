@@ -1,9 +1,10 @@
 ---
 title: "Icons Widget"
-description: "This article explains the Icons widget for TagoIO, showing example styles, how many variables it supports, and how to add and customize the widget on a dashboard, including the \"Data From\" and \"Conditions\" configuration options."
+description: 'This article explains the Icons widget for TagoIO, showing example styles, how many variables it supports, and how to add and customize the widget on a dashboard, including the "Data From" and "Conditions" configuration options.'
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, icons, display]
 ---
+
 With icons, you can create highly personalized widgets for your applications. The examples below illustrate a few possible styles, but the customization options are extensive.
 
 ![Icon widget examples](/docs_imagem/tagoio/icons-widget-2.gif)
@@ -20,7 +21,7 @@ Use the "Data From" field to select which device and variable(s) will feed the I
 
 - **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
 - **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that contains the information.  
-  *When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.*
+  _When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device._
 
 Click on the cog icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
 

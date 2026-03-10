@@ -19,54 +19,92 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Account"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Account"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/account"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/account"} context={"endpoint"}></MethodEndpoint>
 
 Edit current account
 
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
-
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"company":{"type":"string","example":"TagoIO"},"language":{"type":"string","example":"en"},"name":{"type":"string","example":"John Doee"},"options":{"type":"object","properties":{"date_format":{"type":"string","example":"YYYY-MM-DD"},"decimal_separator":{"type":"string","example":"."},"show_last_updated_at":{"type":"string","example":"footer"},"thousand_separator":{"type":"string","example":","},"time_format":{"type":"string","example":"24"}}},"phone":{"type":"string","example":"+00000000000"},"timezone":{"type":"string","example":"America/Glace_Bay"}}},"examples":{"Edit Account":{"value":{"company":"TagoIO","language":"en","name":"John Doee","options":{"date_format":"YYYY-MM-DD","decimal_separator":".","show_last_updated_at":"footer","thousand_separator":",","time_format":"24"},"phone":"+00000000000","timezone":"America/Glace_Bay"}}}},"text/plain":{"examples":{"Edit Account":{"value":"{\n    \"language\": \"en\",\n    \"name\": \"Account Name\",\n    \"options\": {\n        \"date_format\": \"YYYY-MM-DD\", //\"YYYY-MM-DD\", \"DD-MM-YYYY\", or \"MM-DD-YYYY\"\n        \"time_format\": \"12\", //\"12\" or \"24\"\n        \"decimal_separator\": \".\", //must be the oposite of the \"thousand_separator value\"\n        \"thousand_separator\": \",\", //must be the oposite of the \"decimal_separator value\"\n        \"show_last_updated_at\": \"footer\" //widget \"footer\" or \"menu\"\n    },\n    \"phone\": \"+00000000000\", //type the country code plus the phone number\n    \"timezone\": \"America/Glace_Bay\",\n    \"company\": \"TagoIO\"\n}"}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            company: { type: "string", example: "TagoIO" },
+            language: { type: "string", example: "en" },
+            name: { type: "string", example: "John Doee" },
+            options: {
+              type: "object",
+              properties: {
+                date_format: { type: "string", example: "YYYY-MM-DD" },
+                decimal_separator: { type: "string", example: "." },
+                show_last_updated_at: { type: "string", example: "footer" },
+                thousand_separator: { type: "string", example: "," },
+                time_format: { type: "string", example: "24" },
+              },
+            },
+            phone: { type: "string", example: "+00000000000" },
+            timezone: { type: "string", example: "America/Glace_Bay" },
+          },
+        },
+        examples: {
+          "Edit Account": {
+            value: {
+              company: "TagoIO",
+              language: "en",
+              name: "John Doee",
+              options: {
+                date_format: "YYYY-MM-DD",
+                decimal_separator: ".",
+                show_last_updated_at: "footer",
+                thousand_separator: ",",
+                time_format: "24",
+              },
+              phone: "+00000000000",
+              timezone: "America/Glace_Bay",
+            },
+          },
+        },
+      },
+      "text/plain": {
+        examples: {
+          "Edit Account": {
+            value:
+              '{\n    "language": "en",\n    "name": "Account Name",\n    "options": {\n        "date_format": "YYYY-MM-DD", //"YYYY-MM-DD", "DD-MM-YYYY", or "MM-DD-YYYY"\n        "time_format": "12", //"12" or "24"\n        "decimal_separator": ".", //must be the oposite of the "thousand_separator value"\n        "thousand_separator": ",", //must be the oposite of the "decimal_separator value"\n        "show_last_updated_at": "footer" //widget "footer" or "menu"\n    },\n    "phone": "+00000000000", //type the country code plus the phone number\n    "timezone": "America/Glace_Bay",\n    "company": "TagoIO"\n}',
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Account edited successfuly","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Account Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Account edited successfuly":{"value":{"result":"Account Successfully Updated","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Account edited successfuly",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Account Successfully Updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: {
+            "Account edited successfuly": { value: { result: "Account Successfully Updated", status: true } },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

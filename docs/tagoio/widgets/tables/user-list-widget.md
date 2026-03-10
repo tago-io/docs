@@ -4,9 +4,11 @@ description: "A quick guide to the User List widget that explains what it is, ho
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, user list, table]
 ---
+
 The User List widget is a table that dynamically populates with information about your users, such as names, tags, email addresses, and IDs.
 
 ## 1. Editing the user list
+
 The User List works as a dynamic table: you can customize its colors and columns, and filter which users appear in the list.
 
 ![Setting up user filtering](/docs_imagem/tagoio/user-list-widget--4.gif)
@@ -22,7 +24,7 @@ This option is required to be filled up in order to show your users. You can fil
 - **Tag Key and Tag Value** – All users for the list must have the same tag key and tag value specified by you in this filter.
 - **Blueprint Device Tags** – Select a blueprint device from the dashboard and one tag key. The user for the list must match the same value of that tag key in the selected blueprint device.
 
-You can also apply multiple filters simultaneously; note that this works as an AND operator, so the user must match *all* specified filters.
+You can also apply multiple filters simultaneously; note that this works as an AND operator, so the user must match _all_ specified filters.
 
 To set up tags on your devices, navigate to the **User** page and add or edit tags there.
 
@@ -42,6 +44,7 @@ You can allow users to modify a tag or configuration parameter directly from the
 > User Information such as ID, email, and password cannot be edited.
 
 The user list offers a variety of field types for input when a user modifies it. These include:
+
 - Text
 - Password
 - Number

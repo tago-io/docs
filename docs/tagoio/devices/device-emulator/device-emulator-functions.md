@@ -4,6 +4,7 @@ description: "This article explains how to use built-in functions in the Device 
 tags: ["tagoio", "devices"]
 keywords: [tagoio, iot, devices, emulator, functions, testing]
 ---
+
 Functions are helper variables you can add to your payload when using the [Device Emulator](/docs/tagoio/devices/simulator-data-stream.md). Each function serves a specific purpose. To insert a function into your payload, click the `Functions` button and select the desired function.
 
 You can use functions in both JSON and Raw (CSV) payload types.
@@ -11,6 +12,7 @@ You can use functions in both JSON and Raw (CSV) payload types.
 ## Examples
 
 JSON example using a function:
+
 ```json
 [
   {
@@ -22,11 +24,11 @@ JSON example using a function:
 ```
 
 CSV example using a function:
+
 ```csv
 variable,value,time,serie
 temperature,$random$,2019-09-19,1568913302243
 ```
-
 
 ## List of functions
 

@@ -19,66 +19,82 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Backup"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Backup"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/profile/{profile_id}/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/profile/{profile_id}/backup"} context={"endpoint"}></MethodEndpoint>
 
 Initiates a new backup generation for the specified profile. The backup is processed asynchronously in a background queue.
 
 **What's included in the backup:**
+
 - User storage files (uploaded via `/files` route)
 - Dashboard version history
 - Analysis script versions
 - All resource configurations as JSON files (devices, actions, dashboards, analysis, access management, networks, connectors, secrets, dictionaries, run users, etc.)
 
 **Important notes:**
+
 - Backups are rate-limited (1 per day based on your account timezone)
 - Free plan users do not have access to backup features
 - Backup generation may take several minutes depending on profile size
 - Restoration is manual - you can write scripts to parse the JSON files and recreate resources via API, or contact TagoIO support
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"profile_id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "profile_id",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "61fac4d9a5c9f40012a5ff92" },
+      description: "The ID of the profile",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Backup creation initiated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","example":"Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint."},"profile":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"backup_id":{"type":"string","example":"678abc123def456789012345"}}}}}},"403":{"description":"Forbidden - Free plan or rate limit exceeded","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit."}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Backup creation initiated successfully",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "string",
+                example:
+                  "Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint.",
+              },
+              profile: { type: "string", example: "61fac4d9a5c9f40012a5ff92" },
+              backup_id: { type: "string", example: "678abc123def456789012345" },
+            },
+          },
+        },
+      },
+    },
+    "403": {
+      description: "Forbidden - Free plan or rate limit exceeded",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              status: { type: "boolean", example: false },
+              message: {
+                type: "string",
+                example:
+                  "Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit.",
+              },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

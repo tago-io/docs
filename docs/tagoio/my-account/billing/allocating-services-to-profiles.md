@@ -4,10 +4,10 @@ description: "This article explains how to allocate service resources to individ
 tags: ["tagoio"]
 keywords: [tagoio, iot, resource allocation, profiles, services]
 ---
+
 When you manage multiple profiles in your account, ensure each profile has the correct allocation of services so they operate efficiently. You can configure per-profile allocations on the Billing page under the [Resource Allocation](https://admin.tago.io/account/billing/allocation) tab.
 
 The services within each profile can be limited so that when a profile exceeds its allocated limit, only that profile will have its service blocked. If the available services are insufficient for allocation, you can either increase the total service limits for your account or reduce the allocation for other profiles. Access the [Billing](https://admin.tago.io/account/billing) page to upgrade or change these service limits.
-
 
 ## How to allocate resources
 
@@ -19,8 +19,8 @@ This interface provides all necessary information for each service, helping you 
 
 ![Resource allocation graph](/docs_imagem/tagoio/graphic_resource_allocation.png)
 
-
 ## Monitoring allocated resources
+
 You can easily monitor the amount of resources available in your account that can be allocated to your profiles, as well as verify the current service usage against the allocated limit for each profile. This monitoring can be done through the '[Resource Allocation](https://admin.tago.io/account/billing/allocation)' tab inside the Billing page.
 
 On the left side, the 'Account Service Allocation' column shows the total service amounts available for distribution across your account. These are the limits you've set for your entire account, which can be increased by clicking the 'Upgrade account limits' button or through the [Billing](https://admin.tago.io/account/billing) page in the 'Services' tab.

@@ -4,6 +4,7 @@ description: "This article explains how to distribute a copy of an Analysis in T
 tags: ["tagoio", "analysis"]
 keywords: [tagoio, iot, analysis, distributing, sharing]
 ---
+
 You can create a copy of your analysis and send a link to anyone so they can add a copy to their account through a customized install page. Recipients can edit the analysis as they wish.
 
 > Others will be able to edit the analysis that they received without impacting yours.

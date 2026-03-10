@@ -263,15 +263,15 @@ personalize it with real‑time data from your devices.
 
 You can use most of the payload fields from our API:
 
-| Variable         | Description                                                                                 |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| `$VARIABLE$`     | Variable name                                                                               |
-| `$VALUE$`        | Variable value                                                                              |
-| `$UNIT$`         | Unit of your variable                                                                       |
-| `$TIME$`         | Time the variable was received                                                              |
-| `$LOCATION$`     | Location value                                                                              |
-| `$DEVICE$`       | Device ID                                                                                   |
-| `$DEVICE.NAME$`  | Name of your device                                                                         |
+| Variable         | Description                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| `$VARIABLE$`     | Variable name                                                                              |
+| `$VALUE$`        | Variable value                                                                             |
+| `$UNIT$`         | Unit of your variable                                                                      |
+| `$TIME$`         | Time the variable was received                                                             |
+| `$LOCATION$`     | Location value                                                                             |
+| `$DEVICE$`       | Device ID                                                                                  |
+| `$DEVICE.NAME$`  | Name of your device                                                                        |
 | `$ACTION.STATE$` | Current state of your [Action](/docs/tagoio/actions/trigger-unlock.md): locked or unlocked |
 
 For example, a personalized message like this

@@ -19,9 +19,11 @@ By default, your URL may be a subdomain of run.tago.io (for example, mycompany.t
 :::
 
 With Run you can set up three main things:
+
 1. Your Run (Application portal)
 2. Your Sign up page
 3. E-mail templates
 
 ## Your Run (Application portal)
+
 Go to the [Main Configuration](https://admin.tago.io/run) and Domain tabs to configure the title and subtitle of your application, add a favicon (browser icon) and logo, and edit the colors used in the navigation bar.

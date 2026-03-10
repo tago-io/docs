@@ -4,6 +4,7 @@ description: "This article explains how end-users (RUN-users) are counted in Tag
 tags: ["tagoio"]
 keywords: [tagoio, iot, end-users, run users, user management]
 ---
+
 Each end-user added to the [User Management](/docs/tagoio/tagorun/getting-started/user-management.md) list is counted as an end‑user. End-users (also called RUN‑users) can be added automatically when they sign up in your RUN application.
 
 ## Limits and behavior

@@ -105,8 +105,7 @@ const config: Config = {
         generateLLMsFullTxt: true,
         docsDir: "docs",
         title: "TagoIO Docs",
-        description:
-          "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
+        description: "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
         includeBlog: false,
         ignoreFiles: ["api/**"],
         logLevel: "normal",
@@ -117,17 +116,14 @@ const config: Config = {
       {
         path: "./preview-images",
         imageRenderers: {
-          "docusaurus-plugin-content-docs": require("./lib/docs-renderer")
-            .docsRenderer,
+          "docusaurus-plugin-content-docs": require("./lib/docs-renderer").docsRenderer,
         },
       },
     ],
   ],
 
   themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
-  stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
-  ],
+  stylesheets: ["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"],
 
   clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
 

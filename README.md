@@ -5,27 +5,33 @@ Docusaurus-based documentation site for TagoIO. Content is migrated from https:/
 ## Quick Start
 
 Requirements
+
 - Node.js >= 18
 
 Install and run
+
 ```bash
 npm ci
 npm run start
 ```
+
 - Dev server: http://localhost:3000
 
 Build and preview
+
 ```bash
 npm run build
 npm run serve
 ```
 
 Typecheck
+
 ```bash
 npm run typecheck
 ```
 
 Code quality (Biome)
+
 ```bash
 npm run biome       # check
 npm run biome:lint  # lint only
@@ -62,6 +68,7 @@ npm run biome:fix   # lint + format (write)
 ## Authoring Guidelines
 
 Front matter
+
 ```markdown
 ---
 title: "Page Title"
@@ -71,36 +78,45 @@ tags: ["tagoio"]
 ```
 
 Images
+
 - Store under static/docs_imagem/<section>/
 - Reference using absolute paths:
   - `![Alt text](/docs_imagem/tagoio/example.png)`
 
 Links
+
 - Prefer relative links within the same area (e.g., `../services/services-overview`)
 - Cross-area links should use docs paths (e.g., `/tagoio/widgets/widgets-overview`)
 
 Embeds
+
 - YouTube: use the YouTube component registered in MDX:
   - `<YouTube videoId="XXXXXXXXXXX" />`
 - Mermaid diagrams: use the Mermaid component registered in MDX:
-  - `<Mermaid chart={`graph LR\n  A[Start] --> B{Choice} \n  B -->|Yes| C[Do thing] \n  B -->|No| D[Stop]`} />`
+  - `<Mermaid chart={`graph LR\n A[Start] --> B{Choice} \n B -->|Yes| C[Do thing] \n B -->|No| D[Stop]`} />`
 
 ## URL Mappings (maintainers)
+
 - redirect-mappings.json and url-mappings.json provide mapping sources for converting legacy help.tago.io URLs to new docs paths
 - Additional automation and helpers live under a local-only infra folder (see AGENTS.md)
 
 ## Deployment
 
 ### GitHub Pages (Beta)
+
 Pushes to `main` auto-deploy to docs.beta.tago.io
+
 - Workflow: `.github/workflows/beta-deploy.yml`
 - Steps: install → build with `SITE_URL=https://docs.beta.tago.io` → write CNAME → write robots.txt (Disallow all) → upload Pages artifact → deploy
 
 ### AWS Infrastructure (Production)
+
 GitHub Releases deploy to CloudFront/S3 using CDK with production domains
+
 ```bash
 npm run cdk:deploy
 ```
+
 - Creates S3 bucket for static hosting (docs site)
 - Sets up two CloudFront distributions:
   - docs.tago.io (serves the site; no edge function)
@@ -119,6 +135,7 @@ npm run cdk:deploy
     - `REDIRECTS_CERT_ARN` → ACM cert ARN for help.tago.io (CN) with SAN changelog.tago.io, api.docs.tago.io
 
 CDK Commands
+
 ```bash
 npm run cdk:build   # Compile CDK TypeScript
 npm run cdk:watch   # Watch mode for development
@@ -126,21 +143,25 @@ npm run cdk:deploy  # Full deployment (build + deploy)
 ```
 
 Site URL and base path
+
 - docusaurus.config.ts
   - url: defaults to https://docs.tago.io; override with env `SITE_URL` (beta build uses https://docs.beta.tago.io)
   - baseUrl: "/"
   - Beta builds add meta robots noindex and workflow writes a Disallow-all robots.txt
 
 Workflows
+
 - Beta: `.github/workflows/beta-deploy.yml` → GitHub Pages at docs.beta.tago.io
 - Production: `.github/workflows/production-deploy.yml` → AWS CDK deploy to CloudFront/S3 (region: us-east-1, OIDC role)
 - If deploying under a subpath (https://<org>.github.io/<repo>/), set baseUrl to "/<repo>/" before building
 
 Search (Algolia)
+
 - Configured in docusaurus.config.ts
 - Update appId, apiKey, and indexName as needed
 
 ## NPM Scripts
+
 - npm run start – Start dev server
 - npm run build – Build static site to build/
 - npm run serve – Serve the static build
@@ -155,12 +176,14 @@ Search (Algolia)
 - npm run cdk:deploy – Deploy to AWS (build docs + CDK + deploy)
 
 ## Contributing
+
 - Add or update Markdown files under docs/
 - Keep images local and referenced by absolute paths under /docs_imagem
 - Validate locally: npm run typecheck, npm run biome, and npm run build
 - Do not commit local automation files (infra/ is not tracked in Git)
 
 ## Troubleshooting
+
 - MDX component not found: ensure src/theme/MDXComponents.tsx exports the component and paths use the @site alias (e.g., `@site/src/components/youtube`)
 - Broken links: run link audits via local automation (see AGENTS.md) or search for the path in sidebars.ts and docs/
 - Build failures from MD/MDX: normalize headings, code blocks, and links; prefer absolute image paths under /docs_imagem

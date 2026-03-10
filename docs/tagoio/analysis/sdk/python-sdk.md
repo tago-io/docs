@@ -4,6 +4,7 @@ description: "This article provides quick installation and usage instructions fo
 tags: ["tagoio"]
 keywords: [tagoio, iot, sdk, python, integration]
 ---
+
 You can access the full SDK documentation at: https://py.sdk.tago.io/
 
 ## Installation

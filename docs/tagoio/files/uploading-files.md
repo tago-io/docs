@@ -4,9 +4,8 @@ description: "This article explains how to upload files using the TagoIO admin p
 tags: ["tagoio"]
 keywords: [tagoio, iot, files, uploading, file management]
 ---
+
 To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the `Upload File` button in the top-right corner of the page.
-
-
 
 By default, all files are uploaded with Public access. This lets you copy a file's link and easily share it with someone.
 

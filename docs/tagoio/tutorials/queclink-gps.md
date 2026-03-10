@@ -4,6 +4,7 @@ description: "This article explains how to integrate Queclink GPS devices with T
 tags: ["tagoio"]
 keywords: [tagoio, iot, queclink, gps, tracking, cellular]
 ---
+
 Queclink GPS can be integrated with TagoIO through middleware that translates the device's TCP/IP protocol. The middleware enables uplink communication between the device and TagoIO while parsing messages to extract commands and variables in real time.
 
 ![Queclink device, Cellular Network, and TagoIO flow diagram](/docs_imagem/tagoio/queclink-gps-2.png)
@@ -14,11 +15,11 @@ Queclink GPS can be integrated with TagoIO through middleware that translates th
 
 Configure your GPS so it sends data to the TagoIO middleware. Follow the Queclink manual to set the protocol type, host URL, and port as shown below:
 
-| Parameter  | Value                            |
-|-----------:|----------------------------------|
-| Protocol   | TCP/IP                           |
-| Host URL   | queclink.middleware.tago.io      |
-| Port       | 50005                            |
+| Parameter | Value                       |
+| --------: | --------------------------- |
+|  Protocol | TCP/IP                      |
+|  Host URL | queclink.middleware.tago.io |
+|      Port | 50005                       |
 
 ## TagoIO Setup
 
@@ -32,8 +33,8 @@ Add a device in your account at TagoIO. Go to [Devices](https://admin.tago.io/de
 - GV300
 - GV300 CAN
 - GV75
-- GV55*
-  *contact us for updates*
+- GV55\*
+  _contact us for updates_
 
 Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your bucket: [Buckets](/docs/tagoio/devices/). The data will be ready to display in dashboards.
 

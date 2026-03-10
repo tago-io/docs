@@ -5,6 +5,7 @@ tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, input control, form]
 "sidebar_position": 2
 ---
+
 The Input control allows users to submit values to variables through a form.
 
 ## Editing the form

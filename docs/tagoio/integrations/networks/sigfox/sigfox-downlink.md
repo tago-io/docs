@@ -42,7 +42,6 @@ Further setup steps for each part are covered below.
    [Device](https://admin.tago.io/devices) (left menu), go to it, and click on
    the tab **Configuration parameters**;
 2. Create a parameter for your device:
-
    - **Key** – type `downlinkData`
    - **Value** – the message you want to send to your Sigfox device (must have
      **8 bytes**)

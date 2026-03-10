@@ -4,6 +4,7 @@ description: "This article explains the Grain Bin widget for TagoIO, its purpose
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, grain bin, gauge]
 ---
+
 The Grain Bin widget produces a grain-bin illustration so you can easily track variable information.
 
 ![Grain bin illustration](/docs_imagem/tagoio/grain-bin-widget-2.png)

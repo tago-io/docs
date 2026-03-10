@@ -4,6 +4,7 @@ description: "Brief overview of how TagoIO handles file storage and common use c
 tags: ["tagoio"]
 keywords: [tagoio, iot, files, file storage, uploads]
 ---
+
 You and your IoT devices can send and receive files such as images, CSV, TXT, and many other formats. All of these files can be stored and accessed in TagoIO.
 
 ## Overview
@@ -12,7 +13,7 @@ File storage is commonly used to send and receive files from devices, store data
 
 ![Files interface example showing file list and metadata](/docs_imagem/tagoio/files-3.png)
 
-To use the files via **Admin**, go to *Files* in the left menu. From there you can see and manage all the files and folders that are stored on your account, as well as upload new files.
+To use the files via **Admin**, go to _Files_ in the left menu. From there you can see and manage all the files and folders that are stored on your account, as well as upload new files.
 
 > Developers can use our [SDK](/docs/tagoio/analysis/sdk/) to store and manage files using their applications, upload files from devices, and more.
 

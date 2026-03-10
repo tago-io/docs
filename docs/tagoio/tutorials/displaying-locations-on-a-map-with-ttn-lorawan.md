@@ -4,6 +4,7 @@ description: "This article explains how to send location data from The Things Ne
 tags: ["tagoio"]
 keywords: [tagoio, iot, lorawan, ttn, map, geolocation]
 ---
+
 If you have a custom payload format decoder at TTN (The Things Network), you can send your payload variables directly to TagoIO.
 
 To display locations on a Map, your data needs to be sent inside a "location" field with the format shown below:

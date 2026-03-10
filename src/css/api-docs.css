@@ -78,24 +78,14 @@ body:has(.openapi__heading) .pagination-nav__item--next {
 }
 
 /* When there's only a next button (first page), force it to the right */
-body:has(.theme-api-markdown) .pagination-nav:not(
-    :has(.pagination-nav__item--prev)
-  )
-  .pagination-nav__item--next,
-body:has(.openapi__heading)
-  .pagination-nav:not(:has(.pagination-nav__item--prev))
-  .pagination-nav__item--next {
+body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next,
+body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--prev)) .pagination-nav__item--next {
   margin-left: auto !important;
 }
 
 /* When there's only a prev button (last page), keep it on the left */
-body:has(.theme-api-markdown) .pagination-nav:not(
-    :has(.pagination-nav__item--next)
-  )
-  .pagination-nav__item--prev,
-body:has(.openapi__heading)
-  .pagination-nav:not(:has(.pagination-nav__item--next))
-  .pagination-nav__item--prev {
+body:has(.theme-api-markdown) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev,
+body:has(.openapi__heading) .pagination-nav:not(:has(.pagination-nav__item--next)) .pagination-nav__item--prev {
   margin-right: auto !important;
 }
 
@@ -180,18 +170,12 @@ body:has(.openapi__heading) .pagination-nav__link {
 }
 
 /* Dark mode adjustments */
-[data-theme="dark"]
-  .api-sub-category
-  > .menu__list-item-collapsible
-  > .menu__link {
+[data-theme="dark"] .api-sub-category > .menu__list-item-collapsible > .menu__link {
   color: var(--ifm-color-emphasis-600);
   border-color: var(--ifm-color-gray-700);
 }
 
-[data-theme="dark"]
-  .api-sub-category
-  > .menu__list-item-collapsible
-  > .menu__link:hover {
+[data-theme="dark"] .api-sub-category > .menu__list-item-collapsible > .menu__link:hover {
   color: var(--ifm-color-primary-light);
 }
 

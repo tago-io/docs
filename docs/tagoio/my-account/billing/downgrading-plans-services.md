@@ -4,6 +4,7 @@ description: "This article explains how scheduled downgrades for plans, service 
 tags: ["tagoio"]
 keywords: [tagoio, iot, downgrade, plan, billing]
 ---
+
 You can schedule downgrades in your account for your plan, service limits, and add‑ons.
 
 :::tip
@@ -13,15 +14,19 @@ If you change your mind any time before the end of the billing cycle, you can mo
 :::
 
 ## Downgrade timing and modification
+
 - All downgrades become effective on the next renewal date.
 - Your current subscription and service limits remain active at their current level until the end of the billing period you already paid for.
 - You can cancel or modify scheduled downgrades at any time until the end of your billing cycle.
 
 ## Multiple profiles (important)
+
 If you have more than one profile, make sure you manually [reduce the resources for each profile](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md) before your next billing cycle to avoid any disruption to your application.
 
 ## How to downgrade
+
 To downgrade your billing, go to [Billing](https://admin.tago.io/account/billing) on the top-right dropdown menu in your account.
 
 ## Refunds
+
 See our [Refund Policy](/docs/tagoio/my-account/billing/refund-policy.md).

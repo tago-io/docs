@@ -5,6 +5,7 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, widget, gauge, data range]
 "sidebar_position": 2
 ---
+
 Data Range & Format is where you define the display format and the value range used by the gauge.
 
 ## Range Limits

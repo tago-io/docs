@@ -4,6 +4,7 @@ description: "This article explains how to request data from the TagoIO API, inc
 tags: ["tagoio"]
 keywords: [tagoio, iot, devices, API, get data, query parameters]
 ---
+
 :::info
 
 When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions here: API documentation (link included in the original article).
@@ -11,6 +12,7 @@ When making a request to the TagoIO API, you must also specify the appropriate r
 :::
 
 ## Headers
+
 Include your device token in the Authorization header.
 
 ```http
@@ -18,6 +20,7 @@ Authorization: Your-Device-Token
 ```
 
 ## Endpoint
+
 Use the regional data endpoint:
 
 ```http
@@ -25,19 +28,20 @@ GET https://api.<region>.tago.io/data
 ```
 
 ## Query Parameters
+
 The following querystring parameters are supported:
 
-| Key         | Type            | Description |
-|-------------|-----------------|-------------|
-| variable    | string or array | Get variables |
-| query       | string          | Pre-defined by Tago |
-| qty         | string          | Maximum number of data points to be returned |
-| start_date  | string          | Start date (e.g., "1 day" or ISO string) |
-| end_date    | string          | End date (e.g., "1 day" or ISO string) |
-| detail      | bool            | Include additional JSON fields in the returned results |
-
+| Key        | Type            | Description                                            |
+| ---------- | --------------- | ------------------------------------------------------ |
+| variable   | string or array | Get variables                                          |
+| query      | string          | Pre-defined by Tago                                    |
+| qty        | string          | Maximum number of data points to be returned           |
+| start_date | string          | Start date (e.g., "1 day" or ISO string)               |
+| end_date   | string          | End date (e.g., "1 day" or ISO string)                 |
+| detail     | bool            | Include additional JSON fields in the returned results |
 
 ## Response Example
+
 Below is a sample response when no query parameters are supplied:
 
 ```json
@@ -72,6 +76,7 @@ Below is a sample response when no query parameters are supplied:
 ```
 
 ## Variables
+
 The `variable` parameter specifies which variable(s) to return.
 Example for a single variable:
 
@@ -86,12 +91,13 @@ https://api.<region>.tago.io/data?variable[]=temperature&variable[]=pressure
 ```
 
 ## Query
+
 The `query` parameter triggers predefined functions. Only one query can be used per request.
 
-| Query | Description |
-|-------|-------------|
-| last_item | Returns the most recent data point based on `_time_`. |
-| last_value | Returns the most recent data point that contains a `_value_` field. |
+| Query         | Description                                                            |
+| ------------- | ---------------------------------------------------------------------- |
+| last_item     | Returns the most recent data point based on `_time_`.                  |
+| last_value    | Returns the most recent data point that contains a `_value_` field.    |
 | last_location | Returns the most recent data point that contains a `_location_` field. |
 
 Example:
@@ -101,6 +107,7 @@ https://api.<region>.tago.io/data?variable=temperature&query=last_item
 ```
 
 ## Quantity
+
 The `qty` parameter limits how many results are returned (default 15).
 
 Example to retrieve 99 records:
@@ -110,6 +117,7 @@ https://api.<region>.tago.io/data?variable=temperature&qty=99
 ```
 
 ## Start Date – End Date
+
 Use `start_date` and `end_date` to filter data between two timestamps. They accept various formats, including relative time expressions.
 
 Example:
@@ -121,13 +129,15 @@ https://api.<region>.tago.io/data?variable=temperature&start_date=2014-12-25&end
 If the interval contains more than 15 items, add `qty` to increase the limit.
 
 ### Date Formats
-| Format | Example |
-|--------|---------|
-| ISO string | 2014-12-25T23:33:22.000Z |
-| Human readable | 2014-12-25 23:33:22 |
-| Relative | 1 day, 1 month, 1 year |
+
+| Format         | Example                  |
+| -------------- | ------------------------ |
+| ISO string     | 2014-12-25T23:33:22.000Z |
+| Human readable | 2014-12-25 23:33:22      |
+| Relative       | 1 day, 1 month, 1 year   |
 
 Relative dates are calculated from the current time.
 
 ## Rate Limits
+
 When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

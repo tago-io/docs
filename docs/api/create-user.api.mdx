@@ -19,54 +19,54 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create User"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create User"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/run/users"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/run/users"} context={"endpoint"}></MethodEndpoint>
 
 Create user on Run
 
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
-
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","required":["name","email","password"],"properties":{"active":{"type":"boolean","example":true},"email":{"type":"string","example":"janedoe@mail.com"},"name":{"type":"string","example":"Jane Doe"},"password":{"type":"string","example":"Testing_01"},"timezone":{"type":"string","example":"New_York/America"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          required: ["name", "email", "password"],
+          properties: {
+            active: { type: "boolean", example: true },
+            email: { type: "string", example: "janedoe@mail.com" },
+            name: { type: "string", example: "Jane Doe" },
+            password: { type: "string", example: "Testing_01" },
+            timezone: { type: "string", example: "New_York/America" },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Creating a RUN user","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"user":{"type":"string","example":"62b086df27ce4d0012be6bac"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Creating a RUN user",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "object", properties: { user: { type: "string", example: "62b086df27ce4d0012be6bac" } } },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

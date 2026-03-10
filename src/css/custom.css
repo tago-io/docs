@@ -25,11 +25,8 @@
   --ifm-link-hover-color: #126f73;
 
   --ifm-font-family-base:
-    "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI emoji";
-  --ifm-font-family-monospace:
-    "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo,
-    Courier, monospace;
+    "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+  --ifm-font-family-monospace: "SFMono-Regular", "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   --ifm-font-weight-semibold: 600;
   --ifm-font-weight-bold: 700;
 
@@ -316,8 +313,7 @@ html[data-theme="light"] .footer__bottom {
 }
 
 /* Better contrast in dark mode */
-html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
-  .navbar__link--active {
+html[data-theme="dark"] .navbar__items:not(.navbar__items--right) .navbar__link--active {
   color: #2cb1bc;
 }
 
@@ -385,8 +381,7 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 }
 
 /* Spacing between top-level (bold) categories like Ionic */
-.theme-doc-sidebar-item-category-level-1 > .menu__list
-  > .menu__list-item:last-of-type {
+.theme-doc-sidebar-item-category-level-1 > .menu__list > .menu__list-item:last-of-type {
   padding-bottom: 0.25rem;
 }
 .theme-doc-sidebar-item-category-level-1 {
@@ -439,9 +434,8 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 .menu__link--sublist:after,
 .menu__link--sublist-caret:after {
   content: "";
-  background:
-    var(--ifm-menu-link-sublist-icon) center / var(--dropdown-icon-width)
-    var(--dropdown-icon-height) no-repeat;
+  background: var(--ifm-menu-link-sublist-icon) center / var(--dropdown-icon-width) var(--dropdown-icon-height)
+    no-repeat;
   filter: var(--ifm-menu-link-sublist-icon-filter);
   height: var(--dropdown-icon-height);
   width: var(--dropdown-icon-width);
@@ -471,16 +465,10 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
 /* Nested list indentation & arrow alignment like Ionic */
 .menu__list .menu__list .menu__link--sublist,
 .menu__list .menu__list .menu__link--sublist-caret {
-  margin-inline-start: calc(
-    (var(--dropdown-icon-width) + var(--dropdown-icon-gap)) *
-    -1
-  );
+  margin-inline-start: calc((var(--dropdown-icon-width) + var(--dropdown-icon-gap)) * -1);
 }
 .menu__list-item .menu__list .menu__link {
-  padding-inline-start: calc(
-    var(--dropdown-icon-width) +
-    var(--dropdown-icon-gap)
-  );
+  padding-inline-start: calc(var(--dropdown-icon-width) + var(--dropdown-icon-gap));
 }
 .menu__list .menu__list .menu__link--sublist:after,
 .menu__list .menu__list .menu__link--sublist-caret:after {
@@ -497,9 +485,7 @@ html[data-theme="dark"] .navbar__items:not(.navbar__items--right)
   background: var(--ifm-menu-color-background-active);
 }
 
-.theme-doc-sidebar-item-category-level-1
-  > .menu__list-item-collapsible
-  .menu__link {
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible .menu__link {
   color: var(--sidebar-category-c);
   font-size: 0.938rem;
   font-weight: 600;
@@ -547,9 +533,8 @@ code {
 
 /* Use sidebar arrow style for mobile TOC "On this page" button */
 [class*="tocCollapsibleButton"]::after {
-  background:
-    var(--ifm-menu-link-sublist-icon) center / var(--dropdown-icon-width)
-    var(--dropdown-icon-height) no-repeat;
+  background: var(--ifm-menu-link-sublist-icon) center / var(--dropdown-icon-width) var(--dropdown-icon-height)
+    no-repeat;
   filter: var(--ifm-menu-link-sublist-icon-filter);
   height: var(--dropdown-icon-height);
   width: var(--dropdown-icon-width);
@@ -813,11 +798,7 @@ html[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
   background: var(--sidebar-border-c);
 }
 .timeline--current-year:before {
-  background: linear-gradient(
-    to bottom,
-    var(--c-indigo-80),
-    var(--sidebar-border-c)
-  );
+  background: linear-gradient(to bottom, var(--c-indigo-80), var(--sidebar-border-c));
 }
 
 /* Improve contrast in dark mode with teal glow and animation */
@@ -832,11 +813,7 @@ html[data-theme="dark"] .timeline:before {
   animation: linePulse 3s ease-in-out infinite alternate;
 }
 html[data-theme="dark"] .timeline--current-year:before {
-  background: linear-gradient(
-    to bottom,
-    var(--timeline-line-strong),
-    var(--timeline-line)
-  );
+  background: linear-gradient(to bottom, var(--timeline-line-strong), var(--timeline-line));
 }
 @keyframes linePulse {
   0% {
@@ -1078,9 +1055,7 @@ html[data-theme="dark"] .youtube-container {
 .docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(0, 0, 0, 0.2) !important;
 }
-html[data-theme="dark"]
-  .docusaurus-mermaid-container
-  line:not([class^="messageLin"]) {
+html[data-theme="dark"] .docusaurus-mermaid-container line:not([class^="messageLin"]) {
   stroke: rgba(255, 255, 255, 0.2) !important;
 }
 html[data-theme="dark"] .docusaurus-mermaid-container [class^="messageLin"] {
@@ -1200,9 +1175,7 @@ html[data-theme="dark"] .alert--danger [class*="admonitionHeading"] {
 }
 
 /* Light mode only: stadium/path nodes have light backgrounds — reset to dark text */
-html[data-theme="light"] .docusaurus-mermaid-container
-  .node:has(path)
-  .nodeLabel {
+html[data-theme="light"] .docusaurus-mermaid-container .node:has(path) .nodeLabel {
   color: #333 !important;
   fill: #333 !important;
 }
@@ -1457,9 +1430,7 @@ html[data-theme="dark"] {
   --docsearch-footer-background: #1a1a1a;
   --docsearch-footer-shadow: 0 -1px 0 0 #2a2a2a;
   --docsearch-key-gradient: linear-gradient(-225deg, #252525, #1e1e1e);
-  --docsearch-key-shadow:
-    inset 0 -2px 0 0 #333, inset 0 0 1px 1px #333,
-    0 1px 2px 1px rgba(0, 0, 0, 0.3);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #333, inset 0 0 1px 1px #333, 0 1px 2px 1px rgba(0, 0, 0, 0.3);
   --docsearch-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   --docsearch-text-color: #e0e0e0;
   --docsearch-primary-color: #2cb1bc;

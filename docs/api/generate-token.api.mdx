@@ -19,61 +19,59 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Generate Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Generate Token"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}/token"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Generates a secure, public token for [embedding](/docs/tagoio/widgets/general/embedding-widgets-to-your-website) a specific widget from a dashboard.  
-Use this token to display the widget in external applications or websites via the TagoIO embed service.  
+Use this token to display the widget in external applications or websites via the TagoIO embed service.
 
-Example embed URL:  
+Example embed URL:
 
-`https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`  
+`https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`
 
-This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.  
+This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}},{"name":"widgetID","in":"path","required":true,"schema":{"type":"string","example":"(Type a widget ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "dashboardID", in: "path", required: true, schema: { type: "string", example: "(Type a dashboard ID)" } },
+    { name: "widgetID", in: "path", required: true, schema: { type: "string", example: "(Type a widget ID)" } },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Generating a token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"widget_token":{"type":"string","example":"ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72"}}},"status":{"type":"boolean","example":true}}},"examples":{"Generating a token":{"value":{"result":{"widget_token":"ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72"},"status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Generating a token",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: { widget_token: { type: "string", example: "ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72" } },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: {
+            "Generating a token": {
+              value: { result: { widget_token: "ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72" }, status: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

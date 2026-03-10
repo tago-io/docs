@@ -13,6 +13,7 @@ A Payload Parser transforms raw data from your devices into a format that's easi
 ## Setting Up a Payload Parser
 
 To use a payload parser with your device:
+
 1. Go to your [Device](/docs/tagocore/device) settings
 2. In the **Payload parser** field, select your JavaScript file
 3. Save your changes
@@ -28,15 +29,17 @@ Payload parsers must be written in JavaScript - no other programming languages a
 Your JavaScript code has access to a special variable called `payload` that contains the raw data sent by your device. You can read from this variable and modify it to transform the data before TagoCore saves it to your [Device Data](/docs/tagocore/resources/device/data.md).
 
 The `payload` variable can contain different types of data depending on what your device sends:
+
 - An **array** of data points
-- An **object** with multiple properties  
+- An **object** with multiple properties
 - A simple **string** or **number**
 
 :::tip Writing Tips
+
 - Write your code directly - no need to wrap it in a function
 - Don't use `return` statements - just modify the `payload` variable
 - Keep it simple - avoid `require`, `import`, or `window` statements
-:::
+  :::
 
 Keep your parser code fast and efficient to avoid slowing down data processing for your entire application.
 
@@ -54,7 +57,7 @@ This example shows how to convert temperature from Fahrenheit to Celsius and add
 // with a variable named "temperature".
 
 // First, we find the temperature variable inside the payload (array)
-const temperatureItem = payload.find((i) => i.variable === 'temperature');
+const temperatureItem = payload.find((i) => i.variable === "temperature");
 
 if (temperatureItem) {
   // If we find the variable, we convert the value
@@ -64,6 +67,6 @@ if (temperatureItem) {
 
   // Set the value and unit
   temperatureItem.value = celsius;
-  temperatureItem.unit = 'C';
+  temperatureItem.unit = "C";
 }
 ```

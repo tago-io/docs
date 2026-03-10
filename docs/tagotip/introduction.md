@@ -19,12 +19,12 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 
 ## Why TagoTiP?
 
-| | HTTP/JSON | TagoTiP | TagoTiP(s) (encrypted) |
-|---|---|---|---|
-| **Payload size** | ~487 bytes | ~130 bytes | ~119 bytes |
-| **vs. HTTP/JSON** | - | 3.7x smaller | 4.1x smaller |
-| **TLS required?** | Yes | Recommended | No - AEAD encryption built-in |
-| **Parse complexity** | JSON parser | Linear scan, no backtracking | Envelope + linear scan |
+|                      | HTTP/JSON   | TagoTiP                      | TagoTiP(s) (encrypted)        |
+| -------------------- | ----------- | ---------------------------- | ----------------------------- |
+| **Payload size**     | ~487 bytes  | ~130 bytes                   | ~119 bytes                    |
+| **vs. HTTP/JSON**    | -           | 3.7x smaller                 | 4.1x smaller                  |
+| **TLS required?**    | Yes         | Recommended                  | No - AEAD encryption built-in |
+| **Parse complexity** | JSON parser | Linear scan, no backtracking | Envelope + linear scan        |
 
 ### Built for constrained devices
 
@@ -38,13 +38,13 @@ PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 
 Need security on raw UDP or constrained links where TLS is too expensive? **TagoTiP(s)** wraps frames in an AEAD authenticated encryption envelope - as little as **29 bytes** of overhead, with built-in replay protection and integrity verification.
 
-| Cipher Suite | Key | Tag | Envelope Overhead |
-|---|---|---|---|
-| **AES-128-CCM** | 128-bit | 8 B | 29 bytes |
-| AES-128-GCM | 128-bit | 16 B | 37 bytes |
-| AES-256-CCM | 256-bit | 8 B | 29 bytes |
-| AES-256-GCM | 256-bit | 16 B | 37 bytes |
-| ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
+| Cipher Suite      | Key     | Tag  | Envelope Overhead |
+| ----------------- | ------- | ---- | ----------------- |
+| **AES-128-CCM**   | 128-bit | 8 B  | 29 bytes          |
+| AES-128-GCM       | 128-bit | 16 B | 37 bytes          |
+| AES-256-CCM       | 256-bit | 8 B  | 29 bytes          |
+| AES-256-GCM       | 256-bit | 16 B | 37 bytes          |
+| ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes          |
 
 Learn more in the [Encryption](./specification/encryption) guide.
 
@@ -52,27 +52,27 @@ Learn more in the [Encryption](./specification/encryption) guide.
 
 ### TagoTiP vs. other IoT data formats
 
-| | TagoTiP | HTTP + JSON | MQTT + JSON | Protobuf |
-|---|---|---|---|---|
-| **Typical payload** | ~130 bytes | ~487 bytes | ~210 bytes | ~80 bytes |
-| **Human-readable** | Yes | Partially | Partially | No |
-| **Schema required** | No | No | No | Yes |
-| **Debug in a terminal** | Yes | Verbose | Binary framing | No |
-| **Build with `sprintf`** | Yes | Complex | Needs MQTT library | Needs code generator |
-| **IoT type system** | Built-in (number, string, bool, location) | Application-defined | Application-defined | Schema-defined |
-| **Metadata, unit, group, timestamp** | Native syntax | Application-defined | Application-defined | Schema-defined |
+|                                      | TagoTiP                                   | HTTP + JSON         | MQTT + JSON         | Protobuf             |
+| ------------------------------------ | ----------------------------------------- | ------------------- | ------------------- | -------------------- |
+| **Typical payload**                  | ~130 bytes                                | ~487 bytes          | ~210 bytes          | ~80 bytes            |
+| **Human-readable**                   | Yes                                       | Partially           | Partially           | No                   |
+| **Schema required**                  | No                                        | No                  | No                  | Yes                  |
+| **Debug in a terminal**              | Yes                                       | Verbose             | Binary framing      | No                   |
+| **Build with `sprintf`**             | Yes                                       | Complex             | Needs MQTT library  | Needs code generator |
+| **IoT type system**                  | Built-in (number, string, bool, location) | Application-defined | Application-defined | Schema-defined       |
+| **Metadata, unit, group, timestamp** | Native syntax                             | Application-defined | Application-defined | Schema-defined       |
 
 ### TagoTiP(s) vs. other IoT security
 
-| | TagoTiP(s) | TLS 1.3 | DTLS 1.2 |
-|---|---|---|---|
-| **Handshake** | None - 0 bytes | ~2-4 KB | ~2-5 KB |
-| **Round trips before first data** | 0 | 1-2 | 2-3 |
-| **Per-message overhead** | 29-37 bytes | ~29 bytes + TCP | ~29 bytes |
-| **Session state** | Stateless | Per-connection | Per-connection |
-| **Certificate management** | None | Required | Required or PSK |
-| **Works over raw UDP** | Yes | No | UDP only |
-| **Works without TCP** | Yes | No | UDP only |
+|                                   | TagoTiP(s)     | TLS 1.3         | DTLS 1.2        |
+| --------------------------------- | -------------- | --------------- | --------------- |
+| **Handshake**                     | None - 0 bytes | ~2-4 KB         | ~2-5 KB         |
+| **Round trips before first data** | 0              | 1-2             | 2-3             |
+| **Per-message overhead**          | 29-37 bytes    | ~29 bytes + TCP | ~29 bytes       |
+| **Session state**                 | Stateless      | Per-connection  | Per-connection  |
+| **Certificate management**        | None           | Required        | Required or PSK |
+| **Works over raw UDP**            | Yes            | No              | UDP only        |
+| **Works without TCP**             | Yes            | No              | UDP only        |
 
 ## Quick example
 
@@ -93,13 +93,13 @@ PULL|4deedd7bab8817ec|sensor-01|[temperature]
 
 All language SDKs share a single Rust core (`tagotip-codec`, `no_std`), so parsing and frame building behave identically everywhere.
 
-| Package | Language | Install |
-|---------|----------|---------|
-| [`@tagoio/tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-node) | TypeScript / Node.js | `npm install @tagoio/tagotip` |
-| [`tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-go) | Go | `go get github.com/tago-io/tagotip-sdk/tagotip-go` |
-| [`tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-python) | Python | `pip install tagotip` |
-| [`TagoTiP`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-arduino) | C / Arduino | Arduino Library Manager |
-| [`tagotip-codec`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-codec) | Rust | `cargo add tagotip-codec` |
+| Package                                                                            | Language             | Install                                            |
+| ---------------------------------------------------------------------------------- | -------------------- | -------------------------------------------------- |
+| [`@tagoio/tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-node) | TypeScript / Node.js | `npm install @tagoio/tagotip`                      |
+| [`tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-go)           | Go                   | `go get github.com/tago-io/tagotip-sdk/tagotip-go` |
+| [`tagotip`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-python)       | Python               | `pip install tagotip`                              |
+| [`TagoTiP`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-arduino)      | C / Arduino          | Arduino Library Manager                            |
+| [`tagotip-codec`](https://github.com/tago-io/tagotip-sdk/tree/main/tagotip-codec)  | Rust                 | `cargo add tagotip-codec`                          |
 
 Browse the full SDK source at [github.com/tago-io/tagotip-sdk](https://github.com/tago-io/tagotip-sdk).
 

@@ -4,6 +4,7 @@ description: "This article explains how to configure environment variables for T
 tags: ["tagoio"]
 keywords: [tagoio, iot, analysis, environment variables, configuration]
 ---
+
 Environment variables let you pass values into the execution context of your Analysis script. Use them to store tokens, account IDs, device IDs, or any other values that the script will use at runtime. The Analysis retrieves these values as environment parameters and exposes them to your code via the `context.environment` global object.
 
 <!-- Image placeholder removed for build -->
@@ -17,10 +18,11 @@ Use environment variables to change how your code behaves. You can access them u
 const myToken = context.environment.MY_TOKEN;
 
 // Provide a default when necessary
-const timeout = parseInt(context.environment.TIMEOUT || '30', 10);
+const timeout = parseInt(context.environment.TIMEOUT || "30", 10);
 ```
 
 In the environment variables UI (see image above):
+
 1. New Environment variable: Add or remove an environment variable using the plus/minus buttons (marked as 1 in the image).
 2. Variable Key: The variable name (marked as 2 in the image). This is the key you will use in `context.environment` (e.g., MY_TOKEN).
 3. Variable Value: The value of the variable (marked as 3 in the image). Values can be integer or string; convert or parse values in your code as needed.

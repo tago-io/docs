@@ -4,6 +4,7 @@ description: "This article explains how to share dashboards in TagoIO, including
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, sharing, public link, TagoRUN]
 ---
+
 A great feature of TagoIO is its native sharing capability for dashboards — useful when a dashboard becomes a feature you want to share with others.
 
 :::tip

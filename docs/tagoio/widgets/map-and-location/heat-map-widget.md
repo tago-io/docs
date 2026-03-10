@@ -4,6 +4,7 @@ description: "A brief guide to the Heat Map widget that explains how it displays
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, heat map, location]
 ---
+
 With the Heat Map widget you can create a colorful layer of bubbles over an image to represent the intensity of variables. Higher variable values produce redder (larger/intense) bubbles, and you can add a heat scale to the layer to show the value range.
 
 ![Heat map example on a background image (floor plan)](/docs_imagem/tagoio/heat-map-widget-2.png)
@@ -20,7 +21,8 @@ This widget works for both **Normal** dashboards and **Blueprint** dashboards.
 
 ### Data From field
 
-The *Data From* field lets you select the device and variable that will feed data into this widget.
+The _Data From_ field lets you select the device and variable that will feed data into this widget.
+
 - In a Normal dashboard, choose one of your devices from the list and then pick the variable that contains the data.
 - In a Blueprint dashboard, add the **Blueprint device** and input the name of the variable that holds the information.
   When using a Blueprint dashboard, the variable selector will not list variables because it does not know which devices are linked to your Blueprint Device.
@@ -48,7 +50,7 @@ If your variable’s metadata contains `x` and `y`, those values will be used as
 {
   "variable": "heat",
   "value": 71,
-  "metadata": {"x":0.2, "y":0.3}
+  "metadata": { "x": 0.2, "y": 0.3 }
 }
 ```
 

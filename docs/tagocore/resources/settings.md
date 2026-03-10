@@ -21,12 +21,15 @@ All settings are automatically saved to a configuration file (`tagocore.yml`) in
 ## Network Configuration
 
 ### Port Setting
+
 Controls which network port TagoCore uses to communicate. The default port is `8888`, but you can change this if:
+
 - Another application is already using port 8888
 - Your network requires a specific port number
 - You want to run multiple TagoCore instances
 
 **What changes when you modify the port:**
+
 - The web address you use to access TagoCore (e.g., `http://localhost:9000`)
 - The API endpoint your devices use to send data
 
@@ -41,6 +44,7 @@ This setting only affects TagoCore itself. Plugins that start their own web serv
 ## Plugin Configuration
 
 ### Database Plugin
+
 Determines where TagoCore stores your device data and system information. If you have multiple database plugins installed, you can switch between them here.
 
 **Default behavior:** TagoCore automatically uses the first available database plugin it finds.
@@ -56,6 +60,7 @@ Switching database plugins doesn't automatically transfer your existing data. Yo
 :::
 
 ### Queue Plugin
+
 Manages how TagoCore handles background tasks and message processing. Queues help TagoCore process multiple operations efficiently without blocking other activities.
 
 :::info Restart Required
@@ -63,6 +68,7 @@ TagoCore must restart when changing queue plugins.
 :::
 
 ### Filesystem Plugin
+
 Controls how TagoCore accesses and stores files on your system. The default Local Disk plugin works for most installations.
 
 **When to change:** You need specialized file storage (like network drives or cloud storage) through custom plugins.

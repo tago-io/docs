@@ -2,21 +2,15 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { DocsPageData, ImageRenderer } from "@acid-info/docusaurus-og";
 
-const interRegular = readFileSync(
-  join(__dirname, "../static/fonts/Inter-Regular.ttf"),
-);
-const interBold = readFileSync(
-  join(__dirname, "../static/fonts/Inter-Bold.ttf"),
-);
+const interRegular = readFileSync(join(__dirname, "../static/fonts/Inter-Regular.ttf"));
+const interBold = readFileSync(join(__dirname, "../static/fonts/Inter-Bold.ttf"));
 
 // PNG version of tagoio-official-logo-white.svg (Satori cannot render SVG)
-const logoPng = readFileSync(
-  join(__dirname, "../static/img/tagoio-logo-white.png"),
-);
+const logoPng = readFileSync(join(__dirname, "../static/img/tagoio-logo-white.png"));
 const LOGO_DATA_URI = `data:image/png;base64,${logoPng.toString("base64")}`;
 
 export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
-  // biome-ignore lint/correctness/useJsxKeyInIterable: Satori renders JSX to an image, not a React tree
+  // oxlint-disable-next-line react/jsx-key -- Satori renders JSX to an image, not a React tree
   <div
     style={{
       display: "flex",
@@ -115,9 +109,7 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
         }}
       >
         <span style={{ fontSize: "16px", color: "#707070" }}>docs.tago.io</span>
-        <span style={{ fontSize: "14px", color: "#2cb1bc" }}>
-          IoT Cloud Platform
-        </span>
+        <span style={{ fontSize: "14px", color: "#2cb1bc" }}>IoT Cloud Platform</span>
       </div>
     </div>
   </div>,

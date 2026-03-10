@@ -19,54 +19,129 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Dashboards"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Dashboards"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/dashboard"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/dashboard"} context={"endpoint"}></MethodEndpoint>
 
 Retrieves a list with all dashboards from the profile
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"page","in":"query","schema":{"type":"string","example":"1"},"description":"Page number."},{"name":"amount","in":"query","schema":{"type":"string","example":"5"},"description":"Amount of dashboards per page."},{"name":"orderBy","in":"query","schema":{"type":"string","example":"name"},"description":"Order dashboard by name."},{"name":"fields[]","in":"query","description":"Select which properties to include for each dashboard in the response.\nPass the parameter multiple times to include more than one field.\n\nExample: `?fields[]=label&fields[]=id&fields[]=type`\n","schema":{"type":"array","items":{"type":"string","enum":["label","id","type","tags","visible","created_at","last_access"]}},"style":"form","explode":true}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "page", in: "query", schema: { type: "string", example: "1" }, description: "Page number." },
+    {
+      name: "amount",
+      in: "query",
+      schema: { type: "string", example: "5" },
+      description: "Amount of dashboards per page.",
+    },
+    {
+      name: "orderBy",
+      in: "query",
+      schema: { type: "string", example: "name" },
+      description: "Order dashboard by name.",
+    },
+    {
+      name: "fields[]",
+      in: "query",
+      description:
+        "Select which properties to include for each dashboard in the response.\nPass the parameter multiple times to include more than one field.\n\nExample: `?fields[]=label&fields[]=id&fields[]=type`\n",
+      schema: {
+        type: "array",
+        items: { type: "string", enum: ["label", "id", "type", "tags", "visible", "created_at", "last_access"] },
+      },
+      style: "form",
+      explode: true,
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Get a list of dashboards","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Dashboard ID","example":"623c74a15a13360011803f3e"},"label":{"type":"string","description":"Dashboard title label","example":"Door Sensor"},"tags":{"type":"array","description":"Dashboard tags","items":{"type":"object","properties":{"key":{"type":"string","example":"vehicle"},"value":{"type":"string","example":"gas"}}},"example":[]},"profile":{"type":"string","description":"Profile ID","example":"612ea05e3cc0780012715111"},"visible":{"type":"boolean","description":"Visibility status","example":true},"group_by":{"type":"array","description":"List of tags to group in the sidebar","items":{"type":"string"},"example":[]},"created_at":{"type":"string","format":"date-time","description":"Creation timestamp","example":"2022-03-24T13:39:45.504Z"},"icon":{"type":"object","description":"Dashboard icon","properties":{"color":{"type":"string","example":"hsl(328, 89%, 47%)"},"url":{"type":"string","example":"https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg"}},"example":{}},"last_access":{"type":"string","format":"date-time","description":"Last access timestamp","example":"2022-06-13T20:53:32.583Z"},"type":{"type":"string","description":"Dashboard type","enum":["dashboard","blueprint"],"example":"dashboard"},"tabs":{"type":"array","description":"Dashboard tabs","items":{"type":"object","properties":{"key":{"type":"string","example":"1648142133869"},"link":{"type":"string","example":""},"value":{"type":"string","example":"tab test"}}},"example":[]}}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Get a list of dashboards",
+      content: {
+        "application/json": {
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                id: { type: "string", description: "Dashboard ID", example: "623c74a15a13360011803f3e" },
+                label: { type: "string", description: "Dashboard title label", example: "Door Sensor" },
+                tags: {
+                  type: "array",
+                  description: "Dashboard tags",
+                  items: {
+                    type: "object",
+                    properties: {
+                      key: { type: "string", example: "vehicle" },
+                      value: { type: "string", example: "gas" },
+                    },
+                  },
+                  example: [],
+                },
+                profile: { type: "string", description: "Profile ID", example: "612ea05e3cc0780012715111" },
+                visible: { type: "boolean", description: "Visibility status", example: true },
+                group_by: {
+                  type: "array",
+                  description: "List of tags to group in the sidebar",
+                  items: { type: "string" },
+                  example: [],
+                },
+                created_at: {
+                  type: "string",
+                  format: "date-time",
+                  description: "Creation timestamp",
+                  example: "2022-03-24T13:39:45.504Z",
+                },
+                icon: {
+                  type: "object",
+                  description: "Dashboard icon",
+                  properties: {
+                    color: { type: "string", example: "hsl(328, 89%, 47%)" },
+                    url: {
+                      type: "string",
+                      example: "https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg",
+                    },
+                  },
+                  example: {},
+                },
+                last_access: {
+                  type: "string",
+                  format: "date-time",
+                  description: "Last access timestamp",
+                  example: "2022-06-13T20:53:32.583Z",
+                },
+                type: {
+                  type: "string",
+                  description: "Dashboard type",
+                  enum: ["dashboard", "blueprint"],
+                  example: "dashboard",
+                },
+                tabs: {
+                  type: "array",
+                  description: "Dashboard tabs",
+                  items: {
+                    type: "object",
+                    properties: {
+                      key: { type: "string", example: "1648142133869" },
+                      link: { type: "string", example: "" },
+                      value: { type: "string", example: "tab test" },
+                    },
+                  },
+                  example: [],
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

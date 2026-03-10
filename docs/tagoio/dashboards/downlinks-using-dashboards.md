@@ -4,18 +4,22 @@ description: "This article explains how to perform downlinks for LoRaWAN Class C
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, downlink, LoRaWAN]
 ---
+
 Learn how to perform downlinks for Class C or Class A devices using [Analysis](/docs/tagoio/analysis/). This article also shows how to send downlink data from [Dashboards](/docs/tagoio/dashboards/). This approach can be used in the following cases:
 
 ## Use cases
+
 - For devices with class C: immediately send a downlink message to the device.
 - For devices with class A: schedule downlink messages for the next available time slot.
 
 ## Required Analysis template
+
 To use this method you must install the Analysis template available at the following link:
 
 http://admin.tago.io/template/5f513aabd4555600277f858c
 
 ## After installing the template
+
 After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your [device](https://tago.io/devices):
 
 Configure the environment variables according to the template instructions so the Analysis can correctly address and send downlink payloads to your device.
@@ -28,6 +32,7 @@ Configure the environment variables according to the template instructions so th
 With all variables set, press **Save** to save the analysis.
 
 ## Setting up the Dashboard
+
 After completing the previous steps, you may want to send these downlinks using a dashboard. This method can be useful to easily select the device to send the payload or to share the dashboard with others and allow them to send the downlink messages.
 
 <!-- Image temporarily disabled: Dashboard overview - /help.tago.io/galleryDocuments/edbsn24e33a3a2919950ee11a198e3332a1a07ebf01b746f9b3796745958a4d4df1ddb1ec074de43a9f0483299b12f393c1ca?inline=true -->

@@ -5,6 +5,7 @@ tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, custom widget, parameters]
 "sidebar_position": 2
 ---
+
 Parameters allow you to send a list of keys and values to your custom widget.
 
 One common use for parameters is to change how your code behaves. For example, you can point two widgets to the same link but configure each to exhibit different behaviors by using different parameters.

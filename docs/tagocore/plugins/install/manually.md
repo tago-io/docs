@@ -26,11 +26,14 @@ This method is perfect for testing plugins during development or quickly adding 
 For permanent installation or when managing multiple plugins, you can add them directly to TagoCore's configuration:
 
 ### Locate Your Configuration File
+
 Find the `tagocore.yml` file in your TagoCore settings folder:
+
 - **Windows**: `TagoCore` folder in your user directory
 - **Mac/Linux**: `.tagocore` folder in your user directory (hidden folder)
 
 ### Add Plugin Paths
+
 Open the `tagocore.yml` file and add your plugin paths to the `custom_plugins` section:
 
 ```yml

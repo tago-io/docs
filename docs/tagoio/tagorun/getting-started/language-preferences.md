@@ -4,9 +4,11 @@ description: "This article explains how language preferences work in TagoIO: whi
 tags: ["tagoio"]
 keywords: [tagoio, iot, tagorun, language, localization]
 ---
+
 The TagoIO admin interface used for developing applications is displayed only in English. However, users who access your RUN application can view it in any language you configure in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries.md). These users are referred to as "RUN users."
 
 ## Most commonly used languages
+
 Some of the most commonly used languages for RUN applications include:
 
 - English
@@ -18,8 +20,8 @@ Some of the most commonly used languages for RUN applications include:
 - Portuguese
 
 ## How end-users choose a language
-All end-users can select their preferred language from the "Visualization Preferences" tab on the Account Setting page.
 
+All end-users can select their preferred language from the "Visualization Preferences" tab on the Account Setting page.
 
 :::info
 

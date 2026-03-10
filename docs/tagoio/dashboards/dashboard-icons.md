@@ -4,6 +4,7 @@ description: "This article explains how to add and customize icons for dashboard
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, icons, customization]
 ---
+
 You can customize the appearance of your dashboard by adding icons. Icons are displayed on the left side of each dashboard item. Colors are fully customizable, and there are more than 100 free icons available.
 
 ![Dashboard list showing icons next to each dashboard item](/docs_imagem/tagoio/dashboard-icons-2.png)
@@ -14,11 +15,10 @@ To add or change a dashboard icon:
 
 - Open the dashboard list and locate the dashboard you want to edit.
 - Click the options menu (the three‑dots menu) for that dashboard.
-- Select **Configure** from the menu to open the *General Information* area of the dashboard.
-- In the *General Information* tab, a new option called **Dashboard icon** appears.  
-  - Choose an icon from the list.  
+- Select **Configure** from the menu to open the _General Information_ area of the dashboard.
+- In the _General Information_ tab, a new option called **Dashboard icon** appears.
+  - Choose an icon from the list.
   - To set its color, click the square button next to the icon; a color palette will appear for you to pick a color.
-
 
 ## Notes
 

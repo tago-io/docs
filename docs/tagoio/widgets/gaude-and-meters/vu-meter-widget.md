@@ -4,6 +4,7 @@ description: "This article explains the VU Meter widget for TagoIO, describing w
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, vu meter, gauge]
 ---
+
 VU Meter gauges display the variable in a velocimeter-style gauge.
 
 ![Three VU meters example](/docs_imagem/tagoio/vu-meter-widget-2.gif)
@@ -13,7 +14,6 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 ## Creating your own
 
 To add the VU Meter widget to your dashboard, choose the VU Meter widget from the widget list and customize it to your preference. You can edit the widget using the options located on the right side of the widget.
-
 
 ### 'Data From' Field
 

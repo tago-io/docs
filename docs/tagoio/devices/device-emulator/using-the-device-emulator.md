@@ -5,6 +5,7 @@ tags: ["tagoio", "devices"]
 sidebar_position: 1
 keywords: [tagoio, iot, devices, emulator, payload, debugging]
 ---
+
 If you want a quick way to send data to your applications but don't have your hardware device available, or you simply need to send data to debug your applications, you can use the Device Emulator.
 
 To access the emulator, go to [Devices](/docs/tagoio/devices/), select the device, and then click on the Emulator tab.

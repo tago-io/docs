@@ -4,6 +4,7 @@ description: "This article explains how to send downlink messages from TagoIO to
 tags: ["tagoio"]
 keywords: [tagoio, iot, lorawan, downlink, configuration parameters]
 ---
+
 TagoIO will send downlink messages to your devices through Configuration Parameters. To enable this, create a key parameter named `downlink` and uncheck the switch labeled "Unread". Your LoRaWAN™ provider may allow additional downlink parameters.
 
 :::warning
@@ -22,8 +23,6 @@ To send downlink messages from TagoIO to your LoRaWAN™ provider:
 4. Make sure the `downlink` parameter's switch is unchecked (set to "Unread") so the platform will send it to the network server.
 
 The downlink payload should be placed into the parameter's value field. Below is an example of the configuration screen showing the `downlink` parameter and where to enter the value.
-
-
 
 :::info
 

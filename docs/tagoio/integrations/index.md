@@ -29,10 +29,10 @@ from other protocols, by using one of the following methods:
 TagoIO provides network integrations fully hosted in different regions. Based on
 your account's region, ensure you use the correct endpoint:
 
-| Region  | Network Endpoint         |
-| ------- | ------------------------ |
-| Europe* | middleware.eu-w1.tago.io |
-| USA*    | middleware.us-e1.tago.io |
+| Region   | Network Endpoint         |
+| -------- | ------------------------ |
+| Europe\* | middleware.eu-w1.tago.io |
+| USA\*    | middleware.us-e1.tago.io |
 
 **For example, use everynet.middleware.us-e1.tago.io for Everynet network in the
 USA.**

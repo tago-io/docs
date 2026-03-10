@@ -26,11 +26,7 @@ type ChangelogContent = {
   metadata?: Record<string, unknown> | Meta;
 };
 
-export default function ChangelogIndex({
-  items,
-}: {
-  items: Array<{ content: ChangelogContent }>;
-}) {
+export default function ChangelogIndex({ items }: { items: Array<{ content: ChangelogContent }> }) {
   const location = useLocation();
   const history = useHistory();
   const [activeFilter, setActiveFilter] = useState("all");
@@ -60,23 +56,14 @@ export default function ChangelogIndex({
     const version = fm.version || "";
     return { product, version, title, date, displayDate, description, slug };
   };
-  const changelogs = items
-    .map((i) => parsePost(i.content))
-    .filter((p) => p.version && p.product);
+  const changelogs = items.map((i) => parsePost(i.content)).filter((p) => p.version && p.product);
   const hasTagoDeploy = changelogs.some((p) => p.product === "tagodeploy");
   const allowedFilters = React.useMemo<string[]>(
-    () => [
-      "all",
-      "tagoio-admin",
-      "tagoio-api",
-      "tagocore",
-      ...(hasTagoDeploy ? ["tagodeploy"] : []),
-    ],
-    [hasTagoDeploy],
+    () => ["all", "tagoio-admin", "tagoio-api", "tagocore", ...(hasTagoDeploy ? ["tagodeploy"] : [])],
+    [hasTagoDeploy]
   );
 
-  const getYear = (dateStr: string) =>
-    new Date(dateStr).getFullYear().toString();
+  const getYear = (dateStr: string) => new Date(dateStr).getFullYear().toString();
   const getMonthIndex = (dateStr: string) => new Date(dateStr).getMonth();
   const monthNames = [
     "January",
@@ -95,13 +82,11 @@ export default function ChangelogIndex({
   const currentYear = new Date().getFullYear().toString();
 
   const filteredChangelogs =
-    activeFilter === "all"
-      ? changelogs
-      : changelogs.filter((item) => item.product === activeFilter);
+    activeFilter === "all" ? changelogs : changelogs.filter((item) => item.product === activeFilter);
 
-  const groupByYear = (items: typeof filteredChangelogs) => {
+  const groupByYear = (entries: typeof filteredChangelogs) => {
     const map = new Map<string, typeof filteredChangelogs>();
-    for (const item of items) {
+    for (const item of entries) {
       const y = getYear(item.date);
       if (!map.has(y)) map.set(y, []);
       map.get(y)?.push(item);
@@ -110,14 +95,12 @@ export default function ChangelogIndex({
     for (const [_y, arr] of map) {
       arr.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)));
     }
-    return Array.from(map.entries()).sort(
-      (a, b) => Number(b[0]) - Number(a[0]),
-    );
+    return Array.from(map.entries()).sort((a, b) => Number(b[0]) - Number(a[0]));
   };
 
-  const groupByMonth = (items: typeof filteredChangelogs) => {
+  const groupByMonth = (entries: typeof filteredChangelogs) => {
     const map = new Map<number, typeof filteredChangelogs>();
-    for (const item of items) {
+    for (const item of entries) {
       const m = getMonthIndex(item.date);
       if (!map.has(m)) map.set(m, []);
       map.get(m)?.push(item);
@@ -153,17 +136,9 @@ export default function ChangelogIndex({
       params.set("product", activeFilter);
     }
     const search = params.toString();
-    const newUrl =
-      location.pathname + (search ? `?${search}` : "") + (location.hash || "");
+    const newUrl = location.pathname + (search ? `?${search}` : "") + (location.hash || "");
     history.replace(newUrl);
-  }, [
-    activeFilter,
-    isReady,
-    history,
-    location.hash,
-    location.pathname,
-    location.search,
-  ]);
+  }, [activeFilter, isReady, history, location.hash, location.pathname, location.search]);
 
   const tagoioIcon = useBaseUrl("/img/tagoio-icon-original.png");
   const tagocoreIcon = useBaseUrl("/img/tagocore-icon-original.png");
@@ -194,26 +169,18 @@ export default function ChangelogIndex({
   };
 
   return (
-    <Layout
-      title="Changelog"
-      description="Changelog for TagoIO, TagoCore, and TagoDeploy"
-    >
+    <Layout title="Changelog" description="Changelog for TagoIO, TagoCore, and TagoDeploy">
       <div className="container margin-vert--lg">
         <div className="row">
           <div className="col col--10 col--offset-1 changelog-page">
             <h1>Changelog</h1>
             <p className="margin-bottom--lg">
-              Stay up to date with the latest changes and updates for all TagoIO
-              products.
+              Stay up to date with the latest changes and updates for all TagoIO products.
             </p>
 
             <div className="changelog-layout">
               <div className="changelog-chips-wrapper">
-                <div
-                  className="changelog-chips"
-                  role="tablist"
-                  aria-label="Filter changelog by product"
-                >
+                <div className="changelog-chips" role="tablist" aria-label="Filter changelog by product">
                   <button
                     type="button"
                     className={`changelog-chip ${activeFilter === "all" ? "changelog-chip--active" : ""}`}
@@ -281,21 +248,13 @@ export default function ChangelogIndex({
               <div>
                 {/* Timeline by year */}
                 {grouped.length > 0 &&
-                  grouped.map(([year, items]) => (
-                    <section
-                      key={year}
-                      id={`year-${year}`}
-                      className="timeline-year"
-                    >
+                  grouped.map(([year, yearEntries]) => (
+                    <section key={year} id={`year-${year}`} className="timeline-year">
                       <h2 className="timeline-year__title">{year}</h2>
-                      <div
-                        className={`timeline ${year === currentYear ? "timeline--current-year" : ""}`}
-                      >
-                        {groupByMonth(items).map(([monthIndex, monthItems]) => (
+                      <div className={`timeline ${year === currentYear ? "timeline--current-year" : ""}`}>
+                        {groupByMonth(yearEntries).map(([monthIndex, monthItems]) => (
                           <div key={monthIndex} className="timeline-month">
-                            <h3 className="timeline-month__title">
-                              {monthNames[monthIndex]}
-                            </h3>
+                            <h3 className="timeline-month__title">{monthNames[monthIndex]}</h3>
                             {monthItems.map((changelog) => (
                               <Link
                                 key={`${changelog.product}-${changelog.version}`}
@@ -310,14 +269,11 @@ export default function ChangelogIndex({
                                     </div>
                                     <div className="timeline-card__meta">
                                       <small className="text--secondary">
-                                        {changelog.displayDate ||
-                                          changelog.date}
+                                        {changelog.displayDate || changelog.date}
                                       </small>
                                     </div>
                                   </div>
-                                  <p className="timeline-card__desc">
-                                    {changelog.description}
-                                  </p>
+                                  <p className="timeline-card__desc">{changelog.description}</p>
                                 </article>
                               </Link>
                             ))}

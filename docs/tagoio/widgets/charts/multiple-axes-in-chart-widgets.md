@@ -5,7 +5,9 @@ tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, multiple axes, charts]
 sidebar_position: 1
 ---
+
 All chart-type widgets in TagoIO can be configured to display more than one Y‑axis. The widgets that support this feature include:
+
 - [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget.md)
 - [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget.md)
 - [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md)
@@ -27,5 +29,6 @@ After clicking the Multiple Axes button you can associate one or more variables 
 Once you have configured the axes, click **Confirm** to preview the changes and then **Save** to apply them.
 
 Notes:
+
 - After enabling multiple axes, you can assign different series to specific Y‑axes so each series scales appropriately.
 - Use the Y‑axis settings to configure labels, units, and axis position (left/right) for each axis. You can also hide a label if desired.

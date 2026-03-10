@@ -19,60 +19,51 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Widget"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Widget"}></Heading>
 
 <MethodEndpoint
   method={"delete"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Delete a widget from the dashboard.
 
-:::warning  
+:::warning
 
-Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.  
+Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.
 
 :::
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}},{"name":"widgetID","in":"path","required":true,"schema":{"type":"string","example":"(Type a widget ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "dashboardID", in: "path", required: true, schema: { type: "string", example: "(Type a dashboard ID)" } },
+    { name: "widgetID", in: "path", required: true, schema: { type: "string", example: "(Type a widget ID)" } },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Deleting a Widget","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting a Widget":{"value":{"result":"Successfully Removed","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Deleting a Widget",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Successfully Removed" },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: { "Deleting a Widget": { value: { result: "Successfully Removed", status: true } } },
+        },
+      },
+    },
+  }}
+></StatusCodes>

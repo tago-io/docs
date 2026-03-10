@@ -4,6 +4,7 @@ description: "A brief guide to the Push Button widget in TagoIO, explaining its 
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, push button, input]
 ---
+
 Push button allows users to select options for different states, similar to a mechanical switch. Developers can configure text or an icon for each state and associate colors with each option.
 This widget works on both Normal and Blueprint dashboards.
 
@@ -15,6 +16,7 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 ## Creating your own
 
 To add the Push Button widget to your dashboard:
+
 - Choose the Push Button widget from the widget list.
 - Customize it to your preference.
 - Edit its properties using the options located on the right side of the widget.

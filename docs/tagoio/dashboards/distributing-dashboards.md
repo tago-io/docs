@@ -4,6 +4,7 @@ description: "This article explains how to create and share dashboard templates 
 tags: ["tagoio", "dashboards"]
 keywords: [tagoio, iot, dashboard, templates, distribution, sharing]
 ---
+
 You can create and share a dashboard template — either without your personal data or using mockup data — and send a link so anyone can install it into their account through a customized installation page. Once the template is installed, users are free to modify the dashboards to suit their needs. The template can be added to your own profile or to other TagoIO accounts.
 
 When people click the link you provide, they will be taken to a screen similar to the one shown below. Both the images and the text on the installation page are fully customizable.

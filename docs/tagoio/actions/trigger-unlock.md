@@ -4,6 +4,7 @@ description: "This article explains the Trigger Unlock feature in TagoIO, how it
 tags: ["tagoio"]
 keywords: [tagoio, iot, actions, trigger unlock, conditions]
 ---
+
 Trigger Unlock is a feature that allows users to define specific conditions under which an action, once locked, can be unlocked and allowed to execute again. This locking mechanism safeguards against repetitive or unwanted triggers, ensuring that actions occur only when truly necessary. Before using Trigger Unlock, familiarize yourself with [Trigger Conditions](/docs/tagoio/actions/trigger-by-variable.md).
 
 This feature is available exclusively for the trigger type: [Trigger by Variable](/docs/tagoio/actions/trigger-by-variable.md).
@@ -17,6 +18,7 @@ Thus, each time a Trigger Condition is met, the trigger is locked if there is at
 ### Locked Switch
 
 You can check if your action is locked by looking at the **Locked** switch, as shown in the screenshot below.
+
 - If the Locked switch is gray, it means your action is unlocked;
 - If it's red, it means your action is locked.
 

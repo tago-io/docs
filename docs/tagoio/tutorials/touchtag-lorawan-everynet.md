@@ -4,6 +4,7 @@ description: "This article explains TagoIO's integration with TouchTAG devices v
 tags: ["tagoio"]
 keywords: [tagoio, iot, touchtag, lorawan, everynet]
 ---
+
 ## Overview
 
 TagoIO integrates with TouchTAG devices through a complete connector to the Everynet back-end server. The system decrypts and parses incoming payloads, extracting all measured variables in real time.

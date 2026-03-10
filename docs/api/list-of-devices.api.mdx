@@ -19,54 +19,161 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List of Devices"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List of Devices"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device"} context={"endpoint"}></MethodEndpoint>
 
 Retrieves a list with all devices from the profile
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"page","in":"query","schema":{"type":"string","example":"1"},"description":"Page number."},{"name":"amount","in":"query","schema":{"type":"string","example":"10"},"description":"Amount of devices by page."},{"name":"filter[id]","in":"query","schema":{"type":"string","example":""},"description":"Filter the device by ID."},{"name":"filter[name]","in":"query","schema":{"type":"string","example":""},"description":"Filter the device name."},{"name":"filter[visible]","in":"query","schema":{"type":"string","example":"true / false"},"description":"Filter the device visible status."},{"name":"filter[active]","in":"query","schema":{"type":"string","example":"true / false"},"description":"Filter the device active status."},{"name":"filter[connector]","in":"query","schema":{"type":"string","example":""},"description":"Filter the devices by the Connector ID."},{"name":"filter[network]","in":"query","schema":{"type":"string","example":""},"description":"Filter the devices by the Network ID."},{"name":"filter[tags]","in":"query","schema":{"type":"string","example":""},"description":"Filter device by it's tag. Check the example."},{"name":"filter[updated_at]","in":"query","schema":{"type":"string","example":"1 day"},"description":"Filter by time the device was received data. Can be an ISO-8601 or a relative date "},{"name":"filter[created_at]","in":"query","schema":{"type":"string","example":"1 day"},"description":"Filter by time the device was created. Can be an ISO-8601 or a relative date "},{"name":"orderBy","in":"query","schema":{"type":"string","example":"created_at"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "page", in: "query", schema: { type: "string", example: "1" }, description: "Page number." },
+    {
+      name: "amount",
+      in: "query",
+      schema: { type: "string", example: "10" },
+      description: "Amount of devices by page.",
+    },
+    {
+      name: "filter[id]",
+      in: "query",
+      schema: { type: "string", example: "" },
+      description: "Filter the device by ID.",
+    },
+    {
+      name: "filter[name]",
+      in: "query",
+      schema: { type: "string", example: "" },
+      description: "Filter the device name.",
+    },
+    {
+      name: "filter[visible]",
+      in: "query",
+      schema: { type: "string", example: "true / false" },
+      description: "Filter the device visible status.",
+    },
+    {
+      name: "filter[active]",
+      in: "query",
+      schema: { type: "string", example: "true / false" },
+      description: "Filter the device active status.",
+    },
+    {
+      name: "filter[connector]",
+      in: "query",
+      schema: { type: "string", example: "" },
+      description: "Filter the devices by the Connector ID.",
+    },
+    {
+      name: "filter[network]",
+      in: "query",
+      schema: { type: "string", example: "" },
+      description: "Filter the devices by the Network ID.",
+    },
+    {
+      name: "filter[tags]",
+      in: "query",
+      schema: { type: "string", example: "" },
+      description: "Filter device by it's tag. Check the example.",
+    },
+    {
+      name: "filter[updated_at]",
+      in: "query",
+      schema: { type: "string", example: "1 day" },
+      description: "Filter by time the device was received data. Can be an ISO-8601 or a relative date ",
+    },
+    {
+      name: "filter[created_at]",
+      in: "query",
+      schema: { type: "string", example: "1 day" },
+      description: "Filter by time the device was created. Can be an ISO-8601 or a relative date ",
+    },
+    { name: "orderBy", in: "query", schema: { type: "string", example: "created_at" } },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"List of devices retrieved using query params","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"connector":{"type":"string","example":"5f5a8f3351d4db99c40ded2d"},"id":{"type":"string","example":"5dcad1c216174c001ca23ab9"},"name":{"type":"string","example":"Device #1"},"network":{"type":"string","example":"5bbd120d4051a50034cd1a05"},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"type"},"value":{"type":"string","example":"Smoke Detector"}}},"example":[{"key":"type","value":"Smoke Detector"}]}}},"example":[{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad1c216174c001ca23ab9","name":"Device #1","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]},{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad25016174c001ca24a09","name":"Device #2","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]}]},"status":{"type":"boolean","example":true}}},"examples":{"List of devices retrieved using query params":{"value":{"result":[{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad1c216174c001ca23ab9","name":"Device #1","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]},{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad25016174c001ca24a09","name":"Device #2","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]}],"status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "List of devices retrieved using query params",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    connector: { type: "string", example: "5f5a8f3351d4db99c40ded2d" },
+                    id: { type: "string", example: "5dcad1c216174c001ca23ab9" },
+                    name: { type: "string", example: "Device #1" },
+                    network: { type: "string", example: "5bbd120d4051a50034cd1a05" },
+                    tags: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          key: { type: "string", example: "type" },
+                          value: { type: "string", example: "Smoke Detector" },
+                        },
+                      },
+                      example: [{ key: "type", value: "Smoke Detector" }],
+                    },
+                  },
+                },
+                example: [
+                  {
+                    connector: "5f5a8f3351d4db99c40ded2d",
+                    id: "5dcad1c216174c001ca23ab9",
+                    name: "Device #1",
+                    network: "5bbd120d4051a50034cd1a05",
+                    tags: [{ key: "type", value: "Smoke Detector" }],
+                  },
+                  {
+                    connector: "5f5a8f3351d4db99c40ded2d",
+                    id: "5dcad25016174c001ca24a09",
+                    name: "Device #2",
+                    network: "5bbd120d4051a50034cd1a05",
+                    tags: [{ key: "type", value: "Smoke Detector" }],
+                  },
+                ],
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: {
+            "List of devices retrieved using query params": {
+              value: {
+                result: [
+                  {
+                    connector: "5f5a8f3351d4db99c40ded2d",
+                    id: "5dcad1c216174c001ca23ab9",
+                    name: "Device #1",
+                    network: "5bbd120d4051a50034cd1a05",
+                    tags: [{ key: "type", value: "Smoke Detector" }],
+                  },
+                  {
+                    connector: "5f5a8f3351d4db99c40ded2d",
+                    id: "5dcad25016174c001ca24a09",
+                    name: "Device #2",
+                    network: "5bbd120d4051a50034cd1a05",
+                    tags: [{ key: "type", value: "Smoke Detector" }],
+                  },
+                ],
+                status: true,
+              },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

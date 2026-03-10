@@ -19,53 +19,52 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Import Data from a CSV in Files"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Import Data from a CSV in Files"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/data/restore"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/data/restore"} context={"endpoint"}></MethodEndpoint>
 
 Import Data from a CSV in Files
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "deviceID", in: "path", required: true, schema: { type: "string", example: "67aa1f9135b1a7000a9db33c" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"file_address":{"type":"string","example":"/July_data/31072024_data.csv"}}},"examples":{"Import Data from a CSV in Files":{"value":{"file_address":"/July_data/31072024_data.csv"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: { file_address: { type: "string", example: "/July_data/31072024_data.csv" } },
+        },
+        examples: { "Import Data from a CSV in Files": { value: { file_address: "/July_data/31072024_data.csv" } } },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Importing data from Files","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Data import added to the queue successfully!"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Importing data from Files",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Data import added to the queue successfully!" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

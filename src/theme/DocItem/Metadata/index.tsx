@@ -13,9 +13,7 @@ export default function DocItemMetadata() {
     headline: metadata.title,
     description: metadata.description || "",
     url: `${siteConfig.url}${metadata.permalink}`,
-    dateModified: metadata.lastUpdatedAt
-      ? new Date(metadata.lastUpdatedAt * 1000).toISOString()
-      : undefined,
+    dateModified: metadata.lastUpdatedAt ? new Date(metadata.lastUpdatedAt * 1000).toISOString() : undefined,
     publisher: {
       "@type": "Organization",
       name: "TagoIO",
@@ -36,9 +34,7 @@ export default function DocItemMetadata() {
         image={assets.image ?? frontMatter.image}
       />
       <Head>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Head>
     </>
   );

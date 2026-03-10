@@ -4,9 +4,11 @@ description: "This article explains how to view an overview of your account's co
 tags: ["tagoio"]
 keywords: [tagoio, iot, billing, costs, summary]
 ---
+
 You can get an overview of your account's costs for the current month by clicking on the [Summary](https://admin.tago.io/account/billing) tab. This view helps you track the costs of sub-accounts (profiles) that you may use to bill your own customers.
 
 ## Views
+
 This page consists of three views:
 
 1. The account cost distributed by type of service and plan in a pie chart.
@@ -15,7 +17,7 @@ This page consists of three views:
 
 <!-- Image placeholder removed for build -->
 
-:::info 
+:::info
 
 The estimated cost of a profile does NOT include the cost of the current plan.
 

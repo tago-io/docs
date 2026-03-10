@@ -4,6 +4,7 @@ description: "This article explains how to manage devices via the TagoIO API usi
 tags: ["tagoio", "devices"]
 keywords: [tagoio, iot, devices, API, device management, account token]
 ---
+
 Using the account token, you can manage your devices through API requests. You can create, edit, delete, and retrieve information about devices.
 
 :::info
@@ -64,9 +65,7 @@ GET - `https://api.<region>.tago.io/device/:id`
     "last_access": "2016-11-03T23:24:19.787Z",
     "visible": true,
     "active": true,
-    "tags": [
-      { "key": "client", "value": "John" }
-    ],
+    "tags": [{ "key": "client", "value": "John" }],
     "name": "My Device",
     "id": "581bc7233148f62587e2d507",
     "configuration_params": [
@@ -137,4 +136,5 @@ DELETE - `https://api.<region>.tago.io/device/token/:token`
 :::info
 
 ## Rate Limits
+
 When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

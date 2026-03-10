@@ -4,6 +4,7 @@ description: "The Compose Widget article explains how to add customizable pins t
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, compose, media]
 ---
+
 The compose widget allows you to add pins to images and videos. You can change the colors, values, and icons for each pin.
 
 ![Example of Compose widget showing pins on an image](/docs_imagem/tagoio/compose-widget-2.gif)
@@ -13,7 +14,7 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 ## Creating your own
 
 - **1. 'Data From' Field**
-  The *Data From* field lets you choose the device and variable that will feed the widget. For normal dashboards, select a device from your list and then pick the variable containing the pin data. In Blueprint dashboards, you must first select the Blueprint device; the variable name is then entered manually because the system cannot automatically list variables linked to the Blueprint.
+  The _Data From_ field lets you choose the device and variable that will feed the widget. For normal dashboards, select a device from your list and then pick the variable containing the pin data. In Blueprint dashboards, you must first select the Blueprint device; the variable name is then entered manually because the system cannot automatically list variables linked to the Blueprint.
   **Important:** The number of pins you can add is directly tied to the number of devices added in this section—each device can provide one pin. Additionally, at least two variables are required: one for the pin’s data (label, color, icon, etc.) and another to store all pin positions on the media.
 
 - **2. Media Backgrounds**
@@ -21,7 +22,8 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 - **3. Positioning Pins**
   Pin coordinates are expressed as normalized values between 0 and 1 for both X and Y axes, where (0, 0) is the top‑left corner and (1, 1) is the bottom‑right corner of the media.
-  *Manual method:* Include `x` and `y` parameters in the variable’s metadata:
+  _Manual method:_ Include `x` and `y` parameters in the variable’s metadata:
+
   ```json
   {
     "fixed_position": {
@@ -40,15 +42,16 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
     }
   }
   ```
-  *Editor method:* Enable pin editing in the widget to let users place pins interactively and edit their info boxes.
+
+  _Editor method:_ Enable pin editing in the widget to let users place pins interactively and edit their info boxes.
 
 - **4. Pin Editor**
   The pin editor, accessed via a pencil icon on the left side of the widget (visible only if editing permissions are granted), allows users to add, modify, or delete pins. The toolbox offers four tools:
-  - *Default* – zoom and drag the image.
-  - *Add* – click on the image to place a new pin (limited by the number of devices).
-  - *Edit* – click an existing pin to change its data source, label, embed content, icon, etc.
-  - *Delete* – remove a selected pin.
-  Changes are saved with the widget’s save button; otherwise they are discarded.
+  - _Default_ – zoom and drag the image.
+  - _Add_ – click on the image to place a new pin (limited by the number of devices).
+  - _Edit_ – click an existing pin to change its data source, label, embed content, icon, etc.
+  - _Delete_ – remove a selected pin.
+    Changes are saved with the widget’s save button; otherwise they are discarded.
 
 - **5. Infobox**
   Each pin can be linked to an infobox that displays additional information such as images, external links, formulas, or embedded widgets. The infobox content is automatically associated with the corresponding pin and can be customized directly within the editor.

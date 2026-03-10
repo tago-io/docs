@@ -4,6 +4,7 @@ description: "This article explains how to send push notifications to users regi
 tags: ["tagoio"]
 keywords: [tagoio, iot, tagorun, notifications, push notifications]
 ---
+
 You can push notification messages directly to the users registered in your TagoRun application. This article explains how to send notifications to your users using Actions or Analysis.
 
 Notifications for users are similar to your account's regular notifications, but they include additional customization options.

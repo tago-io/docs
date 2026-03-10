@@ -23,7 +23,9 @@ You can filter logs by their source using the Channel selector. This helps you f
 TagoCore displays two types of log messages to help you quickly identify their importance:
 
 ### Error Logs
+
 These appear in **red** and indicate problems that need your attention. Error logs help you identify:
+
 - Connection failures with devices or external services
 - Configuration issues that prevent proper operation
 - Plugin crashes or malfunctions
@@ -32,7 +34,9 @@ These appear in **red** and indicate problems that need your attention. Error lo
 Some error logs may include technical details (called a stack trace) to help with troubleshooting.
 
 ### Verbose Logs
+
 These are **informational messages** that show normal system activity. Verbose logs are more common and indicate healthy operation:
+
 - Successful device data reception
 - Plugin startup and shutdown events
 - Regular system maintenance activities

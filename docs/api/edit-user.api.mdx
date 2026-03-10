@@ -19,54 +19,79 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit User"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit User"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/run/users/{userID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/run/users/{userID}"} context={"endpoint"}></MethodEndpoint>
 
 Edit information about an user using userID
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"userID","in":"path","required":true,"schema":{"type":"string","example":"(Type a RUN user ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "userID", in: "path", required: true, schema: { type: "string", example: "(Type a RUN user ID)" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean","example":true},"company":{"type":"string","example":"Companyname"},"language":{"type":"string","example":"en"},"name":{"type":"string","example":"runusername"},"options":{"type":"object","properties":{"date_format":{"type":"string","example":"MM/DD/YYYY"},"time_format":{"type":"string","example":"12"}}},"phone":{"type":"string","example":"+010001010011"},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"user_type"},"value":{"type":"string","example":"enduser"}}},"example":[{"key":"user_type","value":"enduser"},{"key":"limit_login","value":"10"}]},"timezone":{"type":"string","example":"America/New_York"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            active: { type: "boolean", example: true },
+            company: { type: "string", example: "Companyname" },
+            language: { type: "string", example: "en" },
+            name: { type: "string", example: "runusername" },
+            options: {
+              type: "object",
+              properties: {
+                date_format: { type: "string", example: "MM/DD/YYYY" },
+                time_format: { type: "string", example: "12" },
+              },
+            },
+            phone: { type: "string", example: "+010001010011" },
+            tags: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  key: { type: "string", example: "user_type" },
+                  value: { type: "string", example: "enduser" },
+                },
+              },
+              example: [
+                { key: "user_type", value: "enduser" },
+                { key: "limit_login", value: "10" },
+              ],
+            },
+            timezone: { type: "string", example: "America/New_York" },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Editing a RUN user information by ID","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"TagoIO Run User Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Editing a RUN user information by ID",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "TagoIO Run User Successfully Updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

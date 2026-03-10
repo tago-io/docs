@@ -5,6 +5,7 @@ tags: ["tagorun"]
 keywords: [tagoio, iot, tagorun, mobile app, ios, android]
 sidebar_position: 2
 ---
+
 Our TagoRUN mobile app is designed for end users to access applications created by companies and developers. It is easy to operate and supports a high level of customization.
 
 ![TagoRUN Mobile App Screenshot](/docs_imagem/tagoio/external-7f89c0ba.png)

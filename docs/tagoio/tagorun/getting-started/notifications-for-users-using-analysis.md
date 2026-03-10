@@ -4,6 +4,7 @@ description: "This article explains how to send notifications to TagoRUN users u
 tags: ["tagoio", "analysis"]
 keywords: [tagoio, iot, tagorun, notifications, analysis]
 ---
+
 The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and buttons, see [Analysis](/docs/tagoio/analysis/) and buttons.
 
 ![Notification example showing a Refrigerator Alarm card with a call-to-action link](/docs_imagem/tagoio/notifications-for-users-using-analysis-2.png)
@@ -29,7 +30,7 @@ Follow these instructions to set up your analysis and send the notifications. Yo
 
 1. Go to your account settings by clicking on the upper corner of TagoIO page and enter [My Account](https://admin.tago.io/account/).
 2. Select your Profile in the sidebar.
-3. Go to the Tokens Section, create a new token with **Expire In** set to *Never* and copy the Token.
+3. Go to the Tokens Section, create a new token with **Expire In** set to _Never_ and copy the Token.
 4. Install the [Analysis Template](http://admin.tago.io/template/5d51de52171477001b203458).
 5. Go to the Environment Variables of your analysis.
 6. Replace the field value `"Your Account Token Here"` with the token you copied in step 3.

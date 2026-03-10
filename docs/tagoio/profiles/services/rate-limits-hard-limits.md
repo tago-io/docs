@@ -4,6 +4,7 @@ description: "This article explains TagoIO's hard rate limits: what they are, wh
 tags: ["tagoio"]
 keywords: [tagoio, iot, rate limits, api limits, throttling]
 ---
+
 When executing requests to TagoIO, there is a limit on the number of requests that can be made during a given time period. These limits are applied in short intervals every minute to provide a reliable, scalable API for developers and to help prevent cyber attacks on our servers, such as DDoS.
 
 Rate limits apply to a wide range of interactions within the platform, including—but not limited to—API endpoints, data sent from IoT devices via network protocols (MQTT, LoRaWAN, HTTP), data exports, dashboard visualizations, user interactions, and more. These limits are also known as hard limits.
@@ -112,7 +113,7 @@ The following table lists the API resources for which the hard limit applies, th
 | | Subscribe-Receive | MQTT payload from TagoIO broker | 250 | 5 000 | 15 000 |
 | | Connection-Connect to TagoIO broker | 20 | 100 | 200 |
 
->[*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
+> [*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
 :::tip
 

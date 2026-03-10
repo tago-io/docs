@@ -19,57 +19,105 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Duplicate Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Duplicate Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/dashboard/{dashboardID}/duplicate"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/dashboard/{dashboardID}/duplicate"} context={"endpoint"}></MethodEndpoint>
 
 Duplicate an existing dashboard, including its configuration, widgets, and settings.  
-Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.  
+Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.
 
-Use this endpoint to quickly clone dashboards for reuse or further customization.   
+Use this endpoint to quickly clone dashboards for reuse or further customization.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "dashboardID", in: "path", required: true, schema: { type: "string", example: "(Type a dashboard ID)" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"required":false,"content":{"application/json":{"schema":{"type":"object","properties":{"new_label":{"type":"string","description":"New label for the duplicated dashboard.","example":"Ice Cream Machine and Freezer - Copy"},"setup":{"type":"object","description":"Setup configuration for the duplicated dashboard.","properties":{"is_configured":{"type":"boolean","description":"Indicates if the dashboard is configured.","example":true},"config":{"type":"array","description":"List of configuration objects for the dashboard.","items":{"type":"object","properties":{"id":{"type":"string","description":"Analysis ID, Device ID, Blueprint Device/Entity ID.","example":"68c9baabb24379000ab1c8cc"},"name":{"type":"string","description":"Reference name that will be displayed when setting up the copy.","example":"Freezer Simulator"}}}}}}}},"examples":{"Duplicate dashboard":{"value":{"setup":{"is_configured":true,"config":[{"id":"68c9baabb24379000ab1c8cc","name":"Freezer Simulator"}]},"new_label":"Ice Cream Machine and Freezer - Copy"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    required: false,
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            new_label: {
+              type: "string",
+              description: "New label for the duplicated dashboard.",
+              example: "Ice Cream Machine and Freezer - Copy",
+            },
+            setup: {
+              type: "object",
+              description: "Setup configuration for the duplicated dashboard.",
+              properties: {
+                is_configured: {
+                  type: "boolean",
+                  description: "Indicates if the dashboard is configured.",
+                  example: true,
+                },
+                config: {
+                  type: "array",
+                  description: "List of configuration objects for the dashboard.",
+                  items: {
+                    type: "object",
+                    properties: {
+                      id: {
+                        type: "string",
+                        description: "Analysis ID, Device ID, Blueprint Device/Entity ID.",
+                        example: "68c9baabb24379000ab1c8cc",
+                      },
+                      name: {
+                        type: "string",
+                        description: "Reference name that will be displayed when setting up the copy.",
+                        example: "Freezer Simulator",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+        examples: {
+          "Duplicate dashboard": {
+            value: {
+              setup: { is_configured: true, config: [{ id: "68c9baabb24379000ab1c8cc", name: "Freezer Simulator" }] },
+              new_label: "Ice Cream Machine and Freezer - Copy",
+            },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"201":{"description":"Dashboard duplicated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"dashboard_id":{"type":"string","example":"62b0df7927ce4d0012cf3c10"},"message":{"type":"string","example":"Copy sent"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "201": {
+      description: "Dashboard duplicated successfully",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: {
+                  dashboard_id: { type: "string", example: "62b0df7927ce4d0012cf3c10" },
+                  message: { type: "string", example: "Copy sent" },
+                },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

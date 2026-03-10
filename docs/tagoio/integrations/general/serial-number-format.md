@@ -4,23 +4,25 @@ description: "This article explains how to define custom serial number masks for
 tags: ["tagoio"]
 keywords: [tagoio, iot, serial number, device identifier, network]
 ---
+
 You can specify a custom mask/format for your Network's Serial Number.
 
 To create your format, use the characters defined below.
 
 ## Definitions
 
-| Symbol | Meaning |
-|---|---|
-| `F` | Allows characters that range from `a-f` and digits that range from `0-9` |
-| `P` | Allows any alphanumeric character (`a-z`, `0-9`) |
-| `0` | Allows only digits (`0-9`) |
-| `A` | Allows only characters (`a-z`) |
+| Symbol | Meaning                                                                  |
+| ------ | ------------------------------------------------------------------------ |
+| `F`    | Allows characters that range from `a-f` and digits that range from `0-9` |
+| `P`    | Allows any alphanumeric character (`a-z`, `0-9`)                         |
+| `0`    | Allows only digits (`0-9`)                                               |
+| `A`    | Allows only characters (`a-z`)                                           |
 
 ## Examples
 
 - To create a serial number that allows only digits, use the following format: `0000`.  
   This allows 4 digits in the serial number.
+
   ```text
   0000
   ```

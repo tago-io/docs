@@ -4,6 +4,7 @@ description: "This article explains TagoIO's refund eligibility and the steps to
 tags: ["tagoio"]
 keywords: [tagoio, iot, refund, billing, cancellation]
 ---
+
 TagoIO offers refunds in certain situations if you forgot to cancel your plan or later decided to cancel it. If you believe you are entitled to a refund, follow the steps below.
 
 ## How to initiate the refund process

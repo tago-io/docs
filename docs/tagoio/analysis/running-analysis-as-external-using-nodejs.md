@@ -4,6 +4,7 @@ description: "This article explains why and how to run a TagoIO Analysis externa
 tags: ["tagoio", "analysis"]
 keywords: [tagoio, iot, analysis, nodejs, external runtime]
 ---
+
 Analysis is what allows you to create powerful applications on TagoIO. When creating an analysis, you must choose whether it will run on TagoIO or externally on your own machine.
 
 You may choose to run an analysis on an external machine for several reasons:
@@ -34,6 +35,7 @@ In order to start writing your code, you first must set up the environment with 
 npm install --save @tago-io/sdk
 npm install -g @tago-io/builder
 ```
+
 :::tip
 
 To know how to use the SDK for coding an Analysis, use our SDK documentation.
@@ -53,7 +55,7 @@ After the code and the environment are set, you only need to make sure you put t
 In order to do that, every analysis has the following line below. Replace `MY-ANALYSIS-TOKEN-HERE` with your analysis token:
 
 ```js
-module.exports = new Analysis(myAnalysis, { token: '**MY-ANALYSIS-TOKEN-HERE**' } );
+module.exports = new Analysis(myAnalysis, { token: "**MY-ANALYSIS-TOKEN-HERE**" });
 ```
 
 You can get the analysis token by accessing your analysis page at TagoIO and selecting **External** for “Run the scripts from”. Create a new analysis if you don’t have any.
@@ -80,11 +82,11 @@ If you only want to run the scripts on your machine, this step is not required. 
 
 To do that:
 
-1. Ensure `@tago-io/builder` is installed globally:  
+1. Ensure `@tago-io/builder` is installed globally:
    ```bash
    npm install -g @tago-io/builder
    ```
-2. In your terminal run:  
+2. In your terminal run:
    ```bash
    analysis-builder my_script.js
    ```
@@ -94,8 +96,8 @@ To do that:
 
 You can check our analysis examples with the full environment already set up for you below:
 
-* [Hello World Example](https://github.com/tago-io/analysis-example-console)
-* [Average Min/Max Example](https://github.com/tago-io/analysis-example-avgMinMax)
-* [Find Example](https://github.com/tago-io/analysis-example-find)
+- [Hello World Example](https://github.com/tago-io/analysis-example-console)
+- [Average Min/Max Example](https://github.com/tago-io/analysis-example-avgMinMax)
+- [Find Example](https://github.com/tago-io/analysis-example-find)
 
 Now you have everything you need to know about running analysis in your machine and can start to creating full applications and powerful analysis using TagoIO

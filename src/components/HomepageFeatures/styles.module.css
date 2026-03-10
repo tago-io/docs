@@ -22,11 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    rgba(44, 177, 188, 0.08) 0%,
-    rgba(44, 177, 188, 0.04) 100%
-  );
+  background: linear-gradient(135deg, rgba(44, 177, 188, 0.08) 0%, rgba(44, 177, 188, 0.04) 100%);
   border-radius: 16px;
   margin-bottom: 1.5rem;
   position: relative;
@@ -56,12 +52,7 @@
 
 /* Dark mode keeps the original subtle white shine */
 html[data-theme="dark"] .featureCard > :first-child::before {
-  background: linear-gradient(
-    135deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
 }
 
 /* Row layout for feature cards */
@@ -163,11 +154,7 @@ html[data-theme="dark"] .featureCard {
 
 /* Dark theme - stronger gradient for icon containers */
 html[data-theme="dark"] .featureCard > :first-child {
-  background: linear-gradient(
-    135deg,
-    rgba(44, 177, 188, 0.08) 0%,
-    rgba(44, 177, 188, 0.03) 100%
-  );
+  background: linear-gradient(135deg, rgba(44, 177, 188, 0.08) 0%, rgba(44, 177, 188, 0.03) 100%);
 }
 
 /* Enhanced dark theme icon shadows */
