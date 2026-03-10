@@ -19,53 +19,46 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Policy"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Policy"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/am/{am_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/am/{am_id}"} context={"endpoint"}></MethodEndpoint>
 
 Delete Policy
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"am_id","in":"path","required":true,"schema":{"type":"string","example":"(Type an Access Management/Policy ID)"},"description":"Can be obtained in the GET Policy request response"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "am_id",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "(Type an Access Management/Policy ID)" },
+      description: "Can be obtained in the GET Policy request response",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Delete policy","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Access Management Successfully Deleted"},"status":{"type":"boolean","example":true}}},"examples":{"Delete policy":{"value":{"result":"Access Management Successfully Deleted","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Delete policy",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Access Management Successfully Deleted" },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: { "Delete policy": { value: { result: "Access Management Successfully Deleted", status: true } } },
+        },
+      },
+    },
+  }}
+></StatusCodes>

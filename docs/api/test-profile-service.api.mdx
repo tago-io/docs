@@ -19,63 +19,164 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Test Service Provider"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Test Service Provider"}></Heading>
 
 <MethodEndpoint
   method={"post"}
   path={"/profile/{id}/service/test/{service_type}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Test a configured service provider by sending a test message. This helps verify that your service provider configuration is working correctly before using it in production.
 
 **Supported service types:**
+
 - `sms` - Sends a test SMS message to the specified phone number
 - `email` - Sends a test email to the specified email address
 
 **Important notes:**
+
 - A service provider must be configured before testing
 - Test messages will consume your provider's quota/credits
 - For SMS, ensure the recipient number is in E.164 format (e.g., +15551234567)
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile"},{"name":"service_type","in":"path","required":true,"schema":{"type":"string","enum":["sms","email"],"example":"sms"},"description":"The type of service to test (sms or email)"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "id",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "61fac4d9a5c9f40012a5ff92" },
+      description: "The ID of the profile",
+    },
+    {
+      name: "service_type",
+      in: "path",
+      required: true,
+      schema: { type: "string", enum: ["sms", "email"], example: "sms" },
+      description: "The type of service to test (sms or email)",
+    },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["to"],"properties":{"to":{"type":"string","description":"The recipient address for the test message.\n- For SMS: Phone number in E.164 format (e.g., +15551234567)\n- For Email: Email address (e.g., user@example.com)\n","example":"+15559876543"},"message":{"type":"string","description":"Custom test message content (optional). If not provided, a default test message will be sent.","example":"This is a test message from TagoIO"},"subject":{"type":"string","description":"Email subject line (only for email service type, optional)","example":"Test Email from TagoIO"}}},"examples":{"Test SMS":{"value":{"to":"+15559876543","message":"This is a test SMS from TagoIO"}},"Test Email":{"value":{"to":"user@example.com","subject":"Test Email from TagoIO","message":"This is a test email from TagoIO to verify your email service configuration."}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    required: true,
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          required: ["to"],
+          properties: {
+            to: {
+              type: "string",
+              description:
+                "The recipient address for the test message.\n- For SMS: Phone number in E.164 format (e.g., +15551234567)\n- For Email: Email address (e.g., user@example.com)\n",
+              example: "+15559876543",
+            },
+            message: {
+              type: "string",
+              description:
+                "Custom test message content (optional). If not provided, a default test message will be sent.",
+              example: "This is a test message from TagoIO",
+            },
+            subject: {
+              type: "string",
+              description: "Email subject line (only for email service type, optional)",
+              example: "Test Email from TagoIO",
+            },
+          },
+        },
+        examples: {
+          "Test SMS": { value: { to: "+15559876543", message: "This is a test SMS from TagoIO" } },
+          "Test Email": {
+            value: {
+              to: "user@example.com",
+              subject: "Test Email from TagoIO",
+              message: "This is a test email from TagoIO to verify your email service configuration.",
+            },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Test message sent successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"message":{"type":"string","example":"Test message sent successfully"},"message_id":{"type":"string","description":"Provider's message ID for tracking (if available)","example":"SM1234567890abcdef1234567890abcdef"}}},"status":{"type":"boolean","example":true}}}}}},"400":{"description":"Bad request - Invalid recipient or message format","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid phone number format. Use E.164 format (e.g., +15551234567)"}}}}}},"404":{"description":"Service provider not configured","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"No service provider configured for the specified service type"}}}}}},"500":{"description":"Provider error - Failed to send test message","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Failed to send test message: Invalid credentials"}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Test message sent successfully",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: {
+                  message: { type: "string", example: "Test message sent successfully" },
+                  message_id: {
+                    type: "string",
+                    description: "Provider's message ID for tracking (if available)",
+                    example: "SM1234567890abcdef1234567890abcdef",
+                  },
+                },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+    "400": {
+      description: "Bad request - Invalid recipient or message format",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              status: { type: "boolean", example: false },
+              message: {
+                type: "string",
+                example: "Invalid phone number format. Use E.164 format (e.g., +15551234567)",
+              },
+            },
+          },
+        },
+      },
+    },
+    "404": {
+      description: "Service provider not configured",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              status: { type: "boolean", example: false },
+              message: { type: "string", example: "No service provider configured for the specified service type" },
+            },
+          },
+        },
+      },
+    },
+    "500": {
+      description: "Provider error - Failed to send test message",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              status: { type: "boolean", example: false },
+              message: { type: "string", example: "Failed to send test message: Invalid credentials" },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

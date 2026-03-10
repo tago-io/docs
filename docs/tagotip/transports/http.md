@@ -2,6 +2,8 @@
 sidebar_position: 3
 sidebar_label: HTTP
 title: TagoTiP over HTTP
+description: "Send and retrieve IoT data via standard HTTP POST, GET, and HEAD requests using the TagoTiP protocol."
+keywords: [tagotip, iot, http, rest, api]
 ---
 
 # TagoTiP over HTTP
@@ -10,8 +12,8 @@ Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to pi
 
 ## Endpoint
 
-| Region | Host | IP | Ports |
-|---|---|---|---|
+| Region    | Host                     | IP              | Ports                       |
+| --------- | ------------------------ | --------------- | --------------------------- |
 | US-East-1 | `http.tip.us-e1.tago.io` | `52.223.14.189` | `80` (HTTP) / `443` (HTTPS) |
 | EU-West-1 | `http.tip.eu-w1.tago.io` | `166.117.2.140` | `80` (HTTP) / `443` (HTTPS) |
 
@@ -30,11 +32,11 @@ Port `443` (HTTPS) for production. Port `80` (HTTP) for development or when TLS 
 
 ## HTTP method mapping
 
-| HTTP Method | TagoTiP Action | Purpose |
-|---|---|---|
-| `POST` | PUSH | Send data |
-| `GET` | PULL | Retrieve last values |
-| `HEAD` | PING | Keepalive / poll commands |
+| HTTP Method | TagoTiP Action | Purpose                   |
+| ----------- | -------------- | ------------------------- |
+| `POST`      | PUSH           | Send data                 |
+| `GET`       | PULL           | Retrieve last values      |
+| `HEAD`      | PING           | Keepalive / poll commands |
 
 ## Arduino example (ESP32)
 
@@ -174,88 +176,88 @@ X-TagoTiP-CMD: reboot
 
 ### `POST /v1/tip/{serial}` - Send Data
 
-| | |
-|---|---|
-| **Header** | `Authorization: TagoTiP <token-hash>` |
-| **Content-Type** | `text/plain` |
-| **Body** | TagoTiP PUSH body |
-| **Success** | `200 OK` - body is data point count |
+|                  |                                       |
+| ---------------- | ------------------------------------- |
+| **Header**       | `Authorization: TagoTiP <token-hash>` |
+| **Content-Type** | `text/plain`                          |
+| **Body**         | TagoTiP PUSH body                     |
+| **Success**      | `200 OK` - body is data point count   |
 
 ### `GET /v1/tip/{serial}?variables=...` - Retrieve Data
 
-| | |
-|---|---|
-| **Header** | `Authorization: TagoTiP <token-hash>` |
-| **Query** | `variables=var1,var2,...` |
-| **Success** | `200 OK` - body is variable list |
+|             |                                       |
+| ----------- | ------------------------------------- |
+| **Header**  | `Authorization: TagoTiP <token-hash>` |
+| **Query**   | `variables=var1,var2,...`             |
+| **Success** | `200 OK` - body is variable list      |
 
 ### `HEAD /v1/tip/{serial}` - Keepalive / Commands
 
-| | |
-|---|---|
-| **Header** | `Authorization: TagoTiP <token-hash>` |
-| **No command** | `204 No Content` |
-| **Pending command** | `200 OK` + `X-TagoTiP-CMD` header |
+|                     |                                       |
+| ------------------- | ------------------------------------- |
+| **Header**          | `Authorization: TagoTiP <token-hash>` |
+| **No command**      | `204 No Content`                      |
+| **Pending command** | `200 OK` + `X-TagoTiP-CMD` header     |
 
 ### `POST /v1/tips` - TagoTiP(s) (Encrypted)
 
-| | |
-|---|---|
+|                  |                            |
+| ---------------- | -------------------------- |
 | **Content-Type** | `application/octet-stream` |
-| **Body** | Binary TagoTiP(s) envelope |
+| **Body**         | Binary TagoTiP(s) envelope |
 
 No `Authorization` header. See [Encryption](../specification/encryption).
 
 ## Operators
 
-| Operator | Type | Example |
-|---|---|---|
-| `:=` | Number | `temperature:=25.5` |
-| `=` | String | `status=online` |
-| `?=` | Boolean | `active?=true` |
-| `@=` | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
+| Operator | Type                              | Example                   |
+| -------- | --------------------------------- | ------------------------- |
+| `:=`     | Number                            | `temperature:=25.5`       |
+| `=`      | String                            | `status=online`           |
+| `?=`     | Boolean                           | `active?=true`            |
+| `@=`     | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
 
 ## Response codes
 
-| HTTP Status | Meaning | Body |
-|---|---|---|
-| `200 OK` | Success | PUSH: count. PULL: variables. |
-| `204 No Content` | PING ok | - |
-| `400 Bad Request` | Malformed body | `invalid_payload` |
-| `401 Unauthorized` | Invalid auth | `invalid_token` |
-| `404 Not Found` | Unknown device/variable | `device_not_found` |
-| `413 Payload Too Large` | Body exceeds max payload size | `payload_too_large` |
-| `429 Too Many Requests` | Rate limited | `rate_limited` |
-| `500 Internal Server Error` | Server error | `server_error` |
+| HTTP Status                 | Meaning                       | Body                          |
+| --------------------------- | ----------------------------- | ----------------------------- |
+| `200 OK`                    | Success                       | PUSH: count. PULL: variables. |
+| `204 No Content`            | PING ok                       | -                             |
+| `400 Bad Request`           | Malformed body                | `invalid_payload`             |
+| `401 Unauthorized`          | Invalid auth                  | `invalid_token`               |
+| `404 Not Found`             | Unknown device/variable       | `device_not_found`            |
+| `413 Payload Too Large`     | Body exceeds max payload size | `payload_too_large`           |
+| `429 Too Many Requests`     | Rate limited                  | `rate_limited`                |
+| `500 Internal Server Error` | Server error                  | `server_error`                |
 
 ## Limits
 
 ### Protocol limits
 
-| Limit | Value |
-|---|---|
-| Max request body (wire) | 16,384 bytes |
-| Max variables per request | 100 |
-| Max metadata pairs | 32 |
-| Variable name length | 100 chars |
-| Unit length | 25 chars |
-| Serial length | 100 chars |
+| Limit                     | Value        |
+| ------------------------- | ------------ |
+| Max request body (wire)   | 16,384 bytes |
+| Max variables per request | 100          |
+| Max metadata pairs        | 32           |
+| Variable name length      | 100 chars    |
+| Unit length               | 25 chars     |
+| Serial length             | 100 chars    |
 
 RPM = requests per minute.
 
 ### Per-profile rate limits
 
-| Resource | Scale | Starter | Free |
-|---|---|---|---|
-| Uplink RPM (POST, HEAD) | 1,000 | 500 | 60 |
-| Downlink RPM (GET) | 1,000 | 500 | 60 |
-| Connections per IP | 20 | 10 | 3 |
+| Resource                | Scale | Starter | Free |
+| ----------------------- | ----- | ------- | ---- |
+| Uplink RPM (POST, HEAD) | 1,000 | 500     | 60   |
+| Downlink RPM (GET)      | 1,000 | 500     | 60   |
+| Connections per IP      | 20    | 10      | 3    |
 
 ### Per-device limits
 
-| Resource | Default |
-|---|---|
-| Max payload size | 100 KB |
+| Resource         | Default |
+| ---------------- | ------- |
+| Max payload size | 100 KB  |
 
 Unlike TCP/UDP, `HEAD` (PING) counts toward the uplink RPM on HTTP.
 

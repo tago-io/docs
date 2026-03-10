@@ -19,54 +19,61 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create and Edit Device Params"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create and Edit Device Params"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/params"} context={"endpoint"}></MethodEndpoint>
 
 Create and edit params for the device
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"(Type your device ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "deviceID", in: "path", required: true, schema: { type: "string", example: "(Type your device ID)" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","example":"62aba74d84acd30011ac593f"},"key":{"type":"string","example":"updatedKey"},"sent":{"type":"boolean","example":false},"value":{"type":"string","example":"updatedValue"}}},"examples":{"Create and Edit Device Params":{"value":{"id":"62aba74d84acd30011ac593f","key":"updatedKey","sent":false,"value":"updatedValue"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            id: { type: "string", example: "62aba74d84acd30011ac593f" },
+            key: { type: "string", example: "updatedKey" },
+            sent: { type: "boolean", example: false },
+            value: { type: "string", example: "updatedValue" },
+          },
+        },
+        examples: {
+          "Create and Edit Device Params": {
+            value: { id: "62aba74d84acd30011ac593f", key: "updatedKey", sent: false, value: "updatedValue" },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"201":{"description":"Creating or editing device parameters","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Params Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "201": {
+      description: "Creating or editing device parameters",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Params Successfully Updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

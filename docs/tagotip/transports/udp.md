@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: UDP
 title: TagoTiP over UDP
+description: "Send IoT data over UDP with zero connection overhead, ideal for battery-powered sensors and fire-and-forget use cases."
+keywords: [tagotip, iot, udp, datagram, low power]
 ---
 
 # TagoTiP over UDP
@@ -10,10 +12,10 @@ The **fastest path** from sensor to cloud. No connection setup, no handshake - a
 
 ## Endpoint
 
-| Region | Host | IP | Ports |
-|---|---|---|---|
+| Region    | Host                    | IP                | Ports                                    |
+| --------- | ----------------------- | ----------------- | ---------------------------------------- |
 | US-East-1 | `udp.tip.us-e1.tago.io` | `166.117.107.129` | `5683` (plaintext) / `5684` (TagoTiP(s)) |
-| EU-West-1 | `udp.tip.eu-w1.tago.io` | `166.117.51.137` | `5683` (plaintext) / `5684` (TagoTiP(s)) |
+| EU-West-1 | `udp.tip.eu-w1.tago.io` | `166.117.51.137`  | `5683` (plaintext) / `5684` (TagoTiP(s)) |
 
 ## Why UDP?
 
@@ -153,54 +155,54 @@ ACK|CMD|reboot
 
 ## Operators
 
-| Operator | Type | Example |
-|---|---|---|
-| `:=` | Number | `temperature:=25.5` |
-| `=` | String | `status=online` |
-| `?=` | Boolean | `active?=true` |
-| `@=` | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
+| Operator | Type                              | Example                   |
+| -------- | --------------------------------- | ------------------------- |
+| `:=`     | Number                            | `temperature:=25.5`       |
+| `=`      | String                            | `status=online`           |
+| `?=`     | Boolean                           | `active?=true`            |
+| `@=`     | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
 
 ## Suffixes
 
 Append after the value, in this order:
 
-| Suffix | Prefix | Example |
-|---|---|---|
-| Unit | `#` | `temperature:=25.5#C` |
-| Timestamp | `@` | `temperature:=25.5@1694567890000` |
-| Group | `^` | `temperature:=25.5^batch_01` |
-| Metadata | `{}` | `temperature:=25.5{source=dht22}` |
+| Suffix    | Prefix | Example                           |
+| --------- | ------ | --------------------------------- |
+| Unit      | `#`    | `temperature:=25.5#C`             |
+| Timestamp | `@`    | `temperature:=25.5@1694567890000` |
+| Group     | `^`    | `temperature:=25.5^batch_01`      |
+| Metadata  | `{}`   | `temperature:=25.5{source=dht22}` |
 
 All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=high}`
 
 ## Response codes
 
-| Response | Meaning |
-|---|---|
-| `ACK\|OK\|N` | `N` data points stored |
-| `ACK\|OK\|[...]` | PULL response with variable data |
-| `ACK\|PONG` | Keepalive acknowledged |
-| `ACK\|CMD\|<command>` | Server command (via PING response) |
-| `ACK\|ERR\|invalid_token` | Invalid or expired token hash |
-| `ACK\|ERR\|device_not_found` | Serial not found under your account |
-| `ACK\|ERR\|invalid_payload` | Malformed frame or body |
-| `ACK\|ERR\|invalid_seq` | Counter not greater than last accepted |
-| `ACK\|ERR\|rate_limited` | Back off and retry |
-| `ACK\|ERR\|payload_too_large` | Frame exceeds max payload size |
-| `ACK\|ERR\|server_error` | Retry after a delay |
+| Response                      | Meaning                                |
+| ----------------------------- | -------------------------------------- |
+| `ACK\|OK\|N`                  | `N` data points stored                 |
+| `ACK\|OK\|[...]`              | PULL response with variable data       |
+| `ACK\|PONG`                   | Keepalive acknowledged                 |
+| `ACK\|CMD\|<command>`         | Server command (via PING response)     |
+| `ACK\|ERR\|invalid_token`     | Invalid or expired token hash          |
+| `ACK\|ERR\|device_not_found`  | Serial not found under your account    |
+| `ACK\|ERR\|invalid_payload`   | Malformed frame or body                |
+| `ACK\|ERR\|invalid_seq`       | Counter not greater than last accepted |
+| `ACK\|ERR\|rate_limited`      | Back off and retry                     |
+| `ACK\|ERR\|payload_too_large` | Frame exceeds max payload size         |
+| `ACK\|ERR\|server_error`      | Retry after a delay                    |
 
 ## Limits
 
 ### Protocol limits
 
-| Limit | Value |
-|---|---|
-| Max frame size (wire) | 16,384 bytes |
-| Max variables per frame | 100 |
-| Max metadata pairs | 32 |
-| Variable name length | 100 chars |
-| Unit length | 25 chars |
-| Serial length | 100 chars |
+| Limit                   | Value        |
+| ----------------------- | ------------ |
+| Max frame size (wire)   | 16,384 bytes |
+| Max variables per frame | 100          |
+| Max metadata pairs      | 32           |
+| Variable name length    | 100 chars    |
+| Unit length             | 25 chars     |
+| Serial length           | 100 chars    |
 
 :::tip
 Keep datagrams under ~1,400 bytes to avoid IP fragmentation.
@@ -210,16 +212,16 @@ RPM = requests per minute.
 
 ### Per-profile rate limits
 
-| Resource | Scale | Starter | Free |
-|---|---|---|---|
-| Uplink RPM (PUSH) | 1,000 | 500 | 60 |
-| Downlink RPM (PULL) | 1,000 | 500 | 60 |
+| Resource            | Scale | Starter | Free |
+| ------------------- | ----- | ------- | ---- |
+| Uplink RPM (PUSH)   | 1,000 | 500     | 60   |
+| Downlink RPM (PULL) | 1,000 | 500     | 60   |
 
 ### Per-device limits
 
-| Resource | Default |
-|---|---|
-| Max payload size | 100 KB |
+| Resource         | Default |
+| ---------------- | ------- |
+| Max payload size | 100 KB  |
 
 PING is exempt from rate limiting on UDP.
 

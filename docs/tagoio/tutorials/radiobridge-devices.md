@@ -2,6 +2,7 @@
 title: "RadioBridge Devices"
 description: "This article explains how TagoIO integrates with RadioBridge devices over Sigfox or LoRaWAN, what data is available, and that uplink/downlink operations are supported."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, radiobridge, sigfox, lorawan]
 ---
 
 TagoIO is fully integrated with RadioBridge devices connected over Sigfox or

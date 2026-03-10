@@ -1,6 +1,7 @@
 ---
 title: "MQTT Clients"
 description: "Create and manage client credentials that authenticate devices connecting to your project's MQTT broker."
+keywords: [tagodeploy, iot, mqtt, clients, authentication]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/clients
 ---

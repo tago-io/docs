@@ -1,6 +1,7 @@
 ---
 title: "Container Logs"
 description: "View and manage container logs; understand logging best practices and cost considerations."
+keywords: [tagodeploy, iot, container, logs, monitoring]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/logs
 ---

@@ -2,7 +2,9 @@
 title: "Image Marker Widget"
 description: "A short guide to the Image Marker widget in TagoIO, explaining its purpose, configurable features, and how to add and customize it on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, image marker, location]
 ---
+
 The image marker widget allows you to place pins on images and customize each pin's color, value, and icon. Use it to annotate floor plans, maps, and other visuals with live or historical data.
 
 ![Image marker example showing pins on a floor plan](/docs_imagem/tagoio/image-marker-widget-2.png)
@@ -25,9 +27,9 @@ The widget requires **at least two variables**: one for the pin’s data (e.g., 
 
 The widget has two behavior types:
 
-| Mode | Description |
-|------|-------------|
-| **Basic** | Each pin corresponds to a distinct device. If you add multiple variables from the same device, they will appear in the same pin’s infobox. The number of pins is limited by the number of devices added. |
+| Mode         | Description                                                                                                                                                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Basic**    | Each pin corresponds to a distinct device. If you add multiple variables from the same device, they will appear in the same pin’s infobox. The number of pins is limited by the number of devices added.                                     |
 | **Advanced** | A single variable can produce multiple pins. This mode is useful when coordinates are updated continuously via a Device or Analysis. Variables can contain groups; each group creates its own pin, allowing one device to display many pins. |
 
 ### 3. Positioning Pins

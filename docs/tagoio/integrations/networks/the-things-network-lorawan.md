@@ -2,6 +2,7 @@
 title: "The Things Network LoRaWAN™"
 description: "This article explains how to integrate The Things Network (TTN) with the TagoIO platform, enabling uplink and downlink operations between LoRaWAN devices and TagoIO. It lists prerequisites and begins the step-by-step setup process."
 tags: ["tagoio"]
+keywords: [tagoio, iot, the things network, ttn, lorawan, integration]
 ---
 
 This tutorial provides a step-by-step guide to integrate The Things Network
@@ -50,13 +51,13 @@ After creation, copy the authorization token. You will need this in later steps.
 
 ### Webhook Configuration
 
-| Field                   | Description                                                                                                                                                                                                                                |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Webhook ID**          | Enter a unique identifier (e.g., `tagoio-integration`).                                                                                                                                                                                    |
-| **Webhook Format**      | JSON                                                                                                                                                                                                                                       |
+| Field                   | Description                                                                                                                                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Webhook ID**          | Enter a unique identifier (e.g., `tagoio-integration`).                                                                                                                                                                                          |
+| **Webhook Format**      | JSON                                                                                                                                                                                                                                             |
 | **Base URL**            | Use the endpoint format `https://ttn.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). For a list of available regions, visit [TagoIO Network Integration](/docs/tagoio/integrations/index.md). |
-| **Additional Headers**  | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1.                                                                                                                                        |
-| **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`.                                                                                                                       |
+| **Additional Headers**  | Add a header key `Authorization` and set its value to the authorization token you copied in Step 1.                                                                                                                                              |
+| **Enabled event types** | Enable the event types you expect to receive from your device. Set the path of all enabled event types to `/uplink`.                                                                                                                             |
 
 ![Image 4](/docs_imagem/tagoio/external-eae39401.png)
 

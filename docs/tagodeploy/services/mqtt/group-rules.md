@@ -1,6 +1,7 @@
 ---
 title: "MQTT Group Rules"
 description: "Assign clients to groups using rules that control access to MQTT topics through ACL permissions."
+keywords: [tagodeploy, iot, mqtt, group rules, access control]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/group-rules
 ---

@@ -2,7 +2,9 @@
 title: "TagoRun - Branding and Deploying Applications"
 description: "This article explains how to use the Run module to deploy a customizable IoT platform (RUN) for end users, and outlines deployment and branding options, including mobile app considerations."
 tags: ["tagorun"]
+keywords: [tagoio, iot, tagorun, branding, deployment, customization]
 ---
+
 Use the [Run](https://admin.tago.io/run) module to deploy your own IoT platform for your end-users.
 
 ![TagoRUN dashboard illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
@@ -37,7 +39,6 @@ Your customers will engage with your brand as they sign up and access the applic
 Unlock the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
 
 :::
-
 
 ## How it works with mobile App
 

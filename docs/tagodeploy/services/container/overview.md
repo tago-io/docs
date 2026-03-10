@@ -1,6 +1,7 @@
 ---
 title: "Custom Docker"
 description: "Deploy and manage custom Docker containers in your TagoDeploy project, with image, network, runtime, and logging options."
+keywords: [tagodeploy, iot, docker, container, deployment]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/overview
 ---

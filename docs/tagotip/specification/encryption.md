@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: Encryption
 title: TagoTiP(s) - Encrypted Communication
+description: "AEAD authenticated encryption for TagoTiP without TLS, with cipher suite options and as little as 29 bytes overhead."
+keywords: [tagotip, iot, encryption, aead, security]
 ---
 
 # TagoTiP(s) - Encrypted Communication
@@ -18,32 +20,32 @@ title: TagoTiP(s) - Encrypted Communication
 
 **US-East-1:**
 
-| Transport | Host | Port | TLS | Notes |
-|-----------|------|------|-----|-------|
-| **UDP** | `udp.tip.us-e1.tago.io` | 5684 | No | Dedicated port |
-| **TCP** | `tcp.tip.us-e1.tago.io` | 5693 | No | Auto-detected |
-| **TCP** | `tcp.tip.us-e1.tago.io` | 5694 | Yes | Auto-detected |
-| **HTTP** | `http.tip.us-e1.tago.io` | 80 | No | `POST /v1/tips` |
-| **HTTP** | `http.tip.us-e1.tago.io` | 443 | Yes | `POST /v1/tips` |
+| Transport | Host                     | Port | TLS | Notes           |
+| --------- | ------------------------ | ---- | --- | --------------- |
+| **UDP**   | `udp.tip.us-e1.tago.io`  | 5684 | No  | Dedicated port  |
+| **TCP**   | `tcp.tip.us-e1.tago.io`  | 5693 | No  | Auto-detected   |
+| **TCP**   | `tcp.tip.us-e1.tago.io`  | 5694 | Yes | Auto-detected   |
+| **HTTP**  | `http.tip.us-e1.tago.io` | 80   | No  | `POST /v1/tips` |
+| **HTTP**  | `http.tip.us-e1.tago.io` | 443  | Yes | `POST /v1/tips` |
 
 See [Endpoints](../servers/endpoints) for all regions.
 
 ## How it differs from TagoTiP
 
-| | TagoTiP | TagoTiP(s) |
-|---|---|---|
-| **Format** | Human-readable text | Binary envelope |
-| **Auth credential** | Token hash (16 hex chars) | Authorization token (`at...`) |
-| **Encryption** | None (rely on TLS) | AEAD at the application layer |
+|                       | TagoTiP                   | TagoTiP(s)                            |
+| --------------------- | ------------------------- | ------------------------------------- |
+| **Format**            | Human-readable text       | Binary envelope                       |
+| **Auth credential**   | Token hash (16 hex chars) | Authorization token (`at...`)         |
+| **Encryption**        | None (rely on TLS)        | AEAD at the application layer         |
 | **Replay protection** | Optional sequence counter | Built-in (counter is nonce component) |
 
 ### Credentials
 
 TagoTiP and TagoTiP(s) use **different credentials** from the same authorization:
 
-| Protocol | Credential | Why |
-|---|---|---|
-| **TagoTiP** | Token hash (`4deedd7bab8817ec`) | Identifies your account. Safe on the wire. |
+| Protocol       | Credential                            | Why                                                 |
+| -------------- | ------------------------------------- | --------------------------------------------------- |
+| **TagoTiP**    | Token hash (`4deedd7bab8817ec`)       | Identifies your account. Safe on the wire.          |
 | **TagoTiP(s)** | Authorization token (`ate2bd...c0d0`) | Derives the encryption key. Never sent on the wire. |
 
 Both come from a single authorization with token format **TagoTiP(s)**. See the [Authorization guide](/docs/tagoio/integrations/general/authorization).
@@ -63,13 +65,13 @@ TagoTiP(s) strips the method and auth from a TagoTiP frame, encrypts the rest, a
 
 ## Cipher suites
 
-| ID | Cipher | Key | Tag | Overhead |
-|----|--------|-----|-----|----------|
-| 0 | **AES-128-CCM** | 128-bit | 8 B | 29 bytes |
-| 1 | AES-128-GCM | 128-bit | 16 B | 37 bytes |
-| 2 | AES-256-CCM | 256-bit | 8 B | 29 bytes |
-| 3 | AES-256-GCM | 256-bit | 16 B | 37 bytes |
-| 4 | ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
+| ID  | Cipher            | Key     | Tag  | Overhead |
+| --- | ----------------- | ------- | ---- | -------- |
+| 0   | **AES-128-CCM**   | 128-bit | 8 B  | 29 bytes |
+| 1   | AES-128-GCM       | 128-bit | 16 B | 37 bytes |
+| 2   | AES-256-CCM       | 256-bit | 8 B  | 29 bytes |
+| 3   | AES-256-GCM       | 256-bit | 16 B | 37 bytes |
+| 4   | ChaCha20-Poly1305 | 256-bit | 16 B | 37 bytes |
 
 AES-128-CCM (ID 0) is required by all implementations.
 
@@ -85,10 +87,10 @@ Truncated to the cipher's key size (16 bytes for AES-128, 32 bytes for AES-256 /
 
 ## Size comparison
 
-| Format | Size | vs. HTTP/JSON |
-|---|---|---|
-| HTTP + JSON | ~487 bytes | - |
-| TagoTiP | ~112 bytes | 4.3x smaller |
+| Format         | Size           | vs. HTTP/JSON    |
+| -------------- | -------------- | ---------------- |
+| HTTP + JSON    | ~487 bytes     | -                |
+| TagoTiP        | ~112 bytes     | 4.3x smaller     |
 | **TagoTiP(s)** | **~119 bytes** | **4.1x smaller** |
 
 ## Specification

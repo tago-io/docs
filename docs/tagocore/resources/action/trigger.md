@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Trigger
 slug: /tagocore/action/trigger
+description: Configure variable-based or schedule-based triggers to control when TagoCore actions execute automatically.
+keywords: [tagocore, iot, triggers, automation, scheduling, conditions]
 ---
 
 # Action Trigger
@@ -30,7 +32,7 @@ After choosing your device scope, define the conditions that will trigger your A
 1. **Choose a variable** to monitor (e.g., "temperature", "humidity", "battery")
 2. **Select a condition type**:
    - **Less than**: Triggers when the value is below your threshold
-   - **Greater than**: Triggers when the value exceeds your threshold  
+   - **Greater than**: Triggers when the value exceeds your threshold
    - **Equal to**: Triggers when the value exactly matches
    - **Different from**: Triggers when the value changes from a specific value
    - **Any**: Triggers whenever new data arrives (regardless of value)
@@ -42,6 +44,7 @@ After choosing your device scope, define the conditions that will trigger your A
 This trigger runs Actions based on time schedules rather than device data. Use it for regular maintenance tasks, periodic reports, or time-based automation.
 
 Schedule triggers support flexible timing options:
+
 - **Specific times**: Daily at 9:00 AM, weekly on Mondays
 - **Regular intervals**: Every 5 minutes, every hour, every month, every year
 

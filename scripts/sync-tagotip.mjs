@@ -69,9 +69,7 @@ function escapeInline(text) {
   const inlineRe = /(`[^`]*`)/g;
   let last = 0;
   for (const match of text.matchAll(inlineRe)) {
-    parts.push(
-      text.slice(last, match.index).replace(/\{/g, "\\{").replace(/\}/g, "\\}"),
-    );
+    parts.push(text.slice(last, match.index).replace(/\{/g, "\\{").replace(/\}/g, "\\}"));
     parts.push(match[0]); // keep inline code as-is
     last = match.index + match[0].length;
   }
@@ -83,13 +81,11 @@ function rewriteLinks(text) {
   // Cross-references between the two spec files
   text = text.replace(
     /\(TagoTiP\.md(#[^)]+)?\)/g,
-    (_, anchor) =>
-      `(/docs/tagotip/specification/tagotip-specification${anchor || ""})`,
+    (_, anchor) => `(/docs/tagotip/specification/tagotip-specification${anchor || ""})`
   );
   text = text.replace(
     /\(TagoTiPs\.md(#[^)]+)?\)/g,
-    (_, anchor) =>
-      `(/docs/tagotip/specification/tagotips-specification${anchor || ""})`,
+    (_, anchor) => `(/docs/tagotip/specification/tagotips-specification${anchor || ""})`
   );
 
   // LICENSE / NOTICE → GitHub repo URLs
@@ -126,13 +122,9 @@ async function main() {
       console.log(`  Wrote ${file.out}`);
     } catch (err) {
       if (existsSync(outPath)) {
-        console.warn(
-          `  Warning: failed to fetch ${file.remote} (${err.message}), using existing file`,
-        );
+        console.warn(`  Warning: failed to fetch ${file.remote} (${err.message}), using existing file`);
       } else {
-        console.error(
-          `  Error: failed to fetch ${file.remote} and no cached file exists`,
-        );
+        console.error(`  Error: failed to fetch ${file.remote} and no cached file exists`);
         process.exit(1);
       }
     }

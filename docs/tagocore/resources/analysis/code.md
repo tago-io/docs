@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Code
 slug: /tagocore/analysis/code
+description: Write analysis code in any language to process device data in TagoCore using the T_ANALYSIS_DATA environment variable.
+keywords: [tagocore, iot, analysis, code, scripting, data processing]
 ---
 
 # Analysis Code
@@ -24,6 +26,7 @@ This environment variable contains the device data that triggered your Analysis.
 ```
 
 **Key fields explained:**
+
 - `variable`: The type of data (e.g., "temperature", "humidity", "pressure")
 - `value`: The actual measurement or reading
 - `unit`: The measurement unit (e.g., "°F", "°C", "%")
@@ -34,10 +37,11 @@ This environment variable contains the device data that triggered your Analysis.
 TagoCore supports any programming language through the `Binary Executable path` and `File path` configuration. For details on setting this up, see the [Analysis Overview](/docs/tagocore/analysis) guide.
 
 :::tip Keep It Simple
+
 - Write your code directly - no need to wrap it in functions
 - Skip `return` statements - just execute your logic
 - Focus on processing the data and producing results
-:::
+  :::
 
 ## Example: Temperature Monitor
 
@@ -45,7 +49,7 @@ This Node.js example shows how to access device data and log temperature reading
 
 ```js
 const data = process.env.T_ANALYSIS_DATA;
-const temperatureItem = data.find((i) => i.variable === 'temperature');
+const temperatureItem = data.find((i) => i.variable === "temperature");
 console.log("Temperature is at:", temperatureItem.value);
 ```
 

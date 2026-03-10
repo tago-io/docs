@@ -1,6 +1,7 @@
 ---
 title: "Billing Overview"
 description: "Understand TagoIO billing model, cost structure, service-level analysis, and optimization strategies."
+keywords: [tagodeploy, iot, billing, cost management, pricing]
 tags: ["tagodeploy", "billing"]
 slug: /tagodeploy/project/bills/billing
 ---

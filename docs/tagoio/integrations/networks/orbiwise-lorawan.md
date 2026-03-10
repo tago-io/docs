@@ -2,7 +2,9 @@
 title: "Orbiwise LoRaWAN™"
 description: "This article provides a step-by-step guide to integrate Orbiwise LoRaWAN™ with the TagoIO platform, enabling uplink and downlink data exchange between your LoRaWAN devices and TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, orbiwise, lorawan, integration]
 ---
+
 This tutorial provides a step-by-step guide to integrate **Orbiwise** LoRaWAN™ with the TagoIO Platform. By following these instructions, you will enable uplink and downlink operations, allowing data exchange between your LoRaWAN devices and the TagoIO application.
 
 ![Orbiwise and TagoIO integration diagram](/docs_imagem/tagoio/orbiwise-lorawan-2.jpg)
@@ -30,6 +32,7 @@ Before you begin, ensure you have the following:
       ```
 
       Example: `tagoio;iot;<your_dass_url>;`
+
    4. Click **Save**.
 
 3. **Copy the Authorization Token**
@@ -44,8 +47,6 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 :::
 
-
-
 ## Step 2: Add Integration to Orbiwise
 
 1. Go to your Orbiwise console and create a new Application.
@@ -53,35 +54,35 @@ Only one **Authorization** per application is necessary. Don't do it for each de
 
 2. In the **Manage Apps** screen, click on **Push Settings** and fill in the following fields:
 
-   | Field          | Value                                                                 |
-   |----------------|-----------------------------------------------------------------------|
-   | Hostname       | Use the endpoint format `https://orbiwise.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). |
-   | Port           | `443`                                                                  |
-   | Host Pass      | Set its value to the authorization token you copied in Step 1.         |
+   | Field     | Value                                                                                                                                        |
+   | --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Hostname  | Use the endpoint format `https://orbiwise.middleware.REGION.tago.io`. Replace `REGION` with your deployment region (e.g., `us-e1`, `eu-w1`). |
+   | Port      | `443`                                                                                                                                        |
+   | Host Pass | Set its value to the authorization token you copied in Step 1.                                                                               |
 
 3. **Start Push**
    - Make sure that you set the status of your Application to **&lt;Start Push&gt;**.
 
 ![Orbiwise backend configuration](/docs_imagem/tagoio/oribiwse_backend_config-a9U.png)
 
-
-
 ## Step 3: Add Device in TagoIO
 
 ### Ensure Device EUI Consistency
+
 - When creating the device in TagoIO, use **exactly the same Device EUI** that is configured in Orbiwise.
 - The Device EUI must match exactly to establish a successful connection between Orbiwise and TagoIO.
 
 ### Select the Appropriate Network and Device Type
+
 1. Choose the **LoRaWAN** Orbiwise Network during the device setup process.
 2. Select the correct device type from the available options. If your device is not listed, you can add support through connectors.
 
 ### Add Device Support via Connectors (If Necessary)
+
 - If your device type is not available in the default list, enhance its compatibility by utilizing connectors.
 - For more information on available connectors and how to use them, refer to the [Connector Overview](/docs/tagoio/devices/payload-parser/connector/connector-overview.md).
 
 For detailed instructions on adding devices, visit the [Adding Devices](/docs/tagoio/devices/) page.
-
 
 ### Finalizing Setup
 

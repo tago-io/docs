@@ -2,6 +2,8 @@
 sidebar_position: 4
 sidebar_label: MQTT
 title: TagoTiP over MQTT
+description: "Use TagoTiP over MQTT with pub/sub topics, QoS levels, and real-time command delivery for IoT device fleets."
+keywords: [tagotip, iot, mqtt, pub/sub, qos]
 ---
 
 # TagoTiP over MQTT
@@ -10,8 +12,8 @@ title: TagoTiP over MQTT
 
 ## Endpoint
 
-| Region | Host | IP | Ports |
-|---|---|---|---|
+| Region    | Host                     | IP               | Ports                          |
+| --------- | ------------------------ | ---------------- | ------------------------------ |
 | US-East-1 | `mqtt.tip.us-e1.tago.io` | `15.197.247.146` | `1883` (MQTT) / `8883` (MQTTS) |
 | EU-West-1 | `mqtt.tip.eu-w1.tago.io` | `166.117.88.178` | `1883` (MQTT) / `8883` (MQTTS) |
 
@@ -30,10 +32,10 @@ Port `8883` (MQTTS) for production. Port `1883` (MQTT) for development or when T
 
 The Authorization Hash (16 hex chars) is split across the MQTT CONNECT credentials:
 
-| Field | Value | Example |
-|---|---|---|
+| Field    | Value                                   | Example    |
+| -------- | --------------------------------------- | ---------- |
 | Username | First 8 hex chars of Authorization Hash | `4deedd7b` |
-| Password | Last 8 hex chars of Authorization Hash | `ab8817ec` |
+| Password | Last 8 hex chars of Authorization Hash  | `ab8817ec` |
 
 The server reconstructs the full hash by concatenating username + password, then resolves the Account/Profile.
 
@@ -45,11 +47,11 @@ All MQTT connections sharing the same credentials (derived from the same Authori
 
 TagoTiP uses the `$tip/` prefix for all protocol traffic:
 
-| Topic | Direction | Purpose |
-|---|---|---|
-| `$tip/{serial}/push` | Device -> Server | Publish data |
-| `$tip/{serial}/pull` | Device -> Server | Request last values |
-| `$tip/{serial}/ack` | Server -> Device | Responses and commands |
+| Topic                | Direction        | Purpose                |
+| -------------------- | ---------------- | ---------------------- |
+| `$tip/{serial}/push` | Device -> Server | Publish data           |
+| `$tip/{serial}/pull` | Device -> Server | Request last values    |
+| `$tip/{serial}/ack`  | Server -> Device | Responses and commands |
 
 The device serial is embedded in the topic path, so it does not appear in the payload.
 
@@ -61,11 +63,11 @@ TagoTiP/S provides application-layer encryption and is available on both ports. 
 
 To enable it, replace the `$tip/` topic prefix with `$tips/`:
 
-| Topic | Direction | Purpose |
-|---|---|---|
-| `$tips/{serial}/push` | Device -> Server | Publish data |
-| `$tips/{serial}/pull` | Device -> Server | Request last values |
-| `$tips/{serial}/ack` | Server -> Device | Responses and commands |
+| Topic                 | Direction        | Purpose                |
+| --------------------- | ---------------- | ---------------------- |
+| `$tips/{serial}/push` | Device -> Server | Publish data           |
+| `$tips/{serial}/pull` | Device -> Server | Request last values    |
+| `$tips/{serial}/ack`  | Server -> Device | Responses and commands |
 
 The payload format and all protocol semantics are identical to the standard `$tip/` topics — only the prefix changes.
 
@@ -242,23 +244,23 @@ mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
 
 ## Operators
 
-| Operator | Type | Example |
-|---|---|---|
-| `:=` | Number | `temperature:=25.5` |
-| `=` | String | `status=online` |
-| `?=` | Boolean | `active?=true` |
-| `@=` | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
+| Operator | Type                              | Example                   |
+| -------- | --------------------------------- | ------------------------- |
+| `:=`     | Number                            | `temperature:=25.5`       |
+| `=`      | String                            | `status=online`           |
+| `?=`     | Boolean                           | `active?=true`            |
+| `@=`     | Location (lat,lng or lat,lng,alt) | `position@=39.74,-104.99` |
 
 ## Suffixes
 
 Append after the value, in this order:
 
-| Suffix | Prefix | Example |
-|---|---|---|
-| Unit | `#` | `temperature:=25.5#C` |
-| Timestamp | `@` | `temperature:=25.5@1694567890000` |
-| Group | `^` | `temperature:=25.5^batch_01` |
-| Metadata | `{}` | `temperature:=25.5{source=dht22}` |
+| Suffix    | Prefix | Example                           |
+| --------- | ------ | --------------------------------- |
+| Unit      | `#`    | `temperature:=25.5#C`             |
+| Timestamp | `@`    | `temperature:=25.5@1694567890000` |
+| Group     | `^`    | `temperature:=25.5^batch_01`      |
+| Metadata  | `{}`   | `temperature:=25.5{source=dht22}` |
 
 All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=high}`
 
@@ -266,68 +268,68 @@ All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=h
 
 Received on the `$tip/{serial}/ack` topic:
 
-| Response | Meaning |
-|---|---|
-| `OK\|N` | `N` data points stored |
-| `OK\|[...]` | PULL response with variable data |
-| `CMD\|<command>` | Server command (delivered asynchronously) |
-| `ERR\|invalid_token` | Invalid or expired credentials |
-| `ERR\|device_not_found` | Serial not found under your account |
-| `ERR\|invalid_payload` | Malformed payload |
-| `ERR\|invalid_seq` | Counter not greater than last accepted |
-| `ERR\|rate_limited` | Back off and retry |
-| `ERR\|payload_too_large` | Payload exceeds max size |
-| `ERR\|server_error` | Retry after a delay |
+| Response                 | Meaning                                   |
+| ------------------------ | ----------------------------------------- |
+| `OK\|N`                  | `N` data points stored                    |
+| `OK\|[...]`              | PULL response with variable data          |
+| `CMD\|<command>`         | Server command (delivered asynchronously) |
+| `ERR\|invalid_token`     | Invalid or expired credentials            |
+| `ERR\|device_not_found`  | Serial not found under your account       |
+| `ERR\|invalid_payload`   | Malformed payload                         |
+| `ERR\|invalid_seq`       | Counter not greater than last accepted    |
+| `ERR\|rate_limited`      | Back off and retry                        |
+| `ERR\|payload_too_large` | Payload exceeds max size                  |
+| `ERR\|server_error`      | Retry after a delay                       |
 
 ## Supported features
 
-| Feature | Support |
-|---|---|
-| MQTT versions | 3.1, 5 |
-| QoS levels | 0, 1, 2 |
-| TLS | Yes (port 8883, recommended for production) |
-| TagoTiP/S | Yes |
-| Publish | Isolated per context |
-| Subscribe | Isolated per context |
-| Retain | No |
-| Last Will | No |
-| Persistent Sessions | No |
-| Offline Messages | No |
+| Feature             | Support                                     |
+| ------------------- | ------------------------------------------- |
+| MQTT versions       | 3.1, 5                                      |
+| QoS levels          | 0, 1, 2                                     |
+| TLS                 | Yes (port 8883, recommended for production) |
+| TagoTiP/S           | Yes                                         |
+| Publish             | Isolated per context                        |
+| Subscribe           | Isolated per context                        |
+| Retain              | No                                          |
+| Last Will           | No                                          |
+| Persistent Sessions | No                                          |
+| Offline Messages    | No                                          |
 
 ## Limits
 
 ### Protocol limits
 
-| Limit | Value |
-|---|---|
-| Max topic length | 128 chars |
-| Max payload size (wire) | 16,384 bytes |
-| Max variables per payload | 100 |
-| Max metadata pairs | 32 |
-| Variable name length | 100 chars |
-| Unit length | 25 chars |
-| Serial length | 100 chars |
-| Subscriptions per connection | 5 |
+| Limit                        | Value        |
+| ---------------------------- | ------------ |
+| Max topic length             | 128 chars    |
+| Max payload size (wire)      | 16,384 bytes |
+| Max variables per payload    | 100          |
+| Max metadata pairs           | 32           |
+| Variable name length         | 100 chars    |
+| Unit length                  | 25 chars     |
+| Serial length                | 100 chars    |
+| Subscriptions per connection | 5            |
 
 RPM = requests per minute.
 
 ### Per-profile rate limits
 
-| Resource | Scale | Starter | Free |
-|---|---|---|---|
-| Uplink RPM (PUSH) | 1,000 | 500 | 60 |
-| Downlink RPM (PULL) | 1,000 | 500 | 60 |
-| Connections per IP | 20 | 10 | 3 |
-| Active connections per profile | 500 | 50 | 10 |
-| Subscription request RPM | 100 | 50 | 5 |
+| Resource                       | Scale | Starter | Free |
+| ------------------------------ | ----- | ------- | ---- |
+| Uplink RPM (PUSH)              | 1,000 | 500     | 60   |
+| Downlink RPM (PULL)            | 1,000 | 500     | 60   |
+| Connections per IP             | 20    | 10      | 3    |
+| Active connections per profile | 500   | 50      | 10   |
+| Subscription request RPM       | 100   | 50      | 5    |
 
 ### Per-device limits
 
-| Resource | Scale | Starter | Free |
-|---|---|---|---|
-| Max payload size | 100 KB | 100 KB | 100 KB |
-| Connection TTL | 15 s | 10 s | 10 s |
-| Keep-alive idle timeout | 5 s | 5 s | 5 s |
+| Resource                | Scale  | Starter | Free   |
+| ----------------------- | ------ | ------- | ------ |
+| Max payload size        | 100 KB | 100 KB  | 100 KB |
+| Connection TTL          | 15 s   | 10 s    | 10 s   |
+| Keep-alive idle timeout | 5 s    | 5 s     | 5 s    |
 
 Keepalive is handled natively by MQTT's PINGREQ/PINGRESP mechanism and does not require a TagoTiP-level PING.
 

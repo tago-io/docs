@@ -19,53 +19,69 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Export Chunk"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Export Chunk"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/chunk/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/chunk/backup"} context={"endpoint"}></MethodEndpoint>
 
 Export a chunk as CSV to your TagoIO Files
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":false,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "deviceID", in: "path", required: false, schema: { type: "string", example: "67aa1f9135b1a7000a9db33c" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"chunk_id":{"type":"string","example":"1657497600_1658102399"},"file_address":{"type":"string","example":"/device/$DEVICE$/$FROM$_$TO$"},"headers":{"type":"boolean","example":true}}},"examples":{"Export a chunk as CSV to Files":{"value":{"chunk_id":"1657497600_1658102399","file_address":"/device/$DEVICE$/$FROM$_$TO$","headers":true}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            chunk_id: { type: "string", example: "1657497600_1658102399" },
+            file_address: { type: "string", example: "/device/$DEVICE$/$FROM$_$TO$" },
+            headers: { type: "boolean", example: true },
+          },
+        },
+        examples: {
+          "Export a chunk as CSV to Files": {
+            value: { chunk_id: "1657497600_1658102399", file_address: "/device/$DEVICE$/$FROM$_$TO$", headers: true },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Chunk exported to Files","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"chunk_id":{"type":"string","example":"1657497600_1658102399"},"file_address":{"type":"string","example":"device/62a2643dcc8dd60012eb4838/2022-07-11_2022-07-17.csv"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Chunk exported to Files",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: {
+                  chunk_id: { type: "string", example: "1657497600_1658102399" },
+                  file_address: {
+                    type: "string",
+                    example: "device/62a2643dcc8dd60012eb4838/2022-07-11_2022-07-17.csv",
+                  },
+                },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

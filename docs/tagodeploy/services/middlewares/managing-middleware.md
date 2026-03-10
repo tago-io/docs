@@ -1,6 +1,7 @@
 ---
 title: "Managing a Deployed Middleware"
 description: "Overview of how to manage a deployed middleware in TagoDeploy."
+keywords: [tagodeploy, iot, middleware, scaling, monitoring]
 tags: ["tagodeploy"]
 slug: /tagodeploy/services/middlewares/managing-middleware
 ---

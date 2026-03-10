@@ -2,7 +2,9 @@
 title: "Common Billing Issues"
 description: "This article explains common reasons a card charge may be declined and how to find more information about a specific decline, including what TagoIO can and cannot determine from the error information."
 tags: ["tagoio"]
+keywords: [tagoio, iot, billing, payment declined, troubleshooting]
 ---
+
 ## Why was a charge declined?
 
 Declines can occur for many reasons determined by the cardholder’s bank. Each bank uses a system that considers various signals, such as the cardholder’s spending habits, account balance, and card information like the expiration date and CVV/CVC security number.

@@ -2,6 +2,7 @@
 title: "Notifications"
 description: "This article explains how TagoIO notifications work, the four types of notifications you may receive, where to view them in the admin interface, and how to filter or search notifications."
 tags: ["tagoio"]
+keywords: [tagoio, iot, notifications, alerts, messaging]
 ---
 
 TagoIO will notify you when something needs your attention. You may need to

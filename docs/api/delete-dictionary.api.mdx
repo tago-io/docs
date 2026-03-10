@@ -19,53 +19,45 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Dictionary"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Dictionary"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/dictionary/{dictionary_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/dictionary/{dictionary_id}"} context={"endpoint"}></MethodEndpoint>
 
 Delete Dictionary
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dictionary_id","in":"path","required":true,"schema":{"type":"string","example":"(Type Dictionary ID)"},"description":"Can be obtained in the GET Dictionary response"}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "dictionary_id",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "(Type Dictionary ID)" },
+      description: "Can be obtained in the GET Dictionary response",
+    },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Delete Dictionary","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Delete Dictionary",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Successfully Removed" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

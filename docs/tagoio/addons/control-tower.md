@@ -2,7 +2,9 @@
 title: "Control Tower"
 description: "This article describes the Control Tower add-on for TagoIO, explaining its capabilities for monitoring and limiting data input/output and Hard Limits usage, and how to view per-device statistics after activation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, addons, control tower, monitoring]
 ---
+
 The Control Tower is an add‑on designed to enhance your profile by providing access to features that increase your visibility and control over data input and output. It also offers advanced statistics on the usage of your [Hard Limits (Rate Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits.md). By using Control Tower, you can:
 
 - View data input and output statistics for each device.
@@ -59,7 +61,6 @@ For example: if the hard limit of your plan is 5,000 , even if the soft limit is
 ### Monitor your request per minute statistics
 
 A significant feature provided by the Control Tower is the capability to access detailed statistics on Hard Limits through your Admin page. Upon activating the add-on, data regarding your requests will begin to be recorded and presented on the [Hard Limits > Requests page](https://admin.tago.io/limits/hard). This enables you to view the current, highest, lowest, and average usage of each hard limit. Furthermore, it allows for the display of advanced statistics, offering a historical view of your usage.
-
 
 ![Control tower advanced statistics](/docs_imagem/tagoio/rpm_list_advanced_statistics.png)
 

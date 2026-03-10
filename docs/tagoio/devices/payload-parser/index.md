@@ -2,6 +2,7 @@
 title: "Payload Parser"
 description: "This article explains how the Payload Parser processes raw device payloads to extract measured variables, convert units in real time, and how connector-defined and custom parsers are executed within TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, payload parser, raw payload, data conversion]
 ---
 
 The Payload Parser handles the raw payload sent by devices to extract measured

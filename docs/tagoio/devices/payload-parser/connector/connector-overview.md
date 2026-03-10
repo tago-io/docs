@@ -3,6 +3,7 @@ title: "Connector Overview"
 description: "This article explains what Connectors are in TagoIO, how they manage device communication and payload parsing, and how to create a new connector via the Connector management page."
 tags: ["tagoio"]
 sidebar_position: 1
+keywords: [tagoio, iot, connectors, payload parser, network integration]
 ---
 
 Connectors let you create devices with built‑in behaviors that enable them to

@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Lifecycle
 slug: /tagocore/plugin/create/lifecycle
+description: Understand how TagoCore plugins start, stop, and handle errors through the onLoad and onDestroy lifecycle.
+keywords: [tagocore, iot, plugin, lifecycle, sandbox, module]
 ---
 
 # Lifecycle

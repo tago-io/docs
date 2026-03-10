@@ -19,54 +19,40 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/dashboard/{dashboardID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/dashboard/{dashboardID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete the dashboard
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "dashboardID", in: "path", required: true, schema: { type: "string", example: "(Type a dashboard ID)" } },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Deleting a dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting a dashboard":{"value":{"result":"Successfully Removed","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Deleting a dashboard",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "Successfully Removed" },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: { "Deleting a dashboard": { value: { result: "Successfully Removed", status: true } } },
+        },
+      },
+    },
+  }}
+></StatusCodes>

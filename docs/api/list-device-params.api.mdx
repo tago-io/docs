@@ -19,54 +19,60 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Device Params"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Device Params"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/{deviceID}/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/{deviceID}/params"} context={"endpoint"}></MethodEndpoint>
 
 List params for the device
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"sent_status","in":"query","schema":{"type":"string","example":"false"},"description":"Filter by Boolean."},{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"(Type your device ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "sent_status",
+      in: "query",
+      schema: { type: "string", example: "false" },
+      description: "Filter by Boolean.",
+    },
+    { name: "deviceID", in: "path", required: true, schema: { type: "string", example: "(Type your device ID)" } },
+  ]}
+></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"List Device Params","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"62ab8294c1ac39001361e11b"},"key":{"type":"string","example":"param1"},"sent":{"type":"boolean","example":false},"value":{"type":"string","example":"value1"}}},"example":[{"id":"62ab8294c1ac39001361e11b","key":"param1","sent":false,"value":"value1"},{"id":"62ab8294c1ac39001361e11c","key":"param2","sent":false,"value":"value2"}]},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "List Device Params",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "string", example: "62ab8294c1ac39001361e11b" },
+                    key: { type: "string", example: "param1" },
+                    sent: { type: "boolean", example: false },
+                    value: { type: "string", example: "value1" },
+                  },
+                },
+                example: [
+                  { id: "62ab8294c1ac39001361e11b", key: "param1", sent: false, value: "value1" },
+                  { id: "62ab8294c1ac39001361e11c", key: "param2", sent: false, value: "value2" },
+                ],
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

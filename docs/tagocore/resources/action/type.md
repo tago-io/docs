@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: Type
 slug: /tagocore/action/type
+description: Learn about TagoCore action types including running analysis scripts and sending HTTP requests to external services.
+keywords: [tagocore, iot, action types, automation, http requests, analysis]
 ---
 
 # Action Type
@@ -15,8 +17,9 @@ TagoCore offers several built-in Action Types to handle common automation needs:
 This type executes custom [Analysis](/docs/tagocore/analysis) scripts when your Action triggers. Perfect for complex data processing, calculations, or custom business logic that goes beyond simple data forwarding.
 
 **Common use cases:**
+
 - Process sensor data and calculate averages or trends
-- Apply complex filtering or validation rules  
+- Apply complex filtering or validation rules
 - Transform data formats before sending to external systems
 - Implement custom alert logic based on multiple variables
 
@@ -25,6 +28,7 @@ This type executes custom [Analysis](/docs/tagocore/analysis) scripts when your 
 This type sends data to external web services or APIs via HTTP POST requests. When your Action triggers, it automatically sends the device data (in JSON format) to any web endpoint you specify.
 
 **Common use cases:**
+
 - Forward device data to cloud services or databases
 - Send notifications to webhook services (like Slack or Discord)
 - Integrate with third-party IoT platforms or analytics tools

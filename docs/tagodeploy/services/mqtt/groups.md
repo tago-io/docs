@@ -1,6 +1,7 @@
 ---
 title: "MQTT Groups"
 description: "Create and manage groups that define ACL permissions for client access to MQTT topics."
+keywords: [tagodeploy, iot, mqtt, groups, permissions]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/groups
 ---

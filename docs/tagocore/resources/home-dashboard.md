@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Home Dashboard
 slug: /tagocore/home
+description: Monitor your TagoCore platform health, system performance, network status, and real-time data flow from the home dashboard.
+keywords: [tagocore, iot, dashboard, monitoring, system performance]
 ---
 
 # Home Dashboard
@@ -11,6 +13,7 @@ The TagoCore Home Dashboard serves as your central command center, providing a c
 ## Platform Overview
 
 ### TagoCore Summary
+
 Monitor your platform's core resources at a glance. This card displays:
 
 - **Devices** - Total number of connected IoT devices
@@ -22,6 +25,7 @@ Monitor your platform's core resources at a glance. This card displays:
 This summary helps you quickly assess your platform's scale and ensure all components are properly configured.
 
 ### Operating System Information
+
 View essential details about your host environment:
 
 - Operating system name and version
@@ -33,6 +37,7 @@ This information is crucial for troubleshooting compatibility issues and underst
 ## Infrastructure Monitoring
 
 ### Network Overview
+
 Track your network connectivity and accessibility:
 
 - **Local IP addresses** - Private network interfaces
@@ -42,6 +47,7 @@ Track your network connectivity and accessibility:
 Use this information to verify network configuration and troubleshoot connectivity issues.
 
 ### System Performance
+
 Monitor real-time hardware utilization with dynamic metrics that adapt to your system:
 
 - **RAM Usage** - Memory consumption with percentage and formatted values
@@ -57,14 +63,17 @@ Performance metrics are system-dependent. Some metrics may not appear based on y
 ## Data Flow Analytics
 
 ### Real-time Data Monitoring
+
 Track your IoT data streams with live visualization:
 
 **Data Input Analytics**
+
 - 15-minute sliding window of incoming data
 - Real-time updates as devices send information
 - Visual trends to identify data flow patterns
 
 **Data Output Analytics**
+
 - 15-minute sliding window of outgoing data
 - Updates when devices or external systems retrieve data
 - Helps monitor API usage and data consumption
@@ -74,6 +83,7 @@ These charts provide immediate feedback on your platform's activity and can help
 ## Customization
 
 ### Plugin-Enhanced Cards
+
 Extend your dashboard with custom functionality through plugins:
 
 - Create specialized monitoring widgets

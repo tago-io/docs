@@ -19,54 +19,76 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Token"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/token"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/token"} context={"endpoint"}></MethodEndpoint>
 
 Generate and retrieve a new token
 
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
-
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"device":{"type":"string","example":"6243321z80d789a05800143075a4"},"expire_time":{"type":"string","example":"3 hours"},"name":{"type":"string","example":"TestToken"},"serie_number":{"type":"string","example":359881234567890,"description":"If applicable for the selected Network. Can be an IMEI, EUI, or unique serial number."}}},"examples":{"Create token":{"value":{"device":"6243321z80d789a05800143075a4","expire_time":"3 hours","name":"TestToken"}}}},"text/plain":{"examples":{"Create token":{"value":"{\r\n    \"expire_time\": \"never\", // ISO-8601 or relative date, e.g 1 day\r\n    \"name\": \"Token #2\",\r\n    \"permission\": \"full\", // full, read or write\r\n    \"serie_number\": \"\", //Optional\r\n    \"device\": \"6298fcc3e0b6840012b6abfa\"\r\n}"}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            device: { type: "string", example: "6243321z80d789a05800143075a4" },
+            expire_time: { type: "string", example: "3 hours" },
+            name: { type: "string", example: "TestToken" },
+            serie_number: {
+              type: "string",
+              example: 359881234567890,
+              description: "If applicable for the selected Network. Can be an IMEI, EUI, or unique serial number.",
+            },
+          },
+        },
+        examples: {
+          "Create token": {
+            value: { device: "6243321z80d789a05800143075a4", expire_time: "3 hours", name: "TestToken" },
+          },
+        },
+      },
+      "text/plain": {
+        examples: {
+          "Create token": {
+            value:
+              '{\r\n    "expire_time": "never", // ISO-8601 or relative date, e.g 1 day\r\n    "name": "Token #2",\r\n    "permission": "full", // full, read or write\r\n    "serie_number": "", //Optional\r\n    "device": "6298fcc3e0b6840012b6abfa"\r\n}',
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"201":{"description":"Token created","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"expire_time":{"type":"string","example":"2022-03-30T01:15:14.914Z"},"permission":{"type":"string","example":"full"},"token":{"type":"string","example":"f2ba4b46-3c57-44ce-810f-98e1271ea602"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "201": {
+      description: "Token created",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: {
+                  expire_time: { type: "string", example: "2022-03-30T01:15:14.914Z" },
+                  permission: { type: "string", example: "full" },
+                  token: { type: "string", example: "f2ba4b46-3c57-44ce-810f-98e1271ea602" },
+                },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

@@ -2,6 +2,7 @@
 title: "TagoRun Overview"
 description: "This article explains how to use the TagoRun Run module to create and deploy a branded application portal, configure URLs and signup pages, and manage email templates."
 tags: ["tagorun"]
+keywords: [tagoio, iot, tagorun, run module, portal, deployment]
 sidebar_position: 1
 ---
 
@@ -18,9 +19,11 @@ By default, your URL may be a subdomain of run.tago.io (for example, mycompany.t
 :::
 
 With Run you can set up three main things:
+
 1. Your Run (Application portal)
 2. Your Sign up page
 3. E-mail templates
 
 ## Your Run (Application portal)
+
 Go to the [Main Configuration](https://admin.tago.io/run) and Domain tabs to configure the title and subtitle of your application, add a favicon (browser icon) and logo, and edit the colors used in the navigation bar.

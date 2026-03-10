@@ -2,10 +2,10 @@
 title: "Upgrading Plans & Services"
 description: "This article explains how billing behaves when you upgrade TagoIO plans or services, including proration rules and when charges are applied, and points to a tutorial for enabling auto-scaling of profile limits."
 tags: ["tagoio"]
+keywords: [tagoio, iot, upgrade, plan, billing, proration]
 ---
+
 When you upgrade your plan from Free to a Starter or Scale plan for the first time, the date and hour of that upgrade define the billing cycle for your account. You will be charged for the full month at that time, and the plan will be automatically renewed until you cancel or downgrade it.
-
-
 
 If you make additional upgrades to your plan during a billing cycle, we will apply a one-time prorated charge at the moment of the upgrade for the remaining days in that billing cycle.
 

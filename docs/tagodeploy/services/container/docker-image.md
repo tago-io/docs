@@ -1,3 +1,11 @@
+---
+title: "Docker Image Configuration"
+description: "Configure Docker image settings and registry authentication for container deployments in TagoDeploy."
+keywords: [tagodeploy, iot, docker, container, registry]
+tags: ["tagodeploy", "container"]
+slug: /tagodeploy/project/container/docker-image
+---
+
 # Docker Image Configuration
 
 Configure the Docker image settings and authentication credentials for your container deployment. This section allows you to specify which Docker image to deploy and how to authenticate with private registries.
@@ -14,11 +22,13 @@ The image configuration determines which Docker container will be deployed in yo
 ### Image Naming Examples
 
 **Public Images (Docker Hub):**
+
 - `nginx` (shorthand for `docker.io/library/nginx:latest`)
 - `docker.io/library/postgres:13`
 - `redis:alpine`
 
 **Private Images:**
+
 - `docker.io/mycompany/myapp:v1.0.0`
 - `ghcr.io/organization/service:main`
 - `myregistry.com/project/app:latest`
@@ -58,6 +68,7 @@ Docker Hub is the default Docker registry and hosts millions of public container
    - **Registry Access Password**: Paste your access token (not your account password)
 
 #### Docker Hub Image Examples
+
 ```
 # Public image (no authentication needed)
 docker.io/library/nginx:latest
@@ -100,23 +111,27 @@ TagoIO Deploy supports authentication with other private Docker registries inclu
 - **Custom private registries**
 
 For these registries:
+
 - **Username**: Registry-specific username or access key
 - **Registry Access Password**: Registry-specific password, token, or access key
 
 ## Best Practices
 
 ### Image Selection
+
 - **Use specific tags** instead of `latest` for production deployments to ensure consistency
 - **Choose minimal base images** (like Alpine Linux) to reduce attack surface and deployment time
 - **Verify image sources** and use trusted, well-maintained images
 
 ### Authentication Security
+
 - **Use access tokens** instead of passwords when available
 - **Grant minimal permissions** - typically read-only access is sufficient for image pulling
 - **Rotate credentials regularly** and update them in your container configuration
 - **Keep credentials secure** - never share or commit authentication credentials
 
 ### Registry Performance
+
 - **Choose geographically close registries** when possible to reduce image pull times
 - **Consider registry mirrors** or caching for frequently deployed images
 - **Monitor registry rate limits** to avoid deployment interruptions
@@ -126,16 +141,19 @@ For these registries:
 ### Common Issues
 
 **Authentication Failed:**
+
 - Verify username and access token are correct
 - Check that the access token has appropriate permissions
 - Ensure the registry URL in the image name is correct
 
 **Image Not Found:**
+
 - Confirm the image name and tag are spelled correctly
 - Verify the image exists in the specified registry
 - Check if the image is public or requires authentication
 
 **Pull Rate Limits:**
+
 - Docker Hub has rate limits for anonymous pulls
 - Authenticate even for public images to get higher rate limits
 - Consider using alternative registries or mirrors

@@ -2,6 +2,7 @@
 title: "Sigfox - Downlink"
 description: "This article explains how to configure Sigfox downlinks in TagoIO, including preparatory steps and a two-part setup process (TagoIO and Sigfox Portal). It highlights important prerequisites and links to related documentation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sigfox, downlink, integration]
 ---
 
 TagoIO is ready to receive data from and send data to Sigfox devices. The
@@ -41,7 +42,6 @@ Further setup steps for each part are covered below.
    [Device](https://admin.tago.io/devices) (left menu), go to it, and click on
    the tab **Configuration parameters**;
 2. Create a parameter for your device:
-
    - **Key** – type `downlinkData`
    - **Value** – the message you want to send to your Sigfox device (must have
      **8 bytes**)

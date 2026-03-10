@@ -2,7 +2,9 @@
 title: "Data Analytics"
 description: "This article explains how Data Analytics transforms raw sensor data into actionable insights using visual calculations, lists the widgets that support Data Analytics, and provides a table of available analytic functions with their descriptions."
 tags: ["tagoio"]
+keywords: [tagoio, iot, data analytics, widgets, calculations]
 ---
+
 Transform your raw sensor data into actionable insights using visual calculations. Data Analytics enables operations such as averaging, summing, finding maximum and minimum values, and more, directly on your widget variables. This feature also lets you filter data, apply mathematical computations, visualize data as numbers, analyze trends, and perform other data transformations.
 
 Data Analytics is currently available for the widgets listed below, with support for additional widgets to be added in the future:
@@ -19,28 +21,31 @@ Data Analytics is currently available for the widgets listed below, with support
 
 The following table lists the calculations you can perform:
 
-| Function      | Description                                                                 |
-|---------------|-----------------------------------------------------------------------------|
-| Last Value    | Default for widgets with a single value; represents the last value of the variable. |
-| All Data      | Default for widgets with multiple values; shows all data of this variable or widget. |
-| Last Location | Finds the last value with valid location data.                             |
-| Count         | Counts the number of values for a variable over a selected period.          |
-| Average       | Calculates the average value over a selected period.                        |
-| Sum           | Computes the sum of values over a selected period.                          |
-| Max           | Identifies the maximum value over a selected period.                         |
-| Min           | Identifies the minimum value over a selected period.                         |
+| Function      | Description                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| Last Value    | Default for widgets with a single value; represents the last value of the variable.                            |
+| All Data      | Default for widgets with multiple values; shows all data of this variable or widget.                           |
+| Last Location | Finds the last value with valid location data.                                                                 |
+| Count         | Counts the number of values for a variable over a selected period.                                             |
+| Average       | Calculates the average value over a selected period.                                                           |
+| Sum           | Computes the sum of values over a selected period.                                                             |
+| Max           | Identifies the maximum value over a selected period.                                                           |
+| Min           | Identifies the minimum value over a selected period.                                                           |
 | Conditional   | Finds values that meet a specific condition (e.g., greater than, less than, not equal) over a selected period. |
-| Aggregate     | Performs a calculation (e.g., average, max, min, sum) based on an interval (e.g., daily, weekly, monthly). |
+| Aggregate     | Performs a calculation (e.g., average, max, min, sum) based on an interval (e.g., daily, weekly, monthly).     |
 
 ### Types of Functions
 
 #### Basic calculations
+
 These functions perform fundamental mathematical operations on data within a specified period, up to one month. All functions are considered basic calculations except for the Aggregate function. When applied, these calculations process all data within the chosen timeframe. Note that these calculations are limited to data in a period of 1 month.
 
 #### Data aggregation operations
+
 This includes the **Aggregate** function, which aggregates data over an interval and applies mathematical operations. Unlike basic calculations, there is no period restriction; the calculation will be applied to all available data by default or to the period configured in the [Dashboard Period Preset](/docs/tagoio/dashboards/dashboard-global-time-filter-and-period-presets.md).
 
 Available intervals:
+
 - Per minute
 - Per hour
 - Daily
@@ -49,9 +54,10 @@ Available intervals:
 - Quarterly
 - Yearly
 
-When applying an interval, the system uses the first data point as a starting reference. For example, if your data starts on January 1st and the selected interval is *Weekly*, then the data between January 1st and January 7th will be aggregated.
+When applying an interval, the system uses the first data point as a starting reference. For example, if your data starts on January 1st and the selected interval is _Weekly_, then the data between January 1st and January 7th will be aggregated.
 
 ### How to apply functions to your data
+
 1. Open the widget in **Edit Mode**.
 2. Select a variable in **Data From**.
 3. Click the cog icon to access the **Data Analytics** tab.

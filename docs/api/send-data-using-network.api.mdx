@@ -19,22 +19,9 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Send Data using Network"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Send Data using Network"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/integration/network/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/integration/network/data"} context={"endpoint"}></MethodEndpoint>
 
 Send data to TagoIO using the Network instead.
 
@@ -42,42 +29,82 @@ This endpoint allows the [Network Payload Parser](/docs/tagoio/devices/payload-p
 
 The Network's Payload Parser is required to set the serial within the network parser. For example:
 
-``` javascript
- if (Array.isArray(payload)) {
-   const payload_received = payload.find(x => x.variable === "payload");
-   serial = payload_received?.metadata?.serial;
- }
+```javascript
+if (Array.isArray(payload)) {
+  const payload_received = payload.find((x) => x.variable === "payload");
+  serial = payload_received?.metadata?.serial;
+}
+```
 
- ```
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"authorization-token","in":"query","required":true,"description":"Authorization-Token\n","schema":{"type":"string","example":"at72fb69a8dc714059b6cebee41693eb0"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "authorization-token",
+      in: "query",
+      required: true,
+      description: "Authorization-Token\n",
+      schema: { type: "string", example: "at72fb69a8dc714059b6cebee41693eb0" },
+    },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["variable"],"properties":{"variable":{"type":"string","example":"payload"},"value":{"type":"string","description":"Hexadecimal string payload","example":"41BC7E1F2A"},"metadata":{"type":"object","properties":{"serial":{"type":"string","description":"Device serial number","example":"SN123456789"}},"additionalProperties":false}},"description":"Network device data format with payload and serial metadata.","title":"NetworkDeviceData"}},"text/plain":{"schema":{"type":"string","description":"Arbitrary payload. Your [Network Payload Parser](/docs/tagoio/devices/payload-parser/) must normalize this text to the TagoIO array format accepted by application/json.\n"},"examples":{"Send Data using Network":{"value":"Any format data that your Payload Parser can normalize to TagoIO format.\n"}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    required: true,
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          required: ["variable"],
+          properties: {
+            variable: { type: "string", example: "payload" },
+            value: { type: "string", description: "Hexadecimal string payload", example: "41BC7E1F2A" },
+            metadata: {
+              type: "object",
+              properties: { serial: { type: "string", description: "Device serial number", example: "SN123456789" } },
+              additionalProperties: false,
+            },
+          },
+          description: "Network device data format with payload and serial metadata.",
+          title: "NetworkDeviceData",
+        },
+      },
+      "text/plain": {
+        schema: {
+          type: "string",
+          description:
+            "Arbitrary payload. Your [Network Payload Parser](/docs/tagoio/devices/payload-parser/) must normalize this text to the TagoIO array format accepted by application/json.\n",
+        },
+        examples: {
+          "Send Data using Network": {
+            value: "Any format data that your Payload Parser can normalize to TagoIO format.\n",
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Send Data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"1 Data Added"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Send Data",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "1 Data Added" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

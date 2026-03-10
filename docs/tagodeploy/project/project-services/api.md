@@ -1,6 +1,7 @@
 ---
 title: "API Service"
 description: "Manage and scale the TagoIO API for your project, with recommended configurations and billing considerations."
+keywords: [tagodeploy, iot, api, scaling, monitoring]
 tags: ["tagodeploy", "api"]
 slug: /tagodeploy/project/api
 ---

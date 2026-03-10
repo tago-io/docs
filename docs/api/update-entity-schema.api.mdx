@@ -19,53 +19,62 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Update Entity Schema"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Update Entity Schema"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/entity/{entity_id}/schema"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/entity/{entity_id}/schema"} context={"endpoint"}></MethodEndpoint>
 
 Update Entity Schema
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"entity_id","in":"path","required":true,"schema":{"type":"string","example":"(Type an entity ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "entity_id", in: "path", required: true, schema: { type: "string", example: "(Type an entity ID)" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"schema":{"type":"object","properties":{"update_new_date":{"type":"object","properties":{"action":{"type":"string","example":"delete"}}}}}}},"examples":{"Update Entity Schema":{"value":{"schema":{"update_new_date":{"action":"delete"}}}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            schema: {
+              type: "object",
+              properties: {
+                update_new_date: { type: "object", properties: { action: { type: "string", example: "delete" } } },
+              },
+            },
+          },
+        },
+        examples: { "Update Entity Schema": { value: { schema: { update_new_date: { action: "delete" } } } } },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Updating any entity field","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"message":{"type":"string","example":"Entity Successfully Updated"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Updating any entity field",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: {
+                type: "object",
+                properties: { message: { type: "string", example: "Entity Successfully Updated" } },
+              },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

@@ -2,17 +2,18 @@
 title: "Geofences in Map Widgets"
 description: "This article explains how geofences are used in map widgets to color map areas and trigger events in specific regions, and points to related documentation for creating geofences and handling geofence variable data."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, map, geofence]
 ---
+
 Geofences allow developers to color parts of the map and detect or trigger events inside specific areas.
 
 ![Map example showing colored geofences on a map](/docs_imagem/tagoio/geofences-in-map-widgets-2.png)
 
 <YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
-
 ## Creating geofences
 
-To create a geofence, go to **Geofence options** in your widget's configuration. Then set the option **Allow users to edit geofence** to *yes*. You can choose to allow users to create polygons, circles or both, and even select the number of geofences allowed in the map.
+To create a geofence, go to **Geofence options** in your widget's configuration. Then set the option **Allow users to edit geofence** to _yes_. You can choose to allow users to create polygons, circles or both, and even select the number of geofences allowed in the map.
 
 ![Image 2](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-13-40-324.png)
 
@@ -37,7 +38,7 @@ Below the toolbox, you can find a list of all the geofences that are in the sele
 
 ## Events
 
-You can add events to geofences. To do so, head over to the **Geofence Options** tab in the map's edit configuration. For each event, set an *event code* (so it can be identified in analysis) and a *description* (what users will see). You can also set a layer color; this color will change the color of the geofence itself.
+You can add events to geofences. To do so, head over to the **Geofence Options** tab in the map's edit configuration. For each event, set an _event code_ (so it can be identified in analysis) and a _description_ (what users will see). You can also set a layer color; this color will change the color of the geofence itself.
 
 ![Image 4](/docs_imagem/tagoio/Screen-20Shot-202018-08-16-20at-2015.41.33-DN4.png)
 
@@ -45,7 +46,7 @@ You can add events to geofences. To do so, head over to the **Geofence Options**
 
 The geofences will be saved in a variable, so developers can manage them easily, display the geofences on the map, select the device and variable.
 
-> This is similar to the *Data From* field from the Map Widget.
+> This is similar to the _Data From_ field from the Map Widget.
 
 ![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-18-20-u98.png)
 

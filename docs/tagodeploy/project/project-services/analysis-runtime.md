@@ -1,6 +1,7 @@
 ---
 title: "Analysis Runtime"
 description: "Configure memory and monitor Python/Node.js runtime metrics for TagoIO analyses; optimize cost and performance."
+keywords: [tagodeploy, iot, analysis, runtime, performance]
 tags: ["tagodeploy", "analysis"]
 slug: /tagodeploy/project/analysis-runtime
 ---

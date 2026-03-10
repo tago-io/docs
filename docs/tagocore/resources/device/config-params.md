@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: Configuration Parameters
 slug: /tagocore/device/configuration-parameter
+description: Send key-value configuration parameters to your IoT devices remotely through TagoCore.
+keywords: [tagocore, iot, device, configuration, parameters, remote settings]
 ---
 
 # Configuration Parameters
@@ -9,6 +11,7 @@ slug: /tagocore/device/configuration-parameter
 Configuration Parameters are settings you can send to your devices to control how they behave. Think of them as remote controls for your IoT hardware - you can change device settings from TagoCore without physically accessing the equipment.
 
 These parameters work as simple key-value pairs, like:
+
 - `update_interval: 30` (how often to send data, in seconds)
 - `sensor_threshold: 75` (when to trigger an alert)
 - `wifi_ssid: MyNetwork` (which network to connect to)

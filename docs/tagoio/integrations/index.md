@@ -2,6 +2,7 @@
 title: "Network Integration"
 description: "This article explains how devices can connect to TagoIO using HTTPS/MQTT or other network integrations, and introduces options for creating scripts, using prepared network integrations, or building a custom integration. It also begins details on selecting the correct network endpoint by region."
 tags: ["tagoio", "integration"]
+keywords: [tagoio, iot, integration, network, devices]
 ---
 
 Your devices can always connect directly to the TagoIO API using HTTPS or MQTT.
@@ -28,10 +29,10 @@ from other protocols, by using one of the following methods:
 TagoIO provides network integrations fully hosted in different regions. Based on
 your account's region, ensure you use the correct endpoint:
 
-| Region  | Network Endpoint         |
-| ------- | ------------------------ |
-| Europe* | middleware.eu-w1.tago.io |
-| USA*    | middleware.us-e1.tago.io |
+| Region   | Network Endpoint         |
+| -------- | ------------------------ |
+| Europe\* | middleware.eu-w1.tago.io |
+| USA\*    | middleware.us-e1.tago.io |
 
 **For example, use everynet.middleware.us-e1.tago.io for Everynet network in the
 USA.**

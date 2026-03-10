@@ -2,6 +2,7 @@
 title: "SDK"
 description: "TagoIO Software Development Kits - integrate TagoIO with your applications"
 tags: ["tagoio", "sdk", "development"]
+keywords: [tagoio, iot, sdk, development, integration]
 ---
 
 # SDK
@@ -11,13 +12,16 @@ Use TagoIO's Software Development Kits to integrate TagoIO functionality into yo
 ## Available SDKs
 
 ### Node.js SDK
+
 - [Node.js SDK](/docs/tagoio/analysis/sdk/nodejs-sdk.md) - JavaScript/Node.js integration
 
 ### Python SDK
+
 - [Python SDK](/docs/tagoio/analysis/sdk/python-sdk.md) - Python integration
 
 ## Getting Started
 
 Choose the SDK that matches your development environment:
+
 - For JavaScript/Node.js applications, start with [Node.js SDK](/docs/tagoio/analysis/sdk/nodejs-sdk.md)
 - For Python applications, start with [Python SDK](/docs/tagoio/analysis/sdk/python-sdk.md)

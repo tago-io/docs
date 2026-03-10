@@ -2,6 +2,7 @@
 title: "Sending Data to Device"
 description: "How to send data to a device via MQTT, HTTP, Analysis, or custom middleware."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, send data, MQTT, HTTP]
 ---
 
 TagoIO supports two-way communication with devices. Below are the main options

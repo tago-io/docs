@@ -19,56 +19,67 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Data"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/data"} context={"endpoint"}></MethodEndpoint>
 
 Edit specific data stored in the device. Same properties as the Create Data is accepted, edit requires the ID field of the data to be edited.
 :::info  
 This request is only available when using Mutable Storage on Devices  
-:::  
+:::
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","required":["id"],"properties":{"id":{"type":"string","example":"6298fcc3e0b6840012bb6abfa"},"metadata":{"type":"object","properties":{"color":{"type":"string","example":"blue"}}},"value":{"type":"string","example":"27"}}},"example":[{"id":"6298fcc3e0b6840012bb6abfa","metadata":{"color":"blue"},"value":"27"}]}},"text/plain":{"examples":{"Edit data":{"value":"[\n    {\n        \"id\": \"6298fcc3e0b6840012bb6abfa\",\n        \"value\": \"27\", // edit the value field\n        \"metadata\": { // edit the metadata field\n            \"color\": \"blue\"\n        }\n    }\n]"}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "array",
+          items: {
+            type: "object",
+            required: ["id"],
+            properties: {
+              id: { type: "string", example: "6298fcc3e0b6840012bb6abfa" },
+              metadata: { type: "object", properties: { color: { type: "string", example: "blue" } } },
+              value: { type: "string", example: "27" },
+            },
+          },
+          example: [{ id: "6298fcc3e0b6840012bb6abfa", metadata: { color: "blue" }, value: "27" }],
+        },
+      },
+      "text/plain": {
+        examples: {
+          "Edit data": {
+            value:
+              '[\n    {\n        "id": "6298fcc3e0b6840012bb6abfa",\n        "value": "27", // edit the value field\n        "metadata": { // edit the metadata field\n            "color": "blue"\n        }\n    }\n]',
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Editing data register by ID","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"1 item(s) updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Editing data register by ID",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "1 item(s) updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

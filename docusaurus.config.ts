@@ -74,6 +74,9 @@ const config: Config = {
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "ignore",
         },
+        sitemap: {
+          ignorePatterns: ["/changelog/**", "/search", "/markdown-page"],
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -95,12 +98,32 @@ const config: Config = {
         },
       },
     ],
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: "docs",
+        title: "TagoIO Docs",
+        description: "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
+        includeBlog: false,
+        ignoreFiles: ["api/**"],
+        logLevel: "normal",
+      },
+    ],
+    [
+      "@acid-info/docusaurus-og",
+      {
+        path: "./preview-images",
+        imageRenderers: {
+          "docusaurus-plugin-content-docs": require("./lib/docs-renderer").docsRenderer,
+        },
+      },
+    ],
   ],
 
   themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
-  stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
-  ],
+  stylesheets: ["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"],
 
   clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
 

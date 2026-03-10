@@ -1,6 +1,7 @@
 ---
 title: "MQTT Pipelines"
 description: "Create, edit, and manage pipelines that process MQTT messages and forward data to TagoIO instances."
+keywords: [tagodeploy, iot, mqtt, pipelines, data routing]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/pipelines
 ---

@@ -2,6 +2,7 @@
 title: "Parser vs. Analysis Comparison"
 description: "This article explains the differences between TagoIO's Payload Parser and Analysis, summarizing capabilities, limits, and built-in features to help choose the right option for processing device payloads."
 tags: ["tagoio", "analysis"]
+keywords: [tagoio, iot, payload parser, analysis, comparison]
 ---
 
 The [Payload Parser](/docs/tagocore/resources/device/payload-parser.md) was created to

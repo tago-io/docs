@@ -1,6 +1,7 @@
 ---
 title: "MQTT ACL Permissions"
 description: "Define topic access rules for MQTT groups using ACL permissions to control publish and subscribe operations."
+keywords: [tagodeploy, iot, mqtt, acl, access control]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/acl-permissions
 ---

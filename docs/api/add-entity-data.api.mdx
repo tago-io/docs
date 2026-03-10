@@ -19,53 +19,58 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Add Entity Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Add Entity Data"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/entity/{entity_id}/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/entity/{entity_id}/data"} context={"endpoint"}></MethodEndpoint>
 
 Add Entity Data
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"entity_id","in":"path","required":true,"schema":{"type":"string","example":"(Type an entity ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    { name: "entity_id", in: "path", required: true, schema: { type: "string", example: "(Type an entity ID)" } },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"monthly_revenue":{"type":"number","example":2345.34},"update_date":{"type":"string","example":"2024-11-01T03:00:00.000Z"}}},"examples":{"Add Entity Data":{"value":{"monthly_revenue":2345.34,"update_date":"2024-11-01T03:00:00.000Z"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            monthly_revenue: { type: "number", example: 2345.34 },
+            update_date: { type: "string", example: "2024-11-01T03:00:00.000Z" },
+          },
+        },
+        examples: {
+          "Add Entity Data": { value: { monthly_revenue: 2345.34, update_date: "2024-11-01T03:00:00.000Z" } },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Add Entity Data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"1 Data Added"},"status":{"type":"boolean","example":true}}},"examples":{"Add Entity Data":{"value":{"result":"1 Data Added","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Add Entity Data",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "1 Data Added" },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: { "Add Entity Data": { value: { result: "1 Data Added", status: true } } },
+        },
+      },
+    },
+  }}
+></StatusCodes>

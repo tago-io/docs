@@ -45,12 +45,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagoio/getting-started",
       description: (
         <>
-          The core IoT cloud platform for connecting devices, visualizing data,
-          and building automated solutions.
+          The core IoT cloud platform for connecting devices, visualizing data, and building automated solutions.
           <br />
-          <strong>
-            Get started with our comprehensive guides and tutorials.
-          </strong>
+          <strong>Get started with our comprehensive guides and tutorials.</strong>
         </>
       ),
     },
@@ -60,12 +57,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagoio/tagorun",
       description: (
         <>
-          Deploy custom IoT applications to end-users with full control over
-          branding and user management.
+          Deploy custom IoT applications to end-users with full control over branding and user management.
           <br />
-          <strong>
-            Perfect for white-label solutions and customer-facing portals.
-          </strong>
+          <strong>Perfect for white-label solutions and customer-facing portals.</strong>
         </>
       ),
     },
@@ -75,12 +69,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagodeploy",
       description: (
         <>
-          Enterprise-grade infrastructure and dedicated resources for
-          mission-critical IoT deployments.
+          Enterprise-grade infrastructure and dedicated resources for mission-critical IoT deployments.
           <br />
-          <strong>
-            Premium support and guaranteed performance for your business.
-          </strong>
+          <strong>Premium support and guaranteed performance for your business.</strong>
         </>
       ),
     },
@@ -92,9 +83,7 @@ export default function HomepageFeatures(): ReactNode {
         <>
           Free, fast, and open-source IoT platform for edge computing.
           <br />
-          <strong>
-            Deploy on-premises or at the edge with full source code access.
-          </strong>
+          <strong>Deploy on-premises or at the edge with full source code access.</strong>
         </>
       ),
     },
@@ -104,8 +93,7 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagotip",
       description: (
         <>
-          Lightweight IoT protocol. Human-readable, type-safe and
-          transport-agnostic.
+          Lightweight IoT protocol. Human-readable, type-safe and transport-agnostic.
           <br />
           <strong>Best for UDP, TCP, MQTT, and HTTP.</strong>
         </>

@@ -2,6 +2,7 @@
 title: "Adeunis with LoRaWAN™"
 description: "This article explains how to integrate Adeunis LoRaWAN™ devices with TagoIO, how TagoIO parses device payloads, and the steps to add and configure devices for different LoRaWAN™ network providers."
 tags: ["tagoio"]
+keywords: [tagoio, iot, adeunis, lorawan, device integration]
 ---
 
 ![Adeunis logo](/docs_imagem/tagoio/adeunis-with-lorawan-2.png)

@@ -19,45 +19,34 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Account Plan"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Account Plan"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/account/plan"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/account/plan"} context={"endpoint"}></MethodEndpoint>
 
 Get the Account Plan
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Getting the account plan","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"plan":{"type":"string","example":"starter"}}},"status":{"type":"boolean","example":true}}},"examples":{"Getting the account plan":{"value":{"result":{"plan":"starter"},"status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Getting the account plan",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "object", properties: { plan: { type: "string", example: "starter" } } },
+              status: { type: "boolean", example: true },
+            },
+          },
+          examples: { "Getting the account plan": { value: { result: { plan: "starter" }, status: true } } },
+        },
+      },
+    },
+  }}
+></StatusCodes>

@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Prerequisites
 slug: /tagocore/plugins/create/prerequisites
+description: Required tools and knowledge for developing TagoCore plugins, including Node.js and the Plugin SDK.
+keywords: [tagocore, iot, plugin, prerequisites, nodejs, sdk]
 ---
 
 # Prerequisites
@@ -9,7 +11,7 @@ slug: /tagocore/plugins/create/prerequisites
 TagoCore Plugins are built using Node.js and the [TagoCore Plugin SDK](https://npmjs.com/package/@tago-io/tcore-sdk).
 You’ll need an understanding of **JavaScript** and **Node.js** to develop plugins.
 
-While it is not necessary, other tools may come in handy when developing more complex plugins. You don't need to learn 
+While it is not necessary, other tools may come in handy when developing more complex plugins. You don't need to learn
 these tools before starting to write plugins, but they may be useful at some point.
 
 - [TypeScript](https://npmjs.com/package/typescript), to make navigating the API easier and write robust plugins;

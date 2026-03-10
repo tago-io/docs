@@ -19,54 +19,61 @@ import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Notification"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Notification"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/run/notification/{notificationID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/run/notification/{notificationID}"} context={"endpoint"}></MethodEndpoint>
 
 Edit notification on Run
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
-</Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
 <ParamsDetails
-  parameters={[{"name":"notificationID","in":"path","required":true,"schema":{"type":"string","example":"(Type your RUN notification ID)"}}]}
->
-  
-</ParamsDetails>
+  parameters={[
+    {
+      name: "notificationID",
+      in: "path",
+      required: true,
+      schema: { type: "string", example: "(Type your RUN notification ID)" },
+    },
+  ]}
+></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"buttons_enabled":{"type":"boolean","example":true},"message":{"type":"string","example":"new notification message"},"read":{"type":"boolean","example":true},"title":{"type":"string","example":"new notification title"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            buttons_enabled: { type: "boolean", example: true },
+            message: { type: "string", example: "new notification message" },
+            read: { type: "boolean", example: true },
+            title: { type: "string", example: "new notification title" },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Editing a RUN user notification","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"TagoIO Notification User Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Editing a RUN user notification",
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              result: { type: "string", example: "TagoIO Notification User Successfully Updated" },
+              status: { type: "boolean", example: true },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

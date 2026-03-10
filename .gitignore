@@ -14,6 +14,10 @@
 .docusaurus
 .cache-loader
 
+# OG image generation
+lib/
+preview-images/
+
 # CDK
 cdk.out/
 dist/

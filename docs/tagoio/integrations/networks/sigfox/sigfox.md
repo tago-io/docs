@@ -2,7 +2,7 @@
 title: "Sigfox"
 description: "This article explains how to integrate Sigfox with the TagoIO platform, describing uplink/downlink concepts and listing the setup steps and related internal documentation links."
 tags: ["tagoio"]
-
+keywords: [tagoio, iot, sigfox, integration, uplink, downlink]
 sidebar_position: 1
 ---
 
@@ -71,21 +71,21 @@ STATION, you can use the
 
 ```json
 [
-   {
-      "variable": "device",
-      "value": "{device}",
-      "serie": "{time}"
-   },
-   {
-      "variable": "data",
-      "value": "{data}",
-      "serie": "{time}"
-   },
-   {
-      "variable": "seqNumber",
-      "value": "{seqNumber}",
-      "serie": "{time}"
-   }
+  {
+    "variable": "device",
+    "value": "{device}",
+    "serie": "{time}"
+  },
+  {
+    "variable": "data",
+    "value": "{data}",
+    "serie": "{time}"
+  },
+  {
+    "variable": "seqNumber",
+    "value": "{seqNumber}",
+    "serie": "{time}"
+  }
 ]
 ```
 
@@ -153,7 +153,7 @@ This error typically indicates a data format or processing issue:
   format shown in Step 2. Ensure all brackets, quotes, and commas are correct.
 - **Content-Type Header Missing**: Confirm that the
   `Content-Type:
-  application/json` header is set in your callback
+application/json` header is set in your callback
   configuration.
 - **Payload Parser Error**: If you're using a custom payload parser, there may
   be an issue with your parsing script. Check the device's

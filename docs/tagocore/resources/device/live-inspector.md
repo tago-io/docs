@@ -2,6 +2,8 @@
 sidebar_position: 6
 title: Live Inspector
 slug: /tagocore/device/live-inspector
+description: Monitor real-time data traffic between TagoCore and your devices using the Live Inspector debugging tool.
+keywords: [tagocore, iot, device, live inspector, debugging, real-time monitoring]
 ---
 
 # Live Inspector

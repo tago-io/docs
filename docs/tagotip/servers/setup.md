@@ -2,6 +2,8 @@
 sidebar_position: 1
 sidebar_label: Quick Start
 title: Quick Start
+description: "Set up your device and authorization to start sending IoT data with TagoTiP over any transport."
+keywords: [tagotip, iot, quick start, setup, authorization]
 ---
 
 # Quick Start
@@ -23,10 +25,10 @@ Set up your device and authorization before sending data over any transport.
 
 You receive two credentials:
 
-| Credential | Example | Used for |
-|---|---|---|
-| **Token Hash** | `4deedd7bab8817ec` (16 hex chars) | TagoTiP frames (plaintext) |
-| **Authorization** | `ate2bd...c0d0` (34 chars) | [TagoTiP(s)](../specification/encryption) encryption key derivation |
+| Credential        | Example                           | Used for                                                            |
+| ----------------- | --------------------------------- | ------------------------------------------------------------------- |
+| **Token Hash**    | `4deedd7bab8817ec` (16 hex chars) | TagoTiP frames (plaintext)                                          |
+| **Authorization** | `ate2bd...c0d0` (34 chars)        | [TagoTiP(s)](../specification/encryption) encryption key derivation |
 
 :::tip
 The token hash is safe on the wire - it cannot be reversed to reveal the authorization. Keep the authorization (`at...`) secret; it is only needed for TagoTiP(s) key derivation.

@@ -3,7 +3,9 @@ title: "Blueprint Dashboard"
 description: "This article explains the Blueprint Dashboard in TagoIO, describing how it links widgets to multiple devices for scalable applications and introduces the core concept of Blueprint Devices."
 tags: ["tagoio", "dashboards"]
 sidebar_position: 1
+keywords: [tagoio, iot, dashboard, blueprint, widgets, scalability]
 ---
+
 Blueprint is a type of [Dashboard](/docs/tagoio/dashboards/) that allows users to dynamically link [widgets](/docs/tagoio/widgets/) to multiple devices. This type of dashboard is especially useful when scaling applications.
 
 ![Illustration of a Blueprint Dashboard linking widgets to multiple devices](/docs_imagem/tagoio/blueprint-dashboard-2.gif)

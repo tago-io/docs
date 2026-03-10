@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Download & Installation
 slug: /tagocore/installation
+description: Install TagoCore using Docker or from source code with step-by-step instructions for all platforms.
+keywords: [tagocore, iot, installation, docker, setup, edge computing]
 ---
 
 # Download & Installation
@@ -37,9 +39,10 @@ Install from source code when you need to customize TagoCore or contribute to it
 
 ### Download
 
-Download the latest release from the [GitHub releases page](https://github.com/tago-io/tagocore/releases/latest). 
+Download the latest release from the [GitHub releases page](https://github.com/tago-io/tagocore/releases/latest).
 
 Choose your preferred format:
+
 - **community_images.tar.gz** (Linux/macOS)
 - **community_images.zip** (Windows/Cross-platform)
 
@@ -48,11 +51,13 @@ Choose your preferred format:
 Navigate to your download folder and extract the archive:
 
 **For .tar.gz files:**
+
 ```shell
 tar -xvzf community_images.tar.gz
 ```
 
 **For .zip files:**
+
 ```shell
 unzip community_images.zip
 ```
@@ -68,6 +73,7 @@ just server
 ```
 
 TagoCore will start and display:
+
 ```shell
 TagoCore is now available at http://localhost:8888
 ```

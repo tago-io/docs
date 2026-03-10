@@ -2,8 +2,10 @@
 title: "Defining Targets"
 description: "This article explains how to define Targets within a policy in the Access Management (AM) module, what kinds of Targets are available, and how multiple Targets are evaluated when granting permissions."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, targets, access management]
 sidebar_position: 3
 ---
+
 You should define **Targets** in each policy that are used inside the [Access Management](https://admin.tago.io/am) module. Targets can be users or things (for example, [scripts](/docs/tagoio/analysis/)).
 
 :::tip
@@ -17,7 +19,9 @@ Currently, you can select [Run Users](/docs/tagoio/profiles/services/end-users-s
 ![Targets configuration example](/docs_imagem/tagoio/defining-targets-2.png)
 
 ## How multiple Targets work
+
 You can add more Targets of the same type as needed. Multiple Targets are combined using a logical OR, so adding more targets makes the resulting options more inclusive. For example:
+
 - "Apply the permissions below for the users using this tag OR this tag OR ..."
 
 ## Target Matching Options
@@ -27,7 +31,6 @@ Target matching can be performed in several ways:
 1. **ID** – select a target from the list.
 
 2. **Tag** – match using tags from your target. Learn more about the [Tags System](/docs/tagoio/getting-started/tags-system.md).
-
    - Tags are composed of two fields: **Tag key** and **Tag value**.
    - You can manually edit the tags for each user, or run [scripts](/docs/tagoio/analysis/) to set them. Learn more about [User Management](/docs/tagoio/tagorun/getting-started/user-management.md).
    - For example, Joe Doe has a Tag key `user_level` and Tag value `supervisor`. If you create a policy with Targets using the same tags, the selected permissions will be granted for Joe Doe.

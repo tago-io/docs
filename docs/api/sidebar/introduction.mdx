@@ -14,18 +14,9 @@ import SchemaTabs from "@theme/SchemaTabs";
 import TabItem from "@theme/TabItem";
 import Export from "@theme/ApiExplorer/Export";
 
-<span
-  className={"theme-doc-version-badge badge badge--secondary"}
-  children={"Version: 2.0.0"}
->
-</span>
+<span className={"theme-doc-version-badge badge badge--secondary"} children={"Version: 2.0.0"}></span>
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"TagoIO API"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"TagoIO API"}></Heading>
 
 This page explains how to authenticate to the TagoIO API and which regional base URL to use. All HTTP requests must include exactly one valid token in the headers and must target the correct regional endpoint.
 
@@ -78,6 +69,7 @@ You should add the token to the request header using the token’s specific head
         https://api.us-e1.tago.io/status
       ```
     </TabItem>
+
   </SchemaTabs>
 </div>
 
@@ -87,7 +79,6 @@ You should add the token to the request header using the token’s specific head
 
 ---
 
-
 ### Setting the API Endpoint Region
 
 Choose the API base URL based on your TagoIO account's region. Replace `<region>` in the base URL with your region.
@@ -96,6 +87,7 @@ Choose the API base URL based on your TagoIO account's region. Replace `<region>
 - **Europe West 1**: `https://api.eu-w1.tago.io/`
 
 Use the following pattern to construct your endpoint URLs based on the selected region:
+
 ```
 https://api.<region>.tago.io/<path>
 ```

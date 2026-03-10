@@ -2,6 +2,7 @@
 title: "Getting Started"
 description: "This article provides quick ways to begin using TagoIO, including manual steps, a simulator option, and an introductory video, plus the first step to add a device."
 tags: ["tagoio", "getting-started"]
+keywords: [tagoio, iot, getting started, setup, onboarding]
 sidebar_position: 2
 ---
 

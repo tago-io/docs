@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Plugin Overview
 slug: /tagocore/plugins
+description: Overview of TagoCore plugins, how they extend platform capabilities, and how to create or install them.
+keywords: [tagocore, iot, plugin, extensibility, plugin store]
 ---
 
 # Plugins

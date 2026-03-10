@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: Helpers
 slug: /tagocore/plugins/create/helpers
+description: Helper functions in the TagoCore Plugin SDK for reading and writing files in the plugin settings folder.
+keywords: [tagocore, iot, plugin, sdk, helpers, file system]
 ---
 
 # Helpers
