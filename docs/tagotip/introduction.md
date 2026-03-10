@@ -13,7 +13,7 @@ Send IoT data to TagoIO in **130 bytes** instead of 487. No JSON, no HTTP header
 PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 ```
 
-![TagoTiP animation](/docs_imagem/tagotip/peek_125.gif)
+![TagoTiP animation](/docs_imagem/tagotip/tagotip_animation.gif)
 
 ## Why TagoTiP?
 
