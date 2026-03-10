@@ -20,7 +20,7 @@
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt .",
     "fmt:check": "oxfmt --check .",
-    "check": "oxlint && oxfmt --check .",
+    "check": "oxlint --deny-warnings && oxfmt --check .",
     "cdk:build": "cd cdk && tsc",
     "cdk:watch": "cd cdk && tsc -w",
     "cdk:deploy:docs": "cdk deploy --require-approval never --app \"tsx cdk/docs-cdk.ts\"",

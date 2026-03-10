@@ -4,7 +4,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import type { ReactNode } from "react";
 
 import styles from "./index.module.css";
@@ -37,6 +37,7 @@ function HomepageHeader() {
             title="System status"
             loading="lazy"
             referrerPolicy="no-referrer"
+            sandbox="allow-scripts"
           />
           <iframe
             className="status-badge--dark"
@@ -48,6 +49,7 @@ function HomepageHeader() {
             title="System status"
             loading="lazy"
             referrerPolicy="no-referrer"
+            sandbox="allow-scripts"
           />
         </div>
         <div className={styles.buttons}>

@@ -108,27 +108,29 @@ async function fetchFile(name) {
 async function main() {
   console.log("sync-tagotip: fetching specs from GitHub...");
 
-  for (const file of FILES) {
-    const outPath = join(ROOT, file.out);
-    try {
-      const raw = await fetchFile(file.remote);
-      const stripped = stripLicenseHeader(raw);
-      const escaped = escapeBraces(stripped);
-      const rewritten = rewriteLinks(escaped);
-      const content = `${file.frontmatter}\n\n${rewritten}`;
+  await Promise.all(
+    FILES.map(async (file) => {
+      const outPath = join(ROOT, file.out);
+      try {
+        const raw = await fetchFile(file.remote);
+        const stripped = stripLicenseHeader(raw);
+        const escaped = escapeBraces(stripped);
+        const rewritten = rewriteLinks(escaped);
+        const content = `${file.frontmatter}\n\n${rewritten}`;
 
-      mkdirSync(dirname(outPath), { recursive: true });
-      writeFileSync(outPath, content);
-      console.log(`  Wrote ${file.out}`);
-    } catch (err) {
-      if (existsSync(outPath)) {
-        console.warn(`  Warning: failed to fetch ${file.remote} (${err.message}), using existing file`);
-      } else {
-        console.error(`  Error: failed to fetch ${file.remote} and no cached file exists`);
-        process.exit(1);
+        mkdirSync(dirname(outPath), { recursive: true });
+        writeFileSync(outPath, content);
+        console.log(`  Wrote ${file.out}`);
+      } catch (err) {
+        if (existsSync(outPath)) {
+          console.warn(`  Warning: failed to fetch ${file.remote} (${err.message}), using existing file`);
+        } else {
+          console.error(`  Error: failed to fetch ${file.remote} and no cached file exists`);
+          process.exit(1);
+        }
       }
-    }
-  }
+    })
+  );
 
   console.log("sync-tagotip: done.");
 }
