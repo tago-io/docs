@@ -1,0 +1,71 @@
+---
+id: delete-mqtt-client
+title: "Delete MQTT client"
+description: "Delete an existing MQTT client"
+sidebar_label: "Delete MQTT client"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tv2zYU/ivEedkGyJadS53oLZvdzVibZKnzssQIaPHYZiuTCkkFMQT99+FQF0uxM7TZ0Kf6IVbEc/n4natzEGhjI1MntYIIxpigQ8YVw2dpnVQr9vGv2YzFiUTlIADHVxaiO/Bvf/NvLcwDsBhnRrotRHc5XBv9GWPXm+kvqCC6mxfzAFJu+AYdGutlFN8gRJCWog9SQACSIKTcrSEAg4+ZNCggcibD4AXO2RpZpcqkQOXkUqKBAGy8xg2HKAe3TcmBdUaqFQSAz3yTJvTqdDBaDpej0SJenr2Lxej8/OT4fDAcQlEEDTCL5knG+BZgleq3A6t9bh6dexgeHXcAlSF4C55S89vhVB5LIHPyZFOtLFpSOxoM6KvrrUwIJnwWCWazOEZrl1mSbCGAWCtHWRTlwNM0kTEntfCzJd18H5JeUHwhoCRJ0ThZeq6stgQXWifIVRs8cVH4TwAng+E+1IvMrYmPEgRrWPzfYKIx2hwiuItjQmJsg9byFXbov0GrMxMjU9qxpc6UgILQCfxaq162bfLyavbw/ur2ckyWBDouE3voJi+oEkLSI0+YvxSrNQPgzdF16/Il+QE46bxbj4ZcNkgaev41DnRTuL28uJ39cXUz/XsyhjqgxwcC6rOCCVTyRxi/fxj32PfBe3918+t0PJ5cNpE72Y/cAYZ+hO/7hu+VEIgXcMsgbtCttYAIyj5PnNMoiiDkqQyrsWzDfDfbi7AabTbMd4O1CMsJY8O8GW4FzSY0T/WakJkEIlg7l9ooJPt9gWmit33HV7ov9R5N10aLLPa9pLQDNEN3ZqIwTHTMk7W2LjobnB/tWfhAx41ya7f5RDlXptWLDaeJHU/ln7jdjx3rKDC35o5JyzIlHzNkTrOtziiixEyf/Y4KDac9jDkvv9gy7guMFjIvWtn7ybKUr7APQb0meIV6RVgjF37cP/d26Zf2TnF4dHxyyntiNOC9EzwSvcXZseidxgN/8G50dk67B0i11P52VQrN+EpPr9jYh4BdXE/3b3o9ZUsqJa74itB2Verk6N+re3WRJIzv2j8KhkqkWipn6znAOHviiRQlD/17uhnlRuls2B/0B1Wv4LHvFRULlddPWZpqQ7XUzaM6eYoAEhmjstjS/Tid7SnoFFVZIX1tVmGlZEOSJaJSbd2Gq5aVapPubs8drvJdj/uKvbvML4fPLkwTLhVh9xjzqvruKPnK/ucphgCiznZdlyAddLbbqgrp/W7JnAdAJUJ283zBLd6apCjo9WOGhvb8eQBP3Ei+oNS4y0FIS88CoiVP7MtNtH3bn2+qKf8Le3WRP3jhusoUldgTTzL6DwL4gtvubwmq+TfjObi/vwFPi+T/hOfQ/v4GOLvYFvMiqHsDRa48pxGeupbm3tylZtg0//Hkw2Q2oemTUfq1W+AX3wKrB3JwEFjdqUrv9JdYOiia52VjLYpGvjx6VaPpfKU08TMviuIfYC8d9g==
+sidebar_class_name: "delete api-method"
+info_path: docs/api-tdeploy/tagoio-deploy-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete MQTT client"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/projects/{project_id}/services/{service_id}/clients/{client_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete an existing MQTT client
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"project_id","in":"path","required":true,"description":"The project identifier","schema":{"type":"string","example":"507f1f77bcf86cd799439011"}},{"name":"service_id","in":"path","required":true,"description":"The service identifier","schema":{"type":"string","example":"service_mqtt_123"}},{"name":"client_id","in":"path","required":true,"description":"The client identifier","schema":{"type":"string","example":"client_123"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Client deleted successfully","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","example":true}}}}}},"401":{"description":"Authentication required","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Authentication required","code":"UNAUTHORIZED"}}}},"403":{"description":"Access denied","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Access denied","code":"FORBIDDEN"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message","example":"Resource not found"},"code":{"type":"string","description":"Error code","example":"NOT_FOUND"},"details":{"type":"object","description":"Additional error details","additionalProperties":true}},"title":"Error"},"example":{"error":"Resource not found","code":"NOT_FOUND"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

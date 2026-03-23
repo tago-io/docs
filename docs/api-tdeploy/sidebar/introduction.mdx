@@ -1,0 +1,90 @@
+---
+id: tagoio-deploy-api-intro
+title: "TagoDeploy API"
+description: "Overview of authentication and API endpoints for TagoDeploy."
+sidebar_label: Introduction
+sidebar_position: 0
+hide_title: true
+custom_edit_url: null
+---
+
+import ApiLogo from "@theme/ApiLogo";
+import Heading from "@theme/Heading";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+import Export from "@theme/ApiExplorer/Export";
+
+<span
+  className={"theme-doc-version-badge badge badge--secondary"}
+  children={"Version: 2025-10-21"}
+>
+</span>
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TagoDeploy API"}
+>
+</Heading>
+
+This page explains how to authenticate to the TagoDeploy API and which base URL to use. All HTTP requests must include a valid token in the headers.
+
+#### Authentication
+
+TagoDeploy uses token-based authentication. Include a valid token in your HTTP headers for your requests.
+
+- **Authorization**: Use Bearer token authentication for TagoDeploy API operations.
+
+You should add the token to the request header using the Authorization header as documented in the API overview.
+
+<div
+  style={{"marginBottom":"2rem"}}
+>
+
+  Send the Authorization header with every request.
+  <SchemaTabs
+    className={"openapi-tabs__security-schemes"}
+  >
+    <TabItem
+      label={"Authorization"}
+      value={"Authorization"}
+    >
+      Use for TagoDeploy API operations. Generate your token through TagoDeploy authentication.
+
+      ```bash
+      curl -H "Authorization: Bearer <your-token>" \
+        https://api.tagodeploy.com/status
+      ```
+    </TabItem>
+  </SchemaTabs>
+</div>
+
+:::info
+**Rate limits** may apply to TagoDeploy API requests. Check the documentation for current limits and best practices.
+:::
+
+---
+
+
+### API Endpoint
+
+TagoDeploy API is available at:
+
+- **Base URL**: `https://api.tagodeploy.com/`
+
+Use the following pattern to construct your endpoint URLs:
+```
+https://api.tagodeploy.com/<path>
+```
+
+<br />
+
+Examples:
+
+- Health check:
+  `GET https://api.tagodeploy.com/health`
+
+- List MQTT clients:
+  `GET https://api.tagodeploy.com/mqtt/clients`
+
+<br />
