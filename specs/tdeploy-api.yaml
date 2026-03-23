@@ -14,10 +14,8 @@ info:
     url: https://opensource.org/licenses/MIT
 
 servers:
-  - url: https://api.deploy.tago.io
+  - url: https://deploy.tagoio.com
     description: Production server
-  - url: http://localhost:8092
-    description: Local server
 
 paths:
   /api/projects/{project_id}/services:
