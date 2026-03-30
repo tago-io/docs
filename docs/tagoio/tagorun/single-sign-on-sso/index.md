@@ -42,3 +42,9 @@ Whichever protocol you choose, the setup follows a similar pattern:
 4. **Complete the integration.** Register any required URLs (such as callback or metadata URLs) back in your IdP.
 
 Once enabled, only users registered in the IdP and granted permission to access the application can sign in to RUN with their IdP credentials.
+
+## Users created through SSO
+
+When a user signs in through SSO for the first time, RUN automatically creates a new user profile with the tag `source: sso`. This applies to both SAML and OIDC.
+
+You can use this tag to identify which users were created through SSO, filter them in the user list, or set up automations. For example, you can create a [Trigger by Resource](/docs/tagoio/actions/trigger-by-resource) action that runs whenever a new RUN user is created with the `source: sso` tag.
