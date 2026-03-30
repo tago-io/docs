@@ -20,7 +20,7 @@ RUN offers two protocols for SSO. Choose the one that best fits your identity pr
 
 [**SAML**](./saml-sso.md) is an established enterprise standard supported by most identity providers. If your organization already uses SAML for other applications, this is likely the fastest path to get SSO working.
 
-[**OIDC**](./oidc-sso.md) (OpenID Connect) is a more recent protocol built on OAuth 2.0. RUN provides a streamlined configuration experience for OIDC, with built-in claim mappings and auto-generated callback URLs that reduce the back-and-forth between RUN and your IdP.
+[**OIDC**](./oidc-sso.md) (OpenID Connect) is a more recent protocol built on OAuth 2.0. RUN makes OIDC simpler to configure, with built-in claim mappings and auto-generated callback URLs that reduce the back-and-forth between RUN and your IdP.
 
 Both protocols achieve the same result: your users sign in through the IdP, and RUN receives the identity information it needs.
 
@@ -43,8 +43,10 @@ Whichever protocol you choose, the setup follows a similar pattern:
 
 Once enabled, only users registered in the IdP and granted permission to access the application can sign in to RUN with their IdP credentials.
 
-## Users created through SSO
+## RUN users and mappings
 
-When a user signs in through SSO for the first time, RUN automatically creates a new user profile with the tag `source: sso`. This applies to both SAML and OIDC.
+When a user signs in through SSO for the first time, RUN automatically creates a new RUN user with the tag `source: sso`. This applies to both SAML and OIDC.
 
-You can use this tag to identify which users were created through SSO, filter them in the user list, or set up automations. For example, you can create a [Trigger by Resource](/docs/tagoio/actions/trigger-by-resource) action that runs whenever a new RUN user is created with the `source: sso` tag.
+You can use this tag to identify which RUN users were created through SSO, filter them in the user list, or set up automations. For example, you can create a [Trigger by Resource](/docs/tagoio/actions/trigger-by-resource) action that runs whenever a new RUN user is created with the `source: sso` tag.
+
+Mapping values are automatically updated every time a user signs in. If you change a claim or attribute value on the IdP side (for example, updating a user's name), the RUN user will reflect the new value on their next login.

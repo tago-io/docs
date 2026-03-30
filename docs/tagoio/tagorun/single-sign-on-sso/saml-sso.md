@@ -23,7 +23,3 @@ The configuration steps vary depending on your identity provider, but the overal
 
 For a step-by-step walkthrough, see the [Auth0 SSO setup guide on the TagoIO Community](https://community.tago.io/t/how-to-set-up-single-sign-on-sso-on-tagorun-with-auth0/1727). If you are using a different provider, the Auth0 guide is still a useful reference since the steps are often comparable.
 
-## Important notes
-
-- SAML and OIDC SSO cannot be active at the same time. If you enable OIDC, your SAML configuration will be disabled.
-- SSO requires a **Scale plan**.

@@ -8,8 +8,6 @@ sidebar_position: 3
 
 OIDC SSO lets your users sign in to a RUN application through any OpenID Connect-compatible identity provider. You can configure it in **RUN Settings > Integrations > SSO OIDC**.
 
-SSO requires a **Scale plan**.
-
 ## Supported providers
 
 You can use any OpenID Connect-compatible provider, including Auth0, Okta, AWS Cognito, Microsoft Azure AD, and Google Workspace.
@@ -40,7 +38,7 @@ When you open the SSO OIDC settings in RUN, you will see the following fields:
 
 ## Claim mappings
 
-RUN maps attributes from your identity provider to user profile fields. Three mappings are required:
+RUN maps attributes from your identity provider to RUN user fields. Three mappings are required:
 
 - **E-mail** (required)
 - **First Name** (required)
@@ -48,7 +46,7 @@ RUN maps attributes from your identity provider to user profile fields. Three ma
 
 Most providers send these by default with the `openid profile email` scopes. If your IdP uses non-standard claim names, you can adjust the mapping for each field.
 
-To map additional IdP claims, click **Edit other claim mappings**. Custom claim values are stored as tags on the RUN user profile, which you can then use for access management and other features within your application.
+To map additional IdP claims, click **Edit other claim mappings**. Custom claim values are stored as tags on the RUN user, which you can then use for access management and other features within your application.
 
 ## Passing query parameters to your IdP
 
@@ -65,7 +63,3 @@ RUN will pass the `invite` parameter along to the IdP. Check your provider's doc
 ## Enable or disable OIDC SSO
 
 Use the **Enabled** toggle at the top of the SSO OIDC settings page to activate or deactivate OIDC SSO. Click **Save** to apply your changes.
-
-:::note
-You cannot enable OIDC SSO while SAML SSO is active. Disable SAML first if you want to switch to OIDC.
-:::
