@@ -44,7 +44,7 @@ RUN maps attributes from your identity provider to user profile fields. Three ma
 
 - **E-mail** (required)
 - **First Name** (required)
-- **Last Name** (required)
+- **Last Name**
 
 Most providers send these by default with the `openid profile email` scopes. If your IdP uses non-standard claim names, you can adjust the mapping for each field.
 

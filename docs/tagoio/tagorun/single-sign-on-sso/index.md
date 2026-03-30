@@ -8,7 +8,7 @@ sidebar_position: 1
 
 With Single Sign-On (SSO), your users can sign in to a RUN application using credentials from their existing identity provider (IdP) instead of separate RUN credentials. RUN supports two SSO protocols: **SAML** and **OIDC**. You can use providers such as Okta, Auth0, Microsoft Azure AD, AWS Cognito, Google Workspace, and others.
 
-![TagoIO SSO integrated with 3rd-party services](/docs_imagem/tagoio/rounded-image-1764611428517.png)
+![TagoIO SSO integrated with 3rd-party services](/docs_imagem/tagoio/single-sign-on-sso-2.png)
 
 ## Overview
 
@@ -18,9 +18,9 @@ RUN offers two protocols for SSO. Choose the one that best fits your identity pr
 
 ## SAML vs OIDC
 
-**SAML** is an established enterprise standard supported by most identity providers. If your organization already uses SAML for other applications, this is likely the fastest path to get SSO working.
+[**SAML**](./saml-sso.md) is an established enterprise standard supported by most identity providers. If your organization already uses SAML for other applications, this is likely the fastest path to get SSO working.
 
-**OIDC** (OpenID Connect) is a more recent protocol built on OAuth 2.0. RUN provides a streamlined configuration experience for OIDC, with built-in claim mappings and auto-generated callback URLs that reduce the back-and-forth between RUN and your IdP.
+[**OIDC**](./oidc-sso.md) (OpenID Connect) is a more recent protocol built on OAuth 2.0. RUN provides a streamlined configuration experience for OIDC, with built-in claim mappings and auto-generated callback URLs that reduce the back-and-forth between RUN and your IdP.
 
 Both protocols achieve the same result: your users sign in through the IdP, and RUN receives the identity information it needs.
 
@@ -42,8 +42,3 @@ Whichever protocol you choose, the setup follows a similar pattern:
 4. **Complete the integration.** Register any required URLs (such as callback or metadata URLs) back in your IdP.
 
 Once enabled, only users registered in the IdP and granted permission to access the application can sign in to RUN with their IdP credentials.
-
-## Next steps
-
-- [Set up SAML SSO](./saml-sso.md): configuration guide and Auth0 walkthrough for SAML-based providers.
-- [Set up OIDC SSO](./oidc-sso.md): configuration fields, claim mappings, and Auth0 walkthrough for OIDC-based providers.
