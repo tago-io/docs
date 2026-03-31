@@ -38,7 +38,7 @@ When you open the SSO OIDC settings in RUN, you will see the following fields:
 
 ## Claim mappings
 
-RUN maps attributes from your identity provider to RUN user fields. Three mappings are required:
+RUN maps attributes from your identity provider to RUN user fields. Two mappings are required:
 
 - **E-mail** (required)
 - **First Name** (required)
