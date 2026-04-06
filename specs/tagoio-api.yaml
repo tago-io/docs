@@ -245,11 +245,11 @@ components:
           type: string
         example: "16731887966346"
     authorization_token:
-      name: authorization-token
+      name: authorization_token
       in: query
       required: true
       description: |
-        Authorization-Token
+        Authorization_Token
       schema:
         type: string
         example: "at72fb69a8dc714059b6cebee41693eb0"
