@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Put Dictionary Language","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Dictionary language Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}

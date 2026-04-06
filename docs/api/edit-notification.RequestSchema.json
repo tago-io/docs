@@ -1,0 +1,1 @@
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"buttons_enabled":{"type":"boolean","example":true},"message":{"type":"string","example":"new notification message"},"read":{"type":"boolean","example":true},"title":{"type":"string","example":"new notification title"}}}}}}}

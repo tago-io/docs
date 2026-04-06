@@ -1,0 +1,1 @@
+{"parameters":[{"name":"type","in":"path","required":true,"schema":{"type":"string","example":"Device"},"description":"(Accepts Analysis, Device, User, Dashboard, Action)"}]}

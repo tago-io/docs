@@ -18,58 +18,58 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Generate Public Token"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Generate Public Token"}
+>
+</Heading>
 
-<MethodEndpoint method={"get"} path={"/dashboard/{dashboardID}/share/public"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"get"}
+  path={"/dashboard/{dashboardID}/share/public"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
 
-Make your dashboard accessible to anyone by generating a public access token.
 
-Public dashboards allow you to share live data and visualizations with users who do not have a TagoIO/TagoRUN account.
-You control the expiration and can revoke access at any time.
+
+Make your dashboard accessible to anyone by generating a public access token.  
+
+Public dashboards allow you to share live data and visualizations with users who do not have a TagoIO/TagoRUN account. 
+You control the expiration and can revoke access at any time.  
 
 [Learn more about sharing dashboards and public access](/docs/tagoio/dashboards/sharing-dashboards)
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails
-  parameters={[
-    {
-      name: "expire_time",
-      in: "query",
-      required: true,
-      schema: { type: "string", example: "1 day" },
-      description: "Time given in hours,days,weeks,months",
-    },
-    { name: "dashboardID", in: "path", required: true, schema: { type: "string", example: "(Type a dashboard ID)" } },
-  ]}
-></ParamsDetails>
+  {...require("./generate-public-token.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema
+  {...require("./generate-public-token.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Generating a  Public Token",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "object",
-                properties: {
-                  expire_time: { type: "string", example: "2022-06-20T23:10:59.285Z" },
-                  token: { type: "string", example: "026b43fb-b33e-477a-bf17-70d1a0498562" },
-                },
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./generate-public-token.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

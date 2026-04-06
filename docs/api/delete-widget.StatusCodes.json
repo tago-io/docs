@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Deleting a Widget","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting a Widget":{"value":{"result":"Successfully Removed","status":true}}}}}}}}

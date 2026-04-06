@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Getting a device data amount","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"number","example":529},"status":{"type":"boolean","example":true}}}}}}}}

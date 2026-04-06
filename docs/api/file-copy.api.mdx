@@ -18,57 +18,52 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Copy File"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Copy File"}
+>
+</Heading>
 
-<MethodEndpoint method={"put"} path={"/files/copy"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"put"}
+  path={"/files/copy"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 File Copy
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails parameters={undefined}></ParamsDetails>
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "array",
-          items: {
-            type: "object",
-            properties: {
-              from: { type: "string", example: "/layer05.png" },
-              to: { type: "string", example: "/layer05 - Copy.png" },
-            },
-          },
-          example: [{ from: "/layer05.png", to: "/layer05 - Copy.png" }],
-        },
-        examples: { "File Copy": { value: [{ from: "/layer05.png", to: "/layer05 - Copy.png" }] } },
-      },
-    },
-  }}
-></RequestSchema>
+  {...require("./file-copy.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Making a file copy",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "Successfully Updated" },
-              status: { type: "boolean", example: true },
-            },
-          },
-          examples: { "Making a file copy": { value: { result: "Successfully Updated", status: true } } },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./file-copy.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

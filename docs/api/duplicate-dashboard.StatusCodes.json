@@ -1,0 +1,1 @@
+{"responses":{"201":{"description":"Dashboard duplicated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"dashboard_id":{"type":"string","example":"62b0df7927ce4d0012cf3c10"},"message":{"type":"string","example":"Copy sent"}}},"status":{"type":"boolean","example":true}}}}}}}}

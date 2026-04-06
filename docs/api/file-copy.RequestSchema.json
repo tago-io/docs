@@ -1,0 +1,1 @@
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"from":{"type":"string","example":"/layer05.png"},"to":{"type":"string","example":"/layer05 - Copy.png"}}},"example":[{"from":"/layer05.png","to":"/layer05 - Copy.png"}]},"examples":{"File Copy":{"value":[{"from":"/layer05.png","to":"/layer05 - Copy.png"}]}}}}}}

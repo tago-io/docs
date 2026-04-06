@@ -1,0 +1,1 @@
+{"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"description":"The ID of the profile"}]}

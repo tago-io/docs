@@ -1,0 +1,1 @@
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"dictionary":{"type":"object","properties":{"test":{"type":"string","example":"teste"}}}}},"examples":{"Update Dictionary Language":{"value":{"dictionary":{"test":"teste"}}}}}}}}

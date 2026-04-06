@@ -18,37 +18,52 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Data Amount"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Data Amount"}
+>
+</Heading>
 
-<MethodEndpoint method={"get"} path={"/device/{deviceID}/data_amount"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"get"}
+  path={"/device/{deviceID}/data_amount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 Get the total number of data items stored within the device.
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails
-  parameters={[
-    { name: "deviceID", in: "path", required: true, schema: { type: "string", example: "67aa1f9135b1a7000a9db33c" } },
-  ]}
-></ParamsDetails>
+  {...require("./device-data-amount.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema
+  {...require("./device-data-amount.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Getting a device data amount",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: { result: { type: "number", example: 529 }, status: { type: "boolean", example: true } },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./device-data-amount.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

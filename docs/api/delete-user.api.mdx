@@ -18,40 +18,53 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Delete User"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete User"}
+>
+</Heading>
 
-<MethodEndpoint method={"delete"} path={"/run/users/{userID}"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"delete"}
+  path={"/run/users/{userID}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 Delete user from Run using userID
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails
-  parameters={[
-    { name: "userID", in: "path", required: true, schema: { type: "string", example: "(Type a RUN user ID)" } },
-  ]}
-></ParamsDetails>
+  {...require("./delete-user.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema
+  {...require("./delete-user.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Deleting a RUN user by ID",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "Successfully Removed" },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./delete-user.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

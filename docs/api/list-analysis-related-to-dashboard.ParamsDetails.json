@@ -1,0 +1,1 @@
+{"parameters":[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"5f3e782ba1d6300027315c0e"}}]}

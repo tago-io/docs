@@ -18,14 +18,24 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Find Device by Serial"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Find Device by Serial"}
+>
+</Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/integration/network/resolve/{serieNumber}"}
   context={"endpoint"}
-></MethodEndpoint>
+>
+  
+</MethodEndpoint>
+
+
 
 Get a valid device-token using token serial number only. It will match the serial in any profile.
 :::warning  
@@ -33,36 +43,31 @@ If the serial number is duplicated between different profiles, you will get the 
 :::
 You must have a Network and a Network-Token to use this query.
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails
-  parameters={[
-    {
-      name: "serieNumber",
-      in: "path",
-      required: true,
-      schema: { type: "string" },
-      description: "Device Serial Number registered at TagoIO",
-    },
-  ]}
-></ParamsDetails>
+  {...require("./get-device-token-with-serial-number.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema
+  {...require("./get-device-token-with-serial-number.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "got a valid token",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: { result: { type: "string", example: "<string>" }, status: { type: "boolean", example: true } },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./get-device-token-with-serial-number.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

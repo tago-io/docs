@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Chunk deleted from device","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Chunk 1657497600_1658102399 deleted"},"status":{"type":"boolean","example":true}}}}}}}}

@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Generating a  Public Token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"expire_time":{"type":"string","example":"2022-06-20T23:10:59.285Z"},"token":{"type":"string","example":"026b43fb-b33e-477a-bf17-70d1a0498562"}}},"status":{"type":"boolean","example":true}}}}}}}}

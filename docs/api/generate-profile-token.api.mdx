@@ -18,73 +18,53 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Generate Profile-Token"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Generate Profile-Token"}
+>
+</Heading>
 
-<MethodEndpoint method={"post"} path={"/account/profile/token"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"post"}
+  path={"/account/profile/token"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 Generates and retrieves a new token for the account
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
 
-<ParamsDetails parameters={undefined}></ParamsDetails>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "object",
-          required: ["email", "name", "password", "profile_id"],
-          properties: {
-            email: { type: "string", example: "example@mail.com" },
-            name: { type: "string", example: "Token name" },
-            password: { type: "string", example: "yourpassword" },
-            profile_id: { type: "string", example: "712ea05e3cc07800127151111" },
-          },
-        },
-        examples: {
-          "Generate Profile-Token": {
-            value: {
-              email: "example@mail.com",
-              name: "newtoken",
-              password: "yourpassword",
-              profile_id: "712ea05e3cc07800127151111",
-            },
-          },
-        },
-      },
-    },
-  }}
-></RequestSchema>
+  {...require("./generate-profile-token.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "token created successfuly",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "object",
-                properties: {
-                  created_by: { type: "string", example: "712ea05e3cc07800127151110" },
-                  name: { type: "string", example: "your name" },
-                  permission: { type: "string", example: "full" },
-                  profile: { type: "string", example: "712ea05e3cc07800127151111" },
-                  token: { type: "string", example: "ecjkfc55e-229e-4083-9667-d868h79a41e9" },
-                },
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./generate-profile-token.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

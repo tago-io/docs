@@ -1,0 +1,1 @@
+{"parameters":[{"name":"sent_status","in":"query","schema":{"type":"string","example":"false"},"description":"Filter by Boolean."},{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"(Type your device ID)"}}]}

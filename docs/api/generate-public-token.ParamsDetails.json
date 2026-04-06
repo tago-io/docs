@@ -1,0 +1,1 @@
+{"parameters":[{"name":"expire_time","in":"query","required":true,"schema":{"type":"string","example":"1 day"},"description":"Time given in hours,days,weeks,months"},{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}}]}

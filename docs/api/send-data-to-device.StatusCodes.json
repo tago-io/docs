@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Sending data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"2 Data Added"},"status":{"type":"boolean","example":true}}}}}}}}

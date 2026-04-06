@@ -18,107 +18,52 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"Create Entity"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Entity"}
+>
+</Heading>
 
-<MethodEndpoint method={"post"} path={"/entity"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"post"}
+  path={"/entity"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 Create Entity
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails parameters={undefined}></ParamsDetails>
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "object",
-          properties: {
-            id: { type: "string", example: "2938924293" },
-            index: {
-              type: "object",
-              properties: {
-                index_charge_amount: {
-                  type: "object",
-                  properties: {
-                    fields: {
-                      type: "array",
-                      items: { type: "string", example: "charge_amount" },
-                      example: ["charge_amount"],
-                    },
-                  },
-                },
-              },
-            },
-            name: { type: "string", example: "Control Entity" },
-            schema: {
-              type: "object",
-              properties: {
-                charge_amount: {
-                  type: "object",
-                  properties: {
-                    required: { type: "boolean", example: false },
-                    type: { type: "string", example: "int" },
-                  },
-                },
-                update_date: {
-                  type: "object",
-                  properties: {
-                    required: { type: "boolean", example: true },
-                    type: { type: "string", example: "timestamp" },
-                  },
-                },
-              },
-            },
-            tags: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: { key: { type: "string", example: "active" }, value: { type: "string", example: "yes" } },
-              },
-              example: [{ key: "active", value: "yes" }],
-            },
-          },
-        },
-        examples: {
-          "Create Entity": {
-            value: {
-              id: "2938924293",
-              index: { index_charge_amount: { fields: ["charge_amount"] } },
-              name: "Control Entity",
-              schema: {
-                charge_amount: { required: false, type: "int" },
-                update_date: { required: true, type: "timestamp" },
-              },
-              tags: [{ key: "active", value: "yes" }],
-            },
-          },
-        },
-      },
-    },
-  }}
-></RequestSchema>
+  {...require("./create-entity.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Creating an entity",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "object", properties: { id: { type: "string", example: "672a64b91807cd7008bae4d5" } } },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./create-entity.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

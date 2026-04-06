@@ -18,83 +18,52 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading as={"h1"} className={"openapi__heading"} children={"List Chunks"}></Heading>
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Chunks"}
+>
+</Heading>
 
-<MethodEndpoint method={"get"} path={"/device/{deviceID}/chunk"} context={"endpoint"}></MethodEndpoint>
+<MethodEndpoint
+  method={"get"}
+  path={"/device/{deviceID}/chunk"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
 
 List of chunks
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails
-  parameters={[
-    { name: "deviceID", in: "path", required: true, schema: { type: "string", example: "67aa1f9135b1a7000a9db33c" } },
-  ]}
-></ParamsDetails>
+  {...require("./list-of-chunks.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema
+  {...require("./list-of-chunks.RequestSchema.json")}
+>
+  
+</RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Getting a list of chunks by device",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "array",
-                items: {
-                  type: "object",
-                  properties: {
-                    amount: { type: "number", example: 1584 },
-                    from: { type: "string", example: "2022-07-18T00:00:00.000+00:00" },
-                    id: { type: "string", example: "1658102400_1658707199" },
-                    to: { type: "string", example: "2022-07-24T23:59:59.999+00:00" },
-                  },
-                },
-                example: [
-                  {
-                    amount: 1584,
-                    from: "2022-07-18T00:00:00.000+00:00",
-                    id: "1658102400_1658707199",
-                    to: "2022-07-24T23:59:59.999+00:00",
-                  },
-                  {
-                    amount: 13383,
-                    from: "2022-07-11T00:00:00.000+00:00",
-                    id: "1657497600_1658102399",
-                    to: "2022-07-17T23:59:59.999+00:00",
-                  },
-                  {
-                    amount: 12788,
-                    from: "2022-07-04T00:00:00.000+00:00",
-                    id: "1656892800_1657497599",
-                    to: "2022-07-10T23:59:59.999+00:00",
-                  },
-                  {
-                    amount: 12784,
-                    from: "2022-06-27T00:00:00.000+00:00",
-                    id: "1656288000_1656892799",
-                    to: "2022-07-03T23:59:59.999+00:00",
-                  },
-                  {
-                    amount: 4179,
-                    from: "2022-03-07T00:00:00.000+00:00",
-                    id: "1646611200_1647215999",
-                    to: "2022-03-13T23:59:59.999+00:00",
-                  },
-                ],
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+  {...require("./list-of-chunks.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

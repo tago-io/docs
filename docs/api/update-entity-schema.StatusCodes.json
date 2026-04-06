@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Updating any entity field","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"message":{"type":"string","example":"Entity Successfully Updated"}}},"status":{"type":"boolean","example":true}}}}}}}}
