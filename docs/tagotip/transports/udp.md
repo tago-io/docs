@@ -112,7 +112,7 @@ ACK|OK|3
 ### Push location data
 
 ```bash
-echo -n 'PUSH|4deedd7bab8817ec|tracker-01|[position@=39.74,-104.99,1609;speed:=45.2#km/h]' \
+echo -n 'PUSH|4deedd7bab8817ec|tracker-01|[position@=39.74,-104.99,1609;speed:=45.2#km/h@=39.74,-104.99]' \
   | nc -u -w1 udp.tip.us-e1.tago.io 5683
 ```
 
@@ -166,14 +166,15 @@ ACK|CMD|reboot
 
 Append after the value, in this order:
 
-| Suffix    | Prefix | Example                           |
-| --------- | ------ | --------------------------------- |
-| Unit      | `#`    | `temperature:=25.5#C`             |
-| Timestamp | `@`    | `temperature:=25.5@1694567890000` |
-| Group     | `^`    | `temperature:=25.5^batch_01`      |
-| Metadata  | `{}`   | `temperature:=25.5{source=dht22}` |
+| Suffix    | Prefix | Example                              |
+| --------- | ------ | ------------------------------------ |
+| Unit      | `#`    | `temperature:=25.5#C`                |
+| Location  | `@=`   | `speed:=10@=39.74,-104.99`           |
+| Timestamp | `@`    | `temperature:=25.5@1694567890000`    |
+| Group     | `^`    | `temperature:=25.5^batch_01`         |
+| Metadata  | `{}`   | `temperature:=25.5{source=dht22}`    |
 
-All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=high}`
+All combined: `temperature:=25.5#C@=39.74,-104.99@1694567890000^batch_01{source=dht22,quality=high}`
 
 ## Response codes
 

@@ -122,7 +122,7 @@ curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
 curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
-  -d '@1694567890000^batch_01{firmware=2.1}[temperature:=25.5#C;humidity:=60#%]'
+  -d '@=39.74,-104.99@1694567890000^batch_01{firmware=2.1}[temperature:=25.5#C;humidity:=60#%]'
 ```
 
 ### Push location data
@@ -131,7 +131,7 @@ curl -X POST https://http.tip.us-e1.tago.io/v1/tip/sensor-01 \
 curl -X POST https://http.tip.us-e1.tago.io/v1/tip/tracker-01 \
   -H "Authorization: TagoTiP 4deedd7bab8817ec" \
   -H "Content-Type: text/plain" \
-  -d '[position@=39.74,-104.99,1609;speed:=45.2#km/h]'
+  -d '[position@=39.74,-104.99,1609;speed:=45.2#km/h@=39.74,-104.99]'
 ```
 
 ### Push raw payload (passthrough)

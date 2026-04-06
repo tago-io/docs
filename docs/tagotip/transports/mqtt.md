@@ -85,7 +85,7 @@ Structured variables or passthrough:
 
 ```
 [temp:=32#C;humidity:=65#%]
-@1694567890000^batch_42[temp:=32#C]
+@=39.74,-104.99@1694567890000^batch_42[temp:=32#C]
 >xDEADBEEF01020304
 >b3q2+7wECAwQ=
 !42|[temp:=32#C;humidity:=65#%]
@@ -255,14 +255,15 @@ mosquitto_rr -h mqtt.tip.us-e1.tago.io -p 8883 --capath /etc/ssl/certs \
 
 Append after the value, in this order:
 
-| Suffix    | Prefix | Example                           |
-| --------- | ------ | --------------------------------- |
-| Unit      | `#`    | `temperature:=25.5#C`             |
-| Timestamp | `@`    | `temperature:=25.5@1694567890000` |
-| Group     | `^`    | `temperature:=25.5^batch_01`      |
-| Metadata  | `{}`   | `temperature:=25.5{source=dht22}` |
+| Suffix    | Prefix | Example                              |
+| --------- | ------ | ------------------------------------ |
+| Unit      | `#`    | `temperature:=25.5#C`                |
+| Location  | `@=`   | `speed:=10@=39.74,-104.99`           |
+| Timestamp | `@`    | `temperature:=25.5@1694567890000`    |
+| Group     | `^`    | `temperature:=25.5^batch_01`         |
+| Metadata  | `{}`   | `temperature:=25.5{source=dht22}`    |
 
-All combined: `temperature:=25.5#C@1694567890000^batch_01{source=dht22,quality=high}`
+All combined: `temperature:=25.5#C@=39.74,-104.99@1694567890000^batch_01{source=dht22,quality=high}`
 
 ## Response codes
 
