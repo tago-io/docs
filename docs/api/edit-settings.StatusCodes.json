@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Editing RUN information",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "TagoIO Run Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

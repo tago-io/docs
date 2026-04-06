@@ -1,0 +1,28 @@
+{
+  "parameters": [
+    { "name": "page", "in": "query", "schema": { "type": "string", "example": "1" }, "description": "Page number." },
+    {
+      "name": "amount",
+      "in": "query",
+      "schema": { "type": "string", "example": "5" },
+      "description": "Amount of dashboards per page."
+    },
+    {
+      "name": "orderBy",
+      "in": "query",
+      "schema": { "type": "string", "example": "name" },
+      "description": "Order dashboard by name."
+    },
+    {
+      "name": "fields[]",
+      "in": "query",
+      "description": "Select which properties to include for each dashboard in the response.\nPass the parameter multiple times to include more than one field.\n\nExample: `?fields[]=label&fields[]=id&fields[]=type`\n",
+      "schema": {
+        "type": "array",
+        "items": { "type": "string", "enum": ["label", "id", "type", "tags", "visible", "created_at", "last_access"] }
+      },
+      "style": "form",
+      "explode": true
+    }
+  ]
+}

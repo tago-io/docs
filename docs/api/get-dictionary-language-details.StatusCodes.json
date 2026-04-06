@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting a dictionary language details",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "object", "properties": { "key": { "type": "string", "example": "value" } } },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

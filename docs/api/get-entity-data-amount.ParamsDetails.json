@@ -1,0 +1,10 @@
+{
+  "parameters": [
+    {
+      "name": "entity_id",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type an entity ID)" }
+    }
+  ]
+}

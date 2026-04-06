@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Send Data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "1 Data Added" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

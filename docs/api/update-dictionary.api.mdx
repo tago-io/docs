@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Update Dictionary"}></Heading>
 
@@ -25,79 +26,12 @@ import Heading from "@theme/Heading";
 
 Update Dictionary
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    {
-      name: "dictionary_id",
-      in: "path",
-      required: true,
-      schema: { type: "string", example: "(Type Dictionary ID)" },
-      description: "Can be obtained in the GET Dictionary response",
-    },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./update-dictionary.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "object",
-          properties: {
-            fallback: { type: "string", example: "fr-FR" },
-            languages: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: { active: { type: "boolean", example: true }, code: { type: "string", example: "fr-FR" } },
-              },
-              example: [
-                { active: true, code: "fr-FR" },
-                { active: true, code: "pt-BR" },
-              ],
-            },
-            name: { type: "string", example: "updated.test" },
-            slug: { type: "string", example: "TEEEE" },
-          },
-        },
-        examples: {
-          "Update Dictionary": {
-            value: {
-              fallback: "fr-FR",
-              languages: [
-                { active: true, code: "fr-FR" },
-                { active: true, code: "pt-BR" },
-              ],
-              name: "updated.test",
-              slug: "TEEEE",
-            },
-          },
-        },
-      },
-    },
-  }}
-></RequestSchema>
+<RequestSchema {...require("./update-dictionary.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Updating a Dictionary name",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "Successfully Updated" },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./update-dictionary.StatusCodes.json")}></StatusCodes>

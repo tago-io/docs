@@ -1,0 +1,11 @@
+{
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "Type a profile ID" },
+      "description": "Can be found in the profile's information tab \"More\""
+    }
+  ]
+}

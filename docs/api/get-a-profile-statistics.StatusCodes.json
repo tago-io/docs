@@ -1,0 +1,265 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting a profile statistics",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "data_records": { "type": "number", "example": 151611 },
+                    "file_storage": { "type": "number", "example": 49.89 },
+                    "input": { "type": "number", "example": 39933 },
+                    "output": { "type": "number", "example": 1272 },
+                    "time": { "type": "string", "example": "2023-11-08T04:01:36.124Z" }
+                  }
+                },
+                "example": [
+                  {
+                    "data_records": 151611,
+                    "file_storage": 49.89,
+                    "input": 39933,
+                    "output": 1272,
+                    "time": "2023-11-08T04:01:36.124Z"
+                  },
+                  {
+                    "data_records": 151691,
+                    "file_storage": 49.89,
+                    "input": 40165,
+                    "output": 1272,
+                    "time": "2023-11-08T05:01:35.986Z"
+                  },
+                  {
+                    "data_records": 151863,
+                    "file_storage": 49.89,
+                    "input": 40397,
+                    "output": 1272,
+                    "time": "2023-11-08T06:01:35.963Z"
+                  },
+                  {
+                    "data_records": 152389,
+                    "file_storage": 49.89,
+                    "input": 40629,
+                    "output": 1272,
+                    "time": "2023-11-08T07:01:36.021Z"
+                  },
+                  {
+                    "data_records": 152497,
+                    "file_storage": 49.89,
+                    "input": 40861,
+                    "output": 1272,
+                    "time": "2023-11-08T08:01:36.019Z"
+                  },
+                  {
+                    "data_records": 152609,
+                    "file_storage": 49.89,
+                    "input": 41093,
+                    "output": 1272,
+                    "time": "2023-11-08T09:01:35.908Z"
+                  },
+                  {
+                    "data_records": 152981,
+                    "file_storage": 49.89,
+                    "input": 41325,
+                    "output": 1272,
+                    "time": "2023-11-08T10:01:36.052Z"
+                  },
+                  {
+                    "data_records": 153105,
+                    "file_storage": 49.89,
+                    "input": 41566,
+                    "output": 1272,
+                    "time": "2023-11-08T11:01:36.155Z"
+                  },
+                  {
+                    "data_records": 153373,
+                    "file_storage": 49.89,
+                    "input": 41789,
+                    "output": 1272,
+                    "time": "2023-11-08T12:01:35.906Z"
+                  },
+                  {
+                    "data_records": 153517,
+                    "file_storage": 49.89,
+                    "input": 42030,
+                    "output": 1272,
+                    "time": "2023-11-08T13:01:35.873Z"
+                  },
+                  {
+                    "data_records": 150262,
+                    "file_storage": 49.89,
+                    "input": 42253,
+                    "output": 1272,
+                    "time": "2023-11-08T14:01:35.967Z"
+                  },
+                  {
+                    "data_records": 150422,
+                    "file_storage": 49.89,
+                    "input": 42485,
+                    "output": 1272,
+                    "time": "2023-11-08T15:01:35.992Z"
+                  },
+                  {
+                    "data_records": 150422,
+                    "file_storage": 49.89,
+                    "input": 42717,
+                    "output": 1272,
+                    "time": "2023-11-08T16:01:35.825Z"
+                  },
+                  {
+                    "data_records": 151054,
+                    "file_storage": 49.89,
+                    "input": 42949,
+                    "output": 1272,
+                    "time": "2023-11-08T17:01:35.903Z"
+                  },
+                  {
+                    "data_records": 151242,
+                    "file_storage": 49.89,
+                    "input": 43181,
+                    "output": 1272,
+                    "time": "2023-11-08T18:01:35.995Z"
+                  },
+                  {
+                    "data_records": 151242,
+                    "file_storage": 49.89,
+                    "input": 43413,
+                    "output": 1272,
+                    "time": "2023-11-08T19:01:35.946Z"
+                  }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Getting a profile statistics": {
+              "value": {
+                "result": [
+                  {
+                    "data_records": 151611,
+                    "file_storage": 49.89,
+                    "input": 39933,
+                    "output": 1272,
+                    "time": "2023-11-08T04:01:36.124Z"
+                  },
+                  {
+                    "data_records": 151691,
+                    "file_storage": 49.89,
+                    "input": 40165,
+                    "output": 1272,
+                    "time": "2023-11-08T05:01:35.986Z"
+                  },
+                  {
+                    "data_records": 151863,
+                    "file_storage": 49.89,
+                    "input": 40397,
+                    "output": 1272,
+                    "time": "2023-11-08T06:01:35.963Z"
+                  },
+                  {
+                    "data_records": 152389,
+                    "file_storage": 49.89,
+                    "input": 40629,
+                    "output": 1272,
+                    "time": "2023-11-08T07:01:36.021Z"
+                  },
+                  {
+                    "data_records": 152497,
+                    "file_storage": 49.89,
+                    "input": 40861,
+                    "output": 1272,
+                    "time": "2023-11-08T08:01:36.019Z"
+                  },
+                  {
+                    "data_records": 152609,
+                    "file_storage": 49.89,
+                    "input": 41093,
+                    "output": 1272,
+                    "time": "2023-11-08T09:01:35.908Z"
+                  },
+                  {
+                    "data_records": 152981,
+                    "file_storage": 49.89,
+                    "input": 41325,
+                    "output": 1272,
+                    "time": "2023-11-08T10:01:36.052Z"
+                  },
+                  {
+                    "data_records": 153105,
+                    "file_storage": 49.89,
+                    "input": 41566,
+                    "output": 1272,
+                    "time": "2023-11-08T11:01:36.155Z"
+                  },
+                  {
+                    "data_records": 153373,
+                    "file_storage": 49.89,
+                    "input": 41789,
+                    "output": 1272,
+                    "time": "2023-11-08T12:01:35.906Z"
+                  },
+                  {
+                    "data_records": 153517,
+                    "file_storage": 49.89,
+                    "input": 42030,
+                    "output": 1272,
+                    "time": "2023-11-08T13:01:35.873Z"
+                  },
+                  {
+                    "data_records": 150262,
+                    "file_storage": 49.89,
+                    "input": 42253,
+                    "output": 1272,
+                    "time": "2023-11-08T14:01:35.967Z"
+                  },
+                  {
+                    "data_records": 150422,
+                    "file_storage": 49.89,
+                    "input": 42485,
+                    "output": 1272,
+                    "time": "2023-11-08T15:01:35.992Z"
+                  },
+                  {
+                    "data_records": 150422,
+                    "file_storage": 49.89,
+                    "input": 42717,
+                    "output": 1272,
+                    "time": "2023-11-08T16:01:35.825Z"
+                  },
+                  {
+                    "data_records": 151054,
+                    "file_storage": 49.89,
+                    "input": 42949,
+                    "output": 1272,
+                    "time": "2023-11-08T17:01:35.903Z"
+                  },
+                  {
+                    "data_records": 151242,
+                    "file_storage": 49.89,
+                    "input": 43181,
+                    "output": 1272,
+                    "time": "2023-11-08T18:01:35.995Z"
+                  },
+                  {
+                    "data_records": 151242,
+                    "file_storage": 49.89,
+                    "input": 43413,
+                    "output": 1272,
+                    "time": "2023-11-08T19:01:35.946Z"
+                  }
+                ],
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

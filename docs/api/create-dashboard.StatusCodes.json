@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "201": {
+      "description": "Creating a dashboard",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "dashboard": { "type": "string", "example": "614e0aa36f480300126652f9a38" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Creating a dashboard": {
+              "value": { "result": { "dashboard": "614e0aa36f480300126652f9a38" }, "status": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

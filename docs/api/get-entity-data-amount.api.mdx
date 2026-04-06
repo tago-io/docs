@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Entity Data Amount"}></Heading>
 
@@ -25,31 +26,12 @@ import Heading from "@theme/Heading";
 
 Get Entity Data Amount
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    { name: "entity_id", in: "path", required: true, schema: { type: "string", example: "(Type an entity ID)" } },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./get-entity-data-amount.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema {...require("./get-entity-data-amount.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Getting entity data amount",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: { result: { type: "number", example: 100 }, status: { type: "boolean", example: true } },
-          },
-          examples: { "Getting entity data amount": { value: { result: 100, status: true } } },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./get-entity-data-amount.StatusCodes.json")}></StatusCodes>

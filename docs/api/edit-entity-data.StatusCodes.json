@@ -1,0 +1,19 @@
+{
+  "responses": {
+    "200": {
+      "description": "Editing an entity data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "1 item(s) updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Editing an entity data": { "value": { "result": "1 item(s) updated", "status": true } } }
+        }
+      }
+    }
+  }
+}

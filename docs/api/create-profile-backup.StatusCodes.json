@@ -1,0 +1,39 @@
+{
+  "responses": {
+    "200": {
+      "description": "Backup creation initiated successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "example": "Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint."
+              },
+              "profile": { "type": "string", "example": "61fac4d9a5c9f40012a5ff92" },
+              "backup_id": { "type": "string", "example": "678abc123def456789012345" }
+            }
+          }
+        }
+      }
+    },
+    "403": {
+      "description": "Forbidden - Free plan or rate limit exceeded",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": {
+                "type": "string",
+                "example": "Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

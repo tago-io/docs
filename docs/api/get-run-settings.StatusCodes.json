@@ -1,0 +1,369 @@
+{
+  "responses": {
+    "200": {
+      "description": "RUN settings retrieved",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "active": { "type": "boolean", "example": true },
+                  "auth_token_ttl": { "type": "string", "example": "3 months" },
+                  "created_at": { "type": "string", "example": "2022-06-17T00:02:20.531Z" },
+                  "dictionary": { "example": null },
+                  "email_domain": { "example": null },
+                  "email_templates": {
+                    "type": "object",
+                    "properties": {
+                      "password_recover": {
+                        "type": "object",
+                        "properties": {
+                          "subject": { "type": "string", "example": "Password Recovery" },
+                          "value": {
+                            "type": "string",
+                            "example": "### Hi $name$.\n\nYou have requested to reset your password on $application.name$.\n\nClick [here]($recover_link$) and you'll be redirected to a secure site where you can set a new password."
+                          }
+                        }
+                      },
+                      "welcome_actived": {
+                        "type": "object",
+                        "properties": {
+                          "subject": { "type": "string", "example": "Your account was activated!" },
+                          "value": {
+                            "type": "string",
+                            "example": "### Hi $name$.\n\nYour account was successfully confirmed. You are now able to log in!"
+                          }
+                        }
+                      },
+                      "welcome_adminconfirm": {
+                        "type": "object",
+                        "properties": {
+                          "subject": { "type": "string", "example": "Your account is being analysed" },
+                          "value": {
+                            "type": "string",
+                            "example": "### Hi $name$.\n\nWelcome!\n\nYour account creation has been submitted, but is currently being analysed. We'll keep you posted."
+                          }
+                        }
+                      },
+                      "welcome_autoconfirm": {
+                        "type": "object",
+                        "properties": {
+                          "subject": { "type": "string", "example": "Welcome $name$!" },
+                          "value": {
+                            "type": "string",
+                            "example": "### Hi $name$.\n\nWelcome!\n\nBefore you start to enjoy all the features, click [here]($confirmation_link$) to confirm your email."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "favicon": { "example": null },
+                  "feature_devicewifisetup": {
+                    "type": "object",
+                    "properties": {
+                      "background_color": { "type": "string", "example": "white" },
+                      "button_cancel_background_color": { "type": "string", "example": "white" },
+                      "button_cancel_text_color": { "type": "string", "example": "black" },
+                      "button_confirm_background_color": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "button_confirm_text_color": { "type": "string", "example": "white" },
+                      "enabled": { "type": "boolean", "example": false },
+                      "ip": { "type": "string", "example": "" },
+                      "language": { "type": "string", "example": "EN" },
+                      "name": { "type": "string", "example": "" },
+                      "port": { "type": "string", "example": "" },
+                      "protocol": { "type": "string", "example": "http" },
+                      "text_color": { "type": "string", "example": "rgb(60, 60, 60)" },
+                      "translations": {
+                        "type": "object",
+                        "properties": {
+                          "EN": {
+                            "type": "object",
+                            "properties": {
+                              "done_desc": { "type": "string", "example": "" },
+                              "done_title": { "type": "string", "example": "Device configured!" },
+                              "intro_desc": {
+                                "type": "string",
+                                "example": "Let's connect your device to Wi-Fi for you to start using it."
+                              },
+                              "intro_img": { "type": "string", "example": "" },
+                              "intro_title": { "type": "string", "example": "Begin device setup" },
+                              "param_title": { "type": "string", "example": "Device found!" },
+                              "wait_desc": { "type": "string", "example": "" },
+                              "wait_title": { "type": "string", "example": "Waiting for device..." },
+                              "wifi_config_desc": {
+                                "type": "string",
+                                "example": "Go to the Wi-Fi settings on your phone and select the AcmeTracking-XXX network. It may take up to a minute to appear on the list. After connecting your phone to the AcmeTracking-XXX network via Wi-Fi, return to the TagoRun app to continue the setup."
+                              },
+                              "wifi_config_title": {
+                                "type": "string",
+                                "example": "Manually connect to the Device Network"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "feature_geolocation": { "example": null },
+                  "integration": {
+                    "type": "object",
+                    "properties": {
+                      "google_analytics": { "type": "string", "example": "" },
+                      "zoho_salesiq": { "type": "string", "example": "" }
+                    }
+                  },
+                  "logo": { "example": null },
+                  "logo_options": {
+                    "type": "object",
+                    "properties": {
+                      "tooltip": { "type": "string", "example": "" },
+                      "type": { "type": "string", "example": "" },
+                      "value": { "type": "string", "example": "" }
+                    }
+                  },
+                  "name": { "type": "string", "example": "John Doe Run" },
+                  "profile": { "type": "string", "example": "62ab4302ee089b00134f33ff" },
+                  "security": { "type": "object", "properties": {} },
+                  "sidebar_buttons": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "color": { "type": "string", "example": "grey" },
+                        "href": { "type": "string", "example": "/" },
+                        "iconUrl": { "type": "string", "example": "https://svg.internal.tago.io/home.svg" },
+                        "isInNewLine": { "type": "boolean", "example": true },
+                        "text": { "type": "string", "example": "Home" },
+                        "type": { "type": "string", "example": "" }
+                      }
+                    },
+                    "example": [
+                      {
+                        "color": "grey",
+                        "href": "/",
+                        "iconUrl": "https://svg.internal.tago.io/home.svg",
+                        "text": "Home",
+                        "type": ""
+                      },
+                      {
+                        "color": "red",
+                        "href": "users",
+                        "iconUrl": "https://svg.internal.tago.io/group-profile-users.svg",
+                        "text": "Users",
+                        "type": ""
+                      },
+                      {
+                        "color": "hsl(208, 56%, 46%)",
+                        "href": "connections",
+                        "iconUrl": "https://svg.internal.tago.io/wifi.svg",
+                        "isInNewLine": true,
+                        "text": "Connections",
+                        "type": ""
+                      }
+                    ]
+                  },
+                  "signup_fields": { "type": "array", "items": {}, "example": [] },
+                  "signup_logo": { "example": null },
+                  "signup_logo_options": { "type": "object", "properties": {} },
+                  "signup_method": { "type": "string", "example": "default" },
+                  "sso_saml_active": { "type": "boolean", "example": false },
+                  "sub_title": { "type": "string", "example": "Machine Management" },
+                  "theme": {
+                    "type": "object",
+                    "properties": {
+                      "actionSchedule": { "type": "string", "example": "#e6431e" },
+                      "actionTriggerByData": { "type": "string", "example": "rgb(85, 107, 47)" },
+                      "actionTriggerByMQTT": { "type": "string", "example": "hsl(296, 32%, 43%)" },
+                      "actionTriggerByResource": { "type": "string", "example": "hsl(208, 56%, 45%)" },
+                      "alertActionDangerBackground": { "type": "string", "example": "hsl(0, 49%, 54%)" },
+                      "alertActionInfoBackground": { "type": "string", "example": "hsl(200, 74%, 88%)" },
+                      "alertActionWarningBackground": { "type": "string", "example": "hsl(50, 100%, 86%)" },
+                      "alertDangerBackground": { "type": "string", "example": "hsl(0, 60%, 92%)" },
+                      "alertInfoBackground": { "type": "string", "example": "hsl(200, 65%, 91%)" },
+                      "alertWarningBackground": { "type": "string", "example": "hsl(50, 100%, 94%)" },
+                      "analysisExternal": { "type": "string", "example": "hsl(27, 80%, 49%)" },
+                      "analysisInternal": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "auth_bg_opacity": { "type": "number", "example": 100 },
+                      "auth_bg_src": { "type": "string", "example": "" },
+                      "auth_bg_type": { "type": "string", "example": "default" },
+                      "auth_form_opacity": { "example": null },
+                      "blueprint": { "type": "string", "example": "hsl(230, 100%, 32%)" },
+                      "buttonDanger": { "type": "string", "example": "#e40000" },
+                      "buttonDangerText": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "buttonDefault": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "buttonDefaultText": { "type": "string", "example": "hsl(0, 0%, 0%)" },
+                      "buttonDisabled": { "type": "string", "example": "hsl(0, 0%, 90%)" },
+                      "buttonDisabledText": { "type": "string", "example": "hsl(0, 0%, 0%)" },
+                      "buttonIconLabel": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "buttonPrimary": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "buttonPrimaryText": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "buttonSuccess": { "type": "string", "example": "#007d05" },
+                      "buttonSuccessText": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "buttonUpgrade": { "type": "string", "example": "hsl(31, 92%, 66%)" },
+                      "buttonUpgradeText": { "type": "string", "example": "hsl(0, 0%, 0%)" },
+                      "buttonWarning": { "type": "string", "example": "hsl(31, 92%, 66%)" },
+                      "buttonWarningText": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "contentBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "contentHeader": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "contentHeaderGradient": { "type": "string", "example": "rgb(218, 218, 220)" },
+                      "contentHeaderSeparator": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "contentHeaderText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "dataStorageImmutable": { "type": "string", "example": "hsl(82, 39%, 30%)" },
+                      "dataStorageMutable": { "type": "string", "example": "hsl(180, 100%, 27%)" },
+                      "deviceInputOutput1Day": { "type": "string", "example": "hsl(298, 74%, 37%)" },
+                      "deviceInputOutput3Days": { "type": "string", "example": "hsl(341, 74%, 36%)" },
+                      "deviceInputOutput3Hours": { "type": "string", "example": "hsl(121, 84%, 40%)" },
+                      "deviceInputOutput6Hours": { "type": "string", "example": "hsl(29, 98%, 48%)" },
+                      "deviceInputOutputRest": { "type": "string", "example": "hsl(0, 0%, 50%)" },
+                      "deviceListAlternateRow": { "type": "string", "example": "hsla(0, 0%, 0%, .05)" },
+                      "deviceListColumn": { "type": "string", "example": "hsla(0, 0%, 0%, .05)" },
+                      "dictionaryAlertIcon": { "type": "string", "example": "hsl(0, 95%, 70%)" },
+                      "dictionaryPrimary": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "dottedBorder": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "dropdownAccent": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "dropdownBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "dynamicTableAlternateRow": { "type": "string", "example": "hsla(0, 0%, 0%, .05)" },
+                      "dynamicTableColumn": { "type": "string", "example": "hsla(0, 0%, 0%, .05)" },
+                      "filesSelection": { "type": "string", "example": "hsl(207, 56%, 93%)" },
+                      "floatingSidebarTitle": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "footerBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "formControlBorder": { "type": "string", "example": "hsla(0, 0%, 0%, 0.07)" },
+                      "formControlFocus": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "gaugeDanger": { "type": "string", "example": "#C02416" },
+                      "gaugeEmpty": { "type": "string", "example": "hsl(0, 0%, 80%)" },
+                      "gaugeFill": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "gaugePrimaryText": { "type": "string", "example": "hsl(0, 0%, 0%)" },
+                      "gaugeSecondaryText": { "type": "string", "example": "hsl(0, 0%, 45%)" },
+                      "gaugeTick": { "type": "string", "example": "hsl(0, 0%, 57%)" },
+                      "html5": { "type": "string", "example": "hsl(14, 93%, 54%)" },
+                      "iconRadioSelected": { "type": "string", "example": "hsl(0, 0%, 33%)" },
+                      "iconRadioSubTitle": { "type": "string", "example": "hsl(0, 0%, 45%)" },
+                      "informationIcon": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "inputBackground": { "type": "string", "example": "hsl(0, 0%, 99%)" },
+                      "inputBackgroundReadOnly": { "type": "string", "example": "hsl(0, 0%, 95%)" },
+                      "inputError": { "type": "string", "example": "#e40000" },
+                      "inputForeground": { "type": "string", "example": "hsl(225, 6%, 13%)" },
+                      "inputForegroundReadOnly": { "type": "string", "example": "hsl(0, 0%, 45%)" },
+                      "lightBorder": { "type": "string", "example": "hsla(0, 0%, 0%, 0.1)" },
+                      "limitAlert": { "type": "string", "example": "hsl(0, 49%, 54%)" },
+                      "link": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "listNavColor": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "listTitleLabel": { "type": "string", "example": "hsl(0, 0%, 33%)" },
+                      "loading": { "type": "string", "example": "hsl(0, 0%, 20%)" },
+                      "loginButton": { "type": "string", "example": "hsl(229, 81%, 54%)" },
+                      "loginButtonText": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "loginForeground": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "loginForm": { "type": "string", "example": "hsla(0, 100%, 100%, 1)" },
+                      "modalContainer": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "modalOverlay": { "type": "string", "example": "hsla(0, 0%, 0%, 0.5)" },
+                      "navDescription": { "type": "string", "example": "hsl(0, 0%, 55%)" },
+                      "navbar": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "navbarBetaDeveloperBorder": { "type": "string", "example": "rgb(0, 255, 126)" },
+                      "navbarButton": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "navbarDropdownBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "navbarDropdownBorder": { "type": "string", "example": "hsl(0, 0%, 80%)" },
+                      "navbarDropdownOption": { "type": "string", "example": "hsl(0, 0%, 30%)" },
+                      "navbarDropdownOptionBackground": { "type": "string", "example": "hsl(0, 0%, 98%)" },
+                      "navbarDropdownOptionBorder": { "type": "string", "example": "rgb(225, 225, 225)" },
+                      "navbarDropdownOptionHover": { "type": "string", "example": "hsl(0, 0%, 94%)" },
+                      "navbarDropdownSecondaryText": { "type": "string", "example": "rgb(150, 150, 150)" },
+                      "navbarDropdownSignoutButton": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "navbarSettings": { "type": "string", "example": "hsl(0, 0%, 55%)" },
+                      "navbarText": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "notificationButtonAmount": { "type": "string", "example": "hsl(354, 81%, 60%)" },
+                      "notificationButtonAmountText": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "notificationEmptyIcon": { "type": "string", "example": "hsl(0, 0%, 78%)" },
+                      "notificationEmptyTitle": { "type": "string", "example": "hsl(0, 0%, 62%)" },
+                      "notificationFilterBackground": { "type": "string", "example": "hsl(240,4%,95%)" },
+                      "notificationFilterMessageIcon": { "type": "string", "example": "rgba(0, 0, 0, 0.2)" },
+                      "notificationFooter": { "type": "string", "example": "hsl(0, 0%, 98%)" },
+                      "notificationIconContainer": { "type": "string", "example": "rgba(0, 0, 0, 0.04)" },
+                      "notificationItem": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "notificationItemBorder": { "type": "string", "example": "hsl(0, 0%, 90%)" },
+                      "notificationItemDate": { "type": "string", "example": "rgba(0, 0, 0, 0.4)" },
+                      "notificationItemTextAccepted": { "type": "string", "example": "hsl(0, 0%, 62%)" },
+                      "notificationItemUnread": { "type": "string", "example": "hsla(0, 0%, 97%, 1)" },
+                      "notificationText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "pdf": { "type": "string", "example": "hsl(3, 97%, 48%)" },
+                      "primary": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "publicPageNavigationBar": { "type": "string", "example": "#007d05" },
+                      "quickstart": { "type": "string", "example": "hsl(233, 45%, 50%)" },
+                      "quickstartSidebarBackground": { "type": "string", "example": "hsl(220, 16%, 96%)" },
+                      "quickstartTask": { "type": "string", "example": "hsl(223, 12%, 89%)" },
+                      "quickstartTaskFinished": { "type": "string", "example": "hsl(155, 54%, 46%)" },
+                      "quickstartText": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "regularText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "sidebarAccessSelected": { "type": "string", "example": "hsl(300, 100%, 25%)" },
+                      "sidebarAccountSelected": { "type": "string", "example": "hsl(43, 94%, 37%)" },
+                      "sidebarActionSelected": { "type": "string", "example": "#e6431e" },
+                      "sidebarAnalysisSelected": { "type": "string", "example": "#294E80" },
+                      "sidebarBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "sidebarBillingSelected": { "type": "string", "example": "rgb(28, 117, 8)" },
+                      "sidebarConnector": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "sidebarDashboardSelected": { "type": "string", "example": "hsl(321, 84%, 38%)" },
+                      "sidebarDeviceSelected": { "type": "string", "example": "#118c8c" },
+                      "sidebarExploreSelected": { "type": "string", "example": "hsl(206, 74%, 52%)" },
+                      "sidebarFileSelected": { "type": "string", "example": "#ea8d13" },
+                      "sidebarForegroundIcon": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "sidebarHomeSelected": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "sidebarIntegration": { "type": "string", "example": "hsl(0, 0%, 25%)" },
+                      "sidebarItem": { "type": "string", "example": "hsl(240, 4%, 100%)" },
+                      "sidebarItemHover": { "type": "string", "example": "hsl(240, 4%, 95%)" },
+                      "sidebarItemOdd": { "type": "string", "example": "rgba(0, 0, 0, .015)" },
+                      "sidebarItemSelected": { "type": "string", "example": "hsl(240, 4%, 97%)" },
+                      "sidebarNetwork": { "type": "string", "example": "hsl(156, 74%, 25%)" },
+                      "sidebarRibbon": { "type": "string", "example": "hsl(0, 0%, 97%)" },
+                      "sidebarRunSelected": { "type": "string", "example": "rgb(120, 90, 255)" },
+                      "sidebarSecondBackground": { "type": "string", "example": "hsl(240, 4%, 95%)" },
+                      "sidebarSeparator": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "sidebarSeparatorForeground": { "type": "string", "example": "hsla(0, 0%, 0%, .5)" },
+                      "sidebarTagoCoreSelected": { "type": "string", "example": "hsl(0, 0%, 0%)" },
+                      "sidebarText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "sidebarUserSelected": { "type": "string", "example": "rgb(113, 20, 20)" },
+                      "snakeButtonOutline": { "type": "string", "example": "hsl(0, 0%, 60%)" },
+                      "svgTagoFont": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "svgTagoIOHole": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "switchDisabledBackground": { "type": "string", "example": "hsl(0, 0%, 77%)" },
+                      "switchLabelDark": { "type": "string", "example": "hsl(0, 0%, 97%)" },
+                      "switchLabelWhite": { "type": "string", "example": "hsla(0, 0%, 0%, .5)" },
+                      "switchSlider": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "tabLabelActive": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "tabLabelBackground": { "type": "string", "example": "hsl(240, 4%, 95%)" },
+                      "tabLabelBorder": { "type": "string", "example": "hsl(204, 12%, 92%)" },
+                      "tabLabelHover": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "tabText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "tableBackground": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "tableBorder": { "type": "string", "example": "hsla(0, 0%, 0%, 0.1)" },
+                      "tableEvenRowBackground": { "type": "string", "example": "hsla(0, 0%, 0%, 0.03)" },
+                      "tableFooterBackground": { "type": "string", "example": "hsl(240, 4%, 95%)" },
+                      "tableOddRowBackground": { "type": "string", "example": "hsl(0, 100%, 100%)" },
+                      "toast": { "type": "string", "example": "hsl(0,0%,100%)" },
+                      "toastText": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "tooltipContainer": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "tooltipText": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "verticalTabItem": { "type": "string", "example": "hsl(240, 20%, 98%)" },
+                      "verticalTabItemBorder": { "type": "string", "example": "hsl(204, 12%, 92%)" },
+                      "widgetCardBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "widgetColors": { "type": "string", "example": "hsl(208, 56%, 46%)" },
+                      "widgetIconsAccent": { "type": "string", "example": "hsl(229, 100%, 23%)" },
+                      "widgetIconsBackground": { "type": "string", "example": "hsl(0, 0%, 100%)" },
+                      "widgetIconsColor": { "type": "string", "example": "hsl(0, 4%, 29%)" },
+                      "widgetIconsFooterBasic": { "type": "string", "example": "hsl(0, 0%, 97%)" },
+                      "widgetIconsFooterPremium": { "type": "string", "example": "hsl(53, 100%, 55%)" }
+                    }
+                  },
+                  "updated_at": { "type": "string", "example": "2022-06-17T00:02:20.531Z" },
+                  "url": { "type": "string", "example": "62ab4302ee089b00134f33ff.run.tago.io" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

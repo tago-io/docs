@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Deleting a device by ID",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Removed" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Create Backup"}></Heading>
 
@@ -39,62 +40,12 @@ Initiates a new backup generation for the specified profile. The backup is proce
 - Backup generation may take several minutes depending on profile size
 - Restoration is manual - you can write scripts to parse the JSON files and recreate resources via API, or contact TagoIO support
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    {
-      name: "profile_id",
-      in: "path",
-      required: true,
-      schema: { type: "string", example: "61fac4d9a5c9f40012a5ff92" },
-      description: "The ID of the profile",
-    },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./create-profile-backup.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema {...require("./create-profile-backup.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Backup creation initiated successfully",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              message: {
-                type: "string",
-                example:
-                  "Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint.",
-              },
-              profile: { type: "string", example: "61fac4d9a5c9f40012a5ff92" },
-              backup_id: { type: "string", example: "678abc123def456789012345" },
-            },
-          },
-        },
-      },
-    },
-    "403": {
-      description: "Forbidden - Free plan or rate limit exceeded",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              status: { type: "boolean", example: false },
-              message: {
-                type: "string",
-                example:
-                  "Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit.",
-              },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./create-profile-backup.StatusCodes.json")}></StatusCodes>

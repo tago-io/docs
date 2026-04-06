@@ -1,0 +1,28 @@
+{
+  "responses": {
+    "200": {
+      "description": "Generating a token",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "widget_token": { "type": "string", "example": "ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Generating a token": {
+              "value": { "result": { "widget_token": "ebe71a39-8f9f-4114-8bf3-6b3dcc19ad72" }, "status": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

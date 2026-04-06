@@ -1,0 +1,10 @@
+{
+  "parameters": [
+    {
+      "name": "deviceID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type your device ID)" }
+    }
+  ]
+}

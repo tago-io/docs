@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Editing a RUN user information by ID",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "TagoIO Run User Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

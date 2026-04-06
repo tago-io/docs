@@ -1,0 +1,81 @@
+{
+  "responses": {
+    "200": {
+      "description": "Get Profile's Files List",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "files": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "filename": { "type": "string", "example": "layer01.png" },
+                        "last_modified": { "type": "string", "example": "2023-10-16T13:25:04.000Z" },
+                        "public": { "type": "boolean", "example": true },
+                        "size": { "type": "number", "example": 63480 }
+                      }
+                    },
+                    "example": [
+                      {
+                        "filename": "layer01.png",
+                        "last_modified": "2023-10-16T13:25:04.000Z",
+                        "public": true,
+                        "size": 63480
+                      },
+                      {
+                        "filename": "layer02.png",
+                        "last_modified": "2023-10-16T13:23:58.000Z",
+                        "public": true,
+                        "size": 233444
+                      }
+                    ]
+                  },
+                  "folders": {
+                    "type": "array",
+                    "items": { "type": "string", "example": "reports" },
+                    "example": ["reports", "image"]
+                  },
+                  "total": { "type": "number", "example": 50 },
+                  "usage": { "type": "number", "example": 6.02 }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Get Profile's Files List": {
+              "value": {
+                "result": {
+                  "files": [
+                    {
+                      "filename": "layer01.png",
+                      "last_modified": "2023-10-16T13:25:04.000Z",
+                      "public": true,
+                      "size": 63480
+                    },
+                    {
+                      "filename": "layer02.png",
+                      "last_modified": "2023-10-16T13:23:58.000Z",
+                      "public": true,
+                      "size": 233444
+                    }
+                  ],
+                  "folders": ["reports", "image"],
+                  "total": 50,
+                  "usage": 6.02
+                },
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": { "type": "string", "example": "/layer05.png" },
+              "to": { "type": "string", "example": "/images/layer05.png" }
+            }
+          },
+          "example": [{ "from": "/layer05.png", "to": "/images/layer05.png" }]
+        },
+        "examples": { "Edit a file": { "value": [{ "from": "/layer05.png", "to": "/images/layer05.png" }] } }
+      }
+    }
+  }
+}

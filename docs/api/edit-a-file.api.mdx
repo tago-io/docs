@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Move File"}></Heading>
 
@@ -25,50 +26,12 @@ import Heading from "@theme/Heading";
 
 Move file location within your profile
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "array",
-          items: {
-            type: "object",
-            properties: {
-              from: { type: "string", example: "/layer05.png" },
-              to: { type: "string", example: "/images/layer05.png" },
-            },
-          },
-          example: [{ from: "/layer05.png", to: "/images/layer05.png" }],
-        },
-        examples: { "Edit a file": { value: [{ from: "/layer05.png", to: "/images/layer05.png" }] } },
-      },
-    },
-  }}
-></RequestSchema>
+<RequestSchema {...require("./edit-a-file.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Edit a file",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "Successfully Updated" },
-              status: { type: "boolean", example: true },
-            },
-          },
-          examples: { "Edit a file": { value: { result: "Successfully Updated", status: true } } },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./edit-a-file.StatusCodes.json")}></StatusCodes>
