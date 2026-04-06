@@ -1,6 +1,7 @@
 ---
 title: "MQTT Topic Mappings"
 description: "Map MQTT topics to pipelines so messages trigger processing workflows in TagoDeploy."
+keywords: [tagodeploy, iot, mqtt, topic mappings, data routing]
 tags: ["tagodeploy", "mqtt"]
 slug: /tagodeploy/project/mqtt/topic-mappings
 ---

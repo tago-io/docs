@@ -2,13 +2,14 @@
 title: "Vertical Column Widget"
 description: "A brief guide to the Vertical Column Widget in TagoIO, explaining what it does, configurable features (like Formula, metadata, and series), and the first configuration field ('Data From') used to select device and variable data for the widget."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, vertical column chart, data visualization]
 ---
+
 Charts are a powerful way to visualize your data and gain insights. The Vertical Column Widget lets you customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), choose whether series are stacked, and more.
 
 ![Vertical column charts showing different color themes and stacked columns](/docs_imagem/tagoio/vertical-column-widget-2.png)
 
 This widget also supports features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
-
 
 ## 1. 'Data From' Field
 
@@ -16,8 +17,8 @@ This field allows you to set the device and variable that will be used by the wi
 
 **Editing options for the selected variable**
 
-* Click on the **cog icon** to edit specific options such as formulas, color, and more.
-* Click on the **close icon** to remove this variable from the widget’s data.
+- Click on the **cog icon** to edit specific options such as formulas, color, and more.
+- Click on the **close icon** to remove this variable from the widget’s data.
 
 The available variables depend on the type of dashboard you are using; the difference is explained below.
 
@@ -29,7 +30,6 @@ From the option **'Data From'** in the right‑hand menu, select one device from
 
 From the option **'Data From'** in the right‑hand menu, add the **Blueprint device** and input the name of the variable that contains the information.
 When using a Blueprint dashboard, the **Variable** field will not list variables to pick because it does not know which devices are linked to your Blueprint Device.
-
 
 ## 2. Composing X-axis and Y-axis
 
@@ -50,7 +50,7 @@ You can define the X‑axis time range dynamically using another variable. The p
   "value": "Any value",
   "metadata": {
     "start_date": "2021-06-17T00:00:00.000Z",
-    "end_date":   "2021-06-18T00:00:00.000Z"
+    "end_date": "2021-06-18T00:00:00.000Z"
   }
 }
 ```
@@ -62,11 +62,9 @@ The `start_date` specifies the start of the range, and the `end_date` specifies 
 You can customize the scaling behavior on the vertical axis, apply metric prefixes or abbreviations, change the step value (the difference between each tick), and more.
 The Y‑axis will automatically find the best scale for your data; manual adjustments are only needed if you have specific requirements.
 
-
 ## 3. Filtering data
 
 You can pre‑set date filters to be displayed on the chart. Filters can be set in minutes, hours, days, weeks, months, or custom by choosing a date from the calendar.
-
 
 ## 4. Increasing performance
 
@@ -74,7 +72,7 @@ When a chart contains many data points, you can improve widget performance by en
 
 Two parameters control downsampling:
 
-* **Threshold** – limits the amount of data before downsampling starts.
-* **Factor** – determines how many samples will be removed.
+- **Threshold** – limits the amount of data before downsampling starts.
+- **Factor** – determines how many samples will be removed.
 
 A higher factor increases performance but may reduce data recognizability, so choose a value that balances speed with clarity.

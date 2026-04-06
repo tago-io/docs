@@ -1,0 +1,97 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting entity data by filter",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "charge_amount": { "example": null },
+                    "created_at": { "type": "string", "example": "2024-11-06T11:32:36.467Z" },
+                    "id": { "type": "string", "example": "672b53d43bc47400095f3831" },
+                    "int_field": { "example": null },
+                    "monthly_revenue": { "type": "number", "example": 2345.34 },
+                    "update_date": { "type": "string", "example": "2024-11-01T03:00:00.000Z" },
+                    "updated_at": { "type": "string", "example": "2024-11-06T11:32:36.467Z" }
+                  }
+                },
+                "example": [
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:32:36.467Z",
+                    "id": "672b53d43bc47400095f3831",
+                    "int_field": null,
+                    "monthly_revenue": 2345.34,
+                    "update_date": "2024-11-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:32:36.467Z"
+                  },
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:34:33.380Z",
+                    "id": "672b5449dbac110009ce878f",
+                    "int_field": null,
+                    "monthly_revenue": 2193.43,
+                    "update_date": "2024-10-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:34:33.380Z"
+                  },
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:34:47.772Z",
+                    "id": "672b54573bc47400095f4634",
+                    "int_field": null,
+                    "monthly_revenue": 2889.23,
+                    "update_date": "2024-09-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:34:47.772Z"
+                  }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Getting entity data by filter": {
+              "value": {
+                "result": [
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:32:36.467Z",
+                    "id": "672b53d43bc47400095f3831",
+                    "int_field": null,
+                    "monthly_revenue": 2345.34,
+                    "update_date": "2024-11-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:32:36.467Z"
+                  },
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:34:33.380Z",
+                    "id": "672b5449dbac110009ce878f",
+                    "int_field": null,
+                    "monthly_revenue": 2193.43,
+                    "update_date": "2024-10-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:34:33.380Z"
+                  },
+                  {
+                    "charge_amount": null,
+                    "created_at": "2024-11-06T11:34:47.772Z",
+                    "id": "672b54573bc47400095f4634",
+                    "int_field": null,
+                    "monthly_revenue": 2889.23,
+                    "update_date": "2024-09-01T03:00:00.000Z",
+                    "updated_at": "2024-11-06T11:34:47.772Z"
+                  }
+                ],
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

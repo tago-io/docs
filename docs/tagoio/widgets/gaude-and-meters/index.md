@@ -2,10 +2,11 @@
 title: "Gauge Overview"
 description: "This article describes the Gauge widget types available in TagoIO and explains the Dial and Angular gauge types, including how they present a variable's last value and a link to more detail for the Dial gauge."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widgets, gauge, meter]
 "sidebar_position": 1
 ---
-Gauge contains a collection of metric widgets. You can choose among several types of gauges that present the last value of a variable in different formats.
 
+Gauge contains a collection of metric widgets. You can choose among several types of gauges that present the last value of a variable in different formats.
 
 ## Dial
 
@@ -15,7 +16,6 @@ Dials are one of the simplest and more useful widgets. They make it easy to visu
 
 Learn more about the [Dial Gauge](/docs/tagoio/widgets/gaude-and-meters/dial-widget.md).
 
-
 ## Angular
 
 Angular allows you to show your variable in an angular gauge meter.
@@ -23,7 +23,6 @@ Angular allows you to show your variable in an angular gauge meter.
 ![Image 2](/docs_imagem/tagoio/1587131850692-QkI.png)
 
 To learn more about the [Angular Gauge](/docs/tagoio/widgets/gaude-and-meters/angular-widget.md).
-
 
 ## Solid
 
@@ -33,7 +32,6 @@ Solid gauges display your variable in a solid gauge meter.
 
 To learn more about the [Solid Gauge](/docs/tagoio/widgets/gaude-and-meters/solid-widget.md).
 
-
 ## Clock
 
 Clock gauges allow you to visualize the time in a certain timezone. You can see the selected timezone, weekday, hour, minutes and seconds.
@@ -41,7 +39,6 @@ Clock gauges allow you to visualize the time in a certain timezone. You can see 
 ![Image 4](/docs_imagem/tagoio/1587130683446-m1M.png)
 
 To learn more about the [Clock Gauge](/docs/tagoio/widgets/gaude-and-meters/index.md).
-
 
 ## VU Meter
 

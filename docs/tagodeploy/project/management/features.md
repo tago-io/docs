@@ -1,6 +1,7 @@
 ---
 title: "Features"
 description: "Enable, disable, and scale native TagoIO features; understand obligatory and optional feature sets."
+keywords: [tagodeploy, iot, features, microservices, configuration]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/features/editing-features
 ---

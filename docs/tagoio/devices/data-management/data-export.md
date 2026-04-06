@@ -2,6 +2,7 @@
 title: "Data Export"
 description: "This article explains the available options for exporting device data in TagoIO, and provides step-by-step instructions for exporting data from a device page, including available export options and important quota considerations."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, data export, CSV, data output]
 ---
 
 At TagoIO, you can export device data in several ways: directly from the Admin

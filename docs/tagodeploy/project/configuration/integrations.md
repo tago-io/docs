@@ -1,6 +1,7 @@
 ---
 title: "Integrations"
 description: "Configure and understand project integrations with third-party services."
+keywords: [tagodeploy, iot, integrations, email, sms]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/configuration/integrations
 ---

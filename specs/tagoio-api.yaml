@@ -37,7 +37,7 @@ info:
     - **Europe West 1:**  
         Use this endpoint when your application is based in Western Europe.  
         **URL:** `https://api.eu-w1.tago.io/`
-    
+
     - **Tago Deploy:**  
       You should use your own API URL that is available in your Domains section of the TagoDeploy.
   version: 1.0.0
@@ -94,13 +94,13 @@ components:
         time:
           type: string
           description: ISO 8601 string or Unix timestamp
-          example: '2023-12-01T12:34:56.000Z'
+          example: "2023-12-01T12:34:56.000Z"
         group:
           type: string
           description: Unique grouping ID for your data. Widgets often group by this.
         unit:
           type: string
-          example: '%'
+          example: "%"
           description: Provide a unit of measurement to the data. Most widgets will display the unit.
         metadata:
           type: object
@@ -115,20 +115,40 @@ components:
         Accepts a single item or an array of items when sent as application/json.
         For text/plain content, use the [Payload Parser](/docs/tagoio/devices/payload-parser/) to normalize the data into TagoIO JSON format.
       oneOf:
-        - $ref: '#/components/schemas/DeviceDataItem'
-        - $ref: '#/components/schemas/DeviceDataArray'
+        - $ref: "#/components/schemas/DeviceDataItem"
+        - $ref: "#/components/schemas/DeviceDataArray"
     DeviceDataArray:
       type: array
       items:
-        $ref: '#/components/schemas/DeviceDataItem'
+        $ref: "#/components/schemas/DeviceDataItem"
       description: Accepts a single item or an array of items.
+    NetworkDeviceData:
+      type: object
+      required: [variable]
+      properties:
+        variable:
+          type: string
+          example: payload
+        value:
+          type: string
+          description: Hexadecimal string payload
+          example: "41BC7E1F2A"
+        metadata:
+          type: object
+          properties:
+            serial:
+              type: string
+              description: Device serial number
+              example: "SN123456789"
+          additionalProperties: false
+      description: Network device data format with payload and serial metadata.
   requestBodies:
     DeviceDataBody:
       required: true
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/DeviceData'
+            $ref: "#/components/schemas/DeviceData"
           examples:
             Send data (object):
               value:
@@ -203,7 +223,7 @@ components:
         type: string
         items:
           type: string
-        example: '12'
+        example: "12"
     DeleteFilterIds:
       name: ids
       in: query
@@ -212,7 +232,7 @@ components:
         type: string
         items:
           type: string
-        example: '6144a25e280ad80019688e689'
+        example: "6144a25e280ad80019688e689"
     DeleteFilterGroups:
       name: groups
       in: query
@@ -223,11 +243,20 @@ components:
         type: string
         items:
           type: string
-        example: '16731887966346'
+        example: "16731887966346"
+    authorization_token:
+      name: authorization_token
+      in: query
+      required: true
+      description: |
+        Authorization_Token
+      schema:
+        type: string
+        example: "at72fb69a8dc714059b6cebee41693eb0"
 
 servers:
-  - url: 'https://api.us-e1.tago.io'
-  - url: 'https://api.eu-w1.tago.io'
+  - url: "https://api.us-e1.tago.io"
+  - url: "https://api.eu-w1.tago.io"
 
 security:
   - ProfileToken: []
@@ -329,7 +358,7 @@ paths:
       security:
         - Device-Token: []
       responses:
-        '200':
+        "200":
           description: >-
             Get information about current device successfuly
           content:
@@ -348,13 +377,13 @@ paths:
                         example: 62333bd36977fc001a2990c8
                       created_at:
                         type: string
-                        example: '2022-06-02T18:09:07.135Z'
+                        example: "2022-06-02T18:09:07.135Z"
                       id:
                         type: string
                         example: 6298fcc3e0b6840012b6abfa
                       last_input:
                         type: string
-                        example: '2022-06-02T19:40:54.517Z'
+                        example: "2022-06-02T19:40:54.517Z"
                       name:
                         type: string
                         example: TagoIO Device
@@ -377,7 +406,7 @@ paths:
                         example: mutable
                       updated_at:
                         type: string
-                        example: '2022-06-10T20:22:59.405Z'
+                        example: "2022-06-10T20:22:59.405Z"
                       visible:
                         type: boolean
                         example: true
@@ -435,27 +464,27 @@ paths:
           in: query
           schema:
             type: string
-            example: '25'
+            example: "25"
           description: Filter data by value.
         - name: groups
           in: query
           schema:
             type: string
-            example: '0923092039'
+            example: "0923092039"
           description: Filter by group identifier.
         - name: start_date
           in: query
           schema:
             type: string
             format: date-time
-            example: '2022-09-09T10:28:44Z'
+            example: "2022-09-09T10:28:44Z"
           description: Start timestamp or relative date.
         - name: end_date
           in: query
           schema:
             type: string
             format: date-time
-            example: '2022-09-10T10:28:44Z'
+            example: "2022-09-10T10:28:44Z"
           description: End timestamp or relative date.
         - name: function
           in: query
@@ -468,7 +497,7 @@ paths:
       security:
         - Device-Token: []
       responses:
-        '200':
+        "200":
           description: >-
             Success Response
           content:
@@ -483,13 +512,13 @@ paths:
                       properties:
                         created_at:
                           type: string
-                          example: '2021-09-16T17:51:43.672Z'
+                          example: "2021-09-16T17:51:43.672Z"
                         device:
                           type: string
                           example: 612ea1694035dd0012f6d238
                         group:
                           type: string
-                          example: '1631814703672'
+                          example: "1631814703672"
                         id:
                           type: string
                           example: 6143842f561c4e00199f517b
@@ -509,7 +538,7 @@ paths:
                               example: point
                         time:
                           type: string
-                          example: '2021-09-16T17:51:43.672Z'
+                          example: "2021-09-16T17:51:43.672Z"
                         unit:
                           type: string
                           example: °C
@@ -520,23 +549,23 @@ paths:
                           type: string
                           example: temperature
                     example:
-                      - created_at: '2021-09-16T17:51:43.672Z'
+                      - created_at: "2021-09-16T17:51:43.672Z"
                         device: 612ea1694035dd0012f6d238
-                        group: '1631814703672'
+                        group: "1631814703672"
                         id: 6143842f561c4e00199f517b
                         location:
                           coordinates:
                             - -78.677328
                             - 35.770723
                           type: point
-                        time: '2021-09-16T17:51:43.672Z'
+                        time: "2021-09-16T17:51:43.672Z"
                         unit: °C
                         value: -12.67
                         variable: temperature
                   status:
                     type: boolean
                     example: true
-              
+
     put:
       tags:
         - Device Data
@@ -545,10 +574,10 @@ paths:
         Edit specific data stored in the device. Same properties as the Create Data is accepted, edit requires the ID field of the data to be edited.
 
         :::info  
-        
+
         This request is only available when using Mutable Storage on Devices  
-        
-        :::  
+
+        :::
       operationId: editData
       security:
         - Device-Token: []
@@ -573,12 +602,12 @@ paths:
                         example: blue
                   value:
                     type: string
-                    example: '27'
+                    example: "27"
               example:
                 - id: 6298fcc3e0b6840012bb6abfa
                   metadata:
                     color: blue
-                  value: '27'
+                  value: "27"
           text/plain:
             examples:
               Edit data:
@@ -593,7 +622,7 @@ paths:
                       }
                   ]
       responses:
-        '200':
+        "200":
           description: Editing data register by ID
           content:
             application/json:
@@ -616,9 +645,9 @@ paths:
       security:
         - Device-Token: []
       requestBody:
-        $ref: '#/components/requestBodies/DeviceDataBody'
+        $ref: "#/components/requestBodies/DeviceDataBody"
       responses:
-        '200':
+        "200":
           description: Sending data
           content:
             application/json:
@@ -639,24 +668,24 @@ paths:
         Delete data from the device.
 
         :::info  
-        
+
         This request is only available when using Mutable Storage on Devices.  
-        
+
         :::
-        
+
       operationId: deleteData
       parameters:
-        - $ref: '#/components/parameters/DeleteFilterQty'
-        - $ref: '#/components/parameters/DeleteFilterOrdination'
-        - $ref: '#/components/parameters/DeleteFilterSkip'
-        - $ref: '#/components/parameters/DeleteFilterVariables'
-        - $ref: '#/components/parameters/DeleteFilterValues'
-        - $ref: '#/components/parameters/DeleteFilterIds'
-        - $ref: '#/components/parameters/DeleteFilterGroups'
+        - $ref: "#/components/parameters/DeleteFilterQty"
+        - $ref: "#/components/parameters/DeleteFilterOrdination"
+        - $ref: "#/components/parameters/DeleteFilterSkip"
+        - $ref: "#/components/parameters/DeleteFilterVariables"
+        - $ref: "#/components/parameters/DeleteFilterValues"
+        - $ref: "#/components/parameters/DeleteFilterIds"
+        - $ref: "#/components/parameters/DeleteFilterGroups"
       security:
         - Device-Token: []
       responses:
-        '200':
+        "200":
           description: Deleting data using params
           content:
             application/json:
@@ -684,12 +713,12 @@ paths:
           in: query
           schema:
             type: string
-            example: 'true'
+            example: "true"
           description: Filter by `sent` status.
       security:
         - Device-Token: []
       responses:
-        '200':
+        "200":
           description: List of configuration parameters returned
           content:
             application/json:
@@ -723,13 +752,13 @@ paths:
       summary: Mark Config. Parameter as Read
       description: |
         Marks a configuration parameter as read on the current device.  
-        
+
         This is useful when collecting settings from Configuration Parameters and you need to track whether you have already processed the current value. Use this endpoint to set the `sent` field to `true`.
       operationId: markAConfigurationParameterAsRead
       security:
         - Device-Token: []
       responses:
-        '200':
+        "200":
           description: Success Response
           content:
             application/json:
@@ -758,8 +787,8 @@ paths:
         Retrieves list of all tokens from device
       operationId: listOfTokens
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
     parameters:
       - name: deviceID
         in: path
@@ -804,7 +833,7 @@ paths:
               Create token:
                 value: "{\r\n    \"expire_time\": \"never\", // ISO-8601 or relative date, e.g 1 day\r\n    \"name\": \"Token #2\",\r\n    \"permission\": \"full\", // full, read or write\r\n    \"serie_number\": \"\", //Optional\r\n    \"device\": \"6298fcc3e0b6840012b6abfa\"\r\n}"
       responses:
-        '201':
+        "201":
           description: Token created
           content:
             application/json:
@@ -816,7 +845,7 @@ paths:
                     properties:
                       expire_time:
                         type: string
-                        example: '2022-03-30T01:15:14.914Z'
+                        example: "2022-03-30T01:15:14.914Z"
                       permission:
                         type: string
                         example: full
@@ -835,7 +864,7 @@ paths:
         Delete a token
       operationId: deleteToken
       responses:
-        '200':
+        "200":
           description: Delete Token
           content:
             application/json:
@@ -868,10 +897,10 @@ paths:
           in: query
           schema:
             type: string
-            example: 'false'
-          description: 'Filter by Boolean.'
+            example: "false"
+          description: "Filter by Boolean."
       responses:
-        '200':
+        "200":
           description: List Device Params
           content:
             application/json:
@@ -940,7 +969,7 @@ paths:
                   sent: false
                   value: updatedValue
       responses:
-        '201':
+        "201":
           description: Creating or editing device parameters
           content:
             application/json:
@@ -969,7 +998,7 @@ paths:
         Delete param from the device
       operationId: deleteDeviceParam
       responses:
-        '200':
+        "200":
           description: Deleting a Device Param by ID
           content:
             application/json:
@@ -1008,56 +1037,56 @@ paths:
           in: query
           schema:
             type: string
-            example: '1'
-          description: Page number. 
+            example: "1"
+          description: Page number.
         - name: amount
           in: query
           schema:
             type: string
-            example: '10'
-          description: Amount of devices by page. 
+            example: "10"
+          description: Amount of devices by page.
         - name: filter[id]
           in: query
           schema:
             type: string
-            example: ''
-          description: Filter the device by ID.  
+            example: ""
+          description: Filter the device by ID.
         - name: filter[name]
           in: query
           schema:
             type: string
-            example: ''
-          description: Filter the device name.  
+            example: ""
+          description: Filter the device name.
         - name: filter[visible]
           in: query
           schema:
             type: string
             example: true / false
-          description: Filter the device visible status.  
+          description: Filter the device visible status.
         - name: filter[active]
           in: query
           schema:
             type: string
             example: true / false
-          description: Filter the device active status.  
+          description: Filter the device active status.
         - name: filter[connector]
           in: query
           schema:
             type: string
-            example: ''
-          description: Filter the devices by the Connector ID.  
+            example: ""
+          description: Filter the devices by the Connector ID.
         - name: filter[network]
           in: query
           schema:
             type: string
-            example: ''
-          description: Filter the devices by the Network ID.  
+            example: ""
+          description: Filter the devices by the Network ID.
         - name: filter[tags]
           in: query
           schema:
             type: string
-            example: ''
-          description: Filter device by it's tag. Check the example. 
+            example: ""
+          description: Filter device by it's tag. Check the example.
         - name: filter[updated_at]
           in: query
           schema:
@@ -1065,7 +1094,7 @@ paths:
             example: 1 day
           description: >-
             Filter by time the device was received data. Can be an ISO-8601 or a
-            relative date 
+            relative date
         - name: filter[created_at]
           in: query
           schema:
@@ -1073,14 +1102,14 @@ paths:
             example: 1 day
           description: >-
             Filter by time the device was created. Can be an ISO-8601 or a
-            relative date 
+            relative date
         - name: orderBy
           in: query
           schema:
             type: string
             example: created_at
       responses:
-        '200':
+        "200":
           description: List of devices retrieved using query params
           content:
             application/json:
@@ -1100,7 +1129,7 @@ paths:
                           example: 5dcad1c216174c001ca23ab9
                         name:
                           type: string
-                          example: 'Device #1'
+                          example: "Device #1"
                         network:
                           type: string
                           example: 5bbd120d4051a50034cd1a05
@@ -1121,14 +1150,14 @@ paths:
                     example:
                       - connector: 5f5a8f3351d4db99c40ded2d
                         id: 5dcad1c216174c001ca23ab9
-                        name: 'Device #1'
+                        name: "Device #1"
                         network: 5bbd120d4051a50034cd1a05
                         tags:
                           - key: type
                             value: Smoke Detector
                       - connector: 5f5a8f3351d4db99c40ded2d
                         id: 5dcad25016174c001ca24a09
-                        name: 'Device #2'
+                        name: "Device #2"
                         network: 5bbd120d4051a50034cd1a05
                         tags:
                           - key: type
@@ -1142,14 +1171,14 @@ paths:
                     result:
                       - connector: 5f5a8f3351d4db99c40ded2d
                         id: 5dcad1c216174c001ca23ab9
-                        name: 'Device #1'
+                        name: "Device #1"
                         network: 5bbd120d4051a50034cd1a05
                         tags:
                           - key: type
                             value: Smoke Detector
                       - connector: 5f5a8f3351d4db99c40ded2d
                         id: 5dcad25016174c001ca24a09
-                        name: 'Device #2'
+                        name: "Device #2"
                         network: 5bbd120d4051a50034cd1a05
                         tags:
                           - key: type
@@ -1274,7 +1303,7 @@ paths:
                       type: boolean
                       description: "Device visibility status"
                       example: true
-                      
+
             examples:
               Create Immutable Device:
                 value:
@@ -1313,7 +1342,7 @@ paths:
               Create Mutable Device:
                 value: "{\r\n  \"name\": \"My first device\",\r\n  \"type\": \"mutable\",\r\n  \"network\": \"5bbd0d144051a50034cd19fb\",\r\n  \"connector\": \"5f5a8f3351d4db99c40dece5\",\r\n  \"serie_number\": \"AB87392C12CA\" //only if required by network (optional)\r\n }"
       responses:
-        '201':
+        "201":
           description: >-
             Mutable device created / Mutable device created with parse function
             / Immutable device created
@@ -1359,7 +1388,7 @@ paths:
                   file_address: /device/$DEVICE$/$TIMESTAMP$
                   headers: true
       responses:
-        '200':
+        "200":
           description: Exporting data to Files
           content:
             application/json:
@@ -1381,7 +1410,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
         description: Device ID
   /device/{deviceID}/chunk:
     get:
@@ -1391,7 +1420,7 @@ paths:
       description: List of chunks
       operationId: listOfChunks
       responses:
-        '200':
+        "200":
           description: Getting a list of chunks by device
           content:
             application/json:
@@ -1408,34 +1437,34 @@ paths:
                           example: 1584
                         from:
                           type: string
-                          example: '2022-07-18T00:00:00.000+00:00'
+                          example: "2022-07-18T00:00:00.000+00:00"
                         id:
                           type: string
-                          example: '1658102400_1658707199'
+                          example: "1658102400_1658707199"
                         to:
                           type: string
-                          example: '2022-07-24T23:59:59.999+00:00'
+                          example: "2022-07-24T23:59:59.999+00:00"
                     example:
                       - amount: 1584
-                        from: '2022-07-18T00:00:00.000+00:00'
-                        id: '1658102400_1658707199'
-                        to: '2022-07-24T23:59:59.999+00:00'
+                        from: "2022-07-18T00:00:00.000+00:00"
+                        id: "1658102400_1658707199"
+                        to: "2022-07-24T23:59:59.999+00:00"
                       - amount: 13383
-                        from: '2022-07-11T00:00:00.000+00:00'
-                        id: '1657497600_1658102399'
-                        to: '2022-07-17T23:59:59.999+00:00'
+                        from: "2022-07-11T00:00:00.000+00:00"
+                        id: "1657497600_1658102399"
+                        to: "2022-07-17T23:59:59.999+00:00"
                       - amount: 12788
-                        from: '2022-07-04T00:00:00.000+00:00'
-                        id: '1656892800_1657497599'
-                        to: '2022-07-10T23:59:59.999+00:00'
+                        from: "2022-07-04T00:00:00.000+00:00"
+                        id: "1656892800_1657497599"
+                        to: "2022-07-10T23:59:59.999+00:00"
                       - amount: 12784
-                        from: '2022-06-27T00:00:00.000+00:00'
-                        id: '1656288000_1656892799'
-                        to: '2022-07-03T23:59:59.999+00:00'
+                        from: "2022-06-27T00:00:00.000+00:00"
+                        id: "1656288000_1656892799"
+                        to: "2022-07-03T23:59:59.999+00:00"
                       - amount: 4179
-                        from: '2022-03-07T00:00:00.000+00:00'
-                        id: '1646611200_1647215999'
-                        to: '2022-03-13T23:59:59.999+00:00'
+                        from: "2022-03-07T00:00:00.000+00:00"
+                        id: "1646611200_1647215999"
+                        to: "2022-03-13T23:59:59.999+00:00"
                   status:
                     type: boolean
                     example: true
@@ -1445,7 +1474,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
   /device/{deviceID}:
     get:
       tags:
@@ -1454,7 +1483,7 @@ paths:
       description: Device information
       operationId: deviceInformation
       responses:
-        '200':
+        "200":
           description: Getting a device information
           content:
             application/json:
@@ -1472,7 +1501,7 @@ paths:
                         example: 60f19bda2889a60012d34167
                       created_at:
                         type: string
-                        example: '2022-06-09T21:21:51.877Z'
+                        example: "2022-06-09T21:21:51.877Z"
                       data_retention:
                         type: string
                         example: forever
@@ -1486,7 +1515,7 @@ paths:
                         example: 62a2646ffdea2f0013b1bfe7
                       last_input:
                         type: string
-                        example: '2022-06-23T11:19:54.369Z'
+                        example: "2022-06-23T11:19:54.369Z"
                       name:
                         type: string
                         example: Test Chunk Monthly
@@ -1508,18 +1537,18 @@ paths:
                               example: maxTemp
                             value:
                               type: string
-                              example: '20'
+                              example: "20"
                         example:
                           - key: maxTemp
-                            value: '20'
+                            value: "20"
                           - key: minTemp
-                            value: '0'
+                            value: "0"
                       type:
                         type: string
                         example: mutable
                       updated_at:
                         type: string
-                        example: '2022-06-09T21:53:22.752Z'
+                        example: "2022-06-09T21:53:22.752Z"
                       visible:
                         type: boolean
                         example: true
@@ -1551,7 +1580,7 @@ paths:
                   example: 6148de43683cae0018940d0c
                 name:
                   type: string
-                  example: 'Device #2'
+                  example: "Device #2"
                 network:
                   type: string
                   example: 5bbd120d4051a50034cd1a05
@@ -1580,7 +1609,7 @@ paths:
                 value:
                   active: false
                   connector: 6148de43683cae0018940d0c
-                  name: 'Device #2'
+                  name: "Device #2"
                   network: 5bbd120d4051a50034cd1a05
                   payload_decoder: >-
                     LyogVGhpcyBpcyBhIGRlZmF1bHQgZXhhbXBsZSBmb3IgcGF5bG9hZCBwYXJzZXIuCioqIFRoZSBpZ25vcmVfdmFycyB2YXJpYWJsZSBpbiB0aGlzIGNvZGUgc2hvdWxkIGJlIHVzZWQgdG8gaWdub3JlIHZhcmlhYmxlcwoqKiBmcm9tIHRoZSBkZXZpY2UgdGhhdCB5b3UgZG9uJ3Qgd2FudC4KKioKKiogVGVzdGluZzoKKiogWW91IGNhbiBkbyBtYW51YWwgdGVzdHMgdG8gdGhpcyBwYXJzZSBieSB1c2luZyB0aGUgRGV2aWNlIEVtdWxhdG9yLiBDb3B5IGFuZCBQYXN0ZSB0aGUgZm9sbG93aW5nIGNvZGU6CioqIFt7ICJ2YXJpYWJsZSI6ICJwYXlsb2FkIiwgInZhbHVlIjogIjAxMDk2MTEzOTUiIH1dCioqCiovCi8vIEFkZCBpZ25vcmFibGUgdmFyaWFibGVzIGluIHRoaXMgYXJyYXkuCmNvbnN0IGlnbm9yZV92YXJzID0gWydyZl9jaGFpbicsICdjaGFubmVsJywgJ21vZHVsYXRpb24nLCAnYXBwX2lkJywgJ2Rldl9pZCcsICd0aW1lJywgJ2d0d190cnVzdGVkJywgJ3BvcnQnXTsKCi8vIFJlbW92ZSB1bndhbnRlZCB2YXJpYWJsZXMuCnBheWxvYWQgPSBwYXlsb2FkLmZpbHRlcih4ID0+ICFpZ25vcmVfdmFycy5pbmNsdWRlcyh4LnZhcmlhYmxlKSk7CgovLyBZb3UgY2FuIGVkaXQgYW55IHZhcmlhYmxlIHRoYXQncyBiZWluZyBhZGRlZCB0byB5b3VyIGRldmljZS4KLy8gRm9yIGV4YW1wbGUsIGlmIHlvdSBuZWVkIHRvIGNvbnZlcnQgYSB2YXJpYWJsZSBmcm9tIEZhaHJlaW50aCB0byBDZWxzaXVzLCB1bmNvbW1lbnQgdGhlIGZvbGxvd2luZyBjb2RlOgovLyBjb25zdCB0ZW1wZXJhdHVyZSA9IHBheWxvYWQuZmluZCh4ID0+IHgudmFyaWFibGUgPT09ICJ0ZW1wZXJhdHVyZSIpOwovLyBpZiAodGVtcGVyYXR1cmUpIHsKLy8gICB0ZW1wZXJhdHVyZS52YWx1ZSA9ICg1IC8gOSkgKiAodGVtcGVyYXR1cmUudmFsdWUgLSAzMik7Ci8vICAgdGVtcGVyYXR1cmUudW5pdCA9ICJDIjsKLy8gfQ==
@@ -1592,7 +1621,7 @@ paths:
               Immutable Chunk retention:
                 value: "{\r\n    \"chunk_retention\": 20 // acceptable range by period: day(0-31), week(0-26), month(0-36), quarter(0-36)\r\n}"
       responses:
-        '200':
+        "200":
           description: Updating device settings
           content:
             application/json:
@@ -1613,7 +1642,7 @@ paths:
         Deletes a device from the profile
       operationId: deleteDevice
       responses:
-        '200':
+        "200":
           description: Deleting a device by ID
           content:
             application/json:
@@ -1632,7 +1661,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
   /device/{deviceID}/chunk/backup:
     post:
       tags:
@@ -1648,7 +1677,7 @@ paths:
               properties:
                 chunk_id:
                   type: string
-                  example: '1657497600_1658102399'
+                  example: "1657497600_1658102399"
                 file_address:
                   type: string
                   example: /device/$DEVICE$/$FROM$_$TO$
@@ -1658,11 +1687,11 @@ paths:
             examples:
               Export a chunk as CSV to Files:
                 value:
-                  chunk_id: '1657497600_1658102399'
+                  chunk_id: "1657497600_1658102399"
                   file_address: /device/$DEVICE$/$FROM$_$TO$
                   headers: true
       responses:
-        '200':
+        "200":
           description: Chunk exported to Files
           content:
             application/json:
@@ -1674,7 +1703,7 @@ paths:
                     properties:
                       chunk_id:
                         type: string
-                        example: '1657497600_1658102399'
+                        example: "1657497600_1658102399"
                       file_address:
                         type: string
                         example: >-
@@ -1688,7 +1717,7 @@ paths:
         required: false
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
     description: Device ID
   /device/{deviceID}/chunk/{chunkID}:
     delete:
@@ -1698,7 +1727,7 @@ paths:
       description: Delete chunk
       operationId: deleteChunk
       responses:
-        '200':
+        "200":
           description: Chunk deleted from device
           content:
             application/json:
@@ -1717,7 +1746,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
         description: Device ID
       - name: chunkID
         in: path
@@ -1770,7 +1799,7 @@ paths:
                 value:
                   type: mutable
       responses:
-        '200':
+        "200":
           description: >-
             Converting a device type
           content:
@@ -1790,7 +1819,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
   /device/{deviceID}/data_amount:
     get:
       tags:
@@ -1799,7 +1828,7 @@ paths:
       description: Get the total number of data items stored within the device.
       operationId: deviceDataAmount
       responses:
-        '200':
+        "200":
           description: Getting a device data amount
           content:
             application/json:
@@ -1818,7 +1847,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
   /device/{deviceID}/data/restore:
     post:
       tags:
@@ -1840,7 +1869,7 @@ paths:
                 value:
                   file_address: /July_data/31072024_data.csv
       responses:
-        '200':
+        "200":
           description: Importing data from Files
           content:
             application/json:
@@ -1859,7 +1888,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
     description: Device ID
   /device/{deviceID}/empty:
     post:
@@ -1869,7 +1898,7 @@ paths:
       description: Empty a Device's Data
       operationId: emptyADeviceSData
       responses:
-        '200':
+        "200":
           description: Device's Data empty
           content:
             application/json:
@@ -1888,8 +1917,8 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
-          
+          example: "67aa1f9135b1a7000a9db33c"
+
   /device/{deviceID}/data:
     get:
       tags:
@@ -1902,18 +1931,18 @@ paths:
           in: query
           schema:
             type: string
-            example: '10'
+            example: "10"
           description: Numeric quantity of data to be returned
         - name: end_date
           in: query
           schema:
             type: string
-            example: '2023-10-10T13:17:16.290Z'
+            example: "2023-10-10T13:17:16.290Z"
           description: >-
             Final date to get the data returned in ISO timestamp format (Not
             Required)
       responses:
-        '200':
+        "200":
           description: Get Device Data
           content:
             application/json:
@@ -1927,7 +1956,7 @@ paths:
                       properties:
                         created_at:
                           type: string
-                          example: '2023-09-20T14:26:44.918Z'
+                          example: "2023-09-20T14:26:44.918Z"
                         device:
                           type: string
                           example: 6307b0b1b41f1b001a45c7e3
@@ -1953,18 +1982,18 @@ paths:
                               example: Point
                         time:
                           type: string
-                          example: '2023-09-20T14:26:44.918Z'
+                          example: "2023-09-20T14:26:44.918Z"
                         unit:
                           type: string
                           example: C
                         value:
                           type: string
-                          example: '16'
+                          example: "16"
                         variable:
                           type: string
                           example: temperature
                     example:
-                      - created_at: '2023-09-20T14:26:44.918Z'
+                      - created_at: "2023-09-20T14:26:44.918Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 63956cf0000a19e44210b056
                         id: 650b01244e91a0000fc65937
@@ -1973,11 +2002,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:44.918Z'
+                        time: "2023-09-20T14:26:44.918Z"
                         unit: C
-                        value: '16'
+                        value: "16"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:38.015Z'
+                      - created_at: "2023-09-20T14:26:38.015Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: f863379000439d95e110b056
                         id: 650b011e59d9340009733690
@@ -1986,11 +2015,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:38.015Z'
+                        time: "2023-09-20T14:26:38.015Z"
                         unit: C
-                        value: '86'
+                        value: "86"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:25.477Z'
+                      - created_at: "2023-09-20T14:26:25.477Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: aa756cf0000a19e41110b056
                         id: 650b01114e91a0000fc657ab
@@ -1999,11 +2028,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:25.477Z'
+                        time: "2023-09-20T14:26:25.477Z"
                         unit: C
-                        value: '16'
+                        value: "16"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:14.180Z'
+                      - created_at: "2023-09-20T14:26:14.180Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b0ee2101006e7e786010b056
                         id: 650b010687e7e6001012ee0c
@@ -2012,11 +2041,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:14.180Z'
+                        time: "2023-09-20T14:26:14.180Z"
                         unit: C
-                        value: '58'
+                        value: "58"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:03.199Z'
+                      - created_at: "2023-09-20T14:26:03.199Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 5b33379000439d95bf00b056
                         id: 650b00fb59d93400097333b6
@@ -2025,11 +2054,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:03.199Z'
+                        time: "2023-09-20T14:26:03.199Z"
                         unit: C
-                        value: '11'
+                        value: "11"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:53.034Z'
+                      - created_at: "2023-09-20T14:25:53.034Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: e2456cf0000a19e41f00b056
                         id: 650b00f14e91a0000fc6542f
@@ -2038,11 +2067,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:53.034Z'
+                        time: "2023-09-20T14:25:53.034Z"
                         unit: C
-                        value: '3'
+                        value: "3"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:43.099Z'
+                      - created_at: "2023-09-20T14:25:43.099Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 6f40e7f0001ad1107e00b056
                         id: 650b00e7011da1000f7e04f7
@@ -2051,11 +2080,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:43.099Z'
+                        time: "2023-09-20T14:25:43.099Z"
                         unit: C
-                        value: '10'
+                        value: "10"
                         variable: test
-                      - created_at: '2023-09-20T14:25:33.027Z'
+                      - created_at: "2023-09-20T14:25:33.027Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b77fbff000c901bddd00b056
                         id: 650b00dddb109c000ffbf77c
@@ -2064,11 +2093,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:33.027Z'
+                        time: "2023-09-20T14:25:33.027Z"
                         unit: C
-                        value: '7'
+                        value: "7"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:23.020Z'
+                      - created_at: "2023-09-20T14:25:23.020Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b7e298900029919a3d00b056
                         id: 650b00d3a919920009892e7c
@@ -2077,11 +2106,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:23.020Z'
+                        time: "2023-09-20T14:25:23.020Z"
                         unit: C
-                        value: '1'
+                        value: "1"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:13.079Z'
+                      - created_at: "2023-09-20T14:25:13.079Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 7320e7f0001ad1109c00b056
                         id: 650b00c9011da1000f7e0238
@@ -2090,11 +2119,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:13.079Z'
+                        time: "2023-09-20T14:25:13.079Z"
                         unit: C
-                        value: '12'
+                        value: "12"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:03.133Z'
+                      - created_at: "2023-09-20T14:25:03.133Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: c14fbff000c901bdfb00b056
                         id: 650b00bfdb109c000ffbf41d
@@ -2103,11 +2132,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:03.133Z'
+                        time: "2023-09-20T14:25:03.133Z"
                         unit: C
-                        value: '66'
+                        value: "66"
                         variable: temperature
-                      - created_at: '2023-09-20T14:24:53.135Z'
+                      - created_at: "2023-09-20T14:24:53.135Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 64a2379000439d955b00b056
                         id: 650b00b559d9340009732a47
@@ -2116,9 +2145,9 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:24:53.134Z'
+                        time: "2023-09-20T14:24:53.134Z"
                         unit: C
-                        value: '19'
+                        value: "19"
                         variable: temperature
                   status:
                     type: boolean
@@ -2127,7 +2156,7 @@ paths:
                 Get Device Data:
                   value:
                     result:
-                      - created_at: '2023-09-20T14:26:44.918Z'
+                      - created_at: "2023-09-20T14:26:44.918Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 63956cf0000a19e44210b056
                         id: 650b01244e91a0000fc65937
@@ -2136,11 +2165,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:44.918Z'
+                        time: "2023-09-20T14:26:44.918Z"
                         unit: C
-                        value: '16'
+                        value: "16"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:38.015Z'
+                      - created_at: "2023-09-20T14:26:38.015Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: f863379000439d95e110b056
                         id: 650b011e59d9340009733690
@@ -2149,11 +2178,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:38.015Z'
+                        time: "2023-09-20T14:26:38.015Z"
                         unit: C
-                        value: '86'
+                        value: "86"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:25.477Z'
+                      - created_at: "2023-09-20T14:26:25.477Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: aa756cf0000a19e41110b056
                         id: 650b01114e91a0000fc657ab
@@ -2162,11 +2191,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:25.477Z'
+                        time: "2023-09-20T14:26:25.477Z"
                         unit: C
-                        value: '16'
+                        value: "16"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:14.180Z'
+                      - created_at: "2023-09-20T14:26:14.180Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b0ee2101006e7e786010b056
                         id: 650b010687e7e6001012ee0c
@@ -2175,11 +2204,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:14.180Z'
+                        time: "2023-09-20T14:26:14.180Z"
                         unit: C
-                        value: '58'
+                        value: "58"
                         variable: temperature
-                      - created_at: '2023-09-20T14:26:03.199Z'
+                      - created_at: "2023-09-20T14:26:03.199Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 5b33379000439d95bf00b056
                         id: 650b00fb59d93400097333b6
@@ -2188,11 +2217,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:26:03.199Z'
+                        time: "2023-09-20T14:26:03.199Z"
                         unit: C
-                        value: '11'
+                        value: "11"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:53.034Z'
+                      - created_at: "2023-09-20T14:25:53.034Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: e2456cf0000a19e41f00b056
                         id: 650b00f14e91a0000fc6542f
@@ -2201,11 +2230,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:53.034Z'
+                        time: "2023-09-20T14:25:53.034Z"
                         unit: C
-                        value: '3'
+                        value: "3"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:43.099Z'
+                      - created_at: "2023-09-20T14:25:43.099Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 6f40e7f0001ad1107e00b056
                         id: 650b00e7011da1000f7e04f7
@@ -2214,11 +2243,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:43.099Z'
+                        time: "2023-09-20T14:25:43.099Z"
                         unit: C
-                        value: '10'
+                        value: "10"
                         variable: test
-                      - created_at: '2023-09-20T14:25:33.027Z'
+                      - created_at: "2023-09-20T14:25:33.027Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b77fbff000c901bddd00b056
                         id: 650b00dddb109c000ffbf77c
@@ -2227,11 +2256,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:33.027Z'
+                        time: "2023-09-20T14:25:33.027Z"
                         unit: C
-                        value: '7'
+                        value: "7"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:23.020Z'
+                      - created_at: "2023-09-20T14:25:23.020Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: b7e298900029919a3d00b056
                         id: 650b00d3a919920009892e7c
@@ -2240,11 +2269,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:23.020Z'
+                        time: "2023-09-20T14:25:23.020Z"
                         unit: C
-                        value: '1'
+                        value: "1"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:13.079Z'
+                      - created_at: "2023-09-20T14:25:13.079Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 7320e7f0001ad1109c00b056
                         id: 650b00c9011da1000f7e0238
@@ -2253,11 +2282,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:13.079Z'
+                        time: "2023-09-20T14:25:13.079Z"
                         unit: C
-                        value: '12'
+                        value: "12"
                         variable: temperature
-                      - created_at: '2023-09-20T14:25:03.133Z'
+                      - created_at: "2023-09-20T14:25:03.133Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: c14fbff000c901bdfb00b056
                         id: 650b00bfdb109c000ffbf41d
@@ -2266,11 +2295,11 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:25:03.133Z'
+                        time: "2023-09-20T14:25:03.133Z"
                         unit: C
-                        value: '66'
+                        value: "66"
                         variable: temperature
-                      - created_at: '2023-09-20T14:24:53.135Z'
+                      - created_at: "2023-09-20T14:24:53.135Z"
                         device: 6307b0b1b41f1b001a45c7e3
                         group: 64a2379000439d955b00b056
                         id: 650b00b559d9340009732a47
@@ -2279,9 +2308,9 @@ paths:
                             - -77.757328
                             - 36.68072299999999
                           type: Point
-                        time: '2023-09-20T14:24:53.134Z'
+                        time: "2023-09-20T14:24:53.134Z"
                         unit: C
-                        value: '19'
+                        value: "19"
                         variable: temperature
                     status: true
     post:
@@ -2294,9 +2323,9 @@ paths:
       security:
         - Device-Token: []
       requestBody:
-        $ref: '#/components/requestBodies/DeviceDataBody'
+        $ref: "#/components/requestBodies/DeviceDataBody"
       responses:
-        '200':
+        "200":
           description: Sending data
           content:
             application/json:
@@ -2317,9 +2346,9 @@ paths:
         Edit specific data stored in the device.
 
         :::info  
-        
+
         This request is only available when using Mutable Storage on Devices  
-        
+
         :::
       operationId: editDeviceData
       requestBody:
@@ -2340,7 +2369,7 @@ paths:
                   id: 653aa3ab617c10000990718f
                   value: 20
       responses:
-        '200':
+        "200":
           description: Editing a device data
           content:
             application/json:
@@ -2366,21 +2395,21 @@ paths:
         Delete specific data stored in the device.
 
         :::info  
-        
+
         This request is only available when using Mutable Storage on Devices  
-        
+
         :::
       operationId: deleteDeviceData
       parameters:
-        - $ref: '#/components/parameters/DeleteFilterQty'
-        - $ref: '#/components/parameters/DeleteFilterOrdination'
-        - $ref: '#/components/parameters/DeleteFilterSkip'
-        - $ref: '#/components/parameters/DeleteFilterVariables'
-        - $ref: '#/components/parameters/DeleteFilterValues'
-        - $ref: '#/components/parameters/DeleteFilterIds'
-        - $ref: '#/components/parameters/DeleteFilterGroups'
+        - $ref: "#/components/parameters/DeleteFilterQty"
+        - $ref: "#/components/parameters/DeleteFilterOrdination"
+        - $ref: "#/components/parameters/DeleteFilterSkip"
+        - $ref: "#/components/parameters/DeleteFilterVariables"
+        - $ref: "#/components/parameters/DeleteFilterValues"
+        - $ref: "#/components/parameters/DeleteFilterIds"
+        - $ref: "#/components/parameters/DeleteFilterGroups"
       responses:
-        '200':
+        "200":
           description: Delete Device Data
           content:
             application/json:
@@ -2399,7 +2428,7 @@ paths:
         required: true
         schema:
           type: string
-          example: '67aa1f9135b1a7000a9db33c'
+          example: "67aa1f9135b1a7000a9db33c"
         description: Device ID
 
   /run/notification:
@@ -2471,7 +2500,7 @@ paths:
               Create Notification:
                 value: "{\r\n    \"run_user\": \"<Run User ID>\",\r\n    \"title\": \"notification title\",\r\n    \"message\": \"message to be read\",\r\n    \"buttons\": [ // optional\r\n        {\r\n            \"label\": \"label of the button\",\r\n            \"id\": \"id_of_the_button\", // no space allowed\r\n            \"color\": \"color of the button\", //hexadecimal allowed\r\n            \"url\": \"url to redirect the user\", //optional\r\n            \"analysis\": \"analysis to run when clicked\" //optional\r\n        }\r\n    ],\r\n    \"buttons_enabled\": true, // optional\r\n    \"buttons_autodisable\": true // optional\r\n}"
       responses:
-        '200':
+        "200":
           description: Creating a RUN notification
           content:
             application/json:
@@ -2502,7 +2531,7 @@ paths:
         List of notifications for an user
       operationId: listOfNotifications
       responses:
-        '200':
+        "200":
           description: List of the Run user notifications
           content:
             application/json:
@@ -2526,7 +2555,7 @@ paths:
                           example: true
                         created_at:
                           type: string
-                          example: '2022-06-20T17:35:26.753Z'
+                          example: "2022-06-20T17:35:26.753Z"
                         id:
                           type: string
                           example: 62b0afde27ce4d0012c62256
@@ -2543,7 +2572,7 @@ paths:
                       - buttons: []
                         buttons_autodisable: true
                         buttons_enabled: true
-                        created_at: '2022-06-20T17:35:26.753Z'
+                        created_at: "2022-06-20T17:35:26.753Z"
                         id: 62b0afde27ce4d0012c62256
                         message: Your device has retuned to the regular temperature
                         read: false
@@ -2551,7 +2580,7 @@ paths:
                       - buttons: []
                         buttons_autodisable: true
                         buttons_enabled: true
-                        created_at: '2022-05-26T13:12:06.753Z'
+                        created_at: "2022-05-26T13:12:06.753Z"
                         id: 62b0afde27ce4d0012c62286
                         message: The temperature is lower than 18ºC.
                         read: true
@@ -2593,7 +2622,7 @@ paths:
                   type: string
                   example: new notification title
       responses:
-        '200':
+        "200":
           description: Editing a RUN user notification
           content:
             application/json:
@@ -2614,7 +2643,7 @@ paths:
         Delete notification on Run
       operationId: deleteNotification
       responses:
-        '200':
+        "200":
           description: Deleting a RUN user notification
           content:
             application/json:
@@ -2643,7 +2672,7 @@ paths:
         Get information about an user using userID
       operationId: userInformation
       responses:
-        '200':
+        "200":
           description: Getting RUN user information by ID
           content:
             application/json:
@@ -2663,7 +2692,7 @@ paths:
                           example: Companyname
                         created_at:
                           type: string
-                          example: '2022-01-21T21:29:08.957Z'
+                          example: "2022-01-21T21:29:08.957Z"
                         email:
                           type: string
                           example: runuser@email
@@ -2675,7 +2704,7 @@ paths:
                           example: en
                         last_login:
                           type: string
-                          example: '2022-06-10T17:59:26.879Z'
+                          example: "2022-06-10T17:59:26.879Z"
                         name:
                           type: string
                           example: runusername
@@ -2689,13 +2718,13 @@ paths:
                               example: MM/DD/YYYY
                             time_format:
                               type: string
-                              example: '12'
+                              example: "12"
                         otp:
                           type: object
                           properties: {}
                         phone:
                           type: string
-                          example: '+010001010011'
+                          example: "+010001010011"
                         profile:
                           type: string
                           example: 612ea05e3cc07803480127151133
@@ -2714,36 +2743,36 @@ paths:
                             - key: user_type
                               value: enduser
                             - key: limit_login
-                              value: '10'
+                              value: "10"
                         timezone:
                           type: string
                           example: America/New_York
                         updated_at:
                           type: string
-                          example: '2022-06-14T14:16:52.377Z'
+                          example: "2022-06-14T14:16:52.377Z"
                     example:
                       - active: true
                         company: Companyname
-                        created_at: '2022-01-21T21:29:08.957Z'
+                        created_at: "2022-01-21T21:29:08.957Z"
                         email: runuser@email
                         id: 614889df6a302639012a7caef
                         language: en
-                        last_login: '2022-06-10T17:59:26.879Z'
+                        last_login: "2022-06-10T17:59:26.879Z"
                         name: runusername
                         newsletter: null
                         options:
                           date_format: MM/DD/YYYY
-                          time_format: '12'
+                          time_format: "12"
                         otp: {}
-                        phone: '+010001010011'
+                        phone: "+010001010011"
                         profile: 612ea05e3cc07803480127151133
                         tags:
                           - key: user_type
                             value: enduser
                           - key: limit_login
-                            value: '10'
+                            value: "10"
                         timezone: America/New_York
-                        updated_at: '2022-06-14T14:16:52.377Z'
+                        updated_at: "2022-06-14T14:16:52.377Z"
                   status:
                     type: boolean
                     example: true
@@ -2780,10 +2809,10 @@ paths:
                       example: MM/DD/YYYY
                     time_format:
                       type: string
-                      example: '12'
+                      example: "12"
                 phone:
                   type: string
-                  example: '+010001010011'
+                  example: "+010001010011"
                 tags:
                   type: array
                   items:
@@ -2799,12 +2828,12 @@ paths:
                     - key: user_type
                       value: enduser
                     - key: limit_login
-                      value: '10'
+                      value: "10"
                 timezone:
                   type: string
                   example: America/New_York
       responses:
-        '200':
+        "200":
           description: Editing a RUN user information by ID
           content:
             application/json:
@@ -2825,7 +2854,7 @@ paths:
         Delete user from Run using userID
       operationId: deleteUser
       responses:
-        '200':
+        "200":
           description: Deleting a RUN user by ID
           content:
             application/json:
@@ -2858,79 +2887,79 @@ paths:
           in: query
           schema:
             type: string
-            example: '1'
+            example: "1"
           description: Page number.
         - name: name
           in: query
           schema:
             type: string
             example: John Doe
-          description: Filter by the RUN user's name. 
+          description: Filter by the RUN user's name.
         - name: email
           in: query
           schema:
             type: string
             example: runuser@email.com
-          description: Filter by the RUN user's email. 
+          description: Filter by the RUN user's email.
         - name: timezone
           in: query
           schema:
             type: string
             example: America/New_York
-          description: Filter by the RUN user's timezone. 
+          description: Filter by the RUN user's timezone.
         - name: company
           in: query
           schema:
             type: string
             example: Companyname
-          description: Filter by the RUN user's company. 
+          description: Filter by the RUN user's company.
         - name: phone
           in: query
           schema:
             type: string
-            example: '+010001010011'
-          description: Filter by the RUN user's phone number. 
+            example: "+010001010011"
+          description: Filter by the RUN user's phone number.
         - name: language
           in: query
           schema:
             type: string
             example: En
-          description: Filter by the RUN user's language. 
+          description: Filter by the RUN user's language.
         - name: tags
           in: query
           schema:
             type: string
             example: '[{"key":"tag_key","value":"tag value"}]'
-          description: Filter by the RUN user's tags and keys. 
+          description: Filter by the RUN user's tags and keys.
         - name: active
           in: query
           schema:
             type: string
-            example: 'true'
-          description: Filter by the RUN user's activation status. 
+            example: "true"
+          description: Filter by the RUN user's activation status.
         - name: id
           in: query
           schema:
             type: string
             example: 614889df6a302639012a7caef
-          description: Filter by the RUN user's id. 
+          description: Filter by the RUN user's id.
         - name: last_login
           in: query
           schema:
             type: string
-            example: '2021-04-15T15:52:01.102Z'
-          description: Filter by the RUN user's last login. 
+            example: "2021-04-15T15:52:01.102Z"
+          description: Filter by the RUN user's last login.
         - name: created_at
           in: query
           schema:
             type: string
-            example: '2021-07-26T13:10:39.314Z'
-          description: Filter by the RUN user's creation timestamp. 
+            example: "2021-07-26T13:10:39.314Z"
+          description: Filter by the RUN user's creation timestamp.
         - name: amount
           in: query
           schema:
             type: string
-            example: '5'
+            example: "5"
           description: Amount of RUN users by page.
         - name: orderBy
           in: query
@@ -2939,7 +2968,7 @@ paths:
             example: name,asc
           description: Order by the RUN users name/ascending/descending.
       responses:
-        '200':
+        "200":
           description: Getting a list of RUN users
           content:
             application/json:
@@ -2959,7 +2988,7 @@ paths:
                           example: Companyname
                         created_at:
                           type: string
-                          example: '2022-01-21T21:29:08.957Z'
+                          example: "2022-01-21T21:29:08.957Z"
                         email:
                           type: string
                           example: runuser@email
@@ -2971,7 +3000,7 @@ paths:
                           example: en
                         last_login:
                           type: string
-                          example: '2022-06-10T17:59:26.879Z'
+                          example: "2022-06-10T17:59:26.879Z"
                         name:
                           type: string
                           example: runusername
@@ -2985,13 +3014,13 @@ paths:
                               example: MM/DD/YYYY
                             time_format:
                               type: string
-                              example: '12'
+                              example: "12"
                         otp:
                           type: object
                           properties: {}
                         phone:
                           type: string
-                          example: '+010001010011'
+                          example: "+010001010011"
                         profile:
                           type: string
                           example: 612ea05e3cc07803480127151133
@@ -3010,36 +3039,36 @@ paths:
                             - key: user_type
                               value: enduser
                             - key: limit_login
-                              value: '10'
+                              value: "10"
                         timezone:
                           type: string
                           example: America/New_York
                         updated_at:
                           type: string
-                          example: '2022-06-14T14:16:52.377Z'
+                          example: "2022-06-14T14:16:52.377Z"
                     example:
                       - active: true
                         company: Companyname
-                        created_at: '2022-01-21T21:29:08.957Z'
+                        created_at: "2022-01-21T21:29:08.957Z"
                         email: runuser@email
                         id: 614889df6a302639012a7caef
                         language: en
-                        last_login: '2022-06-10T17:59:26.879Z'
+                        last_login: "2022-06-10T17:59:26.879Z"
                         name: runusername
                         newsletter: null
                         options:
                           date_format: MM/DD/YYYY
-                          time_format: '12'
+                          time_format: "12"
                         otp: {}
-                        phone: '+010001010011'
+                        phone: "+010001010011"
                         profile: 612ea05e3cc07803480127151133
                         tags:
                           - key: user_type
                             value: enduser
                           - key: limit_login
-                            value: '10'
+                            value: "10"
                         timezone: America/New_York
-                        updated_at: '2022-06-14T14:16:52.377Z'
+                        updated_at: "2022-06-14T14:16:52.377Z"
                   status:
                     type: boolean
                     example: true
@@ -3076,7 +3105,7 @@ paths:
                   type: string
                   example: New_York/America
       responses:
-        '200':
+        "200":
           description: Creating a RUN user
           content:
             application/json:
@@ -3101,7 +3130,7 @@ paths:
         Retrieve information about TagoRUN
       operationId: getRunSettings
       responses:
-        '200':
+        "200":
           description: RUN settings retrieved
           content:
             application/json:
@@ -3119,7 +3148,7 @@ paths:
                         example: 3 months
                       created_at:
                         type: string
-                        example: '2022-06-17T00:02:20.531Z'
+                        example: "2022-06-17T00:02:20.531Z"
                       dictionary:
                         example: null
                       email_domain:
@@ -3221,16 +3250,16 @@ paths:
                             example: false
                           ip:
                             type: string
-                            example: ''
+                            example: ""
                           language:
                             type: string
                             example: EN
                           name:
                             type: string
-                            example: ''
+                            example: ""
                           port:
                             type: string
-                            example: ''
+                            example: ""
                           protocol:
                             type: string
                             example: http
@@ -3245,7 +3274,7 @@ paths:
                                 properties:
                                   done_desc:
                                     type: string
-                                    example: ''
+                                    example: ""
                                   done_title:
                                     type: string
                                     example: Device configured!
@@ -3256,7 +3285,7 @@ paths:
                                       to start using it.
                                   intro_img:
                                     type: string
-                                    example: ''
+                                    example: ""
                                   intro_title:
                                     type: string
                                     example: Begin device setup
@@ -3265,7 +3294,7 @@ paths:
                                     example: Device found!
                                   wait_desc:
                                     type: string
-                                    example: ''
+                                    example: ""
                                   wait_title:
                                     type: string
                                     example: Waiting for device...
@@ -3288,10 +3317,10 @@ paths:
                         properties:
                           google_analytics:
                             type: string
-                            example: ''
+                            example: ""
                           zoho_salesiq:
                             type: string
-                            example: ''
+                            example: ""
                       logo:
                         example: null
                       logo_options:
@@ -3299,13 +3328,13 @@ paths:
                         properties:
                           tooltip:
                             type: string
-                            example: ''
+                            example: ""
                           type:
                             type: string
-                            example: ''
+                            example: ""
                           value:
                             type: string
-                            example: ''
+                            example: ""
                       name:
                         type: string
                         example: John Doe Run
@@ -3337,25 +3366,25 @@ paths:
                               example: Home
                             type:
                               type: string
-                              example: ''
+                              example: ""
                         example:
                           - color: grey
                             href: /
                             iconUrl: https://svg.internal.tago.io/home.svg
                             text: Home
-                            type: ''
+                            type: ""
                           - color: red
                             href: users
                             iconUrl: >-
                               https://svg.internal.tago.io/group-profile-users.svg
                             text: Users
-                            type: ''
+                            type: ""
                           - color: hsl(208, 56%, 46%)
                             href: connections
                             iconUrl: https://svg.internal.tago.io/wifi.svg
                             isInNewLine: true
                             text: Connections
-                            type: ''
+                            type: ""
                       signup_fields:
                         type: array
                         items: {}
@@ -3379,7 +3408,7 @@ paths:
                         properties:
                           actionSchedule:
                             type: string
-                            example: '#e6431e'
+                            example: "#e6431e"
                           actionTriggerByData:
                             type: string
                             example: rgb(85, 107, 47)
@@ -3418,7 +3447,7 @@ paths:
                             example: 100
                           auth_bg_src:
                             type: string
-                            example: ''
+                            example: ""
                           auth_bg_type:
                             type: string
                             example: default
@@ -3429,7 +3458,7 @@ paths:
                             example: hsl(230, 100%, 32%)
                           buttonDanger:
                             type: string
-                            example: '#e40000'
+                            example: "#e40000"
                           buttonDangerText:
                             type: string
                             example: hsl(0, 100%, 100%)
@@ -3456,7 +3485,7 @@ paths:
                             example: hsl(0, 0%, 100%)
                           buttonSuccess:
                             type: string
-                            example: '#007d05'
+                            example: "#007d05"
                           buttonSuccessText:
                             type: string
                             example: hsl(0, 0%, 100%)
@@ -3552,7 +3581,7 @@ paths:
                             example: hsl(208, 56%, 46%)
                           gaugeDanger:
                             type: string
-                            example: '#C02416'
+                            example: "#C02416"
                           gaugeEmpty:
                             type: string
                             example: hsl(0, 0%, 80%)
@@ -3588,7 +3617,7 @@ paths:
                             example: hsl(0, 0%, 95%)
                           inputError:
                             type: string
-                            example: '#e40000'
+                            example: "#e40000"
                           inputForeground:
                             type: string
                             example: hsl(225, 6%, 13%)
@@ -3723,7 +3752,7 @@ paths:
                             example: hsl(229, 100%, 23%)
                           publicPageNavigationBar:
                             type: string
-                            example: '#007d05'
+                            example: "#007d05"
                           quickstart:
                             type: string
                             example: hsl(233, 45%, 50%)
@@ -3750,10 +3779,10 @@ paths:
                             example: hsl(43, 94%, 37%)
                           sidebarActionSelected:
                             type: string
-                            example: '#e6431e'
+                            example: "#e6431e"
                           sidebarAnalysisSelected:
                             type: string
-                            example: '#294E80'
+                            example: "#294E80"
                           sidebarBackground:
                             type: string
                             example: hsl(0, 0%, 100%)
@@ -3768,13 +3797,13 @@ paths:
                             example: hsl(321, 84%, 38%)
                           sidebarDeviceSelected:
                             type: string
-                            example: '#118c8c'
+                            example: "#118c8c"
                           sidebarExploreSelected:
                             type: string
                             example: hsl(206, 74%, 52%)
                           sidebarFileSelected:
                             type: string
-                            example: '#ea8d13'
+                            example: "#ea8d13"
                           sidebarForegroundIcon:
                             type: string
                             example: hsl(0, 4%, 29%)
@@ -3915,7 +3944,7 @@ paths:
                             example: hsl(53, 100%, 55%)
                       updated_at:
                         type: string
-                        example: '2022-06-17T00:02:20.531Z'
+                        example: "2022-06-17T00:02:20.531Z"
                       url:
                         type: string
                         example: 62ab4302ee089b00134f33ff.run.tago.io
@@ -3948,7 +3977,7 @@ paths:
                   type: string
                   example: 612ea05e3cc07803480127151133.run.tago.io
       responses:
-        '200':
+        "200":
           description: Editing RUN information
           content:
             application/json:
@@ -3978,7 +4007,7 @@ paths:
             example: 3 months
           description: hours,days,months.
       responses:
-        '200':
+        "200":
           description: Login as a RUN User
           content:
             application/json:
@@ -3990,7 +4019,7 @@ paths:
                     properties:
                       expire_time:
                         type: string
-                        example: '2022-06-21T03:01:10.908Z'
+                        example: "2022-06-21T03:01:10.908Z"
                       name:
                         type: string
                         example: Login by Run Administrator(runadmin@mail.com)
@@ -4030,12 +4059,12 @@ paths:
           schema:
             type: string
             example: number
-          description: '(default: 20, max: 100)'
+          description: "(default: 20, max: 100)"
         - name: filter
           in: query
           schema:
             type: string
-            example: '[name]'
+            example: "[name]"
           description: string
         - name: orderBy
           in: query
@@ -4048,7 +4077,7 @@ paths:
             type: string
           description: comma-separated list of fields to return
       responses:
-        '200':
+        "200":
           description: Listing entity by field / Listing entity by tags
           content:
             application/json:
@@ -4062,7 +4091,7 @@ paths:
                       properties:
                         created_at:
                           type: string
-                          example: '2024-11-05T18:32:25.522Z'
+                          example: "2024-11-05T18:32:25.522Z"
                         id:
                           type: string
                           example: 672a64b91807cd0008baa4d5
@@ -4082,28 +4111,28 @@ paths:
                                 example: active
                               value:
                                 type: string
-                                example: 'yes'
+                                example: "yes"
                           example:
                             - key: active
-                              value: 'yes'
+                              value: "yes"
                         updated_at:
                           type: string
-                          example: '2024-11-05T18:32:25.522Z'
+                          example: "2024-11-05T18:32:25.522Z"
                     example:
-                      - created_at: '2024-11-05T18:32:25.522Z'
+                      - created_at: "2024-11-05T18:32:25.522Z"
                         id: 672a64b91807cd0008baa4d5
                         name: Control Entity
                         profile: 63c82c9e6a7fb4000a1f95a0
                         tags:
                           - key: active
-                            value: 'yes'
-                        updated_at: '2024-11-05T18:32:25.522Z'
-                      - created_at: '2024-11-05T18:49:16.438Z'
+                            value: "yes"
+                        updated_at: "2024-11-05T18:32:25.522Z"
+                      - created_at: "2024-11-05T18:49:16.438Z"
                         id: 672a68ac640f330009872ca3
                         name: Test Entity
                         profile: 63c82c9e6a7fb4000a1f95a0
                         tags: []
-                        updated_at: '2024-11-05T18:49:16.438Z'
+                        updated_at: "2024-11-05T18:49:16.438Z"
                   status:
                     type: boolean
                     example: true
@@ -4121,7 +4150,7 @@ paths:
               properties:
                 id:
                   type: string
-                  example: '2938924293'
+                  example: "2938924293"
                 index:
                   type: object
                   properties:
@@ -4169,14 +4198,14 @@ paths:
                         example: active
                       value:
                         type: string
-                        example: 'yes'
+                        example: "yes"
                   example:
                     - key: active
-                      value: 'yes'
+                      value: "yes"
             examples:
               Create Entity:
                 value:
-                  id: '2938924293'
+                  id: "2938924293"
                   index:
                     index_charge_amount:
                       fields:
@@ -4191,9 +4220,9 @@ paths:
                       type: timestamp
                   tags:
                     - key: active
-                      value: 'yes'
+                      value: "yes"
       responses:
-        '200':
+        "200":
           description: Creating an entity
           content:
             application/json:
@@ -4217,7 +4246,7 @@ paths:
       description: Get Entity Details
       operationId: getEntityInfo
       responses:
-        '200':
+        "200":
           description: Getting an entity information
           content:
             application/json:
@@ -4229,7 +4258,7 @@ paths:
                     properties:
                       created_at:
                         type: string
-                        example: '2024-11-05T18:32:25.522Z'
+                        example: "2024-11-05T18:32:25.522Z"
                       database:
                         type: string
                         example: 6229032d0620c89169acbdc0
@@ -4356,13 +4385,13 @@ paths:
                               example: active
                             value:
                               type: string
-                              example: 'yes'
+                              example: "yes"
                         example:
                           - key: active
-                            value: 'yes'
+                            value: "yes"
                       updated_at:
                         type: string
-                        example: '2024-11-05T20:21:40.797Z'
+                        example: "2024-11-05T20:21:40.797Z"
                   status:
                     type: boolean
                     example: true
@@ -4370,7 +4399,7 @@ paths:
                 Getting an entity information:
                   value:
                     result:
-                      created_at: '2024-11-05T18:32:25.522Z'
+                      created_at: "2024-11-05T18:32:25.522Z"
                       database: 6229032d0620c89169acbdc0
                       id: 672a64b91807cd0008baa4d5
                       index:
@@ -4412,8 +4441,8 @@ paths:
                           type: timestamp
                       tags:
                         - key: active
-                          value: 'yes'
-                      updated_at: '2024-11-05T20:21:40.797Z'
+                          value: "yes"
+                      updated_at: "2024-11-05T20:21:40.797Z"
                     status: true
     put:
       tags:
@@ -4440,19 +4469,19 @@ paths:
                         example: active
                       value:
                         type: string
-                        example: 'no'
+                        example: "no"
                   example:
                     - key: active
-                      value: 'no'
+                      value: "no"
             examples:
               Update Entity:
                 value:
                   name: Updated Entity
                   tags:
                     - key: active
-                      value: 'no'
+                      value: "no"
       responses:
-        '200':
+        "200":
           description: Updating entity name and tag
           content:
             application/json:
@@ -4481,7 +4510,7 @@ paths:
       description: Delete Entity
       operationId: deleteEntity
       responses:
-        '200':
+        "200":
           description: Deleting an entity
           content:
             application/json:
@@ -4515,7 +4544,7 @@ paths:
       description: Get Entity Data Amount
       operationId: getEntityDataAmount
       responses:
-        '200':
+        "200":
           description: Getting entity data amount
           content:
             application/json:
@@ -4569,7 +4598,7 @@ paths:
                     update_new_date:
                       action: delete
       responses:
-        '200':
+        "200":
           description: Updating any entity field
           content:
             application/json:
@@ -4612,12 +4641,12 @@ paths:
           schema:
             type: string
             example: number
-          description: '(default: 20, max: 1000)'
+          description: "(default: 20, max: 1000)"
         - name: fields
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: comma-separated list of fields to return
         - name: order_by
           in: query
@@ -4628,7 +4657,7 @@ paths:
           in: query
           schema:
             type: string
-            example: ''
+            example: ""
           description: >-
             JSON object. Filter by an entity field. Requires the index
             paramenter
@@ -4641,7 +4670,7 @@ paths:
             First index searchable field from the entity field added to the
             filter parameter
       responses:
-        '200':
+        "200":
           description: Getting entity data by filter
           content:
             application/json:
@@ -4657,7 +4686,7 @@ paths:
                           example: null
                         created_at:
                           type: string
-                          example: '2024-11-06T11:32:36.467Z'
+                          example: "2024-11-06T11:32:36.467Z"
                         id:
                           type: string
                           example: 672b53d43bc47400095f3831
@@ -4668,32 +4697,32 @@ paths:
                           example: 2345.34
                         update_date:
                           type: string
-                          example: '2024-11-01T03:00:00.000Z'
+                          example: "2024-11-01T03:00:00.000Z"
                         updated_at:
                           type: string
-                          example: '2024-11-06T11:32:36.467Z'
+                          example: "2024-11-06T11:32:36.467Z"
                     example:
                       - charge_amount: null
-                        created_at: '2024-11-06T11:32:36.467Z'
+                        created_at: "2024-11-06T11:32:36.467Z"
                         id: 672b53d43bc47400095f3831
                         int_field: null
                         monthly_revenue: 2345.34
-                        update_date: '2024-11-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:32:36.467Z'
+                        update_date: "2024-11-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:32:36.467Z"
                       - charge_amount: null
-                        created_at: '2024-11-06T11:34:33.380Z'
+                        created_at: "2024-11-06T11:34:33.380Z"
                         id: 672b5449dbac110009ce878f
                         int_field: null
                         monthly_revenue: 2193.43
-                        update_date: '2024-10-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:34:33.380Z'
+                        update_date: "2024-10-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:34:33.380Z"
                       - charge_amount: null
-                        created_at: '2024-11-06T11:34:47.772Z'
+                        created_at: "2024-11-06T11:34:47.772Z"
                         id: 672b54573bc47400095f4634
                         int_field: null
                         monthly_revenue: 2889.23
-                        update_date: '2024-09-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:34:47.772Z'
+                        update_date: "2024-09-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:34:47.772Z"
                   status:
                     type: boolean
                     example: true
@@ -4702,26 +4731,26 @@ paths:
                   value:
                     result:
                       - charge_amount: null
-                        created_at: '2024-11-06T11:32:36.467Z'
+                        created_at: "2024-11-06T11:32:36.467Z"
                         id: 672b53d43bc47400095f3831
                         int_field: null
                         monthly_revenue: 2345.34
-                        update_date: '2024-11-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:32:36.467Z'
+                        update_date: "2024-11-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:32:36.467Z"
                       - charge_amount: null
-                        created_at: '2024-11-06T11:34:33.380Z'
+                        created_at: "2024-11-06T11:34:33.380Z"
                         id: 672b5449dbac110009ce878f
                         int_field: null
                         monthly_revenue: 2193.43
-                        update_date: '2024-10-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:34:33.380Z'
+                        update_date: "2024-10-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:34:33.380Z"
                       - charge_amount: null
-                        created_at: '2024-11-06T11:34:47.772Z'
+                        created_at: "2024-11-06T11:34:47.772Z"
                         id: 672b54573bc47400095f4634
                         int_field: null
                         monthly_revenue: 2889.23
-                        update_date: '2024-09-01T03:00:00.000Z'
-                        updated_at: '2024-11-06T11:34:47.772Z'
+                        update_date: "2024-09-01T03:00:00.000Z"
+                        updated_at: "2024-11-06T11:34:47.772Z"
                     status: true
     put:
       tags:
@@ -4747,7 +4776,7 @@ paths:
                   id: 672b5449dbac110009ce878f
                   monthly_revenue: 1239.45
       responses:
-        '200':
+        "200":
           description: Editing an entity data
           content:
             application/json:
@@ -4782,14 +4811,14 @@ paths:
                   example: 2345.34
                 update_date:
                   type: string
-                  example: '2024-11-01T03:00:00.000Z'
+                  example: "2024-11-01T03:00:00.000Z"
             examples:
               Add Entity Data:
                 value:
                   monthly_revenue: 2345.34
-                  update_date: '2024-11-01T03:00:00.000Z'
+                  update_date: "2024-11-01T03:00:00.000Z"
       responses:
-        '200':
+        "200":
           description: Add Entity Data
           content:
             application/json:
@@ -4814,7 +4843,7 @@ paths:
       description: Delete Entity Data
       operationId: deleteEntityData
       responses:
-        '200':
+        "200":
           description: Delete Entity Data
           content:
             application/json:
@@ -4840,6 +4869,54 @@ paths:
           type: string
           example: (Type an entity ID)
     description: Entity ID
+  /entity/{entity_id}/data/backup:
+    post:
+      tags:
+        - Entity Data
+      summary: Export Entity Data
+      description: |
+        Export data from the entity to a file in the Files.
+      operationId: exportEntityData
+      parameters:
+        - name: entity_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Entity ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file_address:
+                  type: string
+                  example: /my_data/export.csv
+                  description: Path in the Files to save the export.
+                headers:
+                  type: boolean
+                  example: true
+                  description: Whether to include headers in the export.
+              required:
+                - file_address
+      responses:
+        "200":
+          description: Exporting data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      file_address:
+                        type: string
+                        example: /my_data/export.csv
+                  status:
+                    type: boolean
+                    example: true
   /dashboard/{dashboardID}/widget/{widgetID}:
     get:
       tags:
@@ -4849,7 +4926,7 @@ paths:
         Retrieve the complete JSON structure of the dashboard widget, including all settings and data/resource instructions used to populate the widget's data.
       operationId: getWidgetInformation
       responses:
-        '200':
+        "200":
           description: Getting a widget information
           content:
             application/json:
@@ -4900,7 +4977,7 @@ paths:
                             example: []
                           help:
                             type: string
-                            example: ''
+                            example: ""
                           show_units:
                             type: boolean
                             example: true
@@ -4946,7 +5023,7 @@ paths:
                         example: 623c79da5a13360011819b1d
                       label:
                         type: string
-                        example: 'Display #1'
+                        example: "Display #1"
                       realtime:
                         type: boolean
                         example: true
@@ -4979,7 +5056,7 @@ paths:
                             - temperature
                       display:
                         header_buttons: []
-                        help: ''
+                        help: ""
                         show_units: true
                         show_variables: true
                         theme:
@@ -4994,7 +5071,7 @@ paths:
                           - origin: 62308e38de51960019697e76
                             variable: temperature
                       id: 623c79da5a13360011819b1d
-                      label: 'Display #1'
+                      label: "Display #1"
                       realtime: true
                       resource: []
                       token: null
@@ -5064,7 +5141,7 @@ paths:
                           variable: temperature
                 label:
                   type: string
-                  example: 'Display #1'
+                  example: "Display #1"
                 realtime:
                   type: boolean
                   example: true
@@ -5117,7 +5194,7 @@ paths:
                   type: card
                   cache: null
       responses:
-        '200':
+        "200":
           description: Editing a widget
           content:
             application/json:
@@ -5143,14 +5220,14 @@ paths:
         Delete a widget from the dashboard.
 
         :::warning  
-        
+
         Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.  
-        
+
         :::
-        
+
       operationId: deleteWidget
       responses:
-        '200':
+        "200":
           description: Deleting a Widget
           content:
             application/json:
@@ -5190,7 +5267,7 @@ paths:
         Retrieve all the data necessary to display a widget, according to its configuration in the `data` and `resource` fields.
       operationId: getWidgetData
       responses:
-        '200':
+        "200":
           description: Getting widget Data
           content:
             application/json:
@@ -5243,7 +5320,7 @@ paths:
                                     example: 3ac3e21100e473e57d9a1b26
                                   time:
                                     type: string
-                                    example: '2022-06-21T11:21:59.415Z'
+                                    example: "2022-06-21T11:21:59.415Z"
                                   value:
                                     type: number
                                     example: 71
@@ -5256,7 +5333,7 @@ paths:
                                   id: 62b1a9d75e374e00112e3ca4
                                   origin: 6238a3a27d792400139e5b47
                                   serie: 3ac3e21100e473e57d9a1b26
-                                  time: '2022-06-21T11:21:59.415Z'
+                                  time: "2022-06-21T11:21:59.415Z"
                                   value: 71
                                   variable: temperature
                         example:
@@ -5271,7 +5348,7 @@ paths:
                                 id: 62b1a9d75e374e00112e3ca4
                                 origin: 6238a3a27d792400139e5b47
                                 serie: 3ac3e21100e473e57d9a1b26
-                                time: '2022-06-21T11:21:59.415Z'
+                                time: "2022-06-21T11:21:59.415Z"
                                 value: 71
                                 variable: temperature
                           - data:
@@ -5283,11 +5360,11 @@ paths:
                               - device: 62308e38de51960019697e76
                                 id: 62309cb173cb3b001a031db5
                                 metadata:
-                                  old_value: '45'
+                                  old_value: "45"
                                 origin: 62308e38de51960019697e76
-                                time: '2022-03-15T14:03:29.476Z'
+                                time: "2022-03-15T14:03:29.476Z"
                                 unit: C
-                                value: '33'
+                                value: "33"
                                 variable: temperature
                       widget:
                         type: object
@@ -5376,10 +5453,10 @@ paths:
                             example: 623c79da5a13360011819b1d
                           label:
                             type: string
-                            example: 'Display #1'
+                            example: "Display #1"
                           realtime:
                             type: string
-                            example: 'true'
+                            example: "true"
                           resource:
                             type: array
                             items: {}
@@ -5406,7 +5483,7 @@ paths:
                               id: 62b1a9d75e374e00112e3ca4
                               origin: 6238a3a27d792400139e5b47
                               serie: 3ac3e21100e473e57d9a1b26
-                              time: '2022-06-21T11:21:59.415Z'
+                              time: "2022-06-21T11:21:59.415Z"
                               value: 71
                               variable: temperature
                         - data:
@@ -5418,11 +5495,11 @@ paths:
                             - device: 62308e38de51960019697e76
                               id: 62309cb173cb3b001a031db5
                               metadata:
-                                old_value: '45'
+                                old_value: "45"
                               origin: 62308e38de51960019697e76
-                              time: '2022-03-15T14:03:29.476Z'
+                              time: "2022-03-15T14:03:29.476Z"
                               unit: C
-                              value: '33'
+                              value: "33"
                               variable: temperature
                       widget:
                         analysis_run: null
@@ -5452,8 +5529,8 @@ paths:
                             - origin: 62308e38de51960019697e76
                               variable: temperature
                         id: 623c79da5a13360011819b1d
-                        label: 'Display #1'
-                        realtime: 'true'
+                        label: "Display #1"
+                        realtime: "true"
                         resource: []
                         type: display
                     status: true
@@ -5481,9 +5558,9 @@ paths:
         Each widget has unique properties. To ensure accuracy, we recommend opening your Admin Developer Panel, navigating to the desired Dashboard, and copying the Widget's JSON structure directly.  
 
         :::warning  
-        
+
         After you create a widget, it is not automatically added to the dashboard's Arrangement parameter. You must manually edit the dashboard arrangement to include the widget's position in the grid.  
-        
+
         :::
 
       operationId: createDashboardWidget
@@ -5566,8 +5643,8 @@ paths:
                   type: card
                   cache: null
       responses:
-        '200':
-          description: ''
+        "200":
+          description: ""
     parameters:
       - name: dashboardID
         in: path
@@ -5588,10 +5665,10 @@ paths:
 
         `https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`  
 
-        This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.  
+        This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.
       operationId: generateToken
       responses:
-        '200':
+        "200":
           description: Generating a token
           content:
             application/json:
@@ -5632,10 +5709,10 @@ paths:
         - Dashboards
       summary: Dashboard Information
       description: |
-        Get settings information of the dashboard. 
+        Get settings information of the dashboard.
       operationId: getInformation
       responses:
-        '200':
+        "200":
           description: Getting a dashboard information
           content:
             application/json:
@@ -5664,7 +5741,7 @@ paths:
                             x:
                               type: number
                               example: 0
-                            'y':
+                            "y":
                               type: number
                               example: 0
                         example:
@@ -5673,31 +5750,31 @@ paths:
                             widget_id: 6230e740f5772600124c81e1
                             width: 1
                             x: 0
-                            'y': 0
+                            "y": 0
                           - height: 3
                             tab: null
                             widget_id: 6230e75df5772600124c81e2
                             width: 1
                             x: 1
-                            'y': 0
+                            "y": 0
                           - height: 3
                             tab: null
                             widget_id: 6230e44cf5772600124c81de
                             width: 1
                             x: 2
-                            'y': 0
+                            "y": 0
                           - height: 3
                             tab: null
                             widget_id: 6230e84df5772600124c81e7
                             width: 2.3333333333333335
                             x: 0.3333333333333333
-                            'y': 7
+                            "y": 7
                           - height: 5
                             tab: null
                             widget_id: 62750cf1253eb800126aefc0
                             width: 2
                             x: 2.666666666666667
-                            'y': 7
+                            "y": 7
                       background:
                         type: object
                         properties: {}
@@ -5755,7 +5832,7 @@ paths:
                         example: null
                       created_at:
                         type: string
-                        example: '2022-03-15T19:05:54.839Z'
+                        example: "2022-03-15T19:05:54.839Z"
                       group_by:
                         type: array
                         items: {}
@@ -5771,7 +5848,7 @@ paths:
                         example: Device Types Blueprint
                       last_access:
                         type: string
-                        example: '2022-06-21T11:51:07.642Z'
+                        example: "2022-06-21T11:51:07.642Z"
                       setup:
                         type: object
                         properties: {}
@@ -5790,7 +5867,7 @@ paths:
                         example: blueprint
                       updated_at:
                         type: string
-                        example: '2022-06-21T11:51:07.642Z'
+                        example: "2022-06-21T11:51:07.642Z"
                       visible:
                         type: boolean
                         example: true
@@ -5807,31 +5884,31 @@ paths:
                           widget_id: 6230e740f5772600124c81e1
                           width: 1
                           x: 0
-                          'y': 0
+                          "y": 0
                         - height: 3
                           tab: null
                           widget_id: 6230e75df5772600124c81e2
                           width: 1
                           x: 1
-                          'y': 0
+                          "y": 0
                         - height: 3
                           tab: null
                           widget_id: 6230e44cf5772600124c81de
                           width: 1
                           x: 2
-                          'y': 0
+                          "y": 0
                         - height: 3
                           tab: null
                           widget_id: 6230e84df5772600124c81e7
                           width: 2.3333333333333335
                           x: 0.3333333333333333
-                          'y': 7
+                          "y": 7
                         - height: 5
                           tab: null
                           widget_id: 62750cf1253eb800126aefc0
                           width: 2
                           x: 2.666666666666667
-                          'y': 7
+                          "y": 7
                       background: {}
                       blueprint_device_behavior: null
                       blueprint_devices:
@@ -5854,18 +5931,18 @@ paths:
                           id: 6230e42af5772600124c81dd
                           name: legacy_device
                       blueprint_selector_behavior: null
-                      created_at: '2022-03-15T19:05:54.839Z'
+                      created_at: "2022-03-15T19:05:54.839Z"
                       group_by: []
                       icon: {}
                       id: 6230e392f5772600124c81da
                       label: Device Types Blueprint
-                      last_access: '2022-06-21T11:51:07.642Z'
+                      last_access: "2022-06-21T11:51:07.642Z"
                       setup: {}
                       tabs: []
                       tags: []
                       theme: null
                       type: blueprint
-                      updated_at: '2022-06-21T11:51:07.642Z'
+                      updated_at: "2022-06-21T11:51:07.642Z"
                       visible: true
                     status: true
     put:
@@ -5890,7 +5967,7 @@ paths:
               properties:
                 label:
                   type: string
-                  description: The Dashboard Label 
+                  description: The Dashboard Label
                 type:
                   type: string
                   enum:
@@ -5922,23 +5999,23 @@ paths:
                     properties:
                       key:
                         type: string
-                        example: '1648142133869'
+                        example: "1648142133869"
                       link:
                         type: string
-                        example: ''
+                        example: ""
                       value:
                         type: string
                         example: new tab test
                   example:
-                    - key: '1648142133869'
-                      link: ''
+                    - key: "1648142133869"
+                      link: ""
                       value: new tab test
-                    - key: '1648142564354'
-                      link: ''
-                      value: 'new tab 2 '
-                    - key: '1648142571171'
-                      link: ''
-                      value: 'new tab 3 '
+                    - key: "1648142564354"
+                      link: ""
+                      value: "new tab 2 "
+                    - key: "1648142571171"
+                      link: ""
+                      value: "new tab 3 "
                 tags:
                   type: array
                   items:
@@ -6095,7 +6172,7 @@ paths:
                       x: 2.67
                       y: 7
       responses:
-        '200':
+        "200":
           description: Updating a dashboard information
           content:
             application/json:
@@ -6121,7 +6198,7 @@ paths:
         Delete the dashboard
       operationId: deleteDashboard
       responses:
-        '200':
+        "200":
           description: Deleting a dashboard
           content:
             application/json:
@@ -6159,13 +6236,13 @@ paths:
           in: query
           schema:
             type: string
-            example: '1'
+            example: "1"
           description: Page number.
         - name: amount
           in: query
           schema:
             type: string
-            example: '5'
+            example: "5"
           description: Amount of dashboards per page.
         - name: orderBy
           in: query
@@ -6188,7 +6265,7 @@ paths:
           style: form
           explode: true
       responses:
-        '200':
+        "200":
           description: Get a list of dashboards
           content:
             application/json:
@@ -6317,23 +6394,23 @@ paths:
                     properties:
                       key:
                         type: string
-                        example: '1648142133869'
+                        example: "1648142133869"
                       link:
                         type: string
-                        example: ''
+                        example: ""
                       value:
                         type: string
                         example: tab test
                   example:
-                    - key: '1648142133869'
-                      link: ''
+                    - key: "1648142133869"
+                      link: ""
                       value: tab test
-                    - key: '1648142564354'
-                      link: ''
-                      value: 'tab 2 '
-                    - key: '1648142571171'
-                      link: ''
-                      value: 'tab 3 '
+                    - key: "1648142564354"
+                      link: ""
+                      value: "tab 2 "
+                    - key: "1648142571171"
+                      link: ""
+                      value: "tab 3 "
                 tags:
                   type: array
                   items:
@@ -6372,15 +6449,15 @@ paths:
                   label: Tracker dashboard
                   profile: 612ea05e3cc0780012715111
                   tabs:
-                    - key: '1648142133869'
-                      link: ''
+                    - key: "1648142133869"
+                      link: ""
                       value: tab test
-                    - key: '1648142564354'
-                      link: ''
-                      value: 'tab 2 '
-                    - key: '1648142571171'
-                      link: ''
-                      value: 'tab 3 '
+                    - key: "1648142564354"
+                      link: ""
+                      value: "tab 2 "
+                    - key: "1648142571171"
+                      link: ""
+                      value: "tab 3 "
                   tags:
                     - key: vehicle
                       value: gas
@@ -6389,7 +6466,7 @@ paths:
                   type: dashboard
                   visible: true
       responses:
-        '201':
+        "201":
           description: Creating a dashboard
           content:
             application/json:
@@ -6420,8 +6497,8 @@ paths:
       description: |
         Duplicate an existing dashboard, including its configuration, widgets, and settings.  
         Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.  
-        
-        Use this endpoint to quickly clone dashboards for reuse or further customization.   
+
+        Use this endpoint to quickly clone dashboards for reuse or further customization.
       operationId: duplicateDashboard
       requestBody:
         required: false
@@ -6466,7 +6543,7 @@ paths:
                         name: Freezer Simulator
                   new_label: Ice Cream Machine and Freezer - Copy
       responses:
-        '201':
+        "201":
           description: Dashboard duplicated successfully
           content:
             application/json:
@@ -6515,7 +6592,7 @@ paths:
             example: 1 day
           description: Time given in hours,days,weeks,months
       responses:
-        '200':
+        "200":
           description: Generating a  Public Token
           content:
             application/json:
@@ -6527,7 +6604,7 @@ paths:
                     properties:
                       expire_time:
                         type: string
-                        example: '2022-06-20T23:10:59.285Z'
+                        example: "2022-06-20T23:10:59.285Z"
                       token:
                         type: string
                         example: 026b43fb-b33e-477a-bf17-70d1a0498562
@@ -6550,7 +6627,7 @@ paths:
         List of analysis related to this dashboard
       operationId: listAnalysisRelatedToDashboard
       responses:
-        '200':
+        "200":
           description: Getting a list of analysis related to the dashboard
           content:
             application/json:
@@ -6592,7 +6669,7 @@ paths:
         List of devices related to this dashboard
       operationId: listDevicesRelatedToDashboard
       responses:
-        '200':
+        "200":
           description: Getting a list of devices related to a dashboard
           content:
             application/json:
@@ -6657,7 +6734,7 @@ paths:
             example: number
           description: Quantity of files to be returned in the response
       responses:
-        '200':
+        "200":
           description: Get Profile's Files List
           content:
             application/json:
@@ -6677,7 +6754,7 @@ paths:
                               example: layer01.png
                             last_modified:
                               type: string
-                              example: '2023-10-16T13:25:04.000Z'
+                              example: "2023-10-16T13:25:04.000Z"
                             public:
                               type: boolean
                               example: true
@@ -6686,11 +6763,11 @@ paths:
                               example: 63480
                         example:
                           - filename: layer01.png
-                            last_modified: '2023-10-16T13:25:04.000Z'
+                            last_modified: "2023-10-16T13:25:04.000Z"
                             public: true
                             size: 63480
                           - filename: layer02.png
-                            last_modified: '2023-10-16T13:23:58.000Z'
+                            last_modified: "2023-10-16T13:23:58.000Z"
                             public: true
                             size: 233444
                       folders:
@@ -6716,11 +6793,11 @@ paths:
                     result:
                       files:
                         - filename: layer01.png
-                          last_modified: '2023-10-16T13:25:04.000Z'
+                          last_modified: "2023-10-16T13:25:04.000Z"
                           public: true
                           size: 63480
                         - filename: layer02.png
-                          last_modified: '2023-10-16T13:23:58.000Z'
+                          last_modified: "2023-10-16T13:23:58.000Z"
                           public: true
                           size: 233444
                       folders:
@@ -6758,7 +6835,7 @@ paths:
                   - from: /layer05.png
                     to: /images/layer05.png
       responses:
-        '200':
+        "200":
           description: Edit a file
           content:
             application/json:
@@ -6839,7 +6916,7 @@ paths:
                   upload_id: >-
                     TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-
       responses:
-        '200':
+        "200":
           description: Upload file part 1 / Upload file part 2 / Upload file part 3
           headers:
             Etag:
@@ -6926,7 +7003,7 @@ paths:
       description: Delete a file
       operationId: deleteAFile
       responses:
-        '200':
+        "200":
           description: Deleting a file
           content:
             application/json:
@@ -6974,7 +7051,7 @@ paths:
                   - file: /layer05.png
                     public: true
       responses:
-        '200':
+        "200":
           description: Editing file to be public
           content:
             application/json:
@@ -7022,7 +7099,7 @@ paths:
                   - from: /layer05.png
                     to: /layer05 - Copy.png
       responses:
-        '200':
+        "200":
           description: Making a file copy
           content:
             application/json:
@@ -7048,7 +7125,7 @@ paths:
       description: Get the Account Plan
       operationId: getTheAccountPlan
       responses:
-        '200':
+        "200":
           description: Getting the account plan
           content:
             application/json:
@@ -7078,7 +7155,7 @@ paths:
       description: Get account resources allocation
       operationId: getAccountResourcesAllocation
       responses:
-        '200':
+        "200":
           description: Get account resources' allocation
           content:
             application/json:
@@ -7122,7 +7199,7 @@ paths:
                           example: 5
                         updated_at:
                           type: string
-                          example: '2022-07-15T12:11:07.521Z'
+                          example: "2022-07-15T12:11:07.521Z"
                     example:
                       - analysis: 200
                         data_records: 6667
@@ -7134,7 +7211,7 @@ paths:
                         push_notification: 4
                         run_users: 0
                         sms: 5
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                       - analysis: 1600
                         data_records: 633333
                         email: 43
@@ -7145,7 +7222,7 @@ paths:
                         push_notification: 83
                         run_users: 8
                         sms: 0
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                       - analysis: 1200
                         data_records: 160000
                         email: 40
@@ -7156,7 +7233,7 @@ paths:
                         push_notification: 13
                         run_users: 2
                         sms: 5
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                   status:
                     type: boolean
                     example: true
@@ -7174,7 +7251,7 @@ paths:
                         push_notification: 4
                         run_users: 0
                         sms: 5
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                       - analysis: 1600
                         data_records: 633333
                         email: 43
@@ -7185,7 +7262,7 @@ paths:
                         push_notification: 83
                         run_users: 8
                         sms: 0
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                       - analysis: 1200
                         data_records: 160000
                         email: 40
@@ -7196,7 +7273,7 @@ paths:
                         push_notification: 13
                         run_users: 2
                         sms: 5
-                        updated_at: '2022-07-15T12:11:07.521Z'
+                        updated_at: "2022-07-15T12:11:07.521Z"
                     status: true
     post:
       tags:
@@ -7309,7 +7386,7 @@ paths:
                     run_users: 2
                     sms: 5
       responses:
-        '200':
+        "200":
           description: Update the account's allocation
           content:
             application/json:
@@ -7356,7 +7433,7 @@ paths:
                   email: example@mail.com
                   password: yourpassword
       responses:
-        '200':
+        "200":
           description: Login
           content:
             application/json:
@@ -7380,7 +7457,7 @@ paths:
                         example: Your Name
                       phone:
                         type: string
-                        example: '+9396363457126'
+                        example: "+9396363457126"
                       profiles:
                         type: array
                         items:
@@ -7417,7 +7494,7 @@ paths:
         Get all information from current account
       operationId: getAccountInformation
       responses:
-        '200':
+        "200":
           description: Get information about account
           content:
             application/json:
@@ -7438,7 +7515,7 @@ paths:
                         example: companyname
                       created_at:
                         type: string
-                        example: '2021-08-31T21:34:22.107Z'
+                        example: "2021-08-31T21:34:22.107Z"
                       email:
                         type: string
                         example: example@email.com
@@ -7450,7 +7527,7 @@ paths:
                         example: en
                       last_login:
                         type: string
-                        example: '2021-09-13T17:59:30.983Z'
+                        example: "2021-09-13T17:59:30.983Z"
                       name:
                         type: string
                         example: Account Name
@@ -7462,10 +7539,10 @@ paths:
                         properties:
                           decimal_separator:
                             type: string
-                            example: ','
+                            example: ","
                           last_whats_new:
                             type: string
-                            example: '2021-08-02T18:00:00.000Z'
+                            example: "2021-08-02T18:00:00.000Z"
                           thousand_separator:
                             type: string
                             example: .
@@ -7493,7 +7570,7 @@ paths:
                         example: user
                       updated_at:
                         type: string
-                        example: '2021-09-09T19:21:52.049Z'
+                        example: "2021-09-09T19:21:52.049Z"
                   status:
                     type: boolean
                     example: true
@@ -7504,16 +7581,16 @@ paths:
                       active: true
                       blocked: false
                       company: companyname
-                      created_at: '2021-08-31T21:34:22.107Z'
+                      created_at: "2021-08-31T21:34:22.107Z"
                       email: example@email.com
                       id: 612ea05e3cc07800127152207
                       language: en
-                      last_login: '2021-09-13T17:59:30.983Z'
+                      last_login: "2021-09-13T17:59:30.983Z"
                       name: Account Name
                       newsletter: true
                       options:
-                        decimal_separator: ','
-                        last_whats_new: '2021-08-02T18:00:00.000Z'
+                        decimal_separator: ","
+                        last_whats_new: "2021-08-02T18:00:00.000Z"
                         thousand_separator: .
                         user_view_welcome: true
                       otp: {}
@@ -7523,7 +7600,7 @@ paths:
                       stripe_id: null
                       timezone: America/Sao_Paulo
                       type: user
-                      updated_at: '2021-09-09T19:21:52.049Z'
+                      updated_at: "2021-09-09T19:21:52.049Z"
                     status: true
     put:
       tags:
@@ -7561,13 +7638,13 @@ paths:
                       example: footer
                     thousand_separator:
                       type: string
-                      example: ','
+                      example: ","
                     time_format:
                       type: string
-                      example: '24'
+                      example: "24"
                 phone:
                   type: string
-                  example: '+00000000000'
+                  example: "+00000000000"
                 timezone:
                   type: string
                   example: America/Glace_Bay
@@ -7581,9 +7658,9 @@ paths:
                     date_format: YYYY-MM-DD
                     decimal_separator: .
                     show_last_updated_at: footer
-                    thousand_separator: ','
-                    time_format: '24'
-                  phone: '+00000000000'
+                    thousand_separator: ","
+                    time_format: "24"
+                  phone: "+00000000000"
                   timezone: America/Glace_Bay
           text/plain:
             examples:
@@ -7604,7 +7681,7 @@ paths:
                       "company": "TagoIO"
                   }
       responses:
-        '200':
+        "200":
           description: Account edited successfuly
           content:
             application/json:
@@ -7637,7 +7714,7 @@ paths:
             type: string
             example: created_at
       responses:
-        '200':
+        "200":
           description: Getting Policy List
           content:
             application/json:
@@ -7659,13 +7736,13 @@ paths:
                         profile:
                           type: string
                           example: 62fa9e65e0badb0019200
-                        name: 
+                        name:
                           type: string
                           example: My Analysis Policy
                         created_at:
                           type: string
                           description: Date and time when the policy was created
-                          example: '2023-11-01T12:34:56.789Z'
+                          example: "2023-11-01T12:34:56.789Z"
                         tags:
                           type: array
                           items: {}
@@ -7717,7 +7794,7 @@ paths:
                             example: ["device"]
                     targets:
                       type: array
-                      description: "Global: [\"run_user\"]. Specific: [\"run_user\", \"id\", \"user_id\"]. Tag-based: [\"run_user\", \"tag_match\", \"tag_key\"]"
+                      description: 'Global: ["run_user"]. Specific: ["run_user", "id", "user_id"]. Tag-based: ["run_user", "tag_match", "tag_key"]'
                       items:
                         type: array
                         items:
@@ -7738,7 +7815,7 @@ paths:
                             type: string
                             description: "Tag value"
                             example: "admin"
-                      example: [{"key": "user", "value": "admin"}]
+                      example: [{ "key": "user", "value": "admin" }]
                     active:
                       type: boolean
                       description: "Whether the policy is active"
@@ -7776,7 +7853,7 @@ paths:
                             example: ["device"]
                     targets:
                       type: array
-                      description: "Global: [\"analysis\"]. Specific: [\"analysis\", \"id\", \"analysis_id\"]. Tag-based: [\"analysis\", \"tag_match\", \"tag_key\"]"
+                      description: 'Global: ["analysis"]. Specific: ["analysis", "id", "analysis_id"]. Tag-based: ["analysis", "tag_match", "tag_key"]'
                       items:
                         type: array
                         items:
@@ -7797,7 +7874,7 @@ paths:
                             type: string
                             description: "Tag value"
                             example: "admin"
-                      example: [{"key": "user", "value": "admin"}]
+                      example: [{ "key": "user", "value": "admin" }]
                     active:
                       type: boolean
                       description: "Whether the policy is active"
@@ -7908,7 +7985,7 @@ paths:
                       "active": true
                   }
       responses:
-        '201':
+        "201":
           description: Create Policy - Run User / Create Policy - Analysis
           content:
             application/json:
@@ -8043,7 +8120,7 @@ paths:
                       "active": true //able to active and deactive policy (true or false)
                   }
       responses:
-        '200':
+        "200":
           description: Updating a policy
           content:
             application/json:
@@ -8077,7 +8154,7 @@ paths:
       description: Delete Policy
       operationId: deletePolicy
       responses:
-        '200':
+        "200":
           description: Delete policy
           content:
             application/json:
@@ -8102,7 +8179,7 @@ paths:
         schema:
           type: string
           example: (Type an Access Management/Policy ID)
-        description: Can be obtained in the GET Policy request response 
+        description: Can be obtained in the GET Policy request response
   /profiled/{id}/statistics:
     get:
       tags:
@@ -8116,7 +8193,7 @@ paths:
           schema:
             type: string
             example: YYYY-MM-DD
-          description: Filter the statistics by specific date 
+          description: Filter the statistics by specific date
         - name: timezone
           in: query
           schema:
@@ -8126,7 +8203,7 @@ paths:
             Filter the statiscs with the timezone applied if not it returns the
             UTC time
       responses:
-        '200':
+        "200":
           description: Getting a profile statistics
           content:
             application/json:
@@ -8152,88 +8229,88 @@ paths:
                           example: 1272
                         time:
                           type: string
-                          example: '2023-11-08T04:01:36.124Z'
+                          example: "2023-11-08T04:01:36.124Z"
                     example:
                       - data_records: 151611
                         file_storage: 49.89
                         input: 39933
                         output: 1272
-                        time: '2023-11-08T04:01:36.124Z'
+                        time: "2023-11-08T04:01:36.124Z"
                       - data_records: 151691
                         file_storage: 49.89
                         input: 40165
                         output: 1272
-                        time: '2023-11-08T05:01:35.986Z'
+                        time: "2023-11-08T05:01:35.986Z"
                       - data_records: 151863
                         file_storage: 49.89
                         input: 40397
                         output: 1272
-                        time: '2023-11-08T06:01:35.963Z'
+                        time: "2023-11-08T06:01:35.963Z"
                       - data_records: 152389
                         file_storage: 49.89
                         input: 40629
                         output: 1272
-                        time: '2023-11-08T07:01:36.021Z'
+                        time: "2023-11-08T07:01:36.021Z"
                       - data_records: 152497
                         file_storage: 49.89
                         input: 40861
                         output: 1272
-                        time: '2023-11-08T08:01:36.019Z'
+                        time: "2023-11-08T08:01:36.019Z"
                       - data_records: 152609
                         file_storage: 49.89
                         input: 41093
                         output: 1272
-                        time: '2023-11-08T09:01:35.908Z'
+                        time: "2023-11-08T09:01:35.908Z"
                       - data_records: 152981
                         file_storage: 49.89
                         input: 41325
                         output: 1272
-                        time: '2023-11-08T10:01:36.052Z'
+                        time: "2023-11-08T10:01:36.052Z"
                       - data_records: 153105
                         file_storage: 49.89
                         input: 41566
                         output: 1272
-                        time: '2023-11-08T11:01:36.155Z'
+                        time: "2023-11-08T11:01:36.155Z"
                       - data_records: 153373
                         file_storage: 49.89
                         input: 41789
                         output: 1272
-                        time: '2023-11-08T12:01:35.906Z'
+                        time: "2023-11-08T12:01:35.906Z"
                       - data_records: 153517
                         file_storage: 49.89
                         input: 42030
                         output: 1272
-                        time: '2023-11-08T13:01:35.873Z'
+                        time: "2023-11-08T13:01:35.873Z"
                       - data_records: 150262
                         file_storage: 49.89
                         input: 42253
                         output: 1272
-                        time: '2023-11-08T14:01:35.967Z'
+                        time: "2023-11-08T14:01:35.967Z"
                       - data_records: 150422
                         file_storage: 49.89
                         input: 42485
                         output: 1272
-                        time: '2023-11-08T15:01:35.992Z'
+                        time: "2023-11-08T15:01:35.992Z"
                       - data_records: 150422
                         file_storage: 49.89
                         input: 42717
                         output: 1272
-                        time: '2023-11-08T16:01:35.825Z'
+                        time: "2023-11-08T16:01:35.825Z"
                       - data_records: 151054
                         file_storage: 49.89
                         input: 42949
                         output: 1272
-                        time: '2023-11-08T17:01:35.903Z'
+                        time: "2023-11-08T17:01:35.903Z"
                       - data_records: 151242
                         file_storage: 49.89
                         input: 43181
                         output: 1272
-                        time: '2023-11-08T18:01:35.995Z'
+                        time: "2023-11-08T18:01:35.995Z"
                       - data_records: 151242
                         file_storage: 49.89
                         input: 43413
                         output: 1272
-                        time: '2023-11-08T19:01:35.946Z'
+                        time: "2023-11-08T19:01:35.946Z"
                   status:
                     type: boolean
                     example: true
@@ -8245,82 +8322,82 @@ paths:
                         file_storage: 49.89
                         input: 39933
                         output: 1272
-                        time: '2023-11-08T04:01:36.124Z'
+                        time: "2023-11-08T04:01:36.124Z"
                       - data_records: 151691
                         file_storage: 49.89
                         input: 40165
                         output: 1272
-                        time: '2023-11-08T05:01:35.986Z'
+                        time: "2023-11-08T05:01:35.986Z"
                       - data_records: 151863
                         file_storage: 49.89
                         input: 40397
                         output: 1272
-                        time: '2023-11-08T06:01:35.963Z'
+                        time: "2023-11-08T06:01:35.963Z"
                       - data_records: 152389
                         file_storage: 49.89
                         input: 40629
                         output: 1272
-                        time: '2023-11-08T07:01:36.021Z'
+                        time: "2023-11-08T07:01:36.021Z"
                       - data_records: 152497
                         file_storage: 49.89
                         input: 40861
                         output: 1272
-                        time: '2023-11-08T08:01:36.019Z'
+                        time: "2023-11-08T08:01:36.019Z"
                       - data_records: 152609
                         file_storage: 49.89
                         input: 41093
                         output: 1272
-                        time: '2023-11-08T09:01:35.908Z'
+                        time: "2023-11-08T09:01:35.908Z"
                       - data_records: 152981
                         file_storage: 49.89
                         input: 41325
                         output: 1272
-                        time: '2023-11-08T10:01:36.052Z'
+                        time: "2023-11-08T10:01:36.052Z"
                       - data_records: 153105
                         file_storage: 49.89
                         input: 41566
                         output: 1272
-                        time: '2023-11-08T11:01:36.155Z'
+                        time: "2023-11-08T11:01:36.155Z"
                       - data_records: 153373
                         file_storage: 49.89
                         input: 41789
                         output: 1272
-                        time: '2023-11-08T12:01:35.906Z'
+                        time: "2023-11-08T12:01:35.906Z"
                       - data_records: 153517
                         file_storage: 49.89
                         input: 42030
                         output: 1272
-                        time: '2023-11-08T13:01:35.873Z'
+                        time: "2023-11-08T13:01:35.873Z"
                       - data_records: 150262
                         file_storage: 49.89
                         input: 42253
                         output: 1272
-                        time: '2023-11-08T14:01:35.967Z'
+                        time: "2023-11-08T14:01:35.967Z"
                       - data_records: 150422
                         file_storage: 49.89
                         input: 42485
                         output: 1272
-                        time: '2023-11-08T15:01:35.992Z'
+                        time: "2023-11-08T15:01:35.992Z"
                       - data_records: 150422
                         file_storage: 49.89
                         input: 42717
                         output: 1272
-                        time: '2023-11-08T16:01:35.825Z'
+                        time: "2023-11-08T16:01:35.825Z"
                       - data_records: 151054
                         file_storage: 49.89
                         input: 42949
                         output: 1272
-                        time: '2023-11-08T17:01:35.903Z'
+                        time: "2023-11-08T17:01:35.903Z"
                       - data_records: 151242
                         file_storage: 49.89
                         input: 43181
                         output: 1272
-                        time: '2023-11-08T18:01:35.995Z'
+                        time: "2023-11-08T18:01:35.995Z"
                       - data_records: 151242
                         file_storage: 49.89
                         input: 43413
                         output: 1272
-                        time: '2023-11-08T19:01:35.946Z'
+                        time: "2023-11-08T19:01:35.946Z"
                     status: true
     parameters:
       - name: id
@@ -8329,7 +8406,7 @@ paths:
         schema:
           type: string
           example: Type a Profile ID
-        description: Can be found in the profile's information tab "More" 
+        description: Can be found in the profile's information tab "More"
   /profile/{id}/summary:
     get:
       tags:
@@ -8338,7 +8415,7 @@ paths:
       description: Get your Profile Summary
       operationId: getAProfileSummary
       responses:
-        '200':
+        "200":
           description: Get a general summary of your profile resources
           content:
             application/json:
@@ -8365,7 +8442,7 @@ paths:
                             example: 61fac4d9a5c9f40012a5ff92
                           updated_at:
                             type: string
-                            example: '2023-09-06T13:47:08.192Z'
+                            example: "2023-09-06T13:47:08.192Z"
                       amount:
                         type: object
                         properties:
@@ -8489,7 +8566,7 @@ paths:
                         custom_dns: false
                         mobile: false
                         profile: 61fac4d9a5c9f40012a5ff92
-                        updated_at: '2023-09-06T13:47:08.192Z'
+                        updated_at: "2023-09-06T13:47:08.192Z"
                       amount:
                         action: 37
                         am: 5
@@ -8535,7 +8612,7 @@ paths:
         schema:
           type: string
           example: Type a profile ID
-        description: Can be found in the profile's information tab "More" 
+        description: Can be found in the profile's information tab "More"
   /profile/{id}:
     get:
       tags:
@@ -8544,7 +8621,7 @@ paths:
       description: Get your profile settings
       operationId: getAProfileDetails
       responses:
-        '200':
+        "200":
           description: Get a Profile Details
           content:
             application/json:
@@ -8574,7 +8651,7 @@ paths:
                             example: 61fac4d9a5c9f40012a5ff92
                           updated_at:
                             type: string
-                            example: '2023-09-06T13:47:08.192Z'
+                            example: "2023-09-06T13:47:08.192Z"
                       allocation:
                         type: object
                         properties:
@@ -8615,13 +8692,13 @@ paths:
                             example: null
                           created_at:
                             type: string
-                            example: '2022-02-02T16:44:09.134Z'
+                            example: "2022-02-02T16:44:09.134Z"
                           id:
                             type: string
                             example: 61fac4d9a5c9f40012a5ff92
                           logo_url:
                             type: string
-                            example: ''
+                            example: ""
                           name:
                             type: string
                             example: Test Profile
@@ -8639,7 +8716,7 @@ paths:
                                 example: 10
                           updated_at:
                             type: string
-                            example: '2023-10-13T11:54:20.081Z'
+                            example: "2023-10-13T11:54:20.081Z"
                   status:
                     type: boolean
                     example: true
@@ -8650,7 +8727,710 @@ paths:
         schema:
           type: string
           example: Type a profile ID
-        description: Can be found in the profile's information tab "More" 
+        description: Can be found in the profile's information tab "More"
+  /profile/{profile_id}/backup:
+    post:
+      tags:
+        - Backup
+      summary: Create Backup
+      description: |
+        Initiates a new backup generation for the specified profile. The backup is processed asynchronously in a background queue.
+
+        **What's included in the backup:**
+        - User storage files (uploaded via `/files` route)
+        - Dashboard version history
+        - Analysis script versions
+        - All resource configurations as JSON files (devices, actions, dashboards, analysis, access management, networks, connectors, secrets, dictionaries, run users, etc.)
+
+        **Important notes:**
+        - Backups are rate-limited (1 per day based on your account timezone)
+        - Free plan users do not have access to backup features
+        - Backup generation may take several minutes depending on profile size
+        - Restoration is manual - you can write scripts to parse the JSON files and recreate resources via API, or contact TagoIO support
+      operationId: createProfileBackup
+      responses:
+        "200":
+          description: Backup creation initiated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Backup generation has been queued and will be processed shortly. You can check the status using the list backups endpoint.
+                  profile:
+                    type: string
+                    example: 61fac4d9a5c9f40012a5ff92
+                  backup_id:
+                    type: string
+                    example: 678abc123def456789012345
+        "403":
+          description: Forbidden - Free plan or rate limit exceeded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Daily backup limit reached (1 backups per day). Please try again in 8 hours or contact support to increase your limit.
+    get:
+      tags:
+        - Backup
+      summary: List Backups
+      description: |
+        Retrieves a paginated list of all backups for the specified profile. Use this endpoint to check backup status and find backup IDs for download or deletion.
+
+        **Backup statuses:**
+        - `queued` - Backup request received, waiting for processing
+        - `processing` - Backup generation in progress
+        - `completed` - Backup ready for download
+        - `failed` - Backup generation failed (check error_message)
+      operationId: listProfileBackups
+      parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            example: 1
+          description: Page number for pagination (default 1)
+        - name: amount
+          in: query
+          required: false
+          schema:
+            type: integer
+            example: 20
+          description: Number of items per page (default 20)
+        - name: orderBy
+          in: query
+          required: false
+          schema:
+            type: string
+            example: created_at,desc
+          description: Sort order (e.g., 'created_at,desc' or 'created_at,asc')
+      responses:
+        "200":
+          description: List of backups retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: true
+                  result:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: 678abc123def456789012345
+                        profile:
+                          type: string
+                          example: 61fac4d9a5c9f40012a5ff92
+                        file_path:
+                          type: string
+                          example: profile/61fac4d9a5c9f40012a5ff92/versioning/backup/backup-61fac4d9a5c9f40012a5ff92.zip
+                        version_id:
+                          type: string
+                          example: abc123def456
+                        file_size:
+                          type: number
+                          example: 15728640
+                          description: File size in bytes
+                        status:
+                          type: string
+                          enum: [queued, processing, completed, failed]
+                          example: completed
+                        error_message:
+                          type: string
+                          example: null
+                          description: Error message if status is 'failed'
+                        created_at:
+                          type: string
+                          example: "2025-01-07T14:30:00.000Z"
+        "403":
+          description: Forbidden - Free plan users cannot access backup features
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Backup feature is not available on the free plan. Please upgrade your plan to access backup functionality.
+    parameters:
+      - name: profile_id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+  /profile/{profile_id}/backup/{backup_id}/download:
+    post:
+      tags:
+        - Backup
+      summary: Download Backup
+      description: |
+        Generates a secure, time-limited download URL for a specific backup. The download URL is valid for **2 hours**.
+
+        **Security:** This endpoint requires account password verification to prevent unauthorized access to backup data. If you have Two-Factor Authentication (2FA) enabled, you must also provide the OTP code.
+
+        **Important:** Only backups with status `completed` can be downloaded.
+      operationId: downloadProfileBackup
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - password
+              properties:
+                password:
+                  type: string
+                  description: Your account password for verification
+                  example: your_account_password
+                otp_type:
+                  type: string
+                  enum: [authenticator, sms, email]
+                  description: Type of OTP if 2FA is enabled (optional)
+                  example: authenticator
+                pin_code:
+                  type: string
+                  description: OTP code if 2FA is enabled (optional)
+                  example: "123456"
+            examples:
+              Without 2FA:
+                value:
+                  password: your_account_password
+              With 2FA enabled:
+                value:
+                  password: your_account_password
+                  otp_type: authenticator
+                  pin_code: "123456"
+      responses:
+        "200":
+          description: Download URL generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    example: https://s3.amazonaws.com/tago-io/...?X-Amz-Algorithm=...
+                    description: Pre-signed S3 URL for downloading the backup (valid for 2 hours)
+                  size:
+                    type: number
+                    example: 15728640
+                    description: File size in bytes
+                  size_unit:
+                    type: string
+                    example: bytes
+                  file_size_mb:
+                    type: string
+                    example: "15.00"
+                    description: File size in megabytes (formatted)
+                  expire_at:
+                    type: string
+                    example: "2025-01-07T16:30:00.000Z"
+                    description: When the download URL expires
+                  backup_id:
+                    type: string
+                    example: 678abc123def456789012345
+                  created_at:
+                    type: string
+                    example: "2025-01-07T14:30:00.000Z"
+        "400":
+          description: Bad request - Backup not ready or invalid parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: "Backup is not ready for download. Current status: processing"
+        "401":
+          description: Unauthorized - Invalid password or OTP
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid password
+        "404":
+          description: Not found - Backup does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Backup not found or you don't have permission to access it.
+    parameters:
+      - name: profile_id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+      - name: backup_id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 678abc123def456789012345
+        description: The ID of the backup to download
+  /profile/{profile_id}/backup/{backup_id}:
+    delete:
+      tags:
+        - Backup
+      summary: Delete Backup
+      description: |
+        Permanently removes a backup from storage. This action is irreversible.
+
+        **Security:** This endpoint requires account password verification to prevent accidental or unauthorized deletion. If you have Two-Factor Authentication (2FA) enabled, you must also provide the OTP code.
+      operationId: deleteProfileBackup
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - password
+              properties:
+                password:
+                  type: string
+                  description: Your account password for verification
+                  example: your_account_password
+                otp_type:
+                  type: string
+                  enum: [authenticator, sms, email]
+                  description: Type of OTP if 2FA is enabled (optional)
+                  example: authenticator
+                pin_code:
+                  type: string
+                  description: OTP code if 2FA is enabled (optional)
+                  example: "123456"
+            examples:
+              Without 2FA:
+                value:
+                  password: your_account_password
+              With 2FA enabled:
+                value:
+                  password: your_account_password
+                  otp_type: authenticator
+                  pin_code: "123456"
+      responses:
+        "200":
+          description: Backup deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Backup successfully removed
+                  status:
+                    type: boolean
+                    example: true
+        "401":
+          description: Unauthorized - Invalid password or OTP
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid password
+        "404":
+          description: Not found - Backup does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Backup not found or you don't have permission to delete it.
+    parameters:
+      - name: profile_id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+      - name: backup_id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 678abc123def456789012345
+        description: The ID of the backup to delete
+  /profile/{id}/service:
+    put:
+      tags:
+        - Profile
+      summary: Configure Service Provider
+      description: |
+        Configure external service providers for your profile. This allows you to set up integrations with third-party services for SMS and Email messaging.
+
+        **Available service providers:**
+
+        | Service Type | Provider | Description |
+        |--------------|----------|-------------|
+        | `sms` | Twilio | Send SMS messages via Twilio |
+        | `sms` | SNS | Send SMS messages via Amazon SNS |
+        | `email` | SendGrid | Send emails via SendGrid API |
+        | `email` | SES | Send emails via Amazon SES |
+        | `email` | SMTP | Send emails via custom SMTP server |
+
+        **Important notes:**
+        - Credentials are securely stored using [TagoIO Secrets](/docs/tagoio/getting-started/secrets). You must create the appropriate secrets before configuring a service provider.
+        - Each service type can only have one active provider configuration at a time
+        - Use the test endpoint to verify your configuration before using it in production
+
+        **Required secrets by provider:**
+        - **Twilio SMS**: Create two Text secrets containing your Twilio SID and Auth Token
+        - **SNS SMS**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
+        - **SendGrid Email**: Create a Text secret containing your SendGrid API Key
+        - **SES Email**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
+        - **SMTP Email**: Create an SMTP Secret with your server configuration
+      operationId: configureProfileService
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: object
+                  description: Email service configuration
+                  properties:
+                    provider:
+                      type: string
+                      enum: [sendgrid, ses, smtp]
+                      description: The email provider to use
+                      example: smtp
+                    from:
+                      type: string
+                      description: Sender email address
+                      example: noreply@example.com
+                    secrets:
+                      type: object
+                      description: Secret IDs for provider credentials
+                      properties:
+                        data:
+                          type: string
+                          description: Secret ID containing SMTP configuration (required for SMTP provider) or AWS SQS Secret (required for SES provider)
+                          example: 68c9977a28079e0010aaf399
+                        api_key:
+                          type: string
+                          description: Secret ID containing SendGrid API Key (required for SendGrid provider)
+                          example: 68c9977a28079e0010aaf399
+                sms:
+                  type: object
+                  description: SMS service configuration
+                  properties:
+                    provider:
+                      type: string
+                      enum: [twilio, sns]
+                      description: The SMS provider to use
+                      example: twilio
+                    from:
+                      type: string
+                      description: Sender phone number in E.164 format (required for Twilio, optional for SNS)
+                      example: "+15551234567"
+                    secrets:
+                      type: object
+                      description: Secret IDs for provider credentials
+                      properties:
+                        twilio_sid:
+                          type: string
+                          description: Secret ID containing Twilio Account SID (required for Twilio provider)
+                          example: 674f1740f9ccd2000aaa4551
+                        twilio_token:
+                          type: string
+                          description: Secret ID containing Twilio Auth Token (required for Twilio provider)
+                          example: 674f1736f9ccd2000aaa4550
+                        data:
+                          type: string
+                          description: Secret ID containing AWS SQS Secret (required for SNS provider)
+                          example: 68c9977a28079e0010aaf399
+            examples:
+              Configure SMS and Email:
+                value:
+                  email:
+                    provider: smtp
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+                  sms:
+                    provider: twilio
+                    from: "+15551234567"
+                    secrets:
+                      twilio_sid: 674f1740f9ccd2000aaa4551
+                      twilio_token: 674f1736f9ccd2000aaa4550
+              Configure SMS only:
+                value:
+                  sms:
+                    provider: twilio
+                    from: "+15551234567"
+                    secrets:
+                      twilio_sid: 674f1740f9ccd2000aaa4551
+                      twilio_token: 674f1736f9ccd2000aaa4550
+              Configure Email with SendGrid:
+                value:
+                  email:
+                    provider: sendgrid
+                    from: noreply@example.com
+                    secrets:
+                      api_key: 68c9977a28079e0010aaf399
+              Configure Email with SMTP:
+                value:
+                  email:
+                    provider: smtp
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+              Configure Email with SES:
+                value:
+                  email:
+                    provider: ses
+                    from: noreply@example.com
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+              Configure SMS with SNS:
+                value:
+                  sms:
+                    provider: sns
+                    secrets:
+                      data: 68c9977a28079e0010aaf399
+      responses:
+        "200":
+          description: Service provider configured successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Service provider configured successfully
+                  status:
+                    type: boolean
+                    example: true
+        "400":
+          description: Bad request - Invalid configuration
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid credentials format for the selected provider
+        "401":
+          description: Unauthorized - Invalid or missing token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Unauthorized
+        "403":
+          description: Forbidden - Insufficient permissions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: You do not have permission to configure services for this profile
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+  /profile/{id}/service/test/{service_type}:
+    post:
+      tags:
+        - Profile
+      summary: Test Service Provider
+      description: |
+        Test a configured service provider by sending a test message. This helps verify that your service provider configuration is working correctly before using it in production.
+
+        **Supported service types:**
+        - `sms` - Sends a test SMS message to the specified phone number
+        - `email` - Sends a test email to the specified email address
+
+        **Important notes:**
+        - A service provider must be configured before testing
+        - Test messages will consume your provider's quota/credits
+        - For SMS, ensure the recipient number is in E.164 format (e.g., +15551234567)
+      operationId: testProfileService
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - to
+              properties:
+                to:
+                  type: string
+                  description: |
+                    The recipient address for the test message.
+                    - For SMS: Phone number in E.164 format (e.g., +15551234567)
+                    - For Email: Email address (e.g., user@example.com)
+                  example: "+15559876543"
+                message:
+                  type: string
+                  description: Custom test message content (optional). If not provided, a default test message will be sent.
+                  example: This is a test message from TagoIO
+                subject:
+                  type: string
+                  description: Email subject line (only for email service type, optional)
+                  example: Test Email from TagoIO
+            examples:
+              Test SMS:
+                value:
+                  to: "+15559876543"
+                  message: This is a test SMS from TagoIO
+              Test Email:
+                value:
+                  to: user@example.com
+                  subject: Test Email from TagoIO
+                  message: This is a test email from TagoIO to verify your email service configuration.
+      responses:
+        "200":
+          description: Test message sent successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Test message sent successfully
+                      message_id:
+                        type: string
+                        description: Provider's message ID for tracking (if available)
+                        example: SM1234567890abcdef1234567890abcdef
+                  status:
+                    type: boolean
+                    example: true
+        "400":
+          description: Bad request - Invalid recipient or message format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: Invalid phone number format. Use E.164 format (e.g., +15551234567)
+        "404":
+          description: Service provider not configured
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: No service provider configured for the specified service type
+        "500":
+          description: Provider error - Failed to send test message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  message:
+                    type: string
+                    example: "Failed to send test message: Invalid credentials"
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+          example: 61fac4d9a5c9f40012a5ff92
+        description: The ID of the profile
+      - name: service_type
+        in: path
+        required: true
+        schema:
+          type: string
+          enum: [sms, email]
+          example: sms
+        description: The type of service to test (sms or email)
   /dictionary:
     get:
       tags:
@@ -8659,7 +9439,7 @@ paths:
       description: List of Dictionaries
       operationId: getDictionaryList
       responses:
-        '200':
+        "200":
           description: Getting the dictionary list
           content:
             application/json:
@@ -8673,7 +9453,7 @@ paths:
                       properties:
                         created_at:
                           type: string
-                          example: '2023-02-13T16:56:53.086Z'
+                          example: "2023-02-13T16:56:53.086Z"
                         fallback:
                           type: string
                           example: en-US
@@ -8706,9 +9486,9 @@ paths:
                           example: ADM
                         updated_at:
                           type: string
-                          example: '2023-02-13T16:56:53.086Z'
+                          example: "2023-02-13T16:56:53.086Z"
                     example:
-                      - created_at: '2023-02-13T16:56:53.086Z'
+                      - created_at: "2023-02-13T16:56:53.086Z"
                         fallback: en-US
                         id: 63ea6bd581db210009ff8f1d
                         languages:
@@ -8720,7 +9500,7 @@ paths:
                             code: pt-BR
                         name: Admin Dashboard
                         slug: ADM
-                        updated_at: '2023-02-13T16:56:53.086Z'
+                        updated_at: "2023-02-13T16:56:53.086Z"
                   status:
                     type: boolean
                     example: true
@@ -8758,21 +9538,21 @@ paths:
                         example: fr-FR
                       message:
                         type: string
-                        example: 'true'
+                        example: "true"
                   example:
                     - code: fr-FR
-                      message: 'true'
+                      message: "true"
             examples:
               Create Dictionary:
                 value:
                   fallback: fr-FR
                   languages:
                     - code: fr-FR
-                      message: 'true'
+                      message: "true"
                   name: dic.DICT
                   slug: DIC
       responses:
-        '201':
+        "201":
           description: Creating a dictionary
           content:
             application/json:
@@ -8796,7 +9576,7 @@ paths:
       description: Get Dictionary Details
       operationId: getDictionaryDetails
       responses:
-        '200':
+        "200":
           description: Getting the Dictionary details
           content:
             application/json:
@@ -8808,7 +9588,7 @@ paths:
                     properties:
                       created_at:
                         type: string
-                        example: '2023-02-13T16:56:53.086Z'
+                        example: "2023-02-13T16:56:53.086Z"
                       fallback:
                         type: string
                         example: en-US
@@ -8838,7 +9618,7 @@ paths:
                         example: ADM
                       updated_at:
                         type: string
-                        example: '2023-02-13T16:56:53.086Z'
+                        example: "2023-02-13T16:56:53.086Z"
                   status:
                     type: boolean
                     example: true
@@ -8891,7 +9671,7 @@ paths:
                   name: updated.test
                   slug: TEEEE
       responses:
-        '200':
+        "200":
           description: Updating a Dictionary name
           content:
             application/json:
@@ -8911,7 +9691,7 @@ paths:
       description: Delete Dictionary
       operationId: deleteDictionary
       responses:
-        '200':
+        "200":
           description: Delete Dictionary
           content:
             application/json:
@@ -8957,7 +9737,7 @@ paths:
                   dictionary:
                     test: teste
       responses:
-        '200':
+        "200":
           description: Put Dictionary Language
           content:
             application/json:
@@ -8993,7 +9773,7 @@ paths:
       description: Get Dictionary Language Details
       operationId: getDictionaryLanguageDetails
       responses:
-        '200':
+        "200":
           description: Getting a dictionary language details
           content:
             application/json:
@@ -9064,7 +9844,7 @@ paths:
                   password: yourpassword
                   profile_id: 712ea05e3cc07800127151111
       responses:
-        '200':
+        "200":
           description: token created successfuly
           content:
             application/json:
@@ -9100,7 +9880,7 @@ paths:
       description: Get a list containing all device tags in use on your profile
       operationId: getTags
       responses:
-        '200':
+        "200":
           description: Get Device Tags
           content:
             application/json:
@@ -9136,7 +9916,7 @@ paths:
         schema:
           type: string
           example: Device
-        description: (Accepts Analysis, Device, User, Dashboard, Action) 
+        description: (Accepts Analysis, Device, User, Dashboard, Action)
 
   /integration/network/resolve/{serieNumber}/{AuthorizationKey}:
     get:
@@ -9148,12 +9928,12 @@ paths:
 
         This endpoint is recommended when you need additional security or if your Network is available to multiple profiles, as it allows serial numbers to be duplicated across different profiles.  
 
-        You must have both a Network and a Network-Token to use this endpoint.  
+        You must have both a Network and a Network-Token to use this endpoint.
       operationId: getDeviceTokenWithSerialNumberAuthorization
       security:
         - Network-Token: []
       responses:
-        '200':
+        "200":
           description: Successfully Token Response
           content:
             application/json:
@@ -9188,9 +9968,9 @@ paths:
         Get a valid device-token using token serial number only. It will match the serial in any profile.
 
         :::warning  
-        
+
         If the serial number is duplicated between different profiles, you will get the device-token only for the latest device created. See [Find Device with Authorization](/docs/api/get-device-token-with-serial-number-authorization) for multiple profiles support.  
-        
+
         :::
 
         You must have a Network and a Network-Token to use this query.
@@ -9198,7 +9978,7 @@ paths:
       security:
         - Network-Token: []
       responses:
-        '200':
+        "200":
           description: got a valid token
           content:
             application/json:
@@ -9270,7 +10050,7 @@ paths:
                     sent: true
                     value: https://mydownlink.url.io
       responses:
-        '200':
+        "200":
           description: Edit the configuration parameter
           content:
             application/json:
@@ -9537,7 +10317,7 @@ paths:
 
         This endpoint allows the [Network Payload Parser](/docs/tagoio/devices/payload-parser/) to identify and redirect
         data to the correct device created using the Network associated with the
-        Network Token.
+        Network Token and [Authorization Token](/docs/tagoio/integrations/general/authorization/).
 
 
         The Network's Payload Parser is required to set the serial within the
@@ -9552,6 +10332,8 @@ paths:
 
          ```
       operationId: sendDataUsingNetwork
+      parameters:
+        - $ref: "#/components/parameters/authorization_token"
       security:
         - Network-Token: []
       requestBody:
@@ -9559,7 +10341,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DeviceData'
+              $ref: "#/components/schemas/NetworkDeviceData"
           text/plain:
             schema:
               type: string
@@ -9571,7 +10353,7 @@ paths:
                 value: >
                   Any format data that your Payload Parser can normalize to TagoIO format.
       responses:
-        '200':
+        "200":
           description: Send Data
           content:
             application/json:
@@ -9580,8 +10362,7 @@ paths:
                 properties:
                   result:
                     type: string
-                    example: 3 Data Added
+                    example: 1 Data Added
                   status:
                     type: boolean
                     example: true
-  

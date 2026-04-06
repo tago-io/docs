@@ -2,6 +2,7 @@
 title: "Building Solutions"
 description: "This article explains how to begin building applications on TagoIO using your own or third-party devices, simulators, or external databases, and how to integrate with external services; it also includes an introductory video and links to getting-started resources."
 tags: ["tagoio"]
+keywords: [tagoio, iot, building solutions, integration, applications]
 sidebar_position: 2
 ---
 

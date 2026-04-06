@@ -2,7 +2,9 @@
 title: "Widget Cache system"
 description: "This article explains how the Widget Cache system improves dashboard performance by storing widget data and computed results on TagoIO servers, and how cached data is served and refreshed. It also points to where you can enable caching for individual widgets."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widgets, cache, dashboard performance]
 ---
+
 The caching system optimizes the performance of your dashboards by storing widget data and any computations performed using [Data Analytics](/docs/tagoio/widgets/general/data-analytics.md). This allows future requests to be served faster by reusing results from earlier requests, speeding up load times and improving the overall responsiveness of your dashboard. Because less data needs to be queried, caching also reduces Dashboard data output consumption.
 
 :::info

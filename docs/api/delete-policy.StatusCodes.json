@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "200": {
+      "description": "Delete policy",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Access Management Successfully Deleted" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Delete policy": { "value": { "result": "Access Management Successfully Deleted", "status": true } }
+          }
+        }
+      }
+    }
+  }
+}

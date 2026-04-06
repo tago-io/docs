@@ -18,23 +18,11 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Device Configuration Parameter"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Device Configuration Parameter"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/integration/network/{deviceID}/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/integration/network/{deviceID}/params"} context={"endpoint"}></MethodEndpoint>
 
 Edit a device configuration parameter using the Network-token. You must already have the device ID to use this endpoint.
 This is useful when your Network integration requires configuration parameters for performing downlinks, or if your decoder benefits from configuration parameters for parsing data.
@@ -42,34 +30,12 @@ This is useful when your Network integration requires configuration parameters f
 To obtain the **Device ID**, first resolve the device-token, then use the [Device Information](/docs/api/current-device-information) endpoint to retrieve detailed information about the device.
 :::
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-device-configuration-parameter.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"6114b901cd09d0fa0013636afcc"},"key":{"type":"string","example":"downlink_url"},"sent":{"type":"boolean","example":true},"value":{"type":"string","example":"https://mydownlink.url.io"}}},"example":[{"id":"6114b901cd09d0fa0013636afcc","key":"downlink_url","sent":true,"value":"https://mydownlink.url.io"}]},"examples":{"Edit Device Configuration Parameter":{"value":[{"id":"6114b901cd09d0fa0013636afcc","key":"downlink_url","sent":true,"value":"https://mydownlink.url.io"}]}}}}}}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-device-configuration-parameter.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Edit the configuration parameter","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Device Configuration Parameter Updated"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-device-configuration-parameter.StatusCodes.json")}></StatusCodes>

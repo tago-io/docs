@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Analysis related to Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Analysis related to Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/dashboard/{dashboardID}/analysis"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/dashboard/{dashboardID}/analysis"} context={"endpoint"}></MethodEndpoint>
 
 List of analysis related to this dashboard
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"5f3e782ba1d6300027315c0e"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-analysis-related-to-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-analysis-related-to-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Getting a list of analysis related to the dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"61969a2c87160b00189326e9"},"name":{"type":"string","example":"Analysis 001"}}},"example":[{"id":"61969a2c87160b00189326e9","name":"Analysis 001"},{"id":"61969a2c87160b00189326d2","name":"Analysis 002"}]},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-analysis-related-to-dashboard.StatusCodes.json")}></StatusCodes>

@@ -1,7 +1,6 @@
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Heading from "@theme/Heading";
-import clsx from "clsx";
 import type { ReactNode } from "react";
 import styles from "./styles.module.css";
 
@@ -14,7 +13,7 @@ type FeatureItem = {
 
 function Feature({ title, imgSrc, href, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--3", styles.featureCol)}>
+    <div className={styles.featureCol}>
       <Link to={href} className={styles.featureLink}>
         <div className={styles.featureCard}>
           <div className="text--center">
@@ -46,12 +45,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagoio/getting-started",
       description: (
         <>
-          The core IoT cloud platform for connecting devices, visualizing data,
-          and building automated solutions.
+          The core IoT cloud platform for connecting devices, visualizing data, and building automated solutions.
           <br />
-          <strong>
-            Get started with our comprehensive guides and tutorials.
-          </strong>
+          <strong>Get started with our comprehensive guides and tutorials.</strong>
         </>
       ),
     },
@@ -61,12 +57,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagoio/tagorun",
       description: (
         <>
-          Deploy custom IoT applications to end-users with full control over
-          branding and user management.
+          Deploy custom IoT applications to end-users with full control over branding and user management.
           <br />
-          <strong>
-            Perfect for white-label solutions and customer-facing portals.
-          </strong>
+          <strong>Perfect for white-label solutions and customer-facing portals.</strong>
         </>
       ),
     },
@@ -76,12 +69,9 @@ export default function HomepageFeatures(): ReactNode {
       href: "/docs/tagodeploy",
       description: (
         <>
-          Enterprise-grade infrastructure and dedicated resources for
-          mission-critical IoT deployments.
+          Enterprise-grade infrastructure and dedicated resources for mission-critical IoT deployments.
           <br />
-          <strong>
-            Premium support and guaranteed performance for your business.
-          </strong>
+          <strong>Premium support and guaranteed performance for your business.</strong>
         </>
       ),
     },
@@ -93,9 +83,19 @@ export default function HomepageFeatures(): ReactNode {
         <>
           Free, fast, and open-source IoT platform for edge computing.
           <br />
-          <strong>
-            Deploy on-premises or at the edge with full source code access.
-          </strong>
+          <strong>Deploy on-premises or at the edge with full source code access.</strong>
+        </>
+      ),
+    },
+    {
+      title: "TagoTiP",
+      imgSrc: "/img/tip-logo.png",
+      href: "/docs/tagotip",
+      description: (
+        <>
+          Lightweight IoT protocol. Human-readable, type-safe and transport-agnostic.
+          <br />
+          <strong>Best for UDP, TCP, MQTT, and HTTP.</strong>
         </>
       ),
     },
@@ -103,12 +103,10 @@ export default function HomepageFeatures(): ReactNode {
 
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props) => (
-            <Feature key={props.title} {...props} />
-          ))}
-        </div>
+      <div className={styles.featureRow}>
+        {FeatureList.map((props) => (
+          <Feature key={props.title} {...props} />
+        ))}
       </div>
     </section>
   );

@@ -2,13 +2,14 @@
 title: "Step Button Widget"
 description: "This article explains how the Step Button widget lets users increment or decrement numeric or clock values using (-) and (+) controls, and how to add and customize the widget on a dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, step button, input]
 ---
+
 Step button allows users to increase and decrease values of a number or clock by using the (-) and (+) buttons.
 
 ![Step Button examples showing time and temperature controls with labels "Button #1", "10:15 AM", "End of cycle", "-5 °C", "Set-point"](/docs_imagem/tagoio/step-button-widget-2.png)
 
-You can also define the incremental step value and the allowed limits.  
-
+You can also define the incremental step value and the allowed limits.
 
 ## Creating your own
 
@@ -18,8 +19,8 @@ To add the Step Button widget to your dashboard, choose the Step Button widget f
 
 This field allows you to set the device and variable that will be used in this widget.
 
-* **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
-* **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable.  
+- **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
+- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable.  
   When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
 ### Step Button Types
@@ -31,8 +32,8 @@ The widget can control either a numeric value or a clock (time).
 When **Number** is selected:
 
 - A unit can be added to the variable.
-- The step, minimum, and maximum limits should be defined in the *Data Range & Format* tab.
-- In the *User Control* tab you can define how many times the value will blink before posting the data to the variable.
+- The step, minimum, and maximum limits should be defined in the _Data Range & Format_ tab.
+- In the _User Control_ tab you can define how many times the value will blink before posting the data to the variable.
 
 The widget will POST using this format:
 
@@ -48,7 +49,7 @@ The widget will POST using this format:
 
 When **Clock** is selected:
 
-- Choose the visualization format (24‑Hour or 12‑Hour AM/PM), the time step, and set the lower and upper limits in the *Data Range & Format* tab.
+- Choose the visualization format (24‑Hour or 12‑Hour AM/PM), the time step, and set the lower and upper limits in the _Data Range & Format_ tab.
 - The output of the variable will always be in 24‑Hour format, even if you display it as 12‑Hour for the user.
 
 For example, if the user selects **2:15 pm** for the variable `timer_off`, the widget will POST this:
@@ -61,18 +62,18 @@ For example, if the user selects **2:15 pm** for the variable `timer_off`, the
 ```
 
 - Input the time in the format `HH:MM` (24‑Hour).
-- You can customize colors for the button and text based on conditions defined in the *Visualization* tab.  
+- You can customize colors for the button and text based on conditions defined in the _Visualization_ tab.  
   Example of a condition that changes the text color around **10:30 am**:
 
 ![Example of conditions set to change the color of the text around 10:30am](/docs_imagem/tagoio/condition_clock-Iqk.png)
 
-- In the *User Control* tab you can define how many times the value will blink before posting the data to the device’s data storage. The blinking starts after the user releases the button.
+- In the _User Control_ tab you can define how many times the value will blink before posting the data to the device’s data storage. The blinking starts after the user releases the button.
 
 ### Color from Metadata
 
 You can control the colors of the Step Button widget by using information stored in the metadata of the variable.
 
-1. In the *Visualization* tab, set **Override colors with the conditions defined here** to `False`.
+1. In the _Visualization_ tab, set **Override colors with the conditions defined here** to `False`.
 2. Inside the metadata, include the following fields:
 
    ```json

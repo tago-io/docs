@@ -2,8 +2,10 @@
 title: "Custom Widget Parameters"
 description: "This article explains how to add and use custom widget parameters in TagoIO, including how parameters are structured (key/value pairs), limits, and how they are received in your widget code."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, custom widget, parameters]
 "sidebar_position": 2
 ---
+
 Parameters allow you to send a list of keys and values to your custom widget.
 
 One common use for parameters is to change how your code behaves. For example, you can point two widgets to the same link but configure each to exhibit different behaviors by using different parameters.

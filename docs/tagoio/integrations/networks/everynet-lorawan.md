@@ -2,6 +2,7 @@
 title: "Everynet LoRaWAN"
 description: "This article provides a step-by-step guide to integrate Everynet LoRaWAN with the TagoIO platform, enabling both uplink and downlink data exchange between LoRaWAN devices and TagoIO. It covers connecting the platforms and creating the required authorization token in TagoIO."
 tags: ["tagoio"]
+keywords: [tagoio, iot, everynet, lorawan, integration]
 ---
 
 This tutorial provides a step-by-step guide to integrate Everynet LoRaWAN with

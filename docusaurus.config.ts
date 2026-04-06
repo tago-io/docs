@@ -29,7 +29,12 @@ const config: Config = {
   projectName: "docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -69,6 +74,9 @@ const config: Config = {
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "ignore",
         },
+        sitemap: {
+          ignorePatterns: ["/changelog/**", "/search", "/markdown-page"],
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -90,12 +98,32 @@ const config: Config = {
         },
       },
     ],
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: "docs",
+        title: "TagoIO Docs",
+        description: "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
+        includeBlog: false,
+        ignoreFiles: ["api/**"],
+        logLevel: "normal",
+      },
+    ],
+    [
+      "@acid-info/docusaurus-og",
+      {
+        path: "./preview-images",
+        imageRenderers: {
+          "docusaurus-plugin-content-docs": require("./lib/docs-renderer").docsRenderer,
+        },
+      },
+    ],
   ],
 
-  themes: ["docusaurus-theme-openapi-docs"],
-  stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
-  ],
+  themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
+  stylesheets: ["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"],
 
   clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
 
@@ -158,6 +186,7 @@ const config: Config = {
       logo: {
         alt: "TagoIO Logo",
         src: "img/tagoio-official-logo.svg",
+        srcDark: "img/tagoio-official-logo-white.svg",
         width: 110,
         height: 26,
       },
@@ -179,6 +208,12 @@ const config: Config = {
           sidebarId: "tagocoreSidebar",
           position: "left",
           label: "TagoCore",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tagotipSidebar",
+          position: "left",
+          label: "TagoTiP",
         },
         {
           type: "docSidebar",
@@ -208,6 +243,26 @@ const config: Config = {
     prism: {
       theme: prismThemes.nightOwlLight,
       darkTheme: prismThemes.nightOwl,
+      additionalLanguages: ["abnf", "yaml"],
+    },
+    mermaid: {
+      theme: {
+        light: "base",
+        dark: "dark",
+      },
+      options: {
+        themeVariables: {
+          primaryColor: "#2cb1bc",
+          primaryTextColor: "#ffffff",
+          primaryBorderColor: "transparent",
+          lineColor: "#707070",
+          edgeLabelBackground: "transparent",
+          clusterBkg: "transparent",
+          clusterBorder: "#2a2a2a",
+          fontFamily: "Menlo, Consolas, 'Liberation Mono', Courier, monospace",
+          fontSize: "16px",
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };

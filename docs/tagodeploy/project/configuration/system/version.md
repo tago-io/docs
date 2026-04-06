@@ -1,6 +1,7 @@
 ---
 title: "Version Management"
 description: "Control when your project upgrades to a new platform version and understand affected components and limitations."
+keywords: [tagodeploy, iot, version management, updates]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/system/version
 ---

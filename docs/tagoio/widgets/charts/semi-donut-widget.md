@@ -2,7 +2,9 @@
 title: "Semi Donut Widget"
 description: "Explains how the Semi Donut widget displays variable data as a semi-donut chart and how to add and customize it in a TagoIO dashboard."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, semi donut chart, data visualization]
 ---
+
 Using data from multiple variables, the Semi Donut widget automatically produces a semi-donut chart in which each slice represents a variable's data.
 
 ![Three examples of semi-donut charts with different styles](/docs_imagem/tagoio/semi-donut-widget-2.png)
@@ -12,8 +14,6 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 ## Creating your own
 
 To add the widget to your dashboard, select the Semi Donut widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget editor.
-
-
 
 ### 1. 'Data From' Field
 
@@ -31,6 +31,6 @@ From the option **Data From** on the right menu, add the [Blueprint device](/doc
 
 :::info
 
- When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
 
- :::
+:::

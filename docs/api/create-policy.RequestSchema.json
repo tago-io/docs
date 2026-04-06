@@ -1,0 +1,193 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "oneOf": [
+            {
+              "type": "object",
+              "title": "User Policy",
+              "required": ["name", "permissions", "targets", "active"],
+              "properties": {
+                "name": { "type": "string", "description": "Name of the policy", "example": "User permissions" },
+                "permissions": {
+                  "type": "array",
+                  "description": "Array of permission objects",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "effect": {
+                        "type": "string",
+                        "enum": ["allow", "deny"],
+                        "description": "Allow or deny the permission",
+                        "example": "allow"
+                      },
+                      "action": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Actions allowed: access, edit, delete, create",
+                        "example": ["access"]
+                      },
+                      "resource": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Resources: device, dashboard, analysis, run_user, etc.",
+                        "example": ["device"]
+                      }
+                    }
+                  }
+                },
+                "targets": {
+                  "type": "array",
+                  "description": "Global: [\"run_user\"]. Specific: [\"run_user\", \"id\", \"user_id\"]. Tag-based: [\"run_user\", \"tag_match\", \"tag_key\"]",
+                  "items": { "type": "array", "items": { "type": "string" }, "example": ["run_user"] },
+                  "example": [["run_user"]]
+                },
+                "tags": {
+                  "type": "array",
+                  "description": "Optional tags for targeting specific users/analysis",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "key": { "type": "string", "description": "Tag key", "example": "user" },
+                      "value": { "type": "string", "description": "Tag value", "example": "admin" }
+                    }
+                  },
+                  "example": [{ "key": "user", "value": "admin" }]
+                },
+                "active": { "type": "boolean", "description": "Whether the policy is active", "example": true }
+              }
+            },
+            {
+              "type": "object",
+              "title": "Analysis Policy",
+              "required": ["name", "permissions", "targets", "active"],
+              "properties": {
+                "name": { "type": "string", "description": "Name of the policy", "example": "Policy" },
+                "permissions": {
+                  "type": "array",
+                  "description": "Array of permission objects",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "effect": {
+                        "type": "string",
+                        "enum": ["allow", "deny"],
+                        "description": "Allow or deny the permission",
+                        "example": "allow"
+                      },
+                      "action": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Actions allowed: access, edit, delete, create",
+                        "example": ["edit", "delete", "create", "access"]
+                      },
+                      "resource": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Resources: device, dashboard, analysis, run_user, etc.",
+                        "example": ["device"]
+                      }
+                    }
+                  }
+                },
+                "targets": {
+                  "type": "array",
+                  "description": "Global: [\"analysis\"]. Specific: [\"analysis\", \"id\", \"analysis_id\"]. Tag-based: [\"analysis\", \"tag_match\", \"tag_key\"]",
+                  "items": { "type": "array", "items": { "type": "string" }, "example": ["analysis"] },
+                  "example": [["analysis"]]
+                },
+                "tags": {
+                  "type": "array",
+                  "description": "Optional tags for targeting specific users/analysis",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "key": { "type": "string", "description": "Tag key", "example": "user" },
+                      "value": { "type": "string", "description": "Tag value", "example": "admin" }
+                    }
+                  },
+                  "example": [{ "key": "user", "value": "admin" }]
+                },
+                "active": { "type": "boolean", "description": "Whether the policy is active", "example": true }
+              }
+            }
+          ]
+        },
+        "examples": {
+          "Create Policy - Run User (Global)": {
+            "value": {
+              "name": "User permissions",
+              "permissions": [{ "effect": "allow", "action": ["access"], "resource": ["device"] }],
+              "targets": [["run_user"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          },
+          "Create Policy - Run User (Specific ID)": {
+            "value": {
+              "name": "User permissions",
+              "permissions": [{ "effect": "allow", "action": ["access"], "resource": ["device"] }],
+              "targets": [["run_user", "id", "68b5dd292ee817000af854dc"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          },
+          "Create Policy - Run User (Tag Match)": {
+            "value": {
+              "name": "User permissions",
+              "permissions": [{ "effect": "allow", "action": ["access"], "resource": ["device"] }],
+              "targets": [["run_user", "tag_match", "account_token"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          },
+          "Create Policy - Analysis (Global)": {
+            "value": {
+              "name": "Policy",
+              "permissions": [
+                { "effect": "allow", "action": ["edit", "delete", "create", "access"], "resource": ["device"] }
+              ],
+              "targets": [["analysis"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          },
+          "Create Policy - Analysis (Specific ID)": {
+            "value": {
+              "name": "Policy",
+              "permissions": [
+                { "effect": "allow", "action": ["edit", "delete", "create", "access"], "resource": ["device"] }
+              ],
+              "targets": [["analysis", "id", "68b5dd292ee817000af854dc"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          },
+          "Create Policy - Analysis (Tag Match)": {
+            "value": {
+              "name": "Policy",
+              "permissions": [
+                { "effect": "allow", "action": ["edit", "delete", "create", "access"], "resource": ["device"] }
+              ],
+              "targets": [["analysis", "tag_match", "account_token"]],
+              "tags": [{ "key": "user", "value": "admin" }],
+              "active": true
+            }
+          }
+        }
+      },
+      "text/plain": {
+        "examples": {
+          "Create Policy - Run User (Global)": {
+            "value": "{\n    \"name\": \"User permissions\",\n    \"permissions\": [\n        {\n            \"effect\": \"allow\",\n            \"action\": [\"access\"],\n            \"resource\": [\"device\"]\n        }\n    ],\n    \"targets\": [[\"run_user\"]],\n    \"tags\": [{\"key\": \"user\", \"value\": \"admin\"}],\n    \"active\": true\n}"
+          },
+          "Create Policy - Analysis (Global)": {
+            "value": "{\n    \"name\": \"Policy\",\n    \"permissions\": [\n        {\n            \"effect\": \"allow\",\n            \"action\": [\"edit\", \"delete\", \"create\", \"access\"],\n            \"resource\": [\"device\"]\n        }\n    ],\n    \"targets\": [[\"analysis\"]],\n    \"tags\": [{\"key\": \"user\", \"value\": \"admin\"}],\n    \"active\": true\n}"
+          }
+        }
+      }
+    }
+  }
+}

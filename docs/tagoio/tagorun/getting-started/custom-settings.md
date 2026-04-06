@@ -2,7 +2,9 @@
 title: "Custom Settings"
 description: "This article describes TagoIO's Custom Settings feature for TagoRUN, which lets you define end-user visualization preferences (units, formats, language, dashboard options) that appear in each user's Account Settings."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tagorun, custom settings, user preferences]
 ---
+
 Custom Settings is a feature that lets you create unique visualization preferences for your end-users that extend beyond TagoRUN's default settings. After you configure custom settings, they will appear in your end-users' Account Settings.
 
 With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](/docs/tagoio/widgets/general/formula.md) to ensure displayed data matches user expectations.
@@ -10,8 +12,8 @@ With Custom Settings you can tailor preferences to specific needs — for exampl
 ![Custom Settings on TagoRun portal](/docs_imagem/tagoio/tagorun_customsettings.png)
 
 ## How it works
-To create your Custom Settings, first navigate to your [Run](https://admin.tago.io/run) and click on the Custom Settings tab. From there, you can configure the following fields:
 
+To create your Custom Settings, first navigate to your [Run](https://admin.tago.io/run) and click on the Custom Settings tab. From there, you can configure the following fields:
 
 **1. Name:** the name of the field that will be displayed for your end-users.
 

@@ -1,23 +1,25 @@
 ---
 title: "Trigger by Usage Alert"
-description: "This article explains how the \"Trigger by Usage Alert\" feature works, lists which TagoIO resources and services can fire usage alerts, and describes how to define the conditions that trigger an action."
+description: 'This article explains how the "Trigger by Usage Alert" feature works, lists which TagoIO resources and services can fire usage alerts, and describes how to define the conditions that trigger an action.'
 tags: ["tagoio"]
+keywords: [tagoio, iot, actions, usage alerts, monitoring]
 ---
+
 The “Trigger by Usage Alert” feature lets you execute an Action when a specific service or resource meets predefined usage conditions. Below is a list of Resources and Services that can be used to trigger an Action.
 
 ## Resources and Services
 
-| Resources | Services |
-|---|---|
-| [Access Management](/docs/tagoio/tagorun/access-management/) | [Input](/docs/tagoio/profiles/services/data-input-service.md) |
-| [Actions](/docs/tagoio/actions/) | [Output](/docs/tagoio/profiles/services/data-output-service.md) |
-| [TCore](/docs/tagocore/) | [Analysis](/docs/tagoio/analysis/) |
-| [Device](/docs/tagoio/devices/) | [Data Records](/docs/tagoio/profiles/services/data-records.md) |
-| [Team Members](/docs/tagoio/profiles/team-management-sharing-your-profile.md) | [SMS](/docs/tagoio/profiles/services/sms-service.md) |
-| [Dashboards](/docs/tagoio/dashboards/) | [Emails](/docs/tagoio/profiles/services/e-mail-service.md) |
-| [Analysis](/docs/tagoio/analysis/) | [Run Users](/docs/tagoio/profiles/services/end-users-service.md) |
-|  | [Push Notifications](/docs/tagoio/profiles/services/notification-service.md) |
-|  | [File Storage](/docs/tagoio/profiles/services/file-storage-service.md) |
+| Resources                                                                     | Services                                                                     |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Access Management](/docs/tagoio/tagorun/access-management/)                  | [Input](/docs/tagoio/profiles/services/data-input-service.md)                |
+| [Actions](/docs/tagoio/actions/)                                              | [Output](/docs/tagoio/profiles/services/data-output-service.md)              |
+| [TCore](/docs/tagocore/)                                                      | [Analysis](/docs/tagoio/analysis/)                                           |
+| [Device](/docs/tagoio/devices/)                                               | [Data Records](/docs/tagoio/profiles/services/data-records.md)               |
+| [Team Members](/docs/tagoio/profiles/team-management-sharing-your-profile.md) | [SMS](/docs/tagoio/profiles/services/sms-service.md)                         |
+| [Dashboards](/docs/tagoio/dashboards/)                                        | [Emails](/docs/tagoio/profiles/services/e-mail-service.md)                   |
+| [Analysis](/docs/tagoio/analysis/)                                            | [Run Users](/docs/tagoio/profiles/services/end-users-service.md)             |
+|                                                                               | [Push Notifications](/docs/tagoio/profiles/services/notification-service.md) |
+|                                                                               | [File Storage](/docs/tagoio/profiles/services/file-storage-service.md)       |
 
 For example, you can configure an Action to trigger when Analysis usage reaches a specified threshold. Once that threshold is met, a notification can be sent to the profile administrator.
 

@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Analysis Overview
 slug: /tagocore/analysis
+description: Create and run custom analysis scripts in any programming language to process IoT device data in TagoCore.
+keywords: [tagocore, iot, analysis, scripting, data processing]
 ---
 
 # Analysis
@@ -23,14 +25,16 @@ TagoCore supports any programming language you want to use for your Analysis. Th
 ### Binary Executable Path
 
 This tells TagoCore which program should run your code. For example:
+
 - **Node.js**: Point to your `node` executable to run JavaScript
-- **Python**: Point to your `python` executable to run Python scripts  
+- **Python**: Point to your `python` executable to run Python scripts
 - **Rust**: Point to your Rust compiler to run Rust programs
 - **Any other language**: Point to the appropriate executable
 
 ### File Path
 
 This is your actual script file that contains the Analysis logic:
+
 - **Node.js**: Select your `.js` file
 - **Python**: Select your `.py` file
 - **Rust**: Select your `.rs` file
@@ -53,7 +57,7 @@ Behind the scenes, TagoCore runs your Analysis using a command like:
 You have three options for executing your Analysis:
 
 1. **Automated**: Set up an [Action](/docs/tagocore/action) to run your Analysis automatically when specific events occur (like when new device data arrives)
-2. **Manual**: Click the **Run** button on your Analysis page to test it immediately  
+2. **Manual**: Click the **Run** button on your Analysis page to test it immediately
 3. **API**: Trigger it programmatically by making a POST request to `/analysis/:id/run`
 
 ## Writing Analysis Code

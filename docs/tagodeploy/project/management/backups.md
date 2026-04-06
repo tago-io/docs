@@ -1,6 +1,7 @@
 ---
 title: "Backups"
 description: "View, configure, and restore project backups; understand contents, exclusions, and limitations."
+keywords: [tagodeploy, iot, backups, disaster recovery, data protection]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/backups
 ---

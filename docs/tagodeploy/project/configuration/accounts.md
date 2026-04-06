@@ -1,6 +1,7 @@
 ---
 title: "TagoIO Admin Accounts"
 description: "Manage developer accounts for TagoIO Admin: create, edit, deactivate, and understand profile sharing."
+keywords: [tagodeploy, iot, accounts, admin, user management]
 tags: ["tagodeploy", "accounts"]
 slug: /tagodeploy/project/accounts
 ---

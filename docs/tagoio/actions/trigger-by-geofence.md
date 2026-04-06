@@ -2,7 +2,9 @@
 title: "Trigger by Geofence"
 description: "This article explains how to use the Trigger by Geofence feature to run an Action when location data meets geofence conditions (inside or outside a predefined area), and it includes the UI text captured from the configuration screen."
 tags: ["tagoio"]
+keywords: [tagoio, iot, actions, geofence, location]
 ---
+
 The “Trigger by Geofence” feature allows you to execute an [Action](/docs/tagoio/actions/) whenever a variable containing location data meets specific geofence conditions—either inside or outside a predefined area. For example, you can configure an action to trigger when a device enters or exits a designated zone.
 
 ![Image 1](/docs_imagem/tagoio/external-5fc8df08.png)

@@ -2,6 +2,7 @@
 title: "Data Records Service"
 description: "This article explains how Data Records are structured in TagoIO, what counts toward a profile's data record limit, and provides a JSON example showing how a single register can include variable fields, location, and metadata."
 tags: ["tagoio"]
+keywords: [tagoio, iot, data records, storage, variables]
 ---
 
 A Data Record represents the variables stored and sent by devices. Each register consists of a variable and all metadata associated with it. The profile's data record limit defines the maximum storage capacity for the selected Profile at all times.
@@ -11,7 +12,6 @@ Fields such as [location](/docs/tagoio/devices/sending-data.md) that contain lat
 ## Metadata
 
 All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata.md) stored with a given variable are counted together as a single register. For example, all data stored with the variable "temperature" in the example below counts as only one register.
-
 
 ```json
 [

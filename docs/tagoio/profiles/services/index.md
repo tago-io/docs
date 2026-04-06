@@ -2,7 +2,9 @@
 title: "Services Overview"
 description: "A concise overview of the services available in TagoIO, how usage is measured, and where to view limits and history for each service."
 tags: ["tagoio"]
+keywords: [tagoio, iot, services, usage, limits]
 ---
+
 ## Overview
 
 TagoIO offers a broad range of services that can be provisioned according to your application's needs. By selecting which services each profile will use during the month, you can track usage and know exactly how much you will be charged.
@@ -13,17 +15,17 @@ Currently, the following services are available for selection on your account. S
 
 ## Services and Usage
 
-| Service | Unit | Usage counted | Definition |
-|---|---:|---|---|
-| Data Input | Variable | Monthly | Each variable sent by your devices or posted to the Device's data storage. |
-| Data Output | Variable | Monthly | Each variable received by your devices or retrieved ('get') from the Device's data storage. |
-| Data Storage | Variable | Maximum at any time | Each variable stored in a Device. |
-| File Storage | Size (MB) | Maximum at any time | Total aggregate size of all files stored in the Files module. |
-| Analysis for Scripts | Execution time | Monthly | Total script runtime executed by the Analysis module (minimum 1 second). |
-| Push Notifications | Message | Monthly | Messages sent out. |
-| E-mail | Message | Monthly | Messages sent out. |
-| SMS | Message | Monthly | Messages sent out. |
-| End user (RUN user) | User | Maximum at any time | End users registered in your RUN applications. |
+| Service              |           Unit | Usage counted       | Definition                                                                                  |
+| -------------------- | -------------: | ------------------- | ------------------------------------------------------------------------------------------- |
+| Data Input           |       Variable | Monthly             | Each variable sent by your devices or posted to the Device's data storage.                  |
+| Data Output          |       Variable | Monthly             | Each variable received by your devices or retrieved ('get') from the Device's data storage. |
+| Data Storage         |       Variable | Maximum at any time | Each variable stored in a Device.                                                           |
+| File Storage         |      Size (MB) | Maximum at any time | Total aggregate size of all files stored in the Files module.                               |
+| Analysis for Scripts | Execution time | Monthly             | Total script runtime executed by the Analysis module (minimum 1 second).                    |
+| Push Notifications   |        Message | Monthly             | Messages sent out.                                                                          |
+| E-mail               |        Message | Monthly             | Messages sent out.                                                                          |
+| SMS                  |        Message | Monthly             | Messages sent out.                                                                          |
+| End user (RUN user)  |           User | Maximum at any time | End users registered in your RUN applications.                                              |
 
 ## Service Alerts
 

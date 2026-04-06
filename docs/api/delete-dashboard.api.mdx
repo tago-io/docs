@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/dashboard/{dashboardID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/dashboard/{dashboardID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete the dashboard
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Deleting a dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting a dashboard":{"value":{"result":"Successfully Removed","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-dashboard.StatusCodes.json")}></StatusCodes>

@@ -1,6 +1,7 @@
 ---
 title: "Domain Management"
 description: "Manage Admin, TagoRUN, API, middleware, and MQTT domains; configure DNS and SSL CNAME records."
+keywords: [tagodeploy, iot, domains, dns, ssl]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/domains
 ---

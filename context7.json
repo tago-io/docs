@@ -1,0 +1,17 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "url": "https://context7.com/tago-io/docs",
+  "public_key": "pk_uqUpNtqKxFjbf8bNfKUVe",
+  "projectTitle": "TagoIO Documentation",
+  "description": "Official documentation for the TagoIO IoT platform, including TagoIO, TagoDeploy, TagoCore, TagoTiP, and the TagoIO REST API.",
+  "folders": ["docs"],
+  "excludeFolders": ["docs/api", "changelog", "cdk", "node_modules", "build", ".docusaurus"],
+  "excludeFiles": ["sync-tagotip.mjs"],
+  "rules": [
+    "TagoIO is an IoT (Internet of Things) cloud platform for device management, data storage, dashboards, and analysis.",
+    "The platform has multiple products: TagoIO (main platform), TagoDeploy (device deployment), TagoCore (edge computing), and TagoTiP (device provisioning).",
+    "The API uses token-based authentication. Always include the Authorization header with a device, account, or profile token.",
+    "Data is sent to TagoIO via HTTPS, MQTT, or other supported transport protocols.",
+    "Analysis scripts run server-side in Node.js and can be triggered by actions or scheduled."
+  ]
+}

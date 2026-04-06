@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: Data
 slug: /tagocore/device/data
+description: Understand the JSON data format for sending and retrieving IoT device data points in TagoCore.
+keywords: [tagocore, iot, device, data, api, json]
 ---
 
 # Device Data

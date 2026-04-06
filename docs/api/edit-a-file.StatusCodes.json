@@ -1,0 +1,19 @@
+{
+  "responses": {
+    "200": {
+      "description": "Edit a file",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Edit a file": { "value": { "result": "Successfully Updated", "status": true } } }
+        }
+      }
+    }
+  }
+}

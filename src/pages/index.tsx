@@ -3,7 +3,8 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
-import clsx from "clsx";
+import ThemedImage from "@theme/ThemedImage";
+import { clsx } from "clsx";
 import type { ReactNode } from "react";
 
 import styles from "./index.module.css";
@@ -14,8 +15,11 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.brandRow}>
           <span className={styles.brandDoc}>Documentation</span>
-          <img
-            src={useBaseUrl("/img/tagoio-official-logo.svg")}
+          <ThemedImage
+            sources={{
+              light: useBaseUrl("/img/tagoio-official-logo.svg"),
+              dark: useBaseUrl("/img/tagoio-official-logo-white.svg"),
+            }}
             alt="TagoIO"
             width={160}
             height={40}
@@ -26,8 +30,8 @@ function HomepageHeader() {
           Easy IoT. Powerful Outcomes.
         </Heading>
         <p className="hero__subtitle">
-          The Full-Stack IoT Platform to transform sensor data into smart
-          solutions — simple, affordable, and free of cloud complexity.
+          The Full-Stack IoT Platform to transform sensor data into smart solutions — simple, affordable, and free of
+          cloud complexity.
         </p>
         <div className="home-status-badge">
           <iframe
@@ -40,6 +44,7 @@ function HomepageHeader() {
             title="System status"
             loading="lazy"
             referrerPolicy="no-referrer"
+            sandbox="allow-scripts"
           />
           <iframe
             className="status-badge--dark"
@@ -51,17 +56,15 @@ function HomepageHeader() {
             title="System status"
             loading="lazy"
             referrerPolicy="no-referrer"
+            sandbox="allow-scripts"
           />
         </div>
         <div className={styles.buttons}>
-          <Link
-            className={clsx("button button--lg", styles.demoButton)}
-            to="https://tago.io/request-demo"
-          >
+          <Link className={clsx("button button--lg", styles.demoButton)} to="https://tago.io/request-demo">
             Request a Demo
           </Link>
           <Link
-            className="button button--outline button--secondary button--lg"
+            className={clsx("button button--outline button--lg", styles.getStartedButton)}
             to="https://tago.io/pricing"
           >
             Get Started

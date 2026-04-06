@@ -2,7 +2,9 @@
 title: "Python SDK"
 description: "This article provides quick installation and usage instructions for the TagoIO Python SDK, plus guidance on using remote imports within Python Analyses."
 tags: ["tagoio"]
+keywords: [tagoio, iot, sdk, python, integration]
 ---
+
 You can access the full SDK documentation at: https://py.sdk.tago.io/
 
 ## Installation

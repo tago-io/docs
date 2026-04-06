@@ -18,23 +18,11 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/dashboard/{dashboardID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/dashboard/{dashboardID}"} context={"endpoint"}></MethodEndpoint>
 
 Modify any property of the dashboard
 
@@ -45,35 +33,12 @@ After creating a widget, you **must manually edit the arrangement field** to inc
 
 Each item in the arrangement array represents a widget's placement and sizing.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type a dashboard ID)"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"label":{"type":"string","description":"The Dashboard Label"},"type":{"type":"string","enum":["dashboard","blueprint"],"example":"blueprint","description":"The type of dashboard. Can be \"dashboard\" or \"blueprint\"."},"group_by":{"type":"array","items":{}},"visible":{"type":"boolean","example":true,"description":"Determines if the dashboard is visible in the sidebar. If set to false, the dashboard remains accessible from the Dashboard list."},"icon":{"type":"object","properties":{"color":{"type":"string","example":"hsl(328, 89%, 47%)"},"url":{"type":"string","example":"https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg"}}},"tabs":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"1648142133869"},"link":{"type":"string","example":""},"value":{"type":"string","example":"new tab test"}}},"example":[{"key":"1648142133869","link":"","value":"new tab test"},{"key":"1648142564354","link":"","value":"new tab 2 "},{"key":"1648142571171","link":"","value":"new tab 3 "}]},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"updatedkey"},"value":{"type":"string","example":"updatedvalue"}}},"example":[{"key":"updatedkey","value":"updatedvalue"},{"key":"updatedkey","value":"updatedvalue"}]},"blueprint_devices":{"type":"array","description":"Only present for dashboards of type \"blueprint\".\nDefines the list of devices associated with a blueprint dashboard. Each device entry describes a device type, its conditions, and optional filter conditions.\n","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the blueprint device.","example":"68d2f3e0a6343f0009318e4c"},"name":{"type":"string","description":"The name of the blueprint.","example":"sensor"},"type":{"type":"string","description":"The type of the blueprint.","enum":["device","entity"],"example":"device"},"conditions":{"type":"array","description":"List of tag conditions that define this blueprint's characteristics.","items":{"type":"object","properties":{"key":{"type":"string","description":"The condition key.","example":"is_sensor"},"value":{"type":"string","description":"The condition value.","example":"true"}}},"example":[{"key":"is_sensor","value":"true"}]},"filter_conditions":{"type":"array","description":"Optional filter conditions for the device.","items":{"type":"object","properties":{"type":{"type":"string","description":"The type of filter condition.","example":"tag_match"},"tag_key":{"type":"string","description":"The tag key to match.","example":"location"},"blueprint_device":{"type":"string","description":"The name of the blueprint device to match against.","example":"customer"}}},"example":[{"type":"tag_match","tag_key":"location","blueprint_device":"customer"}]}}},"example":[{"id":"68d2f3e0a6343f0009318e4c","name":"sensor","type":"device","conditions":[{"key":"is_sensor","value":"true"}],"filter_conditions":[]},{"id":"68d2f3e0a6343f0009318e4d","name":"customer","type":"device","conditions":[{"key":"company","value":"JohnDoe"}],"filter_conditions":[]}]},"arrangement":{"type":"array","description":"The arrangement property defines the layout and positioning of widgets within the dashboard grid.\n","items":{"type":"object","properties":{"height":{"type":"number","example":3,"description":"The height of the widget in grid units."},"tab":{"description":"The tab identifier if the widget is placed in a tab, or null.","example":null},"widget_id":{"type":"string","example":"6230e740f5772600124c81e1","description":"The ID of the widget."},"width":{"type":"number","example":1,"description":"The width of the widget in grid units."},"x":{"type":"number","example":0,"description":"The X (column) position of the widget in the grid."},"y":{"type":"number","example":0,"description":"The Y (row) position of the widget in the grid."}}},"example":[{"height":3,"tab":null,"widget_id":"6230e740f5772600124c81e1","width":1,"x":0,"y":0},{"height":3,"tab":null,"widget_id":"6230e75df5772600124c81e2","width":1,"x":1,"y":0},{"height":3,"tab":null,"widget_id":"6230e44cf5772600124c81de","width":1,"x":2,"y":0},{"height":3,"tab":null,"widget_id":"6230e84df5772600124c81e7","width":2.33,"x":0.33,"y":7},{"height":5,"tab":null,"widget_id":"62750cf1253eb800126aefc0","width":2,"x":2.67,"y":7}]}}}}}}}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Updating a dashboard information","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Updating a dashboard information":{"value":{"result":"Successfully Updated","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-dashboard.StatusCodes.json")}></StatusCodes>

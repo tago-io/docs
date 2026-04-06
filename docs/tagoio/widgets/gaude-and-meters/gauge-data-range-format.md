@@ -2,8 +2,10 @@
 title: "Data Range & Format"
 description: "This article explains how to configure the Data Range & Format options for the Gauge widget, describing range limit types (Fixed and From Metadata) and how to set a static range."
 tags: ["tagoio"]
+keywords: [tagoio, iot, widget, gauge, data range]
 "sidebar_position": 2
 ---
+
 Data Range & Format is where you define the display format and the value range used by the gauge.
 
 ## Range Limits

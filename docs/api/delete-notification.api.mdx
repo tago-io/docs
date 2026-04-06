@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Notification"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Notification"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/run/notification/{notificationID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/run/notification/{notificationID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete notification on Run
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"notificationID","in":"path","required":true,"schema":{"type":"string","example":"(Type your RUN notification ID)"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-notification.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-notification.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Deleting a RUN user notification","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-notification.StatusCodes.json")}></StatusCodes>

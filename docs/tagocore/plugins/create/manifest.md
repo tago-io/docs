@@ -2,6 +2,8 @@
 sidebar_position: 4
 title: Manifest
 slug: /tagocore/plugins/create/manifest
+description: Reference for the TagoCore plugin manifest defined in package.json, including types and permissions.
+keywords: [tagocore, iot, plugin, manifest, package.json, configuration]
 ---
 
 # Plugin Manifest

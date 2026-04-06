@@ -2,6 +2,7 @@
 title: "Dashboard Overview"
 description: "Learn about TagoIO dashboards - where you place widgets to visualize and interact with data in real-time, and share with end-users through TagoRUN."
 tags: ["tagoio", "dashboards"]
+keywords: [tagoio, iot, dashboard, widgets, data visualization, real-time]
 ---
 
 A dashboard is where you place your widgets to visualize and interact with data, all in real-time. Dashboards can also be shared with end-users that will access your application using [TagoRUN](/docs/tagoio/tagorun/).
@@ -33,13 +34,11 @@ In this window, you can also switch the **Blueprint slider** to generate a Bluep
 
 <YouTube videoId="D2lmCHF4Eg4" title="Building Dashboards and Widgets" />
 
-
 ## Dashboard Icons
 
 You can add [icons](/docs/tagoio/dashboards/dashboard-icons.md) to your dashboard, making it look just the way that you want it.
 
 <!-- Dashboard icons image -->
-
 
 ## Dashboard Background
 
@@ -52,7 +51,6 @@ Although video formats are not accepted, you can upload animations using the **.
 <!-- Dashboard background example image -->
 
 > **Tip:** You have full control of the opacity level for the background and the widgets.
-
 
 ## Reordering widgets for mobile app on TagoRUN
 

@@ -1,6 +1,7 @@
 ---
 title: "Resource Limits"
 description: "Configure and understand project resource limits, their impact on scaling, and best practices."
+keywords: [tagodeploy, iot, limits, scaling, resources]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/limits
 ---

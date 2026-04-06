@@ -2,6 +2,7 @@
 title: "Device Emulator Overview"
 description: "A short guide describing TagoIO's Device Emulator, how to open it, and the types of payloads it accepts for emulating device data."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, emulator, payload, testing]
 ---
 
 The device emulator is a tool for developers to send data as if it were coming

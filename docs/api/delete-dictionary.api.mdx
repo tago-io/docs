@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Dictionary"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Dictionary"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/dictionary/{dictionary_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/dictionary/{dictionary_id}"} context={"endpoint"}></MethodEndpoint>
 
 Delete Dictionary
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"dictionary_id","in":"path","required":true,"schema":{"type":"string","example":"(Type Dictionary ID)"},"description":"Can be obtained in the GET Dictionary response"}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-dictionary.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-dictionary.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Delete Dictionary","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-dictionary.StatusCodes.json")}></StatusCodes>

@@ -2,22 +2,22 @@
 sidebar_position: 3
 title: Module - Payload Encoder
 slug: /tagocore/plugins/create/encoder
+description: Encode device data before it reaches a device using the PayloadEncoderModule in TagoCore plugins.
+keywords: [tagocore, iot, plugin, payload encoder, module, data processing]
 ---
-
-import Mermaid from '@theme/Mermaid';
 
 # Payload Encoder Module
 
 This Module allows you to encode data before it reaches a device.
 
-<Mermaid chart={`
+```mermaid
 graph LR
     A[Device sends data] --> B[Payload Encoder]
     B[Payload Encoder] --> C[Payload Parser]
     C[Payload Parser] --> D[Data added to Device]
-    
+
     classDef default fill:#333,stroke:#333,stroke-width:2px,color:#fff,font-weight:bold
-`}/>
+```
 
 Once a Device sends data, the data is immediately forwarded to the first `PayloadEncoderModule` found. The Payload
 Encoder order is defined by the `encoder_stack` field of the Device.
@@ -36,7 +36,6 @@ To encode the value, you should override the Module's `onCall` function. This fu
 is the data sent by a Device or parsed by other encoders.
 
 You should **always** return a value from the `onCall` function.
-
 
 ## Sample code
 

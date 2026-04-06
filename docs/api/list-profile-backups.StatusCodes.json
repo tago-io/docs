@@ -1,0 +1,61 @@
+{
+  "responses": {
+    "200": {
+      "description": "List of backups retrieved successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": true },
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "example": "678abc123def456789012345" },
+                    "profile": { "type": "string", "example": "61fac4d9a5c9f40012a5ff92" },
+                    "file_path": {
+                      "type": "string",
+                      "example": "profile/61fac4d9a5c9f40012a5ff92/versioning/backup/backup-61fac4d9a5c9f40012a5ff92.zip"
+                    },
+                    "version_id": { "type": "string", "example": "abc123def456" },
+                    "file_size": { "type": "number", "example": 15728640, "description": "File size in bytes" },
+                    "status": {
+                      "type": "string",
+                      "enum": ["queued", "processing", "completed", "failed"],
+                      "example": "completed"
+                    },
+                    "error_message": {
+                      "type": "string",
+                      "example": null,
+                      "description": "Error message if status is 'failed'"
+                    },
+                    "created_at": { "type": "string", "example": "2025-01-07T14:30:00.000Z" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "403": {
+      "description": "Forbidden - Free plan users cannot access backup features",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": {
+                "type": "string",
+                "example": "Backup feature is not available on the free plan. Please upgrade your plan to access backup functionality."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

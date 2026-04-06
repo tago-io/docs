@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Update Policy"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Update Policy"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/{am_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/{am_id}"} context={"endpoint"}></MethodEndpoint>
 
 Update policy
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"am_id","in":"path","required":true,"schema":{"type":"string","example":"(Type a Access Management/Policy ID)"},"description":"Can be obtained in the GET Policy response"}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./update-policy.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean","example":true},"name":{"type":"string","example":"Updated policy name"},"permissions":{"type":"array","items":{"type":"object","properties":{"action":{"type":"array","items":{"type":"string","example":"access"},"example":["access"]},"effect":{"type":"string","example":"denied"},"resource":{"type":"array","items":{"type":"string","example":"device"},"example":["device"]}}},"example":[{"action":["access"],"effect":"denied","resource":["device"]}]},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"access"},"value":{"type":"string","example":"blocked"}}},"example":[{"key":"access","value":"blocked"}]},"targets":{"type":"array","items":{"type":"array","items":{"type":"string","example":"run_user"},"example":["run_user"]},"example":[["run_user"]]}}},"examples":{"Update policy":{"value":{"active":true,"name":"Updated policy name","permissions":[{"action":["access"],"effect":"denied","resource":["device"]}],"tags":[{"key":"access","value":"blocked"}],"targets":[["run_user"]]}}}},"text/plain":{"examples":{"Update policy":{"value":"{\n    \"name\": \"Updated Policy Name\", //edit the policy name\n    \"permissions\": [\n        {\n            \"effect\": \"allow\",\n            \"action\": [\n                \"access\"\n            ],\n            \"resource\": [\n                \"device\"\n            ] //updating resouces, they can be \"device\", \"dashboard\" and \"run_user\" types\n        }\n    ],\n    \"targets\": [\n        [\n            \"run_user\"\n        ] // update  the target, possible \"run_user\" and \"analysis\" types\n    ],\n    \"tags\": [\n        {\n            \"key\": \"access\",\n            \"value\": \"admin\"\n        }\n        ], //able to update tags \n    \"active\": true //able to active and deactive policy (true or false)\n}"}}}}}}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./update-policy.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Updating a policy","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Access Management Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Updating a policy":{"value":{"result":"Access Management Successfully Updated","status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./update-policy.StatusCodes.json")}></StatusCodes>

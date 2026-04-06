@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Device Overview
 slug: /tagocore/device
+description: Create and manage IoT devices in TagoCore, configure tokens for secure communication, and set up payload parsers.
+keywords: [tagocore, iot, device, token, payload parser]
 ---
 
 # Device

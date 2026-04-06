@@ -18,57 +18,22 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Config. parameters"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Config. parameters"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/params"} context={"endpoint"}></MethodEndpoint>
 
 Retrieve configuration parameters for the current device. This is useful for delivering settings or instructions that your device can periodically check for updates.
 
 [Configuration Parameters](/docs/tagoio/devices/configuration-parameters-for-devices) can be used to provide URLs (such as for firmware updates) or any other settings needed to control device behavior.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"sent_status","in":"query","schema":{"type":"string","example":"true"},"description":"Filter by `sent` status."}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-configuration-parameters.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-configuration-parameters.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"List of configuration parameters returned","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"6244401fe689b90014f9b299"},"key":{"type":"string","example":"param_key"},"sent":{"type":"boolean","example":false},"value":{"type":"string","example":"param_value"}}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-configuration-parameters.StatusCodes.json")}></StatusCodes>

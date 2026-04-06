@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Empty Device Storage"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Empty Device Storage"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/empty"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/empty"} context={"endpoint"}></MethodEndpoint>
 
 Empty a Device's Data
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./empty-a-device-s-data.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./empty-a-device-s-data.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Device's Data empty","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Data Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./empty-a-device-s-data.StatusCodes.json")}></StatusCodes>

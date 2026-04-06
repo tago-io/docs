@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Device Param"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Device Param"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/device/{deviceID}/params/{paramID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/device/{deviceID}/params/{paramID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete param from the device
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"(Type your device ID)"}},{"name":"paramID","in":"path","required":true,"schema":{"type":"string","example":"(Type your param ID)"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-device-param.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-device-param.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Deleting a Device Param by ID","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Removed"},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-device-param.StatusCodes.json")}></StatusCodes>

@@ -1,0 +1,256 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting widget Data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "origin": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                            "query": { "type": "string", "example": "last_value" },
+                            "variables": {
+                              "type": "array",
+                              "items": { "type": "string", "example": "temperature" },
+                              "example": ["temperature"]
+                            }
+                          }
+                        },
+                        "result": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "device": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                              "group": { "type": "string", "example": "3ac3e21100e473e57d9a1b26" },
+                              "id": { "type": "string", "example": "62b1a9d75e374e00112e3ca4" },
+                              "origin": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                              "serie": { "type": "string", "example": "3ac3e21100e473e57d9a1b26" },
+                              "time": { "type": "string", "example": "2022-06-21T11:21:59.415Z" },
+                              "value": { "type": "number", "example": 71 },
+                              "variable": { "type": "string", "example": "temperature" }
+                            }
+                          },
+                          "example": [
+                            {
+                              "device": "6238a3a27d792400139e5b47",
+                              "group": "3ac3e21100e473e57d9a1b26",
+                              "id": "62b1a9d75e374e00112e3ca4",
+                              "origin": "6238a3a27d792400139e5b47",
+                              "serie": "3ac3e21100e473e57d9a1b26",
+                              "time": "2022-06-21T11:21:59.415Z",
+                              "value": 71,
+                              "variable": "temperature"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "example": [
+                      {
+                        "data": {
+                          "origin": "6238a3a27d792400139e5b47",
+                          "query": "last_value",
+                          "variables": ["temperature"]
+                        },
+                        "result": [
+                          {
+                            "device": "6238a3a27d792400139e5b47",
+                            "group": "3ac3e21100e473e57d9a1b26",
+                            "id": "62b1a9d75e374e00112e3ca4",
+                            "origin": "6238a3a27d792400139e5b47",
+                            "serie": "3ac3e21100e473e57d9a1b26",
+                            "time": "2022-06-21T11:21:59.415Z",
+                            "value": 71,
+                            "variable": "temperature"
+                          }
+                        ]
+                      },
+                      {
+                        "data": {
+                          "origin": "62308e38de51960019697e76",
+                          "query": "last_value",
+                          "variables": ["temperature"]
+                        },
+                        "result": [
+                          {
+                            "device": "62308e38de51960019697e76",
+                            "id": "62309cb173cb3b001a031db5",
+                            "metadata": { "old_value": "45" },
+                            "origin": "62308e38de51960019697e76",
+                            "time": "2022-03-15T14:03:29.476Z",
+                            "unit": "C",
+                            "value": "33",
+                            "variable": "temperature"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "widget": {
+                    "type": "object",
+                    "properties": {
+                      "analysis_run": { "example": null },
+                      "dashboard": { "type": "string", "example": "623c74a15a13360011803f3e" },
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "origin": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                            "query": { "type": "string", "example": "last_value" },
+                            "variables": {
+                              "type": "array",
+                              "items": { "type": "string", "example": "temperature" },
+                              "example": ["temperature"]
+                            }
+                          }
+                        },
+                        "example": [
+                          { "origin": "6238a3a27d792400139e5b47", "query": "last_value", "variables": ["temperature"] },
+                          { "origin": "62308e38de51960019697e76", "query": "last_value", "variables": ["temperature"] }
+                        ]
+                      },
+                      "display": {
+                        "type": "object",
+                        "properties": {
+                          "header_buttons": { "type": "array", "items": {}, "example": [] },
+                          "show_units": { "type": "boolean", "example": true },
+                          "show_variables": { "type": "boolean", "example": true },
+                          "theme": {
+                            "type": "object",
+                            "properties": {
+                              "color": {
+                                "type": "object",
+                                "properties": {
+                                  "background": { "type": "string", "example": "hsla(332, 33%, 73%, 1)" },
+                                  "button": { "type": "string", "example": "hsla(112, 91%, 58%, 1)" },
+                                  "dot": { "type": "string", "example": "hsla(0, 97%, 48%, 1)" },
+                                  "header": { "type": "string", "example": "hsla(336, 81%, 51%, 1)" }
+                                }
+                              }
+                            }
+                          },
+                          "variables": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "origin": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                                "variable": { "type": "string", "example": "temperature" }
+                              }
+                            },
+                            "example": [
+                              { "origin": "6238a3a27d792400139e5b47", "variable": "temperature" },
+                              { "origin": "62308e38de51960019697e76", "variable": "temperature" }
+                            ]
+                          }
+                        }
+                      },
+                      "id": { "type": "string", "example": "623c79da5a13360011819b1d" },
+                      "label": { "type": "string", "example": "Display #1" },
+                      "realtime": { "type": "string", "example": "true" },
+                      "resource": { "type": "array", "items": {}, "example": [] },
+                      "type": { "type": "string", "example": "display" }
+                    }
+                  }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Getting widget Data": {
+              "value": {
+                "result": {
+                  "content": [
+                    {
+                      "data": {
+                        "origin": "6238a3a27d792400139e5b47",
+                        "query": "last_value",
+                        "variables": ["temperature"]
+                      },
+                      "result": [
+                        {
+                          "device": "6238a3a27d792400139e5b47",
+                          "group": "3ac3e21100e473e57d9a1b26",
+                          "id": "62b1a9d75e374e00112e3ca4",
+                          "origin": "6238a3a27d792400139e5b47",
+                          "serie": "3ac3e21100e473e57d9a1b26",
+                          "time": "2022-06-21T11:21:59.415Z",
+                          "value": 71,
+                          "variable": "temperature"
+                        }
+                      ]
+                    },
+                    {
+                      "data": {
+                        "origin": "62308e38de51960019697e76",
+                        "query": "last_value",
+                        "variables": ["temperature"]
+                      },
+                      "result": [
+                        {
+                          "device": "62308e38de51960019697e76",
+                          "id": "62309cb173cb3b001a031db5",
+                          "metadata": { "old_value": "45" },
+                          "origin": "62308e38de51960019697e76",
+                          "time": "2022-03-15T14:03:29.476Z",
+                          "unit": "C",
+                          "value": "33",
+                          "variable": "temperature"
+                        }
+                      ]
+                    }
+                  ],
+                  "widget": {
+                    "analysis_run": null,
+                    "dashboard": "623c74a15a13360011803f3e",
+                    "data": [
+                      { "origin": "6238a3a27d792400139e5b47", "query": "last_value", "variables": ["temperature"] },
+                      { "origin": "62308e38de51960019697e76", "query": "last_value", "variables": ["temperature"] }
+                    ],
+                    "display": {
+                      "header_buttons": [],
+                      "show_units": true,
+                      "show_variables": true,
+                      "theme": {
+                        "color": {
+                          "background": "hsla(332, 33%, 73%, 1)",
+                          "button": "hsla(112, 91%, 58%, 1)",
+                          "dot": "hsla(0, 97%, 48%, 1)",
+                          "header": "hsla(336, 81%, 51%, 1)"
+                        }
+                      },
+                      "variables": [
+                        { "origin": "6238a3a27d792400139e5b47", "variable": "temperature" },
+                        { "origin": "62308e38de51960019697e76", "variable": "temperature" }
+                      ]
+                    },
+                    "id": "623c79da5a13360011819b1d",
+                    "label": "Display #1",
+                    "realtime": "true",
+                    "resource": [],
+                    "type": "display"
+                  }
+                },
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,9 @@ title: "Device Data Management"
 description: "This article explains how to use the Device page in TagoIO to visualize, filter, edit, import, and export device variables, and describes how the platform displays the amount of stored data for a device."
 tags: ["tagoio", "devices"]
 sidebar_position: 1
+keywords: [tagoio, iot, devices, data management, variables, filtering]
 ---
+
 The device page provides tools for visualizing, filtering, editing, importing, and exporting variables to facilitate management of the data received from your device. You can access these tools by navigating to the Device module, selecting a device, and clicking on the "Data" tab. Refer to the Device module documentation for navigation details.
 
 <!-- Image placeholder removed for build -->
@@ -128,7 +130,6 @@ would result in a file address such as:
 ```
 
 Date variables such as $FROM$ and $TO$ will be in the ISO 8601 format (YYYY-MM-DD).
-
 
 When exporting a chunk to a location where a file already exists, all the data will be replaced with the new one.
 

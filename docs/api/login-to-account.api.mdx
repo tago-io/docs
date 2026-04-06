@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Login to Account"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Login to Account"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/account/login"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/account/login"} context={"endpoint"}></MethodEndpoint>
 
 Login to account using email and password
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","required":["email","password"],"properties":{"email":{"type":"string","example":"example@mail.com"},"password":{"type":"string","example":"yourpassword"}}},"examples":{"Login to Account":{"value":{"email":"example@mail.com","password":"yourpassword"}}}}}}}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./login-to-account.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Login","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"company":{"type":"string","example":"companyname"},"email":{"type":"string","example":"example@mail.com"},"id":{"type":"string","example":"612ea05e3cc078001371895110"},"name":{"type":"string","example":"Your Name"},"phone":{"type":"string","example":"+9396363457126"},"profiles":{"type":"array","items":{"type":"object","properties":{"account":{"type":"string","example":"612ea05e3cc078001371895110"},"id":{"type":"string","example":"612ea05e3cc078001371895111"},"logo_url":{"example":null},"name":{"type":"string","example":"profilename"}}},"example":[{"account":"612ea05e3cc078001371895110","id":"612ea05e3cc078001371895111","logo_url":null,"name":"profilename"}]},"type":{"type":"string","example":"user"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./login-to-account.StatusCodes.json")}></StatusCodes>

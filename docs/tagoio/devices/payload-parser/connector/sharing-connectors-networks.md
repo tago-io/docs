@@ -2,10 +2,10 @@
 title: "Sharing Connectors & Networks"
 description: "This article explains how to share custom Connectors and Networks in TagoIO, including the steps to share with another Profile and how to request a public connector for all users."
 tags: ["tagoio"]
+keywords: [tagoio, iot, connectors, networks, sharing, profiles]
 ---
 
 TagoIO provides many pre-integrated devices and networks so you can quickly connect devices. When a new device or network is not yet integrated, you can create a custom Connector or network integration. Those custom solutions can be shared with members of your team or with any external Profile for their use.
-
 
 ## Sharing a custom Connector or Network
 
@@ -22,6 +22,7 @@ Note: Profiles with access to the shared connector cannot modify it; they can on
 <!-- Image placeholder removed for build -->
 
 The Share modal contains:
+
 - Title: "Share connector"
 - Input: "Profile ID" (field to enter the Profile ID to share this connector)
 - Small note: "Profiles with access to the shared connector cannot modify it, only use it to create devices."
@@ -34,6 +35,7 @@ Once shared, the recipient profiles can select your connector when adding new de
 ### Utilizing the shared Network
 
 Custom networks are only applicable for Connectors created by you. To make your custom network available for your connector, head to the configuration page of your network within the [Integrations](https://admin.tago.io/integrations/connector) page. Then:
+
 - Navigate to the **General Information** tab.
 - Select your custom network from the "**Select the networks for this connector**" option.
 

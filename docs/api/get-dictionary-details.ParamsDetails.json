@@ -1,0 +1,11 @@
+{
+  "parameters": [
+    {
+      "name": "dictionary_id",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type Dictionary ID)" },
+      "description": "Can be obtained in the GET Dictionary response"
+    }
+  ]
+}

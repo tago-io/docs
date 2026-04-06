@@ -2,7 +2,9 @@
 title: "Configuration Parameters for Devices"
 description: "This article explains what Configuration Parameters are in TagoIO devices, where to find them, and the three configurable fields for each parameter (Key, Value, Read/Unread). It also shows how to access the Configuration Parameters tab on a device and how parameters can be set and retrieved."
 tags: ["tagoio", "devices"]
+keywords: [tagoio, iot, devices, configuration parameters, key-value]
 ---
+
 Configuration Parameters are key-value pairs that enable you to customize the behavior of your [Devices](/docs/tagoio/devices/) in different scenarios. For example, you can use them to specify how to decode data or send downlink messages, filter your devices on [Widgets](/docs/tagoio/widgets/), or interact with [API & Analysis](/docs/tagoio/analysis/) scripts.
 
 Configuration Parameters are stored on the configuration page of your device. You can access them by clicking on the Devices module in the left menu and selecting a device. You will see a tab called "Configuration Parameters", where you can add, edit, or delete parameters. You can set parameters and retrieve them later by making a request from the device.
@@ -18,7 +20,6 @@ Each Configuration Parameter has three configurable fields:
 2. **Value**: The value you want to assign to your device for that parameter.
 
 3. **Read & Unread**: A boolean value (true or false) that indicates whether the parameter has been sent to the device.
-
 
 :::note
 

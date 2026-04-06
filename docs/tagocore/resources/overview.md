@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: Resources Overview
 slug: /tagocore/resources
+description: Overview of TagoCore resources including devices, analyses, actions, settings, and logs for your IoT platform.
+keywords: [tagocore, iot, resources, devices, analyses, actions]
 ---
 
 # Resources Overview
@@ -49,7 +51,7 @@ If you're new to TagoCore, we recommend following this learning path:
 Each resource section includes both beginner-friendly introductions and advanced configuration options. Look for:
 
 - **Overview pages** - High-level concepts and getting started guides
-- **Configuration guides** - Detailed setup and customization instructions  
+- **Configuration guides** - Detailed setup and customization instructions
 - **Code examples** - Practical implementations and sample scripts
 - **Troubleshooting tips** - Common issues and their solutions
 

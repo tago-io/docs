@@ -2,6 +2,7 @@
 title: "E-mail Service"
 description: "This article explains how TagoIO counts Email usage, monthly limits and warnings, and the end of TagoIO's native E-mail service (effective January 1, 2025). It also points to alternatives and related documentation."
 tags: ["tagoio"]
+keywords: [tagoio, iot, email, notifications, service limits]
 ---
 
 Each time an Email is successfully sent by the [Action](/docs/tagoio/actions/)

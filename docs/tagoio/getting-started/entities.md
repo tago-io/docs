@@ -2,7 +2,9 @@
 title: "Entities"
 description: "A concise overview of the TagoIO Entities feature, explaining its purpose, typical use cases, and instructions for creating a new Entity in the Admin interface."
 tags: ["tagoio"]
+keywords: [tagoio, iot, entities, data storage, tabular data]
 ---
+
 The Entity feature is an excellent tool for storing data in a tabular format. Unlike the [Devices](/docs/tagoio/devices/) feature, which is optimized for storing sensor data with high-frequency write operations, the Entity feature provides a versatile solution for managing a wider variety of data types with less frequent writes.
 
 Within an Entity, you can create custom fields similar to columns in a traditional database and define specific data types. You can also improve search and retrieval performance by implementing single or multiple indexes. Entities are well suited to store diverse data such as site information, organizational metadata, contact lists, equipment details, and product information.
@@ -15,11 +17,11 @@ To create a new Entity, open the [Entity module](https://admin.tago.io/entities)
 
 ### Mandatory default fields
 
-| Field      | Description |
-|------------|-------------|
+| Field      | Description                                                                                         |
+| ---------- | --------------------------------------------------------------------------------------------------- |
 | id         | A Universally Unique Identifier (UUID) for the data entry, automatically generated if not provided. |
-| created_at | Timestamp of when the data entry was created. |
-| updated_at | Timestamp of the last time the data was edited. |
+| created_at | Timestamp of when the data entry was created.                                                       |
+| updated_at | Timestamp of the last time the data was edited.                                                     |
 
 These fields are always present and cannot be removed or modified.
 
@@ -31,14 +33,14 @@ You can easily manage your fields by accessing the **Fields** tab within your En
 
 When adding new fields, you have several data types to choose from. It’s important to note that once a field is created, its data type cannot be changed.
 
-| Data Type | Description |
-|-----------|-------------|
+| Data Type | Description                                               |
+| --------- | --------------------------------------------------------- |
 | String    | A variable‑length string. Maximum size of 255 characters. |
-| Integer   | An integer number (e.g., 10). |
-| Float     | A floating‑point number (e.g., 10.5). |
-| Text      | A long text string. Maximum size of 30,000 characters. |
-| Timestamp | A date/time in ISO‑8601 format. |
-| JSON Data | A JSON object, maximum size of 10 KB. |
+| Integer   | An integer number (e.g., 10).                             |
+| Float     | A floating‑point number (e.g., 10.5).                     |
+| Text      | A long text string. Maximum size of 30,000 characters.    |
+| Timestamp | A date/time in ISO‑8601 format.                           |
+| JSON Data | A JSON object, maximum size of 10 KB.                     |
 
 ## Indexing fields to improve searching and sorting
 
@@ -58,10 +60,10 @@ When filtering data, you must provide all filters matching the index from left t
 
 1. You don’t need to use all fields in the index, but you must use them in order, starting from the leftmost field.
 2. For example, if you have an index with fields (A, B, C):
-   * You can filter using only field A.
-   * You can filter using fields A and B.
-   * You can filter using fields A, B, and C.
-   * You cannot filter using only B, or B and C, without including A.
+   - You can filter using only field A.
+   - You can filter using fields A and B.
+   - You can filter using fields A, B, and C.
+   - You cannot filter using only B, or B and C, without including A.
 
 ## Preprocessing data before insertion
 
@@ -73,10 +75,10 @@ To activate it, go to the Schema Parser tab and toggle the "**Enable**" button. 
 
 The following global variables are available in the Schema Parser:
 
-| Variable | Description |
-|----------|-------------|
+| Variable | Description                                                                  |
+| -------- | ---------------------------------------------------------------------------- |
 | payload  | Content of the message being inserted. Usually an Array of data or a string. |
-| dayjs    | Day.js library for date/time operations. |
+| dayjs    | Day.js library for date/time operations.                                     |
 
 ## Managing the data in your Entity
 
@@ -96,12 +98,12 @@ The number of data entries available per entity is determined by your subscripti
 
 The Entity has certain limits based on your TagoIO account plan. These limits apply to the number of entities, fields, indexes, and data entries you can create.
 
-| Feature | Free | Starter | Scale |
-|---------|------|--------|-------|
-| Fields per Entity | 10 | 30 | 30 |
-| Indexes per Entity | 2 | 10 | 10 |
-| Fields per Index | 5 | 5 | 5 |
-| Data Entries | 1,000 | 100,000 | 100,000 |
+| Feature            | Free  | Starter | Scale   |
+| ------------------ | ----- | ------- | ------- |
+| Fields per Entity  | 10    | 30      | 30      |
+| Indexes per Entity | 2     | 10      | 10      |
+| Fields per Index   | 5     | 5       | 5       |
+| Data Entries       | 1,000 | 100,000 | 100,000 |
 
 Entity operations are subject to the same rate limits (Requests Per Minute) as other mutable operations in your plan. For detailed information on these limits, please refer to the Rate Limits documentation.
 

@@ -1,0 +1,41 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "active": { "type": "boolean", "example": true },
+            "company": { "type": "string", "example": "Companyname" },
+            "language": { "type": "string", "example": "en" },
+            "name": { "type": "string", "example": "runusername" },
+            "options": {
+              "type": "object",
+              "properties": {
+                "date_format": { "type": "string", "example": "MM/DD/YYYY" },
+                "time_format": { "type": "string", "example": "12" }
+              }
+            },
+            "phone": { "type": "string", "example": "+010001010011" },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": { "type": "string", "example": "user_type" },
+                  "value": { "type": "string", "example": "enduser" }
+                }
+              },
+              "example": [
+                { "key": "user_type", "value": "enduser" },
+                { "key": "limit_login", "value": "10" }
+              ]
+            },
+            "timezone": { "type": "string", "example": "America/New_York" }
+          }
+        }
+      }
+    }
+  }
+}

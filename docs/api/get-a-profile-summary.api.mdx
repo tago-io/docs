@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Profile Summary"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Profile Summary"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/profile/{id}/summary"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/profile/{id}/summary"} context={"endpoint"}></MethodEndpoint>
 
 Get your Profile Summary
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"string","example":"Type a profile ID"},"description":"Can be found in the profile's information tab \"More\""}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-a-profile-summary.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-a-profile-summary.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Get a general summary of your profile resources","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"addons":{"type":"object","properties":{"control_tower":{"type":"boolean","example":true},"custom_dns":{"type":"boolean","example":false},"mobile":{"type":"boolean","example":false},"profile":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"updated_at":{"type":"string","example":"2023-09-06T13:47:08.192Z"}}},"amount":{"type":"object","properties":{"action":{"type":"number","example":37},"am":{"type":"number","example":5},"analysis":{"type":"number","example":18},"connectors":{"type":"number","example":32},"dashboard":{"type":"number","example":231},"device":{"type":"number","example":79},"dictionary":{"type":"number","example":7},"networks":{"type":"number","example":9},"run_users":{"type":"number","example":5},"tcore":{"type":"number","example":2},"tcore_cluster":{"type":"number","example":2}}},"limit":{"type":"object","properties":{"analysis":{"type":"number","example":5},"data_records":{"type":"number","example":250000},"email":{"type":"number","example":10},"file_storage":{"type":"number","example":132},"input":{"type":"number","example":350000},"output":{"type":"number","example":342153},"push_notification":{"type":"number","example":58},"run_users":{"type":"number","example":5},"sms":{"type":"number","example":60},"tcore":{"type":"number","example":1}}},"limit_used":{"type":"object","properties":{"analysis":{"type":"number","example":0},"dashboard_output":{"type":"number","example":65},"data_records":{"type":"number","example":151242},"email":{"type":"number","example":0},"file_storage":{"type":"number","example":49.89},"input":{"type":"number","example":43463},"output":{"type":"number","example":1272},"push_notification":{"type":"number","example":0},"run_users":{"type":"number","example":5},"sms":{"type":"number","example":0},"tcore":{"type":"number","example":3},"tcore_cluster":{"type":"number","example":2}}},"tago_run":{"type":"string","example":"johndoee.tago.run"}}},"status":{"type":"boolean","example":true}}},"examples":{"Getting a profile summary":{"value":{"result":{"addons":{"control_tower":true,"custom_dns":false,"mobile":false,"profile":"61fac4d9a5c9f40012a5ff92","updated_at":"2023-09-06T13:47:08.192Z"},"amount":{"action":37,"am":5,"analysis":18,"connectors":32,"dashboard":231,"device":79,"dictionary":7,"networks":9,"run_users":5,"tcore":2,"tcore_cluster":2},"limit":{"analysis":5,"data_records":250000,"email":10,"file_storage":132,"input":350000,"output":342153,"push_notification":58,"run_users":5,"sms":60,"tcore":1},"limit_used":{"analysis":0,"dashboard_output":65,"data_records":151242,"email":0,"file_storage":49.89,"input":43463,"output":1272,"push_notification":0,"run_users":5,"sms":0,"tcore":3,"tcore_cluster":2},"tago_run":"johndoee.tago.run"},"status":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-a-profile-summary.StatusCodes.json")}></StatusCodes>

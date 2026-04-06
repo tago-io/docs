@@ -1,0 +1,25 @@
+{
+  "responses": {
+    "201": {
+      "description": "Token created",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "expire_time": { "type": "string", "example": "2022-03-30T01:15:14.914Z" },
+                  "permission": { "type": "string", "example": "full" },
+                  "token": { "type": "string", "example": "f2ba4b46-3c57-44ce-810f-98e1271ea602" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

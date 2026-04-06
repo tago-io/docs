@@ -2,7 +2,9 @@
 title: "Account Plans"
 description: "This article explains TagoIO's account plans, how to select a plan, and where to find detailed feature and pricing information."
 tags: ["tagoio", "billing"]
+keywords: [tagoio, iot, account plans, pricing, subscription]
 ---
+
 ## Overview
 
 TagoIO offers three account plans that allow you to use the platform's tools and capabilities for your application. Select your plan on the [My Billing](https://admin.tago.io/account/billing) page.

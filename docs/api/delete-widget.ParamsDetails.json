@@ -1,0 +1,16 @@
+{
+  "parameters": [
+    {
+      "name": "dashboardID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type a dashboard ID)" }
+    },
+    {
+      "name": "widgetID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type a widget ID)" }
+    }
+  ]
+}

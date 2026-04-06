@@ -14,7 +14,7 @@ export default function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
     width: "100%",
     height: "400",
     playerVars: {
-      autoplay: 0 as 0,
+      autoplay: 0 as const,
     },
   };
 

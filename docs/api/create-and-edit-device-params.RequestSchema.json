@@ -1,0 +1,23 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string", "example": "62aba74d84acd30011ac593f" },
+            "key": { "type": "string", "example": "updatedKey" },
+            "sent": { "type": "boolean", "example": false },
+            "value": { "type": "string", "example": "updatedValue" }
+          }
+        },
+        "examples": {
+          "Create and Edit Device Params": {
+            "value": { "id": "62aba74d84acd30011ac593f", "key": "updatedKey", "sent": false, "value": "updatedValue" }
+          }
+        }
+      }
+    }
+  }
+}

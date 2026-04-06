@@ -2,10 +2,13 @@
 title: "Tags System"
 description: "This article explains the Tags system in TagoIO, describing what tags are, how they function as key-value metadata, and how to assign them to assets within the platform."
 tags: ["tagoio"]
+keywords: [tagoio, iot, tags, metadata, organization]
 ---
+
 Tags are a flexible and powerful way to organize and label your assets within TagoIO. Tags let you manage access and identify key components such as [Devices](/docs/tagoio/devices/), [Actions](/docs/tagoio/actions/), [Analysis](/docs/tagoio/analysis/), [Dashboards](/docs/tagoio/dashboards/), and [Users & Access rules](/docs/tagoio/tagorun/access-management/).
 
 Operating like key–value pairs, tags enable you to assign relevant metadata to your assets, such as:
+
 - names
 - descriptions
 - categories
@@ -20,10 +23,10 @@ Tags can be assigned to a wide range of components within TagoIO. They are typic
 
 ### Tag parameters
 
-| Parameter | Description |
-|-----------|-------------|
+| Parameter | Description                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
 | **Key**   | Name of the parameter used as reference; you may also select an existing key. |
-| **Value** | The value you want to assign to your asset. |
+| **Value** | The value you want to assign to your asset.                                   |
 
 ### Maximum number of tags per asset
 

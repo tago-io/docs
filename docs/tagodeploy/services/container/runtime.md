@@ -1,6 +1,7 @@
 ---
 title: "Container Runtime"
 description: "Configure container working directory, startup command, and image overrides for custom runtime behavior."
+keywords: [tagodeploy, iot, container, runtime, docker]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/runtime
 ---

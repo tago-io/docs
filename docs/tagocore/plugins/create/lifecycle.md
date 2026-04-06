@@ -2,9 +2,9 @@
 sidebar_position: 3
 title: Lifecycle
 slug: /tagocore/plugin/create/lifecycle
+description: Understand how TagoCore plugins start, stop, and handle errors through the onLoad and onDestroy lifecycle.
+keywords: [tagocore, iot, plugin, lifecycle, sandbox, module]
 ---
-
-import Mermaid from '@theme/Mermaid';
 
 # Lifecycle
 
@@ -19,7 +19,7 @@ which means your **Plugin should have at least one module**.
 
 ## How Plugins are Started
 
-<Mermaid chart={`
+```mermaid
 sequenceDiagram
   TagoCore->>Plugin Env: Start
   Plugin Env->>Module1: onLoad
@@ -27,7 +27,7 @@ sequenceDiagram
   Module2-->>Plugin Env: Success
   Module1-->>Plugin Env: Success
   Plugin Env-->>TagoCore: Success
-`}/>
+```
 
 After TagoCore is started, it will iterate through each Plugin environment and send a message for it to load. Once that
 message is received, the Plugin environment will make a call to the `onLoad` function of each module.
@@ -45,7 +45,7 @@ will be terminated.
 
 ## How Plugins are Stopped
 
-<Mermaid chart={`
+```mermaid
 sequenceDiagram
   TagoCore->>Plugin Env: Stop
   Plugin Env->>Module1: onDestroy
@@ -53,8 +53,7 @@ sequenceDiagram
   Module2-->>Plugin Env: Success
   Module1-->>Plugin Env: Success
   Plugin Env-->>TagoCore: Success
-`}/>
-
+```
 
 The Stop flow for each Plugin environment is very similar to the Start flow.
 

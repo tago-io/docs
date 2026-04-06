@@ -1,0 +1,27 @@
+{
+  "responses": {
+    "200": {
+      "description": "Chunk exported to Files",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "chunk_id": { "type": "string", "example": "1657497600_1658102399" },
+                  "file_address": {
+                    "type": "string",
+                    "example": "device/62a2643dcc8dd60012eb4838/2022-07-11_2022-07-17.csv"
+                  }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

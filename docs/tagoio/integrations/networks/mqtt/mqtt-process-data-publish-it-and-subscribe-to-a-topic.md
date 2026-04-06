@@ -2,7 +2,9 @@
 title: "Process data, Publish it and Subscribe to a topic"
 description: "This article explains how to process data, publish it to a topic, and subscribe to that topic using MQTT (the tutorial uses the MQTTX client). It also shows how to connect a device to the TagoIO MQTT broker and retrieve the device token."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, publish, subscribe]
 ---
+
 :::warning
 
 TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. European (EU) database region accounts cannot access this service due to new security requirements, but they may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature. Free accounts can access MQTT functionality through the MQTT Relay as well.
@@ -23,13 +25,13 @@ To publish a topic via TagoIO's MQTT, you must first add a device.
 
 Open **MQTTX** and create a new connection
 
-| Field | Value |
-|-------|-------|
-| **Name** | Any name you like |
-| **Host** | `mqtt.tago.io` |
-| **Port** | `1883` |
-| **Username** | `"Token"` |
-| **Password** | Your device token |
+| Field         | Value                               |
+| ------------- | ----------------------------------- |
+| **Name**      | Any name you like                   |
+| **Host**      | `mqtt.tago.io`                      |
+| **Port**      | `1883`                              |
+| **Username**  | `"Token"`                           |
+| **Password**  | Your device token                   |
 | **Client ID** | Can be set to any unique identifier |
 
 :::warning
@@ -48,7 +50,7 @@ The Client Identifier (ClientID) is a required field to connect to the TagoIO MQ
 
 In this step we create an analysis that converts temperature from Fahrenheit to Celsius and publishes it on the topic `sensor/output`. The analysis is triggered whenever a message is received on the topic `sensor/input`.
 
->**Note**: Replace "DEVICE_ID" with your actual device ID. You can obtain this ID by accessing your device's page and copying it from the URL, for example: https://admin.tago.io/devices/652425f4516e99000a522dce.
+> **Note**: Replace "DEVICE_ID" with your actual device ID. You can obtain this ID by accessing your device's page and copying it from the URL, for example: https://admin.tago.io/devices/652425f4516e99000a522dce.
 
 ```js
 const { Analysis, Services } = require("@tago-io/sdk");
@@ -61,12 +63,9 @@ async function mqttPushExample(context, scope) {
     return context.log("Missing values");
   }
 
-  const myData =
-    scope.find((x) => x.variable === "payload") || scope[0];
+  const myData = scope.find((x) => x.variable === "payload") || scope[0];
   if (!myData) {
-    return context.log(
-      "Couldn't find any variable in the scope."
-    );
+    return context.log("Couldn't find any variable in the scope.");
   }
 
   // Create your data object to push to MQTT

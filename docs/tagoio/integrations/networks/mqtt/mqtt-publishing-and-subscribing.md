@@ -2,6 +2,7 @@
 title: "MQTT - Publishing and Subscribing"
 description: "This article explains how to publish and subscribe to MQTT topics from a TagoIO Analysis, including account availability for TagoIO's MQTT broker and an example of publishing from an Analysis."
 tags: ["tagoio"]
+keywords: [tagoio, iot, mqtt, publishing, subscribing, analysis]
 ---
 
 :::warning

@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Success Response",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Params Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,55 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Notifications"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Notifications"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/run/notification/{userID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/run/notification/{userID}"} context={"endpoint"}></MethodEndpoint>
 
 List of notifications for an user
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"userID","in":"path","required":true,"schema":{"type":"string","example":"(Type a RUN user ID)"}}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-of-notifications.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-of-notifications.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"List of the Run user notifications","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"buttons":{"type":"array","items":{},"example":[]},"buttons_autodisable":{"type":"boolean","example":true},"buttons_enabled":{"type":"boolean","example":true},"created_at":{"type":"string","example":"2022-06-20T17:35:26.753Z"},"id":{"type":"string","example":"62b0afde27ce4d0012c62256"},"message":{"type":"string","example":"Your device has retuned to the regular temperature"},"read":{"type":"boolean","example":false},"title":{"type":"string","example":"Temperature back to normal"}}},"example":[{"buttons":[],"buttons_autodisable":true,"buttons_enabled":true,"created_at":"2022-06-20T17:35:26.753Z","id":"62b0afde27ce4d0012c62256","message":"Your device has retuned to the regular temperature","read":false,"title":"Temperature back to normal"},{"buttons":[],"buttons_autodisable":true,"buttons_enabled":true,"created_at":"2022-05-26T13:12:06.753Z","id":"62b0afde27ce4d0012c62286","message":"The temperature is lower than 18ºC.","read":true,"title":"Low Temperature"}]},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-of-notifications.StatusCodes.json")}></StatusCodes>

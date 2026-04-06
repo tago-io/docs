@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "200": {
+      "description": "Login as a RUN User",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "expire_time": { "type": "string", "example": "2022-06-21T03:01:10.908Z" },
+                  "name": { "type": "string", "example": "Login by Run Administrator(runadmin@mail.com)" },
+                  "run_user": { "type": "string", "example": "61eb25a4d6a4a20011d4cd3c" },
+                  "token": { "type": "string", "example": "fe82f846-d19c-42b3-863a-7e7dgcd519e6" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Profile Information"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Profile Information"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/profile/{id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/profile/{id}"} context={"endpoint"}></MethodEndpoint>
 
 Get your profile settings
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"string","example":"Type a profile ID"},"description":"Can be found in the profile's information tab \"More\""}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-a-profile-details.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-a-profile-details.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Get a Profile Details","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"account_plan":{"type":"string","example":"starter"},"addons":{"type":"object","properties":{"control_tower":{"type":"boolean","example":true},"custom_dns":{"type":"boolean","example":false},"mobile":{"type":"boolean","example":false},"profile":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"updated_at":{"type":"string","example":"2023-09-06T13:47:08.192Z"}}},"allocation":{"type":"object","properties":{"analysis":{"type":"number","example":5},"data_records":{"type":"number","example":250000},"email":{"type":"number","example":10},"file_storage":{"type":"number","example":132},"input":{"type":"number","example":350000},"output":{"type":"number","example":342153},"push_notification":{"type":"number","example":58},"run_users":{"type":"number","example":5},"sms":{"type":"number","example":60}}},"info":{"type":"object","properties":{"account":{"type":"string","example":"612ea05e3cc07800127153892"},"banner_url":{"example":null},"created_at":{"type":"string","example":"2022-02-02T16:44:09.134Z"},"id":{"type":"string","example":"61fac4d9a5c9f40012a5ff92"},"logo_url":{"type":"string","example":""},"name":{"type":"string","example":"Test Profile"},"region":{"type":"string","example":"us-1"},"rpm":{"type":"object","properties":{"data_input":{"type":"number","example":98283293},"data_output":{"type":"number","example":10}}},"updated_at":{"type":"string","example":"2023-10-13T11:54:20.081Z"}}}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-a-profile-details.StatusCodes.json")}></StatusCodes>

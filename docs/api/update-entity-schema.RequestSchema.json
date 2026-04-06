@@ -1,0 +1,24 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "update_new_date": {
+                  "type": "object",
+                  "properties": { "action": { "type": "string", "example": "delete" } }
+                }
+              }
+            }
+          }
+        },
+        "examples": { "Update Entity Schema": { "value": { "schema": { "update_new_date": { "action": "delete" } } } } }
+      }
+    }
+  }
+}

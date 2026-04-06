@@ -18,54 +18,20 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Export data to CSV in Files"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Export data to CSV in Files"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/data/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/data/backup"} context={"endpoint"}></MethodEndpoint>
 
 Export data to CSV in Files
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
-  children={"Request"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"},"description":"Device ID"}]}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./export-data-to-csv-in-files.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"file_address":{"type":"string","example":"/device/$DEVICE$/$TIMESTAMP$"},"headers":{"type":"boolean","example":true}}},"examples":{"Export data to CSV in Files":{"value":{"file_address":"/device/$DEVICE$/$TIMESTAMP$","headers":true}}}}}}}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./export-data-to-csv-in-files.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Exporting data to Files","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"file_address":{"type":"string","example":"device/66db45b6552d1d00097956de/1732039901282.csv"}}},"status":{"type":"boolean","example":true}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./export-data-to-csv-in-files.StatusCodes.json")}></StatusCodes>

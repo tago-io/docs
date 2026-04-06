@@ -14,6 +14,10 @@
 .docusaurus
 .cache-loader
 
+# OG image generation
+lib/
+preview-images/
+
 # CDK
 cdk.out/
 dist/
@@ -28,8 +32,13 @@ dist/
 .env.test.local
 .env.production.local
 
+# Generated from tago-io/tagotip GitHub repo (scripts/sync-tagotip.mjs)
+docs/tagotip/specification/tagotip-specification.md
+docs/tagotip/specification/tagotips-specification.md
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 updated_url_mappings.json
 .claude/
+screenshots/

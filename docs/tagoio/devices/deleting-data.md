@@ -2,7 +2,9 @@
 title: "Deleting Data"
 description: "This article explains how to delete data via the TagoIO API, including the endpoint, required headers, and optional query string parameters used to select which data to remove."
 tags: ["tagoio"]
+keywords: [tagoio, iot, devices, delete data, API]
 ---
+
 :::info
 
 When making a request to the TagoIO API, you must also specify the appropriate regional endpoint. Check out the available regions: [API documentation](https://api.docs.tago.io/)
@@ -10,28 +12,32 @@ When making a request to the TagoIO API, you must also specify the appropriate r
 :::
 
 ## Endpoint
+
 ```
 DELETE https://api.<region>.tago.io/data
 ```
 
 ## Headers
+
 - Authorization: Your device token
 
 Example header format:
+
 ```http
 Authorization: <DEVICE_TOKEN>
 ```
 
 ## Optional Query Strings
+
 Use the same query strings you use to get data to select which data will be deleted. The available optional query string parameters are:
 
-| KEY        | TYPE   | DESCRIPTION                         |
-|------------|--------|-------------------------------------|
-| query      | string | Pre-defined by Tago                 |
+| KEY        | TYPE   | DESCRIPTION                           |
+| ---------- | ------ | ------------------------------------- |
+| query      | string | Pre-defined by Tago                   |
 | qty        | string | Maximum number of data to be returned |
-| start_date | string | Start date                          |
-| end_date   | string | End date                            |
-| variable   | string | Filter by variable                  |
+| start_date | string | Start date                            |
+| end_date   | string | End date                              |
+| variable   | string | Filter by variable                    |
 
 To delete data, TagoIO uses the same query string parameters used to get data; for more details about each query, see [here](/docs/tagoio/devices/getting-data.md).
 
@@ -62,4 +68,5 @@ Make sure your request is `DELETE` and not `POST` when trying to delete items. P
 :::
 
 ## Rate Limits
+
 When executing requests to TagoIO, you will have a limit on the number of requests that can be made during a certain time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).

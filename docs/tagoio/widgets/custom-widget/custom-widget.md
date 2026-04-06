@@ -2,8 +2,10 @@
 title: "Custom Widget Overview"
 description: "This article explains what Custom Widgets are in TagoIO, the web technologies you can use to build them, and shows example outputs. It also lists related documentation for further configuration and parameters."
 tags: ["tagoio", "widgets"]
+keywords: [tagoio, iot, widget, custom widget, html]
 "sidebar_position": 1
 ---
+
 Custom Widgets are flexible components that let you build any interface or visualization needed for your application. They can be created with plain web technologies (HTML, CSS, and JavaScript) or with client-side frameworks, provided the final build outputs HTML, CSS, and JavaScript.
 
 The widget must include at least some JavaScript functionality provided via our library ([our library](https://github.com/tago-io/custom-widget)).

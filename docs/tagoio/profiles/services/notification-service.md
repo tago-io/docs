@@ -2,10 +2,13 @@
 title: "Notification Service"
 description: "This article explains how the Notification Service counts push notifications, the per-profile monthly limits, message length limits, and important billing/usage notes."
 tags: ["tagoio"]
+keywords: [tagoio, iot, notifications, push notifications, service limits]
 ---
+
 Each time a push notification message is sent by an Action or Analysis function, it is counted as one Notification unit.
 
 ## Overview
+
 - The service limit defined in each Profile determines the maximum number of notifications that can be sent during a one-month period (based on your billing cycle).
 - Each push notification is limited to 140 characters.
 - Messages will appear in the mobile app and the browser when end users receive notifications through your RUN application.

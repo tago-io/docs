@@ -1,0 +1,77 @@
+{
+  "parameters": [
+    {
+      "name": "query",
+      "in": "query",
+      "schema": {
+        "type": "string",
+        "enum": ["count", "min", "max", "avg", "sum", "last_item", "last_location", "aggregate", "conditional"]
+      },
+      "description": "Select the query mode."
+    },
+    {
+      "name": "qty",
+      "in": "query",
+      "schema": { "type": "integer", "minimum": 1, "example": 20 },
+      "description": "Total quantity of data to retrieve."
+    },
+    {
+      "name": "details",
+      "in": "query",
+      "schema": { "type": "boolean", "example": true },
+      "description": "Include additional fields (e.g., created_at)."
+    },
+    {
+      "name": "ordination",
+      "in": "query",
+      "schema": { "type": "string", "enum": ["ascending", "descending"], "example": "descending" },
+      "description": "Sort order."
+    },
+    {
+      "name": "skip",
+      "in": "query",
+      "schema": { "type": "integer", "minimum": 0, "example": 15 },
+      "description": "Number of items to skip."
+    },
+    {
+      "name": "variables",
+      "in": "query",
+      "schema": { "type": "string", "example": "temperature" },
+      "description": "Filter data by variable."
+    },
+    {
+      "name": "values",
+      "in": "query",
+      "schema": { "type": "string", "example": "25" },
+      "description": "Filter data by value."
+    },
+    {
+      "name": "groups",
+      "in": "query",
+      "schema": { "type": "string", "example": "0923092039" },
+      "description": "Filter by group identifier."
+    },
+    {
+      "name": "start_date",
+      "in": "query",
+      "schema": { "type": "string", "format": "date-time", "example": "2022-09-09T10:28:44Z" },
+      "description": "Start timestamp or relative date."
+    },
+    {
+      "name": "end_date",
+      "in": "query",
+      "schema": { "type": "string", "format": "date-time", "example": "2022-09-10T10:28:44Z" },
+      "description": "End timestamp or relative date."
+    },
+    {
+      "name": "function",
+      "in": "query",
+      "schema": {
+        "type": "string",
+        "enum": ["avg", "sum", "min", "max", "gt", "gte", "lt", "lte", "eq", "ne"],
+        "example": "avg"
+      },
+      "description": "Allowed values depend on query mode: aggregate → avg,sum,min,max; conditional → gt,gte,lt,lte,eq,ne."
+    }
+  ]
+}
