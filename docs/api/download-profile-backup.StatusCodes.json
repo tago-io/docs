@@ -1,1 +1,77 @@
-{"responses":{"200":{"description":"Download URL generated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"url":{"type":"string","example":"https://s3.amazonaws.com/tago-io/...?X-Amz-Algorithm=...","description":"Pre-signed S3 URL for downloading the backup (valid for 2 hours)"},"size":{"type":"number","example":15728640,"description":"File size in bytes"},"size_unit":{"type":"string","example":"bytes"},"file_size_mb":{"type":"string","example":"15.00","description":"File size in megabytes (formatted)"},"expire_at":{"type":"string","example":"2025-01-07T16:30:00.000Z","description":"When the download URL expires"},"backup_id":{"type":"string","example":"678abc123def456789012345"},"created_at":{"type":"string","example":"2025-01-07T14:30:00.000Z"}}}}}},"400":{"description":"Bad request - Backup not ready or invalid parameters","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Backup is not ready for download. Current status: processing"}}}}}},"401":{"description":"Unauthorized - Invalid password or OTP","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid password"}}}}}},"404":{"description":"Not found - Backup does not exist","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Backup not found or you don't have permission to access it."}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Download URL generated successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "example": "https://s3.amazonaws.com/tago-io/...?X-Amz-Algorithm=...",
+                "description": "Pre-signed S3 URL for downloading the backup (valid for 2 hours)"
+              },
+              "size": { "type": "number", "example": 15728640, "description": "File size in bytes" },
+              "size_unit": { "type": "string", "example": "bytes" },
+              "file_size_mb": {
+                "type": "string",
+                "example": "15.00",
+                "description": "File size in megabytes (formatted)"
+              },
+              "expire_at": {
+                "type": "string",
+                "example": "2025-01-07T16:30:00.000Z",
+                "description": "When the download URL expires"
+              },
+              "backup_id": { "type": "string", "example": "678abc123def456789012345" },
+              "created_at": { "type": "string", "example": "2025-01-07T14:30:00.000Z" }
+            }
+          }
+        }
+      }
+    },
+    "400": {
+      "description": "Bad request - Backup not ready or invalid parameters",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Backup is not ready for download. Current status: processing" }
+            }
+          }
+        }
+      }
+    },
+    "401": {
+      "description": "Unauthorized - Invalid password or OTP",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Invalid password" }
+            }
+          }
+        }
+      }
+    },
+    "404": {
+      "description": "Not found - Backup does not exist",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Backup not found or you don't have permission to access it." }
+            }
+          }
+        }
+      }
+    }
+  }
+}

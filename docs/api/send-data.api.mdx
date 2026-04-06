@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Send Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Send Data"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/data"} context={"endpoint"}></MethodEndpoint>
 
 Send Device Data
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./send-data.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./send-data.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./send-data.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./send-data.StatusCodes.json")}></StatusCodes>

@@ -1,1 +1,11 @@
-{"parameters":[{"name":"am_id","in":"path","required":true,"schema":{"type":"string","example":"(Type an Access Management/Policy ID)"},"description":"Can be obtained in the GET Policy request response"}]}
+{
+  "parameters": [
+    {
+      "name": "am_id",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type an Access Management/Policy ID)" },
+      "description": "Can be obtained in the GET Policy request response"
+    }
+  ]
+}

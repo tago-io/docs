@@ -20,57 +20,25 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Backups"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Backups"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/profile/{profile_id}/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/profile/{profile_id}/backup"} context={"endpoint"}></MethodEndpoint>
 
 Retrieves a paginated list of all backups for the specified profile. Use this endpoint to check backup status and find backup IDs for download or deletion.
 
 **Backup statuses:**
+
 - `queued` - Backup request received, waiting for processing
 - `processing` - Backup generation in progress
 - `completed` - Backup ready for download
 - `failed` - Backup generation failed (check error_message)
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-profile-backups.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-profile-backups.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-profile-backups.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-profile-backups.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-profile-backups.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-profile-backups.StatusCodes.json")}></StatusCodes>

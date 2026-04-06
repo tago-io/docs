@@ -20,53 +20,21 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Convert Device Type"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Convert Device Type"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/convert"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/convert"} context={"endpoint"}></MethodEndpoint>
 
 Convert the device immutable or mutable.
 
 The device must be empty before being converted. You can empty your device through your device's page. The Device-Token is preserved when converting using this route.
 The device must be disabled before being converted. You can disable the device by going to the device's page and turn off the active switch.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./convert-device-type.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./convert-device-type.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./convert-device-type.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./convert-device-type.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./convert-device-type.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./convert-device-type.StatusCodes.json")}></StatusCodes>

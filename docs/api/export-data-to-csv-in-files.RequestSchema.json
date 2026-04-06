@@ -1,1 +1,21 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"file_address":{"type":"string","example":"/device/$DEVICE$/$TIMESTAMP$"},"headers":{"type":"boolean","example":true}}},"examples":{"Export data to CSV in Files":{"value":{"file_address":"/device/$DEVICE$/$TIMESTAMP$","headers":true}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "file_address": { "type": "string", "example": "/device/$DEVICE$/$TIMESTAMP$" },
+            "headers": { "type": "boolean", "example": true }
+          }
+        },
+        "examples": {
+          "Export data to CSV in Files": {
+            "value": { "file_address": "/device/$DEVICE$/$TIMESTAMP$", "headers": true }
+          }
+        }
+      }
+    }
+  }
+}

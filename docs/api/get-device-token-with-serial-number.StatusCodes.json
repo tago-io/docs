@@ -1,1 +1,18 @@
-{"responses":{"200":{"description":"got a valid token","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"<string>"},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "got a valid token",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "<string>" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

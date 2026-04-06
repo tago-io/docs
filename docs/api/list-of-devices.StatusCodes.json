@@ -1,1 +1,79 @@
-{"responses":{"200":{"description":"List of devices retrieved using query params","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"connector":{"type":"string","example":"5f5a8f3351d4db99c40ded2d"},"id":{"type":"string","example":"5dcad1c216174c001ca23ab9"},"name":{"type":"string","example":"Device #1"},"network":{"type":"string","example":"5bbd120d4051a50034cd1a05"},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"type"},"value":{"type":"string","example":"Smoke Detector"}}},"example":[{"key":"type","value":"Smoke Detector"}]}}},"example":[{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad1c216174c001ca23ab9","name":"Device #1","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]},{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad25016174c001ca24a09","name":"Device #2","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]}]},"status":{"type":"boolean","example":true}}},"examples":{"List of devices retrieved using query params":{"value":{"result":[{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad1c216174c001ca23ab9","name":"Device #1","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]},{"connector":"5f5a8f3351d4db99c40ded2d","id":"5dcad25016174c001ca24a09","name":"Device #2","network":"5bbd120d4051a50034cd1a05","tags":[{"key":"type","value":"Smoke Detector"}]}],"status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "List of devices retrieved using query params",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "connector": { "type": "string", "example": "5f5a8f3351d4db99c40ded2d" },
+                    "id": { "type": "string", "example": "5dcad1c216174c001ca23ab9" },
+                    "name": { "type": "string", "example": "Device #1" },
+                    "network": { "type": "string", "example": "5bbd120d4051a50034cd1a05" },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": { "type": "string", "example": "type" },
+                          "value": { "type": "string", "example": "Smoke Detector" }
+                        }
+                      },
+                      "example": [{ "key": "type", "value": "Smoke Detector" }]
+                    }
+                  }
+                },
+                "example": [
+                  {
+                    "connector": "5f5a8f3351d4db99c40ded2d",
+                    "id": "5dcad1c216174c001ca23ab9",
+                    "name": "Device #1",
+                    "network": "5bbd120d4051a50034cd1a05",
+                    "tags": [{ "key": "type", "value": "Smoke Detector" }]
+                  },
+                  {
+                    "connector": "5f5a8f3351d4db99c40ded2d",
+                    "id": "5dcad25016174c001ca24a09",
+                    "name": "Device #2",
+                    "network": "5bbd120d4051a50034cd1a05",
+                    "tags": [{ "key": "type", "value": "Smoke Detector" }]
+                  }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "List of devices retrieved using query params": {
+              "value": {
+                "result": [
+                  {
+                    "connector": "5f5a8f3351d4db99c40ded2d",
+                    "id": "5dcad1c216174c001ca23ab9",
+                    "name": "Device #1",
+                    "network": "5bbd120d4051a50034cd1a05",
+                    "tags": [{ "key": "type", "value": "Smoke Detector" }]
+                  },
+                  {
+                    "connector": "5f5a8f3351d4db99c40ded2d",
+                    "id": "5dcad25016174c001ca24a09",
+                    "name": "Device #2",
+                    "network": "5bbd120d4051a50034cd1a05",
+                    "tags": [{ "key": "type", "value": "Smoke Detector" }]
+                  }
+                ],
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

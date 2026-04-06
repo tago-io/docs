@@ -1,1 +1,10 @@
-{"parameters":[{"name":"dashboardID","in":"path","required":true,"schema":{"type":"string","example":"(Type your dashboard ID)"}}]}
+{
+  "parameters": [
+    {
+      "name": "dashboardID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type your dashboard ID)" }
+    }
+  ]
+}

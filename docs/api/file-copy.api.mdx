@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Copy File"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Copy File"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/files/copy"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/files/copy"} context={"endpoint"}></MethodEndpoint>
 
 File Copy
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./file-copy.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./file-copy.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./file-copy.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./file-copy.StatusCodes.json")}></StatusCodes>

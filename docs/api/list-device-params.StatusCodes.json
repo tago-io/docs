@@ -1,1 +1,33 @@
-{"responses":{"200":{"description":"List Device Params","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"62ab8294c1ac39001361e11b"},"key":{"type":"string","example":"param1"},"sent":{"type":"boolean","example":false},"value":{"type":"string","example":"value1"}}},"example":[{"id":"62ab8294c1ac39001361e11b","key":"param1","sent":false,"value":"value1"},{"id":"62ab8294c1ac39001361e11c","key":"param2","sent":false,"value":"value2"}]},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "List Device Params",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "example": "62ab8294c1ac39001361e11b" },
+                    "key": { "type": "string", "example": "param1" },
+                    "sent": { "type": "boolean", "example": false },
+                    "value": { "type": "string", "example": "value1" }
+                  }
+                },
+                "example": [
+                  { "id": "62ab8294c1ac39001361e11b", "key": "param1", "sent": false, "value": "value1" },
+                  { "id": "62ab8294c1ac39001361e11c", "key": "param2", "sent": false, "value": "value2" }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

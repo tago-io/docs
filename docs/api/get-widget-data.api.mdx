@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Resolve Widget Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Resolve Widget Data"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/data/{dashboardID}/{widgetID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/data/{dashboardID}/{widgetID}"} context={"endpoint"}></MethodEndpoint>
 
 Retrieve all the data necessary to display a widget, according to its configuration in the `data` and `resource` fields.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-widget-data.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-widget-data.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-widget-data.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-widget-data.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-widget-data.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-widget-data.StatusCodes.json")}></StatusCodes>

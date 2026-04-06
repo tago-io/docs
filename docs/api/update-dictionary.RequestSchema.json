@@ -1,1 +1,44 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"fallback":{"type":"string","example":"fr-FR"},"languages":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean","example":true},"code":{"type":"string","example":"fr-FR"}}},"example":[{"active":true,"code":"fr-FR"},{"active":true,"code":"pt-BR"}]},"name":{"type":"string","example":"updated.test"},"slug":{"type":"string","example":"TEEEE"}}},"examples":{"Update Dictionary":{"value":{"fallback":"fr-FR","languages":[{"active":true,"code":"fr-FR"},{"active":true,"code":"pt-BR"}],"name":"updated.test","slug":"TEEEE"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "fallback": { "type": "string", "example": "fr-FR" },
+            "languages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "active": { "type": "boolean", "example": true },
+                  "code": { "type": "string", "example": "fr-FR" }
+                }
+              },
+              "example": [
+                { "active": true, "code": "fr-FR" },
+                { "active": true, "code": "pt-BR" }
+              ]
+            },
+            "name": { "type": "string", "example": "updated.test" },
+            "slug": { "type": "string", "example": "TEEEE" }
+          }
+        },
+        "examples": {
+          "Update Dictionary": {
+            "value": {
+              "fallback": "fr-FR",
+              "languages": [
+                { "active": true, "code": "fr-FR" },
+                { "active": true, "code": "pt-BR" }
+              ],
+              "name": "updated.test",
+              "slug": "TEEEE"
+            }
+          }
+        }
+      }
+    }
+  }
+}

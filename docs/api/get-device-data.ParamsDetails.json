@@ -1,1 +1,23 @@
-{"parameters":[{"name":"qty","in":"query","schema":{"type":"string","example":"10"},"description":"Numeric quantity of data to be returned"},{"name":"end_date","in":"query","schema":{"type":"string","example":"2023-10-10T13:17:16.290Z"},"description":"Final date to get the data returned in ISO timestamp format (Not Required)"},{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"},"description":"Device ID"}]}
+{
+  "parameters": [
+    {
+      "name": "qty",
+      "in": "query",
+      "schema": { "type": "string", "example": "10" },
+      "description": "Numeric quantity of data to be returned"
+    },
+    {
+      "name": "end_date",
+      "in": "query",
+      "schema": { "type": "string", "example": "2023-10-10T13:17:16.290Z" },
+      "description": "Final date to get the data returned in ISO timestamp format (Not Required)"
+    },
+    {
+      "name": "deviceID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "67aa1f9135b1a7000a9db33c" },
+      "description": "Device ID"
+    }
+  ]
+}

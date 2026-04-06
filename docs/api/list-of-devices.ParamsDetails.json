@@ -1,1 +1,66 @@
-{"parameters":[{"name":"page","in":"query","schema":{"type":"string","example":"1"},"description":"Page number."},{"name":"amount","in":"query","schema":{"type":"string","example":"10"},"description":"Amount of devices by page."},{"name":"filter[id]","in":"query","schema":{"type":"string","example":""},"description":"Filter the device by ID."},{"name":"filter[name]","in":"query","schema":{"type":"string","example":""},"description":"Filter the device name."},{"name":"filter[visible]","in":"query","schema":{"type":"string","example":"true / false"},"description":"Filter the device visible status."},{"name":"filter[active]","in":"query","schema":{"type":"string","example":"true / false"},"description":"Filter the device active status."},{"name":"filter[connector]","in":"query","schema":{"type":"string","example":""},"description":"Filter the devices by the Connector ID."},{"name":"filter[network]","in":"query","schema":{"type":"string","example":""},"description":"Filter the devices by the Network ID."},{"name":"filter[tags]","in":"query","schema":{"type":"string","example":""},"description":"Filter device by it's tag. Check the example."},{"name":"filter[updated_at]","in":"query","schema":{"type":"string","example":"1 day"},"description":"Filter by time the device was received data. Can be an ISO-8601 or a relative date"},{"name":"filter[created_at]","in":"query","schema":{"type":"string","example":"1 day"},"description":"Filter by time the device was created. Can be an ISO-8601 or a relative date"},{"name":"orderBy","in":"query","schema":{"type":"string","example":"created_at"}}]}
+{
+  "parameters": [
+    { "name": "page", "in": "query", "schema": { "type": "string", "example": "1" }, "description": "Page number." },
+    {
+      "name": "amount",
+      "in": "query",
+      "schema": { "type": "string", "example": "10" },
+      "description": "Amount of devices by page."
+    },
+    {
+      "name": "filter[id]",
+      "in": "query",
+      "schema": { "type": "string", "example": "" },
+      "description": "Filter the device by ID."
+    },
+    {
+      "name": "filter[name]",
+      "in": "query",
+      "schema": { "type": "string", "example": "" },
+      "description": "Filter the device name."
+    },
+    {
+      "name": "filter[visible]",
+      "in": "query",
+      "schema": { "type": "string", "example": "true / false" },
+      "description": "Filter the device visible status."
+    },
+    {
+      "name": "filter[active]",
+      "in": "query",
+      "schema": { "type": "string", "example": "true / false" },
+      "description": "Filter the device active status."
+    },
+    {
+      "name": "filter[connector]",
+      "in": "query",
+      "schema": { "type": "string", "example": "" },
+      "description": "Filter the devices by the Connector ID."
+    },
+    {
+      "name": "filter[network]",
+      "in": "query",
+      "schema": { "type": "string", "example": "" },
+      "description": "Filter the devices by the Network ID."
+    },
+    {
+      "name": "filter[tags]",
+      "in": "query",
+      "schema": { "type": "string", "example": "" },
+      "description": "Filter device by it's tag. Check the example."
+    },
+    {
+      "name": "filter[updated_at]",
+      "in": "query",
+      "schema": { "type": "string", "example": "1 day" },
+      "description": "Filter by time the device was received data. Can be an ISO-8601 or a relative date"
+    },
+    {
+      "name": "filter[created_at]",
+      "in": "query",
+      "schema": { "type": "string", "example": "1 day" },
+      "description": "Filter by time the device was created. Can be an ISO-8601 or a relative date"
+    },
+    { "name": "orderBy", "in": "query", "schema": { "type": "string", "example": "created_at" } }
+  ]
+}

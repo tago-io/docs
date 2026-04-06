@@ -1,1 +1,46 @@
-{"responses":{"200":{"description":"Getting a list of devices related to a dashboard","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"6238a3a27d792400139e5b47"},"name":{"type":"string","example":"Device 001"}}},"example":[{"id":"6238a3a27d792400139e5b47","name":"Device 001"},{"id":"6238a294ea60bc00120f0371","name":"Device 002"},{"id":"6230e64df5772600124c81df","name":"Device 003"},{"id":"62322173635f730011d1874c","name":"Device 004"}]},"status":{"type":"boolean","example":true}}},"examples":{"Getting a list of devices related to a dashboard":{"value":{"result":[{"id":"6238a3a27d792400139e5b47","name":"Device 001"},{"id":"6238a294ea60bc00120f0371","name":"Device 002"},{"id":"6230e64df5772600124c81df","name":"Device 003"},{"id":"62322173635f730011d1874c","name":"Device 004"}],"status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Getting a list of devices related to a dashboard",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "example": "6238a3a27d792400139e5b47" },
+                    "name": { "type": "string", "example": "Device 001" }
+                  }
+                },
+                "example": [
+                  { "id": "6238a3a27d792400139e5b47", "name": "Device 001" },
+                  { "id": "6238a294ea60bc00120f0371", "name": "Device 002" },
+                  { "id": "6230e64df5772600124c81df", "name": "Device 003" },
+                  { "id": "62322173635f730011d1874c", "name": "Device 004" }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Getting a list of devices related to a dashboard": {
+              "value": {
+                "result": [
+                  { "id": "6238a3a27d792400139e5b47", "name": "Device 001" },
+                  { "id": "6238a294ea60bc00120f0371", "name": "Device 002" },
+                  { "id": "6230e64df5772600124c81df", "name": "Device 003" },
+                  { "id": "62322173635f730011d1874c", "name": "Device 004" }
+                ],
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

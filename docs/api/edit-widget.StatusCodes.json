@@ -1,1 +1,19 @@
-{"responses":{"200":{"description":"Editing a widget","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Editing a widget":{"value":{"result":"Successfully Updated","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Editing a widget",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Editing a widget": { "value": { "result": "Successfully Updated", "status": true } } }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,18 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean","example":true},"name":{"type":"string","example":"My new RUN name"},"profile":{"type":"string","example":"612ea05e3cc07803480127151133"},"url":{"type":"string","example":"612ea05e3cc07803480127151133.run.tago.io"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "active": { "type": "boolean", "example": true },
+            "name": { "type": "string", "example": "My new RUN name" },
+            "profile": { "type": "string", "example": "612ea05e3cc07803480127151133" },
+            "url": { "type": "string", "example": "612ea05e3cc07803480127151133.run.tago.io" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Chunks"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Chunks"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/{deviceID}/chunk"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/{deviceID}/chunk"} context={"endpoint"}></MethodEndpoint>
 
 List of chunks
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-of-chunks.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-of-chunks.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-of-chunks.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-of-chunks.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-of-chunks.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-of-chunks.StatusCodes.json")}></StatusCodes>

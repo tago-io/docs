@@ -1,1 +1,10 @@
-{"parameters":[{"name":"sent_status","in":"query","schema":{"type":"string","example":"true"},"description":"Filter by `sent` status."}]}
+{
+  "parameters": [
+    {
+      "name": "sent_status",
+      "in": "query",
+      "schema": { "type": "string", "example": "true" },
+      "description": "Filter by `sent` status."
+    }
+  ]
+}

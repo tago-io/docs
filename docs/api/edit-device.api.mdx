@@ -20,22 +20,9 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Device"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Device"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/device/{deviceID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/device/{deviceID}"} context={"endpoint"}></MethodEndpoint>
 
 Modify any property of the device.
 
@@ -43,32 +30,12 @@ You're only required to send the parameters you want to edit.
 
 If changing network/connector, make sure you've deleted all tokens in the device first. Is also required to send both network and connector to edit any of both fields.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-device.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-device.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-device.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-device.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-device.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-device.StatusCodes.json")}></StatusCodes>

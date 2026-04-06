@@ -20,57 +20,28 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Widget"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Widget"}></Heading>
 
 <MethodEndpoint
   method={"delete"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Delete a widget from the dashboard.
 
-:::warning  
+:::warning
 
-Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.  
+Deleting a widget does not automatically remove it from the dashboard arrangement. You must manually edit the dashboard arrangement to remove the deleted widget.
 
 :::
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-widget.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-widget.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-widget.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-widget.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-widget.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-widget.StatusCodes.json")}></StatusCodes>

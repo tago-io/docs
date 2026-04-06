@@ -1,1 +1,19 @@
-{"responses":{"200":{"description":"Add Entity Data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"1 Data Added"},"status":{"type":"boolean","example":true}}},"examples":{"Add Entity Data":{"value":{"result":"1 Data Added","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Add Entity Data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "1 Data Added" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Add Entity Data": { "value": { "result": "1 Data Added", "status": true } } }
+        }
+      }
+    }
+  }
+}

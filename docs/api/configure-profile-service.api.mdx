@@ -20,73 +20,42 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Configure Service Provider"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Configure Service Provider"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/profile/{id}/service"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/profile/{id}/service"} context={"endpoint"}></MethodEndpoint>
 
 Configure external service providers for your profile. This allows you to set up integrations with third-party services for SMS and Email messaging.
 
 **Available service providers:**
 
-| Service Type | Provider | Description |
-|--------------|----------|-------------|
-| `sms` | Twilio | Send SMS messages via Twilio |
-| `sms` | SNS | Send SMS messages via Amazon SNS |
-| `email` | SendGrid | Send emails via SendGrid API |
-| `email` | SES | Send emails via Amazon SES |
-| `email` | SMTP | Send emails via custom SMTP server |
+| Service Type | Provider | Description                        |
+| ------------ | -------- | ---------------------------------- |
+| `sms`        | Twilio   | Send SMS messages via Twilio       |
+| `sms`        | SNS      | Send SMS messages via Amazon SNS   |
+| `email`      | SendGrid | Send emails via SendGrid API       |
+| `email`      | SES      | Send emails via Amazon SES         |
+| `email`      | SMTP     | Send emails via custom SMTP server |
 
 **Important notes:**
+
 - Credentials are securely stored using [TagoIO Secrets](/docs/tagoio/getting-started/secrets). You must create the appropriate secrets before configuring a service provider.
 - Each service type can only have one active provider configuration at a time
 - Use the test endpoint to verify your configuration before using it in production
 
 **Required secrets by provider:**
+
 - **Twilio SMS**: Create two Text secrets containing your Twilio SID and Auth Token
 - **SNS SMS**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
 - **SendGrid Email**: Create a Text secret containing your SendGrid API Key
 - **SES Email**: Create an AWS SQS Secret with your AWS credentials (region, access key, secret key)
 - **SMTP Email**: Create an SMTP Secret with your server configuration
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./configure-profile-service.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./configure-profile-service.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./configure-profile-service.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./configure-profile-service.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./configure-profile-service.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./configure-profile-service.StatusCodes.json")}></StatusCodes>

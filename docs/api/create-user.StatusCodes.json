@@ -1,1 +1,21 @@
-{"responses":{"200":{"description":"Creating a RUN user","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"user":{"type":"string","example":"62b086df27ce4d0012be6bac"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Creating a RUN user",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "user": { "type": "string", "example": "62b086df27ce4d0012be6bac" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

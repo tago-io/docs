@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Policy"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Policy"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/am/{am_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/am/{am_id}"} context={"endpoint"}></MethodEndpoint>
 
 Delete Policy
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-policy.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-policy.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-policy.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-policy.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-policy.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-policy.StatusCodes.json")}></StatusCodes>

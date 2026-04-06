@@ -20,54 +20,21 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Duplicate Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Duplicate Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/dashboard/{dashboardID}/duplicate"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/dashboard/{dashboardID}/duplicate"} context={"endpoint"}></MethodEndpoint>
 
 Duplicate an existing dashboard, including its configuration, widgets, and settings.  
-Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.  
+Optionally, set a new label for the duplicated dashboard and provide setup parameters to customize the copy.
 
 Use this endpoint to quickly clone dashboards for reuse or further customization.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./duplicate-dashboard.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./duplicate-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./duplicate-dashboard.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./duplicate-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./duplicate-dashboard.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./duplicate-dashboard.StatusCodes.json")}></StatusCodes>

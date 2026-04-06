@@ -20,22 +20,9 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/dashboard/{dashboardID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/dashboard/{dashboardID}"} context={"endpoint"}></MethodEndpoint>
 
 Modify any property of the dashboard
 
@@ -46,32 +33,12 @@ After creating a widget, you **must manually edit the arrangement field** to inc
 
 Each item in the arrangement array represents a widget's placement and sizing.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-dashboard.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-dashboard.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-dashboard.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-dashboard.StatusCodes.json")}></StatusCodes>

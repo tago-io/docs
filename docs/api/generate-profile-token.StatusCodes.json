@@ -1,1 +1,27 @@
-{"responses":{"200":{"description":"token created successfuly","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"created_by":{"type":"string","example":"712ea05e3cc07800127151110"},"name":{"type":"string","example":"your name"},"permission":{"type":"string","example":"full"},"profile":{"type":"string","example":"712ea05e3cc07800127151111"},"token":{"type":"string","example":"ecjkfc55e-229e-4083-9667-d868h79a41e9"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "token created successfuly",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "created_by": { "type": "string", "example": "712ea05e3cc07800127151110" },
+                  "name": { "type": "string", "example": "your name" },
+                  "permission": { "type": "string", "example": "full" },
+                  "profile": { "type": "string", "example": "712ea05e3cc07800127151111" },
+                  "token": { "type": "string", "example": "ecjkfc55e-229e-4083-9667-d868h79a41e9" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,22 +20,9 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Device Configuration Parameter"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Device Configuration Parameter"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/integration/network/{deviceID}/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/integration/network/{deviceID}/params"} context={"endpoint"}></MethodEndpoint>
 
 Edit a device configuration parameter using the Network-token. You must already have the device ID to use this endpoint.
 This is useful when your Network integration requires configuration parameters for performing downlinks, or if your decoder benefits from configuration parameters for parsing data.
@@ -43,31 +30,12 @@ This is useful when your Network integration requires configuration parameters f
 To obtain the **Device ID**, first resolve the device-token, then use the [Device Information](/docs/api/current-device-information) endpoint to retrieve detailed information about the device.
 :::
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-device-configuration-parameter.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-device-configuration-parameter.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-device-configuration-parameter.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-device-configuration-parameter.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-device-configuration-parameter.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-device-configuration-parameter.StatusCodes.json")}></StatusCodes>

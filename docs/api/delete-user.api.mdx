@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete User"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete User"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/run/users/{userID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/run/users/{userID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete user from Run using userID
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-user.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-user.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-user.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-user.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-user.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-user.StatusCodes.json")}></StatusCodes>

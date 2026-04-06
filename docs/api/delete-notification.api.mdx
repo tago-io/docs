@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Notification"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Notification"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/run/notification/{notificationID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/run/notification/{notificationID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete notification on Run
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-notification.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-notification.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-notification.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-notification.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-notification.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-notification.StatusCodes.json")}></StatusCodes>

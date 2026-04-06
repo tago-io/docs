@@ -1,1 +1,21 @@
-{"responses":{"200":{"description":"Updating a dashboard information","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Updating a dashboard information":{"value":{"result":"Successfully Updated","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Updating a dashboard information",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Updating a dashboard information": { "value": { "result": "Successfully Updated", "status": true } }
+          }
+        }
+      }
+    }
+  }
+}

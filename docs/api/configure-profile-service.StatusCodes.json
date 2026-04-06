@@ -1,1 +1,63 @@
-{"responses":{"200":{"description":"Service provider configured successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Service provider configured successfully"},"status":{"type":"boolean","example":true}}}}}},"400":{"description":"Bad request - Invalid configuration","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid credentials format for the selected provider"}}}}}},"401":{"description":"Unauthorized - Invalid or missing token","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Unauthorized"}}}}}},"403":{"description":"Forbidden - Insufficient permissions","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"You do not have permission to configure services for this profile"}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Service provider configured successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Service provider configured successfully" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    },
+    "400": {
+      "description": "Bad request - Invalid configuration",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Invalid credentials format for the selected provider" }
+            }
+          }
+        }
+      }
+    },
+    "401": {
+      "description": "Unauthorized - Invalid or missing token",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Unauthorized" }
+            }
+          }
+        }
+      }
+    },
+    "403": {
+      "description": "Forbidden - Insufficient permissions",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": {
+                "type": "string",
+                "example": "You do not have permission to configure services for this profile"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,18 @@
-{"responses":{"200":{"description":"Importing data from Files","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Data import added to the queue successfully!"},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Importing data from Files",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Data import added to the queue successfully!" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

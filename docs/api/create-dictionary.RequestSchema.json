@@ -1,1 +1,39 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","required":["name","slug"],"properties":{"name":{"type":"string","example":"dic.DICT"},"slug":{"type":"string","example":"DIC"},"fallback":{"type":"string","example":"fr-FR"},"languages":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string","example":"fr-FR"},"message":{"type":"string","example":"true"}}},"example":[{"code":"fr-FR","message":"true"}]}}},"examples":{"Create Dictionary":{"value":{"fallback":"fr-FR","languages":[{"code":"fr-FR","message":"true"}],"name":"dic.DICT","slug":"DIC"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": ["name", "slug"],
+          "properties": {
+            "name": { "type": "string", "example": "dic.DICT" },
+            "slug": { "type": "string", "example": "DIC" },
+            "fallback": { "type": "string", "example": "fr-FR" },
+            "languages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "code": { "type": "string", "example": "fr-FR" },
+                  "message": { "type": "string", "example": "true" }
+                }
+              },
+              "example": [{ "code": "fr-FR", "message": "true" }]
+            }
+          }
+        },
+        "examples": {
+          "Create Dictionary": {
+            "value": {
+              "fallback": "fr-FR",
+              "languages": [{ "code": "fr-FR", "message": "true" }],
+              "name": "dic.DICT",
+              "slug": "DIC"
+            }
+          }
+        }
+      }
+    }
+  }
+}

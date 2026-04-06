@@ -1,1 +1,74 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean","example":true},"name":{"type":"string","example":"Updated policy name"},"permissions":{"type":"array","items":{"type":"object","properties":{"action":{"type":"array","items":{"type":"string","example":"access"},"example":["access"]},"effect":{"type":"string","example":"denied"},"resource":{"type":"array","items":{"type":"string","example":"device"},"example":["device"]}}},"example":[{"action":["access"],"effect":"denied","resource":["device"]}]},"tags":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string","example":"access"},"value":{"type":"string","example":"blocked"}}},"example":[{"key":"access","value":"blocked"}]},"targets":{"type":"array","items":{"type":"array","items":{"type":"string","example":"run_user"},"example":["run_user"]},"example":[["run_user"]]}}},"examples":{"Update policy":{"value":{"active":true,"name":"Updated policy name","permissions":[{"action":["access"],"effect":"denied","resource":["device"]}],"tags":[{"key":"access","value":"blocked"}],"targets":[["run_user"]]}}}},"text/plain":{"examples":{"Update policy":{"value":"{\n    \"name\": \"Updated Policy Name\", //edit the policy name\n    \"permissions\": [\n        {\n            \"effect\": \"allow\",\n            \"action\": [\n                \"access\"\n            ],\n            \"resource\": [\n                \"device\"\n            ] //updating resouces, they can be \"device\", \"dashboard\" and \"run_user\" types\n        }\n    ],\n    \"targets\": [\n        [\n            \"run_user\"\n        ] // update  the target, possible \"run_user\" and \"analysis\" types\n    ],\n    \"tags\": [\n        {\n            \"key\": \"access\",\n            \"value\": \"admin\"\n        }\n        ], //able to update tags \n    \"active\": true //able to active and deactive policy (true or false)\n}"}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "active": { "type": "boolean", "example": true },
+            "name": { "type": "string", "example": "Updated policy name" },
+            "permissions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "array",
+                    "items": { "type": "string", "example": "access" },
+                    "example": ["access"]
+                  },
+                  "effect": { "type": "string", "example": "denied" },
+                  "resource": {
+                    "type": "array",
+                    "items": { "type": "string", "example": "device" },
+                    "example": ["device"]
+                  }
+                }
+              },
+              "example": [{ "action": ["access"], "effect": "denied", "resource": ["device"] }]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": { "type": "string", "example": "access" },
+                  "value": { "type": "string", "example": "blocked" }
+                }
+              },
+              "example": [{ "key": "access", "value": "blocked" }]
+            },
+            "targets": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": { "type": "string", "example": "run_user" },
+                "example": ["run_user"]
+              },
+              "example": [["run_user"]]
+            }
+          }
+        },
+        "examples": {
+          "Update policy": {
+            "value": {
+              "active": true,
+              "name": "Updated policy name",
+              "permissions": [{ "action": ["access"], "effect": "denied", "resource": ["device"] }],
+              "tags": [{ "key": "access", "value": "blocked" }],
+              "targets": [["run_user"]]
+            }
+          }
+        }
+      },
+      "text/plain": {
+        "examples": {
+          "Update policy": {
+            "value": "{\n    \"name\": \"Updated Policy Name\", //edit the policy name\n    \"permissions\": [\n        {\n            \"effect\": \"allow\",\n            \"action\": [\n                \"access\"\n            ],\n            \"resource\": [\n                \"device\"\n            ] //updating resouces, they can be \"device\", \"dashboard\" and \"run_user\" types\n        }\n    ],\n    \"targets\": [\n        [\n            \"run_user\"\n        ] // update  the target, possible \"run_user\" and \"analysis\" types\n    ],\n    \"tags\": [\n        {\n            \"key\": \"access\",\n            \"value\": \"admin\"\n        }\n        ], //able to update tags \n    \"active\": true //able to active and deactive policy (true or false)\n}"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,10 @@
-{"parameters":[{"name":"notificationID","in":"path","required":true,"schema":{"type":"string","example":"(Type your RUN notification ID)"}}]}
+{
+  "parameters": [
+    {
+      "name": "notificationID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type your RUN notification ID)" }
+    }
+  ]
+}

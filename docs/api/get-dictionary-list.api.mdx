@@ -20,42 +20,14 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Dictionaries"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Dictionaries"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/dictionary"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/dictionary"} context={"endpoint"}></MethodEndpoint>
 
 List of Dictionaries
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-dictionary-list.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-dictionary-list.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-dictionary-list.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-dictionary-list.StatusCodes.json")}></StatusCodes>

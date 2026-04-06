@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Users"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Users"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/run/users"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/run/users"} context={"endpoint"}></MethodEndpoint>
 
 List users from Run
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-users.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-users.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-users.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-users.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-users.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-users.StatusCodes.json")}></StatusCodes>

@@ -20,60 +20,33 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Test Service Provider"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Test Service Provider"}></Heading>
 
 <MethodEndpoint
   method={"post"}
   path={"/profile/{id}/service/test/{service_type}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Test a configured service provider by sending a test message. This helps verify that your service provider configuration is working correctly before using it in production.
 
 **Supported service types:**
+
 - `sms` - Sends a test SMS message to the specified phone number
 - `email` - Sends a test email to the specified email address
 
 **Important notes:**
+
 - A service provider must be configured before testing
 - Test messages will consume your provider's quota/credits
 - For SMS, ensure the recipient number is in E.164 format (e.g., +15551234567)
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./test-profile-service.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./test-profile-service.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./test-profile-service.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./test-profile-service.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./test-profile-service.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./test-profile-service.StatusCodes.json")}></StatusCodes>

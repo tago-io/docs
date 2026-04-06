@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Token"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/device/token/{tokenID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/device/token/{tokenID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete a token
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-token.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-token.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-token.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-token.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-token.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-token.StatusCodes.json")}></StatusCodes>

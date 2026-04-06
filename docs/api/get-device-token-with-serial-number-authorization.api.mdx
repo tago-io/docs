@@ -20,52 +20,24 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Find Device by Serial & Authorization Key"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Find Device by Serial & Authorization Key"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/integration/network/resolve/{serieNumber}/{AuthorizationKey}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Retrieve a valid device token using the device's serial number and a profile authorization key.  
 This endpoint is recommended when you need additional security or if your Network is available to multiple profiles, as it allows serial numbers to be duplicated across different profiles.  
 You must have both a Network and a Network-Token to use this endpoint.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-device-token-with-serial-number-authorization.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-device-token-with-serial-number-authorization.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-device-token-with-serial-number-authorization.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-device-token-with-serial-number-authorization.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-device-token-with-serial-number-authorization.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-device-token-with-serial-number-authorization.StatusCodes.json")}></StatusCodes>

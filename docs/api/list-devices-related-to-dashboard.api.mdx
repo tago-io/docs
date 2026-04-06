@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Devices related to Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Devices related to Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/dashboard/{dashboardID}/devices"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/dashboard/{dashboardID}/devices"} context={"endpoint"}></MethodEndpoint>
 
 List of devices related to this dashboard
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-devices-related-to-dashboard.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-devices-related-to-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-devices-related-to-dashboard.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-devices-related-to-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-devices-related-to-dashboard.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-devices-related-to-dashboard.StatusCodes.json")}></StatusCodes>

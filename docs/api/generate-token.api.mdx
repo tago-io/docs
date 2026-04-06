@@ -20,58 +20,29 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Generate Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Generate Token"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}/token"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Generates a secure, public token for [embedding](/docs/tagoio/widgets/general/embedding-widgets-to-your-website) a specific widget from a dashboard.  
-Use this token to display the widget in external applications or websites via the TagoIO embed service.  
+Use this token to display the widget in external applications or websites via the TagoIO embed service.
 
-Example embed URL:  
+Example embed URL:
 
-`https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`  
+`https://embed.REGION.tago.io?widget=YOUR-WIDGET-ID&dashboard=YOUR-DASHBOARD-ID&token=YOUR-EMBED-TOKEN`
 
 This endpoint is intended for scenarios where you want to share or display a widget outside of the TagoIO platform while maintaining access control.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./generate-token.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./generate-token.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./generate-token.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./generate-token.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./generate-token.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./generate-token.StatusCodes.json")}></StatusCodes>

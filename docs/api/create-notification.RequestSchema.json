@@ -1,1 +1,65 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"buttons":{"type":"array","items":{"type":"object","properties":{"analysis":{"type":"string","example":"5515de2676ab4e3211109e41c"},"color":{"type":"string","example":"green"},"id":{"type":"string","example":"btn_1249384"},"label":{"type":"string","example":"Acknowledge"}}},"example":[{"analysis":"5515de2676ab4e3211109e41c","color":"green","id":"btn_1249384","label":"Acknowledge"}]},"buttons_autodisable":{"type":"boolean","example":true},"buttons_enabled":{"type":"boolean","example":true},"message":{"type":"string","example":"The temperature is lower than 18ºC."},"run_user":{"type":"string","example":"614edef8749df6a30280012a3caef"},"title":{"type":"string","example":"Low Temperature"}}},"examples":{"Create Notification":{"value":{"buttons":[{"analysis":"5515de2676ab4e3211109e41c","color":"green","id":"btn_1249384","label":"Acknowledge"}],"buttons_autodisable":true,"buttons_enabled":true,"message":"The temperature is lower than 18ºC.","run_user":"614edef8749df6a30280012a3caef","title":"Low Temperature"}}}},"text/plain":{"examples":{"Create Notification":{"value":"{\r\n    \"run_user\": \"<Run User ID>\",\r\n    \"title\": \"notification title\",\r\n    \"message\": \"message to be read\",\r\n    \"buttons\": [ // optional\r\n        {\r\n            \"label\": \"label of the button\",\r\n            \"id\": \"id_of_the_button\", // no space allowed\r\n            \"color\": \"color of the button\", //hexadecimal allowed\r\n            \"url\": \"url to redirect the user\", //optional\r\n            \"analysis\": \"analysis to run when clicked\" //optional\r\n        }\r\n    ],\r\n    \"buttons_enabled\": true, // optional\r\n    \"buttons_autodisable\": true // optional\r\n}"}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "buttons": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "analysis": { "type": "string", "example": "5515de2676ab4e3211109e41c" },
+                  "color": { "type": "string", "example": "green" },
+                  "id": { "type": "string", "example": "btn_1249384" },
+                  "label": { "type": "string", "example": "Acknowledge" }
+                }
+              },
+              "example": [
+                {
+                  "analysis": "5515de2676ab4e3211109e41c",
+                  "color": "green",
+                  "id": "btn_1249384",
+                  "label": "Acknowledge"
+                }
+              ]
+            },
+            "buttons_autodisable": { "type": "boolean", "example": true },
+            "buttons_enabled": { "type": "boolean", "example": true },
+            "message": { "type": "string", "example": "The temperature is lower than 18ºC." },
+            "run_user": { "type": "string", "example": "614edef8749df6a30280012a3caef" },
+            "title": { "type": "string", "example": "Low Temperature" }
+          }
+        },
+        "examples": {
+          "Create Notification": {
+            "value": {
+              "buttons": [
+                {
+                  "analysis": "5515de2676ab4e3211109e41c",
+                  "color": "green",
+                  "id": "btn_1249384",
+                  "label": "Acknowledge"
+                }
+              ],
+              "buttons_autodisable": true,
+              "buttons_enabled": true,
+              "message": "The temperature is lower than 18ºC.",
+              "run_user": "614edef8749df6a30280012a3caef",
+              "title": "Low Temperature"
+            }
+          }
+        }
+      },
+      "text/plain": {
+        "examples": {
+          "Create Notification": {
+            "value": "{\r\n    \"run_user\": \"<Run User ID>\",\r\n    \"title\": \"notification title\",\r\n    \"message\": \"message to be read\",\r\n    \"buttons\": [ // optional\r\n        {\r\n            \"label\": \"label of the button\",\r\n            \"id\": \"id_of_the_button\", // no space allowed\r\n            \"color\": \"color of the button\", //hexadecimal allowed\r\n            \"url\": \"url to redirect the user\", //optional\r\n            \"analysis\": \"analysis to run when clicked\" //optional\r\n        }\r\n    ],\r\n    \"buttons_enabled\": true, // optional\r\n    \"buttons_autodisable\": true // optional\r\n}"
+          }
+        }
+      }
+    }
+  }
+}

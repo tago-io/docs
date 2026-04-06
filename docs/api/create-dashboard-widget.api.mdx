@@ -20,22 +20,9 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Widget"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Widget"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/dashboard/{dashboardID}/widget"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/dashboard/{dashboardID}/widget"} context={"endpoint"}></MethodEndpoint>
 
 Create a widget within a specific dashboard in your profile.
 Each widget has unique properties. To ensure accuracy, we recommend opening your Admin Developer Panel, navigating to the desired Dashboard, and copying the Widget's JSON structure directly.  
@@ -43,32 +30,12 @@ Each widget has unique properties. To ensure accuracy, we recommend opening your
 After you create a widget, it is not automatically added to the dashboard's Arrangement parameter. You must manually edit the dashboard arrangement to include the widget's position in the grid.  
 :::
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./create-dashboard-widget.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./create-dashboard-widget.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-dashboard-widget.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-dashboard-widget.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-dashboard-widget.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-dashboard-widget.StatusCodes.json")}></StatusCodes>

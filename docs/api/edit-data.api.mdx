@@ -20,53 +20,21 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Data"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/data"} context={"endpoint"}></MethodEndpoint>
 
 Edit specific data stored in the device. Same properties as the Create Data is accepted, edit requires the ID field of the data to be edited.
 :::info  
 This request is only available when using Mutable Storage on Devices  
 :::
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-data.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-data.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-data.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-data.StatusCodes.json")}></StatusCodes>

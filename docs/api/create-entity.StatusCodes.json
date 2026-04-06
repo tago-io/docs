@@ -1,1 +1,21 @@
-{"responses":{"200":{"description":"Creating an entity","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"id":{"type":"string","example":"672a64b91807cd7008bae4d5"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Creating an entity",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "id": { "type": "string", "example": "672a64b91807cd7008bae4d5" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

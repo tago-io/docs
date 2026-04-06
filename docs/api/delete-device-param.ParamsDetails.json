@@ -1,1 +1,16 @@
-{"parameters":[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"(Type your device ID)"}},{"name":"paramID","in":"path","required":true,"schema":{"type":"string","example":"(Type your param ID)"}}]}
+{
+  "parameters": [
+    {
+      "name": "deviceID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type your device ID)" }
+    },
+    {
+      "name": "paramID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type your param ID)" }
+    }
+  ]
+}

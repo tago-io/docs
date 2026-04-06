@@ -1,1 +1,29 @@
-{"responses":{"200":{"description":"List of configuration parameters returned","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"6244401fe689b90014f9b299"},"key":{"type":"string","example":"param_key"},"sent":{"type":"boolean","example":false},"value":{"type":"string","example":"param_value"}}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "List of configuration parameters returned",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "example": "6244401fe689b90014f9b299" },
+                    "key": { "type": "string", "example": "param_key" },
+                    "sent": { "type": "boolean", "example": false },
+                    "value": { "type": "string", "example": "param_value" }
+                  }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

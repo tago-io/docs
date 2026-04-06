@@ -20,53 +20,20 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Config. parameters"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Config. parameters"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/params"} context={"endpoint"}></MethodEndpoint>
 
 Retrieve configuration parameters for the current device. This is useful for delivering settings or instructions that your device can periodically check for updates.
 
 [Configuration Parameters](/docs/tagoio/devices/configuration-parameters-for-devices) can be used to provide URLs (such as for firmware updates) or any other settings needed to control device behavior.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-configuration-parameters.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-configuration-parameters.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-configuration-parameters.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-configuration-parameters.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-configuration-parameters.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-configuration-parameters.StatusCodes.json")}></StatusCodes>

@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Device"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Device"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device"} context={"endpoint"}></MethodEndpoint>
 
 Create either an immutable or a mutable device. Immutable devices require chunking parameters and are optimized for long-term, append-only storage. Mutable devices behave like classic devices and do not require chunk settings.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-new-device.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-new-device.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-new-device.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-new-device.StatusCodes.json")}></StatusCodes>

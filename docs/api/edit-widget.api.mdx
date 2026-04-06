@@ -20,51 +20,22 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Widget"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Widget"}></Heading>
 
 <MethodEndpoint
   method={"put"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Edit properties of a JSON within a dashboard of your profile.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-widget.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-widget.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-widget.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-widget.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-widget.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-widget.StatusCodes.json")}></StatusCodes>

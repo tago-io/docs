@@ -20,63 +20,32 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Backup"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Backup"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/profile/{profile_id}/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/profile/{profile_id}/backup"} context={"endpoint"}></MethodEndpoint>
 
 Initiates a new backup generation for the specified profile. The backup is processed asynchronously in a background queue.
 
 **What's included in the backup:**
+
 - User storage files (uploaded via `/files` route)
 - Dashboard version history
 - Analysis script versions
 - All resource configurations as JSON files (devices, actions, dashboards, analysis, access management, networks, connectors, secrets, dictionaries, run users, etc.)
 
 **Important notes:**
+
 - Backups are rate-limited (1 per day based on your account timezone)
 - Free plan users do not have access to backup features
 - Backup generation may take several minutes depending on profile size
 - Restoration is manual - you can write scripts to parse the JSON files and recreate resources via API, or contact TagoIO support
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./create-profile-backup.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./create-profile-backup.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-profile-backup.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-profile-backup.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-profile-backup.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-profile-backup.StatusCodes.json")}></StatusCodes>

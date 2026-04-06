@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Import Data from a CSV in Files"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Import Data from a CSV in Files"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/data/restore"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/data/restore"} context={"endpoint"}></MethodEndpoint>
 
 Import Data from a CSV in Files
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./import-data-from-a-csv-in-files.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./import-data-from-a-csv-in-files.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./import-data-from-a-csv-in-files.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./import-data-from-a-csv-in-files.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./import-data-from-a-csv-in-files.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./import-data-from-a-csv-in-files.StatusCodes.json")}></StatusCodes>

@@ -1,1 +1,29 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","required":["email","name","password","profile_id"],"properties":{"email":{"type":"string","example":"example@mail.com"},"name":{"type":"string","example":"Token name"},"password":{"type":"string","example":"yourpassword"},"profile_id":{"type":"string","example":"712ea05e3cc07800127151111"}}},"examples":{"Generate Profile-Token":{"value":{"email":"example@mail.com","name":"newtoken","password":"yourpassword","profile_id":"712ea05e3cc07800127151111"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": ["email", "name", "password", "profile_id"],
+          "properties": {
+            "email": { "type": "string", "example": "example@mail.com" },
+            "name": { "type": "string", "example": "Token name" },
+            "password": { "type": "string", "example": "yourpassword" },
+            "profile_id": { "type": "string", "example": "712ea05e3cc07800127151111" }
+          }
+        },
+        "examples": {
+          "Generate Profile-Token": {
+            "value": {
+              "email": "example@mail.com",
+              "name": "newtoken",
+              "password": "yourpassword",
+              "profile_id": "712ea05e3cc07800127151111"
+            }
+          }
+        }
+      }
+    }
+  }
+}

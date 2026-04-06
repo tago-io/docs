@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Device Params"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Device Params"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/{deviceID}/params"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/{deviceID}/params"} context={"endpoint"}></MethodEndpoint>
 
 List params for the device
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-device-params.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-device-params.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-device-params.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-device-params.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-device-params.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-device-params.StatusCodes.json")}></StatusCodes>

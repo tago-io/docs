@@ -1,1 +1,61 @@
-{"title":"Body","body":{"required":false,"content":{"application/json":{"schema":{"type":"object","properties":{"new_label":{"type":"string","description":"New label for the duplicated dashboard.","example":"Ice Cream Machine and Freezer - Copy"},"setup":{"type":"object","description":"Setup configuration for the duplicated dashboard.","properties":{"is_configured":{"type":"boolean","description":"Indicates if the dashboard is configured.","example":true},"config":{"type":"array","description":"List of configuration objects for the dashboard.","items":{"type":"object","properties":{"id":{"type":"string","description":"Analysis ID, Device ID, Blueprint Device/Entity ID.","example":"68c9baabb24379000ab1c8cc"},"name":{"type":"string","description":"Reference name that will be displayed when setting up the copy.","example":"Freezer Simulator"}}}}}}}},"examples":{"Duplicate dashboard":{"value":{"setup":{"is_configured":true,"config":[{"id":"68c9baabb24379000ab1c8cc","name":"Freezer Simulator"}]},"new_label":"Ice Cream Machine and Freezer - Copy"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "required": false,
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "new_label": {
+              "type": "string",
+              "description": "New label for the duplicated dashboard.",
+              "example": "Ice Cream Machine and Freezer - Copy"
+            },
+            "setup": {
+              "type": "object",
+              "description": "Setup configuration for the duplicated dashboard.",
+              "properties": {
+                "is_configured": {
+                  "type": "boolean",
+                  "description": "Indicates if the dashboard is configured.",
+                  "example": true
+                },
+                "config": {
+                  "type": "array",
+                  "description": "List of configuration objects for the dashboard.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "Analysis ID, Device ID, Blueprint Device/Entity ID.",
+                        "example": "68c9baabb24379000ab1c8cc"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "Reference name that will be displayed when setting up the copy.",
+                        "example": "Freezer Simulator"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "examples": {
+          "Duplicate dashboard": {
+            "value": {
+              "setup": {
+                "is_configured": true,
+                "config": [{ "id": "68c9baabb24379000ab1c8cc", "name": "Freezer Simulator" }]
+              },
+              "new_label": "Ice Cream Machine and Freezer - Copy"
+            }
+          }
+        }
+      }
+    }
+  }
+}

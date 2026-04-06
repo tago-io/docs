@@ -20,43 +20,14 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Device Information"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Device Information"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/info"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/info"} context={"endpoint"}></MethodEndpoint>
 
 Get information about the current device
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<RequestSchema {...require("./current-device-information.RequestSchema.json")}></RequestSchema>
 
-<RequestSchema
-  {...require("./current-device-information.RequestSchema.json")}
->
-  
-</RequestSchema>
-
-<StatusCodes
-  {...require("./current-device-information.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./current-device-information.StatusCodes.json")}></StatusCodes>

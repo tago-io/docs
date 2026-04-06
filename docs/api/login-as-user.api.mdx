@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Get User Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Get User Token"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/run/users/{userID}/login"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/run/users/{userID}/login"} context={"endpoint"}></MethodEndpoint>
 
 Get TagoRUN User Token and allow to perform request to TagoRUN specific endpoints (not available).
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./login-as-user.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./login-as-user.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./login-as-user.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./login-as-user.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./login-as-user.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./login-as-user.StatusCodes.json")}></StatusCodes>

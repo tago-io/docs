@@ -1,1 +1,11 @@
-{"parameters":[{"name":"serieNumber","in":"path","required":true,"schema":{"type":"string"},"description":"Device Serial Number registered at TagoIO"}]}
+{
+  "parameters": [
+    {
+      "name": "serieNumber",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string" },
+      "description": "Device Serial Number registered at TagoIO"
+    }
+  ]
+}

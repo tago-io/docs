@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Send Device Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Send Device Data"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/data"} context={"endpoint"}></MethodEndpoint>
 
 Send data to a specific Device within your profile
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./send-data-to-device.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./send-data-to-device.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./send-data-to-device.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./send-data-to-device.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./send-data-to-device.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./send-data-to-device.StatusCodes.json")}></StatusCodes>

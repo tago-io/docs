@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"List Tokens"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"List Tokens"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/device/token/{deviceID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/device/token/{deviceID}"} context={"endpoint"}></MethodEndpoint>
 
 Retrieves list of all tokens from device
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./list-of-tokens.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./list-of-tokens.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./list-of-tokens.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./list-of-tokens.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./list-of-tokens.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./list-of-tokens.StatusCodes.json")}></StatusCodes>

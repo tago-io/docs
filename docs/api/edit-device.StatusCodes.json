@@ -1,1 +1,18 @@
-{"responses":{"200":{"description":"Updating device settings","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Updating device settings",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

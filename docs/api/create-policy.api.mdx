@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Policy"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Policy"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/am"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/am"} context={"endpoint"}></MethodEndpoint>
 
 Create a policy that targets either Run User or Analysis
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-policy.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-policy.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-policy.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-policy.StatusCodes.json")}></StatusCodes>

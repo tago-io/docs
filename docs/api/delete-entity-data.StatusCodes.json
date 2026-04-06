@@ -1,1 +1,19 @@
-{"responses":{"200":{"description":"Delete Entity Data","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"2 item(s) deleted"},"status":{"type":"boolean","example":true}}},"examples":{"Delete Entity Data":{"value":{"result":"2 item(s) deleted","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Delete Entity Data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "2 item(s) deleted" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Delete Entity Data": { "value": { "result": "2 item(s) deleted", "status": true } } }
+        }
+      }
+    }
+  }
+}

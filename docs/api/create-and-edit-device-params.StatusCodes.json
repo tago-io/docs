@@ -1,1 +1,18 @@
-{"responses":{"201":{"description":"Creating or editing device parameters","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Params Successfully Updated"},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "201": {
+      "description": "Creating or editing device parameters",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Params Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

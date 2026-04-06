@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Entity Data"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Entity Data"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/entity/{entity_id}/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/entity/{entity_id}/data"} context={"endpoint"}></MethodEndpoint>
 
 Edit Entity Data
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-entity-data.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-entity-data.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-entity-data.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-entity-data.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-entity-data.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-entity-data.StatusCodes.json")}></StatusCodes>

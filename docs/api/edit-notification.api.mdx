@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit Notification"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit Notification"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/run/notification/{notificationID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/run/notification/{notificationID}"} context={"endpoint"}></MethodEndpoint>
 
 Edit notification on Run
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./edit-notification.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./edit-notification.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-notification.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-notification.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-notification.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-notification.StatusCodes.json")}></StatusCodes>

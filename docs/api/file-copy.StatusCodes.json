@@ -1,1 +1,19 @@
-{"responses":{"200":{"description":"Making a file copy","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Successfully Updated"},"status":{"type":"boolean","example":true}}},"examples":{"Making a file copy":{"value":{"result":"Successfully Updated","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Making a file copy",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Making a file copy": { "value": { "result": "Successfully Updated", "status": true } } }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,5 @@
-{"parameters":[{"name":"entity_id","in":"path","required":true,"schema":{"type":"string"},"description":"Entity ID"}]}
+{
+  "parameters": [
+    { "name": "entity_id", "in": "path", "required": true, "schema": { "type": "string" }, "description": "Entity ID" }
+  ]
+}

@@ -1,1 +1,48 @@
-{"responses":{"200":{"description":"Login","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"company":{"type":"string","example":"companyname"},"email":{"type":"string","example":"example@mail.com"},"id":{"type":"string","example":"612ea05e3cc078001371895110"},"name":{"type":"string","example":"Your Name"},"phone":{"type":"string","example":"+9396363457126"},"profiles":{"type":"array","items":{"type":"object","properties":{"account":{"type":"string","example":"612ea05e3cc078001371895110"},"id":{"type":"string","example":"612ea05e3cc078001371895111"},"logo_url":{"example":null},"name":{"type":"string","example":"profilename"}}},"example":[{"account":"612ea05e3cc078001371895110","id":"612ea05e3cc078001371895111","logo_url":null,"name":"profilename"}]},"type":{"type":"string","example":"user"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Login",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "company": { "type": "string", "example": "companyname" },
+                  "email": { "type": "string", "example": "example@mail.com" },
+                  "id": { "type": "string", "example": "612ea05e3cc078001371895110" },
+                  "name": { "type": "string", "example": "Your Name" },
+                  "phone": { "type": "string", "example": "+9396363457126" },
+                  "profiles": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "account": { "type": "string", "example": "612ea05e3cc078001371895110" },
+                        "id": { "type": "string", "example": "612ea05e3cc078001371895111" },
+                        "logo_url": { "example": null },
+                        "name": { "type": "string", "example": "profilename" }
+                      }
+                    },
+                    "example": [
+                      {
+                        "account": "612ea05e3cc078001371895110",
+                        "id": "612ea05e3cc078001371895111",
+                        "logo_url": null,
+                        "name": "profilename"
+                      }
+                    ]
+                  },
+                  "type": { "type": "string", "example": "user" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

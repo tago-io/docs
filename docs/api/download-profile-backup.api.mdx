@@ -20,22 +20,13 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Download Backup"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Download Backup"}></Heading>
 
 <MethodEndpoint
   method={"post"}
   path={"/profile/{profile_id}/backup/{backup_id}/download"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Generates a secure, time-limited download URL for a specific backup. The download URL is valid for **2 hours**.
 
@@ -43,32 +34,12 @@ Generates a secure, time-limited download URL for a specific backup. The downloa
 
 **Important:** Only backups with status `completed` can be downloaded.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./download-profile-backup.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./download-profile-backup.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./download-profile-backup.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./download-profile-backup.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./download-profile-backup.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./download-profile-backup.StatusCodes.json")}></StatusCodes>

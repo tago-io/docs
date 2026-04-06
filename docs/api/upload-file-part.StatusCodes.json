@@ -1,1 +1,88 @@
-{"responses":{"200":{"description":"Upload file part 1 / Upload file part 2 / Upload file part 3","headers":{"Etag":{"schema":{"type":"string","example":"W/\"12e-fdk/2Vt3///sBaogLtoHsVN43c0\""}}},"content":{"application/json":{"schema":{"type":"object","properties":{"result":{"example":"TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-","anyOf":[{"type":"string","example":"TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-"},{"type":"object","properties":{"$metadata":{"type":"object","properties":{"attempts":{"type":"number","example":1},"extendedRequestId":{"type":"string","example":"etfQlHP3vxwKW5DnCMCxnNvqHxmq8YxostIXn3qP0GwM34BtB11KAKuU7it4+REbO7iJKMobqZI="},"httpStatusCode":{"type":"number","example":200},"requestId":{"type":"string","example":"7V63NVZWY2EZFVQJ"},"totalRetryDelay":{"type":"number","example":0}}},"ETag":{"type":"string","example":"\"0f75e3da7675ca382dac146ed1247162\""},"ServerSideEncryption":{"type":"string","example":"AES256"}}},{"type":"object","properties":{"file":{"type":"string","example":"https://api.tago.io/file/61fab40aa5c9f40012a5ff93/Screenshot%202023-11-03%20at%2016.35.29.png"}}}]},"status":{"type":"boolean","example":true}}},"examples":{"Upload file part 1":{"value":{"result":"TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-","status":true}},"Upload file part 2":{"value":{"result":{"$metadata":{"attempts":1,"extendedRequestId":"etfQlHP3vxwKW5DnCMCxnNvqHxmq8YxostIXn3qP0GwM34BtB11KAKuU7it4+REbO7iJKMobqZI=","httpStatusCode":200,"requestId":"7V63NVZWY2EZFVQJ","totalRetryDelay":0},"ETag":"\"0f75e3da7675ca382dac146ed1247162\"","ServerSideEncryption":"AES256"},"status":true}},"Upload file part 3":{"value":{"result":{"file":"https://api.tago.io/file/61fab40aa5c9f40012a5ff93/Screenshot%202023-11-03%20at%2016.35.29.png"},"status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Upload file part 1 / Upload file part 2 / Upload file part 3",
+      "headers": { "Etag": { "schema": { "type": "string", "example": "W/\"12e-fdk/2Vt3///sBaogLtoHsVN43c0\"" } } },
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "example": "TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "example": "TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "$metadata": {
+                        "type": "object",
+                        "properties": {
+                          "attempts": { "type": "number", "example": 1 },
+                          "extendedRequestId": {
+                            "type": "string",
+                            "example": "etfQlHP3vxwKW5DnCMCxnNvqHxmq8YxostIXn3qP0GwM34BtB11KAKuU7it4+REbO7iJKMobqZI="
+                          },
+                          "httpStatusCode": { "type": "number", "example": 200 },
+                          "requestId": { "type": "string", "example": "7V63NVZWY2EZFVQJ" },
+                          "totalRetryDelay": { "type": "number", "example": 0 }
+                        }
+                      },
+                      "ETag": { "type": "string", "example": "\"0f75e3da7675ca382dac146ed1247162\"" },
+                      "ServerSideEncryption": { "type": "string", "example": "AES256" }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "file": {
+                        "type": "string",
+                        "example": "https://api.tago.io/file/61fab40aa5c9f40012a5ff93/Screenshot%202023-11-03%20at%2016.35.29.png"
+                      }
+                    }
+                  }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Upload file part 1": {
+              "value": {
+                "result": "TJdGVdXNEdTQq9yIdclq8z3wPZ9dSA8NiLkDAhPb54H2FxW.k2jpsr1nmh7UeaWIYi7DdNllhDAv0JTvLWwEggYkWXhW8W7foUdlemg0aeQcj95D0yJJN65hdv9_RXYvzg7g4SiJ9YIj.y1R5LN.wvwznXnrzbOQ5hLjQ2eOqMI-",
+                "status": true
+              }
+            },
+            "Upload file part 2": {
+              "value": {
+                "result": {
+                  "$metadata": {
+                    "attempts": 1,
+                    "extendedRequestId": "etfQlHP3vxwKW5DnCMCxnNvqHxmq8YxostIXn3qP0GwM34BtB11KAKuU7it4+REbO7iJKMobqZI=",
+                    "httpStatusCode": 200,
+                    "requestId": "7V63NVZWY2EZFVQJ",
+                    "totalRetryDelay": 0
+                  },
+                  "ETag": "\"0f75e3da7675ca382dac146ed1247162\"",
+                  "ServerSideEncryption": "AES256"
+                },
+                "status": true
+              }
+            },
+            "Upload file part 3": {
+              "value": {
+                "result": {
+                  "file": "https://api.tago.io/file/61fab40aa5c9f40012a5ff93/Screenshot%202023-11-03%20at%2016.35.29.png"
+                },
+                "status": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

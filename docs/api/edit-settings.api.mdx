@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Edit RUN settings"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Edit RUN settings"}></Heading>
 
-<MethodEndpoint
-  method={"put"}
-  path={"/run"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"put"} path={"/run"} context={"endpoint"}></MethodEndpoint>
 
 Edit information about TagoRUN
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./edit-settings.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./edit-settings.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./edit-settings.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./edit-settings.StatusCodes.json")}></StatusCodes>

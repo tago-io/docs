@@ -1,1 +1,23 @@
-{"responses":{"200":{"description":"Exporting data to Files","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"file_address":{"type":"string","example":"device/66db45b6552d1d00097956de/1732039901282.csv"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Exporting data to Files",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "file_address": { "type": "string", "example": "device/66db45b6552d1d00097956de/1732039901282.csv" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,42 +20,14 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Account Plan"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Account Plan"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/account/plan"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/account/plan"} context={"endpoint"}></MethodEndpoint>
 
 Get the Account Plan
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-the-account-plan.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-the-account-plan.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-the-account-plan.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-the-account-plan.StatusCodes.json")}></StatusCodes>

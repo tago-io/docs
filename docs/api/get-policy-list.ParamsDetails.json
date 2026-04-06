@@ -1,1 +1,5 @@
-{"parameters":[{"name":"orderBy","in":"query","required":true,"schema":{"type":"string","example":"created_at"}}]}
+{
+  "parameters": [
+    { "name": "orderBy", "in": "query", "required": true, "schema": { "type": "string", "example": "created_at" } }
+  ]
+}

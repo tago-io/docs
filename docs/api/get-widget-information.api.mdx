@@ -20,51 +20,22 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Widget Information"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Widget Information"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/dashboard/{dashboardID}/widget/{widgetID}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Retrieve the complete JSON structure of the dashboard widget, including all settings and data/resource instructions used to populate the widget's data.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-widget-information.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-widget-information.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-widget-information.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-widget-information.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-widget-information.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-widget-information.StatusCodes.json")}></StatusCodes>

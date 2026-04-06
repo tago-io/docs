@@ -20,22 +20,9 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Send Data using Network"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Send Data using Network"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/integration/network/data"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/integration/network/data"} context={"endpoint"}></MethodEndpoint>
 
 Send data to TagoIO using the Network instead.
 
@@ -43,39 +30,19 @@ This endpoint allows the [Network Payload Parser](/docs/tagoio/devices/payload-p
 
 The Network's Payload Parser is required to set the serial within the network parser. For example:
 
-``` javascript
- if (Array.isArray(payload)) {
-   const payload_received = payload.find(x => x.variable === "payload");
-   serial = payload_received?.metadata?.serial;
- }
+```javascript
+if (Array.isArray(payload)) {
+  const payload_received = payload.find((x) => x.variable === "payload");
+  serial = payload_received?.metadata?.serial;
+}
+```
 
- ```
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./send-data-using-network.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./send-data-using-network.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./send-data-using-network.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./send-data-using-network.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./send-data-using-network.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./send-data-using-network.StatusCodes.json")}></StatusCodes>

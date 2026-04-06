@@ -1,1 +1,36 @@
-{"responses":{"200":{"description":"Get Device Tags","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"array","items":{"type":"string","example":"numbervalue"},"example":["numbervalue","vumeter","test","bp","area","block","horizontal","multiple","user","problem","formula","chart","BP"]},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Get Device Tags",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": { "type": "string", "example": "numbervalue" },
+                "example": [
+                  "numbervalue",
+                  "vumeter",
+                  "test",
+                  "bp",
+                  "area",
+                  "block",
+                  "horizontal",
+                  "multiple",
+                  "user",
+                  "problem",
+                  "formula",
+                  "chart",
+                  "BP"
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

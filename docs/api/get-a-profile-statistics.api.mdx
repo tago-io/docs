@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Profile Statistics"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Profile Statistics"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/profiled/{id}/statistics"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/profiled/{id}/statistics"} context={"endpoint"}></MethodEndpoint>
 
 Get your Profile Statistics
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-a-profile-statistics.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-a-profile-statistics.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-a-profile-statistics.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-a-profile-statistics.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-a-profile-statistics.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-a-profile-statistics.StatusCodes.json")}></StatusCodes>

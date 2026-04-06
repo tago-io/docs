@@ -1,1 +1,51 @@
-{"parameters":[{"name":"qty","in":"query","description":"Quantity of data records to delete. Default is 15.","schema":{"type":"integer","minimum":1,"default":15,"example":20}},{"name":"ordination","in":"query","description":"Sort direction. Default is descending.","schema":{"type":"string","enum":["ascending","descending"],"default":"descending","example":"descending"}},{"name":"skip","in":"query","description":"Number of items to skip (pagination).","schema":{"type":"integer","minimum":0,"example":15}},{"name":"variables","in":"query","description":"Filter data by variable.","schema":{"type":"string","example":"temperature"}},{"name":"values","in":"query","description":"Filter data by value. Accepts single or multiple values.","schema":{"type":"string","items":{"type":"string"},"example":"12"}},{"name":"ids","in":"query","description":"Filter data by id. Accepts single or multiple values.","schema":{"type":"string","items":{"type":"string"},"example":"6144a25e280ad80019688e689"}},{"name":"groups","in":"query","description":"Filter data by group. Accepts single or multiple values.\nFor multiple, send `groups[0]=foo&groups[1]=bar`.\n","schema":{"type":"string","items":{"type":"string"},"example":"16731887966346"}}]}
+{
+  "parameters": [
+    {
+      "name": "qty",
+      "in": "query",
+      "description": "Quantity of data records to delete. Default is 15.",
+      "schema": { "type": "integer", "minimum": 1, "default": 15, "example": 20 }
+    },
+    {
+      "name": "ordination",
+      "in": "query",
+      "description": "Sort direction. Default is descending.",
+      "schema": {
+        "type": "string",
+        "enum": ["ascending", "descending"],
+        "default": "descending",
+        "example": "descending"
+      }
+    },
+    {
+      "name": "skip",
+      "in": "query",
+      "description": "Number of items to skip (pagination).",
+      "schema": { "type": "integer", "minimum": 0, "example": 15 }
+    },
+    {
+      "name": "variables",
+      "in": "query",
+      "description": "Filter data by variable.",
+      "schema": { "type": "string", "example": "temperature" }
+    },
+    {
+      "name": "values",
+      "in": "query",
+      "description": "Filter data by value. Accepts single or multiple values.",
+      "schema": { "type": "string", "items": { "type": "string" }, "example": "12" }
+    },
+    {
+      "name": "ids",
+      "in": "query",
+      "description": "Filter data by id. Accepts single or multiple values.",
+      "schema": { "type": "string", "items": { "type": "string" }, "example": "6144a25e280ad80019688e689" }
+    },
+    {
+      "name": "groups",
+      "in": "query",
+      "description": "Filter data by group. Accepts single or multiple values.\nFor multiple, send `groups[0]=foo&groups[1]=bar`.\n",
+      "schema": { "type": "string", "items": { "type": "string" }, "example": "16731887966346" }
+    }
+  ]
+}

@@ -1,1 +1,76 @@
-{"responses":{"200":{"description":"Test message sent successfully","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"message":{"type":"string","example":"Test message sent successfully"},"message_id":{"type":"string","description":"Provider's message ID for tracking (if available)","example":"SM1234567890abcdef1234567890abcdef"}}},"status":{"type":"boolean","example":true}}}}}},"400":{"description":"Bad request - Invalid recipient or message format","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Invalid phone number format. Use E.164 format (e.g., +15551234567)"}}}}}},"404":{"description":"Service provider not configured","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"No service provider configured for the specified service type"}}}}}},"500":{"description":"Provider error - Failed to send test message","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"boolean","example":false},"message":{"type":"string","example":"Failed to send test message: Invalid credentials"}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Test message sent successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "message": { "type": "string", "example": "Test message sent successfully" },
+                  "message_id": {
+                    "type": "string",
+                    "description": "Provider's message ID for tracking (if available)",
+                    "example": "SM1234567890abcdef1234567890abcdef"
+                  }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    },
+    "400": {
+      "description": "Bad request - Invalid recipient or message format",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": {
+                "type": "string",
+                "example": "Invalid phone number format. Use E.164 format (e.g., +15551234567)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "404": {
+      "description": "Service provider not configured",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": {
+                "type": "string",
+                "example": "No service provider configured for the specified service type"
+              }
+            }
+          }
+        }
+      }
+    },
+    "500": {
+      "description": "Provider error - Failed to send test message",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Failed to send test message: Invalid credentials" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

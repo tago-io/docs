@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Export Chunk"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Export Chunk"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/device/{deviceID}/chunk/backup"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/device/{deviceID}/chunk/backup"} context={"endpoint"}></MethodEndpoint>
 
 Export a chunk as CSV to your TagoIO Files
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./export-a-chunk-as-csv-to-files.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./export-a-chunk-as-csv-to-files.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./export-a-chunk-as-csv-to-files.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./export-a-chunk-as-csv-to-files.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./export-a-chunk-as-csv-to-files.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./export-a-chunk-as-csv-to-files.StatusCodes.json")}></StatusCodes>

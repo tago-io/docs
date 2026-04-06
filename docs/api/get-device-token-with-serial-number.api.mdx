@@ -20,22 +20,13 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Find Device by Serial"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Find Device by Serial"}></Heading>
 
 <MethodEndpoint
   method={"get"}
   path={"/integration/network/resolve/{serieNumber}"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Get a valid device-token using token serial number only. It will match the serial in any profile.
 :::warning  
@@ -43,31 +34,12 @@ If the serial number is duplicated between different profiles, you will get the 
 :::
 You must have a Network and a Network-Token to use this query.
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-device-token-with-serial-number.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-device-token-with-serial-number.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-device-token-with-serial-number.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-device-token-with-serial-number.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-device-token-with-serial-number.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-device-token-with-serial-number.StatusCodes.json")}></StatusCodes>

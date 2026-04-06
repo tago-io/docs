@@ -1,1 +1,72 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"analysis_run":{"type":"string","example":"Analysis to trigger when a button is pressed. Used by Form and Dynamic Table widgets."},"dashboard":{"type":"string","description":"Your Dashboard ID"},"data":{"type":"array","items":{"type":"object"},"description":"Data that will be available to your widget."},"display":{"type":"object","description":"The display property of your widget. Each widget has it's unique properties."},"id":{"type":"string"},"label":{"type":"string","example":"Title Label of the Widget"},"realtime":{"type":"boolean","example":true},"type":{"type":"string","example":"The widget unique type."}}},"examples":{"Card Widget Example":{"value":{"analysis_run":null,"display":{"alias":"Ice Cream","header_buttons":[{"color":null,"icon":"","text":"","trigger":"widget","widget":null}],"help":"You can edit this widget to add a message here","frame_settings":{"shadow":{"hide":false},"header_visibility":"show_always"},"theme":{"color":{"background":"hsl(210, 12%, 12%)","header":"hsl(210, 65%, 60%)","text":"hsl(210, 20%, 92%)"}},"show_variables":true,"formula":{"enable":false,"unit_type":"origin","fixed_unit":"","apply_all_matching_formulas":false},"number_format":{"decimals":-1,"show_thousand":false},"max_points":10,"show_chart":true,"show_unit":true,"url":"","variable":"temperature"},"data":[{"qty":10,"origin":"68c9baabb24379000ab1c8cc","variables":["temperature"]}],"resource":[],"id":"68c9bab8fe8818000a7ec597","label":"Temperature","realtime":null,"type":"card","cache":null}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "analysis_run": {
+              "type": "string",
+              "example": "Analysis to trigger when a button is pressed. Used by Form and Dynamic Table widgets."
+            },
+            "dashboard": { "type": "string", "description": "Your Dashboard ID" },
+            "data": {
+              "type": "array",
+              "items": { "type": "object" },
+              "description": "Data that will be available to your widget."
+            },
+            "display": {
+              "type": "object",
+              "description": "The display property of your widget. Each widget has it's unique properties."
+            },
+            "id": { "type": "string" },
+            "label": { "type": "string", "example": "Title Label of the Widget" },
+            "realtime": { "type": "boolean", "example": true },
+            "type": { "type": "string", "example": "The widget unique type." }
+          }
+        },
+        "examples": {
+          "Card Widget Example": {
+            "value": {
+              "analysis_run": null,
+              "display": {
+                "alias": "Ice Cream",
+                "header_buttons": [{ "color": null, "icon": "", "text": "", "trigger": "widget", "widget": null }],
+                "help": "You can edit this widget to add a message here",
+                "frame_settings": { "shadow": { "hide": false }, "header_visibility": "show_always" },
+                "theme": {
+                  "color": {
+                    "background": "hsl(210, 12%, 12%)",
+                    "header": "hsl(210, 65%, 60%)",
+                    "text": "hsl(210, 20%, 92%)"
+                  }
+                },
+                "show_variables": true,
+                "formula": {
+                  "enable": false,
+                  "unit_type": "origin",
+                  "fixed_unit": "",
+                  "apply_all_matching_formulas": false
+                },
+                "number_format": { "decimals": -1, "show_thousand": false },
+                "max_points": 10,
+                "show_chart": true,
+                "show_unit": true,
+                "url": "",
+                "variable": "temperature"
+              },
+              "data": [{ "qty": 10, "origin": "68c9baabb24379000ab1c8cc", "variables": ["temperature"] }],
+              "resource": [],
+              "id": "68c9bab8fe8818000a7ec597",
+              "label": "Temperature",
+              "realtime": null,
+              "type": "card",
+              "cache": null
+            }
+          }
+        }
+      }
+    }
+  }
+}

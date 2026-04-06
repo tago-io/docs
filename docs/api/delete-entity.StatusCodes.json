@@ -1,1 +1,19 @@
-{"responses":{"200":{"description":"Deleting an entity","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"string","example":"Entity Successfully Removed"},"status":{"type":"boolean","example":true}}},"examples":{"Deleting an entity":{"value":{"result":"Entity Successfully Removed","status":true}}}}}}}}
+{
+  "responses": {
+    "200": {
+      "description": "Deleting an entity",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Entity Successfully Removed" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Deleting an entity": { "value": { "result": "Entity Successfully Removed", "status": true } } }
+        }
+      }
+    }
+  }
+}

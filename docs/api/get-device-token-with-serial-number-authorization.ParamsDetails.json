@@ -1,1 +1,18 @@
-{"parameters":[{"name":"serieNumber","in":"path","required":true,"schema":{"type":"string"},"description":"Device Serial Number registered at TagoIO"},{"name":"AuthorizationKey","in":"path","required":true,"schema":{"type":"string"},"description":"Authorization key for the profile, used to resolve the device token when multiple profiles may have the same serial number."}]}
+{
+  "parameters": [
+    {
+      "name": "serieNumber",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string" },
+      "description": "Device Serial Number registered at TagoIO"
+    },
+    {
+      "name": "AuthorizationKey",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string" },
+      "description": "Authorization key for the profile, used to resolve the device token when multiple profiles may have the same serial number."
+    }
+  ]
+}

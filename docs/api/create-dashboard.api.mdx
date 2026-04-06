@@ -20,53 +20,20 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/dashboard"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/dashboard"} context={"endpoint"}></MethodEndpoint>
 
 Creates a dashboard of type Blueprint or Normal Dashboard into your profile.
 
 It's recommended to access your Admin Developer panel and Copy the Dashboard JSON Structure to see all available fields.
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-dashboard.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-dashboard.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-dashboard.StatusCodes.json")}></StatusCodes>

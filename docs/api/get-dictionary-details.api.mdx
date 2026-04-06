@@ -20,50 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Dictionary Information"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Dictionary Information"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/dictionary/{dictionary_id}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/dictionary/{dictionary_id}"} context={"endpoint"}></MethodEndpoint>
 
 Get Dictionary Details
 
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./get-dictionary-details.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./get-dictionary-details.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./get-dictionary-details.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./get-dictionary-details.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./get-dictionary-details.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-dictionary-details.StatusCodes.json")}></StatusCodes>

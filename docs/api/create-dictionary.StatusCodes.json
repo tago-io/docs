@@ -1,1 +1,21 @@
-{"responses":{"201":{"description":"Creating a dictionary","content":{"application/json":{"schema":{"type":"object","properties":{"result":{"type":"object","properties":{"dictionary":{"type":"string","example":"654bdc4449769c00097fee32"}}},"status":{"type":"boolean","example":true}}}}}}}}
+{
+  "responses": {
+    "201": {
+      "description": "Creating a dictionary",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "dictionary": { "type": "string", "example": "654bdc4449769c00097fee32" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

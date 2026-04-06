@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete Dashboard"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete Dashboard"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/dashboard/{dashboardID}"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/dashboard/{dashboardID}"} context={"endpoint"}></MethodEndpoint>
 
 Delete the dashboard
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  {...require("./delete-dashboard.ParamsDetails.json")}
->
-  
-</ParamsDetails>
+<ParamsDetails {...require("./delete-dashboard.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-dashboard.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-dashboard.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-dashboard.StatusCodes.json")}></StatusCodes>

@@ -1,1 +1,19 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"monthly_revenue":{"type":"number","example":2345.34},"update_date":{"type":"string","example":"2024-11-01T03:00:00.000Z"}}},"examples":{"Add Entity Data":{"value":{"monthly_revenue":2345.34,"update_date":"2024-11-01T03:00:00.000Z"}}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "monthly_revenue": { "type": "number", "example": 2345.34 },
+            "update_date": { "type": "string", "example": "2024-11-01T03:00:00.000Z" }
+          }
+        },
+        "examples": {
+          "Add Entity Data": { "value": { "monthly_revenue": 2345.34, "update_date": "2024-11-01T03:00:00.000Z" } }
+        }
+      }
+    }
+  }
+}

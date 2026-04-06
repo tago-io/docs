@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Generate Profile-Token"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Generate Profile-Token"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/account/profile/token"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/account/profile/token"} context={"endpoint"}></MethodEndpoint>
 
 Generates and retrieves a new token for the account
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./generate-profile-token.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./generate-profile-token.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./generate-profile-token.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./generate-profile-token.StatusCodes.json")}></StatusCodes>

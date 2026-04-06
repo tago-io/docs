@@ -20,42 +20,14 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Delete a File"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Delete a File"}></Heading>
 
-<MethodEndpoint
-  method={"delete"}
-  path={"/files"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"delete"} path={"/files"} context={"endpoint"}></MethodEndpoint>
 
 Delete a file
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./delete-a-file.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./delete-a-file.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./delete-a-file.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./delete-a-file.StatusCodes.json")}></StatusCodes>

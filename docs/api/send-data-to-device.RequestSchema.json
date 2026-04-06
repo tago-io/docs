@@ -1,1 +1,127 @@
-{"title":"Body","body":{"required":true,"content":{"application/json":{"schema":{"description":"Accepts a single item or an array of items when sent as application/json.\nFor text/plain content, use the [Payload Parser](/docs/tagoio/devices/payload-parser/) to normalize the data into TagoIO JSON format.\n","oneOf":[{"type":"object","required":["variable"],"properties":{"variable":{"type":"string","example":"location"},"location":{"type":"object","properties":{"lat":{"type":"number","example":35.770723},"lng":{"type":"number","example":-78.677328}}},"value":{"type":"string","example":"TagoIO Headquarters"},"time":{"type":"string","description":"ISO 8601 string or Unix timestamp","example":"2023-12-01T12:34:56.000Z"},"group":{"type":"string","description":"Unique grouping ID for your data. Widgets often group by this."},"unit":{"type":"string","example":"%","description":"Provide a unit of measurement to the data. Most widgets will display the unit."},"metadata":{"type":"object","description":"Can be attached to the data to influence widget behavior and store additional information.","additionalProperties":true,"example":{"color":"red","icon":"car"}}},"title":"DeviceDataItem"},{"type":"array","items":{"type":"object","required":["variable"],"properties":{"variable":{"type":"string","example":"location"},"location":{"type":"object","properties":{"lat":{"type":"number","example":35.770723},"lng":{"type":"number","example":-78.677328}}},"value":{"type":"string","example":"TagoIO Headquarters"},"time":{"type":"string","description":"ISO 8601 string or Unix timestamp","example":"2023-12-01T12:34:56.000Z"},"group":{"type":"string","description":"Unique grouping ID for your data. Widgets often group by this."},"unit":{"type":"string","example":"%","description":"Provide a unit of measurement to the data. Most widgets will display the unit."},"metadata":{"type":"object","description":"Can be attached to the data to influence widget behavior and store additional information.","additionalProperties":true,"example":{"color":"red","icon":"car"}}},"title":"DeviceDataItem"},"description":"Accepts a single item or an array of items.","title":"DeviceDataArray"}],"title":"DeviceData"},"examples":{"Send data (object)":{"value":{"variable":"location","value":"TagoIO Headquarters","location":{"lat":35.770723,"lng":-78.677328}}},"Send data (array)":{"value":[{"variable":"location","value":"TagoIO Headquarters","location":{"lat":35.770723,"lng":-78.677328}},{"variable":"location","value":"New York Office","location":{"lat":40.712776,"lng":-74.005974}}]}}},"text/plain":{"schema":{"type":"string","description":"Raw text data that will be processed by the device's Payload Parser to normalize into TagoIO JSON format."},"examples":{"Raw sensor data":{"value":"temperature:23.5,humidity:45.2,battery:87"},"HEX payload":{"value":"41BC7E1F2A"},"Custom format":{"value":"sensor_id=123&temp=25.6&status=ok"}}}}}}
+{
+  "title": "Body",
+  "body": {
+    "required": true,
+    "content": {
+      "application/json": {
+        "schema": {
+          "description": "Accepts a single item or an array of items when sent as application/json.\nFor text/plain content, use the [Payload Parser](/docs/tagoio/devices/payload-parser/) to normalize the data into TagoIO JSON format.\n",
+          "oneOf": [
+            {
+              "type": "object",
+              "required": ["variable"],
+              "properties": {
+                "variable": { "type": "string", "example": "location" },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": { "type": "number", "example": 35.770723 },
+                    "lng": { "type": "number", "example": -78.677328 }
+                  }
+                },
+                "value": { "type": "string", "example": "TagoIO Headquarters" },
+                "time": {
+                  "type": "string",
+                  "description": "ISO 8601 string or Unix timestamp",
+                  "example": "2023-12-01T12:34:56.000Z"
+                },
+                "group": {
+                  "type": "string",
+                  "description": "Unique grouping ID for your data. Widgets often group by this."
+                },
+                "unit": {
+                  "type": "string",
+                  "example": "%",
+                  "description": "Provide a unit of measurement to the data. Most widgets will display the unit."
+                },
+                "metadata": {
+                  "type": "object",
+                  "description": "Can be attached to the data to influence widget behavior and store additional information.",
+                  "additionalProperties": true,
+                  "example": { "color": "red", "icon": "car" }
+                }
+              },
+              "title": "DeviceDataItem"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["variable"],
+                "properties": {
+                  "variable": { "type": "string", "example": "location" },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "lat": { "type": "number", "example": 35.770723 },
+                      "lng": { "type": "number", "example": -78.677328 }
+                    }
+                  },
+                  "value": { "type": "string", "example": "TagoIO Headquarters" },
+                  "time": {
+                    "type": "string",
+                    "description": "ISO 8601 string or Unix timestamp",
+                    "example": "2023-12-01T12:34:56.000Z"
+                  },
+                  "group": {
+                    "type": "string",
+                    "description": "Unique grouping ID for your data. Widgets often group by this."
+                  },
+                  "unit": {
+                    "type": "string",
+                    "example": "%",
+                    "description": "Provide a unit of measurement to the data. Most widgets will display the unit."
+                  },
+                  "metadata": {
+                    "type": "object",
+                    "description": "Can be attached to the data to influence widget behavior and store additional information.",
+                    "additionalProperties": true,
+                    "example": { "color": "red", "icon": "car" }
+                  }
+                },
+                "title": "DeviceDataItem"
+              },
+              "description": "Accepts a single item or an array of items.",
+              "title": "DeviceDataArray"
+            }
+          ],
+          "title": "DeviceData"
+        },
+        "examples": {
+          "Send data (object)": {
+            "value": {
+              "variable": "location",
+              "value": "TagoIO Headquarters",
+              "location": { "lat": 35.770723, "lng": -78.677328 }
+            }
+          },
+          "Send data (array)": {
+            "value": [
+              {
+                "variable": "location",
+                "value": "TagoIO Headquarters",
+                "location": { "lat": 35.770723, "lng": -78.677328 }
+              },
+              {
+                "variable": "location",
+                "value": "New York Office",
+                "location": { "lat": 40.712776, "lng": -74.005974 }
+              }
+            ]
+          }
+        }
+      },
+      "text/plain": {
+        "schema": {
+          "type": "string",
+          "description": "Raw text data that will be processed by the device's Payload Parser to normalize into TagoIO JSON format."
+        },
+        "examples": {
+          "Raw sensor data": { "value": "temperature:23.5,humidity:45.2,battery:87" },
+          "HEX payload": { "value": "41BC7E1F2A" },
+          "Custom format": { "value": "sensor_id=123&temp=25.6&status=ok" }
+        }
+      }
+    }
+  }
+}

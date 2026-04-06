@@ -20,51 +20,18 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Create Notification"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Notification"}></Heading>
 
-<MethodEndpoint
-  method={"post"}
-  path={"/run/notification"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"post"} path={"/run/notification"} context={"endpoint"}></MethodEndpoint>
 
 Create Notification for an user
 
-
-<Heading
-  id={"request"}
-  as={"h2"}
-  className={"openapi-tabs__heading"}
->
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
   <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  {...require("./create-notification.RequestSchema.json")}
->
-  
-</RequestSchema>
+<RequestSchema {...require("./create-notification.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  {...require("./create-notification.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./create-notification.StatusCodes.json")}></StatusCodes>

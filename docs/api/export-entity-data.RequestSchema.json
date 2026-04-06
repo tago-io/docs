@@ -1,1 +1,25 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"file_address":{"type":"string","example":"/my_data/export.csv","description":"Path in the Files to save the export."},"headers":{"type":"boolean","example":true,"description":"Whether to include headers in the export."}},"required":["file_address"]}}}}}
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "file_address": {
+              "type": "string",
+              "example": "/my_data/export.csv",
+              "description": "Path in the Files to save the export."
+            },
+            "headers": {
+              "type": "boolean",
+              "example": true,
+              "description": "Whether to include headers in the export."
+            }
+          },
+          "required": ["file_address"]
+        }
+      }
+    }
+  }
+}

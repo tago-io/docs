@@ -1,1 +1,11 @@
-{"parameters":[{"name":"deviceID","in":"path","required":true,"schema":{"type":"string","example":"67aa1f9135b1a7000a9db33c"},"description":"Device ID"}]}
+{
+  "parameters": [
+    {
+      "name": "deviceID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "67aa1f9135b1a7000a9db33c" },
+      "description": "Device ID"
+    }
+  ]
+}

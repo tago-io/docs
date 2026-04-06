@@ -20,43 +20,14 @@ import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Account Information"}
->
-</Heading>
+<Heading as={"h1"} className={"openapi__heading"} children={"Account Information"}></Heading>
 
-<MethodEndpoint
-  method={"get"}
-  path={"/account"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+<MethodEndpoint method={"get"} path={"/account"} context={"endpoint"}></MethodEndpoint>
 
 Get all information from current account
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<RequestSchema {...require("./get-account-information.RequestSchema.json")}></RequestSchema>
 
-<RequestSchema
-  {...require("./get-account-information.RequestSchema.json")}
->
-  
-</RequestSchema>
-
-<StatusCodes
-  {...require("./get-account-information.StatusCodes.json")}
->
-  
-</StatusCodes>
-
-
-      
+<StatusCodes {...require("./get-account-information.StatusCodes.json")}></StatusCodes>
