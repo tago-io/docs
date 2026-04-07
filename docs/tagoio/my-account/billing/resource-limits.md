@@ -40,6 +40,7 @@ Most of the limits below are applied per [Profile](/docs/tagoio/profiles).
 | [Device service authorization](/docs/tagoio/integrations/general/authorization.md)      |          10 |          50 |         200 |
 | [Access Management Policies](/docs/tagoio/tagorun/access-management/)                   |           5 |          30 |         100 |
 | [Dictionary & Multi-language](/docs/tagoio/tagorun/getting-started/dictionaries.md)     |           2 |          10 |          50 |
+| [Backup](/docs/tagoio/my-account/backups) (daily creation limit)                        |         N/A |     1 / day |     1 / day |
 
 If you attempt to add additional resources after reaching your limit, a
 notification will be shown indicating that you have run out of available slots.

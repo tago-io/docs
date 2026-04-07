@@ -175,21 +175,6 @@ Schedule backups during low-activity periods and use daily or weekly schedules f
 - During a restore, **all resource IDs are regenerated** - update any external references accordingly.
 - The backup download URL has an **expiration time**, so complete the restore process promptly after initiating it.
 
-### Daily Backup Creation Limit
+For the daily backup creation limit per plan, see [Resource Limits](/docs/tagoio/my-account/billing/resource-limits).
 
-| Plan    | Daily Limit   |
-| ------- | ------------- |
-| Scale   | 1 backups/day |
-| Starter | 1 backups/day |
-| Free    | N/A           |
-
-The daily limit resets at midnight based on your account's timezone setting. If the limit is reached, you must wait before creating another backup.
-
-### API Rate Limits (Requests per Minute)
-
-| Operation       | Scale   | Starter |
-| --------------- | ------- | ------- |
-| Create Backup   | 5 RPM   | 5 RPM   |
-| List Backups    | 100 RPM | 50 RPM  |
-| Download Backup | 20 RPM  | 10 RPM  |
-| Delete Backup   | 20 RPM  | 10 RPM  |
+For the API rate limits (RPM) that apply to backup operations, see [Rate Limits (Hard Limits)](/docs/tagoio/profiles/services/rate-limits-hard-limits).
