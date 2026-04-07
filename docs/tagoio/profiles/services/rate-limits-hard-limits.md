@@ -112,6 +112,10 @@ The following table lists the API resources for which the hard limit applies, th
 | **MQTT** | Publish-Publish | MQTT payload to TagoIO broker | 250 | 5 000 | 15 000 |
 | | Subscribe-Receive | MQTT payload from TagoIO broker | 250 | 5 000 | 15 000 |
 | | Connection-Connect to TagoIO broker | 20 | 100 | 200 |
+| **BACKUP** | POST /backup | Create Backup | N/A | 5 | 5 |
+| | GET /backup | List Backups | N/A | 50 | 100 |
+| | GET /backup/:backup_id/url | Download Backup | N/A | 10 | 20 |
+| | DEL /backup/:backup_id | Delete Backup | N/A | 10 | 20 |
 
 > [*] You may also be able to adjust the limit individually **per device** depending on your plan. Check out our [Control Tower add‑on](/docs/tagoio/addons/control-tower.md).
 
