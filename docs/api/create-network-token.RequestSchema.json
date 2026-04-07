@@ -1,0 +1,54 @@
+{
+  "title": "Body",
+  "body": {
+    "required": true,
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": ["name", "network"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Display name for the token",
+              "example": "My Network Token"
+            },
+            "network": {
+              "type": "string",
+              "description": "Network ID that this token will be associated with",
+              "example": "5dc1e879d344a330bb1548db"
+            },
+            "privileges": {
+              "type": "object",
+              "description": "Optional privileges to grant to the token. Omit to create a token with default permissions (data ingestion only).",
+              "properties": {
+                "createDevice": {
+                  "type": "boolean",
+                  "description": "Allow the token to create devices via POST /integration/network/device",
+                  "example": true
+                }
+              }
+            }
+          }
+        },
+        "examples": {
+          "Basic Token": {
+            "value": {
+              "name": "Data Ingestion Token",
+              "network": "5dc1e879d344a330bb1548db"
+            }
+          },
+          "Token with Device Creation Privilege": {
+            "value": {
+              "name": "Provisioning Token",
+              "network": "5dc1e879d344a330bb1548db",
+              "privileges": {
+                "createDevice": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
