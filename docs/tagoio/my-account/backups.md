@@ -35,29 +35,29 @@ On the **Manage Backups** page, click **Create Backup**. A modal will list all r
 
 ### Resources Included
 
-| Resource |
-|---|
+| Resource                         |
+| -------------------------------- |
 | All uploaded files and documents |
-| Dashboard layouts and versions |
-| Analysis scripts and versions |
-| Device configurations |
-| Actions, networks, connectors |
-| Access management policies |
-| Network configurations |
-| Connector configurations |
-| Profile secrets |
-| Dictionary configurations |
-| TagoRUN users |
-| TagoRUN configuration |
-| Service authorization tokens |
+| Dashboard layouts and versions   |
+| Analysis scripts and versions    |
+| Device configurations            |
+| Actions, networks, connectors    |
+| Access management policies       |
+| Network configurations           |
+| Connector configurations         |
+| Profile secrets                  |
+| Dictionary configurations        |
+| TagoRUN users                    |
+| TagoRUN configuration            |
+| Service authorization tokens     |
 | Profile settings and allocations |
-| Team members |
+| Team members                     |
 
 ### Resources Not Included
 
-| Resource |
-|---|
-| Devices data |
+| Resource      |
+| ------------- |
+| Devices data  |
 | Entities data |
 
 ---
@@ -148,12 +148,12 @@ You can schedule automatic backups using TagoIO Actions with the `profile_backup
 
 ### Supported Triggers
 
-| Trigger | Description |
-|---|---|
-| **Resource** | Fires when a specific resource event occurs |
-| **Condition** | Fires based on data conditions |
-| **Schedule** | Fires at a specific time (e.g., daily at 2 AM) |
-| **Interval** | Fires at regular intervals |
+| Trigger       | Description                                    |
+| ------------- | ---------------------------------------------- |
+| **Resource**  | Fires when a specific resource event occurs    |
+| **Condition** | Fires based on data conditions                 |
+| **Schedule**  | Fires at a specific time (e.g., daily at 2 AM) |
+| **Interval**  | Fires at regular intervals                     |
 
 ### Setting Up
 
@@ -177,19 +177,19 @@ Schedule backups during low-activity periods and use daily or weekly schedules f
 
 ### Daily Backup Creation Limit
 
-| Plan | Daily Limit |
-|------|-------------|
-| Scale | 1 backups/day |
+| Plan    | Daily Limit   |
+| ------- | ------------- |
+| Scale   | 1 backups/day |
 | Starter | 1 backups/day |
-| Free | N/A |
+| Free    | N/A           |
 
 The daily limit resets at midnight based on your account's timezone setting. If the limit is reached, you must wait before creating another backup.
 
 ### API Rate Limits (Requests per Minute)
 
-| Operation | Scale | Starter |
-|-----------|-------|---------|
-| Create Backup | 5 RPM | 5 RPM |
-| List Backups | 100 RPM | 50 RPM |
-| Download Backup | 20 RPM | 10 RPM |
-| Delete Backup | 20 RPM | 10 RPM |
+| Operation       | Scale   | Starter |
+| --------------- | ------- | ------- |
+| Create Backup   | 5 RPM   | 5 RPM   |
+| List Backups    | 100 RPM | 50 RPM  |
+| Download Backup | 20 RPM  | 10 RPM  |
+| Delete Backup   | 20 RPM  | 10 RPM  |
