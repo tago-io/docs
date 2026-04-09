@@ -20,16 +20,15 @@ You can store the video in TagoIO’s file system and use the public URL that is
 
 ### Conditional
 
-Create conditions where each condition has an associated video URL. If the variable linked in the **Data From** field satisfies this condition, the corresponding video will be displayed. This allows you to show different videos based on device data or other criteria.
+Create conditions where each condition has an associated video URL. If the variable linked in the **Data Sources** field satisfies this condition, the corresponding video will be displayed. This allows you to show different videos based on device data or other criteria.
 
 ### Dynamic
 
 The video URL comes from a variable’s value. The widget reads the current value of the selected variable and uses it as the source for the video.
 
-## 2. 'Data From' Field
+## 2. 'Data Sources' Field
 
-The conditional and dynamic behavior has a Data from field to set the device and variable that will be used.
+The conditional and dynamic behavior has a Data Sources field to set the device and variable that will be used.
 
 - **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
-- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information.  
-  When using a Blueprint dashboard, the field may not list variables to pick because it doesn’t know the devices linked to your Blueprint Device.
+- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information. When using a Blueprint dashboard, the field will suggest a list of variables to be picked using the currently selected blueprint device.

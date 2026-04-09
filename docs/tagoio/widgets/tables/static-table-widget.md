@@ -13,22 +13,22 @@ It is possible to customize the widget color, apply a formula to a cell, edit op
 
 > This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data. (See the metadata documentation in the TagoIO help center for details.)
 
-![Static table editing screen](/docs_imagem/tagoio/static-table-widget-2.gif)
+![Static table editing screen](/docs_imagem/tagoio/peek_154.gif)
 
 When you want to change a specific cell, simply hover over it and click. A configuration panel will appear on the right side of the editor with all editable options for that element.
 You can delete an entire row or column by clicking the top‑right corner of the table and selecting the appropriate option.
 
-The widget works in both Normal dashboards and Blueprint dashboards. For Blueprint dashboards, the “Data From” field behaves slightly differently (see below).
+The widget works in both Normal dashboards and Blueprint dashboards. For Blueprint dashboards, the “Data Sources” field behaves slightly differently (see below).
 
-### 1. ‘Data From’ Field
+### 1. ‘Data Sources’ Field
 
-Each cell can display the last value of a variable by using the **Data From** field; it allows you to set the device and variable that will be used in this widget.
+Each cell can display the last value of a variable by using the **Data Sources** field; it allows you to set the device and variable that will be used in this widget.
 
 - **Normal dashboards:**
-  In the right‑hand menu, select _Data From_, choose one device from your list, and then pick the variable that contains the data.
+  In the right‑hand menu, select _Data Sources_, choose one device from your list, and then pick the variable that contains the data.
 
 - **Blueprint dashboards:**
-  Select _Data From_, add a Blueprint device, and input the name of the variable. Because the dashboard does not know which devices are linked to the Blueprint device, the Variable dropdown will be empty; you must type the variable name manually.
+  Select _Data Sources_, add a Blueprint device, and input the name of the variable. The Variable dropdown will suggest a list of variables to be picked using the currently selected blueprint device.
 
 ### 2. Data visualization
 

@@ -5,9 +5,9 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, tagorun, user management, tags]
 ---
 
-You can visualize and control all users that sign up in your application under the User Management module (see the User Management documentation for details).
+You can view and control all users that sign up in your application under the User Management module.
 
-![User Management screen](/docs_imagem/tagoio/user-management-2.png)
+![User Management screen](/docs_imagem/tagoio/rounded-image-1761309633786.png)
 
 ## Overview
 

@@ -7,19 +7,15 @@ keywords: [tagoio, iot, tagorun, branding, deployment, customization]
 
 Use the [Run](https://admin.tago.io/run) module to deploy your own IoT platform for your end-users.
 
-![TagoRUN dashboard illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
-
 The options available in your RUN will depend on your current plan and the add-ons selected. Even the Free plan offers a high level of customization.
 
 ## Deploying
 
-Your own platform is deployed in seconds, no need to build and pay for an additional server. Your customers will access the domain assigned for you. Learn how to deploy and brand your IoT solution by watching the video below.
+Your own platform is deployed in seconds, no need to build and pay for an additional server. Your customers will access the domain assigned for you.
 
 ## Branding
 
 Your customers will engage with your brand as they sign up and access the application that contains your logo, colors, and personalized e‑mails.
-
-![Branding illustration](/docs_imagem/tagorun/branding-and-deploying-applications-2.gif)
 
 1. **Company logo**
 2. **Customized sub-domain**
@@ -36,7 +32,7 @@ Your customers will engage with your brand as they sign up and access the applic
 
 :::tip
 
-Unlock the Custom Domain & Whitelabel add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
+Unlock the [Custom Domain & Whitelabel](/docs/tagoio/addons/custom-domain/) add-on to remove any reference to TagoIO brand and use your own domain and e‑mail.
 
 :::
 

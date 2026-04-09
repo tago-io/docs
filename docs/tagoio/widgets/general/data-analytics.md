@@ -15,7 +15,7 @@ Data Analytics is currently available for the widgets listed below, with support
 - [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md)
 - [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md)
 - [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md)
-- [Icon](/docs/tagoio/widgets/displays/icons-widget.md)md)
+- [Icon](/docs/tagoio/widgets/displays/icons-widget.md)
 
 ## Available Functions
 
@@ -59,7 +59,7 @@ When applying an interval, the system uses the first data point as a starting re
 ### How to apply functions to your data
 
 1. Open the widget in **Edit Mode**.
-2. Select a variable in **Data From**.
+2. Select a variable in **Data Sources**.
 3. Click the cog icon to access the **Data Analytics** tab.
 4. Choose a function from the list above.
 5. For basic calculations, define a period (up to one month).

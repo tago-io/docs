@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widgets, tables, data visualization]
 
 Table widgets present your data in a tabular way. You can also allow users to change values in cells, delete rows, and perform other table-related actions.
 
-![Table widget example](/docs_imagem/tagoio/tables-2.png)
+![Table widget example](/docs_imagem/tagoio/rounded-image-1775671740743.png)
 
 The following table widgets are available:
 

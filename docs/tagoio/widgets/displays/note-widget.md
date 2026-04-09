@@ -11,4 +11,4 @@ Note allows you to create text to be displayed in your dashboard. It accepts [ma
 
 Although you can use the Note Widget to add images to your dashboard, we strongly recommend using the [Image Widget](/docs/tagoio/widgets/media-widgets/image-widget.md) instead, because it provides an auto-resize image feature.
 
-![Note widget editor screenshot](/docs_imagem/tagoio/note-widget-2.gif)
+![Note widget editor screenshot](/docs_imagem/tagoio/peek_151.gif)

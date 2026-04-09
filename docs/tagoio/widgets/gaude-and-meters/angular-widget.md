@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, angular gauge, meter]
 
 Angular gauges allow you to display your variable in an angular gauge meter.
 
-![Three example Angular gauges showing temperature readings](/docs_imagem/tagoio/angular-widget-2.gif)
+![Angular gauge example showing a variable in an angular gauge meter](/docs_imagem/tagoio/rounded-image-1773064828901.png)
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
 
@@ -15,11 +15,11 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 To add the Angular widget to your dashboard, choose the Angular widget from the widget list and customize it to your preference. You can edit the widget using the options located on the right side of the widget.
 
-### Data From Field
+### Data Sources Field
 
-The **Data From** field lets you specify which device and variable will feed data into the gauge.
+The **Data Sources** field lets you specify which device and variable will feed data into the gauge.
 
 - **Normal Dashboards** – Select a device from your list, then choose the variable that contains the data.
-- **Blueprint Dashboards** – Add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and type the name of the variable. Because the dashboard does not know which devices are linked to the Blueprint Device, the Variable selector will not list available variables.
+- **Blueprint Dashboards** – Add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information. The field will suggest a list of variables to be picked using the currently selected blueprint device.
 
-The field is dependent on the type of dashboard you are using; the differences are explained above.
+> The field is dependent on the type of dashboard you are using; the differences are explained above.

@@ -7,20 +7,23 @@ keywords: [tagoio, iot, tagorun, user agreements, terms of service, compliance]
 
 End-User Agreements is a feature designed to help you manage and track legal agreements or terms of service that users must accept before accessing the platform. This feature ensures compliance and provides a transparent method for maintaining records of user consent. Once implemented, users are prompted to review and accept these agreements during their initial login or whenever new agreements are introduced.
 
-<!-- Image placeholder removed for build -->
-
 ## Creating Agreements
 
 Use this section to create and configure end-user agreements (terms of service, privacy policies, etc.) that users must accept before using the platform. Creating an agreement typically involves providing the agreement text, configuring visibility, and setting when the agreement must be accepted (for example, at first login or when a new version is introduced).
 
+![New Agreement](/docs_imagem/tagoio/rounded-image-1775653952888.png)
+
 **Steps to create a new agreement**
 
-1. Navigate to the **[Run module](https://admin.tago.io/run)** → **Signup Page** → **Agreements tab**.
-2. Click the **_New Agreements_** button in the top right corner.
-3. Define the following fields:
+1. Navigate to the **[Run module](https://admin.tago.io/run)** → **Signup Page** → **Terms and conditions**.
+2. Click the **_New Agreements_** section on the right menu.
+3. Click on the **_+ New Agreement_** button.
+4. Define the following fields:
    - **Name:** Enter a descriptive name for the agreement.
    - **Document Link:** Provide the URL where the full agreement text is hosted.
    - **Checkbox Label:** Customize the text that appears next to the acceptance checkbox.
+
+![Agreements](/docs_imagem/tagoio/rounded-image-1775654016819.png)
 
 ## Accepting Agreements
 

@@ -15,7 +15,7 @@ This page consists of three views:
 2. The account cost and the limits by type of service and plan in a table.
 3. The allocated resources and the estimated cost of each profile.
 
-<!-- Image placeholder removed for build -->
+![Billing Summary](/docs_imagem/tagoio/rounded-image-1772806878038.png)
 
 :::info
 

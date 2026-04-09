@@ -5,7 +5,7 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, account token, api, authentication]
 ---
 
-Account Tokens are the secret keys used between Tago and external applications. Any access from an account requires a valid token, so it is vital that tokens are kept secret and only shared with trusted parties.
+Account Tokens are the secret keys used between TagoIO and external applications. Any access from an account requires a valid token, so it is vital that tokens are kept secret and only shared with trusted parties.
 
 :::warning
 

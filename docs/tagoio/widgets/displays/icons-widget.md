@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, icons, display]
 
 With icons, you can create highly personalized widgets for your applications. The examples below illustrate a few possible styles, but the customization options are extensive.
 
-![Icon widget examples](/docs_imagem/tagoio/icons-widget-2.gif)
+![Icon widget examples](/docs_imagem/tagoio/peek_126.gif)
 
 Users can add up to 9 variables to this widget. Each variable will display its latest value.
 
@@ -15,17 +15,15 @@ Users can add up to 9 variables to this widget. Each variable will display its l
 
 To add the Icons widget to your dashboard, choose the Icon widget from the list and customize it to your preference. Edit the widget using the options located on the right side of the widget editor.
 
-### 1. 'Data From' Field
+### 1. 'Data Sources' Field
 
-Use the "Data From" field to select which device and variable(s) will feed the Icon widget. This determines which variable values are displayed for each icon instance.
+Use the "Data Sources" field to select which device and variable(s) will feed the Icon widget. This determines which variable values are displayed for each icon instance.
 
 - **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
 - **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that contains the information.  
-  _When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device._
+  When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the currently selected blueprint device.
 
-Click on the cog icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
-
-<!-- Image temporarily disabled: Data From example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/e8-MfiCj5RwAfHTvlBRuj35BF4akrnZU7huPEjZZf_c/1623008017802-7Qs.png -->
+Click on the settings icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
 
 ### 2. Conditions
 
@@ -33,5 +31,3 @@ The widget changes its content based on two types of conditions, **Icon conditio
 
 - The priority order between conditions is top to bottom; a condition in the top row always has priority over one below.
 - It is possible to show your own images in the widget by adding their icon URL.
-
-<!-- Image temporarily disabled: Conditions example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/6urQaiVLijluk8JJulhV5B4xTQgm9ZjdlYuJpFGanMg/editingConditions-vVQ.gif -->

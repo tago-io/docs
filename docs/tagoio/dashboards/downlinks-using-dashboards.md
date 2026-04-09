@@ -14,15 +14,13 @@ Learn how to perform downlinks for Class C or Class A devices using [Analysis](/
 
 ## Required Analysis template
 
-To use this method you must install the Analysis template available at the following link:
-
-http://admin.tago.io/template/5f513aabd4555600277f858c
+To use this method you must install the Analysis template available at the following [link](http://admin.tago.io/template/5f513aabd4555600277f858c).
 
 ## After installing the template
 
-After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your [device](https://tago.io/devices):
+After installing the template, set up the environment variables. Go to the "Environment Variables" tab of your [Analysis](/docs/tagoio/analysis):
 
-Configure the environment variables according to the template instructions so the Analysis can correctly address and send downlink payloads to your device.
+> Configure the environment variables according to the template instructions so the Analysis can correctly address and send downlink payloads to your device.
 
 **Environment Variables**
 
@@ -35,10 +33,5 @@ With all variables set, press **Save** to save the analysis.
 
 After completing the previous steps, you may want to send these downlinks using a dashboard. This method can be useful to easily select the device to send the payload or to share the dashboard with others and allow them to send the downlink messages.
 
-<!-- Image temporarily disabled: Dashboard overview - /help.tago.io/galleryDocuments/edbsn24e33a3a2919950ee11a198e3332a1a07ebf01b746f9b3796745958a4d4df1ddb1ec074de43a9f0483299b12f393c1ca?inline=true -->
-
-1. Select the Analysis you've recently imported, **"Sending Downlink using dashboard"**:
-
-   <!-- Image temporarily disabled: Select analysis - /help.tago.io/galleryDocuments/edbsn70448adc995289bada74c11b51d5b9e65be0ccfc4e9c0bfedc9a20fdd493a1891948b179b5d87037a38c0d84ed7f5e00?inline=true -->
-
+1. Select the Analysis you've recently imported, **"Sending Downlink using dashboard"**.
 2. Press **"Confirm associations"** to apply the changes and you're all set to start using the form and send your downlinks.

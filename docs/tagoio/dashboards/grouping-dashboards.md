@@ -9,19 +9,17 @@ You can group related dashboards using dashboard tags. Use the dashboard setting
 
 ## Steps to group dashboards
 
-1. Open the dashboard you want to group and click the gear icon to edit it (Dashboard > gear icon).
+1. Open the dashboard you want to group and click the gear icon to edit it (Dashboard > Gear icon > Tags).
 
-2. Go to the "Tags" section and create the tags you need. Tags are key/value pairs that appear as custom columns in the dashboard list.
+2. Tags are key/value pairs that appear as custom columns in the dashboard list.
    - Example keys and values:
      - Key: country — Value: USA
      - Key: state — Value: California
      - Key: city — Value: Los Angeles
 
-   ![Tags and Tag Values in Dashboard Settings](/docs_imagem/tagoio/grouping-dashboards-2.png)
-
 3. In the "Group dashboards using Tags" section, select the Tag Key to be used for each grouping level (Level 1, Level 2, Level 3). You can include the tag in Run users by toggling the corresponding switch.
 
-   ![Group dashboards using Tags configuration (select keys for level 1, 2, 3 and include-in-Run-users toggles)](/docs_imagem/tagoio/grouping-dashboards-2.png)
+![Group dashboards using Tags configuration (select keys for level 1, 2, 3 and include-in-Run-users toggles)](/docs_imagem/tagoio/rounded-image-1772801860602.png)
 
 ## Notes and behavior
 

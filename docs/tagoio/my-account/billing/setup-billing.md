@@ -5,9 +5,9 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, billing setup, payment, account plan]
 ---
 
-To set up your billing, open the top‑right account menu (just under your avatar) and click the **[Billing](https://admin.tago.io/account/billing** option.
+To set up your billing, click on your account name at the bottom-left menu in your Admin and select **[Billing](https://admin.tago.io/account/billing)** option.
 
-<!-- Image placeholder removed for build -->
+![Setup Billing](/docs_imagem/tagoio/rounded-image-1772806717066.png)
 
 ## Configure Billing Information
 

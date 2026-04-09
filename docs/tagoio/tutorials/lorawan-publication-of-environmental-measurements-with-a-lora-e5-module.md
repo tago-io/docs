@@ -39,7 +39,7 @@ Below is a minimal `main.py` example that you can copy to your computer and flas
 
 ```python
 # Purpose of the script: Sending / Receiving messages via UART in command line mode
-# This script is useful for communicating with modules equipped with AT firmwares.
+# This script is useful for communicating with modules equipped with AT firmware.
 
 from machine import UART, const
 

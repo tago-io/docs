@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, semi pie chart, data visualization]
 
 Using data from multiple variables, the Semi Pie widget automatically produces a Semi Pie chart where each slice represents a variable's value.
 
-![Example Semi Pie charts showing three styling variants](/docs_imagem/tagoio/semi-pie-widget-2.png)
+![Example Semi Pie charts showing three styling variants](/docs_imagem/tagoio/rounded-image-1773855308566.png)
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
 It works for both Normal and Blueprint dashboards.
@@ -16,19 +16,15 @@ It works for both Normal and Blueprint dashboards.
 
 To add the Semi Pie widget to your dashboard, choose the Semi Pie widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.
 
-### Data From Field
+### Data Sources Field
 
-This field allows you to set the device and variable that will be used in this widget. Click on the cog icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
-
-<!-- Image temporarily disabled: Data From field example - /cdn.elev.io/file/uploads/VkSrjeSoWpdg7LeGdh2jKUEagxh0dd_cO83j6HUV_6s/e8-MfiCj5RwAfHTvlBRuj35BF4akrnZU7huPEjZZf_c/1623008017802-7Qs.png -->
+This field allows you to set the device and variable that will be used in this widget. Click on the settings icon to edit specific options for this variable, such as formulas, color, and more. Click on the close icon to remove this variable from the widget's data.
 
 #### For Normal Dashboards
 
-From the option 'Data From' on the right menu, select one device from your list of devices and the variable that contains the data.
+From the option 'Data Sources' on the right menu, select one device from your list of devices and the variable that contains the data.
 
 #### For Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
-When using a Blueprint dashboard, the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
-
-<!-- Image temporarily disabled: Creating Semi Pie widget GIF - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/rtbtbysxI4zx8hoRmN7YBBG2t4QiUo0GiSLYJmV9Mys/creatingsemipie-_UQ.gif -->
+From the option **'Data Sources'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the currently selected blueprint device.

@@ -7,27 +7,25 @@ keywords: [tagoio, iot, widget, map, geofence]
 
 Geofences allow developers to color parts of the map and detect or trigger events inside specific areas.
 
-![Map example showing colored geofences on a map](/docs_imagem/tagoio/geofences-in-map-widgets-2.png)
-
-<YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
+![Map example showing colored geofences on a map](/docs_imagem/tagoio/rounded-image-1775668996261.png)
 
 ## Creating geofences
 
 To create a geofence, go to **Geofence options** in your widget's configuration. Then set the option **Allow users to edit geofence** to _yes_. You can choose to allow users to create polygons, circles or both, and even select the number of geofences allowed in the map.
 
-![Image 2](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-13-40-324.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1775669239513.png)
 
 > The maximum number of geofences allowed is **99**.
 
 You can also set the title of the geofences in the field **Geofence tooltip title**. The title will be shown in all of the geofences' pop‑ups, like so:
 
-![Image 3](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-16-22-Tg8.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1775669050719.png)
 
 After setting up the options, you are all set to create the geofences. Go to the map widget and click on the pencil icon; use the tools located on the top right of the screen.
 
-![Image 6](/docs_imagem/tagoio/desenhando2-SO8.gif)
+![Image 6](/docs_imagem/tagoio/rounded-image-1775669675575.png)
 
-The geofence toolbox is composed by:
+The geofence toolbox is composed of:
 
 - **Default tool** – allows you to zoom and drag the image;
 - **Draw polygon** – click on the image to draw your geofence; when you click on the first drawn point, the geofence ends. You can rename it and add an event on the right of the editor;
@@ -40,15 +38,13 @@ Below the toolbox, you can find a list of all the geofences that are in the sele
 
 You can add events to geofences. To do so, head over to the **Geofence Options** tab in the map's edit configuration. For each event, set an _event code_ (so it can be identified in analysis) and a _description_ (what users will see). You can also set a layer color; this color will change the color of the geofence itself.
 
-![Image 4](/docs_imagem/tagoio/Screen-20Shot-202018-08-16-20at-2015.41.33-DN4.png)
-
 ## Geofence variable data
 
 The geofences will be saved in a variable, so developers can manage them easily, display the geofences on the map, select the device and variable.
 
-> This is similar to the _Data From_ field from the Map Widget.
+> This is similar to the _Data Sources_ field from the Map Widget.
 
-![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-12-2009-18-20-u98.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1775669295726.png)
 
 When users create new geofence areas, they will be saved in the previously selected variable with the following format; notice that you will have the coordinates of the polygons in the variable's metadata.
 

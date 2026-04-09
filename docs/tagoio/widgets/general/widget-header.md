@@ -32,7 +32,7 @@ Additional UI controls:
 - Add and remove buttons (+ / −)
 - Cancel and Confirm buttons for the header configuration dialog
 
-![Header buttons configuration panel showing columns Icon, Button text, Color, Layout, When clicked, and Resource](/docs_imagem/tagoio/widget-header-2.png)
+![Header buttons configuration panel showing columns Icon, Button text, Color, Layout, When clicked, and Resource](/docs_imagem/tagoio/rounded-image-1772824010001.png)
 
 ### Additional configuration notes
 
@@ -46,13 +46,3 @@ Additional UI controls:
 ### Best practices
 
 If you use the **Open widget** action, consider hiding that widget in a Hidden tab. This keeps it out of view while still allowing users to open it via the header button.
-
-![Header configuration panel showing the Header tab](
-
-<!-- URL temporarily disabled: https://cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/ce4gRwuValO7bY2GD1X3tFVGZS-ZLtUMNFzQ1zWOxOU/Captura%20de%20tela%20de%202021-07-12%2010-43-54-OOc.png -->)
-
-## Example widget preview
-
-The article includes a widget preview demonstrating the header button in context (example widget showing a large value and the header area where the custom button appears).
-
-![Example widget preview showing a card with the value "50" and the header area where custom buttons appear](/docs_imagem/tagoio/widget-header-2.png)
