@@ -19,7 +19,7 @@ Fields can be of many types, depending on the widget they are used with.
 A typical text input will appear. The value saved for this field will be whatever the user typed into it.
 
 <div align="center">
-![Text input example](/docs_imagem/tagoio/field-types-for-input-form-2.gif)
+![Text input example](/docs_imagem/tagoio/peek_142.gif)
 </div>
 
 ## 2. Address
@@ -27,7 +27,7 @@ A typical text input will appear. The value saved for this field will be whateve
 This field displays a text input integrated with Google Maps to search for an address. The value for this field will be the complete selected address, and it will also include the location coordinates within it. See [location coordinates](/docs/tagoio/devices/sending-data.md) for details.
 
 <div align="center">
-![Address input with map example](/docs_imagem/tagoio/field-types-for-input-form-3.gif)
+![Address input with map example](/docs_imagem/tagoio/peek_143.gif)
 </div>
 
 :::info
@@ -41,7 +41,7 @@ For the **Input Form Widget**, it is possible to enable a map under the input.
 It will display a calendar field that allows the user to enter a date, or a date range, as a value through a calendar popup. When receiving the user answer in your **device**, you will be able to get it in the value parameter and the metadata parameter. The latter one will be in date string format as `start_date` and `end_date`.
 
 <div align="center">
-![Calendar input with preset example](/docs_imagem/tagoio/field-types-for-input-form-4.png)
+![Calendar input with preset example](/docs_imagem/tagoio/peek_144.gif)
 </div>
 
 For example, the input above will produce the following payload:
@@ -62,7 +62,7 @@ For example, the input above will produce the following payload:
 A traditional checkbox will appear and the value will be set as `true` (checked) or `false` (not checked).
 
 <div align="center">
-![Checkbox input example](/docs_imagem/tagoio/field-types-for-input-form-5.png)
+![Checkbox input example](/docs_imagem/tagoio/peek_145.gif)
 </div>
 
 ## 5. Clock set
@@ -70,12 +70,12 @@ A traditional checkbox will appear and the value will be set as `true` (checked)
 It will display a step button to select the hour range without the date.
 
 <div align="center">
-![Clock set example](/docs_imagem/tagoio/field-types-for-input-form-6.gif)
+![Clock set example](/docs_imagem/tagoio/peek_146.gif)
 </div>
 
 ## 6. Device
 
-It will display a dropdown field with all an account's devices. The value of the field will be the id of the selected device.
+It will display a dropdown field with all of an account's devices. The value of the field will be the id of the selected device.
 
 :::info
 
@@ -84,23 +84,23 @@ You can customize the devices shown by the list through tags. Configuring tags w
 :::
 
 <div align="center">
-![Device example](/docs_imagem/tagoio/field-types-for-input-form-7.gif)
+![Device example](/docs_imagem/tagoio/peek_147.gif)
 </div>
 
 ## 7. Dropdown
 
-It displays a dropdown menu with options that you define. The value of the field will be the selected options, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
+It displays a dropdown menu with options that you define. The value of the field will be the selected option, and these options can be defined as static or dynamic with the dropdown being populated with data coming from a variable. Learn more about **Creating Dynamic Dropdown selection using Forms.**
 
 <div align="center">
-![Dropdown example](/docs_imagem/tagoio/field-types-for-input-form-8.gif)
+![Dropdown example](/docs_imagem/tagoio/peek_148.gif)
 </div>
 
 ## 8. Dropdown Multiple
 
-It displays a dropdown menu with options that you define. The value of the field will be the multiple options selected, and these options can be defined as static or dynamic with the dropdown being filled up with data coming from a variable.
+It displays a dropdown menu with options that you define. The value of the field will be the multiple options selected, and these options can be defined as static or dynamic with the dropdown being populated with data coming from a variable.
 
 <div align="center">
-![Dropdown multiple example](/docs_imagem/tagoio/field-types-for-input-form-9.gif)
+![Dropdown multiple example](/docs_imagem/tagoio/peek_149.gif)
 </div>
 
 ## 9. Email
@@ -108,7 +108,7 @@ It displays a dropdown menu with options that you define. The value of the field
 It displays a field to submit multiple emails, separated by a comma.
 
 <div align="center">
-![Email example](/docs_imagem/tagoio/field-types-for-input-form-10.gif)
+![Email example](/docs_imagem/tagoio/peek_150.gif)
 </div>
 
 ## 10. Entity & Entity Multiple
@@ -194,14 +194,14 @@ By default, validation messages are displayed to all users viewing the widget. T
 | type          | string  | No       | Message type: warning, info, danger, or success                                      |
 | color         | string  | No       | Custom color override. If not specified, color is determined by the `type` parameter |
 | session_id    | string  | No       | User session ID to target specific users. If omitted, message displays to all users  |
-| show markdown | boolean | No       | Enables markdown rendering in the message text                                       |
+| show_markdown | boolean | No       | Enables markdown rendering in the message text                                       |
 
 Example:
 
 ```json
 {
   "variable": "validation",
-  "value": "Your **data** had been succesfully updated!",
+  "value": "Your **data** has been successfully updated!",
   "metadata": {
     "type": "success",
     "color": "green",
@@ -220,6 +220,8 @@ Example:
 • **Barcode:** It will display a field to type the barcode or scan it when using it through mobile or computer.
 
 • **Capture user:** It will capture user information, such as e-mail or name, so that you can use it in the Analysis later.
+
+• **Capture blueprint:** It will capture the blueprint device from the blueprint dashboard.
 
 • **Hidden:** For submitting data without user input, this variable will receive a static value, set by the field edit screen.
 

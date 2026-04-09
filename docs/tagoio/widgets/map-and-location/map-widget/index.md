@@ -11,7 +11,7 @@ The Map Widget allows you to visualize the location variables of your device on 
 
 Additionally, the widget allows you to customize the visualization by adding icons, pins, images, links, geofences, filters, and much more!
 
-<!-- Map widget example image -->
+![Map widget example](/docs_imagem/tagoio/rounded-image-1775668650454.png)
 
 The variable data should look like the following payload. Note that the 'lat' and 'lng' values should be added inside the 'location' field as shown below:
 
@@ -32,29 +32,25 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 To add it to your dashboard, choose the Map widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
-<!-- Map widget creation image -->
-
-## 1. 'Data From' Field
+## 1. 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
-<!-- Data From field image -->
-
-Click on the **cog icon** to edit specific options for this variable, such as: pin icon, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
+Click on the **settings icon** to edit specific options for this variable, such as: pin icon, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
 
 This field is dependent on the **type of dashboard** you are using; the difference is explained below.
 
-### 1.1 'Data From' for Normal Dashboards
+### 1.1 'Data Sources' for Normal Dashboards
 
-From the option 'Data From' on the right menu, select one device from your list of devices and the variable that contains the **location** data.
+From the option 'Data Sources' on the right menu, select one device from your list of devices and the variable that contains the **location** data.
 
-### 1.2 'Data From' for Blueprint Dashboards
+### 1.2 'Data Sources' for Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the **location** information.
+From the option 'Data Sources' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the **location** information.
 
 :::info
 
-When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the first blueprint device it finds using the tags set for your Blueprint Device.
 
 :::
 
@@ -68,7 +64,7 @@ Each map provider has its own customization options for the tiles and pricing ti
 
 :::
 
-### 2.1 How to configure a map title provider on TagoIO
+### 2.1 How to configure a map tile provider on TagoIO
 
 To use one of the alternative map tile providers, you will simply need to have an **API Key** from your provider and a username in some cases. The API key can be found by accessing the console of your map provider. We suggest consulting the documentation of your provider if you have trouble getting the key.
 
@@ -76,7 +72,7 @@ Once the key is at hand, you will have to store the API key value inside a [Secr
 
 <!-- Secrets configuration image -->
 
-Once you have a Secret with your API key created, you can go to your **Map widget**, then the **Title Provider** option, select your map provider, and now in API Key, select the secret where the API key of your map provider is stored. Once you save the widget, the map will start displaying your provider's map and not the default.
+Once you have a Secret with your API key created, you can go to your **Map widget**, then the **Tile Provider** option, select your map provider, and now in API Key, select the secret where the API key of your map provider is stored. Once you save the widget, the map will start displaying your provider's map and not the default.
 
 <!-- Tile provider configuration image -->
 
@@ -101,7 +97,7 @@ In addition, the map widget supports [series](/docs/tagoio/devices/grouping-vari
 
 :::tip
 
-If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
+If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data Sources field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 
 :::
 
@@ -122,8 +118,6 @@ Draw colored geographic boundaries to make it easy to see your devices' trajecto
 <!-- Geofence example image -->
 
 You can draw polygon or circle figures and associate them with events, and build an [analysis](https://community.tago.io/t/implementing-an-analysis-to-notify-when-a-device-is-inside-of-a-geofence/525) to receive notifications when the device enters or leaves the zone.
-
-<YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
 
 Learn more about [Geofence in map widgets](/docs/tagoio/widgets/map-and-location/map-widget/geofences-in-map-widgets.md).
 

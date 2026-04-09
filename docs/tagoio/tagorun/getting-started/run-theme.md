@@ -17,35 +17,19 @@ You can upload the image files for the background and logo on [TagoIO's file sto
 
 :::
 
-:::warning
+## 2. Navigation bar & Sidebar
 
-If you don't have any Run User Services available, **the signup link will not be visible**. You can allocate more Run Users to your profile in the [Billing page](/docs/tagoio/my-account/billing/allocating-services-to-profiles.md).
+The Navigation bar and Sidebar are the main components used to route users through the application.
 
-:::
+### 2.1 Navigation bar
 
-## 2. Sidebar & Navigation bar
+The Navigation bar is the vertical bar on the left that displays the brand logo, sidebar, notifications and the account menu. (Remaining content not visible in the provided screenshot.)
 
-The Sidebar and the Navigation bar are the main components used to route users through the application.
-
-### 2.1 Sidebar
+#### 2.2 Sidebar
 
 The Sidebar contains the vertical menu housing your [sidebar buttons](/docs/tagoio/tagorun/getting-started/sidebar.md) and the dashboard list. Personalizing the background color ensures that icons and text automatically adapt their colors for optimal contrast and readability.
 
-### 2.2 Navigation bar
-
-The Navigation bar is the top horizontal menu that displays the logo, notifications and the account menu. (Remaining content not visible in the provided screenshot.)
-
-#### 2.3 Navigation Bar Customization
-
-You can customize both the color of the navigation bar and its elements. Additionally, you have the option to set a custom background image for the navigation bar. The image can be adjusted using the following fit options:
-
-- **Full** – the image occupies the full width of the bar, with its height limited to match the bar’s height.
-- **Cover** – the image occupies the full width of the bar.
-- **Contain** – the image occupies the full height of the bar.
-
-You can also enable a **Repeat** option to create repeating patterns and adjust the **Opacity** to blend the image seamlessly with the background color.
-
-#### 2.4 Account Menu
+#### 2.3 Account Menu
 
 The account menu allows users to access account‑related features and is located on the navigation bar. You have the option to add new items into this menu, such as text entries, links to URLs, or your own dashboards.
 

@@ -7,11 +7,11 @@ keywords: [tagoio, iot, widget, horizontal bar chart, data visualization]
 
 Charts are a powerful way to visualize your data and look for insights. You can customize colors, apply [Formula](/docs/tagoio/widgets/general/formula.md), decide whether bars are stacked, and configure other visual options.
 
-![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
+![Horizontal bar examples](/docs_imagem/tagoio/rounded-image-1773086478719.png)
 
 This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
-## 1. 'Data From' Field
+## 1. 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
@@ -21,16 +21,16 @@ Click on the **cog** icon next to a variable to edit its options, such as formul
 
 ### Dashboard Types
 
-The available options in the _Data From_ field depend on whether you are using a normal dashboard or a blueprint dashboard.
+The available options in the _Data Sources_ field depend on whether you are using a normal dashboard or a blueprint dashboard.
 
-#### 1.1 'Data From' for Normal Dashboards
+#### 1.1 'Data Sources' for Normal Dashboards
 
-From the _Data From_ option on the right‑hand menu, select one device from your list of devices and then choose the variable that contains the data.
+From the _Data Sources_ option on the right‑hand menu, select one device from your list of devices and then choose the variable that contains the data.
 
-#### 1.2 'Data From' for Blueprint Dashboards
+#### 1.2 'Data Sources' for Blueprint Dashboards
 
-From the _Data From_ option on the right‑hand menu, add a **Blueprint device** and input the name of the variable that holds the information.
-When using a blueprint dashboard, the _Variable_ selector will not list variables because it does not know which devices are linked to your blueprint device.
+From the _Data Sources_ option on the right‑hand menu, add a **Blueprint device** and input the name of the variable that holds the information.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the currently selected blueprint device.
 
 ## 2. X-axis and Y-axis
 
@@ -65,10 +65,6 @@ By default the widget automatically selects an appropriate scale for your data; 
 
 You can pre‑set date filters that will be shown when the widget loads. Filters can be expressed in minutes, hours, days, weeks, months, or a custom range chosen from a calendar picker.
 
-## 4. Performance Optimization – Downsampling
+## 4. Increasing performance
 
-When a chart contains many data points, enable the **Downsampling** feature to improve performance and readability.
-Two parameters control downsampling:
-
-- **Threshold** – the number of data points at which downsampling starts.
-- **Factor** – how aggressively data is reduced; higher values increase performance but may reduce detail.
+For charts with a large number of data points, enable the **Aggregate** feature to improve widget performance and make the data easier to visualize. Learn more about the [Aggregate feature](/docs/tagoio/widgets/general/data-analytics.md).

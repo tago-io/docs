@@ -7,28 +7,28 @@ keywords: [tagoio, iot, widget, line chart, data visualization]
 
 Charts are a powerful way to visualize your data and discover insights. The Line Chart widget supports color customization, applying Formula, and changing the line shape (step or smooth), among other options.
 
-![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
+![Line chart examples](/docs_imagem/tagoio/rounded-image-1773065002902.png)
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## On this page
 
-1. 'Data From' Field
+1. 'Data Sources' Field
 2. Composing X-axis and Y-axis
 3. Filtering data
 
-## 1. 'Data From' Field
+## 1. 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used by the widget.
 
-### 1.1 'Data From' for Normal Dashboards
+### 1.1 'Data Sources' for Normal Dashboards
 
-From the option **Data From** on the right menu, select one device from your list of devices and the variable that contains the data.
+From the option **Data Sources** on the right menu, select one device from your list of devices and the variable that contains the data.
 
-### 1.2 'Data From' for Blueprint Dashboards
+### 1.2 'Data Sources' for Blueprint Dashboards
 
-From the option **Data From** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
-When using a Blueprint dashboard, the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+From the option **Data Sources** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the currently selected blueprint device.
 
 ## 2. Composing X-axis and Y-axis
 
@@ -41,7 +41,7 @@ If you need to group your data through the X‑axis even if they don't have the 
 
 Data is ordered by time ascending, but it is possible to change it to series.
 
-![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-17-2016-32-49-2mY.png)
+![Image 5](/docs_imagem/tagoio/rounded-image-1773065083886.png)
 
 It is also possible to define the X‑axis time range dynamically, using another variable data. The variable data should look like the following payload:
 
@@ -68,3 +68,7 @@ The Y‑axis will automatically find the best scale for your data; it is not nec
 It is possible to pre‑set some date filters to be displayed, and these filters can be in minutes, hours, days, weeks, months, or custom by choosing a date in the calendar.
 
 ![Image 7](/docs_imagem/tagoio/filteringData-e2c.gif)
+
+## 4. Increasing performance
+
+For charts with a large number of data points, enable the **Aggregate** feature to improve widget performance and make the data easier to visualize. Learn more about the [Aggregate feature](/docs/tagoio/widgets/general/data-analytics.md).

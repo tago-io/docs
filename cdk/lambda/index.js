@@ -143,9 +143,9 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/163-touchtag-lorawan-everynet":
       "/docs/tagoio/tutorials/touchtag-lorawan-everynet",
     "/portal/en/kb/articles/164-building-solutions":
-      "/docs/tagoio/getting-started/building-solutions",
+      "/docs/tagoio/getting-started/getting-started",
     "/portal/en/kb/articles/165-deploying-applications":
-      "/docs/tagoio/getting-started/deploying-applications",
+      "/docs/tagoio/getting-started/getting-started",
     "/portal/en/kb/articles/166-adding-devices-with-connectors":
       "/docs/tagoio/devices/adding-devices-with-connectors",
     "/portal/en/kb/articles/167-mobile-apps":
@@ -418,11 +418,9 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/65-environment-variables":
       "/docs/tagoio/analysis/environment-variables",
     "/portal/en/kb/articles/68-how-it-works":
-      "/docs/tagoio/getting-started/how-it-works",
+      "/docs/tagoio/getting-started/getting-started",
     "/portal/en/kb/articles/7-beagle-bone-black":
       "/docs/tagoio/tutorials/beagle-bone-black",
-    "/portal/en/kb/articles/75-thinxtra-xkit-for-sigfox":
-      "/docs/tagoio/tutorials/thinxtra-xkit-for-sigfox",
     "/portal/en/kb/articles/8-raspberry-pi":
       "/docs/tagoio/tutorials/raspberry-pi",
     "/portal/en/kb/articles/83-connecting-zen15-power-using-smartthings-hub":
@@ -526,8 +524,6 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/tagoio-mqtt-relay":
       "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
     "/portal/en/kb/articles/tags": "/docs/tagoio/getting-started/tags-system",
-    "/portal/en/kb/articles/ticket-severity-options":
-      "/docs/tagoio/support/ticket-severity-options",
     "/portal/en/kb/articles/trigger-by-geofence":
       "/docs/tagoio/actions/trigger-by-geofence",
     "/portal/en/kb/articles/trigger-by-usage-alert":
