@@ -28,10 +28,12 @@ When you save the script, it will be deployed on TagoIO servers. You can then cl
 
 To learn more about our examples, you can visit our [Script Examples](/docs/tagoio/analysis/script-examples.md) article, or access the [Analysis](https://admin.tago.io/analysis), click on the "+ Add Analysis" button in the top right corner, and select a code example.
 
-## TagoAI Assistant
+## Tago AI Assistant
 
-The TagoAI Assistant helps you write, debug, and generate code for your Analysis scripts.
-You can open it by clicking the star-shaped TagoAI Assistant button in the top-right corner of the script editor.
+The Tago AI Assistant helps you write, debug, and generate code for your Analysis scripts.
+You can open it by clicking the star-shaped Tago AI button in the top-right corner of the script editor.
+
+For an overview of the assistant, available modes, and privacy controls, see [Tago AI](/docs/tagoio/tago-ai/).
 
 ![TagoAI Assistant](/docs_imagem/tagoio/rounded-image-1769103890139.png)
 

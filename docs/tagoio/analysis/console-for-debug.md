@@ -16,7 +16,7 @@ Use the console to monitor the variables and status of your script. You can see 
 - Download Button: downloads the console output as a text file.
 
 :::tip
-The **TagoAI Assistant** can also be used to debug your script by asking about errors or unexpected behavior using the Analysis console.
+[Tago AI](/docs/tagoio/tago-ai/) can also help debug your script — ask about errors or unexpected behavior and it will use the Analysis console as context.
 :::
 
 ## How it works
