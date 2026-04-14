@@ -25,7 +25,7 @@ The chat panel sits on the right side of the Admin. Use the expand control in th
 
 ## Chat history
 
-<img src="/docs_imagem/tagoio/tago-ai-history.webp" alt="Tago AI chat history panel" width="550px" />
+<img src="/docs_imagem/tagoio/tago-ai-history.png" alt="Tago AI chat history panel" width="550px" />
 
 Tago AI keeps your previous chats so you can revisit what you asked before. The history panel groups chats by recency and lets you search across them.
 

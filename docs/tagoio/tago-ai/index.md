@@ -7,7 +7,7 @@ keywords: [tagoio, iot, tago ai, assistant, ai]
 
 Tago AI is an assistant that lives inside the TagoIO Admin and helps you get work done on the platform. You can ask it questions grounded in the official TagoIO documentation, and you can ask it to carry out tasks for you — create a dashboard, draft Analysis code, inspect a device, or explore your data.
 
-<img src="/docs_imagem/tagoio/tago-ai-interface.webp" alt="Tago AI main interface in the TagoIO Admin" width="550px" />
+<img src="/docs_imagem/tagoio/tago-ai-interface.png" alt="Tago AI main interface in the TagoIO Admin" width="550px" />
 
 ## Where to find it
 

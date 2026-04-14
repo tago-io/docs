@@ -1,5 +1,5 @@
 ---
-title: "TagoAI Service"
+title: "Tago AI Service"
 description: "How TagoIO counts Tago AI requests, monthly limits per plan, and how using your own AI provider bypasses the limit."
 tags: ["tagoio"]
 keywords: [tagoio, iot, tago ai, ai requests, service limits]

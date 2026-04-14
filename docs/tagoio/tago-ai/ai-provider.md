@@ -7,7 +7,7 @@ keywords: [tagoio, iot, tago ai, ai provider, openai, anthropic, bedrock]
 
 By default, Tago AI runs on a model and provider selected by TagoIO. If you want direct control over which model handles your data — for compliance, cost, or model-preference reasons — you can connect your own provider to a profile.
 
-<img src="/docs_imagem/tagoio/tago-ai-provider.webp" alt="AI Provider configuration under Profile Settings › Services" width="550px" />
+<img src="/docs_imagem/tagoio/tago-ai-provider.png" alt="AI Provider configuration under Profile Settings › Services" width="550px" />
 
 ## Where to configure it
 
