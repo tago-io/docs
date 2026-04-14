@@ -9,7 +9,7 @@ keywords: [tagoio, iot, dashboard, tabs, navigation]
 
 By using **Tabs**, you can divide [dashboards](/docs/tagoio/dashboards/) into multiple sections and add links to them. This is a great feature to create applications where the user has to deal with some setups and data in the same dashboard.
 
-![Dashboard tabs example](/docs_imagem/tagoio/rounded-image-1772808608443.png)
+![Dashboard tabs example](/docs_imagem/tagoio/rounded-image-1776186403297.png)
 
 Notice that in the example above we have three tabs: the dashboard itself, a hidden tab, and a link tab.
 
@@ -17,7 +17,7 @@ Notice that in the example above we have three tabs: the dashboard itself, a hid
 
 To create a **tab** on your application, go to the dashboard you want to create it in, click the edit button to enter **edit mode**, and then click on the settings icon next to the tabs.
 
-![Dashboard edit mode](/docs_imagem/tagoio/rounded-image-1772808739121.png)
+![Dashboard edit mode](/docs_imagem/tagoio/rounded-image-1776186450799.png)
 
 Once the tabs section opens, click the **Add Tab** button.
 

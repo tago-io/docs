@@ -15,10 +15,9 @@ Use this section to create and configure end-user agreements (terms of service, 
 
 **Steps to create a new agreement**
 
-1. Navigate to the **[Run module](https://admin.tago.io/run)** → **Signup Page** → **Terms and conditions**.
-2. Click the **_New Agreements_** section on the right menu.
-3. Click on the **_+ New Agreement_** button.
-4. Define the following fields:
+1. Navigate to the **[Run module](https://next-admin.test.us-e1.tago.io/run/agreements)** user agreements section.
+2. Click on the **_+ New Agreement_** button.
+3. Define the following fields:
    - **Name:** Enter a descriptive name for the agreement.
    - **Document Link:** Provide the URL where the full agreement text is hosted.
    - **Checkbox Label:** Customize the text that appears next to the acceptance checkbox.

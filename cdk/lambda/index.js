@@ -520,7 +520,7 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/tagocore-open-source-documentation":
       "/docs/tagocore/",
     "/portal/en/kb/articles/tagoio-mcp-ai-powered-iot-data-integration":
-      "/docs/tagoio/getting-started/tagoio-mcp-ai-powered-iot-data-integration",
+      "/docs/tagoio/tago-ai/tagoio-mcp-ai-powered-iot-data-integration",
     "/portal/en/kb/articles/tagoio-mqtt-relay":
       "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
     "/portal/en/kb/articles/tags": "/docs/tagoio/getting-started/tags-system",

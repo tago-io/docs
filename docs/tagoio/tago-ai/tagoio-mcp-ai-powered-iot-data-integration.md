@@ -1,5 +1,5 @@
 ---
-title: "TagoIO MCP - AI-Powered IoT Data Integration"
+title: "TagoIO MCP"
 description: "This article introduces the TagoIO MCP Server and shows an example AI-powered workflow for detecting temperature spikes in greenhouse sensor data, including the resulting summary statistics from the analysis."
 tags: ["tagoio", "integration"]
 keywords: [tagoio, iot, mcp, ai integration, data analysis]
