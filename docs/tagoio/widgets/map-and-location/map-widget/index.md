@@ -173,7 +173,7 @@ To display each data point as an **independent pin** rather than a moving trajec
     "time": "2024-06-01T10:00:00.000Z",
     "location": {
       "type": "Point",
-      "coordinates": [-85.631000, 42.299000]
+      "coordinates": [-85.631, 42.299]
     }
   }
   ```
