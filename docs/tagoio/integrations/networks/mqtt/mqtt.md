@@ -6,7 +6,19 @@ keywords: [tagoio, iot, mqtt, broker, protocol]
 sidebar_position: 1
 ---
 
-## Important notice
+## Important notices
+
+:::warning[Deprecation Notice]
+**Legacy MQTT is deprecated.** This integration will be removed in a future release.
+New accounts created after April 15, 2026 no longer have access to this feature.
+
+If you are currently using Legacy MQTT, please plan your migration to the
+[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio) or
+the [HTTP API](/docs/tagoio/api/api_overview).
+
+Existing devices and actions using Legacy MQTT will continue to function during
+the deprecation period, but no new features or bug fixes will be provided.
+:::
 
 :::warning
 
