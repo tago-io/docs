@@ -6,9 +6,10 @@ keywords: [tagoio, iot, mqtt, retain, broker]
 ---
 
 :::warning[Deprecation Notice]
-**Legacy MQTT is deprecated.** Accounts created after April 15, 2026 no longer
-have access. The TagoIO MQTT Broker was available exclusively for Starter and
-Scale accounts in the US database region.
+**Legacy MQTT is deprecated.** The TagoIO MQTT Broker was available exclusively
+for Starter and Scale accounts in the US database region that upgraded before
+April 15, 2026. Accounts created or upgraded after that date do not have access
+to this feature.
 
 Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
 all account types and regions (US and EU).
