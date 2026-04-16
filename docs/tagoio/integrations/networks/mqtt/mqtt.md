@@ -7,9 +7,10 @@ sidebar_position: 1
 ---
 
 :::warning[Deprecation Notice]
-**Legacy MQTT is deprecated.** Accounts created after April 15, 2026 no longer
-have access. The TagoIO MQTT Broker was available exclusively for Starter and
-Scale accounts in the US database region.
+**Legacy MQTT is deprecated.** The TagoIO MQTT Broker was available exclusively
+for Starter and Scale accounts in the US database region that upgraded before
+April 15, 2026. Accounts created or upgraded after that date do not have access
+to this feature.
 
 Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
 all account types and regions (US and EU).
@@ -38,7 +39,7 @@ full‑featured MQTT implementation, it focuses mainly on ingesting sensor data
 into our data buckets, so some standard features such as the native **Retain**
 flag are not supported. A workaround that achieves similar functionality can be
 found in the article
-[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md).
+[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
 
 For example, a temperature sensor might publish a new value to the topic
 `temperature` each time it receives an update. Devices that need to react to
