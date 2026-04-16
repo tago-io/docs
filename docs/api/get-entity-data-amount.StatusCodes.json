@@ -1,0 +1,19 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting entity data amount",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "number", "example": 100 },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Getting entity data amount": { "value": { "result": 100, "status": true } } }
+        }
+      }
+    }
+  }
+}

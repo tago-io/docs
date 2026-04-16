@@ -1,0 +1,10 @@
+{
+  "parameters": [
+    {
+      "name": "tokenID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type a token ID to be deleted)" }
+    }
+  ]
+}

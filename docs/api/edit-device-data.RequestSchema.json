@@ -1,0 +1,17 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string", "example": "653aa3ab617c10000990718f" },
+            "value": { "type": "number", "example": 20 }
+          }
+        },
+        "examples": { "Edit Device Data": { "value": { "id": "653aa3ab617c10000990718f", "value": 20 } } }
+      }
+    }
+  }
+}

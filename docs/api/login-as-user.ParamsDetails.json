@@ -1,0 +1,16 @@
+{
+  "parameters": [
+    {
+      "name": "expire_time",
+      "in": "query",
+      "schema": { "type": "string", "example": "3 months" },
+      "description": "hours,days,months."
+    },
+    {
+      "name": "userID",
+      "in": "path",
+      "required": true,
+      "schema": { "type": "string", "example": "(Type a RUN user ID)" }
+    }
+  ]
+}

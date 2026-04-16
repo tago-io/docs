@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Delete Dictionary",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Successfully Removed" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

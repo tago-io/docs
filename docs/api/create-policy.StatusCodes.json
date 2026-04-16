@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "201": {
+      "description": "Create Policy - Run User / Create Policy - Analysis",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "am_id": { "type": "string", "example": "654a8bf3fefe2f00099a16a2" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

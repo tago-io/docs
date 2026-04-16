@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Create Dashboard"}></Heading>
 
@@ -27,116 +28,12 @@ Creates a dashboard of type Blueprint or Normal Dashboard into your profile.
 
 It's recommended to access your Admin Developer panel and Copy the Dashboard JSON Structure to see all available fields.
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "object",
-          required: ["label", "type"],
-          properties: {
-            group_by: { type: "array", items: {}, description: "List of tags to group in the sidebar", example: [] },
-            icon: {
-              type: "object",
-              properties: {
-                color: { type: "string", example: "hsl(328, 89%, 47%)" },
-                url: { type: "string", example: "https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg" },
-              },
-            },
-            label: { type: "string", example: "Tracker dashboard" },
-            tabs: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: {
-                  key: { type: "string", example: "1648142133869" },
-                  link: { type: "string", example: "" },
-                  value: { type: "string", example: "tab test" },
-                },
-              },
-              example: [
-                { key: "1648142133869", link: "", value: "tab test" },
-                { key: "1648142564354", link: "", value: "tab 2 " },
-                { key: "1648142571171", link: "", value: "tab 3 " },
-              ],
-            },
-            tags: {
-              type: "array",
-              items: {
-                type: "object",
-                properties: { key: { type: "string", example: "vehicle" }, value: { type: "string", example: "gas" } },
-              },
-              example: [
-                { key: "vehicle", value: "gas" },
-                { key: "speed", value: "mph" },
-              ],
-            },
-            type: {
-              type: "string",
-              enum: ["dashboard", "blueprint"],
-              example: "blueprint",
-              description: 'The type of dashboard. Can be "dashboard" or "blueprint".',
-            },
-            visible: { type: "boolean", example: true, default: true },
-          },
-        },
-        examples: {
-          "Create Dashboard": {
-            value: {
-              group_by: [],
-              icon: {
-                color: "hsl(328, 89%, 47%)",
-                url: "https://svg.internal.tago.io/arrowheads-pointing-to-the-left.svg",
-              },
-              label: "Tracker dashboard",
-              profile: "612ea05e3cc0780012715111",
-              tabs: [
-                { key: "1648142133869", link: "", value: "tab test" },
-                { key: "1648142564354", link: "", value: "tab 2 " },
-                { key: "1648142571171", link: "", value: "tab 3 " },
-              ],
-              tags: [
-                { key: "vehicle", value: "gas" },
-                { key: "speed", value: "mph" },
-              ],
-              type: "dashboard",
-              visible: true,
-            },
-          },
-        },
-      },
-    },
-  }}
-></RequestSchema>
+<RequestSchema {...require("./create-dashboard.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "201": {
-      description: "Creating a dashboard",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "object",
-                properties: { dashboard: { type: "string", example: "614e0aa36f480300126652f9a38" } },
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-          examples: {
-            "Creating a dashboard": { value: { result: { dashboard: "614e0aa36f480300126652f9a38" }, status: true } },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./create-dashboard.StatusCodes.json")}></StatusCodes>

@@ -1,0 +1,10 @@
+{
+  "parameters": [
+    {
+      "name": "qty",
+      "in": "query",
+      "schema": { "type": "string", "example": "number" },
+      "description": "Quantity of files to be returned in the response"
+    }
+  ]
+}

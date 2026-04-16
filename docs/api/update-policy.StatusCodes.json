@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "200": {
+      "description": "Updating a policy",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Access Management Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Updating a policy": { "value": { "result": "Access Management Successfully Updated", "status": true } }
+          }
+        }
+      }
+    }
+  }
+}

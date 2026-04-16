@@ -5,19 +5,16 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, publishing, subscribing, analysis]
 ---
 
-:::warning
+:::warning[Deprecation Notice]
+**Legacy MQTT is deprecated.** Accounts created after April 15, 2026 no longer
+have access. The TagoIO MQTT Broker was available exclusively for Starter and
+Scale accounts in the US database region.
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in
-the US database region. European (EU) database region accounts cannot access
-this service due to new security requirements, but they may use third‑party MQTT
-services with TagoIO via the
-[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
-feature. Free accounts can access MQTT functionality through the MQTT Relay as
-well.
+Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
+all account types and regions (US and EU).
 
-For EU accounts, a public MQTT broker without SLA guarantees is planned for the
-future. The main purpose of that broker will be proof‑of‑concept testing.
-
+Existing devices and actions will continue to function during the deprecation
+period, but no new features or bug fixes will be provided.
 :::
 
 You can publish to your MQTT topics by coding a script that runs from an

@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Edit RUN settings"}></Heading>
 
@@ -25,46 +26,12 @@ import Heading from "@theme/Heading";
 
 Edit information about TagoRUN
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
 <ParamsDetails parameters={undefined}></ParamsDetails>
 
-<RequestSchema
-  title={"Body"}
-  body={{
-    content: {
-      "application/json": {
-        schema: {
-          type: "object",
-          properties: {
-            active: { type: "boolean", example: true },
-            name: { type: "string", example: "My new RUN name" },
-            profile: { type: "string", example: "612ea05e3cc07803480127151133" },
-            url: { type: "string", example: "612ea05e3cc07803480127151133.run.tago.io" },
-          },
-        },
-      },
-    },
-  }}
-></RequestSchema>
+<RequestSchema {...require("./edit-settings.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Editing RUN information",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "TagoIO Run Successfully Updated" },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./edit-settings.StatusCodes.json")}></StatusCodes>

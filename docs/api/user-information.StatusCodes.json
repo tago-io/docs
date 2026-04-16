@@ -1,0 +1,83 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting RUN user information by ID",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "active": { "type": "boolean", "example": true },
+                    "company": { "type": "string", "example": "Companyname" },
+                    "created_at": { "type": "string", "example": "2022-01-21T21:29:08.957Z" },
+                    "email": { "type": "string", "example": "runuser@email" },
+                    "id": { "type": "string", "example": "614889df6a302639012a7caef" },
+                    "language": { "type": "string", "example": "en" },
+                    "last_login": { "type": "string", "example": "2022-06-10T17:59:26.879Z" },
+                    "name": { "type": "string", "example": "runusername" },
+                    "newsletter": { "example": null },
+                    "options": {
+                      "type": "object",
+                      "properties": {
+                        "date_format": { "type": "string", "example": "MM/DD/YYYY" },
+                        "time_format": { "type": "string", "example": "12" }
+                      }
+                    },
+                    "otp": { "type": "object", "properties": {} },
+                    "phone": { "type": "string", "example": "+010001010011" },
+                    "profile": { "type": "string", "example": "612ea05e3cc07803480127151133" },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": { "type": "string", "example": "user_type" },
+                          "value": { "type": "string", "example": "enduser" }
+                        }
+                      },
+                      "example": [
+                        { "key": "user_type", "value": "enduser" },
+                        { "key": "limit_login", "value": "10" }
+                      ]
+                    },
+                    "timezone": { "type": "string", "example": "America/New_York" },
+                    "updated_at": { "type": "string", "example": "2022-06-14T14:16:52.377Z" }
+                  }
+                },
+                "example": [
+                  {
+                    "active": true,
+                    "company": "Companyname",
+                    "created_at": "2022-01-21T21:29:08.957Z",
+                    "email": "runuser@email",
+                    "id": "614889df6a302639012a7caef",
+                    "language": "en",
+                    "last_login": "2022-06-10T17:59:26.879Z",
+                    "name": "runusername",
+                    "newsletter": null,
+                    "options": { "date_format": "MM/DD/YYYY", "time_format": "12" },
+                    "otp": {},
+                    "phone": "+010001010011",
+                    "profile": "612ea05e3cc07803480127151133",
+                    "tags": [
+                      { "key": "user_type", "value": "enduser" },
+                      { "key": "limit_login", "value": "10" }
+                    ],
+                    "timezone": "America/New_York",
+                    "updated_at": "2022-06-14T14:16:52.377Z"
+                  }
+                ]
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "200": {
+      "description": "Creating a RUN notification",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "id": { "type": "string", "example": "3415de2676ff4e2001109e63b" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Creating a RUN notification": {
+              "value": { "result": { "id": "3415de2676ff4e2001109e63b" }, "status": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

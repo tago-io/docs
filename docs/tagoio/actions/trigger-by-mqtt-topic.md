@@ -13,14 +13,16 @@ messages are published to the topics they are subscribed to. To learn more about
 the MQTT infrastructure used by TagoIO, see
 [MQTT](/docs/tagoio/integrations/networks/mqtt/mqtt.md).
 
-:::info
+:::warning[Deprecation Notice]
+**Legacy MQTT is deprecated.** Accounts created after April 15, 2026 no longer
+have access. The TagoIO MQTT Broker was available exclusively for Starter and
+Scale accounts in the US database region.
 
-The TagoIO MQTT Broker is available exclusively for Starter and Scale accounts
-in the US database region. Free accounts and accounts hosted in the European
-database region may use third-party MQTT services with TagoIO via the
-[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
-feature.
+Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
+all account types and regions (US and EU).
 
+Existing devices and actions will continue to function during the deprecation
+period, but no new features or bug fixes will be provided.
 :::
 
 ## Trigger categories

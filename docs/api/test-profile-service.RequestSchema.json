@@ -1,0 +1,41 @@
+{
+  "title": "Body",
+  "body": {
+    "required": true,
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": ["to"],
+          "properties": {
+            "to": {
+              "type": "string",
+              "description": "The recipient address for the test message.\n- For SMS: Phone number in E.164 format (e.g., +15551234567)\n- For Email: Email address (e.g., user@example.com)\n",
+              "example": "+15559876543"
+            },
+            "message": {
+              "type": "string",
+              "description": "Custom test message content (optional). If not provided, a default test message will be sent.",
+              "example": "This is a test message from TagoIO"
+            },
+            "subject": {
+              "type": "string",
+              "description": "Email subject line (only for email service type, optional)",
+              "example": "Test Email from TagoIO"
+            }
+          }
+        },
+        "examples": {
+          "Test SMS": { "value": { "to": "+15559876543", "message": "This is a test SMS from TagoIO" } },
+          "Test Email": {
+            "value": {
+              "to": "user@example.com",
+              "subject": "Test Email from TagoIO",
+              "message": "This is a test email from TagoIO to verify your email service configuration."
+            }
+          }
+        }
+      }
+    }
+  }
+}

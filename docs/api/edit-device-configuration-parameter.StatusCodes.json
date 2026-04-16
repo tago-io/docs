@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Edit the configuration parameter",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Device Configuration Parameter Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

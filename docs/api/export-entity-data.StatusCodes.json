@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "200": {
+      "description": "Exporting data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": { "file_address": { "type": "string", "example": "/my_data/export.csv" } }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "responses": {
+    "200": {
+      "description": "Getting the account plan",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "object", "properties": { "plan": { "type": "string", "example": "starter" } } },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": { "Getting the account plan": { "value": { "result": { "plan": "starter" }, "status": true } } }
+        }
+      }
+    }
+  }
+}

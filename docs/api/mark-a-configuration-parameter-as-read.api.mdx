@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Mark Config. Parameter as Read"}></Heading>
 
@@ -27,33 +28,12 @@ Marks a configuration parameter as read on the current device.
 
 This is useful when collecting settings from Configuration Parameters and you need to track whether you have already processed the current value. Use this endpoint to set the `sent` field to `true`.
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    { name: "paramID", in: "path", required: true, schema: { type: "string", example: "(Type your param ID)" } },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./mark-a-configuration-parameter-as-read.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema {...require("./mark-a-configuration-parameter-as-read.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Success Response",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: { type: "string", example: "Params Successfully Updated" },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./mark-a-configuration-parameter-as-read.StatusCodes.json")}></StatusCodes>

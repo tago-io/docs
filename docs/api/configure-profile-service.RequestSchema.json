@@ -1,0 +1,137 @@
+{
+  "title": "Body",
+  "body": {
+    "required": true,
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "object",
+              "description": "Email service configuration",
+              "properties": {
+                "provider": {
+                  "type": "string",
+                  "enum": ["sendgrid", "ses", "smtp"],
+                  "description": "The email provider to use",
+                  "example": "smtp"
+                },
+                "from": { "type": "string", "description": "Sender email address", "example": "noreply@example.com" },
+                "secrets": {
+                  "type": "object",
+                  "description": "Secret IDs for provider credentials",
+                  "properties": {
+                    "data": {
+                      "type": "string",
+                      "description": "Secret ID containing SMTP configuration (required for SMTP provider) or AWS SQS Secret (required for SES provider)",
+                      "example": "68c9977a28079e0010aaf399"
+                    },
+                    "api_key": {
+                      "type": "string",
+                      "description": "Secret ID containing SendGrid API Key (required for SendGrid provider)",
+                      "example": "68c9977a28079e0010aaf399"
+                    }
+                  }
+                }
+              }
+            },
+            "sms": {
+              "type": "object",
+              "description": "SMS service configuration",
+              "properties": {
+                "provider": {
+                  "type": "string",
+                  "enum": ["twilio", "sns"],
+                  "description": "The SMS provider to use",
+                  "example": "twilio"
+                },
+                "from": {
+                  "type": "string",
+                  "description": "Sender phone number in E.164 format (required for Twilio, optional for SNS)",
+                  "example": "+15551234567"
+                },
+                "secrets": {
+                  "type": "object",
+                  "description": "Secret IDs for provider credentials",
+                  "properties": {
+                    "twilio_sid": {
+                      "type": "string",
+                      "description": "Secret ID containing Twilio Account SID (required for Twilio provider)",
+                      "example": "674f1740f9ccd2000aaa4551"
+                    },
+                    "twilio_token": {
+                      "type": "string",
+                      "description": "Secret ID containing Twilio Auth Token (required for Twilio provider)",
+                      "example": "674f1736f9ccd2000aaa4550"
+                    },
+                    "data": {
+                      "type": "string",
+                      "description": "Secret ID containing AWS SQS Secret (required for SNS provider)",
+                      "example": "68c9977a28079e0010aaf399"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "examples": {
+          "Configure SMS and Email": {
+            "value": {
+              "email": {
+                "provider": "smtp",
+                "from": "noreply@example.com",
+                "secrets": { "data": "68c9977a28079e0010aaf399" }
+              },
+              "sms": {
+                "provider": "twilio",
+                "from": "+15551234567",
+                "secrets": { "twilio_sid": "674f1740f9ccd2000aaa4551", "twilio_token": "674f1736f9ccd2000aaa4550" }
+              }
+            }
+          },
+          "Configure SMS only": {
+            "value": {
+              "sms": {
+                "provider": "twilio",
+                "from": "+15551234567",
+                "secrets": { "twilio_sid": "674f1740f9ccd2000aaa4551", "twilio_token": "674f1736f9ccd2000aaa4550" }
+              }
+            }
+          },
+          "Configure Email with SendGrid": {
+            "value": {
+              "email": {
+                "provider": "sendgrid",
+                "from": "noreply@example.com",
+                "secrets": { "api_key": "68c9977a28079e0010aaf399" }
+              }
+            }
+          },
+          "Configure Email with SMTP": {
+            "value": {
+              "email": {
+                "provider": "smtp",
+                "from": "noreply@example.com",
+                "secrets": { "data": "68c9977a28079e0010aaf399" }
+              }
+            }
+          },
+          "Configure Email with SES": {
+            "value": {
+              "email": {
+                "provider": "ses",
+                "from": "noreply@example.com",
+                "secrets": { "data": "68c9977a28079e0010aaf399" }
+              }
+            }
+          },
+          "Configure SMS with SNS": {
+            "value": { "sms": { "provider": "sns", "secrets": { "data": "68c9977a28079e0010aaf399" } } }
+          }
+        }
+      }
+    }
+  }
+}

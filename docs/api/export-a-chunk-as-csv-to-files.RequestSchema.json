@@ -1,0 +1,26 @@
+{
+  "title": "Body",
+  "body": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "chunk_id": { "type": "string", "example": "1657497600_1658102399" },
+            "file_address": { "type": "string", "example": "/device/$DEVICE$/$FROM$_$TO$" },
+            "headers": { "type": "boolean", "example": true }
+          }
+        },
+        "examples": {
+          "Export a chunk as CSV to Files": {
+            "value": {
+              "chunk_id": "1657497600_1658102399",
+              "file_address": "/device/$DEVICE$/$FROM$_$TO$",
+              "headers": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

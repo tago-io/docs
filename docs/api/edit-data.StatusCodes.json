@@ -1,0 +1,18 @@
+{
+  "responses": {
+    "200": {
+      "description": "Editing data register by ID",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "1 item(s) updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "200": {
+      "description": "Account edited successfuly",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": { "type": "string", "example": "Account Successfully Updated" },
+              "status": { "type": "boolean", "example": true }
+            }
+          },
+          "examples": {
+            "Account edited successfuly": { "value": { "result": "Account Successfully Updated", "status": true } }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,30 @@
 import Link from "@docusaurus/Link";
-import { useColorMode } from "@docusaurus/theme-common";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
+import ThemedImage from "@theme/ThemedImage";
 import { clsx } from "clsx";
 import type { ReactNode } from "react";
 
 import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const { colorMode } = useColorMode();
-  const logoSrc = colorMode === "dark" ? "/img/tagoio-official-logo-white.svg" : "/img/tagoio-official-logo.svg";
   return (
     <header className={clsx("hero", styles.heroBanner)}>
       <div className="container">
         <div className={styles.brandRow}>
           <span className={styles.brandDoc}>Documentation</span>
-          <img src={useBaseUrl(logoSrc)} alt="TagoIO" width={160} height={40} className={styles.brandLogo} />
+          <ThemedImage
+            sources={{
+              light: useBaseUrl("/img/tagoio-official-logo.svg"),
+              dark: useBaseUrl("/img/tagoio-official-logo-white.svg"),
+            }}
+            alt="TagoIO"
+            width={160}
+            height={40}
+            className={styles.brandLogo}
+          />
         </div>
         <Heading as="h1" className="hero__title">
           Easy IoT. Powerful Outcomes.

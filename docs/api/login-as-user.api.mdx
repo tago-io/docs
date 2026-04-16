@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"Get User Token"}></Heading>
 
@@ -25,47 +26,12 @@ import Heading from "@theme/Heading";
 
 Get TagoRUN User Token and allow to perform request to TagoRUN specific endpoints (not available).
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    {
-      name: "expire_time",
-      in: "query",
-      schema: { type: "string", example: "3 months" },
-      description: "hours,days,months.",
-    },
-    { name: "userID", in: "path", required: true, schema: { type: "string", example: "(Type a RUN user ID)" } },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./login-as-user.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema {...require("./login-as-user.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Login as a RUN User",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "object",
-                properties: {
-                  expire_time: { type: "string", example: "2022-06-21T03:01:10.908Z" },
-                  name: { type: "string", example: "Login by Run Administrator(runadmin@mail.com)" },
-                  run_user: { type: "string", example: "61eb25a4d6a4a20011d4cd3c" },
-                  token: { type: "string", example: "fe82f846-d19c-42b3-863a-7e7dgcd519e6" },
-                },
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./login-as-user.StatusCodes.json")}></StatusCodes>

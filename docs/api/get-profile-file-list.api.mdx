@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading as={"h1"} className={"openapi__heading"} children={"List Files"}></Heading>
 
@@ -25,86 +26,12 @@ import Heading from "@theme/Heading";
 
 Get profile file list
 
-<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
 
-<ParamsDetails
-  parameters={[
-    {
-      name: "qty",
-      in: "query",
-      schema: { type: "string", example: "number" },
-      description: "Quantity of files to be returned in the response",
-    },
-  ]}
-></ParamsDetails>
+<ParamsDetails {...require("./get-profile-file-list.ParamsDetails.json")}></ParamsDetails>
 
-<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+<RequestSchema {...require("./get-profile-file-list.RequestSchema.json")}></RequestSchema>
 
-<StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{
-    "200": {
-      description: "Get Profile's Files List",
-      content: {
-        "application/json": {
-          schema: {
-            type: "object",
-            properties: {
-              result: {
-                type: "object",
-                properties: {
-                  files: {
-                    type: "array",
-                    items: {
-                      type: "object",
-                      properties: {
-                        filename: { type: "string", example: "layer01.png" },
-                        last_modified: { type: "string", example: "2023-10-16T13:25:04.000Z" },
-                        public: { type: "boolean", example: true },
-                        size: { type: "number", example: 63480 },
-                      },
-                    },
-                    example: [
-                      { filename: "layer01.png", last_modified: "2023-10-16T13:25:04.000Z", public: true, size: 63480 },
-                      {
-                        filename: "layer02.png",
-                        last_modified: "2023-10-16T13:23:58.000Z",
-                        public: true,
-                        size: 233444,
-                      },
-                    ],
-                  },
-                  folders: {
-                    type: "array",
-                    items: { type: "string", example: "reports" },
-                    example: ["reports", "image"],
-                  },
-                  total: { type: "number", example: 50 },
-                  usage: { type: "number", example: 6.02 },
-                },
-              },
-              status: { type: "boolean", example: true },
-            },
-          },
-          examples: {
-            "Get Profile's Files List": {
-              value: {
-                result: {
-                  files: [
-                    { filename: "layer01.png", last_modified: "2023-10-16T13:25:04.000Z", public: true, size: 63480 },
-                    { filename: "layer02.png", last_modified: "2023-10-16T13:23:58.000Z", public: true, size: 233444 },
-                  ],
-                  folders: ["reports", "image"],
-                  total: 50,
-                  usage: 6.02,
-                },
-                status: true,
-              },
-            },
-          },
-        },
-      },
-    },
-  }}
-></StatusCodes>
+<StatusCodes {...require("./get-profile-file-list.StatusCodes.json")}></StatusCodes>
