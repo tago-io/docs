@@ -1,9 +1,9 @@
 ---
-title: "MQTT Relay"
+title: "Bridging a Third-Party MQTT Broker"
+sidebar_label: "Third-Party MQTT Broker"
 description: "TagoIO MQTT Relay bridges an external MQTT broker and the TagoIO platform using a fast, open-source command-line tool."
 tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, broker, relay]
-sidebar_position: 10
 ---
 
 :::tip
