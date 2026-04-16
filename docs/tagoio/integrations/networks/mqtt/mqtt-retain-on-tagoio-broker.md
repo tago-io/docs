@@ -5,10 +5,17 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, retain, broker]
 ---
 
-:::warning
+:::warning[Deprecation Notice]
+**Legacy MQTT is deprecated.** The TagoIO MQTT Broker was available exclusively
+for Starter and Scale accounts in the US database region that upgraded before
+April 15, 2026. Accounts created or upgraded after that date do not have access
+to this feature.
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts in the European database region may use third‑party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
+Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
+all account types and regions (US and EU).
 
+Existing devices and actions will continue to function during the deprecation
+period, but no new features or bug fixes will be provided.
 :::
 
 TagoIO's MQTT broker does not natively support the standard MQTT **retain** feature. However, you can implement an equivalent workaround by using TagoIO Analysis and Actions to store the last message published to a topic and resend it when a new client subscribes.
