@@ -13,9 +13,7 @@ Additionally, the widget allows you to customize the visualization by adding ico
 
 ![Map widget example](/docs_imagem/tagoio/rounded-image-1775668650454.png)
 
-The variable data should look like the following payload. TagoIO supports two formats for the `location` field:
-
-**1. GeoJSON (Point):**
+The variable must include a `location` field with your device's coordinates. TagoIO accepts both GeoJSON and `{ lat, lng }` formats at ingestion. See [Sending Data](/docs/tagoio/devices/sending-data.md#location-field) for format details and the coordinate order caveat.
 
 ```json
 {
@@ -33,19 +31,6 @@ The variable data should look like the following payload. TagoIO supports two fo
 In GeoJSON, the coordinate order is **[Longitude, Latitude]** — the opposite of the common lat/lng convention. Make sure your values are in the correct order.
 
 :::
-
-**2. LatLng literal:**
-
-```json
-{
-  "variable": "location",
-  "value": "My Address",
-  "location": {
-    "lat": 42.2974279,
-    "lng": -85.628292
-  }
-}
-```
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
 
