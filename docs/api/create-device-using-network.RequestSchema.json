@@ -1,0 +1,73 @@
+{
+  "title": "Body",
+  "body": {
+    "required": true,
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": ["name", "type", "connector"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Device name",
+              "example": "My Network Device"
+            },
+            "type": {
+              "type": "string",
+              "enum": ["mutable", "immutable"],
+              "description": "Device type",
+              "example": "mutable"
+            },
+            "connector": {
+              "type": "string",
+              "description": "Connector ID for the device",
+              "example": "5f5a8f3351d4db99c40dece5"
+            },
+            "serie_number": {
+              "type": "string",
+              "description": "Serial number for the device (optional, only if required by the network)",
+              "example": "AB87392C17CA"
+            },
+            "tags": {
+              "type": "array",
+              "description": "Device tags as key-value string pairs",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": { "type": "string", "example": "location" },
+                  "value": { "type": "string", "example": "warehouse-01" }
+                }
+              },
+              "example": [
+                { "key": "location", "value": "warehouse-01" },
+                { "key": "type", "value": "sensor" }
+              ]
+            }
+          }
+        },
+        "examples": {
+          "Create Mutable Device": {
+            "value": {
+              "name": "My Network Device",
+              "type": "mutable",
+              "connector": "5f5a8f3351d4db99c40dece5"
+            }
+          },
+          "Create Device with Serial Number and Tags": {
+            "value": {
+              "name": "Warehouse Sensor",
+              "type": "mutable",
+              "connector": "5f5a8f3351d4db99c40dece5",
+              "serie_number": "AB87392C17CA",
+              "tags": [
+                { "key": "location", "value": "warehouse-01" },
+                { "key": "type", "value": "temperature" }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

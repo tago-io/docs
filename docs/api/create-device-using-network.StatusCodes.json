@@ -1,0 +1,38 @@
+{
+  "responses": {
+    "201": {
+      "description": "Device created successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "device_id": { "type": "string", "example": "5dcad1c216174c001ca23ab9" },
+                  "token": { "type": "string", "example": "5a16405f-b32c-4c91-ae39-cbb2caba18d8" }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    },
+    "401": {
+      "description": "Authorization denied. The Network Token is missing, invalid, or does not have the createDevice privilege.",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Authorization Denied" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
