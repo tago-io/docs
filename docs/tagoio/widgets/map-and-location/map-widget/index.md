@@ -15,7 +15,7 @@ Additionally, the widget allows you to customize the visualization by adding ico
 
 The variable data should look like the following payload. TagoIO supports two formats for the `location` field:
 
-**GeoJSON (Point) — recommended:**
+**1. GeoJSON (Point):**
 
 ```json
 {
@@ -34,7 +34,7 @@ In GeoJSON, the coordinate order is **[Longitude, Latitude]** — the opposite o
 
 :::
 
-**Legacy format (still supported):**
+**2. LatLng literal:**
 
 ```json
 {
@@ -150,11 +150,11 @@ Customize your Map with GeoJSON or Shapefiles layers. Display boundaries, areas,
 
 ## 7. Managing Multiple Stationary Devices
 
-When displaying hundreds of fixed sensors simultaneously (e.g., soil monitors, utility meters, parking spots), sending individual location variables from each device can be inefficient. A common strategy is to centralize all location data in a single **Accumulator Device**.
+When displaying hundreds of fixed sensors simultaneously (e.g., soil monitors, utility meters, parking spots), sending individual location variables from each device can be inefficient. A common strategy is to centralize all location data in a single virtual accumulator Device.
 
 ### 7.1 How it works
 
-Instead of reading location variables from each physical device directly, you configure the Map Widget to read from a single accumulator device that stores one location variable per sensor. An [Analysis](/docs/tagoio/analysis/index.md) or [Action](/docs/tagoio/actions/index.md) can be used to push each device's location into this central device whenever it changes.
+Instead of reading location variables from each physical device directly, you configure the Map Widget to read from a single accumulator device that stores a location variable per sensor. An [Analysis](/docs/tagoio/analysis/index.md) or [Action](/docs/tagoio/actions/index.md) can be used to push each device's location into this central device whenever it changes.
 
 This approach reduces the number of data sources the widget needs to query and keeps your dashboard performant as the number of devices grows.
 
@@ -191,9 +191,3 @@ To display each data point as an **independent pin** rather than a moving trajec
     }
   }
   ```
-
-:::tip
-
-The **Groups** option is the most reliable for stationary devices, as it guarantees each sensor is always shown as a separate pin regardless of when the data was sent.
-
-:::
