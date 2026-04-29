@@ -41,7 +41,7 @@ There are 6 types of triggers you can use:
 * **MQTT Topic** – This action will be triggered when a message is received on an MQTT topic. Learn more about [Trigger by MQTT Topic](/docs/tagoio/actions/trigger-by-mqtt-topic.md).
 
 :::warning
-Note that the **TagoIO MQTT Broker** is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md) feature.
+Note that the **TagoIO MQTT Broker** is available exclusively for Starter and Scale accounts in the US database region. Free accounts and accounts hosted in the European database region may use third-party MQTT services with TagoIO via the [MQTT Relay](docs/tagoio/integrations/networks/third-party-mqtt-broker.md) feature.
 :::
 
 To prevent your action from continuously activating when a trigger condition is met, it is advisable to define a reset trigger condition. Ensure you check the “[Trigger Unlock]” option to avoid potential issues with your logic and account:
