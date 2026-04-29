@@ -442,7 +442,7 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/configuration-parameters-for-devices":
       "/docs/tagoio/devices/configuration-parameters-for-devices",
     "/portal/en/kb/articles/connecting-your-mqtt-broker-to-tagoio":
-      "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
+      "/docs/tagoio/integrations/networks/third-party-mqtt-broker",
     "/portal/en/kb/articles/control-tower": "/docs/tagoio/addons/control-tower",
     "/portal/en/kb/articles/custom-domain-configuration":
       "/docs/tagoio/addons/custom-domain/custom-domain-configuration",
@@ -522,7 +522,7 @@ exports.handler = async (event) => {
     "/portal/en/kb/articles/tagoio-mcp-ai-powered-iot-data-integration":
       "/docs/tagoio/tago-ai/tagoio-mcp-ai-powered-iot-data-integration",
     "/portal/en/kb/articles/tagoio-mqtt-relay":
-      "/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio",
+      "/docs/tagoio/integrations/networks/third-party-mqtt-broker",
     "/portal/en/kb/articles/tags": "/docs/tagoio/getting-started/tags-system",
     "/portal/en/kb/articles/trigger-by-geofence":
       "/docs/tagoio/actions/trigger-by-geofence",

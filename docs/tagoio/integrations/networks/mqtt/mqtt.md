@@ -1,26 +1,22 @@
 ---
-title: "MQTT Overview"
-description: "A brief introduction to TagoIO's MQTT support, including availability restrictions, an overview of the MQTT protocol, and a diagram showing data flow between devices and the TagoIO MQTT broker."
+title: "MQTT Overview (Legacy)"
+description: "Legacy MQTT integration for TagoIO. This feature is deprecated -- please use TagoTiP MQTT instead."
 tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, broker, protocol]
 sidebar_position: 1
 ---
 
-## Important notice
+:::warning[Deprecation Notice]
+**Legacy MQTT is deprecated.** The TagoIO MQTT Broker was available exclusively
+for Starter and Scale accounts in the US database region that upgraded before
+April 15, 2026. Accounts created or upgraded after that date do not have access
+to this feature.
 
-:::warning
+Please migrate to [TagoTiP MQTT](/docs/tagotip/transports/mqtt), which supports
+all account types and regions (US and EU).
 
-TagoIO MQTT Broker is available exclusively for Starter and Scale accounts in
-the US database region. European (EU) database region accounts cannot access
-this service due to new security requirements, but they may use third‑party MQTT
-services with TagoIO via the
-[MQTT Relay](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md)
-feature. Free accounts can access MQTT functionality through the MQTT Relay as
-well.
-
-For EU accounts, a public MQTT broker without SLA guarantees is planned for the
-future. The main purpose of that broker will be proof‑of‑concept testing.
-
+Existing devices and actions will continue to function during the deprecation
+period, but no new features or bug fixes will be provided.
 :::
 
 ## Overview
@@ -43,7 +39,7 @@ full‑featured MQTT implementation, it focuses mainly on ingesting sensor data
 into our data buckets, so some standard features such as the native **Retain**
 flag are not supported. A workaround that achieves similar functionality can be
 found in the article
-[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/connecting-your-mqtt-broker-to-tagoio.md).
+[MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
 
 For example, a temperature sensor might publish a new value to the topic
 `temperature` each time it receives an update. Devices that need to react to
