@@ -12,12 +12,11 @@ The Input control allows users to submit values to variables through a form.
 
 The Input Control is a dynamic widget. You can customize its colors, layout, text, and icons.
 
-![Input Control editor showing sections and fields](/docs_imagem/tagoio/input-control-widget-2.gif)
+![Input Control editor showing sections and fields](/docs_imagem/tagoio/peek_138.gif)
 
-To edit a specific section or element in the widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
+To edit a specific section or element in the widget, go to the structure section and click on the desired element.
 
-> This widget works for both **Normal** dashboards and **Blueprint** dashboards.  
-> For Blueprint dashboards, the `Data From` field behaves slightly differently because the system does not know which devices are linked to your Blueprint device.
+> This widget works for both **Normal** dashboards and **Blueprint** dashboards.
 
 ### Sections
 
@@ -26,17 +25,17 @@ You can show a divider between sections, duplicate or remove sections, and hide 
 
 ### Fields
 
-Fields are associated with a variable and a device using the **Data From** setting.  
+Fields are associated with a variable and a device using the **Data Sources** setting.  
 When a field is submitted, the data is sent to the device’s data storage.  
 You can also assign an analysis to each field; when the field is submitted, that analysis will run automatically.
 
-#### Data From Field
+#### Data Sources Field
 
-The `Data From` field allows you to set the device and variable that will be used in this widget.
+The `Data Sources` field allows you to set the device and variable that will be used in this widget.
 
 - **Normal Dashboards** – Select one of your devices from the list and choose the variable that contains the data.
 - **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information.  
-  Because the system does not know which devices are linked to your Blueprint device, the variable selector will not show a list of variables.
+  _When using a Blueprint dashboard, the Variable field will suggest a list of variables to be picked using the currently selected blueprint device._
 
 ### Field Types
 

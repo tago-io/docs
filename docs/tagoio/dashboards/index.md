@@ -30,25 +30,21 @@ To create a new dashboard, start by clicking the **+** button on the left side o
 
 In this window, you can also switch the **Blueprint slider** to generate a Blueprint dashboard instead of a Normal one. Simply enter a name for your new dashboard and click **Save** to begin adding [Widgets](https://help.tago.io/portal/en/kb/tagoio/9-widgets).
 
-<!-- Dashboard creation interface image -->
-
-<YouTube videoId="D2lmCHF4Eg4" title="Building Dashboards and Widgets" />
+![Dashboard creation interface](/docs_imagem/tagoio/rounded-image-1772808293573.png)
 
 ## Dashboard Icons
 
 You can add [icons](/docs/tagoio/dashboards/dashboard-icons.md) to your dashboard, making it look just the way that you want it.
 
-<!-- Dashboard icons image -->
+![Dashboard icons](/docs_imagem/tagoio/rounded-image-1772808347789.png)
 
 ## Dashboard Background
 
 You can also edit the background color of the dashboards, or add images and animations. Click on the **clog** icon to edit the configurations inside the 'General information' tab.
 
-<!-- Dashboard background settings image -->
+![Dashboard background settings](/docs_imagem/tagoio/rounded-image-1772808405556.png)
 
 Although video formats are not accepted, you can upload animations using the **.gif** format as shown below. Images can be uploaded into your [Files](/docs/tagoio/files).
-
-<!-- Dashboard background example image -->
 
 > **Tip:** You have full control of the opacity level for the background and the widgets.
 

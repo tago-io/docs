@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, step button, input]
 
 Step button allows users to increase and decrease values of a number or clock by using the (-) and (+) buttons.
 
-![Step Button examples showing time and temperature controls with labels "Button #1", "10:15 AM", "End of cycle", "-5 °C", "Set-point"](/docs_imagem/tagoio/step-button-widget-2.png)
+![Step Button examples showing time and temperature controls with labels "Button #1", "10:15 AM", "End of cycle", "-5 °C", "Set-point"](/docs_imagem/tagoio/rounded-image-1775671566899.png)
 
 You can also define the incremental step value and the allowed limits.
 
@@ -15,13 +15,12 @@ You can also define the incremental step value and the allowed limits.
 
 To add the Step Button widget to your dashboard, choose the Step Button widget from the widget list and customize it to your preference. You can edit it using the options located on the right side of the widget.
 
-### Data From Field
+### Data Sources Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
 - **Normal Dashboards** – Select one device from your list of devices and choose the variable that contains the data.
-- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable.  
-  When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable. When using a Blueprint dashboard, the Variable field will suggest a list of variables to be picked using the currently selected blueprint device.
 
 ### Step Button Types
 

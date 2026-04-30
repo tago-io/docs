@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, dial gauge, meter]
 
 Dials are one of the simplest and most useful widgets. They make it easy to visualize values relative to a defined range (with maximum and minimum limits).
 
-![Dial widget examples](/docs_imagem/tagoio/dial-widget-2.gif)
+![Dial widget examples](/docs_imagem/tagoio/rounded-image-1773067093107.png)
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
 
@@ -15,22 +15,22 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 To add the Dial widget to your dashboard, choose the Dial widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
-### 'Data From' Field
+### 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
 > This field is dependent on the type of dashboard you are using; the difference is explained below.
 
-#### 1.1 'Data From' for Normal Dashboards
+#### 1.1 'Data Sources' for Normal Dashboards
 
-From the option **'Data From'** on the right menu, select one device from your list of devices and the variable that contains the data.
+From the option **'Data Sources'** on the right menu, select one device from your list of devices and the variable that contains the data.
 
-#### 1.2 'Data From' for Blueprint Dashboards
+#### 1.2 'Data Sources' for Blueprint Dashboards
 
-From the option **'Data From'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
+From the option **'Data Sources'** on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the information.
 
 :::info
 
-When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field Variable will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the currently selected blueprint device.
 
 :::

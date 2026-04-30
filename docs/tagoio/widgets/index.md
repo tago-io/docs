@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Dashboards are composed of widgets that can display and collect data from users. TagoIO provides a variety of widgets to handle your data in real time, from simple dials to tables, maps, videos, and forms that allow user input.
 
-![Image 4](/docs_imagem/tagoio/external-a72cdd75.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1772807958973.png)
 
 :::info
 
@@ -83,4 +83,4 @@ The following widgets are provided out of the box (icons and labels shown):
 
 ### Common Features
 
-Check the Widgets > General documentations for commom features that can be used accross almost all widgets.
+Check the Widgets > General documentations for common features that can be used across almost all widgets.

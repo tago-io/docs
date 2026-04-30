@@ -25,7 +25,7 @@ topic. An Analysis can be started in different ways: by timer, by an
 [Action](/docs/tagoio/actions/), or by another Analysis. The diagram below
 illustrates the data flow from an Analysis to the MQTT network.
 
-![MQTT publish/subscribe diagram](/docs_imagem/tagoio/mqtt-publishing-and-subscribing-2.png)
+![MQTT publish/subscribe diagram](/docs_imagem/tagoio/rounded-image-1775677420658.png)
 
 The diagram shows:
 

@@ -14,17 +14,17 @@ All chart-type widgets in TagoIO can be configured to display more than one Y‑
 - [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md)
 - [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md)
 
-<!-- Image placeholder removed for build -->
-
 ## Adding multiple axes to your chart
 
 To add multiple axes to a chart widget:
 
 1. Open the widget's edit page.
-2. Under Options, open the Y‑axis subsection.
+2. Under the **Options** section, open the **Y‑axis** subsection.
 3. Click the Multiple Axes button to add and configure additional Y‑axes.
 
-After clicking the Multiple Axes button you can associate one or more variables with each Y‑axis. By default all variables are automatically assigned to the **y1** axis unless you change it. Only variables that have been added in the widget’s **Data From** section can be selected here.
+![Multiple axes](/docs_imagem/tagoio/rounded-image-1772823785297.png)
+
+After clicking the Multiple Axes button you can associate one or more variables with each Y‑axis. By default all variables are automatically assigned to the **y1** axis unless you change it. Only variables that have been added in the widget’s **Data Sources** section can be selected here.
 
 Once you have configured the axes, click **Confirm** to preview the changes and then **Save** to apply them.
 

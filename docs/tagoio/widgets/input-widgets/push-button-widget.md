@@ -8,7 +8,7 @@ keywords: [tagoio, iot, widget, push button, input]
 Push button allows users to select options for different states, similar to a mechanical switch. Developers can configure text or an icon for each state and associate colors with each option.
 This widget works on both Normal and Blueprint dashboards.
 
-![Push Button examples](/docs_imagem/tagoio/push-button-widget-2.png)
+![Push Button examples](/docs_imagem/tagoio/rounded-image-1775671251058.png)
 
 You can also define an Analysis (script) to run when users change each state — see [Analysis](/docs/tagoio/analysis/).
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
@@ -21,10 +21,10 @@ To add the Push Button widget to your dashboard:
 - Customize it to your preference.
 - Edit its properties using the options located on the right side of the widget.
 
-**Data From field**
+**Data Sources field**
 This field allows you to set the device and variable that will be used in this widget.
 For Normal dashboards, select a device and its variable from the list.
-For Blueprint dashboards, add the Blueprint device and input the variable name; the variable selector may not show variables until the device is linked.
+For Blueprint dashboards, add the Blueprint device and input the variable name; the variable selector will suggest a list of variables to be picked using the currently selected blueprint device.
 
 **Push Button type**
 The button can operate in two modes:

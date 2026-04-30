@@ -40,9 +40,9 @@ disarm
 
 ## Using the data
 
-The recommended way to extract and use this data is through an Analysis. The Keypad widget provides an option to run an analysis from the User Control tab.
+The recommended way to extract and use this data is through an Analysis. The Keypad widget provides an option to run an analysis from the options section.
 
-![Keypad widget — User Control tab](/docs_imagem/tagoio/keypad-data-manipulation-2.png)
+![Keypad widget — User Control tab](/docs_imagem/tagoio/rounded-image-1773258682729.png)
 
 ### Analysis
 

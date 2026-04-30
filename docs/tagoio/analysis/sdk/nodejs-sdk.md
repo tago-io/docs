@@ -5,17 +5,11 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, sdk, nodejs, javascript]
 ---
 
-## Documentation
-
-You can access the Node.js SDK documentation here:
-
-https://js.sdk.tago.io
+You can access the Node.js SDK documentation [here](https://js.sdk.tago.io).
 
 ## Legacy (9.x.x) documentation
 
-If you are looking for documentation for the old version (9.x.x), access it here:
-
-https://tago-sdk-js-documentation.rtfd.io/
+If you are looking for documentation for the old version (9.x.x), access it [here](https://tago-sdk-js-documentation.rtfd.io/).
 
 > Note: The old SDK will be discontinued in 2030.
 

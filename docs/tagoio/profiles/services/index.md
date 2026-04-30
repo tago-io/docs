@@ -26,6 +26,7 @@ Currently, the following services are available for selection on your account. S
 | E-mail               |        Message | Monthly             | Messages sent out.                                                                          |
 | SMS                  |        Message | Monthly             | Messages sent out.                                                                          |
 | End user (RUN user)  |           User | Maximum at any time | End users registered in your RUN applications.                                              |
+| TagoAI Requests      |        Request | Monthly             | Each message sent to Tago AI using the TagoIO default provider.                             |
 
 ## Service Alerts
 

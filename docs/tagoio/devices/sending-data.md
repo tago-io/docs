@@ -35,6 +35,30 @@ POST https://api.<region>.tago.io/data
 
 You must include a [Device-Token](/docs/tagoio/devices/device-token.md) to authorize the operation. Learn more about the fields necessary to send data to TagoIO, including the Header and other formats: [fields necessary](/docs/tagoio/getting-started/restful-api.md).
 
+## Location field
+
+The `location` field accepts two formats:
+
+**GeoJSON Point:**
+
+```json
+{ "type": "Point", "coordinates": [-85.628292, 42.2974279] }
+```
+
+**LatLng literal:**
+
+```json
+{ "lat": 42.2974279, "lng": -85.628292 }
+```
+
+Both are valid at ingestion time. TagoIO normalizes all location data to GeoJSON before storing it, so what you read back will always be `{ "type": "Point", "coordinates": [...] }`.
+
+:::caution
+
+GeoJSON uses **[longitude, latitude]** order, not the common lat/lng convention. Double-check your coordinate order when using the GeoJSON format.
+
+:::
+
 ## Notes and restrictions
 
 - Variables are always converted to lowercase.

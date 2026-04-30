@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Use the Dictionary to deploy applications to end-users (RUN users) in any language. All you have to do is to create a [dictionary](https://admin.tago.io/dictionaries), use the `#SLUG.KEY#` format in the texts that will be substituted, and then select the languages that should be available for your end-users.
 
-![End-users language selector](/docs_imagem/tagoio/using-dictionaries-multi-language-2.png)
+![End-users language selector](/docs_imagem/tagoio/rounded-image-1772799467056.png)
 
 End-users can select the language in their applications.
 
@@ -29,8 +29,8 @@ An auto‑complete feature is available to find Slugs and Keys as shown below.
 
 ### 1) Create a Dictionary
 
-First, create the Dictionary by clicking on the **[Dictionaries & Multi-language]** option from the top‑right menu in your Admin.
-You will be asked to select a language that will be the first one made available; you may edit or add more languages later. A Slug is automatically created with the dictionary and can be edited afterwards.
+First, create the Dictionary by clicking on the Dictionaries button in the sidebar menu in your Admin.
+You will be asked to select a language that will be the first one made available; you may edit or add more languages later. You will also need to create a Slug for the dictionary which can also be edited later.
 
 Populate the dictionary with Key & Value pairs for substitution, then save it. Example for English:
 
@@ -67,7 +67,9 @@ Some widgets (e.g., **Map** and **Image Marker**) offer a _Custom Texts_ option 
 ### 3) Configure the language for your RUN
 
 Dictionary can also be applied in your [RUN](/docs/tagoio/tagorun/) application so that you can configure additional texts used in common places (e.g., 'Save' button, sign‑in form, tooltips).
-If you haven’t done so, create a dictionary to be used as a baseline by accessing the **[RUN] > Multi‑language** section. The system can create a dictionary with all available Keys for editing or use it as a basis for other languages.
+If you haven’t done so, create a dictionary to be used as a baseline by accessing the **[RUN] >> Main Configuration** section. The system can create a dictionary with all available Keys for editing or use it as a basis for other languages.
+
+![RUN Multi-language](/docs_imagem/tagoio/rounded-image-1772799814084.png)
 
 > This dictionary will also contain the Keys used in your TagoRUN mobile app.
 

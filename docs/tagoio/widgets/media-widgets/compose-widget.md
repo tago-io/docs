@@ -13,8 +13,8 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 ## Creating your own
 
-- **1. 'Data From' Field**
-  The _Data From_ field lets you choose the device and variable that will feed the widget. For normal dashboards, select a device from your list and then pick the variable containing the pin data. In Blueprint dashboards, you must first select the Blueprint device; the variable name is then entered manually because the system cannot automatically list variables linked to the Blueprint.
+- **1. 'Data Sources' Field**
+  The _Data Sources_ field lets you choose the device and variable that will feed the widget. For normal dashboards, select a device from your list and then pick the variable containing the pin data. In Blueprint dashboards, you must first select the Blueprint device; the variable name is then entered manually because the system cannot automatically list variables linked to the Blueprint.
   **Important:** The number of pins you can add is directly tied to the number of devices added in this section—each device can provide one pin. Additionally, at least two variables are required: one for the pin’s data (label, color, icon, etc.) and another to store all pin positions on the media.
 
 - **2. Media Backgrounds**
@@ -47,9 +47,9 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 - **4. Pin Editor**
   The pin editor, accessed via a pencil icon on the left side of the widget (visible only if editing permissions are granted), allows users to add, modify, or delete pins. The toolbox offers four tools:
-  - _Default_ – zoom and drag the image.
+- _Default_ – zoom and drag the image.
   - _Add_ – click on the image to place a new pin (limited by the number of devices).
-  - _Edit_ – click an existing pin to change its data source, label, embed content, icon, etc.
+  - _Edit_ – click an existing pin to change its data sources, label, embed content, icon, etc.
   - _Delete_ – remove a selected pin.
     Changes are saved with the widget’s save button; otherwise they are discarded.
 

@@ -5,7 +5,7 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, files, uploading, file management]
 ---
 
-To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the `Upload File` button in the top-right corner of the page.
+To upload a file using the admin platform, go to [Files](https://admin.tago.io/files) and click the "Upload File" button in the top-right corner of the page.
 
 By default, all files are uploaded with Public access. This lets you copy a file's link and easily share it with someone.
 
@@ -19,7 +19,7 @@ Remember to always set your files to Public if you plan on using them inside wid
 
 If you do not wish to manually select the files, you can drag-and-drop them into a specific folder or into the main panel.
 
-![Files list example](/docs_imagem/tagoio/files-2.gif)
+![Files list example](/docs_imagem/tagoio/filesvid.gif)
 
 ## Folders
 

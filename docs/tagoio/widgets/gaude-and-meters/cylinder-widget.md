@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, cylinder gauge, meter]
 
 Cylinders are simple and useful widgets that visualize values relative to a defined range (with maximum and minimum limits) using a cylinder gauge.
 
-![Cylinder widget examples](/docs_imagem/tagoio/cylinder-widget-2.gif)
+![Cylinder widget examples](/docs_imagem/tagoio/rounded-image-1773066904810.png)
 
 This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) that can be set in your variable data. (Refer to the Metadata documentation for details.)
 
@@ -17,12 +17,12 @@ To add the Cylinder widget to your dashboard, choose the Cylinder widget from th
 
 ### Data source configuration
 
-The **Data From** field allows you to select the device and variable that will feed data into this widget.
+The **Data Sources** field allows you to select the device and variable that will feed data into this widget.
 
 - For normal dashboards, choose a device from your list and then pick the variable that contains the data.
-- For Blueprint dashboards, add the Blueprint device and enter the name of the variable manually; the variable selector may not list variables because the dashboard does not know which devices are linked to the Blueprint.
+- For Blueprint dashboards, add the Blueprint device and enter the name of the variable.
 
-This widget works for both Normal and Blueprint dashboards.
+> This widget works for both Normal and Blueprint dashboards.
 
 ### Level labels
 
