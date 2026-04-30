@@ -13,20 +13,26 @@ Additionally, the widget allows you to customize the visualization by adding ico
 
 ![Map widget example](/docs_imagem/tagoio/rounded-image-1775668650454.png)
 
-The variable data should look like the following payload. Note that the 'lat' and 'lng' values should be added inside the 'location' field as shown below:
+The variable must include a `location` field with your device's coordinates. TagoIO accepts both GeoJSON and `{ lat, lng }` formats at ingestion. See [Sending Data](/docs/tagoio/devices/sending-data.md#location-field) for format details and the coordinate order caveat.
 
 ```json
 {
   "variable": "location",
   "value": "My Address",
   "location": {
-    "lat": 42.2974279,
-    "lng": -85.628292
+    "type": "Point",
+    "coordinates": [-85.628292, 42.2974279]
   }
 }
 ```
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
+:::caution
+
+In GeoJSON, the coordinate order is **[Longitude, Latitude]** — the opposite of the common lat/lng convention. Make sure your values are in the correct order.
+
+:::
+
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
 
 ## Creating your own
 
@@ -93,7 +99,7 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [groups](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
 
 :::tip
 
@@ -126,3 +132,47 @@ Learn more about [Geofence in map widgets](/docs/tagoio/widgets/map-and-location
 Customize your Map with GeoJSON or Shapefiles layers. Display boundaries, areas, roads, pipelines, and more. Learn more about [Map Layer GIS](/docs/tagoio/widgets/map-and-location/map-widget/map-layer-gis.md).
 
 <!-- Layer GIS example image -->
+
+## 7. Managing Multiple Stationary Devices
+
+When displaying hundreds of fixed sensors simultaneously (e.g., soil monitors, utility meters, parking spots), sending individual location variables from each device can be inefficient. A common strategy is to centralize all location data in a single virtual accumulator Device.
+
+### 7.1 How it works
+
+Instead of reading location variables from each physical device directly, you configure the Map Widget to read from a single accumulator device that stores a location variable per sensor. An [Analysis](/docs/tagoio/analysis/index.md) or [Action](/docs/tagoio/actions/index.md) can be used to push each device's location into this central device whenever it changes.
+
+This approach reduces the number of data sources the widget needs to query and keeps your dashboard performant as the number of devices grows.
+
+### 7.2 Grouping pins correctly
+
+To display each data point as an **independent pin** rather than a moving trajectory, you need to configure how the widget groups samples. In the widget's **Visual** settings, the **Group samples by** option controls this behavior:
+
+![image_interface](/docs_imagem/tagoio/rounded-image-1776285461398.png)
+
+- **Date and Time (default):** Each pin is treated as a separate marker based on its timestamp. For this to work correctly, each location variable sent to the accumulator device must have a distinct ISO 8601 timestamp in the `time` field.
+
+  ```json
+  {
+    "variable": "location",
+    "value": "Sensor B",
+    "time": "2024-06-01T10:00:00.000Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [-85.631, 42.299]
+    }
+  }
+  ```
+
+- **Groups:** Each pin is treated as a separate marker based on the `group` field. Set the `group` field to a unique identifier per sensor, such as the original Device ID.
+
+  ```json
+  {
+    "variable": "location",
+    "value": "Sensor A",
+    "group": "device-id-abc123",
+    "location": {
+      "type": "Point",
+      "coordinates": [-85.628292, 42.2974279]
+    }
+  }
+  ```
