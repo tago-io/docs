@@ -1,14 +1,10 @@
 .main {
   min-height: calc(100vh - var(--ifm-navbar-height));
-  background:
-    radial-gradient(circle at top, rgba(23, 136, 141, 0.06), transparent 55%),
-    var(--ifm-background-color);
+  background: radial-gradient(circle at top, rgba(23, 136, 141, 0.06), transparent 55%), var(--ifm-background-color);
 }
 
 html[data-theme="dark"] .main {
-  background:
-    radial-gradient(circle at top, rgba(44, 177, 188, 0.08), transparent 55%),
-    var(--ifm-background-color);
+  background: radial-gradient(circle at top, rgba(44, 177, 188, 0.08), transparent 55%), var(--ifm-background-color);
 }
 
 .page {
