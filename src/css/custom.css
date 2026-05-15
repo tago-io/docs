@@ -521,11 +521,6 @@ code {
   border-radius: var(--ifm-code-border-radius);
 }
 
-/* Search button */
-.DocSearch-Button {
-  border-radius: 8px;
-}
-
 /* Hide sidebar collapse/expand buttons */
 .clean-btn.menu__caret {
   display: none;
@@ -668,14 +663,14 @@ code {
     display: flex !important;
     align-items: center;
   }
-  /* Explicitly show the search container/button on mobile (Docusaurus uses CSS modules) */
+  /* Explicitly show the search container/button on mobile */
   .navbar__search,
   [class*="navbarSearchContainer"],
-  .DocSearch-Button {
+  [class*="searchBarTrigger"] {
     display: inline-flex !important;
     align-items: center;
   }
-  /* Hide everything else on the right side except the search */
+  /* Hide everything else on the right side except the search wrapper */
   .navbar__items--right > :not([class*="navbarSearchContainer"]) {
     display: none !important;
   }
@@ -1384,78 +1379,4 @@ html[data-theme="dark"] .transport-card__details {
 .transport-card__details span code {
   font-size: 0.7rem;
   padding: 0 0.2rem;
-}
-
-/* ============================================================
-   DocSearch — light mode overrides
-   ============================================================ */
-:root {
-  --docsearch-primary-color: #17888d;
-  --docsearch-highlight-color: #17888d;
-  --docsearch-searchbox-shadow: inset 0 0 0 2px #17888d;
-}
-.DocSearch-Hit[aria-selected="true"] a {
-  background: rgba(23, 136, 141, 0.1);
-}
-.DocSearch-Button {
-  border-color: var(--border-visible);
-}
-.DocSearch-Button:hover {
-  border-color: #ced6e0;
-  box-shadow: none;
-}
-.DocSearch-Button-Key {
-  background: var(--ifm-background-surface-color);
-  border: 1px solid var(--border-visible);
-  color: var(--c-indigo-60);
-  box-shadow: none;
-}
-.DocSearch-Search-Icon {
-  color: var(--c-indigo-60);
-}
-
-/* ============================================================
-   DocSearch modal — dark mode overrides
-   ============================================================ */
-html[data-theme="dark"] {
-  --docsearch-modal-background: #1a1a1a;
-  --docsearch-searchbox-background: #252525;
-  --docsearch-searchbox-focus-background: #252525;
-  --docsearch-hit-background: #1e1e1e;
-  --docsearch-hit-color: #e0e0e0;
-  --docsearch-hit-active-color: #fff;
-  --docsearch-highlight-color: #2cb1bc;
-  --docsearch-muted-color: #707070;
-  --docsearch-container-background: rgba(0, 0, 0, 0.6);
-  --docsearch-footer-background: #1a1a1a;
-  --docsearch-footer-shadow: 0 -1px 0 0 #2a2a2a;
-  --docsearch-key-gradient: linear-gradient(-225deg, #252525, #1e1e1e);
-  --docsearch-key-shadow: inset 0 -2px 0 0 #333, inset 0 0 1px 1px #333, 0 1px 2px 1px rgba(0, 0, 0, 0.3);
-  --docsearch-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --docsearch-text-color: #e0e0e0;
-  --docsearch-primary-color: #2cb1bc;
-  --docsearch-logo-color: #707070;
-  --docsearch-searchbox-shadow: inset 0 0 0 2px #2cb1bc;
-}
-html[data-theme="dark"] .DocSearch-Hit[aria-selected="true"] a {
-  background: rgba(44, 177, 188, 0.12);
-}
-html[data-theme="dark"] .DocSearch-Button {
-  background: #252525;
-  border-color: #333;
-  color: #a0a0a0;
-}
-html[data-theme="dark"] .DocSearch-Button:hover {
-  background: #2a2a2a;
-  border-color: #444;
-  box-shadow: none;
-}
-html[data-theme="dark"] .DocSearch-Button-Key {
-  background: #333;
-  border: 1px solid #444;
-  color: #a0a0a0;
-  box-shadow: none;
-}
-html[data-theme="dark"] .DocSearch-Search-Icon {
-  color: #707070;
 }
