@@ -10,7 +10,7 @@ import { CategoryIcon } from "./CategoryIcon";
 type Status = "idle" | "loading" | "success" | "no-results" | "error";
 
 type Props = {
-  onClose: () => void;
+  onClose: (restoreFocus?: boolean) => void;
 };
 
 const DEBOUNCE_MS = 250;
@@ -100,7 +100,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
 
   const navigateToPath = useCallback(
     (target: string) => {
-      onClose();
+      onClose(false);
       const internal = toInternalPath(target);
       if (internal !== null) {
         history.push(internal);
@@ -371,7 +371,13 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
             spellCheck={false}
             autoComplete="off"
           />
-          <button ref={closeRef} type="button" className={styles.closeKey} onClick={onClose} aria-label="Close search">
+          <button
+            ref={closeRef}
+            type="button"
+            className={styles.closeKey}
+            onClick={() => onClose()}
+            aria-label="Close search"
+          >
             <svg
               width="16"
               height="16"

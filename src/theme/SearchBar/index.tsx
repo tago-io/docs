@@ -12,34 +12,43 @@ const SearchBar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [shortcutLabel, setShortcutLabel] = useState("Ctrl K");
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const openRef = useRef(open);
+
+  useEffect(() => {
+    openRef.current = open;
+  }, [open]);
 
   useEffect(() => {
     setShortcutLabel(isMac() ? "⌘ K" : "Ctrl K");
   }, []);
 
   useEffect(() => {
+    const isEditableTarget = (target: HTMLElement | null): boolean => {
+      const tag = target?.tagName.toLowerCase();
+      return tag === "input" || tag === "textarea" || Boolean(target?.isContentEditable);
+    };
     const onKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
       const triggerKey = event.key.toLowerCase() === "k" && (event.metaKey || event.ctrlKey);
-      if (triggerKey) {
+      if (triggerKey && !isEditableTarget(target)) {
         event.preventDefault();
         setOpen(true);
+        return;
       }
-      if (event.key === "/" && !open) {
-        const target = event.target as HTMLElement | null;
-        const tag = target?.tagName.toLowerCase();
-        if (tag !== "input" && tag !== "textarea" && !target?.isContentEditable) {
-          event.preventDefault();
-          setOpen(true);
-        }
+      if (event.key === "/" && !openRef.current && !isEditableTarget(target)) {
+        event.preventDefault();
+        setOpen(true);
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
+  }, []);
 
-  const handleClose = useCallback(() => {
+  const handleClose = useCallback((restoreFocus = true) => {
     setOpen(false);
-    requestAnimationFrame(() => triggerRef.current?.focus());
+    if (restoreFocus) {
+      requestAnimationFrame(() => triggerRef.current?.focus());
+    }
   }, []);
 
   return (
