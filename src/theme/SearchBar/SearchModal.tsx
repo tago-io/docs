@@ -26,6 +26,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
   const closeRef = useRef<HTMLButtonElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastRequestIdRef = useRef(0);
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
@@ -38,6 +39,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
   const totalSelectable = orderedResults.length + (status === "success" && orderedResults.length > 0 ? 1 : 0);
 
   const runSearch = useCallback(async (q: string) => {
+    const requestId = ++lastRequestIdRef.current;
     abortRef.current?.abort();
     if (!isQueryInRange(q)) {
       setStatus("idle");
@@ -49,14 +51,15 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
     setStatus("loading");
     try {
       const response = await searchDocs(q, controller.signal, RESULT_LIMIT);
-      if (controller.signal.aborted) return;
+      if (requestId !== lastRequestIdRef.current) return;
       setResults(response.results);
       setActiveIndex(0);
       setStatus(response.results.length === 0 ? "no-results" : "success");
     } catch (error) {
-      if (controller.signal.aborted || (error instanceof DOMException && error.name === "AbortError")) {
+      if (requestId !== lastRequestIdRef.current || (error instanceof DOMException && error.name === "AbortError")) {
         return;
       }
+      console.error("search: request failed", error);
       setStatus("error");
     }
   }, []);

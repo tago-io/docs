@@ -1,29 +1,48 @@
-import type { SearchCategory, SearchResult } from "./searchClient";
+import type { KnownCategory, SearchResult } from "./searchClient";
 
 export type ResultGroup = {
-  category: SearchCategory;
+  category: string;
   label: string;
   results: SearchResult[];
 };
 
-const GROUP_ORDER: SearchCategory[] = ["documentation", "api"];
-const GROUP_LABELS: Record<SearchCategory, string> = {
+const GROUP_ORDER: KnownCategory[] = ["documentation", "api"];
+const GROUP_LABELS: Record<KnownCategory, string> = {
   documentation: "Documentation",
   api: "API Reference",
 };
 
+const labelForUnknown = (category: string): string => {
+  if (category.length === 0) return "Other";
+  return category.charAt(0).toUpperCase() + category.slice(1).replace(/[-_]+/g, " ");
+};
+
 export const groupResults = (results: SearchResult[]): ResultGroup[] => {
-  const buckets = new Map<SearchCategory, SearchResult[]>();
+  const buckets = new Map<string, SearchResult[]>();
   for (const result of results) {
     const list = buckets.get(result.category) ?? [];
     list.push(result);
     buckets.set(result.category, list);
   }
-  return GROUP_ORDER.filter((category) => buckets.has(category)).map((category) => ({
-    category,
-    label: GROUP_LABELS[category],
-    results: buckets.get(category) ?? [],
-  }));
+  const groups: ResultGroup[] = [];
+  for (const category of GROUP_ORDER) {
+    const items = buckets.get(category);
+    if (!items) continue;
+    groups.push({ category, label: GROUP_LABELS[category], results: items });
+    buckets.delete(category);
+  }
+  if (buckets.size > 0) {
+    const unknownCategories = [...buckets.keys()];
+    console.warn("search: unknown result categories", unknownCategories);
+    for (const category of unknownCategories) {
+      groups.push({
+        category,
+        label: labelForUnknown(category),
+        results: buckets.get(category) ?? [],
+      });
+    }
+  }
+  return groups;
 };
 
 export const flatOrderedResults = (groups: ResultGroup[]): SearchResult[] => {

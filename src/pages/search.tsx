@@ -26,6 +26,8 @@ const SearchPageBody: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastSyncedQueryRef = useRef<string>(initialQuery);
+  const lastRequestIdRef = useRef(0);
 
   const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
@@ -34,6 +36,7 @@ const SearchPageBody: React.FC = () => {
   const groups = useMemo(() => groupResults(results), [results]);
 
   const runSearch = useCallback(async (q: string) => {
+    const requestId = ++lastRequestIdRef.current;
     abortRef.current?.abort();
     if (!isQueryInRange(q)) {
       setStatus("idle");
@@ -45,13 +48,14 @@ const SearchPageBody: React.FC = () => {
     setStatus("loading");
     try {
       const response = await searchDocs(q, controller.signal, PAGE_LIMIT);
-      if (controller.signal.aborted) return;
+      if (requestId !== lastRequestIdRef.current) return;
       setResults(response.results);
       setStatus(response.results.length === 0 ? "no-results" : "success");
     } catch (error) {
-      if (controller.signal.aborted || (error instanceof DOMException && error.name === "AbortError")) {
+      if (requestId !== lastRequestIdRef.current || (error instanceof DOMException && error.name === "AbortError")) {
         return;
       }
+      console.error("search: request failed", error);
       setStatus("error");
     }
   }, []);
@@ -63,24 +67,32 @@ const SearchPageBody: React.FC = () => {
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      const params = new URLSearchParams(location.search);
-      const current = params.get("q") ?? "";
-      const trimmed = query.trim();
-      if (trimmed !== current) {
-        if (trimmed) {
-          params.set("q", trimmed);
-        } else {
-          params.delete("q");
-        }
-        const nextSearch = params.toString();
-        history.replace({ pathname: location.pathname, search: nextSearch ? `?${nextSearch}` : "" });
-      }
       void runSearch(query);
     }, DEBOUNCE_MS);
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [query, runSearch, history, location.pathname, location.search]);
+  }, [query, runSearch]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const urlQuery = params.get("q") ?? "";
+    const trimmed = query.trim();
+    if (urlQuery === trimmed) return;
+    if (urlQuery !== lastSyncedQueryRef.current) {
+      setQuery(urlQuery);
+      lastSyncedQueryRef.current = urlQuery;
+      return;
+    }
+    if (trimmed) {
+      params.set("q", trimmed);
+    } else {
+      params.delete("q");
+    }
+    const nextSearch = params.toString();
+    history.replace({ pathname: location.pathname, search: nextSearch ? `?${nextSearch}` : "" });
+    lastSyncedQueryRef.current = trimmed;
+  }, [query, history, location.pathname, location.search]);
 
   useEffect(() => {
     return () => {
