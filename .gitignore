@@ -24,6 +24,7 @@ dist/
 
 # Misc
 .DS_Store
+.mcp.json
 
 # Environment
 .env
