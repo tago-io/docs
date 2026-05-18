@@ -93,9 +93,13 @@ const SearchPageBody: React.FC = () => {
       const internal = toInternalPath(permalink);
       if (internal !== null) {
         history.push(internal);
-      } else {
-        window.location.href = permalink;
+        return;
       }
+      if (permalink.startsWith("https://") || permalink.startsWith("http://")) {
+        window.location.href = permalink;
+        return;
+      }
+      console.warn("search: refusing to navigate to non-http(s) target", permalink);
     },
     [history]
   );

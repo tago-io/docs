@@ -1,5 +1,8 @@
 const SAME_ORIGIN_HOSTS = new Set(["docs.tago.io", "docs.beta.tago.io"]);
 
+const isSafeRootedPath = (value: string): boolean =>
+  value.startsWith("/") && !value.startsWith("//") && !value.includes(":") && !value.includes("\\");
+
 export const toInternalPath = (permalink: string): string | null => {
   try {
     const url = new URL(permalink);
@@ -8,6 +11,6 @@ export const toInternalPath = (permalink: string): string | null => {
     }
     return null;
   } catch {
-    return permalink.startsWith("/") ? permalink : null;
+    return isSafeRootedPath(permalink) ? permalink : null;
   }
 };

@@ -23,6 +23,7 @@ const optionId = (index: number) => `tagoio-search-option-${index}`;
 export const SearchModal: React.FC<Props> = ({ onClose }) => {
   const history = useHistory();
   const inputRef = useRef<HTMLInputElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -100,9 +101,13 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
       const internal = toInternalPath(target);
       if (internal !== null) {
         history.push(internal);
-      } else {
-        window.location.href = target;
+        return;
       }
+      if (target.startsWith("https://") || target.startsWith("http://")) {
+        window.location.href = target;
+        return;
+      }
+      console.warn("search: refusing to navigate to non-http(s) target", target);
     },
     [history, onClose]
   );
@@ -114,11 +119,6 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
 
   const handleKeyDown = useCallback(
     (event: React.KeyboardEvent<HTMLInputElement>) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        onClose();
-        return;
-      }
       if (status !== "success" || totalSelectable === 0) return;
       if (event.key === "ArrowDown") {
         event.preventDefault();
@@ -136,7 +136,32 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
         if (result) navigateToPath(result.permalink);
       }
     },
-    [status, totalSelectable, activeIndex, seeAllIndex, orderedResults, navigateToPath, goToSearchPage, onClose]
+    [status, totalSelectable, activeIndex, seeAllIndex, orderedResults, navigateToPath, goToSearchPage]
+  );
+
+  const handleDialogKeyDown = useCallback(
+    (event: React.KeyboardEvent<HTMLDivElement>) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        onClose();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const first = inputRef.current;
+      const last = closeRef.current;
+      if (!first || !last) return;
+      const active = document.activeElement;
+      if (event.shiftKey) {
+        if (active === first) {
+          event.preventDefault();
+          last.focus();
+        }
+      } else if (active === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    },
+    [onClose]
   );
 
   const handleBackdropClick = useCallback(
@@ -156,7 +181,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
   const renderBody = () => {
     if (status === "idle") {
       return (
-        <div className={styles.statusRow}>
+        <div className={styles.statusRow} aria-live="polite" aria-atomic="true">
           <span className={styles.statusEyebrow}>Start typing</span>
           <p className={styles.statusBody}>Search across guides, integrations, tutorials, and the TagoIO API.</p>
         </div>
@@ -164,7 +189,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
     }
     if (status === "loading") {
       return (
-        <div className={styles.statusRow}>
+        <div className={styles.statusRow} aria-live="polite" aria-atomic="true">
           <span className={styles.spinner} aria-hidden="true" />
           <span className={styles.statusBody}>Searching the docs…</span>
         </div>
@@ -172,7 +197,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
     }
     if (status === "error") {
       return (
-        <div className={clsx(styles.statusRow, styles.statusRowError)}>
+        <div className={clsx(styles.statusRow, styles.statusRowError)} aria-live="polite" aria-atomic="true">
           <span className={styles.statusEyebrow}>Something went wrong</span>
           <p className={styles.statusBody}>The search service is temporarily unavailable.</p>
           <button type="button" className={styles.retryButton} onClick={() => void runSearch(query)}>
@@ -183,7 +208,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
     }
     if (status === "no-results") {
       return (
-        <div className={styles.statusRow}>
+        <div className={styles.statusRow} aria-live="polite" aria-atomic="true">
           <span className={styles.statusEyebrow}>No matches</span>
           <p className={styles.statusBody}>
             Nothing found for <strong>&ldquo;{query.trim()}&rdquo;</strong>. Try a different keyword.
@@ -197,12 +222,12 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
       <div className={styles.resultsScroll}>
         <ul className={styles.results} role="listbox" id={LISTBOX_ID}>
           {groups.map((group) => (
-            <li key={group.category} className={styles.group}>
+            <li key={group.category} role="presentation" className={styles.group}>
               <div className={styles.groupHeader}>
                 <span className={styles.groupLabel}>{group.label}</span>
                 <span className={styles.groupCount}>{group.results.length}</span>
               </div>
-              <ul className={styles.groupList}>
+              <ul className={styles.groupList} role="group" aria-label={group.label}>
                 {group.results.map((result) => {
                   const index = flatIndex++;
                   const selected = index === activeIndex;
@@ -264,39 +289,52 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
               </ul>
             </li>
           ))}
-        </ul>
-        <button
-          type="button"
-          id={SEE_ALL_ID}
-          className={clsx(styles.seeAll, activeIndex === seeAllIndex && styles.seeAllActive)}
-          onClick={goToSearchPage}
-          onMouseEnter={() => setActiveIndex(seeAllIndex)}
-        >
-          <span>
-            See all results for <strong>&ldquo;{query.trim()}&rdquo;</strong>
-          </span>
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
+          <li
+            id={SEE_ALL_ID}
+            role="option"
+            aria-selected={activeIndex === seeAllIndex}
+            className={clsx(styles.seeAll, activeIndex === seeAllIndex && styles.seeAllActive)}
+            onClick={goToSearchPage}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                goToSearchPage();
+              }
+            }}
+            onMouseEnter={() => setActiveIndex(seeAllIndex)}
           >
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
-        </button>
+            <span>
+              See all results for <strong>&ldquo;{query.trim()}&rdquo;</strong>
+            </span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </li>
+        </ul>
       </div>
     );
   };
 
   return (
-    <div className={styles.backdrop} onClick={handleBackdropClick} role="presentation" aria-live="polite">
-      <div className={styles.modal} role="dialog" aria-modal="true" aria-label="Search TagoIO docs">
+    <div className={styles.backdrop} onClick={handleBackdropClick} role="presentation">
+      <div
+        className={styles.modal}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search TagoIO docs"
+        onKeyDown={handleDialogKeyDown}
+      >
         <div className={styles.inputRow}>
           <svg
             className={styles.inputIcon}
@@ -330,7 +368,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
             spellCheck={false}
             autoComplete="off"
           />
-          <button type="button" className={styles.closeKey} onClick={onClose} aria-label="Close search">
+          <button ref={closeRef} type="button" className={styles.closeKey} onClick={onClose} aria-label="Close search">
             <svg
               width="16"
               height="16"

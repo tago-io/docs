@@ -444,11 +444,11 @@ html[data-theme="dark"] .statusRowError .statusEyebrow {
 /* ----------- See all results CTA ----------- */
 
 .seeAll {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  width: calc(100% - 1rem);
   margin: 0.5rem 0.5rem 0.75rem;
   padding: 0.75rem 1rem;
   border: 1px dashed var(--border-visible);
