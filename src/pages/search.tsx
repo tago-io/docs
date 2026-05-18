@@ -126,7 +126,7 @@ const SearchPageBody: React.FC = () => {
         <h1 className={styles.heading}>
           {trimmedQuery ? (
             <>
-              Results for <span className={styles.headingQuery}>&ldquo;{trimmedQuery}&rdquo;</span>
+              Results for <span className={styles.headingQuery}>"{trimmedQuery}"</span>
             </>
           ) : (
             "Search the TagoIO docs"
@@ -159,7 +159,7 @@ const SearchPageBody: React.FC = () => {
           ref={inputRef}
           type="text"
           className={styles.input}
-          placeholder="Search guides, integrations, API…"
+          placeholder="Search guides, integrations, API..."
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           maxLength={200}
@@ -184,7 +184,7 @@ const SearchPageBody: React.FC = () => {
       {status === "loading" && (
         <div className={styles.empty}>
           <span className={styles.spinner} aria-hidden="true" />
-          <p>Searching…</p>
+          <p>Searching...</p>
         </div>
       )}
 
@@ -202,8 +202,7 @@ const SearchPageBody: React.FC = () => {
         <div className={styles.empty}>
           <span className={styles.emptyEyebrow}>No matches</span>
           <p>
-            Nothing found for <strong>&ldquo;{trimmedQuery}&rdquo;</strong>. Try a different keyword or check the
-            spelling.
+            Nothing found for <strong>"{trimmedQuery}"</strong>. Try a different keyword or check the spelling.
           </p>
         </div>
       )}

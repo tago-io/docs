@@ -194,7 +194,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
       return (
         <div className={styles.statusRow} aria-live="polite" aria-atomic="true">
           <span className={styles.spinner} aria-hidden="true" />
-          <span className={styles.statusBody}>Searching the docs…</span>
+          <span className={styles.statusBody}>Searching the docs...</span>
         </div>
       );
     }
@@ -214,7 +214,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
         <div className={styles.statusRow} aria-live="polite" aria-atomic="true">
           <span className={styles.statusEyebrow}>No matches</span>
           <p className={styles.statusBody}>
-            Nothing found for <strong>&ldquo;{query.trim()}&rdquo;</strong>. Try a different keyword.
+            Nothing found for <strong>"{query.trim()}"</strong>. Try a different keyword.
           </p>
         </div>
       );
@@ -307,7 +307,7 @@ export const SearchModal: React.FC<Props> = ({ onClose }) => {
             onMouseEnter={() => setActiveIndex(seeAllIndex)}
           >
             <span>
-              See all results for <strong>&ldquo;{query.trim()}&rdquo;</strong>
+              See all results for <strong>"{query.trim()}"</strong>
             </span>
             <svg
               width="16"
