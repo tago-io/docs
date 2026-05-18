@@ -41,9 +41,9 @@ The **"Geofence variable"** field sets the variable where geofence boundaries ar
 
 The widget has two modes. Both store pin positions identically in the layer variable — the difference is how the editor presents options when you assign a pin:
 
-| Mode         | Description                                                                                                                                                                                              |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Basic**    | When placing a pin in the editor, the widget shows the **devices** from the Data From field as assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker. |
+| Mode         | Description                                                                                                                                                                                                                                                                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Basic**    | When placing a pin in the editor, the widget shows the **devices** from the Data From field as assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker.                                                                                                                                          |
 | **Advanced** | When placing a pin in the editor, the widget shows all occurrences of the selected **variable** that have different [groups](/docs/tagoio/devices/grouping-variables.md) as assignment options. This lets a single device drive multiple pins — one per distinct group. Use this when one device reports multiple positions or when you need more than 30 pins. |
 
 ### 3. Positioning Pins
@@ -232,7 +232,7 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
       { "x": 0.4145971958174905, "y": 0.058538385826771656 },
       { "x": 0.6275249524714829, "y": 0.08373523622047244 },
       { "x": 0.5666884505703422, "y": 0.19712106299212598 },
-      { "x": 0.430756891634981,  "y": 0.181373031496063 },
+      { "x": 0.430756891634981, "y": 0.181373031496063 },
       { "x": 0.32619415399239543, "y": 0.09318405511811023 },
       { "x": 0.43360860266159695, "y": 0.06956200787401574 }
     ],
@@ -250,4 +250,3 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
 ```
 
 > **Note:** All coordinates are relative to the image dimensions (range 0–1), not geographic coordinates. The `layer` field references the layer this geofence belongs to using the variable group.
-
