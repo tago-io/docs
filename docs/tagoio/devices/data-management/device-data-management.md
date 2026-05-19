@@ -94,7 +94,7 @@ TagoIO supports two types of devices: [Mutable](/docs/tagoio/devices/) and [Immu
 
 1. **Immutable Devices**: If your CSV includes data for the **time** field, the time must fall within your [chunk period and retention configuration](/docs/tagoio/devices/data-management/data-retention-feature.md). If you attempt to import data outside the retention period, you will encounter an error. To resolve this, ensure the date and time information fits within your retention period.
 
-2. **Mutable Devices**: These devices can store up to 50 000 records. Your import will fail if this limit is exceeded. You can check the number of data records in your bucket in the Device module.
+2. **Mutable Devices**: These devices can store up to 50 000 records. Your import will fail if this limit is exceeded. You can check the number of data records in your device in the Device module.
 
 ## Exporting
 
@@ -102,7 +102,7 @@ The **Export** button, located in the top right corner of the **Data** tab, allo
 
 ## Backing up your data
 
-To back up your device data, click the **More** button located in the top right corner, then select **Backup to Files** under the **Data** tab. This will export all your bucket data to your [Files](/docs/tagoio/files), creating a secure copy of your sensor data. This feature is particularly useful for safeguarding your data or capturing snapshots at specific points in time.
+To back up your device data, click the **More** button located in the top right corner, then select **Backup to Files** under the **Data** tab. This will export all your device data to your [Files](/docs/tagoio/files), creating a secure copy of your sensor data. This feature is particularly useful for safeguarding your data or capturing snapshots at specific points in time.
 
 The tool automatically backs up all your device data. If you need to apply filters before backing up, use the Data Export function to refine your data, and then save it locally or in your Files. For [Immutable devices](/docs/tagoio/devices/), clicking the **Backup to Files** button will redirect you to the **Chunk Management** tab, where you can select specific chunks of data to back up to your Files.
 

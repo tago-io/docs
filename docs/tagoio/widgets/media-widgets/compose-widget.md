@@ -38,7 +38,7 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
     },
     "file": {
       "url": "https://api.tago.io/file/…/video.mp4",
-      "path": "/buckets/device_id/video.mp4"
+      "path": "/devices/device_id/video.mp4"
     }
   }
   ```

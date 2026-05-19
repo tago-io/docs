@@ -53,7 +53,7 @@ there.
 
 <!-- Image temporarily disabled: Action example - /cdn.elev.io/file/uploads/pmfKQdI17QsonYtKqFR0lo14i0mduRrZCtXE2bzClic/V6qqrtoqow2xmYBCAXSAPiLPUuftZotTvMGTz_dq0W8/1588011165303-pog.png -->
 
-The payload can be sent directly to your [bucket](/docs/tagoio/devices/),
+The payload can be sent directly to your [device](/docs/tagoio/devices/),
 trigger an Analysis, or be delivered via SMS or E‑mail.
 
 If you send the payload in JSON format, the TagoIO backend automatically adds a

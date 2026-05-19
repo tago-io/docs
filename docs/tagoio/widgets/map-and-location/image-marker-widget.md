@@ -55,8 +55,8 @@ The selected variable must include `x` and `y` parameters inside its metadata:
     }
   },
   "file": {
-    "url": "[https://api.tago.io/file/635882e523251c00110779fa/buckets/66f16881c903480009ff1042/image.png]",
-    "path": "/buckets/66f16881c903480009ff1042/image.png"
+    "url": "[https://api.tago.io/file/635882e523251c00110779fa/devices/66f16881c903480009ff1042/image.png]",
+    "path": "/devices/66f16881c903480009ff1042/image.png"
   }
 }
 ```
