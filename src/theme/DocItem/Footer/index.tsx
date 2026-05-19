@@ -5,7 +5,7 @@ import { ThemeClassNames } from "@docusaurus/theme-common";
 import EditThisPage from "@theme/EditThisPage";
 import LastUpdated from "@theme/LastUpdated";
 import TagsListInline from "@theme/TagsListInline";
-import clsx from "clsx";
+import { clsx } from "clsx";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -49,7 +49,9 @@ export default function DocItemFooter() {
   }, [metadata.permalink]);
 
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, []);
@@ -72,10 +74,19 @@ export default function DocItemFooter() {
             <button
               type="button"
               className={clsx("doc-gap-toggle", bouncing && "doc-gap-toggle--bounce")}
-              onClick={() => { setOpen((v) => !v); setFormKey((k) => k + 1); }}
+              onClick={() => {
+                setOpen((v) => !v);
+                setFormKey((k) => k + 1);
+              }}
               aria-expanded={open}
             >
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style={{ fill: "currentColor", flexShrink: 0 }}>
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                aria-hidden="true"
+                style={{ fill: "currentColor", flexShrink: 0 }}
+              >
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
               </svg>
               Send feedback
@@ -100,7 +111,10 @@ export default function DocItemFooter() {
           <button
             type="button"
             className="doc-gap-drawer__close"
-            onClick={(e) => { e.stopPropagation(); setOpen(false); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setOpen(false);
+            }}
             aria-label="Close"
           >
             ✕
@@ -124,20 +138,17 @@ function FeedbackForm({ portalId, formId, pageUrl }: { portalId: string; formId:
     setStatus("sending");
 
     try {
-      const res = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            fields: [
-              { name: "email", value: email },
-              { name: "your_feedback", value: feedback },
-            ],
-            context: { pageUri: pageUrl },
-          }),
-        }
-      );
+      const res = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fields: [
+            { name: "email", value: email },
+            { name: "your_feedback", value: feedback },
+          ],
+          context: { pageUri: pageUrl },
+        }),
+      });
       setStatus(res.ok ? "success" : "error");
     } catch {
       setStatus("error");
@@ -151,7 +162,12 @@ function FeedbackForm({ portalId, formId, pageUrl }: { portalId: string; formId:
   return (
     <form className="doc-gap-form" onSubmit={handleSubmit}>
       <label className="doc-gap-label">
-        <span>What were you looking for? <span className="doc-gap-required" aria-hidden="true">*</span></span>
+        <span>
+          What were you looking for?{" "}
+          <span className="doc-gap-required" aria-hidden="true">
+            *
+          </span>
+        </span>
         <textarea
           className="doc-gap-textarea"
           placeholder="Describe what you couldn't find..."
@@ -174,11 +190,7 @@ function FeedbackForm({ portalId, formId, pageUrl }: { portalId: string; formId:
         />
       </label>
       {status === "error" && <p className="doc-gap-error">Something went wrong. Try again.</p>}
-      <button
-        type="submit"
-        className="doc-gap-submit"
-        disabled={status === "sending" || !feedback.trim()}
-      >
+      <button type="submit" className="doc-gap-submit" disabled={status === "sending" || !feedback.trim()}>
         {status === "sending" ? "Sending..." : "Submit"}
       </button>
     </form>

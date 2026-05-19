@@ -1502,11 +1502,21 @@ html[data-theme="dark"] .DocSearch-Search-Icon {
 }
 
 @keyframes doc-gap-bounce {
-  0%   { transform: translateY(0); }
-  25%  { transform: translateY(-8px); }
-  50%  { transform: translateY(0); }
-  70%  { transform: translateY(-4px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .doc-gap-backdrop {
@@ -1525,7 +1535,9 @@ html[data-theme="dark"] .DocSearch-Search-Icon {
   border: 1px solid var(--border-visible);
   border-radius: 0.75rem;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
-  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s ease;
+  transition:
+    transform 0.3s cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 0.3s ease;
   max-height: 80vh;
   overflow-y: auto;
   opacity: 0;
