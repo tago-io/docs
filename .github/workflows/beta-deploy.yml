@@ -31,6 +31,8 @@ jobs:
       - name: Build website (beta domain)
         env:
           SITE_URL: https://docs.beta.tago.io
+          HUBSPOT_PORTAL_ID: ${{ secrets.HUBSPOT_PORTAL_ID }}
+          HUBSPOT_DOC_GAP_FORM_ID: ${{ secrets.HUBSPOT_DOC_GAP_FORM_ID }}
         run: npm run build
 
       - name: Write CNAME for custom domain
