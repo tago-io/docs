@@ -19,12 +19,13 @@ export default function DocItemFooter() {
   const [succeeded, setSucceeded] = useState(false);
   const footerRef = useRef<HTMLElement>(null);
 
-  const portalId = (siteConfig.customFields?.hubspotPortalId as string) ?? "";
-  const formId = (siteConfig.customFields?.hubspotDocGapFormId as string) ?? "";
+  const portalId = siteConfig.customFields?.hubspotPortalId as string | undefined;
+  const formId = siteConfig.customFields?.hubspotDocGapFormId as string | undefined;
   const pageUrl = `${siteConfig.url}${metadata.permalink}`;
 
   const hasTags = tags.length > 0;
   const hasEditMeta = !!(editUrl || lastUpdatedAt || lastUpdatedBy);
+  const hasFeedbackConfig = !!portalId && !!formId;
 
   useEffect(() => {
     setOpen(false);
@@ -91,63 +92,67 @@ export default function DocItemFooter() {
         )}
       </footer>
 
-      <button
-        type="button"
-        className={clsx("doc-gap-fab", visible && !open && "doc-gap-fab--visible")}
-        onClick={() => {
-          setOpen(true);
-          setFormKey((k) => k + 1);
-        }}
-        aria-label="Send feedback"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="16"
-          height="16"
-          aria-hidden="true"
-          style={{ fill: "currentColor", flexShrink: 0 }}
-        >
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-        </svg>
-        Send feedback
-      </button>
-
-      <div
-        className={clsx("doc-gap-drawer", open && "doc-gap-drawer--open")}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Send feedback"
-      >
-        {!succeeded && (
-          <div className="doc-gap-drawer__header">
-            <span className="doc-gap-drawer__title">Something missing from this page?</span>
-            <button
-              type="button"
-              className="doc-gap-drawer__close"
-              onClick={(e) => {
-                e.stopPropagation();
-                setOpen(false);
-              }}
-              aria-label="Close"
+      {hasFeedbackConfig && (
+        <>
+          <button
+            type="button"
+            className={clsx("doc-gap-fab", visible && !open && "doc-gap-fab--visible")}
+            onClick={() => {
+              setOpen(true);
+              setFormKey((k) => k + 1);
+            }}
+            aria-label="Send feedback"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              aria-hidden="true"
+              style={{ fill: "currentColor", flexShrink: 0 }}
             >
-              ✕
-            </button>
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+            </svg>
+            Send feedback
+          </button>
+
+          <div
+            className={clsx("doc-gap-drawer", open && "doc-gap-drawer--open")}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Send feedback"
+          >
+            {!succeeded && (
+              <div className="doc-gap-drawer__header">
+                <span className="doc-gap-drawer__title">Something missing from this page?</span>
+                <button
+                  type="button"
+                  className="doc-gap-drawer__close"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setOpen(false);
+                  }}
+                  aria-label="Close"
+                >
+                  ✕
+                </button>
+              </div>
+            )}
+            <div className="doc-gap-drawer__body">
+              {succeeded ? (
+                <p className="doc-gap-success">Thanks — we'll look into it.</p>
+              ) : (
+                <FeedbackForm
+                  key={formKey}
+                  portalId={portalId as string}
+                  formId={formId as string}
+                  pageUrl={pageUrl}
+                  onSuccess={() => setSucceeded(true)}
+                />
+              )}
+            </div>
           </div>
-        )}
-        <div className="doc-gap-drawer__body">
-          {succeeded ? (
-            <p className="doc-gap-success">Thanks — we'll look into it.</p>
-          ) : (
-            <FeedbackForm
-              key={formKey}
-              portalId={portalId}
-              formId={formId}
-              pageUrl={pageUrl}
-              onSuccess={() => setSucceeded(true)}
-            />
-          )}
-        </div>
-      </div>
+        </>
+      )}
     </>
   );
 }
@@ -208,6 +213,7 @@ function FeedbackForm({
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
           rows={3}
+          maxLength={2000}
           required
           disabled={status === "sending"}
         />
@@ -220,6 +226,7 @@ function FeedbackForm({
           placeholder="you@example.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          maxLength={254}
           disabled={status === "sending"}
         />
       </label>
