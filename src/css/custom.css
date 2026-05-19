@@ -1382,18 +1382,24 @@ html[data-theme="dark"] .transport-card__details {
 }
 
 /* Doc gap feedback */
+/* z-index scale: --z-doc-gap-fab (199) sits below Docusaurus navbar (200);
+   --z-doc-gap-drawer (201) floats above all content including navbar */
+:root {
+  --z-doc-gap-fab: 199;
+  --z-doc-gap-drawer: 201;
+}
 
 .doc-gap-fab {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  z-index: 199;
+  z-index: var(--z-doc-gap-fab);
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
   padding: 0.6rem 1.1rem;
   background: var(--ifm-color-primary);
-  color: #fff;
+  color: var(--ifm-color-white);
   border: none;
   border-radius: 2rem;
   cursor: pointer;
@@ -1425,7 +1431,7 @@ html[data-theme="dark"] .transport-card__details {
   bottom: 1.5rem;
   right: 1.5rem;
   transform: translateX(calc(100% + 2rem));
-  z-index: 200;
+  z-index: var(--z-doc-gap-drawer);
   width: 90%;
   max-width: 480px;
   background: var(--ifm-background-surface-color);
@@ -1504,7 +1510,7 @@ html[data-theme="dark"] .transport-card__details {
 }
 
 .doc-gap-required {
-  color: #e53e3e;
+  color: var(--ifm-color-danger);
   font-weight: 600;
 }
 
@@ -1537,7 +1543,7 @@ html[data-theme="dark"] .transport-card__details {
   padding: 0.4rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--ifm-color-white);
   background: var(--ifm-color-primary);
   border: none;
   border-radius: 0.375rem;
