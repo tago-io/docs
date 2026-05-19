@@ -1,11 +1,11 @@
 ---
 title: "Image Marker Widget"
-description: "Learn how to use the Image Marker widget in TagoIO to place pins on floor plans, track indoor device positions, and configure layers, geofences, and infoboxes."
+description: "Place pins on floor plans, track indoor devices, and configure layers and geofences with the Image Marker widget."
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, image marker, location, indoor tracking, floor plan, pin]
 ---
 
-The Image Marker widget lets you place pins on any image — floor plans, building maps, facility diagrams — and connect each pin to live or historical device data. It is the standard choice for **indoor device tracking**, where GPS coordinates are unavailable and device positions are defined relative to a custom image.
+The Image Marker widget places pins on custom images — floor plans, building maps, facility diagrams — and connects each pin to live or historical device data. It's the standard choice for **indoor device tracking**, where GPS isn't available and positions are defined relative to an image.
 
 ![Image marker example showing pins on a floor plan](/docs_imagem/tagoio/image-marker-widget-2.png)
 
@@ -16,18 +16,28 @@ To use this widget you need at least two things:
 
 Optionally, you can also configure a **geofence variable** to store the boundaries users draw on the image.
 
+## How it works
+
+1. Add the Image Marker widget to a [dashboard](/docs/tagoio/dashboards/).
+2. Configure the **Data From** field with your pin data variables.
+3. Set a **layer variable** to store the floor plan image and pin positions.
+4. Use the **editor** to visually place pins on the image.
+5. Optionally, draw geofences to define zones.
+
 ## Creating your own
 
-To add the widget to your dashboard, choose Image Marker from the widget list. Configure it using the options panel in the edit panel.
+To add the widget to your dashboard, choose Image Marker from the [widget list](/docs/tagoio/widgets/). Configure it using the options panel in the edit panel.
 
 ### 1. 'Data From' Field
 
-This field sets which device variables supply pin data. You can add up to **30 devices**.
+This field sets which device variables supply pin data.
 
-> If you need more than 30 pins, use Advanced mode with a single device that accumulates the last known position of each tracked device as separate [groups](/docs/tagoio/devices/grouping-variables.md).
+> **Limit:** The Data From field supports up to 30 devices.
+>
+> **Workaround:** To display more than 30 pins, use Advanced mode. Configure a single device that stores each tracked device's position as a separate [group](/docs/tagoio/devices/grouping-variables). Each group becomes its own pin.
 
 - **Normal Dashboards** — select a device and the variable that holds pin data.
-- **Blueprint Dashboards** — add the Blueprint device and type the variable name. The selector may appear empty because the dashboard does not yet know which devices are linked to the Blueprint.
+- **[Blueprint Dashboards](/docs/tagoio/dashboards/blueprint-dashboard)** — add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and type the variable name. The selector may appear empty because the dashboard does not yet know which devices are linked to the Blueprint.
 
 #### Layer Variable
 
@@ -35,28 +45,18 @@ Below the main **Data From** selector there is a **"Variable used to store layer
 
 #### Geofence Variable
 
-The **"Geofence variable"** field sets the variable where geofence boundaries are saved. When users draw polygons or circles in the editor, the shapes are written to this variable automatically. See [Geofence](#8-geofence) for the full data format.
+The **"Geofence variable"** field sets the variable where geofence boundaries are saved. When users draw polygons or circles in the editor, the shapes are written to this variable automatically. See [Geofence](#geofence) for the full data format.
 
-### 2. Image Marker Behavior Modes
+### 2. Basic vs. Advanced Mode
 
 The widget has two modes. Both store pin positions identically in the layer variable — the difference is how the editor presents options when you assign a pin:
 
-| Mode         | Description                                                                                                                                                                                                                                                                                                                                                     |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Basic**    | When placing a pin in the editor, the widget shows the **devices** from the Data From field as assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker.                                                                                                                                          |
-| **Advanced** | When placing a pin in the editor, the widget shows all occurrences of the selected **variable** that have different [groups](/docs/tagoio/devices/grouping-variables.md) as assignment options. This lets a single device drive multiple pins — one per distinct group. Use this when one device reports multiple positions or when you need more than 30 pins. |
+| Mode         | Description |
+| ------------ | ----------- |
+| **Basic**    | The editor shows the **devices** from the Data From field as pin assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker. |
+| **Advanced** | The editor shows all occurrences of the selected **variable** that have different [groups](/docs/tagoio/devices/grouping-variables) as options. Each group becomes a separate pin. Use this when a single device reports multiple positions or when you need more than 30 pins. |
 
-### 3. Positioning Pins
-
-Pin positions are stored in the **layer variable** (see [Layer](#4-layer)), not in the device variable itself. The layer variable's `fixed_position` map holds the `x`/`y` coordinates for every pin. These are relative coordinates where `(0, 0)` is the top-left corner of the image and `(1, 1)` is the bottom-right corner.
-
-Each key in `fixed_position` is the **device ID concatenated with the group ID** of the variable assigned to that pin. See [Layer](#4-layer) for the full format.
-
-#### Using the Pin Position Editor
-
-You can position pins visually using the built-in editor, without editing variable data directly. This is useful for initial setup or quick adjustments. See [Editor](#5-editor) for details.
-
-### 4. Layer
+### 3. Layer
 
 A layer is a background image on which pins and geofences are drawn. You can have multiple layers — for example, one per floor of a building — each with its own set of pins.
 
@@ -67,18 +67,17 @@ Each layer has its own dedicated variable. In the widget configuration, you assi
 The key format in `fixed_position` depends on the mode:
 
 - **Basic mode** — the key is the **device ID** alone.
-- **Advanced mode** — the key is the **device ID concatenated with the group ID** of the variable assigned to that pin.
+- **Advanced mode** — the key is the **device ID immediately followed by the group ID, with no separator**. For example, if the device ID is `abc123` and the group is `xyz789`, the key is `abc123xyz789`.
+
+> The fields you configure are inside the [`metadata`](/docs/tagoio/devices/payload-parser/metadata) object: `fixed_position` (pin positions) and `file` (the floor plan image URL). System fields (`id`, `time`, `created_at`) are added automatically.
 
 **Basic mode** — key is just the device ID:
 
 ```json
 {
-  "id": "<layer-variable-id>",
-  "time": "<timestamp>",
   "value": "Layer #1",
   "variable": "layer",
   "metadata": {
-    "changed_pins": ["<device-id>"],
     "fixed_position": {
       "<device-id>": {
         "device": "<device-name>",
@@ -92,23 +91,17 @@ The key format in `fixed_position` depends on the mode:
       "url": "<floor-plan-image-url>",
       "path": "<floor-plan-image-path>"
     }
-  },
-  "created_at": "<timestamp>",
-  "group": "<layer-group-id>",
-  "device": "<device-id>"
+  }
 }
 ```
 
-**Advanced mode** — key is device ID + group ID:
+**Advanced mode** — key is device ID + group ID (no separator):
 
 ```json
 {
-  "id": "<layer-variable-id>",
-  "time": "<timestamp>",
   "value": "Layer #1",
   "variable": "layer",
   "metadata": {
-    "changed_pins": [],
     "fixed_position": {
       "<device-id><group-id>": {
         "device": "<device-id>",
@@ -129,18 +122,25 @@ The key format in `fixed_position` depends on the mode:
       "url": "<floor-plan-image-url>",
       "path": "<floor-plan-image-path>"
     }
-  },
-  "created_at": "<timestamp>",
-  "group": "<layer-group-id>",
-  "device": "<device-id>"
+  }
 }
 ```
 
 Layers are managed at the top of the editor screen. The pencil icon opens a panel to rename the layer or replace its image. Dragging an image file onto the editor replaces the current layer's image.
 
-### 5. Editor
+#### Positioning pins
 
-The editor lets users place and adjust pins, manage layers, and draw geofences. It is enabled via the pencil icon in the top-left corner of the widget. Changes only take effect after clicking **Save** — closing without saving discards all changes.
+Pin positions are stored in the `fixed_position` map of the layer variable, not in the device variable itself. Coordinates are relative to the image dimensions: `(0, 0)` is the top-left corner and `(1, 1)` is the bottom-right corner. Think of them as percentages — `x: 0.5` means the pin is at 50% of the image width.
+
+You can set positions visually using the built-in editor without editing variable data directly. See [Editor](#4-editor) for details.
+
+### 4. Editor
+
+:::caution
+Changes only take effect after clicking **Save**. Closing without saving discards all changes.
+:::
+
+The editor lets users place and adjust pins, manage layers, and draw geofences. It is enabled via the pencil icon in the top-left corner of the widget.
 
 The toolbox contains four tools:
 
@@ -149,24 +149,26 @@ The toolbox contains four tools:
 - **Edit tool** — click an existing pin to change its variable, label, or icon.
 - **Delete tool** — remove a pin.
 
-### 6. Infobox
+## Additional features
+
+### Infobox
 
 Each pin has an infobox that opens when clicked. It shows the variable's value and can be customized with:
 
 - **Image** — display a static or dynamic image alongside the data.
 - **External link** — add a button that opens a URL.
-- **Formula** — transform the displayed value using a math expression.
-- **Embedded widget** — embed a secondary widget inside the infobox.
+- **[Formula](/docs/tagoio/widgets/general/formula)** — transform the displayed value using a math expression.
+- **Embedded widget** — embed any dashboard widget inside the infobox.
 
-### 7. Filters
+### Filters
 
 Filters let users narrow down which pins are visible. You can filter by **device**, **variable**, or **value**. A table below the filters lists all visible pins — clicking a row centers the view on that pin.
 
-### 8. Geofence
+### Geofence
 
-Geofences are colored boundaries (polygons or circles) drawn on the image. Use them to define zones and detect when a tracked device enters or leaves one.
+Geofences are colored boundaries (polygons or circles) drawn on the image. Use them to define zones and detect when a tracked device enters or leaves one. You can also trigger [Actions](/docs/tagoio/actions/trigger-by-geofence) based on geofence events, similar to [geofences in the Map widget](/docs/tagoio/widgets/map-and-location/map-widget/geofences-in-map-widgets).
 
-Before users can create geofences, you must configure at least one **event** in the widget settings. An event defines what trigger to associate with the geofence (for example, "enter" or "leave"). You can hardcode event options directly in the widget settings or supply them from a variable.
+Before users can create geofences, you must configure at least one **event** in the **Geofence Options** tab of the widget settings. An event defines what trigger to associate with the geofence (for example, "enter" or "leave"). You can hardcode event options directly in the widget settings or supply them from a variable.
 
 When using a variable, each entry represents one event option. The `value` field is the event identifier:
 
@@ -196,8 +198,6 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
 
 ```json
 {
-  "id": "6a03663c07bf4d000cb4516b",
-  "time": "2026-05-12T17:41:16.311Z",
   "value": "Geofence #2",
   "variable": "geofence",
   "metadata": {
@@ -207,15 +207,11 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
     },
     "radius": 0.09320854807801622,
     "type": "circle",
-    "value": "Geofence #2",
     "event": "enter",
     "eventDescription": "enter",
     "eventColor": "",
     "layer": "5rzZEJza2e0f4LNs7OuEp"
-  },
-  "created_at": "2026-05-12T17:41:16.311Z",
-  "group": "-WCGck62fw9g6DJLAHHdy",
-  "device": "66f16881c903480009ff1042"
+  }
 }
 ```
 
@@ -223,8 +219,6 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
 
 ```json
 {
-  "id": "6a0366332259ff000bbb49c3",
-  "time": "2026-05-12T17:41:07.363Z",
   "value": "Geofence #1",
   "variable": "geofence",
   "metadata": {
@@ -237,16 +231,12 @@ Each geofence is saved as its own separate entry in the geofence variable. The s
       { "x": 0.43360860266159695, "y": 0.06956200787401574 }
     ],
     "type": "polygon",
-    "value": "Geofence #1",
     "event": "leave",
     "eventDescription": "leave",
     "eventColor": "",
     "layer": "5rzZEJza2e0f4LNs7OuEp"
-  },
-  "created_at": "2026-05-12T17:41:07.363Z",
-  "group": "bvHWspJH_6BJad7lYlQsD",
-  "device": "66f16881c903480009ff1042"
+  }
 }
 ```
 
-> **Note:** All coordinates are relative to the image dimensions (range 0–1), not geographic coordinates. The `layer` field references the layer this geofence belongs to using the variable group.
+> **Note:** All coordinates are relative to the image dimensions (range 0–1), not geographic coordinates. The `layer` field references the layer this geofence belongs to using the variable group. Set `eventColor` to a hex value (e.g., `#ff0000`) to color-code the geofence boundary; leave it empty to use the default color.
