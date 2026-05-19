@@ -32,9 +32,7 @@ To add the widget to your dashboard, choose Image Marker from the [widget list](
 
 This field sets which device variables supply pin data.
 
-> **Limit:** The Data From field supports up to 30 devices.
->
-> **Workaround:** To display more than 30 pins, use Advanced mode. Configure a single device that stores each tracked device's position as a separate [group](/docs/tagoio/devices/grouping-variables). Each group becomes its own pin.
+> **Note:** The Data From field supports up to 30 devices. To display more than 30 pins, use Advanced mode — configure a single device that stores each tracked device's position as a separate [group](/docs/tagoio/devices/grouping-variables). Each group becomes its own pin.
 
 - **Normal Dashboards** — select a device and the variable that holds pin data.
 - **[Blueprint Dashboards](/docs/tagoio/dashboards/blueprint-dashboard)** — add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities) and type the variable name. The selector may appear empty because the dashboard does not yet know which devices are linked to the Blueprint.
