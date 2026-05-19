@@ -1459,3 +1459,207 @@ html[data-theme="dark"] .DocSearch-Button-Key {
 html[data-theme="dark"] .DocSearch-Search-Icon {
   color: #707070;
 }
+
+/* Doc gap feedback */
+.doc-gap-edit-col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.doc-gap-edit-col .theme-edit-this-page {
+  display: inline-flex;
+  align-items: center;
+}
+
+.doc-gap-edit-col .theme-edit-this-page::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: var(--ifm-color-emphasis-600);
+  pointer-events: none;
+}
+
+.doc-gap-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: var(--ifm-font-weight-semibold);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.doc-gap-toggle:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+.doc-gap-toggle--bounce {
+  animation: doc-gap-bounce 0.7s ease-out 0.3s 1 both;
+}
+
+@keyframes doc-gap-bounce {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-8px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.doc-gap-backdrop {
+  display: none;
+}
+
+.doc-gap-drawer {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transform: translateX(calc(100% + 2rem));
+  z-index: 200;
+  width: 90%;
+  max-width: 480px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-visible);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+  opacity: 0;
+}
+
+.doc-gap-drawer--open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.doc-gap-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem 0.75rem;
+  border-bottom: 1px solid var(--border-visible);
+  position: sticky;
+  top: 0;
+  background: var(--ifm-background-surface-color);
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.doc-gap-drawer__title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.doc-gap-drawer__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  padding: 0.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+
+.doc-gap-drawer__close:hover {
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-color-emphasis-200);
+}
+
+.doc-gap-drawer__body {
+  padding: 1.25rem;
+}
+
+.doc-gap-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.doc-gap-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+}
+
+.doc-gap-required {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+.doc-gap-textarea,
+.doc-gap-input {
+  font-size: 0.875rem;
+  font-family: inherit;
+  padding: 0.5rem 0.625rem;
+  border: 1px solid var(--border-visible);
+  border-radius: 0.375rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  line-height: 1.5;
+  width: 100%;
+}
+
+.doc-gap-textarea {
+  resize: vertical;
+}
+
+.doc-gap-textarea:focus,
+.doc-gap-input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 20%, transparent);
+}
+
+.doc-gap-submit {
+  align-self: flex-end;
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.doc-gap-submit:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.doc-gap-submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.doc-gap-success {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.doc-gap-error {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--ifm-color-danger);
+}
+
+#doc-gap-hs-form .hsfc-Step__Content,
+#doc-gap-hs-form .hsfc-Step__Content > *:first-child {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}

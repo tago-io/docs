@@ -28,6 +28,13 @@ const config: Config = {
   organizationName: "tago-io", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
 
+  customFields: {
+    // HubSpot form for doc gap reports. Create a form in HubSpot with "message" and "page_url" fields,
+    // then set these two env vars to your portal ID and form GUID.
+    hubspotPortalId: process.env.HUBSPOT_PORTAL_ID || "50373459",
+    hubspotDocGapFormId: process.env.HUBSPOT_DOC_GAP_FORM_ID || "4100a79d-2e9f-4b31-a623-5121d5eefe7c",
+  },
+
   onBrokenLinks: "throw",
   markdown: {
     mermaid: true,
