@@ -13,11 +13,11 @@ The services within each profile can be limited so that when a profile exceeds i
 
 You can easily allocate services to your profiles through your [Admin](https://admin.tago.io/) home page or through the '[Resource Allocation](https://admin.tago.io/account/billing/allocation)' tab on the Billing page. Simply click on the resource you wish to allocate and adjust the limits accordingly.
 
-![How allocate resources Gif](/docs_imagem/tagoio/resource_allocation_gif.gif)
+![How allocate resources Gif](/docs_imagem/tagoio/peek_116.gif)
 
 This interface provides all necessary information for each service, helping you make informed decisions about resource allocation. It displays the service amount allocated to each profile and, for deeper insights, you can view a profile's usage history for both past and current months by clicking on the chart icon.
 
-![Resource allocation graph](/docs_imagem/tagoio/graphic_resource_allocation.png)
+![Resource allocation graph](/docs_imagem/tagoio/rounded-image-1772806073059.png)
 
 ## Monitoring allocated resources
 
@@ -25,9 +25,9 @@ You can easily monitor the amount of resources available in your account that ca
 
 On the left side, the 'Account Service Allocation' column shows the total service amounts available for distribution across your account. These are the limits you've set for your entire account, which can be increased by clicking the 'Upgrade account limits' button or through the [Billing](https://admin.tago.io/account/billing) page in the 'Services' tab.
 
-On the right, 'Profile Usage Allocation' show how much of each service has been used by each profile, highlighting which profiles are close to or have reached their limits. Clicking on a resource opens a new window for customizing its allocation.
+On the right, 'Profile Usage Allocation' shows how much of each service has been used by each profile, highlighting which profiles are close to or have reached their limits. Clicking on a resource opens a new window for customizing its allocation.
 
-![Resource allocation graph](/docs_imagem/tagoio/resource_allocation_profile.png)
+![Resource allocation graph](/docs_imagem/tagoio/rounded-image-1772806203065.png)
 
 Profiles are sorted by those that have reached their limits and those nearing their limits, helping you quickly identify which profiles may face service disruption and require immediate attention.
 

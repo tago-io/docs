@@ -11,13 +11,13 @@ In TagoIO Admin, each time you make changes to your dashboards and widgets, the 
 
 To access the restore feature, open your dashboard in edit mode and click the "Restore dashboard to a previous version" button.
 
-<!-- Image placeholder removed for build -->
+![Restore dashboard to a previous version](/docs_imagem/tagoio/rounded-image-1772803385222.png)
 
 ## Choosing and restoring a version
 
 A chronological list of your dashboard versions will appear, with each entry timestamped so you can identify when each backup was created. Select the desired version from the list and proceed to restore it.
 
-<!-- Image placeholder removed for build -->
+![Restore dashboard to a previous version2](/docs_imagem/tagoio/rounded-image-1772803454626.png)
 
 ### Version limits per plan
 

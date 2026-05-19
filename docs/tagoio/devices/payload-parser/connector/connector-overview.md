@@ -11,7 +11,7 @@ communicate with a Network easily. Once a device is created using a connector,
 the device will automatically run the connector's payload parser to decode
 incoming data.
 
-![Device data flow diagram](/docs_imagem/tagoio/connector-overview-2.png)
+![Device data flow diagram](/docs_imagem/tagoio/rounded-image-1775677267095.png)
 
 Device data flow
 
@@ -22,8 +22,8 @@ data.
 ## Creating a connector
 
 To create a new connector, go to the
-[Connector management page](https://admin.tago.io/integrations/connector) and
-press the '+ Add connector' on the right side of the page:'
+[Integrations](https://admin.tago.io/integrations/connector) page and
+press the '+ Add connector' on the right side of the page.
 
 You must specify the connector's name and the network(s) it belongs to. You can
 add as many networks as you like, but at least one network must be selected.

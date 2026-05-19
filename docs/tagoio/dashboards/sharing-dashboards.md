@@ -19,7 +19,7 @@ To share applications with your end-users using your brand and a custom URL, use
 
 To share a dashboard, open the menu for the dashboard you want to share and click on "Share Public". Example:
 
-<!-- Image placeholder removed for build -->
+![Share Public](/docs_imagem/tagoio/rounded-image-1772802046225.png)
 
 The Share Public section can also be accessed from the dashboard settings page when viewing the dashboard in your Admin.
 

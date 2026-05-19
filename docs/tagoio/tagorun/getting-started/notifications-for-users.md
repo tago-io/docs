@@ -15,8 +15,6 @@ Users registered in your TagoRun account can only receive notifications sent by 
 
 :::
 
-![Notifications list example](/docs_imagem/tagoio/notifications-for-users-2.png)
-
 ## How to send notifications
 
 Before sending notifications, ensure you have users registered in your account’s User Management.
@@ -27,6 +25,6 @@ There are two primary ways to send notifications to users in TagoRun:
    See [Actions](/docs/tagoio/actions/) for details on configuring Actions to send user notifications.
 
 2. Notification using Analysis  
-   See [Analysis](/docs/tagoio/analysis/) for details on sending notifications from an Analysis script.
+   See [Analysis](/docs/tagoio/tagorun/getting-started/notifications-for-users-using-analysis.md) for details on sending notifications from an Analysis script.
 
 > By pushing notifications using Analysis, you can add custom buttons allowing for more interaction.

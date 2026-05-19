@@ -21,7 +21,7 @@ To add a filter, select the Add filter button. There are three ways to filter re
 
 Filtering by values will show all values for the selected variables, but only for the variables you selected.
 
-![Filter options panel showing Add filter and Table config](/docs_imagem/tagoio/map-filters-2.png)
+![Filter options panel showing Add filter and Table config](/docs_imagem/tagoio/rounded-image-1775668920256.png)
 
 Once the filter is enabled, a filter button will be displayed on the top left of the map widget.  
 ![Filter button on map widget](/docs_imagem/tagoio/filters3-Eq4-G9k.gif)

@@ -7,8 +7,6 @@ keywords: [tagoio, iot, widgets, reference lines, charts]
 
 All chart-type widgets in TagoIO can be configured to display reference lines within the graph. These lines can serve as thresholds, upper and lower bounds, medians, or any other value that enhances the data visualization experience.
 
-<!-- Image placeholder removed for build -->
-
 ## Supported widgets
 
 The widgets that support this feature include the [Area Chart](/docs/tagoio/widgets/charts/area-chart-widget.md), [Line Chart](/docs/tagoio/widgets/charts/line-chart-widget.md), [Horizontal Bar](/docs/tagoio/widgets/charts/horizontal-bar-widget.md), [Vertical Column](/docs/tagoio/widgets/charts/vertical-column-widget.md), and [Multiple Charts](/docs/tagoio/widgets/charts/multiple-charts-widget.md).
@@ -16,7 +14,12 @@ The widgets that support this feature include the [Area Chart](/docs/tagoio/widg
 ## Adding reference lines to your chart
 
 You can set reference lines by navigating to your widget's edit page and accessing the `Reference Lines` option.
+
+:::info
+
 Up to **5** reference lines per widget are allowed.
+
+:::
 
 ### Defining a new line
 
@@ -25,14 +28,18 @@ Up to **5** reference lines per widget are allowed.
    - **Fixed** – Enter a static numeric value that will be displayed as a horizontal or vertical line.
    - **Variable** – Select one of your device’s variables; the line’s value will update dynamically based on that variable.
 
+![Add Reference Line](/docs_imagem/tagoio/rounded-image-1772823505273.png)
+
 ### Fixed vs Variable source
 
 - When using a **fixed** source, you can manually set a _Label_ and _Color_ for the line.
 - If the source is a **variable**, the label and color are automatically taken from the variable’s metadata. For more information about how to configure metadata, see the [Metadata](/docs/tagoio/devices/payload-parser/metadata.md) article.
 
+![Multiple axes](/docs_imagem/tagoio/rounded-image-1772823590948.png)
+
 ### Multiple axes
 
-If your chart uses multiple Y‑axes, you can associate a reference line with a specific axis by clicking the **axis icon** inside the reference line options and selecting the desired axis. This ensures the line aligns correctly with the chosen scale.
+If your chart uses multiple Y‑axes, you can associate a reference line with a specific axis by clicking the **axis dropdown** inside the reference line options and selecting the desired axis. This ensures the line aligns correctly with the chosen scale.
 
 ### Applying formulas
 

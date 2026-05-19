@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, map, pins]
 
 Developers can add an image and a URL link to each pin on the map.
 
-![Map showing a pin popup with an image and a URL](/docs_imagem/tagoio/images-and-links-in-the-maps-pins-2.png)
+![Map showing a pin popup with an image and a URL](/docs_imagem/tagoio/rounded-image-1775669894296.png)
 
 To add images and a URL to your pins, open the Map widget options menu, go to Advanced Options, and then choose the Edit option.
 

@@ -11,7 +11,7 @@ The User List widget is a table that dynamically populates with information abou
 
 The User List works as a dynamic table: you can customize its colors and columns, and filter which users appear in the list.
 
-![Setting up user filtering](/docs_imagem/tagoio/user-list-widget--4.gif)
+![Setting up user filtering](/docs_imagem/tagoio/peek_155.gif)
 
 To edit a specific section of the widget, hover over the desired element and click it. A panel will appear on the right side with all editable options for the selected element.
 
@@ -19,10 +19,10 @@ You can also adjust the table’s appearance by changing colors, font styles, an
 
 ## 2. User List filtering
 
-This option is required to be filled up in order to show your users. You can filter which users appear in the list by:
+This option is required to be filled in order to show your users. You can filter which users appear in the list by:
 
 - **Tag Key and Tag Value** – All users for the list must have the same tag key and tag value specified by you in this filter.
-- **Blueprint Device Tags** – Select a blueprint device from the dashboard and one tag key. The user for the list must match the same value of that tag key in the selected blueprint device.
+- **Blueprint Device Tags** – Select a blueprint device from the dashboard and one tag key. The users for the list must match the same value of that tag key in the selected blueprint device.
 
 You can also apply multiple filters simultaneously; note that this works as an AND operator, so the user must match _all_ specified filters.
 
@@ -35,7 +35,7 @@ Every column created will require you to select a parameter from the user to dis
 - **User Information** – Shows a specific piece of information from the User, such as the user name, ID, email, time zone, company, and more.
 - **Tag Key** – Displays the value of a specified tag key; it will be an empty row if the tag key doesn’t exist in the user settings.
 
-> Tags values in the ISO‑8061 date format will be displayed as Date.
+> Tag values in ISO 8601 date format will be displayed as Date.
 
 ## 4. Editing user parameters
 

@@ -25,9 +25,9 @@ Below are example outputs from Custom Widgets (charts and a map) to illustrate w
 
 ![Map with markers and popups example](/docs_imagem/tagoio/custom_widget_4.gif)
 
-![Custom widget example 5](/docs_imagem/tagoio/custom-widget-5.png)
+![Custom widget example 5](/docs_imagem/tagoio/rounded-image-1775655940972.png)
 
-![Custom widget example 6](/docs_imagem/tagoio/custom_widget_6.png)
+![Custom widget example 6](/docs_imagem/tagoio/rounded-image-1775656000701.png)
 
 ## Notes
 
@@ -43,7 +43,7 @@ To understand how to write the code for your Custom Widget, click [here](https:/
 
 Due to their versatility, Custom Widgets allow you to use data from different sources in TagoIO.
 
-You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data from** section of the widget’s configuration.
+You can use data stored in your **device’s variables** by configuring your devices and the variables in the **Data Sources** section of the widget’s configuration.
 
 You can also use data from **resources** such as devices and users – just like on the [Device List](/docs/tagoio/widgets/tables/device-list-widget.md) and [User List](/docs/tagoio/widgets/tables/user-list-widget.md) widgets – by configuring the tag filters in the **Device Filters** and/or **User Filters** sections of the widget’s configuration. It’s possible to build your custom logic by mixing data from different data sources, such as getting data from variables and combining them with Devices/User.
 
@@ -51,9 +51,11 @@ You can also use data from **resources** such as devices and users – just like
 
 After you've coded your Custom Widget, you need to host it and provide a link to the location where you've hosted it.
 
-Tip: You can use our Files to host your custom Widget.
+:::tip
+You can use our [TagoIO Files](/docs/tagoio/files/) to host your custom Widget.
+:::
 
-![Hosting example](/docs_imagem/tagoio/1588017173880-8JY.png)
+![Hosting example](/docs_imagem/tagoio/rounded-image-1775656044974.png)
 
 ## Parameters
 
@@ -61,12 +63,12 @@ Parameters allow you to send a list of keys and values to your Custom widget.
 
 One use of these parameters is to change the way your code behaves. You can have two widgets pointing to the same link, but exhibiting different behaviors.
 
-![Parameter example](/docs_imagem/tagoio/custom-widget-parameters-2.png)
+![Parameter example](/docs_imagem/tagoio/rounded-image-1775656101841.png)
 
-Read more about [Custom Widget Paramenter](/docs/tagoio/widgets/custom-widget/custom-widget-parameters.md).
+Read more about [Custom Widget Parameter](/docs/tagoio/widgets/custom-widget/custom-widget-parameters.md).
 
 ## User Control
 
 You may choose to run an Analysis once you send data from your widget. To do so, inform the desired Analysis in the Run analysis when sending data field.
 
-![User control example](/docs_imagem/tagoio/1587659332760-NCM.png)
+![User control example](/docs_imagem/tagoio/rounded-image-1775656149450.png)

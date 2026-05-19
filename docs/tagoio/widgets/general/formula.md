@@ -7,8 +7,6 @@ keywords: [tagoio, iot, widgets, formula, data transformation]
 
 The Formula feature enables users to modify the visualization of data in specific widgets. Located inside the configuration tab of most widgets, a Formula can be applied to all fields of a stored register, including variable, value, unit, series, location, and metadata.
 
-<!-- Image placeholder removed for build -->
-
 ## How it works
 
 The system receives input data from a variable in your [Device](/docs/tagoio/devices/), applies a formula to generate a temporary output value, and displays that output in the widget. This output is only for visualization and is not saved as a variable in device data storage.
@@ -29,7 +27,7 @@ $value$ * 2 + 5
 
 The Formula configuration is available inside most widget configuration panels. It produces a temporary, visual-only value and does not alter the stored device data.
 
-<!-- Image placeholder removed for build -->
+![Formula](/docs_imagem/tagoio/rounded-image-1772823265484.png)
 
 Typical elements in the Formula panel include:
 

@@ -17,7 +17,7 @@ Some services are not prorated if they are consumable. For example, if you incre
 
 :::
 
-To upgrade your billing, go to the [Billing](https://admin.tago.io/account/billing) option in the top‑right dropdown menu.
+To upgrade your billing, click on your account name at the bottom-left menu in your Admin, hover over "Profiles & Billing" and select **[Billing](https://admin.tago.io/account/billing)** option.
 
 ## How to auto-scale
 

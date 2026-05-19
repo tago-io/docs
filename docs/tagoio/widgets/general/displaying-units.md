@@ -9,7 +9,7 @@ You can set up your widget to present the unit of a variable (e.g., °C, °F, km
 
 Under the **"Formula"** tab, select the option that indicates the origin of the unit that works best for you.
 
-![Widget configuration screenshot](/docs_imagem/tagoio/displaying-units-2.gif)
+![Widget configuration screenshot](/docs_imagem/tagoio/peek_118.gif)
 
 ## 1. Unit from the original variable
 

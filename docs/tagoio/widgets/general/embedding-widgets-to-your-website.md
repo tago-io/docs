@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widgets, embed, website integration]
 
 Embedded widgets are a convenient way to display your data from Tago in another application. By generating the embedding code on a [widget](/docs/tagoio/widgets/), you can add that widget to your website or any other application.
 
-![Widget editor showing an embedded widget](/docs_imagem/tagoio/embedded_widget_example.png)
+![Widget editor showing an embedded widget](/docs_imagem/tagoio/rounded-image-1772824267709.png)
 
 ## Example
 
@@ -15,13 +15,12 @@ Below is a simple example of using embedded widgets in your own website.
 
 ## How to Generate the Embedding Code
 
-1. **Open the dashboard** that contains the widget you want to embed, and click the gear icon on that widget.  
-   ![Image 3:](/docs_imagem/tagoio/Screen-20Shot-202018-06-12-20at-2009.45.31-sYg.png)
+1. **Open the dashboard** that contains the widget you want to embed, and click the gear icon on that widget.
 
-2. In the widget settings, navigate to the **Embed Widget** tab and click **Generate Code**.  
-   ![Image 4](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-02-2009-35-46-UIU.png)
+   ![Image 3:](/docs_imagem/tagoio/rounded-image-1772824182788.png)
 
-3. Tago will generate an iframe snippet for you. Click **Copy** to copy the code.  
-   ![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-07-02-2009-43-28-gEI.png)
+2. In the widget settings, navigate to the **Embed Widget** tab, click **Generate Code** and then click **Copy**.
 
-4. Paste the copied code into your website’s HTML where you want the widget to appear. The data from Tago will update in real‑time for anyone who views the page.
+![Image 4](/docs_imagem/tagoio/rounded-image-1772824216865.png)
+
+3. Paste the copied code into your website’s HTML where you want the widget to appear. The data from TagoIO will update in real‑time for anyone who views the page!

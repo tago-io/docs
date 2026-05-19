@@ -10,7 +10,7 @@ The Run module allows you to create and deploy your solution using a customized 
 
 Run works synchronized with the [Access](/docs/tagoio/tagorun/access-management/) and [User management](/docs/tagoio/tagorun/getting-started/user-management.md) modules. When you configure and deploy your solution, a domain will be created for your application so that users can sign up.
 
-![Platform customized with your brand](/docs_imagem/tagorun/tagorun-2.png)
+![Run module screenshot](/docs_imagem/tagoio/rounded-image-1772565233578.png)
 
 :::info
 

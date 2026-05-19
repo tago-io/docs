@@ -9,7 +9,7 @@ Custom Settings is a feature that lets you create unique visualization preferenc
 
 With Custom Settings you can tailor preferences to specific needs — for example, selecting preferred units for visualizing temperature and distance, or choosing decimal, date, and time formats. These settings can be used together with [Dynamic Formulas](/docs/tagoio/widgets/general/formula.md) to ensure displayed data matches user expectations.
 
-![Custom Settings on TagoRun portal](/docs_imagem/tagoio/tagorun_customsettings.png)
+![Custom Settings on TagoRun portal](/docs_imagem/tagoio/rounded-image-1772565793400.png)
 
 ## How it works
 

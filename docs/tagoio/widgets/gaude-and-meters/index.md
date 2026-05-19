@@ -10,9 +10,9 @@ Gauge contains a collection of metric widgets. You can choose among several type
 
 ## Dial
 
-Dials are one of the simplest and more useful widgets. They make it easy to visualize values relative to a defined range (maximum and minimum limits).
+Dials are one of the simplest and most useful widgets. They make it easy to visualize values relative to a defined range (maximum and minimum limits).
 
-![Dial gauge example showing a circular dial with numeric temperature value](/docs_imagem/tagoio/gauge-overview-2.png)
+![Dial widget examples](/docs_imagem/tagoio/rounded-image-1773067093107.png)
 
 Learn more about the [Dial Gauge](/docs/tagoio/widgets/gaude-and-meters/dial-widget.md).
 
@@ -20,30 +20,30 @@ Learn more about the [Dial Gauge](/docs/tagoio/widgets/gaude-and-meters/dial-wid
 
 Angular allows you to show your variable in an angular gauge meter.
 
-![Image 2](/docs_imagem/tagoio/1587131850692-QkI.png)
+![Angular gauge example showing a variable in an angular gauge meter](/docs_imagem/tagoio/rounded-image-1773064828901.png)
 
-To learn more about the [Angular Gauge](/docs/tagoio/widgets/gaude-and-meters/angular-widget.md).
+Learn more about the [Angular Gauge](/docs/tagoio/widgets/gaude-and-meters/angular-widget.md).
 
 ## Solid
 
 Solid gauges display your variable in a solid gauge meter.
 
-![Image 3](/docs_imagem/tagoio/1587131943985-EQI.png)
+![Image 3](/docs_imagem/tagoio/rounded-image-1773085001101.png)
 
-To learn more about the [Solid Gauge](/docs/tagoio/widgets/gaude-and-meters/solid-widget.md).
+Learn more about the [Solid Gauge](/docs/tagoio/widgets/gaude-and-meters/solid-widget.md).
 
 ## Clock
 
 Clock gauges allow you to visualize the time in a certain timezone. You can see the selected timezone, weekday, hour, minutes and seconds.
 
-![Image 4](/docs_imagem/tagoio/1587130683446-m1M.png)
+![Clock widget example showing timezone, time, weekday, and a dotted-second ring](/docs_imagem/tagoio/rounded-image-1773066456749.png)
 
-To learn more about the [Clock Gauge](/docs/tagoio/widgets/gaude-and-meters/index.md).
+Learn more about the [Clock Widget](/docs/tagoio/widgets/displays/clock-widget.md).
 
 ## VU Meter
 
 VU Meter gauges show the variable in a velocimeter gauge.
 
-![Image 5](/docs_imagem/tagoio/1587131850409-rSM.png)
+![Three VU meters example](/docs_imagem/tagoio/rounded-image-1773085185777.png)
 
-To learn more about the [VU Meter Gauge](/docs/tagoio/widgets/gaude-and-meters/vu-meter-widget.md).
+Learn more about the [VU Meter Gauge](/docs/tagoio/widgets/gaude-and-meters/vu-meter-widget.md).

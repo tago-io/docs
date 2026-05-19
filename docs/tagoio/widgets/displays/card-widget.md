@@ -7,21 +7,21 @@ keywords: [tagoio, iot, widget, card, display]
 
 Use Card to display the last value of a variable, its unit, and a mini‑chart. Card accepts links so that when users click on it, it can redirect them to another website, dashboard, or tab.
 
-![Three Card widget examples showing value, unit, and mini-chart](/docs_imagem/tagoio/card-widget-2.gif)
+![Three Card widget examples showing value, unit, and mini-chart](/docs_imagem/tagoio/rounded-image-1775677681889.png)
 
-This widget also accepts features like metadata (see the Metadata documentation), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md), which can be set in your variable data.
 
 ## Creating your own
 
 To add a Card to your dashboard, choose the Card widget from the widget list and customize it to your preference. Edit the widget using the options located on the right side of the widget.
 
-### 1. Data From field
+### 1. Data Sources field
 
 This field allows you to set the device and variable that will be used in this widget.
 For **Normal dashboards** you select one device from your list of devices and then pick the variable that contains the data.
 
-For **Blueprint dashboards** you add a Blueprint device (see [Blueprint devices](/docs/tagoio/devices/blueprint-devices-entities.md)) and input the name of the variable.
-When using a Blueprint dashboard, the Variable field will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+For **Blueprint dashboards** you add a [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and add the name of the variable.
+When using a Blueprint dashboard, the Variable field will suggest a list of variables to be picked using the currently selected blueprint device.
 
 ### 2. Color options
 

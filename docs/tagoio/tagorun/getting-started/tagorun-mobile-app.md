@@ -6,16 +6,14 @@ keywords: [tagoio, iot, tagorun, mobile app, ios, android]
 sidebar_position: 2
 ---
 
-Our TagoRUN mobile app is designed for end users to access applications created by companies and developers. It is easy to operate and supports a high level of customization.
-
-![TagoRUN Mobile App Screenshot](/docs_imagem/tagoio/external-7f89c0ba.png)
+The TagoRUN mobile app is designed for end users to access applications created by companies and developers. It is easy to use and supports a high level of customization.
 
 Download the TagoRUN app from the [AppStore](https://apps.apple.com/br/app/tagorun/id1475966647) or [GooglePlay](https://play.google.com/store/apps/details?id=io.tago.run&hl=en).
 
 :::tip
 
-A custom mobile app can also be deployed with your brand.
+You also have the option to launch your own custom-branded mobile app, allowing your users to engage with your brand directly on their devices.
 
-For more information on deploying a custom mobile app with your brand, see the [Custom Mobile App](/docs/tagoio/addons/custom-mobile-app.md) article.
+To learn how to publish a personalized mobile app under your company’s branding, visit the [Custom Mobile App](/docs/tagoio/addons/custom-mobile-app.md) documentation.
 
 :::

@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widgets, frame settings, dashboard customization]
 
 The Frame Settings allow you to adjust the appearance of your widgets by customizing the corners, padding, and shadows, and by toggling the widget's header visibility. These options help your widgets integrate seamlessly with your dashboard's design.
 
-<!-- Image placeholder removed for build -->
+![Frame Settings](/docs_imagem/tagoio/rounded-image-1772820647653.png)
 
 ## Accessing Frame Settings
 
@@ -33,5 +33,3 @@ By default, widget headers are set to “show always”. You can change this beh
 2. **Show only buttons** – Only the configured header buttons and options menu are displayed, without any header background or title.
 
 These settings currently apply to TagoIO web applications; we’re working to extend this functionality to mobile platforms.
-
-<!-- Image placeholder removed for build -->

@@ -7,7 +7,7 @@ keywords: [tagoio, iot, two-factor authentication, 2fa, security]
 
 Two-factor authentication (2FA) adds an extra layer of security to your account by requiring more than just your password to sign in. It requires and provides another form of authentication that only you know or have access to.
 
-![Two-factor methods list](/docs_imagem/tagoio/two-factor-authentication-2fa-2.png)
+![Two-factor methods list](/docs_imagem/tagoio/rounded-image-1761224381413.png)
 
 ## Available authentication methods
 

@@ -33,28 +33,25 @@ Metadata has priority over customizations set in the widget edit screen. Some wi
 
 :::
 
-For example, this article uses the `color` and `icon` metadata fields in the following JSON payload:
+For example, this article uses the `color` metadata field in the following JSON payload:
 
 ```json
 {
   "variable": "temperature",
   "value": 71,
   "metadata": {
-    "color": "red",
-    "icon": "car"
+    "color": "red"
   }
 }
 ```
 
-You can use your own icon by placing the SVG file URL in the `icon` metadata field. For your SVG to be displayed correctly, make sure that it has the property **viewBox** before using it.
-
-![Image 1](/docs_imagem/tagoio/iconMetadata-y6I.gif)
+![Image 1](/docs_imagem/tagoio/peek_117.gif)
 
 ## Available Metadata Fields
 
 | Field                  | Description                                                                                                                            | Widget                                                                                                                                                                                                                                    |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| background_color       | Changes the widget background color. It accepts CSS color keywords or HSL, RGB, and HEX color codes.                                   | Angular, Card, Cylinder, Dial, Grain Bin, Image, Solid, Vu Meter                                                                                                                                                                          |
+| background_color       | Changes the widget background color. It accepts CSS color keywords or HSL, RGB, and HEX color codes.                                   | Angular, Card, Dial, Grain Bin, Image, Solid, Vu Meter                                                                                                                                                                                    |
 | button_color           | Sets a color for the button. It accepts CSS color keywords or HSL, RGB, and HEX color codes.                                           | Push Button, Step Button                                                                                                                                                                                                                  |
 | chart_color            | Changes the chart color. It accepts CSS color keywords or HSL, RGB, and HEX color codes.                                               | Card                                                                                                                                                                                                                                      |
 | color                  | Sets a color for this variable data. It accepts CSS color keywords or HSL, RGB, and HEX color codes.                                   | Angular, Area Chart, Card, Cylinder, Dial, Dynamic Table, Grain Bin, Horizontal Bar, Icon, Image Marker, Keypad, Line Chart, Map, Multiple Charts, Pie, Semi Donut, Semi Pie, Solid, Static Table, Step Button, Vertical Column, Vu Meter |

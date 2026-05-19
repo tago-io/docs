@@ -7,7 +7,8 @@ keywords: [tagoio, iot, widget, input form, fields visibility]
 
 Fields Visibility lets you control the visibility of specific fields in your Input Form widget. By defining conditions, you can hide or show fields based on the values of other fields.
 
-![Fields Visibility demo showing conditional fields for feedback type](/docs_imagem/tagoio/form-fields-visibility-2.png)
+![Fields Visibility demo showing conditional fields for feedback type](/docs_imagem/tagoio/rounded-image-1775659663443.png)
+![Fields Visibility demo showing conditional fields for feedback type](/docs_imagem/tagoio/rounded-image-1775659720721.png)
 
 For example, a field following the "feedback type" can change depending on the selected feedback value. If the feedback type is suggestion, we show the "What is your suggestion?" field. If the feedback type is bug, we show the "What is the problem?" field.
 

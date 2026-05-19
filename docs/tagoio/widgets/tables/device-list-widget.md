@@ -11,11 +11,11 @@ The Device List widget is a table that dynamically populates with information ab
 
 The Device List works as a dynamic table. You can customize its colors and columns, and apply filters to control which devices appear in the list.
 
-![Device List widget configuration and preview](/docs_imagem/tagoio/device-list-widget-2.png)
+![Device List widget configuration and preview](/docs_imagem/tagoio/rounded-image-1775672944510.png)
 
 ### 2. Device filtering
 
-This option is required to be filled up in order to show your devices. You can either filter the devices that will show up in your list by the devices' tag key and tag value, or by tag match for one of the blueprint devices on your dashboard.
+This option is required to be filled in order to show your devices. You can either filter the devices that will show up in your list by the devices' tag key and tag value, or by tag match for one of the blueprint devices on your dashboard.
 
 You can also have multiple filters working at the same time. It works as an AND operator, and the device must match all the filters.
 
@@ -45,7 +45,7 @@ You can allow users to modify a tag or configuration parameter value inside of t
 
 To enable editing of device information, you must first activate the control column. After that, select the columns you wish to make editable. Additionally, you can choose the field type for each column.
 
-The device list offers a variety of field types: Text, Password, Number, Dropdown, Dropdown Multiple, and Address. These field types behave the same as the Input Form’s fields.
+The device list offers a variety of field types: Text, Password, Number, Dropdown, Dropdown Multiple, Device, User and Address. These field types behave the same as the Input Form’s fields.
 
 ### 5. Blueprint Device List for TagoRUN
 

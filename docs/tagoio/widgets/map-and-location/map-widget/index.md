@@ -11,50 +11,52 @@ The Map Widget allows you to visualize the location variables of your device on 
 
 Additionally, the widget allows you to customize the visualization by adding icons, pins, images, links, geofences, filters, and much more!
 
-<!-- Map widget example image -->
+![Map widget example](/docs_imagem/tagoio/rounded-image-1775668650454.png)
 
-The variable data should look like the following payload. Note that the 'lat' and 'lng' values should be added inside the 'location' field as shown below:
+The variable must include a `location` field with your device's coordinates. TagoIO accepts both GeoJSON and `{ lat, lng }` formats at ingestion. See [Sending Data](/docs/tagoio/devices/sending-data.md#location-field) for format details and the coordinate order caveat.
 
 ```json
 {
   "variable": "location",
   "value": "My Address",
   "location": {
-    "lat": 42.2974279,
-    "lng": -85.628292
+    "type": "Point",
+    "coordinates": [-85.628292, 42.2974279]
   }
 }
 ```
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
+:::caution
+
+In GeoJSON, the coordinate order is **[Longitude, Latitude]** — the opposite of the common lat/lng convention. Make sure your values are in the correct order.
+
+:::
+
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
 
 ## Creating your own
 
 To add it to your dashboard, choose the Map widget from the list and customize it to your preference. You can edit it by using the options located on the right side of the widget.
 
-<!-- Map widget creation image -->
-
-## 1. 'Data From' Field
+## 1. 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 
-<!-- Data From field image -->
-
-Click on the **cog icon** to edit specific options for this variable, such as: pin icon, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
+Click on the **settings icon** to edit specific options for this variable, such as: pin icon, formulas, and more. Click on the **close icon** to remove this variable from the widget's data.
 
 This field is dependent on the **type of dashboard** you are using; the difference is explained below.
 
-### 1.1 'Data From' for Normal Dashboards
+### 1.1 'Data Sources' for Normal Dashboards
 
-From the option 'Data From' on the right menu, select one device from your list of devices and the variable that contains the **location** data.
+From the option 'Data Sources' on the right menu, select one device from your list of devices and the variable that contains the **location** data.
 
-### 1.2 'Data From' for Blueprint Dashboards
+### 1.2 'Data Sources' for Blueprint Dashboards
 
-From the option 'Data From' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the **location** information.
+From the option 'Data Sources' on the right menu, add the [Blueprint device](/docs/tagoio/devices/blueprint-devices-entities.md) and input the name of the variable that contains the **location** information.
 
 :::info
 
-When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will not list variables to be picked because it doesn't know the devices linked to your Blueprint Device.
+When using a [Blueprint dashboard](/docs/tagoio/dashboards/blueprint-dashboard.md), the field **Variable** will list variables to be picked using the first blueprint device it finds using the tags set for your Blueprint Device.
 
 :::
 
@@ -68,7 +70,7 @@ Each map provider has its own customization options for the tiles and pricing ti
 
 :::
 
-### 2.1 How to configure a map title provider on TagoIO
+### 2.1 How to configure a map tile provider on TagoIO
 
 To use one of the alternative map tile providers, you will simply need to have an **API Key** from your provider and a username in some cases. The API key can be found by accessing the console of your map provider. We suggest consulting the documentation of your provider if you have trouble getting the key.
 
@@ -76,7 +78,7 @@ Once the key is at hand, you will have to store the API key value inside a [Secr
 
 <!-- Secrets configuration image -->
 
-Once you have a Secret with your API key created, you can go to your **Map widget**, then the **Title Provider** option, select your map provider, and now in API Key, select the secret where the API key of your map provider is stored. Once you save the widget, the map will start displaying your provider's map and not the default.
+Once you have a Secret with your API key created, you can go to your **Map widget**, then the **Tile Provider** option, select your map provider, and now in API Key, select the secret where the API key of your map provider is stored. Once you save the widget, the map will start displaying your provider's map and not the default.
 
 <!-- Tile provider configuration image -->
 
@@ -97,11 +99,11 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [groups](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
 
 :::tip
 
-If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data From field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
+If a group of variables has more than one **external link** or **location data**, only one will be considered based on the **Data Sources field's order**. This does not apply to **images,** as more than one image will produce a slide show inside the infobox.
 
 :::
 
@@ -123,8 +125,6 @@ Draw colored geographic boundaries to make it easy to see your devices' trajecto
 
 You can draw polygon or circle figures and associate them with events, and build an [analysis](https://community.tago.io/t/implementing-an-analysis-to-notify-when-a-device-is-inside-of-a-geofence/525) to receive notifications when the device enters or leaves the zone.
 
-<YouTube videoId="EmwtOqq_KLQ" title="Mapping and Geofencing IoT Devices on TagoIO" />
-
 Learn more about [Geofence in map widgets](/docs/tagoio/widgets/map-and-location/map-widget/geofences-in-map-widgets.md).
 
 ## 6. Layer GIS
@@ -132,3 +132,47 @@ Learn more about [Geofence in map widgets](/docs/tagoio/widgets/map-and-location
 Customize your Map with GeoJSON or Shapefiles layers. Display boundaries, areas, roads, pipelines, and more. Learn more about [Map Layer GIS](/docs/tagoio/widgets/map-and-location/map-widget/map-layer-gis.md).
 
 <!-- Layer GIS example image -->
+
+## 7. Managing Multiple Stationary Devices
+
+When displaying hundreds of fixed sensors simultaneously (e.g., soil monitors, utility meters, parking spots), sending individual location variables from each device can be inefficient. A common strategy is to centralize all location data in a single virtual accumulator Device.
+
+### 7.1 How it works
+
+Instead of reading location variables from each physical device directly, you configure the Map Widget to read from a single accumulator device that stores a location variable per sensor. An [Analysis](/docs/tagoio/analysis/index.md) or [Action](/docs/tagoio/actions/index.md) can be used to push each device's location into this central device whenever it changes.
+
+This approach reduces the number of data sources the widget needs to query and keeps your dashboard performant as the number of devices grows.
+
+### 7.2 Grouping pins correctly
+
+To display each data point as an **independent pin** rather than a moving trajectory, you need to configure how the widget groups samples. In the widget's **Visual** settings, the **Group samples by** option controls this behavior:
+
+![image_interface](/docs_imagem/tagoio/rounded-image-1776285461398.png)
+
+- **Date and Time (default):** Each pin is treated as a separate marker based on its timestamp. For this to work correctly, each location variable sent to the accumulator device must have a distinct ISO 8601 timestamp in the `time` field.
+
+  ```json
+  {
+    "variable": "location",
+    "value": "Sensor B",
+    "time": "2024-06-01T10:00:00.000Z",
+    "location": {
+      "type": "Point",
+      "coordinates": [-85.631, 42.299]
+    }
+  }
+  ```
+
+- **Groups:** Each pin is treated as a separate marker based on the `group` field. Set the `group` field to a unique identifier per sensor, such as the original Device ID.
+
+  ```json
+  {
+    "variable": "location",
+    "value": "Sensor A",
+    "group": "device-id-abc123",
+    "location": {
+      "type": "Point",
+      "coordinates": [-85.628292, 42.2974279]
+    }
+  }
+  ```

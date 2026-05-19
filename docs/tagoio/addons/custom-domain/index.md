@@ -8,8 +8,6 @@ sidebar_position: 1
 
 Adding the Custom Domain & Whitelabel add-on unlocks additional branding and URL customization options for the Run module.
 
-![TagoIO custom domain illustration](/docs_imagem/tagoio/custom-domain-whitelabel-2.gif)
-
 The Custom Domain & Whitelabel add‑on allows a higher level of brand engagement with your end‑users.
 
 ## What this add-on unlocks

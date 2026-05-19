@@ -23,10 +23,12 @@ It is possible to modify the appearance of your sidebar with your own color pale
 
 The Dashboard Search feature enhances the end‑user experience by providing a search functionality and sorting options for dashboards within the Run portal panel.
 
-![Image 2](/docs_imagem/tagoio/external-8ae4366e.png)
+![Image 2](/docs_imagem/tagoio/rounded-image-1772569238144.png)
 
 To enable the search bar, toggle the option **“Enable dashboard search.”** A new section will be added to the Run portal.
 You can customize the search bar section label by entering the desired text; if left blank, the default label will be “Dashboards.” Additionally, you can use a KEY defined in your dictionary to dynamically translate the text to your end‑users’ language. Learn more about [Using Dictionaries & Multi‑language](/docs/tagoio/tagorun/dictionaries/using-dictionaries-multi-language.md).
+
+![Image 3](/docs_imagem/tagoio/rounded-image-1772569347610.png)
 
 ### Logo Button Configuration
 
@@ -36,7 +38,7 @@ You can define what happens when an end user clicks on your logo or what message
 
 To display a tooltip over your logo, write text in the **Button tooltip** field.
 
-![Image 3](/docs_imagem/tagoio/external-2aac36db.png)
+![Image 4](/docs_imagem/tagoio/rounded-image-1772569428105.png)
 
 Notice that you can use a KEY defined in your [Dictionary](/docs/tagoio/tagorun/getting-started/dictionaries.md) to display text that will be substituted according to the languages available for your end users.
 

@@ -7,7 +7,7 @@ keywords: [tagoio, iot, widget, display, dashboard]
 
 Display is a widget that shows the last value of a variable, regardless of the format of the value (string or number).
 
-![Display widget examples showing temperature values](/docs_imagem/tagoio/display-widget-2.gif)
+![Display widget examples showing temperature values](/docs_imagem/tagoio/rounded-image-1775677790069.png)
 
 You can select one or more variables; each variable will have its own box and will display its most recent value simultaneously.
 
@@ -19,13 +19,13 @@ To add the widget to your dashboard, choose the Display widget from the widget l
 
 This widget works for both Normal and Blueprint dashboards.
 
-**Data From field**
+**Data Sources field**
 
-The _Data From_ field allows you to specify which device or entity provides the data for this widget.
+The _Data Sources_ field allows you to specify which device or entity provides the data for this widget.
 
 - In a **Normal dashboard**, select one device or an entity from your list, then choose the variable that contains the data.
-- In a **Blueprint dashboard**, add a Blueprint Device or Entity and input the name of the variable that holds the information. Because a Blueprint dashboard does not know which devices are linked to it, the field will not list variables until you provide the device/entity.
+- In a **Blueprint dashboard**, add a Blueprint Device or Entity and input the name of the variable that holds the information. The field will suggest a list of variables to be picked using the currently selected blueprint device.
 
-After adding a variable, click the cog icon to edit specific options for that variable—such as formulas, color, and more. Click the close icon to remove the variable from the widget’s data.
+After adding a variable, click the settings icon to edit specific options for that variable—such as formulas, color, and more. Click the close icon to remove the variable from the widget’s data.
 
-**Note:** The _Data From_ field is dependent on the type of dashboard you are using; the differences are explained above.
+**Note:** The _Data Sources_ field is dependent on the type of dashboard you are using; the differences are explained above.

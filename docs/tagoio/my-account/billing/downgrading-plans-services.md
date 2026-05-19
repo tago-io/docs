@@ -25,7 +25,7 @@ If you have more than one profile, make sure you manually [reduce the resources 
 
 ## How to downgrade
 
-To downgrade your billing, go to [Billing](https://admin.tago.io/account/billing) on the top-right dropdown menu in your account.
+To downgrade your billing, click on your account name at the bottom-left menu in your Admin, hover over "Profiles & Billing" and select **[Billing](https://admin.tago.io/account/billing)** option.
 
 ## Refunds
 

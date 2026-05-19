@@ -23,7 +23,7 @@ Each action executed by an agent on a resource is considered an event. Agents ca
 
 TagoIO keeps a 6‑month log for each profile; events older than that will not be displayed.
 
-![Event overview](/docs_imagem/tagoio/external-d3b441c9.png)
+![Event overview](/docs_imagem/tagoio/rounded-image-1761078341385.png)
 
 :::info
 
@@ -59,7 +59,7 @@ Search for an event tied to a specific resource by its ID. If you choose a Resou
 
 Each event includes a message describing the action performed on the resource. You can filter events based on these messages.
 
-![Event message example](/docs_imagem/tagoio/external-f91f78f4.png)
+![Event message example](/docs_imagem/tagoio/rounded-image-1761078136729.png)
 
 ## Automation
 

@@ -13,9 +13,15 @@ With the Dashboard Period Preset, users can create filters in the dashboard navi
 
 When enabled, a date picker is available to choose specific date ranges. You can also define a maximum period range that limits how large a range users can select in the date picker.
 
+![Dashboard Period Preset](/docs_imagem/tagoio/rounded-image-1772801643296.png)
+
 ## How to apply global time-filters to your dashboards
 
-You can enable the date picker and define preset periods by accessing your dashboard settings. In the General tab, find the **Dashboard Period Preset** configuration. Switch the slider to activate it. Once active, you will be able to define a maximum period range to be filtered and set preset periods that can be quickly selected in the date picker.
+You can enable the date picker and define preset periods by accessing your dashboard settings.
+
+- Click the edit menu (the gear icon on the top right corner of the dashboard).
+- Select **Period Preset**.
+- Enable the **Enable Period Preset** field. Once active, you will be able to define a maximum period range to be filtered and set preset periods that can be quickly selected in the date picker.
 
 ### Applying a maximum period range to your date picker
 

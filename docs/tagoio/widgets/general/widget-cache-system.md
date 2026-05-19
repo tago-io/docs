@@ -27,4 +27,4 @@ All widgets support the caching system; you can enable it by entering your widge
 
 To enable or configure caching for a specific widget, use the widget settings in the Dashboard editor. For step‑by‑step instructions, see the Dashboard editor in your Admin. This feature is part of each widget's settings.
 
-![Image 1](/docs_imagem/tagoio/external-5850e3a4.png)
+![Image 1](/docs_imagem/tagoio/rounded-image-1772821319453.png)

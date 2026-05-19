@@ -5,9 +5,9 @@ tags: ["tagoio", "analysis"]
 keywords: [tagoio, iot, tagorun, notifications, analysis]
 ---
 
-The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and buttons, see [Analysis](/docs/tagoio/analysis/) and buttons.
+The Analysis feature is a powerful tool in TagoIO and supports sending Notifications to TagoRUN users. This article describes how to send a notification using Analysis, how to use notification buttons, and how to handle user decisions within your notifications. For more details about Analysis and notification buttons, see [Analysis](/docs/tagoio/analysis/).
 
-![Notification example showing a Refrigerator Alarm card with a call-to-action link](/docs_imagem/tagoio/notifications-for-users-using-analysis-2.png)
+![Notification example showing a Refrigerator Alarm card with a call-to-action link](/docs_imagem/tagoio/rounded-image-1772567803177.png)
 
 ## Customized Notifications
 
@@ -28,9 +28,9 @@ We provide you with an Analysis template that will have a code for a demonstrati
 
 Follow these instructions to set up your analysis and send the notifications. You can make any change to the analysis after it is installed in your account, to properly fit your needs.
 
-1. Go to your account settings by clicking on the upper corner of TagoIO page and enter [My Account](https://admin.tago.io/account/).
+1. Go to your account settings by clicking on the lower left corner of TagoIO page and enter [My Account](https://admin.tago.io/account/).
 2. Select your Profile in the sidebar.
-3. Go to the Tokens Section, create a new token with **Expire In** set to _Never_ and copy the Token.
+3. Go to the Tokens Section, create a new token with **Expire In** set to _1 year_ and copy the Token.
 4. Install the [Analysis Template](http://admin.tago.io/template/5d51de52171477001b203458).
 5. Go to the Environment Variables of your analysis.
 6. Replace the field value `"Your Account Token Here"` with the token you copied in step 3.
@@ -42,23 +42,8 @@ With this all up and running, you can open the script of your analysis and start
 
 You can also create an [Action](/docs/tagoio/actions/) to trigger the Analysis or set it to run every X minutes.
 
-## The Notification Object
+:::tip
 
-You will notice it in the Analysis code, this is a quick copy‑and‑paste for you to use.
+You can learn more about the notification object in the [Notification Object](https://js.sdk.tago.io/interfaces/NotificationCreate.html) SDK documentation.
 
-```json
-{
-  "title": "title of your notification",
-  "message": "message of your notification",
-  "buttons": [
-    {
-      "label": "label of the button",
-      "id": "id_of_the_button", // no space allowed
-      "color": "color of the button",
-      "url": "url to redirect the user",
-      "analysis": "analysis to run when clicked"
-    }
-  ],
-  "buttons_autodisable": true // auto disable the buttons when one is clicked.
-}
-```
+:::

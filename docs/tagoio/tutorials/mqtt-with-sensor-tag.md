@@ -5,13 +5,13 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, mqtt, sensortag, bluetooth]
 ---
 
-This example shows how to use the SensorTag Bluetooth module (Texas Instruments CC2650) to send data to TagoIO. No code modification is required on the SensorTag itself; because the SensorTag is used with MQTT, only a configuration setup is necessary.
+This example shows how to use the SensorTag Bluetooth module (Texas Instruments CC2650) to send data to TagoIO. No code modification is required on the SensorTag itself; because the SensorTag is used with MQTT, only the configuration setup is necessary.
 
 The SensorTag communicates with a mobile device over Bluetooth. Texas Instruments provides a mobile app that converts that Bluetooth communication into MQTT and forwards the data to the cloud over cellular or Wi‑Fi.
 
 ## Connectivity Diagram
 
-![SensorTag to TagoIO flow diagram](/docs_imagem/tagoio/mqtt-with-sensor-tag-2.png)
+![SensorTag to TagoIO flow diagram](/docs_imagem/tagoio/rounded-image-1761312428484.png)
 
 ## Learn more
 
@@ -20,7 +20,7 @@ Learn more about the SensorTag CC2650 and how to get started: [SensorTag CC2650 
 ## What this example does
 
 - All sensor data from the SensorTag will be posted to TagoIO.
-- Sensor data can be visualized on a TagoIO dashboard in real time: [dashboard](/docs/tagoio/dashboards/).
+- Sensor data can be visualized on a TagoIO [dashboard](/docs/tagoio/dashboards/) in real time.
 - This example uses the hardware version tested by the authors.
 
 ## Sensors included
@@ -76,7 +76,7 @@ The tested SensorTag hardware contains the following 10 sensors:
 
 1. Go to **Actions** and click **Create new**.
 2. Set the trigger type to **MQTT Topic**.
-3. Choose the action type **Insert data to device bucket**.
+3. Choose the action type **Insert data into device**.
 4. Select your SensorTag device, set the topic to `data`, and save the action.
 
 Once the action is in place, all incoming MQTT messages on the `data` topic will be stored in the device’s bucket for further analysis or visualization.

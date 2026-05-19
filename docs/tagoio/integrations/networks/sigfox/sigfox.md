@@ -14,7 +14,7 @@ platform. By following these instructions, you will enable uplink and downlink
 operations, allowing data exchange between your Sigfox devices and the TagoIO
 application.
 
-![Sigfox architecture diagram showing Modules → Sigfox stations → Sigfox Cloud™ → TagoIO (Uplink / Downlink flows)](/docs_imagem/tagoio/sigfox-2.png)
+![Sigfox architecture diagram showing Modules → Sigfox stations → Sigfox Cloud™ → TagoIO (Uplink / Downlink flows)](/docs_imagem/tagoio/rounded-image-1762441353390.png)
 
 Uplink is the process of sending data from the devices to TagoIO. Downlink is
 used to send data back to the devices. Learn how to perform

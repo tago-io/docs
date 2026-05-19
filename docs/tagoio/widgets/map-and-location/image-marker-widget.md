@@ -15,13 +15,13 @@ This widget also accepts features like [metadata](/docs/tagoio/devices/payload-p
 
 To add the widget to your dashboard, choose the Image Marker widget from the widget list and customize it to your preference. You can edit it by configuring the options located on the right side of the widget.
 
-### 1. 'Data From' Field
+### 1. 'Data Sources' Field
 
 This field allows you to set the device and variable that will be used in this widget.
 The widget requires **at least two variables**: one for the pin’s data (e.g., temperature, status) and another to store all pin positions on the image.
 
 - **Normal Dashboards** – Select a device from your list of devices and choose the variable that contains the pin data.
-- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information. Because the dashboard does not yet know which devices are linked to the Blueprint, the variable selector may initially appear empty.
+- **Blueprint Dashboards** – Add the Blueprint device and input the name of the variable that holds the information. The variable selector will suggest a list of variables to be picked using the currently selected blueprint device.
 
 ### 2. Image Marker Behavior Modes
 

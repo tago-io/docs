@@ -10,7 +10,7 @@ Data Range & Format is where you define the display format and the value range u
 
 ## Range Limits
 
-![Gauge example showing min and max values](/docs_imagem/tagoio/gauge-data-range-format-2.png)
+![Gauge example showing min and max values](/docs_imagem/tagoio/rounded-image-1773085499532.png)
 
 In the Range Limits section you set the minimum and maximum values displayed on the gauge. There are two types of range limits:
 
@@ -20,8 +20,6 @@ In the Range Limits section you set the minimum and maximum values displayed on 
 ## Fixed
 
 If you want to set a static range on your gauge, choose the Fixed type. Simply specify the minimum and maximum values to define the range shown in the widget.
-
-<!-- Image temporarily disabled: Gauge example showing static range - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/CQ92PZnTkmHs3kr2Mkhkd0VI1qzLAaJu5ufr_FeQFFY/1584998259067-NcM.png -->
 
 ## From Metadata
 
@@ -45,5 +43,3 @@ You can choose one of 3 options in the **Get metadata from** field:
 1. **From original variable**: The metadata property will be acquired from the variable that contains the gauge's value.
 2. **From variable used in formula**: The metadata property will be acquired from the variable that is being used in the formula. This option will only be enabled if your gauge is using [Formula](/docs/tagoio/widgets/general/formula.md), and the Formula is being used with a variable.
 3. **From another variable**: The metadata will be acquired from a variable of your choice. If you select this option, a variable selector will appear.
-
-<!-- Image temporarily disabled: Gauge example showing dynamic range - /cdn.elev.io/file/uploads/yGBQnVkwTkwKzLvCtyE2FWwacoOTiKC1hwphA_gVtqs/JcEqhWiKdOri4fx-LbJq5WSzwHf0sqGYAoLLv6FxMsA/1584998743226-9_Q.png -->
