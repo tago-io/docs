@@ -15,7 +15,8 @@ export default function DocItemFooter() {
   const { siteConfig } = useDocusaurusContext();
   const [open, setOpen] = useState(false);
   const [formKey, setFormKey] = useState(0);
-  const [bouncing, setBouncing] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
   const footerRef = useRef<HTMLElement>(null);
 
   const portalId = (siteConfig.customFields?.hubspotPortalId as string) ?? "";
@@ -27,8 +28,18 @@ export default function DocItemFooter() {
 
   useEffect(() => {
     setOpen(false);
-    setBouncing(false);
+    setVisible(false);
+    setSucceeded(false);
   }, [metadata.permalink]);
+
+  useEffect(() => {
+    if (!succeeded) return;
+    const timer = setTimeout(() => {
+      setOpen(false);
+      setSucceeded(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [succeeded]);
 
   useEffect(() => {
     const el = footerRef.current;
@@ -37,7 +48,7 @@ export default function DocItemFooter() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setBouncing(true);
+          setVisible(true);
           observer.disconnect();
         }
       },
@@ -59,46 +70,47 @@ export default function DocItemFooter() {
   if (!hasTags && !hasEditMeta) return null;
 
   return (
-    <footer ref={footerRef} className={clsx(ThemeClassNames.docs.docFooter, "docusaurus-mt-lg")}>
-      {hasTags && (
-        <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterTagsRow)}>
-          <div className="col">
-            <TagsListInline tags={tags} />
+    <>
+      <footer ref={footerRef} className={clsx(ThemeClassNames.docs.docFooter, "docusaurus-mt-lg")}>
+        {hasTags && (
+          <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterTagsRow)}>
+            <div className="col">
+              <TagsListInline tags={tags} />
+            </div>
           </div>
-        </div>
-      )}
-      {hasEditMeta && (
-        <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterEditMetaRow)}>
-          <div className="col doc-gap-edit-col">
-            {editUrl && <EditThisPage editUrl={editUrl} />}
-            <button
-              type="button"
-              className={clsx("doc-gap-toggle", bouncing && "doc-gap-toggle--bounce")}
-              onClick={() => {
-                setOpen((v) => !v);
-                setFormKey((k) => k + 1);
-              }}
-              aria-expanded={open}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                aria-hidden="true"
-                style={{ fill: "currentColor", flexShrink: 0 }}
-              >
-                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-              </svg>
-              Send feedback
-            </button>
+        )}
+        {hasEditMeta && (
+          <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterEditMetaRow)}>
+            <div className="col">{editUrl && <EditThisPage editUrl={editUrl} />}</div>
+            <div className="col" style={{ textAlign: "right" }}>
+              {(lastUpdatedAt || lastUpdatedBy) && (
+                <LastUpdated lastUpdatedAt={lastUpdatedAt} lastUpdatedBy={lastUpdatedBy} />
+              )}
+            </div>
           </div>
-          <div className="col" style={{ textAlign: "right" }}>
-            {(lastUpdatedAt || lastUpdatedBy) && (
-              <LastUpdated lastUpdatedAt={lastUpdatedAt} lastUpdatedBy={lastUpdatedBy} />
-            )}
-          </div>
-        </div>
-      )}
+        )}
+      </footer>
+
+      <button
+        type="button"
+        className={clsx("doc-gap-fab", visible && !open && "doc-gap-fab--visible")}
+        onClick={() => {
+          setOpen(true);
+          setFormKey((k) => k + 1);
+        }}
+        aria-label="Send feedback"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+          aria-hidden="true"
+          style={{ fill: "currentColor", flexShrink: 0 }}
+        >
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+        </svg>
+        Send feedback
+      </button>
 
       <div
         className={clsx("doc-gap-drawer", open && "doc-gap-drawer--open")}
@@ -106,29 +118,51 @@ export default function DocItemFooter() {
         aria-modal="true"
         aria-label="Send feedback"
       >
-        <div className="doc-gap-drawer__header">
-          <span className="doc-gap-drawer__title">Something missing from this page?</span>
-          <button
-            type="button"
-            className="doc-gap-drawer__close"
-            onClick={(e) => {
-              e.stopPropagation();
-              setOpen(false);
-            }}
-            aria-label="Close"
-          >
-            ✕
-          </button>
-        </div>
+        {!succeeded && (
+          <div className="doc-gap-drawer__header">
+            <span className="doc-gap-drawer__title">Something missing from this page?</span>
+            <button
+              type="button"
+              className="doc-gap-drawer__close"
+              onClick={(e) => {
+                e.stopPropagation();
+                setOpen(false);
+              }}
+              aria-label="Close"
+            >
+              ✕
+            </button>
+          </div>
+        )}
         <div className="doc-gap-drawer__body">
-          <FeedbackForm key={formKey} portalId={portalId} formId={formId} pageUrl={pageUrl} />
+          {succeeded ? (
+            <p className="doc-gap-success">Thanks — we'll look into it.</p>
+          ) : (
+            <FeedbackForm
+              key={formKey}
+              portalId={portalId}
+              formId={formId}
+              pageUrl={pageUrl}
+              onSuccess={() => setSucceeded(true)}
+            />
+          )}
         </div>
       </div>
-    </footer>
+    </>
   );
 }
 
-function FeedbackForm({ portalId, formId, pageUrl }: { portalId: string; formId: string; pageUrl: string }) {
+function FeedbackForm({
+  portalId,
+  formId,
+  pageUrl,
+  onSuccess,
+}: {
+  portalId: string;
+  formId: string;
+  pageUrl: string;
+  onSuccess: () => void;
+}) {
   const [feedback, setFeedback] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
@@ -149,14 +183,14 @@ function FeedbackForm({ portalId, formId, pageUrl }: { portalId: string; formId:
           context: { pageUri: pageUrl },
         }),
       });
-      setStatus(res.ok ? "success" : "error");
+      if (res.ok) {
+        onSuccess();
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "success") {
-    return <p className="doc-gap-success">Thanks — we'll look into it.</p>;
   }
 
   return (
