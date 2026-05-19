@@ -14,8 +14,6 @@ jobs:
 
     env:
       SITE_URL: https://docs.tago.io
-      HUBSPOT_PORTAL_ID: ${{ secrets.HUBSPOT_PORTAL_ID }}
-      HUBSPOT_DOC_GAP_FORM_ID: ${{ secrets.HUBSPOT_DOC_GAP_FORM_ID }}
 
     steps:
       - uses: actions/checkout@v4
