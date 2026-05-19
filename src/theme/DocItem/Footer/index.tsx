@@ -13,23 +13,24 @@ const DocItemFooter = () => {
   const { editUrl, lastUpdatedAt, lastUpdatedBy, tags } = metadata;
   const { siteConfig } = useDocusaurusContext();
   const [open, setOpen] = useState(false);
-  const [formKey, setFormKey] = useState(0);
   const [visible, setVisible] = useState(false);
   const [succeeded, setSucceeded] = useState(false);
-  const footerRef = useRef<HTMLElement>(null);
+  const sentinelRef = useRef<HTMLDivElement>(null);
   const fabRef = useRef<HTMLButtonElement>(null);
 
-  const portalId = siteConfig.customFields?.hubspotPortalId as string | undefined;
-  const formId = siteConfig.customFields?.hubspotDocGapFormId as string | undefined;
+  const rawPortalId = siteConfig.customFields?.hubspotPortalId;
+  const rawFormId = siteConfig.customFields?.hubspotDocGapFormId;
+  const feedbackConfig =
+    typeof rawPortalId === "string" && typeof rawFormId === "string"
+      ? { portalId: rawPortalId, formId: rawFormId }
+      : null;
   const pageUrl = `${siteConfig.url}${metadata.permalink}`;
 
   const hasTags = tags.length > 0;
   const hasEditMeta = !!(editUrl || lastUpdatedAt || lastUpdatedBy);
-  const hasFeedbackConfig = !!portalId && !!formId;
 
   useEffect(() => {
     setOpen(false);
-    setVisible(false);
     setSucceeded(false);
   }, [metadata.permalink]);
 
@@ -43,7 +44,7 @@ const DocItemFooter = () => {
   }, [succeeded]);
 
   useEffect(() => {
-    const el = footerRef.current;
+    const el = sentinelRef.current;
     if (!el) return;
 
     const observer = new IntersectionObserver(
@@ -73,31 +74,28 @@ const DocItemFooter = () => {
 
   return (
     <>
-      <footer
-        ref={footerRef}
-        className={clsx(
-          (hasTags || hasEditMeta) && ThemeClassNames.docs.docFooter,
-          (hasTags || hasEditMeta) && "docusaurus-mt-lg"
-        )}
-      >
-        {hasTags && (
-          <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterTagsRow)}>
-            <div className="col">
-              <TagsListInline tags={tags} />
+      <div ref={sentinelRef} />
+      {(hasTags || hasEditMeta) && (
+        <footer className={clsx(ThemeClassNames.docs.docFooter, "docusaurus-mt-lg")}>
+          {hasTags && (
+            <div className={clsx("row margin-top--sm", ThemeClassNames.docs.docFooterTagsRow)}>
+              <div className="col">
+                <TagsListInline tags={tags} />
+              </div>
             </div>
-          </div>
-        )}
-        {hasEditMeta && (
-          <EditMetaRow
-            className={clsx("margin-top--sm", ThemeClassNames.docs.docFooterEditMetaRow)}
-            editUrl={editUrl}
-            lastUpdatedAt={lastUpdatedAt}
-            lastUpdatedBy={lastUpdatedBy}
-          />
-        )}
-      </footer>
+          )}
+          {hasEditMeta && (
+            <EditMetaRow
+              className={clsx("margin-top--sm", ThemeClassNames.docs.docFooterEditMetaRow)}
+              editUrl={editUrl}
+              lastUpdatedAt={lastUpdatedAt}
+              lastUpdatedBy={lastUpdatedBy}
+            />
+          )}
+        </footer>
+      )}
 
-      {hasFeedbackConfig && (
+      {feedbackConfig && (
         <>
           <button
             ref={fabRef}
@@ -106,7 +104,6 @@ const DocItemFooter = () => {
             className={clsx("doc-gap-fab", visible && !open && "doc-gap-fab--visible")}
             onClick={() => {
               setOpen(true);
-              setFormKey((k) => k + 1);
             }}
             aria-label="Send feedback"
             aria-expanded={open}
@@ -154,10 +151,10 @@ const DocItemFooter = () => {
                 <p className="doc-gap-success">Thanks — we'll look into it.</p>
               ) : (
                 <FeedbackForm
-                  key={formKey}
-                  portalId={portalId as string}
-                  formId={formId as string}
+                  portalId={feedbackConfig.portalId}
+                  formId={feedbackConfig.formId}
                   pageUrl={pageUrl}
+                  open={open}
                   onSuccess={() => setSucceeded(true)}
                 />
               )}
@@ -175,13 +172,21 @@ type FeedbackFormProps = {
   portalId: string;
   formId: string;
   pageUrl: string;
+  open: boolean;
   onSuccess: () => void;
 };
 
-const FeedbackForm = ({ portalId, formId, pageUrl, onSuccess }: FeedbackFormProps) => {
+const FeedbackForm = ({ portalId, formId, pageUrl, open, onSuccess }: FeedbackFormProps) => {
   const [feedback, setFeedback] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
+
+  useEffect(() => {
+    if (!open) return;
+    setFeedback("");
+    setEmail("");
+    setStatus("idle");
+  }, [open]);
 
   const handleSubmit = async (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -191,6 +196,7 @@ const FeedbackForm = ({ portalId, formId, pageUrl, onSuccess }: FeedbackFormProp
       const res = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(10000),
         body: JSON.stringify({
           fields: [
             { name: "email", value: email },
@@ -204,7 +210,8 @@ const FeedbackForm = ({ portalId, formId, pageUrl, onSuccess }: FeedbackFormProp
       } else {
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error(err);
       setStatus("error");
     }
   };
