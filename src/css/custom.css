@@ -521,11 +521,6 @@ code {
   border-radius: var(--ifm-code-border-radius);
 }
 
-/* Search button */
-.DocSearch-Button {
-  border-radius: 8px;
-}
-
 /* Hide sidebar collapse/expand buttons */
 .clean-btn.menu__caret {
   display: none;
@@ -668,14 +663,14 @@ code {
     display: flex !important;
     align-items: center;
   }
-  /* Explicitly show the search container/button on mobile (Docusaurus uses CSS modules) */
+  /* Explicitly show the search container/button on mobile */
   .navbar__search,
   [class*="navbarSearchContainer"],
-  .DocSearch-Button {
+  [class*="searchBarTrigger"] {
     display: inline-flex !important;
     align-items: center;
   }
-  /* Hide everything else on the right side except the search */
+  /* Hide everything else on the right side except the search wrapper */
   .navbar__items--right > :not([class*="navbarSearchContainer"]) {
     display: none !important;
   }
