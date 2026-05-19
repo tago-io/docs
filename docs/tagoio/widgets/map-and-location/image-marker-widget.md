@@ -51,9 +51,9 @@ The **"Geofence variable"** field sets the variable where geofence boundaries ar
 
 The widget has two modes. Both store pin positions identically in the layer variable — the difference is how the editor presents options when you assign a pin:
 
-| Mode         | Description |
-| ------------ | ----------- |
-| **Basic**    | The editor shows the **devices** from the Data From field as pin assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker. |
+| Mode         | Description                                                                                                                                                                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Basic**    | The editor shows the **devices** from the Data From field as pin assignment options. Each device gets one pin. Use this for simple setups where each physical device maps to one marker.                                                                                        |
 | **Advanced** | The editor shows all occurrences of the selected **variable** that have different [groups](/docs/tagoio/devices/grouping-variables) as options. Each group becomes a separate pin. Use this when a single device reports multiple positions or when you need more than 30 pins. |
 
 ### 3. Layer
