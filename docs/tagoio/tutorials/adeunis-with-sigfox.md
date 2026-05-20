@@ -35,7 +35,7 @@ To add an Adeunis device in TagoIO:
 
 ### Integrate your Adeunis with TagoIO
 
-1. Turn on your Adeunis device and wait for the data to reach your device.
+1. Turn on your Adeunis device and wait for the data to reach your TagoIO Device.
 2. Each time the device sends data, the parser will be executed automatically,
    extracting the measured variables and sending them to the device.
 3. The extracted data is then available in widgets, dashboards, and can be

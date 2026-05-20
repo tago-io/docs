@@ -26,10 +26,7 @@ TagoIO application.
    - Click the _Create Authorization_ button.
    - Provide a meaningful name for the authorization (for example:
      `Everynet-Integration`).
-   - Select the token type: `Ingress`.
-   - Select the device: you may use the default device or create a new
-     device specifically for Everynet.
-   - Select the permission: `Write`.
+   - Select the token format: `Standard`.
    - Click _Save_. The authorization will be created and the token will appear.
      Copy the token and keep it safe because it will not be shown again.
 
