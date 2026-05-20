@@ -89,7 +89,7 @@ async function mqttPushExample(context, scope) {
   // Publishing to MQTT
   const mqtt = new Services().mqtt;
   await mqtt.publish({
-    bucket: DEVICE_ID,
+    device: DEVICE_ID,
     message: JSON.stringify(myDataObject),
     topic: "sensor/output",
     options,
