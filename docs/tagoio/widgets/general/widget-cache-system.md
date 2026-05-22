@@ -28,3 +28,11 @@ All widgets support the caching system; you can enable it by entering your widge
 To enable or configure caching for a specific widget, use the widget settings in the Dashboard editor. For step‑by‑step instructions, see the Dashboard editor in your Admin. This feature is part of each widget's settings.
 
 ![Image 1](/docs_imagem/tagoio/external-5850e3a4.png)
+
+:::note
+
+If you need to refresh data before the cache expires (for example, after changing the widget configuration or a Data Analytics function), you can clear the cache manually from the widget while in Edit mode. This is only available on the Admin Console.
+
+:::
+
+![Image 2](/docs_imagem/tagoio/dashboard_clear_cache.png)

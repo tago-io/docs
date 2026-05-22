@@ -28,6 +28,13 @@ const config: Config = {
   organizationName: "tago-io", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
 
+  customFields: {
+    // HubSpot form for doc gap reports. Create a form in HubSpot with "email" and "your_feedback" fields,
+    // then set these two env vars to your portal ID and form GUID.
+    hubspotPortalId: process.env.HUBSPOT_PORTAL_ID,
+    hubspotDocGapFormId: process.env.HUBSPOT_DOC_GAP_FORM_ID,
+  },
+
   onBrokenLinks: "throw",
   markdown: {
     mermaid: true,
@@ -142,13 +149,6 @@ const config: Config = {
           ],
         }
       : {}),
-    algolia: {
-      appId: "8HPN5WF45N",
-      apiKey: "12cc282e7dcb99632185962ad2624a49",
-      indexName: "TagoIO Docs",
-      contextualSearch: true,
-      searchPagePath: "search",
-    },
     languageTabs: [
       {
         highlight: "bash",
