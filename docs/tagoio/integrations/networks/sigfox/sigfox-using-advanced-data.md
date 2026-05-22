@@ -47,22 +47,22 @@ Configure the `uplink` callback with the following settings:
   {
     "variable": "device",
     "value": "{device}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "data",
     "value": "{data}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "seqNumber",
     "value": "{seqNumber}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "location",
     "location": {computedLocation},
-    "serie": "{time}"
+    "group": "{time}"
   }
 ]
 ```

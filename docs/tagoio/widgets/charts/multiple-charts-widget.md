@@ -8,7 +8,7 @@ keywords: [tagoio, iot, widget, multiple charts, data visualization]
 Charts are a powerful way to visualize your data and find insights. The Multiple
 Charts widget lets you customize colors, apply Formula
 (/docs/tagoio/widgets/general/formula), change line shapes (step or smooth),
-choose whether series are stacked, and more.
+choose whether groups are stacked, and more.
 
 When using multiple charts widget, each variable produces a different chart. In
 the same widget it is possible to have each chart as an
@@ -21,7 +21,7 @@ the same widget it is possible to have each chart as an
 
 This widget also accepts features like
 [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and
-[series](/docs/tagoio/devices/grouping-variables.md), which can be set in your
+[groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your
 variable data.
 
 ## 1. 'Data From' Field
@@ -58,13 +58,13 @@ By default, the X‑axis of the chart will be the time of the values, and you ca
 customize the range of time.\
 If you need to group your data through the X‑axis, even if they don't have the
 same time, select a variable that contains the group; all data will then be
-grouped by **series**.
+grouped by **groups**.
 
 <!-- Info icon placeholder: X-axis grouping example -->
 
-Data is ordered by time ascending, but it can also be sorted by series:
+Data is ordered by time ascending, but it can also be sorted by groups:
 
-<!-- Image temporarily disabled: Series sorting example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/c1IxSaBHG9OmIf4MOI9_tXqBo1IhruO5gcPnGdBbg5c/Captura%20de%20tela%20de%202021-06-22%2022-02-03-D7c.png -->
+<!-- Image temporarily disabled: Groups sorting example - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/c1IxSaBHG9OmIf4MOI9_tXqBo1IhruO5gcPnGdBbg5c/Captura%20de%20tela%20de%202021-06-22%2022-02-03-D7c.png -->
 
 It is also possible to define the X‑axis time range dynamically, using another
 variable’s data. The variable payload should look like:

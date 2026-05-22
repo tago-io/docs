@@ -24,17 +24,17 @@ In the Fields Configuration tab of your [Input Form](/docs/tagoio/widgets/input-
 
 ## Structure
 
-To enable filtering, each option in your list must contain a `serie` property. For example, if you have a variable named `food_options`, each item should look like:
+To enable filtering, each option in your list must contain a `group` property. For example, if you have a variable named `food_options`, each item should look like:
 
 ```json
 {
   "variable": "food_options",
   "value": "Apple",
-  "serie": "fruit"
+  "group": "fruit"
 }
 ```
 
-When the value of the **Filter origin** field changes, the list filters its items by comparing that value with the `serie` property of each option. The comparison ignores whitespace and case (e.g., `"my value 1"` matches `"myvalue1"`).
+When the value of the **Filter origin** field changes, the list filters its items by comparing that value with the `group` property of each option. The comparison ignores whitespace and case (e.g., `"my value 1"` matches `"myvalue1"`).
 
 ## Example
 
@@ -45,22 +45,22 @@ Below is a concrete example using the structure described above.
   {
     "variable": "food_options",
     "value": "Apple",
-    "serie": "fruit"
+    "group": "fruit"
   },
   {
     "variable": "food_options",
     "value": "Banana",
-    "serie": "fruit"
+    "group": "fruit"
   },
   {
     "variable": "food_options",
     "value": "Broccoli",
-    "serie": "vegetable"
+    "group": "vegetable"
   },
   {
     "variable": "food_options",
     "value": "Carrot",
-    "serie": "vegetable"
+    "group": "vegetable"
   }
 ]
 ```

@@ -26,7 +26,7 @@ The variable data should look like the following payload. Note that the 'lat' an
 }
 ```
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), that can be set in your variable data.
 
 ## Creating your own
 
@@ -97,7 +97,7 @@ In the widget edit screen, you can customize the following options for the varia
 
 Also, you can customize an image and a link that could be set through the edit screen or by metadata. **In this widget, metadata always has priority over options set by the edit screen.**
 
-In addition, the map widget supports [series](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
+In addition, the map widget supports [groups](/docs/tagoio/devices/grouping-variables.md), so you can group your variables' data in the same infobox.
 
 :::tip
 

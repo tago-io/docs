@@ -102,17 +102,17 @@ Go to the Sigfox portal and perform the following steps:
   {
     "variable": "device",
     "value": "{device}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "data",
     "value": "{data}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "seqNumber",
     "value": "{seqNumber}",
-    "serie": "{time}"
+    "group": "{time}"
   }
 ]
 ```

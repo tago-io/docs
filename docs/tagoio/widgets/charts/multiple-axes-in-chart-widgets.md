@@ -30,5 +30,5 @@ Once you have configured the axes, click **Confirm** to preview the changes and 
 
 Notes:
 
-- After enabling multiple axes, you can assign different series to specific Y‑axes so each series scales appropriately.
+- After enabling multiple axes, you can assign different groups to specific Y‑axes so each groups scales appropriately.
 - Use the Y‑axis settings to configure labels, units, and axis position (left/right) for each axis. You can also hide a label if desired.

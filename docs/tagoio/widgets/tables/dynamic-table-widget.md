@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Table Widget"
-description: "This article describes the Dynamic Table widget in TagoIO, how it populates rows dynamically as data arrives, and how to customize its appearance and behavior (including metadata and series support)."
+description: "This article describes the Dynamic Table widget in TagoIO, how it populates rows dynamically as data arrives, and how to customize its appearance and behavior (including metadata and groups support)."
 tags: ["tagoio", "widgets"]
 keywords: [tagoio, iot, widget, dynamic table, data visualization]
 ---
@@ -13,7 +13,7 @@ You can customize the widget color, apply formulas to columns, show a time colum
 
 :::info
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 :::
 
@@ -41,7 +41,7 @@ From the option **Data From** on the right menu, add the [Blueprint device](/doc
 
 ### 2. Grouping data
 
-The dynamic table lets you group related data from multiple columns in the same row by either **series** or time.
+The dynamic table lets you group related data from multiple columns in the same row by either **groups** or time.
 
 <!-- Image temporarily disabled: Image 3 - /cdn.elev.io/file/uploads/8Kr8tD8c3s2gigLME_FvaA_bT6A7DbPNHE1DBsJtJDw/a5qbzEpKPdKvAAYdvNp1Ue32vefQzbVwZz4Pkp8yoVM/Captura%20de%20tela%20de%202021-07-06%2011-39-24-EVQ.png -->
 

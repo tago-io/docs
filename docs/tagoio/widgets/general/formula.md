@@ -5,7 +5,7 @@ tags: ["tagoio"]
 keywords: [tagoio, iot, widgets, formula, data transformation]
 ---
 
-The Formula feature enables users to modify the visualization of data in specific widgets. Located inside the configuration tab of most widgets, a Formula can be applied to all fields of a stored register, including variable, value, unit, series, location, and metadata.
+The Formula feature enables users to modify the visualization of data in specific widgets. Located inside the configuration tab of most widgets, a Formula can be applied to all fields of a stored register, including variable, value, unit, group, location, and metadata.
 
 <!-- Image placeholder removed for build -->
 

@@ -9,7 +9,7 @@ Charts are a powerful way to visualize your data and look for insights. You can 
 
 ![Horizontal bar examples](/docs_imagem/tagoio/horizontal-bar-widget-2.png)
 
-This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
+This widget also accepts features such as [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## 1. 'Data From' Field
 
@@ -39,7 +39,7 @@ In the horizontal bar chart widget you can customize how data is displayed on bo
 ### 2.1 X‑axis
 
 By default, the X‑axis shows the time of each value, and you can set a custom time range.
-If you need to group data that does not share the same timestamp, select a variable that contains the grouping key; all values will then be grouped by **series**.
+If you need to group data that does not share the same timestamp, select a variable that contains the grouping key; all values will then be grouped by **groups**.
 
 You can also define the X‑axis time range dynamically using another variable’s metadata:
 
