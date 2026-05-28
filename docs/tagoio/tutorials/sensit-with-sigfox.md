@@ -47,12 +47,12 @@ TagoIO — Select the device type (use the network filter to find Sigfox devices
 
 After adding the device, click on the newly created dashboard in the left menu
 and associate it with your Sens'it device. Turn the device on; data will arrive
-automatically into the bucket and be displayed in widgets.
+automatically into the device and be displayed in widgets.
 
-## Data Buckets
+## Device Data
 
 Every time the device sends data, the parser is executed, the extracted data is
-sent to a bucket, and it becomes ready for display in dashboards or further
+sent to the device, and it becomes ready for display in dashboards or further
 analysis.
 
 ## Custom Parsing (v2)

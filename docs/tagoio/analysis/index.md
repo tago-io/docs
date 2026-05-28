@@ -29,7 +29,7 @@ If you prefer to host code yourself, you can run External Analyses from your own
 
 TagoIO supports three runtimes for Analysis. Each runtime has different approaches to dependency management and development workflows.
 
-All runtimes support the same TagoIO SDK functionality for working with devices, buckets, and other platform features. The main differences are in language features and how you manage external dependencies.
+All runtimes support the same TagoIO SDK functionality for working with devices and other platform features. The main differences are in language features and how you manage external dependencies.
 
 ### Deno Runtime
 
