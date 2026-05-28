@@ -86,30 +86,36 @@
 .buttons .button {
   font-weight: 600;
   padding: 0.75rem 2rem;
-  border-radius: 8px;
+  border-radius: 999px;
   font-size: 1rem;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition:
+    background var(--animation-fast) ease,
+    color var(--animation-fast) ease,
+    border-color var(--animation-fast) ease,
+    transform var(--animation-fast) ease;
 }
 
 .demoButton {
-  background: var(--ifm-color-emphasis-1000);
-  color: var(--ifm-color-emphasis-0);
-  border: 2px solid var(--ifm-color-emphasis-1000);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border: 1.5px solid var(--primary);
 }
 .demoButton:hover {
-  opacity: 0.9;
+  background: var(--ifm-color-primary-darker);
+  border-color: var(--ifm-color-primary-darker);
+  color: var(--primary-foreground);
 }
 .demoButton:active {
-  opacity: 0.85;
+  transform: translateY(1px);
 }
 
 .getStartedButton {
-  border: 2px solid var(--ifm-color-emphasis-700);
-  color: var(--ifm-color-emphasis-800);
+  background: transparent;
+  border: 1.5px solid var(--foreground);
+  color: var(--foreground);
 }
 .getStartedButton:hover {
-  background: var(--ifm-color-emphasis-700);
-  color: var(--ifm-color-emphasis-0);
-  border-color: var(--ifm-color-emphasis-700);
+  background: var(--foreground);
+  color: var(--background);
+  border-color: var(--foreground);
 }

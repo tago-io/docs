@@ -7,30 +7,29 @@
   background: var(--home-features-bg);
 }
 
-/* Feature card icons with stronger shadows for light mode */
+/* Monochrome SVG logomarks — color follows the active theme */
 .featureImg {
   height: 80px;
   width: 80px;
   object-fit: contain;
-  transition: filter 0.3s ease;
-  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
 }
 
-/* Icon container with stronger gradient for light mode visibility */
+/* Icon container — neutral info tint */
 .featureCard > :first-child {
   min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(44, 177, 188, 0.08) 0%, rgba(44, 177, 188, 0.04) 100%);
+  background: linear-gradient(135deg, rgba(0, 103, 192, 0.06) 0%, rgba(0, 103, 192, 0.03) 100%);
   border-radius: 16px;
   margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(44, 177, 188, 0.1);
+  border: 1px solid rgba(0, 103, 192, 0.1);
 }
 
-/* Light mode specific stronger shine effect */
+/* Light mode shine effect */
 .featureCard > :first-child::before {
   content: "";
   position: absolute;
@@ -41,18 +40,18 @@
   background: linear-gradient(
     135deg,
     transparent 0%,
-    rgba(44, 177, 188, 0.2) 30%,
+    rgba(0, 103, 192, 0.15) 30%,
     rgba(255, 255, 255, 0.3) 50%,
-    rgba(44, 177, 188, 0.15) 70%,
+    rgba(0, 103, 192, 0.1) 70%,
     transparent 100%
   );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Dark mode keeps the original subtle white shine */
+/* Dark mode keeps a subtle white shine */
 html[data-theme="dark"] .featureCard > :first-child::before {
-  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(250, 250, 250, 0.08) 50%, transparent 100%);
 }
 
 /* Row layout for feature cards */
@@ -128,7 +127,7 @@ html[data-theme="dark"] .featureCard > :first-child::before {
 /* Dark theme specific adjustments */
 html[data-theme="dark"] .featureCard {
   background: var(--surface-elevated);
-  border-color: #363749;
+  border-color: var(--border-visible);
   box-shadow:
     0 2px 20px rgba(0, 0, 0, 0.3),
     0 1px 3px rgba(0, 0, 0, 0.4);
@@ -139,12 +138,12 @@ html[data-theme="dark"] .featureCard {
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.16),
     0 8px 24px rgba(0, 0, 0, 0.12);
-  border-color: rgba(44, 177, 188, 0.25);
+  border-color: rgba(0, 103, 192, 0.3);
 }
 
-/* More visible icon shadows on hover */
+/* Subtle lift on hover */
 .featureCard:hover .featureImg {
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
 }
 
 /* Show shine effect on icon container */
@@ -152,27 +151,17 @@ html[data-theme="dark"] .featureCard {
   opacity: 1;
 }
 
-/* Dark theme - stronger gradient for icon containers */
+/* Dark theme - info gradient for icon containers */
 html[data-theme="dark"] .featureCard > :first-child {
-  background: linear-gradient(135deg, rgba(44, 177, 188, 0.08) 0%, rgba(44, 177, 188, 0.03) 100%);
-}
-
-/* Enhanced dark theme icon shadows */
-html[data-theme="dark"] .featureImg {
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  background: linear-gradient(135deg, rgba(40, 166, 250, 0.1) 0%, rgba(40, 166, 250, 0.04) 100%);
 }
 
 /* Dark theme hover effects - enhanced lighting only */
 html[data-theme="dark"] .featureCard:hover {
-  border-color: rgba(44, 177, 188, 0.3);
+  border-color: rgba(40, 166, 250, 0.4);
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.4),
     0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Enhanced dark theme icon shadows on hover */
-html[data-theme="dark"] .featureCard:hover .featureImg {
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.5));
 }
 
 /* Card title styling with improved typography */
@@ -187,7 +176,7 @@ html[data-theme="dark"] .featureCard:hover .featureImg {
 
 /* Title color change on hover */
 .featureCard:hover h3 {
-  color: #2cb1bc;
+  color: var(--info);
 }
 
 /* Card description text styling */
