@@ -21,8 +21,8 @@ function HomepageHeader() {
               dark: useBaseUrl("/img/tagoio-official-logo-white.svg"),
             }}
             alt="TagoIO"
-            width={160}
-            height={40}
+            width={158}
+            height={45}
             className={styles.brandLogo}
           />
         </div>

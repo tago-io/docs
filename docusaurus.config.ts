@@ -28,6 +28,13 @@ const config: Config = {
   organizationName: "tago-io", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
 
+  customFields: {
+    // HubSpot form for doc gap reports. Create a form in HubSpot with "email" and "your_feedback" fields,
+    // then set these two env vars to your portal ID and form GUID.
+    hubspotPortalId: process.env.HUBSPOT_PORTAL_ID,
+    hubspotDocGapFormId: process.env.HUBSPOT_DOC_GAP_FORM_ID,
+  },
+
   onBrokenLinks: "throw",
   markdown: {
     mermaid: true,
@@ -123,9 +130,8 @@ const config: Config = {
   ],
 
   themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
-  stylesheets: ["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"],
 
-  clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
+  clientModules: [require.resolve("./src/client/load-fonts.ts"), require.resolve("./src/theme/Openapi-Store.tsx")],
 
   themeConfig: {
     image: "img/tago-social-card.png",
@@ -180,8 +186,8 @@ const config: Config = {
         alt: "TagoIO Logo",
         src: "img/tagoio-official-logo.svg",
         srcDark: "img/tagoio-official-logo-white.svg",
-        width: 110,
-        height: 26,
+        width: 99,
+        height: 28,
       },
       items: [
         {
@@ -245,14 +251,14 @@ const config: Config = {
       },
       options: {
         themeVariables: {
-          primaryColor: "#2cb1bc",
-          primaryTextColor: "#ffffff",
+          primaryColor: "#0067C0",
+          primaryTextColor: "#FCFCFC",
           primaryBorderColor: "transparent",
-          lineColor: "#707070",
+          lineColor: "#A1A1A1",
           edgeLabelBackground: "transparent",
           clusterBkg: "transparent",
-          clusterBorder: "#2a2a2a",
-          fontFamily: "Menlo, Consolas, 'Liberation Mono', Courier, monospace",
+          clusterBorder: "#404040",
+          fontFamily: "'Monaspace Neon', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
           fontSize: "16px",
         },
       },
