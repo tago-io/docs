@@ -131,7 +131,7 @@ const config: Config = {
 
   themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
 
-  clientModules: [require.resolve("./src/theme/Openapi-Store.tsx")],
+  clientModules: [require.resolve("./src/client/load-fonts.ts"), require.resolve("./src/theme/Openapi-Store.tsx")],
 
   themeConfig: {
     image: "img/tago-social-card.png",
