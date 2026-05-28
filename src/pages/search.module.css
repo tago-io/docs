@@ -1,10 +1,10 @@
 .main {
   min-height: calc(100vh - var(--ifm-navbar-height));
-  background: radial-gradient(circle at top, rgba(23, 136, 141, 0.06), transparent 55%), var(--ifm-background-color);
+  background: radial-gradient(circle at top, rgba(0, 103, 192, 0.06), transparent 55%), var(--ifm-background-color);
 }
 
 html[data-theme="dark"] .main {
-  background: radial-gradient(circle at top, rgba(44, 177, 188, 0.08), transparent 55%), var(--ifm-background-color);
+  background: radial-gradient(circle at top, rgba(0, 103, 192, 0.08), transparent 55%), var(--ifm-background-color);
 }
 
 .page {
@@ -44,7 +44,7 @@ html[data-theme="dark"] .main {
 .summary {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
 }
 
 .inputCard {
@@ -64,7 +64,7 @@ html[data-theme="dark"] .main {
 
 .inputCard:focus-within {
   border-color: var(--ifm-color-primary);
-  box-shadow: 0 4px 16px rgba(23, 136, 141, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 103, 192, 0.12);
 }
 
 html[data-theme="dark"] .inputCard {
@@ -75,7 +75,7 @@ html[data-theme="dark"] .inputCard {
 
 html[data-theme="dark"] .inputCard:focus-within {
   border-color: var(--ifm-color-primary);
-  box-shadow: 0 4px 16px rgba(44, 177, 188, 0.18);
+  box-shadow: 0 4px 16px rgba(40, 166, 250, 0.16);
 }
 
 .inputIcon {
@@ -96,7 +96,7 @@ html[data-theme="dark"] .inputCard:focus-within {
 }
 
 .input::placeholder {
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
   font-weight: 400;
 }
 
@@ -105,7 +105,7 @@ html[data-theme="dark"] .inputCard:focus-within {
   border: 1px solid var(--border-visible);
   border-radius: 6px;
   background: transparent;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
   font-size: 0.8125rem;
   font-weight: 600;
   cursor: pointer;
@@ -136,13 +136,13 @@ html[data-theme="dark"] .clearButton:hover {
   gap: 0.625rem;
   padding: 4rem 1rem;
   text-align: center;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
 }
 
 .empty p {
   margin: 0;
   font-size: 0.9375rem;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
   max-width: 28rem;
 }
 
@@ -159,11 +159,11 @@ html[data-theme="dark"] .empty p {
 }
 
 .emptyError .emptyEyebrow {
-  color: #c0392b;
+  color: var(--destructive);
 }
 
 html[data-theme="dark"] .emptyError .emptyEyebrow {
-  color: #ff6b6b;
+  color: var(--destructive);
 }
 
 .retryButton {
@@ -180,7 +180,7 @@ html[data-theme="dark"] .emptyError .emptyEyebrow {
 }
 
 .retryButton:hover {
-  background: rgba(23, 136, 141, 0.08);
+  background: rgba(0, 103, 192, 0.08);
 }
 
 .spinner {
@@ -236,7 +236,7 @@ html[data-theme="dark"] .groupHeader {
 .groupCount {
   font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
   padding: 0.125rem 0.5rem;
   border-radius: 999px;
   background: var(--ifm-code-background);
@@ -272,13 +272,13 @@ html[data-theme="dark"] .groupCount {
 }
 
 .resultLink:hover {
-  background: rgba(23, 136, 141, 0.08);
+  background: rgba(0, 103, 192, 0.08);
   text-decoration: none;
   color: var(--ifm-font-color-base);
 }
 
 html[data-theme="dark"] .resultLink:hover {
-  background: rgba(44, 177, 188, 0.14);
+  background: rgba(40, 166, 250, 0.16);
 }
 
 .resultIcon {
@@ -290,7 +290,7 @@ html[data-theme="dark"] .resultLink:hover {
   height: 2.25rem;
   border-radius: 8px;
   background: var(--ifm-code-background);
-  color: var(--c-indigo-80);
+  color: var(--foreground);
   transition:
     background var(--animation-fast) ease,
     color var(--animation-fast) ease;
@@ -339,7 +339,7 @@ html[data-theme="dark"] .resultLink:hover .resultIcon {
   flex-wrap: wrap;
   gap: 0.375rem;
   font-size: 0.7rem;
-  color: var(--c-indigo-80);
+  color: var(--foreground);
   line-height: 1.2;
 }
 
@@ -352,7 +352,7 @@ html[data-theme="dark"] .resultPath {
 }
 
 .resultPathSep {
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
 }
 
 html[data-theme="dark"] .resultPathSep {
@@ -361,7 +361,7 @@ html[data-theme="dark"] .resultPathSep {
 
 .chevron {
   flex-shrink: 0;
-  color: var(--c-indigo-60);
+  color: var(--muted-foreground);
   opacity: 0;
   transform: translateX(-6px);
   transition:

@@ -9,6 +9,13 @@ const interBold = readFileSync(join(__dirname, "../static/fonts/Inter-Bold.ttf")
 const logoPng = readFileSync(join(__dirname, "../static/img/tagoio-logo-white.png"));
 const LOGO_DATA_URI = `data:image/png;base64,${logoPng.toString("base64")}`;
 
+// Default dark palette
+const COLOR_BG = "#0A0A0A";
+const COLOR_FG = "#FAFAFA";
+const COLOR_MUTED_FG = "#A1A1A1";
+const COLOR_ACCENT = "#28A6FA";
+const COLOR_BORDER = "#262626";
+
 export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
   // oxlint-disable-next-line react/jsx-key -- Satori renders JSX to an image, not a React tree
   <div
@@ -17,18 +24,18 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
       flexDirection: "column",
       width: "100%",
       height: "100%",
-      backgroundColor: "#121212",
-      color: "#ebebeb",
+      backgroundColor: COLOR_BG,
+      color: COLOR_FG,
       fontFamily: "Inter, sans-serif",
     }}
   >
-    {/* Teal accent bar at the top */}
+    {/* Primary accent bar at the top */}
     <div
       style={{
         display: "flex",
         width: "100%",
         height: "4px",
-        backgroundColor: "#2cb1bc",
+        backgroundColor: COLOR_ACCENT,
       }}
     />
 
@@ -44,20 +51,20 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
     >
       {/* Logo + Documentation */}
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <img src={LOGO_DATA_URI} alt="TagoIO" width={140} height={38} />
+        <img src={LOGO_DATA_URI} alt="TagoIO" width={140} height={40} />
         <div
           style={{
             display: "flex",
             width: "1px",
             height: "24px",
-            backgroundColor: "#333333",
+            backgroundColor: COLOR_BORDER,
           }}
         />
         <span
           style={{
             fontSize: "18px",
             fontWeight: 400,
-            color: "#a0a0a0",
+            color: COLOR_MUTED_FG,
             letterSpacing: "0.02em",
           }}
         >
@@ -79,7 +86,7 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
             fontSize: "52px",
             fontWeight: 700,
             lineHeight: 1.15,
-            color: "#ebebeb",
+            color: COLOR_FG,
           }}
         >
           {data.metadata.title}
@@ -89,7 +96,7 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
             style={{
               fontSize: "22px",
               fontWeight: 400,
-              color: "#a0a0a0",
+              color: COLOR_MUTED_FG,
               lineHeight: 1.4,
             }}
           >
@@ -108,8 +115,8 @@ export const docsRenderer: ImageRenderer<DocsPageData> = (data) => [
           justifyContent: "space-between",
         }}
       >
-        <span style={{ fontSize: "16px", color: "#707070" }}>docs.tago.io</span>
-        <span style={{ fontSize: "14px", color: "#2cb1bc" }}>IoT Cloud Platform</span>
+        <span style={{ fontSize: "16px", color: COLOR_MUTED_FG }}>docs.tago.io</span>
+        <span style={{ fontSize: "14px", color: COLOR_ACCENT }}>IoT Cloud Platform</span>
       </div>
     </div>
   </div>,

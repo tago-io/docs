@@ -305,3 +305,11 @@ details.openapi-explorer__details-container {
 .openapi-params__list-item {
   padding-bottom: 0.5rem;
 }
+
+/* The OpenAPI theme paints its <details> arrow as a black SVG and relies on
+   --ifm-menu-link-sublist-icon-filter to invert it in dark mode. We set that
+   variable to `none` globally because our sidebar arrow already has the right
+   stroke baked in, so invert the OpenAPI arrow explicitly in dark mode. */
+html[data-theme="dark"] .openapi-markdown__details > summary::before {
+  filter: invert(1) !important;
+}
