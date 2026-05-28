@@ -1,0 +1,64 @@
+name: AI Review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+jobs:
+  parse:
+    if: |
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request != null &&
+       startsWith(github.event.comment.body, '/review'))
+    runs-on: ubuntu-latest
+    outputs:
+      model: ${{ steps.p.outputs.model }}
+      effort: ${{ steps.p.outputs.effort }}
+    steps:
+      - id: p
+        env:
+          DEFAULT_MODEL: x-ai/grok-build-0.1
+          DEFAULT_EFFORT: high
+          EVENT_NAME: ${{ github.event_name }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          if [ "$EVENT_NAME" != "issue_comment" ]; then
+            echo "model=$DEFAULT_MODEL" >> "$GITHUB_OUTPUT"
+            echo "effort=$DEFAULT_EFFORT" >> "$GITHUB_OUTPUT"
+            echo "Auto-fire on PR event: model=$DEFAULT_MODEL effort=$DEFAULT_EFFORT"
+            exit 0
+          fi
+          ARGS=$(printf '%s' "$COMMENT_BODY" | head -n1 | sed 's|^/review||' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -z "$ARGS" ]; then
+            MODEL="$DEFAULT_MODEL"
+            EFFORT="$DEFAULT_EFFORT"
+          else
+            MODEL="${ARGS%%:*}"
+            case "$ARGS" in
+              *:*) EFFORT="${ARGS#*:}" ;;
+              *)   EFFORT="$DEFAULT_EFFORT" ;;
+            esac
+          fi
+          echo "model=$MODEL" >> "$GITHUB_OUTPUT"
+          echo "effort=$EFFORT" >> "$GITHUB_OUTPUT"
+          echo "Parsed /review: model=$MODEL effort=$EFFORT"
+
+  review:
+    needs: parse
+    permissions:
+      contents: write
+      pull-requests: write
+    concurrency:
+      group: ai-review-${{ github.event.pull_request.number || github.event.issue.number }}-${{ needs.parse.outputs.model }}
+      cancel-in-progress: true
+    uses: tago-io/actions/.github/workflows/pr-review.yml@main
+    with:
+      model: ${{ needs.parse.outputs.model }}
+      effort: ${{ needs.parse.outputs.effort }}
+    secrets:
+      TAGOIO_AGENT_APP_CLIENT_ID: ${{ secrets.TAGOIO_AGENT_APP_CLIENT_ID }}
+      TAGOIO_AGENT_APP_PRIVATE_KEY: ${{ secrets.TAGOIO_AGENT_APP_PRIVATE_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
