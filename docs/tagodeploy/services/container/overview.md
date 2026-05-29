@@ -1,6 +1,6 @@
 ---
 title: "Custom Docker"
-description: "Deploy and manage custom Docker containers in your TagoDeploy project, with image, network, runtime, and logging options."
+description: "The container service overview: service name, URL, and where the Instances and Docker Settings pages live."
 keywords: [tagodeploy, iot, docker, container, deployment]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/overview
@@ -8,72 +8,57 @@ slug: /tagodeploy/project/container/overview
 
 # Custom Docker
 
-The **Custom Docker** addon allows you to deploy and manage custom Docker
-containers within your TagoIO Deploy projects. This powerful feature enables you
-to run any containerized application, microservice, or custom workload alongside
-your other project resources.
+The **Custom Docker** addon runs your own container image alongside the rest of
+your project. You point it at an image, set how it scales, and configure how it
+is built and run. The service is reached on its own subdomain under your
+project.
 
-## What is Container Deployment?
+The container service has three pages in its sidebar:
 
-Container deployment provides a flexible way to run Docker containers in your
-project infrastructure. This addon supports:
+- **Overview**: service name, URL, and product details (this page).
+- **Instances**: machine size and autoscaling range. See
+  [Container Instances](/tagodeploy/project/container/instances).
+- **Settings**: image, registry credentials, environment variables, network,
+  and runtime, grouped on one **Docker Settings** page. See the sections below.
 
-- **Custom Docker Images**: Deploy any Docker image from public or private
-  registries
-- **Private Registry Support**: Authenticate with Docker Hub, GitHub Container
-  Registry, and other private registries
-- **Environment Configuration**: Set environment variables for your container
-  applications
-- **Network Configuration**: Configure port mappings and load balancer settings
-  with TLS support
-- **Runtime Customization**: Override default working directories and startup
-  commands
-- **Real-time Monitoring**: View container logs and monitor application
-  performance
+## Overview page
 
-> [!WARNING]
+The Overview page shows the service details and a few controls.
+
+### Service Information
+
+- **Display Name**: the name shown for this service in your project.
+- **Addon**: the product type, shown as "Custom Docker". Read-only.
+- **Service URL**: the address the container is served on,
+  `https://{serviceId}.{projectId}.tagoio.net`. Read-only, with a copy button.
+
+Edit the Display Name and use **Save** to stage the change. Save is disabled
+until you make a change.
+
+### Danger Zone
+
+A collapsible section with irreversible actions for this service.
+
+## Docker Settings
+
+The **Docker Settings** page (the Settings sidebar entry) is where the container
+is built, configured, and run. It is one page with collapsible sections, in this
+order:
+
+- **Docker Image** and **Registry Authentication**: the image to pull and
+  credentials for private registries. See
+  [Docker Image Configuration](/tagodeploy/project/container/docker-image).
+- **Environment Variables**: key/value pairs passed to the container. See
+  [Environment Variables](/tagodeploy/project/container/environment-variables).
+- **Network**: protocol and port mappings for the load balancer. See
+  [Network Configuration](/tagodeploy/project/container/network).
+- **Runtime**: working directory and command overrides. See
+  [Runtime Configuration](/tagodeploy/project/container/runtime).
+
+Changes on the Docker Settings page are staged with **Save** and applied through
+the project deploy flow.
+
+> [!NOTE]
 >
-> High log volume can significantly increase your project costs. Monitor your
-> application's logging output and configure appropriate log levels to control
-> expenses.
-
-## Container Management Features
-
-### Image Management
-
-- **Flexible Image Sources**: Support for Docker Hub, GitHub Container Registry,
-  and custom registries
-- **Version Control**: Pin specific image tags or use rolling tags like `latest`
-- **Private Registry Access**: Secure authentication for private repositories
-
-### Network Configuration
-
-- **Port Mapping**: Map container ports to host ports for external access
-- **Protocol Support**: Configure TCP or UDP protocols based on your application
-  needs
-- **TLS Termination**: Enable TLS/SSL encryption for secure connections
-- **Load Balancer Integration**: Automatic integration with project load
-  balancing
-
-### Runtime Flexibility
-
-- **Custom Commands**: Override default container startup commands
-- **Working Directory**: Set custom working directories for your applications
-- **Environment Variables**: Pass configuration and secrets to your containers
-- **Resource Management**: Containers run within your project's resource
-  allocation
-
-## Getting Started
-
-To deploy a container in your project:
-
-1. **Add Container Addon**: Navigate to your project and add the Container addon
-2. **Configure Image**: Set up your Docker image and registry authentication if
-   needed
-3. **Set Environment**: Configure any required environment variables
-4. **Configure Network**: Set up port mappings for external access
-5. **Deploy**: Save your configuration to deploy the container
-
-The Container addon integrates seamlessly with your project's existing
-infrastructure, providing a powerful platform for running custom applications
-alongside your other TagoIO resources.
+> The container service has no Logs page of its own. Runtime output appears on
+> the project's **Logs** page under Management.

@@ -1,107 +1,90 @@
 ---
 title: "Features"
-description: "Enable, disable, and scale native TagoIO features; understand obligatory and optional feature sets."
+description: "Enable, disable, and scale native TagoIO features for your project."
 keywords: [tagodeploy, iot, features, microservices, configuration]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/features/editing-features
 ---
 
-# Editing Features
+# Features
 
-Features in TagoIO are native platform functionalities that can be enabled or
-disabled to customize your project’s capabilities. These features extend your
-project with services such as data processing, analytics, visualization tools,
-and integration modules. While most features can be managed according to your
-needs, some are always enabled because they are fundamental to the platform’s
-operation and stability.
+Features in TagoIO are native platform functionalities you can enable or disable
+to tailor your project's capabilities. They extend your project with services
+such as data processing, integrations, and notification handling. Most features
+can be managed to fit your needs, while some are always enabled because they are
+fundamental to platform operation and stability.
 
-## Instance Configuration
+The Features page is the entry point of the TagoIO & API section. It is reached
+from the "TagoIO & API" breadcrumb tab and from the **Features** item in that
+sidebar. The page header reads "Features".
 
-When editing features using the advanced configuration form, you can specify the
-minimum and maximum number of instances for each feature. Each instance
-increases the feature’s capacity to handle concurrent requests, which is
-critical for maintaining performance during periods of high activity. By setting
-these parameters, you enable TagoIO to scale resources automatically within your
-defined limits.
+:::note
+On the survey project the Features page rendered without any field content, so
+the feature-toggle controls could not be captured directly. The descriptions
+below cover the intended behavior. The exact controls, including any
+simplified and advanced view switch suggested by the `?view=simplified` URL,
+should be confirmed against a project that has a populated feature set.
+:::
 
-Each feature, when activated, consumes computational resources from your
-allocated infrastructure. The modular design of TagoIO allows you to
-independently enable or disable most features, giving you flexibility to
-optimize both performance and cost. Because these functionalities are natively
-integrated, they are optimized for seamless operation and high efficiency.
-Resource allocation for each feature is also scalable, with the platform
-dynamically adjusting the number of instances to meet current demand.
+## Instance configuration
 
-## Available Features
+When the advanced configuration is available, each feature can be given a
+minimum and maximum number of instances. Each instance adds capacity to handle
+concurrent requests, which matters during periods of high activity. Within the
+limits you set, TagoIO scales the feature automatically.
 
-TagoIO provides a comprehensive set of features, each designed to address
-specific requirements in your project. The following table summarizes the
-available features and their primary functions:
+Every enabled feature consumes computational resources from your allocated
+infrastructure. Because the design is modular, you can enable or disable most
+features independently to balance performance and cost.
+
+## Available features
+
+TagoIO provides a set of features grouped into those that are always on and those
+you can turn on as needed.
 
 Obligatory features:
 
-- **Secrets**: Manages sensitive information such as credentials for analysis
-  and integrations utilizing the
-  [TagoIO Secrets](https://help.tago.io/portal/en/kb/articles/secrets), ensuring
-  secure handling of secrets within your project.
-- **Payload Parser**: Processes and parses incoming data from devices,
+- **Secrets**: manages sensitive information such as credentials for analyses and
+  integrations using
+  [TagoIO Secrets](https://help.tago.io/portal/en/kb/articles/secrets).
+- **Payload Parser**: processes and parses incoming data from devices,
   [connectors](https://help.tago.io/portal/en/kb/articles/466-connector-overview),
-  and other sources, allowing you to
+  and other sources, so you can
   [parse payloads](https://help.tago.io/portal/en/kb/articles/147-payload-parser)
   as they arrive.
-- **Action Handler**: Coordinates and executes internal platform
-  [actions](https://help.tago.io/portal/en/kb/articles/30-actions), enabling
-  automated responses to different system events and user-defined triggers.
-- **Action - Post Data to Endpoint**: Sends data to external endpoints when
-  specific actions are triggered, supporting real-time integrations with
-  third-party systems.
-- **Action - Notification**: Delivers notifications as part of automated
-  workflows, enabling users to receive alerts based on defined conditions.
-- **Action - TagoRUN Notifications**: Sends
+- **Action Handler**: coordinates and executes internal platform
+  [actions](https://help.tago.io/portal/en/kb/articles/30-actions) in response to
+  system events and user-defined triggers.
+- **Action - Post Data to Endpoint**: sends data to external endpoints when
+  specific actions are triggered.
+- **Action - Notification**: delivers notifications as part of automated
+  workflows.
+- **Action - TagoRUN Notifications**: sends
   [targeted notifications](https://help.tago.io/portal/en/kb/articles/223-notifications-for-users)
-  directly to TagoRUN users, facilitating in-platform communication and user
-  engagement.
+  to TagoRUN users.
 
 Optional features:
 
-- **Action - SMS (Twilio)**: Sends SMS messages using the
-  [Twilio](https://www.twilio.com/) service, allowing for automated mobile
-  notifications.
-- **Action - Email (Sendgrid)**: Sends emails via the
-  [Sendgrid](https://sendgrid.com/) service, supporting automated email
-  communications within your workflows.
-- **Action - Email (SMTP)**: Sends emails using standard SMTP servers, providing
-  a flexible option for integrating email notifications.
-- **Action - Queue (AWS SQS)**: Sends messages to
-  [AWS SQS](https://docs.aws.amazon.com/sqs/) queues, enabling asynchronous
-  processing and integration with AWS-based workflows.
-- **Action - Whatsapp (Twilio)**: Sends WhatsApp messages using Twilio, allowing
-  for direct messaging and notifications through WhatsApp.
-- **Action - SMS (AWS SNS)**: Sends SMS messages using
-  [AWS Simple Notification Service](https://docs.aws.amazon.com/sns/) (SNS),
-  providing another option for scalable SMS delivery.
-- **Action - SES (AWS SES)**: Sends emails using
-  [AWS Simple Email Service](https://docs.aws.amazon.com/ses/) (SES), supporting
-  scalable and reliable email delivery.
+- **Action - SMS (Twilio)**: sends SMS messages using
+  [Twilio](https://www.twilio.com/).
+- **Action - Email (Sendgrid)**: sends emails via
+  [Sendgrid](https://sendgrid.com/).
+- **Action - Email (SMTP)**: sends emails using standard SMTP servers.
+- **Action - Queue (AWS SQS)**: sends messages to
+  [AWS SQS](https://docs.aws.amazon.com/sqs/) queues for asynchronous processing.
+- **Action - Whatsapp (Twilio)**: sends WhatsApp messages using Twilio.
+- **Action - SMS (AWS SNS)**: sends SMS messages using
+  [AWS Simple Notification Service](https://docs.aws.amazon.com/sns/).
+- **Action - SES (AWS SES)**: sends emails using
+  [AWS Simple Email Service](https://docs.aws.amazon.com/ses/).
 
-Note that the optional features are related to optional action types, more
-information about actions can be found in the
+The optional features map to optional action types. For more on actions, see the
 [Defining Actions](https://help.tago.io/portal/en/kb/articles/122-defining-actions#Push_Notification_to_myself)
 article.
 
-Each feature can be enabled or disabled according to your project’s
-requirements, except for those that are essential for core platform operations.
-The number of instances for each feature can be configured to match your
-workload, ensuring efficient and reliable service delivery. Feature status and
-configuration are managed through the platform interface, giving you clear
-visibility and control over your project’s active functionalities.
+## Resource considerations
 
-## Resource Considerations
-
-To manage features effectively, consider the following:
-
-- Ensure you have sufficient computational resources available for all enabled
-  features. Monitor how your selected combination of features impacts overall
-  system performance, and regularly review resource consumption to optimize
-  costs. As your project grows, plan scaling requirements in advance to maintain
-  an optimal balance between performance and efficiency.
+To manage features effectively, keep enough computational resources available for
+everything you enable. Watch how your combination of features affects overall
+performance, review resource consumption regularly to control costs, and plan
+scaling ahead as your project grows.

@@ -1,21 +1,23 @@
 ---
 title: "Network Middlewares"
-description: "Overview of Network Middlewares in TagoDeploy, including LoRaWAN LNS such as Tektelic, TTI, and others, and how to assign them to projects."
+description: "Overview of Network Middlewares in TagoDeploy, including LoRaWAN LNS such as Chirpstack, Loriot, and TTN, and how to install them into projects."
 keywords: [tagodeploy, iot, middleware, lorawan, integration]
 tags: ["tagodeploy"]
 slug: /tagodeploy/services/middlewares
 ---
 
 Middleware services extend your TagoDeploy project with managed endpoints that
-connect external networks and systems to TagoIO. You install them from Services
-at the top of the page.
+connect external networks and systems to TagoIO. You install them from the App
+Catalog at `/apps`. Inside a project, a middleware's add-on label reads
+"Middleware {Type}", for example "Middleware Chirpstack".
 
 > The catalog evolves over time; this guide focuses on how to deploy and operate
-> any middleware.
+> any middleware. Available types today are AWS IoT, Chirpstack, Everynet, Generic
+> HTTPS, Loriot, MachineQ, Myriota, Senet, Sigfox, Tektelic, and TTN.
 
 An active middleware instance runs inside your single-tenant environment and
-uses your project’s resources. You can scale instances, attach custom domains,
-and point external networks to the middleware’s endpoint.
+uses your project's resources. You can scale instances, attach custom domains,
+and point external networks to the middleware's endpoint.
 
 ## What is a Middleware?
 
@@ -26,23 +28,31 @@ with its own configuration, token, and scaling policy.
 
 ## Installing a Middleware
 
-You install a middleware from Services.
+You install a middleware from the App Catalog. Open **Apps** in the top
+navigation, find the middleware type, and click its card to open the detail
+dialog. Click **Next** to open the install dialog.
 
-During installation you’ll see these fields:
+The install dialog first asks where the middleware should run:
 
-- **Name:** Display name for the service instance.
-- **Project and Region:** Target project to deploy in.
-- **Version:** Default to the latest unless you need compatibility with an older
+- **In a project:** Add it to an existing project. Action button "Add to
+  Project".
+- **New Project:** Provision it alongside a new project. Action button "Review
+  and Install".
+
+You then set these fields:
+
+- **Project:** The target project (only when installing into an existing
+  project).
+- **Region:** The AWS region the service runs in.
+- **Version:** Defaults to the latest unless you need compatibility with an older
   stack.
-- **Network Token:**
-  - Select an Existing Network to have TagoDeploy create and bind a Network
-    Token for that network, or
-  - Use custom token to paste a specific Network Token that the middleware
-    should use.
-- **TagoIO API URL:** Pre-filled with your project’s API endpoint.
+- **Name:** Display name for the service instance, under Settings.
+- **Network Token:** The token the middleware uses to write and read in your
+  project.
+- **TagoIO API URL:** Pre-filled with your project's API endpoint.
 
-You can review the configuration and deploy. The service will provision
-networking, compute, and a default autoscaling policy.
+Confirm to deploy. The service provisions networking, compute, and a default
+autoscaling policy.
 
 ### Domains
 
@@ -52,9 +62,10 @@ Registration at
 
 ## Using the Middleware
 
-Once deployed, you can use the middleware’s public endpoint with your external
-network or platform. Follow the integration steps for your network in the TagoIO
-documentation at [TagoIO Network Integrations](/docs/tagodeploy/project/configuration/integrations.md).
+Once deployed, you can use the middleware's public endpoint with your external
+network or platform. You can find the endpoint URL on the middleware's Overview
+page in the project, and follow the integration steps for your network in the
+TagoIO documentation.
 
 The middleware authenticates using the Network Token you selected at install
 time. That token scopes which devices the middleware can write and read in your

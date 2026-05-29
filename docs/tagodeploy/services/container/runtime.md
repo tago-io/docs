@@ -1,6 +1,6 @@
 ---
 title: "Container Runtime"
-description: "Configure container working directory, startup command, and image overrides for custom runtime behavior."
+description: "The Runtime section of the Docker Settings page: override the container's work directory and command."
 keywords: [tagodeploy, iot, container, runtime, docker]
 tags: ["tagodeploy", "container"]
 slug: /tagodeploy/project/container/runtime
@@ -8,77 +8,22 @@ slug: /tagodeploy/project/container/runtime
 
 # Runtime Configuration
 
-Configure runtime settings to customize how your Docker container executes,
-including the working directory and startup command. These settings allow you to
-override the default behavior defined in your Docker image.
+The **Runtime** section on the container **Docker Settings** page overrides the
+default work directory and command from the Docker image. Leave a field empty to
+keep the image default. Edit the fields and use **Save** to stage the change,
+which is applied through the project deploy flow.
 
-## Runtime Settings Overview
+## Work Directory
 
-Runtime configuration provides control over:
+**Work Directory** is the directory the container runs in. Leave it empty to use
+the working directory defined in the image, or set an absolute path (starting
+with `/`) to override it. Common values are `/app` and `/usr/src/app`.
 
-- **Working Directory**: The directory where your application runs inside the
-  container
-- **Startup Command**: The command executed when the container starts
-- **Image Overrides**: Customization that supersedes Docker image defaults
+## Command
 
-## Working Directory
+**Command** is what runs when the container starts. Leave it empty to use the
+`CMD` or `ENTRYPOINT` from the image, or set your own command with any arguments,
+such as `node server.js`, `python app.py`, or `java -jar app.jar`.
 
-### What is Working Directory?
-
-The working directory is the file system location where your application runs
-inside the container. It serves as the default location for relative file paths
-and command execution.
-
-**Default Behavior:**
-
-- If left empty, uses the working directory defined in the Docker image
-- Most images define a sensible default (often `/app`, `/usr/src/app`, or
-  `/opt/app`)
-
-**Custom Working Directory:**
-
-- Override the image default with a specific path
-- Must be an absolute path (starting with `/`)
-
-**Examples:**
-
-```
-/app                    # Common for Node.js, Python apps
-/usr/src/app           # Alternative for web applications
-/opt/myapp             # Custom application directory
-```
-
-## Startup Command
-
-### What is Startup Command?
-
-The startup command defines what executes when your container starts. This can
-be application startup, script execution, or service commands.
-
-**Default Behavior:**
-
-- If left empty, uses the `CMD` or `ENTRYPOINT` defined in the Docker image
-
-**Custom Commands:**
-
-- Override the image default with your specific command
-- Can include command-line arguments and flags
-
-**Examples:**
-
-```
-node server.js                    # Node.js application
-python app.py                     # Python application
-npm start                         # Using npm scripts
-java -jar app.jar                 # Java application
-```
-
-## Best Practices
-
-- **Use Standard Paths**: Follow common conventions for your application type
-- **Foreground Execution**: Ensure your command runs in the foreground (doesn't
-  exit immediately)
-- **Absolute Paths**: Always use absolute paths for working directories starting
-  with `/`
-- **Test Locally**: Verify your configuration works with `docker run` before
-  deploying
+Make sure the command runs in the foreground so the container does not exit
+right after it starts.

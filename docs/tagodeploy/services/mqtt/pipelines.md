@@ -8,84 +8,75 @@ slug: /tagodeploy/project/mqtt/pipelines
 
 # Pipelines
 
-This section allows you to create, edit and delete the pipelines that process
-data from your MQTT broker. The existing pipelines are displayed in a table with
-the following columns:
+Pipelines forward incoming MQTT messages to external services. This page lists,
+creates, edits, and deletes them, and it also holds the Topic Mappings that
+route topics to pipelines. Existing pipelines show in a table with these
+columns:
 
-- Name
-- Description
+- **NAME** (sortable)
+- **DESCRIPTION**
+- **STATUS** (for example, Active)
+
+Use the search box to filter by pipeline name.
 
 ## What are Pipelines?
 
-Pipelines are data processing workflows that automatically handle messages
-received from the MQTT broker and forward them to TagoIO instances. They serve
-as the bridge between your MQTT devices and TagoIO's data processing and
-visualization capabilities.
+Pipelines are the bridge between your MQTT devices and an external service such
+as a TagoIO instance. A pipeline forwards the messages from its mapped topics to
+the configured endpoint with the right tokens.
 
 Pipelines work by:
 
-- **Listening**: Monitoring specific MQTT topics for incoming messages
-- **Processing**: Handling the data from MQTT messages
-- **Forwarding**: Sending processed data to designated TagoIO instances
+- **Receiving**: taking messages from the topics mapped to the pipeline
+- **Forwarding**: sending them to the configured API URL with the network and
+  authorization tokens
 
 ## How Pipelines Work
 
-When a message is published to an MQTT topic that has an associated pipeline:
+When a message is published to a topic mapped to a pipeline:
 
-1. **Message Reception**: The MQTT broker receives the message on the monitored
-   topic
-2. **Pipeline Trigger**: The associated pipeline is automatically triggered
-3. **Data Processing**: The pipeline processes the message data according to its
-   configuration
-4. **Data Forwarding**: Processed data is sent to the configured TagoIO instance
-
-## Pipeline Configuration Requirements
-
-To create a functional pipeline, you need:
-
-- **API Endpoint**: The URL of the TagoIO instance where data should be sent
-- **Authorization Token**: The authentication token for the TagoIO profile
-- **Network Token**: The token identifying the network the device belongs to
-- **Topic Mappings**: Assignment of MQTT topics to the pipeline
+1. **Reception**: the broker receives the message on the mapped topic
+2. **Match**: the topic mapping forwards it to the pipeline
+3. **Forwarding**: the pipeline sends the message to its API URL with the
+   network and authorization tokens
 
 ## Managing Pipelines
 
 ### Creating a Pipeline
 
-To create a new pipeline, click the "New pipeline" button. You will be
-redirected to a configuration page where you can specify:
+Click **New pipeline** to open the dialog. The API URL is generated from your
+project settings by default. Set:
 
-- **Pipeline Name**: A descriptive name for identification
-- **Description**: Details about the pipeline's purpose
-- **TagoIO Configuration**: API endpoint, authorization token, and network token
+- **NAME**: a descriptive name
+- **DESCRIPTION**: what the pipeline is for
+- **API URL**: the endpoint to forward messages to (default
+  `https://api.tagoio.net`)
+- **NETWORK TOKEN**: the token identifying the network
+- **AUTHORIZATION TOKEN**: the token that authorizes the request
+
+Click **Create pipeline** to save.
 
 ### Editing a Pipeline
 
-To edit a pipeline, click on the three-dot menu button and use the edit option.
-You will be redirected to the configuration page where you can modify:
-
-- Pipeline name and description
-- TagoIO instance connection details
-- Authentication and network tokens
+Open the pipeline's row menu and use Edit to change its name, description, API
+URL, and tokens.
 
 ### Deleting a Pipeline
 
-To delete a pipeline, click on the three-dot menu button and use the delete
-option.
+Open the pipeline's row menu and use Delete.
 
 ## Topic Mappings
 
-Pipelines work in conjunction with Topic Mappings to determine which MQTT topics
-trigger data processing. Each pipeline can be associated with multiple topics,
-and the same topic can trigger multiple pipelines for different processing
-workflows.
+Topic Mappings route MQTT topics to specific pipelines. They live in a section
+on this same Pipelines page, edited inline with no dialog. Use **New mapping**
+to add a row and the **Save** button to stage your changes, which take effect
+after you deploy. Each row has:
 
-## Integration Benefits
+- **TOPIC**: the topic to match, for example `devices/+/telemetry`. MQTT
+  wildcards are supported, where `+` matches a single level and `#` matches
+  every level below a point.
+- **PIPELINE**: the pipeline to forward matching messages to, picked by name.
+- a remove control.
 
-Pipelines enable seamless integration between MQTT devices and TagoIO by:
-
-- **Automated Processing**: Eliminating manual data transfer steps
-- **Real-time Data Flow**: Providing immediate data availability in TagoIO
-- **Scalable Architecture**: Supporting multiple devices and data streams
-- **Flexible Configuration**: Allowing different processing rules for different
-  device types
+A single topic can map to more than one pipeline, and the same pipeline can
+serve many topics.

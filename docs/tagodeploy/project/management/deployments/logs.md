@@ -1,36 +1,37 @@
 ---
-title: "Deployment Logs"
-description: "Track deployment progress, understand change management behavior, and identify failures via real-time logs."
-keywords: [tagodeploy, iot, deployments, logs, monitoring]
+title: "Logs"
+description: "View runtime output from the services running in your project, with type, date, and live filters."
+keywords: [tagodeploy, iot, logs, monitoring]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/deployments/logs
 ---
 
 # Logs
 
-The Logs section offers a chronological account of your project’s deployment
-process. Each log entry records the date and time of deployment actions,
-providing real-time visibility into deployment activities. This level of detail
-enables you to monitor deployment progress and quickly identify any issues as
-they arise, supporting troubleshooting and maintaining a transparent deployment
-history.
+The Logs page shows runtime output from the services running in your project.
+Open it from the Management sidebar under **Logs**. The page header reads "Logs"
+and the card is titled "View Logs", with the subtitle "Runtime output from
+services running in this project."
 
-Key features of the Logs section include:
+## Filtering and following logs
 
-- **Real-Time Tracking:** Each deployment action is timestamped, allowing you to
-  follow the deployment process step by step and verify that all stages are
-  completed as expected.
-- **Change Management:** Any modification to services automatically triggers a
-  new deployment. Changes are only applied after the deployment process has
-  completed and the previous deployment has been removed. This approach ensures
-  that updates are introduced in a controlled manner, reducing the risk of
-  configuration drift or partial updates.
-- **Immediate Issue Notification:** If the most recent deployment fails, an
-  orange warning sign will appear at the top of every page within the TagoDeploy
-  console. This prominent visual alert draws immediate attention to deployment
-  issues, enabling you to respond and resolve problems without delay.
+Use the controls at the top of the page to focus on what you need:
 
-**Note:** Logs are specific to the current deployment session. When a new
-deployment begins, logs from the previous deployment are cleared and are no
-longer accessible. This ensures that you are always viewing the most relevant
-and up-to-date information for the active deployment lifecycle.
+- A search box (placeholder "Search logs...") to match entries by text.
+- A "Type" filter to limit the output to a specific log type.
+- A "Date" filter to narrow logs to a time window.
+- A "Refresh" button to reload the current view.
+- A "Live" toggle to stream new entries as they arrive.
+
+When there is no output to show, the page displays "No logs yet" with the note
+that logs from your project will appear here.
+
+## Change management behavior
+
+Any change to a service automatically triggers a new deployment. Changes are
+only applied after the deployment finishes and the previous deployment has been
+removed. This keeps updates controlled and reduces the risk of configuration
+drift or partial updates.
+
+If the most recent deployment fails, a warning appears at the top of every page
+in the TagoDeploy console so you can respond and resolve the issue without delay.

@@ -1,14 +1,18 @@
 ---
 title: "TagoDeploy"
-description: "A brief overview of Tago Deploy, a dedicated single-tenant IoT platform built on the TagoIO architecture, with an architecture overview and pointers to core capabilities, add-on services, and implementation considerations."
+description: "A brief overview of TagoDeploy, a dedicated single-tenant IoT platform built on the TagoIO architecture, with an architecture overview and pointers to core capabilities, add-on services, and implementation considerations."
 keywords: [tagodeploy, iot, single-tenant, enterprise, infrastructure]
+tags: ["tagodeploy"]
 slug: /tagodeploy
 ---
 
-Tago Deploy provides a dedicated, single‑tenant IoT platform environment built
+TagoDeploy provides a dedicated, single-tenant IoT platform environment built
 on the complete TagoIO architecture. This enterprise solution delivers isolated
 infrastructure with full resource control, enabling organizations to operate
 their IoT platform without shared infrastructure constraints.
+
+You switch between projects from the project switcher in the top navigation, and
+you add new projects and services from the App Catalog at `/apps`.
 
 ![Image 1](/docs_imagem/tagoio/external-45f285f7.png)
 
@@ -26,7 +30,7 @@ position their infrastructure based on latency requirements, compliance needs,
 or data residency regulations.
 
 The deployment includes custom API endpoints and administrative interfaces with
-configurable URLs, enabling complete white‑label implementation. All TagoIO
+configurable URLs, enabling complete white-label implementation. All TagoIO
 platform capabilities are included, with the addition of TagoRUN integration for
 custom application deployment and user management.
 
@@ -38,7 +42,7 @@ Each Tago Deploy instance operates on isolated infrastructure with dedicated
 resources. Organizations receive their own compute instances, storage systems,
 and network configurations without sharing resources with other tenants. This
 architecture ensures predictable performance and eliminates the resource
-contention common in multi‑tenant environments.
+contention common in multi-tenant environments.
 
 ![Image 2](/docs_imagem/tagoio/external-2780a3eb.png)
 
@@ -87,15 +91,19 @@ platform touchpoints.
 
 Platform updates and feature deployments are managed through controlled
 versioning. Organizations maintain authority over when updates are applied,
-allowing for testing and validation in non‑production environments before
+allowing for testing and validation in non-production environments before
 rolling changes to production systems. This approach ensures operational
 stability while providing access to new platform capabilities.
 
 ## Add-on Services
 
+Add-on services install from the App Catalog at `/apps`, the same place you
+create a project. The catalog groups items by category: Platform, Middleware,
+MQTT, and Others.
+
 ### MQTT Broker
 
-A dedicated MQTT broker can be deployed within the Tago Deploy environment,
+A dedicated MQTT broker can be deployed within the TagoDeploy environment,
 providing complete control over device communication protocols. The broker
 supports custom authentication mechanisms, message routing rules, and protocol
 configurations tailored to specific IoT deployment requirements.
@@ -104,11 +112,11 @@ configurations tailored to specific IoT deployment requirements.
 
 ### Middleware Services
 
-Custom middleware components can be deployed to extend platform functionality or
-integrate with existing enterprise systems. These services operate within the
-isolated environment while maintaining full access to platform APIs and data
-streams. Services such as LNS (LoRaWAN Network Service) for Netmore, TTI, and
-others, and MQTT are supported.
+Middleware components can be deployed to connect external networks and systems to
+your project. They operate within the isolated environment while maintaining full
+access to platform APIs and data streams. Available middleware types include AWS
+IoT, Chirpstack, Everynet, Generic HTTPS, Loriot, MachineQ, Myriota, Senet,
+Sigfox, Tektelic, and TTN.
 
 ![Image 8](/docs_imagem/tagoio/external-4045d1cd.png)
 

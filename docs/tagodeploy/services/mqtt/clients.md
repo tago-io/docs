@@ -8,12 +8,16 @@ slug: /tagodeploy/project/mqtt/clients
 
 # Clients
 
-This section allows you to create, edit and delete the clients that can connect
-to your MQTT broker. The existing clients are displayed in a table with the
-following columns:
+Clients are the credentials that devices use to authenticate with the broker.
+This page lists, creates, edits, and deletes them. Existing clients show in a
+table with these columns:
 
-- Name
-- Authentication Type
+- **Client Name** (sortable)
+- **Authentication**
+- **Actions** (a per-row menu)
+
+Use the search box to filter by client name. The table pages through results
+with the count and page controls at the bottom.
 
 ## What are Clients?
 
@@ -41,37 +45,45 @@ When a device attempts to connect to the MQTT broker:
 4. **Permission Application**: The client inherits all ACL permissions from its
    assigned groups
 
-## Authentication Types
+## Authentication
 
-Currently, there is a single authentication method:
+A client authenticates with one of two methods, shown in the Authentication
+column as either **Credentials** or **Certificate**.
 
-### Username/Password Authentication
+### Credentials
 
-The standard authentication method where devices connect using:
+Username and password authentication. The device connects using:
 
-- **Username**: A unique identifier for the client
-- **Password**: A secure credential that validates the client's identity
+- **Username**: a unique identifier for the client
+- **Password**: a secret that validates the client's identity
+
+Credentials can be paired with a certificate for an extra layer of trust.
+
+### Certificate
+
+Authentication backed by a client certificate, verified by the broker when
+custom certificates and MTLS are enabled on the Certificates page.
 
 ## Managing Clients
 
-### Creating a New Client
+### Creating a new client
 
-To create a new client, click the "New client" button. You will then be
-redirected to a page where you can configure:
+Click **New Client** to open the dialog. Set:
 
-- **Client Name**: A descriptive name to identify the client in the system
-- **Username**: The username that devices will use to connect
-- **Password**: A secure password for authentication
+- **Name**: a descriptive name to identify the client
+- **Authentication**: choose Credentials and fill in the **Username** and
+  **Password**
 
-### Editing a Client
+Click **Create client** to add it.
 
-To edit a client, click on the client's three-dot menu button and then select
-the "Edit" option. You can modify the client's name, username, and password.
+### Editing a client
 
-### Deleting a Client
+Open the client's row menu and select Edit to change its name and
+authentication.
 
-To delete a client, click on the client's three-dot menu button and then select
-the "Delete" option.
+### Deleting a client
+
+Open the client's row menu and select Delete.
 
 ## Modification Impact
 
