@@ -1,0 +1,67 @@
+name: AI Review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+jobs:
+  # Parses /review args. Fires on PR open / ready-for-review / a /review comment.
+  parse:
+    # Same-repo branches only (no forks) and, for /review, members only. The reusable workflow
+    # re-checks both server-side (see Public repositories); this just avoids starting a job for
+    # an untrusted trigger.
+    if: >-
+      (github.event_name == 'pull_request' &&
+       (github.event.action == 'opened' || github.event.action == 'ready_for_review') &&
+       github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request != null &&
+       (github.event.comment.body == '/review' ||
+        startsWith(github.event.comment.body, '/review ')) &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+    runs-on: ubuntu-latest
+    outputs:
+      model: ${{ steps.p.outputs.model }}
+      effort: ${{ steps.p.outputs.effort }}
+    steps:
+      - id: p
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          # Model and effort default to the org-wide values in tago-io/actions. Only a
+          # `/review <model>:<effort>` comment overrides them, per-PR; anything left empty
+          # here falls through to that central default.
+          if [ "$EVENT_NAME" != "issue_comment" ]; then
+            exit 0
+          fi
+          ARGS=$(printf '%s' "$COMMENT_BODY" | head -n1 | sed 's|^/review||' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -z "$ARGS" ]; then
+            exit 0
+          fi
+          echo "model=${ARGS%%:*}" >> "$GITHUB_OUTPUT"
+          case "$ARGS" in
+            *:*) echo "effort=${ARGS#*:}" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+  review:
+    needs: parse
+    permissions:
+      contents: write
+      pull-requests: write
+    # The reusable workflow also serializes per PR, but keep this here so the caller run is
+    # cancelled too. Do NOT key on model: a /review with a different model must still cancel an
+    # in-flight default review, otherwise both run and double-bill.
+    concurrency:
+      group: ai-review-${{ github.event.pull_request.number || github.event.issue.number }}
+      cancel-in-progress: true
+    uses: tago-io/actions/.github/workflows/pr-review.yml@main
+    with:
+      model: ${{ needs.parse.outputs.model }}
+      effort: ${{ needs.parse.outputs.effort }}
+    secrets:
+      TAGOIO_AGENT_APP_CLIENT_ID: ${{ secrets.TAGOIO_AGENT_APP_CLIENT_ID }}
+      TAGOIO_AGENT_APP_PRIVATE_KEY: ${{ secrets.TAGOIO_AGENT_APP_PRIVATE_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
