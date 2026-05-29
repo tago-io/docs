@@ -92,11 +92,12 @@ PULL|4deedd7bab8817ec|sensor-01|[temperature]
 Follow our tutorials to start building your IoT project using UDP, TCP, HTTP, or MQTT:
 
 :::tip Get started with TagoTiP
+
 - [TagoTiP UDP — Quick Start](https://youtu.be/YhhHuCH7UZo)
 - [TagoTiP TCP — Quick Start](https://youtu.be/cSMbQkPyrZo)
 - [TagoTiP HTTP — Quick Start](https://youtu.be/oZfrq5xFS5k)
 - [TagoTiP MQTT — Quick Start](https://youtu.be/EHnG_P28MPE)
-:::
+  :::
 
 ## SDKs
 
