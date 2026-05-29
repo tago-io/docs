@@ -29,18 +29,18 @@ GET https://api.<region>.tago.io/data
 
 ### Query parameters
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `variable` | string or array | Filter by variable name |
-| `query` | string | Predefined query type |
-| `qty` | number | Maximum records to return (default 15) |
-| `skip` | number | Records to skip, used for pagination |
-| `start_date` | string | Start of the date window |
-| `end_date` | string | End of the date window |
-| `value` | string or number | Filter by exact value |
-| `group` | string | Filter by group label |
-| `id` | string | Filter by data record ID |
-| `details` | bool | Include internal metadata on each record |
+| Key          | Type             | Description                              |
+| ------------ | ---------------- | ---------------------------------------- |
+| `variable`   | string or array  | Filter by variable name                  |
+| `query`      | string           | Predefined query type                    |
+| `qty`        | number           | Maximum records to return (default 15)   |
+| `skip`       | number           | Records to skip, used for pagination     |
+| `start_date` | string           | Start of the date window                 |
+| `end_date`   | string           | End of the date window                   |
+| `value`      | string or number | Filter by exact value                    |
+| `group`      | string           | Filter by group label                    |
+| `id`         | string           | Filter by data record ID                 |
+| `details`    | bool             | Include internal metadata on each record |
 
 ### Response
 
@@ -146,12 +146,12 @@ const data = await device.getData({
 
 Accepted date formats:
 
-| Format | Example |
-| --- | --- |
+| Format                 | Example                         |
+| ---------------------- | ------------------------------- |
 | ISO 8601 with timezone | `2026-05-19T00:00:00.000-04:00` |
-| ISO 8601 UTC | `2026-05-19T04:00:00.000Z` |
-| Human-readable | `2026-05-19 00:00:00` |
-| Relative | `1 day`, `1 month`, `1 year` |
+| ISO 8601 UTC           | `2026-05-19T04:00:00.000Z`      |
+| Human-readable         | `2026-05-19 00:00:00`           |
+| Relative               | `1 day`, `1 month`, `1 year`    |
 
 :::tip
 
@@ -187,14 +187,14 @@ const data = await device.getData({
 
 The `query` parameter retrieves a single record matching a specific condition. Only one `query` value is accepted per request.
 
-| Query | Returns |
-| --- | --- |
-| `last_item` | Most recent record by time |
-| `last_value` | Most recent record that has a `value` field |
-| `last_location` | Most recent record that has a `location` field |
-| `first_item` | Oldest record by time |
-| `first_value` | Oldest record that has a `value` field |
-| `first_location` | Oldest record that has a `location` field |
+| Query            | Returns                                        |
+| ---------------- | ---------------------------------------------- |
+| `last_item`      | Most recent record by time                     |
+| `last_value`     | Most recent record that has a `value` field    |
+| `last_location`  | Most recent record that has a `location` field |
+| `first_item`     | Oldest record by time                          |
+| `first_value`    | Oldest record that has a `value` field         |
+| `first_location` | Oldest record that has a `location` field      |
 
 ```js
 const latest = await device.getData({
@@ -213,13 +213,13 @@ These queries return at most one record. Do not combine them with `qty > 1`.
 
 Use `query` with `min`, `max`, or `count` to get a single summary value. Use `avg` or `sum` to compute the average or total over a date window.
 
-| Query | Returns | `start_date` required |
-| --- | --- | --- |
-| `min` | Lowest value in the result set | No |
-| `max` | Highest value in the result set | No |
-| `count` | Number of records matching the filters | No |
-| `avg` | Average of all values in the window | Yes |
-| `sum` | Sum of all values in the window | Yes |
+| Query   | Returns                                | `start_date` required |
+| ------- | -------------------------------------- | --------------------- |
+| `min`   | Lowest value in the result set         | No                    |
+| `max`   | Highest value in the result set        | No                    |
+| `count` | Number of records matching the filters | No                    |
+| `avg`   | Average of all values in the window    | Yes                   |
+| `sum`   | Sum of all values in the window        | Yes                   |
 
 ```js
 // Peak temperature for the day
@@ -244,6 +244,7 @@ const total = await device.getData({
 Aggregate queries bucket records by a time interval and apply a function to each bucket. Use them to downsample high-frequency data or build time-series charts.
 
 Set `query: "aggregate"` and provide:
+
 - `function`: `avg`, `sum`, `min`, or `max`
 - `interval`: `minute`, `hour`, `day`, `month`, `quarter`, or `year`
 
@@ -262,14 +263,14 @@ const hourlyAvg = await device.getData({
 
 Conditional queries return records where the numeric value meets a comparison condition. `start_date` is required.
 
-| Function | Condition |
-| --- | --- |
-| `gt` | value &gt; threshold |
-| `gte` | value &gt;= threshold |
-| `lt` | value &lt; threshold |
-| `lte` | value &lt;= threshold |
-| `eq` | value == threshold |
-| `ne` | value != threshold |
+| Function | Condition             |
+| -------- | --------------------- |
+| `gt`     | value &gt; threshold  |
+| `gte`    | value &gt;= threshold |
+| `lt`     | value &lt; threshold  |
+| `lte`    | value &lt;= threshold |
+| `eq`     | value == threshold    |
+| `ne`     | value != threshold    |
 
 ```js
 const hot = await device.getData({
