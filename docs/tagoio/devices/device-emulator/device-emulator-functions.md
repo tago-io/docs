@@ -26,7 +26,7 @@ JSON example using a function:
 CSV example using a function:
 
 ```csv
-variable,value,time,serie
+variable,value,time,group
 temperature,$random$,2019-09-19,1568913302243
 ```
 

@@ -20,7 +20,7 @@ All fields and [metadata](/docs/tagoio/devices/payload-parser/metadata.md) store
     "value": 71,
     "unit": "F",
     "time": "2019-06-30 01:58:11",
-    "serie": "1561859891862",
+    "group": "1561859891862",
     "location": {
       "lat": 35.770723,
       "lng": -78.677328

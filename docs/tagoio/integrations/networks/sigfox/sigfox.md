@@ -74,17 +74,17 @@ STATION, you can use the
   {
     "variable": "device",
     "value": "{device}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "data",
     "value": "{data}",
-    "serie": "{time}"
+    "group": "{time}"
   },
   {
     "variable": "seqNumber",
     "value": "{seqNumber}",
-    "serie": "{time}"
+    "group": "{time}"
   }
 ]
 ```

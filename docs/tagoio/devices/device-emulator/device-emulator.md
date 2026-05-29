@@ -19,7 +19,7 @@ section, select the device, and then click on the Emulator tab.
 TagoIO accepts two types of payloads: JSON and Raw.
 
 - **JSON**: The payload is a JSON object that follows TagoIO's data schema by
-  using the following fields: `variable`, `value`, `unit`, `time`, `serie`,
+  using the following fields: `variable`, `value`, `unit`, `time`, `group`,
   `location`, and `metadata`.
 - **Raw**: Raw binary data. If you need to parse text data such as CSV or XML,
   add a [Payload Parser](/docs/tagocore/resources/device/payload-parser.md).

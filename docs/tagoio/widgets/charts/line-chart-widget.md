@@ -9,7 +9,7 @@ Charts are a powerful way to visualize your data and discover insights. The Line
 
 ![Line chart examples](/docs_imagem/tagoio/line-chart-widget-2.png)
 
-This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [series](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
+This widget also accepts features like [metadata](/docs/tagoio/devices/payload-parser/metadata.md) and [groups](/docs/tagoio/devices/grouping-variables.md), which can be set in your variable data.
 
 ## On this page
 
@@ -37,9 +37,9 @@ In the line chart widget, it is possible to customize how the data will be displ
 ### 2.1 X-axis
 
 By default, the X‑axis of the chart will be the time of the values, and you can customize the range of time.
-If you need to group your data through the X‑axis even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **series**.
+If you need to group your data through the X‑axis even if they don't have the same time, select a variable that contains the group; all data will then be grouped by **groups**.
 
-Data is ordered by time ascending, but it is possible to change it to series.
+Data is ordered by time ascending, but it is possible to change it to groups.
 
 ![Image 5](/docs_imagem/tagoio/Captura-20de-20tela-20de-202021-06-17-2016-32-49-2mY.png)
 
