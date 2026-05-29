@@ -52,7 +52,7 @@
     "aws-cdk": "^2.1105.0",
     "aws-cdk-lib": "2.241.0",
     "constructs": "^10.0.0",
-    "docusaurus-plugin-llms": "^0.3.0",
+    "docusaurus-plugin-llms": "^0.4.0",
     "oxfmt": "^0.37.0",
     "oxlint": "^1.52.0",
     "source-map-support": "^0.5.21",
