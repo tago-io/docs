@@ -1,0 +1,45 @@
+---
+id: create-device-using-network
+title: "Create Device using Network"
+description: "Create a new device using a Network Token with the createDevice privilege."
+sidebar_label: "Create Device using Network"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1V11v2zYU/SsEX9YClm3ZUvzxUCBNhiEY2gaLiz0ERnFFXttsZFIlqTie4f8+kJRsKXE+tnV5iS1fXh6ee3ju1Y5aWBo6vaWf0W6UviMzdYeSvKu+RjneY/6ezjuUo2FaFFYoSaf0QiNYJEAkbgjHe8GQlEbIJQHSTrURdkXsCgnzSy5DbKHFvchxiV0yW2GdQZgqipNSctR+XaHVQuRI7AosURtp/FMZNunSDlUFanC4rjid0uY2Xx2iCg7tUI0/SjT2o+JbOt35r0Ijp1OrS+xQpqRFad1PUBS5YD5p77txJ95Rw1a4BvfJbgukU6qy78hslTckuqUS1kg7IcSnlMis0o7BQjukVqBxSXzgMZmxWsglfcxzRVeVFR9gXeQu/NP2QHMIoftq0xMpUZZrh21dWshyl0is689PKlvtWB3guGO9YN881av4L+pQcnVJFipUNFS7lT1dpDBeDIdpzBOeTSYs6XNkmLrtDGqB32S5zvANO96gFpCTEE7eKf8c8g5RMt8SsSB1tUi2bSrpfQvP+cfxaDgZXMSji3NPrb8mh71Ba9g+VywXS8CQO9xG95CXSAJUUoDQxrFvcW1OCamtkDvcnqzmAWSugkQdQL/Ry+Eb0LhSpcGoH9P9ft/47bba7ZjykPHRsnlzoYdZWcGnoI9ajtPdEVKQ+gnN1pJtKLOhrRdEse/U21ace5epSg+Sk1lVr8cY/qwPQ25QGqX/NYTHsmwrphbMP+PVU6vRFEqawO2gH7t/J2VWO6UpGUNjFmWeb+l/cLG2+DSaMrevx4W7/E3wl7WXcgY8ZoP4LB4lrN+PGQyGkE383XJ94pXlEJ8l/XQRZcMBixI2iSPA4SRiWTZgkEE85uMgaWPBls3LlSmVI8hmOmf3Nd3JKYbPS7tSWvzlqSMcpUD+86h9C8QF5Ab3HbpGY2D5ysVuw70McPf1CddoV8p1xkIZDwbsik5pT0iLy9A4e5UH9g7ObFDfow4KLnVOp3RlbWGmvR4UoluaCOOuhaXqCkX3nVMxWEabRszc5WSlFnbrk1ZOMAu1v503A24ckYGroPVo9kgiUIjf8akBn5NmfJgYhCGlFD9KJFaRrSp11X665DeUbnBwU4yXoGsI4O+SM2sfGtL9YkgBS3SzRmUjLVgdKtzmKwSOzlAeooZwMR4MkxQiPupDlOCAR9l4yKOU9f0PZ6OxvwP1vPXmg7aHrGdOWgV1ybk/Frk6ltyQD4ccH0IW49YtH5PimnYr2ZGF545/KUyRw/ZziGofrU3PgqfJBPggGsdDFiX87CzKFqNBlPbHmGaTMSxw6Oi5DjPg2+m5rofGl+hBaYU+DJgNQQgZAoAxVUpLDFor5NI0zt5G9JIEIE4RUoSI8wGPEnY2jMaTJI0mgyxNOCSj0QB8R3M+8sdxRP21zvB/NFAHeKE8k8J6mDNYqqsv5Pz6yvUo1CZQGXf73X7lfcCc9zmozkrWIBvY2u04vAocJ+9WeXZHI/2J7xFHLiw+2F6Rg/CDkXemXeV6t7Theq6YDYSe0HmHrpxNTm/pbpeBwa863+/d4x8lamddc9fBtfBsO9/q1FU/NvuLcLxoFmbouuE/6RnOOMMKdz8L+2LsvOHk119uZrRDs+pFZq24W6Nh415GYEOn1L8W+Xvum7l7tqM5yGXpuwkNOd3f3150wLI=
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Device using Network"}></Heading>
+
+<MethodEndpoint method={"post"} path={"/integration/network/device"} context={"endpoint"}></MethodEndpoint>
+
+Create a new device using a Network Token. The token must have the `createDevice` privilege enabled.
+
+This endpoint allows network integrations to provision devices programmatically without requiring a Profile Token. The device is created under the profile that owns the network and is automatically associated with the network and connector specified in the request.
+
+To use this endpoint, first [create a Network Token](/docs/api/create-network-token) with the `createDevice` privilege set to `true`.
+
+:::info Authorization
+This endpoint uses a **Network Token** for authentication (not a Profile Token). Pass the token in the `Authorization` header.
+:::
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema {...require("./create-device-using-network.RequestSchema.json")}></RequestSchema>
+
+<StatusCodes {...require("./create-device-using-network.StatusCodes.json")}></StatusCodes>

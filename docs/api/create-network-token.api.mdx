@@ -1,0 +1,45 @@
+---
+id: create-network-token
+title: "Create Network Token"
+description: "Create a new token for a network integration with optional privileges."
+sidebar_label: "Create Network Token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV01v4zYQ/SvEXNoCli3bkr8OC2SbogiKboJuegp8GIljmRtZVEjKXtfwfy9IyrGUOB/bxpdY8vBx5s3Mm8keDOYa5nfwhcxWqnt2K++pZD83j2FBGyp+gUUAnHSmRGWELGEOvypCQwxZSVtm3JmlVO7Z44jSUK7QmrOtMCsm3VEsWKXERhSUk+5BALIib3XFYQ6Zg20ud65AAIoeatLms+Q7mO/do1DEYW5UTQFksjRUGvsTVlUhMgfX/6ato3vQ2YrWaL+ZXUUwB5l+o8w0uB7oDkpcEwTQeG/jrZR1zQjS9qz7/YShjRJlDk9ZuRS6KnDHrLXjw6zIswMB0HdcV4U9/eeOdeiGw+nmN+84nry6ZGaFhpmV0E0GtqIoWEoMtZaZQEPcUd+5O+HZgKaTGR/FMY5GUZoOknjKU+vDKTPn6Oq6cf08ncxIlissjf3SjrxLpc/xJW1E1qY0lbIgLJ9ddFEUcnuCs9wegXEHodlGILu5/nrL+q2i6zeE9r1VmwNbNgf7eXzn/PqMWmRNQuZ72GBR0yn1cIkG2VWZk3Y1fSzOx7y9wuwhgNsmQWbFfOTMdZBFujkSeO7WGyU3QgtZijL/kTufJrNL+iMD1jVFupKl9nbDKLJ/zpecT4CH4kzXWUZaL+ui2MH/aMNudSjSdWHetjPHPD3tllapJxFN4ygKaThLw3jA4xAng3EYx+NxksRxFEWRa70Xevs/N+xHdNsP9sy54tYGTa3faX4III4Gz3N/UZuVVOIfX6ucSkH847L9HheXWGg6BLAmrTF/I1Nddy+9u4+lviazknbOVFI7Z9CsYA5ndeMoXprUhpSdkXuoVQFzWBlT6Xm/j5Xo1TqkQc9gLntCwiE4Z0N1uG3ZLCxmVithdg70RsmlKKgRnrtF2+Cr5dFT5ZMf3j6pe6zEH7R7rpqsbe8nhdCsLsVDbZWU7WStGgXtsd+ptFPYznPf4+mOoetuKzvO1MP9pFmFOdnBfZTFtlsBCHv5ipCTggC+h61WoMFwFCcY8kmEYUxDHqbTEQ+TLHI/jCfTmW2L4+bx7kC7m8sLkTZGPXbhwmJXp4xr9ukR45NH8aPsKSl2oHfATiy8FH6zEHzxVt3QuvQseRLPkA/D6WCUhTEfj8N0ORmGSTSlJJ1NcUkjS09TLe+npzlwnJ7n6aHSCEWs8batghClN8Ask3VpmCZjRJnrVuxdj14rARwkhAlhyPmQh3E2HoXTWZyEs2GaxBzjyWSIblpaGfnrtPX9dkT4iGFsHVxKx5wwzq1bzOXVNbu4uYIAbK976ga9qBc1UoeZlTrrmlWONZYtX5pVuDsgnuRhfxLMj1udm8wb+m76VYHCjSUnP/tG2e6ghdXiJ2jG5yKAlVXC+R3s9ylq+lsVh4N9/VCTsvK0CGCDSmBqmbpbHIJjZq1y3dPOxuMjC2+tO8Fxg3k+Fqw4+hO2Byvzqu2iJdZ2t4MA0mb/X0tuzyjc2h0etzAH93+E62W3Qth3eyiwzGs3MMBj2s+/6LBqTA==
+sidebar_class_name: "post api-method"
+info_path: docs/api/tagoio-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"Create Network Token"}></Heading>
+
+<MethodEndpoint method={"post"} path={"/integration/network/token"} context={"endpoint"}></MethodEndpoint>
+
+Create a new token for a network integration. Network Tokens are used to authenticate requests from external systems to TagoIO network endpoints (e.g., sending data, creating devices).
+
+Tokens can be granted optional **privileges** that control what operations the token is allowed to perform beyond the default data ingestion. Currently supported privileges:
+
+- **createDevice** – Allows the token to create devices via `POST /integration/network/device`.
+
+:::info Authorization
+This endpoint requires a **Profile Token** with write permission. The profile must own the target network.
+:::
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"}>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema {...require("./create-network-token.RequestSchema.json")}></RequestSchema>
+
+<StatusCodes {...require("./create-network-token.StatusCodes.json")}></StatusCodes>

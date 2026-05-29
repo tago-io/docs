@@ -1,0 +1,45 @@
+{
+  "responses": {
+    "200": {
+      "description": "Network token created successfully",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "token": { "type": "string", "example": "550e8400-e29b-41d4-a716-446655440000" },
+                  "name": { "type": "string", "example": "My Network Token" },
+                  "network": { "type": "string", "example": "5dc1e879d344a330bb1548db" },
+                  "privileges": {
+                    "type": "object",
+                    "properties": {
+                      "createDevice": { "type": "boolean", "example": true }
+                    }
+                  }
+                }
+              },
+              "status": { "type": "boolean", "example": true }
+            }
+          }
+        }
+      }
+    },
+    "401": {
+      "description": "Authorization denied. The Profile Token is missing, invalid, or does not have write permission.",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "boolean", "example": false },
+              "message": { "type": "string", "example": "Authorization Denied" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
