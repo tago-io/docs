@@ -1,69 +1,59 @@
 ---
 title: "Analysis Runtime"
-description: "Configure memory and monitor Python/Node.js runtime metrics for TagoIO analyses; optimize cost and performance."
-keywords: [tagodeploy, iot, analysis, runtime, performance]
+description: "Set Node.js and Python memory for the scripts that run your TagoIO analyses, and monitor invocations and duration."
+keywords: [tagodeploy, iot, analysis, runtime, memory, monitoring]
 tags: ["tagodeploy", "analysis"]
 slug: /tagodeploy/project/analysis-runtime
 ---
 
 # Analysis Runtime
 
-The Analysis Runtime provides visibility and control over the resource usage and
-performance metrics of your
-[analysis](https://help.tago.io/portal/en/kb/articles/29-analysis-overview)
-scripts within the TagoIO platform. Proper configuration and monitoring of
-[analysis runtime](https://help.tago.io/portal/en/kb/articles/194-analysis-service)
-parameters are essential for optimizing operational costs and maintaining system
-performance. Analyses are billed primarily based on their execution duration and
-the memory consumed during runtime.
+The Analysis Runtime page sets the memory available to the Node.js and Python
+scripts that run your
+[analyses](https://help.tago.io/portal/en/kb/articles/29-analysis-overview).
+Analyses are billed mainly on execution duration and the memory used during a
+run, so the memory you set here affects both performance and cost.
+
+Open the page from the **TagoIO & API** area, under **SERVICES** in the sidebar.
 
 ## Memory Configuration
 
-Memory allocation is a critical factor that directly impacts both the
-performance and cost of your analyses. Each analysis execution is provisioned
-with a configurable memory limit, which determines the maximum amount of RAM
-available during runtime. Consuming more memory, especially when processing
-large datasets or performing complex calculations, will result in higher costs.
+The page has two configuration groups, one per runtime:
 
-- **Maximum Allocation:** The highest memory limit you can assign to an analysis
-  is 10GB. This is intended for advanced analytics or workloads that require
-  substantial in-memory processing.
-- **Default Allocation:** By default, each analysis is allocated 512MB of
-  memory. This configuration is typically sufficient for standard operations and
-  applications that do not require intensive data processing.
+- **Node.js Runtime**: memory allocation for Node.js analysis scripts. The
+  **Memory (MB)** field defaults to 512.
+- **Python Runtime**: memory allocation for Python analysis scripts. The
+  **Memory (MB)** field defaults to 512.
 
-Carefully assess the memory requirements of your analysis scripts. Allocate only
-as much memory as needed to prevent unnecessary cost increases. Monitor memory
-consumption patterns, especially after changes to data retrieval or processing
-logic.
+The default of 512 MB is enough for standard operations that do not run
+intensive data processing. Raise it when an analysis works over large datasets
+or performs heavy in-memory calculations. Higher memory increases cost, so set
+only what the script needs.
 
-## Runtime Metrics
+Click **Save** to apply changes.
 
-To help you manage and optimize your analyses, the platform provides real-time
-metrics for both Python and Node.js runtimes:
+## Monitoring
 
-### Invocation Count
+The **Monitoring** section reports runtime activity. A range toggle switches the
+window across 1h, 6h, 12h, 1d, 3d, 7d, and 30d. When there is no data for the
+selected window, the chart shows "No data available".
 
-This metric tracks the number of analysis executions initiated over a given
-period. Monitoring invocation trends can help you identify usage patterns,
-optimize scheduling, and anticipate scaling needs.
+### Invocations
 
-### Execution Duration
+Counts the analysis executions started in the selected window (COUNT).
+Invocation trends help you read usage patterns, tune scheduling, and anticipate
+scaling needs.
 
-This metric records the average time (in seconds) taken for analyses to complete
-their execution. Tracking duration helps you detect performance bottlenecks,
-optimize script efficiency, and manage resource allocation more effectively.
+### Duration
 
-## Cost and Performance Optimization
+Reports how long analyses take to run, in milliseconds (MS). Tracking duration
+helps you find performance bottlenecks and refactor slow scripts.
 
-Since analysis billing is based on both execution duration and memory
-consumption, it is important to:
+## Cost and Performance
 
-- Regularly review runtime metrics to identify inefficiencies or unexpected
-  resource usage.
-- Tune memory allocation settings according to the actual requirements of your
-  analyses.
-- Refactor scripts to minimize execution time and avoid unnecessary data
-  processing or retrieval.
-- Set up alerts or monitoring thresholds to proactively manage costs and ensure
-  stable operations.
+Billing follows execution duration and memory use, so:
+
+- Review the Invocations and Duration charts to find inefficiencies or
+  unexpected usage.
+- Set memory per runtime to the actual needs of your scripts.
+- Refactor scripts to cut execution time and avoid unnecessary data retrieval.

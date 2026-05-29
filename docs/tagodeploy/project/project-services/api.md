@@ -1,101 +1,77 @@
 ---
 title: "API Service"
-description: "Manage and scale the TagoIO API for your project, with recommended configurations and billing considerations."
-keywords: [tagodeploy, iot, api, scaling, monitoring]
+description: "Set the machine size and autoscaling for the TagoIO API service, and monitor CPU and memory."
+keywords: [tagodeploy, iot, api, scaling, monitoring, autoscaling]
 tags: ["tagodeploy", "api"]
 slug: /tagodeploy/project/api
 ---
 
-# API Service Management
+# API Service
 
 The [TagoIO API](https://help.tago.io/portal/en/kb/articles/31-api-overview)
-service is a core component of your TagoDeploy Project running on AWS
-infrastructure. API usage is directly tied to your project’s billing costs, as
-resource consumption such as compute, memory, and network utilization impacts
-your overall charges. For detailed information on how API resource usage affects
-your costs and how to optimize your spending, refer to the
-[TagoIO Billing and Cost Management Documentation](/docs/tagodeploy/project/management/billing.md).
+service is the central gateway through which services, applications, and devices
+reach your project's data and features. Every operation depends on it, so an
+active API instance is required for the rest of the platform to work.
 
-An active API instance is required for your TagoIO services to function. Without
-it, none of the TagoIO platform features or integrations will be accessible.
+This page sets the machine size and autoscaling for incoming API requests. API
+usage is tied to your billing costs, since compute, memory, and network use
+drive your charges. See the
+[Bills](/docs/tagodeploy/project/management/billing.md) page for how that adds
+up.
 
-## What is an API?
+Open the page from the **TagoIO & API** area, under **SERVICES** in the sidebar.
 
-An API (Application Programming Interface) is a standardized interface that
-enables different software applications to communicate and exchange data. It
-defines the rules, protocols, and data formats for requests and responses,
-allowing disparate systems to work together seamlessly.
+## Instance Settings
 
-Within TagoIO, [the API](/docs/api/sidebar/tagoio-api-intro) acts as the central
-gateway through which all services, applications, and devices interact with your
-project’s data and features. Every operation relies on the availability and
-performance of your API service.
+The **Instance settings** section configures machine type, scaling, and cooldown
+parameters:
 
-## API Scaling Strategies
+- **Machine**: the machine type for each instance. Default is 1 vCPU / 2GB RAM.
+- **Minimum instances**: the lowest number of instances kept running. Default
+  is 1.
+- **Maximum instances**: the highest number autoscaling can reach. Default is 1.
+- **Scale on CPU utilization**: the CPU percentage that triggers scaling.
+  Default is 60.
+- **Cooldown for scaling up**: seconds to wait before adding instances again.
+  Default is 200.
+- **Cooldown for scaling down**: seconds to wait before removing instances.
+  Default is 300.
 
-As your project scales with more devices, users, and automated workflows, it is
-critical to ensure your API service can handle increased load. TagoIO provides
-two primary approaches to scaling your API infrastructure:
+Click **Save** to apply changes.
 
-- **Vertical scaling (Machine Tier)**: Increases the capacity of individual API
-  server instances by allocating more CPU cores and RAM. This method is
-  effective when your workload involves intensive data processing or large data
-  retrieval operations, such as dashboard queries exceeding 10,000 records in a
-  single request. TagoIO offers multiple machine tiers to accommodate varying
-  performance needs. For advanced vertical scaling options, contact TagoIO
+## Scaling Strategies
+
+As the project grows with more devices, users, and automated workflows, the API
+service has to handle more load. There are two ways to scale it:
+
+- **Vertical scaling (Machine)**: raise the CPU and RAM of each instance with a
+  larger machine type. This helps with intensive data processing or large
+  retrievals, such as dashboard queries returning more than 10,000 records in a
+  single request. For machine types beyond the listed options, contact TagoIO
   support.
+- **Horizontal scaling (instances)**: raise the minimum and maximum instance
+  counts so requests spread across more instances. This is the better fit for
+  high concurrency and traffic bursts, and it improves fault tolerance.
 
-- **Horizontal scaling (Number of machines)**: Is the recommended strategy for
-  most production environments. It involves deploying multiple API instances to
-  distribute incoming requests and improve fault tolerance. This approach aligns
-  with TagoIO’s cloud-native architecture and is more effective for handling
-  high concurrency and bursts of activity as your device count and automation
-  complexity grow.
+Autoscaling adds and removes instances between the minimum and maximum based on
+the CPU threshold and the two cooldown windows.
 
-You can configure auto-scaling conditions based on your application’s usage
-patterns and performance testing. Typical triggers include CPU utilization,
-memory consumption, and request rates.
+## Monitoring
 
-## Recommended Production Configuration
+The **Monitoring** section has a range toggle across 1h, 6h, 12h, 1d, 3d, 7d,
+and 30d. Charts show "No data available" until there is data for the window.
 
-For projects supporting up to 10,000 devices, TagoIO recommends the following
-baseline settings for API service deployment:
-
-- **Machine Specification:** 1 vCPU / 2GB RAM per instance
-- **Instance Count:** Minimum 2 instances, maximum 5 instances
-- **Auto-Scaling Thresholds:** Scale up when CPU utilization exceeds 60% for 200
-  seconds; scale down when utilization falls below the threshold for 300 seconds
-
-These settings provide a balance between performance, availability, and cost
-efficiency for most production workloads.
-
-## Monitoring CPU Metrics
-
-CPU utilization metrics provide a time-based view of how intensively your API is
-using processing resources. As the API handles incoming requests, you should
-observe corresponding increases in CPU usage. Monitoring these metrics enables
-you to identify peak usage periods and analyze request patterns, offering
-actionable insights into when your API experiences the highest load and which
-operations may be contributing most to CPU demand.
-
-## Monitoring Memory Metrics
-
-Memory usage metrics reflect how much data your application loads into memory
-during operation. Many API operations require temporarily storing data in memory
-for processing and response generation. During peak usage periods, memory
-consumption typically increases due to the simultaneous processing of multiple
-requests and the handling of large data payloads. Monitoring memory metrics
-helps you detect scenarios where single requests or concurrent operations cause
-elevated memory usage, enabling you to optimize data handling and prevent
-resource exhaustion.
+- **CPU Utilization (%)**: how intensively the API uses processing resources.
+  Use it to spot peak periods and the operations driving the highest load.
+- **Memory Utilization (%)**: how much data the API holds in memory while
+  serving requests. Use it to catch requests or concurrent operations that push
+  memory high, then tune data handling.
 
 ## Billing Considerations
 
-Because the API service operates on AWS and resource usage directly impacts your
-billing, it is important to regularly review your scaling settings and metrics.
-Efficient scaling and resource allocation can significantly reduce unnecessary
-costs while ensuring your project remains responsive and reliable.
+Because the API runs on AWS and resource use drives billing, review the instance
+settings and the monitoring charts regularly. Tighter scaling settings cut
+unnecessary cost while keeping the project responsive.
 
-For more information on billing models, usage analysis, and cost optimization
-strategies, consult the
-[TagoIO Billing and Cost Management Documentation](/docs/tagodeploy/project/management/billing.md).
+For billing models, usage analysis, and cost details, see the
+[Bills](/docs/tagodeploy/project/management/billing.md) page.
