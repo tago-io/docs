@@ -111,6 +111,7 @@ const config: Config = {
         generateLLMsTxt: true,
         generateLLMsFullTxt: true,
         generateMarkdownFiles: true,
+        keepFrontMatter: ["title", "description"],
         docsDir: "docs",
         title: "TagoIO Docs",
         description: "Documentation for TagoIO IoT platform, TagoDeploy, TagoCore, TagoTiP, and the TagoIO API.",
