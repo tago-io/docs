@@ -1,49 +1,59 @@
 ---
-title: "Deployment History"
-description: "View past deployments, statuses, and when deployments are triggered in your project."
+title: "Deployments"
+description: "View the full history of deployments in your project, with status, search, and date filtering."
 keywords: [tagodeploy, iot, deployments, history, audit]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/deployments/history
 ---
 
-# Deployment History
+# Deployments
 
-The Deployment History section provides a detailed and chronological record of
-all deployment activities associated with your project. This feature gives you
-comprehensive visibility into both recent and historical deployments, enabling
-tracking, auditing, and management of your deployment processes.
+The Deployments page keeps a chronological record of every deployment in your
+project. It gives you visibility into recent and past deployments so you can
+track, audit, and review how your project has changed over time.
 
-While a deployment is in progress, you can not further modify the project. You
-will continue to access the previous version of the project until the deployment
-is complete.
+Open it from the Management sidebar under **Deployments**. The page header reads
+"Deployments" and the card is titled "Manage Deployments", with the subtitle
+"Complete history of every deployment in this project."
+
+While a deployment is in progress you can not make further changes to the
+project. You keep accessing the previous version until the deployment finishes.
 
 ## When do deployments happen?
 
-Deployments occur whenever a modification is made to the project using the
-TagoDeploy console. This **does not** include:
+A deployment occurs whenever you change the project using the TagoDeploy
+console. The following changes do not trigger a deployment:
 
-- Editing MQTT Broker Client/Group/Group Rule/Pipeline settings
+- Editing MQTT broker clients, groups, group rules, or pipelines
 - Adding or removing collaborators
 - Adding or removing developer accounts
-- Adding or Editing Domains
+- Adding or editing domains
 
-If a modification requires a deployment, you will be automatically redirected to
-the deployment page, where you can monitor the deployment status.
+When a change needs a deployment, you are taken to the deployment view where you
+can watch its status.
 
-## Deployment Record Details
+## Browsing the history
 
-Each entry in the deployment history captures the deployment token or
-description, the deployment status, and the precise date and time of the event.
-The deployment token provides a unique identifier for the deployment. The status
-field gives immediate insight into whether the deployment was successful, is
-still in progress, or encountered errors. The deployment date records when the
-event was initiated or logged.
+The "History" section lists each deployment, and a refresh button reloads the
+list. To find a specific entry, use the controls at the top of the page:
 
-Deployment statuses are clearly defined:\
-A status of **Success** indicates the deployment was completed and resources are
-fully operational. **In Progress** means the deployment is currently underway
-and has not yet reached a final state. **Error** signifies that the deployment
-encountered issues or failures and did not complete as expected.
+- A search box (placeholder "Search a deployment...") to match by token or
+  description.
+- A status filter that defaults to "All".
+- A "Select Date Range" button to narrow the list to a time window.
 
-**Note:** If a deployment fails, please enter contact TagoIO support, please
-provide the deployment ID and the date and time of the deployment.
+Each entry records the deployment token or description, the status, and the date
+and time of the event. The token is a unique identifier for the deployment. The
+status tells you whether it succeeded, is still running, or failed.
+
+Deployment statuses are:
+
+- **Success**: the deployment completed and the resources are operational.
+- **In Progress**: the deployment is underway and has not reached a final state.
+- **Error**: the deployment hit a failure and did not complete as expected.
+
+When a project has no deployments yet, the page shows "No deployments yet" with
+the note that deployment history appears here once deployments are made.
+
+**Note:** if a deployment fails, contact TagoIO support and provide the
+deployment ID along with the date and time of the deployment.
