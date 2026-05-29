@@ -8,6 +8,10 @@ keywords: [tagotip, iot, mqtt, pub/sub, qos]
 
 # TagoTiP over MQTT
 
+:::tip Tutorial
+Follow our step-by-step tutorial to connect your first device over MQTT: [TagoTiP MQTT — Quick Start](https://youtu.be/EHnG_P28MPE)
+:::
+
 **Publish/subscribe messaging** with QoS delivery guarantees. TagoTiP over MQTT maps the protocol to standard MQTT topics - the server pushes commands to your device in real time, and QoS levels handle delivery reliability at the transport layer.
 
 ## Endpoint
