@@ -6,29 +6,46 @@ tags: ["tagodeploy"]
 slug: /tagodeploy/new-project
 ---
 
-# Home
+# Creating a New Project
 
-Welcome to your Home page. Here, you can quickly access your projects, stay
-updated with recent messages, and find support resources.
+A project in TagoDeploy is created by installing the **TagoIO Platform** app from
+the App Catalog. The catalog provisions the project's infrastructure and gives you
+a dedicated, single-tenant TagoIO environment.
 
-## Create your First Project
+## Open the App Catalog
 
-Create your first project by clicking on the "Deploy your first project" link in
-the home page. If you need a specific Middleware or a MQTT Broker to receive
-data from your devices, you can enable them in the services page once you've
-created a project.
+There are two ways to start a new project:
 
-## What You’ll Find on the Home Page
+1. Open the project switcher in the top navigation and click **New project** at the
+   bottom of the dropdown.
+2. Open **Apps** in the top navigation to reach the App Catalog at `/apps` and
+   select the **TagoIO Platform** card.
 
-The Home page is organized into three sections:
+Both routes open the same install flow.
 
-1. **Project List** View all your current projects at a glance.
+## Install the TagoIO Platform
 
-2. **Recent Messages** Stay informed with a list of the 5 most recent emails
-   containing announcements that have been sent to your email.
+Selecting the TagoIO Platform opens a detail dialog with its category, dates, and
+an overview. Click **Next** to open the install dialog.
 
-3. **Support Card** Need help? Easily access support resources and connect with
-   the TagoIO Community.
+In the install dialog, set the following:
+
+- **Installation:** For the TagoIO Platform this is fixed to **New Project**. The
+  "In a project" option is reserved for services and is shown as coming soon here.
+- **Region:** The AWS region the project runs in. Choose the one closest to your
+  devices or required by your data residency rules.
+- **Version:** Defaults to the latest platform version. Pick an older version only
+  when you need compatibility with a specific stack.
+- **Name:** The display name for your project, under **Settings**.
+
+Click **Next** to continue to review, then confirm to install. The project is
+provisioned and appears in the project switcher once ready.
+
+## Add Services Later
+
+If you need a middleware or an MQTT broker to receive data from your devices, you
+install them from the same App Catalog after the project exists. See
+[Services](/docs/tagodeploy/services/index.md) for the available service types.
 
 ## Help & Support
 

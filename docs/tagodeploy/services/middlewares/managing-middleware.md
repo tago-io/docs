@@ -6,31 +6,33 @@ tags: ["tagodeploy"]
 slug: /tagodeploy/services/middlewares/managing-middleware
 ---
 
-Open Services > [Middleware Name] in your project to view and change settings.
-Most updates apply without downtime; scaling actions may briefly recycle
-instances.
+After you install a middleware from the App Catalog, it appears as a resource tab
+in the project breadcrumb, labeled with its display name. Open that tab to view
+and change settings. The middleware sub-navigation has Overview, Instances, and
+Settings. Most updates apply without downtime; scaling actions may briefly
+recycle instances.
 
 ### Settings
 
-- Name: Change the display name shown in Services.
+- Name: Change the display name shown in the project.
 - Network Token: Locked by default to prevent accidental changes. Unlock to
   switch the token if you must move the middleware to a different network
   context.
-- TagoIO API URL: Your project’s internal API endpoint. Normally you don’t
+- TagoIO API URL: Your project's internal API endpoint. Normally you don't
   change this.
 
 ### Instance Settings and Scaling
 
 Middleware services support vertical and horizontal scaling. Choose a
-configuration that matches your traffic pattern—message rate, payload size, and
+configuration that matches your traffic pattern: message rate, payload size, and
 downlink volume.
 
 Recommended baseline for typical production projects up to ~10,000 devices
 connected through a single middleware:
 
 - **Machine:** 1 vCPU / 2 GB RAM
-- **Minimum instances:** 1–2 (use 2 for higher availability)
-- **Maximum instances:** 3–5
+- **Minimum instances:** 1 to 2 (use 2 for higher availability)
+- **Maximum instances:** 3 to 5
 - **Scale on CPU utilization:** 60%
 - **Cooldown for scaling up:** 200 seconds
 - **Cooldown for scaling down:** 300 seconds
@@ -67,9 +69,10 @@ confirm whether bursts or steady load are the cause.
 
 ### Updating and Versioning
 
-When a new middleware version is available, use the Update action in the service
-page. For non-breaking updates, rolling replacement keeps the endpoint
-available. For major changes, validate in a non‑production project first.
+Platform and service versions are managed from the project's System page, under
+Version Timeline. Newer versions offer an Update action, and older versions offer
+Rollback. For non-breaking updates, rolling replacement keeps the endpoint
+available. For major changes, validate in a non-production project first.
 
 ## Troubleshooting
 

@@ -8,17 +8,17 @@ slug: /tagodeploy/services/overview
 
 # Services
 
-The **Services** page enables you to configure and assign additional features to
-your projects. Integrating services allows you to extend and tailor your
-project's functionality to meet specific requirements.
+Services add capabilities to your projects beyond the base TagoIO Platform. You
+add them from the **App Catalog** at `/apps`, the same place you create a project.
 
 ## Overview of Services
 
-Services are modular components that add advanced capabilities to your projects.
-Currently, the following service types are available:
+Services are modular components that you install into a project. The catalog
+groups items by category: Platform, Middleware, MQTT, and Others. The service
+types available today are:
 
-- **Middleware**: Connect your project with external platforms—such as LoRaWAN
-  LNS—to facilitate seamless data integration and exchange.
+- **Middleware**: Connect your project with external networks, such as LoRaWAN
+  LNS providers, to move data between TagoIO and those systems.
 - **MQTT Broker**: Deploy a fully integrated MQTT broker within your project,
   enabling device connectivity and communication using the MQTT protocol.
 
@@ -26,22 +26,31 @@ Currently, the following service types are available:
 
 ### Middleware
 
-Middleware services function as intermediaries between your project and
-third-party systems. They are typically used to integrate with platforms like
-LoRaWAN LNS, supporting bi-directional data flow between your project and
-external environments.
+Middleware services act as intermediaries between your project and external
+networks, supporting bi-directional data flow. The available middleware types
+are AWS IoT, Chirpstack, Everynet, Generic HTTPS, Loriot, MachineQ, Myriota,
+Senet, Sigfox, Tektelic, and TTN.
 
 ### MQTT Broker
 
 The MQTT Broker service provisions an MQTT broker instance within your project.
-This service allows you to connect IoT devices and manage data transmission
-using the MQTT protocol, supporting both data ingestion and distribution.
+It lets you connect IoT devices and manage data transmission using the MQTT
+protocol, supporting both data ingestion and distribution.
 
-## Using Services
+## Installing a Service
 
-To utilize services within your project, follow these steps:
+Open **Apps** in the top navigation to reach the App Catalog. Use the search box
+or the category filters on the left to find a service, then click its card to
+open the detail dialog and review the overview and features. Click **Next** to
+open the install dialog.
 
-Begin by browsing the list of available services on the Services page. Once you
-identify a service that aligns with your project needs, select it to review its
-features and configuration options. After selection, assign the service to your
-desired project to activate its functionality.
+The install dialog asks where the service should run:
+
+- **In a project**: Add the service to an existing project. You pick the target
+  **Project**, then the **Region** and **Version**.
+- **New Project**: Provision the service alongside a new project. You pick the
+  **Region** and **Version** only.
+
+Under **Settings** you set the service **Name** and any required credentials.
+Confirm to install. The service provisions networking, compute, and a default
+autoscaling policy, then appears as a resource tab in the project.
