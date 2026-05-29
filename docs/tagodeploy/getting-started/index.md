@@ -59,7 +59,7 @@ define their own constraints for:
 - Maximum device connections
 - Data storage allocation
 - Dashboard quantities
-- Tag and bucket limits
+- Tag limit
 
 ![Image 4](/docs_imagem/tagoio/external-5170193e.png)
 

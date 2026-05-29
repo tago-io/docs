@@ -70,13 +70,13 @@ The tested SensorTag hardware contains the following 10 sensors:
    - **Subscribe Topic:** leave as is (not used)
    - **Publish rate:** `5000` (you may adjust later)
 6. Turn the switch on to start pushing data to TagoIO.
-7. If the configuration is correct and you have a network connection, sensor data will begin arriving in your account. You can view it in the Live Inspector tab of the device details. Note that this data is not yet stored in a bucket; you need to create an MQTT Action to save it.
+7. If the configuration is correct and you have a network connection, sensor data will begin arriving in your account. You can view it in the Live Inspector tab of the device details. Note that this data is not yet stored in your device; you need to create an MQTT Action to save it.
 
 ### Creating an MQTT Action to save data
 
 1. Go to **Actions** and click **Create new**.
 2. Set the trigger type to **MQTT Topic**.
-3. Choose the action type **Insert data to device bucket**.
+3. Choose the action type **Insert data to device**.
 4. Select your SensorTag device, set the topic to `data`, and save the action.
 
-Once the action is in place, all incoming MQTT messages on the `data` topic will be stored in the device’s bucket for further analysis or visualization.
+Once the action is in place, all incoming MQTT messages on the `data` topic will be stored in the device for further analysis or visualization.

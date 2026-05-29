@@ -1,29 +1,32 @@
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Heading from "@theme/Heading";
+import ThemedImage from "@theme/ThemedImage";
 import type { ReactNode } from "react";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  imgSrc: string;
+  imgLight: string;
+  imgDark: string;
   href: string;
   description: ReactNode;
 };
 
-function Feature({ title, imgSrc, href, description }: FeatureItem) {
+function Feature({ title, imgLight, imgDark, href, description }: FeatureItem) {
   return (
     <div className={styles.featureCol}>
       <Link to={href} className={styles.featureLink}>
         <div className={styles.featureCard}>
           <div className="text--center">
-            <img
-              src={useBaseUrl(imgSrc)}
+            <ThemedImage
+              sources={{
+                light: useBaseUrl(imgLight),
+                dark: useBaseUrl(imgDark),
+              }}
               alt={title}
               width={80}
               height={80}
-              loading="lazy"
-              decoding="async"
               className={styles.featureImg}
             />
           </div>
@@ -41,7 +44,8 @@ export default function HomepageFeatures(): ReactNode {
   const FeatureList: FeatureItem[] = [
     {
       title: "TagoIO Platform",
-      imgSrc: "/img/tagoio-icon-original.png",
+      imgLight: "/img/tagoio-mark-black.svg",
+      imgDark: "/img/tagoio-mark-white.svg",
       href: "/docs/tagoio/getting-started",
       description: (
         <>
@@ -53,7 +57,8 @@ export default function HomepageFeatures(): ReactNode {
     },
     {
       title: "TagoRUN",
-      imgSrc: "/img/tagorun-icon-original.png",
+      imgLight: "/img/tagorun-mark-black.svg",
+      imgDark: "/img/tagorun-mark-white.svg",
       href: "/docs/tagoio/tagorun",
       description: (
         <>
@@ -65,7 +70,8 @@ export default function HomepageFeatures(): ReactNode {
     },
     {
       title: "TagoDeploy",
-      imgSrc: "/img/tagodeploy-icon-original.png",
+      imgLight: "/img/tagodeploy-mark-black.svg",
+      imgDark: "/img/tagodeploy-mark-white.svg",
       href: "/docs/tagodeploy",
       description: (
         <>
@@ -77,7 +83,8 @@ export default function HomepageFeatures(): ReactNode {
     },
     {
       title: "TagoCore",
-      imgSrc: "/img/tagocore-icon-original.png",
+      imgLight: "/img/tagocore-mark-black.svg",
+      imgDark: "/img/tagocore-mark-white.svg",
       href: "/docs/tagocore",
       description: (
         <>
@@ -89,7 +96,8 @@ export default function HomepageFeatures(): ReactNode {
     },
     {
       title: "TagoTiP",
-      imgSrc: "/img/tip-logo.png",
+      imgLight: "/img/tagotip-mark-black.svg",
+      imgDark: "/img/tagotip-mark-white.svg",
       href: "/docs/tagotip",
       description: (
         <>

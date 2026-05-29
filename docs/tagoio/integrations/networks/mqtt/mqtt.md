@@ -36,7 +36,7 @@ topic and receive the published payloads.
 TagoIO’s MQTT broker is responsible for pushing data to clients whenever new
 information is published on the specific topics they are subscribed to. Unlike a
 full‑featured MQTT implementation, it focuses mainly on ingesting sensor data
-into our data buckets, so some standard features such as the native **Retain**
+into our devices, so some standard features such as the native **Retain**
 flag are not supported. A workaround that achieves similar functionality can be
 found in the article
 [MQTT Retain on TagoIO Broker](/docs/tagoio/integrations/networks/mqtt/mqtt-retain-on-tagoio-broker.md).
@@ -71,7 +71,7 @@ Encryption across the network can be handled with SSL independently of the MQTT
 protocol itself. Additional security can also be added through
 application‑encrypted data that is sent and received. At TagoIO you can send
 your data encrypted directly to [Analysis](/docs/tagoio/analysis/index.md), decrypt it
-there, and then insert the data into your [Bucket](/docs/tagoio/devices/index.md). This
+there, and then insert the data into your [device](/docs/tagoio/devices/index.md). This
 procedure can increase security if your data is sensitive or if you simply want
 an extra layer of protection.
 
@@ -81,10 +81,10 @@ When you first send data through MQTT to your device, you’ll be able to
 visualize the connection and message through the
 [Live Inspector](/docs/tagoio/devices/live-inspector.md) on your device. Those
 messages indicate that the connection is working, but nothing is being stored in
-your bucket yet.
+your device yet.
 
 From this point, you need to create an [Action](/docs/tagoio/actions/index.md) with
-trigger **MQTT** and type **Insert to Device Bucket**. Once configured, you
+trigger **MQTT** and type **Insert to Device**. Once configured, you
 should see the data being stored in the Live Inspector.
 
 If you don’t send the data using the

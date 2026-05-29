@@ -70,9 +70,9 @@ Find the backup in the list and click the **download icon** (⬇️) in the **Ac
 backup-<profile-id>/
 ├── files/
 │   ├── <uploaded files and documents>
-│   └── buckets/
-│       └── <bucket-id>/
-│           └── <bucket files>
+│   └── devices/
+│       └── <device-id>/
+│           └── <device files>
 ├── resources/
 │   ├── access_management.json
 │   ├── actions.json
@@ -92,7 +92,7 @@ backup-<profile-id>/
         └── <version files in JSON>
 ```
 
-- **files/** - Uploaded files and documents, organized by bucket.
+- **files/** - Uploaded files and documents, organized by device.
 - **resources/** - Profile resource configurations exported as JSON.
 - **versioning/** - Historical versions of resources such as dashboards.
 
