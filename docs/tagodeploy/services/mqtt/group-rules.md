@@ -8,51 +8,58 @@ slug: /tagodeploy/project/mqtt/group-rules
 
 # Group Rules
 
-This section allows you to create, edit and delete group rules that define which
-clients have access to which groups in your MQTT broker. Group rules are
-displayed in a table with the following columns:
+Group rules assign clients to groups automatically based on matching
+conditions. The rules are edited inline on this page, with each rule as a row.
+Use **New rule** to add a row and the **Save** button in the page header to
+stage your changes, which take effect after you deploy. Each row has these
+columns:
 
-- Client Type
-- Client IDs/MQTT ID
-- Groups
+- **Match By**
+- **Value**
+- **Groups**
+- a remove control
+
+The footer shows how many rules are configured.
 
 ## What are Group Rules?
 
-Group rules are assignments that connect clients to groups, determining which
-devices can access specific group permissions. They act as the bridge between
-individual clients (devices) and the groups that define their access permissions
-through ACL rules.
+Group rules are the bridge between clients and the groups that grant their
+permissions. Each rule matches a connecting client by some condition and
+assigns it to one or more groups. A matched client inherits the combined ACL
+permissions of every group the rule assigns.
 
-Group rules work by specifying:
+## Match By
 
-- **Client Type**: Whether the rule applies to specific client IDs or MQTT
-  client identifiers
-- **Target Clients**: The specific client IDs or MQTT ID patterns that the rule
-  applies to
-- **Group Assignment**: Which groups the specified clients should be assigned to
+Each rule matches on one of three conditions, set in the **Match By** column.
+The **Value** field changes to suit the choice:
 
-## Client Types
+### Certificate Fingerprint
 
-Group rules support two types of client identification:
+Match a client by the fingerprint of its certificate. The Value is the
+fingerprint text, for example `SHA256:...`.
+
+### MQTT Client ID
+
+Match a client by the MQTT client identifier it sends during connection. The
+Value is the identifier to match. This accommodates clients that connect with
+their own identifiers.
 
 ### Client
 
-When the client type is set to "client", the rule applies to specific client IDs
-that have been created in the Clients section. This provides direct assignment
-of named clients to groups.
+Match a named client created on the Clients page. The Value becomes a picker
+where you select the client by name.
 
-### MQTT ID
+## Groups
 
-When the client type is set to "mqtt id", the rule applies to MQTT client
-identifiers used during the connection process. This allows for pattern-based
-assignments and can accommodate clients that connect with dynamic identifiers.
+The **Groups** column is a multi-select. Pick one or more groups, shown as
+chips, for the matched client to join.
 
 ## How Group Rules Work
 
 When a device connects to the MQTT broker:
 
-1. **Client Identification**: The broker identifies the connecting client
-   through either the client credentials or MQTT client ID
+1. **Client Identification**: The broker identifies the connecting client by
+   its certificate fingerprint, its MQTT client ID, or its named client
 2. **Rule Evaluation**: The broker checks the group rules to determine which
    groups the client should be assigned to
 3. **Permission Application**: The client inherits all ACL permissions from the
@@ -62,30 +69,26 @@ When a device connects to the MQTT broker:
 
 ## Managing Group Rules
 
-Unlike other sections in the MQTT service, group rules can be managed directly
-on the main page without using dropdown menus:
+Unlike most sections in the MQTT service, group rules are edited directly on the
+page with no dialog or row menu:
 
 ### Creating a Group Rule
 
-To create a new group rule, use the creation interface on the group rules page
-where you can:
+Click **New rule** to add a row, then:
 
-- Select the client type (client or MQTT ID)
-- Specify the client IDs or MQTT ID pattern
-- Choose which groups to assign to the specified clients
+- Choose the **Match By** condition (Certificate Fingerprint, MQTT Client ID, or
+  Client)
+- Enter or pick the **Value** to match
+- Select the **Groups** to assign
 
 ### Editing a Group Rule
 
-To edit an existing group rule, modify the rule directly on the page to update:
-
-- The client type or identification method
-- The list of client IDs or MQTT ID patterns
-- The group assignments
+Change the Match By, Value, or Groups directly on the row.
 
 ### Deleting a Group Rule
 
-To delete a group rule, remove it directly from the page. This will revoke the
-group assignments for the specified clients.
+Use the remove control on the row to drop the rule, which revokes those group
+assignments. In both cases, use **Save** to stage the change.
 
 ## Modification Impact
 

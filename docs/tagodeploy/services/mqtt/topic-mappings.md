@@ -8,14 +8,22 @@ slug: /tagodeploy/project/mqtt/topic-mappings
 
 # Topic Mappings
 
-This section allows you to assign MQTT topics to pipelines. When a message is
-published to a mapped topic, the associated pipeline will be triggered.
+Topic Mappings route MQTT topics to specific pipelines. When a message is
+published to a mapped topic, it is forwarded to the pipeline. There is no
+separate Topic Mappings page. They live in a section on the
+[Pipelines](./pipelines) page, edited inline with no dialog.
 
-## What are Topic Mappings?
+## Editing topic mappings
 
-Topic Mappings connect MQTT topics to data pipelines. A single topic can be
-mapped to multiple pipelines, allowing the same message to trigger different
-processing workflows.
+Use **New mapping** to add a row, and the **Save** button to stage your changes,
+which take effect after you deploy. Each row has:
+
+- **TOPIC**: the topic to match, for example `devices/+/telemetry`.
+- **PIPELINE**: the pipeline to forward matching messages to, picked by name.
+- a remove control.
+
+A single topic can map to more than one pipeline, so the same message can reach
+several pipelines.
 
 ## MQTT Topic Patterns
 

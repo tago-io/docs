@@ -9,7 +9,7 @@ slug: /tagodeploy/project/mqtt
 The TagoDeploy MQTT Broker is a fully managed MQTT service that runs inside your
 private TagoDeploy instance. It gives you a dedicated, single-tenant MQTT
 infrastructure with enterprise security, fine-grained access control, and
-built-in routing to TagoIO—separate from the public, multi-tenant TagoIO MQTT
+built-in routing to TagoIO, separate from the public, multi-tenant TagoIO MQTT
 broker.
 
 Use it to deploy one or more private brokers, authenticate devices, enforce
@@ -20,11 +20,10 @@ performance and full administrative control.
 
 - Private, isolated MQTT infrastructure within your TagoDeploy environment
 - TLS encryption with custom certificate management
-- Advanced authentication (per client) and ACLs via Groups
-- Real-time visibility of connections and activity
+- Per-client authentication and topic access control through Groups
+- Live visibility of connected devices
 - Multi-broker support in the same TagoDeploy instance
-- Global deployment across 12+ AWS regions
-- Integrated pipelines to deliver MQTT data to your API instance
+- Pipelines that forward MQTT messages to your API instance
 
 <YouTube videoId="9mMBRIqedsk" />
 
@@ -32,18 +31,35 @@ performance and full administrative control.
 
 The broker processes data in three stages:
 
-1. Authenticate: Devices connect over TLS using client credentials you define.
-2. Authorize: Groups and ACLs control publish/subscribe permissions per topic.
-3. Route: Pipelines forward matched topics to your API instance with the
+1. Authenticate: devices connect over TLS using clients you define.
+2. Authorize: Groups and their ACL permissions control publish and subscribe
+   access per topic, and Group Rules assign clients to those groups.
+3. Route: Pipelines forward mapped topics to your API instance with the
    required authorization and network tokens.
+
+## MQTT sub-pages
+
+The broker service splits its configuration across these pages:
+
+- **Overview**: broker name, service URL, and service controls.
+- **Instances**: machine size and autoscaling for the broker service.
+- **Settings**: broker-level configuration.
+- **Clients**: credentials that devices use to authenticate.
+- **Groups**: bundles of ACL permissions that allow or deny topic access.
+- **Group Rules**: rules that assign clients to groups automatically.
+- **Connections**: live view of devices currently connected.
+- **Pipelines**: forward incoming MQTT messages to external services, with
+  topic mappings on the same page.
+- **Certificates**: TLS certificates that encrypt broker traffic and verify
+  clients.
 
 ## Typical setup
 
-- Create the MQTT service in your region and track deployment in the console.
+- Add the Broker from the App Catalog and track its deployment.
 - Get the broker endpoint from Domains.
-- Configure authentication (Client IDs, usernames, passwords).
-- Define Groups and topic permissions (publish/subscribe).
-- Link auth to Groups with ACLs.
-- Create a Network and payload parser (e.g., extract serial, map to device).
-- Configure a Pipeline: target API endpoint, topics, and credentials.
-- Send data using your assigned credentials and topics.
+- Create clients with credentials or certificate authentication.
+- Define Groups with ACL permissions for publish and subscribe access.
+- Use Group Rules to assign clients to groups.
+- Configure a Pipeline with the target API URL and tokens, then map topics
+  to it.
+- Connect your devices using their credentials and authorized topics.

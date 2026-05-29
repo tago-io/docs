@@ -8,32 +8,28 @@ slug: /tagodeploy/project/mqtt/acl-permissions
 
 # ACL Permissions
 
-ACL (Access Control List) permissions are security rules that define what MQTT
-topics devices in a group can access and what operations they can perform on
-those topics. They serve as the foundation for controlling how your IoT devices
-interact with the MQTT broker.
+ACL (Access Control List) permissions are the rules that decide which MQTT
+topics a client can access and what it can do on them. There is no separate ACL
+Permissions page in the broker. ACL permissions live inside [Groups](./groups):
+each group holds a list of permission rows, and a client inherits them through
+the groups it is assigned to by [Group Rules](./group-rules).
 
-## What are ACL Permissions?
+## What an ACL permission is
 
-ACL permissions work as fine-grained access controls that specify:
+Each permission is a single rule with three parts:
 
-- **Which topics** devices can access (using topic patterns and wildcards)
-- **What operations** they can perform (publish, subscribe, or both)
-- **Access levels** (allow or deny specific topic patterns)
-
-These permissions are applied at the group level, meaning all clients assigned
-to a group inherit the same ACL permissions. This provides a scalable way to
-manage access control across multiple devices with similar requirements.
+- **Permission**: **Allow** or **Deny** the matching access.
+- **Action**: **Subscribe** or **Publish**.
+- **Topic**: the topic the rule applies to, with MQTT wildcards supported.
 
 ## How ACL Permissions Work
 
-When a device attempts to publish a message to a topic or subscribe to receive
-messages from a topic, the MQTT broker checks the ACL permissions assigned to
-the device's group. The broker will:
+When a device tries to publish to a topic or subscribe to one, the broker checks
+the permissions in the device's groups. The broker will:
 
-1. **Evaluate the topic pattern** against the configured ACL rules
-2. **Check the requested operation** (publish or subscribe)
-3. **Grant or deny access** based on the matching ACL permission rules
+1. **Evaluate the topic** against the configured rules
+2. **Check the action** (subscribe or publish)
+3. **Grant or deny access** based on the matching rule
 
 ## Topic Patterns and Wildcards
 

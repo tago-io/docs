@@ -8,34 +8,33 @@ slug: /tagodeploy/project/mqtt/certificates
 
 # Certificates
 
-This section allows you to enable certificates for your MQTT broker to enable
-TLS/SSL encryption.
+Provide TLS certificates to encrypt broker traffic and verify clients. The
+Certificates page is a form on the MQTT service. Edit the fields and use the
+Save button in the page header to stage your changes, which take effect after
+you deploy.
 
-## What are Certificates?
+## What certificates do
 
-Certificates are used to secure the communication between the MQTT broker and
-the devices. They provide:
+Certificates secure the communication between the MQTT broker and your devices:
 
-- **Device Authentication**: Authenticate the devices connecting to the broker
-- **Encrypted Communication**: Encrypt data transmission between devices and the
+- **Encrypted communication**: encrypt data in transit between devices and the
   broker
-- **Secure Connections**: Establish trusted connections using TLS/SSL protocols
+- **Trusted connections**: establish connections using TLS
+- **Client verification**: with MTLS, verify each connecting device by its
+  certificate
 
-## Enabling Certificates
+## Enabling a custom certificate
 
-To enable certificates, click the "Enable certificates" button. You will then be
-redirected to a page where you can upload the required certificate files.
+Turn on **Enable Custom Certificate** to provide your own certificate material.
+The form then accepts three values, each in its own text area with a copy and
+expand control:
 
-### Required Certificate Files
+- **CA Certificate**: the Certificate Authority certificate
+- **Server Certificate**: the server certificate
+- **Server Key**: the private key for the server certificate
 
-You'll need the following certificate components:
+## Mutual TLS
 
-- **CA Certificate**: The Certificate Authority certificate
-- **Server Certificate**: The server-specific certificate
-- **Server Private Key**: The private key for the server certificate
-
-## Additional Security Features
-
-When certificates are enabled, you can also enable **MTLS (Mutual TLS)** for
-enhanced security, which requires both the client and server to authenticate
-each other using certificates.
+Turn on **Enable MTLS** to require mutual TLS. With MTLS the broker requires a
+custom certificate, and both the client and the broker authenticate each other
+using certificates.

@@ -8,37 +8,53 @@ slug: /tagodeploy/project/mqtt/groups
 
 # Groups
 
-This section allows you to create, edit and delete the groups that define how
-your clients can interact with the MQTT broker. The existing groups are
-displayed in a table with the following columns:
+A group bundles ACL permissions that allow or deny access to topics. This page
+lists, creates, edits, and deletes groups. Existing groups show in a table with
+these columns:
 
-- Name
-- Description
-- ACL Permissions
+- **Name**
+- **Description**
+- **ACL Permissions** (the number of permission rows in the group)
+
+Use the search box to filter by group name.
 
 ## What are groups?
 
-Groups are collections of permissions that define what topics clients can or
-cannot subscribe and publish to. They are identified by a name and a
-description. Groups are used in conjunction with group rules to control which
-clients can connect to the broker and which topics they are authorized to
-access.
+Groups are collections of ACL permissions that define which topics clients can
+publish to and subscribe to. Each group has a name and a description. Group
+Rules assign clients to groups, and a client inherits the combined permissions
+of every group it belongs to.
+
+## ACL permissions
+
+Each group holds a list of ACL (Access Control List) permissions. A permission
+is a single rule with three parts:
+
+- **Permission**: **Allow** or **Deny** the matching access.
+- **Action**: **Subscribe** or **Publish**.
+- **Topic**: the topic the rule applies to. MQTT wildcards are supported, where
+  `+` matches a single level (`sensors/+/temperature`) and `#` matches every
+  level below a point (`sensors/#`).
+
+When a device publishes or subscribes, the broker checks the device's groups
+and grants or denies the operation based on the matching rules.
 
 ### Creating a new group
 
-To create a new group, click the "New group" button. You will then be redirected
-to a page where you can fill in the group's name, description and ACL
-permissions.
+Click **New Group** to open the dialog and set the **Name** and
+**Description**. Under **ACL Permissions**, use **Add permission** to add the
+first rule, then **New permission** to add more. Each row sets a Permission, an
+Action, and a Topic, with a remove control to drop it. Click **Create group**
+to save.
 
 ### Editing a group
 
-To edit a group, click on the group's three-dot menu button and then select the
-"Edit" option.
+Open the group's row menu and select Edit to change its name, description, and
+permission rows.
 
 ### Deleting a group
 
-To delete a group, click on the group's three-dot menu button and then select
-the "Delete" option.
+Open the group's row menu and select Delete.
 
 ## Modification/Deletion Impact
 
