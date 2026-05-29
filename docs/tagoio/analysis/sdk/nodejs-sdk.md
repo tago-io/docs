@@ -19,6 +19,10 @@ https://tago-sdk-js-documentation.rtfd.io/
 
 > Note: The old SDK will be discontinued in 2030.
 
+## Query examples
+
+For real-world query examples covering filters, date ranges, pagination, and aggregations, see [Getting Data](/docs/tagoio/devices/getting-data.md).
+
 ## Rate limits
 
 When executing requests to TagoIO, there is a limit on the number of requests that can be made within a given time period. Read more about our [Rate Limits](/docs/tagoio/profiles/services/rate-limits-hard-limits.md).
