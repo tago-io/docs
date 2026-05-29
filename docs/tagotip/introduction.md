@@ -15,17 +15,6 @@ Send IoT data to TagoIO in **130 bytes** instead of 487. No JSON, no HTTP header
 PUSH|4deedd7bab8817ec|sensor-01|[temperature:=32.5#C;humidity:=65#%]
 ```
 
-## Tutorials
-
-Follow our tutorials to start building your IoT project using UDP, TCP, HTTP, or MQTT:
-
-:::tip Get started with TagoTiP
-- [TagoTiP UDP — Quick Start](https://community.tago.io/t/tagotip-udp-tutorial)
-- [TagoTiP TCP — Quick Start](https://community.tago.io/t/tagotip-tcp-tutorial)
-- [TagoTiP HTTP — Quick Start](https://community.tago.io/t/tagotip-http-tutorial)
-- [TagoTiP MQTT — Quick Start](https://community.tago.io/t/tagotip-mqtt-tutorial)
-:::
-
 ## Why TagoTiP?
 
 |                      | HTTP/JSON   | TagoTiP                      | TagoTiP(s) (encrypted)        |
@@ -97,6 +86,17 @@ Pull the last value back:
 PULL|4deedd7bab8817ec|sensor-01|[temperature]
 <- ACK|OK|[temperature:=32.5#C@1694567890000]
 ```
+
+## Tutorials
+
+Follow our tutorials to start building your IoT project using UDP, TCP, HTTP, or MQTT:
+
+:::tip Get started with TagoTiP
+- [TagoTiP UDP — Quick Start](https://youtu.be/YhhHuCH7UZo)
+- [TagoTiP TCP — Quick Start](https://youtu.be/cSMbQkPyrZo)
+- [TagoTiP HTTP — Quick Start](https://youtu.be/oZfrq5xFS5k)
+- [TagoTiP MQTT — Quick Start](https://youtu.be/EHnG_P28MPE)
+:::
 
 ## SDKs
 
