@@ -1,41 +1,57 @@
 ---
-title: "Projects"
-description: "Overview of the Projects page: view details, access consoles, and manage projects in TagoDeploy."
-keywords: [tagodeploy, iot, project, management]
+title: "Project Overview"
+description: "Read the Project Overview page: project status, resource usage, spend, and recent activity."
+keywords: [tagodeploy, iot, project, overview, management]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/overview
 ---
 
-# Projects
+# Project Overview
 
-The **Projects** page is your central hub for managing all of your projects.
-From here, you can quickly view key details such as project region, status, and
-API endpoint, as well as access essential project management features.
+The **Overview** page is the first page in a project's Management section. It
+shows project status, resource usage, spend, and recent activity at a glance.
+Open it from the Management sidebar at
+`/projects/{id}/management/overview`.
 
-## What Can You Do on the Projects Page?
+## Project status
 
-The Projects page provides a streamlined overview and quick actions for every
-project:
+The project card shows the project avatar, name, and a status badge (for
+example, "Deploying"). It also lists:
 
-- **View Project Details**: Instantly see the region, current status, and API
-  endpoint for each project.
-- **Access Project Console**: Click the platform button to be redirected to the
-  project's admin console.
-- **Manage Projects**: Use the manage button to go directly to the project's
-  management page, where you can update settings, resources, and more.
-- **Quick Actions**: Utilize the dropdown menu for fast access to your project's
-  main features without extra navigation.
+- **Version**: the platform version the project runs, shown as a date.
+- **Created**: the date the project was created.
+- **Region**: the region the project runs in, for example `us-east-1`.
 
-## Creating New Projects
+## Domains
 
-You can easily create new projects directly from the Projects page. This allows
-you to:
+The Domains panel lists the project's service URLs, such as TagoIO API, TagoIO
+Admin, and TagoIO SSE, each in the form
+`https://{service}.{id}.tagoio.net`. Every row has a Copy URL action. Use the
+"View all domains" link to open the full
+[Domains](/docs/tagodeploy/project/management/domains.md) page.
 
-1. **Start New Initiatives**: Launch new projects as your needs grow.
-2. **Configure Regions and Settings**: Specify important parameters such as
-   region and initial configurations during project creation.
-3. **Immediate Access**: Newly created projects appear instantly in your project
-   list, ready for further setup and integration.
+## Spend
 
-By centralizing all project management tasks, the Projects page helps you stay
-organized, efficient, and in control of your development workflow.
+The Month-to-Date Spend card shows the current dollar amount, a comparison
+against last month's pace, and a daily spend chart with a month toggle. For the
+full cost breakdown, open the
+[Bills](/docs/tagodeploy/project/management/billing.md) page.
+
+## Monitoring
+
+Two charts track resource usage:
+
+- **CPU Utilization - TagoIO**: series for API, Main Database, and In-Memory
+  Database.
+- **CPU & Memory Utilization - MQTT**: CPU and Memory series.
+
+Both charts support time ranges of 1h, 6h, 12h, 1d, 3d, 7d, and 30d. When no
+metrics exist yet, the chart shows "No data available".
+
+## Recent activity
+
+The History and Logs sections show recent project activity. Until a project
+produces output, the Logs section shows an empty state.
+
+When you have pending changes, a floating "Review & Deploy" button appears so
+you can review and apply the queued deployment.

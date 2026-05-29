@@ -1,87 +1,63 @@
 ---
 title: "Backups"
-description: "View, configure, and restore project backups; understand contents, exclusions, and limitations."
+description: "View scheduled database snapshots for a project and understand contents, exclusions, and restore behavior."
 keywords: [tagodeploy, iot, backups, disaster recovery, data protection]
 tags: ["tagodeploy"]
 slug: /tagodeploy/project/backups
 ---
 
-This section provides project owners with the ability to view and manage all
-recent project backups. Each backup entry displays essential metadata, including
-the backup date and storage size. When initiating a restoration, the system
-provisions a new, isolated project instance that is initialized from the
-selected backup checkpoint. The platform does not support in-place overwriting
-of an existing project’s database with backup data.
+# Backups
 
-Backup management capabilities—including configuration, creation, and
-restoration—are restricted to project owners. Collaborators do not have access
-to any backup management features.
+The **Backups** page lists the snapshots of your project's database. You find it
+in the TagoIO & API section, under "Backups" in the sidebar, at
+`/projects/{id}/tago-io/backups`. The page is read-only: backups are created on
+a schedule, not by hand, so there is no create action here. When the project has
+no snapshots yet, the page shows "Backup snapshots will appear here once they are
+created."
 
-**Note**: Standard project creation fees apply when a new project instance is
-generated as part of the backup restoration process. Restored project instances
-will continue to incur costs for as long as they remain active.
+Backup management is restricted to project owners. Collaborators cannot access
+backup features.
 
-## What are Backups?
+## How backups are scheduled
 
-Backups are automated snapshots of your project data that provide data
-protection and recovery capabilities. They ensure that your project information
-is preserved and can be restored in case of data loss.
+Backups are created automatically on a daily schedule. The schedule and how long
+snapshots are kept are configured on the
+[Main Database](/docs/tagodeploy/project/project-services/main-database.md) page,
+using the "Daily backup schedule" and "Backup retention period" settings.
 
-Backups are created automatically every day to ensure consistent data
-protection. The backup schedule can be configured in the
-[Main Database](/docs/tagodeploy/project/project-services/main-database.md)
-page.
+## What is excluded from backups
 
-## Backup Information
+The following data is not included in backups:
 
-The backup list displays the following information for each backup:
+- **Analysis**: Analysis console logs and code.
+- **Files**: uploaded files and file attachments.
 
-- **Backup Date**: When the backup was created
-- **Backup Size**: The storage space occupied by the backup
+## Restore behavior
 
-## What's Excluded from Backups
+Restoring a snapshot provisions a new, isolated project instance initialized
+from that snapshot. The platform does not overwrite an existing project's
+database in place.
 
-The following data types are not included in backups:
+**Note:** Standard project creation fees apply when a new project instance is
+created from a backup. Restored instances continue to incur costs for as long as
+they stay active.
 
-- **Analysis**: Analysis console logs, and code.
-- **Files**: Uploaded files and file attachments
-
-## Restoring from Backup
-
-To create a new project from an existing backup:
-
-1. Locate the desired backup in the backup list
-2. Click on the three-dot menu next to the backup
-3. Select "New project from backup"
-4. Follow the prompts to create a new project with the backup data
-
-### Backup Restoration Process
-
-Project owners can restore data from a backup project to an existing project
-using several methods:
+Once a backup project is running, project owners can move data into a target
+project by:
 
 - Manually transferring data between the backup project and the target project.
-- Executing analysis scripts or the
-  [TagoIO API](/docs/api/sidebar/tagoio-api-intro) to automate data migration
-  between projects.
-- Utilizing the [TagoIO CLI](https://github.com/tago-io/tago-cli) to facilitate
-  bulk data transfer from the backup project to the active project.
+- Running analysis scripts or the
+  [TagoIO API](/docs/api/sidebar/tagoio-api-intro) to automate the migration.
+- Using the [TagoIO CLI](https://github.com/tago-io/tago-cli) for bulk transfer.
 
-The system retains the seven most recent backups, which are available for
-restoration at any time.
+### Restore limitations
 
-### Backup Limitations
+When data is restored from a backup, the platform does not preserve variable
+unique IDs. The system assigns a new unique identifier to each variable during
+ingestion, so a variable's ID in the restored project differs from its ID in the
+backup.
 
-When restoring data from a backup, the platform does not preserve variable
-unique IDs. During the data ingestion process, the system generates a new unique
-identifier for each variable, regardless of its previous state. As a result, the
-unique ID assigned to a variable in the backup will differ from the ID assigned
-to the same variable in the current project environment.
-
-Similarly, the platform does not restore resource tokens from backup data. Each
-time a resource is created, the system generates a new token associated with
-that resource. Consequently, the token value for a resource in the backup will
-not correspond to the token value for the same resource after restoration in the
-current project. This approach maintains the integrity and security of resource
-access but requires that any integrations or automation referencing resource
-tokens be updated post-restore.
+The platform also does not restore resource tokens. Each time a resource is
+created, the system generates a new token for it, so a resource's token after a
+restore differs from its token in the backup. Update any integrations or
+automation that reference resource tokens after a restore.

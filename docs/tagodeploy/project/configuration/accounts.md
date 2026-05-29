@@ -1,82 +1,62 @@
 ---
 title: "TagoIO Admin Accounts"
-description: "Manage developer accounts for TagoIO Admin: create, edit, deactivate, and understand profile sharing."
+description: "Manage developer accounts for the TagoIO Admin console: create, edit, and delete accounts."
 keywords: [tagodeploy, iot, accounts, admin, user management]
 tags: ["tagodeploy", "accounts"]
 slug: /tagodeploy/project/accounts
 ---
 
-The Accounts section provides a centralized interface for managing all developer
-accounts within your project's TagoIO Admin console. Through this interface,
-TagoDeploy administrators can view, create, modify, and remove developer
-accounts, as well as monitor account status, login activity, and creation dates.
-Each account represents an individual user who has been granted administrative
-privileges within the TagoIO Admin environment, with no limit on the number of
-accounts that can be added to a project.
+# Accounts
+
+The **Accounts** page manages developer accounts in your project's TagoIO Admin
+console. You find it in the TagoIO & API section, under "Accounts & Profiles"
+in the sidebar, at `/projects/{id}/tago-io/accounts`. From here you can browse
+the accounts in the project and the profiles each one owns, and you can create
+new accounts.
+
+Each account represents an individual user with access to the TagoIO Admin
+environment. There is no limit on the number of accounts you can add to a
+project.
 
 To learn more about what TagoIO developers can access through the Admin console,
 visit the
 [TagoIO Help Center](https://help.tago.io/portal/en/kb/articles/211-editing-accounts-details).
 
-When a new account is added, the user receives full permissions to manage their
-assigned profile within the TagoIO Admin console. Note that developer accounts
-are separate from TagoDeploy accounts. Access to the TagoDeploy console is
-managed independently, to grant access, you must add collaborators to your
-project.
+Developer accounts are separate from TagoDeploy accounts. Access to the
+TagoDeploy console is managed independently. To grant TagoDeploy access, add
+collaborators to your project. See
+[Collaborators](/docs/tagodeploy/project/management/collaborators.md).
 
 If a user needs to change their password, they should click the "Forgot
-password" button on the sign-in page of the TagoIO Admin console. This initiates
-the password reset process, allowing users to securely update their credentials.
+password" button on the sign-in page of the TagoIO Admin console. This starts
+the password reset process so they can update their credentials.
 
-For any additional questions regarding the TagoIO Admin console, it is
-recommended to consult the
-[TagoIO Help Center](https://help.tago.io/portal/en/kb/tagoio). The Help Center
-provides comprehensive documentation and troubleshooting guidance for all
-aspects of the TagoIO Admin console, making it a valuable resource for resolving
-common problems and learning more about available features.
+## Browsing accounts
 
-## Managing Accounts
+The page lists each account along with the profiles it owns. Use the search box
+to filter accounts by name, and use Expand All or Collapse All to show or hide
+the profiles under each account. When a project has no accounts, the page shows
+"No accounts found for this project."
 
-### Creating a New Account
+## Creating a new account
 
-To create a new user account:
+1. Click **New Account**.
+2. In the "New Account" dialog, fill in the fields:
+   - **Name**: the user's full name.
+   - **Email**: the account email address.
+   - **Password**: the initial password.
+   - **Company**: the company name.
+   - **Country**: select a country.
+3. Click **Confirm** to create the account, or **Cancel** to discard.
 
-1. Click the "Create" button in the top-right corner of the accounts section
-2. Fill in the required account information in the "New account" form.
-3. Click "Confirm" to create the account, or "Cancel" to discard the changes
-4. The new account will be added to the accounts list and the user can access
-   the project
+The new account is added to the list, and the user can access the project's
+TagoIO Admin console.
 
-### Editing an Account
+## Profile sharing
 
-To modify an existing account:
-
-1. Locate the account in the accounts list
-2. Click on the three-dot menu next to the account
-3. Select "Edit" or the appropriate modification option
-4. Update the account information or access as needed
-
-### Account Management Options
-
-Using the three-dot menu, you can perform various account management actions:
-
-- **Edit Account**: Modify account information and settings
-- **Deactivate/Activate**: Change the account's active status
-- **Delete Account**: Delete the account from the project
-
-## Profile Sharing
-
-Each new account is provisioned with a unique profile that defines the user’s
-access scope and available resources. To enable multiple users to share access
-to a specific profile, you should use the
+Each new account is provisioned with its own profile, which defines the user's
+access scope and available resources. To let several users share access to a
+single profile, use the
 [TagoIO Teams](https://help.tago.io/portal/en/kb/articles/106-sharing-your-profile)
-feature. This approach allows for collaborative access while maintaining
-appropriate access controls and audit trails.
-
-## Account Information
-
-The accounts list presents detailed information for each administrator,
-including the display name, associated email address, account status, last login
-timestamp, and the date the account was created. This comprehensive overview
-helps administrators maintain control over access and monitor user activity
-within the TagoIO Admin console.
+feature. This keeps collaborative access under appropriate controls and audit
+trails.
