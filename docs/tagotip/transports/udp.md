@@ -8,6 +8,10 @@ keywords: [tagotip, iot, udp, datagram, low power]
 
 # TagoTiP over UDP
 
+:::tip Tutorial
+Follow our step-by-step tutorial to connect your first device over UDP: [TagoTiP UDP — Quick Start](https://community.tago.io/t/tagotip-udp-tutorial)
+:::
+
 The **fastest path** from sensor to cloud. No connection setup, no handshake - a single datagram carries your data to TagoIO in as few as 60 bytes.
 
 ## Endpoint

@@ -8,6 +8,10 @@ keywords: [tagotip, iot, http, rest, api]
 
 # TagoTiP over HTTP
 
+:::tip Tutorial
+Follow our step-by-step tutorial to connect your first device over HTTP: [TagoTiP HTTP — Quick Start](https://community.tago.io/t/tagotip-http-tutorial)
+:::
+
 Standard HTTP you already know - `POST` to send, `GET` to retrieve, `HEAD` to ping. A single `Authorization` header and a clean REST-style API. Works through every firewall and proxy.
 
 ## Endpoint

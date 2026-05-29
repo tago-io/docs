@@ -8,6 +8,10 @@ keywords: [tagotip, iot, tcp, persistent connection, tls]
 
 # TagoTiP over TCP
 
+:::tip Tutorial
+Follow our step-by-step tutorial to connect your first device over TCP: [TagoTiP TCP — Quick Start](https://community.tago.io/t/tagotip-tcp-tutorial)
+:::
+
 **Guaranteed delivery** and **real-time commands**. TagoTiP over TCP ensures every data point arrives in order - and the server can push commands to your device the moment they are ready.
 
 ## Endpoint
