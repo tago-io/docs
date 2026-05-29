@@ -56,8 +56,8 @@ building your own application.\
 When completed, click on **Create Device**.
 
 Turn your Radio Bridge device on, and wait for the data to arrive in your
-bucket. Every time the device sends data it will be available in the bucket and
-shown in the dashboard: [bucket](/docs/tagoio/devices/).\
+device. Every time the device sends data it will be available in the device and
+shown in the dashboard: [device](/docs/tagoio/devices/).\
 You can start editing the installed dashboard.
 
 Also, you can create

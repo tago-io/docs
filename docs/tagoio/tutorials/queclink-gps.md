@@ -36,7 +36,7 @@ Add a device in your account at TagoIO. Go to [Devices](https://admin.tago.io/de
 - GV55\*
   _contact us for updates_
 
-Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your bucket: [Buckets](/docs/tagoio/devices/). The data will be ready to display in dashboards.
+Once the device is created, you will receive a confirmation. Turn your GPS on and wait for data to arrive in your device: [Devices](/docs/tagoio/devices/). The data will be ready to display in dashboards.
 
 ### Building Dashboards
 

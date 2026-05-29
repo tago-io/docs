@@ -69,9 +69,9 @@ device that you just added.
 > Check with your Xkit distributor about how to register the Xkit in the Sigfox
 > Portal.
 
-Now, just turn your Xkit board on, and wait for the data to hit your data
-bucket. Every time the Xkit sends data, an action will be triggered and the
-script will parse the data sending it to the bucket, ready to be displayed by
+Now, just turn your Xkit board on, and wait for the data to hit your
+device. Every time the Xkit sends data, an action will be triggered and the
+script will parse the data sending it to the device, ready to be displayed by
 the widgets.
 
 You can start editing your dashboard as needed.

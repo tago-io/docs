@@ -51,7 +51,7 @@ When you select an analysis, the scope that you will receive contains a JSON arr
 ```json
 [
   {
-    "bucket": "5da07e1269c7ae001b2faefe",
+    "device": "5da07e1269c7ae001b2faefe",
     "origin": "5da07e1269c7ae001b2faeff",
     "id": "5da07e1269c7ae001b2faefs",
     "variable": "my_variable",
@@ -88,7 +88,7 @@ If you select this option, the data sent by the widget will have an additional o
 
 ```json
 {
-  "bucket": "5da07e1269c7ae001b2faefe",
+  "device": "5da07e1269c7ae001b2faefe",
   "origin": "5da07e1269c7ae001b2faeff",
   "id": "5da07e1269c7ae001b2faefs",
   "variable": "run_user",
